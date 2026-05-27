@@ -91,7 +91,7 @@ export const unit4Data: UnitData = {
           >
             <p>
               {"ຈາກຮູບສາມແຈສອງຮູບ ABC ແລະ DEF ທີ່ທຽບເທົ່າກັນດ້ານເທິງ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ)"}</span>
+              <span className="point-label">{"(ຂໍ້ລະ 3 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
@@ -99,83 +99,49 @@ export const unit4Data: UnitData = {
                 gridTemplateColumns: "1fr",
                 gap: "20px",
                 fontSize: "20px",
-                padding: "16px",
+                padding: "8px 16px",
               }}
             >
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "12px",
-                  flexWrap: "wrap",
-                }}
-              >
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
                 <span>{"(1) ຂ້າງທີ່ສົມທຽບກັບຂ້າງ AB ແມ່ນຂ້າງ"}</span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "100px",
-                    height: "40px",
-                  }}
-                ></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "12px",
-                  flexWrap: "wrap",
-                }}
-              >
-                <span>{"(2) ຂ້າງທີ່ສົມທຽບກັບຂ້າງ AC ແມ່ນຂ້າງ"}</span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "100px",
-                    height: "40px",
-                  }}
-                ></span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                <span>{"(2) ມຸມທີ່ສົມທຽບກັບມຸມ A ແມ່ນມຸມ"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "12px",
-                  flexWrap: "wrap",
-                }}
-              >
-                <span>{"(3) ມຸມທີ່ສົມທຽບກັບມຸມ A ແມ່ນມຸມ"}</span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "100px",
-                    height: "40px",
-                  }}
-                ></span>
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "12px",
-                  flexWrap: "wrap",
-                }}
-              >
-                <span>
-                  {"(4) ຖ້າຄວາມຍາວຂ້າງ AB = 6 cm, ຂ້າງ DE ຈະຍາວຈັກ cm?"}
-                </span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "80px",
-                    height: "40px",
-                  }}
-                ></span>
+            </div>
+          </div>
+        ),
+      },
+      {
+        number: 2,
+        content: (
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+          >
+            <p>
+              {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບຄວາມຍາວ ແລະ ມຸມ: "}{" "}
+              <span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
+            </p>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr",
+                gap: "20px",
+                fontSize: "20px",
+                padding: "8px 16px",
+              }}
+            >
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                <span>{"(1) ຖ້າຄວາມຍາວຂ້າງ AB = 6 cm, ຂ້າງ DE ຈະຍາວຈັກ cm?"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
                 <span>{"cm"}</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                <span>{"(2) ຖ້າມຸມ B = 60°, ມຸມ E ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+                <span>{"°"}</span>
               </div>
             </div>
           </div>
@@ -184,7 +150,7 @@ export const unit4Data: UnitData = {
     ],
     challengeProblems: {
       hintText:
-        "📐 ຜົນບວກມຸມໃນຮູບສາມແຈແມ່ນ 180 ອົງສາສະເໝີ! ໃຊ້ຄວາມຮູ້ນີ້ຊອກຫາມຸມທີ່ເຫຼືອເດີ້!",
+        "📐 ຜົນບວກມຸມໃນຮູບສາມແຈແມ່ນ 180 ອົງສາສະເໝີ! ແລະ ຜົນບວກມຸມໃນຮູບສີ່ແຈແມ່ນ 360 ອົງສາສະເໝີເດີ້!",
       problems: [
         {
           number: 1,
@@ -193,7 +159,7 @@ export const unit4Data: UnitData = {
               style={{ display: "flex", flexDirection: "column", gap: "16px" }}
             >
               <p>
-                {"ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມທີ່ກຳນົດ: "}{" "}
+                {"ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມທີ່ກຳນົດ (ຮູບສາມແຈ): "}{" "}
                 <span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
               <div
@@ -202,7 +168,7 @@ export const unit4Data: UnitData = {
                   gap: "40px",
                   alignItems: "center",
                   flexWrap: "wrap",
-                  padding: "16px",
+                  padding: "8px 16px",
                 }}
               >
                 <svg className="math-illustration" width="300" height="200">
@@ -225,29 +191,85 @@ export const unit4Data: UnitData = {
                 <div
                   style={{
                     display: "flex",
-                    flexDirection: "column",
+                    alignItems: "center",
                     gap: "12px",
                     fontSize: "20px",
+                    flexWrap: "wrap",
                   }}
                 >
-                  <div>{"(1) ມຸມ C ໃນຮູບສາມແຈນີ້ເທົ່າກັບ"}</div>
-                  <div
+                  <span>{"(1) ມຸມ C ໃນຮູບສາມແຈນີ້ເທົ່າກັບ"}</span>
+                  <span
+                    className="answer-blank"
                     style={{
-                      display: "flex",
-                      gap: "8px",
-                      alignItems: "center",
+                      display: "inline-block",
+                      width: "100px",
+                      height: "40px",
                     }}
-                  >
-                    <span
-                      className="answer-blank"
-                      style={{
-                        display: "inline-block",
-                        width: "100px",
-                        height: "40px",
-                      }}
-                    ></span>
-                    <span>{"°"}</span>
-                  </div>
+                  ></span>
+                  <span>{"°"}</span>
+                </div>
+              </div>
+            </div>
+          ),
+        },
+        {
+          number: 2,
+          content: (
+            <div
+              style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+            >
+              <p>
+                {"ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມທີ່ກຳນົດ (ຮູບສີ່ແຈ): "}{" "}
+                <span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "40px",
+                  alignItems: "center",
+                  flexWrap: "wrap",
+                  padding: "8px 16px",
+                }}
+              >
+                <svg className="math-illustration" width="300" height="200">
+                  <path
+                    d="M 40,160 L 260,160 L 220,50 L 80,50 Z"
+                    fill="none"
+                    stroke="#333"
+                    strokeWidth="3"
+                  />
+                  <text x="55" y="150" style={{ fontSize: "22px" }}>
+                    {"110°"}
+                  </text>
+                  <text x="210" y="150" style={{ fontSize: "22px" }}>
+                    {"70°"}
+                  </text>
+                  <text x="90" y="80" style={{ fontSize: "22px" }}>
+                    {"80°"}
+                  </text>
+                  <text x="180" y="80" style={{ fontSize: "22px", fontWeight: "bold" }}>
+                    {"D"}
+                  </text>
+                </svg>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    fontSize: "20px",
+                    flexWrap: "wrap",
+                  }}
+                >
+                  <span>{"(1) ມຸມ D ໃນຮູບສີ່ແຈນີ້ເທົ່າກັບ"}</span>
+                  <span
+                    className="answer-blank"
+                    style={{
+                      display: "inline-block",
+                      width: "100px",
+                      height: "40px",
+                    }}
+                  ></span>
+                  <span>{"°"}</span>
                 </div>
               </div>
             </div>
@@ -263,39 +285,70 @@ export const unit4Data: UnitData = {
             style={{ display: "flex", flexDirection: "column", gap: "16px" }}
           >
             <p>
-              {"ຈົ່ງຕອບຄຳຖາມຕໍ່ໄປນີ້: "}{" "}
-              <span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບການທຽບເທົ່າກັນ: "}{" "}
+              <span className="point-label">{"(ຂໍ້ລະ 3 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "12px",
+                display: "grid",
+                gridTemplateColumns: "1fr",
+                gap: "20px",
                 fontSize: "20px",
+                padding: "8px 16px",
               }}
             >
-              <p style={{ margin: 0, lineHeight: "1.5" }}>
-                {
-                  "📐 ຖ້າເຮົາແບ່ງຮູບສີ່ແຈສາກອອກເປັນສອງສ່ວນຕາມເສັ້ນເນັ່ງຈອມ, ເຮົາຈະໄດ້ຮູບສາມແຈສອງຮູບທີ່ທຽບເທົ່າກັນພໍດີ ຫຼື ບໍ່?"
-                }
-              </p>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "12px",
-                  alignItems: "center",
-                  marginTop: "8px",
-                }}
-              >
-                <span>{"ຄຳຕອບ:"}</span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "120px",
-                    height: "40px",
-                  }}
-                ></span>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <span>{"(1) 📐 ຖ້າເຮົາແບ່ງຮູບສີ່ແຈສາກອອກເປັນສອງສ່ວນຕາມເສັ້ນເນັ່ງຈອມ, ເຮົາຈະໄດ້ຮູບສາມແຈສອງຮູບທີ່ທຽບເທົ່າກັນພໍດີ ຫຼື ບໍ່?"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                </div>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <span>{"(2) ⏹️ ຖ້າເຮົາແບ່ງຮູບຈະຕຸລັດອອກເປັນສີ່ສ່ວນຕາມເສັ້ນເນັ່ງຈອມທັງສອງ, ເຮົາຈະໄດ້ຮູບສາມແຈສີ່ຮູບທີ່ທຽບເທົ່າກັນພໍດີ ຫຼື ບໍ່?"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        ),
+      },
+      {
+        number: 2,
+        content: (
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+          >
+            <p>
+              {"ຈົ່ງຄິດໄລ່ມຸມໃນຮູບເລຂາຄະນິດຕໍ່ໄປນີ້: "}{" "}
+              <span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
+            </p>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr",
+                gap: "20px",
+                fontSize: "20px",
+                padding: "8px 16px",
+              }}
+            >
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <span>{"(1) ໃນຮູບສາມແຈສາກໜຶ່ງ, ຖ້າມີມຸມແຫຼມໜຶ່ງເທົ່າກັບ 35°, ມຸມແຫຼມອີກມຸມໜຶ່ງຈະເທົ່າກັບ"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+                  <span>{"°"}</span>
+                </div>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <span>{"(2) ໃນຮູບສີ່ແຈຂ້າງຂະໜານໜຶ່ງ, ຖ້າມີມຸມໜຶ່ງເທົ່າກັບ 70°, ມຸມຖັດໄປ (ມຸມຂ້າງດຽວກັນ) ຈະເທົ່າກັບ"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+                  <span>{"°"}</span>
+                </div>
               </div>
             </div>
           </div>
@@ -307,23 +360,41 @@ export const unit4Data: UnitData = {
         {
           questionNumber: 1,
           answers: [
-            <span key="1">{"(1) DE, (2) DF, (3) ມຸມ D, (4) 6 cm"}</span>,
+            <span key="u4-ans-1-1">{"(1) ຂ້າງ DE"}</span>,
+            <span key="u4-ans-1-2">{"(2) ມຸມ D"}</span>,
+          ],
+        },
+        {
+          questionNumber: 2,
+          answers: [
+            <span key="u4-ans-2-1">{"(1) 6 cm"}</span>,
+            <span key="u4-ans-2-2">{"(2) 60°"}</span>,
           ],
         },
         {
           questionNumber: "ທ້າທາຍ 1",
           answers: [
-            <span key="2">
-              {"70° (ຍ້ອນ 180 - (45 + 65) = 180 - 110 = 70)"}
-            </span>,
+            <span key="u4-ans-t1-1">{"70° (ຍ້ອນ 180 - (45 + 65) = 70)"}</span>,
+          ],
+        },
+        {
+          questionNumber: "ທ້າທາຍ 2",
+          answers: [
+            <span key="u4-ans-t2-1">{"100° (ຍ້ອນ 360 - (110 + 70 + 80) = 100)"}</span>,
           ],
         },
         {
           questionNumber: "ທົດສອບປະຈຳບົດ 1",
           answers: [
-            <span key="3">
-              {"ທຽບເທົ່າກັນ (ຍ້ອນມີຂ້າງ ແລະ ມຸມເທົ່າກັນພໍດີ ເມື່ອປິ່ນທັບກັນ)"}
-            </span>,
+            <span key="u4-ans-s1-1">{"(1) ທຽບເທົ່າກັນ (ໄດ້ຮູບສາມແຈສາກສອງຮູບທີ່ເທົ່າກັນພໍດີ)"}</span>,
+            <span key="u4-ans-s1-2">{"(2) ທຽບເທົ່າກັນ (ໄດ້ຮູບສາມແຈທ່ຽງສີ່ຮູບທີ່ເທົ່າກັນພໍດີ)"}</span>,
+          ],
+        },
+        {
+          questionNumber: "ທົດສອບປະຈຳບົດ 2",
+          answers: [
+            <span key="u4-ans-s2-1">{"(1) 55° (ຍ້ອນ 180 - 90 - 35 = 55)"}</span>,
+            <span key="u4-ans-s2-2">{"(2) 110° (ຍ້ອນ 180 - 70 = 110)"}</span>,
           ],
         },
       ],
