@@ -5,7 +5,7 @@ export const unit6Data: UnitData = {
     unitNumber: 6,
     unitTitle: "ຮູບຮ່າງທີ່ມີລັກສະນະເຄິ່ງຄືກັນ",
     unitGoal:
-      "ຮຽນຮູ້ຄວາມໝາຍ ແລະ ຄຸນລັກສະນະຂອງຮູບເຄິ່ງຄືກັນທຽບໃສ່ເສັ້ນຊື່ (線対称) ແລະ ຮູບເຄິ່ງຄືກັນທຽບໃສ່ເມັດ (点対称)",
+      "ຮຽນຮູ້ຄວາມໝາຍ ແລະ ຄຸນລັກສະນະຂອງຮູບເຄິ່ງຄືກັນທຽບໃສ່ເສັ້ນຊື່  ແລະ ຮູບເຄິ່ງຄືກັນທຽບໃສ່ເມັດ ",
     textbookRef: "ປຶ້ມແບບຮຽນ ປ.5 ໜ້າ 58-69",
     keyPoints: {
       hint: {
@@ -31,25 +31,25 @@ export const unit6Data: UnitData = {
                 "ຮູບພາບທີ່ສາມາດພັບເຄິ່ງຕາມເສັ້ນຊື່ໜຶ່ງ (ແກນເຄິ່ງຄື / Axis of Symmetry) ແລ້ວທັງສອງສ່ວນຊ້ອນກັນໄດ້ພໍດີ."
               }
             </div>
-            <svg className="math-illustration" width="120" height="90">
+            <svg className="math-illustration" width="180" height="135">
               {/* Symmetric Butterfly or shape */}
               <path
-                d="M 60,10 L 90,40 L 60,80 L 30,40 Z"
+                d="M 90,15 L 135,60 L 90,120 L 45,60 Z"
                 fill="rgba(33, 150, 243, 0.2)"
                 stroke="#2196F3"
                 strokeWidth="2"
               />
               {/* Symmetry Axis Line */}
               <line
-                x1="60"
-                y1="5"
-                x2="60"
-                y2="85"
+                x1="90"
+                y1="7.5"
+                x2="90"
+                y2="127.5"
                 stroke="red"
                 strokeWidth="1.5"
                 strokeDasharray="4,4"
               />
-              <text x="65" y="80" style={{ fontSize: "22px" }} fill="red">
+              <text x="95" y="120" style={{ fontSize: "24px" }} fill="red">
                 {"ແກນ"}
               </text>
             </svg>
@@ -75,16 +75,16 @@ export const unit6Data: UnitData = {
                 "ຮູບພາບທີ່ເມື່ອປິ່ນອ້ອມເມັດໃຈກາງ (ເມັດເຄິ່ງຄື / Center of Symmetry) ໄປ 180° ແລ້ວມັນຈະທັບກັບຮູບເດີມພໍດີ."
               }
             </div>
-            <svg className="math-illustration" width="120" height="90">
+            <svg className="math-illustration" width="180" height="135">
               {/* Parallelogram (Point Symmetric) */}
               <path
-                d="M 30,25 L 100,25 L 90,65 L 20,65 Z"
+                d="M 45,37.5 L 150,37.5 L 135,97.5 L 30,97.5 Z"
                 fill="rgba(76, 175, 80, 0.2)"
                 stroke="#4CAF50"
                 strokeWidth="2"
               />
-              <circle cx="60" cy="45" r="4" fill="red" />
-              <text x="65" y="50" style={{ fontSize: "22px" }} fill="red">
+              <circle cx="90" cy="67.5" r="6" fill="red" />
+              <text x="95" y="75" style={{ fontSize: "24px" }} fill="red">
                 {"ເມັດ"}
               </text>
             </svg>
