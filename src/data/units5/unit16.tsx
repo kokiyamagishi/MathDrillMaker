@@ -64,21 +64,15 @@ export const unit16Data: UnitData = {
               padding: "8px 16px",
             }}
           >
-            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              <span>{"(1) 1.5 kg = ຈັກ g?"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຄຳຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"g"}</span>
-              </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) 1.5 kg ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              <span>{"g"}</span>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              <span>{"(2) 1.5 m = ຈັກ cm?"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຄຳຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"cm"}</span>
-              </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) 1.5 m ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              <span>{"cm"}</span>
             </div>
           </div>
         </div>
@@ -101,21 +95,15 @@ export const unit16Data: UnitData = {
               padding: "8px 16px",
             }}
           >
-            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              <span>{"(1) 2.5 L = ຈັກ mL?"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຄຳຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"mL"}</span>
-              </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) 2.5 L ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              <span>{"mL"}</span>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              <span>{"(2) 3 ha = ຈັກ m²?"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຄຳຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                <span>{"m²"}</span>
-              </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) 3 ha ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+              <span>{"m²"}</span>
             </div>
           </div>
         </div>
