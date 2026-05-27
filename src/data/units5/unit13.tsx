@@ -61,16 +61,22 @@ export const unit13Data: UnitData = {
               </tbody>
             </table>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", fontSize: "20px", padding: "16px" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(1) ຈຳນວນ (A) ໃນຕາຕະລາງແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"cm"}</span>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", fontSize: "20px", padding: "8px 16px" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+              <span>{"(1) ຈຳນວນ (A) ໃນຕາຕະລາງແມ່ນຈັກ cm?"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                <span>{"ຄຳຕອບ:"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+                <span>{"cm"}</span>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(2) ຈຳນວນ (B) ໃນຕາຕະລາງແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"cm"}</span>
+            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+              <span>{"(2) ຈຳນວນ (B) 在ຕາຕະລາງແມ່ນຈັກ cm?"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                <span>{"ຄຳຕອບ:"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+                <span>{"cm"}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -84,15 +90,21 @@ export const unit13Data: UnitData = {
             {"ຈົ່ງຊອກຫາຄ່າ (C) ແລະ ວິເຄາະຄວາມສຳພັນ: "}{" "}
             <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
           </p>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", fontSize: "20px", padding: "16px" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(3) ຈຳນວນ (C) ໃນຕາຕະລາງແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"cm"}</span>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", fontSize: "20px", padding: "8px 16px" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+              <span>{"(1) ຈຳນວນ (C) ໃນຕາຕະລາງແມ່ນຈັກ cm?"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                <span>{"ຄຳຕອບ:"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+                <span>{"cm"}</span>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(4) ຄວາມສຳພັນລະຫວ່າງ x ແລະ y ນີ້ ແມ່ນອັດຕາສ່ວນພົວພັນປີ້ນ ຫຼື ບໍ່?"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+              <span>{"(2) ຄວາມສຳພັນລະຫວ່າງ x ແລະ y ນີ້ ແມ່ນອັດຕາສ່ວນພົວພັນປີ້ນ ຫຼື ບໍ່?"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                <span>{"ຄຳຕອບ:"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              </div>
             </div>
           </div>
         </div>
@@ -107,28 +119,38 @@ export const unit13Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p>
-              {"ຈົ່ງແກ້ໂຈດບັນຫາອັດຕາສ່ວນພົວພັນປີ້ນ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 5 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
+              {"ຈົ່ງແກ້ໂຈດບັນຫາຟັນເຟືອງ: "}{" "}
+              <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
             </p>
-            <div style={{ paddingLeft: "16px", display: "flex", flexDirection: "column", gap: "24px", fontSize: "20px" }}>
-              {/* Sub-problem (1) */}
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ⚙️ ຟັນເຟືອງ A ມີແຂ້ວ 24 ແຂ້ວ ປິ່ນໄດ້ 6 ຮອບຕໍ່ນາທີ. ມັນຂົບກັບຟັນເຟືອງ B ທີ່ມີແຂ້ວ 16 ແຂ້ວ. ຟັນເຟືອງ B ຈະປິ່ນໄດ້ຈັກຮອບຕໍ່ນາທີ?"}</span>
-                <div style={{ display: "flex", gap: "12px", alignItems: "center", marginTop: "4px" }}>
-                  <span>{"ຄຳຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"ຮອບ/ນາທີ"}</span>
-                </div>
+            <div style={{ paddingLeft: "16px", display: "flex", flexDirection: "column", gap: "12px", fontSize: "20px" }}>
+              <p style={{ margin: 0, lineHeight: "1.5" }}>
+                {"(1) ⚙️ ຟັນເຟືອງ A ມີແຂ້ວ 24 ແຂ້ວ ປິ່ນໄດ້ 6 ຮອບຕໍ່ນາທີ. ມັນຂົບກັບຟັນເຟືອງ B ທີ່ມີແຂ້ວ 16 ແຂ້ວ. ຟັນເຟືອງ B ຈະປິ່ນໄດ້ຈັກຮອບຕໍ່ນາທີ?"}
+              </p>
+              <div style={{ display: "flex", gap: "12px", alignItems: "center", paddingLeft: "16px", marginTop: "4px" }}>
+                <span>{"ຄຳຕອບ:"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                <span>{"ຮອບ/ນາທີ"}</span>
               </div>
-
-              {/* Sub-problem (2) */}
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) 💧 ຖ້າໃຊ້ທໍ່ນ້ຳ 2 ທໍ່ ຈະປ່ອຍນ້ຳໃສ່ອ່າງເຕັມໃນເວລາ 60 ນາທີ. ຖ້າຕ້ອງການໃຫ້ອ່າງເຕັມໃນເວລາ 30 ນາທີ, ຈະຕ້ອງໃຊ້ທໍ່ນ້ຳຂະໜາດດຽວກັນຈັກທໍ່?"}</span>
-                <div style={{ display: "flex", gap: "12px", alignItems: "center", marginTop: "4px" }}>
-                  <span>{"ຄຳຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"ທໍ່"}</span>
-                </div>
+            </div>
+          </div>
+        ),
+      },
+      {
+        number: 2,
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p>
+              {"ຈົ່ງແກ້ໂຈດບັນຫາທໍ່ນ້ຳ: "}{" "}
+              <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            </p>
+            <div style={{ paddingLeft: "16px", display: "flex", flexDirection: "column", gap: "12px", fontSize: "20px" }}>
+              <p style={{ margin: 0, lineHeight: "1.5" }}>
+                {"(1) 💧 ຖ້າໃຊ້ທໍ່ນ້ຳ 2 ທໍ່ ຈະປ່ອຍນ້ຳໃສ່ອ່າງເຕັມໃນເວລາ 60 ນາທີ. ຖ້າຕ້ອງການໃຫ້ອ່າງເຕັມໃນເວລາ 30 ນາທີ, ຈະຕ້ອງໃຊ້ທໍ່ນ້ຳຂະໜາດດຽວກັນຈັກທໍ່?"}
+              </p>
+              <div style={{ display: "flex", gap: "12px", alignItems: "center", paddingLeft: "16px", marginTop: "4px" }}>
+                <span>{"ຄຳຕອບ:"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                <span>{"ທໍ່"}</span>
               </div>
             </div>
           </div>
@@ -142,27 +164,37 @@ export const unit13Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p>
-            {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບອັດຕາສ່ວນພົວພັນຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 5 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
+            {"ຈົ່ງແກ້ໂຈດບັນຫາຄວາມສຳພັນຂອງລາຄາດິນສໍ: "}{" "}
+            <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
           </p>
-          <div style={{ paddingLeft: "16px", display: "flex", flexDirection: "column", gap: "24px", fontSize: "20px" }}>
-            {/* Sub-problem (1) */}
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) 📐 ຖ້າຊື້ດິນສໍ 3 ກ້ານ ລາຄາ 15 ກີບ. ຖ້າຊື້ 9 ກ້ານ ຕ້ອງຈ່າຍເງິນ 45 ກີບ. ຄວາມສຳພັນລະຫວ່າງຈຳນວນດິນສໍ ແລະ ລາຄາ ແມ່ນອັດຕາສ່ວນພົວພັນ ຫຼື ອັດຕາສ່ວນພົວພັນປີ້ນ?"}</span>
-              <div style={{ display: "flex", gap: "12px", alignItems: "center", marginTop: "4px" }}>
-                <span>{"ຄຳຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
-              </div>
+          <div style={{ paddingLeft: "16px", display: "flex", flexDirection: "column", gap: "12px", fontSize: "20px" }}>
+            <p style={{ margin: 0, lineHeight: "1.5" }}>
+              {"(1) 📐 ຖ້າຊື້ດິນສໍ 3 ກ້ານ ລາຄາ 15 ກີບ. ຖ້າຊື້ 9 ກ້ານ ຕ້ອງຈ່າຍເງິນ 45 ກີບ. ຄວາມສຳພັນລະຫວ່າງຈຳນວນດິນສໍ ແລະ ລາຄາ ແມ່ນອັດຕາສ່ວນພົວພັນ ຫຼື ອັດຕາສ່ວນພົວພັນປີ້ນ?"}
+            </p>
+            <div style={{ display: "flex", gap: "12px", alignItems: "center", paddingLeft: "16px", marginTop: "4px" }}>
+              <span>{"ຄຳຕອບ:"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "200px", height: "40px" }}></span>
             </div>
-
-            {/* Sub-problem (2) */}
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) 🚗 ຖ້າລົດຄັນໜຶ່ງແລ່ນດ້ວຍຄວາມໄວ 60 km/h ຈະໃຊ້ເວລາ 4 ຊົ່ວໂມງເພື່ອຮອດຈຸດໝາຍ. ຖ້າແລ່ນດ້ວຍຄວາມໄວ 80 km/h, ຈະໃຊ້ເວລາຈັກຊົ່ວໂມງ?"}</span>
-              <div style={{ display: "flex", gap: "12px", alignItems: "center", marginTop: "4px" }}>
-                <span>{"ຄຳຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ຊົ່ວໂມງ"}</span>
-              </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      number: 2,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງແກ້ໂຈດບັນຫາຄວາມໄວລົດ ແລະ ເວລາ: "}{" "}
+            <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div style={{ paddingLeft: "16px", display: "flex", flexDirection: "column", gap: "12px", fontSize: "20px" }}>
+            <p style={{ margin: 0, lineHeight: "1.5" }}>
+              {"(1) 🚗 ຖ້າລົດຄັນໜຶ່ງແລ່ນດ້ວຍຄວາມໄວ 60 km/h ຈະໃຊ້ເວລາ 4 ຊົ່ວໂມງເພື່ອຮອດຈຸດໝາຍ. ຖ້າແລ່ນດ້ວຍຄວາມໄວ 80 km/h, ຈະໃຊ້ເວລາຈັກຊົ່ວໂມງ?"}
+            </p>
+            <div style={{ display: "flex", gap: "12px", alignItems: "center", paddingLeft: "16px", marginTop: "4px" }}>
+              <span>{"ຄຳຕອບ:"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              <span>{"ຊົ່ວໂມງ"}</span>
             </div>
           </div>
         </div>
@@ -181,25 +213,35 @@ export const unit13Data: UnitData = {
       {
         questionNumber: 2,
         answers: [
-          <span key="u13-ans-2-1">{"(3) 4 (ຍ້ອນ 24 ÷ 6 = 4)"}</span>,
-          <span key="u13-ans-2-2">{"(4) ແມ່ນ (ຍ້ອນຜົນຄູນ x × y = 24 ຄົງທີ່ສະເໝີ)"}</span>,
+          <span key="u13-ans-2-1">{"(1) 4 (ຍ້ອນ 24 ÷ 6 = 4)"}</span>,
+          <span key="u13-ans-2-2">{"(2) ແມ່ນ (ຍ້ອນຜົນຄູນ x × y = 24 ຄົງທີ່ສະເໝີ)"}</span>,
         ],
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
           <span key="u13-ans-t1-1">{"(1) 9 ຮອບ (ຍ້ອນ 24 × 6 = 144, 144 ÷ 16 = 9)"}</span>,
-          <span key="u13-ans-t1-2">{"(2) 4 ທໍ່ (ຍ້ອນ 2 × 60 = 120, 120 ÷ 30 = 4)"}</span>,
+        ],
+      },
+      {
+        questionNumber: "ທ້າທາຍ 2",
+        answers: [
+          <span key="u13-ans-t2-1">{"(1) 4 ທໍ່ (ຍ້ອນ 2 × 60 = 120, 120 ÷ 30 = 4)"}</span>,
         ],
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
           <span key="u13-ans-s1-1">{"(1) ອັດຕາສ່ວນພົວພັນ (ຍ້ອນເມື່ອຈຳນວນດິນສໍເພີ່ມຂຶ້ນ 3 ເທື່ອ, ລາຄາກໍເພີ່ມຂຶ້ນ 3 ເທື່ອ)"}</span>,
-          <span key="u13-ans-s1-2">{"(2) 3 ຊົ່ວໂມງ (ຍ້ອນໄລຍະທາງແມ່ນ 60 × 4 = 240 km, ດັ່ງນັ້ນ 240 ÷ 80 = 3)"}</span>,
+        ],
+      },
+      {
+        questionNumber: "ທົດສອບປະຈຳບົດ 2",
+        answers: [
+          <span key="u13-ans-s2-1">{"(1) 3 ຊົ່ວໂມງ (ຍ້ອນໄລຍະທາງແມ່ນ 60 × 4 = 240 km, ດັ່ງນັ້ນ 240 ÷ 80 = 3)"}</span>,
         ],
       },
     ],
-    advice: "",
+    advice: "ການຮຽນຮູ້ກ່ຽວກັບອັດຕາສ່ວນພົວພັນ ແລະ ພົວພັນປີ້ນ ຊ່ວຍໃຫ້ເຮົາຄາດຄະເນການປ່ຽນແປງຂອງສິ່ງຕ່າງໆໃນຊີວິດປະຈຳວັນໄດ້ຢ່າງຊັດເຈນ!",
   },
 };
