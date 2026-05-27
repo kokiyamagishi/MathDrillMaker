@@ -101,7 +101,7 @@ export const unit6Data: UnitData = {
           >
             <p>
               {"ຈົ່ງຈຳແນກປະເພດຮູບເຄິ່ງຄືກັນຕໍ່ໄປນີ້: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ)"}</span>
+              <span className="point-label">{"(ຂໍ້ລະ 3 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
@@ -109,93 +109,60 @@ export const unit6Data: UnitData = {
                 gridTemplateColumns: "1fr",
                 gap: "20px",
                 fontSize: "20px",
-                padding: "16px",
+                padding: "8px 16px",
               }}
             >
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "12px",
-                  flexWrap: "wrap",
-                }}
-              >
-                <span>
-                  {"(1) ຮູບວົງມົນ ແມ່ນຮູບເຄິ່ງຄືກັນທຽບໃສ່ເສັ້ນຊື່ ຫຼື ບໍ່?"}
-                </span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "100px",
-                    height: "40px",
-                  }}
-                ></span>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <span>{"(1) ຮູບວົງມົນ ແມ່ນຮູບເຄິ່ງຄືກັນທຽບໃສ່ເສັ້ນຊື່ (ພັບເຄິ່ງຊ້ອນກັນໄດ້ພໍດີ) ຫຼື ບໍ່?"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "12px",
-                  flexWrap: "wrap",
-                }}
-              >
-                <span>
-                  {
-                    "(2) ຮູບສີ່ແຈຂ້າງຂະໜານ ແມ່ນຮູບເຄິ່ງຄືກັນທຽບໃສ່ເສັ້ນຊື່ ຫຼື ບໍ່?"
-                  }
-                </span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "100px",
-                    height: "40px",
-                  }}
-                ></span>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <span>{"(2) ຮູບສີ່ແຈຂ້າງຂະໜານ ແມ່ນຮູບເຄິ່ງຄືກັນທຽບໃສ່ເສັ້ນຊື່ (ພັບເຄິ່ງຊ້ອນກັນໄດ້ພໍດີ) ຫຼື ບໍ່?"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "12px",
-                  flexWrap: "wrap",
-                }}
-              >
-                <span>
-                  {"(3) ຮູບຈະຕຸລັດ (Square) ມີແກນເຄິ່ງຄືທັງໝົດຈັກແກນ?"}
-                </span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "80px",
-                    height: "40px",
-                  }}
-                ></span>
-                <span>{"ແກນ"}</span>
+            </div>
+          </div>
+        ),
+      },
+      {
+        number: 2,
+        content: (
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+          >
+            <p>
+              {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບແກນເຄິ່ງຄື ແລະ ເມັດເຄິ່ງຄື: "}{" "}
+              <span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
+            </p>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr",
+                gap: "20px",
+                fontSize: "20px",
+                padding: "8px 16px",
+              }}
+            >
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <span>{"(1) ຮູບຈະຕຸລັດ (Square) ມີແກນເຄິ່ງຄືທັງໝົດຈັກແກນ?"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+                  <span>{"ແກນ"}</span>
+                </div>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "12px",
-                  flexWrap: "wrap",
-                }}
-              >
-                <span>
-                  {
-                    "(4) ຕົວອັກສອນພາສາອັງກິດ 'S' ແມ່ນຮູບເຄິ່ງຄືກັນທຽບໃສ່ເມັດ ຫຼື ບໍ່?"
-                  }
-                </span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "100px",
-                    height: "40px",
-                  }}
-                ></span>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <span>{"(2) ຕົວອັກສອນພາສາອັງກິດ 'S' ແມ່ນຮູບເຄິ່ງຄືກັນທຽບໃສ່ເມັດ (ໝູນ 180° ທັບກັນພໍດີ) ຫຼື ບໍ່?"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
               </div>
             </div>
           </div>
@@ -204,7 +171,7 @@ export const unit6Data: UnitData = {
     ],
     challengeProblems: {
       hintText:
-        "📐 ຈື່ໄວ້ວ່າ ຖ້າເປັນຮູບຈະຕຸລັດ ຫຼື ວົງມົນ ຈະມີຄວາມສົມມາດຫຼາຍຮູບແບບເລີຍເດີ້!",
+        "📐 ຈື່ໄວ້ວ່າ ຖ້າເປັນຮູບຈະຕຸລັດ ຫຼື ວົງມົນ ຈະມີຄວາມສົມມາດຫຼາຍຮູບແບບ, ສ່ວນຕົວອັກສອນ 'H' ສາມາດທັງພັບເຄິ່ງ ແລະ ທັງໝູນໄດ້ເດີ້!",
       problems: [
         {
           number: 1,
@@ -213,7 +180,7 @@ export const unit6Data: UnitData = {
               style={{ display: "flex", flexDirection: "column", gap: "16px" }}
             >
               <p>
-                {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບຮູບເຄິ່ງຄືກັນ: "}{" "}
+                {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບຮູບເຄິ່ງຄືກັນຂອງດາວ: "}{" "}
                 <span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
               <div
@@ -225,9 +192,7 @@ export const unit6Data: UnitData = {
                 }}
               >
                 <p style={{ margin: 0, lineHeight: "1.5" }}>
-                  {
-                    "⭐ ຮູບດາວ 5 ແຈສະເໝີ ແມ່ນຮູບເຄິ່ງຄືກັນທຽບໃສ່ເສັ້ນຊື່ທີ່ມີແກນເຄິ່ງຄືທັງໝົດຈັກແກນ?"
-                  }
+                  {"⭐ ຮູບດາວ 5 ແຈສະເໝີ ແມ່ນຮູບເຄິ່ງຄືກັນທຽບໃສ່ເສັ້ນຊື່ທີ່ມີແກນເຄິ່ງຄືທັງໝົດຈັກແກນ?"}
                 </p>
                 <div
                   style={{
@@ -252,6 +217,49 @@ export const unit6Data: UnitData = {
             </div>
           ),
         },
+        {
+          number: 2,
+          content: (
+            <div
+              style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+            >
+              <p>
+                {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບຕົວອັກສອນເຄິ່ງຄື: "}{" "}
+                <span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "12px",
+                  fontSize: "20px",
+                }}
+              >
+                <p style={{ margin: 0, lineHeight: "1.5" }}>
+                  {"🔤 ຕົວອັກສອນພາສາອັງກິດ 'H' ມີຄຸນລັກສະນະເປັນທັງຮູບເຄິ່ງຄືກັນທຽບໃສ່ເສັ້ນຊື່ ແລະ ຮູບເຄິ່ງຄືກັນທຽບໃສ່ເມັດ ຫຼື ບໍ່?"}
+                </p>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "12px",
+                    alignItems: "center",
+                    marginTop: "8px",
+                  }}
+                >
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span
+                    className="answer-blank"
+                    style={{
+                      display: "inline-block",
+                      width: "120px",
+                      height: "40px",
+                    }}
+                  ></span>
+                </div>
+              </div>
+            </div>
+          ),
+        },
       ],
     },
     summaryProblems: [
@@ -262,39 +270,68 @@ export const unit6Data: UnitData = {
             style={{ display: "flex", flexDirection: "column", gap: "16px" }}
           >
             <p>
-              {"ຈົ່ງແກ້ໂຈດບັນຫາເພື່ອທົດສອບ: "}{" "}
-              <span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ຈົ່ງແກ້ໂຈດບັນຫາເພື່ອທົດສອບຄວາມເຂົ້າໃຈ: "}{" "}
+              <span className="point-label">{"(ຂໍ້ລະ 3 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "12px",
+                display: "grid",
+                gridTemplateColumns: "1fr",
+                gap: "20px",
                 fontSize: "20px",
+                padding: "8px 16px",
               }}
             >
-              <p style={{ margin: 0, lineHeight: "1.5" }}>
-                {
-                  "📐 ຮູບສາມແຈສະເໝີ ແມ່ນຮູບເຄິ່ງຄືກັນທຽບໃສ່ເມັດ (ປິ່ນ 180° ແລ້ວທັບກັນພໍດີ) ຫຼື ບໍ່?"
-                }
-              </p>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "12px",
-                  alignItems: "center",
-                  marginTop: "8px",
-                }}
-              >
-                <span>{"ຄຳຕອບ:"}</span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "120px",
-                    height: "40px",
-                  }}
-                ></span>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <span>{"(1) 📐 ຮູບສາມແຈສະເໝີ ແມ່ນຮູບເຄິ່ງຄືກັນທຽບໃສ່ເມັດ (ໝູນ 180° ແລ້ວທັບກັນພໍດີ) ຫຼື ບໍ່?"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                </div>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <span>{"(2) 🛑 ຮູບຫົກແຈສະເໝີ (Regular Hexagon) ແມ່ນຮູບເຄິ່ງຄືກັນທຽບໃສ່ເມັດ ຫຼື ບໍ່?"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        ),
+      },
+      {
+        number: 2,
+        content: (
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+          >
+            <p>
+              {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບຄຸນລັກສະນະຂອງຮູບເຄິ່ງຄື: "}{" "}
+              <span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
+            </p>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr",
+                gap: "20px",
+                fontSize: "20px",
+                padding: "8px 16px",
+              }}
+            >
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <span>{"(1) ໃນຮູບເຄິ່ງຄືກັນທຽບໃສ່ເສັ້ນຊື່, ເສັ້ນຊື່ທີ່ເຊື່ອມຕໍ່ສອງເມັດສົມທຽບກັນ ຈະຕັ້ງສາກ (直交) ກັບແກນເຄິ່ງຄື ຫຼື ບໍ່?"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <span>{"(2) ໃນຮູບເຄິ່ງຄືກັນທຽບໃສ່ເມັດ, ເເສັ້ນຊື່ທີ່ເຊື່ອມຕໍ່ສອງເມັດສົມທຽບກັນ ຈະຜ່ານເມັດໃຈກາງເຄິ່ງຄືສະເໝີ ຫຼື ບໍ່?"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
               </div>
             </div>
           </div>
@@ -306,29 +343,41 @@ export const unit6Data: UnitData = {
         {
           questionNumber: 1,
           answers: [
-            <span key="1">
-              {
-                "(1) ແມ່ນ (ມີແກນຫຼາຍບໍ່ສິ້ນສຸດ), (2) ບໍ່ແມ່ນ (ແຕ່ແມ່ນຮູບເຄິ່ງຄືກັນທຽບໃສ່ເມັດ), (3) 4 ແກນ, (4) ແມ່ນ (ປິ່ນ 180° ແລ້ວທັບກັນພໍດີ)"
-              }
-            </span>,
+            <span key="u6-ans-1-1">{"(1) ແມ່ນ (ມີແກນເຄິ່ງຄືຫຼາຍບໍ່ສິ້ນສຸດ)"}</span>,
+            <span key="u6-ans-1-2">{"(2) ບໍ່ແມ່ນ (ແຕ່ແມ່ນຮູບເຄິ່ງຄືກັນທຽບໃສ່ເມັດ)"}</span>,
+          ],
+        },
+        {
+          questionNumber: 2,
+          answers: [
+            <span key="u6-ans-2-1">{"(1) 4 ແກນ"}</span>,
+            <span key="u6-ans-2-2">{"(2) ແມ່ນ (ປິ່ນ 180° ແລ້ວທັບກັນພໍດີ)"}</span>,
           ],
         },
         {
           questionNumber: "ທ້າທາຍ 1",
           answers: [
-            <span key="2">
-              {"5 ແກນ (ຍ້ອນແຕ່ລະແຈສາມາດຜ່ານໃຈກາງຫາຂ້າງກົງກັນຂ້າມໄດ້)"}
-            </span>,
+            <span key="u6-ans-t1-1">{"5 ແກນ (ຍ້ອນແຕ່ລະແຈສາມາດຜ່ານໃຈກາງຫາຂ້າງກົງກັນຂ້າມໄດ້)"}</span>,
+          ],
+        },
+        {
+          questionNumber: "ທ້າທາຍ 2",
+          answers: [
+            <span key="u6-ans-t2-1">{"ແມ່ນ (ສາມາດພັບເຄິ່ງໄດ້ທັງແນວນອນ/ແນວຕັ້ງ ແລະ ປິ່ນ 180° ກໍ່ທັບກັນພໍດີ)"}</span>,
           ],
         },
         {
           questionNumber: "ທົດສອບປະຈຳບົດ 1",
           answers: [
-            <span key="3">
-              {
-                "ບໍ່ແມ່ນ (ຍ້ອນເມື່ອປິ່ນ 180° ແລ້ວ ຍອດສາມແຈຈະຊີ້ລົງລຸ່ມ ເຮັດໃຫ້ບໍ່ທັບກັບຮູບເດີມ)"
-              }
-            </span>,
+            <span key="u6-ans-s1-1">{"(1) ບໍ່ແມ່ນ (ຍ້ອນເມື່ອປິ່ນ 180° ຍອດສາມແຈຈະຊີ້ລົງລຸ່ມ)"}</span>,
+            <span key="u6-ans-s1-2">{"(2) ແມ່ນ (ຍ້ອນເປັນຮູບຫຼາຍແຈສະເໝີທີ່ມີຈຳນວນແຈເປັນເລກຄູ່)"}</span>,
+          ],
+        },
+        {
+          questionNumber: "ທົດສອບປະຈຳບົດ 2",
+          answers: [
+            <span key="u6-ans-s2-1">{"(1) ຕັ້ງສາກ"}</span>,
+            <span key="u6-ans-s2-2">{"(2) ຜ່ານເມັດໃຈກາງເຄິ່ງຄື"}</span>,
           ],
         },
       ],
