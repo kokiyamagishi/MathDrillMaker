@@ -15,8 +15,10 @@ export const unit8Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ວິທີແກ້ໂຈດບັນຫາຄະນິດສາດກ່ຽວກັບການເຄື່ອນທີ່ (Word Problems of Motion) ໂດຍນຳໃຊ້ສົມຜົນພົວພັນລະຫວ່າງ ໄລຍະທາງ (Distance), ຄວາມໄວ (Speed) ແລະ ເວລາ (Time)",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 8 ໜ້າ 43-48",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ສູດພື້ນຖານຂອງການເຄື່ອນທີ່ (Fundamental Motion Formulas)",
+      keyPoint: {
       title: "1. ສູດພື້ນຖານຂອງການເຄື່ອນທີ່ (Fundamental Motion Formulas)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -61,7 +63,43 @@ export const unit8Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຄິດໄລ່ຫາໄລຍະທາງ, ຄວາມໄວ ຫຼື ເວລາ ຂອງການເຄື່ອນທີ່ພື້ນຖານ: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) ລົດຈັກຄັນໜຶ່ງແລ່ນດ້ວຍຄວາມໄວ 50 km/h ເປັນເວລາ 3 ຊົ່ວໂມງ. ໄລຍະທາງ d ທີ່ແລ່ນໄດ້ແມ່ນຈັກ km? (d = v × t):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              <span>{"km"}</span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) ລົດໃຫຍ່ຄັນໜຶ່ງແລ່ນໄດ້ໄລຍະທາງ 240 km ໃນເວລາ 4 ຊົ່ວໂມງ. ຄວາມໄວສະເລ່ຍ v ຂອງລົດແມ່ນຈັກ km/h? (v = d/t):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              <span>{"km/h"}</span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ແຜນວາດການເຄື່ອນທີ່ສວນທາງ ແລະ ໄລ່ທັນ (Two Motion Scenarios)",
+      keyPoint: {
       title: "2. ແຜນວາດການເຄື່ອນທີ່ສວນທາງ ແລະ ໄລ່ທັນ (Two Motion Scenarios)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -113,40 +151,8 @@ export const unit8Data: UnitData = {
         text: "ຖ້າເຄື່ອນທີ່ສວນທາງກັນ ຄວາມໄວລວມຈະແມ່ນ v₁ + v₂. ແຕ່ຖ້າແລ່ນໄລ່ທັນກັນໃນທິດດຽວກັນ ຄວາມໄວຜົນຕ່າງຈະແມ່ນ v₂ - v₁ ເດີ້!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ຫາໄລຍະທາງ, ຄວາມໄວ ຫຼື ເວລາ ຂອງການເຄື່ອນທີ່ພື້ນຖານ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ລົດຈັກຄັນໜຶ່ງແລ່ນດ້ວຍຄວາມໄວ 50 km/h ເປັນເວລາ 3 ຊົ່ວໂມງ. ໄລຍະທາງ d ທີ່ແລ່ນໄດ້ແມ່ນຈັກ km? (d = v × t):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"km"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ລົດໃຫຍ່ຄັນໜຶ່ງແລ່ນໄດ້ໄລຍະທາງ 240 km ໃນເວລາ 4 ຊົ່ວໂມງ. ຄວາມໄວສະເລ່ຍ v ຂອງລົດແມ່ນຈັກ km/h? (v = d/t):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"km/h"}</span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -176,7 +182,9 @@ export const unit8Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

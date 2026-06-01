@@ -15,8 +15,10 @@ export const unit1Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບນິຍາມຂອງເລກສ່ວນປົກກະຕິ, ຊອກຫາເງື່ອນໄຂກຳນົດຂອງຕົວປ່ຽນທີ່ເຮັດໃຫ້ພູດຕ່າງຈາກສູນ ແລະ ການຄັດຈ້ອນເລກສ່ວນປົກກະຕິໃຫ້ຢູ່ໃນຮູບຮ່າງງ່າຍດາຍທີ່ສຸດ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 1 ໜ້າ 5-10",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ນິຍາມ ແລະ ເງື່ອນໄຂກຳນົດຂອງເລກສ່ວນປົກກະຕິ (Definition and Undefined Conditions)",
+      keyPoint: {
       title: "1. ນິຍາມ ແລະ ເງື່ອນໄຂກຳນົດຂອງເລກສ່ວນປົກກະຕິ (Definition and Undefined Conditions)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -55,7 +57,41 @@ export const unit1Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຊອກຫາຄ່າຂອງ x ທີ່ເຮັດໃຫ້ເລກສ່ວນປົກກະຕິຕໍ່ໄປນີ້ບໍ່ກຳນົດ (ພູດເທົ່າກັບ 0): "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) ສຳນວນ: "} <Fraction num="x - 1" den="x - 5" /> {" ຈະບໍ່ກຳນົດເມື່ອ x ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) ສຳນວນ: "} <Fraction num="2x + 4" den="3x - 12" /> {" ຈະບໍ່ກຳນົດເມື່ອ x ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ການຄັດຈ້ອນເລກສ່ວນປົກກະຕິ (Simplification of Rational Expressions)",
+      keyPoint: {
       title: "2. ການຄັດຈ້ອນເລກສ່ວນປົກກະຕິ (Simplification of Rational Expressions)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -101,38 +137,8 @@ export const unit1Data: UnitData = {
         text: "ຕ້ອງຜັນປ່ຽນໃຫ້ເປັນສ່ວນຄູນກ່ອນຈຶ່ງຄັດຈ້ອນໄດ້! ຫ້າມຄັດຈ້ອນໂຕ x ທີ່ຢູ່ໃນຮູບການບວກລົບໂດຍກົງເດັດຂາດ!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາຄ່າຂອງ x ທີ່ເຮັດໃຫ້ເລກສ່ວນປົກກະຕິຕໍ່ໄປນີ້ບໍ່ກຳນົດ (ພູດເທົ່າກັບ 0): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ສຳນວນ: "} <Fraction num="x - 1" den="x - 5" /> {" ຈະບໍ່ກຳນົດເມື່ອ x ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ສຳນວນ: "} <Fraction num="2x + 4" den="3x - 12" /> {" ຈະບໍ່ກຳນົດເມື່ອ x ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -160,7 +166,9 @@ export const unit1Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

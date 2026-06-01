@@ -15,8 +15,10 @@ export const unit3Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບວິທີຫານພະຫຸພົດດ້ວຍວິທີຫານແບບຕັ້ງບັ້ງ ແລະ ການນຳໃຊ້ຫຼັກເກັນເສດເຫຼືອ (Remainder Theorem) ເພື່ອຊອກຫາຕົວເສດໄດ້ຢ່າງວ່ອງໄວ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 3 ໜ້າ 16-20",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ວິທີຫານພະຫຸພົດແບບຕັ້ງບັ້ງ (Polynomial Long Division)",
+      keyPoint: {
       title: "1. ວິທີຫານພະຫຸພົດແບບຕັ້ງບັ້ງ (Polynomial Long Division)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -59,7 +61,41 @@ export const unit3Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຊອກຫາຜົນຫານ ໂດຍການຕັ້ງບັ້ງຫານພະຫຸພົດຕໍ່ໄປນີ້: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄะແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) ຊອກຫາຜົນຫານຂອງ: (x² + 4x + 3) ÷ (x + 1) = (ຕອບເປັນພະຫຸພົດງ່າຍດາຍ):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) ຊອກຫາຜົນຫານຂອງ: (x² - 5x + 6) ÷ (x - 2) ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ຫຼັກເກັນເສດເຫຼືອ (Remainder Theorem)",
+      keyPoint: {
       title: "2. ຫຼັກເກັນເສດເຫຼືອ (Remainder Theorem)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -97,38 +133,8 @@ export const unit3Data: UnitData = {
         text: "⚠️ ຂໍ້ຄວນລະວັງ: ຖ້າຕົວຫານແມ່ນ (x + 2), ເຮົາຕ້ອງແທນຄ່າ c = -2 ເດີ້! ຕ້ອງປີ້ນເຄື່ອງໝາຍຂອງ c ສະເໝີ!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາຜົນຫານ ໂດຍການຕັ້ງບັ້ງຫານພະຫຸພົດຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄะແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຊອກຫາຜົນຫານຂອງ: (x² + 4x + 3) ÷ (x + 1) = (ຕອບເປັນພະຫຸພົດງ່າຍດາຍ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຊອກຫາຜົນຫານຂອງ: (x² - 5x + 6) ÷ (x - 2) ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -156,7 +162,9 @@ export const unit3Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

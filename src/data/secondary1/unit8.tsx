@@ -15,8 +15,10 @@ export const unit8Data: UnitData = {
   unitGoal:
   "ຮຽນຮູ້ກ່ຽວກັບລະບົບຈຳນວນໃນພື້ນຖານຕ່າງໆ ເຊັ່ນ ພື້ນຖານສິບ, ພື້ນຖານສອງ ແລະ ພື້ນຖານຫ້າ ພ້ອມທັງວິທີການປ່ຽນລະຫວ່າງພື້ນຖານ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 56-61",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ລະບົບຈຳນວນພື້ນຖານຕ່າງໆ (Number Bases)",
+      keyPoint: {
       title: "1. ລະບົບຈຳນວນພື້ນຖານຕ່າງໆ (Number Bases)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -51,7 +53,48 @@ export const unit8Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງປ່ຽນຈຳນວນພື້ນຖານສິບລຸ່ມນີ້ ໃຫ້ເປັນຈຳນວນໃນລະບົບພື້ນຖານສອງ: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 1.66 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "12px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(1) 5 ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+              <span>{"₂"}</span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(2) 8 ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+              <span>{"₂"}</span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(3) 12 ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+              <span>{"₂"}</span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ວິທີປ່ຽນຈາກພື້ນຖານສິບ ເປັນພື້ນຖານສອງ",
+      keyPoint: {
       title: "2. ວິທີປ່ຽນຈາກພື້ນຖານສິບ ເປັນພື້ນຖານສອງ",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -91,7 +134,42 @@ export const unit8Data: UnitData = {
         text: "ການຫານໃຫ້ 2 ຈະມີຕົວເສດພຽງແຕ່ 0 (ຖ້າເປັນເລກຄູ່) ຫຼື 1 (ຖ້າເປັນເລກຄີກ) ເທົ່ານັ້ນເດີ້!",
       },
     },
+      problems: [
+        {
+      number: 2,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຄິດໄລ່ກ່ຽວກັບຈຳນວນໃນລະບົບພື້ນຖານຫ້າດັ່ງຕໍ່ໄປນີ້: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "20px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) ປ່ຽນຈຳນວນພື້ນຖານຫ້າ 13₅ ໃຫ້ເປັນພື້ນຖານສິບ ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) ປ່ຽນຈຳນວນພື້ນຖານສິບ 14 ໃຫ້ເປັນພື້ນຖານຫ້າ ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              <span>{"₅"}</span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "3. ວິທີປ່ຽນຈາກພື້ນຖານອື່ນ ເປັນພື້ນຖານສິບ",
+      keyPoint: {
       title: "3. ວິທີປ່ຽນຈາກພື້ນຖານອື່ນ ເປັນພື້ນຖານສິບ",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -129,74 +207,10 @@ export const unit8Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງປ່ຽນຈຳນວນພື້ນຖານສິບລຸ່ມນີ້ ໃຫ້ເປັນຈຳນວນໃນລະບົບພື້ນຖານສອງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 1.66 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "12px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(1) 5 ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              <span>{"₂"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(2) 8 ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              <span>{"₂"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(3) 12 ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              <span>{"₂"}</span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ກ່ຽວກັບຈຳນວນໃນລະບົບພື້ນຖານຫ້າດັ່ງຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ປ່ຽນຈຳນວນພື້ນຖານຫ້າ 13₅ ໃຫ້ເປັນພື້ນຖານສິບ ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ປ່ຽນຈຳນວນພື້ນຖານສິບ 14 ໃຫ້ເປັນພື້ນຖານຫ້າ ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"₅"}</span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
+      problems: [
+        
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

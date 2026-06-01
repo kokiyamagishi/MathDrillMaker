@@ -7,8 +7,10 @@ export const unit23Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບຄວາມຮັບຮູ້ເບື້ອງຕົ້ນຂອງກຸ່ມ, ວິທີການກຳນົດກຸ່ມໂດຍການຂຽນແບບແຈກຢາຍອົງປະກອບ ແລະ ການລະບຸຄຸນລັກສະນະ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ບົດທີ 23 ໜ້າ 153-157",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ຄວາມຮັບຮູ້ກ່ຽວກັບກຸ່ມ (Concept of Sets)",
+      keyPoint: {
       title: "1. ຄວາມຮັບຮູ້ກ່ຽວກັບກຸ່ມ (Concept of Sets)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -40,7 +42,47 @@ export const unit23Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p style={{ fontSize: "1.375rem" }}>
+            {"ຈົ່ງຂຽນກຸ່ມຕໍ່ໄປນີ້ແບບແຈກຢາຍອົງປະກອບ (ຂຽນອົງປະກອບລຽງແຕ່ໜ້ອຍຫາຫຼາຍ ໃສ່ໃນວົງປີກກາ ເຊັ່ນ {2, 4, 6}): "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "20px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+              <span>{"(1) ກຸ່ມ A ຂອງບັນດາຕົວເລກຄີກແຕ່ 1 ຫາ 7 (ລວມທັງ 1 ແລະ 7):"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                <span>{"ຕອບ: A ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "40px" }}></span>
+              </div>
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+              <span>{"(2) ກຸ່ມ B ຂອງບັນດາຕົວເລກທຳມະຊາດທີ່ເປັນຕົວຫານຂອງ 12 (ຕົວຫານຮ່ວມຂອງ 12 ແຕ່ໜ້ອຍຫາຫຼາຍ):"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                <span>{"ຕອບ: B ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "240px", height: "40px" }}></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ວິທີກຳນົດກຸ່ມ (Methods of Defining Sets)",
+      keyPoint: {
       title: "2. ວິທີກຳນົດກຸ່ມ (Methods of Defining Sets)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -76,44 +118,8 @@ export const unit23Data: UnitData = {
         text: "ເຄື່ອງໝາຍ | ໃນວົງປີກກາອ່ານວ່າ 'ໂດຍທີ່' ຫຼື 'ເຊິ່ງວ່າ' ເດີ້!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p style={{ fontSize: "1.375rem" }}>
-            {"ຈົ່ງຂຽນກຸ່ມຕໍ່ໄປນີ້ແບບແຈກຢາຍອົງປະກອບ (ຂຽນອົງປະກອບລຽງແຕ່ໜ້ອຍຫາຫຼາຍ ໃສ່ໃນວົງປີກກາ ເຊັ່ນ {2, 4, 6}): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ກຸ່ມ A ຂອງບັນດາຕົວເລກຄີກແຕ່ 1 ຫາ 7 (ລວມທັງ 1 ແລະ 7):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: A ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ກຸ່ມ B ຂອງບັນດາຕົວເລກທຳມະຊາດທີ່ເປັນຕົວຫານຂອງ 12 (ຕົວຫານຮ່ວມຂອງ 12 ແຕ່ໜ້ອຍຫາຫຼາຍ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: B ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "240px", height: "40px" }}></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -149,7 +155,9 @@ export const unit23Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

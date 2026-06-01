@@ -15,8 +15,10 @@ export const unit13Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບນິຍາມຂອງຕຳລາຂັ້ນສອງ (Quadratic Functions) ແລະ ລັກສະນະພື້ນຖານຂອງເສັ້ນສະແດງປາຣາໂບນໃນຮູບຮ່າງ y = x²",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 13 ໜ້າ 73-78",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ນິຍາມຂອງຕຳລາຂັ້ນສອງ (Definition of Quadratic Functions)",
+      keyPoint: {
       title: "1. ນິຍາມຂອງຕຳລາຂັ້ນສອງ (Definition of Quadratic Functions)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -55,7 +57,41 @@ export const unit13Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຊອກຫາຄ່າຂອງ y ຂອງຕຳລາ y = x² ຕາມຄ່າ x ທີ່ກຳນົດ: "}{" "}
+            <span className="point-label">{"(ຂໍ้ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) ຖ້າ x = 3, ຄ່າຂອງ y = x² ແມ່ນເທົ່າໃດ? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) ຖ້າ x = -5, ຄ່າຂອງ y = x² ແມ່ນເທົ່າໃດ? (⚠️ ຢ່າລືມເຄື່ອງໝາຍລົບຄູນລົບເປັນບວກ):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ແຜນວາດເສັ້ນສະແດງ y = x² (Graph of y = x²)",
+      keyPoint: {
       title: "2. ແຜນວາດເສັ້ນສະແດງ y = x² (Graph of y = x²)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -91,38 +127,8 @@ export const unit13Data: UnitData = {
         text: "ສັງເກດວ່າເສັ້ນສະແດງມີຄວາມເຄິ່ງຄືກັນ (Symmetrical) ລະຫວ່າງເບື້ອງຊ້າຍ ແລະ ເບື້ອງຂວາຂອງແກນ y ເດີ້!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາຄ່າຂອງ y ຂອງຕຳລາ y = x² ຕາມຄ່າ x ທີ່ກຳນົດ: "}{" "}
-            <span className="point-label">{"(ຂໍ้ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຖ້າ x = 3, ຄ່າຂອງ y = x² ແມ່ນເທົ່າໃດ? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຖ້າ x = -5, ຄ່າຂອງ y = x² ແມ່ນເທົ່າໃດ? (⚠️ ຢ່າລືມເຄື່ອງໝາຍລົບຄູນລົບເປັນບວກ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -150,7 +156,9 @@ export const unit13Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

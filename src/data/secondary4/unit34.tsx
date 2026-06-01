@@ -15,8 +15,10 @@ export const unit34Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ນຳໃຊ້ຜົນຄູນສະກາເລ (Scalar Product / Dot Product) ຂອງສອງເວັກເຕີໃນຮູບແບບພິກັດ ແລະ ເງື່ອນໄຂທີ່ເຮັດໃຫ້ສອງເວັກເຕີຕັ້ງສາກກັນ (Orthogonality)",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 34 ໜ້າ 199-204",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ນິຍາມ ແລະ ສູດຜົນຄູນສະກາເລ (Scalar Product Formulas)",
+      keyPoint: {
       title: "1. ນິຍາມ ແລະ ສູດຜົນຄູນສະກາເລ (Scalar Product Formulas)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -71,9 +73,8 @@ export const unit34Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -101,8 +102,14 @@ export const unit34Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ບົດຮຽນພື້ນຖານ",
+      keyPoint: { content: <span /> },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -130,7 +137,9 @@ export const unit34Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

@@ -15,8 +15,10 @@ export const unit2Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍຂອງຈຳນວນຖ້ວນບວກ ແລະ ຈຳນວນຖ້ວນລົບ, ການນຳໃຊ້ສັນຍະລັກກຸ່ມ (Z, Z+, Z-), ແກນຈຳນວນຖ້ວນ ແລະ ຈຳນວນກົງກັນຂ້າມ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 10-15",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ຈຳນວນຖ້ວນບວກ ແລະ ຈຳນວນຖ້ວນລົບ",
+      keyPoint: {
       title: "1. ຈຳນວນຖ້ວນບວກ ແລະ ຈຳນວນຖ້ວນລົບ",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -71,7 +73,51 @@ export const unit2Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງບອກວ່າຈຳນວນຕໍ່ໄປນີ້ ແມ່ນຈຳນວນຖ້ວນບວກ ຫຼື ຈຳນວນຖ້ວນລົບ ແລະ ຂຽນວິທີອ່ານ: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) +5 ແມ່ນຈຳນວນຖ້ວນ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              <span>{", ອ່ານວ່າ:"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) -12 ແມ່ນຈຳນວນຖ້ວນ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              <span>{", ອ່ານວ່າ:"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(3) -7 ແມ່ນຈຳນວນຖ້ວນ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              <span>{", ອ່ານວ່າ:"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ກຸ່ມຂອງຈຳນວນຖ້ວນ",
+      keyPoint: {
       title: "2. ກຸ່ມຂອງຈຳນວນຖ້ວນ",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -103,7 +149,49 @@ export const unit2Data: UnitData = {
         text: "ກຸ່ມຈຳນວນທຳມະຊາດ N ແມ່ນສ່ວນໜຶ່ງຂອງກຸ່ມຈຳນວນຖ້ວນ Z (N ⊂ Z) ເດີ້!",
       },
     },
+      problems: [
+        {
+      number: 2,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຕື່ມເຄື່ອງໝາຍ "}<strong>{"∈"}</strong>{" ຫຼື "}<strong>{"∉"}</strong>{" ໃສ່ບ່ອນວ່າງໃຫ້ຖືກຕ້ອງ: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "20px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(1) -4"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+              <span>{"Z+"}</span>
+              <span style={{ marginLeft: "40px" }}>{"(2) 0"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+              <span>{"Z-"}</span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(3) +7"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+              <span>{"Z"}</span>
+              <span style={{ marginLeft: "40px" }}>{"(4) N"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+              <span>{"Z (ຕື່ມ ⊂ ຫຼື ⊄)"}</span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "3. ແກນຈຳນວນ ແລະ ຈຳນວນກົງກັນຂ້າມ",
+      keyPoint: {
       title: "3. ແກນຈຳນວນ ແລະ ຈຳນວນກົງກັນຂ້າມ",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -150,84 +238,10 @@ export const unit2Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງບອກວ່າຈຳນວນຕໍ່ໄປນີ້ ແມ່ນຈຳນວນຖ້ວນບວກ ຫຼື ຈຳນວນຖ້ວນລົບ ແລະ ຂຽນວິທີອ່ານ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) +5 ແມ່ນຈຳນວນຖ້ວນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{", ອ່ານວ່າ:"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) -12 ແມ່ນຈຳນວນຖ້ວນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{", ອ່ານວ່າ:"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(3) -7 ແມ່ນຈຳນວນຖ້ວນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{", ອ່ານວ່າ:"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຕື່ມເຄື່ອງໝາຍ "}<strong>{"∈"}</strong>{" ຫຼື "}<strong>{"∉"}</strong>{" ໃສ່ບ່ອນວ່າງໃຫ້ຖືກຕ້ອງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(1) -4"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"Z+"}</span>
-              <span style={{ marginLeft: "40px" }}>{"(2) 0"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"Z-"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(3) +7"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"Z"}</span>
-              <span style={{ marginLeft: "40px" }}>{"(4) N"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"Z (ຕື່ມ ⊂ ຫຼື ⊄)"}</span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
+      problems: [
+        
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

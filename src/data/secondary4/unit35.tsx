@@ -15,8 +15,10 @@ export const unit35Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈຫຼັກການຍ້າຍຂະໜານ (Translation) ຂອງຮູບເລຂາຄະນິດເທິງໜ້າພຽງພິກັດ Oxy ແລະ ສູດຄິດໄລ່ພິກັດໃໝ່ x' = x + a, y' = y + b",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 35 ໜ້າ 205-210",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ນິຍາມ ແລະ ສູດພິກັດຂອງການຍ້າຍຂະໜານ (Translation Coordinate Formula)",
+      keyPoint: {
       title: "1. ນິຍາມ ແລະ ສູດພິກັດຂອງການຍ້າຍຂະໜານ (Translation Coordinate Formula)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -63,9 +65,8 @@ export const unit35Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -93,8 +94,14 @@ export const unit35Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ບົດຮຽນພື້ນຖານ",
+      keyPoint: { content: <span /> },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -122,7 +129,9 @@ export const unit35Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

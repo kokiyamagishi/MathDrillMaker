@@ -15,8 +15,10 @@ export const unit4Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບການບວກ ແລະ ການລົບຈຳນວນຖ້ວນ (ທັງເຄື່ອງໝາຍຄືກັນ ແລະ ຕ່າງກັນ), ຄ່າສຳບູນ (ໄລຍະຫ່າງຈາກ 0) ແລະ ຫຼັກການປ່ຽນເຄື່ອງໝາຍ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 24-31",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ໄລຍະຫ່າງຈາກ 0 (ຄ່າສຳບູນ)",
+      keyPoint: {
       title: "1. ໄລຍະຫ່າງຈາກ 0 (ຄ່າສຳບູນ)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -45,7 +47,53 @@ export const unit4Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຊອກຫາຜົນບວກຂອງຈຳນວນຖ້ວນຕໍ່ໄປນີ້: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(1) (+3) + (+7) ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(2) (-8) + (-12) ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(3) (-6) + (+8) ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(4) (+4) + (-7) ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(5) (-15) + (+5) ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ການບວກຈຳນວນຖ້ວນ",
+      keyPoint: {
       title: "2. ການບວກຈຳນວນຖ້ວນ",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -87,7 +135,45 @@ export const unit4Data: UnitData = {
         text: "ເວລາບວກເຄື່ອງໝາຍຕ່າງກັນ ໃຫ້ເບິ່ງວ່າຈຳນວນໃດຢູ່ຫ່າງຈາກ 0 ຫຼາຍກວ່າ, ແລ້ວໃຊ້ເຄື່ອງໝາຍຂອງຕົວນັ້ນເດີ້!",
       },
     },
+      problems: [
+        {
+      number: 2,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງປ່ຽນການລົບໃຫ້ເປັນການບວກຈຳນວນກົງກັນຂ້າມ ແລ້ວຄິດໄລ່ຄຳຕອບ: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "20px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) (-5) - (+8) = (-5) +"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              <span>{"="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) (-3) - (-7) = (-3) +"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              <span>{"="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "3. ການລົບຈຳນວນຖ້ວນ",
+      keyPoint: {
       title: "3. ການລົບຈຳນວນຖ້ວນ",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -132,82 +218,10 @@ export const unit4Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາຜົນບວກຂອງຈຳນວນຖ້ວນຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(1) (+3) + (+7) ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(2) (-8) + (-12) ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(3) (-6) + (+8) ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(4) (+4) + (-7) ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(5) (-15) + (+5) ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງປ່ຽນການລົບໃຫ້ເປັນການບວກຈຳນວນກົງກັນຂ້າມ ແລ້ວຄິດໄລ່ຄຳຕອບ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) (-5) - (+8) = (-5) +"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) (-3) - (-7) = (-3) +"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
+      problems: [
+        
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

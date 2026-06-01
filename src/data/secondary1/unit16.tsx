@@ -7,8 +7,10 @@ export const unit16Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈວິທີການປ່ຽນຫົວໜ່ວຍການວັດແທກລວງຍາວ, ການຄຳນວນ ແລະ ການປຽບທຽບລວງຍາວທີ່ມີຫົວໜ່ວຍຕ່າງກັນ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ບົດທີ 16 ໜ້າ 111-115",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ຕາຕະລາງຫົວໜ່ວຍການວັດແທກລວງຍາວ (Length Conversion Table)",
+      keyPoint: {
       title: "1. ຕາຕະລາງຫົວໜ່ວຍການວັດແທກລວງຍາວ (Length Conversion Table)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -71,9 +73,8 @@ export const unit16Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -118,8 +119,14 @@ export const unit16Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ບົດຮຽນພື້ນຖານ",
+      keyPoint: { content: <span /> },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -149,7 +156,9 @@ export const unit16Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

@@ -15,8 +15,10 @@ export const unit6Data: UnitData = {
   unitGoal:
     "ເຂົ້າໃຈນິຍາມຂອງອັດຕາສ່ວນ, ການພົວພັນກົງ (Direct Proportion) ແລະ ການພົວພັນປີ້ນ (Inverse Proportion) ພ້ອມທັງສາມາດແກ້ບັນຫາຕົວຈິງໄດ້",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 6 ໜ້າ 31-36",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ການພົວພັນກົງ ແລະ ການພົວພັນປີ້ນ (Direct & Inverse Proportions)",
+      keyPoint: {
       title: "1. ການພົວພັນກົງ ແລະ ການພົວພັນປີ້ນ (Direct & Inverse Proportions)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -63,7 +65,41 @@ export const unit6Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຄິດໄລ່ຫາສຳປະສິດ ແລະ ຄ່າຂອງຕົວປ່ຽນໃນອັດຕາສ່ວນພົວພັນກົງ: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) ໃຫ້ y ພົວພັນກົງກັບ x. ເມື່ອ x = 3 ຈະໄດ້ y = 12. ສຳປະສິດພົວພັນກົງ k ແມ່ນເທົ່າໃດ? (k = y/x):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) ຈາກຂໍ້ (1), ຈົ່ງຊອກຫາຄ່າຂອງ y ເມື່ອ x = 5 (y = kx):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ເສັ້ນສະແດງການພົວພັນ (Graphical Representation)",
+      keyPoint: {
       title: "2. ເສັ້ນສະແດງການພົວພັນ (Graphical Representation)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -97,38 +133,8 @@ export const unit6Data: UnitData = {
         text: "ເສັ້ນສະແດງການພົວພັນກົງຈະເປັນເສັ້ນຊື່ຜ່ານເມັດເຄົ້າ O, ສ່ວນການພົວພັນປີ້ນຈະເປັນເສັ້ນໂຄ້ງ (Hyperbola) ເດີ້!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ຫາສຳປະສິດ ແລະ ຄ່າຂອງຕົວປ່ຽນໃນອັດຕາສ່ວນພົວພັນກົງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໃຫ້ y ພົວພັນກົງກັບ x. ເມື່ອ x = 3 ຈະໄດ້ y = 12. ສຳປະສິດພົວພັນກົງ k ແມ່ນເທົ່າໃດ? (k = y/x):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຈົ່ງຊອກຫາຄ່າຂອງ y ເມື່ອ x = 5 (y = kx):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -156,7 +162,9 @@ export const unit6Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

@@ -15,8 +15,10 @@ export const unit44Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈວິທີຄິດໄລ່ຄ່າວັດແທກການແຈກຢາຍ ໂດຍສະເພາະແມ່ນ ພິໄສ (Range) ແລະ ຄວໍໄທ (Quartile) ເພື່ອວິເຄາະການກະຈາຍຕົວຂອງຂໍ້ມູນ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 44 ໜ້າ 257-263",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ພິໄສ ຂອງຂໍ້ມູນ (Range of Data)",
+      keyPoint: {
       title: "1. ພິໄສ ຂອງຂໍ້ມູນ (Range of Data)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -47,7 +49,41 @@ export const unit44Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຄິດໄລ່ພິໄສ (Range) ຂອງຊຸດຂໍ້ມູນຕໍ່ໄປນີ້: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "20px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) ຊຸດຂໍ້ມູນ: 4, 8, 2, 10, 15, 6 ມີພິໄສເທົ່າໃດ? (ຕອບເປັນຕົວເລກ):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) ຊຸດຂໍ້ມູນ: 23, 15, 30, 45, 12, 18 ມີພິໄສເທົ່າໃດ? (ຕອບເປັນຕົວເລກ):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ຄວໍໄທ (Quartiles: Q₁, Q₂, Q₃)",
+      keyPoint: {
       title: "2. ຄວໍໄທ (Quartiles: Q₁, Q₂, Q₃)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -88,38 +124,8 @@ export const unit44Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ພິໄສ (Range) ຂອງຊຸດຂໍ້ມູນຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຊຸດຂໍ້ມູນ: 4, 8, 2, 10, 15, 6 ມີພິໄສເທົ່າໃດ? (ຕອບເປັນຕົວເລກ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຊຸດຂໍ້ມູນ: 23, 15, 30, 45, 12, 18 ມີພິໄສເທົ່າໃດ? (ຕອບເປັນຕົວເລກ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -150,7 +156,9 @@ export const unit44Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

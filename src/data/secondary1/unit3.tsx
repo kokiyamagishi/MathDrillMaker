@@ -15,8 +15,10 @@ export const unit3Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍ ແລະ ຊື່ເອີ້ນຂອງແຕ່ລະພົດໃນການບວກ ແລະ ການລົບ, ຄຸນລັກສະນະສະຫຼັບບ່ອນ, ຄຸນລັກສະນະໂຮມໝູ່ ແລະ ການພົວພັນປີ້ນກັບ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 16-23",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ການບວກຈຳນວນທຳມະຊາດ",
+      keyPoint: {
       title: "1. ການບວກຈຳນວນທຳມະຊາດ",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -66,7 +68,59 @@ export const unit3Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຕື່ມຊື່ເອີ້ນທາງຄະນິດສາດ (ພົດ, ຜົນບວກ, ຕົວຕັ້ງລົບ, ຕົວລົບ, ຜົນລົບ) ໃສ່ບ່ອນວ່າງໃຫ້ຖືກຕ້ອງ: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"ໃນປະໂຫຍກສັນຍະລັກ 125 + 45 = 170 :"}</span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "20px" }}>
+              <span>{"(1) 125 ເອີ້ນວ່າ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "20px" }}>
+              <span>{"(2) 170 ເອີ້ນວ່າ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", marginTop: "8px" }}>
+              <span>{"ໃນປະໂຫຍກສັນຍະລັກ 350 - 120 = 230 :"}</span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "20px" }}>
+              <span>{"(3) 350 ເອີ້ນວ່າ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "20px" }}>
+              <span>{"(4) 120 ເອີ້ນວ່າ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "20px" }}>
+              <span>{"(5) 230 ເອີ້ນວ່າ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ການລົບຈຳນວນທຳມະຊາດ",
+      keyPoint: {
       title: "2. ການລົບຈຳນວນທຳມະຊາດ",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -113,56 +167,8 @@ export const unit3Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຕື່ມຊື່ເອີ້ນທາງຄະນິດສາດ (ພົດ, ຜົນບວກ, ຕົວຕັ້ງລົບ, ຕົວລົບ, ຜົນລົບ) ໃສ່ບ່ອນວ່າງໃຫ້ຖືກຕ້ອງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"ໃນປະໂຫຍກສັນຍະລັກ 125 + 45 = 170 :"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "20px" }}>
-              <span>{"(1) 125 ເອີ້ນວ່າ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "20px" }}>
-              <span>{"(2) 170 ເອີ້ນວ່າ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", marginTop: "8px" }}>
-              <span>{"ໃນປະໂຫຍກສັນຍະລັກ 350 - 120 = 230 :"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "20px" }}>
-              <span>{"(3) 350 ເອີ້ນວ່າ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "20px" }}>
-              <span>{"(4) 120 ເອີ້ນວ່າ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "20px" }}>
-              <span>{"(5) 230 ເອີ້ນວ່າ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -190,7 +196,9 @@ export const unit3Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

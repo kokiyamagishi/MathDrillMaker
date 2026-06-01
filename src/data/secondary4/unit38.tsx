@@ -15,8 +15,10 @@ export const unit38Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ນຳໃຊ້ສູດຄິດໄລ່ເນື້ອທີ່ໜ້າທັງໝົດ (Total Surface Area) ຂອງຮູບທາດຈວຍ (Pyramid) ແລະ ຮູບຈວຍ (Cone) ໂດຍການບວກເນື້ອທີ່ພື້ນ ແລະ ເນື້ອທີ່ອ້ອມຂ້າງ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 38 ໜ້າ 223-228",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ເນື້ອທີ່ໜ້າທັງໝົດຂອງຮູບຈວຍ (Surface Area of a Cone)",
+      keyPoint: {
       title: "1. ເນື້ອທີ່ໜ້າທັງໝົດຂອງຮູບຈວຍ (Surface Area of a Cone)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -64,9 +66,8 @@ export const unit38Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -96,8 +97,14 @@ export const unit38Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ບົດຮຽນພື້ນຖານ",
+      keyPoint: { content: <span /> },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -127,7 +134,9 @@ export const unit38Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

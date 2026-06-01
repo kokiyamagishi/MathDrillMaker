@@ -15,8 +15,10 @@ export const unit7Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບການຄິດໄລ່ເປີເຊັນ (Percentage), ດອກເບ້ຍດ່ຽວ (Simple Interest) ແລະ ດອກເບ້ຍທົບຕົ້ນ (Compound Interest) ໃນຊີວິດປະຈຳວັນ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 7 ໜ້າ 37-42",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ການຄິດໄລ່ດອກເບ້ຍດ່ຽວ (Simple Interest)",
+      keyPoint: {
       title: "1. ການຄິດໄລ່ດອກເບ້ຍດ່ຽວ (Simple Interest)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -59,7 +61,43 @@ export const unit7Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຄິດໄລ່ຫາເປີເຊັນ ແລະ ສ່ວນຫຼຸດໃນການຄ້າຂາຍ: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) ເສື້ອຢືດລາຄາ 150,000 ກີບ ຕິດປ້າຍຫຼຸດລາຄາ 20%. ຈົ່ງຊອກຫາສ່ວນຫຼຸດເປັນກີບ? (ຕອບເປັນຕົວເລກ):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+              <span>{"ກີບ"}</span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) ຈາກຂໍ້ (1), ລາຄາຂາຍຕົວຈິງຂອງເສື້ອຢືດຫຼັງຈາກຫຼຸດແລ້ວແມ່ນຈັກກີບ?:"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+              <span>{"ກີບ"}</span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ການຄິດໄລ່ດອກເບ້ຍທົບຕົ້ນ (Compound Interest)",
+      keyPoint: {
       title: "2. ການຄິດໄລ່ດອກເບ້ຍທົບຕົ້ນ (Compound Interest)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -116,40 +154,8 @@ export const unit7Data: UnitData = {
         text: "ດອກເບ້ຍທົບຕົ້ນຈະເຮັດໃຫ້ເງິນເຕີບໂຕໄວກວ່າດອກເບ້ຍດ່ຽວໃນໄລຍະຍາວ ຍ້ອນມີຜົນຂອງດອກເບ້ຍຊ້ອນດອກເບ້ຍເດີ້!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ຫາເປີເຊັນ ແລະ ສ່ວນຫຼຸດໃນການຄ້າຂາຍ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ເສື້ອຢືດລາຄາ 150,000 ກີບ ຕິດປ້າຍຫຼຸດລາຄາ 20%. ຈົ່ງຊອກຫາສ່ວນຫຼຸດເປັນກີບ? (ຕອບເປັນຕົວເລກ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              <span>{"ກີບ"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ລາຄາຂາຍຕົວຈິງຂອງເສື້ອຢືດຫຼັງຈາກຫຼຸດແລ້ວແມ່ນຈັກກີບ?:"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              <span>{"ກີບ"}</span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -179,7 +185,9 @@ export const unit7Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

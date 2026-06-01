@@ -15,8 +15,10 @@ export const unit15Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບວິທີການອ່ານຄ່າຈາກການວັດແທກ, ຄວາມຮັບຮູ້ເລື່ອງຄວາມຄາດເຄື່ອນ (e) ແລະ ຄ່າໃກ້ຄຽງທີ່ເປັນຈິງຂອງລວງຍາວ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 103-110",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ຄວາມຄາດເຄື່ອນໃນການວັດແທກ (Measurement Error)",
+      keyPoint: {
       title: "1. ຄວາມຄາດເຄື່ອນໃນການວັດແທກ (Measurement Error)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -48,76 +50,8 @@ export const unit15Data: UnitData = {
         isBlue: true,
       },
     },
-    {
-      title: "2. ຂອບເຂດຂອງຄ່າຈິງ (Range of Real Value)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຖ້າເຮົາແທກລວງຍາວຂອງວັດຖຸໜຶ່ງໄດ້ L_measured = 15.3 cm ດ້ວຍໄມ້ບັນທັດ 1 mm, ຄ່າຈິງ (L) ຂອງມັນຈະຢູ່ໃນຂອບເຂດ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div style={{ fontWeight: "bold", color: "#2E7D32", textAlign: "center" }}>
-              {"15.3 cm - 0.05 cm ≤ L ≤ 15.3 cm + 0.05 cm"}
-              <br />
-              {"→ 15.25 cm ≤ L ≤ 15.35 cm"}
-            </div>
-            <div style={{ borderTop: "1px solid #C8E6C9", paddingTop: "8px", fontSize: "1.25rem" }}>
-              {"* 15.25 cm ເອີ້ນວ່າ ຂີດຈຳກັດລຸ່ມ, ແລະ 15.35 cm ເອີ້ນວ່າ ຂີດຈຳກັດເທິງ ຂອງຄ່າຈິງເດີ້!"}
-            </div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ຄ່າຈິງຈະຢູ່ລະຫວ່າງ (ຄ່າທີ່ແທກໄດ້ - ຄວາມຄາດເຄື່ອນ) ຫາ (ຄ່າທີ່ແທກໄດ້ + ຄວາມຄາດເຄື່ອນ) ສະເໝີ!",
-      },
-    },
-    {
-      title: "3. ການວັດແທກທາງອ້ອມ (Indirect Measurement)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ສຳລັບວັດຖຸທີ່ມີຂະໜາດນ້ອຍຫຼາຍ ເຊັ່ນ ຄວາມໜາຂອງເຈ້ຍ 1 ແຜ່ນ, ເຮົາຈະໃຊ້ວິທີວັດແທກທາງອ້ອມ ໂດຍການວາງຊ້ອນກັນຫຼາຍໆແຜ່ນ ແລ້ວຫານອອກ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF3E0",
-              border: "2px solid #FF9800",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>
-              <strong>{"ຕົວຢ່າງ: "}</strong>{"ເຈ້ຍ 100 ແຜ່ນ ຊ້ອນກັນແທກໄດ້ໜາ 1.2 cm (12 mm):"}
-            </div>
-            <div style={{ color: "#E65100", paddingLeft: "16px", fontWeight: "bold" }}>
-              {"• ຄວາມໜາປະມານຂອງເຈ້ຍ 1 ແຜ່ນ = 12 mm ÷ 100 = 0.12 mm"}
-            </div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ວິທີນີ້ຊ່ວຍຫຼຸດຜ່ອນຄວາມຄາດເຄື່ອນຂອງການວັດແທກສິ່ງຂອງທີ່ມີຂະໜາດນ້ອຍຫຼາຍໄດ້ດີທີ່ສຸດ!",
-        isBlue: true,
-      },
-    },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -200,8 +134,47 @@ export const unit15Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ຂອບເຂດຂອງຄ່າຈິງ (Range of Real Value)",
+      keyPoint: {
+      title: "2. ຂອບເຂດຂອງຄ່າຈິງ (Range of Real Value)",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"ຖ້າເຮົາແທກລວງຍາວຂອງວັດຖຸໜຶ່ງໄດ້ L_measured = 15.3 cm ດ້ວຍໄມ້ບັນທັດ 1 mm, ຄ່າຈິງ (L) ຂອງມັນຈະຢູ່ໃນຂອບເຂດ:"}
+          </p>
+          <div
+            style={{
+              padding: "16px",
+              backgroundColor: "#E8F5E9",
+              border: "2px solid #4CAF50",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "8px",
+            }}
+          >
+            <div style={{ fontWeight: "bold", color: "#2E7D32", textAlign: "center" }}>
+              {"15.3 cm - 0.05 cm ≤ L ≤ 15.3 cm + 0.05 cm"}
+              <br />
+              {"→ 15.25 cm ≤ L ≤ 15.35 cm"}
+            </div>
+            <div style={{ borderTop: "1px solid #C8E6C9", paddingTop: "8px", fontSize: "1.25rem" }}>
+              {"* 15.25 cm ເອີ້ນວ່າ ຂີດຈຳກັດລຸ່ມ, ແລະ 15.35 cm ເອີ້ນວ່າ ຂີດຈຳກັດເທິງ ຂອງຄ່າຈິງເດີ້!"}
+            </div>
+          </div>
+        </div>
+      ),
+      hint: {
+        text: "ຄ່າຈິງຈະຢູ່ລະຫວ່າງ (ຄ່າທີ່ແທກໄດ້ - ຄວາມຄາດເຄື່ອນ) ຫາ (ຄ່າທີ່ແທກໄດ້ + ຄວາມຄາດເຄື່ອນ) ສະເໝີ!",
+      },
+    },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -231,7 +204,48 @@ export const unit15Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
+    {
+      title: "3. ການວັດແທກທາງອ້ອມ (Indirect Measurement)",
+      keyPoint: {
+      title: "3. ການວັດແທກທາງອ້ອມ (Indirect Measurement)",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"ສຳລັບວັດຖຸທີ່ມີຂະໜາດນ້ອຍຫຼາຍ ເຊັ່ນ ຄວາມໜາຂອງເຈ້ຍ 1 ແຜ່ນ, ເຮົາຈະໃຊ້ວິທີວັດແທກທາງອ້ອມ ໂດຍການວາງຊ້ອນກັນຫຼາຍໆແຜ່ນ ແລ້ວຫານອອກ:"}
+          </p>
+          <div
+            style={{
+              padding: "16px",
+              backgroundColor: "#FFF3E0",
+              border: "2px solid #FF9800",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "6px",
+            }}
+          >
+            <div>
+              <strong>{"ຕົວຢ່າງ: "}</strong>{"ເຈ້ຍ 100 ແຜ່ນ ຊ້ອນກັນແທກໄດ້ໜາ 1.2 cm (12 mm):"}
+            </div>
+            <div style={{ color: "#E65100", paddingLeft: "16px", fontWeight: "bold" }}>
+              {"• ຄວາມໜາປະມານຂອງເຈ້ຍ 1 ແຜ່ນ = 12 mm ÷ 100 = 0.12 mm"}
+            </div>
+          </div>
+        </div>
+      ),
+      hint: {
+        text: "ວິທີນີ້ຊ່ວຍຫຼຸດຜ່ອນຄວາມຄາດເຄື່ອນຂອງການວັດແທກສິ່ງຂອງທີ່ມີຂະໜາດນ້ອຍຫຼາຍໄດ້ດີທີ່ສຸດ!",
+        isBlue: true,
+      },
+    },
+      problems: [
+        
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

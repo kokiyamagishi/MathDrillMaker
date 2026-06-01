@@ -15,8 +15,10 @@ export const unit21Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈຄວາມໝາຍຂອງມາດຕາສ່ວນ, ວິທີອ່ານມາດຕາສ່ວນໃນແຜນທີ່ ແລະ ການຄິດໄລ່ຫາໄລຍະທາງຕົວຈິງ ຫຼື ໄລຍະທາງໃນແຜນທີ່",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ບົດທີ 21 ໜ້າ 142-146",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ຄວາມໝາຍຂອງມາດຕາສ່ວນ (Definition of Scale)",
+      keyPoint: {
       title: "1. ຄວາມໝາຍຂອງມາດຕາສ່ວນ (Definition of Scale)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -50,45 +52,8 @@ export const unit21Data: UnitData = {
         isBlue: true,
       },
     },
-    {
-      title: "2. ການຄິດໄລ່ໄລຍະທາງຕົວຈິງ (Calculating Real Distance)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ສູດຄິດໄລ່ຊອກຫາໄລຍະທາງຕົວຈິງ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div style={{ fontWeight: "bold", color: "#2E7D32" }}>
-              {"• ໄລຍະທາງຕົວຈິງ = ໄລຍະທາງໃນແຜນທີ່ × ພູດຂອງມາດຕາສ່ວນ"}
-            </div>
-            <div>
-              {"ຕົວຢ່າງ: ໃນແຜນທີ່ມາດຕາສ່ວນ "}<strong>{"1:50,000"}</strong>{", ໄລຍະທາງລະຫວ່າງສອງເມັດແມ່ນ 4 cm."}
-              <br />
-              <span style={{ color: "#2E7D32", paddingLeft: "16px" }}>
-                {"→ ໄລຍະທາງຕົວຈິງ = 4 cm × 50,000 = 200,000 cm = 2,000 m = 2 km."}
-              </span>
-            </div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ການແປງຫົວໜ່ວຍທີ່ຄວນຈື່: 1 m = 100 cm | 1 km = 1,000 m = 100,000 cm ເດີ້!",
-      },
-    },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -124,8 +89,49 @@ export const unit21Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ການຄິດໄລ່ໄລຍະທາງຕົວຈິງ (Calculating Real Distance)",
+      keyPoint: {
+      title: "2. ການຄິດໄລ່ໄລຍະທາງຕົວຈິງ (Calculating Real Distance)",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"ສູດຄິດໄລ່ຊອກຫາໄລຍະທາງຕົວຈິງ:"}
+          </p>
+          <div
+            style={{
+              padding: "16px",
+              backgroundColor: "#E8F5E9",
+              border: "2px solid #4CAF50",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "8px",
+            }}
+          >
+            <div style={{ fontWeight: "bold", color: "#2E7D32" }}>
+              {"• ໄລຍະທາງຕົວຈິງ = ໄລຍະທາງໃນແຜນທີ່ × ພູດຂອງມາດຕາສ່ວນ"}
+            </div>
+            <div>
+              {"ຕົວຢ່າງ: ໃນແຜນທີ່ມາດຕາສ່ວນ "}<strong>{"1:50,000"}</strong>{", ໄລຍະທາງລະຫວ່າງສອງເມັດແມ່ນ 4 cm."}
+              <br />
+              <span style={{ color: "#2E7D32", paddingLeft: "16px" }}>
+                {"→ ໄລຍະທາງຕົວຈິງ = 4 cm × 50,000 = 200,000 cm = 2,000 m = 2 km."}
+              </span>
+            </div>
+          </div>
+        </div>
+      ),
+      hint: {
+        text: "ການແປງຫົວໜ່ວຍທີ່ຄວນຈື່: 1 m = 100 cm | 1 km = 1,000 m = 100,000 cm ເດີ້!",
+      },
+    },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -161,7 +167,9 @@ export const unit21Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

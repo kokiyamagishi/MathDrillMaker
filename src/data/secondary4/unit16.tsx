@@ -15,8 +15,10 @@ export const unit16Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ການຍ້າຍຂະໜານປາຣาໂບນທັງຕາມແນວນອນ (ແກນ x) ແລະ ແນວຕັ້ງ (ແກນ y) ພ້ອມທັງຊອກຫາພິກັດຈຸດຈອມ (p, q) ໄດ້ຢ່າງວ່ອງໄວ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 16 ໜ້າ 91-96",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ການຍ້າຍຂະໜານສອງແກນປະສົມ (Combined Horizontal and Vertical Shift)",
+      keyPoint: {
       title: "1. ການຍ້າຍຂະໜານສອງແກນປະສົມ (Combined Horizontal and Vertical Shift)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -59,7 +61,41 @@ export const unit16Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຊອກຫາພິກັດຈຸດຈອມ (p, q) ຂອງຕຳລາຕໍ່ໄປນີ້: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) ໃຫ້ຕຳລາ y = 2(x - 3)² + 5. ພິກັດຈຸດຈອມ (p, q) ແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ, ຕົວຢ່າງ: (3, 5)):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) ໃຫ້ຕຳລາ y = -(x + 4)² - 2. ພິກັດຈຸດຈອມ (p, q) ແມ່ນເທົ່າໃດ? (⚠️ ສັງເກດເຄື່ອງໝາຍໃຫ້ດີ):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ແຜນວາດການຍ້າຍຂະໜານສອງແກນ (Two-Dimensional Translation Graph)",
+      keyPoint: {
       title: "2. ແຜນວາດການຍ້າຍຂະໜານສອງແກນ (Two-Dimensional Translation Graph)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -101,38 +137,8 @@ export const unit16Data: UnitData = {
         text: "ພຽງແຕ່ຊອກຫາຈຸດຈອມ (p, q) ໃຫ້ຖືກຕ້ອງ ເຮົາກໍຈະແຕ້ມປາຣາໂບນໄດ້ຢ່າງງ່າຍດາຍທັນທີເດີ້!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາພິກັດຈຸດຈອມ (p, q) ຂອງຕຳລາຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໃຫ້ຕຳລາ y = 2(x - 3)² + 5. ພິກັດຈຸດຈອມ (p, q) ແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ, ຕົວຢ່າງ: (3, 5)):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ໃຫ້ຕຳລາ y = -(x + 4)² - 2. ພິກັດຈຸດຈອມ (p, q) ແມ່ນເທົ່າໃດ? (⚠️ ສັງເກດເຄື່ອງໝາຍໃຫ້ດີ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -160,7 +166,9 @@ export const unit16Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

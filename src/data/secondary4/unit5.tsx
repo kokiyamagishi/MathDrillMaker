@@ -15,8 +15,10 @@ export const unit5Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ວິທີແກ້ສົມຜົນປົກກະຕິ (Rational Equations) ໂດຍການຄູນພູດຮ່ວມເພື່ອປ່ຽນເປັນສົມຜົນພະຫຸພົດ ແລະ ການກວດກາໃຈຜົນນອກເງື່ອນໄຂ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 5 ໜ້າ 26-30",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ຫຼັກການແກ້ສົມຜົນປົກກະຕິ (Steps for Solving Rational Equations)",
+      keyPoint: {
       title: "1. ຫຼັກການແກ້ສົມຜົນປົກກະຕິ (Steps for Solving Rational Equations)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -55,7 +57,41 @@ export const unit5Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງແກ້ສົມຜົນປົກກະຕິພື້ນຖານຕໍ່ໄປນີ້: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) ແກ້ສົມຜົນ: "} <Fraction num="x + 3" den="x - 1" /> {" = 3. ຄ່າ x ແມ່ນເທົ່າໃດ? (ຕອບເປັນຕົວເລກຖ້ວນ ຫຼື ເລກສ່ວນ):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) ແກ້ສົມຜົນ: "} <Fraction num="2" den="x" /> {" + "} <Fraction num="3" den="2x" /> {" = 7. ຄ່າ x ແມ່ນເທົ່າໃດ? (ຕອບເປັນເລກສ່ວນງ່າຍດາຍ):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ແຜນວາດການກວດກາໃຈຜົນ (Extraneous Solution Visualization)",
+      keyPoint: {
       title: "2. ແຜນວາດການກວດກາໃຈຜົນ (Extraneous Solution Visualization)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -88,38 +124,8 @@ export const unit5Data: UnitData = {
         text: "ດັ່ງນັ້ນ ໃຈຜົນທັງໝົດ (ທັງໝົດໃຈຜົນ) ຂອງສົມຜົນນີ້ມີພຽງແຕ່ x = -2 ເທົ່ານັ້ນ!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ສົມຜົນປົກກະຕິພື້ນຖານຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ແກ້ສົມຜົນ: "} <Fraction num="x + 3" den="x - 1" /> {" = 3. ຄ່າ x ແມ່ນເທົ່າໃດ? (ຕອບເປັນຕົວເລກຖ້ວນ ຫຼື ເລກສ່ວນ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ແກ້ສົມຜົນ: "} <Fraction num="2" den="x" /> {" + "} <Fraction num="3" den="2x" /> {" = 7. ຄ່າ x ແມ່ນເທົ່າໃດ? (ຕອບເປັນເລກສ່ວນງ່າຍດາຍ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -147,7 +153,9 @@ export const unit5Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

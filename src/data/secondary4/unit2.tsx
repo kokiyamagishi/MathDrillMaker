@@ -15,8 +15,10 @@ export const unit2Data: UnitData = {
   unitGoal:
     "ເຂົ້າໃຈຫຼັກການ ແລະ ສາມາດຄິດໄລ່ການຄູນ ແລະ ການຫານເລກສ່ວນປົກກະຕິ ພ້ອມທັງຄັດຈ້ອນຜົນຮັບໃຫ້ຢູ່ໃນຮູບຮ່າງງ່າຍດາຍທີ່ສຸດ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 2 ໜ້າ 11-15",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ການຄູນເລກສ່ວນປົກກະຕິ (Multiplication of Rational Expressions)",
+      keyPoint: {
       title: "1. ການຄູນເລກສ່ວນປົກກະຕິ (Multiplication of Rational Expressions)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -66,7 +68,41 @@ export const unit2Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຄິດໄລ່ຜົນຄູນຂອງເລກສ່ວນປົກກະຕິຕໍ່ໄປນີ້: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) ຄິດໄລ່: "} <Fraction num="3x²" den="y" /> {" × "} <Fraction num="y" den="6x" /> {" ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) ຄິດໄລ່: "} <Fraction num="x - 2" den="3" /> {" × "} <Fraction num="6" den="x² - 4" /> {" ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. การหารเลขส่วนປົກກະຕິ (Division of Rational Expressions)",
+      keyPoint: {
       title: "2. การหารเลขส่วนປົກກະຕິ (Division of Rational Expressions)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -138,38 +174,8 @@ export const unit2Data: UnitData = {
         text: "⚠️ ຂໍ້ຄວນລະວັງ: ຫຼັງຈາກປ່ຽນເຄື່ອງໝາຍ ÷ ເປັນ × ແລ້ວ ຢ່າລືມປີ້ນຈຳນວນພູດ ແລະ ພູດ ຂອງໂຕຫານນຳເດີ້!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ຜົນຄູນຂອງເລກສ່ວນປົກກະຕິຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຄິດໄລ່: "} <Fraction num="3x²" den="y" /> {" × "} <Fraction num="y" den="6x" /> {" ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຄິດໄລ່: "} <Fraction num="x - 2" den="3" /> {" × "} <Fraction num="6" den="x² - 4" /> {" ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -197,7 +203,9 @@ export const unit2Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

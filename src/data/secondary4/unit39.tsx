@@ -15,8 +15,10 @@ export const unit39Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ນຳໃຊ້ສູດຄິດໄລ່ບໍລິມາດ (Volume) ຂອງຮູບທາດຈວຍ (Pyramid) ແລະ ຮູບຈວຍ (Cone) ໂດຍນຳໃຊ້ສູດ V = 1/3 · S_base · h",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 39 ໜ້າ 229-234",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ສູດບໍລິມາດຂອງຮູບທາດຈວຍ ແລະ ຮູບຈວຍ (Volume Formulas)",
+      keyPoint: {
       title: "1. ສູດບໍລິມາດຂອງຮູບທາດຈວຍ ແລະ ຮູບຈວຍ (Volume Formulas)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -61,9 +63,8 @@ export const unit39Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -93,8 +94,14 @@ export const unit39Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ບົດຮຽນພື້ນຖານ",
+      keyPoint: { content: <span /> },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -124,7 +131,9 @@ export const unit39Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

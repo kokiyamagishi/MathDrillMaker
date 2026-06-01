@@ -15,8 +15,10 @@ export const unit30Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈນິຍາມຂອງເວັກເຕີ, ທິດທາງ, ລວງ, ຂະໜາດ ພ້ອມທັງເງື່ອນໄຂຂອງສອງເວັກເຕີທີ່ເທົ່າກັນ, ຂະໜານກັນ ແລະ ເວັກເຕີກົງກັນຂ້າມ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 30 ໜ້າ 175-180",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ນິຍາມ ແລະ ອົງປະກອບຂອງເວັກເຕີ (Vector Definition)",
+      keyPoint: {
       title: "1. ນິຍາມ ແລະ ອົງປະກອບຂອງເວັກເຕີ (Vector Definition)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -71,9 +73,8 @@ export const unit30Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -101,8 +102,14 @@ export const unit30Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ບົດຮຽນພື້ນຖານ",
+      keyPoint: { content: <span /> },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -130,7 +137,9 @@ export const unit30Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

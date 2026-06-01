@@ -15,8 +15,10 @@ export const unit10Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ວິທີການຄິດໄລ່ບວກ, ລົບ, ຄູນ ແລະ ຫານສຳນວນທີ່ມີເຄື່ອງໝາຍຮາກ, ການເອົາຕົວເລກອອກນອກຮາກ ແລະ ການກຳຈັດຮາກຢູ່ພູດ (Rationalization)",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 10 ໜ້າ 55-60",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ການເອົາຕົວເລກອອກນອກຮາກ ແລະ ການບວກລົບ (Pulling Factors Out & Addition/Subtraction)",
+      keyPoint: {
       title: "1. ການເອົາຕົວເລກອອກນອກຮາກ ແລະ ການບວກລົບ (Pulling Factors Out & Addition/Subtraction)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -59,7 +61,41 @@ export const unit10Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຄິດໄລ່ເອົາຕົວເລກອອກນອກຮາກ ແລະ ບວກລົບສຳນວນ: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) ຄິດໄລ່: ຮາກຂັ້ນ 2 ຂອງ 8 + ຮາກຂັ້ນ 2 ຂອງ 18 = (ຕອບໃນຮູບແບບ a√b, ຕົວอย่าง: 5√2):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) ຄິດໄລ່: ຮາກຂັ້ນ 2 ຂອງ 75 - ຮາກຂັ້ນ 2 ຂອງ 27 ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ການກຳຈັດຮາກຢູ່ພູດ (Rationalizing the Denominator)",
+      keyPoint: {
       title: "2. ການກຳຈັດຮາກຢູ່ພູດ (Rationalizing the Denominator)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -123,38 +159,8 @@ export const unit10Data: UnitData = {
         text: "ສຳນວນຮ່ວມຂອງ (√3 - 1) ແມ່ນ (√3 + 1) ເດີ້! ໃຫ້ປ່ຽນເຄື່ອງໝາຍກົງກັນຂ້າມສະເໝີເພື່ອໃຊ້ສູດ A² - B²!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ເອົາຕົວເລກອອກນອກຮາກ ແລະ ບວກລົບສຳນວນ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຄິດໄລ່: ຮາກຂັ້ນ 2 ຂອງ 8 + ຮາກຂັ້ນ 2 ຂອງ 18 = (ຕອບໃນຮູບແບບ a√b, ຕົວอย่าง: 5√2):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຄິດໄລ່: ຮາກຂັ້ນ 2 ຂອງ 75 - ຮາກຂັ້ນ 2 ຂອງ 27 ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -182,7 +188,9 @@ export const unit10Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

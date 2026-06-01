@@ -15,8 +15,10 @@ export const unit31Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈກ່ຽວກັບອັດຕາສ່ວນພົວພັນປີ້ນ (Inverse Proportion), ຄວາມແຕກຕ່າງຈາກອັດຕາສ່ວນພົວພັນກົງ ແລະ ການແກ້ໂຈດບັນຫາຕົວຈິງ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ບົດທີ 31 ໜ້າ 195-200",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ຄວາມໝາຍຂອງອັດຕາສ່ວນພົວພັນປີ້ນ (Definition of Inverse Proportion)",
+      keyPoint: {
       title: "1. ຄວາມໝາຍຂອງອັດຕາສ່ວນພົວພັນປີ້ນ (Definition of Inverse Proportion)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -51,7 +53,47 @@ export const unit31Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p style={{ fontSize: "1.375rem" }}>
+            {"ຈົ່ງຄິດໄລ່ຄ່າຄົງທີ່ ແລະ ຕົວລັບໃນອັດຕາສ່ວນພົວພັນປີ້ນ: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "20px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+              <span>{"(1) ຖ້າ x ແລະ y ພົວພັນປີ້ນນຳກັນ, ໂດຍ x = 3, y = 8. ຖ້າ x = 6, ຖາມວ່າ y ຈະເທົ່າກັບເທົ່າໃດ?:"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                <span>{"ຕອບ: y ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              </div>
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+              <span>{"(2) ຖ້າ x ແລະ y ພົວພັນປີ້ນນຳກັນ, ໂດຍ x = 5, y = 12. ຖ້າ y = 10, ຖາມວ່າ x ຈະເທົ່າກັບເທົ່າໃດ?:"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                <span>{"ຕອບ: x ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ວິທີຄິດໄລ່ ແລະ ປຽບທຽບ (Calculation Strategy)",
+      keyPoint: {
       title: "2. ວິທີຄິດໄລ່ ແລະ ປຽບທຽບ (Calculation Strategy)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -91,44 +133,8 @@ export const unit31Data: UnitData = {
         text: "ສັງເກດເບິ່ງດີໆວ່າ ຖ້າກຳມະກອນເພີ່ມຂຶ້ນ 2 ເທົ່າ (ຈາກ 4 ເປັນ 8), ເວລາກໍຈະຫຼຸດລົງ 2 ເທົ່າ (ຈາກ 6 ເປັນ 3) ພໍດີເລີຍ!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p style={{ fontSize: "1.375rem" }}>
-            {"ຈົ່ງຄິດໄລ່ຄ່າຄົງທີ່ ແລະ ຕົວລັບໃນອັດຕາສ່ວນພົວພັນປີ້ນ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຖ້າ x ແລະ y ພົວພັນປີ້ນນຳກັນ, ໂດຍ x = 3, y = 8. ຖ້າ x = 6, ຖາມວ່າ y ຈະເທົ່າກັບເທົ່າໃດ?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: y ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຖ້າ x ແລະ y ພົວພັນປີ້ນນຳກັນ, ໂດຍ x = 5, y = 12. ຖ້າ y = 10, ຖາມວ່າ x ຈະເທົ່າກັບເທົ່າໃດ?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: x ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -162,7 +168,9 @@ export const unit31Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

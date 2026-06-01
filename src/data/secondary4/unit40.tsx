@@ -15,8 +15,10 @@ export const unit40Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈວິທີແບ່ງປະເພດຂໍ້ມູນສະຖິຕິ ອອກເປັນຂໍ້ມູນຄຸນນະພາບ (Qualitative Data) ແລະ ຂໍ້ມູນປະລິມານ (Quantitative Data) ພ້ອມທັງຂໍ້ມູນບໍ່ຕໍ່ເນື່ອງ ແລະ ຕໍ່ເນື່ອງ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 40 ໜ້າ 235-240",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ປະເພດຂອງຂໍ້ມູນສະຖິຕິ (Types of Statistical Data)",
+      keyPoint: {
       title: "1. ປະເພດຂອງຂໍ້ມູນສະຖິຕິ (Types of Statistical Data)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -67,9 +69,8 @@ export const unit40Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -97,8 +98,14 @@ export const unit40Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ບົດຮຽນພື້ນຖານ",
+      keyPoint: { content: <span /> },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -126,7 +133,9 @@ export const unit40Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

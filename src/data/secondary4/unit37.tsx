@@ -15,8 +15,10 @@ export const unit37Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ນຳໃຊ້ຫຼັກການໝູນປິ່ນ (Rotation) ຂອງຮູບເລຂາຄະນິດ ໂດຍເນັ້ນໃສ່ການໝູນປິ່ນອ້ອມເມັດເຄິ່ງກາງ O(0, 0) ດ້ວຍມຸມ 90°, 180° ແລະ 270°",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 37 ໜ້າ 217-222",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ສູດພິກັດຂອງການໝູນປິ່ນອ້ອມເມັດ O(0, 0) (Rotation Coordinate Rules)",
+      keyPoint: {
       title: "1. ສູດພິກັດຂອງການໝູນປິ່ນອ້ອມເມັດ O(0, 0) (Rotation Coordinate Rules)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -64,9 +66,8 @@ export const unit37Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -94,8 +95,14 @@ export const unit37Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ບົດຮຽນພື້ນຖານ",
+      keyPoint: { content: <span /> },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -123,7 +130,9 @@ export const unit37Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

@@ -15,8 +15,10 @@ export const unit7Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍ ແລະ ວິທີຊອກຫາ ທະວີຄູນຮ່ວມໜ້ອຍສຸດ (ທ.ຮ.ນ / LCM), ອຸປະຄູນຮ່ວມຫຼາຍສຸດ (ອ.ຮ.ລ / GCD) ແລະ ຈຳນວນມູນ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 49-53",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ທະວີຄູນຮ່ວມໜ້ອຍສຸດ (ທ.ຮ.ນ)",
+      keyPoint: {
       title: "1. ທະວີຄູນຮ່ວມໜ້ອຍສຸດ (ທ.ຮ.ນ)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -49,71 +51,8 @@ export const unit7Data: UnitData = {
         isBlue: true,
       },
     },
-    {
-      title: "2. ອຸປະຄູນຮ່ວມຫຼາຍສຸດ (ອ.ຮ.ລ)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ອ.ຮ.ລ ແມ່ນຕົວຫານຮ່ວມທີ່ໃຫຍ່ທີ່ສຸດ ຂອງສອງ ຫຼື ຫຼາຍຈຳນວນ:"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"• ຕົວອຸປະຄູນ (ຕົວຫານ) ຂອງ 12: {"}<strong>{"1"}</strong>{", "}<strong>{"2"}</strong>{", "}<strong>{"3"}</strong>{", 4, "}<strong>{"6"}</strong>{", 12}"}</div>
-            <div>{"• ຕົວອຸປະຄູນ (ຕົວຫານ) ຂອງ 18: {"}<strong>{"1"}</strong>{", "}<strong>{"2"}</strong>{", "}<strong>{"3"}</strong>{", "}<strong>{"6"}</strong>{", 9, 18}"}</div>
-            <div>{"• ຕົວຫານຮ່ວມຂອງ 12 ແລະ 18: {"}<strong>{"1, 2, 3, 6"}</strong>{"}"}</div>
-            <div style={{ color: "#2E7D32", fontWeight: "bold", borderTop: "1px solid #C8E6C9", paddingTop: "6px", marginTop: "4px" }}>
-              {"→ ອ.ຮ.ລ (12, 18) = 6"}
-            </div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ອ.ຮ.ລ ແມ່ນຂະໜາດທີ່ໃຫຍ່ທີ່ສຸດ ທີ່ສາມາດຫານທັງສອງຈຳນວນນັ້ນໄດ້ລົງຕົວ!",
-      },
-    },
-    {
-      title: "3. ຈຳນວນມູນ (Prime Numbers)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຈຳນວນມູນ ແມ່ນຈຳນວນທຳມະຊາດທີ່ໃຫຍ່ກວ່າ 1 ແລະ ມີຕົວຫານພຽງແຕ່ 2 ຕົວເທົ່ານັ້ນ ຄື: 1 ແລະ ຕົວມັນເອງ."}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#FFF3E0",
-              border: "2px solid #FF9800",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"• ຈຳນວນມູນທີ່ນ້ອຍກວ່າ 20: "}<strong>{"2, 3, 5, 7, 11, 13, 17, 19"}</strong></div>
-            <div style={{ color: "#D84315", fontWeight: "bold" }}>{"* ຈຳນວນ 1 ບໍ່ແມ່ນຈຳນວນມູນ!"}</div>
-            <div>{"* ຈຳນວນ 2 ແມ່ນຈຳນວນມູນທີ່ເປັນເລກຄູ່ພຽງຕົວດຽວສະເໝີ."}</div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ເລກ 2, 3, 5, 7 ແມ່ນພື້ນຖານຂອງຈຳນວນມູນທັງໝົດເດີ້!",
-        isBlue: true,
-      },
-    },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -153,8 +92,45 @@ export const unit7Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ອຸປະຄູນຮ່ວມຫຼາຍສຸດ (ອ.ຮ.ລ)",
+      keyPoint: {
+      title: "2. ອຸປະຄູນຮ່ວມຫຼາຍສຸດ (ອ.ຮ.ລ)",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"ອ.ຮ.ລ ແມ່ນຕົວຫານຮ່ວມທີ່ໃຫຍ່ທີ່ສຸດ ຂອງສອງ ຫຼື ຫຼາຍຈຳນວນ:"}
+          </p>
+          <div
+            style={{
+              padding: "12px",
+              backgroundColor: "#E8F5E9",
+              border: "2px solid #4CAF50",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "6px",
+            }}
+          >
+            <div>{"• ຕົວອຸປະຄູນ (ຕົວຫານ) ຂອງ 12: {"}<strong>{"1"}</strong>{", "}<strong>{"2"}</strong>{", "}<strong>{"3"}</strong>{", 4, "}<strong>{"6"}</strong>{", 12}"}</div>
+            <div>{"• ຕົວອຸປະຄູນ (ຕົວຫານ) ຂອງ 18: {"}<strong>{"1"}</strong>{", "}<strong>{"2"}</strong>{", "}<strong>{"3"}</strong>{", "}<strong>{"6"}</strong>{", 9, 18}"}</div>
+            <div>{"• ຕົວຫານຮ່ວມຂອງ 12 ແລະ 18: {"}<strong>{"1, 2, 3, 6"}</strong>{"}"}</div>
+            <div style={{ color: "#2E7D32", fontWeight: "bold", borderTop: "1px solid #C8E6C9", paddingTop: "6px", marginTop: "4px" }}>
+              {"→ ອ.ຮ.ລ (12, 18) = 6"}
+            </div>
+          </div>
+        </div>
+      ),
+      hint: {
+        text: "ອ.ຮ.ລ ແມ່ນຂະໜາດທີ່ໃຫຍ່ທີ່ສຸດ ທີ່ສາມາດຫານທັງສອງຈຳນວນນັ້ນໄດ້ລົງຕົວ!",
+      },
+    },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -182,7 +158,45 @@ export const unit7Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
+    {
+      title: "3. ຈຳນວນມູນ (Prime Numbers)",
+      keyPoint: {
+      title: "3. ຈຳນວນມູນ (Prime Numbers)",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"ຈຳນວນມູນ ແມ່ນຈຳນວນທຳມະຊາດທີ່ໃຫຍ່ກວ່າ 1 ແລະ ມີຕົວຫານພຽງແຕ່ 2 ຕົວເທົ່ານັ້ນ ຄື: 1 ແລະ ຕົວມັນເອງ."}
+          </p>
+          <div
+            style={{
+              padding: "12px",
+              backgroundColor: "#FFF3E0",
+              border: "2px solid #FF9800",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "6px",
+            }}
+          >
+            <div>{"• ຈຳນວນມູນທີ່ນ້ອຍກວ່າ 20: "}<strong>{"2, 3, 5, 7, 11, 13, 17, 19"}</strong></div>
+            <div style={{ color: "#D84315", fontWeight: "bold" }}>{"* ຈຳນວນ 1 ບໍ່ແມ່ນຈຳນວນມູນ!"}</div>
+            <div>{"* ຈຳນວນ 2 ແມ່ນຈຳນວນມູນທີ່ເປັນເລກຄູ່ພຽງຕົວດຽວສະເໝີ."}</div>
+          </div>
+        </div>
+      ),
+      hint: {
+        text: "ເລກ 2, 3, 5, 7 ແມ່ນພື້ນຖານຂອງຈຳນວນມູນທັງໝົດເດີ້!",
+        isBlue: true,
+      },
+    },
+      problems: [
+        
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

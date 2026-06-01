@@ -15,8 +15,10 @@ export const unit9Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍຂອງຈຳນວນສົມບູນ (ຄ່າສໍາບູນ) ຢູ່ເທິງເສັ້ນຈຳນວນ, ວິທີຊອກຫາໄລຍະຫ່າງລະຫວ່າງສອງຈຳນວນ ແລະ ການປຽບທຽບ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 65-70",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ຄວາມໝາຍຂອງຈຳນວນສົມບູນ (Absolute Value)",
+      keyPoint: {
       title: "1. ຄວາມໝາຍຂອງຈຳນວນສົມບູນ (Absolute Value)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -73,7 +75,45 @@ export const unit9Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຊອກຫາຄ່າຂອງຈຳນວນສົມບູນຕໍ່ໄປນີ້: "}{" "}
+            <span className="point-label">{"(ຂໍ้ລະ 1.66 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "12px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(1) |+7| ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(2) |-12| ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(3) |0| ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ໄລຍະຫ່າງລະຫວ່າງສອງຈຳນວນ (Distance between two numbers)",
+      keyPoint: {
       title: "2. ໄລຍະຫ່າງລະຫວ່າງສອງຈຳນວນ (Distance between two numbers)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -103,7 +143,43 @@ export const unit9Data: UnitData = {
         text: "ເວລາຊອກຫາໄລຍະຫ່າງລະຫວ່າງສອງຈຳນວນ ໃຫ້ເອົາຕົວເລກທີ່ຢູ່ເບື້ອງຂວາ (ໃຫຍ່ກວ່າ) ລົບໃຫ້ຕົວເລກເບື້ອງຊ້າຍ (ນ້ອຍກວ່າ) ຢູ່ເທິງເສັ້ນຈຳນວນຈະງ່າຍທີ່ສຸດ!",
       },
     },
+      problems: [
+        {
+      number: 2,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງປຽບທຽບຈຳນວນລຸ່ມນີ້ ໂດຍຕື່ມເຄື່ອງໝາຍ "}<strong>{"<"}</strong>{" ຫຼື "}<strong>{">"}</strong>{" ໃສ່ບ່ອນວ່າງ: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "20px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) -8"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+              <span>{"-3"}</span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) |-15|"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+              <span>{"|-10|"}</span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "3. ການປຽບທຽບຈຳນວນລົບ ໂດຍໃຊ້ຈຳນວນສົມບູນ",
+      keyPoint: {
       title: "3. ການປຽບທຽບຈຳນວນລົບ ໂດຍໃຊ້ຈຳນວນສົມບູນ",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -136,72 +212,10 @@ export const unit9Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາຄ່າຂອງຈຳນວນສົມບູນຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ้ລະ 1.66 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "12px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(1) |+7| ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(2) |-12| ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(3) |0| ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງປຽບທຽບຈຳນວນລຸ່ມນີ້ ໂດຍຕື່ມເຄື່ອງໝາຍ "}<strong>{"<"}</strong>{" ຫຼື "}<strong>{">"}</strong>{" ໃສ່ບ່ອນວ່າງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) -8"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"-3"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) |-15|"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"|-10|"}</span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
+      problems: [
+        
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

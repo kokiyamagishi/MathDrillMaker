@@ -15,8 +15,10 @@ export const unit6Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບກົດເຄື່ອງໝາຍໃນການຄູນ ແລະ ການຫານຈຳນວນຖ້ວນ, ການຄິດໄລ່ກຳລັງສອງ, ການກຳນົດເຄື່ອງໝາຍຂອງຜົນຄູນຫຼາຍພົດ, ຕົວທະວີຄູນ ແລະ ຕົວອຸປະຄູນ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 40-46",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ກົດເຄື່ອງໝາຍໃນການຄູນ ແລະ ການຫານຈຳນວນຖ້ວນ",
+      keyPoint: {
       title: "1. ກົດເຄື່ອງໝາຍໃນການຄູນ ແລະ ການຫານຈຳນວນຖ້ວນ",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -75,69 +77,8 @@ export const unit6Data: UnitData = {
         isBlue: true,
       },
     },
-    {
-      title: "2. ກຳລັງສອງ (Square) ແລະ ຜົນຄູນຫຼາຍພົດ",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"• "}<strong>{"ກຳລັງສອງ:"}</strong>{" a² = a × a (ຕົວຢ່າງ: (-5)² = (-5) × (-5) = +25, ແຕ່ -5² = -(5 × 5) = -25)"}
-          </p>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"• "}<strong>{"ເຄື່ອງໝາຍຂອງຜົນຄູນຫຼາຍພົດ (ບໍ່ເທົ່າ 0):"}</strong>
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#FAFAFA",
-              border: "1px solid #ddd",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"- ຖ້າມີສ່ວນຄູນລົບເປັນ "}<strong>{"ຈຳນວນຄູ່"}</strong>{" (2, 4, 6, ...) → ຜົນຄູນເປັນ "}<strong>{"ບວກ (+)"}</strong></div>
-            <div>{"- ຖ້າມີສ່ວນຄູນລົບເປັນ "}<strong>{"ຈຳນວນຄີກ"}</strong>{" (1, 3, 5, ...) → ຜົນຄູນເປັນ "}<strong>{"ລົບ (-)"}</strong></div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ກວດນັບຈຳນວນເຄື່ອງໝາຍລົບກ່ອນຄິດໄລ່ສະເໝີ ເພື່ອກຳນົດເຄື່ອງໝາຍຂອງຄຳຕອບໄດ້ຖືກຕ້ອງ!",
-      },
-    },
-    {
-      title: "3. ຕົວທະວີຄູນ ແລະ ຕົວອຸປະຄູນ",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຖ້າການຫານຫາກຫານຂາດ (ຕົວເສດ r = 0) ເຊັ່ນ "}<strong>{"36 ÷ 4 = 9"}</strong>{" :"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#FFF3E0",
-              border: "2px solid #FF9800",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"• "}<strong>{"36"}</strong>{" ແມ່ນ "}<strong>{"ຕົວທະວີຄູນ (Multiple)"}</strong>{" ຂອງ 4"}</div>
-            <div>{"• "}<strong>{"4"}</strong>{" ແມ່ນ "}<strong>{"ຕົວອຸປະຄູນ (Divisor)"}</strong>{" ຂອງ 36"}</div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ຕົວອຸປະຄູນຂອງ 24 ແມ່ນກຸ່ມຈຳນວນທຳມະຊາດທີ່ຫານ 24 ຂາດ ເຊັ່ນ: {1, 2, 3, 4, 6, 8, 12, 24} ເດີ້!",
-        isBlue: true,
-      },
-    },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -177,8 +118,44 @@ export const unit6Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ກຳລັງສອງ (Square) ແລະ ຜົນຄູນຫຼາຍພົດ",
+      keyPoint: {
+      title: "2. ກຳລັງສອງ (Square) ແລະ ຜົນຄູນຫຼາຍພົດ",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"• "}<strong>{"ກຳລັງສອງ:"}</strong>{" a² = a × a (ຕົວຢ່າງ: (-5)² = (-5) × (-5) = +25, ແຕ່ -5² = -(5 × 5) = -25)"}
+          </p>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"• "}<strong>{"ເຄື່ອງໝາຍຂອງຜົນຄູນຫຼາຍພົດ (ບໍ່ເທົ່າ 0):"}</strong>
+          </p>
+          <div
+            style={{
+              padding: "12px",
+              backgroundColor: "#FAFAFA",
+              border: "1px solid #ddd",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "6px",
+            }}
+          >
+            <div>{"- ຖ້າມີສ່ວນຄູນລົບເປັນ "}<strong>{"ຈຳນວນຄູ່"}</strong>{" (2, 4, 6, ...) → ຜົນຄູນເປັນ "}<strong>{"ບວກ (+)"}</strong></div>
+            <div>{"- ຖ້າມີສ່ວນຄູນລົບເປັນ "}<strong>{"ຈຳນວນຄີກ"}</strong>{" (1, 3, 5, ...) → ຜົນຄູນເປັນ "}<strong>{"ລົບ (-)"}</strong></div>
+          </div>
+        </div>
+      ),
+      hint: {
+        text: "ກວດນັບຈຳນວນເຄື່ອງໝາຍລົບກ່ອນຄິດໄລ່ສະເໝີ ເພື່ອກຳນົດເຄື່ອງໝາຍຂອງຄຳຕອບໄດ້ຖືກຕ້ອງ!",
+      },
+    },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -206,7 +183,44 @@ export const unit6Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
+    {
+      title: "3. ຕົວທະວີຄູນ ແລະ ຕົວອຸປະຄູນ",
+      keyPoint: {
+      title: "3. ຕົວທະວີຄູນ ແລະ ຕົວອຸປະຄູນ",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"ຖ້າການຫານຫາກຫານຂາດ (ຕົວເສດ r = 0) ເຊັ່ນ "}<strong>{"36 ÷ 4 = 9"}</strong>{" :"}
+          </p>
+          <div
+            style={{
+              padding: "12px",
+              backgroundColor: "#FFF3E0",
+              border: "2px solid #FF9800",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "6px",
+            }}
+          >
+            <div>{"• "}<strong>{"36"}</strong>{" ແມ່ນ "}<strong>{"ຕົວທະວີຄູນ (Multiple)"}</strong>{" ຂອງ 4"}</div>
+            <div>{"• "}<strong>{"4"}</strong>{" ແມ່ນ "}<strong>{"ຕົວອຸປະຄູນ (Divisor)"}</strong>{" ຂອງ 36"}</div>
+          </div>
+        </div>
+      ),
+      hint: {
+        text: "ຕົວອຸປະຄູນຂອງ 24 ແມ່ນກຸ່ມຈຳນວນທຳມະຊາດທີ່ຫານ 24 ຂາດ ເຊັ່ນ: {1, 2, 3, 4, 6, 8, 12, 24} ເດີ້!",
+        isBlue: true,
+      },
+    },
+      problems: [
+        
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

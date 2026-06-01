@@ -15,8 +15,10 @@ export const unit17Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ວິທີຜັນປ່ຽນຮູບຮ່າງທົ່ວໄປຂອງຕຳລາຂັ້ນສອງ y = ax² + bx + c ໃຫ້ກາຍເປັນຮູບຮ່າງມາດຕະຖານ y = a(x - p)² + q ໂດຍການນຳໃຊ້ວິທີຄັດສະເພາະເປັນກຳລັງສອງສົມບູນ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 17 ໜ້າ 97-102",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ວິທີຜັນປ່ຽນເປັນກຳລັງສອງສົມບູນ (Completing the Square Method)",
+      keyPoint: {
       title: "1. ວິທີຜັນປ່ຽນເປັນກຳລັງສອງສົມບູນ (Completing the Square Method)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -63,9 +65,8 @@ export const unit17Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -93,8 +94,14 @@ export const unit17Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ບົດຮຽນພື້ນຖານ",
+      keyPoint: { content: <span /> },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -122,7 +129,9 @@ export const unit17Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

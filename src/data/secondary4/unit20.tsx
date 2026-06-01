@@ -15,8 +15,10 @@ export const unit20Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ຝຶກຝົນວິທີແກ້ອະສົມຜົນຂັ້ນສອງ ax² + bx + c > 0 (ຫຼື < 0) ໂດຍການນຳໃຊ້ຄວາມຮູ້ກ່ຽວກັບເຄື່ອງໝາຍຂອງໄຕພົດຂັ້ນສອງ ແລະ ການຊອກຫາຫວ່າງໃຈຜົນ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 20 ໜ້າ 115-120",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ຂັ້ນຕອນການແກ້ອະສົມຜົນຂັ້ນສອງ (Steps to Solve Quadratic Inequalities)",
+      keyPoint: {
       title: "1. ຂັ້ນຕອນການແກ້ອະສົມຜົນຂັ້ນສອງ (Steps to Solve Quadratic Inequalities)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -64,9 +66,8 @@ export const unit20Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -94,8 +95,14 @@ export const unit20Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ບົດຮຽນພື້ນຖານ",
+      keyPoint: { content: <span /> },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -123,7 +130,9 @@ export const unit20Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

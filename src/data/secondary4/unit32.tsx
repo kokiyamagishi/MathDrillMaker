@@ -15,8 +15,10 @@ export const unit32Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ນຳໃຊ້ຄຸນລັກສະນະຂອງການຄູນເວັກເຕີກັບຈຳນວນຈິງ k · u ພ້ອມທັງເງື່ອນໄຂທີ່ເຮັດໃຫ້ສອງເວັກເຕີຂະໜານກັນ ແລະ ສາມເມັດຮ່ວມເສັ້ນຊື່ດຽວກັນ (Collinearity)",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 32 ໜ້າ 187-192",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ການຄູນເວັກເຕີກັບຈຳນວນຈິງ (Scalar Multiplication of a Vector)",
+      keyPoint: {
       title: "1. ການຄູນເວັກເຕີກັບຈຳນວນຈິງ (Scalar Multiplication of a Vector)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -78,9 +80,8 @@ export const unit32Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -110,8 +111,14 @@ export const unit32Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ບົດຮຽນພື້ນຖານ",
+      keyPoint: { content: <span /> },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -139,7 +146,9 @@ export const unit32Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

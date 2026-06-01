@@ -15,8 +15,10 @@ export const unit1Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍຂອງຈຳນວນທຳມະຊາດ, ການໃຊ້ເຄື່ອງໝາຍກຸ່ມ (∈, ∉), ການຂຽນຈຳນວນໃນຮູບແບບກະຈາຍ ແລະ ເລກໂຣມັນ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 4-9",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ຈຳນວນທຳມະຊາດ ແລະ ເຄື່ອງໝາຍກຸ່ມ",
+      keyPoint: {
       title: "1. ຈຳນວນທຳມະຊາດ ແລະ ເຄື່ອງໝາຍກຸ່ມ",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -53,7 +55,58 @@ export const unit1Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຕື່ມເຄື່ອງໝາຍ "}<strong>{"∈"}</strong>{" ຫຼື "}<strong>{"∉"}</strong>{" ໃສ່ບ່ອນວ່າງໃຫ້ຖືກຕ້ອງ: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(1) 8"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+              <span>{"N"}</span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(2) 0.4"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+              <span>{"N"}</span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(3) 125"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+              <span>{"N"}</span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(4) 2.5"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+              <span>{"N"}</span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(5)"} <Fraction num="3" den="4" /></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+              <span>{"N"}</span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ການຂຽນຈຳນວນໃນຮູບແບບກະຈາຍ",
+      keyPoint: {
       title: "2. ການຂຽນຈຳນວນໃນຮູບແບບກະຈາຍ",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -84,7 +137,42 @@ export const unit1Data: UnitData = {
         text: "ເວລາຂຽນຮູບແບບກະຈາຍ ຕ້ອງເລີ່ມຄູນຈາກຫຼັກໃຫຍ່ສຸດກ່ອນສະເໝີ!",
       },
     },
+      problems: [
+        {
+      number: 2,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບຮູບແບບກະຈາຍຂອງຈຳນວນຕໍ່ໄປນີ້: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "20px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) ຈຳນວນ 4,765 = 4 × 1000 + 7 × 100 +"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+              <span>{"+ 5"}</span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) ຄ່າຂອງ 3 × 10000 + 5 × 1000 + 2 × 10 + 4 ແມ່ນ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "3. ເລກໂຣມັນ (Roman Numerals)",
+      keyPoint: {
       title: "3. ເລກໂຣມັນ (Roman Numerals)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -148,84 +236,10 @@ export const unit1Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຕື່ມເຄື່ອງໝາຍ "}<strong>{"∈"}</strong>{" ຫຼື "}<strong>{"∉"}</strong>{" ໃສ່ບ່ອນວ່າງໃຫ້ຖືກຕ້ອງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(1) 8"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"N"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(2) 0.4"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"N"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(3) 125"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"N"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(4) 2.5"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"N"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(5)"} <Fraction num="3" den="4" /></span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"N"}</span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບຮູບແບບກະຈາຍຂອງຈຳນວນຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຈຳນວນ 4,765 = 4 × 1000 + 7 × 100 +"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              <span>{"+ 5"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຄ່າຂອງ 3 × 10000 + 5 × 1000 + 2 × 10 + 4 ແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
+      problems: [
+        
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

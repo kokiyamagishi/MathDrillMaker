@@ -7,8 +7,10 @@ export const unit24Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈວິທີການນຳໃຊ້ເຄື່ອງໝາຍ ∈ (ແມ່ນອົງປະກອບ) ແລະ ∉ (ບໍ່ແມ່ນອົງປະກອບ) ຢ່າງຖືກຕ້ອງ, ແລະ ສາມາດກວດສອບການເທົ່າກັນຂອງສອງກຸ່ມ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ບົດທີ 24 ໜ້າ 158-162",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ເຄື່ອງໝາຍອົງປະກອບ (∈ ແລະ ∉)",
+      keyPoint: {
       title: "1. ເຄື່ອງໝາຍອົງປະກອບ (∈ ແລະ ∉)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -45,39 +47,8 @@ export const unit24Data: UnitData = {
         isBlue: true,
       },
     },
-    {
-      title: "2. ກຸ່ມເທົ່າກັນ (Equal Sets)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ສອງກຸ່ມ A ແລະ B ຈະເທົ່າກັນ (ຂຽນ A = B) ກໍຕໍ່ເມື່ອພວກມັນມີອົງປະກອບທຸກໆຕົວຄືກັນຢ່າງສົມບູນ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"• ບໍ່ສົນໃຈລຳດັບການຂຽນອົງປະກອບ."}</div>
-            <div style={{ color: "#2E7D32", paddingLeft: "16px" }}>{"ຕົວຢ່າງ: {1, 2, 3} = {3, 2, 1}"}</div>
-            <div>{"• ບໍ່ສົນໃຈການຂຽນອົງປະກອບຊ້ຳກັນ."}</div>
-            <div style={{ color: "#2E7D32", paddingLeft: "16px" }}>{"ຕົວຢ່າງ: {1, 2} = {1, 2, 2}"}</div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ຖ້າມີພຽງແຕ່ອົງປະກອບດຽວທີ່ຕ່າງກັນ, ສອງກຸ່ມນັ້ນຈະບໍ່ເທົ່າກັນ (A ≠ B) ທັນທີ!",
-      },
-    },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -112,8 +83,43 @@ export const unit24Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ກຸ່ມເທົ່າກັນ (Equal Sets)",
+      keyPoint: {
+      title: "2. ກຸ່ມເທົ່າກັນ (Equal Sets)",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"ສອງກຸ່ມ A ແລະ B ຈະເທົ່າກັນ (ຂຽນ A = B) ກໍຕໍ່ເມື່ອພວກມັນມີອົງປະກອບທຸກໆຕົວຄືກັນຢ່າງສົມບູນ:"}
+          </p>
+          <div
+            style={{
+              padding: "16px",
+              backgroundColor: "#E8F5E9",
+              border: "2px solid #4CAF50",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "6px",
+            }}
+          >
+            <div>{"• ບໍ່ສົນໃຈລຳດັບການຂຽນອົງປະກອບ."}</div>
+            <div style={{ color: "#2E7D32", paddingLeft: "16px" }}>{"ຕົວຢ່າງ: {1, 2, 3} = {3, 2, 1}"}</div>
+            <div>{"• ບໍ່ສົນໃຈການຂຽນອົງປະກອບຊ້ຳກັນ."}</div>
+            <div style={{ color: "#2E7D32", paddingLeft: "16px" }}>{"ຕົວຢ່າງ: {1, 2} = {1, 2, 2}"}</div>
+          </div>
+        </div>
+      ),
+      hint: {
+        text: "ຖ້າມີພຽງແຕ່ອົງປະກອບດຽວທີ່ຕ່າງກັນ, ສອງກຸ່ມນັ້ນຈະບໍ່ເທົ່າກັນ (A ≠ B) ທັນທີ!",
+      },
+    },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -147,7 +153,9 @@ export const unit24Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

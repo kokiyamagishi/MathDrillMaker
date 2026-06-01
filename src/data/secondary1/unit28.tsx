@@ -15,8 +15,10 @@ export const unit28Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈຄວາມໝາຍຂອງອັດຕາສ່ວນພົວພັນ (Proportion), ຄຸນລັກສະນະຄູນໄຂວ້ ແລະ ການນຳໃຊ້ໃນການແກ້ໂຈດເລກຕົວຈິງ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ບົດທີ 28 ໜ້າ 180-184",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ຄວາມໝາຍຂອງອັດຕາສ່ວນພົວພັນ (Definition of Proportion)",
+      keyPoint: {
       title: "1. ຄວາມໝາຍຂອງອັດຕາສ່ວນພົວພັນ (Definition of Proportion)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -50,7 +52,47 @@ export const unit28Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p style={{ fontSize: "1.375rem" }}>
+            {"ຈົ່ງກວດສອບວ່າຄູ່ອັດຕາສ່ວນຕໍ່ໄປນີ້ປະກອບເປັນອັດຕາສ່ວນພົວພັນ ຫຼື ບໍ່ (ຕອບ 'ແມ່ນ' ຫຼື 'ບໍ່ແມ່ນ'): "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "20px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+              <span>{"(1) ອັດຕາສ່ວນ "} <Fraction num="3" den="4" /> {" ແລະ "} <Fraction num="6" den="8" /> {" ແມ່ນອັດຕາສ່ວນພົວພັນ ຫຼື ບໍ່?:"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                <span>{"ຕອບ:"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+              </div>
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+              <span>{"(2) ອັດຕາສ່ວນ "} <Fraction num="2" den="5" /> {" ແລະ "} <Fraction num="4" den="9" /> {" ແມ່ນອັດຕາສ່ວນພົວພັນ ຫຼື ບໍ່?:"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                <span>{"ຕອບ:"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ຄຸນລັກສະນະຄູນໄຂວ້ (Cross-Multiplication)",
+      keyPoint: {
       title: "2. ຄຸນລັກສະນະຄູນໄຂວ້ (Cross-Multiplication)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -93,44 +135,8 @@ export const unit28Data: UnitData = {
         text: "ຄຸນລັກສະນະຄູນໄຂວ້ນີ້ມີປະໂຫຍດຫຼາຍໃນການຊອກຫາຕົວເລກທີ່ເຮົາບໍ່ທັນຮູ້ໃນອັດຕາສ່ວນພົວພັນ!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p style={{ fontSize: "1.375rem" }}>
-            {"ຈົ່ງກວດສອບວ່າຄູ່ອັດຕາສ່ວນຕໍ່ໄປນີ້ປະກອບເປັນອັດຕາສ່ວນພົວພັນ ຫຼື ບໍ່ (ຕອບ 'ແມ່ນ' ຫຼື 'ບໍ່ແມ່ນ'): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ອັດຕາສ່ວນ "} <Fraction num="3" den="4" /> {" ແລະ "} <Fraction num="6" den="8" /> {" ແມ່ນອັດຕາສ່ວນພົວພັນ ຫຼື ບໍ່?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ອັດຕາສ່ວນ "} <Fraction num="2" den="5" /> {" ແລະ "} <Fraction num="4" den="9" /> {" ແມ່ນອັດຕາສ່ວນພົວພັນ ຫຼື ບໍ່?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -164,7 +170,9 @@ export const unit28Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

@@ -15,8 +15,10 @@ export const unit21Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ວິທີຊອກຫາຈຸດຕັດ ແລະ ພິຈາລະນາຕຳແໜ່ງພົວພັນລະຫວ່າງເສັ້ນຊື່ y = mx + n ແລະ ປາຣາໂບນ y = ax² + bx + c ໂດຍນຳໃຊ້ຄ່າຂອງແດນຕາ Δ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 21 ໜ້າ 121-126",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ຕຳແໜ່ງພົວພັນລະຫວ່າງເສັ້ນຊື່ ແລະ ປາຣາໂບນ (Line and Parabola Relationships)",
+      keyPoint: {
       title: "1. ຕຳແໜ່ງພົວພັນລະຫວ່າງເສັ້ນຊື່ ແລະ ປາຣາໂບນ (Line and Parabola Relationships)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -64,9 +66,8 @@ export const unit21Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -94,8 +95,14 @@ export const unit21Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ບົດຮຽນພື້ນຖານ",
+      keyPoint: { content: <span /> },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -123,7 +130,9 @@ export const unit21Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

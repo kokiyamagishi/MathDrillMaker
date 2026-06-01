@@ -15,8 +15,10 @@ export const unit14Data: UnitData = {
   unitGoal:
     "ເຂົ້າໃຈການປ່ຽນແປງຂອງເສັ້ນສະແດງປາຣາໂບນ y = ax² ຕາມຄ່າສຳປະສິດ a (ການປິ່ນຂຶ້ນ/ລົງ ແລະ ຄວາມກວ້າງ/ແຄບ ຂອງເສັ້ນໂຄ້ງ)",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 14 ໜ້າ 79-84",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ອິດທິພົນຂອງສຳປະສິດ a (Influence of Coefficient 'a')",
+      keyPoint: {
       title: "1. ອິດທິພົນຂອງສຳປະສິດ a (Influence of Coefficient 'a')",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -57,7 +59,41 @@ export const unit14Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຄິດໄລ່ຫາຄ່າ y ຂອງຕຳລາ y = ax² ຕາມຄ່າ x ທີ່ກຳນົດ: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) ໃຫ້ຕຳລາ y = 3x². ຖ້າ x = 2, ຄ່າ y ຈະແມ່ນເທົ່າໃດ?:"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) ໃຫ້ຕຳລາ y = -2x². ຖ້າ x = -3, ຄ່າ y ຈະແມ່ນເທົ່າໃດ? (⚠️ ໄລ່ກຳລັງສອງ x ກ່ອນແລ້ວຈຶ່ງຄູນ -2):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ແຜນວາດການປຽບທຽບເສັ້ນສະແດງ (Graphical Comparison)",
+      keyPoint: {
       title: "2. ແຜນວາດການປຽບທຽບເສັ້ນສະແດງ (Graphical Comparison)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -94,38 +130,8 @@ export const unit14Data: UnitData = {
         text: "ຈຸດຈອມຂອງທຸກໆຕຳລາໃນຮູບຮ່າງ y = ax² ແມ່ນຢູ່ O(0, 0) ຄືກັນໝົດເດີ້!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ຫາຄ່າ y ຂອງຕຳລາ y = ax² ຕາມຄ່າ x ທີ່ກຳນົດ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໃຫ້ຕຳລາ y = 3x². ຖ້າ x = 2, ຄ່າ y ຈະແມ່ນເທົ່າໃດ?:"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ໃຫ້ຕຳລາ y = -2x². ຖ້າ x = -3, ຄ່າ y ຈະແມ່ນເທົ່າໃດ? (⚠️ ໄລ່ກຳລັງສອງ x ກ່ອນແລ້ວຈຶ່ງຄູນ -2):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -153,7 +159,9 @@ export const unit14Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

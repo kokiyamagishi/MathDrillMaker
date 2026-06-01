@@ -15,8 +15,10 @@ export const unit24Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ວິທີແກ້ລະບົບສົມຜົນຂັ້ນສອງທີ່ມີສອງຕົວປ່ຽນ (Systems of Quadratic Equations in Two Variables) ໂດຍການນຳໃຊ້ວິທີແທນຄ່າ, ວິທີບວກພຶດຊະຄະນິດ ແລະ ຫຼັກການຜົນບວກ-ຜົນຄູນ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 24 ໜ້າ 139-144",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ວິທີແກ້ໂດຍການແທນຄ່າ (Substitution Method)",
+      keyPoint: {
       title: "1. ວິທີແກ້ໂດຍການແທນຄ່າ (Substitution Method)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -56,9 +58,8 @@ export const unit24Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -86,8 +87,14 @@ export const unit24Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ບົດຮຽນພື້ນຖານ",
+      keyPoint: { content: <span /> },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -115,7 +122,9 @@ export const unit24Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

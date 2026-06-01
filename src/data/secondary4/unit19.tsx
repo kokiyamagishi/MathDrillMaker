@@ -15,8 +15,10 @@ export const unit19Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ວິທີພິຈາລະນາເຄື່ອງໝາຍບວກ ຫຼື ເຄື່ອງໝາຍລົບ ຂອງໄຕພົດຂັ້ນສອງ y = ax² + bx + c ໂດຍອີງໃສ່ຄ່າສຳປະສິດ a ແລະ ຄ່າຂອງແດນຕາ Δ (Discriminant)",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 19 ໜ້າ 109-114",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ເງື່ອນໄຂເຄື່ອງໝາຍຂອງໄຕພົດຂັ້ນສອງ (Sign Conditions of Quadratic Trinomial)",
+      keyPoint: {
       title: "1. ເງື່ອນໄຂເຄື່ອງໝາຍຂອງໄຕພົດຂັ້ນສອງ (Sign Conditions of Quadratic Trinomial)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -67,9 +69,8 @@ export const unit19Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -97,8 +98,14 @@ export const unit19Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ບົດຮຽນພື້ນຖານ",
+      keyPoint: { content: <span /> },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -126,7 +133,9 @@ export const unit19Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

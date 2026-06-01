@@ -15,8 +15,10 @@ export const unit30Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍຂອງສ່ວນຮ້ອຍ (Percentage), ວິທີການແປງສ່ວນຮ້ອຍເປັນເລກສ່ວນ ແລະ ທົດສະນິຍົມ, ແລະ ການແກ້ໂຈດສ່ວນຮ້ອຍໃນຊີວິດປະຈຳວັນ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ບົດທີ 30 ໜ້າ 190-194",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ຄວາມໝາຍຂອງສ່ວນຮ້ອຍ (Concept of Percentage)",
+      keyPoint: {
       title: "1. ຄວາມໝາຍຂອງສ່ວນຮ້ອຍ (Concept of Percentage)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -67,7 +69,45 @@ export const unit30Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p style={{ fontSize: "1.375rem" }}>
+            {"ຈົ່ງແປງສ່ວນຮ້ອຍຕໍ່ໄປນີ້ໃຫ້ເປັນເລກທົດສະນິຍົມ: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 1.66 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(1) 45% ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(2) 8% ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(3) 120% ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ການຄິດໄລ່ຫາສ່ວນຮ້ອຍຂອງຈຳນວນໜຶ່ງ (Finding Percentage of a Quantity)",
+      keyPoint: {
       title: "2. ການຄິດໄລ່ຫາສ່ວນຮ້ອຍຂອງຈຳນວນໜຶ່ງ (Finding Percentage of a Quantity)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -106,42 +146,8 @@ export const unit30Data: UnitData = {
         text: "ການຫຼຸດລາຄາ ຫຼື ການເພີ່ມຂຶ້ນຂອງສິນຄ້າໃນຮ້ານຄ້າ ກໍໃຊ້ຫຼັກການຄິດໄລ່ນີ້ຄືກັນເດີ້!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p style={{ fontSize: "1.375rem" }}>
-            {"ຈົ່ງແປງສ່ວນຮ້ອຍຕໍ່ໄປນີ້ໃຫ້ເປັນເລກທົດສະນິຍົມ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 1.66 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(1) 45% ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(2) 8% ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(3) 120% ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -177,7 +183,9 @@ export const unit30Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

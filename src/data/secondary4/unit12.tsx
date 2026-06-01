@@ -15,8 +15,10 @@ export const unit12Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ນຳໃຊ້ຫຼັກການ ແລະ ຄຸນລັກສະນະຂອງເລກກຳລັງທີ່ມີກຳລັງເປັນຈຳນວນປົກກະຕິ (Rational Exponents) ພ້ອມທັງການແກ້ສົມຜົນເລກກຳລັງຂັ້ນພື້ນຖານ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 12 ໜ້າ 67-72",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ຫຼັກການພື້ນຖານຂອງເລກກຳລັງ (Laws of Exponents for Rational Indices)",
+      keyPoint: {
       title: "1. ຫຼັກການພື້ນຖານຂອງເລກກຳລັງ (Laws of Exponents for Rational Indices)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -59,7 +61,41 @@ export const unit12Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຄິດໄລ່ຄ່າຂອງເລກກຳລັງທີ່ມີກຳລັງເປັນເລກສ່ວນ: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) ຄິດໄລ່: 4^"} <Fraction num="3" den="2" /> {" = (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) ຄິດໄລ່: 27^"} <Fraction num="2" den="3" /> {" ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ການແກ້ສົມຜົນເລກກຳລັງຂັ້ນພື້ນຖານ (Basic Exponential Equations)",
+      keyPoint: {
       title: "2. ການແກ້ສົມຜົນເລກກຳລັງຂັ້ນພື້ນຖານ (Basic Exponential Equations)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -93,38 +129,8 @@ export const unit12Data: UnitData = {
         text: "ຖ້າພື້ນຕ່າງກັນ ໃຫ້ຊອກຫາວິທີປ່ຽນໃຫ້ພື້ນຄືກັນກ່ອນສະເໝີເດີ້!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ຄ່າຂອງເລກກຳລັງທີ່ມີກຳລັງເປັນເລກສ່ວນ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຄິດໄລ່: 4^"} <Fraction num="3" den="2" /> {" = (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຄິດໄລ່: 27^"} <Fraction num="2" den="3" /> {" ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -152,7 +158,9 @@ export const unit12Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

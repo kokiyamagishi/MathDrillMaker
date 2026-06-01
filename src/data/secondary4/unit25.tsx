@@ -15,8 +15,10 @@ export const unit25Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ຈື່ຈຳນິຍາມຂອງອັດຕາສ່ວນໄຕມຸມມິຕິ sin, cos, tan ໃນຮູບສາມແຈສາກ ພ້ອມທັງຄິດໄລ່ຄ່າຂອງມຸມພິເສດ 30°, 45°, 60°",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 25 ໜ້າ 145-150",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ນິຍາມຂອງ Sin, Cos, Tan (Definitions of Trigonometric Ratios)",
+      keyPoint: {
       title: "1. ນິຍາມຂອງ Sin, Cos, Tan (Definitions of Trigonometric Ratios)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -61,7 +63,41 @@ export const unit25Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ໃຫ້ຮູບສາມແຈສາກ ABC ທີ່ມີ AC = 3 cm, AB = 4 cm ແລະ ຂ້າງກົງໜ້າມຸມສາກ BC = 5 cm. ຈົ່ງຊອກຫາຄ່າຕໍ່ໄປນີ້: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) ຈົ່ງຊອກຫາຄ່າຂອງ sin B (ຕອບເປັນເລກສ່ວນ, ຕົວຢ່າງ: 3/5):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) จົ່ງຊອກຫາຄ່າຂອງ tan B (ຕອບເປັນເລກສ່ວນ, ຕົວຢ່າງ: 3/4):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ຕາຕະລາງຄ່າໄຕມຸມມິຕິຂອງມຸມພິເສດ (Special Angles Table)",
+      keyPoint: {
       title: "2. ຕາຕະລາງຄ່າໄຕມຸມມິຕິຂອງມຸມພິເສດ (Special Angles Table)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -101,38 +137,8 @@ export const unit25Data: UnitData = {
         text: "ຄ່າເຫຼົ່ານີ້ຈະພົບເລື້ອຍທີ່ສຸດໃນຟີຊິກສາດ ແລະ ວິສະວະກຳສາດ, ຈົ່ງຈື່ໃຫ້ຂຶ້ນໃຈເດີ້!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ໃຫ້ຮູບສາມແຈສາກ ABC ທີ່ມີ AC = 3 cm, AB = 4 cm ແລະ ຂ້າງກົງໜ້າມຸມສາກ BC = 5 cm. ຈົ່ງຊອກຫາຄ່າຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຈົ່ງຊອກຫາຄ່າຂອງ sin B (ຕອບເປັນເລກສ່ວນ, ຕົວຢ່າງ: 3/5):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) จົ່ງຊອກຫາຄ່າຂອງ tan B (ຕອບເປັນເລກສ່ວນ, ຕົວຢ່າງ: 3/4):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -160,7 +166,9 @@ export const unit25Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

@@ -15,8 +15,10 @@ export const unit13Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ຂັ້ນຕອນ ແລະ ວິທີການແຕ້ມເສັ້ນຊື່ຕັ້ງສາກ ແລະ ເສັ້ນຊື່ຂະໜານ ໂດຍໃຊ້ໄມ້ສາມແຈສາກ, ໄມ້ບັນທັດຊື່ ແລະ ກອມປາ ຢ່າງຖືກຕ້ອງ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 85-90",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ວິທີແຕ້ມເສັ້ນຊື່ຕັ້ງສາກ ໂດຍໃຊ້ໄມ້ສາມແຈສາກ (Drawing Perpendicular Lines)",
+      keyPoint: {
       title: "1. ວິທີແຕ້ມເສັ້ນຊື່ຕັ້ງສາກ ໂດຍໃຊ້ໄມ້ສາມແຈສາກ (Drawing Perpendicular Lines)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -70,68 +72,8 @@ export const unit13Data: UnitData = {
         isBlue: true,
       },
     },
-    {
-      title: "2. ວິທີແຕ້ມເສັ້ນຊື່ຂະໜານ ໂດຍໃຊ້ໄມ້ສາມແຈສາກ ແລະ ໄມ້ບັນທັດ",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຂັ້ນຕອນການແຕ້ມເສັ້ນຊື່ຂະໜານກັບ d ຜ່ານເມັດ A ຢູ່ນອກເສັ້ນຊື່:"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"1. ວາງຂ້າງໜຶ່ງຂອງໄມ້ສາມແຈສາກ ທາບໃສ່ເສັ້ນຊື່ d."}</div>
-            <div>{"2. ວາງໄມ້ບັນທັດຊື່ ແນບໃສ່ຂ້າງທີສອງຂອງໄມ້ສາມແຈສາກເພື່ອເປັນແນວທາງເລື່ອນ."}</div>
-            <div>{"3. ເລື່ອນໄມ້ສາມແຈສາກໄປຕາມໄມ້ບັນທັດຊື່ ຈົນຮອດເມັດ A ແລ້ວຂີດເສັ້ນຊື່."}</div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ວິທີນີ້ຊ່ວຍໃຫ້ເສັ້ນຊື່ໃໝ່ ຂະໜານກັບເສັ້ນຊື່ເກົ່າຢ່າງສົມບູນ ຍ້ອນໄລຍະຫ່າງເທົ່າກັນຕະຫຼອດ!",
-      },
-    },
-    {
-      title: "3. ວິທີແຕ້ມເສັ້ນຊື່ຕັ້ງສາກ ໂດຍໃຊ້ກອມປາ (Compass Drawing)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ການໃຊ້ກອມປາແຕ້ມເສັ້ນຊື່ຕັ້ງສາກ ຜ່ານເມັດ A ທີ່ຢູ່ນອກເສັ້ນຊື່ d:"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#FFF3E0",
-              border: "2px solid #FF9800",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "10px",
-            }}
-          >
-            <div>{"1. ເອົາສົ້ນແຫຼມຂອງກອມປາຈ້ຳໃສ່ເມັດ A, ແຕ້ມເສັ້ນໂຄ້ງຕັດເສັ້ນຊື່ d ຢູ່ 2 ເມັດ (ເອີ້ນວ່າ M ແລະ N)."}</div>
-            <div>{"2. ຮັກສາລັດສະໝີເດີມ (ຫຼືປ່ຽນໃຫຍ່ຂຶ້ນເລັກໜ້ອຍ), ຈ້ຳກອມປາໃສ່ M ແລະ N ຕາມລຳດັບ ແລ້ວແຕ້ມເສັ້ນໂຄ້ງໃຫ້ຕັດກັນຢູ່ທາງລຸ່ມເສັ້ນຊື່ d (ເອີ້ນວ່າຈຸດ K)."}</div>
-            <div>{"3. ຂີດເສັ້ນຊື່ຜ່ານເມັດ A ແລະ K, ເຮົາຈະໄດ້ເສັ້ນຊື່ AK ຕັ້ງສາກກັບ d."}</div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ຈຸດ K ແລະ A ຈະຢູ່ຫ່າງຈາກ M ແລະ N ເປັນໄລຍະທາງເທົ່າກັນສະເໝີ!",
-        isBlue: true,
-      },
-    },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -163,8 +105,42 @@ export const unit13Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ວິທີແຕ້ມເສັ້ນຊື່ຂະໜານ ໂດຍໃຊ້ໄມ້ສາມແຈສາກ ແລະ ໄມ້ບັນທັດ",
+      keyPoint: {
+      title: "2. ວິທີແຕ້ມເສັ້ນຊື່ຂະໜານ ໂດຍໃຊ້ໄມ້ສາມແຈສາກ ແລະ ໄມ້ບັນທັດ",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"ຂັ້ນຕອນການແຕ້ມເສັ້ນຊື່ຂະໜານກັບ d ຜ່ານເມັດ A ຢູ່ນອກເສັ້ນຊື່:"}
+          </p>
+          <div
+            style={{
+              padding: "12px",
+              backgroundColor: "#E8F5E9",
+              border: "2px solid #4CAF50",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "6px",
+            }}
+          >
+            <div>{"1. ວາງຂ້າງໜຶ່ງຂອງໄມ້ສາມແຈສາກ ທາບໃສ່ເສັ້ນຊື່ d."}</div>
+            <div>{"2. ວາງໄມ້ບັນທັດຊື່ ແນບໃສ່ຂ້າງທີສອງຂອງໄມ້ສາມແຈສາກເພື່ອເປັນແນວທາງເລື່ອນ."}</div>
+            <div>{"3. ເລື່ອນໄມ້ສາມແຈສາກໄປຕາມໄມ້ບັນທັດຊື່ ຈົນຮອດເມັດ A ແລ້ວຂີດເສັ້ນຊື່."}</div>
+          </div>
+        </div>
+      ),
+      hint: {
+        text: "ວິທີນີ້ຊ່ວຍໃຫ້ເສັ້ນຊື່ໃໝ່ ຂະໜານກັບເສັ້ນຊື່ເກົ່າຢ່າງສົມບູນ ຍ້ອນໄລຍະຫ່າງເທົ່າກັນຕະຫຼອດ!",
+      },
+    },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -192,7 +168,45 @@ export const unit13Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
+    {
+      title: "3. ວິທີແຕ້ມເສັ້ນຊື່ຕັ້ງສາກ ໂດຍໃຊ້ກອມປາ (Compass Drawing)",
+      keyPoint: {
+      title: "3. ວິທີແຕ້ມເສັ້ນຊື່ຕັ້ງສາກ ໂດຍໃຊ້ກອມປາ (Compass Drawing)",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"ການໃຊ້ກອມປາແຕ້ມເສັ້ນຊື່ຕັ້ງສາກ ຜ່ານເມັດ A ທີ່ຢູ່ນອກເສັ້ນຊື່ d:"}
+          </p>
+          <div
+            style={{
+              padding: "12px",
+              backgroundColor: "#FFF3E0",
+              border: "2px solid #FF9800",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "10px",
+            }}
+          >
+            <div>{"1. ເອົາສົ້ນແຫຼມຂອງກອມປາຈ້ຳໃສ່ເມັດ A, ແຕ້ມເສັ້ນໂຄ້ງຕັດເສັ້ນຊື່ d ຢູ່ 2 ເມັດ (ເອີ້ນວ່າ M ແລະ N)."}</div>
+            <div>{"2. ຮັກສາລັດສະໝີເດີມ (ຫຼືປ່ຽນໃຫຍ່ຂຶ້ນເລັກໜ້ອຍ), ຈ້ຳກອມປາໃສ່ M ແລະ N ຕາມລຳດັບ ແລ້ວແຕ້ມເສັ້ນໂຄ້ງໃຫ້ຕັດກັນຢູ່ທາງລຸ່ມເສັ້ນຊື່ d (ເອີ້ນວ່າຈຸດ K)."}</div>
+            <div>{"3. ຂີດເສັ້ນຊື່ຜ່ານເມັດ A ແລະ K, ເຮົາຈະໄດ້ເສັ້ນຊື່ AK ຕັ້ງສາກກັບ d."}</div>
+          </div>
+        </div>
+      ),
+      hint: {
+        text: "ຈຸດ K ແລະ A ຈະຢູ່ຫ່າງຈາກ M ແລະ N ເປັນໄລຍະທາງເທົ່າກັນສະເໝີ!",
+        isBlue: true,
+      },
+    },
+      problems: [
+        
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

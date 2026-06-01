@@ -7,8 +7,10 @@ export const unit20Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈຄວາມໝາຍຂອງແກນເຄິ່ງຄື, ເສັ້ນກາງສາກຂອງທ່ອນຊື່, ເສັ້ນແບ່ງເຄິ່ງມຸມ ແລະ ຄຸນລັກສະນະທາງເລຂາຄະນິດທີ່ສຳຄັນຂອງພວກມັນ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ບົດທີ 20 ໜ້າ 135-141",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ເສັ້ນກາງສາກຂອງທ່ອນຊື່ (Perpendicular Bisector)",
+      keyPoint: {
       title: "1. ເສັ້ນກາງສາກຂອງທ່ອນຊື່ (Perpendicular Bisector)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -40,42 +42,8 @@ export const unit20Data: UnitData = {
         isBlue: true,
       },
     },
-    {
-      title: "2. ເສັ້ນແບ່ງເຄິ່ງມຸມ (Angle Bisector)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ເສັ້ນແບ່ງເຄິ່ງມຸມ ແມ່ນເສັ້ນເຄິ່ງຊື່ທີ່ແບ່ງມຸມໜຶ່ງອອກເປັນສອງມຸມນ້ອຍທີ່ມີຂະໜາດເທົ່າກັນ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div>{"• ຖ້າເສັ້ນເຄິ່ງຊື່ Oz ແບ່ງເຄິ່ງມຸມ xOy, ຈະໄດ້ ມຸມ xOz = ມຸມ zOy."}</div>
-            <div style={{ color: "#2E7D32", paddingLeft: "16px" }}>
-              {"• ຕົວຢ່າງ: ຖ້າມຸມ xOy = 60° → ມຸມ xOz = ມຸມ zOy = 30°"}
-            </div>
-            <div style={{ color: "#2E7D32", fontWeight: "bold" }}>
-              {"• ທຸກໆເມັດ M ຢູ່ເທິງເສັ້ນແບ່ງເຄິ່ງມຸມ ຈະຢູ່ຫ່າງຈາກສອງຂ້າງຂອງມຸມເທົ່າກັນ."}
-            </div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ເສັ້ນແບ່ງເຄິ່ງມຸມແມ່ນແກນເຄິ່ງຄືຂອງມຸມນັ້ນໆສະເໝີ!",
-      },
-    },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -111,8 +79,46 @@ export const unit20Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ເສັ້ນແບ່ງເຄິ່ງມຸມ (Angle Bisector)",
+      keyPoint: {
+      title: "2. ເສັ້ນແບ່ງເຄິ່ງມຸມ (Angle Bisector)",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"ເສັ້ນແບ່ງເຄິ່ງມຸມ ແມ່ນເສັ້ນເຄິ່ງຊື່ທີ່ແບ່ງມຸມໜຶ່ງອອກເປັນສອງມຸມນ້ອຍທີ່ມີຂະໜາດເທົ່າກັນ:"}
+          </p>
+          <div
+            style={{
+              padding: "16px",
+              backgroundColor: "#E8F5E9",
+              border: "2px solid #4CAF50",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "8px",
+            }}
+          >
+            <div>{"• ຖ້າເສັ້ນເຄິ່ງຊື່ Oz ແບ່ງເຄິ່ງມຸມ xOy, ຈະໄດ້ ມຸມ xOz = ມຸມ zOy."}</div>
+            <div style={{ color: "#2E7D32", paddingLeft: "16px" }}>
+              {"• ຕົວຢ່າງ: ຖ້າມຸມ xOy = 60° → ມຸມ xOz = ມຸມ zOy = 30°"}
+            </div>
+            <div style={{ color: "#2E7D32", fontWeight: "bold" }}>
+              {"• ທຸກໆເມັດ M ຢູ່ເທິງເສັ້ນແບ່ງເຄິ່ງມຸມ ຈະຢູ່ຫ່າງຈາກສອງຂ້າງຂອງມຸມເທົ່າກັນ."}
+            </div>
+          </div>
+        </div>
+      ),
+      hint: {
+        text: "ເສັ້ນແບ່ງເຄິ່ງມຸມແມ່ນແກນເຄິ່ງຄືຂອງມຸມນັ້ນໆສະເໝີ!",
+      },
+    },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -147,7 +153,9 @@ export const unit20Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

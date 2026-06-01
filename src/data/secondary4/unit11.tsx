@@ -15,8 +15,10 @@ export const unit11Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ວິທີແກ້ສົມຜົນຮາກຂັ້ນສອງ (Irrational Equations) ໂດຍການຂຶ້ນກຳລັງສອງທັງສອງພາກ, ການຊອກເງື່ອນໄຂກຳນົດ ແລະ ການຕັດໃຈຜົນນອກເງື່ອນໄຂ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 11 ໜ້າ 61-66",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ຂັ້ນຕອນການແກ້ສົມຜົນຮາກຂັ້ນ 2 (Steps for Solving Irrational Equations)",
+      keyPoint: {
       title: "1. ຂັ້ນຕອນການແກ້ສົມຜົນຮາກຂັ້ນ 2 (Steps for Solving Irrational Equations)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -55,7 +57,41 @@ export const unit11Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງແກ້ສົມຜົນຮາກຂັ້ນ 2 ພື້ນຖານຕໍ່ໄປນີ້: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) ແກ້ສົມຜົນ: √(2x - 3) = 3. ຄ່າ x ແມ່ນເທົ່າໃດ? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) ແກ້ສົມຜົນ: √(x + 5) = 4. ຄ່າ x ແມ່ນເທົ່າໃດ?:"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ເສັ້ນສະແດງເງື່ອນໄຂໃຈຜົນ (Visual Condition Check)",
+      keyPoint: {
       title: "2. ເສັ້ນສະແດງເງື່ອນໄຂໃຈຜົນ (Visual Condition Check)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -84,38 +120,8 @@ export const unit11Data: UnitData = {
         text: "ດັ່ງນັ້ນ ໃຈຜົນແທ້ຈິງຂອງສົມຜົນ √(x+3) = x-3 ມີພຽງແຕ່ x = 6 ເທົ່ານັ້ນ!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ສົມຜົນຮາກຂັ້ນ 2 ພື້ນຖານຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ແກ້ສົມຜົນ: √(2x - 3) = 3. ຄ່າ x ແມ່ນເທົ່າໃດ? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ແກ້ສົມຜົນ: √(x + 5) = 4. ຄ່າ x ແມ່ນເທົ່າໃດ?:"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -143,7 +149,9 @@ export const unit11Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

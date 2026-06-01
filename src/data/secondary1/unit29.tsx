@@ -15,8 +15,10 @@ export const unit29Data: UnitData = {
   unitGoal:
     "ຝຶກທັກສະການແກ້ສົມຜົນອັດຕາສ່ວນພົວພັນ, ຊອກຫາຄ່າຂອງຕົວລັບ (x) ໂດຍການນຳໃຊ້ຫຼັກການຄູນໄຂວ້ ແລະ ການຫານຢ່າງຄ່ອງແຄ້ວ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ບົດທີ 29 ໜ້າ 185-189",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ວິທີຊອກຫາພົດທີ່ບໍ່ທັນຮູ້ (Finding the Unknown Term)",
+      keyPoint: {
       title: "1. ວິທີຊອກຫາພົດທີ່ບໍ່ທັນຮູ້ (Finding the Unknown Term)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -65,9 +67,8 @@ export const unit29Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -99,8 +100,14 @@ export const unit29Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ບົດຮຽນພື້ນຖານ",
+      keyPoint: { content: <span /> },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -134,7 +141,9 @@ export const unit29Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

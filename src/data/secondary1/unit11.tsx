@@ -15,8 +15,10 @@ export const unit11Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບແນວຄວາມຄິດພື້ນຖານຂອງເລຂາຄະນິດ ເຊັ່ນ: ເມັດ, ເສັ້ນຊື່, ທ່ອນຊື່, ເຄິ່ງເສັ້ນຊື່, ຄວາມສຳພັນ ∈, ∉ ແລະ ເມັດຕັດກັນ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 76-80",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ເມັດ ແລະ ເສັ້ນຊື່ (Points and Lines)",
+      keyPoint: {
       title: "1. ເມັດ ແລະ ເສັ້ນຊື່ (Points and Lines)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -51,70 +53,8 @@ export const unit11Data: UnitData = {
         isBlue: true,
       },
     },
-    {
-      title: "2. ເສັ້ນຊື່, ເຄິ່ງເສັ້ນຊື່ ແລະ ທ່ອນຊື່",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ໃນເລຂາຄະນິດ ມີຄວາມແຕກຕ່າງລະຫວ່າງ 3 ແນວຄິດນີ້:"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div><strong>{"• ເສັ້ນຊື່ AB (Line):"}</strong>{" ບໍ່ມີຈຸດປາຍ (ຍາວອອກໄປໄດ້ບໍ່ມີສິ້ນສຸດທັງສອງເບື້ອງ)."}</div>
-            <div><strong>{"• ເຄິ່ງເສັ້ນຊື່ [Ax) (Half-line):"}</strong>{" ມີຂອບເຂດເບື້ອງ A (ຈຸດປາຍ A) ແຕ່ບໍ່ມີຂອບເຂດເບື້ອງ x."}</div>
-            <div><strong>{"• ທ່ອນຊື່ [AB] (Segment):"}</strong>{" ມີຂອບເຂດຈຳກັດ (ມີ 2 ຈຸດປາຍ ຄື A ແລະ B) ຄວາມຍາວແນ່ນອນ."}</div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ທ່ອນຊື່ [AB] ສາມາດແທກລວງຍາວໄດ້ ແຕ່ເສັ້ນຊື່ ແລະ ເຄິ່ງເສັ້ນຊື່ບໍ່ສາມາດແທກລວງຍາວໄດ້ເດີ້!",
-      },
-    },
-    {
-      title: "3. ເມັດຕັດກັນຂອງສອງເສັ້ນຊື່ (Intersection)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຖ້າສອງເສັ້ນຊື່ d₁ ແລະ d₂ ຕັດກັນຢູ່ຈຸດໜຶ່ງ, ຈຸດນັ້ນເອີ້ນວ່າ 'ເມັດຕັດກັນ (Intersection Point)':"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#FFF3E0",
-              border: "2px solid #FF9800",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"ຖ້າ d₁ ຕັດ d₂ ຢູ່ເມັດ P:"}</div>
-            <div>{"• ເມັດ P ແມ່ນ ເມັດຕັດກັນ ຂອງສອງເສັ້ນຊື່."}</div>
-            <div style={{ color: "#D84315", fontWeight: "bold" }}>
-              {"• ດັ່ງນັ້ນ ເມັດ P ∈ d₁ ແລະ P ∈ d₂ ສະເໝີ!"}
-            </div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ເມັດຕັດກັນແມ່ນຈຸດຮ່ວມດຽວທີ່ຢູ່ເທິງທັງສອງເສັ້ນຊື່ເດີ້!",
-        isBlue: true,
-      },
-    },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -169,8 +109,42 @@ export const unit11Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ເສັ້ນຊື່, ເຄິ່ງເສັ້ນຊື່ ແລະ ທ່ອນຊື່",
+      keyPoint: {
+      title: "2. ເສັ້ນຊື່, ເຄິ່ງເສັ້ນຊື່ ແລະ ທ່ອນຊື່",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"ໃນເລຂາຄະນິດ ມີຄວາມແຕກຕ່າງລະຫວ່າງ 3 ແນວຄິດນີ້:"}
+          </p>
+          <div
+            style={{
+              padding: "12px",
+              backgroundColor: "#E8F5E9",
+              border: "2px solid #4CAF50",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "8px",
+            }}
+          >
+            <div><strong>{"• ເສັ້ນຊື່ AB (Line):"}</strong>{" ບໍ່ມີຈຸດປາຍ (ຍາວອອກໄປໄດ້ບໍ່ມີສິ້ນສຸດທັງສອງເບື້ອງ)."}</div>
+            <div><strong>{"• ເຄິ່ງເສັ້ນຊື່ [Ax) (Half-line):"}</strong>{" ມີຂອບເຂດເບື້ອງ A (ຈຸດປາຍ A) ແຕ່ບໍ່ມີຂອບເຂດເບື້ອງ x."}</div>
+            <div><strong>{"• ທ່ອນຊື່ [AB] (Segment):"}</strong>{" ມີຂອບເຂດຈຳກັດ (ມີ 2 ຈຸດປາຍ ຄື A ແລະ B) ຄວາມຍາວແນ່ນອນ."}</div>
+          </div>
+        </div>
+      ),
+      hint: {
+        text: "ທ່ອນຊື່ [AB] ສາມາດແທກລວງຍາວໄດ້ ແຕ່ເສັ້ນຊື່ ແລະ ເຄິ່ງເສັ້ນຊື່ບໍ່ສາມາດແທກລວງຍາວໄດ້ເດີ້!",
+      },
+    },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -198,7 +172,47 @@ export const unit11Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
+    {
+      title: "3. ເມັດຕັດກັນຂອງສອງເສັ້ນຊື່ (Intersection)",
+      keyPoint: {
+      title: "3. ເມັດຕັດກັນຂອງສອງເສັ້ນຊື່ (Intersection)",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"ຖ້າສອງເສັ້ນຊື່ d₁ ແລະ d₂ ຕັດກັນຢູ່ຈຸດໜຶ່ງ, ຈຸດນັ້ນເອີ້ນວ່າ 'ເມັດຕັດກັນ (Intersection Point)':"}
+          </p>
+          <div
+            style={{
+              padding: "12px",
+              backgroundColor: "#FFF3E0",
+              border: "2px solid #FF9800",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "6px",
+            }}
+          >
+            <div>{"ຖ້າ d₁ ຕັດ d₂ ຢູ່ເມັດ P:"}</div>
+            <div>{"• ເມັດ P ແມ່ນ ເມັດຕັດກັນ ຂອງສອງເສັ້ນຊື່."}</div>
+            <div style={{ color: "#D84315", fontWeight: "bold" }}>
+              {"• ດັ່ງນັ້ນ ເມັດ P ∈ d₁ ແລະ P ∈ d₂ ສະເໝີ!"}
+            </div>
+          </div>
+        </div>
+      ),
+      hint: {
+        text: "ເມັດຕັດກັນແມ່ນຈຸດຮ່ວມດຽວທີ່ຢູ່ເທິງທັງສອງເສັ້ນຊື່ເດີ້!",
+        isBlue: true,
+      },
+    },
+      problems: [
+        
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

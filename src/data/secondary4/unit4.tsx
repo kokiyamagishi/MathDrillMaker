@@ -15,8 +15,10 @@ export const unit4Data: UnitData = {
   unitGoal:
     "ເຂົ້າໃຈວິທີການ通分 (ຊອກຫາພູດຮ່ວມ) ແລະ ສາມາດຄິດໄລ່ການບວກ ແລະ ການລົບເລກສ່ວນປົກກະຕິໄດ້ຢ່າງຖືກຕ້ອງ ພ້ອມທັງຄັດຈ້ອນຜົນຮັບໃຫ້ງ່າຍດາຍທີ່ສຸດ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 4 ໜ້າ 21-25",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ການບວກລົບທີ່ມີພູດຄືກັນ (Addition/Subtraction with Same Denominator)",
+      keyPoint: {
       title: "1. ການບວກລົບທີ່ມີພູດຄືກັນ (Addition/Subtraction with Same Denominator)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -67,7 +69,41 @@ export const unit4Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຄິດໄລ່ການບວກ ແລະ ລົບເລກສ່ວນປົກກະຕິທີ່ມີພູດຄືກັນ: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) ຄິດໄລ່: "} <Fraction num="3x" den="x + 2" /> {" + "} <Fraction num="6" den="x + 2" /> {" = (ຕອບຜົນຮັບງ່າຍດາຍທີ່ສຸດ):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) ຄິດໄລ່: "} <Fraction num="x²" den="x - 3" /> {" - "} <Fraction num="9" den="x - 3" /> {" ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ການບວກລົບທີ່ມີພູດຕ່າງກັນ (Finding Least Common Denominator - LCD)",
+      keyPoint: {
       title: "2. ການບວກລົບທີ່ມີພູດຕ່າງກັນ (Finding Least Common Denominator - LCD)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -110,38 +146,8 @@ export const unit4Data: UnitData = {
         text: "⚠️ ຂໍ້ຄວນລະວັງ: ເວລາລົບເລກສ່ວນ, ຢ່າລືມປ່ຽນເຄື່ອງໝາຍຂອງທຸກໆພົດໃນຈຳນວນພູດຂອງໂຕລົບ ເມື່ອເອົາມາລວມກັນເດີ້!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ການບວກ ແລະ ລົບເລກສ່ວນປົກກະຕິທີ່ມີພູດຄືກັນ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຄິດໄລ່: "} <Fraction num="3x" den="x + 2" /> {" + "} <Fraction num="6" den="x + 2" /> {" = (ຕອບຜົນຮັບງ່າຍດາຍທີ່ສຸດ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຄິດໄລ່: "} <Fraction num="x²" den="x - 3" /> {" - "} <Fraction num="9" den="x - 3" /> {" ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -169,7 +175,9 @@ export const unit4Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

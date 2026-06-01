@@ -15,8 +15,10 @@ export const unit5Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍ ແລະ ຊື່ເອີ້ນຂອງແຕ່ລະພົດໃນການຄູນ ແລະ ການຫານ, ຄຸນລັກສະນະສະຫຼັບບ່ອນ, ຄຸນລັກສະນະໂຮມໝູ່ ແລະ ຫຼັກການຫານແບບມີເສດ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 33-39",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ການຄູນຈຳນວນທຳມະຊາດ",
+      keyPoint: {
       title: "1. ການຄູນຈຳນວນທຳມະຊາດ",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -66,54 +68,8 @@ export const unit5Data: UnitData = {
         isBlue: true,
       },
     },
-    {
-      title: "2. ການຫານຈຳນວນທຳມະຊາດ",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ໃນການຫານແບບມີເສດ "}<strong>{"23 ÷ 7 = 3 ຕົວເສດ 2"}</strong>{" :"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#FFEBEE",
-              border: "2px solid #EF5350",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"• "}<strong>{"23"}</strong>{" ເອີ້ນວ່າ "}<strong>{"ຕົວຕັ້ງຫານ (Dividend)"}</strong></div>
-            <div>{"• "}<strong>{"7"}</strong>{" ເອີ້ນວ່າ "}<strong>{"ຕົວຫານ (Divisor)"}</strong></div>
-            <div>{"• "}<strong>{"3"}</strong>{" ເອີ້ນວ່າ "}<strong>{"ຜົນຫານ (Quotient)"}</strong></div>
-            <div>{"• "}<strong>{"2"}</strong>{" ເອີ້ນວ່າ "}<strong>{"ຕົວເສດ (Remainder)"}</strong></div>
-          </div>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ການພົວພັນການຫານ (ສູດກວດຄືນ):"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#FFF3E0",
-              border: "2px solid #FF9800",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-            }}
-          >
-            {"ຖ້າ "}<strong>{"a ÷ b = q ເຫຼືອ r"}</strong>{" ແລ້ວ "}<strong>{"a = b × q + r"}</strong>{" (ເຊິ່ງຕົວເສດ r ຕ້ອງນ້ອຍກວ່າຕົວຫານ b ສະເໝີ: r < b)"}
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ຖ້າຕົວເສດ r = 0, ເຮົາເອີ້ນວ່າ ການຫານຂາດ (a = b × q) ເດີ້!",
-        isBlue: true,
-      },
-    },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -159,8 +115,58 @@ export const unit5Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ການຫານຈຳນວນທຳມະຊາດ",
+      keyPoint: {
+      title: "2. ການຫານຈຳນວນທຳມະຊາດ",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"ໃນການຫານແບບມີເສດ "}<strong>{"23 ÷ 7 = 3 ຕົວເສດ 2"}</strong>{" :"}
+          </p>
+          <div
+            style={{
+              padding: "12px",
+              backgroundColor: "#FFEBEE",
+              border: "2px solid #EF5350",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "6px",
+            }}
+          >
+            <div>{"• "}<strong>{"23"}</strong>{" ເອີ້ນວ່າ "}<strong>{"ຕົວຕັ້ງຫານ (Dividend)"}</strong></div>
+            <div>{"• "}<strong>{"7"}</strong>{" ເອີ້ນວ່າ "}<strong>{"ຕົວຫານ (Divisor)"}</strong></div>
+            <div>{"• "}<strong>{"3"}</strong>{" ເອີ້ນວ່າ "}<strong>{"ຜົນຫານ (Quotient)"}</strong></div>
+            <div>{"• "}<strong>{"2"}</strong>{" ເອີ້ນວ່າ "}<strong>{"ຕົວເສດ (Remainder)"}</strong></div>
+          </div>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"ການພົວພັນການຫານ (ສູດກວດຄືນ):"}
+          </p>
+          <div
+            style={{
+              padding: "12px",
+              backgroundColor: "#FFF3E0",
+              border: "2px solid #FF9800",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+            }}
+          >
+            {"ຖ້າ "}<strong>{"a ÷ b = q ເຫຼືອ r"}</strong>{" ແລ້ວ "}<strong>{"a = b × q + r"}</strong>{" (ເຊິ່ງຕົວເສດ r ຕ້ອງນ້ອຍກວ່າຕົວຫານ b ສະເໝີ: r < b)"}
+          </div>
+        </div>
+      ),
+      hint: {
+        text: "ຖ້າຕົວເສດ r = 0, ເຮົາເອີ້ນວ່າ ການຫານຂາດ (a = b × q) ເດີ້!",
+        isBlue: true,
+      },
+    },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -188,7 +194,9 @@ export const unit5Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

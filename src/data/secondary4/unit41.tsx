@@ -15,8 +15,10 @@ export const unit41Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈວິທີຄິດໄລ່ຄ່າສະເລ່ຍເລກຄະນິດ (Arithmetic Mean) ຂອງຂໍ້ມູນທັງໝົດ ພ້ອມທັງການແກ້ໂຈດບັນຫາຕົວຈິງກ່ຽວກັບຄ່າສະເລ່ຍ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 41 ໜ້າ 241-246",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ສູດຄິດໄລ່ຄ່າສະເລ່ຍເລກຄະນິດ (Arithmetic Mean Formula)",
+      keyPoint: {
       title: "1. ສູດຄິດໄລ່ຄ່າສະເລ່ຍເລກຄະນິດ (Arithmetic Mean Formula)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -67,9 +69,8 @@ export const unit41Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -97,8 +98,14 @@ export const unit41Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ບົດຮຽນພື້ນຖານ",
+      keyPoint: { content: <span /> },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -126,7 +133,9 @@ export const unit41Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

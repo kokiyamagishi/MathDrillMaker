@@ -15,8 +15,10 @@ export const unit31Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ນຳໃຊ້ຫຼັກການບວກ ແລະ ການລົບເວັກເຕີ ໂດຍນຳໃຊ້ຫຼັກເກັນຊາລ (Chasles' Relation) ແລະ ຫຼັກການຮູບສີ່ແຈຂ້າງຂະໜານ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 31 ໜ້າ 181-186",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ຫຼັກເກັນຊາລ ແລະ ການບວກເວັກເຕີ (Chasles' Identity & Vector Addition)",
+      keyPoint: {
       title: "1. ຫຼັກເກັນຊາລ ແລະ ການບວກເວັກເຕີ (Chasles' Identity & Vector Addition)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -69,9 +71,8 @@ export const unit31Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -99,8 +100,14 @@ export const unit31Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ບົດຮຽນພື້ນຖານ",
+      keyPoint: { content: <span /> },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -128,7 +135,9 @@ export const unit31Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

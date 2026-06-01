@@ -7,8 +7,10 @@ export const unit25Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍຂອງອະນຸກຸ່ມ (Subset), ສັນຍະລັກ ⊂, ວິທີການຊອກຫາອະນຸກຸ່ມທັງໝົດ ແລະ ການນຳໃຊ້ແຜນວາດກຸ່ມ (Venn Diagram)",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ບົດທີ 25 ໜ້າ 163-168",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ອະນຸກຸ່ມ (Subset)",
+      keyPoint: {
       title: "1. ອະນຸກຸ່ມ (Subset)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -39,37 +41,8 @@ export const unit25Data: UnitData = {
         isBlue: true,
       },
     },
-    {
-      title: "2. ແຜນວາດຂອງກຸ່ມ (Venn Diagram)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ເພິ່ນມັກໃຊ້ຮູບເລຂາຄະນິດປິດ ເຊັ່ນ ຮູບວົງມົນ ຫຼື ຮູບໄຂ່ ເພື່ອສະແດງຄວາມສຳພັນລະຫວ່າງກຸ່ມຕ່າງໆ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"• ຖ້າ A ⊂ B → ວົງມົນຂອງກຸ່ມ A ຈະຢູ່ທາງໃນວົງມົນຂອງກຸ່ມ B ທັງໝົດ."}</div>
-            <div>{"• ອົງປະກອບແຕ່ລະຕົວຈະຖືກຂຽນຢູ່ວາງໄວ້ພາຍໃນຂອບເຂດຂອງວົງມົນນັ້ນໆ."}</div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ແຜນວາດນີ້ເອີ້ນວ່າ ແຜນວາດແວນ (Venn Diagram) ເຊິ່ງຊ່ວຍໃຫ້ເຫັນພາບຄວາມສຳພັນຂອງກຸ່ມໄດ້ຈະແຈ້ງທີ່ສຸດ!",
-      },
-    },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -104,8 +77,41 @@ export const unit25Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ແຜນວາດຂອງກຸ່ມ (Venn Diagram)",
+      keyPoint: {
+      title: "2. ແຜນວາດຂອງກຸ່ມ (Venn Diagram)",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"ເພິ່ນມັກໃຊ້ຮູບເລຂາຄະນິດປິດ ເຊັ່ນ ຮູບວົງມົນ ຫຼື ຮູບໄຂ່ ເພື່ອສະແດງຄວາມສຳພັນລະຫວ່າງກຸ່ມຕ່າງໆ:"}
+          </p>
+          <div
+            style={{
+              padding: "16px",
+              backgroundColor: "#E8F5E9",
+              border: "2px solid #4CAF50",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "6px",
+            }}
+          >
+            <div>{"• ຖ້າ A ⊂ B → ວົງມົນຂອງກຸ່ມ A ຈະຢູ່ທາງໃນວົງມົນຂອງກຸ່ມ B ທັງໝົດ."}</div>
+            <div>{"• ອົງປະກອບແຕ່ລະຕົວຈະຖືກຂຽນຢູ່ວາງໄວ້ພາຍໃນຂອບເຂດຂອງວົງມົນນັ້ນໆ."}</div>
+          </div>
+        </div>
+      ),
+      hint: {
+        text: "ແຜນວາດນີ້ເອີ້ນວ່າ ແຜນວາດແວນ (Venn Diagram) ເຊິ່ງຊ່ວຍໃຫ້ເຫັນພາບຄວາມສຳພັນຂອງກຸ່ມໄດ້ຈະແຈ້ງທີ່ສຸດ!",
+      },
+    },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -140,7 +146,9 @@ export const unit25Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

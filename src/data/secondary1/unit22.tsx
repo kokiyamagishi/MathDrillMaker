@@ -15,8 +15,10 @@ export const unit22Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບການຂະຫຍາຍ ແລະ ຍໍ້ຮູບ, ມາດຕາສ່ວນຂະຫຍາຍ (ເຊັ່ນ 5:1) ແລະ ຄວາມສຳພັນລະຫວ່າງມາດຕາສ່ວນຄວາມຍາວ ແລະ ເນື້ອທີ່",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ບົດທີ 22 ໜ້າ 147-152",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ມາດຕາສ່ວນຍໍ້ ແລະ ມາດຕາສ່ວນຂະຫຍາຍ (Reduction & Enlargement)",
+      keyPoint: {
       title: "1. ມາດຕາສ່ວນຍໍ້ ແລະ ມາດຕາສ່ວນຂະຫຍາຍ (Reduction & Enlargement)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -53,7 +55,49 @@ export const unit22Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p style={{ fontSize: "1.375rem" }}>
+            {"ຈົ່ງຄິດໄລ່ກ່ຽວກັບມາດຕາສ່ວນຂະຫຍາຍ: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "20px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+              <span>{"(1) ແຕ້ມຕົວມົດໜຶ່ງທີ່ມີຄວາມຍາວຕົວຈິງ 6 mm ດ້ວຍມາດຕາສ່ວນຂະຫຍາຍ 5:1. ຄວາມຍາວໃນຮູບແຕ້ມຈະແມ່ນຈັກ mm?:"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                <span>{"ຕອບ:"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                <span>{"mm"}</span>
+              </div>
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+              <span>{"(2) ຈາກຂໍ້ (1), ຄວາມຍາວໃນຮູບແຕ້ມຄິດເປັນຈັກ cm?:"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                <span>{"ຕອບ:"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                <span>{"cm"}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ມາດຕາສ່ວນຂອງເນື້ອທີ່ (Area Scale Relation)",
+      keyPoint: {
       title: "2. ມາດຕາສ່ວນຂອງເນື້ອທີ່ (Area Scale Relation)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -94,46 +138,8 @@ export const unit22Data: UnitData = {
         text: "ຖ້າຂະຫຍາຍຄວາມຍາວເປັນ 2 ເທົ່າ, ເນື້ອທີ່ຈະຂະຫຍາຍເປັນ 2² = 4 ເທົ່າສະເໝີ!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p style={{ fontSize: "1.375rem" }}>
-            {"ຈົ່ງຄິດໄລ່ກ່ຽວກັບມາດຕາສ່ວນຂະຫຍາຍ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ແຕ້ມຕົວມົດໜຶ່ງທີ່ມີຄວາມຍາວຕົວຈິງ 6 mm ດ້ວຍມາດຕາສ່ວນຂະຫຍາຍ 5:1. ຄວາມຍາວໃນຮູບແຕ້ມຈະແມ່ນຈັກ mm?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"mm"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຄວາມຍາວໃນຮູບແຕ້ມຄິດເປັນຈັກ cm?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"cm"}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -168,7 +174,9 @@ export const unit22Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

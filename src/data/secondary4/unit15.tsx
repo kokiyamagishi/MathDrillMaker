@@ -15,8 +15,10 @@ export const unit15Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບການຍ້າຍຂະໜານ (Translation) ຂອງເສັ້ນສະແດງປາຣາໂບນຕາມແກນ x (Horizontal translation) ແລະ ວິທີກຳນົດພິກັດຈຸດຈອມໃໝ່",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 15 ໜ້າ 85-90",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ການຍ້າຍຂະໜານຕາມແກນ x (Horizontal Shift along the x-axis)",
+      keyPoint: {
       title: "1. ການຍ້າຍຂະໜານຕາມແກນ x (Horizontal Shift along the x-axis)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -57,7 +59,41 @@ export const unit15Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຊອກຫາພິກັດຈຸດຈອມຂອງຕຳລາໃນຮູບຮ່າງ y = a(x - b)²: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) ໃຫ້ຕຳລາ y = 2(x - 4)². ພິກັດຈຸດຈອມ (x, y) ແມ່ນເທົ່າໃດ? (ຕອບໃນຮູບແບບ (x, y), ຕົວຢ່າງ: (4, 0)):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) ໃຫ້ຕຳລາ y = -(x + 5)². ພິກັດຈຸດຈອມ (x, y) ແມ່ນເທົ່າໃດ? (⚠️ ຢ່າລືມເຄື່ອງໝາຍໃນວົງເລັບ):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ແຜນວາດການຍ້າຍຂະໜານຕາມແນວນອນ (Horizontal Translation Graph)",
+      keyPoint: {
       title: "2. ແຜນວາດການຍ້າຍຂະໜານຕາມແນວນອນ (Horizontal Translation Graph)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -96,38 +132,8 @@ export const unit15Data: UnitData = {
         text: "ເວລາເບິ່ງໃນວົງເລັບ (x - b) ໃຫ້ຈື່ໄວ້ວ່າ ຄ່າ b ຈະມີເຄື່ອງໝາຍກົງກັນຂ້າມສະເໝີເດີ້!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາພິກັດຈຸດຈອມຂອງຕຳລາໃນຮູບຮ່າງ y = a(x - b)²: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໃຫ້ຕຳລາ y = 2(x - 4)². ພິກັດຈຸດຈອມ (x, y) ແມ່ນເທົ່າໃດ? (ຕອບໃນຮູບແບບ (x, y), ຕົວຢ່າງ: (4, 0)):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ໃຫ້ຕຳລາ y = -(x + 5)². ພິກັດຈຸດຈອມ (x, y) ແມ່ນເທົ່າໃດ? (⚠️ ຢ່າລືມເຄື່ອງໝາຍໃນວົງເລັບ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -155,7 +161,9 @@ export const unit15Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

@@ -15,8 +15,10 @@ export const unit29Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ນຳໃຊ້ສູດຄິດໄລ່ເນື້ອທີ່ຂອງຮູບສາມແຈ S = 1/2 · ab · sin C ເມື່ອຮູ້ສອງຂ້າງ ແລະ ມຸມລະຫວ່າງສອງຂ້າງນັ້ນ ພ້ອມທັງການນຳໃຊ້ກັບມຸມຫວາ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 29 ໜ້າ 169-174",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ສູດເນື້ອທີ່ຮູບສາມແຈໂດຍໃຊ້ໄຕມຸມມິຕິ (Area of Triangle by Trigonometry)",
+      keyPoint: {
       title: "1. ສູດເນື້ອທີ່ຮູບສາມແຈໂດຍໃຊ້ໄຕມຸມມິຕິ (Area of Triangle by Trigonometry)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -60,9 +62,8 @@ export const unit29Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -90,8 +91,14 @@ export const unit29Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ບົດຮຽນພື້ນຖານ",
+      keyPoint: { content: <span /> },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -119,7 +126,9 @@ export const unit29Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

@@ -7,8 +7,10 @@ export const unit26Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບການປະຕິບັດການຂອງກຸ່ມ: ການຕັດກັນ (Intersection) ດ້ວຍເຄື່ອງໝາຍ ∩ ແລະ ການໂຮມກັນ (Union) ດ້ວຍເຄື່ອງໝາຍ ∪",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ບົດທີ 26 ໜ້າ 169-174",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ການຕັດກັນຂອງສອງກຸ່ມ (Intersection of Sets)",
+      keyPoint: {
       title: "1. ການຕັດກັນຂອງສອງກຸ່ມ (Intersection of Sets)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -40,40 +42,8 @@ export const unit26Data: UnitData = {
         isBlue: true,
       },
     },
-    {
-      title: "2. ການໂຮມກັນຂອງສອງກຸ່ມ (Union of Sets)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ການໂຮມກັນຂອງກຸ່ມ A ແລະ ກຸ່ມ B (ຂຽນ A ∪ B) ແມ່ນກຸ່ມທີ່ປະກອບດ້ວຍທຸກໆອົງປະກອບຂອງ A ແລະ B ເຂົ້າກັນ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div>{"• ສັນຍະລັກ ∪ ອ່ານວ່າ 'ໂຮມກັນ' (Union)."}</div>
-            <div>{"• A ∪ B = {x | x ∈ A ຫຼື x ∈ B}"}</div>
-            <div style={{ color: "#2E7D32", fontWeight: "bold" }}>
-              {"• ຕົວຢ່າງ: ຖ້າ A = {1, 2} ແລະ B = {2, 3, 4} → A ∪ B = {1, 2, 3, 4}"}
-            </div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ໃນການໂຮມກັນ ຖ້າມີອົງປະກອບທີ່ຊ້ຳກັນ (ເຊັ່ນ ເລກ 2) ເຮົາຈະຂຽນມັນພຽງແຕ່ເທື່ອດຽວເທົ່ານັ້ນໃນກຸ່ມໃໝ່!",
-      },
-    },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -107,8 +77,44 @@ export const unit26Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ການໂຮມກັນຂອງສອງກຸ່ມ (Union of Sets)",
+      keyPoint: {
+      title: "2. ການໂຮມກັນຂອງສອງກຸ່ມ (Union of Sets)",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"ການໂຮມກັນຂອງກຸ່ມ A ແລະ ກຸ່ມ B (ຂຽນ A ∪ B) ແມ່ນກຸ່ມທີ່ປະກອບດ້ວຍທຸກໆອົງປະກອບຂອງ A ແລະ B ເຂົ້າກັນ:"}
+          </p>
+          <div
+            style={{
+              padding: "16px",
+              backgroundColor: "#E8F5E9",
+              border: "2px solid #4CAF50",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "8px",
+            }}
+          >
+            <div>{"• ສັນຍະລັກ ∪ ອ່ານວ່າ 'ໂຮມກັນ' (Union)."}</div>
+            <div>{"• A ∪ B = {x | x ∈ A ຫຼື x ∈ B}"}</div>
+            <div style={{ color: "#2E7D32", fontWeight: "bold" }}>
+              {"• ຕົວຢ່າງ: ຖ້າ A = {1, 2} ແລະ B = {2, 3, 4} → A ∪ B = {1, 2, 3, 4}"}
+            </div>
+          </div>
+        </div>
+      ),
+      hint: {
+        text: "ໃນການໂຮມກັນ ຖ້າມີອົງປະກອບທີ່ຊ້ຳກັນ (ເຊັ່ນ ເລກ 2) ເຮົາຈະຂຽນມັນພຽງແຕ່ເທື່ອດຽວເທົ່ານັ້ນໃນກຸ່ມໃໝ່!",
+      },
+    },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -142,7 +148,9 @@ export const unit26Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

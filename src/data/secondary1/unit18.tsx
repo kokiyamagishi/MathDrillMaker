@@ -7,8 +7,10 @@ export const unit18Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈກ່ຽວກັບປະເພດຂອງມຸມ (ມຸມແຫຼມ, ມຸມສາກ, ມຸມຫວາ, ມຸມພຽງ), ການວັດແທກຂະໜາດຂອງມຸມ ແລະ ການຄິດໄລ່ມຸມພື້ນຖານ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ບົດທີ 18 ໜ້າ 122-128",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ປະເພດຂອງມຸມ (Types of Angles)",
+      keyPoint: {
       title: "1. ປະເພດຂອງມຸມ (Types of Angles)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -39,39 +41,8 @@ export const unit18Data: UnitData = {
         isBlue: true,
       },
     },
-    {
-      title: "2. ມຸມປະກອບສອງ ແລະ ມຸມເພີ່ມສອງ (Complementary & Supplementary)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຄວາມສຳພັນລະຫວ່າງສອງມຸມທີ່ຄວນຈື່:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div>{"• ມຸມປະກອບສອງ (Complementary): ສອງມຸມທີ່ມີຜົນບວກເທົ່າກັບ 90°"}</div>
-            <div style={{ color: "#2E7D32", paddingLeft: "16px" }}>{"ຕົວຢ່າງ: 30° + 60° = 90°"}</div>
-            <div>{"• ມຸມເພີ່ມສອງ (Supplementary): ສອງມຸມທີ່ມີຜົນບວກເທົ່າກັບ 180°"}</div>
-            <div style={{ color: "#2E7D32", paddingLeft: "16px" }}>{"ຕົວຢ່າງ: 120° + 60° = 180°"}</div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ຖ້າຮູ້ມຸມໜຶ່ງ ເຮົາສາມາດຊອກຫາມຸມທີ່ເຫຼືອໄດ້ງ່າຍໆ ໂດຍເອົາ 90° ຫຼື 180° ມາລົບອອກ!",
-      },
-    },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -107,8 +78,43 @@ export const unit18Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ມຸມປະກອບສອງ ແລະ ມຸມເພີ່ມສອງ (Complementary & Supplementary)",
+      keyPoint: {
+      title: "2. ມຸມປະກອບສອງ ແລະ ມຸມເພີ່ມສອງ (Complementary & Supplementary)",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"ຄວາມສຳພັນລະຫວ່າງສອງມຸມທີ່ຄວນຈື່:"}
+          </p>
+          <div
+            style={{
+              padding: "16px",
+              backgroundColor: "#E8F5E9",
+              border: "2px solid #4CAF50",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "8px",
+            }}
+          >
+            <div>{"• ມຸມປະກອບສອງ (Complementary): ສອງມຸມທີ່ມີຜົນບວກເທົ່າກັບ 90°"}</div>
+            <div style={{ color: "#2E7D32", paddingLeft: "16px" }}>{"ຕົວຢ່າງ: 30° + 60° = 90°"}</div>
+            <div>{"• ມຸມເພີ່ມສອງ (Supplementary): ສອງມຸມທີ່ມີຜົນບວກເທົ່າກັບ 180°"}</div>
+            <div style={{ color: "#2E7D32", paddingLeft: "16px" }}>{"ຕົວຢ່າງ: 120° + 60° = 180°"}</div>
+          </div>
+        </div>
+      ),
+      hint: {
+        text: "ຖ້າຮູ້ມຸມໜຶ່ງ ເຮົາສາມາດຊອກຫາມຸມທີ່ເຫຼືອໄດ້ງ່າຍໆ ໂດຍເອົາ 90° ຫຼື 180° ມາລົບອອກ!",
+      },
+    },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -144,7 +150,9 @@ export const unit18Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

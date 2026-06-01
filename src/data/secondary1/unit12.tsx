@@ -15,8 +15,10 @@ export const unit12Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍ ແລະ ສັນຍະລັກຂອງເສັ້ນຊື່ຂະໜານ (//) ແລະ ເສັ້ນຊື່ຕັ້ງສາກ (⊥) ພ້ອມທັງຄຸນລັກສະນະພື້ນຖານຂອງເລຂາຄະນິດ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 81-84",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ເສັ້ນຊື່ຕັ້ງສາກ (Perpendicular Lines)",
+      keyPoint: {
       title: "1. ເສັ້ນຊື່ຕັ້ງສາກ (Perpendicular Lines)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -45,74 +47,8 @@ export const unit12Data: UnitData = {
         isBlue: true,
       },
     },
-    {
-      title: "2. ເສັ້ນຊື່ຂະໜານ (Parallel Lines)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ສອງເສັ້ນຊື່ d₁ ແລະ d₂ ທີ່ນອນຢູ່ໃນໜ້າພຽງດຽວກັນ ແລະ ບໍ່ມີເມັດຕັດກັນຈັກເມັດ ເອີ້ນວ່າ 'ເສັ້ນຊື່ຂະໜານກັນ':"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"• ສັນຍະລັກ: "}<strong>{"d₁ // d₂"}</strong>{" (ອ່ານວ່າ d₁ ຂະໜານກັບ d₂)"}</div>
-            <div>{"• ຈຳນວນເມັດຕັດກັນແມ່ນ "}<strong>{"0 ເມັດ"}</strong>{" (ບໍ່ມີມື້ພົບກັນ)."}</div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ເສັ້ນຊື່ຂະໜານກັນ ຈະມີໄລຍະຫ່າງລະຫວ່າງເສັ້ນຊື່ເທົ່າກັນຕະຫຼອດໄປ!",
-      },
-    },
-    {
-      title: "3. ຄຸນລັກສະນະພື້ນຖານ (Basic Geometric Rules)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຄຸນລັກສະນະສຳຄັນທີ່ນຳໃຊ້ໃນການພິສູດເລຂາຄະນິດ:"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#FFF3E0",
-              border: "2px solid #FF9800",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "10px",
-            }}
-          >
-            <div>
-              <strong>{"ຫຼັກເກນ 1: "}</strong>{"ຖ້າສອງເສັ້ນຊື່ຕ່າງກັນ ຫາກຕັ້ງສາກກັບເສັ້ນຊື່ດຽວກັນ, ພວກມັນຈະຂະໜານກັນ:"}
-              <br />
-              <span style={{ color: "#E65100", paddingLeft: "16px", fontWeight: "bold" }}>{"→ ຖ້າ x ⊥ d ແລະ y ⊥ d ດັ່ງນັ້ນ x // y"}</span>
-            </div>
-            <div style={{ borderTop: "1px solid #FFE0B2", paddingTop: "8px" }}>
-              <strong>{"ຫຼັກເກນ 2: "}</strong>{"ຖ້າເສັ້ນຊື່ໜຶ່ງ ຫາກຕັ້ງສາກກັບເສັ້ນຊື່ໜຶ່ງໃນສອງເສັ້ນຊື່ຂະໜານກັນ, ມັນກໍ່ຈະຕັ້ງສາກກັບເສັ້ນຊື່ທີ່ເຫຼືອຄືກັນ:"}
-              <br />
-              <span style={{ color: "#E65100", paddingLeft: "16px", fontWeight: "bold" }}>{"→ ຖ້າ d₁ // d₂ ແລະ T ⊥ d₁ ດັ່ງນັ້ນ T ⊥ d₂"}</span>
-            </div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ຫຼັກເກນເຫຼົ່ານີ້ມີປະໂຫຍດຫຼາຍໃນການພິສູດຄຸນລັກສະນະຂອງຮູບເລຂາຄະນິດຕ່າງໆ!",
-        isBlue: true,
-      },
-    },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -167,8 +103,41 @@ export const unit12Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ເສັ້ນຊື່ຂະໜານ (Parallel Lines)",
+      keyPoint: {
+      title: "2. ເສັ້ນຊື່ຂະໜານ (Parallel Lines)",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"ສອງເສັ້ນຊື່ d₁ ແລະ d₂ ທີ່ນອນຢູ່ໃນໜ້າພຽງດຽວກັນ ແລະ ບໍ່ມີເມັດຕັດກັນຈັກເມັດ ເອີ້ນວ່າ 'ເສັ້ນຊື່ຂະໜານກັນ':"}
+          </p>
+          <div
+            style={{
+              padding: "12px",
+              backgroundColor: "#E8F5E9",
+              border: "2px solid #4CAF50",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "6px",
+            }}
+          >
+            <div>{"• ສັນຍະລັກ: "}<strong>{"d₁ // d₂"}</strong>{" (ອ່ານວ່າ d₁ ຂະໜານກັບ d₂)"}</div>
+            <div>{"• ຈຳນວນເມັດຕັດກັນແມ່ນ "}<strong>{"0 ເມັດ"}</strong>{" (ບໍ່ມີມື້ພົບກັນ)."}</div>
+          </div>
+        </div>
+      ),
+      hint: {
+        text: "ເສັ້ນຊື່ຂະໜານກັນ ຈະມີໄລຍະຫ່າງລະຫວ່າງເສັ້ນຊື່ເທົ່າກັນຕະຫຼອດໄປ!",
+      },
+    },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -198,7 +167,52 @@ export const unit12Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
+    {
+      title: "3. ຄຸນລັກສະນະພື້ນຖານ (Basic Geometric Rules)",
+      keyPoint: {
+      title: "3. ຄຸນລັກສະນະພື້ນຖານ (Basic Geometric Rules)",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"ຄຸນລັກສະນະສຳຄັນທີ່ນຳໃຊ້ໃນການພິສູດເລຂາຄະນິດ:"}
+          </p>
+          <div
+            style={{
+              padding: "12px",
+              backgroundColor: "#FFF3E0",
+              border: "2px solid #FF9800",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "10px",
+            }}
+          >
+            <div>
+              <strong>{"ຫຼັກເກນ 1: "}</strong>{"ຖ້າສອງເສັ້ນຊື່ຕ່າງກັນ ຫາກຕັ້ງສາກກັບເສັ້ນຊື່ດຽວກັນ, ພວກມັນຈະຂະໜານກັນ:"}
+              <br />
+              <span style={{ color: "#E65100", paddingLeft: "16px", fontWeight: "bold" }}>{"→ ຖ້າ x ⊥ d ແລະ y ⊥ d ດັ່ງນັ້ນ x // y"}</span>
+            </div>
+            <div style={{ borderTop: "1px solid #FFE0B2", paddingTop: "8px" }}>
+              <strong>{"ຫຼັກເກນ 2: "}</strong>{"ຖ້າເສັ້ນຊື່ໜຶ່ງ ຫາກຕັ້ງສາກກັບເສັ້ນຊື່ໜຶ່ງໃນສອງເສັ້ນຊື່ຂະໜານກັນ, ມັນກໍ່ຈະຕັ້ງສາກກັບເສັ້ນຊື່ທີ່ເຫຼືອຄືກັນ:"}
+              <br />
+              <span style={{ color: "#E65100", paddingLeft: "16px", fontWeight: "bold" }}>{"→ ຖ້າ d₁ // d₂ ແລະ T ⊥ d₁ ດັ່ງນັ້ນ T ⊥ d₂"}</span>
+            </div>
+          </div>
+        </div>
+      ),
+      hint: {
+        text: "ຫຼັກເກນເຫຼົ່ານີ້ມີປະໂຫຍດຫຼາຍໃນການພິສູດຄຸນລັກສະນະຂອງຮູບເລຂາຄະນິດຕ່າງໆ!",
+        isBlue: true,
+      },
+    },
+      problems: [
+        
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

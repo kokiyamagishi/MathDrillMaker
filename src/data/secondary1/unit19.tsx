@@ -7,8 +7,10 @@ export const unit19Data: UnitData = {
   unitGoal:
     "ເຂົ້າໃຈຢ່າງເລິກເຊິ່ງກ່ຽວກັບຄຸນລັກສະນະຂອງຮູບເຄິ່ງຄືຂອງເສັ້ນຊື່, ເຄິ່ງເສັ້ນຊື່, ມຸມ ແລະ ຄວາມສຳພັນລະຫວ່າງພວກມັນພາຍໃຕ້ການເຄິ່ງຄືແກນ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ບົດທີ 19 ໜ້າ 129-134",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ຮູບເຄິ່ງຄືຂອງເສັ້ນຊື່ (Reflection of a Line)",
+      keyPoint: {
       title: "1. ຮູບເຄິ່ງຄືຂອງເສັ້ນຊື່ (Reflection of a Line)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -38,38 +40,8 @@ export const unit19Data: UnitData = {
         isBlue: true,
       },
     },
-    {
-      title: "2. ຮູບເຄິ່ງຄືຂອງມຸມ (Reflection of an Angle)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຮູບເຄິ່ງຄືຂອງມຸມໜຶ່ງ ຈະມີຂະໜາດເທົ່າກັບມຸມຕົ້ນແບບສະເໝີ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div>{"• ມຸມເຄິ່ງຄືຂອງ ມຸມແຫຼມ ແມ່ນ ມຸມແຫຼມ ທີ່ມີຂະໜາດເທົ່າກັນ."}</div>
-            <div>{"• ມຸມເຄິ່ງຄືຂອງ ມຸມສາກ ແມ່ນ ມຸມສາກ."}</div>
-            <div>{"• ມຸມເຄິ່ງຄືຂອງ ມຸມຫວາ ແມ່ນ ມຸມຫວາ."}</div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ເຖິງແມ່ນວ່າທິດທາງການປິ່ນຂອງມຸມຈະປ່ຽນໄປ (ເຊັ່ນ ຕາມເຂັມໂມງ ປ່ຽນເປັນ ທວນເຂັມໂມງ), ແຕ່ຄ່າຂະໜາດອົງສາແມ່ນເທົ່າເດີມ!",
-      },
-    },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -103,8 +75,42 @@ export const unit19Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ຮູບເຄິ່ງຄືຂອງມຸມ (Reflection of an Angle)",
+      keyPoint: {
+      title: "2. ຮູບເຄິ່ງຄືຂອງມຸມ (Reflection of an Angle)",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"ຮູບເຄິ່ງຄືຂອງມຸມໜຶ່ງ ຈະມີຂະໜາດເທົ່າກັບມຸມຕົ້ນແບບສະເໝີ:"}
+          </p>
+          <div
+            style={{
+              padding: "16px",
+              backgroundColor: "#E8F5E9",
+              border: "2px solid #4CAF50",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "8px",
+            }}
+          >
+            <div>{"• ມຸມເຄິ່ງຄືຂອງ ມຸມແຫຼມ ແມ່ນ ມຸມແຫຼມ ທີ່ມີຂະໜາດເທົ່າກັນ."}</div>
+            <div>{"• ມຸມເຄິ່ງຄືຂອງ ມຸມສາກ ແມ່ນ ມຸມສາກ."}</div>
+            <div>{"• ມຸມເຄິ່ງຄືຂອງ ມຸມຫວາ ແມ່ນ ມຸມຫວາ."}</div>
+          </div>
+        </div>
+      ),
+      hint: {
+        text: "ເຖິງແມ່ນວ່າທິດທາງການປິ່ນຂອງມຸມຈະປ່ຽນໄປ (ເຊັ່ນ ຕາມເຂັມໂມງ ປ່ຽນເປັນ ທວນເຂັມໂມງ), ແຕ່ຄ່າຂະໜາດອົງສາແມ່ນເທົ່າເດີມ!",
+      },
+    },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -139,7 +145,9 @@ export const unit19Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

@@ -7,8 +7,10 @@ export const unit17Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈກ່ຽວກັບການເຄິ່ງຄືທຽບໃສ່ເສັ້ນຊື່ (ການເຄິ່ງຄືແກນ), ຄຸນລັກສະນະຂອງການເຄິ່ງຄື ແລະ ຮູບເຄິ່ງຄື",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ບົດທີ 17 ໜ້າ 116-121",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ການເຄິ່ງຄືທຽບໃສ່ເສັ້ນຊື່ (Reflection across a Line)",
+      keyPoint: {
       title: "1. ການເຄິ່ງຄືທຽບໃສ່ເສັ້ນຊື່ (Reflection across a Line)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -42,38 +44,8 @@ export const unit17Data: UnitData = {
         isBlue: true,
       },
     },
-    {
-      title: "2. ຄຸນລັກສະນະຂອງການເຄິ່ງຄືແກນ",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ການເຄິ່ງຄືທຽບໃສ່ເສັ້ນຊື່ ມີຄຸນລັກສະນະຮັກສາໄລຍະຫ່າງ ແລະ ຮູບຮ່າງ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"• ຮັກສາຄວາມຍາວຂອງທ່ອນຊື່: AB = A'B'"}</div>
-            <div>{"• ຮັກສາຂະໜາດຂອງມຸມ: ມຸມຂອງຮູບຕົ້ນແບບ ເທົ່າກັບມຸມຂອງຮູບເຄິ່ງຄື."}</div>
-            <div>{"• ຮັກສາເນື້ອທີ່: ຮູບເຄິ່ງຄືມີເນື້ອທີ່ເທົ່າກັບຮູບຕົ້ນແບບສະເໝີ."}</div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ຮູບເຄິ່ງຄືຈະປ່ຽນທິດທາງ (ຊ້າຍ-ຂວາ) ແຕ່ຂະໜາດ ແລະ ຮູບຮ່າງຈະຍັງຄືເກົ່າທຸກປະການ!",
-      },
-    },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -109,8 +81,42 @@ export const unit17Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ຄຸນລັກສະນະຂອງການເຄິ່ງຄືແກນ",
+      keyPoint: {
+      title: "2. ຄຸນລັກສະນະຂອງການເຄິ່ງຄືແກນ",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontSize: "1.375rem", margin: 0 }}>
+            {"ການເຄິ່ງຄືທຽບໃສ່ເສັ້ນຊື່ ມີຄຸນລັກສະນະຮັກສາໄລຍະຫ່າງ ແລະ ຮູບຮ່າງ:"}
+          </p>
+          <div
+            style={{
+              padding: "16px",
+              backgroundColor: "#E8F5E9",
+              border: "2px solid #4CAF50",
+              borderRadius: "8px",
+              fontSize: "1.375rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "6px",
+            }}
+          >
+            <div>{"• ຮັກສາຄວາມຍາວຂອງທ່ອນຊື່: AB = A'B'"}</div>
+            <div>{"• ຮັກສາຂະໜາດຂອງມຸມ: ມຸມຂອງຮູບຕົ້ນແບບ ເທົ່າກັບມຸມຂອງຮູບເຄິ່ງຄື."}</div>
+            <div>{"• ຮັກສາເນື້ອທີ່: ຮູບເຄິ່ງຄືມີເນື້ອທີ່ເທົ່າກັບຮູບຕົ້ນແບບສະເໝີ."}</div>
+          </div>
+        </div>
+      ),
+      hint: {
+        text: "ຮູບເຄິ່ງຄືຈະປ່ຽນທິດທາງ (ຊ້າຍ-ຂວາ) ແຕ່ຂະໜາດ ແລະ ຮູບຮ່າງຈະຍັງຄືເກົ່າທຸກປະການ!",
+      },
+    },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -146,7 +152,9 @@ export const unit17Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

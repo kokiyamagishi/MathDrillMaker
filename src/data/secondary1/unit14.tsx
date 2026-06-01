@@ -15,8 +15,10 @@ export const unit14Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບການບວກ, ການລົບ ແລະ ການຄູນລວງຍາວໃນຫົວໜ່ວຍວັດແທກທີ່ຕ່າງກັນ ໂດຍການປ່ຽນຫົວໜ່ວຍໃຫ້ເປັນລະບົບດຽວກັນກ່ອນຄິດໄລ່",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 97-102",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ພື້ນຖານຫົວໜ່ວຍວັດແທກລວງຍາວ (Length Conversion)",
+      keyPoint: {
       title: "1. ພື້ນຖານຫົວໜ່ວຍວັດແທກລວງຍາວ (Length Conversion)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -49,7 +51,48 @@ export const unit14Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຄິດໄລ່ຜົນບວກລວງຍາວລຸ່ມນີ້ ໂດຍຕອບເປັນຫົວໜ່ວຍທີ່ກຳນົດໃຫ້: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 1.66 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "12px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) 1 m + 50 cm ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              <span>{"cm"}</span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) 2.5 m + 30 cm ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              <span>{"cm"}</span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(3) 12 cm + 50 mm ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              <span>{"cm"}</span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ການບວກ ແລະ ການລົບລວງຍາວ (Addition & Subtraction)",
+      keyPoint: {
       title: "2. ການບວກ ແລະ ການລົບລວງຍາວ (Addition & Subtraction)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -85,7 +128,43 @@ export const unit14Data: UnitData = {
         text: "ປົກກະຕິແລ້ວ ປ່ຽນຫົວໜ່ວຍໃຫຍ່ໃຫ້ເປັນຫົວໜ່ວຍນ້ອຍ (ເຊັ່ນ ແມັດ ເປັນ ຊັງຕີແມັດ) ຈະຊ່ວຍໃຫ້ບໍ່ຕິດເລກຈຸດທົດສະນິຍົມ ແລະ ຄິດໄລ່ງ່າຍຂຶ້ນ!",
       },
     },
+      problems: [
+        {
+      number: 2,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຄິດໄລ່ຜົນລົບລວງຍາວລຸ່ມນີ້ ໂດຍຕອບເປັນຫົວໜ່ວຍທີ່ກຳນົດໃຫ້: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "20px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) 3 m - 80 cm ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              <span>{"cm"}</span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) 1.5 km - 500 m ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              <span>{"m"}</span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "3. ການຄູນລວງຍາວ (Multiplication of Lengths)",
+      keyPoint: {
       title: "3. ການຄູນລວງຍາວ (Multiplication of Lengths)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -119,75 +198,10 @@ export const unit14Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ຜົນບວກລວງຍາວລຸ່ມນີ້ ໂດຍຕອບເປັນຫົວໜ່ວຍທີ່ກຳນົດໃຫ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 1.66 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "12px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) 1 m + 50 cm ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"cm"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) 2.5 m + 30 cm ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"cm"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(3) 12 cm + 50 mm ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"cm"}</span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ຜົນລົບລວງຍາວລຸ່ມນີ້ ໂດຍຕອບເປັນຫົວໜ່ວຍທີ່ກຳນົດໃຫ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) 3 m - 80 cm ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"cm"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) 1.5 km - 500 m ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"m"}</span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
+      problems: [
+        
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

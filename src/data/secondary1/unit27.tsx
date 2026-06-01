@@ -15,8 +15,10 @@ export const unit27Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈຄວາມໝາຍຂອງອັດຕາສ່ວນ (Ratio), ການຂຽນອັດຕາສ່ວນໃນຮູບແບບຕ່າງໆ ແລະ ວິທີຊອກຫາອັດຕາສ່ວນທີ່ເທົ່າກັນ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ບົດທີ 27 ໜ້າ 175-179",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ຄວາມໝາຍຂອງອັດຕາສ່ວນ (Concept of Ratio)",
+      keyPoint: {
       title: "1. ຄວາມໝາຍຂອງອັດຕາສ່ວນ (Concept of Ratio)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -56,7 +58,45 @@ export const unit27Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p style={{ fontSize: "1.375rem" }}>
+            {"ຈົ່ງຄັດຈ້ອນອັດຕາສ່ວນຕໍ່ໄປນີ້ໃຫ້ເປັນອັດຕາສ່ວນນ້ອຍສຸດ: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 1.66 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(1) ອັດຕາສ່ວນ 12 : 18 ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(2) ອັດຕາສ່ວນ 25 : 15 ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <span>{"(3) ອັດຕາສ່ວນ 40 : 10 ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ອັດຕາສ່ວນເທົ່າກັນ (Equivalent Ratios)",
+      keyPoint: {
       title: "2. ອັດຕາສ່ວນເທົ່າກັນ (Equivalent Ratios)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -92,42 +132,8 @@ export const unit27Data: UnitData = {
         text: "ສອງອັດຕາສ່ວນເທົ່າກັນ ເມື່ອຄູນໄຂວ້ກັນ ຈະໄດ້ຜົນຄູນເທົ່າກັນສະເໝີ (a × d = b × c)!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p style={{ fontSize: "1.375rem" }}>
-            {"ຈົ່ງຄັດຈ້ອນອັດຕາສ່ວນຕໍ່ໄປນີ້ໃຫ້ເປັນອັດຕາສ່ວນນ້ອຍສຸດ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 1.66 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(1) ອັດຕາສ່ວນ 12 : 18 ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(2) ອັດຕາສ່ວນ 25 : 15 ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(3) ອັດຕາສ່ວນ 40 : 10 ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -156,7 +162,9 @@ export const unit27Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

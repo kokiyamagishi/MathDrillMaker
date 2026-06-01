@@ -15,8 +15,10 @@ export const unit36Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ ແລະ ນຳໃຊ້ຫຼັກການເຄິ່ງຄື (Reflection/Symmetry) ຂອງຮູບເລຂາຄະນິດທຽບໃສ່ແກນ x, ແກນ y ແລະ ທຽບໃສ່ເມັດເຄິ່ງກາງ O(0, 0)",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 36 ໜ້າ 211-216",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ສູດພິກັດຂອງການເຄິ່ງຄື (Symmetry Coordinate Rules)",
+      keyPoint: {
       title: "1. ສູດພິກັດຂອງການເຄິ່ງຄື (Symmetry Coordinate Rules)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -64,9 +66,8 @@ export const unit36Data: UnitData = {
         isBlue: true,
       },
     },
-  ],
-  basicProblems: [
-    {
+      problems: [
+        {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -94,8 +95,14 @@ export const unit36Data: UnitData = {
           </div>
         </div>
       ),
+    }
+      ]
     },
     {
+      title: "2. ບົດຮຽນພື້ນຖານ",
+      keyPoint: { content: <span /> },
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -123,7 +130,9 @@ export const unit36Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:

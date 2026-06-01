@@ -15,8 +15,10 @@ export const unit9Data: UnitData = {
   unitGoal:
     "ຮຽນຮູ້ກ່ຽວກັບນິຍາມ ແລະ ຄຸນລັກສະນະຂອງຮາກຂັ້ນ n (n-th Roots), ຄວາມກ່ຽວພັນກັບເລກກຳລັງທີ່ມີກຳລັງເປັນເລກສ່ວນ ແລະ ການຄິດໄລ່ພື້ນຖານ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 9 ໜ້າ 49-54",
-  keyPoints: [
+  subSections: [
     {
+      title: "1. ນິຍາມ ແລະ ສ່ວນປະກອບຂອງຮາກຂັ້ນ n (Definition and Anatomy of n-th Roots)",
+      keyPoint: {
       title: "1. ນິຍາມ ແລະ ສ່ວນປະກອບຂອງຮາກຂັ້ນ n (Definition and Anatomy of n-th Roots)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -47,7 +49,41 @@ export const unit9Data: UnitData = {
         isBlue: true,
       },
     },
+      problems: [
+        {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p>
+            {"ຈົ່ງຊອກຫາຄ່າຂອງຮາກຂັ້ນ n ຕໍ່ໄປນີ້: "}{" "}
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "16px",
+              fontSize: "1.375rem",
+              padding: "8px 16px",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(1) ຊອກຫາຄ່າຂອງ: ຮາກຂັ້ນ 3 ຂອງ 27 = (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <span>{"(2) ຊອກຫາຄ່າຂອງ: ຮາກຂັ້ນ 4 ຂອງ 16 ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+      ]
+    },
     {
+      title: "2. ການພົວພັນລະຫວ່າງຮາກ ແລະ ເລກກຳລັງ (Radicals and Fractional Exponents)",
+      keyPoint: {
       title: "2. ການພົວພັນລະຫວ່າງຮາກ ແລະ ເລກກຳລັງ (Radicals and Fractional Exponents)",
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -88,38 +124,8 @@ export const unit9Data: UnitData = {
         text: "ດັດສະນີ n ຂອງຮາກ ຈະກາຍເປັນ ຕົວຫານ ຂອງກຳລັງເລກສ່ວນສະເໝີເດີ້!",
       },
     },
-  ],
-  basicProblems: [
-    {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາຄ່າຂອງຮາກຂັ້ນ n ຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຊອກຫາຄ່າຂອງ: ຮາກຂັ້ນ 3 ຂອງ 27 = (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຊອກຫາຄ່າຂອງ: ຮາກຂັ້ນ 4 ຂອງ 16 ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
+      problems: [
+        {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -147,7 +153,9 @@ export const unit9Data: UnitData = {
           </div>
         </div>
       ),
-    },
+    }
+      ]
+    }
   ],
   challengeProblems: {
     hintText:
