@@ -18,7 +18,7 @@ export const unit2Data: UnitData = {
               marginTop: "8px",
             }}
           >
-            {/* 1. ການຄູນຈຳນວນທົດສະນິຍົມ (かけ算カード) */}
+            {/* 1. ການຄູນຈຳນວນທົດສະນິຍົມ */}
             <div
               style={{
                 padding: "12px",
@@ -117,7 +117,7 @@ export const unit2Data: UnitData = {
                   <div>{"1. ຄິດໄລ່ຄືກັບ 24 × 13 = 312."}</div>
                   <div>
                     {
-                      "2. ເນື່ອງຈາກ 2.4 (1 ຫຼັກ) และ 1.3 (1 ຫຼັກ) ມີຫຼັກທົດສະນິຍົມລວມກັນ 2 ຫຼັກ."
+                      "2. ເນື່ອງຈາກ 2.4 (1 ຫຼັກ) ແລະ 1.3 (1 ຫຼັກ) ມີຫຼັກທົດສະນິຍົມລວມກັນ 2 ຫຼັກ."
                     }
                   </div>
                   <div>
@@ -129,7 +129,7 @@ export const unit2Data: UnitData = {
               </div>
             </div>
 
-            {/* 2. ການຫານຈຳນວນທົດສະນິຍົມ (わり算カード - 新規追加) */}
+            {/* 2. ການຫານຈຳນວນທົດສະນິຍົມ */}
             <div
               style={{
                 padding: "12px",
@@ -167,7 +167,7 @@ export const unit2Data: UnitData = {
                 >
                   <tbody>
                     <tr>
-                      <td style={{ textAlign: "left", paddingRight: "15px", width: "80px", fontFamily: "monospace", whiteSpace: "pre" }}>{"65  "}</td>
+                      <td style={{ textAlign: "center", paddingRight: "15px", width: "80px", fontFamily: "monospace", whiteSpace: "pre" }}>{"65  "}</td>
                       <td style={{ borderLeft: "2px solid #000", paddingLeft: "15px", width: "80px", borderBottom: "2px solid #000" }}>{"25"}</td>
                     </tr>
                     <tr>
@@ -199,13 +199,13 @@ export const unit2Data: UnitData = {
                 >
                   <div>
                     {
-                      "1. ເເລື່ອນຈຸດທົດສະນິຍົມຂອງຕົວຫານ ແລະ ຕົວຕັ້ງຫານໄປທາງຂວາ 1 ຫຼັກ (ຄືກັບ 65 ÷ 25)."
+                      "1. ເລື່ອນຈຸດທົດສະນິຍົມຂອງຕົວຫານ ແລະ ຕົວຕັ້ງຫານໄປທາງຂວາ 1 ຫຼັກ (ຄືກັບ 65 ÷ 25)."
                     }
                   </div>
                   <div>{"2. ຄິດໄລ່ຄືເລກທຳມະດາ 65 ÷ 25 = 2 ເສດ 15."}</div>
                   <div>
                     {
-                      "3. ຕື່ມເລກ 0 ໃສ່ທາງຫຼັງຕົວເສດ 15 ຈະໄດ້ 150 ແລ້ວຫານຕໍ່ 150 ÷ 25 = 6. ຢ່າລືມໝາຍຈຸດໃສ່ຜົນຫານເດີ້!"
+                      "3. ຕື່ມເລກ 0 ໃស່ທາງຫຼັງຕົວເສດ 15 ຈະໄດ້ 150 ແລ້ວຫານຕໍ່ 150 ÷ 25 = 6. ຢ່າລືມໝາຍຈຸດໃສ່ຜົນຫານເດີ້!"
                     }
                   </div>
                 </div>
@@ -223,15 +223,15 @@ export const unit2Data: UnitData = {
             style={{ display: "flex", flexDirection: "column", gap: "16px" }}
           >
             <p>
-              {"ຈົ່ງຄິດໄລ່ເລກທົດສະນິຍົມຕໍ່ໄປນີ້: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              {"ຈົ່ງຄິດໄລ່ເລກທົດສະນіຍົມຕໍ່ໄປນີ້ຕາມທາງຕັ້ງ: "}{" "}
+              <span className="point-label">{"(ຂໍ້ລະ 3 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
                 display: "grid",
                 gridTemplateColumns: "1fr",
-                gap: "16px",
-                padding: "16px",
+                gap: "24px",
+                padding: "8px 16px",
               }}
             >
               {/* Problem 1 */}
@@ -240,7 +240,7 @@ export const unit2Data: UnitData = {
                   display: "flex",
                   gap: "30px",
                   alignItems: "center",
-                  flexWrap: "wrap",
+                  flexWrap: "nowrap",
                 }}
               >
                 <span style={{ fontSize: "20px", fontWeight: "bold" }}>
@@ -320,7 +320,7 @@ export const unit2Data: UnitData = {
                   display: "flex",
                   gap: "30px",
                   alignItems: "center",
-                  flexWrap: "wrap",
+                  flexWrap: "nowrap",
                 }}
               >
                 <span style={{ fontSize: "20px", fontWeight: "bold" }}>
@@ -354,7 +354,7 @@ export const unit2Data: UnitData = {
                     </tr>
                     <tr>
                       <td style={{ width: "30px" }}>{"×"}</td>
-                      <td style={{ width: "30px" }}></td>
+                      <td style={{ width: "30px" }}>{"0"}</td>
                       <td
                         style={{
                           width: "10px",
@@ -407,7 +407,7 @@ export const unit2Data: UnitData = {
           >
             <p>
               {"ຈົ່ງຄິດໄລ່ເລກທົດສະນິຍົມຕໍ່ໄປນີ້ (ຫານ): "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              <span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
@@ -415,7 +415,7 @@ export const unit2Data: UnitData = {
                 gridTemplateColumns: "1fr",
                 gap: "20px",
                 fontSize: "20px",
-                padding: "16px",
+                padding: "8px 16px",
               }}
             >
               {/* Problem 1 */}
@@ -427,7 +427,7 @@ export const unit2Data: UnitData = {
                   flexWrap: "wrap",
                 }}
               >
-                <span>{"(1) 6.5 \u00f7 2.5 ="}</span>
+                <span>{"(1) 6.5 ÷ 2.5 ="}</span>
                 <span
                   className="answer-blank"
                   style={{
@@ -447,7 +447,7 @@ export const unit2Data: UnitData = {
                   flexWrap: "wrap",
                 }}
               >
-                <span>{"(2) 13.5 \u00f7 5 ="}</span>
+                <span>{"(2) 13.5 ÷ 5 ="}</span>
                 <span
                   className="answer-blank"
                   style={{
@@ -464,7 +464,7 @@ export const unit2Data: UnitData = {
     ],
     challengeProblems: {
       hintText:
-        "⚖️ ໂຈດບັນຫານີ້ໃຊ້ວິທີການຄູນ! ລວດເຫຼັກ 1.4m ຈະມີນ້ຳໜັກແມ່ນ ນ້ຳໜັກຕໍ່ 1m ຄູນໃຫ້ຄວາມຍາວເດີ້!",
+        "⚖️ ໂຈດບັນຫານີ້ໃຊ້ວິທີການຄູນ ແລະ ຫານ! ໃຫ້ອ່ານຄຳຖາມໃຫ້ລະອຽດແລ້ວຄິດໄລ່ເດີ້!",
       problems: [
         {
           number: 1,
@@ -473,7 +473,7 @@ export const unit2Data: UnitData = {
               style={{ display: "flex", flexDirection: "column", gap: "16px" }}
             >
               <p>
-                {"ຈົ່ງແກ້ໂຈດບັນຫາລຸ່ມນີ້: "}{" "}
+                {"ຈົ່ງແກ້ໂຈດບັນຫາຕໍ່ໄປນີ້: "}{" "}
                 <span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
               <div
@@ -485,9 +485,7 @@ export const unit2Data: UnitData = {
                 }}
               >
                 <p style={{ margin: 0, lineHeight: "1.5" }}>
-                  {
-                    "⛓️ ມີລວດເຫຼັກເສັ້ນໜຶ່ງ ທີ່ມີຄວາມຍາວ 1m ມີນ້ຳໜັກ 2.5kg. ຖ້າລວດເຫຼັກເສັ້ນນີ້ຍາວ 1.4m ຈະມີນ້ຳໜັກຈັກ kg?"
-                  }
+                  {"⛓️ ມີລວດເຫຼັກເສັ້ນໜຶ່ງ ທີ່ມີຄວາມຍາວ 1m ມີນ້ຳໜັກ 2.5kg. ຖ້າລວດເຫຼັກເສັ້ນນີ້ຍາວ 1.4m ຈະມີນ້ຳໜັກຈັກ kg?"}
                 </p>
                 <div
                   style={{
@@ -512,6 +510,50 @@ export const unit2Data: UnitData = {
             </div>
           ),
         },
+        {
+          number: 2,
+          content: (
+            <div
+              style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+            >
+              <p>
+                {"ຈົ່ງແກ້ໂຈດບັນຫາຕໍ່ໄປນີ້ (ຫານ): "}{" "}
+                <span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "12px",
+                  fontSize: "20px",
+                }}
+              >
+                <p style={{ margin: 0, lineHeight: "1.5" }}>
+                  {"🥛 ນ້ຳໜຽວຫວານ 1.5L ມີນ້ຳໜັກຂອງນ້ຳຕານປະສົມຢູ່ 300g. ຖ້ານ້ຳຫວານນີ້ 1L ຈະມີນ້ຳຕານປະສົມຢູ່ຈັກ g?"}
+                </p>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "12px",
+                    alignItems: "center",
+                    marginTop: "8px",
+                  }}
+                >
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span
+                    className="answer-blank"
+                    style={{
+                      display: "inline-block",
+                      width: "120px",
+                      height: "40px",
+                    }}
+                  ></span>
+                  <span>{"g"}</span>
+                </div>
+              </div>
+            </div>
+          ),
+        },
       ],
     },
     summaryProblems: [
@@ -522,8 +564,8 @@ export const unit2Data: UnitData = {
             style={{ display: "flex", flexDirection: "column", gap: "16px" }}
           >
             <p>
-              {"ຈົ່ງຄິດໄລ່ ແລະ ແກ້ໂຈດບັນຫາຕໍ່ໄປນີ້: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ)"}</span>
+              {"ຈົ່ງຄິດໄລ່ເລກທົດສະນິຍົມຕໍ່ໄປນີ້: "}{" "}
+              <span className="point-label">{"(ຂໍ້ລະ 1.5 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
@@ -531,7 +573,7 @@ export const unit2Data: UnitData = {
                 gridTemplateColumns: "1fr",
                 gap: "20px",
                 fontSize: "20px",
-                padding: "16px",
+                padding: "8px 16px",
               }}
             >
               <div
@@ -590,27 +632,90 @@ export const unit2Data: UnitData = {
           </div>
         ),
       },
+      {
+        number: 2,
+        content: (
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+          >
+            <p>
+              {"ຈົ່ງແກ້ໂຈດບັນຫາຕໍ່ໄປນີ້: "}{" "}
+              <span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
+            </p>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr",
+                gap: "20px",
+                fontSize: "20px",
+                padding: "8px 16px",
+              }}
+            >
+              <div
+                style={{ display: "flex", flexDirection: "column", gap: "10px" }}
+              >
+                <span>{"(1) ເຊືອກເສັ້ນໜຶ່ງຍາວ 4.5m, ເຊືອກເສັ້ນທີສອງຍາວເປັນ 1.2 ເທົ່າຂອງເສັ້ນທຳອິດ. ເຊືອກເສັ້ນທີສອງຍາວຈັກ m?"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span
+                    className="answer-blank"
+                    style={{
+                      display: "inline-block",
+                      width: "100px",
+                      height: "40px",
+                    }}
+                  ></span>
+                  <span>{"m"}</span>
+                </div>
+              </div>
+              <div
+                style={{ display: "flex", flexDirection: "column", gap: "10px" }}
+              >
+                <span>{"(2) ໝາກແອັບເປິ້ນໜຶ່ງຕູ້ມີນ້ຳໜັກ 6.3kg, ເຊິ່ງໜັກເປັນ 1.5 ເທົ່າຂອງໝາກກ້ຽງໜຶ່ງຕູ້. ໝາກກ້ຽງໜຶ່ງຕູ້ມີນ້ຳໜັກຈັກ kg?"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span
+                    className="answer-blank"
+                    style={{
+                      display: "inline-block",
+                      width: "100px",
+                      height: "40px",
+                    }}
+                  ></span>
+                  <span>{"kg"}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        ),
+      },
     ],
     answers: {
       items: [
         {
           questionNumber: 1,
           answers: [
-            <span key="u2-ans-1-1">{"(1) 4.2 (ຍ້ອນ 2.8 \u00d7 1.5 = 4.2)"}</span>,
-            <span key="u2-ans-1-2">{"(2) 3 (ຍ້ອນ 1.25 \u00d7 2.4 = 3)"}</span>,
+            <span key="u2-ans-1-1">{"(1) 4.2"}</span>,
+            <span key="u2-ans-1-2">{"(2) 0.3"}</span>,
           ],
         },
         {
           questionNumber: 2,
           answers: [
-            <span key="u2-ans-2-1">{"(1) 2.6 (ຍ້ອນ 6.5 \u00f7 2.5 = 2.6)"}</span>,
-            <span key="u2-ans-2-2">{"(2) 2.7 (ຍ້ອນ 13.5 \u00f7 5 = 2.7)"}</span>,
+            <span key="u2-ans-2-1">{"(1) 2.6"}</span>,
+            <span key="u2-ans-2-2">{"(2) 2.7"}</span>,
           ],
         },
         {
           questionNumber: "ທ້າທາຍ 1",
           answers: [
-            <span key="u2-ans-t1-1">{"3.5 kg (ຍ້ອນ 2.5 \u00d7 1.4 = 3.5)"}</span>,
+            <span key="u2-ans-t1-1">{"3.5 kg (ຍ້ອນ 2.5 × 1.4 = 3.5)"}</span>,
+          ],
+        },
+        {
+          questionNumber: "ທ້າທາຍ 2",
+          answers: [
+            <span key="u2-ans-t2-1">{"200 g (ຍ້ອນ 300 ÷ 1.5 = 200)"}</span>,
           ],
         },
         {
@@ -620,6 +725,13 @@ export const unit2Data: UnitData = {
             <span key="u2-ans-s1-2">{"(2) 0.6"}</span>,
             <span key="u2-ans-s1-3">{"(3) 5"}</span>,
             <span key="u2-ans-s1-4">{"(4) 3.5"}</span>,
+          ],
+        },
+        {
+          questionNumber: "ທົດສອບປະຈຳບົດ 2",
+          answers: [
+            <span key="u2-ans-s2-1">{"(1) 5.4 m (ຍ້ອນ 4.5 × 1.2 = 5.4)"}</span>,
+            <span key="u2-ans-s2-2">{"(2) 4.2 kg (ຍ້ອນ 6.3 ÷ 1.5 = 4.2)"}</span>,
           ],
         },
       ],

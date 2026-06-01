@@ -74,10 +74,10 @@ export const unit1Data: UnitData = {
               }}
             >
               <strong style={{ fontSize: "18px", color: "#2E7D32" }}>
-                {"\u0e81\u0eb2\u0e99\u0e84\u0eb5\u0e99\u0ec0\u0ea5\u0e81\u0e97\u0eb5\u0e94\u0eac\u0eb0\u0e99\u0eb4\u0ea0\u0ecd\u0ea5\u0eb0\u0ec0\u0ea5\u0e81\u0eab\u0ebc\u0ec8\u0ea7\u0e99"}
+                {"ການຄູນເລກທີດສະນິຍົມລະເລກຫຼ່ວນ"}
               </strong>
               <p style={{ fontSize: "18px", margin: "8px 0" }}>
-                {"\u0e88\u0eb8\u0e94\u0e97\u0eb5\u0e94\u0eac\u0eb0\u0e99\u0eb4\u0ea0\u0ecd\u0e88\u0eb0\u0ea2\u0ec9\u0eb2\u0ea2\u0ec4\u0e9b\u0e97\u0eb2\u0e87\u0e82\u0ea7\u0eb2 (Right)"}
+                {"ຈຸດທີດສະນິຍົມຈະຍ້າຍໄປທາງຂວາ (Right)"}
               </p>
               <ul
                 style={{
@@ -87,8 +87,8 @@ export const unit1Data: UnitData = {
                   lineHeight: "1.5",
                 }}
               >
-                <li>{"3.14 \u00d7 10 = 31.4 (\u0ea2\u0ec9\u0ebd\u0e99 1 \u0eab\u0ebc\u0eb1\u0e81)"}</li>
-                <li>{"3.14 \u00d7 100 = 314 (\u0ea2\u0ec9\u0ebd\u0e99 2 \u0eab\u0ebc\u0eb1\u0e81)"}</li>
+                <li>{"3.14 × 10 = 31.4 (ຍ້ຽນ 1 ຫຼັກ)"}</li>
+                <li>{"3.14 × 100 = 314 (ຍ້ຽນ 2 ຫຼັກ)"}</li>
               </ul>
             </div>
 
@@ -102,10 +102,10 @@ export const unit1Data: UnitData = {
               }}
             >
               <strong style={{ fontSize: "18px", color: "#E65100" }}>
-                {"\u0e81\u0eb2\u0e99\u0eab\u0eb2\u0e99\u0ec0\u0ea5\u0e81\u0e97\u0eb5\u0e94\u0eac\u0eb0\u0e99\u0eb4\u0ea0\u0ecd\u0ea5\u0eb0\u0ec0\u0ea5\u0e81\u0eab\u0ebc\u0ec8\u0ea7\u0e99"}
+                {"ການຫານເລກທີດສະນິຍົມລະເລກຫຼ່ວນ"}
               </strong>
               <p style={{ fontSize: "18px", margin: "8px 0" }}>
-                {"\u0e88\u0eb8\u0e94\u0e97\u0eb5\u0e94\u0eac\u0eb0\u0e99\u0eb4\u0ea0\u0ecd\u0e88\u0eb0\u0ea2\u0ec9\u0eb2\u0ea2\u0ec4\u0e9b\u0e97\u0eb2\u0e87\u0e8b\u0ec9\u0eb2\u0ea2 (Left)"}
+                {"ຈຸດທີດສະນິຍົມຈະຍ້າຍໄປທາງຊ້າຍ (Left)"}
               </p>
               <ul
                 style={{
@@ -115,8 +115,8 @@ export const unit1Data: UnitData = {
                   lineHeight: "1.5",
                 }}
               >
-                <li>{"365 \u00f7 10 = 36.5 (\u0ea2\u0ec9\u0ebd\u0e99 1 \u0eab\u0ebc\u0eb1\u0e81)"}</li>
-                <li>{"365 \u00f7 100 = 3.65 (\u0ea2\u0ec9\u0ebd\u0e99 2 \u0eab\u0ebc\u0eb1\u0e81)"}</li>
+                <li>{"365 ÷ 10 = 36.5 (ຍ້ຽນ 1 ຫຼັກ)"}</li>
+                <li>{"365 ÷ 100 = 3.65 (ຍ້ຽນ 2 ຫຼັກ)"}</li>
               </ul>
             </div>
           </div>
@@ -131,53 +131,29 @@ export const unit1Data: UnitData = {
             style={{ display: "flex", flexDirection: "column", gap: "16px" }}
           >
             <p>
-              {"ຈົ່ງຊອກຫາຄຳຕອບຂອງການຄູນ ແລະ ການຫານຕໍ່ໄປນີ້: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              {"ຈົ່ງຊອກຫາຄຳຕອບຂອງການຄູນຕໍ່ໄປນີ້: "}
+              <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 3 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
                 display: "grid",
                 gridTemplateColumns: "1fr",
-                gap: "20px",
+                gap: "16px",
                 fontSize: "20px",
-                padding: "16px",
+                padding: "8px 16px",
               }}
             >
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "12px",
-                  flexWrap: "wrap",
-                }}
-              >
+              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
                 <span>{"(1) 3.14 × 10 ="}</span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "100px",
-                    height: "40px",
-                  }}
-                ></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "12px",
-                  flexWrap: "wrap",
-                }}
-              >
-                <span>{"(2) 3.14 × 100 ="}</span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "100px",
-                    height: "40px",
-                  }}
-                ></span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                <span>{"(2) 0.58 × 100 ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                <span>{"(3) 2.7 × 1000 ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
               </div>
             </div>
           </div>
@@ -190,53 +166,62 @@ export const unit1Data: UnitData = {
             style={{ display: "flex", flexDirection: "column", gap: "16px" }}
           >
             <p>
-              {"ຈົ່ງຊອກຫາຄຳຕອບຂອງການຄູນ ແລະ ການຫານຕໍ່ໄປນີ້ (ຕໍ່): "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              {"ຈົ່ງຊອກຫາຄຳຕອບຂອງການຫານຕໍ່ໄປນີ້: "}
+              <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 3 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
                 display: "grid",
                 gridTemplateColumns: "1fr",
-                gap: "20px",
+                gap: "16px",
                 fontSize: "20px",
-                padding: "16px",
+                padding: "8px 16px",
               }}
             >
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "12px",
-                  flexWrap: "wrap",
-                }}
-              >
+              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
                 <span>{"(1) 365 ÷ 10 ="}</span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "100px",
-                    height: "40px",
-                  }}
-                ></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "12px",
-                  flexWrap: "wrap",
-                }}
-              >
-                <span>{"(2) 365 ÷ 100 ="}</span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "100px",
-                    height: "40px",
-                  }}
-                ></span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                <span>{"(2) 42.5 ÷ 100 ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                <span>{"(3) 9800 ÷ 1000 ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              </div>
+            </div>
+          </div>
+        ),
+      },
+      {
+        number: 3,
+        content: (
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+          >
+            <p>
+              {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບໂຄງສ້າງຂອງຈຳນວນຕໍ່ໄປນີ້: "}
+              <span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
+            </p>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr",
+                gap: "16px",
+                fontSize: "20px",
+                padding: "8px 16px",
+              }}
+            >
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                <span>{"(1) ຈຳນວນ 4.73 ປະກອບດ້ວຍ 4 + "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+                <span>{" + 0.03"}</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                <span>{"(2) ຈຳນວນ 12.06 ມີ 0.01 ຢູ່ "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+                <span>{" ຕົວ"}</span>
               </div>
             </div>
           </div>
@@ -245,7 +230,7 @@ export const unit1Data: UnitData = {
     ],
     challengeProblems: {
       hintText:
-        "0.001 ແມ່ນຫຼັກທົດສະນິຍົມທີ 3. ຖ້າມີ 235 ຕົວ ຈະປະກອບກັນເປັນຈຳນວນໃດເດີ້!",
+        "0.001 ແມ່ນຫຼັກທົດສະນິຍົມທີ 3. ໃຫ້ຄິດວ່າຈະຕ້ອງເລື່ອນຈຸດໄປທາງໃດ ແລ້ວຈຶ່ງເລືອກວິທີຄູນ ຫຼື ຫານ!",
       problems: [
         {
           number: 1,
@@ -254,53 +239,56 @@ export const unit1Data: UnitData = {
               style={{ display: "flex", flexDirection: "column", gap: "16px" }}
             >
               <p>
-                {"ຈົ່ງແກ້ໂຈດບັນຫາໂຄງສ້າງຈຳນວນລຸ່ມນີ້: "}{" "}
-                <span className="point-label">{"(ຂໍ້ລະ 5 ຄະແນນ)"}</span>
+                {"ຈົ່ງແກ້ໂຈດບັນຫາຕໍ່ໄປນີ້: "}
+                <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
               </p>
               <div
                 style={{
                   display: "grid",
                   gridTemplateColumns: "1fr",
-                  gap: "20px",
+                  gap: "16px",
                   fontSize: "20px",
-                  padding: "16px",
+                  padding: "8px 16px",
                 }}
               >
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "12px",
-                    flexWrap: "wrap",
-                  }}
-                >
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
                   <span>{"(1) ຈຳນວນທີ່ມີ 0.001 ຢູ່ 235 ຕົວ ຈະແມ່ນ"}</span>
-                  <span
-                    className="answer-blank"
-                    style={{
-                      display: "inline-block",
-                      width: "120px",
-                      height: "40px",
-                    }}
-                  ></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
                 </div>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "12px",
-                    flexWrap: "wrap",
-                  }}
-                >
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
                   <span>{"(2) ຖ້າເອົາ 9.35 ມາຄູນໃຫ້ 1000 ຈະໄດ້ຄຳຕອບແມ່ນ"}</span>
-                  <span
-                    className="answer-blank"
-                    style={{
-                      display: "inline-block",
-                      width: "120px",
-                      height: "40px",
-                    }}
-                  ></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                </div>
+              </div>
+            </div>
+          ),
+        },
+        {
+          number: 2,
+          content: (
+            <div
+              style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+            >
+              <p>
+                {"ຈົ່ງຕອບຄຳຖາມ: "}
+                <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "1fr",
+                  gap: "16px",
+                  fontSize: "20px",
+                  padding: "8px 16px",
+                }}
+              >
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                  <span>{"(1) ເອົາ 0.46 ຄູນເລກໃດຈຶ່ງຈະໄດ້ 460?"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                  <span>{"(2) ເອົາ 7200 ຫານເລກໃດຈຶ່ງຈະໄດ້ 7.2?"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
                 </div>
               </div>
             </div>
@@ -316,69 +304,95 @@ export const unit1Data: UnitData = {
             style={{ display: "flex", flexDirection: "column", gap: "16px" }}
           >
             <p>
-              {"ຈົ່ງຄິດໄລ່ເພື່ອທົດສອບຄວາມເຂົ້າໃຈ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ)"}</span>
+              {"ຈົ່ງຄິດໄລ່ຕໍ່ໄປນີ້: "}
+              <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
                 display: "grid",
                 gridTemplateColumns: "1fr",
-                gap: "20px",
+                gap: "16px",
                 fontSize: "20px",
-                padding: "16px",
+                padding: "8px 16px",
               }}
             >
-              <div
-                style={{ display: "flex", alignItems: "center", gap: "12px" }}
-              >
+              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
                 <span>{"(1) 2.385 × 10 ="}</span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "120px",
-                    height: "40px",
-                  }}
-                ></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
               </div>
-              <div
-                style={{ display: "flex", alignItems: "center", gap: "12px" }}
-              >
-                <span>{"(2) 2.385 × 100 ="}</span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "120px",
-                    height: "40px",
-                  }}
-                ></span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                <span>{"(2) 0.067 × 1000 ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
               </div>
-              <div
-                style={{ display: "flex", alignItems: "center", gap: "12px" }}
-              >
+              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
                 <span>{"(3) 238.5 ÷ 10 ="}</span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "120px",
-                    height: "40px",
-                  }}
-                ></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
               </div>
-              <div
-                style={{ display: "flex", alignItems: "center", gap: "12px" }}
-              >
-                <span>{"(4) 238.5 ÷ 1000 ="}</span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "120px",
-                    height: "40px",
-                  }}
-                ></span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                <span>{"(4) 56 ÷ 1000 ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              </div>
+            </div>
+          </div>
+        ),
+      },
+      {
+        number: 2,
+        content: (
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+          >
+            <p>
+              {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບໂຄງສ້າງຂອງຈຳນວນ: "}
+              <span className="point-label">{"(ຂໍ້ລະ 1.5 ຄະແນນ, ລວມ 3 ຄະແນນ)"}</span>
+            </p>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr",
+                gap: "16px",
+                fontSize: "20px",
+                padding: "8px 16px",
+              }}
+            >
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                <span>{"(1) 6.205 ປະກອບດ້ວຍ 6 + 0.2 + "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                <span>{"(2) 0.01 ຢູ່ 307 ຕົວ ຈະເປັນ "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+              </div>
+            </div>
+          </div>
+        ),
+      },
+      {
+        number: 3,
+        content: (
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+          >
+            <p>
+              {"ຈົ່ງຕອບຄຳຖາມ: "}
+              <span className="point-label">{"(ຂໍ້ລະ 1.5 ຄະແນນ, ລວມ 3 ຄະແນນ)"}</span>
+            </p>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr",
+                gap: "16px",
+                fontSize: "20px",
+                padding: "8px 16px",
+              }}
+            >
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                <span>{"(1) ເອົາ 0.35 ຄູນເລກໃດຈຶ່ງຈະໄດ້ 350?"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                <span>{"(2) ເອົາ 4500 ຫານເລກໃດຈຶ່ງຈະໄດ້ 4.5?"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
               </div>
             </div>
           </div>
@@ -390,31 +404,61 @@ export const unit1Data: UnitData = {
         {
           questionNumber: 1,
           answers: [
-            <span key="u1-ans-1-1">{"(1) 31.4 (ຍ້ອນ 3.14 × 10 = 31.4)"}</span>,
-            <span key="u1-ans-1-2">{"(2) 314 (ຍ້ອນ 3.14 × 100 = 314)"}</span>,
+            <span key="u1-ans-1-1">{"(1) 31.4"}</span>,
+            <span key="u1-ans-1-2">{"(2) 58"}</span>,
+            <span key="u1-ans-1-3">{"(3) 2700"}</span>,
           ],
         },
         {
           questionNumber: 2,
           answers: [
-            <span key="u1-ans-2-1">{"(1) 36.5 (ຍ້ອນ 365 ÷ 10 = 36.5)"}</span>,
-            <span key="u1-ans-2-2">{"(2) 3.65 (ຍ້ອນ 365 ÷ 100 = 3.65)"}</span>,
+            <span key="u1-ans-2-1">{"(1) 36.5"}</span>,
+            <span key="u1-ans-2-2">{"(2) 0.425"}</span>,
+            <span key="u1-ans-2-3">{"(3) 9.8"}</span>,
+          ],
+        },
+        {
+          questionNumber: 3,
+          answers: [
+            <span key="u1-ans-3-1">{"(1) 0.7"}</span>,
+            <span key="u1-ans-3-2">{"(2) 1206 ຕົວ"}</span>,
           ],
         },
         {
           questionNumber: "ທ້າທາຍ 1",
           answers: [
-            <span key="u1-ans-t1-1">{"(1) 0.235 (ຍ້ອນ 0.001 × 235 = 0.235)"}</span>,
-            <span key="u1-ans-t1-2">{"(2) 9,350 (ຍ້ອນເລື່ອນຈຸດໄປທາງຂວາ 3 ຫຼັກ)"}</span>,
+            <span key="u1-ans-t1-1">{"(1) 0.235"}</span>,
+            <span key="u1-ans-t1-2">{"(2) 9350"}</span>,
+          ],
+        },
+        {
+          questionNumber: "ທ້າທາຍ 2",
+          answers: [
+            <span key="u1-ans-t2-1">{"(1) 1000"}</span>,
+            <span key="u1-ans-t2-2">{"(2) 1000"}</span>,
           ],
         },
         {
           questionNumber: "ທົດສອບປະຈຳບົດ 1",
           answers: [
             <span key="u1-ans-s1-1">{"(1) 23.85"}</span>,
-            <span key="u1-ans-s1-2">{"(2) 238.5"}</span>,
+            <span key="u1-ans-s1-2">{"(2) 67"}</span>,
             <span key="u1-ans-s1-3">{"(3) 23.85"}</span>,
-            <span key="u1-ans-s1-4">{"(4) 0.2385"}</span>,
+            <span key="u1-ans-s1-4">{"(4) 0.056"}</span>,
+          ],
+        },
+        {
+          questionNumber: "ທົດສອບປະຈຳບົດ 2",
+          answers: [
+            <span key="u1-ans-s2-1">{"(1) 0.005"}</span>,
+            <span key="u1-ans-s2-2">{"(2) 3.07"}</span>,
+          ],
+        },
+        {
+          questionNumber: "ທົດສອບປະຈຳບົດ 3",
+          answers: [
+            <span key="u1-ans-s3-1">{"(1) 1000"}</span>,
+            <span key="u1-ans-s3-2">{"(2) 1000"}</span>,
           ],
         },
       ],

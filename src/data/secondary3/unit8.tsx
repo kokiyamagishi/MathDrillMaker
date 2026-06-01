@@ -1,0 +1,325 @@
+import React from "react";
+import { UnitData } from "../units2";
+
+// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
+const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{den}</span>
+  </span>
+);
+
+export const unit8Data: UnitData = {
+  unitNumber: 8,
+  unitTitle: "ພາກທີ III - ບົດທີ 12: ຕຳລາຂັ້ນໜຶ່ງ",
+  unitGoal: "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈນິຍາມຂອງຕຳລາຂັ້ນໜຶ່ງ y = ax + b, ການກຳນົດສຳປະສິດສະໂລບ a ແລະ ຈຸດຕັດແກນ y (b), ການແຕ້ມເສັ້ນສະແດງ ແລະ ການຊອກຫາຄ່າຂອງຕຳລາ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 61-66",
+  subSections: [
+    {
+      title: "1. ສຳປະສິດ ແລະ ຈຸດຕັດແກນ y ຂອງຕຳລາຂັ້ນໜຶ່ງ (Slope and Y-Intercept of Linear Functions)",
+      keyPoint: {
+        title: "ຮູບແບບທົ່ວໄປຂອງຕຳລາຂັ້ນໜຶ່ງ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຕຳລາຂັ້ນໜຶ່ງແມ່ນຕຳລາທີ່ມີຮູບແບບທົ່ວໄປແມ່ນ "} <span className="math" style={{ fontWeight: "bold" }}>{"y = ax + b"}</span> {" (ໃນນັ້ນ a ແລະ b ແມ່ນຈຳນວນຈິງ ແລະ a ≠ 0):"}
+            </p>
+            <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
+              <div>{"• "} <span className="math" style={{ fontWeight: "bold" }}>{"a"}</span> {" ເອີ້ນວ່າ "} <span style={{ fontWeight: "bold" }}>{"ສຳປະສິດສະໂລບ (Slope)"}</span> {" ຫຼື ອັດຕາການປ່ຽນແປງ ທີ່ສະແດງເຖິງຄວາມຊັນຂອງເສັ້ນຊື່."}</div>
+              <div>{"• "} <span className="math" style={{ fontWeight: "bold" }}>{"b"}</span> {" ເອີ້ນວ່າ "} <span style={{ fontWeight: "bold" }}>{"ຈຸດຕັດແກນ y (y-intercept)"}</span> {" ເຊິ່ງແມ່ນຈຸດປະສານງານ (0, b) ທີ່ເສັ້ນຊື່ຕັດແກນຕັ້ງ."}</div>
+            </div>
+
+            {/* Linear Function Graph SVG */}
+            <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
+                <span>{"ເສັ້ນສະແດງຂອງຕຳລາ: y = 2x + 1"}</span>
+                <svg viewBox="0 0 200 120" style={{ width: "100%", maxWidth: "200px", height: "auto" }}>
+                  {/* Grid background */}
+                  <path d="M 0,20 L 200,20 M 0,40 L 200,40 M 0,60 L 200,60 M 0,80 L 200,80 M 0,100 L 200,100" stroke="#E0E0E0" strokeWidth="0.5" />
+                  <path d="M 20,0 L 20,120 M 40,0 L 40,120 M 60,0 L 60,120 M 80,0 L 80,120 M 100,0 L 100,120 M 120,0 L 120,120 M 140,0 L 140,120 M 160,0 L 160,120 M 180,0 L 180,120" stroke="#E0E0E0" strokeWidth="0.5" />
+                  
+                  {/* Axes */}
+                  <line x1="10" y1="80" x2="190" y2="80" stroke="#37474F" strokeWidth="1.5" /> {/* x-axis */}
+                  <line x1="100" y1="10" x2="100" y2="110" stroke="#37474F" strokeWidth="1.5" /> {/* y-axis */}
+                  <text x="185" y="92" fill="#37474F" fontSize="8" fontWeight="bold">{"x"}</text>
+                  <text x="105" y="15" fill="#37474F" fontSize="8" fontWeight="bold">{"y"}</text>
+
+                  {/* Line y = 2x + 1. Scale: Origin (100,80), 1 unit = 20px. Point (0,1) -> (100, 60), Point (1,3) -> (120, 20) */}
+                  <line x1="60" y1="120" x2="140" y2="-40" stroke="#E65100" strokeWidth="2.5" />
+
+                  {/* Intercept Point (0, 1) */}
+                  <circle cx="100" cy="60" r="3.5" fill="#D32F2F" />
+                  <text x="106" y="63" fill="#D32F2F" fontSize="8" fontWeight="bold">{"(0, 1)"}</text>
+                  
+                  {/* Slope indication */}
+                  <path d="M 100,60 L 120,60 L 120,20" fill="none" stroke="#2E7D32" strokeWidth="1.5" strokeDasharray="3,3" />
+                  <text x="110" y="70" fill="#2E7D32" fontSize="7">{"ໄປຂວາ 1"}</text>
+                  <text x="124" y="45" fill="#2E7D32" fontSize="7">{"ຂຶ້ນເທິງ 2"}</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+        ),
+        hint: {
+          text: "💡 ຈົ່ງຈື່ວ່າ ສຳປະສິດສະໂລບ a ບອກເຖິງຄວາມຊັນ (ຖ້າ a > 0 ເສັ້ນສະແດງຈະຂຶ້ນ, ຖ້າ a < 0 ເສັ້ນສະແດງຈະລົງ) ແລະ b ບອກຈຸດຕັດແກນ y ເດີ້!",
+          isBlue: true
+        }
+      },
+      problems: [
+        {
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຄຳຖາມທີ 1: ຈົ່ງກຳນົດສຳປະສິດສະໂລບ a ແລະ ຈຸດຕັດແກນ y (b) ຂອງຕຳລາຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span>{"ຕຳລາ "} <span className="math">{"y = 3x + 5"}</span> {" ມີຄ່າຂອງ a ແລະ b ແມ່ນເທົ່າໃດ?"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                </div>
+                
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span>{"ຕຳລາ "} <span className="math">{"y = -2x + 7"}</span> {" ມີຄ່າຂອງ a ແລະ b ແມ່ນເທົ່າໃດ?"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                </div>
+
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                  <span>{"ຕຳລາ "} <span className="math">{"y = 4x - 9"}</span> {" ມີຄ່າຂອງ a ແລະ b ແມ່ນເທົ່າໃດ?"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຄຳຖາມທີ 2: ຈົ່ງຊອກຫາສົມຜົນຕຳລາຂັ້ນໜຶ່ງ y = ax + b ຈາກເງື່ອນໄຂລຸ່ມນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span>{"ຖ້າສຳປະສິດສະໂລບ "} <span className="math">{"a = 4"}</span> {" ແລະ ຈຸດຕັດແກນ y ແມ່ນ "} <span className="math">{"b = -3"}</span> {", ສົມຜົນແມ່ນຫຍັງ?"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "42px" }}></span>
+                </div>
+
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span>{"ຖ້າເສັ້ນສະແດງຂະໜານກັບ "} <span className="math">{"y = -5x"}</span> {" ແລະ ຕັດແກນ y ຢູ່ເມັດ "} <span className="math">{"(0, 2)"}</span> {", ສົມຜົນແມ່ນຫຍັງ?"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        }
+      ]
+    },
+    {
+      title: "2. ການແທນຄ່າ ແລະ ຈຸດຕັດແກນ x ຂອງເສັ້ນສະແດງ (Evaluating and Finding X-Intercepts of Linear Graphs)",
+      keyPoint: {
+        title: "ການຊອກຫາຈຸດພິເສດເທິງເສັ້ນສະແດງ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ການຊອກຫາຈຸດຕັດແກນນອນ (ແກນ x) ແລະ ຄ່າຂອງຕຳລາຂັ້ນໜຶ່ງ:"}
+            </p>
+            
+            <div style={{ padding: "12px 16px", backgroundColor: "#FFFDE7", borderRadius: "10px", border: "1px solid #FFF59D", fontSize: "1.25rem", color: "#F57F17", display: "flex", flexDirection: "column", gap: "6px" }}>
+              <div>{"• "} <span style={{ fontWeight: "bold" }}>{"ການຫາຄ່າ f(x):"}</span> {" ແທນຄ່າ x ທີ່ກຳນົດໃສ່ສົມຜົນ ເພື່ອຊອກຫາຄ່າຂອງ y."}</div>
+              <div>{"• "} <span style={{ fontWeight: "bold" }}>{"ຈຸດຕັດແກນ x (x-intercept):"}</span> {" ແມ່ນຈຸດທີ່ y = 0. ດັ່ງນັ້ນ ເຮົາແກ້ສົມຜົນ ax + b = 0 ➔ x = "} <Fraction num="-b" den="a" /> {" ຈະໄດ້ຈຸດຕັດແມ່ນ ("} <Fraction num="-b" den="a" /> {", 0)."}</div>
+              <div style={{ fontWeight: "bold", color: "#D84315" }}>{"• ຕົວຢ່າງ: ຕຳລາ y = 2x - 6 ➔ ໃຫ້ y = 0 ➔ 2x - 6 = 0 ➔ 2x = 6 ➔ x = 3."}</div>
+            </div>
+          </div>
+        ),
+        hint: {
+          text: "💡 ຈຸດຕັດແກນ y ໃຫ້ແທນ x = 0, ສ່ວນຈຸດຕັດແກນ x ແມ່ນໃຫ້ແທນ y = 0 ເດີ້!",
+          isBlue: false
+        }
+      },
+      problems: [
+        {
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຄຳຖາມທີ 1: ຈົ່ງຄິດໄລ່ຫາຄ່າຂອງ y ຫຼື f(x) ຈາກຄ່າ x ທີ່ກຳນົດໃຫ້: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span>
+              </p>
+
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span>{"ໃຫ້ຕຳລາ "} <span className="math">{"y = 3x - 1"}</span> {". ຖ້າຫາກ "} <span className="math">{"x = 4"}</span> {", ຄ່າຂອງ y ແມ່ນເທົ່າໃດ?"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span>{"ໃຫ້ຕຳລາ "} <span className="math">{"y = -4x + 9"}</span> {". ຖ້າຫາກ "} <span className="math">{"x = 2"}</span> {", ຄ່າຂອງ y ແມ່ນເທົ່າໃດ?"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                  <span>{"ໃຫ້ຕຳລາ "} <span className="math">{"y = "} <Fraction num="1" den="2" /> {"x + 3"}</span> {". ຖ້າຫາກ "} <span className="math">{"x = 6"}</span> {", ຄ່າຂອງ y ແມ່ນເທົ່າໃດ?"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຄຳຖາມທີ 2: ຈົ່ງຊອກຫາຕົວປະສານງານແກນ x (ຄ່າຂອງ x) ທີ່ເປັນຈຸດຕັດແກນ x: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
+              </p>
+
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span>{"ຈຸດຕັດແກນ x ຂອງເສັ້ນສະແດງຕຳລາ "} <span className="math">{"y = 2x - 8"}</span> {" ມີຄ່າ x ເທົ່າໃດ?"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span>{"ຈຸດຕັດແກນ x ຂອງເສັ້ນສະແດງຕຳລາ "} <span className="math">{"y = -3x + 12"}</span> {" ມີຄ່າ x ເທົ່າໃດ?"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        }
+      ]
+    }
+  ],
+  challengeProblems: {
+    hintText: "💡 ບົດທ້າທາຍ: ສ້າງລະບົບສົມຜົນຈາກສອງເມັດທີ່ກຳນົດໃຫ້ ເພື່ອຊອກຫາຄ່າຂອງ a ແລະ b ຢ່າງລະອຽດເດີ້!",
+    problems: [
+      {
+        number: 1,
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ການຊອກຫາສົມຜົນເສັ້ນຊື່ຜ່ານສອງເມັດ (Finding Line Equation Passing Through Two Points): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            </p>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"(1) ເສັ້ນຊື່ເສັ້ນໜຶ່ງຜ່ານສອງເມັດ "} <span className="math">{"A(1, 5)"}</span> {" ແລະ "} <span className="math">{"B(3, 11)"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງສຳປະສິດສະໂລບ a ຂອງເສັ້ນຊື່ນີ້."}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: a ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            </div>
+          </div>
+        )
+      },
+      {
+        number: 2,
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ການຊອກຫາເມັດຕັດກັນຂອງສອງເສັ້ນສະແດງ (Intersection of Two Linear Graphs): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            </p>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"(2) ຈົ່ງຊອກຫາຄ່າປະສານງານ x ຂອງເມັດຕັດກັນລະຫວ່າງສອງເສັ້ນຊື່ "} <span className="math">{"y = 3x - 1"}</span> {" ແລະ "} <span className="math">{"y = x + 5"}</span> {". (ຄຳແນະນຳ: ໃຫ້ຕັ້ງສົມຜົນ 3x - 1 = x + 5 ແລ້ວແກ້ຫາ x)"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: x ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            </div>
+          </div>
+        )
+      }
+    ]
+  },
+  summaryProblems: [
+    {
+      number: 1,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດບັນຫາການຕື່ມນ້ຳໃສ່ອ່າງ (Water Filling Real-world Application): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+          </p>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"(1) ໃນອ່າງນ້ຳມີນ້ຳຢູ່ແລ້ວ 20 ລີດ, ເມື່ອໄຂກ໊ອກຕື່ມນ້ຳໃສ່ຕື່ມໃນອັດຕາ 3 ລີດຕໍ່ນາທີ. ຂຽນເປັນຕຳລາແມ່ນ "} <span className="math">{"y = 3x + 20"}</span> {" (ລີດ) ໂດຍ x ແມ່ນເວລາເປັນນາທີ. ຖ້າໄຂກ໊ອກນ້ຳເປັນເວລາ 10 ນາທີ, ຈະມີນ້ຳທັງໝົດໃນອ່າງຈັກລີດ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ມີນ້ຳທັງໝົດ"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span>{"ລີດ"}</span>
+          </div>
+        </div>
+      )
+    },
+    {
+      number: 2,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ການຫາຄ່າຕຳລາຈາກເງື່ອນໄຂເລີ່ມຕົ້ນ (Function Evaluation from Coordinates): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+          </p>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"(2) ໃຫ້ຕຳລາຂັ້ນໜຶ່ງ "} <span className="math">{"f(x) = ax + b"}</span> {" ໂດຍຮູ້ວ່າ "} <span className="math">{"f(0) = 4"}</span> {" ແລະ "} <span className="math">{"f(2) = 10"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ "} <span className="math">{"f(5)"}</span> {"."}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: f(5) ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+          </div>
+        </div>
+      )
+    }
+  ],
+  answers: {
+    items: [
+      {
+        questionNumber: 1,
+        answers: [
+          <span key="1">{"(1) a = 3, b = 5 (ເພາະວ່າທຽບໃສ່ຮູບແບບ y = ax + b ຈະໄດ້ a = 3, b = 5)"}</span>,
+          <span key="2">{"(2) a = -2, b = 7 (ເພາະວ່າທຽບໃສ່ຮູບແບບ y = ax + b ຈະໄດ້ a = -2, b = 7)"}</span>,
+          <span key="3">{"(3) a = 4, b = -9 (ເພາະວ່າທຽບໃສ່ຮູບແບບ y = ax + b ຈະໄດ້ a = 4, b = -9)"}</span>
+        ]
+      },
+      {
+        questionNumber: 2,
+        answers: [
+          <span key="4">{"(1) y = 4x - 3 (ແທນ a = 4, b = -3 ໃສ່ສົມຜົນທົ່ວໄປ y = ax + b)"}</span>,
+          <span key="5">{"(2) y = -5x + 2 (ເສັ້ນຊື່ຂະໜານກັນມີ a ເທົ່າກັນ ➔ a = -5, ແລະ ຕັດແກນ y ຢູ່ (0, 2) ➔ b = 2)"}</span>
+        ]
+      },
+      {
+        questionNumber: "ທ້າທາຍ 1",
+        answers: [
+          <span key="6">{"3 (ຊອກຫາຄວາມຊັນຈາກສູດ a = (y₂ - y₁) / (x₂ - x₁) = (11 - 5) / (3 - 1) = 6 / 2 = 3)"}</span>
+        ]
+      },
+      {
+        questionNumber: "ທ້າທາຍ 2",
+        answers: [
+          <span key="7">{"3 (ຕັ້ງສົມຜົນ 3x - 1 = x + 5 ➔ 2x = 6 ➔ x = 3)"}</span>
+        ]
+      },
+      {
+        questionNumber: "ທົດສອບປະຈຳບົດ 1",
+        answers: [
+          <span key="8">{"50 (ແທນ x = 10 ນາທີ ໃສ່ຕຳລາ y = 3(10) + 20 = 30 + 20 = 50 ລີດ)"}</span>
+        ]
+      },
+      {
+        questionNumber: "ທົດສອບປະຈຳບົດ 2",
+        answers: [
+          <span key="9">{"19 (ຈາກ f(0) = b ➔ b = 4. ຈາກ f(2) = 2a + 4 = 10 ➔ 2a = 6 ➔ a = 3. ດັ່ງນັ້ນ f(x) = 3x + 4 ➔ f(5) = 3(5) + 4 = 19)"}</span>
+        ]
+      }
+    ],
+    advice: "ຕຳລາຂັ້ນໜຶ່ງເປັນພື້ນຖານທີ່ສຳຄັນທີ່ສຸດໃນການຮຽນເລຂາຄະນິດວິເຄາະ, ຟີຊິກສາດກ່ຽວກັບການເຄື່ອນທີ່ສະໝໍ່າສະເໝີ ແລະ ການຄິດໄລ່ທຸລະກິດ ໝັ່ນຝຶກຝົນເປັນປະຈຳເດີ້!"
+  }
+};

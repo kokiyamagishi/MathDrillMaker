@@ -14,7 +14,7 @@ export const unit6Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <h3 style={{ fontSize: "28px", color: "#1976D2", margin: 0 }}>
-            {"1. ຮູບເຄິ່ງຄືກັນທຽບໃສ່ເສັ້ນຊື່ (Line Symmetry)"}
+            {"1. ຮູບເຄິ່ງຄືກັນທຽບໃສ່ເສັ້ນຊື່"}
           </h3>
           <div
             style={{
@@ -28,7 +28,7 @@ export const unit6Data: UnitData = {
               style={{ flex: "1 1 250px", fontSize: "22px", lineHeight: "1.6" }}
             >
               {
-                "ຮູບພາບທີ່ສາມາດພັບເຄິ່ງຕາມເສັ້ນຊື່ໜຶ່ງ (ແກນເຄິ່ງຄື / Axis of Symmetry) ແລ້ວທັງສອງສ່ວນຊ້ອນກັນໄດ້ພໍດີ."
+                "ຮູບພາບທີ່ສາມາດພັບເຄິ່ງຕາມເສັ້ນຊື່ໜຶ່ງ (ແກນເຄິ່ງຄື) ແລ້ວທັງສອງສ່ວນຊ້ອນກັນໄດ້ພໍດີ."
               }
             </div>
             <svg className="math-illustration" width="180" height="135">
@@ -58,7 +58,7 @@ export const unit6Data: UnitData = {
           <h3
             style={{ fontSize: "28px", color: "#1976D2", margin: "12px 0 0 0" }}
           >
-            {"2. ຮູບເຄິ່ງຄືກັນທຽບໃສ່ເມັດ (Point Symmetry)"}
+            {"2. ຮູບເຄິ່ງຄືກັນທຽບໃສ່ເມັດ"}
           </h3>
           <div
             style={{
@@ -72,7 +72,7 @@ export const unit6Data: UnitData = {
               style={{ flex: "1 1 250px", fontSize: "22px", lineHeight: "1.6" }}
             >
               {
-                "ຮູບພາບທີ່ເມື່ອປິ່ນອ້ອມເມັດໃຈກາງ (ເມັດເຄິ່ງຄື / Center of Symmetry) ໄປ 180° ແລ້ວມັນຈະທັບກັບຮູບເດີມພໍດີ."
+                "ຮູບພາບທີ່ເມື່ອປິ່ນອ້ອມເມັດໃຈກາງ (ເມັດເຄິ່ງຄື) ໄປ 180° ແລ້ວມັນຈະທັບກັບຮູບເດີມພໍດີ."
               }
             </div>
             <svg className="math-illustration" width="180" height="135">
@@ -150,7 +150,7 @@ export const unit6Data: UnitData = {
               }}
             >
               <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-                <span>{"(1) ຮູບຈະຕຸລັດ (Square) ມີແກນເຄິ່ງຄືທັງໝົດຈັກແກນ?"}</span>
+                <span>{"(1) ຮູບຈະຕຸລັດ ມີແກນເຄິ່ງຄືທັງໝົດຈັກແກນ?"}</span>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
                   <span>{"ຄຳຕອບ:"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
@@ -290,7 +290,7 @@ export const unit6Data: UnitData = {
                 </div>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-                <span>{"(2) 🛑 ຮູບຫົກແຈສະເໝີ (Regular Hexagon) ແມ່ນຮູບເຄິ່ງຄືກັນທຽບໃສ່ເມັດ ຫຼື ບໍ່?"}</span>
+                <span>{"(2) 🛑 ຮູບຫົກແຈສະເໝີ ແມ່ນຮູບເຄິ່ງຄືກັນທຽບໃສ່ເມັດ ຫຼື ບໍ່?"}</span>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
                   <span>{"ຄຳຕອບ:"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
@@ -320,7 +320,7 @@ export const unit6Data: UnitData = {
               }}
             >
               <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-                <span>{"(1) ໃນຮູບເຄິ່ງຄືກັນທຽບໃສ່ເສັ້ນຊື່, ເສັ້ນຊື່ທີ່ເຊື່ອມຕໍ່ສອງເມັດສົມທຽບກັນ ຈະຕັ້ງສາກ (直交) ກັບແກນເຄິ່ງຄື ຫຼື ບໍ່?"}</span>
+                <span>{"(1) ໃນຮູບເຄິ່ງຄືກັນທຽບໃສ່ເສັ້ນຊື່, ເສັ້ນຊື່ທີ່ເຊື່ອມຕໍ່ສອງເມັດສົມທຽບກັນ ຈະຕັ້ງສາກ ກັບແກນເຄິ່ງຄື ຫຼື ບໍ່?"}</span>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
                   <span>{"ຄຳຕອບ:"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>

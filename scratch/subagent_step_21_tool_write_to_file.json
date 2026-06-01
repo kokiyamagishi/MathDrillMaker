@@ -1,0 +1,12 @@
+{
+  "name": "write_to_file",
+  "args": {
+    "CodeContent": "\"const fs = require('fs');\\nconst path = require('path');\\n\\nconst filePath = path.join(__dirname, '../src/data/units5.tsx');\\nconst content = fs.readFileSync(filePath, 'utf8');\\n\\n// Split the file by `unitNumber:` to isolate Units 1 to 8\\nconst units = content.split(/unitNumber:\\\\s*/g);\\n\\nfor (let i = 1; i <= 8; i++) {\\n  const unitBlock = units.find(u => u.trim().startsWith(String(i)));\\n  if (!unitBlock) {\\n    console.log(`Unit ${i} not found!`);\\n    continue;\\n  }\\n  \\n  console.log(`==================== UNIT ${i} ====================`);\\n  \\n  // Extract and print scoring labels (e.g. text containing \\\"ຄະແນນ\\\" or similar)\\n  console.log('--- Scoring Labels / Points ---');\\n  const scoringRegex = /\\\"[^\\\"]*ຄະແນນ[^\\\"]*\\\"/g;\\n  let match;\\n  while ((match = scoringRegex.exec(unitBlock)) !== null) {\\n    console.log(match[0]);\\n  }\\n  \\n  // Extract and print keyPoints section\\n  console.log('--- KeyPoints ---');\\n  const keyPointsStart = unitBlock.indexOf('keyPoints:');\\n  if (keyPointsStart !== -1) {\\n    // Find matching bracket for keyPoints\\n    let bracketCount = 0;\\n    let index = keyPointsStart;\\n    let keyPointsText = '';\\n    while (index < unitBlock.length) {\\n      const char = unitBlock[index];\\n      keyPointsText += char;\\n      if (char === '[') bracketCount++;\\n      else if (char === ']') {\\n        bracketCount--;\\n        if (bracketCount === 0) break;\\n      }\\n      index++;\\n    }\\n    console.log(keyPointsText);\\n  } else {\\n    console.log('No keyPoints found!');\\n  }\\n}\\n\"",
+    "Description": "\"Create temporary script to inspect keyPoints and scoring labels of Units 1 to 8 in units5.tsx\"",
+    "IsArtifact": "false",
+    "Overwrite": "true",
+    "TargetFile": "\"/Users/openclaw/Antigravity/MathDrillMaker/scratch/inspect_units1_8.js\"",
+    "toolAction": "\"Creating temporary inspection script\"",
+    "toolSummary": "\"Write to file\""
+  }
+}

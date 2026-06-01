@@ -1,6 +1,13 @@
 import React from "react";
 import { UnitData } from "../units2";
 
+const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
+  <span style={{ display: "inline-flex", flexDirection: "column", verticalAlign: "middle", alignItems: "center", padding: "0 4px", fontSize: "0.95em", transform: "translateY(-0.05em)" }}>
+    <span style={{ borderBottom: "1.5px solid currentColor", paddingBottom: "1px", lineHeight: 1, fontWeight: "bold" }}>{num}</span>
+    <span style={{ paddingTop: "1.5px", lineHeight: 1, fontWeight: "bold" }}>{den}</span>
+  </span>
+);
+
 export const unit17Data: UnitData = {
   unitNumber: 17,
   unitTitle: "ສະຫຼຸບບົດຮຽນປະຖົມສຶກສາ ປີທີ 5",
@@ -12,23 +19,89 @@ export const unit17Data: UnitData = {
       text: "ນີ້ແມ່ນບົດທົດສອບລວມຂອງທຸກໆບົດຮຽນເດີ້! ພະຍາຍາມແກ້ໄຂດ້ວຍຕົນເອງເພື່ອວັດແທກລະດັບຄວາມເຂົ້າໃຈຂອງຕົນເອງ!",
     },
     content: (
-      <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
         <h3 style={{ fontSize: "28px", color: "#1976D2", margin: 0 }}>
-          {"1. ສິ່ງທີ່ໄດ້ຮຽນມາທັງໝົດໃນ ປ.5 (P5 Summary)"}
+          {"1. ສິ່ງທີ່ໄດ້ຮຽນມາທັງໝົດໃນ ປ.5"}
         </h3>
         <div
           style={{
-            padding: "16px",
+            display: "flex",
+            gap: "24px",
+            flexWrap: "wrap",
+            alignItems: "center",
+            padding: "20px",
             backgroundColor: "#FFE082",
             border: "2px solid #FFB300",
             borderRadius: "8px",
-            fontSize: "22px",
-            lineHeight: "1.8",
           }}
         >
-          <div>{"• ການຄູນ, การຫານເລກທົດສະນິຍົມ ແລະ ເລກສ່ວນ."}</div>
-          <div>{"• ບໍລິມາດຂອງຮູບກ່ອງສາກ ແລະ ເນື້ອທີ່ຮູບຫຼາຍແຈ."}</div>
-          <div>{"• ອັດຕາສ່ວນພົວພັນ ແລະ ສ່ວນຮ້ອຍ."}</div>
+          {/* SVG Visual Explanation */}
+          <div style={{ backgroundColor: "#fff", padding: "16px", borderRadius: "8px", boxShadow: "0 4px 12px rgba(0,0,0,0.08)", display: "flex", justifyContent: "center", alignItems: "center", width: "500px", height: "450px", flexShrink: 0 }}>
+            <svg width="468" height="440" style={{ maxWidth: "100%", height: "auto" }}>
+              {/* Row 1: Operations */}
+              <rect x="15" y="15" width="438" height="125" fill="#F8F9FA" stroke="#2196F3" strokeWidth="2.5" rx="8"/>
+              <rect x="15" y="15" width="110" height="125" fill="#E3F2FD" rx="8"/>
+              <line x1="125" y1="15" x2="125" y2="140" stroke="#2196F3" strokeWidth="2.5"/>
+              <text x="70" y="77" textAnchor="middle" style={{ fontSize: "16px", fontWeight: "bold" }} fill="#0D47A1">{"ເລກຄິດໄລ່"}</text>
+              
+              {/* Op 1: Decimals */}
+              <circle cx="210" cy="65" r="38" fill="#fff" stroke="#2196F3" strokeWidth="1.5"/>
+              <text x="210" y="77" textAnchor="middle" style={{ fontSize: "11px", fontWeight: "bold" }} fill="#1565C0">{"1.2 × 2.5"}</text>
+              
+              {/* Op 2: Fractions */}
+              <circle cx="330" cy="65" r="38" fill="#fff" stroke="#2196F3" strokeWidth="1.5"/>
+              <text x="320" y="65" textAnchor="middle" style={{ fontSize: "11px", fontWeight: "bold" }} fill="#1565C0">{"2"}</text>
+              <line x1="310" y1="70" x2="330" y2="70" stroke="#1565C0" strokeWidth="1.5"/>
+              <text x="320" y="90" textAnchor="middle" style={{ fontSize: "11px", fontWeight: "bold" }} fill="#1565C0">{"3"}</text>
+              <text x="350" y="77" textAnchor="middle" style={{ fontSize: "11px", fontWeight: "bold" }} fill="#1565C0">{"× 5"}</text>
+
+              {/* Theme name at the bottom right */}
+              <text x="400" y="127" textAnchor="end" style={{ fontSize: "11px", fontWeight: "bold" }} fill="#555">{"ເລກສ່ວນ & ທົດສະນິຍົມ"}</text>
+
+              {/* Row 2: Shapes */}
+              <rect x="15" y="160" width="438" height="125" fill="#F8F9FA" stroke="#4CAF50" strokeWidth="2.5" rx="8"/>
+              <rect x="15" y="160" width="110" height="125" fill="#E8F5E9" rx="8"/>
+              <line x1="125" y1="160" x2="125" y2="285" stroke="#4CAF50" strokeWidth="2.5"/>
+              <text x="70" y="222" textAnchor="middle" style={{ fontSize: "16px", fontWeight: "bold" }} fill="#1B5E20">{"ຮູບເລຂາ"}</text>
+              
+              {/* Shape 1: Triangle */}
+              <circle cx="210" cy="212" r="38" fill="#fff" stroke="#4CAF50" strokeWidth="1.5"/>
+              <polygon points="195,222 225,222 210,195" fill="none" stroke="#2E7D32" strokeWidth="1.5"/>
+              
+              {/* Shape 2: Cube/Circle */}
+              <circle cx="330" cy="212" r="38" fill="#fff" stroke="#4CAF50" strokeWidth="1.5"/>
+              <circle cx="330" cy="212" r="18" fill="none" stroke="#2E7D32" strokeWidth="1.5"/>
+              <line x1="312" y1="212" x2="348" y2="212" stroke="red" strokeWidth="1" strokeDasharray="2,2"/>
+
+              {/* Theme name at the bottom right */}
+              <text x="350" y="272" textAnchor="end" style={{ fontSize: "11px", fontWeight: "bold" }} fill="#555">{"ເນື້ອທີ່ & ບໍລິມາດ"}</text>
+
+              {/* Row 3: Relations */}
+              <rect x="15" y="305" width="438" height="125" fill="#F8F9FA" stroke="#FF9800" strokeWidth="2.5" rx="8"/>
+              <rect x="15" y="305" width="110" height="125" fill="#FFF3E0" rx="8"/>
+              <line x1="125" y1="305" x2="125" y2="430" stroke="#FF9800" strokeWidth="2.5"/>
+              <text x="70" y="367" textAnchor="middle" style={{ fontSize: "16px", fontWeight: "bold" }} fill="#E65100">{"ພົວພັນ %"}</text>
+              
+              {/* Rel 1: Ratio */}
+              <circle cx="210" cy="355" r="38" fill="#fff" stroke="#FF9800" strokeWidth="1.5"/>
+              <text x="210" y="360" textAnchor="middle" style={{ fontSize: "13px", fontWeight: "bold" }} fill="#E65100">{"3 : 4"}</text>
+              
+              {/* Rel 2: Percent */}
+              <circle cx="330" cy="355" r="38" fill="#fff" stroke="#FF9800" strokeWidth="1.5"/>
+              <text x="330" y="360" textAnchor="middle" style={{ fontSize: "13px", fontWeight: "bold" }} fill="#E65100">{"75%"}</text>
+
+              {/* Theme name at the bottom right */}
+              <text x="390" y="417" textAnchor="end" style={{ fontSize: "11px", fontWeight: "bold" }} fill="#555">{"ສ່ວນຮ້ອຍ & ອັດຕາສ່ວນ"}</text>
+            </svg>
+          </div>
+
+          <div style={{ flex: "1 1 240px", fontSize: "22px", lineHeight: "1.6" }}>
+            <div style={{ fontSize: "18px", color: "#333" }}>
+              <div>{"• ການຄູນ, ການຫານເລກທົດສະນິຍົມ ແລະ ເລກສ່ວນ."}</div>
+              <div>{"• ບໍລິມາດຂອງຮູບກ່ອງສາກ ແລະ ເນື້ອທີ່ຮູບຫຼາຍແຈ."}</div>
+              <div>{"• ອັດຕາສ່ວນພົວພັນ ແລະ ສ່ວນຮ້ອຍ."}</div>
+            </div>
+          </div>
         </div>
       </div>
     ),
@@ -59,7 +132,11 @@ export const unit17Data: UnitData = {
               </div>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              <span>{"(2) 2/3 × 5"}</span>
+              <span style={{ display: "flex", alignItems: "center", gap: "4px", flexWrap: "wrap" }}>
+                {"(2) "}
+                <Fraction num="2" den="3" />
+                {" × 5"}
+              </span>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
                 <span>{"ຄຳຕອບ:"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
@@ -95,7 +172,7 @@ export const unit17Data: UnitData = {
               </div>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              <span>{"(2) ວົງມົນທີ່ມີເສັ້ນຜ່ານໃຈກາງຍາວ 20 cm. ເສັ້ນອ້ອມວົງຈະຍາວຈັກ cm? (ກຳນົດ Pi = 3.14)"}</span>
+              <span>{"(2) ວົງມົນທີ່ມີເສັ້ນຜ່ານໃຈກາງຍາວ 20 cm. ເສັ້ນອ້ອມວົງຈະຍາວຈັກ cm? (ກຳນົດ π = 3.14)"}</span>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
                 <span>{"ຄຳຕອບ:"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
@@ -117,7 +194,7 @@ export const unit17Data: UnitData = {
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p>
               {"ຈົ່ງແກ້ໂຈດບັນຫາອັດຕາສ່ວນຂອງເຂົ້າໜົມຫວານ: "}{" "}
-              <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              <span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
@@ -161,7 +238,7 @@ export const unit17Data: UnitData = {
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p>
               {"ຈົ່ງແກ້ໂຈດບັນຫາບໍລິມາດຂອງນ້ຳໃນຖັງ: "}{" "}
-              <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              <span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
@@ -173,7 +250,7 @@ export const unit17Data: UnitData = {
               }}
             >
               <p style={{ margin: 0, lineHeight: "1.5" }}>
-                {"(1) 📦 ຖັງນ້ຳຮູບກ່ອງສາກໃບໜຶ່ງ ມີລວງກວ້າງ 1.2 m, ลວງຍາວ 1.5 m ແລະ ລວງສູງ 1 m. ບໍລິມາດຂອງຖັງນ້ຳໃບນີ້ຈະແມ່ນຈັກ m³?"}
+                {"(1) 📦 ຖັງນ້ຳຮູບກ່ອງສາກໃບໜຶ່ງ ມີລວງກວ້າງ 1.2 m, ລວງຍາວ 1.5 m ແລະ ລວງສູງ 1 m. ບໍລິມາດຂອງຖັງນ້ຳໃບນີ້ຈະແມ່ນຈັກ m³?"}
               </p>
               <div
                 style={{
@@ -207,8 +284,8 @@ export const unit17Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາການຫຼຸດລາຄາສິນຄ້າ: "}{" "}
-            <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            {"ຈົ່ງແກ້ໂຈດບັນຫາການຫຼຸດລາຄาສິນຄ້າ: "}{" "}
+            <span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <div
             style={{
@@ -252,7 +329,7 @@ export const unit17Data: UnitData = {
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p>
             {"ຈົ່ງແກ້ໂຈດບັນຫາໄລຍະທາງຂອງລົດແລ່ນ: "}{" "}
-            <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <div
             style={{

@@ -1,0 +1,12 @@
+{
+  "name": "write_to_file",
+  "args": {
+    "CodeContent": "\"const fs = require('fs');\\nconst path = require('path');\\n\\nconst filePath = path.join(__dirname, '../src/data/units5.tsx');\\nconst lines = fs.readFileSync(filePath, 'utf8').split('\\\\n');\\n\\nfor (let i = 890; i <= 960; i++) {\\n  console.log(`${i + 1}: ${lines[i]}`);\\n}\\n\"",
+    "Description": "\"Check details around Unit 2 point labels\"",
+    "IsArtifact": "false",
+    "Overwrite": "true",
+    "TargetFile": "\"/Users/openclaw/Antigravity/MathDrillMaker/scratch/inspect_unit2_lines.js\"",
+    "toolAction": "\"Creating Unit 2 line inspector script\"",
+    "toolSummary": "\"Write to file\""
+  }
+}

@@ -1,0 +1,55 @@
+Created At: 2026-05-22T08:39:01Z
+Completed At: 2026-05-22T08:39:01Z
+File Path: `file:///Users/kokiyamagishi/Antigravity/MathDrillMaker/src/data/units3.tsx`
+Total Lines: 1657
+Total Bytes: 106263
+Showing lines 550 to 850
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+550:           questionNumber: "ທົດສອບປະຈຳບົດ 1",
+551:           answers: [
+552:             <span key="3">{"(1) 6 ແລະ 6, (2) 7 ແລະ 7, (3) 7 ແລະ 7, (4) 8 ແລະ 8, (5) 8 ແລະ 8"}</span>
+553:           ]
+554:         }
+555:       ],
+556:       advice: "ຖ້ານ້ອງໆທ່ອງບັ້ງສູດໄດ້ໄວ, ການຫານກໍຈະງ່າຍຂຶ້ນຫຼາຍ. ພະຍາຍາມຝຶກຄິດໃນໃຈເບິ່ງເດີ."
+557:     }
+558:   },
+559:   {
+560:     unitNumber: 4,
+561:     unitTitle: "ວົງມົນ ແລະ ໜ່ວຍມົນ",
+562:     unitGoal: "ຮຽນຮູ້ວົງມົນ ແລະ ໜ່ວຍມົນ",
+563:     textbookRef: "ປຶ້ມແບບຮຽນ ປ.3",
+564:     keyPoints: {
+565:       hint: { text: "ວົງມົນມີຈຸດໃຈກາງ, ລັດສະໝີ ແລະ ເສັ້ນຜ່າກາງ" },
+566:       content: (
+567:       <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
+568:         <h3 style={{ fontSize: "28px", color: "#1976D2", margin: 0 }}>{"4. ວົງມົນ ແລະ ໜ່ວຍມົນ"}</h3>
+569:         <p style={{ fontSize: "20px" }}>{"ວົງມົນແມ່ນຮູບຮ່າງແບນທີ່ມີຂອບໂຄ້ງ. ສ່ວນໜ່ວຍມົນແມ່ນຮູບຊົງສາມມິຕິ ເຊັ່ນ: ໝາກບານ. ວົງມົນມີຈຸດໃຈກາງ, ລັດສະໝີ ແລະ ເສັ້ນຜ່
+<truncated 19561 bytes>
+   <span>{"ຕອບ: ຕ້ອງໃຊ້ໂຕະ"}</span>
+826:                     <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px", margin: "0 10px" }}></span>
+827:                     <span>{"ໜ່ວຍ."}</span>
+828:                   </div>
+829:                 </div>
+830:                 <div>
+831:                   <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(4)"}</span>
+832:                   <span style={{ fontSize: "20px", marginLeft: "12px" }}>{"ມີເງິນ 45,000 ກີບ, ຢາກຊື້ປຶ້ມຫົວລະ 6,000 ກີບ. ຈະຊື້ໄດ້ຫຼາຍທີ່ສຸດຈັກຫົວ ແລະ ເງິນທອນເຫຼືອເທົ່າໃດ?"}</span>
+833:                   <div style={{ marginTop: "8px", paddingLeft: "40px", fontSize: "20px" }}>
+834:                     <span>{"ຕອບ: ຊື້ໄດ້"}</span>
+835:                     <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px", margin: "0 10px" }}></span>
+836:                     <span>{"ຫົວ, ເງິນທອນ"}</span>
+837:                     <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px", margin: "0 10px" }}></span>
+838:                     <span>{"ກີບ."}</span>
+839:                   </div>
+840:                 </div>
+841:               </div>
+842:             </div>
+843:           )
+844:         }
+845:       ],
+846:       hintIndex: 0,
+847:       hintText: "ສຳລັບຂໍ້ 3, ຄົນທີ່ເຫຼືອ (ຕົວເສດ) ກໍຕ້ອງໄດ້ນັ່ງໂຕະຄືກັນ ສະນັ້ນຕ້ອງບວກໂຕະເພີ່ມອີກ 1 ໜ່ວຍ."
+848:     },
+849:     summaryProblems: [
+850:       {
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

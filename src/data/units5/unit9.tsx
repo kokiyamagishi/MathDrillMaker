@@ -14,7 +14,7 @@ export const unit9Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <h3 style={{ fontSize: "28px", color: "#1976D2", margin: 0 }}>
-            {"1. ສູດເນື້ອທີ່ຮູບເລຂາຄະນິດ (Area Formulas)"}
+            {"1. ສູດເນື້ອທີ່ຮູບເລຂາຄະນິດ"}
           </h3>
           <div
             style={{
@@ -37,7 +37,7 @@ export const unit9Data: UnitData = {
               }}
             >
               <strong style={{ fontSize: "22px", color: "#1565C0" }}>
-                {"ຮູບສາມແຈ (Triangle)"}
+                {"ຮູບສາມແຈ"}
               </strong>
               <div
                 style={{
@@ -46,26 +46,26 @@ export const unit9Data: UnitData = {
                   justifyContent: "center",
                 }}
               >
-                <svg width="120" height="80">
+                <svg width="180" height="120">
                   <path
-                    d="M 20,70 L 100,70 L 80,20 Z"
+                    d="M 30,105 L 150,105 L 120,30 Z"
                     fill="rgba(33, 150, 243, 0.2)"
                     stroke="#2196F3"
                     strokeWidth="2"
                   />
                   <line
-                    x1="80"
-                    y1="20"
-                    x2="80"
-                    y2="70"
+                    x1="120"
+                    y1="30"
+                    x2="120"
+                    y2="105"
                     stroke="red"
                     strokeWidth="1"
                     strokeDasharray="3,3"
                   />
-                  <text x="50" y="82" style={{ fontSize: "22px" }}>
+                  <text x="75" y="118" style={{ fontSize: "22px" }}>
                     {"ພື້ນ"}
                   </text>
-                  <text x="85" y="45" style={{ fontSize: "22px" }} fill="red">
+                  <text x="125" y="65" style={{ fontSize: "22px" }} fill="red">
                     {"ສູງ"}
                   </text>
                 </svg>
@@ -88,7 +88,7 @@ export const unit9Data: UnitData = {
               }}
             >
               <strong style={{ fontSize: "22px", color: "#2E7D32" }}>
-                {"ຮູບສີ່ແຈຂ້າງຂະໜານ (Parallelogram)"}
+                {"ຮູບສີ່ແຈຂ້າງຂະໜານ"}
               </strong>
               <div
                 style={{
@@ -97,26 +97,26 @@ export const unit9Data: UnitData = {
                   justifyContent: "center",
                 }}
               >
-                <svg width="120" height="80">
+                <svg width="180" height="120">
                   <path
-                    d="M 20,70 L 90,70 L 100,20 L 30,20 Z"
+                    d="M 30,105 L 135,105 L 150,30 L 45,30 Z"
                     fill="rgba(76, 175, 80, 0.2)"
                     stroke="#4CAF50"
                     strokeWidth="2"
                   />
                   <line
-                    x1="30"
-                    y1="20"
-                    x2="30"
-                    y2="70"
+                    x1="45"
+                    y1="30"
+                    x2="45"
+                    y2="105"
                     stroke="red"
                     strokeWidth="1"
                     strokeDasharray="3,3"
                   />
-                  <text x="55" y="82" style={{ fontSize: "22px" }}>
+                  <text x="82" y="118" style={{ fontSize: "22px" }}>
                     {"ພື້ນ"}
                   </text>
-                  <text x="35" y="45" style={{ fontSize: "22px" }} fill="red">
+                  <text x="52" y="65" style={{ fontSize: "22px" }} fill="red">
                     {"ສູງ"}
                   </text>
                 </svg>
@@ -136,7 +136,7 @@ export const unit9Data: UnitData = {
               }}
             >
               <strong style={{ fontSize: "22px", color: "#FF8F00" }}>
-                {"ຮູບຄາງໝູ (Trapezoid)"}
+                {"ຮູບຄາງໝູ"}
               </strong>
               <div
                 style={{
@@ -145,29 +145,29 @@ export const unit9Data: UnitData = {
                   justifyContent: "center",
                 }}
               >
-                <svg width="120" height="80">
+                <svg width="180" height="120">
                   <path
-                    d="M 20,70 L 100,70 L 80,20 L 40,20 Z"
+                    d="M 30,105 L 150,105 L 120,30 L 60,30 Z"
                     fill="rgba(255, 179, 0, 0.2)"
                     stroke="#FFB300"
                     strokeWidth="2"
                   />
                   <line
-                    x1="40"
-                    y1="20"
-                    x2="40"
-                    y2="70"
+                    x1="60"
+                    y1="30"
+                    x2="60"
+                    y2="105"
                     stroke="red"
                     strokeWidth="1"
                     strokeDasharray="3,3"
                   />
-                  <text x="50" y="15" fontSize="10">
+                  <text x="75" y="22" style={{ fontSize: "16px" }}>
                     {"ຂ້າງເທິງ"}
                   </text>
-                  <text x="50" y="82" fontSize="10">
+                  <text x="75" y="118" style={{ fontSize: "16px" }}>
                     {"ຂ້າງລຸ່ມ"}
                   </text>
-                  <text x="45" y="45" fontSize="10" fill="red">
+                  <text x="68" y="65" style={{ fontSize: "16px" }} fill="red">
                     {"ສູງ"}
                   </text>
                 </svg>
@@ -188,120 +188,70 @@ export const unit9Data: UnitData = {
             style={{ display: "flex", flexDirection: "column", gap: "16px" }}
           >
             <p>
-              {"ຈົ່ງຊອກຫາເນື້ອທີ່ຂອງຮູບຕໍ່ໄປນີ້: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ)"}</span>
+              {"ຈົ່ງຊອກຫາເນື້ອທີ່ຂອງຮູບຊົງຕໍ່ໄປນີ້ (ສາມແຈ ແລະ ຂ້າງຂະໜານ): "}{" "}
+              <span className="point-label">{"(ຂໍ້ລະ 3 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
                 display: "grid",
                 gridTemplateColumns: "1fr",
-                gap: "16px",
-                padding: "16px",
+                gap: "20px",
+                fontSize: "20px",
+                padding: "8px 16px",
               }}
             >
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "16px",
-                  flexWrap: "wrap",
-                }}
-              >
-                <span>
-                  {"(1) ຮູບສາມແຈທີ່ມີພື້ນ 8 cm ແລະ ລວງສູງ 5 cm. ເນື້ອທີ່ແມ່ນ"}
-                </span>
-                <div
-                  style={{ display: "flex", alignItems: "center", gap: "8px" }}
-                >
-                  <span
-                    className="answer-blank"
-                    style={{
-                      display: "inline-block",
-                      width: "80px",
-                      height: "40px",
-                    }}
-                  ></span>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <span>{"(1) ຮູບສາມແຈທີ່ມີພື້ນ 8 cm ແລະ ລວງສູງ 5 cm. ເນື້ອທີ່ແມ່ນຈັກ cm²?"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
                   <span>{"cm²"}</span>
                 </div>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "16px",
-                  flexWrap: "wrap",
-                }}
-              >
-                <span>
-                  {
-                    "(2) ຮູບສີ່ແຈຂ້າງຂະໜານທີ່ມີພື້ນ 10 cm ແລະ ລວງສູງ 6 cm. ເນື້ອທີ່ແມ່ນ"
-                  }
-                </span>
-                <div
-                  style={{ display: "flex", alignItems: "center", gap: "8px" }}
-                >
-                  <span
-                    className="answer-blank"
-                    style={{
-                      display: "inline-block",
-                      width: "80px",
-                      height: "40px",
-                    }}
-                  ></span>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <span>{"(2) ຮູບສີ່ແຈຂ້າງຂະໜານທີ່ມີພື້ນ 10 cm ແລະ ລວງສູງ 6 cm. ເນື້ອທີ່ແມ່ນຈັກ cm²?"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
                   <span>{"cm²"}</span>
                 </div>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "16px",
-                  flexWrap: "wrap",
-                }}
-              >
-                <span>
-                  {
-                    "(3) ຮູບຄາງໝູທີ່ມີຂ້າງເທິງ 4 cm, ຂ້າງລຸ່ມ 8 cm ແລະ ລວງສູງ 5 cm. ເນື້ອທີ່ແມ່ນ"
-                  }
-                </span>
-                <div
-                  style={{ display: "flex", alignItems: "center", gap: "8px" }}
-                >
-                  <span
-                    className="answer-blank"
-                    style={{
-                      display: "inline-block",
-                      width: "80px",
-                      height: "40px",
-                    }}
-                  ></span>
+            </div>
+          </div>
+        ),
+      },
+      {
+        number: 2,
+        content: (
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+          >
+            <p>
+              {"ຈົ່ງຊອກຫາເນື້ອທີ່ຂອງຮູບຊົງຕໍ່ໄປນີ້ (ຄາງໝູ ແລະ ສີ່ແຈລີ): "}{" "}
+              <span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
+            </p>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr",
+                gap: "20px",
+                fontSize: "20px",
+                padding: "8px 16px",
+              }}
+            >
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <span>{"(1) ຮູບຄາງໝູທີ່ມີຂ້າງເທິງ 4 cm, ຂ້າງລຸ່ມ 8 cm ແລະ ລວງສູງ 5 cm. ເນື້ອທີ່ແມ່ນຈັກ cm²?"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
                   <span>{"cm²"}</span>
                 </div>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "16px",
-                  flexWrap: "wrap",
-                }}
-              >
-                <span>
-                  {
-                    "(4) ຮູບສີ່ແຈລີທີ່ມີເສັ້ນເນັ່ງຈອມຍາວ 6 cm ແລະ 8 cm. ເນື້ອທີ່ແມ່ນ"
-                  }
-                </span>
-                <div
-                  style={{ display: "flex", alignItems: "center", gap: "8px" }}
-                >
-                  <span
-                    className="answer-blank"
-                    style={{
-                      display: "inline-block",
-                      width: "80px",
-                      height: "40px",
-                    }}
-                  ></span>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <span>{"(2) ຮູບສີ່ແຈລີທີ່ມີເສັ້ນເນັ່ງຈອມຍາວ 6 cm ແລະ 8 cm. ເນື້ອທີ່ແມ່ນຈັກ cm²?"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
                   <span>{"cm²"}</span>
                 </div>
               </div>
@@ -321,7 +271,7 @@ export const unit9Data: UnitData = {
               style={{ display: "flex", flexDirection: "column", gap: "16px" }}
             >
               <p>
-                {"ຈົ່ງຄິດໄລ່ເນື້ອທີ່ຂອງຮູບສາມແຈຕໍ່ໄປນີ້: "}{" "}
+                {"ຈົ່ງຄິດໄລ່ເນື້ອທີ່ຂອງຮູບສາມແຈ (ມີຕົວເລກຫຼອກ): "}{" "}
                 <span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
               <div
@@ -330,33 +280,96 @@ export const unit9Data: UnitData = {
                   gap: "40px",
                   alignItems: "center",
                   flexWrap: "wrap",
-                  padding: "16px",
+                  padding: "8px 16px",
                 }}
               >
-                <svg width="150" height="100">
+                <svg width="225" height="150">
                   <path
-                    d="M 20,80 L 120,80 L 100,20 Z"
+                    d="M 30,120 L 180,120 L 150,30 Z"
                     fill="none"
                     stroke="#333"
                     strokeWidth="2"
                   />
                   <line
-                    x1="100"
-                    y1="20"
-                    x2="100"
-                    y2="80"
+                    x1="150"
+                    y1="30"
+                    x2="150"
+                    y2="120"
                     stroke="red"
                     strokeWidth="1"
                     strokeDasharray="3,3"
                   />
-                  <text x="60" y="95" fontSize="12">
+                  <text x="90" y="140" style={{ fontSize: "16px" }}>
                     {"10 cm (ພື້ນ)"}
                   </text>
-                  <text x="105" y="50" fontSize="12" fill="red">
+                  <text x="158" y="75" style={{ fontSize: "16px" }} fill="red">
                     {"6 cm"}
                   </text>
-                  <text x="40" y="45" fontSize="11" fill="#888">
-                    {"7 cm (ຂ້າງສະຫຼຽງ)"}
+                  <text x="60" y="68" style={{ fontSize: "15px" }} fill="#888">
+                    {"7 cm (ສະຫຼຽງ)"}
+                  </text>
+                </svg>
+                <div
+                  style={{ display: "flex", gap: "12px", alignItems: "center" }}
+                >
+                  <span>{"ເນື້ອທີ່ ="}</span>
+                  <span
+                    className="answer-blank"
+                    style={{
+                      display: "inline-block",
+                      width: "120px",
+                      height: "40px",
+                    }}
+                  ></span>
+                  <span>{"cm²"}</span>
+                </div>
+              </div>
+            </div>
+          ),
+        },
+        {
+          number: 2,
+          content: (
+            <div
+              style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+            >
+              <p>
+                {"ຈົ່ງຄິດໄລ່ເນື້ອທີ່ຂອງຮູບສີ່ແຈຂ້າງຂະໜານ (ມີຕົວເລກຫຼອກ): "}{" "}
+                <span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "40px",
+                  alignItems: "center",
+                  flexWrap: "wrap",
+                  padding: "8px 16px",
+                }}
+              >
+                <svg width="270" height="150">
+                  <path
+                    d="M 30,120 L 165,120 L 195,30 L 60,30 Z"
+                    fill="none"
+                    stroke="#333"
+                    strokeWidth="2"
+                  />
+                  <line
+                    x1="60"
+                    y1="30"
+                    x2="60"
+                    y2="120"
+                    stroke="red"
+                    strokeWidth="1"
+                    strokeDasharray="3,3"
+                  />
+                  <text x="75" y="140" style={{ fontSize: "16px" }}>
+                    {"12 cm (ພື້ນ)"}
+                  </text>
+                  <text x="68" y="75" style={{ fontSize: "16px" }} fill="red">
+                    {"8 cm"}
+                  </text>
+                  <text x="145" y="80" style={{ fontSize: "15px" }} fill="#888">
+                    {"9 cm (ສະຫຼຽງ)"}
                   </text>
                 </svg>
                 <div
@@ -387,40 +400,66 @@ export const unit9Data: UnitData = {
             style={{ display: "flex", flexDirection: "column", gap: "16px" }}
           >
             <p>
-              {"ຈົ່ງແກ້ໂຈດບັນຫາຕໍ່ໄປນີ້: "}{" "}
-              <span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ຈົ່ງຄິດໄລ່ເນື້ອທີ່ຂອງຮູບເລຂາຄະນິດຕໍ່ໄປນີ້: "}{" "}
+              <span className="point-label">{"(ຂໍ້ລະ 3 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "12px",
+                display: "grid",
+                gridTemplateColumns: "1fr",
+                gap: "20px",
                 fontSize: "20px",
+                padding: "8px 16px",
               }}
             >
-              <p style={{ margin: 0, lineHeight: "1.5" }}>
-                {
-                  "🌾 ດິນນາຕອນໜຶ່ງເປັນຮູບຄາງໝູ ທີ່ມີຂ້າງເທິງຍາວ 20 m, ຂ້າງລຸ່ມຍາວ 30 m ແລະ ມີໄລຍະຫ່າງລະຫວ່າງສອງຂ້າງນີ້ (ລວງສູງ) ແມ່ນ 15 m. ດິນນາຕອນນີ້ມີເນື້ອທີ່ທັງໝົດຈັກ m²?"
-                }
-              </p>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "12px",
-                  alignItems: "center",
-                  marginTop: "8px",
-                }}
-              >
-                <span>{"ຄຳຕອບ:"}</span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "120px",
-                    height: "40px",
-                  }}
-                ></span>
-                <span>{"m²"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                <span>{"(1) ຮູບສາມແຈທີ່ມີພື້ນ 12 cm ແລະ ລວງສູງ 4 cm ຈະມີເນື້ອທີ່"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                <span>{"cm²"}</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                <span>{"(2) ຮູບສີ່ແຈຂ້າງຂະໜານທີ່ມີພື້ນ 7 cm ແລະ ລວງສູງ 8 cm ຈະມີເນື້ອທີ່"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                <span>{"cm²"}</span>
+              </div>
+            </div>
+          </div>
+        ),
+      },
+      {
+        number: 2,
+        content: (
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+          >
+            <p>
+              {"ຈົ່ງແກ້ໂຈດບັນຫາເນື້ອທີ່ຕໍ່ໄປນີ້: "}{" "}
+              <span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
+            </p>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr",
+                gap: "20px",
+                fontSize: "20px",
+                padding: "8px 16px",
+              }}
+            >
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <span>{"(1) 🌾 ດິນນາຕອນໜຶ່ງເປັນຮູບຄາງໝູ ທີ່ມີຂ້າງເທິງຍາວ 20 m, ຂ້າງລຸ່ມຍາວ 30 m ແລະ ມີລວງສູງແມ່ນ 15 m. ດິນນາຕອນນີ້ມີເນື້ອທີ່ທັງໝົດຈັກ m²?"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                  <span>{"m²"}</span>
+                </div>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                <span>{"(2) ✂️ ເຈ້ຍຮູບສາມແຈໃບໜຶ່ງມີພື້ນ 15 cm ແລະ ລວງສູງ 10 cm. ຖ້າຕັດຮູບສາມແຈນ້ອຍທີ່ມີພື້ນ 5 cm ແລະ ລວງສູງ 4 cm ອອກ, ເນື້ອທີ່ເຈ້ຍທີ່ເຫຼືອແມ່ນຈັກ cm²?"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                  <span>{"cm²"}</span>
+                </div>
               </div>
             </div>
           </div>
@@ -432,33 +471,45 @@ export const unit9Data: UnitData = {
         {
           questionNumber: 1,
           answers: [
-            <span key="1">
-              {
-                "(1) 20 cm² (8 × 5 ÷ 2), (2) 60 cm² (10 × 6), (3) 30 cm² ((4 + 8) × 5 ÷ 2), (4) 24 cm² (6 × 8 ÷ 2)"
-              }
-            </span>,
+            <span key="u9-ans-1-1">{"(1) 20 cm² (8 × 5 ÷ 2 = 20)"}</span>,
+            <span key="u9-ans-1-2">{"(2) 60 cm² (10 × 6 = 60)"}</span>,
+          ],
+        },
+        {
+          questionNumber: 2,
+          answers: [
+            <span key="u9-ans-2-1">{"(1) 30 cm² ((4 + 8) × 5 ÷ 2 = 30)"}</span>,
+            <span key="u9-ans-2-2">{"(2) 24 cm² (6 × 8 ÷ 2 = 24)"}</span>,
           ],
         },
         {
           questionNumber: "ທ້າທາຍ 1",
           answers: [
-            <span key="2">
-              {
-                "30 cm² (ຍ້ອນເອົາພື້ນ 10 cm × ລວງສູງ 6 cm ÷ 2 = 30. ຂ້າງສະຫຼຽງ 7 cm ບໍ່ນຳມາຄິດໄລ່)"
-              }
-            </span>,
+            <span key="u9-ans-t1-1">{"30 cm² (ຍ້ອນເອົາພື້ນ 10 cm × ລວງສູງ 6 cm ÷ 2 = 30, ຂ້າງສະຫຼຽງ 7 cm ບໍ່ນຳມາໃຊ້)"}</span>,
+          ],
+        },
+        {
+          questionNumber: "ທ້າທາຍ 2",
+          answers: [
+            <span key="u9-ans-t2-1">{"96 cm² (ຍ້ອນເອົາພື້ນ 12 cm × ລວງສູງ 8 cm = 96, ຂ້າງສະຫຼຽງ 9 cm ບໍ່ນຳມາໃຊ້)"}</span>,
           ],
         },
         {
           questionNumber: "ທົດສອບປະຈຳບົດ 1",
           answers: [
-            <span key="3">
-              {"375 m² (ຍ້ອນ ((20 + 30) × 15) ÷ 2 = 50 × 15 ÷ 2 = 375)"}
-            </span>,
+            <span key="u9-ans-s1-1">{"(1) 24 cm² (12 × 4 ÷ 2 = 24)"}</span>,
+            <span key="u9-ans-s1-2">{"(2) 56 cm² (7 × 8 = 56)"}</span>,
+          ],
+        },
+        {
+          questionNumber: "ທົດສອບປະຈຳບົດ 2",
+          answers: [
+            <span key="u9-ans-s2-1">{"(1) 375 m² (ຍ້ອນ ((20 + 30) × 15) ÷ 2 = 375)"}</span>,
+            <span key="u9-ans-s2-2">{"(2) 65 cm² (ຍ້ອນ ເນື້ອທີ່ທັງໝົດ (15 × 10 ÷ 2 = 75) ລົບອອກເນື້ອທີ່ສ່ວນຕັດ (5 × 4 ÷ 2 = 10) ຈະເຫຼືອ 65)"}</span>,
           ],
         },
       ],
       advice:
-        "ສູດເນື້ອທີ່ແຕ່ລະຮູບມີເງື່ອນໄຂພິເສດສະເພາະ! ການຈື່ຈຳວ່າຕົວເລກໃດຕ້ອງເອົາມາໃຊ້ ແລະ ຕົວເລກໃດຄວນຫຼີກເວັ້ນ ຈະຊ່ວຍໃຫ້ເຮົາຄິດໄລ່ໄດ້ຢ່າງຖືກຕ້ອງສະເໝີ.",
+        "ສູດເນື້ອທີ່ແຕ່ລະຮູບມີເງື່ອນໄຂພິເສດສະເພາະ! ການຈື່ຈຳວ່າຕົວເລກໃດຕ້ອງເອົາມາໃຊ້ ແລະ ຕົວເລກໃດຄວນຫຼີກເວັ້ນ ຈະຊ່ວຍໃຫ້ເຮົາຄິດໄລ່ໄດ້ຢ່າງຖືກຕ້ອງສະեໝີ.",
     },
   };

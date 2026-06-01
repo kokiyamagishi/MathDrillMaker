@@ -1,0 +1,712 @@
+/* ============================================
+   スウロボ・ジェネレーター - 印刷最適化スタイル
+   CSS Paged Media for A4 印刷
+   ============================================ */
+
+/* --- @page ルール: A4用紙設定 --- */
+@page {
+  size: A4 portrait;
+  margin: 0; /* ブラウザの余白を消し、.drill-pageのpaddingで制御 */
+}
+
+/* --- メディアクエリ: 印刷時 --- */
+@media print {
+  /* 印刷時に不要な要素を非表示 */
+  .no-print,
+  .print-controls,
+  .web-navigation,
+  .web-header,
+  .web-footer,
+  button,
+  nav {
+    display: none !important;
+  }
+
+  /* ページ全体のリセット */
+  html, body {
+    width: 210mm;
+    margin: 0;
+    padding: 0;
+    background: white !important;
+    color: black !important;
+    font-size: 11pt;
+    line-height: 1.6;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* リンクの下線を消す */
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  /* シャドウを消す */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+}
+
+/* --- 改ページ制御 --- */
+.page-break {
+  page-break-after: always;
+  break-after: page;
+}
+
+.page-break-before {
+  page-break-before: always;
+  break-before: page;
+}
+
+.no-page-break {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* --- ドリルページ共通構造 --- */
+.drill-page {
+  width: 210mm;
+  height: 297mm; /* 確実にA4 1ページに収める */
+  padding: 15mm 15mm 20mm 15mm;
+  box-sizing: border-box;
+  position: relative;
+  background: white;
+  page-break-after: always;
+  break-after: page;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: left; /* 親からの中央寄せの継承を防ぎ、確実に左寄せにする */
+}
+
+/* 表紙は余白なし */
+.drill-page--cover {
+  padding: 0;
+}
+
+/* 画面表示時のページ区切り表現 */
+@media screen {
+  .drill-page {
+    margin: 20px auto;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+
+  .drill-page + .drill-page {
+    margin-top: 40px;
+  }
+}
+
+/* --- 共通ヘッダー構造 --- */
+.drill-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: 2px solid var(--color-border);
+}
+
+/* 巨大ページ番号（左上） */
+.drill-header__page-number {
+  font-family: var(--font-number);
+  font-size: 48pt;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--color-primary);
+  min-width: 80px;
+}
+
+/* 単元名と学習内容（右上） */
+.drill-header__unit-info {
+  flex: 1;
+  padding-left: var(--space-4);
+}
+
+.drill-header__unit-title {
+  font-family: var(--font-lao);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: var(--space-1);
+}
+
+.drill-header__unit-goal {
+  font-family: var(--font-lao);
+  font-size: 1.125rem !important; /* 18px */
+  color: var(--color-text-light);
+}
+
+/* 教科書対応ページ */
+.drill-header__textbook-ref {
+  font-family: var(--font-lao);
+  font-size: 1.125rem !important; /* 18px */
+  color: var(--color-text-muted);
+  margin-top: var(--space-1);
+}
+
+/* --- 学習管理・採点エリア --- */
+.drill-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-3);
+}
+
+/* 日付記入欄 */
+.drill-meta__date {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-lao);
+  font-size: 1.125rem !important; /* 18px */
+}
+
+.drill-meta__date-line {
+  display: inline-block;
+  width: 120px;
+  border-bottom: 1px solid var(--color-border);
+  margin-left: var(--space-2);
+}
+
+/* 得点記入欄 */
+.drill-meta__score {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-number);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  padding: var(--space-2) var(--space-4);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius-md);
+}
+
+.drill-meta__score-blank {
+  display: inline-block;
+  width: 50px;
+  border-bottom: 2px solid var(--color-border);
+  margin: 0 var(--space-1);
+  vertical-align: bottom;
+  height: 1.2em;
+}
+
+/* --- スウロボ ヒントボックス --- */
+.hint-box {
+  position: relative;
+  background: var(--color-hint-green-bg);
+  border-left: 5px solid var(--color-hint-green-border);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: var(--space-4) var(--space-5);
+  padding-left: calc(var(--space-5) + 60px); /* スウロボSVG分 */
+  margin: var(--space-6) 0;
+  page-break-inside: avoid;
+}
+
+.hint-box--blue {
+  background: var(--color-hint-blue-bg);
+  border-left-color: var(--color-hint-blue-border);
+}
+
+.hint-box__surobo {
+  position: absolute;
+  left: var(--space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+}
+
+.hint-box__text {
+  font-family: var(--font-lao);
+  font-size: var(--text-base);
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+/* 吹き出し風のテキスト */
+.hint-box__speech {
+  position: relative;
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--space-3) var(--space-4);
+  margin-top: var(--space-2);
+  box-shadow: var(--shadow-sm);
+}
+
+.hint-box__speech::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 12px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 12px 8px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* --- 問題エリア --- */
+.problem-area {
+  margin: var(--space-3) 0;
+}
+
+.problem {
+  margin-bottom: var(--space-2);
+  page-break-inside: avoid;
+}
+
+.problem__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--color-accent);
+  color: white;
+  font-family: var(--font-number);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  margin-right: var(--space-3);
+  flex-shrink: 0;
+}
+
+.problem__content {
+  font-family: var(--font-lao);
+  font-size: 1.375rem !important; /* 22px */
+  line-height: 1.6;
+}
+
+/* 問題コンテンツ内のテキスト（小問番号、問題文など）を一律でお気に入りフォント (Phetsarath)・サイズ 22px・通常ウェイトに統一。
+   ただし、イラスト要素、解答欄、配点表記、テーブルなどは除外して正しい表示を維持する */
+.problem__content:not(.math-illustration, .math-illustration *, .answer-blank, .answer-blank *, .point-label, .point-label *, table, table *, .item-grid, .item-grid *, svg, svg *),
+.problem__content *:not(.math-illustration, .math-illustration *, .answer-blank, .answer-blank *, .point-label, .point-label *, table, table *, .item-grid, .item-grid *, svg, svg *) {
+  font-family: var(--font-lao) !important;
+  font-size: 1.375rem !important; /* 22px */
+  font-weight: normal !important;
+  text-align: left !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+/* 全ての問題文（pタグ）の文字間隔を統一し、左寄せに強制する */
+.problem__content p {
+  text-align: left !important;
+  letter-spacing: normal !important;
+}
+
+/* 大問の見出し（最初の指示文）のフォント設定: 標準 of 黒文字・通常の太さ・22pxに統一 */
+.problem__content p:first-of-type,
+.problem__content p:first-of-type span {
+  font-size: 1.375rem !important; /* 22px */
+  font-weight: normal !important;
+  color: var(--color-text) !important;
+  margin-bottom: var(--space-1);
+}
+
+/* 大問見出しの中 of 配点表示を、18px・濃いグレーで表示 */
+.problem__content p:first-of-type .point-label {
+  font-size: 1.125rem !important; /* 18px */
+  color: var(--color-text-light) !important;
+  font-weight: normal !important;
+  margin-left: var(--space-2);
+}
+
+/* 各問題行のレイアウト制御：フレックスコンテナとして横並びにする */
+.problem__content div[style*="display: flex"] {
+  display: flex !important;
+  flex-wrap: wrap !important; /* Force wrapping for long questions */
+  align-items: center;
+  gap: var(--space-1) var(--space-3) !important; /* Horizontal and vertical gaps */
+  margin-bottom: var(--space-2);
+  width: 100%;
+  word-break: break-word; /* Ensure Lao text wraps properly */
+}
+
+/* 小問番号（(1) など）はコンパクトな固定幅に統一し、Laoフォント (Phetsarath) で完全に統一する */
+.problem__content div[style*="display: flex"] > span:first-of-type {
+  display: inline-block !important;
+  min-width: 36px !important; /* 小問番号スパンを一列に美しく並べるための固定幅 */
+  flex-shrink: 0;
+  font-family: var(--font-lao) !important; /* 13ページと同じお気に入りのフォントに統一 */
+  font-size: 1.375rem !important; /* 22px に統一 */
+  font-weight: normal !important; /* 通常の太さに統一 */
+}
+
+/* 解答記入欄 */
+.answer-blank {
+  display: inline-block;
+  min-width: 80px;
+  border-bottom: 2px solid var(--color-border);
+  margin: 0 var(--space-2);
+  text-align: left;
+}
+
+.answer-blank--large {
+  min-width: 120px;
+  padding: var(--space-2);
+}
+
+/* 点数表示ラベル (一般) */
+.point-label {
+  color: var(--color-text-light) !important;
+  font-size: 1.125rem !important; /* 18px */
+  margin-left: var(--space-2);
+  font-family: var(--font-lao) !important;
+}
+
+/* --- 解答シート (巻末) --- */
+.answer-sheet,
+.answer-sheet * {
+  font-family: var(--font-lao) !important;
+  font-size: 1.25rem !important; /* 20px */
+  line-height: 1.6;
+}
+
+.answer-sheet__unit {
+  break-inside: avoid;
+  margin-bottom: var(--space-6);
+}
+
+.answer-sheet__title {
+  font-family: var(--font-lao) !important;
+  font-size: 1.5rem !important; /* 24px */
+  font-weight: 700 !important;
+  color: var(--color-accent) !important;
+  border-bottom: 2px solid var(--color-accent) !important;
+  padding-bottom: var(--space-1);
+  margin-bottom: var(--space-3);
+}
+
+.answer-sheet__answer {
+  color: var(--color-answer) !important;
+  font-weight: 700 !important;
+}
+
+.answer-sheet__explanation {
+  font-family: var(--font-lao) !important;
+  color: var(--color-text-light) !important;
+  margin-top: var(--space-1);
+}
+
+/* --- スタンプ枠（ハナマル用） --- */
+.stamp-area {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--space-8);
+}
+
+.stamp-box {
+  width: 70px;
+  height: 70px;
+  border: 2px dashed var(--color-primary);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-lao);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+/* --- 表紙スタイル --- */
+.cover {
+  width: 210mm;
+  height: 297mm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 30%, #FFFFFF 60%, #FFF3E0 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.cover__title {
+  font-family: var(--font-lao);
+  font-size: 36pt;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: var(--space-4);
+  text-shadow: 0 2px 4px rgba(0, 81, 173, 0.15);
+}
+
+.cover__subtitle {
+  font-family: var(--font-lao);
+  font-size: 18pt;
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: var(--space-8);
+}
+
+.cover__surobo {
+  width: 200px;
+  height: 200px;
+  margin: var(--space-8) 0;
+}
+
+.cover__input-area {
+  margin-top: var(--space-10);
+  text-align: left;
+}
+
+.cover__input-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+  font-family: var(--font-lao);
+  font-size: var(--text-xl);
+}
+
+.cover__input-line {
+  display: inline-block;
+  width: 180px;
+  border-bottom: 2px solid var(--color-border);
+}
+
+/* --- 修了証 (賞状) スタイル --- */
+.certificate {
+  width: 210mm;
+  height: 297mm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 8px double var(--color-primary);
+  padding: 30mm;
+  position: relative;
+  background: linear-gradient(135deg, #FFFDE7 0%, #FFF8E1 50%, #FFFFFF 100%);
+}
+
+.certificate::before {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border: 2px solid var(--color-primary-light);
+  pointer-events: none;
+}
+
+.certificate__title {
+  font-family: var(--font-lao);
+  font-size: 42pt;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-8);
+}
+
+.certificate__name-area {
+  margin: var(--space-8) 0;
+}
+
+.certificate__name-line {
+  display: inline-block;
+  width: 250px;
+  border-bottom: 3px solid var(--color-border);
+  margin: 0 var(--space-2);
+}
+
+.certificate__body {
+  font-family: var(--font-lao);
+  font-size: var(--text-xl);
+  line-height: 2;
+  max-width: 400px;
+}
+
+.certificate__date {
+  margin-top: var(--space-10);
+  font-family: var(--font-lao);
+  font-size: var(--text-lg);
+}
+
+.certificate__surobo {
+  position: absolute;
+  bottom: 30mm;
+  right: 30mm;
+  width: 120px;
+  height: 120px;
+}
+
+/* --- 冒険の地図 (すごろくデザイン) --- */
+.adventure-map {
+  width: 100%;
+  height: calc(297mm - 30mm); /* ページ高さ - マージン分 */
+  position: relative;
+}
+
+.adventure-map__title {
+  font-family: var(--font-lao);
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  color: var(--color-accent);
+  text-align: center;
+  margin-bottom: var(--space-4);
+}
+
+.adventure-map__stage {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-full);
+  border: 3px solid var(--color-accent);
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-number);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-accent);
+  cursor: default;
+  transition: background 0.2s;
+}
+
+.adventure-map__stage--start {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  color: white;
+  width: 80px;
+  height: 80px;
+  font-size: var(--text-xl);
+}
+
+.adventure-map__stage--goal {
+  border-color: var(--color-primary);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  color: white;
+  width: 80px;
+  height: 80px;
+  font-size: var(--text-xl);
+}
+
+.adventure-map__stage-label {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-lao);
+  font-size: var(--text-xs);
+  white-space: nowrap;
+  margin-top: 4px;
+  color: var(--color-text-light);
+}
+
+/* --- セクションタイトル --- */
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.section-title__icon {
+  width: 40px;
+  height: 40px;
+  background: var(--color-accent);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: var(--font-number);
+  font-weight: 700;
+}
+
+.section-title__text {
+  font-family: var(--font-lao);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.section-title__badge {
+  font-family: var(--font-lao);
+  font-size: var(--text-sm);
+  background: var(--color-primary);
+  color: white;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+}
+
+/* ============================================
+   大問1のみ存在するページにおける自動1列縦並びルール
+   ============================================ */
+
+/* 大問1だけしか存在しないページ（.problem-area の中に .problem が1つだけ）において、
+   2列で並べるよう指定されている小問グリッド（"1fr 1fr" または "repeat(2" がインラインスタイルに含まれるもの）を安全に一列（1fr）に強制上書きする。
+   3列以上の表やグラフなどのイラスト要素を巻き込むことはありません。 */
+.problem-area > .problem:only-child .problem__content div[style*="1fr 1fr"]:not(.math-illustration, .math-illustration *),
+.problem-area > .problem:only-child .problem__content div[style*="repeat(2"]:not(.math-illustration, .math-illustration *) {
+  grid-template-columns: 1fr !important;
+  gap: var(--space-4) !important; /* 小問間の適切な余白 */
+}
+
+/* 2列グリッド前提の個別センタリング（grid-column: span 2 や margin: 0 auto など）を打ち消し、綺麗な左寄せ縦並びを保証する */
+.problem-area > .problem:only-child .problem__content div[style*="1fr 1fr"]:not(.math-illustration, .math-illustration *) > div,
+.problem-area > .problem:only-child .problem__content div[style*="repeat(2"]:not(.math-illustration, .math-illustration *) > div {
+  grid-column: span 1 !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  width: 100% !important;
+}
+
+/* ============================================
+   解説ページ（KeyPoints）のフォント・レイアウト制御
+   ============================================ */
+
+/* 解説本文と吹き出し風テキストを一律でお気に入りフォント (Phetsarath)・サイズ 22px に設定 */
+.keypoints-content:not(.math-illustration, .math-illustration *, table, table *),
+.keypoints-content *:not(.math-illustration, .math-illustration *, table, table *),
+.hint-box__speech,
+.hint-box__speech * {
+  font-family: var(--font-lao) !important;
+  font-size: 1.375rem !important; /* 22px */
+  line-height: 1.6;
+}
+
+/* 
+   【インテリジェント・自動見切れ防止アジャスター】
+   解説ページ内にヒントボックス（.hint-box）やイラスト要素（.math-illustration）の両方が存在し、
+   情報量が非常に多い場合のみ、CSS :has() セレクタを用いてフォントサイズと余白を自動的に最適化（微縮小）していましたが、
+   ユーザーの要望により、全ページで22pxに統一するためフォントサイズの縮小は無効化しています。
+*/
+
+/* 要素が多い場合の余白（マージンやギャップ）の動的最適化のみ残す */
+
+/* 要素が多い場合の余白（マージンやギャップ）の動的最適化 */
+.drill-page:has(.hint-box):has(.math-illustration) .hint-box {
+  margin: var(--space-3) 0 !important;
+  padding: var(--space-3) var(--space-4) !important;
+}
+
+.drill-page:has(.hint-box):has(.math-illustration) .section-title {
+  margin-bottom: var(--space-3) !important;
+}
+
+.drill-page:has(.hint-box):has(.math-illustration) .drill-header {
+  margin-bottom: var(--space-2) !important;
+}
+
+/* ============================================
+   全てのページの問題および問題フレックスコンテナの強制左寄せ一括制御ルール
+   ============================================ */
+
+/* 問題コンテンツ内のフレックス要素（縦並び div）の左寄せを強制し、横幅いっぱいに広げます。
+   ※グラフやイラスト（.math-illustration）は崩れないように除外します。 */
+.problem__content div[style*="flex-direction: column"]:not(.math-illustration, .math-illustration *) {
+  align-items: flex-start !important;
+  width: 100% !important;
+}
+
+/* 問題コンテンツ内のすべての問題テキスト、指示文、小問番号、および小問 div を確実に左寄せに強制します。
+   ※グラフ、イラスト（.math-illustration）および配点や解答欄は除外します。 */
+.problem__content p:not(.math-illustration, .math-illustration *),
+.problem__content div:not(.math-illustration, .math-illustration *, table, table *, .item-grid, .item-grid *):not([style*="display: flex"] *),
+.problem__content span:not(.math-illustration, .math-illustration *, .answer-blank, .answer-blank *, .point-label, .point-label *, .item-grid, .item-grid *) {
+  text-align: left !important;
+}

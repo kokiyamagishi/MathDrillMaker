@@ -1,0 +1,12 @@
+{
+  "name": "write_to_file",
+  "args": {
+    "CodeContent": "\"const fs = require('fs');\\nconst path = require('path');\\n\\nconst filePath = path.join(__dirname, '../src/data/units5.tsx');\\nconst content = fs.readFileSync(filePath, 'utf8');\\n\\n// Parse the file. We can split by unitNumber:\\nconst parts = content.split(/unitNumber:\\\\s*/g);\\n\\nfor (let i = 1; i <= 8; i++) {\\n  const part = parts.find(p => p.trim().startsWith(String(i)));\\n  if (!part) continue;\\n\\n  console.log(`\\\\n======================================================`);\\n  console.log(`UNIT ${i} DETAILS:`);\\n  console.log(`======================================================`);\\n\\n  // Print all point-labels\\n  console.log('--- Point Labels found in code:');\\n  const labelMatches = part.match(/\\\"[^\\\"]*ຄະແນນ[^\\\"]*\\\"/g) || [];\\n  labelMatches.forEach(m => console.log('  ', m));\\n\\n  // Count subquestions in basicProblems and summaryProblems\\n  // Let's count occurrences of (1), (2), (3) etc.\\n  const basicSection = part.substring(0, part.indexOf('answers:'));\\n  const subQRegex = /\\\\((\\\\d+)\\\\)/g;\\n  let subQCount = 0;\\n  let m;\\n  while ((m = subQRegex.exec(basicSection)) !== null) {\\n    subQCount++;\\n  }\\n  console.log(`--- Total subquestions: ${subQCount}`);\\n\\n  // Let's print the keyPoints section of Unit 1 and Unit 2 fully\\n  if (i === 1 || i === 2) {\\n    console.log('--- KeyPoints Content:');\\n    const keyPointsStart = part.indexOf('keyPoints:');\\n    if (keyPointsStart !== -1) {\\n      let bracketCount = 0;\\n      let index = keyPointsStart;\\n      let kpText = '';\\n      while (index < part.length) {\\n        const char = part[index];\\n        kpText += char;\\n        if (char === '[') bracketCount++;\\n        else if (char === '{') bracketCount++;\\n        else if (char === ']') bracketCount--;\\n        else if (char === '}') bracketCount--;\\n        if (bracketCount === 0 && index > keyPointsStart + 15) {\\n          break;\\n        }\\n        index++;\\n      }\\n      console.log(kpText);\\n    }\\n  } else {\\n    // For 3-8, print keyPoints definition structure\\n    console.log('--- KeyP\n<truncated 184 bytes>",
+    "Description": "\"Improve inspection script for detailed Unit 1-8 checking\"",
+    "IsArtifact": "false",
+    "Overwrite": "true",
+    "TargetFile": "\"/Users/openclaw/Antigravity/MathDrillMaker/scratch/inspect_units1_8.js\"",
+    "toolAction": "\"Updating inspection script\"",
+    "toolSummary": "\"Write to file\""
+  }
+}

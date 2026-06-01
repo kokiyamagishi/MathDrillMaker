@@ -1,0 +1,46 @@
+Created At: 2026-05-22T21:56:55Z
+Completed At: 2026-05-22T21:56:55Z
+File Path: `file:///Users/kokiyamagishi/Antigravity/MathDrillMaker/src/data/units3.tsx`
+Total Lines: 2911
+Total Bytes: 180698
+Showing lines 677 to 815
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+677:     unitNumber: 4,
+678:     unitTitle: "ວົງມົນ ແລະ ໜ່ວຍມົນ",
+679:     unitGoal: "ຮຽນຮູ້ວົງມົນ ແລະ ໜ່ວຍມົນ",
+680:     textbookRef: "ປຶ້ມແບບຮຽນ ປ.3",
+681:     keyPoints: {
+682:       hint: { text: "ວົງມົນມີຈຸດໃຈກາງ, ລັດສະໝີ ແລະ ເສັ້ນຜ່າກາງ" },
+683:       content: (
+684:       <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
+685:         <h3 style={{ fontSize: "28px", color: "#1976D2", margin: 0 }}>{"4. ວົງມົນ ແລະ ໜ່ວຍມົນ"}</h3>
+686:         <p style={{ fontSize: "20px" }}>{"ວົງມົນແມ່ນຮູບຮ່າງແບນທີ່ມີຂອບໂຄ້ງ. ສ່ວນໜ່ວຍມົນແມ່ນຮູບຊົງສາມມິຕິ ເຊັ່ນ: ໝາກບານ. ວົງມົນມີຈຸດໃຈກາງ, ລັດສະໝີ ແລະ ເສັ້ນຜ່າກາງ."}</p>
+687:         <div style={{ backgroundColor: "#E3F2FD", padding: "20px", borderRadius: "12px", display: "flex", justifyContent: "center", alignItems: "center", gap: "40px", flexWrap: "wrap" }}>
+688:           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "10px" }}>
+689:             <div style={{ position: "relative", width: "150px", height: "150px" }}>
+690:               <div style={{ width: "150px", height: "150px", borderRadius: "50%", backgroundColor: "#2196F3" }} />
+691:               <div 
+<truncated 7493 bytes>
+lex", flexDirection: "column", gap: "16px" }}>
+795:             <p>{"ທົດສອບປະຈຳບົດ: ຈົ່ງຄິດໄລ່: "} <span className="point-label">{"(5 ຄະແນນ)"}</span></p>
+796:             <div style={{ display: "flex", flexDirection: "column", gap: "16px", paddingLeft: "16px" }}>
+797:               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "22px" }}>
+798:                 <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(1)"}</span>
+799:                 <span>{"ຖ້າວົງມົນມີລັດສະໝີ 15 cm, ເສັ້ນຜ່າກາງຈະແມ່ນເທົ່າໃດ cm?"}</span>
+800:                 <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
+801:               </div>
+802:             </div>
+803:           </div>
+804:         )
+805:       },
+806:       {
+807:         number: 2,
+808:         content: (
+809:           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+810:             <p>{"ຈົ່ງຕອບຄຳຖາມ: "} <span className="point-label">{"(5 ຄະແນນ)"}</span></p>
+811:                    <span style={{ fontSize: "20px", marginLeft: "12px" }}>{"ມີໄຂ່ 30 ໜ່ວຍ, ຈັດໃສ່ກ່ອງ ກ່ອງລະ 8 ໜ່ວຍ. ຈະໄດ້ຈັກກ່ອງ ແລະ ເຫຼືອໄຂ່ຈັກໜ່ວຍ?"}</span>
+812:                   <div style={{ marginTop: "8px", paddingLeft: "40px", fontSize: "20px" }}>
+813:                     <span>{"ຕອບ: ໄດ້"}</span>
+814:                     <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px", margin: "0 10px" }}></span>
+815:                     <span>{"ກ່ອງ, ເຫຼືອ"}</span>
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

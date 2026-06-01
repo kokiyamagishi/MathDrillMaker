@@ -1,0 +1,12 @@
+{
+  "name": "write_to_file",
+  "args": {
+    "CodeContent": "\"const fs = require('fs');\\nconst path = require('path');\\n\\nconst filePath = path.join(__dirname, '../src/data/units5.tsx');\\nconst content = fs.readFileSync(filePath, 'utf8');\\n\\nconst parts = content.split(/unitNumber:\\\\s*/g);\\nconst u3 = parts.find(p => p.trim().startsWith('3'));\\nconst u4 = parts.find(p => p.trim().startsWith('4'));\\n\\nconsole.log('=== UNIT 3 ===');\\nconsole.log(u3.substring(u3.indexOf('basicProblems:'), u3.indexOf('answers:')));\\n\\nconsole.log('=== UNIT 4 ===');\\nconsole.log(u4.substring(u4.indexOf('basicProblems:'), u4.indexOf('answers:')));\\n\"",
+    "Description": "\"Create script to inspect Unit 3 & 4 questions structure\"",
+    "IsArtifact": "false",
+    "Overwrite": "true",
+    "TargetFile": "\"/Users/openclaw/Antigravity/MathDrillMaker/scratch/inspect_unit3_4.js\"",
+    "toolAction": "\"Creating Unit 3 & 4 inspector script\"",
+    "toolSummary": "\"Write to file\""
+  }
+}

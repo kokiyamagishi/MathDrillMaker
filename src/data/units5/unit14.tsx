@@ -5,39 +5,71 @@ export const unit14Data: UnitData = {
   unitNumber: 14,
   unitTitle: "ສ່ວນຮ້ອຍ ແລະ ກຣາບ",
   unitGoal:
-    "ຮຽນຮູ້ຄວາມໝາຍຂອງສ່ວນຮ້ອຍ (%), ສູດການຊອກຫາອັດຕາສ່ວນ (割合), ການຄິດໄລ່ລາຄາຫຼຸດ ແລະ ການອ່ານກຣາບເສັ້ນສະແດງ (ກຣາບບົງ ແລະ ກຣາບວົງມົນ)",
+    "ຮຽນຮູ້ຄວາມໝາຍຂອງສ່ວນຮ້ອຍ (%), ສູດການຊອກຫາອັດຕາສ່ວນ, ການຄິດໄລ່ລາຄາຫຼຸດ ແລະ ການອ່ານກຣາບເສັ້ນສະແດງ (ກຣາບບົງ ແລະ ກຣາບວົງມົນ)",
   textbookRef: "ປຶ້ມແບບຮຽນ ປ.5 ໜ້າ 160-171",
   keyPoints: {
     hint: {
       text: "ສ່ວນຮ້ອຍ (%) ແມ່ນການປຽບທຽບປະລິມານໂດຍກຳນົດໃຫ້ປະລິມານພື້ນຖານເປັນ 100! ຈື່ສູດ: ອັດຕາສ່ວນ = ປະລິມານທີ່ສົມທຽບ ÷ ປະລິມານພື້ນຖານ ເດີ້!",
     },
     content: (
-      <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
         <h3 style={{ fontSize: "28px", color: "#1976D2", margin: 0 }}>
-          {"1. ສູດຄິດໄລ່ອັດຕາສ່ວນ ແລະ ສ່ວນຮ້ອຍ (Percentage Formulas)"}
+          {"1. ສູດຄິດໄລ່ອັດຕາສ່ວນ ແລະ ສ່ວນຮ້ອຍ"}
         </h3>
         <div
           style={{
-            padding: "16px",
+            display: "flex",
+            gap: "24px",
+            flexWrap: "wrap",
+            alignItems: "center",
+            padding: "20px",
             backgroundColor: "#E8F5E9",
             border: "2px solid #4CAF50",
             borderRadius: "8px",
-            fontSize: "22px",
-            lineHeight: "1.8",
           }}
         >
-          <div>
-            <strong>
-              {"• ອັດຕາສ່ວນ = ປະລິມານທີ່ສົມທຽບ ÷ ປະລິມານພື້ນຖານ"}
-            </strong>
+          {/* SVG Visual Explanation */}
+          <div style={{ backgroundColor: "#fff", padding: "16px", borderRadius: "8px", boxShadow: "0 4px 12px rgba(0,0,0,0.08)", width: "500px", display: "flex", justifyContent: "center", flexShrink: 0 }}>
+            <svg width="468" height="110">
+              {/* Background Bar */}
+              <rect x="30" y="45" width="400" height="24" fill="#E0E0E0" rx="4"/>
+              {/* Active Bar (75%) */}
+              <rect x="30" y="45" width="300" height="24" fill="#2196F3" rx="4"/>
+
+              {/* Grid Tick Lines */}
+              <line x1="30" y1="40" x2="30" y2="74" stroke="#888" strokeWidth="1"/>
+              <line x1="130" y1="40" x2="130" y2="74" stroke="#888" strokeWidth="1" strokeDasharray="2,2"/>
+              <line x1="230" y1="40" x2="230" y2="74" stroke="#888" strokeWidth="1" strokeDasharray="2,2"/>
+              <line x1="330" y1="40" x2="330" y2="74" stroke="#888" strokeWidth="1" strokeDasharray="2,2"/>
+              <line x1="430" y1="40" x2="430" y2="74" stroke="#888" strokeWidth="1"/>
+
+              {/* Labels below */}
+              <text x="30" y="88" textAnchor="middle" style={{ fontSize: "10px" }} fill="#777">{"0%"}</text>
+              <text x="130" y="88" textAnchor="middle" style={{ fontSize: "10px" }} fill="#777">{"25%"}</text>
+              <text x="230" y="88" textAnchor="middle" style={{ fontSize: "10px" }} fill="#777">{"50%"}</text>
+              <text x="330" y="88" textAnchor="middle" style={{ fontSize: "11px", fontWeight: "bold" }} fill="#1565C0">{"75%"}</text>
+              <text x="430" y="88" textAnchor="middle" style={{ fontSize: "10px" }} fill="#777">{"100%"}</text>
+
+              {/* Top Annotations */}
+              <path d="M 30,33 L 330,33" fill="none" stroke="#2196F3" strokeWidth="1.5"/>
+              <circle cx="30" cy="33" r="2" fill="#2196F3"/>
+              <circle cx="330" cy="33" r="2" fill="#2196F3"/>
+              <text x="180" y="27" textAnchor="middle" style={{ fontSize: "11px", fontWeight: "bold" }} fill="#1565C0">{"ເສັງຜ່ານ: 30 ຄົນ"}</text>
+ 
+              <text x="430" y="27" textAnchor="middle" style={{ fontSize: "11px", fontWeight: "bold" }} fill="#333">{"ທັງໝົດ: 40 ຄົນ"}</text>
+            </svg>
           </div>
-          <div>
-            <strong>{"• ສ່ວນຮ້ອຍ (%) = ອັດຕາສ່ວນ × 100"}</strong>
-          </div>
-          <div style={{ fontSize: "22px", color: "#555", marginTop: "8px" }}>
-            {
-              "ຕົວຢ່າງ: ໃນຫ້ອງຮຽນມີ 40 ຄົນ, ເສັງຜ່ານ 30 ຄົນ. ສ່ວນຮ້ອຍແມ່ນ: 30 ÷ 40 × 100 = 0.75 × 100 = 75%."
-            }
+
+          <div style={{ flex: "1 1 240px", fontSize: "22px", lineHeight: "1.6" }}>
+            <div style={{ fontWeight: "bold", color: "#2E7D32", marginBottom: "8px" }}>
+              {"ສ່ວນຮ້ອຍ (%) = ອັດຕາສ່ວນ × 100"}
+            </div>
+            <div style={{ fontSize: "18px", color: "#333" }}>
+              <div>{"• ອັດຕາສ່ວນ = ປະລິມານທີ່ສົມທຽບ ÷ ປະລິມານພື້ນຖານ"}</div>
+              <div style={{ fontWeight: "bold", color: "#1565C0", marginTop: "4px" }}>
+                {"ຕົວຢ່າງ: 30 ÷ 40 × 100 = 0.75 × 100 = 75%"}
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -129,7 +161,7 @@ export const unit14Data: UnitData = {
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p>
               {"ຈົ່ງຕອບຄຳຖາມຈາກກຣາບວົງມົນລຸ່ມນີ້: "}{" "}
-              <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              <span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
@@ -140,25 +172,25 @@ export const unit14Data: UnitData = {
                 padding: "8px 16px",
               }}
             >
-              <svg className="math-illustration" width="150" height="150">
+              <svg className="math-illustration" width="240" height="240">
                 <circle
-                  cx="75"
-                  cy="75"
-                  r="60"
+                  cx="120"
+                  cy="120"
+                  r="100"
                   fill="none"
                   stroke="#333"
-                  strokeWidth="2"
+                  strokeWidth="2.5"
                 />
-                <path d="M 75,75 L 75,15" stroke="#333" strokeWidth="1.5" />
-                <path d="M 75,75 L 135,75" stroke="#333" strokeWidth="1.5" />
-                <path d="M 75,75 L 15,75" stroke="#333" strokeWidth="1.5" />
-                <text x="95" y="45" style={{ fontSize: "12px", fontWeight: "bold" }}>
+                <path d="M 120,120 L 120,20" stroke="#333" strokeWidth="2" />
+                <path d="M 120,120 L 220,120" stroke="#333" strokeWidth="2" />
+                <path d="M 120,120 L 120,220" stroke="#333" strokeWidth="2" />
+                <text x="150" y="75" style={{ fontSize: "22px", fontWeight: "bold" }}>
                   {"A: 25%"}
                 </text>
-                <text x="95" y="110" style={{ fontSize: "12px", fontWeight: "bold" }}>
+                <text x="150" y="175" style={{ fontSize: "22px", fontWeight: "bold" }}>
                   {"B: 25%"}
                 </text>
-                <text x="35" y="80" style={{ fontSize: "12px", fontWeight: "bold" }}>
+                <text x="40" y="128" style={{ fontSize: "22px", fontWeight: "bold" }}>
                   {"C: ?"}
                 </text>
               </svg>
@@ -203,7 +235,7 @@ export const unit14Data: UnitData = {
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p>
               {"ຈົ່ງຕອບຄຳຖາມຈາກກຣາບບົງລຸ່ມນີ້: "}{" "}
-              <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              <span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
@@ -250,7 +282,7 @@ export const unit14Data: UnitData = {
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p>
             {"ຈົ່ງແກ້ໂຈດບັນຫາສ່ວນຮ້ອຍຂອງເຂົ້າໜົມ: "}{" "}
-            <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <div
             style={{
@@ -296,7 +328,7 @@ export const unit14Data: UnitData = {
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p>
             {"ຈົ່ງແກ້ໂຈດບັນຫາການຫຼຸດລາຄາຂອງຫຼິ້ນ: "}{" "}
-            <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <div
             style={{

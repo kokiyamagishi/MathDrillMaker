@@ -1,0 +1,15 @@
+{
+  "name": "replace_file_content",
+  "args": {
+    "AllowMultiple": "false",
+    "Description": "\"Fix spelling of ທົດສະນິຍົມ in apply_updates.js to match units5.tsx\"",
+    "EndLine": "130",
+    "Instruction": "\"Replace the Ukrainian character 'і' with the Lao vowel 'ິ' in the word ທົດສະນіຍົມ on line 127\"",
+    "ReplacementContent": "\"              <p style={{ margin: \\\"0 0 10px 0\\\", fontSize: \\\"22px\\\" }}>\\n                {\\\"ຕົວຢ່າງ: 2.4 × 1.3 = ? (ມີຫຼັກທົດສະນິຍົມລວມກັນ 2 ຫຼັກ):\\\"}\\n              </p>\"",
+    "StartLine": "125",
+    "TargetContent": "\"              <p style={{ margin: \\\"0 0 10px 0\\\", fontSize: \\\"22px\\\" }}>\\n                {\\\"ຕົວຢ່າງ: 2.4 × 1.3 = ? (ມີຫຼັກທົດສະນіຍົມລວມກັນ 2 ຫຼັກ):\\\"}\\n              </p>\"",
+    "TargetFile": "\"/Users/openclaw/Antigravity/MathDrillMaker/scratch/apply_updates.js\"",
+    "toolAction": "\"Fixing spelling in apply_updates.js\"",
+    "toolSummary": "\"Replace file content\""
+  }
+}

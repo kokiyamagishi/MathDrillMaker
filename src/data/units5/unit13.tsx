@@ -1,31 +1,108 @@
 import React from "react";
 import { UnitData } from "../units2";
 
+const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
+  <span style={{ display: "inline-flex", flexDirection: "column", verticalAlign: "middle", alignItems: "center", padding: "0 4px", fontSize: "0.95em", transform: "translateY(-0.05em)" }}>
+    <span style={{ borderBottom: "1.5px solid currentColor", paddingBottom: "1px", lineHeight: 1, fontWeight: "bold" }}>{num}</span>
+    <span style={{ paddingTop: "1.5px", lineHeight: 1, fontWeight: "bold" }}>{den}</span>
+  </span>
+);
+
 export const unit13Data: UnitData = {
   unitNumber: 13,
   unitTitle: "ອັດຕາສ່ວນພົວພັນ ແລະ ອັດຕາສ່ວນພົວພັນປີ້ນ",
-  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບອັດຕາສ່ວນພົວພັນ (比例) ແລະ ອັດຕາສ່ວນພົວພັນປີ້ນ (反比例), ການຕື່ມຂໍ້ມູນໃສ່ຕາຕະລາງ ແລະ ການຊອກຫາສູດການພົວພັນ",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບອັດຕາສ່ວນພົວພັນ  ແລະ ອັດຕາສ່ວນພົວພັນປີ້ນ , ການຕື່ມຂໍ້ມູນໃສ່ຕາຕະລາງ ແລະ ການຊອກຫາສູດການພົວພັນ",
   textbookRef: "ປຶ້ມແບບຮຽນ ປ.5 ໜ້າ 146-159",
   keyPoints: {
     content: (
       <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
         <h3 style={{ fontSize: "28px", color: "#1976D2", margin: 0 }}>
-          {"1. ອັດຕາສ່ວນພົວພັນ ແລະ ພົວພັນປີ້ນ (Proportion & Inverse)"}
+          {"1. ອັດຕາສ່ວນພົວພັນ ແລະ ພົວພັນປີ້ນ"}
         </h3>
         <div style={{ display: "flex", gap: "20px", flexWrap: "wrap", justifyContent: "space-around" }}>
+          
           {/* Proportion */}
-          <div style={{ flex: "1 1 240px", padding: "16px", backgroundColor: "#E8F5E9", border: "2px solid #4CAF50", borderRadius: "8px" }}>
-            <strong style={{ fontSize: "18px", color: "#2E7D32" }}>{"ອັດຕາສ່ວນພົວພັນ (Proportion)"}</strong>
-            <p style={{ fontSize: "14px", margin: "8px 0" }}>{"ເມື່ອ x ເພີ່ມຂຶ້ນ, y ກໍເພີ່ມຂຶ້ນສະໝໍ່າສະເໝີ."}</p>
-            <div style={{ fontWeight: "bold", fontSize: "18px" }}>{"ສູດ: y = a × x"}</div>
+          <div style={{ flex: "1 1 300px", padding: "20px", backgroundColor: "#E8F5E9", border: "2px solid #4CAF50", borderRadius: "8px" }}>
+            <strong style={{ fontSize: "20px", color: "#2E7D32" }}>{"ອັດຕາສ່ວນພົວພັນ"}</strong>
+            <p style={{ fontSize: "16px", margin: "8px 0 16px 0", color: "#444" }}>
+              {"ເມື່ອ x ເພີ່ມຂຶ້ນ 2, 3 ເທື່ອ, y ກໍເພີ່ມຂຶ້ນ 2, 3 ເທື່ອສະໝໍ່າສະເໝີ."}
+            </p>
+            
+            {/* SVG Visual */}
+            <div style={{ backgroundColor: "#fff", padding: "12px", borderRadius: "6px", marginBottom: "16px", display: "flex", justifyContent: "center", boxShadow: "0 2px 4px rgba(0,0,0,0.05)" }}>
+              <svg width="240" height="130">
+                {/* Step 1 */}
+                <rect x="35" y="70" width="20" height="20" fill="#81C784" rx="1"/>
+                <text x="45" y="110" textAnchor="middle" style={{ fontSize: "10px" }} fill="#777">{"x=1"}</text>
+                <text x="45" y="65" textAnchor="middle" style={{ fontSize: "10px", fontWeight: "bold" }}>{"y=2"}</text>
+
+                {/* Step 2 */}
+                <rect x="95" y="50" width="20" height="40" fill="#4CAF50" rx="1"/>
+                <text x="105" y="110" textAnchor="middle" style={{ fontSize: "10px" }} fill="#777">{"x=2"}</text>
+                <text x="105" y="45" textAnchor="middle" style={{ fontSize: "10px", fontWeight: "bold" }}>{"y=4"}</text>
+
+                {/* Step 3 */}
+                <rect x="155" y="30" width="20" height="60" fill="#2E7D32" rx="1"/>
+                <text x="165" y="110" textAnchor="middle" style={{ fontSize: "10px" }} fill="#777">{"x=3"}</text>
+                <text x="165" y="25" textAnchor="middle" style={{ fontSize: "10px", fontWeight: "bold" }}>{"y=6"}</text>
+
+                {/* Scaling arrows */}
+                <path d="M 45,110 Q 105,130 165,110" fill="none" stroke="#2E7D32" strokeWidth="1" strokeDasharray="2,2"/>
+                <polygon points="165,110 159,107 162,114" fill="#2E7D32"/>
+                <text x="105" y="129" textAnchor="middle" style={{ fontSize: "9px", fontWeight: "bold" }} fill="#2E7D32">{"× 3"}</text>
+
+                <path d="M 45,55 Q 105,10 165,20" fill="none" stroke="red" strokeWidth="1" strokeDasharray="2,2"/>
+                <polygon points="165,20 159,17 162,23" fill="red"/>
+                <text x="105" y="18" textAnchor="middle" style={{ fontSize: "9px", fontWeight: "bold" }} fill="red">{"× 3"}</text>
+              </svg>
+            </div>
+
+            <div style={{ fontWeight: "bold", fontSize: "20px", color: "#1b5e20" }}>{"ສູດ: y = a × x"}</div>
           </div>
 
           {/* Inverse Proportion */}
-          <div style={{ flex: "1 1 240px", padding: "16px", backgroundColor: "#FFF3E0", border: "2px solid #FF9800", borderRadius: "8px" }}>
-            <strong style={{ fontSize: "18px", color: "#E65100" }}>{"ອັດຕາສ່ວນພົວພັນປີ້ນ (Inverse)"}</strong>
-            <p style={{ fontSize: "14px", margin: "8px 0" }}>{"ເມື່ອ x ເພີ່ມຂຶ້ນ, y ຈະຫຼຸດລົງສະໝໍ່າສະເໝີ."}</p>
-            <div style={{ fontWeight: "bold", fontSize: "18px" }}>{"ສູດ: y = a ÷ x (ຫຼື x × y = a)"}</div>
+          <div style={{ flex: "1 1 300px", padding: "20px", backgroundColor: "#FFF3E0", border: "2px solid #FF9800", borderRadius: "8px" }}>
+            <strong style={{ fontSize: "20px", color: "#E65100" }}>{"ອັດຕາສ່ວນພົວພັນປີ້ນ"}</strong>
+            <p style={{ fontSize: "16px", margin: "8px 0 16px 0", color: "#444", display: "flex", alignItems: "center", gap: "4px", flexWrap: "wrap" }}>
+              {"ເມື່ອ x ເພີ່ມຂຶ້ນ 2, 4 ເທື່ອ, y ຈະຫຼຸດລົງ 2, 4 ເທື່ອ ("}
+              <Fraction num="1" den="2" />
+              {", "}
+              <Fraction num="1" den="4" />
+              {")."}
+            </p>
+
+            {/* SVG Visual */}
+            <div style={{ backgroundColor: "#fff", padding: "12px", borderRadius: "6px", marginBottom: "16px", display: "flex", justifyContent: "center", boxShadow: "0 2px 4px rgba(0,0,0,0.05)" }}>
+              <svg width="240" height="130">
+                {/* Step 1 */}
+                <rect x="35" y="30" width="20" height="60" fill="#FFB74D" rx="1"/>
+                <text x="45" y="110" textAnchor="middle" style={{ fontSize: "10px" }} fill="#777">{"x=1"}</text>
+                <text x="45" y="25" textAnchor="middle" style={{ fontSize: "10px", fontWeight: "bold" }}>{"y=8"}</text>
+
+                {/* Step 2 */}
+                <rect x="95" y="60" width="20" height="30" fill="#FF9800" rx="1"/>
+                <text x="105" y="110" textAnchor="middle" style={{ fontSize: "10px" }} fill="#777">{"x=2"}</text>
+                <text x="105" y="55" textAnchor="middle" style={{ fontSize: "10px", fontWeight: "bold" }}>{"y=4"}</text>
+
+                {/* Step 3 (actually x=4 for easy 1/4th division) */}
+                <rect x="155" y="75" width="20" height="15" fill="#F57C00" rx="1"/>
+                <text x="165" y="110" textAnchor="middle" style={{ fontSize: "10px" }} fill="#777">{"x=4"}</text>
+                <text x="165" y="70" textAnchor="middle" style={{ fontSize: "10px", fontWeight: "bold" }}>{"y=2"}</text>
+ 
+                {/* Scaling arrows */}
+                <path d="M 45,110 Q 105,135 165,110" fill="none" stroke="#F57C00" strokeWidth="1" strokeDasharray="2,2"/>
+                <polygon points="165,110 159,107 162,114" fill="#F57C00"/>
+                <text x="105" y="129" textAnchor="middle" style={{ fontSize: "9px", fontWeight: "bold" }} fill="#F57C00">{"× 4"}</text>
+ 
+                <path d="M 45,5 Q 105,0 165,45" fill="none" stroke="red" strokeWidth="1" strokeDasharray="2,2"/>
+                <polygon points="165,45 159,42 162,48" fill="red"/>
+                <text x="105" y="18" textAnchor="middle" style={{ fontSize: "9px", fontWeight: "bold" }} fill="red">{"÷ 4"}</text>
+              </svg>
+            </div>
+
+            <div style={{ fontWeight: "bold", fontSize: "20px", color: "#e65100" }}>{"ສູດ: y = a ÷ x  (ຫຼື x × y = a)"}</div>
           </div>
+
         </div>
       </div>
     ),
@@ -71,7 +148,7 @@ export const unit13Data: UnitData = {
               </div>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              <span>{"(2) ຈຳນວນ (B) 在ຕາຕະລາງແມ່ນຈັກ cm?"}</span>
+              <span>{"(2) ຈຳນວນ (B) ໃນຕາຕະລາງແມ່ນຈັກ cm?"}</span>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
                 <span>{"ຄຳຕອບ:"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
@@ -120,7 +197,7 @@ export const unit13Data: UnitData = {
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p>
               {"ຈົ່ງແກ້ໂຈດບັນຫາຟັນເຟືອງ: "}{" "}
-              <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              <span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <div style={{ paddingLeft: "16px", display: "flex", flexDirection: "column", gap: "12px", fontSize: "20px" }}>
               <p style={{ margin: 0, lineHeight: "1.5" }}>
@@ -141,7 +218,7 @@ export const unit13Data: UnitData = {
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p>
               {"ຈົ່ງແກ້ໂຈດບັນຫາທໍ່ນ້ຳ: "}{" "}
-              <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              <span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <div style={{ paddingLeft: "16px", display: "flex", flexDirection: "column", gap: "12px", fontSize: "20px" }}>
               <p style={{ margin: 0, lineHeight: "1.5" }}>
@@ -165,7 +242,7 @@ export const unit13Data: UnitData = {
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p>
             {"ຈົ່ງແກ້ໂຈດບັນຫາຄວາມສຳພັນຂອງລາຄາດິນສໍ: "}{" "}
-            <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <div style={{ paddingLeft: "16px", display: "flex", flexDirection: "column", gap: "12px", fontSize: "20px" }}>
             <p style={{ margin: 0, lineHeight: "1.5" }}>
@@ -185,7 +262,7 @@ export const unit13Data: UnitData = {
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p>
             {"ຈົ່ງແກ້ໂຈດບັນຫາຄວາມໄວລົດ ແລະ ເວລາ: "}{" "}
-            <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <div style={{ paddingLeft: "16px", display: "flex", flexDirection: "column", gap: "12px", fontSize: "20px" }}>
             <p style={{ margin: 0, lineHeight: "1.5" }}>

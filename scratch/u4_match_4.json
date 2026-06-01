@@ -1,0 +1,8 @@
+{
+  "step_index": 1823,
+  "source": "MODEL",
+  "type": "RUN_COMMAND",
+  "status": "DONE",
+  "created_at": "2026-05-22T09:18:59Z",
+  "content": "Created At: 2026-05-22T09:18:59Z\nCompleted At: 2026-05-22T09:18:59Z\n\n\t\t\t\tThe command completed successfully.\n\t\t\t\tOutput:\n\t\t\t\t    unitNumber: 1,\n    unitTitle: \"ການຄູນ\",\n    unitNumber: 2,\n    unitTitle: \"ເວລາ ແລະ ໄລຍະເວລາ\",\n    unitNumber: 3,\n    unitTitle: \"ການຫານ\",\n    unitNumber: 4,\n    unitTitle: \"ວົງມົນ ແລະ ໜ່ວຍມົນ\",\n    unitNumber: 5,\n    unitTitle: \"ການຫານ ຕໍ່\",\n    unitNumber: 6,\n    unitTitle: \"ຈຳນວນຫຼາຍ ແລະ ການຄິດໄລ່\",\n    unitNumber: 7,\n    unitTitle: \"ຄວາມຍາວ\",\n    unitNumber: 8,\n    unitTitle: \"ການຄູນຕາມທາງຕັ້ງ\",\n    unitNumber: 9,\n    unitTitle: \"ວິທີຊັ່ງ ແລະ ຫົວໜ່ວຍຂອງນ້ຳໜັກ\",\n    unitNumber: 10,\n    unitTitle: \"ການຄູນຕາມທາງຕັ້ງ ຕໍ່\",\n\n"
+}

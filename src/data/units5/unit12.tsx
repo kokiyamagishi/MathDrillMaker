@@ -1,10 +1,17 @@
 import React from "react";
 import { UnitData } from "../units2";
 
+const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
+  <span style={{ display: "inline-flex", flexDirection: "column", verticalAlign: "middle", alignItems: "center", padding: "0 4px", fontSize: "0.95em", transform: "translateY(-0.05em)" }}>
+    <span style={{ borderBottom: "1.5px solid currentColor", paddingBottom: "1px", lineHeight: 1, fontWeight: "bold" }}>{num}</span>
+    <span style={{ paddingTop: "1.5px", lineHeight: 1, fontWeight: "bold" }}>{den}</span>
+  </span>
+);
+
 export const unit12Data: UnitData = {
   unitNumber: 12,
   unitTitle: "ຮູບຂະຫຍາຍ ແລະ ຮູບຫຍໍ້",
-  unitGoal: "ຮຽນຮູ້ແນວຄວາມຄິດຂອງຮູບຂະຫຍາຍ (Enlarged) ແລະ ຮູບຫຍໍ້ (Reduced), ຄວາມສຳພັນດ້ານຂ້າງ ແລະ ມຸມ ພ້ອມທັງການຄິດໄລ່ມາດຕາສ່ວນ",
+  unitGoal: "ຮຽນຮູ້ແນວຄວາມຄິດຂອງຮູບຂະຫຍາຍ ແລະ ຮູບຫຍໍ້, ຄວາມສຳພັນດ້ານຂ້າງ ແລະ ມຸມ ພ້ອມທັງການຄິດໄລ່ມາດຕາສ່ວນ",
   textbookRef: "ປຶ້ມແບບຮຽນ ປ.5 ໜ້າ 136-145",
   keyPoints: {
     content: (
@@ -12,9 +19,57 @@ export const unit12Data: UnitData = {
         <h3 style={{ fontSize: "28px", color: "#1976D2", margin: 0 }}>
           {"1. ຄຸນລັກສະນະຂອງຮູບຂະຫຍາຍ ແລະ ຮູບຫຍໍ້"}
         </h3>
-        <div style={{ padding: "16px", backgroundColor: "#FFE082", border: "2px solid #FFB300", borderRadius: "8px", fontSize: "18px", lineHeight: "1.8" }}>
-          <div>{"• ຂະໜາດຂອງມຸມທີ່ສົມທຽບກັນ ແມ່ນເທົ່າກັນສະເໝີ (ບໍ່ປ່ຽນແປງ)."}</div>
-          <div>{"• ອັດຕາສ່ວນຄວາມຍາວຂ້າງສົມທຽບ ແມ່ນຄືກັນທຸກຂ້າງ (ຂະຫຍາຍ/ຫຍໍ້ສະໝໍ່າສະເໝີ)."}</div>
+        <div
+          style={{
+            display: "flex",
+            gap: "24px",
+            flexWrap: "wrap",
+            alignItems: "center",
+            padding: "20px",
+            backgroundColor: "#FFE082",
+            border: "2px solid #FFB300",
+            borderRadius: "8px",
+          }}
+        >
+          {/* SVG Visual Explanation */}
+          <div style={{ backgroundColor: "#fff", padding: "16px", borderRadius: "8px", boxShadow: "0 4px 12px rgba(0,0,0,0.08)", width: "500px", display: "flex", justifyContent: "center", flexShrink: 0 }}>
+            <svg width="468" height="170">
+              {/* Triangle A (Original) */}
+              <text x="110" y="20" textAnchor="middle" style={{ fontSize: "12px", fontWeight: "bold" }} fill="#2196F3">{"ຮູບ A (ຕົ້ນສະບັບ)"}</text>
+              <polygon points="35,130 95,130 95,75" fill="none" stroke="#2196F3" strokeWidth="2"/>
+              <text x="65" y="155" textAnchor="middle" style={{ fontSize: "11px" }} fill="#555">{"3 cm"}</text>
+              <text x="130" y="105" textAnchor="middle" style={{ fontSize: "11px" }} fill="#555">{"4 cm"}</text>
+              {/* Angle Arc A */}
+              <path d="M 50,130 A 15,15 0 0,0 47,118" fill="none" stroke="red" strokeWidth="1"/>
+              <text x="10" y="116" style={{ fontSize: "10px" }} fill="red">{"37°"}</text>
+ 
+              {/* Scaling Arrow */}
+              <path d="M 130,95 Q 190,75 250,95" fill="none" stroke="#1565C0" strokeWidth="1.5" strokeDasharray="2,2"/>
+              <polygon points="250,95 244,91 247,98" fill="#1565C0"/>
+              <text x="190" y="65" textAnchor="middle" style={{ fontSize: "11px", fontWeight: "bold" }} fill="#1565C0">{"ຂະຫຍາຍ 2 ເທື່ອ (×2)"}</text>
+ 
+              {/* Triangle B (2x Enlarged) */}
+              <text x="330" y="20" textAnchor="middle" style={{ fontSize: "12px", fontWeight: "bold" }} fill="#1565C0">{"ຮູບ B (ຮູບຂະຫຍາຍ)"}</text>
+              <polygon points="270,130 390,130 390,20" fill="none" stroke="#1565C0" strokeWidth="2.5"/>
+              <text x="330" y="155" textAnchor="middle" style={{ fontSize: "11px", fontWeight: "bold" }} fill="#1565C0">{"6 cm"}</text>
+              <text x="430" y="75" textAnchor="middle" style={{ fontSize: "11px", fontWeight: "bold" }} fill="#1565C0">{"8 cm"}</text>
+              {/* Angle Arc B */}
+              <path d="M 288,130 A 18,18 0 0,0 284,115" fill="none" stroke="red" strokeWidth="1.5"/>
+              <text x="260" y="112" style={{ fontSize: "10px", fontWeight: "bold" }} fill="red">{"37° (ເທົ່າກັນ)"}</text>
+            </svg>
+          </div>
+
+          <div style={{ flex: "1 1 240px", fontSize: "22px", lineHeight: "1.6" }}>
+            <div style={{ fontWeight: "bold", color: "#E65100", marginBottom: "8px" }}>
+              {"ຫຼັກການຮູບຂະຫຍາຍ ແລະ ຮູບຫຍໍ້:"}
+            </div>
+            <div style={{ fontSize: "18px", color: "#333" }}>
+              <div>{"• ມຸມທີ່ສົມທຽບກັນແມ່ນ "}<strong>{"ເທົ່າກັນສະເໝີ (ບໍ່ປ່ຽນແປງ)"}</strong></div>
+              <div style={{ marginTop: "4px" }}>
+                {"• ອັດຕາສ່ວນຄວາມຍາວຂ້າງສົມທຽບແມ່ນ "}<strong>{"ຄືກັນທຸກຂ້າງ (ຂະຫຍາຍ/ຫຍໍ້ສະໝໍ່າສະເໝີ)"}</strong>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     ),
@@ -26,7 +81,7 @@ export const unit12Data: UnitData = {
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p>
             {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບຮູບຂະຫຍາຍ ແລະ ມຸມ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ)"}</span>
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", fontSize: "20px", padding: "8px 16px" }}>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
@@ -55,11 +110,11 @@ export const unit12Data: UnitData = {
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p>
             {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບມາດຕາສ່ວນ ແລະ ຮູບຫຍໍ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ)"}</span>
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", fontSize: "20px", padding: "8px 16px" }}>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              <span>{"(1) 在ແຜນທີ່ມາດຕາສ່ວນ 1 : 1000, ຄວາມຍາວໃນແຜນທີ່ 5 cm ຈະເທົ່າກັບໄລຍະທາງຈິງຈັກ m?"}</span>
+              <span>{"(1) ໃນແຜນທີ່ມາດຕາສ່ວນ 1 : 1000, ຄວາມຍາວໃນແຜນທີ່ 5 cm ຈະເທົ່າກັບໄລຍະທາງຈິງຈັກ m?"}</span>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
                 <span>{"ຄຳຕອບ:"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
@@ -67,7 +122,11 @@ export const unit12Data: UnitData = {
               </div>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              <span>{"(2) ຖ້າຮູບ C ແມ່ນຮູບຫຍໍ້ 1/3 (Reduced to 1/3) ຂອງຮູບ A. ຂ້າງທີ່ຍາວ 15 cm ໃນຮູບ A ຈະຍາວຈັກ cm ໃນຮູບ C?"}</span>
+              <span style={{ display: "flex", alignItems: "center", gap: "4px", flexWrap: "wrap" }}>
+                {"(2) ຖ້າຮູບ C ແມ່ນຮູບຫຍໍ້ "}
+                <Fraction num="1" den="3" />
+                {" ຂອງຮູບ A. ຂ້າງທີ່ຍາວ 15 cm ໃນຮູບ A ຈະຍາວຈັກ cm ໃນຮູບ C?"}
+              </span>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
                 <span>{"ຄຳຕອບ:"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
@@ -88,7 +147,7 @@ export const unit12Data: UnitData = {
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p>
               {"ຈົ່ງແກ້ໂຈດບັນຫາຄວາມກວ້າງຈິງຂອງແມ່ນ້ຳ: "}{" "}
-              <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              <span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <div style={{ paddingLeft: "16px", display: "flex", flexDirection: "column", gap: "12px", fontSize: "20px" }}>
               <p style={{ margin: 0, lineHeight: "1.5" }}>
@@ -109,7 +168,7 @@ export const unit12Data: UnitData = {
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p>
               {"ຈົ່ງແກ້ໂຈດບັນຫາຄວາມກວ້າງໃນແຜນຜັງ: "}{" "}
-              <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              <span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <div style={{ paddingLeft: "16px", display: "flex", flexDirection: "column", gap: "12px", fontSize: "20px" }}>
               <p style={{ margin: 0, lineHeight: "1.5" }}>
@@ -133,7 +192,7 @@ export const unit12Data: UnitData = {
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p>
             {"ຈົ່ງແກ້ໂຈດບັນຫາໄລຍະທາງໃນແຜນທີ່: "}{" "}
-            <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <div style={{ paddingLeft: "16px", display: "flex", flexDirection: "column", gap: "12px", fontSize: "20px" }}>
             <p style={{ margin: 0, lineHeight: "1.5" }}>
@@ -154,7 +213,7 @@ export const unit12Data: UnitData = {
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p>
             {"ຈົ່ງຊອກຫາແນວຄິດມາດຕາສ່ວນຂອງຮູບຫຍໍ້: "}{" "}
-            <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <div style={{ paddingLeft: "16px", display: "flex", flexDirection: "column", gap: "12px", fontSize: "20px" }}>
             <p style={{ margin: 0, lineHeight: "1.5" }}>

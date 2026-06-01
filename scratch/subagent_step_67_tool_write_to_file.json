@@ -1,0 +1,12 @@
+{
+  "name": "write_to_file",
+  "args": {
+    "CodeContent": "\"const fs = require('fs');\\nconst path = require('path');\\n\\nconst filePath = path.join(__dirname, '../src/data/units5.tsx');\\nconst content = fs.readFileSync(filePath, 'utf8');\\n\\nconst parts = content.split(/unitNumber:\\\\s*/g);\\nconst u2 = parts.find(p => p.trim().startsWith('2'));\\n\\nconst kpStart = u2.indexOf('keyPoints:');\\nconst kpEnd = u2.indexOf('basicProblems:');\\n\\nconsole.log(u2.substring(kpStart, kpEnd));\\n\"",
+    "Description": "\"Create script to inspect Unit 2 keyPoints fully\"",
+    "IsArtifact": "false",
+    "Overwrite": "true",
+    "TargetFile": "\"/Users/openclaw/Antigravity/MathDrillMaker/scratch/view_unit2_full_kp.js\"",
+    "toolAction": "\"Creating Unit 2 keyPoints inspector script\"",
+    "toolSummary": "\"Write to file\""
+  }
+}

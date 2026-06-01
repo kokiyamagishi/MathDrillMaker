@@ -10,12 +10,28 @@ import {
   LaoBanknote,
 } from "@/components/illustrations";
 
+export interface SubSection {
+  title: string;
+  keyPoint: {
+    title?: string;
+    content: React.ReactNode;
+    hint?: {
+      text: string;
+      isBlue?: boolean;
+    };
+  };
+  problems: {
+    number: number;
+    content: React.ReactNode;
+  }[];
+}
+
 export interface UnitData {
   unitNumber: number;
   unitTitle: string;
   unitGoal: string;
   textbookRef: string;
-  keyPoints:
+  keyPoints?:
     | {
         title?: string;
         content: React.ReactNode;
@@ -32,10 +48,11 @@ export interface UnitData {
           isBlue?: boolean;
         };
       }[];
-  basicProblems: {
+  basicProblems?: {
     number: number;
     content: React.ReactNode;
   }[];
+  subSections?: SubSection[];
   challengeProblems: {
     problems: {
       number: number;

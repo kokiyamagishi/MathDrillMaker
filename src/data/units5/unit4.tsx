@@ -5,7 +5,7 @@ export const unit4Data: UnitData = {
     unitNumber: 4,
     unitTitle: "ການທຽບເທົ່າກັນຂອງຮູບເລຂາຄະນິດ",
     unitGoal:
-      "ເຂົ້າໃຈຄວາມໝາຍຂອງການທຽບເທົ່າກັນ (合同) ຂອງຮູບເລຂາຄະນິດ, ແລະ ຊອກຫາຂ້າງ ຫຼື ມຸມທີ່ກົງກັນຂ້າມກັນ",
+      "ເຂົ້າໃຈຄວາມໝາຍຂອງການທຽບເທົ່າກັນ ຂອງຮູບເລຂາຄະນິດ, ແລະ ຊອກຫາຂ້າງ ຫຼື ມຸມທີ່ກົງກັນຂ້າມກັນ",
     textbookRef: "ປຶ້ມແບບຮຽນ ປ.5 ໜ້າ 38-45",
     keyPoints: {
       hint: {
@@ -14,7 +14,7 @@ export const unit4Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <h3 style={{ fontSize: "28px", color: "#1976D2", margin: 0 }}>
-            {"1. ຮູບເລຂາຄະນິດທີ່ທຽບເທົ່າກັນ (Congruent Figures)"}
+            {"1. ຮູບເລຂາຄະນິດທີ່ທຽບເທົ່າກັນ"}
           </h3>
           <p style={{ fontSize: "22px", margin: 0 }}>
             {"ຄຸນລັກສະນະສຳຄັນຂອງສອງຮູບທີ່ທຽບເທົ່າກັນ:"}
@@ -43,38 +43,38 @@ export const unit4Data: UnitData = {
             }}
           >
             {/* SVG of two congruent triangles */}
-            <svg width="150" height="100">
+            <svg width="150" height="120">
               <path
-                d="M 20,80 L 120,80 L 70,20 Z"
+                d="M 20,95 L 120,95 L 70,35 Z"
                 fill="rgba(76, 175, 80, 0.2)"
                 stroke="#4CAF50"
                 strokeWidth="2"
               />
-              <text x="15" y="95" style={{ fontSize: "22px", fontWeight: "bold" }}>
+              <text x="15" y="110" style={{ fontSize: "22px", fontWeight: "bold" }}>
                 {"A"}
               </text>
-              <text x="125" y="95" style={{ fontSize: "22px", fontWeight: "bold" }}>
+              <text x="125" y="110" style={{ fontSize: "22px", fontWeight: "bold" }}>
                 {"B"}
               </text>
-              <text x="65" y="15" style={{ fontSize: "22px", fontWeight: "bold" }}>
+              <text x="65" y="27" style={{ fontSize: "22px", fontWeight: "bold" }}>
                 {"C"}
               </text>
             </svg>
-            <svg width="150" height="100">
+            <svg width="150" height="120">
               {/* Congruent but rotated or shifted */}
               <path
-                d="M 30,80 L 130,80 L 80,20 Z"
+                d="M 30,95 L 130,95 L 80,35 Z"
                 fill="rgba(76, 175, 80, 0.2)"
                 stroke="#4CAF50"
                 strokeWidth="2"
               />
-              <text x="25" y="95" style={{ fontSize: "22px", fontWeight: "bold" }}>
+              <text x="25" y="110" style={{ fontSize: "22px", fontWeight: "bold" }}>
                 {"D"}
               </text>
-              <text x="135" y="95" style={{ fontSize: "22px", fontWeight: "bold" }}>
+              <text x="135" y="110" style={{ fontSize: "22px", fontWeight: "bold" }}>
                 {"E"}
               </text>
-              <text x="75" y="15" style={{ fontSize: "22px", fontWeight: "bold" }}>
+              <text x="75" y="27" style={{ fontSize: "22px", fontWeight: "bold" }}>
                 {"F"}
               </text>
             </svg>

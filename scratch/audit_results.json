@@ -1,0 +1,638 @@
+[
+  {
+    "number": 1,
+    "startLine": 7,
+    "endLine": 1157,
+    "labels": [
+      {
+        "line": 200,
+        "text": "(ຂໍ້ລະ 3 ຄະແນນ, ລວມ 6 ຄະແນນ)",
+        "raw": "{\"(ຂໍ້ລະ 3 ຄະແນນ, ລວມ 6 ຄະແນນ)\"}"
+      },
+      {
+        "line": 656,
+        "text": "(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)",
+        "raw": "{\"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)\"}"
+      },
+      {
+        "line": 709,
+        "text": "(ຂໍ້ລະ 3 ຄະແນນ, ລວມ 6 ຄະແນນ)",
+        "raw": "{\"(ຂໍ້ລະ 3 ຄະແນນ, ລວມ 6 ຄະແນນ)\"}"
+      },
+      {
+        "line": 927,
+        "text": "(4 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(4 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 985,
+        "text": "(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 5 ຄະແນນ)",
+        "raw": "{\"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 5 ຄະແນນ)\"}"
+      },
+      {
+        "line": 1079,
+        "text": "(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)",
+        "raw": "{\"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)\"}"
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "startLine": 1158,
+    "endLine": 2045,
+    "labels": [
+      {
+        "line": 1380,
+        "text": "(ຂໍ້ລະ 1.5 ຄະແນນ, ລວມ 6 ຄະແນນ)",
+        "raw": "{\"(ຂໍ້ລະ 1.5 ຄະແນນ, ລວມ 6 ຄະແນນ)\"}"
+      },
+      {
+        "line": 1488,
+        "text": "(4 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(4 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 1644,
+        "text": "(ຂໍ້ລະ 3 ຄະແນນ, ລວມ 6 ຄະແນນ)",
+        "raw": "{\"(ຂໍ້ລະ 3 ຄະແນນ, ລວມ 6 ຄະແນນ)\"}"
+      },
+      {
+        "line": 1744,
+        "text": "(4 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(4 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 1797,
+        "text": "(ຂໍ້ລະ 3 ຄະແນນ, ລວມ 6 ຄະແນນ)",
+        "raw": "{\"(ຂໍ້ລະ 3 ຄະແນນ, ລວມ 6 ຄະແນນ)\"}"
+      },
+      {
+        "line": 1908,
+        "text": "(4 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(4 ຄະແນນ)\"}</span>"
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "startLine": 2046,
+    "endLine": 2706,
+    "labels": [
+      {
+        "line": 2159,
+        "text": "(ຂໍ້ລະ 3 ຄະແນນ, ລວມ 6 ຄະແນນ)",
+        "raw": "{\"(ຂໍ້ລະ 3 ຄະແນນ, ລວມ 6 ຄະແນນ)\"}"
+      },
+      {
+        "line": 2291,
+        "text": "(4 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(4 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 2324,
+        "text": "(6 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(6 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 2443,
+        "text": "(4 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(4 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 2479,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 2645,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "startLine": 2707,
+    "endLine": 3383,
+    "labels": [
+      {
+        "line": 2896,
+        "text": "(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 6 ຄະແນນ)",
+        "raw": "{\"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 6 ຄະແນນ)\"}"
+      },
+      {
+        "line": 2962,
+        "text": "(4 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(4 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 3004,
+        "text": "(6 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(6 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 3059,
+        "text": "(4 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(4 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 3107,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 3313,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "startLine": 3384,
+    "endLine": 4046,
+    "labels": [
+      {
+        "line": 3564,
+        "text": "(ຂໍ້ລະ 3 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 3 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 3639,
+        "text": "(ຂໍ້ລະ 3 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 3 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 3718,
+        "text": "(ຂໍ້ລະ 4 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 4 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 3815,
+        "text": "(ຂໍ້ລະ 2 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 3892,
+        "text": "(ຂໍ້ລະ 1 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 1 ຄະແນນ)\"}</span>"
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "startLine": 4047,
+    "endLine": 4943,
+    "labels": [
+      {
+        "line": 4250,
+        "text": "(ຂໍ້ລະ 3 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 3 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 4329,
+        "text": "(ຂໍ້ລະ 4 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 4 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 4530,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 4638,
+        "text": "(ຂໍ້ລະ 3 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 3 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 4822,
+        "text": "(4 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(4 ຄະແນນ)\"}</span>"
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "startLine": 4944,
+    "endLine": 5690,
+    "labels": [
+      {
+        "line": 5142,
+        "text": "(ຂໍ້ລະ 3 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 3 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 5280,
+        "text": "(ຂໍ້ລະ 2 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 5333,
+        "text": "(ຂໍ້ລະ 3 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 3 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 5516,
+        "text": "(ຂໍ້ລະ 2 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 5570,
+        "text": "(ຂໍ້ລະ 2.5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2.5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 5619,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "startLine": 5691,
+    "endLine": 6244,
+    "labels": [
+      {
+        "line": 5896,
+        "text": "(ຂໍ້ລະ 3 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 3 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 5961,
+        "text": "(ຂໍ້ລະ 2 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 6015,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 6060,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 6119,
+        "text": "(ຂໍ້ລະ 2.5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2.5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 6167,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "startLine": 6245,
+    "endLine": 6675,
+    "labels": [
+      {
+        "line": 6377,
+        "text": "(ຂໍ້ລະ 3 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 3 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 6468,
+        "text": "(ຂໍ້ລະ 2 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 6536,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 6562,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 6590,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 6620,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      }
+    ]
+  },
+  {
+    "number": 10,
+    "startLine": 6676,
+    "endLine": 7127,
+    "labels": [
+      {
+        "line": 6882,
+        "text": "(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 6903,
+        "text": "(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 6931,
+        "text": "(ຂໍ້ລະ 3 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 3 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 6982,
+        "text": "(4 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(4 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 7028,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 7060,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      }
+    ]
+  },
+  {
+    "number": 11,
+    "startLine": 7128,
+    "endLine": 7464,
+    "labels": [
+      {
+        "line": 7270,
+        "text": "(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 7291,
+        "text": "(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 7318,
+        "text": "(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 7363,
+        "text": "(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 7389,
+        "text": "(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 7410,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      }
+    ]
+  },
+  {
+    "number": 12,
+    "startLine": 7465,
+    "endLine": 7987,
+    "labels": [
+      {
+        "line": 7587,
+        "text": "(ຂໍ້ລະ 3 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 3 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 7715,
+        "text": "(ຂໍ້ລະ 2 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 7765,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 7805,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 7849,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 7906,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      }
+    ]
+  },
+  {
+    "number": 13,
+    "startLine": 7988,
+    "endLine": 8405,
+    "labels": [
+      {
+        "line": 8076,
+        "text": "(ຂໍ້ລະ 2.5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2.5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 8178,
+        "text": "(ຂໍ້ລະ 2.5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2.5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 8227,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 8276,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 8322,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      }
+    ]
+  },
+  {
+    "number": 14,
+    "startLine": 8406,
+    "endLine": 8852,
+    "labels": [
+      {
+        "line": 8526,
+        "text": "(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)",
+        "raw": "{\"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)\"}"
+      },
+      {
+        "line": 8577,
+        "text": "(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)",
+        "raw": "{\"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)\"}"
+      },
+      {
+        "line": 8632,
+        "text": "(ຂໍ້ລະ 3 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 3 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 8681,
+        "text": "(4 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(4 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 8730,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 8777,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      }
+    ]
+  },
+  {
+    "number": 15,
+    "startLine": 8853,
+    "endLine": 9235,
+    "labels": [
+      {
+        "line": 8908,
+        "text": "(ຂໍ້ລະ 2.5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2.5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 9019,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 9065,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 9114,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 9160,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      }
+    ]
+  },
+  {
+    "number": 16,
+    "startLine": 9236,
+    "endLine": 9684,
+    "labels": [
+      {
+        "line": 9321,
+        "text": "(ຂໍ້ລະ 2.5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2.5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 9485,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 9526,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 9570,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 9616,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      }
+    ]
+  },
+  {
+    "number": 17,
+    "startLine": 9685,
+    "endLine": 10110,
+    "labels": [
+      {
+        "line": 9843,
+        "text": "(ຂໍ້ລະ 2.5 ຄະແနນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2.5 ຄະແနນ)\"}</span>"
+      },
+      {
+        "line": 9917,
+        "text": "(ຂໍ້ລະ 2.5 ຄະແနນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2.5 ຄະແနນ)\"}</span>"
+      },
+      {
+        "line": 9970,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 9999,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 10023,
+        "text": "(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 10046,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      }
+    ]
+  },
+  {
+    "number": 18,
+    "startLine": 10111,
+    "endLine": 10641,
+    "labels": [
+      {
+        "line": 10210,
+        "text": "(ຂໍးລະ 2.5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(ຂໍးລະ 2.5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 10325,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 10371,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 10420,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      },
+      {
+        "line": 10572,
+        "text": "(5 ຄະແນນ)",
+        "raw": "<span className=\"point-label\">{\"(5 ຄະແນນ)\"}</span>"
+      }
+    ]
+  }
+]

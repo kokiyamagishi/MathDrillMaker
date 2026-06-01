@@ -8,13 +8,10 @@ export const unit3Data: UnitData = {
       "ຮຽນຮູ້ສູດການຊອກຫາບໍລິມາດຂອງຮູບກ່ອງສາກ, ຮູບກ້ອນສາກ ແລະ ຄວາມສຳພັນລະຫວ່າງຫົວໜ່ວຍບໍລິມາດ (cm³, m³)",
     textbookRef: "ປຶ້ມແບບຮຽນ ປ.5 ໜ້າ 30-37",
     keyPoints: {
-      hint: {
-        text: "ບໍລິມາດແມ່ນຂະໜາດຂອງເນື້ອທີ່ວ່າງໃນສາມມິຕິ! ຈື່ສູດ: ບໍລິມາດຮູບກ່ອງສາກ = ກວ້າງ × ຍາວ × ສູງ ແລະ ຮູບກ້ອນສາກ = ຂ້າງ × ຂ້າງ × ຂ້າງ ເດີ້!",
-      },
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <h3 style={{ fontSize: "28px", color: "#1976D2", margin: 0 }}>
-            {"1. ສູດບໍລິມາດ (Volume Formulas)"}
+            {"1. ສູດບໍລິມາດ"}
           </h3>
           <div
             style={{
@@ -37,7 +34,7 @@ export const unit3Data: UnitData = {
               }}
             >
               <strong style={{ fontSize: "22px", color: "#1565C0" }}>
-                {"ຮູບກ່ອງສາກ (Cuboid)"}
+                {"ຮູບກ່ອງສາກ"}
               </strong>
               <div
                 style={{
@@ -94,7 +91,7 @@ export const unit3Data: UnitData = {
               }}
             >
               <strong style={{ fontSize: "22px", color: "#2E7D32" }}>
-                {"ຮູບກ້ອນສາກ (Cube)"}
+                {"ຮູບກ້ອນສາກ"}
               </strong>
               <div
                 style={{
@@ -147,7 +144,7 @@ export const unit3Data: UnitData = {
           <h3
             style={{ fontSize: "28px", color: "#1976D2", margin: "12px 0 0 0" }}
           >
-            {"2. ຄວາມສຳພັນລະຫວ່າງຫົວໜ່ວຍ (Unit Relations)"}
+            {"2. ຄວາມສຳພັນລະຫວ່າງຫົວໜ່ວຍ"}
           </h3>
           <div
             style={{
@@ -176,14 +173,14 @@ export const unit3Data: UnitData = {
           >
             <p>
               {"ຈົ່ງຄິດໄລ່ບໍລິມາດຂອງຮູບຊົງລຸ່ມນີ້: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ)"}</span>
+              <span className="point-label">{"(ຂໍ້ລະ 3 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
                 display: "grid",
                 gridTemplateColumns: "1fr",
-                gap: "16px",
-                padding: "16px",
+                gap: "20px",
+                padding: "8px 16px",
               }}
             >
               <div
@@ -195,9 +192,7 @@ export const unit3Data: UnitData = {
                 }}
               >
                 <span>
-                  {
-                    "(1) ຮູບກ່ອງສາກທີ່ມີລວງກວ້າງ 4 cm, ລວງຍາວ 5 cm ແລະ ລວງສູງ 6 cm. ບໍລິມາດແມ່ນ"
-                  }
+                  {"(1) ຮູບກ່ອງສາກທີ່ມີລວງກວ້າງ 3 cm, ລວງຍາວ 4 cm ແລະ ລວງສູງ 5 cm. ບໍລິມາດແມ່ນ"}
                 </span>
                 <div
                   style={{ display: "flex", alignItems: "center", gap: "8px" }}
@@ -222,7 +217,7 @@ export const unit3Data: UnitData = {
                 }}
               >
                 <span>
-                  {"(2) ຮູບກ້ອນສາກທີ່ມີຄວາມຍາວຂ້າງ 5 cm. ບໍລິມາດແມ່ນ"}
+                  {"(2) ຮູບກ້ອນສາກທີ່ມີຄວາມຍາວຂ້າງ 4 cm. ບໍລິມາດແມ່ນ"}
                 </span>
                 <div
                   style={{ display: "flex", alignItems: "center", gap: "8px" }}
@@ -249,8 +244,8 @@ export const unit3Data: UnitData = {
             style={{ display: "flex", flexDirection: "column", gap: "16px" }}
           >
             <p>
-              {"ຈົ່ງປ່ຽນຫົວໜ່ວຍບໍລິມາດຕໍ່ໄປນີ້: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ)"}</span>
+              {"ຈົ່ງຄິດໄລ່ບໍລິມາດຂອງຮູບຊົງລະດັບໃຫຍ່ຕໍ່ໄປນີ້: "}{" "}
+              <span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
@@ -258,36 +253,40 @@ export const unit3Data: UnitData = {
                 gridTemplateColumns: "1fr",
                 gap: "20px",
                 fontSize: "20px",
-                padding: "16px",
+                padding: "8px 16px",
               }}
             >
               <div
-                style={{ display: "flex", alignItems: "center", gap: "12px" }}
+                style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}
               >
-                <span>{"(3) 2 m³ ="}</span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "150px",
-                    height: "40px",
-                  }}
-                ></span>
-                <span>{"cm³"}</span>
+                <span>{"(1) ສະລອຍນ້ຳຮູບກ່ອງສາກ ກວ້າງ 10 m, ຍາວ 5 m, ເລິກ 2 m ຈະມີບໍລິມາດ"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span
+                    className="answer-blank"
+                    style={{
+                      display: "inline-block",
+                      width: "100px",
+                      height: "40px",
+                    }}
+                  ></span>
+                  <span>{"m³"}</span>
+                </div>
               </div>
               <div
-                style={{ display: "flex", alignItems: "center", gap: "12px" }}
+                style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}
               >
-                <span>{"(4) 5,000 cm³ ="}</span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "100px",
-                    height: "40px",
-                  }}
-                ></span>
-                <span>{"L (ລິດ)"}</span>
+                <span>{"(2) ຕູ້ຄອນເທນເນີຮູບກ້ອນສາກ ທີ່ມີຄວາມຍາວຂ້າງລະ 2 m ຈະມີບໍລິມາດ"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span
+                    className="answer-blank"
+                    style={{
+                      display: "inline-block",
+                      width: "100px",
+                      height: "40px",
+                    }}
+                  ></span>
+                  <span>{"m³"}</span>
+                </div>
               </div>
             </div>
           </div>
@@ -296,7 +295,7 @@ export const unit3Data: UnitData = {
     ],
     challengeProblems: {
       hintText:
-        "📐 ບໍລິມາດນ້ຳທາງໃນແມ່ນເອົາ ຂະໜາດທາງໃນ (ລວງກວ້າງ, ລວງຍາວ, ລວງເລິກ) ມາຄູນກັນເດີ້!",
+        "📐 ບໍລິມາດນ້ຳທາງໃນແມ່ນເອົາ ຂະໜາດທາງໃນ (ລວງກວ້າງ, ລວງຍາວ, ລວງເລິກ) ມາຄູນກັນ, ສ່ວນຄວາມເລິກແມ່ນ ບໍລິມາດຫານໃຫ້ເນື້ອທີ່ກົ້ນອ່າງເດີ້!",
       problems: [
         {
           number: 1,
@@ -317,9 +316,7 @@ export const unit3Data: UnitData = {
                 }}
               >
                 <p style={{ margin: 0, lineHeight: "1.5" }}>
-                  {
-                    "🥛 ມີກ່ອງໃສ່ນ້ຳຮູບກ່ອງສາກຂະໜາດທາງໃນມີ ລວງກວ້າງ 10 cm, ລວງຍາວ 12 cm ແລະ ລວງເລິກ 8 cm. ຖ້າເທນ້ຳໃສ່ເຕັມກ່ອງ ຈະມີນ້ຳຈັກ mL?"
-                  }
+                  {"🥛 ມີກ່ອງໃສ່ນ້ຳຮູບກ່ອງສາກຂະໜາດທາງໃນມີ ລວງກວ້າງ 10 cm, ລວງຍາວ 12 cm ແລະ ລວງເລິກ 8 cm. ຖ້າເທນ້ຳໃສ່ເຕັມກ່ອງ ຈະມີນ້ຳຈັກ mL?"}
                 </p>
                 <div
                   style={{
@@ -344,6 +341,50 @@ export const unit3Data: UnitData = {
             </div>
           ),
         },
+        {
+          number: 2,
+          content: (
+            <div
+              style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+            >
+              <p>
+                {"ຈົ່ງແກ້ໂຈດບັນຫາຊອກຫາລວງສູງ (ເລິກ) ຂອງນ້ຳ: "}{" "}
+                <span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "12px",
+                  fontSize: "20px",
+                }}
+              >
+                <p style={{ margin: 0, lineHeight: "1.5" }}>
+                  {"🐳 ຖັງນ້ຳຮູບກ່ອງສາກໜຶ່ງທີ່ມີເນື້ອທີ່ກົ້ນຖັງ 50 cm². ຖ້າທອກນ້ຳທີ່ມີບໍລິມາດ 250 cm³ ໃສ່, ລະດັບນ້ຳໃນຖັງຈະສູງຂຶ້ນຈັກ cm?"}
+                </p>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "12px",
+                    alignItems: "center",
+                    marginTop: "8px",
+                  }}
+                >
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span
+                    className="answer-blank"
+                    style={{
+                      display: "inline-block",
+                      width: "120px",
+                      height: "40px",
+                    }}
+                  ></span>
+                  <span>{"cm"}</span>
+                </div>
+              </div>
+            </div>
+          ),
+        },
       ],
     },
     summaryProblems: [
@@ -354,41 +395,94 @@ export const unit3Data: UnitData = {
             style={{ display: "flex", flexDirection: "column", gap: "16px" }}
           >
             <p>
-              {"ຈົ່ງແກ້ໂຈດບັນຫາການປຽບທຽບຄວາມຈຸນ້ຳ: "}{" "}
-              <span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ຈົ່ງຄິດໄລ່ ແລະ ປ່ຽນຫົວໜ່ວຍບໍລິມາດຕໍ່ໄປນີ້: "}{" "}
+              <span className="point-label">{"(ຂໍ້ລະ 1.5 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "12px",
+                display: "grid",
+                gridTemplateColumns: "1fr",
+                gap: "20px",
                 fontSize: "20px",
+                padding: "8px 16px",
               }}
             >
-              <p style={{ margin: 0, lineHeight: "1.5" }}>
-                {
-                  "🐳 ມີອ່າງລ້ຽງປາຮູບກ່ອງສາກ ທີ່ມີລວງກວ້າງ 2 m, ລວງຍາວ 3 m ແລະ ລວງສູງ 1.5 m. ອ່າງລ້ຽງປານີ້ສາມາດບັນຈຸນ້ຳໄດ້ຫຼາຍທີ່ສຸດຈັກ L (ລິດ)?"
-                }
-              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                <span>{"(1) 2 m³ ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "130px", height: "40px" }}></span>
+                <span>{"cm³"}</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                <span>{"(2) 3,000,000 cm³ ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                <span>{"m³"}</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                <span>{"(3) ຮູບກ່ອງສາກ ກວ້າງ 6 cm, ຍາວ 8 cm, ສູງ 10 cm. ບໍລິມາດແມ່ນ"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                <span>{"cm³"}</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                <span>{"(4) ຮູບກ້ອນສາກ ທີ່ມີຄວາມຍາວຂ້າງລະ 6 cm. ບໍລິມາດແມ່ນ"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                <span>{"cm³"}</span>
+              </div>
+            </div>
+          </div>
+        ),
+      },
+      {
+        number: 2,
+        content: (
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+          >
+            <p>
+              {"ຈົ່ງແກ້ໂຈດບັນຫາຕໍ່ໄປນີ້: "}{" "}
+              <span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
+            </p>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr",
+                gap: "20px",
+                fontSize: "20px",
+                padding: "8px 16px",
+              }}
+            >
               <div
-                style={{
-                  display: "flex",
-                  gap: "12px",
-                  alignItems: "center",
-                  marginTop: "8px",
-                  flexWrap: "wrap",
-                }}
+                style={{ display: "flex", flexDirection: "column", gap: "10px" }}
               >
-                <span>{"ຄຳຕອບ:"}</span>
-                <span
-                  className="answer-blank"
-                  style={{
-                    display: "inline-block",
-                    width: "150px",
-                    height: "40px",
-                  }}
-                ></span>
-                <span>{"L"}</span>
+                <span>{"(1) ອ່າງລ້ຽງປາກວ້າງ 20 cm, ຍາວ 30 cm ແລະ ສູງ 15 cm. ຖ້າໃສ່ນ້ຳໃຫ້ເລິກ 10 cm, ບໍລິມາດນ້ຳຈະມີຈັກ cm³?"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span
+                    className="answer-blank"
+                    style={{
+                      display: "inline-block",
+                      width: "120px",
+                      height: "40px",
+                    }}
+                  ></span>
+                  <span>{"cm³"}</span>
+                </div>
+              </div>
+              <div
+                style={{ display: "flex", flexDirection: "column", gap: "10px" }}
+              >
+                <span>{"(2) ກ່ອງຮູບກ້ອນສາກ ທີ່ມີຂ້າງຍາວ 50 cm. ບໍລິມາດຂອງກ່ອງນີ້ແມ່ນຈັກ cm³?"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                  <span>{"ຄຳຕອບ:"}</span>
+                  <span
+                    className="answer-blank"
+                    style={{
+                      display: "inline-block",
+                      width: "120px",
+                      height: "40px",
+                    }}
+                  ></span>
+                  <span>{"cm³"}</span>
+                </div>
               </div>
             </div>
           </div>
@@ -400,35 +494,43 @@ export const unit3Data: UnitData = {
         {
           questionNumber: 1,
           answers: [
-            <span key="1">
-              {"(1) 120 cm³ (4 × 5 × 6), (2) 125 cm³ (5 × 5 × 5)"}
-            </span>,
+            <span key="u3-ans-1-1">{"(1) 60 cm³ (3 × 4 × 5 = 60)"}</span>,
+            <span key="u3-ans-1-2">{"(2) 64 cm³ (4 × 4 × 4 = 64)"}</span>,
           ],
         },
         {
           questionNumber: 2,
           answers: [
-            <span key="2">
-              {
-                "(3) 2,000,000 cm³ (2 × 1,000,000), (4) 5 L (ຍ້ອນ 5000 cm³ = 5000 mL = 5 L)"
-              }
-            </span>,
+            <span key="u3-ans-2-1">{"(1) 100 m³ (10 × 5 × 2 = 100)"}</span>,
+            <span key="u3-ans-2-2">{"(2) 8 m³ (2 × 2 × 2 = 8)"}</span>,
           ],
         },
         {
           questionNumber: "ທ້າທາຍ 1",
           answers: [
-            <span key="3">
-              {"960 mL (ຍ້ອນ 10 × 12 × 8 = 960 cm³ = 960 mL)"}
-            </span>,
+            <span key="u3-ans-t1-1">{"960 mL (ຍ້ອນ 10 × 12 × 8 = 960 cm³ = 960 mL)"}</span>,
+          ],
+        },
+        {
+          questionNumber: "ທ້າທາຍ 2",
+          answers: [
+            <span key="u3-ans-t2-1">{"5 cm (ຍ້ອນ 250 ÷ 50 = 5)"}</span>,
           ],
         },
         {
           questionNumber: "ທົດສອບປະຈຳບົດ 1",
           answers: [
-            <span key="4">
-              {"9,000 L (ຍ້ອນ 2 × 3 × 1.5 = 9 m³ = 9,000,000 cm³ = 9,000 L)"}
-            </span>,
+            <span key="u3-ans-s1-1">{"(1) 2,000,000 cm³"}</span>,
+            <span key="u3-ans-s1-2">{"(2) 3 m³"}</span>,
+            <span key="u3-ans-s1-3">{"(3) 480 cm³ (6 × 8 × 10 = 480)"}</span>,
+            <span key="u3-ans-s1-4">{"(4) 216 cm³ (6 × 6 × 6 = 216)"}</span>,
+          ],
+        },
+        {
+          questionNumber: "ທົດສອບປະຈຳບົດ 2",
+          answers: [
+            <span key="u3-ans-s2-1">{"(1) 6,000 cm³ (ຍ້ອນ 20 × 30 × 10 = 6,000)"}</span>,
+            <span key="u3-ans-s2-2">{"(2) 125,000 cm³ (ຍ້ອນ 50 × 50 × 50 = 125,000)"}</span>,
           ],
         },
       ],

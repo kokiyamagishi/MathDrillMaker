@@ -1,0 +1,12 @@
+{
+  "name": "write_to_file",
+  "args": {
+    "CodeContent": "\"const fs = require('fs');\\nconst path = require('path');\\n\\nconst filePath = path.join(__dirname, '../src/data/units5.tsx');\\nconst content = fs.readFileSync(filePath, 'utf8');\\n\\nconst parts = content.split(/unitNumber:\\\\s*/g);\\nlet output = '';\\n\\nfor (let i = 1; i <= 2; i++) {\\n  const part = parts.find(p => p.trim().startsWith(String(i)));\\n  if (!part) continue;\\n\\n  output += `\\\\n======================================================\\\\n`;\\n  output += `UNIT ${i} KEYPOINTS:\\\\n`;\\n  output += `======================================================\\\\n`;\\n  \\n  const kpIndex = part.indexOf('keyPoints:');\\n  if (kpIndex !== -1) {\\n    let bracketCount = 0;\\n    let index = kpIndex;\\n    let kpText = '';\\n    while (index < part.length) {\\n      const char = part[index];\\n      kpText += char;\\n      if (char === '[') bracketCount++;\\n      else if (char === '{') bracketCount++;\\n      else if (char === ']') bracketCount--;\\n      else if (char === '}') bracketCount--;\\n      if (bracketCount === 0 && index > kpIndex + 15) {\\n        break;\\n      }\\n      index++;\\n    }\\n    output += kpText + '\\\\n';\\n  }\\n}\\n\\nfs.writeFileSync(path.join(__dirname, 'inspect_kp_out.txt'), output, 'utf8');\\nconsole.log('Saved to inspect_kp_out.txt');\\n\"",
+    "Description": "\"Write Unit 1 & 2 keyPoints into a text file to inspect them in full without terminal truncation\"",
+    "IsArtifact": "false",
+    "Overwrite": "true",
+    "TargetFile": "\"/Users/openclaw/Antigravity/MathDrillMaker/scratch/print_kp1_2_file.js\"",
+    "toolAction": "\"Creating temporary keyPoints file writer script\"",
+    "toolSummary": "\"Write to file\""
+  }
+}

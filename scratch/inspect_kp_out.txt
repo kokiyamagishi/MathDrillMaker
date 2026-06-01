@@ -1,0 +1,382 @@
+
+======================================================
+UNIT 1 KEYPOINTS:
+======================================================
+keyPoints: {
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <h3 style={{ fontSize: "28px", color: "#1976D2", margin: 0 }}>
+            {"1. ໂຄງສ້າງຫຼັກຂອງຈຳນວນ"}
+          </h3>
+          <p style={{ fontSize: "18px", margin: 0 }}>
+            {"ຕົວຢ່າງ: ໂຄງສ້າງຂອງຈຳນວນ 9.35 (ເກົ້າຈຸດສາມຫ້າ) ປະກອບດ້ວຍ:"}
+          </p>
+          <div
+            style={{
+              padding: "16px",
+              backgroundColor: "#E3F2FD",
+              border: "2px solid #2196F3",
+              borderRadius: "8px",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "10px",
+                fontSize: "18px",
+              }}
+            >
+              <div>{"• ຫຼັກຫົວໜ່ວຍ (1): ມີ 9 ຕົວ (9)"}</div>
+              <div>{"• ຫຼັກທົດສະນіຍົມທີ 1 (0.1): ມີ 3 ຕົວ (0.3)"}</div>
+              <div>{"• ຫຼັກທົດສະນິຍົມທີ 2 (0.01): ມີ 5 ຕົວ (0.05)"}</div>
+              <div
+                style={{
+                  fontWeight: "bold",
+                  color: "#0D47A1",
+                  fontSize: "18px",
+                  marginTop: "8px",
+                  borderTop: "1px solid #ccc",
+                  paddingTop: "8px",
+                  textAlign: "center",
+                }}
+              >
+                {"9 + 0.3 + 0.05 = 9.35"}
+              </div>
+            </div>
+          </div>
+
+          <h3
+            style={{ fontSize: "28px", color: "#1976D2", margin: "12px 0 0 0" }}
+          >
+            {"2. ການເລື່ອນຈຸດທົດສະນິຍົມ"}
+          </h3>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+              gap: "16px",
+              marginTop: "8px",
+            }}
+          >
+            {/* Multiplication */}
+            <div
+              style={{
+                padding: "12px",
+                backgroundColor: "#E8F5E9",
+                border: "2px solid #4CAF50",
+                borderRadius: "8px",
+              }}
+            >
+              <strong style={{ fontSize: "18px", color: "#2E7D32" }}>
+                {"ການຄູນດ້ວຍ 10 ແລະ 100 (×10, ×100)"}
+              </strong>
+              <p style={{ fontSize: "18px", margin: "8px 0" }}>
+                {"ຈຸດທົດສະນິຍົມຈະຍ້າຍໄປທາງຂວາ (Right)"}
+              </p>
+              <ul
+                style={{
+                  margin: 0,
+                  paddingLeft: "20px",
+                  fontSize: "18px",
+                  lineHeight: "1.5",
+                }}
+              >
+                <li>{"3.14 × 10 = 31.4 (ຍ້ອນ 1 ຫຼັກ)"}</li>
+                <li>{"3.14 × 100 = 314 (ຍ້ອນ 2 ຫຼັກ)"}</li>
+              </ul>
+            </div>
+
+            {/* Division */}
+            <div
+              style={{
+                padding: "12px",
+                backgroundColor: "#FFF3E0",
+                border: "2px solid #FF9800",
+                borderRadius: "8px",
+              }}
+            >
+              <strong style={{ fontSize: "18px", color: "#E65100" }}>
+                {"ການຫານດ້ວຍ 10 ແລະ 100 (÷10, ÷100)"}
+              </strong>
+              <p style={{ fontSize: "18px", margin: "8px 0" }}>
+                {"ຈຸດທົດສະນິຍົມຈະຍ້າຍໄປທາງຊ້າຍ (Left)"}
+              </p>
+              <ul
+                style={{
+                  margin: 0,
+                  paddingLeft: "20px",
+                  fontSize: "18px",
+                  lineHeight: "1.5",
+                }}
+              >
+                <li>{"365 ÷ 10 = 36.5 (ຍ້ອນ 1 ຫຼັກ)"}</li>
+                <li>{"365 ÷ 100 = 3.65 (ຍ້ອນ 2 ຫຼັກ)"}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+
+======================================================
+UNIT 2 KEYPOINTS:
+======================================================
+keyPoints: {
+      hint: {
+        text: "ເວລາຄູນຈຳນວນທົດສະນິຍົມຕາມທາງຕັ້ງ, ໃຫ້ຄູນຄືເລກທຳມະດາ ແລ້ວຈຶ່ງນັບຈຳນວນຫຼັກທົດສະນິຍົມທັງໝົດເພື່ອໝາຍຈຸດໃສ່ຜົນຄູນເດີ້!",
+      },
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+              gap: "16px",
+              marginTop: "8px",
+            }}
+          >
+            {/* 1. ການຄູນຈຳນວນທົດສະນິຍົມ (かけ算カード) */}
+            <div
+              style={{
+                padding: "12px",
+                backgroundColor: "#E8F5E9",
+                border: "2px solid #4CAF50",
+                borderRadius: "8px",
+              }}
+            >
+              <h3
+                style={{ fontSize: "22px", color: "#2E7D32", margin: "0 0 12px 0" }}
+              >
+                {"1. ການຄູນຈຳນວນທົດສະນິຍົມ"}
+              </h3>
+              <p style={{ margin: "0 0 10px 0", fontSize: "22px" }}>
+                {"ຕົວຢ່າງ: 2.4 × 1.3 = ? (ມີຫຼັກທົດສະນິຍົມລວມກັນ 2 ຫຼັກ):"}
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "20px",
+                  alignItems: "center",
+                  flexWrap: "wrap",
+                  justifyContent: "center",
+                }}
+              >
+                {/* Decimal Vertical Calculation illustration using custom table layout */}
+                <table
+                  className="math-illustration"
+                  style={{
+                    borderCollapse: "collapse",
+                    fontSize: "22px",
+                    fontFamily: "monospace",
+                    fontWeight: "bold",
+                    textAlign: "center",
+                  }}
+                >
+                  <tbody>
+                    <tr>
+                      <td style={{ width: "30px" }}></td>
+                      <td style={{ width: "30px" }}>{"2"}</td>
+                      <td
+                        style={{
+                          width: "10px",
+                          fontSize: "22px",
+                          verticalAlign: "bottom",
+                        }}
+                      >
+                        {"."}
+                      </td>
+                      <td style={{ width: "30px" }}>{"4"}</td>
+                    </tr>
+                    <tr>
+                      <td style={{ width: "30px" }}>{"×"}</td>
+                      <td style={{ width: "30px" }}>{"1"}</td>
+                      <td
+                        style={{
+                          width: "10px",
+                          fontSize: "22px",
+                          verticalAlign: "bottom",
+                        }}
+                      >
+                        {"."}
+                      </td>
+                      <td style={{ width: "30px" }}>{"3"}</td>
+                    </tr>
+                    <tr style={{ borderTop: "2px solid #000" }}>
+                      <td></td>
+                      <td>{"7"}</td>
+                      <td></td>
+                      <td>{"2"}</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>{"2"}</td>
+                      <td></td>
+                      <td>{"4"}</td>
+                    </tr>
+                    <tr style={{ borderTop: "2px solid #000" }}>
+                      <td>{"3"}</td>
+                      <td style={{ color: "red" }}>{"."}</td>
+                      <td>{"1"}</td>
+                      <td>{"2"}</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div
+                  style={{ fontSize: "22px", color: "#555", maxWidth: "280px" }}
+                >
+                  <div>{"1. ຄິດໄລ່ຄືກັບ 24 × 13 = 312."}</div>
+                  <div>
+                    {
+                      "2. ເນື່ອງຈາກ 2.4 (1 ຫຼັກ) ແລະ 1.3 (1 ຫຼັກ) ມີຫຼັກທົດສະນິຍົມລວມກັນ 2 ຫຼັກ."
+                    }
+                  </div>
+                  <div>
+                    {
+                      "3. ຈຶ່ງໝາຍຈຸດທົດສະນິຍົມຖອຍຫຼັງ 2 ຫຼັກ ເປັນ 3.12 (ໝາຍຈຸດສີແດງເດີ້!)."
+                    }
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 2. ການຫານຈຳນວນທົດສະນິຍົມ (わり算カード - 新規追加) */}
+            <div
+              style={{
+                padding: "12px",
+                backgroundColor: "#FFF3E0",
+                border: "2px solid #FF9800",
+                borderRadius: "8px",
+              }}
+            >
+              <h3
+                style={{ fontSize: "22px", color: "#E65100", margin: "0 0 12px 0" }}
+              >
+                {"2. ການຫານຈຳນວນທົດສະນິຍົມ"}
+              </h3>
+              <p style={{ margin: "0 0 10px 0", fontSize: "22px" }}>
+                {"ຕົວຢ່າງ: 6.5 ÷ 2.5 = ? (ເລື່ອນຈຸດໄປທາງຂວາ 1 ຫຼັກ):"}
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "20px",
+                  alignItems: "center",
+                  flexWrap: "wrap",
+                  justifyContent: "center",
+                }}
+              >
+                {/* わり算の筆算テーブル (HTML Table) */}
+                <table
+                  className="math-illustration"
+                  style={{
+                    borderCollapse: "collapse",
+                    fontSize: "22px",
+                    fontFamily: "monospace",
+                    fontWeight: "bold",
+                    textAlign: "center",
+                  }}
+                >
+                  <tbody>
+                    <tr>
+                      <td style={{ width: "30px" }}></td>
+                      <td style={{ width: "30px" }}></td>
+                      <td style={{ width: "30px" }}>{"2"}</td>
+                      <td
+                        style={{
+                          width: "10px",
+                          fontSize: "22px",
+                          color: "red",
+                          verticalAlign: "bottom",
+                        }}
+                      >
+                        {"."}
+                      </td>
+                      <td style={{ width: "30px" }}>{"6"}</td>
+                    </tr>
+                    <tr style={{ borderBottom: "2px solid #000" }}>
+                      <td style={{ width: "30px" }}>{"25"}</td>
+                      <td
+                        style={{
+                          width: "15px",
+                          borderRight: "2px solid #000",
+                          borderTopLeftRadius: "10px",
+                        }}
+                      >
+                        {")"}
+                      </td>
+                      <td style={{ width: "30px" }}>{"6"}</td>
+                      <td
+                        style={{
+                          width: "10px",
+                          fontSize: "22px",
+                          color: "#ccc",
+                          verticalAlign: "bottom",
+                        }}
+                      >
+                        {"."}
+                      </td>
+                      <td style={{ width: "30px" }}>{"5"}</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>{"5"}</td>
+                      <td></td>
+                      <td>{"0"}</td>
+                    </tr>
+                    <tr style={{ borderTop: "2px solid #000" }}>
+                      <td></td>
+                      <td></td>
+                      <td>{"1"}</td>
+                      <td
+                        style={{
+                          width: "10px",
+                          fontSize: "22px",
+                          color: "red",
+                          verticalAlign: "bottom",
+                        }}
+                      >
+                        {"."}
+                      </td>
+                      <td>{"5"}</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>{"1"}</td>
+                      <td></td>
+                      <td>{"5"}</td>
+                    </tr>
+                    <tr style={{ borderTop: "2px solid #000" }}>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>{"0"}</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div
+                  style={{ fontSize: "22px", color: "#555", maxWidth: "280px" }}
+                >
+                  <div>
+                    {
+                      "1. ເລື່ອນຈຸດທົດສະນິຍົມຂອງຕົວຫານ ແລະ ຕົວຕັ້ງຫານໄປທາງຂວາ 1 ຫຼັກ (ຄືກັບ 65 ÷ 25)."
+                    }
+                  </div>
+                  <div>{"2. ຄິດໄລ່ຄືເລກທຳມະດາ 65 ÷ 25 = 2 ເສດ 15."}</div>
+                  <div>
+                    {
+                      "3. ຕື່ມເລກ 0 ໃສ່ທາງຫຼັງຕົວເສດ 15 ຈະໄດ້ 150 ແລ້ວຫານຕໍ່ 150 ÷ 25 = 6. ຢ່າລືມໝາຍຈຸດໃສ່ຜົນຫານເດີ້!"
+                    }
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ),
+    }

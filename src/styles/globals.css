@@ -1,0 +1,208 @@
+/* ============================================
+   スウロボ・ジェネレーター - グローバルスタイル
+   ============================================ */
+
+/* --- フォント読み込み --- */
+@import url('https://fonts.googleapis.com/css2?family=Phetsarath:wght@400;700&family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* --- デザイントークン (CSS Custom Properties) --- */
+:root {
+  /* ベースカラー */
+  --color-primary: #F38020;        /* Cloudflareオレンジ */
+  --color-primary-light: #FFB74D;
+  --color-primary-dark: #E65100;
+  --color-accent: #0051AD;         /* 教育ブルー */
+  --color-accent-light: #4FC3F7;
+  --color-accent-dark: #003D82;
+
+  /* スウロボカラー */
+  --color-surobo-body: #F5F5F5;    /* マットホワイト */
+  --color-surobo-blue: #4FC3F7;    /* ボディブルー */
+  --color-surobo-dark: #1A237E;    /* バイザーダーク */
+  --color-surobo-cyan: #00E5FF;    /* 表情ライト */
+  --color-surobo-heart: #FF6D00;   /* ハートSマーク */
+
+  /* ヒントボックス */
+  --color-hint-green-bg: #E8F5E9;
+  --color-hint-green-border: #66BB6A;
+  --color-hint-blue-bg: #E3F2FD;
+  --color-hint-blue-border: #42A5F5;
+
+  /* テキスト */
+  --color-text: #1A1A1A;
+  --color-text-light: #555555;
+  --color-text-muted: #888888;
+  --color-border: #333333;
+  --color-border-light: #CCCCCC;
+
+  /* 背景 */
+  --color-bg: #FFFFFF;
+  --color-bg-subtle: #FAFAFA;
+  --color-bg-muted: #F0F0F0;
+
+  /* 解答（赤字） */
+  --color-answer: #D32F2F;
+  --color-answer-light: #FFCDD2;
+
+  /* フォント */
+  --font-lao: 'Phetsarath', sans-serif;
+  --font-number: 'Inter', sans-serif;
+  --font-heading: 'Phetsarath', sans-serif;
+
+  /* サイズスケール */
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 1.875rem;   /* 30px */
+  --text-4xl: 2.25rem;    /* 36px */
+  --text-5xl: 3rem;       /* 48px */
+
+  /* 間隔スケール */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+
+  /* 角丸 */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* シャドウ (画面表示用のみ) */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- リセット & ベース --- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-lao);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.7;
+}
+
+/* ラオス語テキストのデフォルトスタイル */
+p, li, td, th, label, span {
+  font-family: var(--font-lao);
+}
+
+/* 数字・数式には Inter を使用 */
+.number, .math, .score, .page-number {
+  font-family: var(--font-number);
+}
+
+/* --- 見出し --- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-text);
+}
+
+h1 { font-size: var(--text-4xl); }
+h2 { font-size: var(--text-3xl); }
+h3 { font-size: var(--text-2xl); }
+h4 { font-size: var(--text-xl); }
+h5 { font-size: var(--text-lg); }
+h6 { font-size: var(--text-base); }
+
+/* --- リンク --- */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* --- 画像 --- */
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- ユーティリティ --- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-primary { color: var(--color-primary); }
+.text-accent { color: var(--color-accent); }
+.text-answer { color: var(--color-answer); }
+.text-muted { color: var(--color-text-muted); }
+
+.font-bold { font-weight: 700; }
+.font-extra-bold { font-weight: 800; }
+.font-black { font-weight: 900; }
+
+/* --- プレミアムUI用アニメーション & Glassmorphism --- */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.animated-bg {
+  background: linear-gradient(-45deg, #FFB74D, #4FC3F7, #E8F5E9, #F3E5F5);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.glass-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+

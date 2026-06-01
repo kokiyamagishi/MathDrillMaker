@@ -12,32 +12,71 @@ export const unit7Data: UnitData = {
       text: "ຄ່າສະເລ່ຍແມ່ນການແບ່ງປັນໃຫ້ເທົ່າໆກັນ! ຈື່ສູດ: ຄ່າສະເລ່ຍ = ຜົນບວກທັງໝົດ ÷ ຈຳນວນເດີ້!",
     },
     content: (
-      <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
         <h3 style={{ fontSize: "28px", color: "#1976D2", margin: 0 }}>
-          {"1. ສູດຄິດໄລ່ຄ່າສະເລ່ຍ (Average Formula)"}
+          {"1. ສູດຄິດໄລ່ຄ່າສະເລ່ຍ"}
         </h3>
         <div
           style={{
-            padding: "16px",
+            display: "flex",
+            gap: "24px",
+            flexWrap: "wrap",
+            alignItems: "center",
+            padding: "20px",
             backgroundColor: "#E3F2FD",
             border: "2px solid #2196F3",
             borderRadius: "8px",
-            fontSize: "22px",
           }}
         >
-          <p style={{ margin: "0 0 10px 0", fontWeight: "bold" }}>
-            {"ຄ່າສະເລ່ຍ = ຜົນບວກທັງໝົດ ÷ ຈຳນວນ"}
-          </p>
-          <div style={{ color: "#0D47A1", fontSize: "22px" }}>
-            {"ຕົວຢ່າງ: ຄະແນນສອບເສັງ 3 ຄັ້ງແມ່ນ 80, 90, 70. ຄ່າສະເລ່ຍແມ່ນ:"}
-            <div
-              style={{
-                fontSize: "22px",
-                fontWeight: "bold",
-                marginTop: "6px",
-              }}
-            >
-              {"(80 + 90 + 70) ÷ 3 = 240 ÷ 3 = 80 (ຄະແນນ)"}
+          {/* SVG Visual Explanation */}
+          <div style={{ backgroundColor: "#fff", padding: "16px", borderRadius: "8px", boxShadow: "0 4px 12px rgba(0,0,0,0.08)", width: "500px", display: "flex", justifyContent: "center", flexShrink: 0 }}>
+            <svg width="460" height="145">
+              {/* Left Side: Before */}
+              <text x="92" y="20" textAnchor="middle" style={{ fontSize: "13px", fontWeight: "bold" }} fill="#777">{"ກ່ອນສະເລ່ຍ"}</text>
+              <rect x="40" y="50" width="24" height="60" fill="#90CAF9" stroke="#2196F3" strokeWidth="1.5" rx="1.5"/>
+              <text x="52" y="128" textAnchor="middle" style={{ fontSize: "12px" }}>{"80"}</text>
+              
+              <rect x="80" y="40" width="24" height="70" fill="#E0E0E0" stroke="#9E9E9E" strokeWidth="1.5" rx="1.5"/>
+              <text x="92" y="128" textAnchor="middle" style={{ fontSize: "12px" }}>{"90"}</text>
+              
+              <rect x="120" y="60" width="24" height="50" fill="#A5D6A7" stroke="#4CAF50" strokeWidth="1.5" rx="1.5"/>
+              <text x="132" y="128" textAnchor="middle" style={{ fontSize: "12px" }}>{"70"}</text>
+
+              {/* Curved arrow from 90 to 70 */}
+              <path d="M 92,40 Q 112,15 132,56" fill="none" stroke="red" strokeWidth="1.5" strokeDasharray="3,3"/>
+              <polygon points="132,56 126,52 133,49" fill="red"/>
+
+              {/* Center Arrow */}
+              <text x="210" y="82" textAnchor="middle" style={{ fontSize: "28px", fontWeight: "bold" }} fill="#1976D2">{"→"}</text>
+
+              {/* Right Side: After (Leveled) */}
+              <text x="350" y="20" textAnchor="middle" style={{ fontSize: "13px", fontWeight: "bold" }} fill="#1565C0">{"ຫຼັງສະເລ່ຍ (ພຽງກັນ)"}</text>
+              <rect x="290" y="50" width="24" height="60" fill="#2196F3" stroke="#1565C0" strokeWidth="1.5" rx="1.5"/>
+              <text x="302" y="128" textAnchor="middle" style={{ fontSize: "12px", fontWeight: "bold" }} fill="#1565C0">{"80"}</text>
+
+              <rect x="330" y="50" width="24" height="60" fill="#2196F3" stroke="#1565C0" strokeWidth="1.5" rx="1.5"/>
+              <text x="342" y="128" textAnchor="middle" style={{ fontSize: "12px", fontWeight: "bold" }} fill="#1565C0">{"80"}</text>
+
+              <rect x="370" y="50" width="24" height="60" fill="#2196F3" stroke="#1565C0" strokeWidth="1.5" rx="1.5"/>
+              <text x="382" y="128" textAnchor="middle" style={{ fontSize: "12px", fontWeight: "bold" }} fill="#1565C0">{"80"}</text>
+
+              {/* Dotted Average Line */}
+              <line x1="275" y1="50" x2="405" y2="50" stroke="red" strokeWidth="2" strokeDasharray="3,3"/>
+            </svg>
+          </div>
+
+          <div style={{ flex: "1 1 240px", fontSize: "22px", lineHeight: "1.6" }}>
+            <div style={{ fontWeight: "bold", color: "#0D47A1", marginBottom: "8px" }}>
+              {"ຄ່າສະເລ່ຍ = ຜົນບວກທັງໝົດ ÷ ຈຳນວນ"}
+            </div>
+            <div style={{ fontSize: "18px", color: "#333" }}>
+              {"ຕົວຢ່າງ: ຄະແນນສອບເສັງ 3 ຄັ້ງແມ່ນ 80, 90, 70."}
+              <div style={{ fontWeight: "bold", color: "#1565C0", marginTop: "4px" }}>
+                {"(80 + 90 + 70) ÷ 3 = 240 ÷ 3 = 80 (ຄະແນນ)"}
+              </div>
+            </div>
+            <div style={{ fontSize: "15px", color: "#555", marginTop: "8px" }}>
+              {"* ຄ່າສະເລ່ຍແມ່ນການເຮັດໃຫ້ແຕ່ລະຈຳນວນອອກມາພຽງກັນ (ເທົ່າກັນ)!"}
             </div>
           </div>
         </div>
@@ -130,7 +169,7 @@ export const unit7Data: UnitData = {
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p>
               {"ຈົ່ງແກ້ໂຈດບັນຫາໄລຍະທາງຈາກບາດກ້າວ: "}{" "}
-              <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              <span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
@@ -174,7 +213,7 @@ export const unit7Data: UnitData = {
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p>
               {"ຈົ່ງແກ້ໂຈດບັນຫານ້ຳໜັກສະເລ່ຍໃໝ່: "}{" "}
-              <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              <span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <div
               style={{

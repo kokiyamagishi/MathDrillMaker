@@ -5,42 +5,94 @@ export const unit16Data: UnitData = {
   unitNumber: 16,
   unitTitle: "ລະບົບຫົວໜ່ວຍວັດແທກສາກົນ",
   unitGoal:
-    "ເຂົ້າໃຈຄວາມສຳພັນລະຫວ່າງຫົວໜ່ວຍວັດແທກຄວາມຍາວ, ເນື້ອທີ່, ບໍລິມາດ ແລະ ນ້ຳໜັກໃນລະບົບເມດ (Metre System)",
+    "ເຂົ້າໃຈຄວາມສຳພັນລະຫວ່າງຫົວໜ່ວຍວັດແທກຄວາມຍາວ, ເນື້ອທີ່, ບໍລິມາດ ແລະ ນ້ຳໜັກໃນລະບົບເມດ",
   textbookRef: "ປຶ້ມແບບຮຽນ ປ.5 ໜ້າ 184-189",
   keyPoints: {
     hint: {
       text: "ລະບົບຫົວໜ່ວຍເມດໃຊ້ຫຼັກສິບ! ເມື່ອເພີ່ມຂຶ້ນ 10 ເທື່ອ, 100 ເທື່ອ ຈະມີການປ່ຽນຫົວໜ່ວຍທີ່ເປັນລະບົບສະໝໍ່າສະເໝີເດີ້!",
     },
     content: (
-      <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
         <h3 style={{ fontSize: "28px", color: "#1976D2", margin: 0 }}>
-          {"1. ລະບົບຫົວໜ່ວຍວັດແທກ (System of Units)"}
+          {"1. ລະບົບຫົວໜ່ວຍວັດແທກ"}
         </h3>
         <div
           style={{
-            padding: "16px",
+            display: "flex",
+            gap: "24px",
+            flexWrap: "wrap",
+            alignItems: "center",
+            padding: "20px",
             backgroundColor: "#E8F5E9",
             border: "2px solid #4CAF50",
             borderRadius: "8px",
-            fontSize: "22px",
-            lineHeight: "1.8",
           }}
         >
-          <div>
-            <strong>{"• ຄວາມຍາວ (Length):"}</strong>
-            {" 1 km = 1,000 m, 1 m = 100 cm, 1 cm = 10 mm"}
+          {/* SVG Visual Explanation */}
+          <div style={{ backgroundColor: "#fff", padding: "16px", borderRadius: "8px", boxShadow: "0 4px 12px rgba(0,0,0,0.08)", width: "500px", display: "flex", justifyContent: "center", flexShrink: 0 }}>
+            <svg width="468" height="250">
+              {/* Length Flow */}
+              <text x="15" y="25" style={{ fontSize: "13px", fontWeight: "bold" }} fill="#2E7D32">{"ຄວາມຍາວ (Length)"}</text>
+              {/* km node */}
+              <circle cx="35" cy="65" r="17" fill="#E8F5E9" stroke="#2E7D32" strokeWidth="1.5"/>
+              <text x="35" y="69" textAnchor="middle" style={{ fontSize: "9px", fontWeight: "bold" }} fill="#2E7D32">{"km"}</text>
+              
+              <path d="M 52,65 L 142,65" fill="none" stroke="#2E7D32" strokeWidth="1"/>
+              <polygon points="142,65 136,62 136,68" fill="#2E7D32"/>
+              <text x="97" y="58" textAnchor="middle" style={{ fontSize: "10px", fontWeight: "bold" }} fill="#2E7D32">{"×1000"}</text>
+
+              {/* m node */}
+              <circle cx="160" cy="65" r="17" fill="#E8F5E9" stroke="#2E7D32" strokeWidth="1.5"/>
+              <text x="160" y="69" textAnchor="middle" style={{ fontSize: "9px", fontWeight: "bold" }} fill="#2E7D32">{"m"}</text>
+
+              <path d="M 177,65 L 267,65" fill="none" stroke="#2E7D32" strokeWidth="1"/>
+              <polygon points="267,65 261,62 261,68" fill="#2E7D32"/>
+              <text x="222" y="58" textAnchor="middle" style={{ fontSize: "10px", fontWeight: "bold" }} fill="#2E7D32">{"×100"}</text>
+
+              {/* cm node */}
+              <circle cx="285" cy="65" r="17" fill="#E8F5E9" stroke="#2E7D32" strokeWidth="1.5"/>
+              <text x="285" y="69" textAnchor="middle" style={{ fontSize: "9px", fontWeight: "bold" }} fill="#2E7D32">{"cm"}</text>
+
+              <path d="M 302,65 L 392,65" fill="none" stroke="#2E7D32" strokeWidth="1"/>
+              <polygon points="392,65 386,62 386,68" fill="#2E7D32"/>
+              <text x="347" y="58" textAnchor="middle" style={{ fontSize: "10px", fontWeight: "bold" }} fill="#2E7D32">{"×10"}</text>
+
+              {/* mm node */}
+              <circle cx="410" cy="65" r="17" fill="#E8F5E9" stroke="#2E7D32" strokeWidth="1.5"/>
+              <text x="410" y="69" textAnchor="middle" style={{ fontSize: "9px", fontWeight: "bold" }} fill="#2E7D32">{"mm"}</text>
+
+
+              {/* Weight Flow */}
+              <text x="15" y="145" style={{ fontSize: "13px", fontWeight: "bold" }} fill="#E65100">{"ນ້ຳໜັກ (Weight)"}</text>
+              {/* t node */}
+              <circle cx="70" cy="185" r="17" fill="#FFF3E0" stroke="#E65100" strokeWidth="1.5"/>
+              <text x="70" y="189" textAnchor="middle" style={{ fontSize: "9px", fontWeight: "bold" }} fill="#E65100">{"t"}</text>
+
+              <path d="M 87,185 L 217,185" fill="none" stroke="#E65100" strokeWidth="1"/>
+              <polygon points="217,185 211,182 211,188" fill="#E65100"/>
+              <text x="152" y="178" textAnchor="middle" style={{ fontSize: "10px", fontWeight: "bold" }} fill="#E65100">{"×1000"}</text>
+
+              {/* kg node */}
+              <circle cx="235" cy="185" r="17" fill="#FFF3E0" stroke="#E65100" strokeWidth="1.5"/>
+              <text x="235" y="189" textAnchor="middle" style={{ fontSize: "9px", fontWeight: "bold" }} fill="#E65100">{"kg"}</text>
+
+              <path d="M 252,185 L 382,185" fill="none" stroke="#E65100" strokeWidth="1"/>
+              <polygon points="382,185 376,182 376,188" fill="#E65100"/>
+              <text x="317" y="178" textAnchor="middle" style={{ fontSize: "10px", fontWeight: "bold" }} fill="#E65100">{"×1000"}</text>
+
+              {/* g node */}
+              <circle cx="400" cy="185" r="17" fill="#FFF3E0" stroke="#E65100" strokeWidth="1.5"/>
+              <text x="400" y="189" textAnchor="middle" style={{ fontSize: "9px", fontWeight: "bold" }} fill="#E65100">{"g"}</text>
+            </svg>
           </div>
-          <div>
-            <strong>{"• ເນື້ອທີ່ (Area):"}</strong>
-            {" 1 ha = 10,000 m², 1 a = 100 m²"}
-          </div>
-          <div>
-            <strong>{"• น້ຳໜັກ (Weight):"}</strong>
-            {" 1 t (ໂຕນ) = 1,000 kg, 1 kg = 1,000 g"}
-          </div>
-          <div>
-            <strong>{"• ບໍລິມາດ (Volume):"}</strong>
-            {" 1 L = 1,000 mL = 1,000 cm³"}
+
+          <div style={{ flex: "1 1 240px", fontSize: "22px", lineHeight: "1.6" }}>
+            <div style={{ fontSize: "18px", color: "#333" }}>
+              <div><strong>{"• ຄວາມຍາວ:"}</strong>{" 1 km = 1,000 m, 1 m = 100 cm, 1 cm = 10 mm"}</div>
+              <div><strong>{"• ເນື້ອທີ່:"}</strong>{" 1 ha = 10,000 m², 1 a = 100 m²"}</div>
+              <div><strong>{"• ນ້ຳໜັກ:"}</strong>{" 1 t (ໂຕນ) = 1,000 kg, 1 kg = 1,000 g"}</div>
+              <div><strong>{"• ບໍລິມາດ:"}</strong>{" 1 L = 1,000 mL = 1,000 cm³"}</div>
+            </div>
           </div>
         </div>
       </div>
@@ -64,15 +116,21 @@ export const unit16Data: UnitData = {
               padding: "8px 16px",
             }}
           >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) 1.5 kg ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"g"}</span>
+            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+              <span>{"(1) 1.5 kg = ຈັກ g?"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                <span>{"ຄຳຕອບ:"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                <span>{"g"}</span>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) 1.5 m ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"cm"}</span>
+            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+              <span>{"(2) 1.5 m = ຈັກ cm?"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                <span>{"ຄຳຕອບ:"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                <span>{"cm"}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -95,15 +153,21 @@ export const unit16Data: UnitData = {
               padding: "8px 16px",
             }}
           >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) 2.5 L ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"mL"}</span>
+            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+              <span>{"(1) 2.5 L = ຈັກ mL?"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                <span>{"ຄຳຕອບ:"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                <span>{"mL"}</span>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) 3 ha ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              <span>{"m²"}</span>
+            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+              <span>{"(2) 3 ha = ຈັກ m²?"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
+                <span>{"ຄຳຕອບ:"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                <span>{"m²"}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -119,7 +183,7 @@ export const unit16Data: UnitData = {
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p>
               {"ຈົ່ງແກ້ໂຈດບັນຫາການປ່ຽນຫົວໜ່ວຍນ້ຳໜັກ: "}{" "}
-              <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              <span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
@@ -163,7 +227,7 @@ export const unit16Data: UnitData = {
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p>
               {"ຈົ່ງແກ້ໂຈດບັນຫາການປ່ຽນຫົວໜ່ວຍຄວາມຍາວ: "}{" "}
-              <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              <span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <div
               style={{
@@ -210,7 +274,7 @@ export const unit16Data: UnitData = {
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p>
             {"ຈົ່ງແກ້ໂຈດບັນຫາບໍລິມາດນ້ຳ: "}{" "}
-            <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <div
             style={{
@@ -254,7 +318,7 @@ export const unit16Data: UnitData = {
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p>
             {"ຈົ່ງແກ້ໂຈດບັນຫາເນື້ອທີ່ດິນ: "}{" "}
-            <span className="point-label">{"(5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <div
             style={{
