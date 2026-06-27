@@ -142,7 +142,7 @@ export const unit6Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p>{"ທົດສອບປະຈຳບົດ: ຈົ່ງຄິດໄລ່ເລກລົບຕໍ່ໄປນີ້: "} <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span></p>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px 24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px 24px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
                 <span style={{ fontSize: "18px", fontWeight: "bold", width: "30px" }}>{"(1)"}</span>
                 <span>{"4 - 1 ="}</span>
