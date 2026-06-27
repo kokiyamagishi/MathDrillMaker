@@ -16,13 +16,13 @@ export const unit33Data: UnitData = {
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.2 ໜ້າ 143-150",
   subSections: [
     {
-      title: "1. ເສັ້ນຈອມກາງ ແລະ ຈຸດ重心 (Median and Centroid)",
+      title: "1. ເສັ້ນຈອມກາງ ແລະ ຈຸດໃຈກາງຄວາມຖ່ວງ (Median and Centroid)",
       keyPoint: {
-        title: "ຄຸນລັກສະນະອັດຕາສ່ວນ 2:1 ຂອງຈຸດ重心 G",
+        title: "ຄຸນລັກສະນະອັດຕາສ່ວນ 2:1 ຂອງຈຸດ G",
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ເສັ້ນຈອມກາງ ແມ່ນເສັ້ນຊື່ທີ່ຂີດຈາກຈອມຫາເມັດເຄິ່ງກາງຂອງຂ້າງກົງກັນຂ້າມ. 3 ເສັ້ນຈອມກາງຕັດກັນຢູ່ຈຸດ重心 G:"}
+              {"ເສັ້ນຈອມກາງ ແມ່ນເສັ້ນຊື່ທີ່ຂີດຈາກຈອມຫາເມັດເຄິ່ງກາງຂອງຂ້າງກົງກັນຂ້າມ. 3 ເສັ້ນຈອມກາງຕັດກັນຢູ່ຈຸດ G:"}
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0" }}>
               {"• ຈຸດ G ຈະແບ່ງເສັ້ນຈອມກາງ AM ອອກເປັນອັດຕາສ່ວນ "} <span className="math">{"2:1"}</span> {" ຈາກຈອມ:"}<br />
@@ -89,7 +89,7 @@ export const unit33Data: UnitData = {
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຖ້າເສັ້ນຈອມກາງ AM ຍາວ 12 cm. ທ່ອນຍາວຈາກຈອມຫາຈຸດ重心 AG ຈະຍາວຈັກ cm?"}</span>
+                  <span>{"ຖ້າເສັ້ນຈອມກາງ AM ຍາວ 12 cm. ທ່ອນຍາວຈາກຈອມຫາຈຸດໃຈກາງຄວາມຖ່ວງ AG ຈະຍາວຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                   <span>{"cm"}</span>
                 </div>
@@ -204,7 +204,7 @@ export const unit33Data: UnitData = {
               {"ຊອກຫາ x ຈາກເສັ້ນຈອມກາງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຖ້າທ່ອນເສັ້ນຈອມກາງ AM ຍາວ "} <span className="math">{"3x cm"}</span>{", ໂດຍມີຈຸດ重心 G ເຊິ່ງເຮັດໃຫ້ AG = 10 cm. ຈົ່ງຊອກຫາຄ່າຂອງ x. (AG = 2/3 AM)"}
+              {"ຖ້າທ່ອນເສັ້ນຈອມກາງ AM ຍາວ "} <span className="math">{"3x cm"}</span>{", ໂດຍມີຈຸດ G ເຊິ່ງເຮັດໃຫ້ AG = 10 cm. ຈົ່ງຊອກຫາຄ່າຂອງ x. (AG = 2/3 AM)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x ="}</span>
@@ -276,7 +276,7 @@ export const unit33Data: UnitData = {
       {
         questionNumber: 1,
         answers: [
-          <span key="1">{"(1) 2:1 (ອັດຕາສ່ວນຈາກຈອມຫາຈຸດ重心 ແລະ ຫາເມັດເຄິ່ງກາງແມ່ນ 2:1)"}</span>,
+          <span key="1">{"(1) 2:1 (ອັດຕາສ່ວນຈາກຈອມຫາຈຸດໃຈກາງຄວາມຖ່ວງ ແລະ ຫາເມັດເຄິ່ງກາງແມ່ນ 2:1)"}</span>,
           <span key="2">{"(2) 8 cm (AG = 12 × 2/3 = 8 cm)"}</span>,
           <span key="3">{"(3) 6 cm (AG = 2 × GM = 2 × 3 = 6 cm)"}</span>,
           <span key="4">{"(4) 15 cm (AM = AG × 3/2 = 10 × 1.5 = 15 cm)"}</span>,
@@ -318,6 +318,6 @@ export const unit33Data: UnitData = {
         ]
       }
     ],
-    advice: "ຝຶກຝົນການວິເຄາະເສັ້ນທີ່ສຳຄັນ ແລະ ອັດຕາສ່ວນຂອງຈຸດ重心 ຈະຊ່ວຍໃຫ້ເຮົາເຂົ້າໃຈເລຂາຄະນິດໄດ້ດີຂຶ້ນທຸກໆມື້ເດີ້!"
+    advice: "ຝຶກຝົນການວິເຄາະເສັ້ນທີ່ສຳຄັນ ແລະ ອັດຕາສ່ວນຂອງຈຸດໃຈກາງຄວາມຖ່ວງ ຈະຊ່ວຍໃຫ້ເຮົາເຂົ້າໃຈເລຂາຄະນິດໄດ້ດີຂຶ້ນທຸກໆມື້ເດີ້!"
   }
 };

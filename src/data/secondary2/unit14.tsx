@@ -22,11 +22,11 @@ export const unit14Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", color: "#37474F" }}>
                 <div>
                   <strong style={{ color: "#0D47A1" }}>{"1. ເຄິ່ງຄືທຽບໃສ່ແກນ (Line Symmetry)"}</strong>
-                  <p style={{ margin: "4px 0 0 0", fontSize: "1.15rem" }}>{"ແມ່ນການພັບຮູບຕາມແກນ (折りたたみ) ແລ້ວສອງຊีกເຕັງກັນພໍດີ. ເຊັ່ນ: ຮູບສາມແຈທ່ຽງ, ຜີເສື້ອ."}</p>
+                  <p style={{ margin: "4px 0 0 0", fontSize: "1.15rem" }}>{"ແມ່ນການພັບຮູບຕາມແກນ (ການພັບ) ແລ້ວສອງຊีกເຕັງກັນພໍດີ. ເຊັ່ນ: ຮູບສາມແຈທ່ຽງ, ຜີເສື້ອ."}</p>
                 </div>
                 <div>
                   <strong style={{ color: "#0D47A1" }}>{"2. ເຄິ່ງຄືທຽບໃສ່ເມັດ (Point Symmetry)"}</strong>
-                  <p style={{ margin: "4px 0 0 0", fontSize: "1.15rem" }}>{"ແມ່ນການໝູນຮູບ 180 ອົງສາ ອ້ອມໃຈກາງ (回転) ແລ້ວເຕັງກັບຮູບເດີມ. ເຊັ່ນ: ຮູບສີ່ແຈຂະໜານ, ໃບພັດລົມ."}</p>
+                  <p style={{ margin: "4px 0 0 0", fontSize: "1.15rem" }}>{"ແມ່ນການໝູນຮູບ 180 ອົງສາ ອ້ອມໃຈກາງ (ການໝູນ) ແລ້ວເຕັງກັບຮູບເດີມ. ເຊັ່ນ: ຮູບສີ່ແຈຂະໜານ, ໃບພັດລົມ."}</p>
                 </div>
               </div>
             </div>

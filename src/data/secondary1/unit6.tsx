@@ -364,7 +364,7 @@ export const unit6Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p>
-            {"ຈົ່ງແກ້ເລກ四則演算 (ການຄິດໄລ່ປະສົມ) ຕໍ່ໄປນີ້: "}{" "}
+            {"ຈົ່ງແກ້ເລກການຄິດໄລ່ປະສົມຕໍ່ໄປນີ້: "}{" "}
             <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
           </p>
           <div

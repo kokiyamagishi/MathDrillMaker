@@ -19,7 +19,7 @@ export const unit23Data: UnitData = {
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
               <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }}>{"ຕົວຢ່າງລະບົບອະສົມຜົນ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
-                {"ລະບົບ: { x² - 4 ≥ 0 并且 -x² + 5x - 4 > 0 }"}
+                {"ລະບົບ: { x² - 4 ≥ 0 ແລະ -x² + 5x - 4 > 0 }"}
                 <br />
                 {"- ອະສົມຜົນ (1): x² - 4 ≥ 0 ⇒ x ∈ ]-∞, -2] ∪ [2, +∞["}
                 <br />

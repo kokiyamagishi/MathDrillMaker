@@ -72,7 +72,7 @@ export const unit1Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຄຳຖາມທີ 1: ຈົ່ງຄິດໄລ່ ແລະ 简化 ເລກກຳລັງຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span>
+                {"ຄຳຖາມທີ 1: ຈົ່ງຄິດໄລ່ ແລະ ເຮັດໃຫ້ງ່າຍດາຍ ເລກກຳລັງຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span>
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
@@ -167,7 +167,7 @@ export const unit1Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ປ່ຽນ "} <span className="math">{"5⁻²"}</span> {" ໃຫ້ເປັນເລກສ່ວນ (分子 = 1) ຈະໄດ້分母ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ປ່ຽນ "} <span className="math">{"5⁻²"}</span> {" ໃຫ້ເປັນເລກສ່ວນ (ຈຳນວນພູດ = 1) ຈະໄດ້ພູດແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 

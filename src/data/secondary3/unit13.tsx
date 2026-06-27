@@ -204,7 +204,7 @@ export const unit13Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຄິດໄລ່ ແລະ 简化 ສຳນວນຮາກປະສົມ (Simplifying Mixed Radical Expressions): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຄິດໄລ່ ແລະ ເຮັດໃຫ້ງ່າຍດາຍ ສຳນວນຮາກປະສົມ (Simplifying Mixed Radical Expressions): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງເຮັດໃຫ້ສຳນວນຕໍ່ໄປນີ້ງ່າຍດາຍທີ່ສຸດ ຢູ່ໃນຮູບແບບ "} <span className="math">{"a√5"}</span> {": "}

@@ -178,7 +178,7 @@ export const unit27Data: UnitData = {
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ຮູບກ້ອນມົນທີ່ມີລັດສະໝີ "} <span className="math">{"r = 9 cm"}</span> {" 有ມີບໍລິມາດແມ່ນຈັກ cm³?"}</span>
+                  <span>{"ຮູບກ້ອນມົນທີ່ມີລັດສະໝີ "} <span className="math">{"r = 9 cm"}</span> {" ມີບໍລິມາດແມ່ນຈັກ cm³?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
                 </div>
               </div>

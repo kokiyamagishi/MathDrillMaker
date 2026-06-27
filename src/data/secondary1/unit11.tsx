@@ -71,7 +71,7 @@ export const unit11Data: UnitData = {
                 {"ຖ້າສອງເສັ້ນຊື່ຕັດກັນ, ພວກມັນມີເມັດຮ່ວມກັນ (ເມັດຕັດກັນ) ໄດ້ຫຼາຍທີ່ສຸດຈັກເມັດ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
-                <span>{"ຕອບ: 有ໄດ້ຫຼາຍທີ່ສຸດ"}</span>
+                <span>{"ຕອບ: ມີໄດ້ຫຼາຍທີ່ສຸດ"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 <span>{"ເມັດ."}</span>
               </div>
@@ -83,7 +83,7 @@ export const unit11Data: UnitData = {
     {
       title: "2. ທ່ອນຊື່ ແລະ ເຄິ່ງເສັ້ນຊື່ (Segments and Rays)",
       keyPoint: {
-        title: "精度ຄວາມແຕກຕ່າງລະຫວ່າງທ່ອນຊື່ ແລະ ເຄິ່ງເສັ້ນຊື່",
+        title: "ຄວາມແຕກຕ່າງລະຫວ່າງທ່ອນຊື່ ແລະ ເຄິ່ງເສັ້ນຊື່",
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>

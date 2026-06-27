@@ -205,7 +205,7 @@ export const unit21Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ທີ່ຕັ້ງສຳພັດເມື່ອ Δ < 0: "}<span className="point-label">{"(5 ຄະແ念)"}</span>
+            {"ທີ່ຕັ້ງສຳພັດເມື່ອ Δ < 0: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຖ້າສົມຜົນຈຸດຕັດລະຫວ່າງປາຣາໂບນ ແລະ ເສັ້ນຊື່ມີ Δ = -12. ທີ່ຕັ້ງສຳພັດຂອງພວກມັນແມ່ນຫຍັງ?"}

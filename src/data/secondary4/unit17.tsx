@@ -4,7 +4,7 @@ import { UnitData } from "../units2";
 export const unit17Data: UnitData = {
   unitNumber: 17,
   unitTitle: "ພາກທີ II - ບົດທີ 17: ຕຳລາໃນຮູບຮ່າງ y = ax² + bx + c (Quadratic Functions in form y = ax² + bx + c)",
-  unitGoal: "ຮຽນຮູ້ການຜັນປ່ຽນຕຳລາຂັ້ນສອງທົ່ວໄປໃຫ້ເປັນຮູບຮ່າງ标准 (Canonical form), ກຳນົດເມັດຈອມ S(-b/2a, -Δ/4a), ຊອກຫາແກນເຄິ່ງຄື x = -b/2a, ແລະ ຊອກຫາສົມຜົນຕຳລາຈາກເມັດຈຸດ",
+  unitGoal: "ຮຽນຮູ້ການຜັນປ່ຽນຕຳລາຂັ້ນສອງທົ່ວໄປໃຫ້ເປັນຮູບຮ່າງມາດຕະຖານ (Canonical form), ກຳນົດເມັດຈອມ S(-b/2a, -Δ/4a), ຊອກຫາແກນເຄິ່ງຄື x = -b/2a, ແລະ ຊອກຫາສົມຜົນຕຳລາຈາກເມັດຈຸດ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 83-85",
   subSections: [
     {

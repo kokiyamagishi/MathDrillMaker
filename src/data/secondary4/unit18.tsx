@@ -27,7 +27,7 @@ export const unit18Data: UnitData = {
             <div style={{ padding: "16px", backgroundColor: "#FFEBEE", borderRadius: "8px", border: "1px solid #FFCDD2" }}>
               <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#C62828" }}>{"ຖ້າ a < 0 (ປາຣາໂບນຂວ້ຳ):"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
-                {"- 有ຄ່າສູງສຸດແມ່ນ: max y = q = -Δ/(4a) ເມື່ອ x = -b/(2a)."}
+                {"- ມີຄ່າສູງສຸດແມ່ນ: max y = q = -Δ/(4a) ເມື່ອ x = -b/(2a)."}
                 <br />
                 {"- ບໍ່ມີຄ່າຕ່ຳສຸດ (min y ບໍ່ກຳນົດ)."}
               </p>

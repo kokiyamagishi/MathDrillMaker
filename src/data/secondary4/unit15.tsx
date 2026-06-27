@@ -110,7 +110,7 @@ export const unit15Data: UnitData = {
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"- ຕຳລາຈະເພີ່ມ (increasing) ໃນຫວ່າງ ]-∞, b]"}
                 <br />
-                {"- ຕຳລາຈະຫຼຸດ (decreasing) 在ຫວ່າງ [b, +∞["}
+                {"- ຕຳລາຈະຫຼຸດ (decreasing) ໃນຫວ່າງ [b, +∞["}
               </p>
             </div>
           </div>

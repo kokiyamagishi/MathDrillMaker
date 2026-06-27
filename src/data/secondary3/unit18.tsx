@@ -34,7 +34,7 @@ export const unit18Data: UnitData = {
             {/* Coordinate Slopes SVG */}
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
-                <span>{"ທິດທາງຂອງຄວາມຊັນ m (Slope 方向)"}</span>
+                <span>{"ທິດທາງຂອງຄວາມຊັນ m (ທິດທາງຂອງຄວາມຊັນ)"}</span>
                 <svg viewBox="0 0 200 100" style={{ width: "100%", maxWidth: "180px", height: "auto" }}>
                   {/* Axes */}
                   <line x1="10" y1="50" x2="190" y2="50" stroke="#37474F" strokeWidth="1" />
