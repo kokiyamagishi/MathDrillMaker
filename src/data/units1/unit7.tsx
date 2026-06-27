@@ -113,54 +113,54 @@ export const unit7Data: UnitData = {
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p>{"ຈົ່ງຄິດໄລ່ເລກລຸ່ມນີ້: "} <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span></p>
               
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px 40px" }}>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px 40px" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(1)"}</span>
                   <span>{"10 + 3 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(2)"}</span>
                   <span>{"10 + 7 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(3)"}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(3)"}</span>
                   <span>{"12 - 2 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(4)"}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(4)"}</span>
                   <span>{"15 - 10 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(5)"}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(5)"}</span>
                   <span>{"10 + 5 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(6)"}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(6)"}</span>
                   <span>{"18 - 8 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(7)"}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(7)"}</span>
                   <span>{"14 - 10 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(8)"}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(8)"}</span>
                   <span>{"10 + 9 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(9)"}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(9)"}</span>
                   <span>{"10 + 2 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(10)"}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(10)"}</span>
                   <span>{"17 - 7 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
                 </div>
@@ -179,54 +179,54 @@ export const unit7Data: UnitData = {
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p>{"ທົດສອບປະຈຳບົດ: ຈົ່ງຄິດໄລ່ເລກຕໍ່ໄປນີ້: "} <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span></p>
             
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px 40px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px 40px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(1)"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(1)"}</span>
                 <span style={{ fontSize: "24px", minWidth: "30px" }}>{"10 + 6 ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(2)"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(2)"}</span>
                 <span style={{ fontSize: "24px", minWidth: "30px" }}>{"10 + 1 ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(3)"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(3)"}</span>
                 <span style={{ fontSize: "24px", minWidth: "30px" }}>{"13 - 3 ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(4)"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(4)"}</span>
                 <span style={{ fontSize: "24px", minWidth: "30px" }}>{"16 - 10 ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(5)"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(5)"}</span>
                 <span style={{ fontSize: "24px", minWidth: "30px" }}>{"10 + 4 ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(6)"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(6)"}</span>
                 <span style={{ fontSize: "24px", minWidth: "30px" }}>{"19 - 9 ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(7)"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(7)"}</span>
                 <span style={{ fontSize: "24px", minWidth: "30px" }}>{"11 - 10 ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(8)"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(8)"}</span>
                 <span style={{ fontSize: "24px", minWidth: "30px" }}>{"10 + 8 ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(9)"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(9)"}</span>
                 <span style={{ fontSize: "24px", minWidth: "30px" }}>{"10 + 0 ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(10)"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(10)"}</span>
                 <span style={{ fontSize: "24px", minWidth: "30px" }}>{"20 - 10 ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
               </div>
