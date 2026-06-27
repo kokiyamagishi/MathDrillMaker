@@ -1,4 +1,3 @@
-import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -25,7 +24,7 @@ export default function Home() {
             { href: "/grade4", lao: "ປ.4", jp: "小学4年生", color: "#FF9800" },
             { href: "/grade5", lao: "ປ.5", jp: "小学5年生", color: "#009688" },
           ].map((grade) => (
-            <Link key={grade.href} href={grade.href} style={{ textDecoration: "none" }}>
+            <a key={grade.href} href={grade.href} style={{ textDecoration: "none" }}>
               <div className="glass-card" style={{
                 padding: "20px",
                 borderRadius: "16px",
@@ -40,7 +39,7 @@ export default function Home() {
                 <h3 style={{ fontSize: "2rem", marginBottom: "4px", fontWeight: "800" }}>{grade.lao}</h3>
                 <p style={{ fontSize: "0.85rem", fontWeight: "600", color: "var(--color-text-light)" }}>{grade.jp}</p>
               </div>
-            </Link>
+            </a>
           ))}
         </div>
 
@@ -56,7 +55,7 @@ export default function Home() {
             { href: "/secondary4", lao: "ມ.4", jp: "中学4年生", color: "#607D8B" },
             { href: "/secondary4_science", lao: "ມ.4 ວິທະຍາສາດ", jp: "中4自然科学", color: "#E91E63" },
           ].map((grade) => (
-            <Link key={grade.href} href={grade.href} style={{ textDecoration: "none" }}>
+            <a key={grade.href} href={grade.href} style={{ textDecoration: "none" }}>
               <div className="glass-card" style={{
                 padding: "20px",
                 borderRadius: "16px",
@@ -71,7 +70,7 @@ export default function Home() {
                 <h3 style={{ fontSize: "2rem", marginBottom: "4px", fontWeight: "800", whiteSpace: "nowrap" }}>{grade.lao}</h3>
                 <p style={{ fontSize: "0.85rem", fontWeight: "600", color: "var(--color-text-light)" }}>{grade.jp}</p>
               </div>
-            </Link>
+            </a>
           ))}
         </div>
       </div>

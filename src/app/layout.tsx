@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
+import { Phetsarath, Inter } from "next/font/google";
 import "../styles/globals.css";
 import "../styles/drill.css";
+
+const phetsarath = Phetsarath({
+  weight: ["400", "700"],
+  subsets: ["lao"],
+  variable: "--font-lao",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "ສູໂຣໂບ ເຈເນເຣເຕີ | SUU-ROBO Generator",
@@ -14,14 +28,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="lo">
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Phetsarath:wght@400;700&family=Inter:wght@400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html lang="lo" className={`${phetsarath.variable} ${inter.variable}`}>
       <body>{children}</body>
     </html>
   );
 }
+
