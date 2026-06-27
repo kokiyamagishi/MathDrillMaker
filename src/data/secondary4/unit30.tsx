@@ -108,7 +108,7 @@ export const unit30Data: UnitData = {
       },
       problems: [
         {
-          number: 4,
+          number: 3,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -205,7 +205,14 @@ export const unit30Data: UnitData = {
         ]
       },
       {
-        questionNumber: 4,
+        questionNumber: 2,
+        answers: [
+          <span key="u30-ans-2-1">{"ເວກເຕີ (ຄິດໄລ່: ຍ້ອນມີທັງຂະໜາດ 80 km/h ແລະ ທິດທາງຄືທິດໃຕ້)"}</span>,
+          <span key="u30-ans-2-2">{"ສະກາແລ (ຄິດໄລ່: ຍ້ອນມີແຕ່ຂະໜາດ 2 ກິໂລກຣາມ, ບໍ່ມີທິດທາງ)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
         answers: [
           <span key="2-1">{"ED (ຄິດໄລ່: ໃນຮູບຫົກແຈສະເໝີ, ຂ້າງ AB ແລະ ED ຂະໜານກັນ ແລະ ມີທິດທາງດຽວກັນ)"}</span>,
           <span key="2-2">{"FE (ຄິດໄລ່: ເພາະ BC = EF ⇒ -BC = FE)"}</span>
@@ -228,13 +235,6 @@ export const unit30Data: UnitData = {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
           <span key="s1">{"ສູນ (ຄິດໄລ່: AB + BA = AA = 0, ເຊິ່ງແມ່ນເວກເຕີສູນ)"}</span>
-        ]
-      },
-      {
-        questionNumber: 2,
-        answers: [
-          <span key="u30-ans-2-1">{"ເວກເຕີ (ຄິດໄລ່: ຍ້ອນມີທັງຂະໜາດ 80 km/h ແລະ ທິດທາງຄືທິດໃຕ້)"}</span>,
-          <span key="u30-ans-2-2">{"ສະກາແລ (ຄິດໄລ່: ຍ້ອນມີແຕ່ຂະໜາດ 2 ກິໂລກຣາມ, ບໍ່ມີທິດທາງ)"}</span>
         ]
       }
     ],

@@ -76,7 +76,7 @@ export const unit33Data: UnitData = {
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                  <span>{"(1) ໃຫ້ A(2, 3) Und B(5, 7) ⇒ AB = ["}</span>
+                  <span>{"(1) ໃຫ້ A(2, 3) ແລະ B(5, 7) ⇒ AB = ["}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{", "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
@@ -115,7 +115,7 @@ export const unit33Data: UnitData = {
       },
       problems: [
         {
-          number: 4,
+          number: 3,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -228,7 +228,15 @@ export const unit33Data: UnitData = {
         ]
       },
       {
-        questionNumber: 4,
+        questionNumber: 2,
+        answers: [
+          <span key="u33-ans-2-1">{"3 (ຄິດໄລ່: AB = [5-2, 7-3] = [3, 4])"}</span>,
+          <span key="u33-ans-2-2">{"4 (ຄິດໄລ່: AB = [3, 4])"}</span>,
+          <span key="u33-ans-2-3">{"5 (ຄິດໄລ່: |AB| = √(3² + 4²) = 5)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
         answers: [
           <span key="2-1">{"1 (ຄິດໄລ່: u + 2v = [3 - 2, 2 + 8] = [1, 10])"}</span>,
           <span key="2-2">{"10 (ຄິດໄລ່: u + 2v = [1, 10])"}</span>,
@@ -261,14 +269,6 @@ export const unit33Data: UnitData = {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
           <span key="s1">{"1 (ຄິດໄລ່: ເພາະ i = [1, 0] ⇒ |i| = √(1² + 0²) = 1, ມັນແມ່ນເວກເຕີຫົວໜ່ວຍ)"}</span>
-        ]
-      },
-      {
-        questionNumber: 2,
-        answers: [
-          <span key="u33-ans-2-1">{"3 (ຄິດໄລ່: AB = [5-2, 7-3] = [3, 4])"}</span>,
-          <span key="u33-ans-2-2">{"4 (ຄິດໄລ່: AB = [3, 4])"}</span>,
-          <span key="u33-ans-2-3">{"5 (ຄິດໄລ່: |AB| = √(3² + 4²) = 5)"}</span>
         ]
       }
     ],

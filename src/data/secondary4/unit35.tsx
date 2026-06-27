@@ -64,7 +64,7 @@ export const unit35Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຈົ່ງຄິດໄລ່ຜົນຄູນສະກາແລທາງເລຂາຄະນິດ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+                {"ຈົ່ງຄິດໄລ່ຜົນຄູນສະກາແລທາງເລຂาຄະນິດ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
@@ -104,7 +104,7 @@ export const unit35Data: UnitData = {
       },
       problems: [
         {
-          number: 4,
+          number: 3,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -197,7 +197,13 @@ export const unit35Data: UnitData = {
         ]
       },
       {
-        questionNumber: 4,
+        questionNumber: 2,
+        answers: [
+          <span key="u35-ans-2-1">{"10 (ຄິດໄລ່: u · v = |u| × |v| × cos(60°) = 4 × 5 × 0.5 = 10)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
         answers: [
           <span key="2-1">{"-2 (ຄິດໄລ່: u·v = 3·4 + 2·(-5) = 12 - 10 = -2)"}</span>,
           <span key="2-2">{"-2 (ຄິດໄລ່: u·v = (-2)·3 + 4·1 = -6 + 4 = -2)"}</span>
@@ -219,12 +225,6 @@ export const unit35Data: UnitData = {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
           <span key="s1">{"0 (ຄິດໄລ່: ເພາະ cos(90°) = 0 ⇒ u·v = 0)"}</span>
-        ]
-      },
-      {
-        questionNumber: 2,
-        answers: [
-          <span key="u35-ans-2-1">{"10 (ຄິດໄລ່: u · v = |u| × |v| × cos(60°) = 4 × 5 × 0.5 = 10)"}</span>
         ]
       }
     ],

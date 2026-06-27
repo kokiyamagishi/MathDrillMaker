@@ -91,7 +91,7 @@ export const unit44Data: UnitData = {
       },
       problems: [
         {
-          number: 5,
+          number: 3,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -180,13 +180,25 @@ export const unit44Data: UnitData = {
         ]
       },
       {
-        questionNumber: 5,
+        questionNumber: 2,
+        answers: [
+          <span key="u44-ans-2-1">{"1/3"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
         answers: [
           <span key="2">{"2/3 (ຄິດໄລ່: A = ແຕ້ມຄູ່ {2, 4, 6} ⇒ P(A) = 3/6. B = ຫານຂາດໃຫ້ 3 {3, 6} ⇒ P(B) = 2/6. ຮ່ວມກັນແມ່ນ {6} ⇒ P(A ∩ B) = 1/6. P(A ∪ B) = 3/6 + 2/6 - 1/6 = 4/6 = 2/3)"}</span>
         ]
       },
       {
-        questionNumber: 5,
+        questionNumber: 4,
+        answers: [
+          <span key="u44-ans-4-1">{"7/10"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
         answers: [
           <span key="3">{"0.55 (ຄິດໄລ່: P(F ∪ B) = 0.40 + 0.30 - 0.15 = 0.55)"}</span>
         ]
@@ -201,18 +213,6 @@ export const unit44Data: UnitData = {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
           <span key="s1">{"0 (ຄິດໄລ່: ເພາະເຫດການຂັດກັນ ບໍ່ສາມາດເກີດຂຶ້ນພ້ອມກັນໄດ້ສະເໝີ)"}</span>
-        ]
-      },
-      {
-        questionNumber: 2,
-        answers: [
-          <span key="u44-ans-2-1">{"1/3 (ຄິດໄລ່: P(1 ∪ 6) = 1/6 + 1/6 = 2/6 = 1/3)"}</span>
-        ]
-      },
-      {
-        questionNumber: 4,
-        answers: [
-          <span key="u44-ans-4-1">{"7/10 (ຄິດໄລ່: ເລກຄູ່ {2,4,6,8,10}, ຫານຂາດໃຫ້ 3 {3,6,9}. ຕົວຮ່ວມ {6}. ຄວາມໜ້າຈະເປັນ = 5/10 + 3/10 - 1/10 = 7/10)"}</span>
         ]
       }
     ],

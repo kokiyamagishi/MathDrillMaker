@@ -111,7 +111,7 @@ export const unit40Data: UnitData = {
       },
       problems: [
         {
-          number: 5,
+          number: 3,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -135,7 +135,7 @@ export const unit40Data: UnitData = {
             {"ຈົ່ງຄິດໄລ່ຄ່າສະເລ່ຍຈາກຕາຕະລາງຄວາມຖີ່ (ຊຸດທີ 2): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: "12px 0", lineHeight: "1.6" }}>
-            {"ໃນຫ້ອງຮຽນໜຶ່ງ, ຄະແນນສອບເສັງມີຄວາມຖີ່ດັ່ງນີ້: ຄະແນນ 6 ມີ 3 ຄົນ, ຄະແນນ 8 ມີ 5 ຄົນ, ຄະແນນ 10 ມີ 2 ຄົນ. ຈົ່ງຊອກຫາຄ່າສະເລ່ຍ (x̄)?"}
+            {"ໃນຫ້ອງຮຽນໜຶ່ງ, ຄະແນນສອບເສັງມີຄວາມຖີ່ດັ່ງນີ້: ຄະແນນ 6 ມີ 3 ຄົນ, ຄະແນນ 8 ມີ 5 ຄົນ, ຄะແນນ 10 ມີ 2 ຄົນ. ຈົ່ງຊອກຫາຄ່າສະເລ່ຍ (x̄)?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: x̄ ="}</span>
@@ -201,13 +201,26 @@ export const unit40Data: UnitData = {
         ]
       },
       {
-        questionNumber: 5,
+        questionNumber: 2,
+        answers: [
+          <span key="u40-ans-2-1">{"5"}</span>,
+          <span key="u40-ans-2-2">{"4"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
         answers: [
           <span key="2">{"7.5 (ຄິດໄລ່: x̄ = (5×2 + 7×5 + 10×3) / 10 = (10 + 35 + 30) / 10 = 75 / 10 = 7.5)"}</span>
         ]
       },
       {
-        questionNumber: 5,
+        questionNumber: 4,
+        answers: [
+          <span key="u40-ans-4-1">{"7.8"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
         answers: [
           <span key="3">{"155 (ຄິດໄລ່: 150, 152, [155], 160, 163)"}</span>
         ]
@@ -222,19 +235,6 @@ export const unit40Data: UnitData = {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
           <span key="s1">{"12 (ຄິດໄລ່: 12 ປະກົດຂຶ້ນ 3 ເທື່ອ)"}</span>
-        ]
-      },
-      {
-        questionNumber: 2,
-        answers: [
-          <span key="u40-ans-2-1">{"5 (ຄິດໄລ່: x̄ = (2+4+4+5+10)/5 = 25/5 = 5)"}</span>,
-          <span key="u40-ans-2-2">{"4 (ຄິດໄລ່: Mod = 4 ເພາະມີຄວາມຖີ່ສູງສຸດ)"}</span>
-        ]
-      },
-      {
-        questionNumber: 4,
-        answers: [
-          <span key="u40-ans-4-1">{"7.8 (ຄິດໄລ່: x̄ = (6×3 + 8×5 + 10×2)/(3+5+2) = (18+40+20)/10 = 78/10 = 7.8)"}</span>
         ]
       }
     ],

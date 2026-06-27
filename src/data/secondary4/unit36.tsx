@@ -108,7 +108,7 @@ export const unit36Data: UnitData = {
       },
       problems: [
         {
-          number: 5,
+          number: 3,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -201,14 +201,27 @@ export const unit36Data: UnitData = {
         ]
       },
       {
-        questionNumber: 5,
+        questionNumber: 2,
+        answers: [
+          <span key="u36-ans-2-1">{"2 (ຄິດໄລ່: ຈາກສົມຜົນ 2x - 3y + 6 = 0 ⇒ n = [2, -3])"}</span>,
+          <span key="u36-ans-2-2">{"-3"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
         answers: [
           <span key="2-1">{"4 (ຄິດໄລ່: d = |3(3) + 4(4) - 5| / √(3²+4²) = |9 + 16 - 5| / 5 = 20/5 = 4)"}</span>,
           <span key="2-2">{"2.5 (ຄິດໄລ່: d = |6(2) - 8(-1) + 5| / √(6²+8²) = |12 + 8 + 5| / 10 = 25/10 = 2.5)"}</span>
         ]
       },
       {
-        questionNumber: 5,
+        questionNumber: 4,
+        answers: [
+          <span key="u36-ans-4-1">{"1 (ຄິດໄລ່: d = |3(1)+4(1)-12|/√(3²+4²) = |-5|/5 = 1)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
         answers: [
           <span key="3">{"1 (ຄິດໄລ່: 2x - y = 2(2) - 3 = 1 ⇒ C = 1)"}</span>
         ]
@@ -223,19 +236,6 @@ export const unit36Data: UnitData = {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
           <span key="s1">{"2 (ຄິດໄລ່: d = |5(0) + 12(0) - 26| / √(5²+12²) = 26 / 13 = 2)"}</span>
-        ]
-      },
-      {
-        questionNumber: 2,
-        answers: [
-          <span key="u36-ans-2-1">{"2 (ຄິດໄລ່: ຈາກສົມຜົນ 2x - 3y + 6 = 0 ⇒ n = [2, -3])"}</span>,
-          <span key="u36-ans-2-2">{"-3"}</span>
-        ]
-      },
-      {
-        questionNumber: 4,
-        answers: [
-          <span key="u36-ans-4-1">{"1 (ຄິດໄລ່: d = |3(1)+4(1)-12|/√(3²+4²) = |-5|/5 = 1)"}</span>
         ]
       }
     ],

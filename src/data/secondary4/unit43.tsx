@@ -91,7 +91,7 @@ export const unit43Data: UnitData = {
       },
       problems: [
         {
-          number: 5,
+          number: 3,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -179,13 +179,25 @@ export const unit43Data: UnitData = {
         ]
       },
       {
-        questionNumber: 5,
+        questionNumber: 2,
+        answers: [
+          <span key="u43-ans-2-1">{"1/12"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
         answers: [
           <span key="2">{"0.48 (ຄິດໄລ່: P(A ∩ B) = 0.6 × 0.8 = 0.48)"}</span>
         ]
       },
       {
-        questionNumber: 5,
+        questionNumber: 4,
+        answers: [
+          <span key="u43-ans-4-1">{"0.3"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
         answers: [
           <span key="3">{"0.92 (ຄິດໄລ່: P(ຢ່າງໜ້ອຍໜຶ່ງ) = 1 - (1-0.6)×(1-0.8) = 1 - 0.08 = 0.92)"}</span>
         ]
@@ -200,18 +212,6 @@ export const unit43Data: UnitData = {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
           <span key="s1">{"0.2 (ຄິດໄລ່: P(A ∩ B) = 0.4 × 0.5 = 0.20)"}</span>
-        ]
-      },
-      {
-        questionNumber: 2,
-        answers: [
-          <span key="u43-ans-2-1">{"1/12 (ຄິດໄລ່: P(A) = 1/6, P(B) = 1/2 ⇒ P(A ∩ B) = 1/6 × 1/2 = 1/12)"}</span>
-        ]
-      },
-      {
-        questionNumber: 4,
-        answers: [
-          <span key="u43-ans-4-1">{"0.3 (ຄິດໄລ່: P(A ∩ B) = 0.6 × 0.5 = 0.3)"}</span>
         ]
       }
     ],

@@ -117,7 +117,7 @@ export const unit38Data: UnitData = {
       },
       problems: [
         {
-          number: 4,
+          number: 3,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -209,7 +209,15 @@ export const unit38Data: UnitData = {
         ]
       },
       {
-        questionNumber: 4,
+        questionNumber: 2,
+        answers: [
+          <span key="u38-ans-2-1">{"3"}</span>,
+          <span key="u38-ans-2-2">{"-4"}</span>,
+          <span key="u38-ans-2-3">{"5"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
         answers: [
           <span key="2">{"-5 (ຄິດໄລ່: 1(1) - 1(2) + 2(3) + D = 0 ⇒ 1 - 2 + 6 + D = 0 ⇒ D = -5)"}</span>
         ]
@@ -230,14 +238,6 @@ export const unit38Data: UnitData = {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
           <span key="s1">{"-2 (ຄິດໄລ່: 1 + 2(1) - 1 + D = 0 ⇒ 2 + D = 0 ⇒ D = -2)"}</span>
-        ]
-      },
-      {
-        questionNumber: 2,
-        answers: [
-          <span key="u38-ans-2-1">{"3"}</span>,
-          <span key="u38-ans-2-2">{"-4"}</span>,
-          <span key="u38-ans-2-3">{"5"}</span>
         ]
       }
     ],
