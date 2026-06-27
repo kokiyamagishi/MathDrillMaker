@@ -144,7 +144,7 @@ export const unit26Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຈົ່ງແກ້ສົມຜົນຄ່າສຳບູນລຸ່ມນີ້ ແລ້ວຊອກຫາໃຈຜົນທີ່ກຳນົດ: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄะແນນ, ລວມ 10 ຄະແນນ)"}</span>
+                {"ຈົ່ງແກ້ສົມຜົນຄ່າສຳບູນລຸ່ມນີ້ ແລ້ວຊອກຫາໃຈຜົນທີ່ກຳນົດ: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>

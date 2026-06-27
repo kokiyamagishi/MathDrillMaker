@@ -203,7 +203,7 @@ export const unit31Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດການຖອກນ້ຳ (Water Filling Bottles): "}<span className="point-label">{"(5 ຄะແນນ)"}</span>
+            {"ໂຈດການຖອກນ້ຳ (Water Filling Bottles): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຖອກນ້ຳໃສ່ຕຸກຂະໜາດ 75 cL ໄດ້ 79 ຕຸກ. ຖ້າປ່ຽນມາໃສ່ຕຸກຂະໜາດ 25 cL ຈະໄດ້ທັງໝົດຈັກຕຸກ?"}
