@@ -87,19 +87,19 @@ export const unit7Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p>{"ຈົ່ງຂຽນຕົວເລກໃສ່ໃນບັອກໃຫ້ຖືກຕ້ອງ (ລຳດັບຕົວເລກ): "} <span className="point-label">{"(5 ຄະແນນ)"}</span></p>
-            <div className="math-illustration" style={{ display: "flex", gap: "8px", alignItems: "center", justifyContent: "center", fontSize: "24px", backgroundColor: "#EDE7F6", padding: "16px", borderRadius: "12px" }}>
-              <span>9</span><span>→</span>
-              <span>10</span><span>→</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span><span>→</span>
-              <span>12</span><span>→</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span><span>→</span>
-              <span>14</span><span>→</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span><span>→</span>
-              <span>16</span><span>→</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span><span>→</span>
-              <span>18</span><span>→</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span><span>→</span>
-              <span>20</span>
+            <div className="math-illustration" style={{ display: "flex", flexWrap: "wrap", gap: "12px 8px", alignItems: "center", justifyContent: "center", fontSize: "24px", backgroundColor: "#EDE7F6", padding: "16px", borderRadius: "12px" }}>
+              <span style={{ whiteSpace: "nowrap" }}>9</span><span>→</span>
+              <span style={{ whiteSpace: "nowrap" }}>10</span><span>→</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px", flexShrink: 0 }}></span><span>→</span>
+              <span style={{ whiteSpace: "nowrap" }}>12</span><span>→</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px", flexShrink: 0 }}></span><span>→</span>
+              <span style={{ whiteSpace: "nowrap" }}>14</span><span>→</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px", flexShrink: 0 }}></span><span>→</span>
+              <span style={{ whiteSpace: "nowrap" }}>16</span><span>→</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px", flexShrink: 0 }}></span><span>→</span>
+              <span style={{ whiteSpace: "nowrap" }}>18</span><span>→</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px", flexShrink: 0 }}></span><span>→</span>
+              <span style={{ whiteSpace: "nowrap" }}>20</span>
             </div>
           </div>
         ),
