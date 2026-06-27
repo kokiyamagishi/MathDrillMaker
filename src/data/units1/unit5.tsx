@@ -45,7 +45,7 @@ export const unit5Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p>{"ຈົ່ງຄິດໄລ່ບັ້ງເລກລຸ່ມນີ້: "} <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span></p>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
                 <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(1)"}</span>
                 <span>{"3 + 1 ="}</span>
@@ -98,7 +98,7 @@ export const unit5Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p>{"ຈົ່ງຄິດໄລ່ເລກບວກລຸ່ມນີ້: "} <span className="point-label">{"(ຂໍ້ລະ 1.5 ຄະແນນ, ຂໍ້ 6 ແມ່ນ 2.5 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span></p>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px 24px" }}>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px 24px" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
                   <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"3 + 4 ="}</span>
