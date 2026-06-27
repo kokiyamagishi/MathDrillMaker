@@ -164,12 +164,9 @@ export const unit15Data: UnitData = {
               <span>{"ກີບ"}</span>
             </div>
             
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "20px", marginTop: "12px" }}>
-              <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(2)"}</span>
-              <span>{"ຖ້າດາວຊື້ພຽງແຕ່ເຂົ້າໜົມ 1,000 ກີບ ແມ່ຄ້າຕ້ອງທອນເງິນເທົ່າໃດ? (ຈ່າຍດ້ວຍ 2,000 ກີບ 1 ໃບ)"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "20px", marginTop: "4px", paddingLeft: "44px" }}>
-              <span>{"ຕອບ:"}</span>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "20px", marginTop: "12px", flexWrap: "wrap" }}>
+              <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(2)"}</span>
+              <span>{"ຖ້າດາວຊື້ພຽງແຕ່ເຂົ້າໜົມ 1,000 ກີບ ແມ່ຄ້າຕ້ອງທອນເງິນເທົ່າໃດ? (ຈ່າຍດ້ວຍ 2,000 ກີບ 1 ໃບ) ຕອບ:"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
               <span>{"ກີບ"}</span>
             </div>
