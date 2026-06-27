@@ -45,9 +45,9 @@ export const unit14Data: UnitData = {
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
                 <span>{"ປະໂຫຍກສັນຍະລັກ: KN ="}</span>
-                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", minWidth: "100px", width: "100px", height: "42px" }}></span>
                 <span>{"= "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "60px", width: "60px", height: "42px" }}></span>
                 <span>{"cm"}</span>
               </div>
             </div>
@@ -62,9 +62,9 @@ export const unit14Data: UnitData = {
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
                 <span>{"ປະໂຫຍກສັນຍະລັກ: AD ="}</span>
-                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", minWidth: "100px", width: "100px", height: "42px" }}></span>
                 <span>{"= "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "60px", width: "60px", height: "42px" }}></span>
                 <span>{"cm"}</span>
               </div>
             </div>
@@ -124,9 +124,9 @@ export const unit14Data: UnitData = {
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
                 <span>{"ປະໂຫຍກສັນຍະລັກ: EF ="}</span>
-                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", minWidth: "100px", width: "100px", height: "42px" }}></span>
                 <span>{"= "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "60px", width: "60px", height: "42px" }}></span>
                 <span>{"cm"}</span>
               </div>
             </div>
