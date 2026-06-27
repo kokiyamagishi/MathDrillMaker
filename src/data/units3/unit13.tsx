@@ -43,7 +43,7 @@ export const unit13Data: UnitData = {
           >
             <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
               <span
-                style={{ fontSize: "22px", fontWeight: "bold", width: "120px" }}
+                style={{ fontSize: "22px", fontWeight: "bold", width: "80px" }}
               >
                 {"ແຖບສີແດງ:"}
               </span>
@@ -69,7 +69,7 @@ export const unit13Data: UnitData = {
                 style={{
                   fontSize: "22px",
                   fontWeight: "bold",
-                  width: "120px",
+                  width: "80px",
                   paddingTop: "34px",
                 }}
               >
@@ -265,7 +265,7 @@ export const unit13Data: UnitData = {
                   className="answer-blank"
                   style={{
                     display: "inline-block",
-                    width: "120px",
+                    width: "80px",
                     height: "40px",
                   }}
                 ></span>
@@ -321,7 +321,7 @@ export const unit13Data: UnitData = {
                       className="answer-blank"
                       style={{
                         display: "inline-block",
-                        width: "120px",
+                        width: "80px",
                         height: "40px",
                       }}
                     ></span>
@@ -352,7 +352,7 @@ export const unit13Data: UnitData = {
                       className="answer-blank"
                       style={{
                         display: "inline-block",
-                        width: "120px",
+                        width: "80px",
                         height: "40px",
                       }}
                     ></span>
@@ -394,7 +394,7 @@ export const unit13Data: UnitData = {
                     className="answer-blank"
                     style={{
                       display: "inline-block",
-                      width: "120px",
+                      width: "80px",
                       height: "40px",
                     }}
                   ></span>
@@ -445,7 +445,7 @@ export const unit13Data: UnitData = {
                     className="answer-blank"
                     style={{
                       display: "inline-block",
-                      width: "120px",
+                      width: "80px",
                       height: "40px",
                     }}
                   ></span>
@@ -487,7 +487,7 @@ export const unit13Data: UnitData = {
                   className="answer-blank"
                   style={{
                     display: "inline-block",
-                    width: "120px",
+                    width: "80px",
                     height: "40px",
                   }}
                 ></span>

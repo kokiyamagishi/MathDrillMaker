@@ -52,12 +52,12 @@ export const unit8Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ລົດຈັກຄັນໜຶ່ງແລ່ນໄດ້ 165 km ໃນເວລາ 2 ຊົ່ວໂມງ 45 ນາທີ (2.75 ຊົ່ວໂມງ) ⇒ ຄວາມໄວ v ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                   <span>{"km/h"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ລົດຖີບແລ່ນຂຶ້ນຄ້ອຍ 12 km ດ້ວຍຄວາມໄວ 12 km/h ແລະ ລົງຄ້ອຍ 12 km ດ້ວຍຄວາມໄວ 24 km/h ⇒ ຄວາມໄວສະເລ່ຍ v ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                   <span>{"km/h"}</span>
@@ -76,7 +76,7 @@ export const unit8Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
                 {"ທ້າວ ພອນ ຕັ້ງໃຈຈະຂັບລົດໄລຍະທາງ 300 km ໃຫ້ຮອດໃນເວລາ 3 ຊົ່ວໂມງ. ແຕ່ໃນ 100 km ທຳອິດ, ລົດຕິດເຮັດໃຫ້ລາວຂັບໄດ້ພຽງຄວາມໄວ 50 km/h. ຖາມວ່າໃນໄລຍະທາງ 200 km ທີ່ເຫຼືອ ລາວຕ້ອງຂັບດ້ວຍຄວາມໄວເທົ່າໃດ ຈຶ່ງຈະຮອດຕາມກຳນົດ?"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ປະໂຫຍກສັນຍະລັກ: v = 200 / (3 - (100 / 50)) ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 <span>{"km/h"}</span>
@@ -117,7 +117,7 @@ export const unit8Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ເມືອງ A ແລະ ເມືອງ B ຫ່າງກັນ 90 km. ລົດເມຄັນໜຶ່ງອອກຈາກເມືອງ A ເວລາ 6:00 ແລະ ຮອດເມືອງ B ເວລາ 8:00 (ຄວາມໄວ v = 45 km/h). ລົດເມອີກຄັນໜຶ່ງອອກຈາກເມືອງ B ເວລາ 6:00 ໄປຫາເມືອງ A. ທັງສອງຄັນສວນທາງກັນໃນເວລາ 7:00 ພໍດີ. ຖາມວ່າລົດຄັນທີ 2 ຕ້ອງແລ່ນດ້ວຍຄວາມໄວຈັກ km/h?"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ປະໂຫຍກສັນຍະລັກ: v₂ = (90 - 45) / 1 ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 <span>{"km/h"}</span>
@@ -135,7 +135,7 @@ export const unit8Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ທ້າວ ບຸນ ເດີນທາງ 10 km: ລາວເລີ່ມເດີນທາງດ້ວຍການຍ່າງ 2 km ດ້ວຍຄວາມໄວ 4 km/h. ຫຼັງຈາກນັ້ນ, ລາວຂີ່ລົດເມຕໍ່ເປັນໄລຍະທາງ 8 km ດ້ວຍຄວາມໄວ 16 km/h. ຖາມວ່າລາວໃຊ້ເວລາເດີນທາງທັງໝົດຈັກຊົ່ວໂມງ?"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ປະໂຫຍກສັນຍະລັກ: t = (2 / 4) + (8 / 16) ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 <span>{"ຊົ່ວໂມງ"}</span>
@@ -158,7 +158,7 @@ export const unit8Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ລົດຈັກຄັນໜຶ່ງອອກເດີນທາງຈາກວຽງຈັນເວລາ 8:00 ດ້ວຍຄວາມໄວສະເໝີ 40 km/h. ຕໍ່ມາໃນເວລາ 9:00 (1 ຊົ່ວໂມງຫຼັງຈາກນັ້ນ), ລົດເກັງຄັນໜຶ່ງອອກເດີນທາງຕາມຫຼັງເສັ້ນທາງດຽວກັນດ້ວຍຄວາມໄວສະເໝີ 60 km/h. ຖາມວ່າລົດເກັງຈະແລ່ນໄລ່ທັນລົດຈັກໃນເວລາຈັກໂມງ?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
               <span>{"ເວລາທີ່ໄລ່ທັນແມ່ນ"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               <span>{": 00 ໂມງ"}</span>

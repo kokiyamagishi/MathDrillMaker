@@ -40,18 +40,22 @@ export const unit13Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ຖ້າ x ຢູ່ຫວ່າງ [-1, 4] (x ຜ່ານເມັດຈອມ 0) ⇒ ເຂດຄ່າ y ຢູ່ຫວ່າງ [0,"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"]"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{"(2) ຖ້າ x ຢູ່ຫວ່າງ [-3, -1] (x ບໍ່ຜ່ານເມັດຈອມ) ⇒ ເຂດຄ່າ y ຢູ່ຫວ່າງ ["}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{", "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{"]"}</span>
                 </div>
+              </div>
               </div>
             </div>
           )
@@ -65,11 +69,11 @@ export const unit13Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ຖ້າ x ≥ 2 ⇒ ເຂດຄ່າ y ≥"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ຖ້າ x ≤ -1 ⇒ ເຂດຄ່າ y ≥"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
@@ -114,11 +118,11 @@ export const unit13Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ສົມຜົນ x² = 9/4 ⇒ ໃຈຜົນ x = ±"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ອະສົມຜົນ x² ≤ 100 ⇒ ກຸ່ມໃຈຜົນແມ່ນ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{"≤ x ≤"}</span>
@@ -137,11 +141,11 @@ export const unit13Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ສົມຜົນ x² = -25 ⇒ ສົມຜົນນີ້"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ອະສົມຜົນ x² > 4 ⇒ ກຸ່ມໃຈຜົນແມ່ນ x < -2 ຫຼື x >"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                 </div>
@@ -164,7 +168,7 @@ export const unit13Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຖ້າຕົວປ່ຽນ x ຢູ່ຫວ່າງ [-10, 1] ຂອງຕຳລາ y = x². ຈົ່ງຊອກຫາຫວ່າງຂອງ y ທີ່ສອດຄ່ອງ?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
               <span>{"ຕອບ: ເຂດຄ່າ y ຢູ່ຫວ່າງ [0,"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"]"}</span>
@@ -182,7 +186,7 @@ export const unit13Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງແກ້ອະສົມຜົນ: 1/4 ≤ x² < 9/4. ຈົ່ງຊອກຫາຫວ່າງໃຈຜົນຂອງ x ເມື່ອ x > 0?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
               <span>{"ຕອບ: ຫວ່າງ x > 0 ແມ່ນ [1/2,"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"["}</span>
@@ -207,7 +211,7 @@ export const unit13Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ແມ່ນເມັດ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
           </div>
         </div>
       )

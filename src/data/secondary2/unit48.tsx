@@ -79,7 +79,7 @@ export const unit48Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຮູບສາມແຈທີໜຶ່ງມີມຸມ 50° ແລະ 60°, ຮູບທີສອງມີມຸມ 50° ແລະ 60° ➔ ຄ້າຍຄືກັນ ຫຼື ບໍ່? (ຕອບ ແມ່ນ ຫຼື ບໍ່ແມ່ນ)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
@@ -91,19 +91,19 @@ export const unit48Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
                   <span>{"ຮູບສາມແຈທີໜຶ່ງມີມຸມ 80° ແລະ 40°, ຮູບທີສອງມີມຸມ 80° ແລະ 60° ➔ ຄ້າຍຄືກັນ ຫຼື ບໍ່? (ຕອບ ແມ່ນ ຫຼື ບໍ່ແມ່ນ)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
                   <span>{"ສອງຮູບສາມແຈສາກທີ່ມີມຸມແຫຼມໜຶ່ງເທົ່າກັບ 30° ຄືກັນ ➔ ຄ້າຍຄືກັນ ຫຼື ບໍ່? (ຕອບ ແມ່ນ ຫຼື ບໍ່ແມ່ນ)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
                   <span>{"ຮູບສາມແຈ ABC ມີມຸມ A=70°, B=50°. ຮູບສາມແຈ MNP ມີມຸມ M=70°, P=60° ➔ ຄ້າຍຄືກັນ ຫຼື ບໍ່? (ຕອບ ແມ່ນ ຫຼື ບໍ່ແມ່ນ)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
               </div>
             </div>
@@ -154,19 +154,19 @@ export const unit48Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຮູບສາມແຈ A ມີຂ້າງ 4, 6 cm ແລະ ມຸມລະຫວ່າງກາງແມ່ນ 50°. ຮູບ B ມີຂ້າງ 8, 12 cm ແລະ ມຸມແມ່ນ 50° ➔ ຄ້າຍຄືກັນ ຫຼື ບໍ່? (ຕອບ ແມ່ນ ຫຼື ບໍ່ແມ່ນ)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
                   <span>{"ຮູບສາມແຈ A ມີຂ້າງ 2, 3, 4 cm. ຮູບສາມແຈ B ມີຂ້າງ 6, 9, 10 cm ➔ ຄ້າຍຄືກັນ ຫຼື ບໍ່? (ຕອບ ແມ່ນ ຫຼື ບໍ່ແມ່ນ)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
                   <span>{"ສອງຮູບສາມແຈສະເໝີ (Equilateral Triangles) ທີ່ມີຄວາມຍາວຂ້າງບໍ່ເທົ່າກັນ ➔ ຄ້າຍຄືກັນ ຫຼື ບໍ່? (ຕອບ ແມ່ນ ຫຼື ບໍ່ແມ່ນ)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>

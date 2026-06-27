@@ -108,13 +108,13 @@ export const unit9Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຄວາມຍາວສາມຂ້າງແມ່ນ "} <span className="math">{"8 cm, 15 cm, 17 cm"}</span> {" ປະກອບເປັນຮູບສາມແຈສາກໄດ້ຫຼືບໍ່?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ความຍາວສາມຂ້າງແມ່ນ "} <span className="math">{"4 cm, 5 cm, 7 cm"}</span> {" ປະກອບເປັນຮູບສາມແຈສາກໄດ້ຫຼືບໍ່?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
               </div>
             </div>

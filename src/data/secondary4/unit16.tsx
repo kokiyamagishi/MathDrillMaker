@@ -47,7 +47,7 @@ export const unit16Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) y = 3(x - 1)² - 2 ມີເມັດຈອມແມ່ນ S("}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{", "}</span>
@@ -55,7 +55,7 @@ export const unit16Data: UnitData = {
                   <span>{") ແລະ ແກນເຄິ່ງຄືແມ່ນ x ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) y = -2(x + 3)² + 4 ມີເມັດຈອມແມ່ນ S("}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{", "}</span>
@@ -76,13 +76,13 @@ export const unit16Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ຍ້າຍປາຣາໂບນ y = -x² ໄປຂວາ 2 ແລະ ຂຶ້ນເທິງ 5 ຫົວໜ່ວຍ ຈະໄດ້ສົມຜົນ y = -(x - "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{")² +"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ຍ້າຍປາຣາໂບນ y = 2x² ໄປຊ້າຍ 3 ແລະ ລົງລຸ່ມ 4 ຫົວໜ່ວy ຈະໄດ້ສົມຜົນ y = 2(x + "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{")² -"}</span>
@@ -136,13 +136,13 @@ export const unit16Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ຕຳລາ y = 2(x - 5)² + 3 ມີຄ່າຕ່ຳສຸດແມ່ນ y ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{" ເມື່ອ x ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ຕຳລາ y = -4(x + 1)² + 7 ມີຄ່າສູງສຸດແມ່ນ y ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{" ເມື່ອ x ="}</span>
@@ -201,9 +201,9 @@ export const unit16Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງຊອກຫາຄ່າ x ທີ່ເປັນເມັດຕັດລະຫວ່າງປາຣາໂບນ y = 2(x - 3)² - 8 ແລະ ແກນ Ox (ຊອກຫາ x ທັງໝົດ)?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
               <span>{"ຕອບ: x ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             </div>
           </div>
         )

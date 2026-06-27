@@ -253,11 +253,11 @@ export const unit1Data: UnitData = {
               >
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
                   <span>{"(1) ຈຳນວນທີ່ມີ 0.001 ຢູ່ 235 ຕົວ ຈະແມ່ນ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
                   <span>{"(2) ຖ້າເອົາ 9.35 ມາຄູນໃຫ້ 1000 ຈະໄດ້ຄຳຕອບແມ່ນ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
                 </div>
               </div>
             </div>
@@ -284,11 +284,11 @@ export const unit1Data: UnitData = {
               >
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
                   <span>{"(1) ເອົາ 0.46 ຄູນເລກໃດຈຶ່ງຈະໄດ້ 460?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
                   <span>{"(2) ເອົາ 7200 ຫານເລກໃດຈຶ່ງຈະໄດ້ 7.2?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
                 </div>
               </div>
             </div>

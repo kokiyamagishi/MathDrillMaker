@@ -41,17 +41,17 @@ export const unit20Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ເສັ້ນກາງສາກຂອງທ່ອນຊື່ [AB] ແມ່ນເສັ້ນຊື່ທີ່ຜ່ານຈຸດເຄິ່ງກາງ ແລະ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"ກັບ [AB]."}</span>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຖ້າ M ນອນຢູ່ເທິງເສັ້ນກາງສາກຂອງ [AB], ແລ້ວໄລຍະຫ່າງ MA ຈະ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"ໄລຍະຫ່າງ MB."}</span>
                 </div>
               </div>
@@ -65,12 +65,16 @@ export const unit20Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ໃຫ້ທ່ອນຊື່ AB = 10 cm, ມີ d ແມ່ນເສັ້ນກາງສາກຂອງ [AB] ຕັດ [AB] ຢູ່ H. ຖ້າເມັດ M ຢູ່ເທິງ d ໂດຍມີ MA = 13 cm, ຄວາມຍາວ MB ແລະ ຄວາມຍາວ AH ຈະເທົ່າກັບຈັກ cm ຕາມລຳດັບ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                <span>{"ຕອບ: MB ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                <span>{"cm , AH ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                <span>{"cm"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"ຕອບ: MB ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"cm , AH ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"cm"}</span>
+                </div>
               </div>
             </div>
           )
@@ -112,12 +116,16 @@ export const unit20Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ໃຫ້ມຸມ ∠xOy = 70°. ຖ້າ [Oz) ແມ່ນເສັ້ນແບ່ງເຄິ່ງມຸມ ∠xOy, ຂະໜາດຂອງມຸມ ∠xOz ຈະມີຄ່າເທົ່າໃດ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                <span>{"ປະໂຫຍກສັນຍະລັກ: ∠xOz ="}</span>
-                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
-                <span>{"= "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                <span>{"°"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"ປະໂຫຍກສັນຍະລັກ: ∠xOz ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"= "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"°"}</span>
+                </div>
               </div>
             </div>
           )
@@ -129,12 +137,16 @@ export const unit20Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ໃຫ້ມຸມ ∠AOB ມີ [OC) ແມ່ນເສັ້ນແບ່ງເຄິ່ງມຸມ ໂດຍ ∠AOC = 55°. ຂະໜາດຂອງມຸມ ∠AOB ຈະເທົ່າກັບຈັກອົງສາ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                <span>{"ປະໂຫຍກສັນຍະລັກ: ∠AOB ="}</span>
-                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
-                <span>{"= "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                <span>{"°"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"ປະໂຫຍກສັນຍະລັກ: ∠AOB ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"= "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"°"}</span>
+                </div>
               </div>
             </div>
           )

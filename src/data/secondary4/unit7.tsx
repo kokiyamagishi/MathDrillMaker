@@ -46,14 +46,14 @@ export const unit7Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ຝາກເງິນ 10 ລ້ານກີບ ອັດຕາດອກເບ້ຍ 8% ຕໍ່ປີ ພາຍໃນ 3 ປີ ⇒ ດອກເບ້ຍ I ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"ກີບ"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ກູ້ຢືມເງິນ 5 ລ້ານກີບ ອັດຕາດອກເບ້ຍ 10% ຕໍ່ປີ ພາຍໃນ 6 ເດືອນ (0.5 ປີ) ⇒ ດອກເບ້ຍ I ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"ກີບ"}</span>
                 </div>
               </div>
@@ -70,7 +70,7 @@ export const unit7Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ຝາກເງິນ 50 ລ້ານກີບ (P = 50) ເປັນເວລາ 3 ປີ (T = 3) ໄດ້ຮັບດອກເບ້ຍທັງໝົດ 15 ລ້ານກີບ (I = 15)."}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ສູດ: R = (I × 100) / (P × T) = (15 × 100) / (50 × 3) ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 <span>{"% ຕໍ່ປີ"}</span>
@@ -120,9 +120,9 @@ export const unit7Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ຝາກເງິນທົບຕົ້ນ 10 ລ້ານກີບ ໃນອັດຕາ 2% (0.02) ຕໍ່ປີ ເປັນເວລາ 2 ປີ. ຈະໄດ້ຮັບເງິນລວມໃນບັນຊີທັງໝົດຈັກກີບ?"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ປະໂຫຍກສັນຍະລັກ: A = 10,000,000 × (1.02)² ="}</span>
-                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 <span>{"ກີບ"}</span>
               </div>
             </div>
@@ -141,12 +141,12 @@ export const unit7Data: UnitData = {
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{"- ເງິນຈ່າຍສົດເລີ່ມຕົ້ນ (30%) ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"ກີບ"}</span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{"- ເງິນທີ່ຕ້ອງຈ່າຍໃນແຕ່ລະງວດ (6 ເດືອນ) ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"ກີບ / ເດືອນ"}</span>
                 </div>
               </div>
@@ -189,12 +189,12 @@ export const unit7Data: UnitData = {
             <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <span>{"- ເງິນລວມທັງໝົດທີ່ຕ້ອງຈ່າຍຄືນ (A) ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 <span>{"ກີບ"}</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <span>{"- ເງິນທີ່ຕ້ອງຈ່າຍແຕ່ລະງວດ ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 <span>{"ກີບ/ງວດ"}</span>
               </div>
             </div>
@@ -236,7 +236,7 @@ export const unit7Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ໄດ້ຮັບດອກເບ້ຍ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             <span>{"ກີບ."}</span>
           </div>
         </div>

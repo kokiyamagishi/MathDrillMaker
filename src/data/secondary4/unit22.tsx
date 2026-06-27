@@ -48,13 +48,13 @@ export const unit22Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ຜົນບວກ S = α + β ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{" ແລະ ຜົນຄູນ P = αβ ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ຄ່າຂອງ 1/α + 1/β ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -71,20 +71,28 @@ export const unit22Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{"(1) ສ້າງສົມຜົນທີ່ມີຮາກແມ່ນ x_1 = 2 ແລະ x_2 = 3 (S=5, P=6) ⇒ x² -"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{"x +"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{"= 0"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{"(2) ສ້າງສົມຜົນທີ່ມີຮາກແມ່ນ x_1 = -4 ແລະ x_2 = 5 (S=1, P=-20) ⇒ x² -"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{"x -"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{"= 0"}</span>
                 </div>
+              </div>
               </div>
             </div>
           )
@@ -134,11 +142,11 @@ export const unit22Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ສຳປະສິດ a ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ສຳປະສິດ b ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>

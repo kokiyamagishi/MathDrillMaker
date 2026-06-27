@@ -49,11 +49,11 @@ export const unit18Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) y = 2x² - 8x + 5 ⇒ ຜັນປ່ຽນເປັນ 2(x - 2)² - 3. ຄ່າຕ່ຳສຸດ min y ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) y = -x² + 6x - 4 ⇒ ຜັນປ່ຽນເປັນ -(x - 3)² + 5. ຄ່າສູງສຸດ max y ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
@@ -70,11 +70,11 @@ export const unit18Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) y = x² - 2x + 3 ⇒ ມີຄ່າຕ່ຳສຸດ min y ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) y = -2x² - 8x - 1 ⇒ ມີຄ່າສູງສຸດ max y ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
@@ -194,7 +194,7 @@ export const unit18Data: UnitData = {
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: S_max ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               <span>{" ແມັດມົນທົນ"}</span>
             </div>
           </div>

@@ -89,7 +89,7 @@ export const unit44Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຖ້າ M ແມ່ນຈຸດເຄິ່ງກາງຂອງ AB. ຮູບສາຍ M' ຈະແມ່ນຈຸດເຄິ່ງກາງຂອງ A'B' ຫຼື ບໍ່? (ຕອບ ແມ່ນ ຫຼື ບໍ່ແມ່ນ)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
@@ -107,7 +107,7 @@ export const unit44Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
                   <span>{"ຖ້າ AM = MB. ຮູບສາຍ A'M' ແລະ M'B' ຈະມີຄວາມຍາວເທົ່າກັນ ຫຼື ບໍ່? (ຕອບ ເທົ່າກັນ ຫຼື ບໍ່ເທົ່າກັນ)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>

@@ -48,12 +48,12 @@ export const unit31Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ຖ້ານັກຮຽນ 3 ຄົນ ຂຸດດິນແລ້ວໃນ 4 ມື້ ⇒ ນັກຮຽນ 6 ຄົນ ຈະຂຸດແລ້ວໃນ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"ມື້"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ຖ້ານັກຮຽນ 3 ຄົນ ຂຸດດິນແລ້ວໃນ 4 ມື້ ⇒ ນັກຮຽນ 1 ຄົນ ຈະຂຸດແລ້ວໃນ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"ມື້"}</span>
@@ -69,12 +69,16 @@ export const unit31Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ກຳມະກອນ 15 ຄົນ ປຸກເຮືອນຫຼັງໜຶ່ງແລ້ວໃນ 20 ມື້. ຖ້າຢາກໃຫ້ປຸກແລ້ວພາຍໃນ 10 ມື້ ຈະຕ້ອງໃຊ້ກຳມະກອນຈັກຄົນ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                <span>{"ປະໂຫຍກສັນຍະລັກ: ຄົນ = (15 × 20) /"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                <span>{"= "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
-                <span>{"ຄົນ"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"ປະໂຫຍກສັນຍະລັກ: ຄົນ = (15 × 20) /"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"= "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{"ຄົນ"}</span>
+                </div>
               </div>
             </div>
           )
@@ -109,7 +113,7 @@ export const unit31Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ຄົນງານ 10 ຄົນ ໃຊ້ເວລາ 6 ມື້ ເພື່ອສ້າງຫົນທາງໄດ້ 125 m. ຖ້າໃຊ້ຄົນງານ 12 ຄົນ ເພື່ອສ້າງຫົນທາງ 125 m ຄືເກົ່າ ຈະຕ້ອງໃຊ້ເວລາຈັກມື້? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ປະໂຫຍກສັນຍະລັກ: ເວລາ = (10 × 6) / 12 ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 <span>{"ມື້"}</span>
@@ -124,12 +128,16 @@ export const unit31Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ຖອກນ້ຳມັນໃສ່ຖັງຂະໜາດ 60 ລິດ ໄດ້ 40 ຖັງ. ຖ້າຢາກຖອກໃສ່ຖັງຂະໜາດ 80 ລິດ ຈະໄດ້ຈັກຖັງ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                <span>{"ປະໂຫຍກສັນຍະລັກ: ຈຳນວນຖັງ = ("}</span>
-                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
-                <span>{") / 80 ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
-                <span>{"ຖັງ"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"ປະໂຫຍກສັນຍະລັກ: ຈຳນວນຖັງ = ("}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{") / 80 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{"ຖັງ"}</span>
+                </div>
               </div>
             </div>
           )

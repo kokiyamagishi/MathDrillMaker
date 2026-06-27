@@ -56,13 +56,13 @@ export const unit40Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ຄ່າສະເລ່ຍ x̄ ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{" ແລະ ຄ່ານິຍົມ Mod ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ຄ່າກາງ Med ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
@@ -78,7 +78,7 @@ export const unit40Data: UnitData = {
                 {"ຈົ່ງຊອກຫາ x̄, Med, Mod ຂອງຂໍ້ມູນຕໍ່ໄປນີ້ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"ໃຫ້ຂໍ້ມູນ: 2, 4, 4, 5, 10. ຊອກຫາ x̄ ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{" ແລະ Mod ="}</span>

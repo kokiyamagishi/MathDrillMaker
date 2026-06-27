@@ -49,11 +49,11 @@ export const unit9Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ³√(-216) ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ⁴√(16 × 81) = 2 ×"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"="}</span>
@@ -72,12 +72,12 @@ export const unit9Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) √75 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"√3"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ³√(-54) = -3 × ³√"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                 </div>
@@ -125,11 +125,11 @@ export const unit9Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) √841 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) √1225 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
@@ -147,9 +147,9 @@ export const unit9Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ຈົ່ງຊອກຫາຄ່າປະມານຂອງ √5 ໃຫ້ເປັນເລກທົດສະນິຍົມ 3 ຕຳແໜ່ງ (ໂດຍໃຊ້ວິທີຕັ້ງບັ້ງຖອດຮາກ)?"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ຕອບ: √5 ≈"}</span>
-                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               </div>
             </div>
           )
@@ -169,7 +169,7 @@ export const unit9Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງຄັດຈ້ອນສຳນວນ: ³√(27x³y⁹). (ຮູ້ວ່າ x ແລະ y ແມ່ນຈຳນວນຈິງ)"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
               <span>{"ຕອບ: ³√(27x³y⁹) = 3 × x × y^"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             </div>

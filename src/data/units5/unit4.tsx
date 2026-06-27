@@ -301,14 +301,14 @@ export const unit4Data: UnitData = {
                 <span>{"(1) 📐 ຖ້າເຮົາແບ່ງຮູບສີ່ແຈສາກອອກເປັນສອງສ່ວນຕາມເສັ້ນເນັ່ງຈອມ, ເຮົາຈະໄດ້ຮູບສາມແຈສອງຮູບທີ່ທຽບເທົ່າກັນພໍດີ ຫຼື ບໍ່?"}</span>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
                   <span>{"ຄຳຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
                 </div>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                 <span>{"(2) ⏹️ ຖ້າເຮົາແບ່ງຮູບຈະຕຸລັດອອກເປັນສີ່ສ່ວນຕາມເສັ້ນເນັ່ງຈອມທັງສອງ, ເຮົາຈະໄດ້ຮູບສາມແຈສີ່ຮູບທີ່ທຽບເທົ່າກັນພໍດີ ຫຼື ບໍ່?"}</span>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
                   <span>{"ຄຳຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
                 </div>
               </div>
             </div>

@@ -363,7 +363,7 @@ export const unit10Data: UnitData = {
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຜົນລັບແມ່ນ ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             </div>
           </div>
         )
@@ -382,7 +382,7 @@ export const unit10Data: UnitData = {
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ເງິນທີ່ເຫຼືອແມ່ນ ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"ກີບ"}</span>
             </div>
           </div>
@@ -403,7 +403,7 @@ export const unit10Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຜົນຮັບແມ່ນ ="}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
           </div>
         </div>
       )
@@ -420,7 +420,7 @@ export const unit10Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຜົນຮັບແມ່ນ ="}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
           </div>
         </div>
       )

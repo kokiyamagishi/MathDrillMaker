@@ -294,7 +294,7 @@ export const unit11Data: UnitData = {
               </p>
               <div style={{ display: "flex", gap: "12px", alignItems: "center", marginTop: "8px" }}>
                 <span>{"ຄຳຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
                 <span>{"L"}</span>
               </div>
             </div>

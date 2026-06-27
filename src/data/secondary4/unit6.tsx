@@ -45,13 +45,13 @@ export const unit6Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ອັດຕາສ່ວນ 120 cm ຕໍ່ 3 m (ປ່ຽນເປັນ cm ຄືກັນກ່ອນ) ⇒ 120 :"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"= 2 :"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ອັດຕາສ່ວນ 500 Kip ຕໍ່ 30 Kip ⇒"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{": 3"}</span>
@@ -70,9 +70,9 @@ export const unit6Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ແຜນຜັງມີມາດຕາສ່ວນ 1 : 150,000 (1 cm ແທນ 1.5 km ຈິງ). ຖ້າໄລຍະທາງໃນແຜນຜັງແມ່ນ 2.3 cm, ໄລຍະທາງຕົວຈິງແມ່ນຈັກ km?"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ປະໂຫຍກສັນຍະລັກ: 2.3 × 1.5 ="}</span>
-                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 <span>{"km"}</span>
               </div>
             </div>
@@ -112,12 +112,16 @@ export const unit6Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ທ້າວ ຄຳ ດຳນາແລ້ວຄົນດຽວໃນ 6 ຊົ່ວໂມງ, ນາງ ລີ ດຳນາແລ້ວຄົນດຽວໃນ 3 ຊົ່ວໂມງ, ແລະ ທ້າວ ສີ ດຳນາແລ້ວຄົນດຽວໃນ 4 ຊົ່ວໂມງ. ຖ້າທັງສາມຄົນຊ່ວຍກັນ ຈະໃຊ້ເວລາຈັກຊົ່ວໂມງ?"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                <span>{"ປະໂຫຍກສັນຍະລັກ: 1/t = 1/6 + 1/3 + 1/4 = 9/12 ⇒ t = 12/9 ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                <span>{"ຊົ່ວໂມງ (ເທົ່າກັບ 1 ຊົ່ວໂມງ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
-                <span>{"ນາທີ)"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"ປະໂຫຍກສັນຍະລັກ: 1/t = 1/6 + 1/3 + 1/4 = 9/12 ⇒ t = 12/9 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"ຊົ່ວໂມງ (ເທົ່າກັບ 1 ຊົ່ວໂມງ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{"ນາທີ)"}</span>
+                </div>
               </div>
             </div>
           )
@@ -132,9 +136,9 @@ export const unit6Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ແບ່ງເງິນ 45,000 ກີບ ອອກເປັນ 3 ສ່ວນໃນອັດຕາສ່ວນພົວພັນ 7 : 5 : 3. ຈົ່ງຊອກຫາສ່ວນແບ່ງຂອງສ່ວນທີ 1 (ສ່ວນທີ່ຫຼາຍສຸດ)?"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ປະໂຫຍກສັນຍະລັກ: 45,000 × (7 / 15) ="}</span>
-                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "140px", height: "42px" }}></span>
+                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 <span>{"ກີບ"}</span>
               </div>
             </div>
@@ -182,13 +186,17 @@ export const unit6Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ກັອກນ້ຳທີ 1 ແລະ ທີ 2 ໄຂໃສ່ອ່າງພ້ອມກັນຈະເຮັດໃຫ້ນ້ຳເຕັມອ່າງໃນ 30 ນາທີ ແລະ 20 ນາທີ ຕາມລຳດັບ. ຖ້າເປີດກັອກທີ 3 ປ່ອຍນ້ຳອອກຈະເຮັດໃຫ້ນ້ຳໝົດອ່າງໃນ 40 ນາທີ. ຖ້າໄຂທັງ 3 ກັອກພ້ອມກັນ ຈະໃຊ້ເວລາຈັກນາທີຈຶ່ງເຕັມອ່າງ?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-              <span>{"ເວລາຮ່ວມ t = 240 /"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
-              <span>{"="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
-              <span>{"ນາທີ"}</span>
-            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"ເວລາຮ່ວມ t = 240 /"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{"ນາທີ"}</span>
+                </div>
+              </div>
           </div>
         )
       }
@@ -226,7 +234,7 @@ export const unit6Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ໄດ້ຮັບ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             <span>{"Kip."}</span>
           </div>
         </div>

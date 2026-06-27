@@ -251,7 +251,7 @@ export const unit6Data: UnitData = {
                     className="answer-blank"
                     style={{
                       display: "inline-block",
-                      width: "120px",
+                      width: "80px",
                       height: "40px",
                     }}
                   ></span>
@@ -286,14 +286,14 @@ export const unit6Data: UnitData = {
                 <span>{"(1) 📐 ຮູບສາມແຈສະເໝີ ແມ່ນຮູບເຄິ່ງຄືກັນທຽບໃສ່ເມັດ (ໝູນ 180° ແລ້ວທັບກັນພໍດີ) ຫຼື ບໍ່?"}</span>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
                   <span>{"ຄຳຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
                 </div>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                 <span>{"(2) 🛑 ຮູບຫົກແຈສະເໝີ ແມ່ນຮູບເຄິ່ງຄືກັນທຽບໃສ່ເມັດ ຫຼື ບໍ່?"}</span>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
                   <span>{"ຄຳຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
                 </div>
               </div>
             </div>

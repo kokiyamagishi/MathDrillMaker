@@ -192,7 +192,7 @@ export const unit51Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
                   <span>{"ໃນຊ່ວງເວລາໃດທີ່ອຸນຫະພູມມີການປ່ຽນແປງຫຼຸດລົງ? (ຕອບເປັນຊ່ວງເວລາ ເຊັ່ນ 11:00-12:00)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
             </div>
@@ -234,7 +234,7 @@ export const unit51Data: UnitData = {
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຊ່ວງເວລາແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
         )

@@ -317,7 +317,7 @@ export const unit9Data: UnitData = {
                     className="answer-blank"
                     style={{
                       display: "inline-block",
-                      width: "120px",
+                      width: "80px",
                       height: "40px",
                     }}
                   ></span>
@@ -380,7 +380,7 @@ export const unit9Data: UnitData = {
                     className="answer-blank"
                     style={{
                       display: "inline-block",
-                      width: "120px",
+                      width: "80px",
                       height: "40px",
                     }}
                   ></span>
@@ -449,7 +449,7 @@ export const unit9Data: UnitData = {
                 <span>{"(1) 🌾 ດິນນາຕອນໜຶ່ງເປັນຮູບຄາງໝູ ທີ່ມີຂ້າງເທິງຍາວ 20 m, ຂ້າງລຸ່ມຍາວ 30 m ແລະ ມີລວງສູງແມ່ນ 15 m. ດິນນາຕອນນີ້ມີເນື້ອທີ່ທັງໝົດຈັກ m²?"}</span>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
                   <span>{"ຄຳຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
                   <span>{"m²"}</span>
                 </div>
               </div>
@@ -457,7 +457,7 @@ export const unit9Data: UnitData = {
                 <span>{"(2) ✂️ ເຈ້ຍຮູບສາມແຈໃບໜຶ່ງມີພື້ນ 15 cm ແລະ ລວງສູງ 10 cm. ຖ້າຕັດຮູບສາມແຈນ້ອຍທີ່ມີພື້ນ 5 cm ແລະ ລວງສູງ 4 cm ອອກ, ເນື້ອທີ່ເຈ້ຍທີ່ເຫຼືອແມ່ນຈັກ cm²?"}</span>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
                   <span>{"ຄຳຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
                   <span>{"cm²"}</span>
                 </div>
               </div>

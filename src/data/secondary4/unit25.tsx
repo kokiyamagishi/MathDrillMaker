@@ -41,11 +41,11 @@ export const unit25Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ຂ້າງກົງສາກ AC (ໂດຍນຳໃຊ້ປີຕາກໍ) ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ຄ່າຂອງ sin A ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{" ແລະ cos A ="}</span>
@@ -64,11 +64,11 @@ export const unit25Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ໃຫ້ cos A = 4/5 ຂອງມຸມແຫຼມ A. ຄ່າຂອງ sin A ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ໃຫ້ sin A = 3/5 ຂອງມຸມແຫຼມ A. ຄ່າຂອງ tan A ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
@@ -131,11 +131,11 @@ export const unit25Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) sin 30° + cos 60° ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) tan² 60° + sin² 45° = 3 + 1/2 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
@@ -153,7 +153,7 @@ export const unit25Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ຢືນຫ່າງຈາກຕົ້ນໄມ້ 10 ແມັດ. ຫຼຽວເບິ່ງຍອດໄມ້ດ້ວຍມຸມເງີຍ 30°. ຈົ່ງຊອກຫາຄວາມສູງຂອງຕົ້ນໄມ້ (ບໍ່ນັບຄວາມສູງຂອງຕາ, tan 30° = √3 / 3 ≈ 0.577)?"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ຕອບ: ຄວາມສູງແມ່ນ"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 <span>{" ແມັດ (ຂຽນຮູບຮ່າງ √3)"}</span>

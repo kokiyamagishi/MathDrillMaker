@@ -49,11 +49,11 @@ export const unit30Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) 'ເຮືອແລ່ນໄປທາງທິດເໜືອດ້ວຍຄວາມໄວ 15 km/h' ⇒ ແມ່ນປະລິມານ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) 'ກ້ອນຫີນມີມວນສານ 5 ກິໂລກຣາມ' ⇒ ແມ່ນປະລິມານ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -69,11 +69,11 @@ export const unit30Data: UnitData = {
                 {"ຈົ່ງຈຳແນກປະລິມານຕໍ່ໄປນີ້ວ່າເປັນ ສະກາແລ ຫຼື ເວກເຕີ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) 'ລົດແລ່ນໄປທາງທິດໃຕ້ດ້ວຍຄວາມໄວ 80 km/h' ⇒ ແມ່ນປະລິມານ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) 'ນ້ຳໜັກຂອງປຶ້ມແມ່ນ 2 ກິໂລກຣາມ' ⇒ ແມ່ນປະລິມານ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -116,11 +116,11 @@ export const unit30Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ເວກເຕີທີ່ເທົ່າກັນກັບ AB ແມ່ນເວກເຕີ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ເວກເຕີກົງກັນຂ້າມກັບ BC (ໝາຍເຖິງ -BC) ແມ່ນເວກເຕີ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
@@ -137,11 +137,11 @@ export const unit30Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ເວກເຕີທີ່ເທົ່າກັນກັບ AB ແມ່ນເວກເຕີ DC, EF, ແລະ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ເວກເຕີກົງກັນຂ້າມກັບ DA ແມ່ນເວກເຕີ BC ແລະ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
@@ -164,7 +164,7 @@ export const unit30Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ນົກໂຕໜຶ່ງເລີ່ມບິນໄປທາງທິດເວັນຕົກສຽງເໜືອເປັນໄລຍະທາງ 2 ກິໂລແມັດ, ຈາກນັ້ນບິນໄປທາງທິດເວັນອອກສຽງເໜືອເປັນໄລຍະທາງ 2 ກິໂລແມັດ. ຈົ່ງຊອກຫາໄລຍະຫ່າງທັງໝົດລະຫວ່າງນົກກັບຈຸດເລີ່ມຕົ້ນ?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
               <span>{"ຕອບ: ໄລຍະຫ່າງແມ່ນ"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{" ກິໂລແມັດ (ຂຽນຮູບຮ່າງ √)"}</span>

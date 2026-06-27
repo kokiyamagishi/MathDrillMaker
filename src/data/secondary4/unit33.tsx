@@ -47,7 +47,7 @@ export const unit33Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ໃຫ້ A(1, 2) ແລະ B(4, 6) ⇒ AB = ["}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{", "}</span>
@@ -55,7 +55,7 @@ export const unit33Data: UnitData = {
                   <span>{"] ແລະ ມີຂະໜາດ |AB| ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ໃຫ້ C(2, -1) ແລະ D(-1, 3) ⇒ CD = ["}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{", "}</span>
@@ -75,7 +75,7 @@ export const unit33Data: UnitData = {
                 {"ຈົ່ງຊອກຫາຕົວປະສານ ແລະ ຂະໜາດຂອງເວກເຕີ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ໃຫ້ A(2, 3) ແລະ B(5, 7) ⇒ AB = ["}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{", "}</span>
@@ -123,20 +123,28 @@ export const unit33Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{"(1) ໃຫ້ u = [3, 2] ແລະ v = [-1, 4] ⇒ u + 2v = ["}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{", "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{"]"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{"(2) ໃຫ້ u = [4, -3] ແລະ v = [2, 1] ⇒ 3u - v = ["}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{", "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{"]"}</span>
                 </div>
+              </div>
               </div>
             </div>
           )
@@ -150,14 +158,18 @@ export const unit33Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{"(1) ໃຫ້ u = 3i - 4j ⇒ ຕົວປະສານຂອງ u = ["}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{", "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{"]"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ໃຫ້ v = [2, 0] ⇒ ຂຽນໃນຮູບຮ່າງ i ແລະ j ຈະໄດ້ v ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{" (ຂຽນຊື່ເວກເຕີ)"}</span>
@@ -181,13 +193,17 @@ export const unit33Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ໃຫ້ສາມເມັດ A(1, 2), B(4, 5), C(6, 2). ຊອກຫາເມັດ D(x, y) ເພື່ອໃຫ້ ABCD ເປັນຮູບສີ່ແຈຂ້າງຂະໜານ (ເງື່ອນໄຂ AB = DC)?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-              <span>{"ຕອບ: ເມັດ D ແມ່ນ D("}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
-              <span>{", "}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
-              <span>{")"}</span>
-            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"ຕອບ: ເມັດ D ແມ່ນ D("}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{", "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{")"}</span>
+                </div>
+              </div>
           </div>
         )
       }

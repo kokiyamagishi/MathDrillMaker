@@ -45,20 +45,28 @@ export const unit23Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{"(1) ລະບົບ: { x² - 9 ≥ 0 ແລະ x² - 5x < 0 }. ໃຈຜົນຮ່ວມແມ່ນ ["}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{", "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{"["}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{"(2) ລະບົບ: { x² - 1 > 0 ແລະ x² - 4 < 0 }. ໃຈຜົນຮ່ວມແມ່ນ ]-2, -1[ ∪ ]"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{", "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{"["}</span>
                 </div>
+              </div>
               </div>
             </div>
           )
@@ -72,11 +80,11 @@ export const unit23Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ສົມຜົນ x² - 5x + 6 = 0 ມີ Δ = 1 > 0, S = 5 > 0, P = 6 > 0. ສອງຮາກເປັນຮາກ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ສົມຜົນ x² + 6x + 8 = 0 ມີ Δ = 4 > 0, S = -6 < 0, P = 8 > 0. ສອງຮາກເປັນຮາກ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -123,7 +131,7 @@ export const unit23Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"ມີສອງຮາກຕ່າງເຄື່ອງໝາຍກັນ (ຮາກບວກໜຶ່ງ, ຮາກລົບໜຶ່ງ) ⇒ ຕ້ອງມີ P = 2m - 5 < 0 ⇒ m <"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -163,7 +171,7 @@ export const unit23Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ໃຫ້ສົມຜົນ x² - 2(m+1)x + m + 3 = 0. ຊອກຫາເງື່ອນໄຂຂອງ m ເພື່ອໃຫ້ສົມຜົນມີສອງຮາກບວກຕ່າງກັນ?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
               <span>{"ຕອບ: m >"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
@@ -180,7 +188,7 @@ export const unit23Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຊອກຫາຄ່າ k ເພື່ອໃຫ້ລະບົບອະສົມຜົນ { x² - 5x + 4 ≤ 0 ແລະ x - k > 0 } ມີໃຈຜົນຮ່ວມ?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
               <span>{"ຕອບ: k <"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
@@ -204,7 +212,7 @@ export const unit23Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ມີຮາກ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
       )

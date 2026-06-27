@@ -112,7 +112,7 @@ export const unit6Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຄູ່ພິກັດ (3, 2) ແມ່ນໃຈຜົນຂອງລະບົບສົມຜົນ "} <span className="math">{"x + 2y = 7"}</span> {" ແລະ "} <span className="math">{"2x - y = 4"}</span> {" ຫຼື ບໍ່? (ຕອບ ແມ່ນ ຫຼື ບໍ່ແມ່ນ)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
@@ -283,7 +283,7 @@ export const unit6Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ລາຄາປຶ້ມຂຽນ 1 ຫົວແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             <span>{"ກີບ"}</span>
           </div>
         </div>

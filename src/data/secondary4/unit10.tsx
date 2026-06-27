@@ -48,12 +48,12 @@ export const unit10Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) √18 - 2√8 + √2 = 3√2 -"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"√2 + √2 = 0"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) √45 - √125 + √20 = 3√5 -"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"√5 + 2√5 = 0"}</span>
@@ -72,7 +72,7 @@ export const unit10Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ຄັດຈ້ອນ: √(27x³y) - √(12x³y)"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ຕອບ: ("}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                 <span>{"- 2) × x√(3xy) = x√(3xy)"}</span>
@@ -123,11 +123,11 @@ export const unit10Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) 1 / (√3 - √2) = √3 +"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) 6 / √3 = 2 ×"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
@@ -145,7 +145,7 @@ export const unit10Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ຄິດໄລ່: (3√2 - 2√5)(3√2 + 2√5)"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ຕອບ: (3√2)² - (2√5)² = 18 -"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 <span>{"= "}</span>
@@ -169,7 +169,7 @@ export const unit10Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງແກ້ ແລະ ຄັດຈ້ອນ: [ (√5 + 2) / (√3 - 2) ] ÷ [ (√3 + 2) / (√5 - 2) ]. (ແນະນຳ: ປ່ຽນຫານເປັນຄູນ ປີ້ນເສດສ່ວນ)"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
               <span>{"ຕອບ: ເທົ່າກັບ (5 - 4) / (3 - 4) = 1 /"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               <span>{"= "}</span>

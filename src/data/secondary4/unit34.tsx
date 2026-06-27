@@ -48,13 +48,13 @@ export const unit34Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ໃຫ້ u = [1, 2], v = [1, 0] ແລະ w = [5, 4]. ຖ້າ w = x·u + y·v ຈະໄດ້ x ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{" ແລະ y ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ໃຫ້ u = [2, -1], v = [0, 3] ແລະ w = [6, 0]. ຖ້າ w = x·u + y·v ຈະໄດ້ x ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{" ແລະ y ="}</span>
@@ -73,14 +73,14 @@ export const unit34Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ໃຫ້ u = [1, 0, 0], v = [0, 1, 0] ແລະ w = [2, 3, 0]. ຖ້າ w = x·u + y·v, ສະແດງວ່າ u, v, w "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                   <span>{" (ເລືອກ: ຮ່ວມແຜ່ນພຽງ / ບໍ່ຮ່ວມແຜ່ນພຽງ)"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ໃຫ້ u = [1, 0, 0], v = [0, 1, 0] ແລະ w = [0, 0, 1]. ສາມເວກເຕີນີ້ "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                   <span>{" (ເລືອກ: ຮ່ວມແຜ່ນພຽງ / ບໍ່ຮ່ວມແຜ່ນພຽງ)"}</span>
                 </div>
               </div>

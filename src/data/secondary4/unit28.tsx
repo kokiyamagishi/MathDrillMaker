@@ -44,11 +44,11 @@ export const unit28Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ຄ່າຂອງ cos 120° ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ຄ່າຂອງ c² = 6. ດັ່ງນັ້ນຂ້າງ c (AB) ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -65,11 +65,11 @@ export const unit28Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ຄ່າຂອງ cos A = (b² + c² - a²) / 2bc ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ຄ່າຂອງມຸມ A ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"ອົງສາ"}</span>
@@ -114,11 +114,11 @@ export const unit28Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ຄ່າຂອງ a² = 8. ດັ່ງນັ້ນຂ້າງ a ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ຄ່າຂອງມຸມ C ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"ອົງສາ"}</span>
@@ -137,9 +137,9 @@ export const unit28Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ໃຫ້ຈຸດ A ຫ່າງຈາກຈຸດ P ແມ່ນ AP = 50√6 ແມັດ, ແລະ ຈຸດ A ຫ່າງຈາກ Q ແມ່ນ AQ = 100√2 ແມັດ. ມຸມ PAQ = 30°. ຈົ່ງຊອກຫາໄລຍະຫ່າງ PQ?"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ຕອບ: PQ ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 <span>{" ແມັດ (ຂຽນໃນຮູບຮ່າງ √2)"}</span>
               </div>
             </div>
@@ -160,7 +160,7 @@ export const unit28Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ໃນຮູບສາມແຈ ABC, ໃຫ້ a = 3, ມຸມ B = 45°, ມຸມ C = 15°. ຈົ່ງຊອກຫາຂ້າງ b (AC)?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
               <span>{"ຕອບ: b ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{" (ຂຽນຮູບຮ່າງ √ ຖ້າມີ)"}</span>
@@ -178,7 +178,7 @@ export const unit28Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ໃນຮູບສາມແຈ ABC, ໃຫ້ຂ້າງ a = 3, b = 5, c = 7. ຈົ່ງຊອກຫາຄ່າຂອງມຸມທີ່ໃຫຍ່ທີ່ສຸດ (ມຸມ C ກົງກັນຂ້າມດ້ານຍາວສຸດ)?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
               <span>{"ຕອບ: ມຸມໃຫຍ່ສຸດແມ່ນ"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{" ອົງສາ"}</span>
@@ -203,7 +203,7 @@ export const unit28Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: c² ="}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
           </div>
         </div>
       )

@@ -86,7 +86,7 @@ export const unit14Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
                   <span>{"ฮູບວົງມົນ ມີແກນເຄິ່ງຄືທັງໝົດຈັກເສັ້ນ? (ຕອບ 1, 2, 4 ຫຼື ຫຼາຍບໍ່ມີສິ້ນສຸດ)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
@@ -195,7 +195,7 @@ export const unit14Data: UnitData = {
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ແມ່ນເລກ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
         )
@@ -212,7 +212,7 @@ export const unit14Data: UnitData = {
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ມີ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
         )

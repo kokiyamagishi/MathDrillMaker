@@ -243,7 +243,7 @@ export const unit7Data: UnitData = {
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ເນື້ອທີ່ໜອງລ້ຽງປາມີ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               <span>{"ເຮັກຕາ"}</span>
             </div>
           </div>
@@ -264,7 +264,7 @@ export const unit7Data: UnitData = {
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຜົນຄູນແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             </div>
           </div>
         )
@@ -284,7 +284,7 @@ export const unit7Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ປະລິມານນ້ຳທີ່ໃຊ້ໄປແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             <span>{"L"}</span>
           </div>
         </div>
@@ -305,7 +305,7 @@ export const unit7Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: x ="}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
           </div>
         </div>
       )

@@ -40,11 +40,11 @@ export const unit43Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ໂຍນຫຼຽນ 1 ອັນ ແລະ ໝາກກະລັອກ 1 ໜ່ວຍ. ຄວາມໜ້າຈະເປັນທີ່ຫຼຽນອອກ ຫົວ ແລະ ໝາກກະລັອກໄດ້ 6 ແຕ້ມ ແມ່ນ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ໂຍນໝາກກະລັອກ 2 ໜ່ວຍພ້ອມກັນ. ຄວາມໜ້າຈະເປັນທີ່ຈະໄດ້ 6 ແຕ້ມທັງສອງໜ່ວຍ ແມ່ນ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
@@ -60,7 +60,7 @@ export const unit43Data: UnitData = {
                 {"ຈົ່ງຄິດໄລ່ຄວາມໜ້າຈະເປັນຮ່ວມຂອງເຫດການເອກະລາດ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ໂຍນໝາກກະລັອກ 1 ໜ່ວຍ ແລະ ຫຼຽນ 1 ຫຼຽນ. P(ໄດ້ເລກ 6 ແລະ ຫົວ) ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>

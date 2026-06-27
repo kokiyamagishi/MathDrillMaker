@@ -41,20 +41,28 @@ export const unit20Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{"(1) x² - 4x ≤ 0 ⇒ ຮາກແມ່ນ x = 0 ແລະ x = 4. ກຸ່ມໃຈຜົນແມ່ນ ["}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{", "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{"]"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{"(2) -x² + 7x - 10 > 0 (ຫຼື x² - 7x + 10 < 0) ⇒ ກຸ່ມໃຈຜົນແມ່ນ ]"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{", "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{"["}</span>
                 </div>
+              </div>
               </div>
             </div>
           )
@@ -68,12 +76,12 @@ export const unit20Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ສົມຜົນ 2x² - 3x + 5 = 0 ມີ Δ = -31 < 0. ຈຳນວນໃຈຜົນຕົວຈິງແມ່ນ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{" ໃຈຜົນ"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ສົມຜົນ 3x² - 6x + 3 = 0 ມີ Δ = 0. ຈຳນວນໃຈຜົນຕົວຈິງແມ່ນ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{" ໃຈຜົນ"}</span>
@@ -125,7 +133,7 @@ export const unit20Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"ເງື່ອນໄຂ Δ' = k² - 9 ≥ 0. ດັ່ງນັ້ນ k ຕ້ອງສອດຄ່ອງ k ≤"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{" ຫຼື k ≥"}</span>
@@ -167,13 +175,17 @@ export const unit20Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຊອກຫາຄ່າ k ເພື່ອໃຫ້ໄຕພົດ f(x) = x² + 2(k+1)x + (k+3) > 0 ສໍາລັບທຸກໆ x ∈ ℝ?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-              <span>{"ຕອບ: ຫວ່າງຂອງ k ແມ່ນ ]"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
-              <span>{", "}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
-              <span>{"["}</span>
-            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"ຕອບ: ຫວ່າງຂອງ k ແມ່ນ ]"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{", "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{"["}</span>
+                </div>
+              </div>
           </div>
         )
       },
@@ -187,13 +199,17 @@ export const unit20Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງຊອກຫາຫວ່າງໃຈຜົນຂອງອະສົມຜົນ x² - 4x + 3 < 2x - 2?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-              <span>{"ຕອບ: ຫວ່າງແມ່ນ ]"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
-              <span>{", "}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
-              <span>{"["}</span>
-            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"ຕອບ: ຫວ່າງແມ່ນ ]"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{", "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{"["}</span>
+                </div>
+              </div>
           </div>
         )
       }
@@ -232,7 +248,7 @@ export const unit20Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ກຸ່ມໃຈຜົນແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
       )

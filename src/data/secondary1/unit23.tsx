@@ -43,14 +43,14 @@ export const unit23Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ວັນເສົາ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"S"}</span>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ວັນປີໃໝ່"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
@@ -67,9 +67,9 @@ export const unit23Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ໃຫ້ A ແມ່ນກຸ່ມຂອງຕົວເລກທີ່ໃຊ້ຂຽນຈຳນວນ 42,124. ຈົ່ງຂຽນກຸ່ມ A ແບບແຈກຢາຍອົງປະກອບໃຫ້ຖືກຕ້ອງ? (ກົດລະບຽບ: ແຕ່ລະອົງປະກອບຂຽນພຽງເທື່ອດຽວ) "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ຕອບ: A = {"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 <span>{"}"}</span>
               </div>
             </div>
@@ -115,12 +115,12 @@ export const unit23Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ເດືອນທຳອິດທີ່ມີ 31 ວັນໃນປີແມ່ນ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຈຳນວນອົງປະກອບທັງໝົດຂອງກຸ່ມ E ແມ່ນ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
@@ -137,7 +137,7 @@ export const unit23Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ກຸ່ມຂອງ 'ເດືອນທີ່ມີ 32 ວັນ' ຈະເປັນກຸ່ມຊະນິດໃດ? ແລະ ສັນຍະລັກດ້ວຍເຄື່ອງໝາຍໃດ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ຕອບ: ເປັນກຸ່ມ"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 <span>{"ສັນຍະລັກດ້ວຍ"}</span>
@@ -163,7 +163,7 @@ export const unit23Data: UnitData = {
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ອົງປະກອບຮ່ວມແມ່ນ {"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"}"}</span>
             </div>
           </div>
@@ -229,7 +229,7 @@ export const unit23Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: A = {"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             <span>{"}"}</span>
           </div>
         </div>

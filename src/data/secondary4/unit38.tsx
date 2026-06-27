@@ -45,7 +45,7 @@ export const unit38Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ແຜ່ນພຽງ (P): 3x + 2y - z + 4 = 0 ⇒ ເວັກເຕີຕັ້ງສາກ n = ["}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{", "}</span>
@@ -54,7 +54,7 @@ export const unit38Data: UnitData = {
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{"]"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ແຜ່ນພຽງ (Q): -x + 5z - 2 = 0 ⇒ ເວັກເຕີຕັ້ງສາກ n = ["}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{", "}</span>
@@ -75,7 +75,7 @@ export const unit38Data: UnitData = {
                 {"ຈົ່ງຊອກຫາເວັກເຕີຕັ້ງສາກຂອງແຜ່ນພຽງ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ໃຫ້ແຜ່ນພຽງ P: 3x - 4y + 5z - 10 = 0 ⇒ n = ["}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{", "}</span>

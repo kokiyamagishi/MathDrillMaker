@@ -130,7 +130,7 @@ export const unit3Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"(x³ - 2x² - 5x + 6) ÷ (x - 3) ໄດ້: ຜົນຫານ ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{", ຕົວເສດ ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                 </div>
@@ -139,7 +139,7 @@ export const unit3Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"(x³ + 8) ÷ (x + 2) ໄດ້: ຜົນຫານ ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{", ຕົວເສດ ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                 </div>
@@ -228,11 +228,11 @@ export const unit3Data: UnitData = {
           <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <span>{"Q(x) ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <span>{"R(x) ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             </div>
           </div>
         </div>

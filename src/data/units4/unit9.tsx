@@ -34,7 +34,7 @@ export const unit9Data: UnitData = {
                 borderRadius: "8px",
                 padding: "16px",
                 backgroundColor: "#E8F5E9",
-                width: "200px",
+                width: "100px",
                 textAlign: "center",
               }}
             >
@@ -65,7 +65,7 @@ export const unit9Data: UnitData = {
                 borderRadius: "8px",
                 padding: "16px",
                 backgroundColor: "#E3F2FD",
-                width: "200px",
+                width: "100px",
                 textAlign: "center",
               }}
             >
@@ -98,7 +98,7 @@ export const unit9Data: UnitData = {
                 borderRadius: "8px",
                 padding: "16px",
                 backgroundColor: "#F3E5F5",
-                width: "200px",
+                width: "100px",
                 textAlign: "center",
               }}
             >
@@ -174,7 +174,7 @@ export const unit9Data: UnitData = {
                     className="answer-blank"
                     style={{
                       display: "inline-block",
-                      width: "150px",
+                      width: "100px",
                       height: "40px",
                     }}
                   ></span>
@@ -209,7 +209,7 @@ export const unit9Data: UnitData = {
                     className="answer-blank"
                     style={{
                       display: "inline-block",
-                      width: "150px",
+                      width: "100px",
                       height: "40px",
                     }}
                   ></span>
@@ -253,7 +253,7 @@ export const unit9Data: UnitData = {
                   className="answer-blank"
                   style={{
                     display: "inline-block",
-                    width: "150px",
+                    width: "100px",
                     height: "40px",
                   }}
                 ></span>
@@ -275,7 +275,7 @@ export const unit9Data: UnitData = {
                   className="answer-blank"
                   style={{
                     display: "inline-block",
-                    width: "150px",
+                    width: "100px",
                     height: "40px",
                   }}
                 ></span>

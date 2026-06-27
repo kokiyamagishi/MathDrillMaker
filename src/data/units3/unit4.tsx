@@ -53,13 +53,13 @@ export const unit4Data: UnitData = {
               <div
                 style={{
                   position: "relative",
-                  width: "150px",
+                  width: "100px",
                   height: "150px",
                 }}
               >
                 <div
                   style={{
-                    width: "150px",
+                    width: "100px",
                     height: "150px",
                     borderRadius: "50%",
                     backgroundColor: "#2196F3",
@@ -105,13 +105,13 @@ export const unit4Data: UnitData = {
               <div
                 style={{
                   position: "relative",
-                  width: "150px",
+                  width: "100px",
                   height: "150px",
                 }}
               >
                 <div
                   style={{
-                    width: "150px",
+                    width: "100px",
                     height: "150px",
                     borderRadius: "50%",
                     backgroundColor: "#2196F3",
@@ -122,7 +122,7 @@ export const unit4Data: UnitData = {
                     position: "absolute",
                     top: "50%",
                     left: "0",
-                    width: "150px",
+                    width: "100px",
                     height: "2px",
                     backgroundColor: "green",
                   }}
@@ -188,7 +188,7 @@ export const unit4Data: UnitData = {
                   className="answer-blank"
                   style={{
                     display: "inline-block",
-                    width: "120px",
+                    width: "80px",
                     height: "40px",
                   }}
                 ></span>
@@ -211,7 +211,7 @@ export const unit4Data: UnitData = {
                   className="answer-blank"
                   style={{
                     display: "inline-block",
-                    width: "120px",
+                    width: "80px",
                     height: "40px",
                   }}
                 ></span>
@@ -255,7 +255,7 @@ export const unit4Data: UnitData = {
                   className="answer-blank"
                   style={{
                     display: "inline-block",
-                    width: "120px",
+                    width: "80px",
                     height: "40px",
                   }}
                 ></span>
@@ -276,7 +276,7 @@ export const unit4Data: UnitData = {
                   className="answer-blank"
                   style={{
                     display: "inline-block",
-                    width: "120px",
+                    width: "80px",
                     height: "40px",
                   }}
                 ></span>
@@ -454,7 +454,7 @@ export const unit4Data: UnitData = {
                   className="answer-blank"
                   style={{
                     display: "inline-block",
-                    width: "120px",
+                    width: "80px",
                     height: "40px",
                   }}
                 ></span>

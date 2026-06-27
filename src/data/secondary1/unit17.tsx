@@ -58,14 +58,14 @@ export const unit17Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຖ້າ A ແລະ A′ ເຄິ່ງຄືກັນທຽບໃສ່ d ຢູ່ຈຸດຕັດ H, ແລ້ວທ່ອນຊື່ AH ຈະ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                   <span>{"ທ່ອນຊື່ A′H."}</span>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ເສັ້ນຊື່ (AA′) ແລະ ແກນເຄິ່ງຄື d ຈະມີລັກສະນະການພົວພັນແມ່ນ: (AA′)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
@@ -82,12 +82,16 @@ export const unit17Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ໃຫ້ໄລຍະຫ່າງຈາກເມັດ A ຫາແກນ d ແມ່ນ 4.5 cm. ຖ້າ A′ ແມ່ນເມັດເຄິ່ງຄືຂອງ A ທຽບໃສ່ d, ໄລຍະຫ່າງລະຫວ່າງ A ແລະ A′ ຈະມີຈັກ cm? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                <span>{"ປະໂຫຍກສັນຍະລັກ: AA′ ="}</span>
-                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
-                <span>{"= "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                <span>{"cm"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"ປະໂຫຍກສັນຍະລັກ: AA′ ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"= "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"cm"}</span>
+                </div>
               </div>
             </div>
           )

@@ -301,11 +301,11 @@ export const unit6Data: UnitData = {
               >
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
                   <span>{"(1) ຈົ່ງຊອກຫາຕົວອຸປະຄູນທັງໝົດ ຂອງ 12: "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
                   <span>{"(2) ຈົ່ງຊອກຫາ 3 ຕົວທະວີຄູນທຳອິດ ຂອງ 5 (ຈາກນ້ອຍຫາໃຫຍ່): "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
                 </div>
               </div>
             </div>
@@ -322,11 +322,11 @@ export const unit6Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", fontSize: "1.375rem", padding: "8px 16px" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
                   <span>{"(1) ຈົ່ງຊອກຫາຕົວອຸປະຄູນທັງໝົດ ຂອງ 18: "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
                   <span>{"(2) ຈົ່ງຊອກຫາ 3 ຕົວທະວີຄູນທຳອິດ ຂອງ 7 (ຈາກນ້ອຍຫາໃຫຍ່): "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
                 </div>
               </div>
             </div>
@@ -358,11 +358,11 @@ export const unit6Data: UnitData = {
             >
               <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
                 <span>{"(1) (-2) × (-5) × (-3) × (+2) ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
                 <span>{"(2) (-1) × (-2) × (-3) × (-4) × (+5) ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
               </div>
             </div>
           </div>
@@ -387,12 +387,12 @@ export const unit6Data: UnitData = {
             >
               <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
                 <span>{"(1) 42"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
                 <span>{"ຂອງ 6"}</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
                 <span>{"(2) 6"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
                 <span>{"ຂອງ 42"}</span>
               </div>
             </div>
@@ -463,11 +463,11 @@ export const unit6Data: UnitData = {
           >
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
               <span>{"(1) (-3) × (+4) + (-12) ÷ (-2) ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
               <span>{"(2) (-5) × [ (+8) + (-6) ] ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
             </div>
           </div>
         </div>

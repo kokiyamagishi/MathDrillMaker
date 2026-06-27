@@ -26,12 +26,12 @@ export const unit11Data: UnitData = {
             <div className="math-illustration" style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "24px", backgroundColor: "#FFF", padding: "16px", borderRadius: "8px", fontSize: "22px" }}>
               <div style={{ display: "flex", alignItems: "center" }}>
                 <div style={{ width: "2px", height: "40px", backgroundColor: "#F44336", marginRight: "8px" }}></div>
-                <div style={{ width: "200px", height: "16px", backgroundColor: "#FFC107", borderRadius: "4px", border: "1px solid #333" }}></div>
+                <div style={{ width: "100px", height: "16px", backgroundColor: "#FFC107", borderRadius: "4px", border: "1px solid #333" }}></div>
                 <span style={{ marginLeft: "12px", fontSize: "22px", fontWeight: "bold" }}>{"ຍາວກວ່າ"}</span>
               </div>
               <div style={{ display: "flex", alignItems: "center" }}>
                 <div style={{ width: "2px", height: "40px", backgroundColor: "#F44336", marginRight: "8px" }}></div>
-                <div style={{ width: "150px", height: "16px", backgroundColor: "#4CAF50", borderRadius: "4px", border: "1px solid #333" }}></div>
+                <div style={{ width: "100px", height: "16px", backgroundColor: "#4CAF50", borderRadius: "4px", border: "1px solid #333" }}></div>
                 <span style={{ marginLeft: "12px", fontSize: "22px" }}>{"ສັ້ນກວ່າ"}</span>
               </div>
             </div>
@@ -56,7 +56,7 @@ export const unit11Data: UnitData = {
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", marginLeft: "20px" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
                   <span style={{ fontWeight: "bold", width: "30px" }}>{"ກ."}</span>
-                  <div style={{ width: "180px", height: "20px", backgroundColor: "#FFEB3B", border: "1px solid #333", borderRadius: "0 10px 10px 0" }}></div>
+                  <div style={{ width: "100px", height: "20px", backgroundColor: "#FFEB3B", border: "1px solid #333", borderRadius: "0 10px 10px 0" }}></div>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
                   <span style={{ fontWeight: "bold", width: "30px" }}>{"ຂ."}</span>
@@ -68,7 +68,7 @@ export const unit11Data: UnitData = {
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
                   <span style={{ fontWeight: "bold", width: "30px" }}>{"ງ."}</span>
-                  <div style={{ width: "200px", height: "20px", backgroundColor: "#FFEB3B", border: "1px solid #333", borderRadius: "0 10px 10px 0" }}></div>
+                  <div style={{ width: "100px", height: "20px", backgroundColor: "#FFEB3B", border: "1px solid #333", borderRadius: "0 10px 10px 0" }}></div>
                 </div>
               </div>
             </div>
@@ -97,12 +97,12 @@ export const unit11Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
                   <span style={{ fontWeight: "bold", fontSize: "20px" }}>{"ເສັ້ນ ກ:"}</span>
                   {/* Straight line */}
-                  <div style={{ width: "200px", height: "6px", backgroundColor: "#2196F3" }}></div>
+                  <div style={{ width: "100px", height: "6px", backgroundColor: "#2196F3" }}></div>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
                   <span style={{ fontWeight: "bold", fontSize: "20px" }}>{"ເສັ້ນ ຂ:"}</span>
                   {/* Zig-zag line but visually shorter overall length */}
-                  <div style={{ width: "200px", height: "40px", position: "relative" }}>
+                  <div style={{ width: "100px", height: "40px", position: "relative" }}>
                     <div style={{ position: "absolute", top: "20px", left: "0", width: "50px", height: "6px", backgroundColor: "#4CAF50", transform: "rotate(-30deg)", transformOrigin: "left center" }}></div>
                     <div style={{ position: "absolute", top: "-5px", left: "43px", width: "50px", height: "6px", backgroundColor: "#4CAF50", transform: "rotate(30deg)", transformOrigin: "left center" }}></div>
                     <div style={{ position: "absolute", top: "20px", left: "86px", width: "50px", height: "6px", backgroundColor: "#4CAF50", transform: "rotate(-30deg)", transformOrigin: "left center" }}></div>
@@ -131,7 +131,7 @@ export const unit11Data: UnitData = {
             <div className="math-illustration" style={{ backgroundColor: "#F9F9F9", padding: "16px", borderRadius: "8px", border: "1px dashed #CCC", display: "flex", flexDirection: "column", gap: "16px", width: "fit-content" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <span style={{ width: "80px", fontWeight: "bold" }}>{"ສີແດງ:"}</span>
-                <div style={{ height: "8px", width: "150px", backgroundColor: "#F44336", borderRadius: "4px" }}></div>
+                <div style={{ height: "8px", width: "100px", backgroundColor: "#F44336", borderRadius: "4px" }}></div>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <span style={{ width: "80px", fontWeight: "bold" }}>{"ສີຟ້າ:"}</span>
@@ -139,7 +139,7 @@ export const unit11Data: UnitData = {
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <span style={{ width: "80px", fontWeight: "bold" }}>{"ສີເຫຼືອງ:"}</span>
-                <div style={{ height: "8px", width: "200px", backgroundColor: "#FFEB3B", border: "1px solid #FBC02D", borderRadius: "4px" }}></div>
+                <div style={{ height: "8px", width: "100px", backgroundColor: "#FFEB3B", border: "1px solid #FBC02D", borderRadius: "4px" }}></div>
               </div>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px", marginTop: "8px" }}>

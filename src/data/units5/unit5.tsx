@@ -277,7 +277,7 @@ export const unit5Data: UnitData = {
                 </p>
                 <div style={{ display: "flex", gap: "12px", alignItems: "center", marginTop: "8px" }}>
                   <span>{"ຄຳຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
                   <span>{"L"}</span>
                 </div>
               </div>
@@ -309,7 +309,7 @@ export const unit5Data: UnitData = {
                 </p>
                 <div style={{ display: "flex", gap: "12px", alignItems: "center", marginTop: "8px" }}>
                   <span>{"ຄຳຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
                   <span>{"L"}</span>
                 </div>
               </div>
@@ -395,7 +395,7 @@ export const unit5Data: UnitData = {
                 </span>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
                   <span>{"ຄຳຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
                   <span>{"kg"}</span>
                 </div>
               </div>
@@ -407,7 +407,7 @@ export const unit5Data: UnitData = {
                 </span>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
                   <span>{"ຄຳຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
                   <span>{"m"}</span>
                 </div>
               </div>

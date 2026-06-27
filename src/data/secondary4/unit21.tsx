@@ -47,12 +47,12 @@ export const unit21Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) y = x² - x + 1 ແລະ y = x. ສົມຜົນ: x² - 2x + 1 = 0 ມີ Δ = 0 ⇒ ມີຈຸດຕັດ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{" ເມັດ (ສຳຜັດກັນ)"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) y = x² - 4x + 5 ແລະ y = x + 1. ສົມຜົນ: x² - 5x + 4 = 0 ມີ Δ = 9 > 0 ⇒ ມີຈຸດຕັດ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{" ເມັດ"}</span>
@@ -70,11 +70,11 @@ export const unit21Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ປາຣາໂບນຈະສຳຜັດກັບແກນ Ox (Δ' = 1 - 4k = 0) ເມື່ອ k ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ປາຣາໂບນຈະບໍ່ຕັດກັບແກນ Ox (Δ' < 0) ເມື່ອ k >"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -127,11 +127,11 @@ export const unit21Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ຄ່າບວກຂອງ a ທີ່ສອດຄ່ອງແມ່ນ a ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ຄ່າລົບຂອງ a ທີ່ສອດຄ່ອງແມ່ນ a ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -149,9 +149,9 @@ export const unit21Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ໃຫ້ສອງປາຣາໂບນ y = x² + 2x ແລະ y = -x² + 4. ຈົ່ງຊອກຫາຄ່າຂອງ x ທັງໝົດທີ່ພວກມັນຕັດກັນ?"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ຕອບ: x ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               </div>
             </div>
           )
@@ -188,7 +188,7 @@ export const unit21Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ໃຫ້ສອງປາຣາໂບນ y = x² - 2x + 3 ແລະ y = -x² + 2x - k. ຊອກຫາເງື່ອນໄຂຂອງ k ເພື່ອໃຫ້ສອງປາຣາໂບນນີ້ບໍ່ຕັດກັນ?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
               <span>{"ຕອບ: k >"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
@@ -212,7 +212,7 @@ export const unit21Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ:"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
       )

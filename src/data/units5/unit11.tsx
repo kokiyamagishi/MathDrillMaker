@@ -214,7 +214,7 @@ export const unit11Data: UnitData = {
               <span>{"(1) ປ່ຽນອັດຕາສ່ວນ 12 : 18 ໃຫ້ເປັນອັດຕາສ່ວນຂັ້ນຕ່ຳ"}</span>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
                 <span>{"ຄຳຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
               </div>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
@@ -269,7 +269,7 @@ export const unit11Data: UnitData = {
                   className="answer-blank"
                   style={{
                     display: "inline-block",
-                    width: "120px",
+                    width: "80px",
                     height: "40px",
                   }}
                 ></span>
@@ -315,7 +315,7 @@ export const unit11Data: UnitData = {
                   className="answer-blank"
                   style={{
                     display: "inline-block",
-                    width: "120px",
+                    width: "80px",
                     height: "40px",
                   }}
                 ></span>
@@ -364,7 +364,7 @@ export const unit11Data: UnitData = {
                 className="answer-blank"
                 style={{
                   display: "inline-block",
-                  width: "120px",
+                  width: "80px",
                   height: "40px",
                 }}
               ></span>
@@ -410,7 +410,7 @@ export const unit11Data: UnitData = {
                 className="answer-blank"
                 style={{
                   display: "inline-block",
-                  width: "120px",
+                  width: "80px",
                   height: "40px",
                 }}
               ></span>

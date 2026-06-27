@@ -206,7 +206,7 @@ export const unit5Data: UnitData = {
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຕ້ອງຈ່າຍເງິນທັງໝົດ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"ກີບ"}</span>
             </div>
           </div>
@@ -262,7 +262,7 @@ export const unit5Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: x ="}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
           </div>
         </div>
       )

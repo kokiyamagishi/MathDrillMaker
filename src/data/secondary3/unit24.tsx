@@ -169,7 +169,7 @@ export const unit24Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ໃນຮູບຂ້າງເທິງ, ຖ້າມຸມ "} <span className="math">{"∠APB = 60°"}</span> {", ຮູບສາມແຈ PAB ແມ່ນຮູບສາມແຈປະເພດໃດ? (ຕອບ 'ສາມແຈສະເໝີ' ຫຼື 'ສາມແຈສາກ')"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>

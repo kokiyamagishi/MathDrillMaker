@@ -41,9 +41,9 @@ export const unit26Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ໃຫ້ A = {1, 3, 5, 7} ແລະ B = {2, 3, 5, 7, 11}. ຈົ່ງຊອກຫາອົງປະກອບຂອງກຸ່ມ A ∩ B? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ຕອບ: A ∩ B = {"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 <span>{"}"}</span>
               </div>
             </div>
@@ -56,7 +56,7 @@ export const unit26Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ໃຫ້ສອງກຸ່ມ X = {a, b} ແລະ Y = {c, d}. ຖາມວ່າ X ∩ Y ຈະເປັນກຸ່ມໃດ ແລະ ຂຽນດ້ວຍສັນຍະລັກໃດ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ຕອບ: ເປັນກຸ່ມ"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 <span>{"ສັນຍະລັກດ້ວຍ"}</span>
@@ -101,7 +101,7 @@ export const unit26Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ໃຫ້ M = {1, 4, 6, 8} ແລະ N = {5, 6, 7, 8, 9}. ຈົ່ງຊອກຫາອົງປະກອບຂອງກຸ່ມ M ∪ N? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ຕອບ: M ∪ N = {"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "240px", height: "42px" }}></span>
                 <span>{"}"}</span>

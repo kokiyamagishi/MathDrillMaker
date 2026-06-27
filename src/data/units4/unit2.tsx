@@ -469,7 +469,7 @@ export const unit2Data: UnitData = {
                   className="answer-blank"
                   style={{
                     display: "inline-block",
-                    width: "120px",
+                    width: "80px",
                     height: "40px",
                   }}
                 ></span>
@@ -620,7 +620,7 @@ export const unit2Data: UnitData = {
                     className="answer-blank"
                     style={{
                       display: "inline-block",
-                      width: "120px",
+                      width: "80px",
                       height: "40px",
                     }}
                   ></span>
@@ -765,7 +765,7 @@ export const unit2Data: UnitData = {
             >
               <div
                 style={{
-                  width: "120px",
+                  width: "80px",
                   height: "200px",
                   borderLeft: "2px solid #000",
                   borderBottom: "2px solid #000",

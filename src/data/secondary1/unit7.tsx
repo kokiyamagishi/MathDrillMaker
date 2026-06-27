@@ -279,7 +279,7 @@ export const unit7Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span className="math">{"45 ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                   <span style={{ fontSize: "1.1rem", color: "#7F8C8D" }}>{"(ຕົວຢ່າງການຕອບ: 3² × 5)"}</span>
                 </div>
 
@@ -287,7 +287,7 @@ export const unit7Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span className="math">{"72 ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                   <span style={{ fontSize: "1.1rem", color: "#7F8C8D" }}>{"(ຕົວຢ່າງການຕອບ: 2³ × 3²)"}</span>
                 </div>
               </div>
@@ -305,12 +305,12 @@ export const unit7Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span className="math">{"54 ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span className="math">{"60 ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
             </div>
@@ -357,7 +357,7 @@ export const unit7Data: UnitData = {
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ອີກ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               <span>{"ນາທີ ພວກມັນຈະດັງພ້ອມກັນອີກ."}</span>
             </div>
           </div>
@@ -378,7 +378,7 @@ export const unit7Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"LCM(15, 20) ="}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
           </div>
         </div>
       )
@@ -395,7 +395,7 @@ export const unit7Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"GCD(28, 42) ="}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
           </div>
         </div>
       )

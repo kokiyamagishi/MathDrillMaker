@@ -225,7 +225,7 @@ export const unit15Data: UnitData = {
               <span>{"(1) ເມື່ອຄີ່ໜ້າໂຄ້ງຂອງຮູບຫຼັງຄາມົນ ອອກ, ຈະໄດ້ເປັນຮູບເລຂາຄະນິດໃດ?"}</span>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
                 <span>{"ຄຳຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
               </div>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
@@ -279,7 +279,7 @@ export const unit15Data: UnitData = {
                   className="answer-blank"
                   style={{
                     display: "inline-block",
-                    width: "120px",
+                    width: "80px",
                     height: "40px",
                   }}
                 ></span>

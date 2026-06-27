@@ -52,7 +52,7 @@ export const unit47Data: UnitData = {
                   </svg>
 
                   {/* Larger Triangle A'B'C' */}
-                  <svg viewBox="0 0 140 120" style={{ width: "120px", height: "auto" }}>
+                  <svg viewBox="0 0 140 120" style={{ width: "80px", height: "auto" }}>
                     <polygon points="70,10 10,100 130,100" fill="none" stroke="#D32F2F" strokeWidth="2" />
                     <text x="66" y="8" fill="#D32F2F" fontSize="8" fontWeight="bold">{"A'"}</text>
                     <text x="3" y="108" fill="#D32F2F" fontSize="8" fontWeight="bold">{"B'"}</text>

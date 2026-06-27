@@ -57,11 +57,11 @@ export const unit41Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ໃຫ້ຊຸດຂໍ້ມູນ: 3, 8, 15, 2, 20, 11 ⇒ ພິໄສ (Range) ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ໃຫ້ຊຸດຂໍ້ມູນ: 120, 105, 140, 95, 110 ⇒ ພິໄສ (Range) ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
@@ -101,9 +101,9 @@ export const unit41Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຖ້າຂໍ້ມູນແຕ່ລະຕົວໃນຊຸດຂໍ້ມູນໜຶ່ງ ຖືກບວກຕື່ມດ້ວຍ 5. ຄ່າຜັນປ່ຽນມາດຕະຖານ s ຂອງຂໍ້ມູນຊຸດໃໝ່ ຈະມີການປ່ຽນແປງແນວໃດ ເມື່ອທຽບໃສ່ຊຸດເກົ່າ?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
               <span>{"ຕອບ: "}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{" (ເລືອກ: ເພີ່ມຂຶ້ນ 5 / ຫຼຸດລົງ 5 / ຄືເກົ່າ)"}</span>
             </div>
           </div>

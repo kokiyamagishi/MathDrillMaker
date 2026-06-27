@@ -40,11 +40,11 @@ export const unit44Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ໃນຖົງມີໝາກບານ ແດງ 3 ໜ່ວຍ, ຟ້າ 4 ໜ່ວຍ, ເຫຼືອງ 5 ໜ່ວຍ. ສຸ່ມຈັບ 1 ໜ່ວຍ. ຄວາມໜ້າຈະເປັນທີ່ໄດ້ສີແດງ ຫຼື ສີຟ້າ ແມ່ນ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ໂຍນໝາກກະລັອກ 1 ໜ່ວຍ. ເຫດການ A ໄດ້ແຕ້ມ 1, ເຫດການ B ໄດ້ແຕ້ມ 6. ຄວາມໜ້າຈະເປັນ P(A ∪ B) ແມ່ນ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
@@ -60,7 +60,7 @@ export const unit44Data: UnitData = {
                 {"ຈົ່ງຄິດໄລ່ຄວາມໜ້າຈະເປັນຂອງເຫດການຂັດກັນ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ໂຍນໝາກກະລັອກ 1 ໜ່ວຍ. P(ໄດ້ແຕ້ມ 1 ຫຼື ໄດ້ແຕ້ມ 6) ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>

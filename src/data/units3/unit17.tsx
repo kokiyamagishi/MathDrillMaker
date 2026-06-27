@@ -153,7 +153,7 @@ export const unit17Data: UnitData = {
                     className="answer-blank"
                     style={{
                       display: "inline-block",
-                      width: "120px",
+                      width: "80px",
                       height: "40px",
                     }}
                   ></span>
@@ -227,7 +227,7 @@ export const unit17Data: UnitData = {
                   className="answer-blank"
                   style={{
                     display: "inline-block",
-                    width: "150px",
+                    width: "100px",
                     height: "40px",
                   }}
                 ></span>
@@ -285,7 +285,7 @@ export const unit17Data: UnitData = {
                         border: "2px dashed #9E9E9E",
                         borderRadius: "8px",
                         textAlign: "center",
-                        width: "120px",
+                        width: "80px",
                       }}
                     >
                       <div style={{ fontSize: "32px", marginBottom: "8px" }}>
@@ -347,7 +347,7 @@ export const unit17Data: UnitData = {
                         className="answer-blank"
                         style={{
                           display: "inline-block",
-                          width: "120px",
+                          width: "80px",
                           height: "40px",
                         }}
                       ></span>
@@ -382,7 +382,7 @@ export const unit17Data: UnitData = {
                         border: "2px dashed #9E9E9E",
                         borderRadius: "8px",
                         textAlign: "center",
-                        width: "120px",
+                        width: "80px",
                       }}
                     >
                       <div style={{ fontSize: "32px", marginBottom: "8px" }}>
@@ -444,7 +444,7 @@ export const unit17Data: UnitData = {
                         className="answer-blank"
                         style={{
                           display: "inline-block",
-                          width: "120px",
+                          width: "80px",
                           height: "40px",
                         }}
                       ></span>
@@ -555,7 +555,7 @@ export const unit17Data: UnitData = {
                     className="answer-blank"
                     style={{
                       display: "inline-block",
-                      width: "150px",
+                      width: "100px",
                       height: "40px",
                     }}
                   ></span>
@@ -635,7 +635,7 @@ export const unit17Data: UnitData = {
                   className="answer-blank"
                   style={{
                     display: "inline-block",
-                    width: "150px",
+                    width: "100px",
                     height: "40px",
                   }}
                 ></span>
@@ -729,7 +729,7 @@ export const unit17Data: UnitData = {
                   className="answer-blank"
                   style={{
                     display: "inline-block",
-                    width: "120px",
+                    width: "80px",
                     height: "40px",
                   }}
                 ></span>

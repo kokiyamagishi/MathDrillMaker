@@ -143,7 +143,7 @@ export const unit1Data: UnitData = {
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="6x³" den="3x⁵" /> {" ="}
@@ -152,7 +152,7 @@ export const unit1Data: UnitData = {
                 </div>
                 
                 {/* Sub-question 2 */}
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="5a + 5b" den="ab + b²" /> {" ="}
@@ -173,7 +173,7 @@ export const unit1Data: UnitData = {
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="x² - 4" den="x² - 2x" /> {" ="}
@@ -182,7 +182,7 @@ export const unit1Data: UnitData = {
                 </div>
 
                 {/* Sub-question 2 */}
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="x² - 9" den="x² + 6x + 9" /> {" ="}
@@ -214,7 +214,7 @@ export const unit1Data: UnitData = {
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຜົນຄັດຈ້ອນແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             </div>
           </div>
         )
@@ -235,7 +235,7 @@ export const unit1Data: UnitData = {
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             </div>
           </div>
         )
@@ -258,7 +258,7 @@ export const unit1Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຜົນຄັດຈ້ອນແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
       )

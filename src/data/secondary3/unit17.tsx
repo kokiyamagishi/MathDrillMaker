@@ -92,7 +92,7 @@ export const unit17Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
                   <span>{"ໃຈກາງວົງມົນແນບນອກຂອງຮູບສາມແຈສາກ ຈະຕັ້ງຢູ່ບ່ອນໃດ? (ຕອບ 'ເຄິ່ງກາງຂ້າງກົງຊາກ' ຫຼື 'ພາຍໃນຮູບສາມແຈ')"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
             </div>
@@ -110,7 +110,7 @@ export const unit17Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ໃຈກາງວົງມົນແນບນອກແມ່ນຈຸດຕັດກັນຂອງເສັ້ນປະເພດໃດ? (ຕອບ 'ເສັ້ນຕັ້ງສາກເຄິ່ງກາງຂ້າງ' ຫຼື 'ເສັ້ນແບ່ງເຄິ່ງມຸມ')"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
@@ -194,7 +194,7 @@ export const unit17Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ໃຈກາງວົງມົນແນບໃນແມ່ນຈຸດຕັດກັນຂອງເສັ້ນປະເພດໃດ? (ຕອບ 'ເສັ້ນແບ່ງເຄິ່ງມຸມ' ຫຼື 'ເສັ້ນຕັ້ງສາກເຄິ່ງກາງຂ້າງ')"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>

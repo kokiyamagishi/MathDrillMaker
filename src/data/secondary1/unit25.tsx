@@ -45,14 +45,14 @@ export const unit25Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຈຳນວນ 5"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"ℕ"}</span>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ກຸ່ມ A"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
@@ -69,7 +69,7 @@ export const unit25Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ໃຫ້ E = {a, b}. ຈົ່ງຂຽນອະນຸກຸ່ມທັງໝົດຂອງກຸ່ມ E? (ກຳນົດໃຫ້ຂຽນແຕ່ລະອະນຸກຸ່ມແຍກກັນດ້ວຍໝາຍຈຸດ) "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ຕອບ: ອະນຸກຸ່ມທັງໝົດແມ່ນ"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "240px", height: "42px" }}></span>
               </div>
@@ -122,12 +122,12 @@ export const unit25Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ອົງປະກອບ 1 ຈະເປັນອົງປະກອບຂອງກຸ່ມ A ບໍ່? ຕອບ 'ເປັນ' ຫຼື 'ບໍ່ເປັນ':"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ອົງປະກອບ 2 ຈະເປັນອົງປະກອບຂອງກຸ່ມ B ບໍ່? ຕອບ 'ເປັນ' ຫຼື 'ບໍ່ເປັນ':"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
@@ -232,7 +232,7 @@ export const unit25Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: 'ສົມຈິດ'"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             <span>{"ພົນລະເມືອງລາວ."}</span>
           </div>
         </div>

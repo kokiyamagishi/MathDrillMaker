@@ -52,11 +52,11 @@ export const unit11Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) √(x - 1) = 3 ⇒ ໃຈຜົນ x ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) √(2x + 5) = x + 1 (ເງື່ອນໄຂ x ≥ -1) ⇒ ໃຈຜົນ x ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"(ໝາຍເຫດ: ໃຈຜົນ x = -2 ຖືກຕັດອອກ)"}</span>
@@ -75,7 +75,7 @@ export const unit11Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ແກ້ສົມຜົນ: √(x² - 3x + 4) = x - 1. (ເງື່ອນໄຂ x ≥ 1)"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ຂຶ້ນກຳລັງສອງ: x² - 3x + 4 = x² - 2x + 1 ⇒ x ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               </div>
@@ -125,7 +125,7 @@ export const unit11Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ແກ້ສົມຜົນ: √(x + 7) - √(2x - 8) = 1"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ຕອບ: ໃຈຜົນ x ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               </div>
@@ -142,7 +142,7 @@ export const unit11Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ສູດເວລາແກວ່ງຂອງລູກຕຸ້ມແມ່ນ: T = 2π√(L / g). ຖ້າເຮົາປ່ຽນສູດນີ້ເພື່ອຊອກຫາ L (ຄວາມຍາວລູກຕຸ້ມ), ຈະໄດ້ L ເທົ່າກັບເທົ່າໃດ?"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ຕອບ: L = (T² × g) / (4 ×"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 <span>{")"}</span>
@@ -183,7 +183,7 @@ export const unit11Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ສູດຄວາມໄວຫຼຸດພົ້ນແມ່ນ: v = √(2GM / R). ຈົ່ງປ່ຽນສູດນີ້ເພື່ອຊອກຫາລັດສະໝີຂອງໂລກ R ຕາມຕົວປ່ຽນອື່ນໆ?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
               <span>{"ຕອບ: R = (2 × G × M) /"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
@@ -207,7 +207,7 @@ export const unit11Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ສົມຜົນນີ້"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
       )

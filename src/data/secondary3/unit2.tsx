@@ -261,7 +261,7 @@ export const unit2Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ເນື້ອທີ່ເພີ່ມຂຶ້ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             <span>{"ຕາແມັດ (m²)"}</span>
           </div>
         </div>
@@ -279,7 +279,7 @@ export const unit2Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ໄດ້ຄ່າແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
       )

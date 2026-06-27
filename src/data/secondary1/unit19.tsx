@@ -47,14 +47,14 @@ export const unit19Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຖ້າເສັ້ນຊື່ k ຂະໜານກັບ d, ເສັ້ນຊື່ເຄິ່ງຄື k′ ຂອງມັນທຽບໃສ່ d ຈະ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"ກັບ d."}</span>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຖ້າເສັ້ນຊື່ k ຕັດ d ຢູ່ເມັດ I, ເສັ້ນຊື່ເຄິ່ງຄື k′ ຈະຕັດ d ຢູ່ເມັດ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
@@ -113,13 +113,13 @@ export const unit19Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຮູບສາມແຈສະເໝີ ມີທັງໝົດ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"ແກນເຄິ່ງຄື."}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຮູບຈະຕຸລັດ ມີທັງໝົດ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
@@ -187,11 +187,11 @@ export const unit19Data: UnitData = {
             <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <span>{"- ແມ່ນເສັ້ນຊື່ທີ່ຜ່ານ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <span>{"- ມີທັງໝົດ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               </div>
             </div>
           </div>
@@ -214,7 +214,7 @@ export const unit19Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ເຕັງກັບຮູບສາມແຈ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
           </div>
         </div>
       )

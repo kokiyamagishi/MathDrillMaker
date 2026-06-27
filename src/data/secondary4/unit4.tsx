@@ -46,11 +46,11 @@ export const unit4Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) [ (2x - 3) / (x - 2) ] - [ (x - 1) / (x - 2) ] ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) [ x / (x² - 4) ] + [ 2 / (x² - 4) ] = 1 /"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -67,11 +67,11 @@ export const unit4Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) LCM ຂອງ (10x, 15x³, 18x²) ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) LCM ຂອງ (x² - 4 ແລະ x² - 2x) = x × (x - 2) ×"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -122,7 +122,7 @@ export const unit4Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ຄິດໄລ່: [ 1 / (x - 1) ] - [ 1 / (x + 1) ]"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ຕອບ: ຕົວເສດແມ່ນ"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 <span>{"/ (x² - 1)"}</span>
@@ -140,7 +140,7 @@ export const unit4Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ຄັດຈ້ອນ: [ (1 + 1/x) / (1 - 1/x) ]"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ຕອບ: (x + 1) /"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               </div>
@@ -162,9 +162,9 @@ export const unit4Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ສູດໄລຍະສຸມຂອງເລນກ້ອງຖ່າຍຮູບແມ່ນ: 1/f = 1/d + 1/a. ຖ້າເຮົາປ່ຽນສູດນີ້ເພື່ອຊອກຫາ f ໂດຍການຂຶ້ນພູດຮ່ວມ ແລະ ປີ້ນເສດສ່ວນ, ຈະໄດ້ f ເທົ່າກັບເທົ່າໃດ?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
               <span>{"f = (d × a) /"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             </div>
           </div>
         )

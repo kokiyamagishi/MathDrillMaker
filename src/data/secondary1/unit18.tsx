@@ -52,13 +52,13 @@ export const unit18Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ມຸມ 45° ແມ່ນ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ມຸມ 135° ແມ່ນ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
               </div>
             </div>
@@ -71,12 +71,16 @@ export const unit18Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ຖ້າຂ້າງທັງສອງຂອງມຸມ [Ox) ແລະ [Oy) ປະກອບກັນເປັນເສັ້ນຊື່ດຽວກັນ, ມຸມ ∠xOy ນີ້ຈະເປັນມຸມຊະນິດໃດ ແລະ ມີຂະໜາດຈັກອົງສາ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                <span>{"ຕອບ: ເປັນ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
-                <span>{"ມີຂະໜາດ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                <span>{"°"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"ຕອບ: ເປັນ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"ມີຂະໜາດ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"°"}</span>
+                </div>
               </div>
             </div>
           )
@@ -130,12 +134,16 @@ export const unit18Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ໃຫ້ສອງເສັ້ນຊື່ (xy) ຕັດ (zt) ຢູ່ O. ຖ້າ ∠xOz = 60°, ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມ ∠xOt ທີ່ຢູ່ຕິດກັນເທິງເສັ້ນຊື່ (zt)? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                <span>{"ປະໂຫຍກສັນຍະລັກ: ∠xOt ="}</span>
-                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
-                <span>{"= "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                <span>{"°"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"ປະໂຫຍກສັນຍະລັກ: ∠xOt ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"= "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"°"}</span>
+                </div>
               </div>
             </div>
           )

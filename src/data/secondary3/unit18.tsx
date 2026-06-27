@@ -178,7 +178,7 @@ export const unit18Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຖ້າສອງເສັ້ນຊື່ຂະໜານກັນ, ຄວາມຊັນຂອງພວກມັນຈະເປັນແນວໃດຕໍ່ກັນ? (ຕອບ 'ເທົ່າກັນ' ຫຼື 'ບໍ່ເທົ່າກັນ')"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>

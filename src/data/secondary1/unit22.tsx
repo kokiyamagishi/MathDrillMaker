@@ -44,12 +44,16 @@ export const unit22Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ໃນແຜນຜັງທີ່ມີມາດຕາສ່ວນ 1:250,000, ວັດແທກໄລຍະທາງລະຫວ່າງເມືອງ A ຫາ B ໄດ້ 6 cm. ໄລຍະທາງຕົວຈິງລະຫວ່າງສອງເມືອງນີ້ແມ່ນຈັກ km? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                <span>{"ປະໂຫຍກສັນຍະລັກ: ໄລຍະທາງຕົວຈິງ ="}</span>
-                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "200px", height: "42px" }}></span>
-                <span>{"= "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                <span>{"km"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"ປະໂຫຍກສັນຍະລັກ: ໄລຍະທາງຕົວຈິງ ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"= "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"km"}</span>
+                </div>
               </div>
             </div>
           )
@@ -110,12 +114,16 @@ export const unit22Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ໃນແຜນຜັງ 1:20,000, ວັດແທກໄລຍະທາງແຄມທາງໂຄ້ງໄດ້ 43.2 mm (4.32 cm). ຖ້າຕ້ອງການປັກເສົາໄຟຟ້ານ້ອຍຫ່າງກັນ 12 m, ໂດຍມີເສົາຢູ່ທັງສອງສົ້ນທາງ, ຈະຕ້ອງໃຊ້ເສົາໄຟຟ້າທັງໝົດຈັກຕົ້ນ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                <span>{"ຕອບ: ໄລຍະທາງຕົວຈິງແມ່ນ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
-                <span>{"m , ຕ້ອງໃຊ້ເສົາທັງໝົດ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                <span>{"ຕົ້ນ"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"ຕອບ: ໄລຍະທາງຕົວຈິງແມ່ນ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"m , ຕ້ອງໃຊ້ເສົາທັງໝົດ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"ຕົ້ນ"}</span>
+                </div>
               </div>
             </div>
           )
@@ -127,12 +135,16 @@ export const unit22Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ໃນແຜນຜັງ 1:50,000, ໄລຍະທາງລະຫວ່າງຈຸດ A ຫາ B ແມ່ນ 239 mm (23.9 cm). ຖ້າສາຍໄຟຟ້າແຮງສູງຖືກດຶງຜ່ານເສົາໄຟຟ້າທີ່ມີໄລຍະຫ່າງແຕ່ລະຕົ້ນແມ່ນ 50 m. ຖ້າມີເສົາຢູ່ຈຸດ A ແລະ B ນຳ, ຈະຕ້ອງໃຊ້ເສົາໄຟຟ້າທັງໝົດຈັກຕົ້ນ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                <span>{"ຕອບ: ໄລຍະທາງຕົວຈິງແມ່ນ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
-                <span>{"m , ຕ້ອງໃຊ້ເສົາທັງໝົດ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                <span>{"ຕົ້ນ"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"ຕອບ: ໄລຍະທາງຕົວຈິງແມ່ນ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"m , ຕ້ອງໃຊ້ເສົາທັງໝົດ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"ຕົ້ນ"}</span>
+                </div>
               </div>
             </div>
           )
@@ -193,7 +205,7 @@ export const unit22Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຈະຮອດປາຍທາງເວລາ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
           </div>
         </div>
       )

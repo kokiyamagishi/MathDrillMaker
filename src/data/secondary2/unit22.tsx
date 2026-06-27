@@ -164,7 +164,7 @@ export const unit22Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຊື້ປຶ້ມ 3 ຫົວ ແລະ ບິກ 1 ກ້ານ ລາຄາ 2,000 ກີບ ລວມເປັນ 17,000 ກີບ. ປຶ້ມ 1 ຫົວ ລາຄາຈັກກີບ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"ກີບ"}</span>
                 </div>
 
@@ -249,7 +249,7 @@ export const unit22Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ນາງ ດຳ ມີເງິນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             <span>{"ກີບ"}</span>
           </div>
         </div>

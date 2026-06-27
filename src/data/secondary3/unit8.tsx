@@ -78,19 +78,19 @@ export const unit8Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຕຳລາ "} <span className="math">{"y = 3x + 5"}</span> {" ມີຄ່າຂອງ a ແລະ b ແມ່ນເທົ່າໃດ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຕຳລາ "} <span className="math">{"y = -2x + 7"}</span> {" ມີຄ່າຂອງ a ແລະ b ແມ່ນເທົ່າໃດ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
                   <span>{"ຕຳລາ "} <span className="math">{"y = 4x - 9"}</span> {" ມີຄ່າຂອງ a ແລະ b ແມ່ນເທົ່າໃດ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
             </div>
@@ -108,13 +108,13 @@ export const unit8Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຖ້າສຳປະສິດສະໂລບ "} <span className="math">{"a = 4"}</span> {" ແລະ ຈຸດຕັດແກນ y ແມ່ນ "} <span className="math">{"b = -3"}</span> {", ສົມຜົນແມ່ນຫຍັງ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຖ້າເສັ້ນສະແດງຂະໜານກັບ "} <span className="math">{"y = -5x"}</span> {" ແລະ ຕັດແກນ y ຢູ່ເມັດ "} <span className="math">{"(0, 2)"}</span> {", ສົມຜົນແມ່ນຫຍັງ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
             </div>

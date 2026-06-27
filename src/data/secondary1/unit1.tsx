@@ -120,7 +120,7 @@ export const unit1Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຫ້າລ້ານເຈັດແສນສາມສິບພັນຮ້ອຍແປດສິບຫົກ ("}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "120px", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "120px", width: "80px", height: "42px" }}></span>
                   <span>{")"}</span>
                 </div>
               </div>
@@ -230,11 +230,11 @@ export const unit1Data: UnitData = {
             <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
                 <span>{"- ຈຳນວນທີ່ມີຄ່າສູງສຸດແມ່ນ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
                 <span>{"- ຈຳນວນທີ່ມີຄ່າຕ່ຳສຸດແມ່ນ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               </div>
             </div>
           </div>
@@ -284,7 +284,7 @@ export const unit1Data: UnitData = {
             <span>{"- ອ່ານວ່າ: ສິບສອງຕື້ ສີ່ສິບຫ້າລ້ານ ສອງແສນສາມສິບເຈັດພັນ ..."}</span>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <span>{"ຕື່ມໃສ່ບ່ອນທີ່ເຫຼືອໃຫ້ຄົບຖ້ວນ:"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
         </div>

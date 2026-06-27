@@ -251,12 +251,12 @@ export const unit2Data: UnitData = {
           <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <span>{"- ວັນອັງຄານ:"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"ກີບ"}</span>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <span>{"- ວັນພຸດ:"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"ກີບ"}</span>
             </div>
           </div>
@@ -275,7 +275,7 @@ export const unit2Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: x ປະກອບມີ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "200px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
       )

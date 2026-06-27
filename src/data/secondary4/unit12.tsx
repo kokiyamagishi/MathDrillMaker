@@ -48,13 +48,13 @@ export const unit12Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) 81^(3/4) = (⁴√81)³ = 3^"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{"="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) (8/27)^(-1/3) = (27/8)^(1/3) ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"/ 2"}</span>
@@ -73,7 +73,7 @@ export const unit12Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ຄິດໄລ່: x^(1/3) × x^(1/2) × x^(1/6)"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ຕອບ: x^(1/3 + 1/2 + 1/6) = x^("}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 <span>{") = x"}</span>
@@ -117,7 +117,7 @@ export const unit12Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ຄັດຈ້ອນ: (a^(-2) · b³) · (a⁵ · b^(-1))"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ຕອບ: a^"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                 <span>{"· b^"}</span>
@@ -136,7 +136,7 @@ export const unit12Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ແກ້ສົມຜົນ: (x - 1)^(1/3) = 2"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ຂຶ້ນກຳລັງສາມທັງສອງພາກ: x - 1 = 2³ = 8 ⇒ x ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               </div>
@@ -181,7 +181,7 @@ export const unit12Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງຄິດໄລ່: 8^(1/3) + 40^(1/2) / 10^(1/2) - (1600)^(1/4)."}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
               <span>{"ຕອບ: 2 + √(40/10) - (40²)^(1/4) = 2 + 2 -"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               <span>{"="}</span>

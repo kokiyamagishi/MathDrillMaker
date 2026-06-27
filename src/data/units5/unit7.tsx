@@ -197,7 +197,7 @@ export const unit7Data: UnitData = {
                   className="answer-blank"
                   style={{
                     display: "inline-block",
-                    width: "120px",
+                    width: "80px",
                     height: "40px",
                   }}
                 ></span>
@@ -241,7 +241,7 @@ export const unit7Data: UnitData = {
                   className="answer-blank"
                   style={{
                     display: "inline-block",
-                    width: "120px",
+                    width: "80px",
                     height: "40px",
                   }}
                 ></span>
@@ -323,7 +323,7 @@ export const unit7Data: UnitData = {
               <span>{"(2) 🐔 ແມ່ຄ້າເກັບໄຂ່ໄກ່ໄດ້ 5 ວັນ: ວັນຈັນ 24 ຟອງ, ວັນອັງຄານ 30 ຟອງ, ວັນພຸດ 25 ຟອງ, ວັນພະຫັດ 28 ຟອງ, ວັນສຸກ 23 ຟອງ. ເກັບໄຂ່ໄດ້ສະເລ່ຍວັນລະຈັກຟອງ?"}</span>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
                 <span>{"ຄຳຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
                 <span>{"ຟອງ"}</span>
               </div>
             </div>

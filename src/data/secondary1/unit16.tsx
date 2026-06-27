@@ -122,7 +122,7 @@ export const unit16Data: UnitData = {
               <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{"ປະໂຫຍກສັນຍະລັກ: L ="}</span>
-                  <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{"= "}</span>
@@ -143,7 +143,7 @@ export const unit16Data: UnitData = {
               <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{"ປະໂຫຍກສັນຍະລັກ: L ="}</span>
-                  <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <span>{"= "}</span>
@@ -212,7 +212,7 @@ export const unit16Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຄວາມຍາວອ້ອມຮອບແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             <span>{"cm."}</span>
           </div>
         </div>

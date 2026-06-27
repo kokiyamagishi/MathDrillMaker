@@ -45,13 +45,13 @@ export const unit21Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ໄລຍະທາງຕົວຈິງ 200 m (20,000 cm), ໄລຍະທາງໃນແຜນຜັງ 2 cm. ມາດຕາສ່ວນແມ່ນ 1:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ໄລຍະທາງຕົວຈິງ 12 m (1,200 cm), ມາດຕາສ່ວນ 1:100. ໄລຍະທາງໃນແຜນຜັງແມ່ນ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
@@ -170,7 +170,7 @@ export const unit21Data: UnitData = {
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <span>{"- ຄວາມເໝາະສົມແມ່ນ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               </div>
             </div>
           </div>

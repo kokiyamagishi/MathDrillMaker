@@ -250,7 +250,7 @@ export const unit13Data: UnitData = {
             </p>
             <div style={{ display: "flex", gap: "12px", alignItems: "center", paddingLeft: "16px", marginTop: "4px" }}>
               <span>{"ຄຳຕອບ:"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "200px", height: "40px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
             </div>
           </div>
         </div>

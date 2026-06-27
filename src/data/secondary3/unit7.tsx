@@ -261,7 +261,7 @@ export const unit7Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຄ່າເຊົ່າທັງໝົດແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             <span>{"ກີບ"}</span>
           </div>
         </div>

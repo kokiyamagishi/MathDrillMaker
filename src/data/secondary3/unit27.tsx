@@ -85,19 +85,19 @@ export const unit27Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຮູບໜ່ວຍມົນທີ່ມີລັດສະໝີ "} <span className="math">{"r = 3 cm"}</span> {" ມີເນື້ອທີ່ໜ້າແມ່ນຈັກ cm²?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຮູບໜ່ວຍມົນທີ່ມີເສັ້ນຜ່ານໃຈກາງ "} <span className="math">{"d = 8 cm"}</span> {" (ລັດສະໝີ r = 4 cm) ມີເນື້ອທີ່ໜ້າແມ່ນຈັກ cm²?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
                   <span>{"ຮູບໜ່ວຍມົນທີ່ມີລັດສະໝີ "} <span className="math">{"r = 5 cm"}</span> {" ມີເນື້ອທີ່ໜ້າແມ່ນຈັກ cm²?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
               </div>
             </div>
@@ -115,13 +115,13 @@ export const unit27Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ເນື້ອທີ່ໜ້າໂຄ້ງຂອງຮູບເຄິ່ງໜ່ວຍມົນທີ່ມີລັດສະໝີ "} <span className="math">{"r = 6 cm"}</span> {" ແມ່ນຈັກ cm²? (ຄິດໄລ່ສະເພາະໜ້າໂຄ້ງ, ຕອບຕິດຄ່າ π)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຖ້າຮູບໜ່ວຍມົນໜຶ່ງມີເນື້ອທີ່ໜ້າແມ່ນ "} <span className="math">{"144π cm²"}</span> {". ລັດສະໝີ "} <span className="math">{"r"}</span> {" ຂອງມັນແມ່ນຈັກ cm?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
               </div>
             </div>
@@ -167,19 +167,19 @@ export const unit27Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຮູບກ້ອນມົນທີ່ມີລັດສະໝີ "} <span className="math">{"r = 3 cm"}</span> {" ມີບໍລິມາດແມ່ນຈັກ cm³?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຮູບກ້ອນມົນທີ່ມີລັດສະໝີ "} <span className="math">{"r = 6 cm"}</span> {" ມີບໍລິມາດແມ່ນຈັກ cm³?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
                   <span>{"ຮູບກ້ອນມົນທີ່ມີລັດສະໝີ "} <span className="math">{"r = 9 cm"}</span> {" ມີບໍລິມາດແມ່ນຈັກ cm³?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
               </div>
             </div>
@@ -197,13 +197,13 @@ export const unit27Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ບໍລິມາດຂອງຮູບເຄິ່ງກ້ອນມົນທີ່ມີລັດສະໝີ "} <span className="math">{"r = 3 cm"}</span> {" ແມ່ນຈັກ cm³? (ຕອບຕິດຄ່າ π)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຖ້າບໍລິມາດຂອງຮູບກ້ອນມົນໜຶ່ງແມ່ນ "} <span className="math">{"288π cm³"}</span> {". ລັດສະໝີ "} <span className="math">{"r"}</span> {" ຂອງມັນແມ່ນຈັກ cm?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
               </div>
             </div>
@@ -227,7 +227,7 @@ export const unit27Data: UnitData = {
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ບໍລິມາດສ່ວນທີ່ເຫຼືອແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               <span>{"cm³"}</span>
             </div>
           </div>
@@ -245,7 +245,7 @@ export const unit27Data: UnitData = {
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: R ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               <span>{"cm"}</span>
             </div>
           </div>
@@ -266,7 +266,7 @@ export const unit27Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ອັດຕາສ່ວນແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
           </div>
         </div>
       )
@@ -283,7 +283,7 @@ export const unit27Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: V ="}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             <span>{"cm³"}</span>
           </div>
         </div>

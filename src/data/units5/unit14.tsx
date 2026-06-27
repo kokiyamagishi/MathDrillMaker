@@ -142,7 +142,7 @@ export const unit14Data: UnitData = {
               <span>{"(2) ຈາກຂໍ້ (1), ລາຄາເສື້ອຕົວຈິງຫຼັງຈາກຫຼຸດລາຄາແລ້ວແມ່ນຈັກກີບ?"}</span>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
                 <span>{"ຄຳຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
                 <span>{"ກີບ"}</span>
               </div>
             </div>
@@ -312,7 +312,7 @@ export const unit14Data: UnitData = {
                 className="answer-blank"
                 style={{
                   display: "inline-block",
-                  width: "120px",
+                  width: "80px",
                   height: "40px",
                 }}
               ></span>
@@ -358,7 +358,7 @@ export const unit14Data: UnitData = {
                 className="answer-blank"
                 style={{
                   display: "inline-block",
-                  width: "120px",
+                  width: "80px",
                   height: "40px",
                 }}
               ></span>

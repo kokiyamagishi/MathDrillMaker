@@ -40,7 +40,7 @@ export const unit29Data: UnitData = {
                 {"ໃນຮູບສາມແຈ ABC, ໃຫ້ b = 4, c = 5, ແລະ ມຸມ A = 30°. ຈົ່ງຊອກຫາເນື້ອທີ່ S: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
               
-              <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap", padding: "12px 0" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap", padding: "12px 0" }}>
                 <span>{"ຕອບ: ເນື້ອທີ່ S = (1/2) × 4 × 5 × sin 30° ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               </div>
@@ -56,12 +56,12 @@ export const unit29Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ຄ່າຂອງມຸມ B ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"ອົງສາ"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ຂ້າງ c = 6 / (√2) ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -108,11 +108,11 @@ export const unit29Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ເຄິ່ງຮອບຮູບ p ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ເນື້ອທີ່ S ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -130,9 +130,9 @@ export const unit29Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ໃຫ້ຮູບສີ່ແຈຄາງໝູ ABCD ມີ AD ຂະໜານກັບ BC, ຂ້າງ AB = 5, ຖານລຸ່ມ BC = 6, ຖານເທິງ AD = 2 ແລະ ມຸມ ABC = 60°. ຈົ່ງຊອກຫາເນື້ອທີ່ຂອງຮູບຄາງໝູ?"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ຕອບ: ເນື້ອທີ່ແມ່ນ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 <span>{" (ຂຽນໃນຮູບຮ່າງ √3)"}</span>
               </div>
             </div>

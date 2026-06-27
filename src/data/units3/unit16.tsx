@@ -135,7 +135,7 @@ export const unit16Data: UnitData = {
                     display: "flex",
                     border: "2px solid #000",
                     height: "40px",
-                    width: "160px",
+                    width: "100px",
                     backgroundColor: "#fff",
                   }}
                 >
@@ -166,7 +166,7 @@ export const unit16Data: UnitData = {
                     display: "flex",
                     border: "2px solid #000",
                     height: "40px",
-                    width: "160px",
+                    width: "100px",
                     backgroundColor: "#fff",
                   }}
                 >
@@ -203,7 +203,7 @@ export const unit16Data: UnitData = {
                     display: "flex",
                     border: "2px solid #000",
                     height: "40px",
-                    width: "160px",
+                    width: "100px",
                     backgroundColor: "#fff",
                   }}
                 >
@@ -280,7 +280,7 @@ export const unit16Data: UnitData = {
                     display: "flex",
                     border: "2px solid #000",
                     height: "40px",
-                    width: "200px",
+                    width: "100px",
                     backgroundColor: "#fff",
                   }}
                 >
@@ -690,7 +690,7 @@ export const unit16Data: UnitData = {
                   className="answer-blank"
                   style={{
                     display: "inline-block",
-                    width: "150px",
+                    width: "100px",
                     height: "40px",
                   }}
                 ></span>
@@ -734,7 +734,7 @@ export const unit16Data: UnitData = {
                       display: "flex",
                       border: "2px solid #000",
                       height: "40px",
-                      width: "200px",
+                      width: "100px",
                       backgroundColor: "#fff",
                     }}
                   >
@@ -1158,7 +1158,7 @@ export const unit16Data: UnitData = {
                     className="answer-blank"
                     style={{
                       display: "inline-block",
-                      width: "150px",
+                      width: "100px",
                       height: "40px",
                     }}
                   ></span>
@@ -1210,7 +1210,7 @@ export const unit16Data: UnitData = {
                     className="answer-blank"
                     style={{
                       display: "inline-block",
-                      width: "150px",
+                      width: "100px",
                       height: "40px",
                     }}
                   ></span>
@@ -1252,7 +1252,7 @@ export const unit16Data: UnitData = {
                     display: "flex",
                     border: "2px solid #000",
                     height: "40px",
-                    width: "200px",
+                    width: "100px",
                     backgroundColor: "#fff",
                   }}
                 >

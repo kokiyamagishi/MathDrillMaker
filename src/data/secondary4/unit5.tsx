@@ -39,11 +39,11 @@ export const unit5Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ສົມຜົນ [ 2 / (x - 1) ] = [ x / (x - 1) ] ⇒ ເຂດກໍານົດແມ່ນ x ≠"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ສົມຜົນ [ (3x) / (3x + 1) ] + [ 1 / (x + 1) ] = 3 / (3x + 1) ⇒ ເຂດກໍານົດແມ່ນ x ≠ -1 ແລະ x ≠"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -60,11 +60,11 @@ export const unit5Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) [ (2x + 1) / (x - 1) ] = -1 ⇒ ໃຈຜົນ x ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) [ (2x - 3) / (x - 4) ] = 1 ⇒ ໃຈຜົນ x ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
@@ -115,7 +115,7 @@ export const unit5Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ແກ້: [ (3x) / (3x + 1) ] + [ 1 / (x + 1) ] = [ 3 / (3x + 1) ] - [ 2 / (x + 1) ]"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ໃຈຜົນ x ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 <span>{"ແລະ x ="}</span>
@@ -134,7 +134,7 @@ export const unit5Data: UnitData = {
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ແກ້: [ (x² - x) / (x + 2) ] = 6 / (x + 2)"}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"ໃຈຜົນແມ່ນ x ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 <span>{"(ໝາຍເຫດ: x = -2 ຖືກຕັດອອກຍ້ອນຂັດກັບເຂດກໍານົດ)"}</span>
@@ -205,7 +205,7 @@ export const unit5Data: UnitData = {
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ສົມຜົນນີ້"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
       )

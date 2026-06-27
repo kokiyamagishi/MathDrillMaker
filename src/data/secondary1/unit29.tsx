@@ -45,13 +45,13 @@ export const unit29Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(1) ຖ້າ "}</span>
                   <span style={{ fontWeight: "bold" }}>{"35 / 25 = 21 / x"}</span>
                   <span>{" ⇒ 35 × x = 25 × 21 ⇒ x ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span>{"(2) ຖ້າ "}</span>
                   <span style={{ fontWeight: "bold" }}>{"24 / 32 = y / 64"}</span>
                   <span>{" ⇒ 32 × y = 24 × 64 ⇒ y ="}</span>
@@ -68,9 +68,9 @@ export const unit29Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ຊອກຫາຄ່າຂອງ z ຈາກອັດຕາສ່ວນຕໍ່ໄປນີ້: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <span>{"152 / z = 95 / 55 ⇒ z = ("}</span>
-                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 <span>{") / 95 ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               </div>
@@ -108,12 +108,16 @@ export const unit29Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ຊີ້ນໝູ 600 g ລາຄາ 15,000 ກີບ. ຖ້າຕ້ອງການຊື້ຊີ້ນໝູ 900 g ຈະຕ້ອງຈ່າຍເງິນທັງໝົດຈັກກີບ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                <span>{"ສົມຜົນ: x / 900 = 15,000 / 600 ⇒ x ="}</span>
-                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "180px", height: "42px" }}></span>
-                <span>{"= "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
-                <span>{"ກີບ"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"ສົມຜົນ: x / 900 = 15,000 / 600 ⇒ x ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"= "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"ກີບ"}</span>
+                </div>
               </div>
             </div>
           )
@@ -125,12 +129,16 @@ export const unit29Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ລົດຍົນຄັນໜຶ່ງໃຊ້ນ້ຳມັນ 13 ລິດ ເພື່ອແລ່ນໄດ້ໄລຍະທາງ 260 km. ຖ້າມີນ້ຳມັນ 85 ລິດ ຈະແລ່ນໄດ້ໄລຍະທາງຈັກ km? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                <span>{"ສົມຜົນ: x / 85 = 260 / 13 ⇒ x ="}</span>
-                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "180px", height: "42px" }}></span>
-                <span>{"= "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
-                <span>{"km"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"ສົມຜົນ: x / 85 = 260 / 13 ⇒ x ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"= "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{"km"}</span>
+                </div>
               </div>
             </div>
           )
@@ -153,12 +161,12 @@ export const unit29Data: UnitData = {
             <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <span>{"- ຂະໜາດຈິງຂອງຄວາມກວ້າງ (a) ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 <span>{"cm"}</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <span>{"- ຂະໜາດຫຍໍ້ (b) ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 <span>{"cm"}</span>
               </div>
             </div>
@@ -177,7 +185,7 @@ export const unit29Data: UnitData = {
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
               <span>{"ມວນສານ x ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               <span>{"g"}</span>
             </div>
           </div>

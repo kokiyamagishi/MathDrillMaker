@@ -79,7 +79,7 @@ export const unit9Data: UnitData = {
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p>{"ຈົ່ງສັງເກດຫຸ່ນຍົນທີ່ປະກອບຈາກຮູບຮ່າງຕ່າງໆລຸ່ມນີ້ ແລ້ວນັບຈຳນວນແຕ່ລະຮູບຮ່າງ: "} <span className="point-label">{"(ຂໍ້ລະ 3.3 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span></p>
               <div style={{ display: "flex", justifyContent: "center", margin: "16px 0" }}>
-                <div style={{ position: "relative", width: "160px", height: "240px", padding: "16px", backgroundColor: "#F5F5F5", borderRadius: "12px" }}>
+                <div style={{ position: "relative", width: "100px", height: "240px", padding: "16px", backgroundColor: "#F5F5F5", borderRadius: "12px" }}>
                   {/* Robot Head - ກັບ */}
                   <div style={{ position: "absolute", top: "20px", left: "50%", transform: "translateX(-50%)", width: "40px", height: "40px", backgroundColor: "#FFCDD2", border: "2px solid #333" }}></div>
                   {/* Robot Body - ກັບ */}

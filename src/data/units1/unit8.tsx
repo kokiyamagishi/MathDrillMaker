@@ -17,7 +17,7 @@ export const unit8Data: UnitData = {
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: "16px", justifyContent: "center", backgroundColor: "#E3F2FD", padding: "24px", borderRadius: "16px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)", flexWrap: "wrap", marginTop: "12px" }}>
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "12px" }}>
-              <div style={{ position: "relative", width: "120px", height: "120px", borderRadius: "50%", border: "4px solid #1976D2", backgroundColor: "#FFF" }}>
+              <div style={{ position: "relative", width: "80px", height: "120px", borderRadius: "50%", border: "4px solid #1976D2", backgroundColor: "#FFF" }}>
                 <div style={{ position: "absolute", top: "50%", left: "50%", width: "4px", height: "30px", backgroundColor: "#F44336", transformOrigin: "bottom center", transform: "translate(-50%, -100%) rotate(210deg)" }}></div>
                 <div style={{ position: "absolute", top: "50%", left: "50%", width: "2px", height: "45px", backgroundColor: "#2196F3", transformOrigin: "bottom center", transform: "translate(-50%, -100%) rotate(0deg)" }}></div>
                 <div style={{ position: "absolute", top: "50%", left: "50%", width: "10px", height: "10px", borderRadius: "50%", backgroundColor: "#000", transform: "translate(-50%, -50%)" }}></div>
@@ -33,7 +33,7 @@ export const unit8Data: UnitData = {
             </div>
             
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "12px" }}>
-              <div style={{ position: "relative", width: "120px", height: "120px", borderRadius: "50%", border: "4px solid #1976D2", backgroundColor: "#FFF" }}>
+              <div style={{ position: "relative", width: "80px", height: "120px", borderRadius: "50%", border: "4px solid #1976D2", backgroundColor: "#FFF" }}>
                 <div style={{ position: "absolute", top: "50%", left: "50%", width: "4px", height: "30px", backgroundColor: "#F44336", transformOrigin: "bottom center", transform: "translate(-50%, -100%) rotate(225deg)" }}></div>
                 <div style={{ position: "absolute", top: "50%", left: "50%", width: "2px", height: "45px", backgroundColor: "#2196F3", transformOrigin: "bottom center", transform: "translate(-50%, -100%) rotate(180deg)" }}></div>
                 <div style={{ position: "absolute", top: "50%", left: "50%", width: "10px", height: "10px", borderRadius: "50%", backgroundColor: "#000", transform: "translate(-50%, -50%)" }}></div>
@@ -66,7 +66,7 @@ export const unit8Data: UnitData = {
               {/* (1) 9:00 */}
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "16px" }}>
                 <div style={{ fontSize: "18px", fontWeight: "bold" }}>{"(1)"}</div>
-                <div style={{ position: "relative", width: "120px", height: "120px", borderRadius: "50%", border: "4px solid #4CAF50", backgroundColor: "#FFF" }}>
+                <div style={{ position: "relative", width: "80px", height: "120px", borderRadius: "50%", border: "4px solid #4CAF50", backgroundColor: "#FFF" }}>
                   <div style={{ position: "absolute", top: "50%", left: "50%", width: "4px", height: "30px", backgroundColor: "#F44336", transformOrigin: "bottom center", transform: "translate(-50%, -100%) rotate(270deg)" }}></div>
                   <div style={{ position: "absolute", top: "50%", left: "50%", width: "2px", height: "45px", backgroundColor: "#2196F3", transformOrigin: "bottom center", transform: "translate(-50%, -100%) rotate(0deg)" }}></div>
                   <div style={{ position: "absolute", top: "50%", left: "50%", width: "10px", height: "10px", borderRadius: "50%", backgroundColor: "#000", transform: "translate(-50%, -50%)" }}></div>
@@ -84,7 +84,7 @@ export const unit8Data: UnitData = {
               {/* (2) 11:30 */}
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "16px" }}>
                 <div style={{ fontSize: "18px", fontWeight: "bold" }}>{"(2)"}</div>
-                <div style={{ position: "relative", width: "120px", height: "120px", borderRadius: "50%", border: "4px solid #4CAF50", backgroundColor: "#FFF" }}>
+                <div style={{ position: "relative", width: "80px", height: "120px", borderRadius: "50%", border: "4px solid #4CAF50", backgroundColor: "#FFF" }}>
                   <div style={{ position: "absolute", top: "50%", left: "50%", width: "4px", height: "30px", backgroundColor: "#F44336", transformOrigin: "bottom center", transform: "translate(-50%, -100%) rotate(345deg)" }}></div>
                   <div style={{ position: "absolute", top: "50%", left: "50%", width: "2px", height: "45px", backgroundColor: "#2196F3", transformOrigin: "bottom center", transform: "translate(-50%, -100%) rotate(180deg)" }}></div>
                   <div style={{ position: "absolute", top: "50%", left: "50%", width: "10px", height: "10px", borderRadius: "50%", backgroundColor: "#000", transform: "translate(-50%, -50%)" }}></div>
@@ -102,7 +102,7 @@ export const unit8Data: UnitData = {
               {/* (3) 2:00 */}
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "16px" }}>
                 <div style={{ fontSize: "18px", fontWeight: "bold" }}>{"(3)"}</div>
-                <div style={{ position: "relative", width: "120px", height: "120px", borderRadius: "50%", border: "4px solid #4CAF50", backgroundColor: "#FFF" }}>
+                <div style={{ position: "relative", width: "80px", height: "120px", borderRadius: "50%", border: "4px solid #4CAF50", backgroundColor: "#FFF" }}>
                   <div style={{ position: "absolute", top: "50%", left: "50%", width: "4px", height: "30px", backgroundColor: "#F44336", transformOrigin: "bottom center", transform: "translate(-50%, -100%) rotate(60deg)" }}></div>
                   <div style={{ position: "absolute", top: "50%", left: "50%", width: "2px", height: "45px", backgroundColor: "#2196F3", transformOrigin: "bottom center", transform: "translate(-50%, -100%) rotate(0deg)" }}></div>
                   <div style={{ position: "absolute", top: "50%", left: "50%", width: "10px", height: "10px", borderRadius: "50%", backgroundColor: "#000", transform: "translate(-50%, -50%)" }}></div>
@@ -120,7 +120,7 @@ export const unit8Data: UnitData = {
               {/* (4) 5:30 */}
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "16px" }}>
                 <div style={{ fontSize: "18px", fontWeight: "bold" }}>{"(4)"}</div>
-                <div style={{ position: "relative", width: "120px", height: "120px", borderRadius: "50%", border: "4px solid #4CAF50", backgroundColor: "#FFF" }}>
+                <div style={{ position: "relative", width: "80px", height: "120px", borderRadius: "50%", border: "4px solid #4CAF50", backgroundColor: "#FFF" }}>
                   <div style={{ position: "absolute", top: "50%", left: "50%", width: "4px", height: "30px", backgroundColor: "#F44336", transformOrigin: "bottom center", transform: "translate(-50%, -100%) rotate(165deg)" }}></div>
                   <div style={{ position: "absolute", top: "50%", left: "50%", width: "2px", height: "45px", backgroundColor: "#2196F3", transformOrigin: "bottom center", transform: "translate(-50%, -100%) rotate(180deg)" }}></div>
                   <div style={{ position: "absolute", top: "50%", left: "50%", width: "10px", height: "10px", borderRadius: "50%", backgroundColor: "#000", transform: "translate(-50%, -50%)" }}></div>
@@ -152,7 +152,7 @@ export const unit8Data: UnitData = {
                 {/* 3:00 */}
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
                   <div style={{ fontSize: "18px", fontWeight: "bold" }}>{"(1) 3 ໂມງ"}</div>
-                  <div style={{ position: "relative", width: "120px", height: "120px", borderRadius: "50%", border: "4px solid #FF9800", backgroundColor: "#FFF" }}>
+                  <div style={{ position: "relative", width: "80px", height: "120px", borderRadius: "50%", border: "4px solid #FF9800", backgroundColor: "#FFF" }}>
                     <div style={{ position: "absolute", top: "50%", left: "50%", width: "10px", height: "10px", borderRadius: "50%", backgroundColor: "#000", transform: "translate(-50%, -50%)" }}></div>
                     <div style={{ position: "absolute", top: "4px", left: "50%", transform: "translateX(-50%)", fontSize: "14px", fontWeight: "bold" }}>12</div>
                     <div style={{ position: "absolute", right: "8px", top: "50%", transform: "translateY(-50%)", fontSize: "14px", fontWeight: "bold" }}>3</div>
@@ -164,7 +164,7 @@ export const unit8Data: UnitData = {
                 {/* 8:30 */}
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
                   <div style={{ fontSize: "18px", fontWeight: "bold" }}>{"(2) 8 ໂມງເຄິ່ງ"}</div>
-                  <div style={{ position: "relative", width: "120px", height: "120px", borderRadius: "50%", border: "4px solid #FF9800", backgroundColor: "#FFF" }}>
+                  <div style={{ position: "relative", width: "80px", height: "120px", borderRadius: "50%", border: "4px solid #FF9800", backgroundColor: "#FFF" }}>
                     <div style={{ position: "absolute", top: "50%", left: "50%", width: "10px", height: "10px", borderRadius: "50%", backgroundColor: "#000", transform: "translate(-50%, -50%)" }}></div>
                     <div style={{ position: "absolute", top: "4px", left: "50%", transform: "translateX(-50%)", fontSize: "14px", fontWeight: "bold" }}>12</div>
                     <div style={{ position: "absolute", right: "8px", top: "50%", transform: "translateY(-50%)", fontSize: "14px", fontWeight: "bold" }}>3</div>
@@ -176,7 +176,7 @@ export const unit8Data: UnitData = {
                 {/* 1:30 */}
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
                   <div style={{ fontSize: "18px", fontWeight: "bold" }}>{"(3) 1 ໂມງເຄິ່ງ"}</div>
-                  <div style={{ position: "relative", width: "120px", height: "120px", borderRadius: "50%", border: "4px solid #FF9800", backgroundColor: "#FFF" }}>
+                  <div style={{ position: "relative", width: "80px", height: "120px", borderRadius: "50%", border: "4px solid #FF9800", backgroundColor: "#FFF" }}>
                     <div style={{ position: "absolute", top: "50%", left: "50%", width: "10px", height: "10px", borderRadius: "50%", backgroundColor: "#000", transform: "translate(-50%, -50%)" }}></div>
                     <div style={{ position: "absolute", top: "4px", left: "50%", transform: "translateX(-50%)", fontSize: "14px", fontWeight: "bold" }}>12</div>
                     <div style={{ position: "absolute", right: "8px", top: "50%", transform: "translateY(-50%)", fontSize: "14px", fontWeight: "bold" }}>3</div>
@@ -188,7 +188,7 @@ export const unit8Data: UnitData = {
                 {/* 12:00 */}
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
                   <div style={{ fontSize: "18px", fontWeight: "bold" }}>{"(4) 12 ໂມງ"}</div>
-                  <div style={{ position: "relative", width: "120px", height: "120px", borderRadius: "50%", border: "4px solid #FF9800", backgroundColor: "#FFF" }}>
+                  <div style={{ position: "relative", width: "80px", height: "120px", borderRadius: "50%", border: "4px solid #FF9800", backgroundColor: "#FFF" }}>
                     <div style={{ position: "absolute", top: "50%", left: "50%", width: "10px", height: "10px", borderRadius: "50%", backgroundColor: "#000", transform: "translate(-50%, -50%)" }}></div>
                     <div style={{ position: "absolute", top: "4px", left: "50%", transform: "translateX(-50%)", fontSize: "14px", fontWeight: "bold" }}>12</div>
                     <div style={{ position: "absolute", right: "8px", top: "50%", transform: "translateY(-50%)", fontSize: "14px", fontWeight: "bold" }}>3</div>

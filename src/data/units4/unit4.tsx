@@ -319,7 +319,7 @@ export const unit4Data: UnitData = {
                     className="answer-blank"
                     style={{
                       display: "inline-block",
-                      width: "200px",
+                      width: "100px",
                       height: "40px",
                     }}
                   ></span>

@@ -155,7 +155,7 @@ export const unit12Data: UnitData = {
               </p>
               <div style={{ display: "flex", gap: "12px", alignItems: "center", paddingLeft: "16px", marginTop: "4px" }}>
                 <span>{"ຄຳຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
                 <span>{"m"}</span>
               </div>
             </div>
@@ -200,7 +200,7 @@ export const unit12Data: UnitData = {
             </p>
             <div style={{ display: "flex", gap: "12px", alignItems: "center", paddingLeft: "16px", marginTop: "4px" }}>
               <span>{"ຄຳຕອບ:"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
               <span>{"cm"}</span>
             </div>
           </div>

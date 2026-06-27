@@ -42,10 +42,10 @@ export const unit13Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ເມື່ອສ້າງຮູບສີ່ແຈ ABCD ດ້ວຍວິທີຂ້າງເທິງ, ຮູບ ABCD ທີ່ໄດ້ແມ່ນຮູບສີ່ແຈ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
@@ -121,16 +121,16 @@ export const unit13Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ເສັ້ນຊື່ (MC) ທີ່ສ້າງຂຶ້ນນັ້ນ ຈະມີລັກສະນະ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"ກັບເສັ້ນຊື່ d."}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຈຸດຕັດ H ລະຫວ່າງ d ແລະ (MC) ຈະເປັນຈຸດ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"ຂອງທ່ອນຊື່ [AB]."}</span>
                 </div>
               </div>
@@ -169,7 +169,7 @@ export const unit13Data: UnitData = {
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ເປັນຮູບສາມແຈ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
         )
@@ -240,7 +240,7 @@ export const unit13Data: UnitData = {
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <span>{"- ຮູບ ABCD ແມ່ນຮູບສີ່ແຈ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             </div>
           </div>
         </div>
