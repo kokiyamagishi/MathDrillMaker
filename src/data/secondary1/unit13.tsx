@@ -48,11 +48,16 @@ export const unit13Data: UnitData = {
                   <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ດັ່ງນັ້ນ, ຂ້າງ AD ຈະມີລັກສະນະການພົວພັນແນວໃດກັບຂ້າງ BC? ຕອບ: AD"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                  <span>{"BC"}</span>
+                <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                    <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                    <span>{"ດັ່ງນັ້ນ, ຂ້າງ AD ຈະມີລັກສະນະການພົວພັນແນວໃດກັບຂ້າງ BC?"}</span>
+                  </div>
+                  <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "32px" }}>
+                    <span>{"ຕອບ: AD"}</span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                    <span>{"BC"}</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -67,9 +72,9 @@ export const unit13Data: UnitData = {
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
                 <span>{"ຕອບ: CD ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                 <span>{"cm , AD ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                 <span>{"cm"}</span>
               </div>
             </div>
