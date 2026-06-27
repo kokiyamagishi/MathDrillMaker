@@ -126,9 +126,9 @@ export const AnswerSheet: React.FC<AnswerSheetProps> = ({ pageNumber, unitData }
         {professorWidth > 0 && <SuroboProfessor width={professorWidth} height={professorHeight} />}
         
         <div style={{ flex: 1 }}>
-          <div className="answer-sheet">
+          <div className="answer-sheet" style={{ fontSize: "15px" }}>
             <div className="answer-sheet__unit">
-              <h4 className="answer-sheet__title" style={{ fontSize: titleSize, margin: titleMargin }}>
+              <h4 className="answer-sheet__title" style={{ fontSize: "15px", margin: titleMargin }}>
                 {unitData.unitTitle.startsWith("ພາກທີ") ? unitData.unitTitle : `ບົດທີ ${unitData.unitNumber}: ${unitData.unitTitle}`} (ໜ້າທີ່ {unitData.startPage}-{unitData.endPage})
               </h4>
               
@@ -138,7 +138,7 @@ export const AnswerSheet: React.FC<AnswerSheetProps> = ({ pageNumber, unitData }
                 gap: gap, 
                 marginTop: "3px", 
                 marginBottom: "3px", 
-                fontSize: fontSize 
+                fontSize: "15px" 
               }}>
                 {unitData.items.map((item, idx) => {
                   const qNumStr = String(item.questionNumber);
@@ -164,11 +164,11 @@ export const AnswerSheet: React.FC<AnswerSheetProps> = ({ pageNumber, unitData }
                   }
 
                   return (
-                    <div key={idx} style={{ gridColumn: `span ${span}` }}>
-                      <p style={{ marginBottom: "1px", fontWeight: "bold" }}>ຄຳຖາມ {item.questionNumber}:</p>
-                      <div style={{ paddingLeft: "4px", lineHeight: lineHeight }}>
+                    <div key={idx} style={{ gridColumn: `span ${span}`, fontSize: "15px" }}>
+                      <p style={{ marginBottom: "1px", fontWeight: "bold", fontSize: "15px" }}>ຄຳຖາມ {item.questionNumber}:</p>
+                      <div style={{ paddingLeft: "4px", lineHeight: lineHeight, fontSize: "15px" }}>
                         {item.answers.map((answer, aIdx) => (
-                          <div key={aIdx} style={{ marginBottom: "1px" }}>{answer}</div>
+                          <div key={aIdx} style={{ marginBottom: "1px", fontSize: "15px" }}>{answer}</div>
                         ))}
                       </div>
                     </div>
@@ -182,9 +182,9 @@ export const AnswerSheet: React.FC<AnswerSheetProps> = ({ pageNumber, unitData }
             <div style={{ marginTop: adviceMargin }}>
               <HintBox
                 text={
-                  <>
+                  <span style={{ fontSize: "15px" }}>
                     💡 <strong>ສູໂຣໂບ ບອກ:</strong> {unitData.advice}
-                  </>
+                  </span>
                 }
                 isBlue
               />
