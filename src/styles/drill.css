@@ -157,7 +157,7 @@
 /* 日付記入欄 */
 .drill-meta__date {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: var(--space-2);
   font-family: var(--font-lao);
   font-size: 1.125rem !important; /* 18px */
@@ -168,7 +168,7 @@
   width: 120px;
   border-bottom: 1px solid var(--color-border);
   margin-left: var(--space-2);
-  vertical-align: -18px;
+  margin-bottom: 3px;
 }
 
 /* 得点記入欄 */

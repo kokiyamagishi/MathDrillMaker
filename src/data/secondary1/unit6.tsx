@@ -73,15 +73,7 @@ export const unit6Data: UnitData = {
         </div>
       ),
       hint: {
-        text: (
-          <span>
-            {"ກົດເຄື່ອງໝາຍການຫານ ກໍ່ແມ່ນຄືກັນກັບການຄູນເລີຍເດີ້!"}
-            <br />
-            <span style={{ display: "inline-block", marginTop: "4px", whiteSpace: "nowrap" }}>
-              {"ຕົວຢ່າງ: (-16) ÷ (-8) = +2"}
-            </span>
-          </span>
-        ),
+        text: "ກົດເຄື່ອງໝາຍການຫານ ກໍ່ແມ່ນຄືກັນກັບການຄູນເລີຍເດີ້! ເຊັ່ນ: (-16) ÷ (-8) = +2",
         isBlue: true,
       },
     },
