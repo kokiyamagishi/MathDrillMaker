@@ -119,17 +119,25 @@ export const unit18Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                  <span>{"(1) y = (x - 1)² ໃນຫວ່າງ [0, 3] (ເມັດຈອມ x=1 ຢູ່ຫວ່າງນີ້) ⇒ min y ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
-                  <span>{", max y ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                    <span>{"(1) y = (x - 1)² ໃນຫວ່າງ [0, 3] (ເມັດຈອມ x=1 ຢູ່ຫວ່າງນີ້) ⇒ min y ="}</span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  </div>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                    <span>{", max y ="}</span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  </div>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                  <span>{"(2) y = -x² + 4x ໃນຫວ່າງ [0, 1] (ເມັດຈອມ x=2 ຢູ່ນອກຫວ່າງ) ⇒ min y ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
-                  <span>{", max y ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                    <span>{"(2) y = -x² + 4x ໃນຫວ່າງ [0, 1] (ເມັດຈອມ x=2 ຢູ່ນອກຫວ່າງ) ⇒ min y ="}</span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  </div>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                    <span>{", max y ="}</span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  </div>
                 </div>
               </div>
             </div>
