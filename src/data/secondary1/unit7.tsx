@@ -280,7 +280,7 @@ export const unit7Data: UnitData = {
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span className="math">{"45 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
-                  <span style={{ fontSize: "1.1rem", color: "#7F8C8D" }}>{"(ຕົວຢ່າງການຕອບ: 3^2 * 5)"}</span>
+                  <span style={{ fontSize: "1.1rem", color: "#7F8C8D" }}>{"(ຕົວຢ່າງການຕອບ: 3² × 5)"}</span>
                 </div>
 
                 {/* Sub-question 2 */}
@@ -288,7 +288,7 @@ export const unit7Data: UnitData = {
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span className="math">{"72 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
-                  <span style={{ fontSize: "1.1rem", color: "#7F8C8D" }}>{"(ຕົວຢ່າງການຕອບ: 2^3 * 3^2)"}</span>
+                  <span style={{ fontSize: "1.1rem", color: "#7F8C8D" }}>{"(ຕົວຢ່າງການຕອບ: 2³ × 3²)"}</span>
                 </div>
               </div>
             </div>
@@ -434,15 +434,15 @@ export const unit7Data: UnitData = {
       {
         questionNumber: 5,
         answers: [
-          <span key="3-1">{"(1) 3² × 5 ຫຼື 3^2 * 5 (ເພາະວ່າ 45 = 9 × 5 = 3 × 3 × 5)"}</span>,
-          <span key="3-2">{"(2) 2³ × 3² ຫຼື 2^3 * 3^2 (ເພາະວ່າ 72 = 8 × 9 = 2 × 2 × 2 × 3 × 3)"}</span>
+          <span key="3-1">{"(1) 3² × 5 (ເພາະວ່າ 45 = 9 × 5 = 3 × 3 × 5)"}</span>,
+          <span key="3-2">{"(2) 2³ × 3² (ເພາະວ່າ 72 = 8 × 9 = 2 × 2 × 2 × 3 × 3)"}</span>
         ]
       },
       {
         questionNumber: 6,
         answers: [
-          <span key="u7-ans-6-1">{"(1) 2 × 3³ (ຫຼື 2 * 3^3)"}</span>,
-          <span key="u7-ans-6-2">{"(2) 2² × 3 × 5 (ຫຼື 2^2 * 3 * 5)"}</span>
+          <span key="u7-ans-6-1">{"(1) 2 × 3³"}</span>,
+          <span key="u7-ans-6-2">{"(2) 2² × 3 × 5"}</span>
         ]
       },
       {

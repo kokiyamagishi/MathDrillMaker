@@ -164,7 +164,7 @@ export const unit25Data: UnitData = {
               {"ໂຈດການຊອກຫາຈຳນວນອະນຸກຸ່ມທັງໝົດ (Number of Subsets): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຖ້າກຸ່ມ S ມີ n ອົງປະກອບ, ຈຳນວນອະນຸກຸ່ມທັງໝົດຂອງ S ຈະເທົ່າກັບ 2^n. ຖ້າກຸ່ມ S = {1, 2, 3} ມີ 3 ອົງປະກອບ, ຖາມວ່າກຸ່ມ S ຈະມີອະນຸກຸ່ມທັງໝົດຈັກກຸ່ມ?"}
+              {"ຖ້າກຸ່ມ S ມີ n ອົງປະກອບ, ຈຳນວນອະນຸກຸ່ມທັງໝົດຂອງ S ຈະເທົ່າກັບ 2ⁿ. ຖ້າກຸ່ມ S = {1, 2, 3} ມີ 3 ອົງປະກອບ, ຖາມວ່າກຸ່ມ S ຈະມີອະນຸກຸ່ມທັງໝົດຈັກກຸ່ມ?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ມີອະນຸກຸ່ມທັງໝົດ"}</span>

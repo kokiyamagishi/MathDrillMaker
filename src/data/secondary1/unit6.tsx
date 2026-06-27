@@ -47,7 +47,9 @@ export const unit6Data: UnitData = {
                 <li>{"(+) × (+) = (+)"}</li>
                 <li>{"(-) × (-) = (+)"}</li>
                 <li style={{ color: "#1B5E20", fontWeight: "bold", listStyleType: "none", marginTop: "4px" }}>
-                  {"ຕົວຢ່າງ: (-8) × (-3) = +24"}
+                  {"ຕົວຢ່າງ:"}
+                  <br />
+                  {"(-8) × (-3) = +24"}
                 </li>
               </ul>
             </div>
@@ -65,7 +67,9 @@ export const unit6Data: UnitData = {
                 <li>{"(+) × (-) = (-)"}</li>
                 <li>{"(-) × (+) = (-)"}</li>
                 <li style={{ color: "#B71C1C", fontWeight: "bold", listStyleType: "none", marginTop: "4px" }}>
-                  {"ຕົວຢ່າງ: (-6) × (+4) = -24"}
+                  {"ຕົວຢ່າງ:"}
+                  <br />
+                  {"(-6) × (+4) = -24"}
                 </li>
               </ul>
             </div>
