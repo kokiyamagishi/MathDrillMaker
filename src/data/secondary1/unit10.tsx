@@ -94,6 +94,62 @@ export const unit10Data: UnitData = {
               </div>
             </div>
           )
+        },
+        {
+          number: 5,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ສຳນວນຕໍ່ໄປນີ້ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 1.25 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", fontSize: "1.375rem", padding: "8px 16px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(1) (-5) + (-8) - (-4) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(2) (-12) - (+15) + (-3) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(3) (+20) + (-30) - (-10) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(4) (-8) - (-8) + (-15) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ສຳນວນຕໍ່ໄປນີ້ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 1.25 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", fontSize: "1.375rem", padding: "8px 16px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(1) (-5) + (-8) - (-4) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(2) (-12) - (+15) + (-3) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(3) (+20) + (-30) - (-10) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(4) (-8) - (-8) + (-15) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
         }
       ]
     },
@@ -135,7 +191,7 @@ export const unit10Data: UnitData = {
       },
       problems: [
         {
-          number: 2,
+          number: 5,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -169,6 +225,62 @@ export const unit10Data: UnitData = {
                   <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
                   <span className="math">{"(12 - 3 × 5) × (-2) ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ສຳນວນທີ່ມີວົງເລັບຕໍ່ໄປນີ້ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 1.25 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", fontSize: "1.375rem", padding: "8px 16px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(1) 45 - [ 12 + ( -5 - 3 ) ] ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(2) -18 + [ -15 - ( -3 + 8 ) ] ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(3) [ 12 - ( -5 ) ] - [ -4 + ( -8 ) ] ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(4) -25 - [ -10 + ( -15 + 20 ) ] ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ສຳນວນທີ່ມີວົງເລັບຕໍ່ໄປນີ້ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 1.25 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", fontSize: "1.375rem", padding: "8px 16px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(1) 45 - [ 12 + ( -5 - 3 ) ] ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(2) -18 + [ -15 - ( -3 + 8 ) ] ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(3) [ 12 - ( -5 ) ] - [ -4 + ( -8 ) ] ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(4) -25 - [ -10 + ( -15 + 20 ) ] ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
                 </div>
               </div>
             </div>
@@ -218,7 +330,7 @@ export const unit10Data: UnitData = {
       },
       problems: [
         {
-          number: 3,
+          number: 5,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -281,7 +393,7 @@ export const unit10Data: UnitData = {
         )
       },
       {
-        number: 2,
+        number: 5,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
@@ -321,7 +433,7 @@ export const unit10Data: UnitData = {
       )
     },
     {
-      number: 2,
+      number: 5,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
@@ -350,7 +462,7 @@ export const unit10Data: UnitData = {
         ]
       },
       {
-        questionNumber: 2,
+        questionNumber: 5,
         answers: [
           <span key="2-1">{"(1) 12 (4 × (9 - 6) = 4 × 3 = 12)"}</span>,
           <span key="2-2">{"(2) -15 (3 × (2 - 7) = 3 × (-5) = -15)"}</span>,
@@ -359,7 +471,7 @@ export const unit10Data: UnitData = {
         ]
       },
       {
-        questionNumber: 3,
+        questionNumber: 5,
         answers: [
           <span key="3-1">{"(1) 9 (15 - [3 × (8 - 6)] = 15 - [3 × 2] = 15 - 6 = 9)"}</span>,
           <span key="3-2">{"(2) 20 ([4 + 2 × (5 - 2)] × 2 = [4 + 2 × 3] × 2 = [4 + 6] × 2 = 10 × 2 = 20)"}</span>,
@@ -389,6 +501,42 @@ export const unit10Data: UnitData = {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
           <span key="s2">{"6 (12 - [ 2 × (5 - 3) + 6 ÷ 3 ] = 12 - [ 2 × 2 + 2 ] = 12 - [ 4 + 2 ] = 12 - 6 = 6)"}</span>
+        ]
+      },
+      {
+        questionNumber: 5,
+        answers: [
+          <span key="u10-ans-2-1">{"(1) -9"}</span>,
+          <span key="u10-ans-2-2">{"(2) -30"}</span>,
+          <span key="u10-ans-2-3">{"(3) 0"}</span>,
+          <span key="u10-ans-2-4">{"(4) -15"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="u10-ans-4-1">{"(1) 41"}</span>,
+          <span key="u10-ans-4-2">{"(2) -38"}</span>,
+          <span key="u10-ans-4-3">{"(3) 29"}</span>,
+          <span key="u10-ans-4-4">{"(4) -20"}</span>
+        ]
+      },
+      {
+        questionNumber: 2,
+        answers: [
+          <span key="u10-ans-2-1">{"(1) -9"}</span>,
+          <span key="u10-ans-2-2">{"(2) -30"}</span>,
+          <span key="u10-ans-2-3">{"(3) 0"}</span>,
+          <span key="u10-ans-2-4">{"(4) -15"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="u10-ans-4-1">{"(1) 41"}</span>,
+          <span key="u10-ans-4-2">{"(2) -38"}</span>,
+          <span key="u10-ans-4-3">{"(3) 29"}</span>,
+          <span key="u10-ans-4-4">{"(4) -20"}</span>
         ]
       }
     ],

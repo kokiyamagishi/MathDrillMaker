@@ -56,6 +56,22 @@ export const unit42Data: UnitData = {
               </div>
             </div>
           )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາຈຳນວນອົງປະກອບຂອງເຫດການ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ໂຍນໝາກກະລັອກ 1 ໜ່ວຍ. ເຫດການທີ່ຈະໄດ້ແຕ້ມເປັນເລກຄູ່ n(A) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
         }
       ]
     },
@@ -87,7 +103,7 @@ export const unit42Data: UnitData = {
       },
       problems: [
         {
-          number: 2,
+          number: 5,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -100,6 +116,24 @@ export const unit42Data: UnitData = {
                 <span>{"ຕອບ: P(A) ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               </div>
+            </div>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+            {"ຈົ່ງຊອກຫາຄວາມໜ້າຈະເປັນຂອງເຫດການ (ຊຸດທີ 2): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+          </p>
+          <p style={{ fontSize: "1.375rem", margin: "12px 0", lineHeight: "1.6" }}>
+            {"ໃນຖົງໜຶ່ງມີໝາກບານສີແດງ 4 ໜ່ວຍ ແລະ ສີຂາວ 6 ໜ່ວຍ. ຖ້າຢິບໝາກບານ 1 ໜ່ວຍແບບສຸ່ມ, ຈົ່ງຊອກຫາຄວາມໜ້າຈະເປັນທີ່ຈະໄດ້ໝາກບານສີແດງ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: P(A) ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span>{" (ຂຽນເປັນເລກສ່ວນ ເຊັ່ນ 2/5)"}</span>
+          </div>
             </div>
           )
         }
@@ -158,13 +192,13 @@ export const unit42Data: UnitData = {
         ]
       },
       {
-        questionNumber: 2,
+        questionNumber: 5,
         answers: [
           <span key="2">{"0.5 (ຄິດໄລ່: ຈຳນວນມູນໃນໝາກກະລັອກແມ່ນ {2, 3, 5} ⇒ n(A) = 3. S = 6 ⇒ P(A) = 3/6 = 0.5)"}</span>
         ]
       },
       {
-        questionNumber: 3,
+        questionNumber: 5,
         answers: [
           <span key="3">{"0.75 (ຄິດໄລ່: P(A) = 3/4 = 0.75)"}</span>
         ]
@@ -179,6 +213,18 @@ export const unit42Data: UnitData = {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
           <span key="s1">{"0 (ຄິດໄລ່: ເຫດການເປັນໄປບໍ່ໄດ້ ມີ P(A) = 0)"}</span>
+        ]
+      },
+      {
+        questionNumber: 2,
+        answers: [
+          <span key="u42-ans-2-1">{"3 (ຄິດໄລ່: ເຫດການແມ່ນ {2, 4, 6} ⇒ n(A) = 3)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="u42-ans-4-1">{"2/5 (ຄິດໄລ່: P(A) = 4/(4+6) = 4/10 = 2/5)"}</span>
         ]
       }
     ],

@@ -58,6 +58,22 @@ export const unit35Data: UnitData = {
               </div>
             </div>
           )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ຜົນຄູນສະກາແລທາງເລຂາຄະນິດ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ໃຫ້ |u| = 4, |v| = 5 ແລະ ມຸມລະຫວ່າງ u ແລະ v ແມ່ນ 60° ⇒ u · v ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
         }
       ]
     },
@@ -88,7 +104,7 @@ export const unit35Data: UnitData = {
       },
       problems: [
         {
-          number: 2,
+          number: 4,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -109,7 +125,7 @@ export const unit35Data: UnitData = {
           )
         },
         {
-          number: 3,
+          number: 4,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -181,14 +197,14 @@ export const unit35Data: UnitData = {
         ]
       },
       {
-        questionNumber: 2,
+        questionNumber: 4,
         answers: [
           <span key="2-1">{"-2 (ຄິດໄລ່: u·v = 3·4 + 2·(-5) = 12 - 10 = -2)"}</span>,
           <span key="2-2">{"-2 (ຄິດໄລ່: u·v = (-2)·3 + 4·1 = -6 + 4 = -2)"}</span>
         ]
       },
       {
-        questionNumber: 3,
+        questionNumber: 4,
         answers: [
           <span key="3">{"4 (ຄິດໄລ່: u·v = 3k - 12 = 0 ⇒ k = 4)"}</span>
         ]
@@ -203,6 +219,12 @@ export const unit35Data: UnitData = {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
           <span key="s1">{"0 (ຄິດໄລ່: ເພາະ cos(90°) = 0 ⇒ u·v = 0)"}</span>
+        ]
+      },
+      {
+        questionNumber: 2,
+        answers: [
+          <span key="u35-ans-2-1">{"10 (ຄິດໄລ່: u · v = |u| × |v| × cos(60°) = 4 × 5 × 0.5 = 10)"}</span>
         ]
       }
     ],

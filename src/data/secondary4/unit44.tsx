@@ -51,6 +51,22 @@ export const unit44Data: UnitData = {
               </div>
             </div>
           )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ຄວາມໜ້າຈະເປັນຂອງເຫດການຂັດກັນ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ໂຍນໝາກກະລັອກ 1 ໜ່ວຍ. P(ໄດ້ແຕ້ມ 1 ຫຼື ໄດ້ແຕ້ມ 6) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
         }
       ]
     },
@@ -75,7 +91,7 @@ export const unit44Data: UnitData = {
       },
       problems: [
         {
-          number: 2,
+          number: 5,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -88,6 +104,24 @@ export const unit44Data: UnitData = {
                 <span>{"ຕອບ: P(A ∪ B) ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               </div>
+            </div>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+            {"ຈົ່ງຄິດໄລ່ຄວາມໜ້າຈະເປັນການບວກແບບທົ່ວໄປ (ຊຸດທີ 2): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+          </p>
+          <p style={{ fontSize: "1.375rem", margin: "12px 0", lineHeight: "1.6" }}>
+            {"ເລືອກຕົວເລກ 1 ຕົວຈາກ {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}. ຈົ່ງຊອກຫາຄວາມໜ້າຈະເປັນທີ່ຈະໄດ້ເລກຄູ່ ຫຼື ເລກທີ່ຫານຂາດໃຫ້ 3?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: P(A ∪ B) ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span>{" (ຂຽນເປັນເລກສ່ວນ ເຊັ່ນ 7/10)"}</span>
+          </div>
             </div>
           )
         }
@@ -146,13 +180,13 @@ export const unit44Data: UnitData = {
         ]
       },
       {
-        questionNumber: 2,
+        questionNumber: 5,
         answers: [
           <span key="2">{"2/3 (ຄິດໄລ່: A = ແຕ້ມຄູ່ {2, 4, 6} ⇒ P(A) = 3/6. B = ຫານຂາດໃຫ້ 3 {3, 6} ⇒ P(B) = 2/6. ຮ່ວມກັນແມ່ນ {6} ⇒ P(A ∩ B) = 1/6. P(A ∪ B) = 3/6 + 2/6 - 1/6 = 4/6 = 2/3)"}</span>
         ]
       },
       {
-        questionNumber: 3,
+        questionNumber: 5,
         answers: [
           <span key="3">{"0.55 (ຄິດໄລ່: P(F ∪ B) = 0.40 + 0.30 - 0.15 = 0.55)"}</span>
         ]
@@ -167,6 +201,18 @@ export const unit44Data: UnitData = {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
           <span key="s1">{"0 (ຄິດໄລ່: ເພາະເຫດການຂັດກັນ ບໍ່ສາມາດເກີດຂຶ້ນພ້ອມກັນໄດ້ສະເໝີ)"}</span>
+        ]
+      },
+      {
+        questionNumber: 2,
+        answers: [
+          <span key="u44-ans-2-1">{"1/3 (ຄິດໄລ່: P(1 ∪ 6) = 1/6 + 1/6 = 2/6 = 1/3)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="u44-ans-4-1">{"7/10 (ຄິດໄລ່: ເລກຄູ່ {2,4,6,8,10}, ຫານຂາດໃຫ້ 3 {3,6,9}. ຕົວຮ່ວມ {6}. ຄວາມໜ້າຈະເປັນ = 5/10 + 3/10 - 1/10 = 7/10)"}</span>
         ]
       }
     ],

@@ -93,6 +93,50 @@ export const unit7Data: UnitData = {
               </div>
             </div>
           )
+        },
+        {
+          number: 5,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາທະວີຄູນຮ່ວມໜ້ອຍສຸດ (LCM) ຂອງຄູ່ຈຳນວນລຸ່ມນີ້ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math">{"LCM(4, 10) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math">{"LCM(8, 12) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາທະວີຄູນຮ່ວມໜ້ອຍສຸດ (LCM) ຂອງຄູ່ຈຳນວນລຸ່ມນີ້ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math">{"LCM(4, 10) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math">{"LCM(8, 12) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
         }
       ]
     },
@@ -149,7 +193,7 @@ export const unit7Data: UnitData = {
       },
       problems: [
         {
-          number: 2,
+          number: 5,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -168,6 +212,50 @@ export const unit7Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span className="math">{"GCD(16, 40) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາອຸປະຄູນຮ່ວມຫຼາຍສຸດ (GCD) ຂອງຄູ່ຈຳນວນລຸ່ມນີ້ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math">{"GCD(12, 18) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math">{"GCD(20, 50) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາອຸປະຄູນຮ່ວມຫຼາຍສຸດ (GCD) ຂອງຄູ່ຈຳນວນລຸ່ມນີ້ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math">{"GCD(12, 18) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math">{"GCD(20, 50) ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -223,7 +311,7 @@ export const unit7Data: UnitData = {
       },
       problems: [
         {
-          number: 3,
+          number: 5,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -245,6 +333,50 @@ export const unit7Data: UnitData = {
                   <span className="math">{"72 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
                   <span style={{ fontSize: "1.1rem", color: "#7F8C8D" }}>{"(ຕົວຢ່າງການຕອບ: 2^3 * 3^2)"}</span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 6,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຂຽນຈຳນວນຕໍ່ໄປນີ້ເປັນຜົນຄູນຂອງຈຳນວນມູນ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math">{"54 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math">{"60 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 6,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຂຽນຈຳນວນຕໍ່ໄປນີ້ເປັນຜົນຄູນຂອງຈຳນວນມູນ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math">{"54 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math">{"60 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
                 </div>
               </div>
             </div>
@@ -280,7 +412,7 @@ export const unit7Data: UnitData = {
         )
       },
       {
-        number: 2,
+        number: 5,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
@@ -318,7 +450,7 @@ export const unit7Data: UnitData = {
       )
     },
     {
-      number: 2,
+      number: 5,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
@@ -345,14 +477,14 @@ export const unit7Data: UnitData = {
         ]
       },
       {
-        questionNumber: 2,
+        questionNumber: 5,
         answers: [
           <span key="2-1">{"(1) 6 (ອຸປະຄູນຮ່ວມຂອງ 18 ແລະ 30 ແມ່ນ {1, 2, 3, 6}; GCD ແມ່ນ 6)"}</span>,
           <span key="2-2">{"(2) 8 (ອຸປະຄູນຮ່ວມຂອງ 16 ແລະ 40 ແມ່ນ {1, 2, 4, 8}; GCD ແມ່ນ 8)"}</span>
         ]
       },
       {
-        questionNumber: 3,
+        questionNumber: 5,
         answers: [
           <span key="3-1">{"(1) 3² × 5 ຫຼື 3^2 * 5 (ເພາະວ່າ 45 = 9 × 5 = 3 × 3 × 5)"}</span>,
           <span key="3-2">{"(2) 2³ × 3² ຫຼື 2^3 * 3^2 (ເພາະວ່າ 72 = 8 × 9 = 2 × 2 × 2 × 3 × 3)"}</span>
@@ -380,6 +512,48 @@ export const unit7Data: UnitData = {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
           <span key="s2">{"14 (ເພາະວ່າ 28 = 2² × 7, 42 = 2 × 3 × 7; ດັ່ງນັ້ນ GCD = 2 × 7 = 14)"}</span>
+        ]
+      },
+      {
+        questionNumber: 5,
+        answers: [
+          <span key="u7-ans-2-1">{"(1) 20"}</span>,
+          <span key="u7-ans-2-2">{"(2) 24"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="u7-ans-4-1">{"(1) 6"}</span>,
+          <span key="u7-ans-4-2">{"(2) 10"}</span>
+        ]
+      },
+      {
+        questionNumber: 6,
+        answers: [
+          <span key="u7-ans-6-1">{"(1) 2 × 3³ (ຫຼື 2 * 3^3)"}</span>,
+          <span key="u7-ans-6-2">{"(2) 2² × 3 × 5 (ຫຼື 2^2 * 3 * 5)"}</span>
+        ]
+      },
+      {
+        questionNumber: 2,
+        answers: [
+          <span key="u7-ans-2-1">{"(1) 20"}</span>,
+          <span key="u7-ans-2-2">{"(2) 24"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="u7-ans-4-1">{"(1) 6"}</span>,
+          <span key="u7-ans-4-2">{"(2) 10"}</span>
+        ]
+      },
+      {
+        questionNumber: 6,
+        answers: [
+          <span key="u7-ans-6-1">{"(1) 2 × 3³ (ຫຼື 2 * 3^3)"}</span>,
+          <span key="u7-ans-6-2">{"(2) 2² × 3 × 5 (ຫຼື 2^2 * 3 * 5)"}</span>
         ]
       }
     ],

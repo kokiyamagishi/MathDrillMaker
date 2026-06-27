@@ -65,6 +65,25 @@ export const unit36Data: UnitData = {
               </div>
             </div>
           )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາເວັກເຕີຕັ້ງສາກ ແລະ ເວັກເຕີຊີ້ນຳ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ໃຫ້ເສັ້ນຊື່ L: 2x - 3y + 6 = 0 ⇒ ເວັກເຕີຕັ້ງສາກ n = ["}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{", "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{"]"}</span>
+                </div>
+              </div>
+            </div>
+          )
         }
       ]
     },
@@ -89,7 +108,7 @@ export const unit36Data: UnitData = {
       },
       problems: [
         {
-          number: 2,
+          number: 5,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -103,6 +122,22 @@ export const unit36Data: UnitData = {
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
                   <span>{"(2) ໄລຍະຫ່າງຈາກ N(2, -1) ຫາເສັ້ນຊື່ d: 6x - 8y + 5 = 0 ແມ່ນ d ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ໄລຍະຫ່າງຈາກເມັດຫາເສັ້ນຊື່ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ໄລຍະຫ່າງຈາກເມັດ P(1, 1) ຫາ L: 3x + 4y - 12 = 0 ແມ່ນ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
               </div>
@@ -166,14 +201,14 @@ export const unit36Data: UnitData = {
         ]
       },
       {
-        questionNumber: 2,
+        questionNumber: 5,
         answers: [
           <span key="2-1">{"4 (ຄິດໄລ່: d = |3(3) + 4(4) - 5| / √(3²+4²) = |9 + 16 - 5| / 5 = 20/5 = 4)"}</span>,
           <span key="2-2">{"2.5 (ຄິດໄລ່: d = |6(2) - 8(-1) + 5| / √(6²+8²) = |12 + 8 + 5| / 10 = 25/10 = 2.5)"}</span>
         ]
       },
       {
-        questionNumber: 3,
+        questionNumber: 5,
         answers: [
           <span key="3">{"1 (ຄິດໄລ່: 2x - y = 2(2) - 3 = 1 ⇒ C = 1)"}</span>
         ]
@@ -188,6 +223,19 @@ export const unit36Data: UnitData = {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
           <span key="s1">{"2 (ຄິດໄລ່: d = |5(0) + 12(0) - 26| / √(5²+12²) = 26 / 13 = 2)"}</span>
+        ]
+      },
+      {
+        questionNumber: 2,
+        answers: [
+          <span key="u36-ans-2-1">{"2 (ຄິດໄລ່: ຈາກສົມຜົນ 2x - 3y + 6 = 0 ⇒ n = [2, -3])"}</span>,
+          <span key="u36-ans-2-2">{"-3"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="u36-ans-4-1">{"1 (ຄິດໄລ່: d = |3(1)+4(1)-12|/√(3²+4²) = |-5|/5 = 1)"}</span>
         ]
       }
     ],

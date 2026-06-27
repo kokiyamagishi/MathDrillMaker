@@ -60,6 +60,26 @@ export const unit30Data: UnitData = {
               </div>
             </div>
           )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຈຳແນກປະລິມານຕໍ່ໄປນີ້ວ່າເປັນ ສະກາແລ ຫຼື ເວກເຕີ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) 'ລົດແລ່ນໄປທາງທິດໃຕ້ດ້ວຍຄວາມໄວ 80 km/h' ⇒ ແມ່ນປະລິມານ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) 'ນ້ຳໜັກຂອງປຶ້ມແມ່ນ 2 ກິໂລກຣາມ' ⇒ ແມ່ນປະລິມານ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
         }
       ]
     },
@@ -88,7 +108,7 @@ export const unit30Data: UnitData = {
       },
       problems: [
         {
-          number: 2,
+          number: 4,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -109,7 +129,7 @@ export const unit30Data: UnitData = {
           )
         },
         {
-          number: 3,
+          number: 4,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -185,14 +205,14 @@ export const unit30Data: UnitData = {
         ]
       },
       {
-        questionNumber: 2,
+        questionNumber: 4,
         answers: [
           <span key="2-1">{"ED (ຄິດໄລ່: ໃນຮູບຫົກແຈສະເໝີ, ຂ້າງ AB ແລະ ED ຂະໜານກັນ ແລະ ມີທິດທາງດຽວກັນ)"}</span>,
           <span key="2-2">{"FE (ຄິດໄລ່: ເພາະ BC = EF ⇒ -BC = FE)"}</span>
         ]
       },
       {
-        questionNumber: 3,
+        questionNumber: 4,
         answers: [
           <span key="3-1">{"HG (ຄິດໄລ່: ຂ້າງທັງສີ່ AB, DC, EF, HG ແມ່ນຂະໜານກັນ ແລະ ຍາວເທົ່າກັນໃນຮູບກ່ອງສາກ)"}</span>,
           <span key="3-2">{"HE (ຄິດໄລ່: ເພາະ DA = EH ⇒ -DA = HE)"}</span>
@@ -208,6 +228,13 @@ export const unit30Data: UnitData = {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
           <span key="s1">{"ສູນ (ຄິດໄລ່: AB + BA = AA = 0, ເຊິ່ງແມ່ນເວກເຕີສູນ)"}</span>
+        ]
+      },
+      {
+        questionNumber: 2,
+        answers: [
+          <span key="u30-ans-2-1">{"ເວກເຕີ (ຄິດໄລ່: ຍ້ອນມີທັງຂະໜາດ 80 km/h ແລະ ທິດທາງຄືທິດໃຕ້)"}</span>,
+          <span key="u30-ans-2-2">{"ສະກາແລ (ຄິດໄລ່: ຍ້ອນມີແຕ່ຂະໜາດ 2 ກິໂລກຣາມ, ບໍ່ມີທິດທາງ)"}</span>
         ]
       }
     ],

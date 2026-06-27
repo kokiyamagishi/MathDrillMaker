@@ -118,7 +118,73 @@ export const unit6Data: UnitData = {
           </div>
         </div>
       ),
-    }
+    },
+        {
+          number: 5,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p>
+                {"ຈົ່ງຄິດໄລ່ຜົນຄູນ ແລະ ຜົນຫານຂອງຈຳນວນຖ້ວນຕໍ່ໄປນີ້ (ຊຸດທີ 2): "}{" "}
+                <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", fontSize: "1.375rem", padding: "8px 16px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(1) (-7) × (-4) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(2) (+9) × (-3) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(3) (-32) ÷ (+8) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(4) (-42) ÷ (-6) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(5) (-12) × 0 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p>
+                {"ຈົ່ງຄິດໄລ່ຜົນຄູນ ແລະ ຜົນຫານຂອງຈຳນວນຖ້ວນຕໍ່ໄປນີ້ (ຊຸດທີ 2): "}{" "}
+                <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", fontSize: "1.375rem", padding: "8px 16px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(1) (-7) × (-4) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(2) (+9) × (-3) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(3) (-32) ÷ (+8) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(4) (-42) ÷ (-6) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <span>{"(5) (-12) × 0 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        }
       ]
     },
     {
@@ -156,7 +222,7 @@ export const unit6Data: UnitData = {
     },
       problems: [
         {
-      number: 2,
+      number: 5,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p>
@@ -183,7 +249,49 @@ export const unit6Data: UnitData = {
           </div>
         </div>
       ),
-    }
+    },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p>
+                {"ຈົ່ງຄິດໄລ່ກຳລັງສອງຂອງຈຳນວນຖ້ວນຕໍ່ໄປນີ້ (ຊຸດທີ 2): "}{" "}
+                <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", fontSize: "1.375rem", padding: "8px 16px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                  <span>{"(1) (-5)² = (-5) × (-5) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                  <span>{"(2) -6² = -(6 × 6) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p>
+                {"ຈົ່ງຄິດໄລ່ກຳລັງສອງຂອງຈຳນວນຖ້ວນຕໍ່ໄປນີ້ (ຊຸດທີ 2): "}{" "}
+                <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", fontSize: "1.375rem", padding: "8px 16px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                  <span>{"(1) (-5)² = (-5) × (-5) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                  <span>{"(2) -6² = -(6 × 6) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        }
       ]
     },
     {
@@ -219,7 +327,7 @@ export const unit6Data: UnitData = {
     },
       problems: [
         {
-          number: 3,
+          number: 5,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p>
@@ -246,6 +354,48 @@ export const unit6Data: UnitData = {
               </div>
             </div>
           ),
+        },
+        {
+          number: 6,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p>
+                {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບຕົວທະວີຄູນ ແລະ ຕົວອຸປະຄູນຕໍ່ໄປນີ້ (ຊຸດທີ 2): "}{" "}
+                <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", fontSize: "1.375rem", padding: "8px 16px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                  <span>{"(1) ຈົ່ງຊອກຫາຕົວອຸປະຄູນທັງໝົດ ຂອງ 18: "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                  <span>{"(2) ຈົ່ງຊອກຫາ 3 ຕົວທະວີຄູນທຳອິດ ຂອງ 7 (ຈາກນ້ອຍຫາໃຫຍ່): "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 6,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p>
+                {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບຕົວທະວີຄູນ ແລະ ຕົວອຸປະຄູນຕໍ່ໄປນີ້ (ຊຸດທີ 2): "}{" "}
+                <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", fontSize: "1.375rem", padding: "8px 16px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                  <span>{"(1) ຈົ່ງຊອກຫາຕົວອຸປະຄູນທັງໝົດ ຂອງ 18: "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                  <span>{"(2) ຈົ່ງຊອກຫາ 3 ຕົວທະວີຄູນທຳອິດ ຂອງ 7 (ຈາກນ້ອຍຫາໃຫຍ່): "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
         }
       ]
     }
@@ -284,7 +434,7 @@ export const unit6Data: UnitData = {
         ),
       },
       {
-        number: 2,
+        number: 5,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p>
@@ -360,7 +510,7 @@ export const unit6Data: UnitData = {
       ),
     },
     {
-      number: 2,
+      number: 5,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p>
@@ -402,14 +552,14 @@ export const unit6Data: UnitData = {
         ],
       },
       {
-        questionNumber: 2,
+        questionNumber: 5,
         answers: [
           <span key="u6-ans-2-1">{"(1) 36"}</span>,
           <span key="u6-ans-2-2">{"(2) -16 (ເພາະເຄື່ອງໝາຍລົບຢູ່ນອກກຳລັງສອງ)"}</span>,
         ],
       },
       {
-        questionNumber: 3,
+        questionNumber: 5,
         answers: [
           <span key="u6-ans-3-1">{"(1) 1, 2, 3, 4, 6, 12"}</span>,
           <span key="u6-ans-3-2">{"(2) 5, 10, 15"}</span>,
@@ -445,6 +595,54 @@ export const unit6Data: UnitData = {
           <span key="u6-ans-s2-1">{"(1) -6 (ເພາະ -12 + (+6) = -6)"}</span>,
           <span key="u6-ans-s2-2">{"(2) -10 (ເພາະ -5 × (+2) = -10)"}</span>,
         ],
+      },
+      {
+        questionNumber: 5,
+        answers: [
+          <span key="u6-ans-2-1">{"(1) +28"}</span>,
+          <span key="u6-ans-2-2">{"(2) -27"}</span>,
+          <span key="u6-ans-2-3">{"(3) -4"}</span>,
+          <span key="u6-ans-2-4">{"(4) +7"}</span>,
+          <span key="u6-ans-2-5">{"(5) 0"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="u6-ans-4-1">{"(1) +25"}</span>,
+          <span key="u6-ans-4-2">{"(2) -36"}</span>
+        ]
+      },
+      {
+        questionNumber: 6,
+        answers: [
+          <span key="u6-ans-6-1">{"(1) 1, 2, 3, 6, 9, 18"}</span>,
+          <span key="u6-ans-6-2">{"(2) 7, 14, 21"}</span>
+        ]
+      },
+      {
+        questionNumber: 2,
+        answers: [
+          <span key="u6-ans-2-1">{"(1) +28"}</span>,
+          <span key="u6-ans-2-2">{"(2) -27"}</span>,
+          <span key="u6-ans-2-3">{"(3) -4"}</span>,
+          <span key="u6-ans-2-4">{"(4) +7"}</span>,
+          <span key="u6-ans-2-5">{"(5) 0"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="u6-ans-4-1">{"(1) +25"}</span>,
+          <span key="u6-ans-4-2">{"(2) -36"}</span>
+        ]
+      },
+      {
+        questionNumber: 6,
+        answers: [
+          <span key="u6-ans-6-1">{"(1) 1, 2, 3, 6, 9, 18"}</span>,
+          <span key="u6-ans-6-2">{"(2) 7, 14, 21"}</span>
+        ]
       },
     ],
     advice: "ຈື່ໃຫ້ດີວ່າ: ກຳລັງສອງຂອງຈຳນວນລົບໃນວົງເລັບ (-a)² ຈະໄດ້ຄ່າບວກສະເໝີ, ແຕ່ຖ້າບໍ່ມີວົງເລັບ -a² ຈະໄດ້ຄ່າລົບເດີ້!",

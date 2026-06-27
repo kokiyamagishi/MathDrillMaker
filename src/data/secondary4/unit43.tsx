@@ -51,6 +51,22 @@ export const unit43Data: UnitData = {
               </div>
             </div>
           )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ຄວາມໜ້າຈະເປັນຮ່ວມຂອງເຫດການເອກະລາດ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ໂຍນໝາກກະລັອກ 1 ໜ່ວຍ ແລະ ຫຼຽນ 1 ຫຼຽນ. P(ໄດ້ເລກ 6 ແລະ ຫົວ) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
         }
       ]
     },
@@ -75,7 +91,7 @@ export const unit43Data: UnitData = {
       },
       problems: [
         {
-          number: 2,
+          number: 5,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -88,6 +104,23 @@ export const unit43Data: UnitData = {
                 <span>{"ຕອບ: P(A ∩ B) ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               </div>
+            </div>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+            {"ຈົ່ງຄິດໄລ່ຄວາມໜ້າຈະເປັນການຍິງຖືກເປົ້າຮ່ວມ (ຊຸດທີ 2): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+          </p>
+          <p style={{ fontSize: "1.375rem", margin: "12px 0", lineHeight: "1.6" }}>
+            {"ທ້າວ A ຍິງປືນຖືກເປົ້າດ້ວຍຄວາມໜ້າຈະເປັນ 0.6 ແລະ ທ້າວ B ຍິງຖືກເປົ້າດ້ວຍຄວາມໜ້າຈະເປັນ 0.5. ຈົ່ງຊອກຫາຄວາມໜ້າຈະເປັນທີ່ທັງສອງຄົນຍິງຖືກເປົ້າພ້ອມກັນ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ຄວາມໜ້າຈະເປັນແມ່ນ"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+          </div>
             </div>
           )
         }
@@ -146,13 +179,13 @@ export const unit43Data: UnitData = {
         ]
       },
       {
-        questionNumber: 2,
+        questionNumber: 5,
         answers: [
           <span key="2">{"0.48 (ຄິດໄລ່: P(A ∩ B) = 0.6 × 0.8 = 0.48)"}</span>
         ]
       },
       {
-        questionNumber: 3,
+        questionNumber: 5,
         answers: [
           <span key="3">{"0.92 (ຄິດໄລ່: P(ຢ່າງໜ້ອຍໜຶ່ງ) = 1 - (1-0.6)×(1-0.8) = 1 - 0.08 = 0.92)"}</span>
         ]
@@ -167,6 +200,18 @@ export const unit43Data: UnitData = {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
           <span key="s1">{"0.2 (ຄິດໄລ່: P(A ∩ B) = 0.4 × 0.5 = 0.20)"}</span>
+        ]
+      },
+      {
+        questionNumber: 2,
+        answers: [
+          <span key="u43-ans-2-1">{"1/12 (ຄິດໄລ່: P(A) = 1/6, P(B) = 1/2 ⇒ P(A ∩ B) = 1/6 × 1/2 = 1/12)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="u43-ans-4-1">{"0.3 (ຄິດໄລ່: P(A ∩ B) = 0.6 × 0.5 = 0.3)"}</span>
         ]
       }
     ],

@@ -71,6 +71,54 @@ export const unit8Data: UnitData = {
               </div>
             </div>
           )
+        },
+        {
+          number: 5,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງບອກວ່າຈຳນວນໃດລຸ່ມນີ້ທີ່ຂຽນໄດ້ຖືກຕ້ອງຕາມຫຼັກການຂອງພື້ນຖານທີ່ກຳນົດໃຫ້ (ຊຸດທີ 2): (ຕອບ 'ຖືກ' ຫຼື 'ຜິດ') "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math">{"1010₂"}</span>
+                  <span>{"ແມ່ນ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math">{"3540₅"}</span>
+                  <span>{"ແມ່ນ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງບອກວ່າຈຳນວນໃດລຸ່ມນີ້ທີ່ຂຽນໄດ້ຖືກຕ້ອງຕາມຫຼັກການຂອງພື້ນຖານທີ່ກຳນົດໃຫ້ (ຊຸດທີ 2): (ຕອບ 'ຖືກ' ຫຼື 'ຜິດ') "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math">{"1010₂"}</span>
+                  <span>{"ແມ່ນ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math">{"3540₅"}</span>
+                  <span>{"ແມ່ນ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
         }
       ]
     },
@@ -118,7 +166,7 @@ export const unit8Data: UnitData = {
       },
       problems: [
         {
-          number: 2,
+          number: 5,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -137,6 +185,50 @@ export const unit8Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span className="math">{"104₅ ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງປ່ຽນຈຳນວນໃນພື້ນຖານ 2 ແລະ 5 ຕໍ່ໄປນີ້ໃຫ້ເປັນຈຳນວນໃນພື້ນຖານ 10 (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄะແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math">{"1101₂ ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math">{"203₅ ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງປ່ຽນຈຳນວນໃນພື້ນຖານ 2 ແລະ 5 ຕໍ່ໄປນີ້ໃຫ້ເປັນຈຳນວນໃນພື້ນຖານ 10 (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math">{"1101₂ ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math">{"203₅ ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
                 </div>
               </div>
@@ -183,7 +275,7 @@ export const unit8Data: UnitData = {
       },
       problems: [
         {
-          number: 3,
+          number: 5,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
@@ -205,6 +297,45 @@ export const unit8Data: UnitData = {
                   <span>{"ປ່ຽນ 38 ໄປເປັນພື້ນຖານ 5 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
                   <span style={{ fontSize: "1.1rem", color: "#7F8C8D" }}>{"(ຕົວຢ່າງການຕອບ: 123)"}</span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 6,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງປ່ຽນຈຳນວນພື້ນຖານ 10 ຕໍ່ໄປນີ້ໃຫ້ເປັນພື້ນຖານທີ່ກຳນົດໃຫ້ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span>{"ປ່ຽນ 23 ໄປເປັນພື້ນຖານ 2 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span>{"ປ່ຽນ 44 ໄປເປັນພື້ນຖານ 5 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 6,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງປ່ຽນຈຳນວນພື້ນຖານ 10 ຕໍ່ໄປນີ້ໃຫ້ເປັນພື້ນຖານທີ່ກຳນົດໃຫ້ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span>{"... (2) ປ່ຽນ 44 ໄປເປັນພື້ນຖານ 5 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
                 </div>
               </div>
             </div>
@@ -234,7 +365,7 @@ export const unit8Data: UnitData = {
         )
       },
       {
-        number: 2,
+        number: 5,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
@@ -272,7 +403,7 @@ export const unit8Data: UnitData = {
       )
     },
     {
-      number: 2,
+      number: 5,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
@@ -300,14 +431,14 @@ export const unit8Data: UnitData = {
         ]
       },
       {
-        questionNumber: 2,
+        questionNumber: 5,
         answers: [
           <span key="2-1">{"(1) 11 (1011₂ = 1×2³ + 0×2² + 1×2¹ + 1×2⁰ = 8 + 0 + 2 + 1 = 11)"}</span>,
           <span key="2-2">{"(2) 29 (104₅ = 1×5² + 0×5¹ + 4×5⁰ = 25 + 0 + 4 = 29)"}</span>
         ]
       },
       {
-        questionNumber: 3,
+        questionNumber: 5,
         answers: [
           <span key="3-1">{"(1) 10011 (19 ÷ 2 = 9 ເສດ 1; 9 ÷ 2 = 4 ເສດ 1; 4 ÷ 2 = 2 ເສດ 0; 2 ÷ 2 = 1 ເສດ 0; 1 ÷ 2 = 0 ເສດ 1; ຂຽນຍ້ອນກັບໄດ້ 10011)"}</span>,
           <span key="3-2">{"(2) 123 (38 ÷ 5 = 7 ເສດ 3; 7 ÷ 5 = 1 ເສດ 2; 1 ÷ 5 = 0 ເສດ 1; ຂຽນຍ້ອນກັບໄດ້ 123)"}</span>
@@ -335,6 +466,48 @@ export const unit8Data: UnitData = {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
           <span key="s2">{"244 (74 ÷ 5 = 14 ເສດ 4; 14 ÷ 5 = 2 ເສດ 4; 2 ÷ 5 = 0 ເສດ 2; ຂຽນຍ້ອນກັບໄດ້ 244₅)"}</span>
+        ]
+      },
+      {
+        questionNumber: 5,
+        answers: [
+          <span key="u8-ans-2-1">{"(1) ຖືກ (ເພາະມີແຕ່ເລກ 0, 1)"}</span>,
+          <span key="u8-ans-2-2">{"(2) ຜິດ (ເພາະມີເລກ 5 ປາກົດໃນພື້ນຖານ 5)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="u8-ans-4-1">{"(1) 13 (1101₂ = 8 + 4 + 0 + 1 = 13)"}</span>,
+          <span key="u8-ans-4-2">{"(2) 53 (203₅ = 2×25 + 0×5 + 3 = 53)"}</span>
+        ]
+      },
+      {
+        questionNumber: 6,
+        answers: [
+          <span key="u8-ans-6-1">{"(1) 10111"}</span>,
+          <span key="u8-ans-6-2">{"(2) 134"}</span>
+        ]
+      },
+      {
+        questionNumber: 2,
+        answers: [
+          <span key="u8-ans-2-1">{"(1) ຖືກ (ເພາະມີແຕ່ເລກ 0, 1)"}</span>,
+          <span key="u8-ans-2-2">{"(2) ຜິດ (ເພາະມີເລກ 5 ປາກົດໃນພື້ນຖານ 5)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="u8-ans-4-1">{"(1) 13"}</span>,
+          <span key="u8-ans-4-2">{"(2) 53"}</span>
+        ]
+      },
+      {
+        questionNumber: 6,
+        answers: [
+          <span key="u8-ans-6-1">{"(1) 10111"}</span>,
+          <span key="u8-ans-6-2">{"(2) 134"}</span>
         ]
       }
     ],
