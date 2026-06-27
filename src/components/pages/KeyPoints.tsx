@@ -12,7 +12,7 @@ interface KeyPointsProps {
   title?: string;
   content: React.ReactNode;
   hint?: {
-    text: string;
+    text: string | React.ReactNode;
     isBlue?: boolean;
   };
   isScience?: boolean;
