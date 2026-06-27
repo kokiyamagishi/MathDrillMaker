@@ -148,11 +148,11 @@ export const unit13Data: UnitData = {
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px", marginTop: "16px" }}>
               <span style={{ whiteSpace: "nowrap", flexShrink: 0 }}>{"ຕອບ:"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "40px" }}></span>
               <span>{"→"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "40px" }}></span>
               <span>{"→"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "40px" }}></span>
             </div>
           </div>
         )
