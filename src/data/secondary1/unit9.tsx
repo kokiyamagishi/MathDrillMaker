@@ -53,7 +53,7 @@ export const unit9Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຈົ່ງຊອກຫາໄລຍະຫ່າງລະຫວ່າງສອງຈຳນວນທີ່ກຳນົດໃຫ້ຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 1.25 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+                {"ຈົ່ງຊອກຫາໄລຍະຫ່າງລະຫວ່າງສອງຈຳນວນທີ່ກຳນົດໃຫ້ຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
@@ -132,11 +132,11 @@ export const unit9Data: UnitData = {
       },
       problems: [
         {
-          number: 2,
+          number: 1,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຈົ່ງຊອກຫາຄ່າສຳບູນຂອງຈຳນວນຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 1.25 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+                {"ຈົ່ງຊອກຫາຄ່າສຳບູນຂອງຈຳນວນຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
@@ -204,11 +204,11 @@ export const unit9Data: UnitData = {
       },
       problems: [
         {
-          number: 3,
+          number: 1,
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຈົ່ງຄິດໄລ່ຜົນລັບຂອງການສະແດງຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 1.25 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+                {"ຈົ່ງຄິດໄລ່ຜົນລັບຂອງການສະແດງຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
@@ -326,7 +326,7 @@ export const unit9Data: UnitData = {
   answers: {
     items: [
       {
-        questionNumber: 1,
+        questionNumber: "1 (ໜ້າ 57)",
         answers: [
           <span key="1-1">{"(1) 5 (8 - 3 = 5)"}</span>,
           <span key="1-2">{"(2) 7 (2 - (-5) = 2 + 5 = 7)"}</span>,
@@ -335,7 +335,7 @@ export const unit9Data: UnitData = {
         ]
       },
       {
-        questionNumber: 2,
+        questionNumber: "1 (ໜ້າ 59)",
         answers: [
           <span key="2-1">{"(1) 15 (ຄ່າສຳບູນຂອງ -15 ແມ່ນ 15)"}</span>,
           <span key="2-2">{"(2) 24 (ຄ່າສຳບູນຂອງ 24 ແມ່ນ 24)"}</span>,
@@ -344,7 +344,7 @@ export const unit9Data: UnitData = {
         ]
       },
       {
-        questionNumber: 3,
+        questionNumber: "1 (ໜ້າ 61)",
         answers: [
           <span key="3-1">{"(1) 20 (|-12| + 8 = 12 + 8 = 20)"}</span>,
           <span key="3-2">{"(2) 6 (|15| - |-9| = 15 - 9 = 6)"}</span>,
