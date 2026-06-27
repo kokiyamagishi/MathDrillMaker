@@ -19,9 +19,17 @@ export const unit3Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຄຸນລັກສະນະພື້ນຖານຂອງການບວກ:"}
             </p>
-            <ul style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.6" }}>
-              <li><strong>{"ຄຸນລັກສະນະສະຫຼັບບ່ອນ (Commutative): "}</strong>{" a + b = b + a. ຕົວຢ່າງ: 12 + 25 = 25 + 12 = 37."}</li>
-              <li><strong>{"ຄຸນລັກສະນະໂຮມໝູ່ (Associative): "}</strong>{" (a + b) + c = a + (b + c). ຕົວຢ່າງ: (5 + 7) + 3 = 5 + (7 + 3) = 15."}</li>
+            <ul style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.8" }}>
+              <li style={{ marginBottom: "8px" }}>
+                <strong>{"ຄຸນລັກສະນະສະຫຼັບບ່ອນ (Commutative): "}</strong>
+                <span style={{ display: "inline-block", whiteSpace: "nowrap" }}>{"a + b = b + a"}</span>
+                <div style={{ paddingLeft: "16px", color: "#555", fontSize: "1.2rem" }}>{"ຕົວຢ່າງ: 12 + 25 = 25 + 12 = 37."}</div>
+              </li>
+              <li style={{ marginBottom: "8px" }}>
+                <strong>{"ຄຸນລັກສະນະໂຮມໝູ່ (Associative): "}</strong>
+                <span style={{ display: "inline-block", whiteSpace: "nowrap" }}>{"(a + b) + c = a + (b + c)"}</span>
+                <div style={{ paddingLeft: "16px", color: "#555", fontSize: "1.2rem" }}>{"ຕົວຢ່າງ: (5 + 7) + 3 = 5 + (7 + 3) = 15."}</div>
+              </li>
             </ul>
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "16px", backgroundColor: "#F5F7FA", borderRadius: "12px", border: "1px dashed #B0BEC5" }}>
               <span className="math" style={{ fontSize: "1.6rem", display: "inline-flex", alignItems: "center", gap: "8px" }}>
