@@ -147,7 +147,7 @@ export const unit13Data: UnitData = {
               </div>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px", marginTop: "16px" }}>
-              <span>{"ຕອບ:"}</span>
+              <span style={{ whiteSpace: "nowrap", flexShrink: 0 }}>{"ຕອບ:"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
               <span>{"→"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
