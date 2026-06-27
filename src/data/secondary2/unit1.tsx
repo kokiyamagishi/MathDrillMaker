@@ -130,7 +130,7 @@ export const unit1Data: UnitData = {
               {"ໂຈດບັນຫາການປຽບທຽບເນື້ອທີ່: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ສວນຄົວແຫ່ງໜຶ່ງມີເນື້ອທີ່ທັງໝົດ 600 m². ຖ້າແບ່ງເນື້ອທີ່ "} <Fraction num="3" den="5" /> {" ຂອງສວນເພື່ອປູກຜັກກາດ. ຖາມວ່າເນື້ອທີ່ທີ່ເຫຼືອເພື່ອປູກດອກໄມ້ມີຈັກຕາແມັດ?"}
+              {"ສວນຄົວແຫ່ງໜຶ່ງມີເນື້ອທີ່ທັງໝົດ 600 m². ຖ້າແບ່ງເນື້ອທີ່ "} <Fraction num="3" den="5" /> {" ຂອງສວນເພື່ອປູກຜັກກາດ. ຖາມວ່າເນື້ອທີ່ທີ່ເຫຼືອເພື່ອປູກດອກໄມ້ມີຈັກຕາແມັດ?"}
             </p>
             <div style={{ display: "flex", justifyContent: "center", margin: "8px 0" }}>
               {/* Graphic container for garden */}
@@ -158,7 +158,7 @@ export const unit1Data: UnitData = {
               {"ການຊອກຫາຄ່າຂອງສ່ວນທີ່ແຖວສີ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຖ້າຮູບວົງມົນລຸ່ມນີ້ມີເນື້ອທີ່ທັງໝົດ 120 cm². จົ່ງຊອກຫາເນື້ອທີ່ຂອງສ່ວນທີ່ແຖວສີຟ້າ?"}
+              {"ຖ້າຮູບວົງມົນລຸ່ມນີ້ມີເນື້ອທີ່ທັງໝົດ 120 cm². จົ່ງຊອກຫາເນື້ອທີ່ຂອງສ່ວນທີ່ແຖວສີຟ້າ?"}
             </p>
             <div style={{ display: "flex", justifyContent: "center", margin: "8px 0" }}>
               <svg viewBox="0 0 120 120" style={{ width: "100%", maxWidth: "120px", height: "auto" }}>
@@ -189,7 +189,7 @@ export const unit1Data: UnitData = {
             {"...ໂຈດບັນຫາສະຫຼຸບເລກສ່ວນປະຕິບັດຕົວຈິງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ທ້າວ ສົມສັກ ມີເງິນທັງໝົດ 240,000 ກີບ. ລາວໄດ້ໃຊ້ຈ່າຍເງິນໄປ "} <Fraction num="5" den="8" /> {" ຂອງເງິນທັງໝົດເພື່ອຊື້ອຸປະກອນການຮຽນ. ຖາມວ່າລາວຍັງເຫຼືອເງິນຈັກກີບ?"}
+            {"ທ້າວ ສົມສັກ ມີເງິນທັງໝົດ 240,000 ກີບ. ລາວໄດ້ໃຊ້ຈ່າຍເງິນໄປ "} <Fraction num="5" den="8" /> {" ຂອງເງິນທັງໝົດເພື່ອຊື້ອຸປະກອນການຮຽນ. ຖາມວ່າລາວຍັງເຫຼືອເງິນຈັກກີບ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ເຫຼືອເງິນ"}</span>
@@ -207,7 +207,7 @@ export const unit1Data: UnitData = {
             {"ຊອກຫາຄ່າຂອງຕົວລັບຈາກອັດຕາສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຖ້າຊອກຫາຄ່າຂອງ x ຈາກເງື່ອນໄຂ: "}
+            {"ຖ້າຊອກຫາຄ່າຂອງ x ຈາກເງື່ອນໄຂ: "}
             <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "8px" }}>
               {"x = 360 × "} <Fraction num="7" den="12" />
             </span>

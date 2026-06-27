@@ -226,7 +226,7 @@ export const unit28Data: UnitData = {
               {"ຊອກຫາ x ຈາກຄວາມຍາວຂ້າງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ໃນຮູບສີ່ແຈຂະໜານ ABCD, ມີຂ້າງ "} <span className="math">{"AB = 3x - 5 cm"}</span> {" ແລະ "} <span className="math">{"CD = 10 cm"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ x ເພື່ອເຮັດໃຫ້ສອງຂ້າງນີ້ເທົ່າກັນ."}
+              {"ໃນຮູບສີ່ແຈຂະໜານ ABCD, ມີຂ້າງ "} <span className="math">{"AB = 3x - 5 cm"}</span> {" ແລະ "} <span className="math">{"CD = 10 cm"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ x ເພື່ອເຮັດໃຫ້ສອງຂ້າງນີ້ເທົ່າກັນ."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x ="}</span>
@@ -243,7 +243,7 @@ export const unit28Data: UnitData = {
               {"ຊອກຫາ y ຈາກຂະໜາດຂອງມຸມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຖ້າມຸມ A = "} <span className="math">{"2y + 10°"}</span> {" ແລະ ມຸມກົງກັນຂ້າມ C = "} <span className="math">{"80°"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ y."}
+              {"ຖ້າມຸມ A = "} <span className="math">{"2y + 10°"}</span> {" ແລະ ມຸມກົງກັນຂ້າມ C = "} <span className="math">{"80°"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ y."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: y ="}</span>
@@ -263,7 +263,7 @@ export const unit28Data: UnitData = {
             {"ຄິດໄລ່ລວງຮອບຂອງຮູບສີ່ແຈຂະໜານ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຖ້າຮູບສີ່ແຈຂະໜານ ABCD ມີຂ້າງ AB = 10 cm ແລະ AD = 6 cm. ຈົ່ງຊອກຫາລວງຮອບທັງໝົດຂອງຮູບສີ່ແຈຂະໜານນີ້."}
+            {"ຖ້າຮູບສີ່ແຈຂະໜານ ABCD ມີຂ້າງ AB = 10 cm ແລະ AD = 6 cm. ຈົ່ງຊອກຫາລວງຮອບທັງໝົດຂອງຮູບສີ່ແຈຂະໜານນີ້."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ລວງຮອບແມ່ນ"}</span>
@@ -281,7 +281,7 @@ export const unit28Data: UnitData = {
             {"ຊອກຫາຜົນບວກຂອງສ່ວນເຄິ່ງເສັ້ນເນັ່ງຈອມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຖ້າເສັ້ນເນັ່ງຈອມ AC + BD = 24 cm, ໂດຍມີ O ແມ່ນເມັດຕັດກັນເຄິ່ງກາງ. ຈົ່ງຊອກຫາຜົນບວກຂອງ AO + BO."}
+            {"ຖ້າເສັ້ນເນັ່ງຈອມ AC + BD = 24 cm, ໂດຍມີ O ແມ່ນເມັດຕັດກັນເຄິ່ງກາງ. ຈົ່ງຊອກຫາຜົນບວກຂອງ AO + BO."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: AO + BO ="}</span>

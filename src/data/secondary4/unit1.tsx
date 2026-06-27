@@ -207,7 +207,7 @@ export const unit1Data: UnitData = {
               {"ການຄັດຈ້ອນໂດຍການແຍກຕົວຄູນຮ່ວມ 3 ພົດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຄັດຈ້ອນສຳນວນປົກກະຕິ: "}
+              {"ຈົ່ງຄັດຈ້ອນສຳນວນປົກກະຕິ: "}
               <strong style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
                 <Fraction num="x² + 5x + 6" den="x² - 4" />
               </strong>
@@ -227,7 +227,7 @@ export const unit1Data: UnitData = {
               {"ການຫາເງື່ອນໄຂບໍ່ກຳນົດຂອງສຳນວນກຳລັງສອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຊອກຫາຄ່າຂອງ x ທັງໝົດທີ່ເຮັດໃຫ້ສຳນວນປົກກະຕິ: "}
+              {"ຈົ່ງຊອກຫາຄ່າຂອງ x ທັງໝົດທີ່ເຮັດໃຫ້ສຳນວນປົກກະຕິ: "}
               <strong style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
                 <Fraction num="x - 1" den="x² - 5x + 6" />
               </strong>
@@ -251,7 +251,7 @@ export const unit1Data: UnitData = {
             {"ການຄັດຈ້ອນສຳນວນປົກກະຕິຊັ້ນສູງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຄັດຈ້ອນສຳນວນປົກກະຕິ: "}
+            {"ຈົ່ງຄັດຈ້ອນສຳນວນປົກກະຕິ: "}
             <strong style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
               <Fraction num="3x² + 6x" den="x² - x - 6" />
             </strong>
@@ -271,7 +271,7 @@ export const unit1Data: UnitData = {
             {"ໂຈດບັນຫາປະຍຸກພຶດຊະຄະນິດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຖ້າສຳນວນ "}
+            {"ຖ້າສຳນວນ "}
             <strong style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
               <Fraction num="x + a" den="x - 3" />
             </strong>

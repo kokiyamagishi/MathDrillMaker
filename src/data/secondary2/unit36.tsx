@@ -197,7 +197,7 @@ export const unit36Data: UnitData = {
               {"ຊອກຫາ x ຈາກມຸມນອກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ໃນຮູບສາມແຈ ABC, ມຸມໃນ "} <span className="math">{"A = 2x"}</span>{", "} <span className="math">{"B = 3x"}</span> {" ແລະ ມຸມນອກທີ່ຕິດກັບມຸມ C ແມ່ນ "} <span className="math">{"100°"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ x. (2x + 3x = 100)"}
+              {"ໃນຮູບສາມແຈ ABC, ມຸມໃນ "} <span className="math">{"A = 2x"}</span>{", "} <span className="math">{"B = 3x"}</span> {" ແລະ ມຸມນອກທີ່ຕິດກັບມຸມ C ແມ່ນ "} <span className="math">{"100°"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ x. (2x + 3x = 100)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x ="}</span>
@@ -214,7 +214,7 @@ export const unit36Data: UnitData = {
               {"ຊອກຫາ y ໃນຮູບສາມແຈທ່ຽງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຖ້າມຸມຈອມຂອງຮູບສາມແຈທ່ຽງແມ່ນ "} <span className="math">{"3y"}</span> {" ແລະ ມຸມນອກທີ່ຕິດກັບມຸມຈອມນັ້ນແມ່ນ "} <span className="math">{"120°"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ y. (3y + 120 = 180)"}
+              {"ຖ້າມຸມຈອມຂອງຮູບສາມແຈທ່ຽງແມ່ນ "} <span className="math">{"3y"}</span> {" ແລະ ມຸມນອກທີ່ຕິດກັບມຸມຈອມນັ້ນແມ່ນ "} <span className="math">{"120°"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ y. (3y + 120 = 180)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: y ="}</span>
@@ -234,7 +234,7 @@ export const unit36Data: UnitData = {
             {"ຜົນບວກຂອງທຸກໆມຸມນອກຂອງຮູບສາມແຈ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຜົນບວກຂອງທັງສາມມຸມນອກ (ໜຶ່ງມຸມຕໍ່ໜຶ່ງຈອມ) ຂອງຮູບສາມແຈໃດໜຶ່ງ ຈະມີຂະໜາດເທົ່າກັບຈັກອົງສາສະເໝີ?"}
+            {"ຜົນບວກຂອງທັງສາມມຸມນອກ (ໜຶ່ງມຸມຕໍ່ໜຶ່ງຈອມ) ຂອງຮູບສາມແຈໃດໜຶ່ງ ຈະມີຂະໜາດເທົ່າກັບຈັກອົງສາສະເໝີ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຜົນບວກມຸມນອກທັງໝົດແມ່ນ"}</span>
@@ -252,7 +252,7 @@ export const unit36Data: UnitData = {
             {"ຊອກຫາມຸມໃນຈາກມຸມນອກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ໃນຮູບສາມແຈ ABC, ຖ້າມຸມນອກທີ່ຈອມ A ແມ່ນ 130° ແລະ ມຸມນອກທີ່ຈອມ B ແມ່ນ 110°. ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມໃນ C. (ມຸມໃນ A = 50°, B = 70°)"}
+            {"ໃນຮູບສາມແຈ ABC, ຖ້າມຸມນອກທີ່ຈອມ A ແມ່ນ 130° ແລະ ມຸມນອກທີ່ຈອມ B ແມ່ນ 110°. ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມໃນ C. (ມຸມໃນ A = 50°, B = 70°)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ມຸມໃນ C ແມ່ນ"}</span>

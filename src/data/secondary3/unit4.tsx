@@ -210,7 +210,7 @@ export const unit4Data: UnitData = {
               {"ການຊອກຫາສຳປະສິດ a ຈາກພິກັດເລກສ່ວນ (Fraction Coefficient): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຖ້າພາລາໂບລາ "} <span className="math">{"y = ax²"}</span> {" ຜ່ານຈຸດ (-4, 8). ຈົ່ງຊອກຫາຄ່າຂອງ a. (ແທນ x = -4, y = 8 ໃສ່ສົມຜົນ)"}
+              {"ຖ້າພາລາໂບລາ "} <span className="math">{"y = ax²"}</span> {" ຜ່ານຈຸດ (-4, 8). ຈົ່ງຊອກຫາຄ່າຂອງ a. (ແທນ x = -4, y = 8 ໃສ່ສົມຜົນ)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: a ="}</span>
@@ -247,7 +247,7 @@ export const unit4Data: UnitData = {
             {"ໂຈດບັນຫາການອອກແບບຂົວແຂວນ (Suspension Bridge Cable Design): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ສາຍກາບຂົວແຂວນແຫ່ງໜຶ່ງມີຮູບຮ່າງເປັນພາລາໂບລາ y = ax². ຖ້າຂົວຍາວ 100 ແມັດ, ແລະ ສາຍກາບແຂວນສູງຈາກພື້ນຂົວ 25 ແມັດ ຢູ່ຈຸດສຸດທ້າຍ (x = 50, y = 25). ຈົ່ງຊອກຫາສຳປະສິດ a. (ຕອບເປັນເລກສ່ວນງ່າຍດາຍ)"}
+            {"ສາຍກາບຂົວແຂວນແຫ່ງໜຶ່ງມີຮູບຮ່າງເປັນພາລາໂບລາ y = ax². ຖ້າຂົວຍາວ 100 ແມັດ, ແລະ ສາຍກາບແຂວນສູງຈາກພື້ນຂົວ 25 ແມັດ ຢູ່ຈຸດສຸດທ້າຍ (x = 50, y = 25). ຈົ່ງຊອກຫາສຳປະສິດ a. (ຕອບເປັນເລກສ່ວນງ່າຍດາຍ)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: a ="}</span>

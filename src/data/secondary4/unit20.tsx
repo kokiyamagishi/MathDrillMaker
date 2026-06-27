@@ -126,7 +126,7 @@ export const unit20Data: UnitData = {
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                  <span>{"(1) ເງື່ອນໄຂ Δ' = k² - 9 ≥ 0. ດັ່ງນັ້ນ k ຕ້ອງສອດຄ່ອງ k ≤"}</span>
+                  <span>{"ເງື່ອນໄຂ Δ' = k² - 9 ≥ 0. ດັ່ງນັ້ນ k ຕ້ອງສອດຄ່ອງ k ≤"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span>{" ຫຼື k ≥"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>

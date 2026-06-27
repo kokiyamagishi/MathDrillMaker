@@ -204,7 +204,7 @@ export const unit18Data: UnitData = {
               {"ການຊອກຫາສົມຜົນເສັ້ນຊື່ຂະໜານ (Finding Parallel Line Equation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຊອກຫາສົມຜົນເສັ້ນຊື່ທີ່ຜ່ານເມັດ "} <span className="math">{"P(3, 4)"}</span> {" ແລະ ຂະໜານກັບເສັ້ນຊື່ "} <span className="math">{"y = 2x - 1"}</span> {". ຂຽນໃນຮູບແບບ y = ax + b, ຄ່າຂອງ a + b ແມ່ນເທົ່າໃດ?"}
+              {"ຈົ່ງຊອກຫາສົມຜົນເສັ້ນຊື່ທີ່ຜ່ານເມັດ "} <span className="math">{"P(3, 4)"}</span> {" ແລະ ຂະໜານກັບເສັ້ນຊື່ "} <span className="math">{"y = 2x - 1"}</span> {". ຂຽນໃນຮູບແບບ y = ax + b, ຄ່າຂອງ a + b ແມ່ນເທົ່າໃດ?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: a + b ="}</span>
@@ -241,7 +241,7 @@ export const unit18Data: UnitData = {
             {"ການຊອກຫາຈຸດຕັດແກນນອນ x (Finding X-Intercept of a Line): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຊອກຫາຈຸດຕັດແກນ x (ຄ່າຂອງ x ເມື່ອ y = 0) ຂອງເສັ້ນຊື່ "} <span className="math">{"2x - 3y - 12 = 0"}</span> {"."}
+            {"ຈົ່ງຊອກຫາຈຸດຕັດແກນ x (ຄ່າຂອງ x ເມື່ອ y = 0) ຂອງເສັ້ນຊື່ "} <span className="math">{"2x - 3y - 12 = 0"}</span> {"."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: x ="}</span>

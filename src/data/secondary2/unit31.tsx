@@ -216,7 +216,7 @@ export const unit31Data: UnitData = {
               {"ຊອກຫາລວງສູງຈາກເນື້ອທີ່ຮູບຄາງໝູ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຖ້າເນື້ອທີ່ຂອງຮູບຄາງໝູແມ່ນ 45 cm², ມີພື້ນນ້ອຍ = 7 cm ແລະ ພື້ນໃຫຍ່ = 11 cm. ຈົ່ງຊອກຫາລວງສູງ h ຂອງຮູບຄາງໝູນີ້."}
+              {"ຖ້າເນື້ອທີ່ຂອງຮູບຄາງໝູແມ່ນ 45 cm², ມີພື້ນນ້ອຍ = 7 cm ແລະ ພື້ນໃຫຍ່ = 11 cm. ຈົ່ງຊອກຫາລວງສູງ h ຂອງຮູບຄາງໝູນີ້."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: h ="}</span>
@@ -234,7 +234,7 @@ export const unit31Data: UnitData = {
               {"ຊອກຫາຄວາມຍາວພື້ນໃຫຍ່ຈາກເນື້ອທີ່: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຖ້າເນື້ອທີ່ຮູບຄາງໝູແມ່ນ 36 cm², ມີລວງສູງ h = 4 cm, ພື້ນນ້ອຍ = 6 cm. ຈົ່ງຊອກຫາຄວາມຍາວພື້ນໃຫຍ່ x ຂອງຮູບຄາງໝູນີ້."}
+              {"ຖ້າເນື້ອທີ່ຮູບຄາງໝູແມ່ນ 36 cm², ມີລວງສູງ h = 4 cm, ພື້ນນ້ອຍ = 6 cm. ຈົ່ງຊອກຫາຄວາມຍາວພື້ນໃຫຍ່ x ຂອງຮູບຄາງໝູນີ້."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x ="}</span>
@@ -255,7 +255,7 @@ export const unit31Data: UnitData = {
             {"ເສັ້ນເນັ່ງຈອມຂອງຮູບຄາງໝູສະເໝີ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ໃນຮູບຄາງໝູສະເໝີ ABCD, ຖ້າເສັ້ນເນັ່ງຈອມ AC = 9 cm. ເສັ້ນເນັ່ງຈອມ BD ຈະຍາວຈັກ cm? (ຄຸນລັກສະນະ: ສອງເສັ້ນເນັ່ງຈອມຂອງຮູບຄາງໝູສະເໝີແມ່ນເທົ່າກັນ)"}
+            {"ໃນຮູບຄາງໝູສະເໝີ ABCD, ຖ້າເສັ້ນເນັ່ງຈອມ AC = 9 cm. ເສັ້ນເນັ່ງຈອມ BD ຈະຍາວຈັກ cm? (ຄຸນລັກສະນະ: ສອງເສັ້ນເນັ່ງຈອມຂອງຮູບຄາງໝູສະເໝີແມ່ນເທົ່າກັນ)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: BD ="}</span>
@@ -273,7 +273,7 @@ export const unit31Data: UnitData = {
             {"ຄິດໄລ່ລວງຮອບຂອງຮູບຄາງໝູສະເໝີ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຮູບຄາງໝູສະເໝີໜຶ່ງມີພື້ນນ້ອຍ = 6 cm, ພື້ນໃຫຍ່ = 12 cm, ແລະ ມີສອງຂ້າງທີ່ບໍ່ຂະໜານຍາວ AD = BC = 5 cm. ຈົ່ງຊອກຫາລວງຮອບທັງໝົດຂອງມັນ."}
+            {"ຮູບຄາງໝູສະເໝີໜຶ່ງມີພື້ນນ້ອຍ = 6 cm, ພື້ນໃຫຍ່ = 12 cm, ແລະ ມີສອງຂ້າງທີ່ບໍ່ຂະໜານຍາວ AD = BC = 5 cm. ຈົ່ງຊອກຫາລວງຮອບທັງໝົດຂອງມັນ."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ລວງຮອບແມ່ນ"}</span>

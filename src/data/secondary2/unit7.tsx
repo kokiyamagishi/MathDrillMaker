@@ -230,7 +230,7 @@ export const unit7Data: UnitData = {
               {"ໂຈດບັນຫາການແບ່ງປັນເນື້ອທີ່ດິນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ທ້າວ ສົມສັກ ມີເນື້ອທີ່ດິນທັງໝົດ "} <Fraction num="4" den="5" /> {" ເຮັກຕາ. ລາວໄດ້ແບ່ງດິນ "} <Fraction num="2" den="3" /> {" ຂອງດິນທັງໝົດເພື່ອຂຸດໜອງລ້ຽງປາ. ຖາມວ່າເນື້ອທີ່ໜອງລ້ຽງປາມີຈັກເຮັກຕາ?"}
+              {"ທ້າວ ສົມສັກ ມີເນື້ອທີ່ດິນທັງໝົດ "} <Fraction num="4" den="5" /> {" ເຮັກຕາ. ລາວໄດ້ແບ່ງດິນ "} <Fraction num="2" den="3" /> {" ຂອງດິນທັງໝົດເພື່ອຂຸດໜອງລ້ຽງປາ. ຖາມວ່າເນື້ອທີ່ໜອງລ້ຽງປາມີຈັກເຮັກຕາ?"}
             </p>
             <div style={{ display: "flex", justifyContent: "center", margin: "8px 0" }}>
               <svg viewBox="0 0 200 100" style={{ width: "100%", maxWidth: "160px", height: "auto" }}>
@@ -257,7 +257,7 @@ export const unit7Data: UnitData = {
               {"ການຄູນເລກສ່ວນສາມຕົວຕໍ່ເນື່ອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນຕໍ່ໄປນີ້: "}
+              {"ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນຕໍ່ໄປນີ້: "}
               <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
                 <Fraction num="5" den="6" /> {" × "} <Fraction num="3" den="4" /> {" × "} <Fraction num="8" den="15" />
               </span>
@@ -280,7 +280,7 @@ export const unit7Data: UnitData = {
             {"ໂຈດບັນຫາປະລິມານນ້ຳດື່ມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ມີນ້ຳຢູ່ "} <Fraction num="3" den="4" /> {" ລິດຕ໌ ຢູ່ໃນຖັງ. ນາງ ດຳ ເອົານ້ຳອອກມາຊົມໃຊ້ "} <Fraction num="2" den="5" /> {" ຂອງນ້ຳທັງໝົດ. ຖາມວ່ານາງ ດຳ ໄດ້ໃຊ້ນ້ຳໄປທັງໝົດຈັກລິດຕ໌?"}
+            {"ມີນ້ຳຢູ່ "} <Fraction num="3" den="4" /> {" ລິດຕ໌ ຢູ່ໃນຖັງ. ນາງ ດຳ ເອົານ້ຳອອກມາຊົມໃຊ້ "} <Fraction num="2" den="5" /> {" ຂອງນ້ຳທັງໝົດ. ຖາມວ່ານາງ ດຳ ໄດ້ໃຊ້ນ້ຳໄປທັງໝົດຈັກລິດຕ໌?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ປະລິມານນ້ຳທີ່ໃຊ້ໄປແມ່ນ"}</span>
@@ -298,7 +298,7 @@ export const unit7Data: UnitData = {
             {"ຄິດໄລ່ຫາຄ່າ x ຈາກສົມຜົນເລກສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນເລກສ່ວນຕໍ່ໄປນີ້: "}
+            {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນເລກສ່ວນຕໍ່ໄປນີ້: "}
             <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
               {"x ÷ "} <Fraction num="3" den="4" /> {" = "} <Fraction num="8" den="9" />
             </span>

@@ -185,7 +185,7 @@ export const unit4Data: UnitData = {
               {"ຄິດໄລ່ສຳນວນທີ່ມີວົງເລັບ ແລະ ວົງຂໍ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນ: "}
+              {"ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນ: "}
               <strong style={{ color: "#E65100" }}>{"A = -18 - [(-15) + (+12) - (-7)] + (+15)"}</strong>
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
@@ -203,7 +203,7 @@ export const unit4Data: UnitData = {
               {"ໂຈດແກ້ສົມຜົນຊອກຫາຕົວລັບ x: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນ: "}
+              {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນ: "}
               <strong style={{ color: "#E65100" }}>{"(19 - 3) + x = (25 - 18)"}</strong>
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
@@ -224,7 +224,7 @@ export const unit4Data: UnitData = {
             {"ການຄິດໄລ່ຜົນບວກຫຼາຍພົດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຄິດໄລ່ຜົນບວກ: "}
+            {"ຈົ່ງຄິດໄລ່ຜົນບວກ: "}
             <strong>{"B = (-18) + (-15) + (+12) + (-7) + (+15)"}</strong>
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
@@ -242,7 +242,7 @@ export const unit4Data: UnitData = {
             {"ໂຈດແກ້ໄຂຕົວລັບ x ຂັ້ນສູງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກເງື່ອນໄຂ: "}<strong>{"(-15) - x = 8"}</strong>
+            {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກເງື່ອນໄຂ: "}<strong>{"(-15) - x = 8"}</strong>
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: x ="}</span>

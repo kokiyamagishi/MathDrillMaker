@@ -208,7 +208,7 @@ export const unit5Data: UnitData = {
               {"ການແກ້ສົມຜົນຂັ້ນສອງສົມບູນໂດຍການແຍກສ່ວນຄູນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງແກ້ສົມຜົນ "} <span className="math">{"x² - x - 12 = 0"}</span> {" ແລະ ຊອກຫາຄ່າຂອງໃຈຜົນທີ່ເປັນຈຳນວນບວກ. (ແຍກສ່ວນຄູນເປັນ (x-4)(x+3) = 0)"}
+              {"ຈົ່ງແກ້ສົມຜົນ "} <span className="math">{"x² - x - 12 = 0"}</span> {" ແລະ ຊອກຫາຄ່າຂອງໃຈຜົນທີ່ເປັນຈຳນວນບວກ. (ແຍກສ່ວນຄູນເປັນ (x-4)(x+3) = 0)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ໃຈຜົນບວກ x ="}</span>
@@ -245,7 +245,7 @@ export const unit5Data: UnitData = {
             {"ໂຈດບັນຫາຂະໜາດເນື້ອທີ່ດິນ (Land Dimension Problem): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ເນື້ອທີ່ຂອງດິນຕອນໜຶ່ງເປັນຮູບສີ່ແຈສາກແມ່ນ 40 m². ຖ້າຂ້າງຍາວ ຍາວກວ່າຂ້າງກວ້າງ 3 ແມັດ. ໃຫ້ x ແມ່ນຂ້າງກວ້າງ (ສົມຜົນ: x(x+3) = 40 ➔ x² + 3x - 40 = 0). ຈົ່ງຊອກຫາຂ້າງກວ້າງ x. (ຕອບເປັນຕົວເລກບວກ)"}
+            {"ເນື້ອທີ່ຂອງດິນຕອນໜຶ່ງເປັນຮູບສີ່ແຈສາກແມ່ນ 40 m². ຖ້າຂ້າງຍາວ ຍາວກວ່າຂ້າງກວ້າງ 3 ແມັດ. ໃຫ້ x ແມ່ນຂ້າງກວ້າງ (ສົມຜົນ: x(x+3) = 40 ➔ x² + 3x - 40 = 0). ຈົ່ງຊອກຫາຂ້າງກວ້າງ x. (ຕອບເປັນຕົວເລກບວກ)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຂ້າງກວ້າງແມ່ນ"}</span>

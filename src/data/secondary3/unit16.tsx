@@ -222,7 +222,7 @@ export const unit16Data: UnitData = {
               {"ອັດຕາສ່ວນມຸມໃນຮູບສາມແຈ (Trigonometrical Angle Ratio inside Triangles): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ສາມມຸມໃນຂອງຮູບສາມແຈໜຶ່ງມີອັດຕາສ່ວນແມ່ນ "} <span className="math">{"2 : 3 : 5"}</span> {". ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມທີ່ໃຫຍ່ທີ່ສຸດໃນຮູບສາມແຈນີ້."}
+              {"ສາມມຸມໃນຂອງຮູບສາມແຈໜຶ່ງມີອັດຕາສ່ວນແມ່ນ "} <span className="math">{"2 : 3 : 5"}</span> {". ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມທີ່ໃຫຍ່ທີ່ສຸດໃນຮູບສາມແຈນີ້."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ມຸມທີ່ໃຫຍ່ທີ່ສຸດແມ່ນ"}</span>
@@ -260,7 +260,7 @@ export const unit16Data: UnitData = {
             {"ໂຈດມຸມໃນຮູບສາມແຈທ່ຽງ (Isosceles Triangle Exterior-Interior Challenge): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຮູບສາມແຈທ່ຽງ ABC ມີ AB = AC. ມຸມນອກຢູ່ຈອມ A ມີຂະໜາດແມ່ນ 110°. ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມຢູ່ພື້ນ ∠B."}
+            {"ຮູບສາມແຈທ່ຽງ ABC ມີ AB = AC. ມຸມນອກຢູ່ຈອມ A ມີຂະໜາດແມ່ນ 110°. ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມຢູ່ພື້ນ ∠B."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ∠B ="}</span>

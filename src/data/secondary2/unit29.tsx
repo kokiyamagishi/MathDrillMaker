@@ -220,7 +220,7 @@ export const unit29Data: UnitData = {
               {"ຊອກຫາລວງຍາວຈາກເນື້ອທີ່: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ເນື້ອທີ່ຂອງຮູບສີ່ແຈສາກ ABCD ແມ່ນ 48 cm² ໂດຍມີລວງກວ້າງ AD = 6 cm. ຈົ່ງຊອກຫາລວງຍາວ x ຂອງຂ້າງ AB. (ເນື້ອທີ່ = ຍາວ × ກວ້າງ)"}
+              {"ເນື້ອທີ່ຂອງຮູບສີ່ແຈສາກ ABCD ແມ່ນ 48 cm² ໂດຍມີລວງກວ້າງ AD = 6 cm. ຈົ່ງຊອກຫາລວງຍາວ x ຂອງຂ້າງ AB. (ເນື້ອທີ່ = ຍາວ × ກວ້າງ)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x ="}</span>
@@ -238,7 +238,7 @@ export const unit29Data: UnitData = {
               {"ຊອກຫາ y ຈາກເສັ້ນເນັ່ງຈອມທີ່ເທົ່າກັນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຖ້າເສັ້ນເນັ່ງຈອມ AC = "} <span className="math">{"3y - 2 cm"}</span> {" ແລະ BD = "} <span className="math">{"13 cm"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ y."}
+              {"ຖ້າເສັ້ນເນັ່ງຈອມ AC = "} <span className="math">{"3y - 2 cm"}</span> {" ແລະ BD = "} <span className="math">{"13 cm"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ y."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: y ="}</span>
@@ -258,7 +258,7 @@ export const unit29Data: UnitData = {
             {"ຊອກຫາລວງຮອບຈາກເນື້ອທີ່: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຮູບສີ່ແຈສາກໜຶ່ງມີເນື້ອທີ່ 50 cm² ແລະ ມີລວງກວ້າງແມ່ນ 5 cm. ຈົ່ງຊອກຫາລວງຮອບຂອງຮູບສີ່ແຈສາກນີ້."}
+            {"ຮູບສີ່ແຈສາກໜຶ່ງມີເນື້ອທີ່ 50 cm² ແລະ ມີລວງກວ້າງແມ່ນ 5 cm. ຈົ່ງຊອກຫາລວງຮອບຂອງຮູບສີ່ແຈສາກນີ້."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ລວງຮອບແມ່ນ"}</span>
@@ -276,7 +276,7 @@ export const unit29Data: UnitData = {
             {"ນຳໃຊ້ທິດສະດີປີຕາກໍໃນຮູບສີ່ແຈສາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຖ້າຮູບສີ່ແຈສາກ ABCD ມີ AB = 4 cm, AD = 3 cm. ເສັ້ນເນັ່ງຈອມ AC ຈະຍາວຈັກ cm? (AC² = AB² + AD²)"}
+            {"ຖ້າຮູບສີ່ແຈສາກ ABCD ມີ AB = 4 cm, AD = 3 cm. ເສັ້ນເນັ່ງຈອມ AC ຈະຍາວຈັກ cm? (AC² = AB² + AD²)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: AC ="}</span>

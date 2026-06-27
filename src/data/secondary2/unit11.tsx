@@ -214,7 +214,7 @@ export const unit11Data: UnitData = {
               {"ການເຄິ່ງຄືຂອງຕົວອັກສອນພາສາອັງກິດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ໃນບັນດາຕົວອັກສອນຕໍ່ໄປນີ້: "} <strong>{"A, H, S, X, Y"}</strong> {", ຕົວອັກສອນໃດແດ່ທີ່ມີໃຈກາງເຄິ່ງຄື? (ໝູນ 180° ແລ້ວຄືເກົ່າ)"}
+              {"ໃນບັນດາຕົວອັກສອນຕໍ່ໄປນີ້: "} <strong>{"A, H, S, X, Y"}</strong> {", ຕົວອັກສອນໃດແດ່ທີ່ມີໃຈກາງເຄິ່ງຄື? (ໝູນ 180° ແລ້ວຄືເກົ່າ)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຕົວອັກສອນທີ່ມີໃຈກາງເຄິ່ງຄືແມ່ນ"}</span>
@@ -231,7 +231,7 @@ export const unit11Data: UnitData = {
               {"ໄລຍະຫ່າງລະຫວ່າງເມັດເຄິ່ງຄື: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ເມັດ M ແລະ N ເຄິ່ງຄືກັນທຽບໃສ່ O, ຖ້າຫາກໄລຍະ MN = 15 cm, ຖາມວ່າໄລຍະ OM ຈະເທົ່າກັບຈັກ cm?"}
+              {"ເມັດ M ແລະ N ເຄິ່ງຄືກັນທຽບໃສ່ O, ຖ້າຫາກໄລຍະ MN = 15 cm, ຖາມວ່າໄລຍະ OM ຈະເທົ່າກັບຈັກ cm?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: OM ="}</span>
@@ -252,7 +252,7 @@ export const unit11Data: UnitData = {
             {"ຄຸນລັກສະນະຂອງເສັ້ນເຄິ່ງຄື: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຖ້າທ່ອນຊື່ AB ມີລວງຍາວ 8 cm ແລະ ທ່ອນຊື່ A'B' ແມ່ນທ່ອນຊື່ເຄິ່ງຄືຂອງ AB ທຽບໃສ່ O. ຖາມວ່າ A'B' ຈະຍາວຈັກ cm?"}
+            {"ຖ້າທ່ອນຊື່ AB ມີລວງຍາວ 8 cm ແລະ ທ່ອນຊື່ A'B' ແມ່ນທ່ອນຊື່ເຄິ່ງຄືຂອງ AB ທຽບໃສ່ O. ຖາມວ່າ A'B' ຈະຍາວຈັກ cm?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: A'B' ="}</span>
@@ -270,7 +270,7 @@ export const unit11Data: UnitData = {
             {"ການເຄິ່ງຄືຂອງເມັດໃນລະບົບພິກັດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ເມັດ P ມີພິກັດແມ່ນ (2, 3), ເມັດເຄິ່ງຄື P' ຂອງ P ທຽບໃສ່ເມັດເຄິ່ງຄື (0, 0) ຈະມີພິກັດແມ່ນເທົ່າໃດ? (ຂຽນໃນຮູບແບບ (x, y))"}
+            {"ເມັດ P ມີພິກັດແມ່ນ (2, 3), ເມັດເຄິ່ງຄື P' ຂອງ P ທຽບໃສ່ເມັດເຄິ່ງຄື (0, 0) ຈະມີພິກັດແມ່ນເທົ່າໃດ? (ຂຽນໃນຮູບແບບ (x, y))"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: P' ="}</span>

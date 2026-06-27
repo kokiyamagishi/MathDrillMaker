@@ -264,7 +264,7 @@ export const unit7Data: UnitData = {
               {"ການຊອກຫາ LCM ແລະ GCD ໂດຍການແຍກຕົວປະກອບມູນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຊອກຫາ "}<strong>{"LCM(12, 18)"}</strong>{" ແລະ "}<strong>{"GCD(12, 18)"}</strong>{"."}
+              {"ຈົ່ງຊອກຫາ "}<strong>{"LCM(12, 18)"}</strong>{" ແລະ "}<strong>{"GCD(12, 18)"}</strong>{"."}
             </p>
             <div style={{ display: "flex", gap: "24px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
@@ -287,7 +287,7 @@ export const unit7Data: UnitData = {
               {"ໂຈດບັນຫາລະດັງສຽງລະຄັງຮ່ວມກັນ (LCM Application): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ມີລະຄັງ 3 ໜ່ວຍ ທີ່ມີກຳນົດເວລາການດັງແຕກຕ່າງກັນ. ລະຄັງໜ່ວຍທີໜຶ່ງດັງທຸກໆ 4 ນາທີ, ໜ່ວຍທີສອງດັງທຸກໆ 6 ນາທີ, ແລະ ໜ່ວຍທີສາມດັງທຸກໆ 10 ນາທີ. ຖ້າລະຄັງທັງສາມໜ່ວຍດັງພ້ອມກັນໃນເວລານີ້, ຖາມວ່າອີກຈັກນາທີຕໍ່ມາພວກມັນຈຶ່ງຈະດັງພ້ອມກັນອີກຄັ້ງ?"}
+              {"ມີລະຄັງ 3 ໜ່ວຍ ທີ່ມີກຳນົດເວລາການດັງແຕກຕ່າງກັນ. ລະຄັງໜ່ວຍທີໜຶ່ງດັງທຸກໆ 4 ນາທີ, ໜ່ວຍທີສອງດັງທຸກໆ 6 ນາທີ, ແລະ ໜ່ວຍທີສາມດັງທຸກໆ 10 ນາທີ. ຖ້າລະຄັງທັງສາມໜ່ວຍດັງພ້ອມກັນໃນເວລານີ້, ຖາມວ່າອີກຈັກນາທີຕໍ່ມາພວກມັນຈຶ່ງຈະດັງພ້ອມກັນອີກຄັ້ງ?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ອີກ"}</span>
@@ -308,7 +308,7 @@ export const unit7Data: UnitData = {
             {"ການຊອກຫາ LCM ຂອງສອງຈຳນວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຊອກຫາຄ່າຂອງ "}<strong>{"LCM(15, 20)"}</strong>{"."}
+            {"ຈົ່ງຊອກຫາຄ່າຂອງ "}<strong>{"LCM(15, 20)"}</strong>{"."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"LCM(15, 20) ="}</span>
@@ -325,7 +325,7 @@ export const unit7Data: UnitData = {
             {"ການຊອກຫາ GCD ຂອງສອງຈຳນວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຊອກຫາຄ່າຂອງ "}<strong>{"GCD(28, 42)"}</strong>{"."}
+            {"ຈົ່ງຊອກຫາຄ່າຂອງ "}<strong>{"GCD(28, 42)"}</strong>{"."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"GCD(28, 42) ="}</span>

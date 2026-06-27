@@ -178,7 +178,7 @@ export const unit3Data: UnitData = {
               {"ການຫານພະຫຸພົດກຳລັງສີ່: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຊອກຫາຕົວເສດ R ຈາກການຫານ: "}
+              {"ຈົ່ງຊອກຫາຕົວເສດ R ຈາກການຫານ: "}
               <strong style={{ color: "#E65100" }}>{"(x⁴ - 2x³ + 3x² - x + 5) ÷ (x - 1)"}</strong>
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
@@ -196,7 +196,7 @@ export const unit3Data: UnitData = {
               {"ໂຈດຊອກຫາສອງຕົວຄົງຄ່າ (a ແລະ b): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຖ້າພະຫຸພົດ "}<strong>{"x³ + ax² + bx - 6"}</strong>{" ຫານຂາດໃຫ້ທັງ "}<strong>{"x - 1"}</strong>{" ແລະ "}<strong>{"x - 2"}</strong>{" ພ້ອມກັນ. ຈົ່ງຊອກຫາຄ່າຂອງ a ແລະ b ຕາມລຳດັບ?"}
+              {"ຖ້າພະຫຸພົດ "}<strong>{"x³ + ax² + bx - 6"}</strong>{" ຫານຂາດໃຫ້ທັງ "}<strong>{"x - 1"}</strong>{" ແລະ "}<strong>{"x - 2"}</strong>{" ພ້ອມກັນ. ຈົ່ງຊອກຫາຄ່າຂອງ a ແລະ b ຕາມລຳດັບ?"}
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
@@ -222,7 +222,7 @@ export const unit3Data: UnitData = {
             {"ການຫານພະຫຸພົດທີ່ມີຕົວຫານເປັນກຳລັງສອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຊອກຫາຜົນຫານ Q(x) ແລະ ຕົວເສດ R(x) ຈາກການຫານ: "}
+            {"ຈົ່ງຊອກຫາຜົນຫານ Q(x) ແລະ ຕົວເສດ R(x) ຈາກການຫານ: "}
             <strong>{"(x³ - 3x² + 5x - 2) ÷ (x² - 1)"}</strong>
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
@@ -246,7 +246,7 @@ export const unit3Data: UnitData = {
             {"ການພິສູດຕົວປະກອບ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຖ້າ x + 3 ແມ່ນຕົວປະກອບຂອງພະຫຸພົດ "}<strong>{"2x³ + 5x² - 4x + c"}</strong>{". ຈົ່ງຊອກຫາຄ່າຂອງຄົງຈຳນວນ c?"}
+            {"ຖ້າ x + 3 ແມ່ນຕົວປະກອບຂອງພະຫຸພົດ "}<strong>{"2x³ + 5x² - 4x + c"}</strong>{". ຈົ່ງຊອກຫາຄ່າຂອງຄົງຈຳນວນ c?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: c ="}</span>

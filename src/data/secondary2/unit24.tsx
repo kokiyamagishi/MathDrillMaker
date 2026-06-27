@@ -196,7 +196,7 @@ export const unit24Data: UnitData = {
               {"ການແກ້ສົມຜົນອະສົມຜົນທີ່ມີວົງເລັບ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຊອກຫາຂອບເຂດ x ຈາກອະສົມຜົນ "} <span className="math">{"3(x - 2) < 2x + 4"}</span> {" ໂດຍການຄູນແຈກຢາຍກ່ອນ ແລ້ວຍ້າຍພົດ"}
+              {"ຈົ່ງຊອກຫາຂອບເຂດ x ຈາກອະສົມຜົນ "} <span className="math">{"3(x - 2) < 2x + 4"}</span> {" ໂດຍການຄູນແຈກຢາຍກ່ອນ ແລ້ວຍ້າຍພົດ"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x <"}</span>
@@ -213,7 +213,7 @@ export const unit24Data: UnitData = {
               {"ອະສົມຜົນເລກສ່ວນຊອກຫາ x: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຊອກຫາຂອບເຂດຂອງ x ຈາກອະສົມຜົນຕໍ່ໄປນີ້: "}
+              {"ຈົ່ງຊອກຫາຂອບເຂດຂອງ x ຈາກອະສົມຜົນຕໍ່ໄປນີ້: "}
               <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
                 <Fraction num="x + 1" den="2" /> {" - "} <Fraction num="x - 1" den="3" /> {" < 1"}
               </span>
@@ -236,7 +236,7 @@ export const unit24Data: UnitData = {
             {"ໂຈດບັນຫາການຂຶ້ນລົດເມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ທ້າວ ແດງ ຕ້ອງການຂຶ້ນລົດເມທີ່ມີຄ່າໂດຍສານ 3,000 ກີບຕໍ່ຄັ້ງ. ຖ້າລາວມີເງິນທັງໝົດ 20,000 ກີບ ແລະ ຕ້ອງການຍັງເຫຼືອເງິນຢ່າງໜ້ອຍ 5,000 ກີບ. ຖາມວ່າລາວຈະຂຶ້ນລົດເມໄດ້ຫຼາຍສຸດຈັກຄັ້ງ (x ຄັ້ງ)? (ສົມຜົນ: 20000 - 3000x ≥ 5000)"}
+            {"ທ້າວ ແດງ ຕ້ອງການຂຶ້ນລົດເມທີ່ມີຄ່າໂດຍສານ 3,000 ກີບຕໍ່ຄັ້ງ. ຖ້າລາວມີເງິນທັງໝົດ 20,000 ກີບ ແລະ ຕ້ອງການຍັງເຫຼືອເງິນຢ່າງໜ້ອຍ 5,000 ກີບ. ຖາມວ່າລາວຈະຂຶ້ນລົດເມໄດ້ຫຼາຍສຸດຈັກຄັ້ງ (x ຄັ້ງ)? (ສົມຜົນ: 20000 - 3000x ≥ 5000)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຂຶ້ນໄດ້ຫຼາຍສຸດ"}</span>
@@ -254,7 +254,7 @@ export const unit24Data: UnitData = {
             {"ຄັດຈ້ອນອະສົມຜົນລົບສອງຟາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຊອກຫາຂອບເຂດຂອງ x ຈາກອະສົມຜົນ: 2 - 3x > 8 - x"}
+            {"ຈົ່ງຊອກຫາຂອບເຂດຂອງ x ຈາກອະສົມຜົນ: 2 - 3x > 8 - x"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: x <"}</span>

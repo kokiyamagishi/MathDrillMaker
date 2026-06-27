@@ -212,7 +212,7 @@ export const unit51Data: UnitData = {
               {"ການຫາຄ່າສະເລ່ຍອຸນຫະພູມ (Average Temperature): "}<span className="point-label">{"(5 ຄະແນນ - ຕອບເປັນທົດສະນິຍົມ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຊອກຫາອຸນຫະພູມສະເລ່ຍຕັ້ງແຕ່ເວລາ 08:00 ຫາ 12:00 (ຄິດໄລ່ຈາກ 22, 25, 28, 30, 26)."}
+              {"ຈົ່ງຊອກຫາອຸນຫະພູມສະເລ່ຍຕັ້ງແຕ່ເວລາ 08:00 ຫາ 12:00 (ຄິດໄລ່ຈາກ 22, 25, 28, 30, 26)."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ອຸນຫະພູມສະເລ່ຍແມ່ນ"}</span>
@@ -250,7 +250,7 @@ export const unit51Data: UnitData = {
             {"ໂຈດບັນຫາກຣາຟເສັ້ນສະແດງການເຕີບໃຫຍ່ຂອງຕົ້ນໄມ້: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຕົ້ນໄມ້ຕົ້ນໜຶ່ງສູງ 10 cm ໃນເດືອນມັງກອນ, 14 cm ໃນເດືອນກຸມພາ, ແລະ 20 cm ໃນເດືອນມີນາ. ຖາມວ່າມີອັດຕາການເຕີບໃຫຍ່ສະເລ່ຍເດືອນລະຈັກ cm? (ຕັ້ງແຕ່ເດືອນ ມັງກອນ ຫາ ມີນາ)"}
+            {"ຕົ້ນໄມ້ຕົ້ນໜຶ່ງສູງ 10 cm ໃນເດືອນມັງກອນ, 14 cm ໃນເດືອນກຸມພາ, ແລະ 20 cm ໃນເດືອນມີນາ. ຖາມວ່າມີອັດຕາການເຕີບໃຫຍ່ສະເລ່ຍເດືອນລະຈັກ cm? (ຕັ້ງແຕ່ເດືອນ ມັງກອນ ຫາ ມີນາ)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ເຕີບໃຫຍ່ສະເລ່ຍເດືອນລະ"}</span>

@@ -2,6 +2,11 @@ import React from "react";
 import { SuroboProfessor } from "@/components/surobo";
 import { HintBox } from "./HintBox";
 
+interface SubSectionInfo {
+  title: string;
+  problemsCount: number;
+}
+
 interface AnswerItem {
   questionNumber: number | string;
   answers: React.ReactNode[];
@@ -14,6 +19,7 @@ interface UnitAnswerData {
   advice?: string | React.ReactNode;
   startPage: number;
   endPage: number;
+  subSections?: SubSectionInfo[];
 }
 
 interface AnswerSheetProps {
@@ -105,6 +111,27 @@ export const AnswerSheet: React.FC<AnswerSheetProps> = ({ pageNumber, unitData }
     lineHeight = "1.18";
   }
 
+  const getDisplayQuestionNumber = (qNum: number | string, unitData: UnitAnswerData): string => {
+    const qNumStr = String(qNum);
+    const num = parseInt(qNumStr, 10);
+    
+    if (isNaN(num) || !unitData.subSections || unitData.subSections.length === 0) {
+      return qNumStr;
+    }
+    
+    let currentCount = 0;
+    for (let i = 0; i < unitData.subSections.length; i++) {
+      const sub = unitData.subSections[i];
+      if (num > currentCount && num <= currentCount + sub.problemsCount) {
+        const localNum = num - currentCount;
+        return `ຂັ້ນຕອນ ${i + 1} - ຂໍ້ ${localNum}`;
+      }
+      currentCount += sub.problemsCount;
+    }
+    
+    return qNumStr;
+  };
+
   return (
     <div className="drill-page" style={{ textAlign: "left" }}>
       <div className="drill-header">
@@ -165,7 +192,7 @@ export const AnswerSheet: React.FC<AnswerSheetProps> = ({ pageNumber, unitData }
 
                   return (
                     <div key={idx} style={{ gridColumn: `span ${span}`, fontSize: "15px" }}>
-                      <p style={{ marginBottom: "1px", fontWeight: "bold", fontSize: "15px" }}>ຄຳຖາມ {item.questionNumber}:</p>
+                      <p style={{ marginBottom: "1px", fontWeight: "bold", fontSize: "15px" }}>ຄຳຖາມ {getDisplayQuestionNumber(item.questionNumber, unitData)}:</p>
                       <div style={{ paddingLeft: "4px", lineHeight: lineHeight, fontSize: "15px" }}>
                         {item.answers.map((answer, aIdx) => (
                           <div key={aIdx} style={{ marginBottom: "1px", fontSize: "15px" }}>{answer}</div>

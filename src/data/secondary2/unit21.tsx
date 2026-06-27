@@ -194,7 +194,7 @@ export const unit21Data: UnitData = {
               {"ໂຈດບັນຫາອາຍຸຂອງພໍ່ ແລະ ລູກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ປັດຈຸບັນພໍ່ມີອາຍຸ 40 ປີ ແລະ ລູກມີອາຍຸ 10 ປີ. ຖາມວ່າອີກຈັກປີ (x ປີ) ອາຍຸຂອງພໍ່ຈຶ່ງຈະເປັນ 3 ເທົ່າ ຂອງອາຍຸລູກ? (ສົມຜົນ: 40 + x = 3(10 + x))"}
+              {"ປັດຈຸບັນພໍ່ມີອາຍຸ 40 ປີ ແລະ ລູກມີອາຍຸ 10 ປີ. ຖາມວ່າອີກຈັກປີ (x ປີ) ອາຍຸຂອງພໍ່ຈຶ່ງຈະເປັນ 3 ເທົ່າ ຂອງອາຍຸລູກ? (ສົມຜົນ: 40 + x = 3(10 + x))"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ອີກ"}</span>
@@ -212,7 +212,7 @@ export const unit21Data: UnitData = {
               {"ສົມຜົນເລກສ່ວນສາມຕົວຊອກຫາ x: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນຕໍ່ໄປນີ້: "}
+              {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນຕໍ່ໄປນີ້: "}
               <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
                 <Fraction num="x" den="2" /> {" + "} <Fraction num="x" den="3" /> {" = 5"}
               </span>
@@ -235,7 +235,7 @@ export const unit21Data: UnitData = {
             {"ໂຈດບັນຫາລາຄາຊື້ປຶ້ມ ແລະ ບິກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຊື້ປຶ້ມ 3 ຫົວ ແລະ ບິກ 1 ກ້ານ ລາຄາ 2,000 ກີບ ລວມເປັນເງິນ 17,000 ກີບ. ຖ້າສົມຜົນແມ່ນ 3x + 2000 = 17000. ຈົ່ງຊອກຫາລາຄາປຶ້ມ x ຕໍ່ຫົວ"}
+            {"ຊື້ປຶ້ມ 3 ຫົວ ແລະ ບິກ 1 ກ້ານ ລາຄາ 2,000 ກີບ ລວມເປັນເງິນ 17,000 ກີບ. ຖ້າສົມຜົນແມ່ນ 3x + 2000 = 17000. ຈົ່ງຊອກຫາລາຄາປຶ້ມ x ຕໍ່ຫົວ"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ລາຄາປຶ້ມຫົວລະ"}</span>
@@ -253,7 +253,7 @@ export const unit21Data: UnitData = {
             {"ຄັດຈ້ອນສົມຜົນທີ່ມີວົງເລັບຊ້ອນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນຕໍ່ໄປນີ້: 3(x + 2) - 2(x - 1) = 10"}
+            {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນຕໍ່ໄປນີ້: 3(x + 2) - 2(x - 1) = 10"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: x ="}</span>

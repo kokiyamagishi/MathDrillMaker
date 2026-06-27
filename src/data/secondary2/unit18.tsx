@@ -194,7 +194,7 @@ export const unit18Data: UnitData = {
               {"ການຄູນແຈກຢາຍເລກສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຄັດຈ້ອນສຳນວນຕໍ່ໄປນີ້ໃຫ້ງ່າຍດາຍ: "}
+              {"ຈົ່ງຄັດຈ້ອນສຳນວນຕໍ່ໄປນີ້ໃຫ້ງ່າຍດາຍ: "}
               <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
                 <Fraction num="1" den="2" /> {"(4x + 6) + "} <Fraction num="1" den="3" /> {"(9x - 12) = ?x - 1"}
               </span>
@@ -214,7 +214,7 @@ export const unit18Data: UnitData = {
               {"ໂຈດບັນຫາຊອກຫາເນື້ອທີ່ຂອບທາງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ມີສວນດອກໄມ້ຮູບສີ່ແຈສາກຍາວ 2x ແມັດ ແລະ ກວ້າງ x ແມັດ. ເນື້ອທີ່ຂອງສວນແມ່ນກຳນົດດ້ວຍສຳນວນ S = 2x². ຖ້າເນື້ອທີ່ສວນຖືກຂະຫຍາຍເພີ່ມຂຶ້ນ 50 ຕາແມັດ, ສຳນວນເນື້ອທີ່ໃໝ່ແມ່ນເທົ່າໃດ?"}
+              {"ມີສວນດອກໄມ້ຮູບສີ່ແຈສາກຍາວ 2x ແມັດ ແລະ ກວ້າງ x ແມັດ. ເນື້ອທີ່ຂອງສວນແມ່ນກຳນົດດ້ວຍສຳນວນ S = 2x². ຖ້າເນື້ອທີ່ສວນຖືກຂະຫຍາຍເພີ່ມຂຶ້ນ 50 ຕາແມັດ, ສຳນວນເນື້ອທີ່ໃໝ່ແມ່ນເທົ່າໃດ?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ເນື້ອທີ່ໃໝ່ແມ່ນ"}</span>
@@ -234,7 +234,7 @@ export const unit18Data: UnitData = {
             {"ການລົບສຳນວນໃນວົງເລັບ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຄັດຈ້ອນສຳນວນຕໍ່ໄປນີ້ໃຫ້ງ່າຍດາຍ: "}
+            {"ຈົ່ງຄັດຈ້ອນສຳນວນຕໍ່ໄປນີ້ໃຫ້ງ່າຍດາຍ: "}
             <span className="math" style={{ marginLeft: "6px" }}>
               {"(5x + 8) - (2x - 3) = ?x + 11"}
             </span>
@@ -254,7 +254,7 @@ export const unit18Data: UnitData = {
             {"ຄັດຈ້ອນກຳລັງສອງຂອງສຳນວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຄັດຈ້ອນສຳນວນຕໍ່ໄປນີ້: "}
+            {"ຈົ່ງຄັດຈ້ອນສຳນວນຕໍ່ໄປນີ້: "}
             <span className="math" style={{ marginLeft: "6px" }}>
               {"2(x² + 3) + 3(2 - x²) = 12 - ?x²"}
             </span>

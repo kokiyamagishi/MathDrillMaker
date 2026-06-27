@@ -211,7 +211,7 @@ export const unit20Data: UnitData = {
               {"ການແກ້ສົມຜົນສອງຂັ້ນຕອນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຊອກຫາຄ່າ x ຈາກສົມຜົນ "} <span className="math">{"2x + 4 = 16"}</span> {" ໂດຍການລົບ 4 ກ່ອນ ແລ້ວຈຶ່ງຫານດ້ວຍ 2 ທັງສອງຟາກ"}
+              {"ຈົ່ງຊອກຫາຄ່າ x ຈາກສົມຜົນ "} <span className="math">{"2x + 4 = 16"}</span> {" ໂດຍການລົບ 4 ກ່ອນ ແລ້ວຈຶ່ງຫານດ້ວຍ 2 ທັງສອງຟາກ"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x ="}</span>
@@ -228,7 +228,7 @@ export const unit20Data: UnitData = {
               {"ຄິດໄລ່ສົມຜົນເລກສ່ວນສອງຟາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນຕໍ່ໄປນີ້: "}
+              {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນຕໍ່ໄປນີ້: "}
               <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
                 <Fraction num="x - 1" den="3" /> {" = "} <Fraction num="2" den="3" />
               </span>
@@ -251,7 +251,7 @@ export const unit20Data: UnitData = {
             {"ໂຈດສົມຜົນການແບ່ງປັນເຄື່ອງຫຼິ້ນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຖ້າແບ່ງເຂົ້າໜົມ x ກ້ອນ ອອກເປັນ 4 ສ່ວນເທົ່າກັນ ຈະໄດ້ສ່ວນລະ 5 ກ້ອນ. ຂຽນເປັນສົມຜົນແມ່ນ x/4 = 5. ຈົ່ງຊອກຫາຈຳນວນເຂົ້າໜົມ x ທັງໝົດ"}
+            {"ຖ້າແບ່ງເຂົ້າໜົມ x ກ້ອນ ອອກເປັນ 4 ສ່ວນເທົ່າກັນ ຈະໄດ້ສ່ວນລະ 5 ກ້ອນ. ຂຽນເປັນສົມຜົນແມ່ນ x/4 = 5. ຈົ່ງຊອກຫາຈຳນວນເຂົ້າໜົມ x ທັງໝົດ"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: x ="}</span>
@@ -269,7 +269,7 @@ export const unit20Data: UnitData = {
             {"ຊອກຫາຄ່າ x ຈາກການລົບຄູນປະສົມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນ: 5x - 7 = 8"}
+            {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນ: 5x - 7 = 8"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: x ="}</span>

@@ -211,7 +211,7 @@ export const unit46Data: UnitData = {
               {"ການແກ້ສົມຜົນ Thales ຊອກຫາ x: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ໃຫ້ AM = x, MB = x + 3. AN = 4 cm, NC = 6 cm. ຈົ່ງຊອກຫາຄ່າຂອງ x. (x / (x+3) = 4 / 6 = 2 / 3)"}
+              {"ໃຫ້ AM = x, MB = x + 3. AN = 4 cm, NC = 6 cm. ຈົ່ງຊອກຫາຄ່າຂອງ x. (x / (x+3) = 4 / 6 = 2 / 3)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x ="}</span>
@@ -250,7 +250,7 @@ export const unit46Data: UnitData = {
             {"ໂຈດບັນຫາການວັດແທກຄວາມສູງຂອງຕົ້ນໄມ້: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ທ້າວສົມພອນໃຊ້ຫຼັກເກັນຕາແລັດວັດແທກຄວາມສູງຕົ້ນໄມ້ ໂດຍປັກໄມ້ຍາວ 2 m ໄວ້ຂ້າງຕົ້ນໄມ້. ໄມ້ເກີດເງົາຍາວ 3 m. ໃນຂະນະດຽວກັນ, ເງົາຂອງຕົ້ນໄມ້ຍາວ 15 m. ຖາມວ່າຕົ້ນໄມ້ນັ້ນສູງຈັກ ແມັດ (m)?"}
+            {"ທ້າວສົມພອນໃຊ້ຫຼັກເກັນຕາແລັດວັດແທກຄວາມສູງຕົ້ນໄມ້ ໂດຍປັກໄມ້ຍາວ 2 m ໄວ້ຂ້າງຕົ້ນໄມ້. ໄມ້ເກີດເງົາຍາວ 3 m. ໃນຂະນະດຽວກັນ, ເງົາຂອງຕົ້ນໄມ້ຍາວ 15 m. ຖາມວ່າຕົ້ນໄມ້ນັ້ນສູງຈັກ ແມັດ (m)?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຕົ້ນໄມ້ສູງ"}</span>

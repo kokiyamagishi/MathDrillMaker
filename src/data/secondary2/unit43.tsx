@@ -200,7 +200,7 @@ export const unit43Data: UnitData = {
               {"ການຊອກຫາມາດຕາສ່ວນ M (Finding the Scale Ratio M): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ໄລຍະຫ່າງຕົວຈິງລະຫວ່າງສອງເມືອງແມ່ນ 45 km, ແຕ່ໃນແຜນທີ່ແທກໄດ້ 9 cm. ຖາມວ່າມາດຕາສ່ວນຂອງແຜນທີ່ນີ້ແມ່ນ 1 : ຈັກ?"}
+              {"ໄລຍະຫ່າງຕົວຈິງລະຫວ່າງສອງເມືອງແມ່ນ 45 km, ແຕ່ໃນແຜນທີ່ແທກໄດ້ 9 cm. ຖາມວ່າມາດຕາສ່ວນຂອງແຜນທີ່ນີ້ແມ່ນ 1 : ຈັກ?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: 1 :"}</span>
@@ -238,7 +238,7 @@ export const unit43Data: UnitData = {
             {"ໂຈດບັນຫາໄລຍະທາງໃນແຜນທີ່ການທ່ອງທ່ຽວ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ແຜນທີ່ທ່ອງທ່ຽວແຂວງຫຼວງພຣະບາງມີມາດຕາສ່ວນ 1 : 150,000. ຖ້າໄລຍະທາງຕົວຈິງຈາກຕົວເມືອງໄປຫານ້ຳຕົກຕາດກວາງຊີແມ່ນ 30 km. ຖາມວ່າໃນແຜນທີ່ນີ້ ໄລຍະທາງດັ່ງກ່າວຈະມີຄວາມຍາວຈັກ cm?"}
+            {"ແຜນທີ່ທ່ອງທ່ຽວແຂວງຫຼວງພຣະບາງມີມາດຕາສ່ວນ 1 : 150,000. ຖ້າໄລຍະທາງຕົວຈິງຈາກຕົວເມືອງໄປຫານ້ຳຕົກຕາດກວາງຊີແມ່ນ 30 km. ຖາມວ່າໃນແຜນທີ່ນີ້ ໄລຍະທາງດັ່ງກ່າວຈະມີຄວາມຍາວຈັກ cm?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ:"}</span>

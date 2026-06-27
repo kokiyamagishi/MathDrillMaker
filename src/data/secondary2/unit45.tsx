@@ -210,7 +210,7 @@ export const unit45Data: UnitData = {
               {"ການພົວພັນເສັ້ນຮອບຮູບ (Perimeter Relation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຖ້າເສັ້ນຮອບຮູບຂອງຮູບສາມແຈ ABC ແມ່ນ 36 cm. ຖ້າ M, N, P ແມ່ນຈຸດເຄິ່ງກາງຂອງສາມຂ້າງ. ຖາມວ່າເສັ້ນຮອບຮູບຂອງຮູບສາມແຈນ້ອຍ MNP ຈະແມ່ນຈັກ cm?"}
+              {"ຖ້າເສັ້ນຮອບຮູບຂອງຮູບສາມແຈ ABC ແມ່ນ 36 cm. ຖ້າ M, N, P ແມ່ນຈຸດເຄິ່ງກາງຂອງສາມຂ້າງ. ຖາມວ່າເສັ້ນຮອບຮູບຂອງຮູບສາມແຈນ້ອຍ MNP ຈະແມ່ນຈັກ cm?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ເສັ້ນຮອບຮູບ MNP ແມ່ນ"}</span>
@@ -248,7 +248,7 @@ export const unit45Data: UnitData = {
             {"ໂຈດບັນຫາການຫາໄລຍະຫ່າງຂ້າມບຶງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ເພື່ອວັດແທກໄລຍະຫ່າງ BC ຂ້າມບຶງນ້ຳແຫ່ງໜຶ່ງ, ນາຍຊ່າງໄດ້ກຳນົດຈຸດ A ແລະ ວັດແທກຈຸດເຄິ່ງກາງ M ຂອງ AB ແລະ N ຂອງ AC ໄດ້ໄລຍະຫ່າງ MN = 45 ແມັດ. ຖາມວ່າໄລຍະຫ່າງ BC ຕົວຈິງຂ້າມບຶງແມ່ນຈັກ ແມັດ (m)?"}
+            {"ເພື່ອວັດແທກໄລຍະຫ່າງ BC ຂ້າມບຶງນ້ຳແຫ່ງໜຶ່ງ, ນາຍຊ່າງໄດ້ກຳນົດຈຸດ A ແລະ ວັດແທກຈຸດເຄິ່ງກາງ M ຂອງ AB ແລະ N ຂອງ AC ໄດ້ໄລຍະຫ່າງ MN = 45 ແມັດ. ຖາມວ່າໄລຍະຫ່າງ BC ຕົວຈິງຂ້າມບຶງແມ່ນຈັກ ແມັດ (m)?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ໄລຍະຫ່າງ BC ແມ່ນ"}</span>

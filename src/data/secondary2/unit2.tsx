@@ -243,7 +243,7 @@ export const unit2Data: UnitData = {
               {"ໂຈດບັນຫາການແລ່ນອ້ອມສະໜາມ (LCM): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ທ້າວ ສິດ ແລະ ນາງ ນາ ແລ່ນອ້ອມສະໜາມກິລາແຫ່ງໜຶ່ງ. ທ້າວ ສິດ ແລ່ນ 1 ຮອບໃຊ້ເວລາ "} <Fraction num="3" den="4" /> {" ນາທີ. ນາງ ນາ ແລ່ນ 1 ຮອບໃຊ້ເວລາ "} <Fraction num="5" den="6" /> {" ນາທີ. ຖ້າທັງສອງເລີ່ມອອກແລ່ນພ້ອມກັນຈາກຈຸດດຽວກັນ, ພວກເຂົາຈະມາພົບກັນຢູ່ຈຸດເລີ່ມຕົ້ນອີກຄັ້ງຫຼັງຈາກຈັກນາທີ?"}
+              {"ທ້າວ ສິດ ແລະ ນາງ ນາ ແລ່ນອ້ອມສະໜາມກິລາແຫ່ງໜຶ່ງ. ທ້າວ ສິດ ແລ່ນ 1 ຮອບໃຊ້ເວລາ "} <Fraction num="3" den="4" /> {" ນາທີ. ນາງ ນາ ແລ່ນ 1 ຮອບໃຊ້ເວລາ "} <Fraction num="5" den="6" /> {" ນາທີ. ຖ້າທັງສອງເລີ່ມອອກແລ່ນພ້ອມກັນຈາກຈຸດດຽວກັນ, ພວກເຂົາຈະມາພົບກັນຢູ່ຈຸດເລີ່ມຕົ້ນອີກຄັ້ງຫຼັງຈາກຈັກນາທີ?"}
             </p>
             <div style={{ display: "flex", justifyContent: "center", margin: "8px 0" }}>
               <svg viewBox="0 0 300 100" style={{ width: "100%", maxWidth: "250px", height: "auto" }}>
@@ -270,7 +270,7 @@ export const unit2Data: UnitData = {
               {"ໂຈດບັນຫາການແບ່ງແຖບເຈ້ຍ (GCD): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ມີແຖບເຈ້ຍສອງເສັ້ນທີ່ມີຄວາມຍາວ "} <Fraction num="12" den="5" /> {" ແມັດ ແລະ "} <Fraction num="18" den="5" /> {" ແມັດ. ຕ້ອງການຕັດແຖບເຈ້ຍທັງສອງເປັນທ່ອນສັ້ນໆ ທີ່ມີຄວາມຍາວເທົ່າກັນ ແລະ ຍາວທີ່ສຸດໂດຍບໍ່ໃຫ້ມີເຈ້ຍເຫຼືອ. ຖາມວ່າແຕ່ລະທ່ອນຈະຍາວຈັກແມັດ?"}
+              {"ມີແຖບເຈ້ຍສອງເສັ້ນທີ່ມີຄວາມຍາວ "} <Fraction num="12" den="5" /> {" ແມັດ ແລະ "} <Fraction num="18" den="5" /> {" ແມັດ. ຕ້ອງການຕັດແຖບເຈ້ຍທັງສອງເປັນທ່ອນສັ້ນໆ ທີ່ມີຄວາມຍາວເທົ່າກັນ ແລະ ຍາວທີ່ສຸດໂດຍບໍ່ໃຫ້ມີເຈ້ຍເຫຼືອ. ຖາມວ່າແຕ່ລະທ່ອນຈະຍາວຈັກແມັດ?"}
             </p>
             <div style={{ display: "flex", justifyContent: "center", margin: "8px 0" }}>
               <svg viewBox="0 0 300 80" style={{ width: "100%", maxWidth: "250px", height: "auto" }}>
@@ -301,7 +301,7 @@ export const unit2Data: UnitData = {
             {"ຊອກຫາ LCM ຂອງສາມເລກສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຊອກຫາ LCM (ທະວີຄູນຮ່ວມໜ້ອຍສຸດ) ຂອງສາມເລກສ່ວນຕໍ່ໄປນີ້: "}
+            {"ຈົ່ງຊອກຫາ LCM (ທະວີຄູນຮ່ວມໜ້ອຍສຸດ) ຂອງສາມເລກສ່ວນຕໍ່ໄປນີ້: "}
             <span className="math" style={{ display: "inline-flex", alignItems: "center", margin: "0 4px" }}>
               <Fraction num="1" den="2" /> {", "} <Fraction num="2" den="3" /> {" ແລະ "} <Fraction num="3" den="4" />
             </span>
@@ -321,7 +321,7 @@ export const unit2Data: UnitData = {
             {"ຊອກຫາ GCD ຂອງສາມເລກສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຊອກຫາ GCD (ອຸປະຄູນຮ່ວມຫຼາຍສຸດ) ຂອງສາມເລກສ່ວນຕໍ່ໄປນີ້: "}
+            {"ຈົ່ງຊອກຫາ GCD (ອຸປະຄູນຮ່ວມຫຼາຍສຸດ) ຂອງສາມເລກສ່ວນຕໍ່ໄປນີ້: "}
             <span className="math" style={{ display: "inline-flex", alignItems: "center", margin: "0 4px" }}>
               <Fraction num="4" den="9" /> {", "} <Fraction num="6" den="27" /> {" ແລະ "} <Fraction num="8" den="15" />
             </span>

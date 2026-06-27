@@ -55,7 +55,7 @@ export const BasicProblems: React.FC<BasicProblemsProps> = ({
         {problems.map((problem, index) => (
           <div key={problem.number} className="problem" style={{ marginTop: index > 0 ? "36px" : "0px" }}>
             <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", width: "100%" }}>
-              <span className="problem__number">{problem.number}</span>
+              <span className="problem__number">{index + 1}</span>
               <div className="problem__content" style={{ flex: 1, minWidth: 0 }}>{problem.content}</div>
             </div>
           </div>

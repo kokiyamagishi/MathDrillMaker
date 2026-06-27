@@ -192,7 +192,7 @@ export const unit48Data: UnitData = {
               {"ການຊອກຫາຂ້າງ x ດ້ວຍຫຼັກການ SAS: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ສອງຮູບສາມແຈຄ້າຍຄືກັນ. ຮູບ A ມີຂ້າງ 6 cm ແລະ 8 cm ທີ່ມີມຸມລະຫວ່າງກາງແມ່ນ 40°. ຮູບ B ມີຂ້າງ 9 cm ແລະ x cm ທີ່ມີມຸມແມ່ນ 40° ➔ ຈົ່ງຊອກຫາ x. (9 / 6 = x / 8)"}
+              {"ສອງຮູບສາມແຈຄ້າຍຄືກັນ. ຮູບ A ມີຂ້າງ 6 cm ແລະ 8 cm ທີ່ມີມຸມລະຫວ່າງກາງແມ່ນ 40°. ຮູບ B ມີຂ້າງ 9 cm ແລະ x cm ທີ່ມີມຸມແມ່ນ 40° ➔ ຈົ່ງຊອກຫາ x. (9 / 6 = x / 8)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x ="}</span>
@@ -231,7 +231,7 @@ export const unit48Data: UnitData = {
             {"ໂຈດບັນຫາການວັດແທກເງົາຕຶກສູງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ທ້າວວິໄຊຢາກວັດແທກຄວາມສູງຂອງຕຶກຮຽນ. ເຂົາປັກເສົາສູງ 1.5 m ໄວ້ໃກ້ຕຶກ ເຊິ່ງເກີດເງົາຍາວ 2 m. ໃນຂະນະດຽວກັນ, ຕຶກຮຽນເກີດເງົາຍາວ 16 m. ຖາມວ່າຕຶກຮຽນນີ້ສູງຈັກ ແມັດ (m)?"}
+            {"ທ້າວວິໄຊຢາກວັດແທກຄວາມສູງຂອງຕຶກຮຽນ. ເຂົາປັກເສົາສູງ 1.5 m ໄວ້ໃກ້ຕຶກ ເຊິ່ງເກີດເງົາຍາວ 2 m. ໃນຂະນະດຽວກັນ, ຕຶກຮຽນເກີດເງົາຍາວ 16 m. ຖາມວ່າຕຶກຮຽນນີ້ສູງຈັກ ແມັດ (m)?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຕຶກຮຽນສູງ"}</span>

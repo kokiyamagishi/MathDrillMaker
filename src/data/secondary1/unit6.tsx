@@ -218,7 +218,35 @@ export const unit6Data: UnitData = {
       },
     },
       problems: [
-        
+        {
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p>
+                {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບຕົວທະວີຄູນ ແລະ ຕົວອຸປະຄູນຕໍ່ໄປນີ້: "}{" "}
+                <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "1fr",
+                  gap: "20px",
+                  fontSize: "1.375rem",
+                  padding: "8px 16px",
+                }}
+              >
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                  <span>{"(1) ຈົ່ງຊອກຫາຕົວອຸປະຄູນທັງໝົດ ຂອງ 12: "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                  <span>{"(2) ຈົ່ງຊອກຫາ 3 ຕົວທະວີຄູນທຳອິດ ຂອງ 5 (ຈາກນ້ອຍຫາໃຫຍ່): "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
+                </div>
+              </div>
+            </div>
+          ),
+        }
       ]
     }
   ],
@@ -378,6 +406,13 @@ export const unit6Data: UnitData = {
         answers: [
           <span key="u6-ans-2-1">{"(1) 36"}</span>,
           <span key="u6-ans-2-2">{"(2) -16 (ເພາະເຄື່ອງໝາຍລົບຢູ່ນອກກຳລັງສອງ)"}</span>,
+        ],
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="u6-ans-3-1">{"(1) 1, 2, 3, 4, 6, 12"}</span>,
+          <span key="u6-ans-3-2">{"(2) 5, 10, 15"}</span>,
         ],
       },
       {

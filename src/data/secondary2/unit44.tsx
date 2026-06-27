@@ -205,7 +205,7 @@ export const unit44Data: UnitData = {
               {"ການຊອກຫາຄວາມຍາວທ່ອນຊື່ຈາກອັດຕາສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ໃຫ້ສາມຈຸດ A, B, C ລຽງກັນເທິງເສັ້ນຊື່ໜຶ່ງ. ຖ້າ AB = x, BC = 8 cm. ເມື່ອສາຍຂະໜານໄດ້ A'B' = 3 cm, B'C' = 6 cm. ຈົ່ງຊອກຫາ x. (x / 8 = 3 / 6)"}
+              {"ໃຫ້ສາມຈຸດ A, B, C ລຽງກັນເທິງເສັ້ນຊື່ໜຶ່ງ. ຖ້າ AB = x, BC = 8 cm. ເມື່ອສາຍຂະໜານໄດ້ A'B' = 3 cm, B'C' = 6 cm. ຈົ່ງຊອກຫາ x. (x / 8 = 3 / 6)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x ="}</span>
@@ -244,7 +244,7 @@ export const unit44Data: UnitData = {
             {"ໂຈດບັນຫາການສາຍແສງເງົາ (Shadow and Projection): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ເສົາໄມ້ສອງຕົ້ນປັກຕັ້ງສາກກັບພື້ນດິນ. ເສົາຕົ້ນທີໜຶ່ງສູງ 2 m ເຮັດໃຫ້ເກີດເງົາຍາວ 3 m. ໃນເວລາ ດຽວກັນ, ຖ້າເສົາຕົ້ນທີສອງເກີດເງົາຍາວ 9 m. ຖາມວ່າເສົາຕົ້ນທີສອງສູງຈັກ ແມັດ (m)?"}
+            {"ເສົາໄມ້ສອງຕົ້ນປັກຕັ້ງສາກກັບພື້ນດິນ. ເສົາຕົ້ນທີໜຶ່ງສູງ 2 m ເຮັດໃຫ້ເກີດເງົາຍາວ 3 m. ໃນເວລາ ດຽວກັນ, ຖ້າເສົາຕົ້ນທີສອງເກີດເງົາຍາວ 9 m. ຖາມວ່າເສົາຕົ້ນທີສອງສູງຈັກ ແມັດ (m)?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ເສົາຕົ້ນທີສອງສູງ"}</span>

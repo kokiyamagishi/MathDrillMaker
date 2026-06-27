@@ -219,7 +219,7 @@ export const unit2Data: UnitData = {
               {"ການຫຍໍ້ສຳນວນພຶດຊະຄະນິດ (Simplifying Algebraic Expression): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຄິດໄລ່ ແລະ ຫຍໍ້ສຳນວນຕໍ່ໄປນີ້ໃຫ້ງ່າຍທີ່ສຸດ: "} 
+              {"ຈົ່ງຄິດໄລ່ ແລະ ຫຍໍ້ສຳນວນຕໍ່ໄປນີ້ໃຫ້ງ່າຍທີ່ສຸດ: "} 
               <span className="math">{"(x + 3)² - (x - 3)²"}</span>
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
@@ -257,7 +257,7 @@ export const unit2Data: UnitData = {
             {"ໂຈດບັນຫາເລຂາຄະນິດທາງເດີນ (Geometric Path Area): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ສວນດອກໄມ້ຮູບຈະຕຸລັດຂ້າງຍາວ x ແມັດ. ຖ້າຂະຫຍາຍຄວາມຍາວຂອງທຸກໆຂ້າງອອກໄປ 2 ແມັດ, ເນື້ອທີ່ຂອງສວນຈະເພີ່ມຂຶ້ນເທົ່າໃດ? (ຄິດໄລ່ຈາກ (x+2)² - x² ໂດຍຕອບເປັນສຳນວນ)"}
+            {"ສວນດອກໄມ້ຮູບຈະຕຸລັດຂ້າງຍາວ x ແມັດ. ຖ້າຂະຫຍາຍຄວາມຍາວຂອງທຸກໆຂ້າງອອກໄປ 2 ແມັດ, ເນື້ອທີ່ຂອງສວນຈະເພີ່ມຂຶ້ນເທົ່າໃດ? (ຄິດໄລ່ຈາກ (x+2)² - x² ໂດຍຕອບເປັນສຳນວນ)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ເນື້ອທີ່ເພີ່ມຂຶ້ນ"}</span>

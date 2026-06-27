@@ -192,7 +192,7 @@ export const unit12Data: UnitData = {
               {"ການປຽບທຽບຄ່າຂອງຮາກຂັ້ນສອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງປຽບທຽບຄ່າລະຫວ່າງ "} <span className="math">{"5"}</span> {" ແລະ "} <span className="math">{"√24"}</span> {". (ຕອບ ຈຳນວນໃດຫຼາຍກວ່າ)"}
+              {"ຈົ່ງປຽບທຽບຄ່າລະຫວ່າງ "} <span className="math">{"5"}</span> {" ແລະ "} <span className="math">{"√24"}</span> {". (ຕອບ ຈຳນວນໃດຫຼາຍກວ່າ)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຈຳນວນທີ່ຫຼາຍກວ່າແມ່ນ"}</span>
@@ -209,7 +209,7 @@ export const unit12Data: UnitData = {
               {"ການຊອກຫາຂອບເຂດຂອງຈຳນວນອະປົກກະຕິ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈຳນວນ "} <span className="math">{"√10"}</span> {" ຢູ່ລະຫວ່າງສອງຈຳນວນຖ້ວນໃດ? (ຕອບເປັນຮູບແບບ x ແລະ y)"}
+              {"ຈຳນວນ "} <span className="math">{"√10"}</span> {" ຢູ່ລະຫວ່າງສອງຈຳນວນຖ້ວນໃດ? (ຕອບເປັນຮູບແບບ x ແລະ y)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຢູ່ລະຫວ່າງ"}</span>
@@ -229,7 +229,7 @@ export const unit12Data: UnitData = {
             {"ໂຈດບັນຫາເນື້ອທີ່ຮູບຈະຕຸລັດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ມີຮູບຈະຕຸລັດໜຶ່ງທີ່ມີເນື້ອທີ່ 64 ຕາແມັດ. ຖາມວ່າລວງຍາວຂ້າງຂອງຮູບຈະຕຸລັດນັ້ນແມ່ນຈັກແມັດ?"}
+            {"ມີຮູບຈະຕຸລັດໜຶ່ງທີ່ມີເນື້ອທີ່ 64 ຕາແມັດ. ຖາມວ່າລວງຍາວຂ້າງຂອງຮູບຈະຕຸລັດນັ້ນແມ່ນຈັກແມັດ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ລວງຍາວຂ້າງແມ່ນ"}</span>
@@ -247,7 +247,7 @@ export const unit12Data: UnitData = {
             {"ການຈຳແນກຈຳນວນຈິງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈຳນວນໃດໃນບັນດາຕໍ່ໄປນີ້ ບໍ່ແມ່ນຈຳນວນຈິງ? "} <span className="math">{"-4, √9, √-4, 0.5"}</span>
+            {"ຈຳນວນໃດໃນບັນດາຕໍ່ໄປນີ້ ບໍ່ແມ່ນຈຳນວນຈິງ? "} <span className="math">{"-4, √9, √-4, 0.5"}</span>
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຈຳນວນທີ່ບໍ່ແມ່ນຈຳນວນຈິງແມ່ນ"}</span>

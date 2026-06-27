@@ -213,7 +213,7 @@ export const unit15Data: UnitData = {
               {"ຜົນບວກຄ່າສຳບູນຂອງທຸກໆໃຈຜົນ (Sum of Absolute Values of Roots): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງແກ້ສົມຜົນຂັ້ນສີ່ຄູ່ "} <span className="math">{"x⁴ - 13x² + 36 = 0"}</span> {". ແລ້ວຊອກຫາຜົນບວກຂອງຄ່າສຳບູນຂອງທຸກໆໃຈຜົນຈິງ (|x₁| + |x₂| + |x₃| + |x₄|)."}
+              {"ຈົ່ງແກ້ສົມຜົນຂັ້ນສີ່ຄູ່ "} <span className="math">{"x⁴ - 13x² + 36 = 0"}</span> {". ແລ້ວຊອກຫາຜົນບວກຂອງຄ່າສຳບູນຂອງທຸກໆໃຈຜົນຈິງ (|x₁| + |x₂| + |x₃| + |x₄|)."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຜົນບວກແມ່ນ"}</span>
@@ -251,7 +251,7 @@ export const unit15Data: UnitData = {
             {"ໂຈດຄວາມສຳພັນລະຫວ່າງຕົວເລກ ແລະ ກຳລັງສອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈຳນວນຖ້ວນບວກໜຶ່ງ ມີຄ່ານ້ອຍກວ່າກຳລັງສອງຂອງມັນເອງຢູ່ 12 ພໍດີ. ຈົ່ງຊອກຫາຈຳນວນຖ້ວນບວກນັ້ນ. (ສົມຜົນ: x = x² - 12)"}
+            {"ຈຳນວນຖ້ວນບວກໜຶ່ງ ມີຄ່ານ້ອຍກວ່າກຳລັງສອງຂອງມັນເອງຢູ່ 12 ພໍດີ. ຈົ່ງຊອກຫາຈຳນວນຖ້ວນບວກນັ້ນ. (ສົມຜົນ: x = x² - 12)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຈຳນວນນັ້ນແມ່ນ"}</span>

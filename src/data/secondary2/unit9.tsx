@@ -231,7 +231,7 @@ export const unit9Data: UnitData = {
               {"ການປ່ຽນເລກທົດສະນິຍົມຮອບວຽນເປັນເລກສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຂຽນເລກທົດສະນິຍົມຮອບວຽນ "} {"0.333..."} {" (ຫຼືຂຽນເປັນ 0.3̇) ໃຫ້ເປັນຮູບຮ່າງເລກສ່ວນຂັ້ນຕ່ຳ"}
+              {"ຈົ່ງຂຽນເລກທົດສະນິຍົມຮອບວຽນ "} {"0.333..."} {" (ຫຼືຂຽນເປັນ 0.3̇) ໃຫ້ເປັນຮູບຮ່າງເລກສ່ວນຂັ້ນຕ່ຳ"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ເລກສ່ວນແມ່ນ"}</span>
@@ -248,7 +248,7 @@ export const unit9Data: UnitData = {
               {"ການຈັດລຽງລຳດັບຈຳນວນປົກກະຕິ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງລຽງລໍາດັບຈຳນວນຕໍ່ໄປນີ້ແຕ່ ໜ້ອຍຫາຫຼາຍ: "}
+              {"ຈົ່ງລຽງລໍາດັບຈຳນວນຕໍ່ໄປນີ້ແຕ່ ໜ້ອຍຫາຫຼາຍ: "}
               <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
                 {"0.6, "} <Fraction num="1" den="2" /> {", 0.55"}
               </span>
@@ -271,7 +271,7 @@ export const unit9Data: UnitData = {
             {"ໂຈດບັນຫາການປຽບທຽບລວດຫຼັກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ເສັ້ນລວດ A ຍາວ "} <Fraction num="7" den="4" /> {" ແມັດ ແລະ ເສັ້ນລວດ B ຍາວ "} {"1.8"} {" ແມັດ. ຖາມວ່າເສັ້ນລວດໃດຍາວກວ່າກັນ?"}
+            {"ເສັ້ນລວດ A ຍາວ "} <Fraction num="7" den="4" /> {" ແມັດ ແລະ ເສັ້ນລວດ B ຍາວ "} {"1.8"} {" ແມັດ. ຖາມວ່າເສັ້ນລວດໃດຍາວກວ່າກັນ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ເສັ້ນລວດທີ່ຍາວກວ່າແມ່ນ"}</span>
@@ -288,7 +288,7 @@ export const unit9Data: UnitData = {
             {"ການຄັດເລືອກຈຳນວນປົກກະຕິ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ໃນບັນດາຈຳນວນຕໍ່ໄປນີ້: "} <span className="math">{"-3, 0.25, √2, 4/5"}</span> {", ຈຳນວນໃດແດ່ທີ່ບໍ່ແມ່ນຈຳນວນປົກກະຕິ?"}
+            {"ໃນບັນດາຈຳນວນຕໍ່ໄປນີ້: "} <span className="math">{"-3, 0.25, √2, 4/5"}</span> {", ຈຳນວນໃດແດ່ທີ່ບໍ່ແມ່ນຈຳນວນປົກກະຕິ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຈຳນວນທີ່ບໍ່ແມ່ນຈຳນວນປົກກະຕິແມ່ນ"}</span>

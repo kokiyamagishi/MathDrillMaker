@@ -221,7 +221,7 @@ export const unit6Data: UnitData = {
               {"ການແກ້ລະບົບສົມົນຂັ້ນສູງ (Advanced Linear System): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງແກ້ລະບົບສົມຜົນຕໍ່ໄປນີ້: "} <span className="math">{"2x + 3y = 13"}</span> {" ແລະ "} <span className="math">{"3x - y = 3"}</span> {". ແລ້ວຊອກຫາຄ່າຂອງ "} <span className="math">{"x + y"}</span> {"."}
+              {"ຈົ່ງແກ້ລະບົບສົມຜົນຕໍ່ໄປນີ້: "} <span className="math">{"2x + 3y = 13"}</span> {" ແລະ "} <span className="math">{"3x - y = 3"}</span> {". ແລ້ວຊອກຫາຄ່າຂອງ "} <span className="math">{"x + y"}</span> {"."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x + y ="}</span>
@@ -262,7 +262,7 @@ export const unit6Data: UnitData = {
             {"ໂຈດບັນຫາຊອກຫາຕົວເລກ (Finding Two Numbers): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຜົນບວກຂອງສອງຈຳນວນແມ່ນ 20, ແລະ ຜົນລົບຂອງພວກມັນແມ່ນ 6. ຈົ່ງຊອກຫາຈຳນວນທີ່ມີຄ່າຫຼາຍກວ່າ. (ໃຫ້ສົມຜົນ x + y = 20, x - y = 6 ➔ ຊອກຫາ x)"}
+            {"ຜົນບວກຂອງສອງຈຳນວນແມ່ນ 20, ແລະ ຜົນລົບຂອງພວກມັນແມ່ນ 6. ຈົ່ງຊອກຫາຈຳນວນທີ່ມີຄ່າຫຼາຍກວ່າ. (ໃຫ້ສົມຜົນ x + y = 20, x - y = 6 ➔ ຊອກຫາ x)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຈຳນວນທີ່ຫຼາຍກວ່າແມ່ນ"}</span>

@@ -195,7 +195,7 @@ export const unit26Data: UnitData = {
               {"ສົມຜົນຄ່າສຳບູນທີ່ມີຕົວເລກຢູ່ນອກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງແກ້ສົມຜົນ "} <span className="math">{"2|x - 3| + 4 = 10"}</span> {" ແລ້ວຊອກຫາໃຈຜົນຄ່າຫຼາຍສຸດ."}
+              {"ຈົ່ງແກ້ສົມຜົນ "} <span className="math">{"2|x - 3| + 4 = 10"}</span> {" ແລ້ວຊອກຫາໃຈຜົນຄ່າຫຼາຍສຸດ."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x ="}</span>
@@ -212,7 +212,7 @@ export const unit26Data: UnitData = {
               {"ສົມຜົນຄ່າສຳບູນທີ່ມີເລກສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງແກ້ສົມຜົນ "}
+              {"ຈົ່ງແກ້ສົມຜົນ "}
               <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                 {"|"} <Fraction num="x" den="2" /> {" - 1| = 3"}
               </span>
@@ -236,7 +236,7 @@ export const unit26Data: UnitData = {
             {"ແກ້ສົມຜົນຄ່າສຳບູນເລກທົດສະນິຍົມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງແກ້ສົມຜົນ "} <span className="math">{"|x - 1.5| = 2.5"}</span> {" ແລ້ວຊອກຫາໃຈຜົນຄ່າຫຼາຍສຸດ."}
+            {"ຈົ່ງແກ້ສົມຜົນ "} <span className="math">{"|x - 1.5| = 2.5"}</span> {" ແລ້ວຊອກຫາໃຈຜົນຄ່າຫຼາຍສຸດ."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: x ="}</span>
@@ -253,7 +253,7 @@ export const unit26Data: UnitData = {
             {"ໂຈດບັນຫາໄລຍະຫ່າງເທິງເສັ້ນຈຳນວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈຸດ A ຢູ່ເທິງເສັ້ນຈຳນວນຫ່າງຈາກຈຸດ 2 ເປັນໄລຍະທາງ 5 ຫົວໜ່ວຍ. ຈົ່ງຊອກຫາພິກັດຂອງຈຸດ A ທີ່ມີຄ່າຫຼາຍສຸດ. (ສົມຜົນ: |x - 2| = 5)"}
+            {"ຈຸດ A ຢູ່ເທິງເສັ້ນຈຳນວນຫ່າງຈາກຈຸດ 2 ເປັນໄລຍະທາງ 5 ຫົວໜ່ວຍ. ຈົ່ງຊອກຫາພິກັດຂອງຈຸດ A ທີ່ມີຄ່າຫຼາຍສຸດ. (ສົມຜົນ: |x - 2| = 5)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ພິກັດຂອງ A ແມ່ນ"}</span>

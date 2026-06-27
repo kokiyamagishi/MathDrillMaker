@@ -191,7 +191,7 @@ export const unit14Data: UnitData = {
               {"ຄວາມເຄິ່ງຄືຂອງຕົວເລກອາຣັບ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ໃນບັນດາຕົວເລກຕໍ່ໄປນີ້: "} <strong>{"0, 1, 3, 8"}</strong> {", ຕົວເລກໃດແດ່ທີ່ມີທັງແກນເຄິ່ງຄືແນວນອນ ແລະ ໃຈກາງເຄິ່ງຄື? (ຕອບເປັນລາຍການ)"}
+              {"ໃນບັນດາຕົວເລກຕໍ່ໄປນີ້: "} <strong>{"0, 1, 3, 8"}</strong> {", ຕົວເລກໃດແດ່ທີ່ມີທັງແກນເຄິ່ງຄືແນວນອນ ແລະ ໃຈກາງເຄິ່ງຄື? (ຕອບເປັນລາຍການ)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ແມ່ນເລກ"}</span>
@@ -208,7 +208,7 @@ export const unit14Data: UnitData = {
               {"ການເຄິ່ງຄືຂອງຮູບຄາງໝູທ່ຽງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຮູບຄາງໝູທ່ຽງ (Isosceles Trapezoid) ມີແກນເຄິ່ງຄື ຫຼື ໃຈກາງເຄິ່ງຄື? (ຕອບ ແກນເຄິ່ງຄື, ໃຈກາງເຄິ່ງຄື ຫຼື ບໍ່ມີທັງສອງ)"}
+              {"ຮູບຄາງໝູທ່ຽງ (Isosceles Trapezoid) ມີແກນເຄິ່ງຄື ຫຼື ໃຈກາງເຄິ່ງຄື? (ຕອບ ແກນເຄິ່ງຄື, ໃຈກາງເຄິ່ງຄື ຫຼື ບໍ່ມີທັງສອງ)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ມີ"}</span>
@@ -228,7 +228,7 @@ export const unit14Data: UnitData = {
             {"ຈຳນວນແກນເຄິ່ງຄືຂອງຮູບດອກຈັນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຮູບດອກຈັນ (Rhombus) ມີແກນເຄິ່ງຄືທັງໝົດຈັກເສັ້ນ?"}
+            {"ຮູບດອກຈັນ (Rhombus) ມີແກນເຄິ່ງຄືທັງໝົດຈັກເສັ້ນ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ມີ"}</span>
@@ -246,7 +246,7 @@ export const unit14Data: UnitData = {
             {"ການເຄິ່ງຄືຂອງຮູບຫຼາຍແຈສະເໝີ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຮູບຫຼາຍແຈສະເໝີທີ່ມີ 8 ຂ້າງ (ຮູບແປດແຈສະເໝີ) ຈະມີແກນເຄິ່ງຄືທັງໝົດຈັກເສັ້ນ?"}
+            {"ຮູບຫຼາຍແຈສະເໝີທີ່ມີ 8 ຂ້າງ (ຮູບແປດແຈສະເໝີ) ຈະມີແກນເຄິ່ງຄືທັງໝົດຈັກເສັ້ນ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ມີ"}</span>

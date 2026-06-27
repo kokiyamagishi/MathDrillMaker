@@ -214,7 +214,7 @@ export const unit10Data: UnitData = {
               {"ການຊອກຫາມຸມແນບວົງມົນຈາກມຸມໃຈກາງໃຫຍ່ (Angle Subtended by Major Arc): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ໃນວົງມົນທີ່ມີ O ເປັນໃຈກາງ, ມຸມໃຈກາງ "} <span className="math">{"∠AOC = 130°"}</span> {". ຖ້າເມັດ B ນອນຢູ່ເທິງເສັ້ນຮອບວົງໃນພາກສ່ວນອາກໃຫຍ່ AC, ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມແນບວົງມົນ "} <span className="math">{"∠ABC"}</span> {"."}
+              {"ໃນວົງມົນທີ່ມີ O ເປັນໃຈກາງ, ມຸມໃຈກາງ "} <span className="math">{"∠AOC = 130°"}</span> {". ຖ້າເມັດ B ນອນຢູ່ເທິງເສັ້ນຮອບວົງໃນພາກສ່ວນອາກໃຫຍ່ AC, ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມແນບວົງມົນ "} <span className="math">{"∠ABC"}</span> {"."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ∠ABC ="}</span>
@@ -252,7 +252,7 @@ export const unit10Data: UnitData = {
             {"ໂຈດປະສົມປີຕາກໍ ແລະ ວົງມົນ (Pythagoras Combined with Circle Geometry): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ແຜ່ນເຫຼັກຮູບສາມແຈ ABC ແນບຢູ່ໃນວົງມົນທີ່ມີ AB ເປັນເສັ້ນຜ່ານກາງຍາວ "} <span className="math">{"10 cm"}</span> {". ຖ້າຂ້າງ "} <span className="math">{"AC = 6 cm"}</span> {", ຈົ່ງຊອກຫາຄວາມຍາວຂອງຂ້າງ BC ທີ່ເຫຼືອ."}
+            {"ແຜ່ນເຫຼັກຮູບສາມແຈ ABC ແນບຢູ່ໃນວົງມົນທີ່ມີ AB ເປັນເສັ້ນຜ່ານກາງຍາວ "} <span className="math">{"10 cm"}</span> {". ຖ້າຂ້າງ "} <span className="math">{"AC = 6 cm"}</span> {", ຈົ່ງຊອກຫາຄວາມຍາວຂອງຂ້າງ BC ທີ່ເຫຼືອ."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: BC ຍາວ"}</span>

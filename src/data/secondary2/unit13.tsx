@@ -198,7 +198,7 @@ export const unit13Data: UnitData = {
               {"ຄຸນລັກສະນະຄວາມຂະໜານລະຫວ່າງສອງເສັ້ນຊື່: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຖ້າເສັ້ນຊື່ d1 ແລະ d2 ຂະໜານກັນ, ຮູບເຄິ່ງຄື d1' ແລະ d2' ຂອງພວກມັນ ທຽບໃສ່ເມັດ O ຈະຂະໜານກັນ ຫຼື ບໍ່? (ຕອບ ຂະໜານ ຫຼື ບໍ່ຂະໜານ)"}
+              {"ຖ້າເສັ້ນຊື່ d1 ແລະ d2 ຂະໜານກັນ, ຮູບເຄິ່ງຄື d1' ແລະ d2' ຂອງພວກມັນ ທຽບໃສ່ເມັດ O ຈະຂະໜານກັນ ຫຼື ບໍ່? (ຕອບ ຂະໜານ ຫຼື ບໍ່ຂະໜານ)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ:"}</span>
@@ -215,7 +215,7 @@ export const unit13Data: UnitData = {
               {"ເນື້ອທີ່ລວມຂອງຮູບເຄິ່ງຄື: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຮູບສາມແຈ ABC ມີເນື້ອທີ່ 8 cm², ຖ້າຮູບສາມແຈເຄິ່ງຄື A'B'C' ຖືກແຕ້ມຂຶ້ນ. ຖາມວ່າເນື້ອທີ່ລວມທັງໝົດຂອງສອງຮູບສາມແຈນີ້ແມ່ນຈັກ cm²?"}
+              {"ຮູບສາມແຈ ABC ມີເນື້ອທີ່ 8 cm², ຖ້າຮູບສາມແຈເຄິ່ງຄື A'B'C' ຖືກແຕ້ມຂຶ້ນ. ຖາມວ່າເນື້ອທີ່ລວມທັງໝົດຂອງສອງຮູບສາມແຈນີ້ແມ່ນຈັກ cm²?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ເນື້ອທີ່ລວມແມ່ນ"}</span>
@@ -236,7 +236,7 @@ export const unit13Data: UnitData = {
             {"ການເຄິ່ງຄືຂອງມຸມສາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຖ້າມຸມ ABC ແມ່ນມຸມສາກ (90°), ມຸມເຄິ່ງຄື A'B'C' ຂອງມັນ ຈະແມ່ນມຸມປະເພດໃດ? (ຕອບ ມຸມແຫຼມ, ມຸມສາກ ຫຼື ມຸມຫວາກ)"}
+            {"ຖ້າມຸມ ABC ແມ່ນມຸມສາກ (90°), ມຸມເຄິ່ງຄື A'B'C' ຂອງມັນ ຈະແມ່ນມຸມປະເພດໃດ? (ຕອບ ມຸມແຫຼມ, ມຸມສາກ ຫຼື ມຸມຫວາກ)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ແມ່ນ"}</span>
@@ -253,7 +253,7 @@ export const unit13Data: UnitData = {
             {"ການຮັກສາຄວາມຍາວຮອບຮູບ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ວົງມົນ A ມີລວງຮອບ 20 cm, ວົງມົນເຄິ່ງຄື A' ຈະມີລວງຮອບຈັກ cm?"}
+            {"ວົງມົນ A ມີລວງຮອບ 20 cm, ວົງມົນເຄິ່ງຄື A' ຈະມີລວງຮອບຈັກ cm?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ລວງຮອບແມ່ນ"}</span>

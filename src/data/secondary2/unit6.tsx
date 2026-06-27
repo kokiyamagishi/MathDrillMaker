@@ -242,7 +242,7 @@ export const unit6Data: UnitData = {
               {"ໂຈດບັນຫາກ່ຽວກັບການແລ່ນອອກກໍາລັງກາຍ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ທ້າວ ແດງ ແລ່ນໄດ້ "} <Fraction num="3" den="4" /> {" ກິໂລແມັດ. ນາງ ດຳ ແລ່ນໄດ້ "} <Fraction num="2" den="3" /> {" ກິໂລແມັດ. ຖາມວ່າທັງສອງຄົນແລ່ນລວມກັນໄດ້ທັງໝົດຈັກກິໂລແມັດ?"}
+              {"ທ້າວ ແດງ ແລ່ນໄດ້ "} <Fraction num="3" den="4" /> {" ກິໂລແມັດ. ນາງ ດຳ ແລ່ນໄດ້ "} <Fraction num="2" den="3" /> {" ກິໂລແມັດ. ຖາມວ່າທັງສອງຄົນແລ່ນລວມກັນໄດ້ທັງໝົດຈັກກິໂລແມັດ?"}
             </p>
             <div style={{ display: "flex", justifyContent: "center", margin: "8px 0" }}>
               <svg viewBox="0 0 300 80" style={{ width: "100%", maxWidth: "250px", height: "auto" }}>
@@ -270,7 +270,7 @@ export const unit6Data: UnitData = {
               {"ການຄິດໄລ່ເລກສ່ວນປະສົມສາມຕົວ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນຕໍ່ໄປນີ້: "}
+              {"ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນຕໍ່ໄປນີ້: "}
               <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
                 <Fraction num="1" den="2" /> {" + "} <Fraction num="1" den="3" /> {" - "} <Fraction num="1" den="4" />
               </span>
@@ -293,7 +293,7 @@ export const unit6Data: UnitData = {
             {"ໂຈດບັນຫາປະລິມານການຊົມໃຊ້ນ້ຳຫວານ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ມີນ້ຳຫວານຢູ່ໃນຖັງ "} <Fraction num="5" den="6" /> {" ລິດຕ໌. ນາງ ນາ ໄດ້ໃຊ້ໄປ "} <Fraction num="1" den="2" /> {" ລິດຕ໌. ຖາມວ່າຍັງເຫຼືອນ້ຳຫວານຢູ່ໃນຖັງຈັກລິດຕ໌? (ໃຫ້ຄັດຈ້ອນຜົນລົບເປັນເລກສ່ວນຂັ້ນຕ່ຳ)"}
+            {"ມີນ້ຳຫວານຢູ່ໃນຖັງ "} <Fraction num="5" den="6" /> {" ລິດຕ໌. ນາງ ນາ ໄດ້ໃຊ້ໄປ "} <Fraction num="1" den="2" /> {" ລິດຕ໌. ຖາມວ່າຍັງເຫຼືອນ້ຳຫວານຢູ່ໃນຖັງຈັກລິດຕ໌? (ໃຫ້ຄັດຈ້ອນຜົນລົບເປັນເລກສ່ວນຂັ້ນຕ່ຳ)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຍັງເຫຼືອນ້ຳຫວານ"}</span>
@@ -311,7 +311,7 @@ export const unit6Data: UnitData = {
             {"ຄິດໄລ່ຫາຄ່າ x ຈາກສົມຜົນເລກສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນເລກສ່ວນຕໍ່ໄປນີ້: "}
+            {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນເລກສ່ວນຕໍ່ໄປນີ້: "}
             <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
               {"x - "} <Fraction num="1" den="3" /> {" = "} <Fraction num="2" den="5" />
             </span>

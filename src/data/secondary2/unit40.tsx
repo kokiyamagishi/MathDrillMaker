@@ -194,7 +194,7 @@ export const unit40Data: UnitData = {
               {"ຊອກຫາຕົວປະສານທີສອງຈາກຕາຕະລາງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຖ້າ x ແລະ y ພົວພັນກົງກັນ. ຖ້າ x = 2 ➔ y = 6. ຖ້າ x = 7 ➔ y = a. ຈົ່ງຊອກຫາຄ່າຂອງ a."}
+              {"ຖ້າ x ແລະ y ພົວພັນກົງກັນ. ຖ້າ x = 2 ➔ y = 6. ຖ້າ x = 7 ➔ y = a. ຈົ່ງຊອກຫາຄ່າຂອງ a."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: a ="}</span>
@@ -211,7 +211,7 @@ export const unit40Data: UnitData = {
               {"ຊອກຫາ x ຈາກ y ໃນສົມຜົນພົວພັນກົງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈາກສົມຜົນພົວພັນກົງ y = 5x. ຖ້າ y = 35, ຄ່າຂອງ x ຈະແມ່ນເທົ່າໃດ?"}
+              {"ຈາກສົມຜົນພົວພັນກົງ y = 5x. ຖ້າ y = 35, ຄ່າຂອງ x ຈະແມ່ນເທົ່າໃດ?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x ="}</span>
@@ -231,7 +231,7 @@ export const unit40Data: UnitData = {
             {"ໂຈດບັນຫາການຊື້ປຶ້ມ (ພົວພັນກົງ): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ລາຄາປຶ້ມພົວພັນກົງກັບຈຳນວນຫົວທີ່ຊື້. ຖ້າຊື້ປຶ້ມ 3 ຫົວ ລາຄາ 15,000 ກີບ. ຖ້າຕ້ອງການຊື້ປຶ້ມ 7 ຫົວ ຈະຕ້ອງຈ່າຍເງິນທັງໝົດຈັກກີບ?"}
+            {"ລາຄາປຶ້ມພົວພັນກົງກັບຈຳນວນຫົວທີ່ຊື້. ຖ້າຊື້ປຶ້ມ 3 ຫົວ ລາຄາ 15,000 ກີບ. ຖ້າຕ້ອງການຊື້ປຶ້ມ 7 ຫົວ ຈະຕ້ອງຈ່າຍເງິນທັງໝົດຈັກກີບ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຕ້ອງຈ່າຍເງິນທັງໝົດ"}</span>
@@ -249,7 +249,7 @@ export const unit40Data: UnitData = {
             {"ໂຈດບັນຫາໄລຍະທາງ ແລະ ເວລາ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ໄລຍະທາງແລ່ນຂອງລົດຖີບພົວພັນກົງກັບເວລາ. ຖ້າລົດຖີບແລ່ນໄດ້ 120 ກິໂລແມັດ (km) ໃນເວລາ 2 ຊົ່ວໂມງ. ຖ້າແລ່ນໃນເວລາ 5 ຊົ່ວໂມງ ດ້ວຍຄວາມໄວເທົ່າເດີມ ຈະໄດ້ໄລຍະທາງຈັກ km?"}
+            {"ໄລຍະທາງແລ່ນຂອງລົດຖີບພົວພັນກົງກັບເວລາ. ຖ້າລົດຖີບແລ່ນໄດ້ 120 ກິໂລແມັດ (km) ໃນເວລາ 2 ຊົ່ວໂມງ. ຖ້າແລ່ນໃນເວລາ 5 ຊົ່ວໂມງ ດ້ວຍຄວາມໄວເທົ່າເດີມ ຈະໄດ້ໄລຍະທາງຈັກ km?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ໄດ້ໄລຍະທາງ"}</span>

@@ -202,7 +202,7 @@ export const unit39Data: UnitData = {
               {"ຊອກຫາຕົວປະສານ x ຂອງເມັດເຄິ່ງກາງ M: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຖ້າເມັດ A(2, 4) ແລະ B(6, 8) ມີເມັດເຄິ່ງກາງລະຫວ່າງພວກມັນແມ່ນ M(x, y). ຈົ່ງຊອກຫາຕົວປະສານ x ຂອງ M. (ສູດ: x_M = (x_A + x_B) / 2)"}
+              {"ຖ້າເມັດ A(2, 4) ແລະ B(6, 8) ມີເມັດເຄິ່ງກາງລະຫວ່າງພວກມັນແມ່ນ M(x, y). ຈົ່ງຊອກຫາຕົວປະສານ x ຂອງ M. (ສູດ: x_M = (x_A + x_B) / 2)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x ="}</span>
@@ -219,7 +219,7 @@ export const unit39Data: UnitData = {
               {"ຊອກຫາຕົວປະສານ y ຂອງເມັດເຄິ່ງກາງ M: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈາກເມັດ A(2, 4) ແລະ B(6, 8) ທີ່ມີເມັດເຄິ່ງກາງ M(x, y). ຈົ່ງຊອກຫາຕົວປະສານ y ຂອງ M. (ສູດ: y_M = (y_A + y_B) / 2)"}
+              {"ຈາກເມັດ A(2, 4) ແລະ B(6, 8) ທີ່ມີເມັດເຄິ່ງກາງ M(x, y). ຈົ່ງຊອກຫາຕົວປະສານ y ຂອງ M. (ສູດ: y_M = (y_A + y_B) / 2)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: y ="}</span>
@@ -239,7 +239,7 @@ export const unit39Data: UnitData = {
             {"ຄິດໄລ່ໄລຍະຫ່າງເທິງແກນ Ox: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຖ້າເມັດ A(3, 0) ແລະ B(9, 0) ຕັ້ງຢູ່ເທິງແກນ Ox. ຈົ່ງຊອກຫາໄລຍະຫ່າງ AB ລະຫວ່າງສອງເມັດນີ້."}
+            {"ຖ້າເມັດ A(3, 0) ແລະ B(9, 0) ຕັ້ງຢູ່ເທິງແກນ Ox. ຈົ່ງຊອກຫາໄລຍະຫ່າງ AB ລະຫວ່າງສອງເມັດນີ້."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ໄລຍະຫ່າງແມ່ນ"}</span>
@@ -257,7 +257,7 @@ export const unit39Data: UnitData = {
             {"ຄິດໄລ່ໄລຍະຫ່າງເທິງແກນ Oy: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຖ້າເມັດ C(0, 5) ແລະ D(0, -2) ຕັ້ງຢູ່ເທິງແກນ Oy. ຈົ່ງຊອກຫາໄລຍະຫ່າງ CD ລະຫວ່າງສອງເມັດນີ້."}
+            {"ຖ້າເມັດ C(0, 5) ແລະ D(0, -2) ຕັ້ງຢູ່ເທິງແກນ Oy. ຈົ່ງຊອກຫາໄລຍະຫ່າງ CD ລະຫວ່າງສອງເມັດນີ້."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ໄລຍະຫ່າງແມ່ນ"}</span>

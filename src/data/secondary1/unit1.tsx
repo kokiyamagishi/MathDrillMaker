@@ -224,7 +224,7 @@ export const unit1Data: UnitData = {
               {"ໂຈດຊອກຫາຄ່າສູງສຸດ ແລະ ຕ່ຳສຸດ: "}<span className="point-label">{"(5 ຄະແນນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ມີບັດຕົວເລກ 5 ໃບຄື: "}<strong>{"3, 1, 0, 0, 2"}</strong>
+              {"ມີບັດຕົວເລກ 5 ໃບຄື: "}<strong>{"3, 1, 0, 0, 2"}</strong>
               {". ຈົ່ງນຳໃຊ້ບັດທັງໝົດນີ້ຂຽນເປັນຈຳນວນທີ່ມີ 5 ຕົວເລກ ທີ່ມີຄ່າສູງສຸດ ແລະ ຈຳນວນທີ່ມີຄ່າຕ່ຳສຸດ (ໂດຍບໍ່ໃຫ້ເລກ 0 ຢູ່ທາງໜ້າຫຼັກທີ່ໃຫຍ່ທີ່ສຸດ)."}
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
@@ -248,7 +248,7 @@ export const unit1Data: UnitData = {
               {"ໂຈດການຂອບຂັ້ນຈຳນວນທຳມະຊາດ: "}<span className="point-label">{"(5 ຄະແນນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຂອບຂັ້ນຈຳນວນ "}<strong>{"85 243"}</strong>{" ດ້ວຍຄ່າໃກ້ຄຽງຫຼຸດ ແລະ ຄ່າໃກ້ຄຽງລື່ນຢູ່ຫຼັກສິບ ແລະ ຫຼັກຮ້ອຍ ໃຫ້ຖືກຕ້ອງ:"}
+              {"ຈົ່ງຂອບຂັ້ນຈຳນວນ "}<strong>{"85 243"}</strong>{" ດ້ວຍຄ່າໃກ້ຄຽງຫຼຸດ ແລະ ຄ່າໃກ້ຄຽງລື່ນຢູ່ຫຼັກສິບ ແລະ ຫຼັກຮ້ອຍ ໃຫ້ຖືກຕ້ອງ:"}
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
@@ -278,7 +278,7 @@ export const unit1Data: UnitData = {
             {"ການອ່ານ ແລະ ຂຽນຈຳນວນທຳມະຊາດຂະໜາດໃຫຍ່: "}<span className="point-label">{"(5 ຄະແນນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງອ່ານຈຳນວນຖ້ວນ "}<strong>{"12 045 237 086"}</strong>{" ເປັນຕົວອັກສອນແນວໃດ? ຈົ່ງຕື່ມໃສ່ບ່ອນວ່າງລຸ່ມນີ້ໃຫ້ສົມບູນ:"}
+            {"ຈົ່ງອ່ານຈຳນວນຖ້ວນ "}<strong>{"12 045 237 086"}</strong>{" ເປັນຕົວອັກສອນແນວໃດ? ຈົ່ງຕື່ມໃສ່ບ່ອນວ່າງລຸ່ມນີ້ໃຫ້ສົມບູນ:"}
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
             <span>{"- ອ່ານວ່າ: ສິບສອງຕື້ ສີ່ສິບຫ້າລ້ານ ສອງແສນສາມສິບເຈັດພັນ ..."}</span>
@@ -298,7 +298,7 @@ export const unit1Data: UnitData = {
             {"ການປຽບທຽບເລກໂຣແມັງ: "}<span className="point-label">{"(5 ຄະແນນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຕື່ມເຄື່ອງໝາຍ <, > ຫຼື = ໃສ່ບ່ອນວ່າງລະຫວ່າງເລກໂຣແມັງຕໍ່ໄປນີ້:"}
+            {"ຈົ່ງຕື່ມເຄື່ອງໝາຍ <, > ຫຼື = ໃສ່ບ່ອນວ່າງລະຫວ່າງເລກໂຣແມັງຕໍ່ໄປນີ້:"}
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "8px 0" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>

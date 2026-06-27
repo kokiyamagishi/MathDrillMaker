@@ -228,7 +228,7 @@ export const unit5Data: UnitData = {
               {"ໂຈດບັນຫາການແບ່ງປັນນ້ຳຫວານ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ທ້າວ ສິດ ມີນ້ຳຫວານຢູ່ "} <Fraction num="5" den="8" /> {" ຂອງຂວດ, ລາວດື່ມໄປ "} <Fraction num="2" den="8" /> {" ຂອງຂວດ. ຫຼັງຈາກນັ້ນ ນາງ ນາ ໄດ້ເອົານ້ຳຫວານມາເທໃສ່ຕື່ມອີກ "} <Fraction num="4" den="8" /> {" ຂອງຂວດ. ຖາມວ່າມີນ້ຳຫວານຢູ່ໃນຂວດທັງໝົດເທົ່າໃດ?"}
+              {"ທ້າວ ສິດ ມີນ້ຳຫວານຢູ່ "} <Fraction num="5" den="8" /> {" ຂອງຂວດ, ລາວດື່ມໄປ "} <Fraction num="2" den="8" /> {" ຂອງຂວດ. ຫຼັງຈາກນັ້ນ ນາງ ນາ ໄດ້ເອົານ້ຳຫວານມາເທໃສ່ຕື່ມອີກ "} <Fraction num="4" den="8" /> {" ຂອງຂວດ. ຖາມວ່າມີນ້ຳຫວານຢູ່ໃນຂວດທັງໝົດເທົ່າໃດ?"}
             </p>
             <div style={{ display: "flex", justifyContent: "center", margin: "8px 0" }}>
               <svg viewBox="0 0 80 100" style={{ width: "100%", maxWidth: "80px", height: "auto" }}>
@@ -255,7 +255,7 @@ export const unit5Data: UnitData = {
               {"ການຄິດໄລ່ສາມເລກສ່ວນຕໍ່ເນື່ອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນຕໍ່ໄປນີ້: "}
+              {"ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນຕໍ່ໄປນີ້: "}
               <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
                 <Fraction num="13" den="15" /> {" - "} <Fraction num="7" den="15" /> {" + "} <Fraction num="2" den="15" />
               </span>
@@ -278,7 +278,7 @@ export const unit5Data: UnitData = {
             {"ໂຈດບັນຫາການປູກຝັກໃນສວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ນາງ ນາ ແບ່ງເນື້ອທີ່ດິນໃນສວນອອກເປັນ 12 ສ່ວນເທົ່າກັນ. ລາວປູກຜັກຫອມ "} <Fraction num="5" den="12" /> {" ຂອງສວນ, ປູກຜັກກາດ "} <Fraction num="4" den="12" /> {" ຂອງສວນ. ເນື້ອທີ່ດິນສ່ວນທີ່ເຫຼືອແມ່ນປູກໝາກເຂືອ. ຖາມວ່າເນື້ອທີ່ປູກໝາກເຂືອຄິດເປັນອັດຕາສ່ວນເທົ່າໃດ?"}
+            {"ນາງ ນາ ແບ່ງເນື້ອທີ່ດິນໃນສວນອອກເປັນ 12 ສ່ວນເທົ່າກັນ. ລາວປູກຜັກຫອມ "} <Fraction num="5" den="12" /> {" ຂອງສວນ, ປູກຜັກກາດ "} <Fraction num="4" den="12" /> {" ຂອງສວນ. ເນື້ອທີ່ດິນສ່ວນທີ່ເຫຼືອແມ່ນປູກໝາກເຂືອ. ຖາມວ່າເນື້ອທີ່ປູກໝາກເຂືອຄິດເປັນອັດຕາສ່ວນເທົ່າໃດ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ເນື້ອທີ່ປູກໝາກເຂືອແມ່ນ"}</span>
@@ -296,7 +296,7 @@ export const unit5Data: UnitData = {
             {"ຄິດໄລ່ຫາຄ່າ x ຈາກສົມຜົນເລກສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນເລກສ່ວນຕໍ່ໄປນີ້: "}
+            {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນເລກສ່ວນຕໍ່ໄປນີ້: "}
             <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
               {"x + "} <Fraction num="3" den="10" /> {" = "} <Fraction num="9" den="10" />
             </span>

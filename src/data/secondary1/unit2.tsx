@@ -205,7 +205,7 @@ export const unit2Data: UnitData = {
               {"ໂຈດບັນຫາປຽບທຽບອຸນຫະພູມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຢູ່ເມືອງໜຶ່ງ, ອຸນຫະພູມໃນຕອນເຊົ້າແມ່ນ "}<strong>{"-5°C"}</strong>{" ແລະ ຕອນທ່ຽງແມ່ນ "}<strong>{"+2°C"}</strong>
+              {"ຢູ່ເມືອງໜຶ່ງ, ອຸນຫະພູມໃນຕອນເຊົ້າແມ່ນ "}<strong>{"-5°C"}</strong>{" ແລະ ຕອນທ່ຽງແມ່ນ "}<strong>{"+2°C"}</strong>
               {". ຖາມວ່າອຸນຫະພູມໃນຕອນທ່ຽງຫຼາຍກວ່າຕອນເຊົ້າຈັກອົງສາເຊ?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
@@ -224,7 +224,7 @@ export const unit2Data: UnitData = {
               {"ໂຈດຊອກຫາໄລຍະຫ່າງລະຫວ່າງສອງຈຸດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຢູ່ເທິງແກນຈຳນວນ, ຈຸດ A ມີອັບຊິດແມ່ນ "}<strong>{"-7"}</strong>{" ແລະ ຈຸດ B ມີອັບຊິດແມ່ນ "}<strong>{"+3"}</strong>
+              {"ຢູ່ເທິງແກນຈຳນວນ, ຈຸດ A ມີອັບຊິດແມ່ນ "}<strong>{"-7"}</strong>{" ແລະ ຈຸດ B ມີອັບຊິດແມ່ນ "}<strong>{"+3"}</strong>
               {". ຈົ່ງຊອກຫາໄລຍະຫ່າງລະຫວ່າງຈຸດ A ແລະ B ມີຈັກຫົວໜ່ວຍ?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
@@ -246,7 +246,7 @@ export const unit2Data: UnitData = {
             {"ໂຈດບັນຫາລາຍຮັບ-ລາຍຈ່າຍ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຮ້ານຄ້າແຫ່ງໜຶ່ງບັນທຶກຜົນໄດ້ຮັບເປັນເງິນກີບ: ວັນຈັນ ໄດ້ກຳໄລ 500,000 ກີບ, ວັນອັງຄານ ຂາດທຶນ 120,000 ກີບ, ວັນພຸດ ຂາດທຶນ 80,000 ກີບ. ຈົ່ງຂຽນຈຳນວນຖ້ວນສະແດງຜົນໄດ້ຮັບຂອງວັນອັງຄານ ແລະ ວັນພຸດ ຕາມລຳດັບ:"}
+            {"ຮ້ານຄ້າແຫ່ງໜຶ່ງບັນທຶກຜົນໄດ້ຮັບເປັນເງິນກີບ: ວັນຈັນ ໄດ້ກຳໄລ 500,000 ກີບ, ວັນອັງຄານ ຂາດທຶນ 120,000 ກີບ, ວັນພຸດ ຂາດທຶນ 80,000 ກີບ. ຈົ່ງຂຽນຈຳນວນຖ້ວນສະແດງຜົນໄດ້ຮັບຂອງວັນອັງຄານ ແລະ ວັນພຸດ ຕາມລຳດັບ:"}
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
@@ -271,7 +271,7 @@ export const unit2Data: UnitData = {
             {"ການປຽບທຽບ ແລະ ຊອກຫາຈຳນວນຖ້ວນທີ່ເໝາະສົມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຊອກຫາຈຳນວນຖ້ວນ x ທັງໝົດທີ່ຕອບສະໜອງເງື່ອນໄຂ: "}<strong>{" -3 < x ≤ +2 "}</strong>
+            {"ຈົ່ງຊອກຫາຈຳນວນຖ້ວນ x ທັງໝົດທີ່ຕອບສະໜອງເງື່ອນໄຂ: "}<strong>{" -3 < x ≤ +2 "}</strong>
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: x ປະກອບມີ"}</span>

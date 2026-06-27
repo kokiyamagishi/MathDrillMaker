@@ -124,7 +124,7 @@ export const unit23Data: UnitData = {
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                  <span>{"(1) ມີສອງຮາກຕ່າງເຄື່ອງໝາຍກັນ (ຮາກບວກໜຶ່ງ, ຮາກລົບໜຶ່ງ) ⇒ ຕ້ອງມີ P = 2m - 5 < 0 ⇒ m <"}</span>
+                  <span>{"ມີສອງຮາກຕ່າງເຄື່ອງໝາຍກັນ (ຮາກບວກໜຶ່ງ, ຮາກລົບໜຶ່ງ) ⇒ ຕ້ອງມີ P = 2m - 5 < 0 ⇒ m <"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>

@@ -196,7 +196,7 @@ export const unit17Data: UnitData = {
               {"ການຄິດໄລ່ຄ່າສຳນວນເລກສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນຕໍ່ໄປນີ້ ເມື່ອ x = 6 ແລະ y = 3: "}
+              {"ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນຕໍ່ໄປນີ້ ເມື່ອ x = 6 ແລະ y = 3: "}
               <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
                 <Fraction num="x + y" den="3" /> {" + xy"}
               </span>
@@ -216,7 +216,7 @@ export const unit17Data: UnitData = {
               {"ໂຈດບັນຫາສ້າງສຳນວນເລກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ມີຮູບສີ່ແຈສາກໜຶ່ງທີ່ມີລວງຍາວ x = 8 cm ແລະ ລວງກວ້າງ y = 5 cm. ສຳນວນເນື້ອທີ່ແມ່ນ S = xy. ຈົ່ງຄິດໄລ່ເນື້ອທີ່ S ຂອງຮູບນີ້"}
+              {"ມີຮູບສີ່ແຈສາກໜຶ່ງທີ່ມີລວງຍາວ x = 8 cm ແລະ ລວງກວ້າງ y = 5 cm. ສຳນວນເນື້ອທີ່ແມ່ນ S = xy. ຈົ່ງຄິດໄລ່ເນື້ອທີ່ S ຂອງຮູບນີ້"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: S ="}</span>
@@ -237,7 +237,7 @@ export const unit17Data: UnitData = {
             {"ໂຈດບັນຫາລວງຮອບຮູບສີ່ແຈສາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ລວງຮອບຂອງຮູບສີ່ແຈສາກແມ່ນກຳນົດດ້ວຍສຳນວນ P = 2(a + b). ຖ້າ a = 12 cm ແລະ b = 8 cm, ຈົ່ງຄິດໄລ່ P"}
+            {"ລວງຮອບຂອງຮູບສີ່ແຈສາກແມ່ນກຳນົດດ້ວຍສຳນວນ P = 2(a + b). ຖ້າ a = 12 cm ແລະ b = 8 cm, ຈົ່ງຄິດໄລ່ P"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: P ="}</span>
@@ -255,7 +255,7 @@ export const unit17Data: UnitData = {
             {"ຄຳຖາມທົດສອບຄ່າຂອງສຳນວນກຳລັງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຖ້າ a = -3, ຄ່າຂອງສຳນວນ a² - 3a ແມ່ນເທົ່າໃດ?"}
+            {"ຖ້າ a = -3, ຄ່າຂອງສຳນວນ a² - 3a ແມ່ນເທົ່າໃດ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ແມ່ນ"}</span>

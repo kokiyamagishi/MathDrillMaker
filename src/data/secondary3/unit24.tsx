@@ -219,7 +219,7 @@ export const unit24Data: UnitData = {
               {"ເນື້ອທີ່ຂອງຮູບສີ່ແຈເກີດຈາກສອງເສັ້ນສຳຜັດ (Area of Tangent Quadrilateral): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ເສັ້ນສຳຜັດ PA ແລະ PB ຖືກຂີດຈາກເມັດ P ຫາວົງມົນໃຈກາງ O. ຖ້າຫາກ "} <span className="math">{"OP = 10 cm"}</span> {" ແລະ ລັດສະໝີ "} <span className="math">{"OA = 6 cm"}</span> {". ຈົ່ງຄິດໄລ່ເນື້ອທີ່ຂອງຮູບສີ່ແຈ AOBP."}
+              {"ເສັ້ນສຳຜັດ PA ແລະ PB ຖືກຂີດຈາກເມັດ P ຫາວົງມົນໃຈກາງ O. ຖ້າຫາກ "} <span className="math">{"OP = 10 cm"}</span> {" ແລະ ລັດສະໝີ "} <span className="math">{"OA = 6 cm"}</span> {". ຈົ່ງຄິດໄລ່ເນື້ອທີ່ຂອງຮູບສີ່ແຈ AOBP."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ເນື້ອທີ່ຮູບສີ່ແຈ AOBP ແມ່ນ"}</span>
@@ -258,7 +258,7 @@ export const unit24Data: UnitData = {
             {"ໂຈດຊອກຫາລັດສະໝີ R ຂອງວົງມົນ (Finding Circle Radius R): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ເມັດ P ຢູ່ຫ່າງຈາກໃຈກາງວົງມົນແມ່ນ 25 cm. ຄວາມຍາວຂອງທ່ອນສຳຜັດຈາກ P ຫາວົງມົນແມ່ນ 24 cm. ຈົ່ງຊອກຫາລັດສະໝີ R ຂອງວົງມົນນີ້."}
+            {"ເມັດ P ຢູ່ຫ່າງຈາກໃຈກາງວົງມົນແມ່ນ 25 cm. ຄວາມຍາວຂອງທ່ອນສຳຜັດຈາກ P ຫາວົງມົນແມ່ນ 24 cm. ຈົ່ງຊອກຫາລັດສະໝີ R ຂອງວົງມົນນີ້."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ລັດສະໝີ R ແມ່ນ"}</span>

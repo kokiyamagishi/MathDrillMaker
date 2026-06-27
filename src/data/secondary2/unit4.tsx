@@ -268,7 +268,7 @@ export const unit4Data: UnitData = {
               {"ໂຈດບັນຫາການແບ່ງເຄັກວັນເກີດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ໃນງານລ້ຽງວັນເກີດ, ທ້າວ ສິດ ກິນເຄັກໄປ "} <Fraction num="2" den="5" /> {" ຂອງເຄັກທັງໝົດ, ນາງ ນາ ກິນໄປ "} <Fraction num="3" den="8" /> {" ຂອງເຄັກທັງໝົດ, ແລະ ທ້າວ ພອນ ກິນໄປ "} <Fraction num="1" den="4" /> {" ຂອງເຄັກທັງໝົດ. ຖາມວ່າໃຜກິນເຄັກຫຼາຍທີ່ສຸດ?"}
+              {"ໃນງານລ້ຽງວັນເກີດ, ທ້າວ ສິດ ກິນເຄັກໄປ "} <Fraction num="2" den="5" /> {" ຂອງເຄັກທັງໝົດ, ນາງ ນາ ກິນໄປ "} <Fraction num="3" den="8" /> {" ຂອງເຄັກທັງໝົດ, ແລະ ທ້າວ ພອນ ກິນໄປ "} <Fraction num="1" den="4" /> {" ຂອງເຄັກທັງໝົດ. ຖາມວ່າໃຜກິນເຄັກຫຼາຍທີ່ສຸດ?"}
             </p>
             <div style={{ display: "flex", justifyContent: "center", margin: "8px 0" }}>
               {/* Visual Cake sectors representation */}
@@ -298,7 +298,7 @@ export const unit4Data: UnitData = {
               {"การຈັດລຽງລໍາດັບເລກສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຈັດລຽງເລກສ່ວນຕໍ່ໄປນີ້ຈາກ "}<strong>{"ໜ້ອຍຫາຫຼາຍ"}</strong>{": "}
+              {"ຈົ່ງຈັດລຽງເລກສ່ວນຕໍ່ໄປນີ້ຈາກ "}<strong>{"ໜ້ອຍຫາຫຼາຍ"}</strong>{": "}
               <span className="math" style={{ display: "inline-flex", alignItems: "center", margin: "0 6px" }}>
                 <Fraction num="2" den="3" /> {", "} <Fraction num="3" den="5" /> {", "} <Fraction num="1" den="2" />
               </span>
@@ -325,7 +325,7 @@ export const unit4Data: UnitData = {
             {"ການສົມທຽບລາຄາສິນຄ້າ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ປຶ້ມສາມຫົວທີ່ມີລາຄາທີ່ແຕກຕ່າງກັນ. ປຶ້ມຫົວ A ຫຼຸດລາຄາໄປ "} <Fraction num="1" den="3" /> {" ຂອງລາຄາເກົ່າ, ປຶ້ມຫົວ B ຫຼຸດລາຄາໄປ "} <Fraction num="2" den="5" /> {" ຂອງລາຄາເກົ່າ, ແລະ ປຶ້ມຫົວ C ຫຼຸດລາຄາໄປ "} <Fraction num="3" den="8" /> {" ຂອງລາຄາເກົ່າ. ຖາມວ່າປຶ້ມຫົວໃດຫຼຸດລາຄາຫຼາຍທີ່ສຸດ?"}
+            {"ປຶ້ມສາມຫົວທີ່ມີລາຄາທີ່ແຕກຕ່າງກັນ. ປຶ້ມຫົວ A ຫຼຸດລາຄາໄປ "} <Fraction num="1" den="3" /> {" ຂອງລາຄາເກົ່າ, ປຶ້ມຫົວ B ຫຼຸດລາຄາໄປ "} <Fraction num="2" den="5" /> {" ຂອງລາຄາເກົ່າ, ແລະ ປຶ້ມຫົວ C ຫຼຸດລາຄາໄປ "} <Fraction num="3" den="8" /> {" ຂອງລາຄາເກົ່າ. ຖາມວ່າປຶ້ມຫົວໃດຫຼຸດລາຄາຫຼາຍທີ່ສຸດ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ປຶ້ມຫົວທີ່ຫຼຸດລາຄາຫຼາຍທີ່ສຸດແມ່ນ"}</span>
@@ -342,7 +342,7 @@ export const unit4Data: UnitData = {
             {"ສົມທຽບໄລຍະທາງແລ່ນມາລາທອນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ท້າວ ແດງ ແລ່ນໄດ້ "} <Fraction num="5" den="6" /> {" ຂອງໄລຍະທາງທັງໝົດ, ນາງ ດຳ ແລ່ນໄດ້ "} <Fraction num="4" den="5" /> {" ຂອງໄລຍະທາງທັງໝົດ. ຖາມວ່າໃຜແລ່ນໄດ້ໄລຍະທາງໄກກວ່າ?"}
+            {"ท້າວ ແດງ ແລ່ນໄດ້ "} <Fraction num="5" den="6" /> {" ຂອງໄລຍະທາງທັງໝົດ, ນາງ ດຳ ແລ່ນໄດ້ "} <Fraction num="4" den="5" /> {" ຂອງໄລຍະທາງທັງໝົດ. ຖາມວ່າໃຜແລ່ນໄດ້ໄລຍະທາງໄກກວ່າ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຜູ້ທີ່ແລ່ນໄດ້ໄກກວ່າແມ່ນ"}</span>

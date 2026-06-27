@@ -214,7 +214,7 @@ export const unit23Data: UnitData = {
               {"ການແກ້ສົມຜົນສອງຂັ້ນຕອນທີ່ມີຕົວລົບ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຊອກຫາຂອບເຂດ x ຈາກອະສົມຜົນ "} <span className="math">{"-3x + 5 < 17"}</span> {" ໂດຍການຍ້າຍ 5 ໄປລົບກ່ອນ ແລ້ວຈຶ່ງຫານດ້ວຍ -3"}
+              {"ຈົ່ງຊອກຫາຂອບເຂດ x ຈາກອະສົມຜົນ "} <span className="math">{"-3x + 5 < 17"}</span> {" ໂດຍການຍ້າຍ 5 ໄປລົບກ່ອນ ແລ້ວຈຶ່ງຫານດ້ວຍ -3"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x >"}</span>
@@ -231,7 +231,7 @@ export const unit23Data: UnitData = {
               {"ການປຽບທຽບສອງສຳນວນອະສົມຜົນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຊອກຫາຂອບເຂດຂອງ x ທີ່ເຮັດໃຫ້ສຳນວນ 4x - 3 ມີຄ່າຫຼາຍກວ່າ ສຳນວນ 2x + 5. (ສົມຜົນ: 4x - 3 > 2x + 5)"}
+              {"ຈົ່ງຊອກຫາຂອບເຂດຂອງ x ທີ່ເຮັດໃຫ້ສຳນວນ 4x - 3 ມີຄ່າຫຼາຍກວ່າ ສຳນວນ 2x + 5. (ສົມຜົນ: 4x - 3 > 2x + 5)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x >"}</span>
@@ -251,7 +251,7 @@ export const unit23Data: UnitData = {
             {"ໂຈດບັນຫາຂອບເຂດຄະແນນເສັງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຖ້າເສັງ 3 ວິຊາ ຕ້ອງໄດ້ຄະແນນສະເລ່ຍຫຼາຍກວ່າ ຫຼື ເທົ່າກັບ 7 ຄະແນນ. ສອງວິຊາທຳອິດໄດ້ 8 ແລະ 6 ຄະແນນ. ຖ້າສົມຜົນແມ່ນ (8 + 6 + x)/3 ≥ 7. ວິຊາທີສາມ x ຕ້ອງໄດ້ຢ່າງໜ້ອຍຈັກຄະແນນ?"}
+            {"ຖ້າເສັງ 3 ວິຊາ ຕ້ອງໄດ້ຄະແນນສະເລ່ຍຫຼາຍກວ່າ ຫຼື ເທົ່າກັບ 7 ຄະແນນ. ສອງວິຊາທຳອິດໄດ້ 8 ແລະ 6 ຄະແນນ. ຖ້າສົມຜົນແມ່ນ (8 + 6 + x)/3 ≥ 7. ວິຊາທີສາມ x ຕ້ອງໄດ້ຢ່າງໜ້ອຍຈັກຄະແນນ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: x ≥"}</span>
@@ -268,7 +268,7 @@ export const unit23Data: UnitData = {
             {"ຄັດຈ້ອນອະສົມຜົນຕົວຄູນເລກສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຊອກຫາຂອບເຂດຂອງ x ຈາກອະສົມຜົນຕໍ່ໄປນີ້: -3/4 x < 9"}
+            {"ຈົ່ງຊອກຫາຂອບເຂດຂອງ x ຈາກອະສົມຜົນຕໍ່ໄປນີ້: -3/4 x < 9"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: x >"}</span>

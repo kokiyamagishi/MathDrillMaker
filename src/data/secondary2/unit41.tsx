@@ -188,7 +188,7 @@ export const unit41Data: UnitData = {
               {"ຊອກຫາຕົວປະສານຈາກຕາຕະລາງພົວພັນປີ້ນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຖ້າ x ແລະ y ພົວພັນປີ້ນກັນ. ຖ້າ x = 3 ➔ y = 8. ຖ້າ x = 6 ➔ y = a. ຈົ່ງຊອກຫາຄ່າຂອງ a. (3 × 8 = 6 × a)"}
+              {"ຖ້າ x ແລະ y ພົວພັນປີ້ນກັນ. ຖ້າ x = 3 ➔ y = 8. ຖ້າ x = 6 ➔ y = a. ຈົ່ງຊອກຫາຄ່າຂອງ a. (3 × 8 = 6 × a)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: a ="}</span>
@@ -205,7 +205,7 @@ export const unit41Data: UnitData = {
               {"ຊອກຫາ x ຈາກ y ໃນສົມຜົນພົວພັນປີ້ນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈາກສົມຜົນພົວພັນປີ້ນ xy = 48. ຖ້າ y = 12, ຄ່າຂອງ x ຈະແມ່ນເທົ່າໃດ?"}
+              {"ຈາກສົມຜົນພົວພັນປີ້ນ xy = 48. ຖ້າ y = 12, ຄ່າຂອງ x ຈະແມ່ນເທົ່າໃດ?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x ="}</span>
@@ -225,7 +225,7 @@ export const unit41Data: UnitData = {
             {"ໂຈດບັນຫາການແບ່ງປັນເຂົ້າໜົມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈຳນວນເດັກນ້ອຍ (x) ແລະ ເຂົ້າໜົມທີ່ແຕ່ລະຄົນໄດ້ຮັບ (y) ພົວພັນປີ້ນກັນ. ຖ້າມີເດັກນ້ອຍ 4 ຄົນ, ແຕ່ລະຄົນຈະໄດ້ຮັບເຂົ້າໜົມ 6 ຕອນ. ຖ້າມີເດັກນ້ອຍ 8 ຄົນ, ແຕ່ລະຄົນຈະໄດ້ຮັບເຂົ້າໜົມຈັກຕອນ?"}
+            {"ຈຳນວນເດັກນ້ອຍ (x) ແລະ ເຂົ້າໜົມທີ່ແຕ່ລະຄົນໄດ້ຮັບ (y) ພົວພັນປີ້ນກັນ. ຖ້າມີເດັກນ້ອຍ 4 ຄົນ, ແຕ່ລະຄົນຈະໄດ້ຮັບເຂົ້າໜົມ 6 ຕອນ. ຖ້າມີເດັກນ້ອຍ 8 ຄົນ, ແຕ່ລະຄົນຈະໄດ້ຮັບເຂົ້າໜົມຈັກຕອນ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ໄດ້ຮັບຄົນລະ"}</span>
@@ -243,7 +243,7 @@ export const unit41Data: UnitData = {
             {"ໂຈດບັນຫາຄວາມໄວ ແລະ ເວລາ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ເວລາເດີນທາງ (y) ພົວພັນປີ້ນກັບຄວາມໄວຂອງລົດ (x). ຖ້າຂີ່ລົດດ້ວຍຄວາມໄວ 60 km/h ຈະໃຊ້ເວລາ 2 ຊົ່ວໂມງ. ຖ້າຂີ່ດ້ວຍຄວາມໄວ 80 km/h ຈະໃຊ້ເວລາຈັກຊົ່ວໂມງ? (ຕອບເປັນທົດສະນິຍົມ)"}
+            {"ເວລາເດີນທາງ (y) ພົວພັນປີ້ນກັບຄວາມໄວຂອງລົດ (x). ຖ້າຂີ່ລົດດ້ວຍຄວາມໄວ 60 km/h ຈະໃຊ້ເວລາ 2 ຊົ່ວໂມງ. ຖ້າຂີ່ດ້ວຍຄວາມໄວ 80 km/h ຈະໃຊ້ເວລາຈັກຊົ່ວໂມງ? (ຕອບເປັນທົດສະນິຍົມ)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ໃຊ້ເວລາ"}</span>

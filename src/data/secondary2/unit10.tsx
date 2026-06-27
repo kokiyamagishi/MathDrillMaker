@@ -231,7 +231,7 @@ export const unit10Data: UnitData = {
               {"ການຄິດໄລ່ສຳນວນຊ້ອນກັນຫຼາຍຊັ້ນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນຕໍ່ໄປນີ້: "}
+              {"ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນຕໍ່ໄປນີ້: "}
               <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
                 {"[("} <Fraction num="1" den="2" /> {" + "} <Fraction num="1" den="4" /> {") × 8] - "} <Fraction num="3" den="2" />
               </span>
@@ -251,7 +251,7 @@ export const unit10Data: UnitData = {
               {"ໂຈດບັນຫາການແບ່ງປັນເນື້ອທີ່ດິນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ລຸງມີດິນທັງໝົດ "} {"120"} {" ຕາແມັດ. ລາວໄດ້ແບ່ງໃຫ້ລູກຊາຍ "} <Fraction num="1" den="3" /> {" ຂອງເນື້ອທີ່ທັງໝົດ, ແລະ ແບ່ງໃຫ້ລູກສາວ "} <Fraction num="1" den="4" /> {" ຂອງເນື້ອທີ່ທັງໝົດ. ຖາມວ່າຍັງເຫຼືອເນື້ອທີ່ດິນຈັກຕາແມັດ?"}
+              {"ລຸງມີດິນທັງໝົດ "} {"120"} {" ຕາແມັດ. ລາວໄດ້ແບ່ງໃຫ້ລູກຊາຍ "} <Fraction num="1" den="3" /> {" ຂອງເນື້ອທີ່ທັງໝົດ, ແລະ ແບ່ງໃຫ້ລູກສາວ "} <Fraction num="1" den="4" /> {" ຂອງເນື້ອທີ່ທັງໝົດ. ຖາມວ່າຍັງເຫຼືອເນື້ອທີ່ດິນຈັກຕາແມັດ?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ເນື້ອທີ່ດິນທີ່ຍັງເຫຼືອແມ່ນ"}</span>
@@ -272,7 +272,7 @@ export const unit10Data: UnitData = {
             {"ໂຈດບັນຫາການຊື້ປຶ້ມຂຽນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ທ້າວ ແດງ ມີເງິນທັງໝົດ 50,000 ກີບ, ລາວໄດ້ໃຊ້ຊື້ປຶ້ມຂຽນໄປ "} <Fraction num="2" den="5" /> {" ຂອງເງິນທັງໝົດ ແລະ ຊື້ບິກຂຽນໄປ "} <Fraction num="1" den="10" /> {" ຂອງເງິນທັງໝົດ. ຖາມວ່າລາວຍັງເຫຼືອເງິນຈັກກີບ?"}
+            {"ທ້າວ ແດງ ມີເງິນທັງໝົດ 50,000 ກີບ, ລາວໄດ້ໃຊ້ຊື້ປຶ້ມຂຽນໄປ "} <Fraction num="2" den="5" /> {" ຂອງເງິນທັງໝົດ ແລະ ຊື້ບິກຂຽນໄປ "} <Fraction num="1" den="10" /> {" ຂອງເງິນທັງໝົດ. ຖາມວ່າລາວຍັງເຫຼືອເງິນຈັກກີບ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຍັງເຫຼືອເງິນ"}</span>
@@ -290,7 +290,7 @@ export const unit10Data: UnitData = {
             {"ຄິດໄລ່ຫາຄ່າ x ຈາກການປະສົມຄູນລົບ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນຕໍ່ໄປນີ້: "}
+            {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນຕໍ່ໄປນີ້: "}
             <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
               {"3 × x - "} <Fraction num="1" den="2" /> {" = "} <Fraction num="5" den="2" />
             </span>

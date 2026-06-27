@@ -220,7 +220,7 @@ export const unit21Data: UnitData = {
               {"ການຊອກຫາຄວາມຖີ່ທຽບຖານຈາກການສຳຫຼວດ (Relative Frequency Calculation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈາກການສຳຫຼວດວິຊາຮຽນທີ່ນັກຮຽນ 50 ຄົນມັກ, ພົບວ່ານັກຮຽນມັກວິຊາຄະນິດສາດມີ 15 ຄົນ. ຈົ່ງຊອກຫາຄວາມຖີ່ທຽບຖານ (ເປັນເລກທົດສະນິຍົມ) ຂອງວິຊາຄະນິດສາດ."}
+              {"ຈາກການສຳຫຼວດວິຊາຮຽນທີ່ນັກຮຽນ 50 ຄົນມັກ, ພົບວ່ານັກຮຽນມັກວິຊາຄະນິດສາດມີ 15 ຄົນ. ຈົ່ງຊອກຫາຄວາມຖີ່ທຽບຖານ (ເປັນເລກທົດສະນິຍົມ) ຂອງວິຊາຄະນິດສາດ."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຄວາມຖີ່ທຽບຖານແມ່ນ"}</span>
@@ -257,7 +257,7 @@ export const unit21Data: UnitData = {
             {"ໂຈດເປີເຊັນຂອງນັກຮຽນທີ່ໄດ້ເກຣດ A (Grade A Percentage Calculation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ໃນຫ້ອງຮຽນທີ່ມີນັກຮຽນ 30 ຄົນ, ມີນັກຮຽນ 6 ຄົນທີ່ໄດ້ເກຣດ A ວິຊາຄະນິດສາດ. ຈົ່ງຊອກຫາເປີເຊັນ (%) ຂອງນັກຮຽນທີ່ໄດ້ເກຣດ A ໃນຫ້ອງຮຽນນີ້. (ຕອບສະເພາະຕົວເລກ)"}
+            {"ໃນຫ້ອງຮຽນທີ່ມີນັກຮຽນ 30 ຄົນ, ມີນັກຮຽນ 6 ຄົນທີ່ໄດ້ເກຣດ A ວິຊາຄະນິດສາດ. ຈົ່ງຊອກຫາເປີເຊັນ (%) ຂອງນັກຮຽນທີ່ໄດ້ເກຣດ A ໃນຫ້ອງຮຽນນີ້. (ຕອບສະເພາະຕົວເລກ)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ມີຈຳນວນ"}</span>

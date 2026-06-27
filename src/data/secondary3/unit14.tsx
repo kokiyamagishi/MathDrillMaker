@@ -222,7 +222,7 @@ export const unit14Data: UnitData = {
               {"ການນຳໃຊ້ສູດວີແອດຊອກຫາຜົນບວກຂອງໃຈຜົນ (Sum of Roots using Vieta's Theorem): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຊອກຫາຜົນບວກຂອງສອງໃຈຜົນ "} <span className="math">{"(x_1 + x_2)"}</span> {" ຂອງສົມຜົນຂັ້ນສອງ "} <span className="math">{"3x² - 12x + 5 = 0"}</span> {". (ຄຳແນະນຳ: ນຳໃຊ້ສູດວີແອດ x_1 + x_2 = -b/a)"}
+              {"ຈົ່ງຊອກຫາຜົນບວກຂອງສອງໃຈຜົນ "} <span className="math">{"(x_1 + x_2)"}</span> {" ຂອງສົມຜົນຂັ້ນສອງ "} <span className="math">{"3x² - 12x + 5 = 0"}</span> {". (ຄຳແນະນຳ: ນຳໃຊ້ສູດວີແອດ x_1 + x_2 = -b/a)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຜົນບວກແມ່ນ"}</span>
@@ -259,7 +259,7 @@ export const unit14Data: UnitData = {
             {"ໃຈຜົນຕິດຮາກຂັ້ນສອງ (Irrational Roots of Quadratic Equation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງແກ້ສົມຜົນ "} <span className="math">{"x² - 2x - 1 = 0"}</span> {" ໂດຍນຳໃຊ້ສູດທົ່ວໄປ ຈະໄດ້ໃຈຜົນບວກຢູ່ໃນຮູບແບບ "} <span className="math">{"a + √b"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ a + b."}
+            {"ຈົ່ງແກ້ສົມຜົນ "} <span className="math">{"x² - 2x - 1 = 0"}</span> {" ໂດຍນຳໃຊ້ສູດທົ່ວໄປ ຈະໄດ້ໃຈຜົນບວກຢູ່ໃນຮູບແບບ "} <span className="math">{"a + √b"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ a + b."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: a + b ="}</span>

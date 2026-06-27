@@ -217,7 +217,7 @@ export const unit7Data: UnitData = {
               {"ການຊອກຫາສຳປະສິດຈາກຄ່າຕຳລາ (Finding Coefficient from Function Value): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ໃຫ້ຕຳລາ "} <span className="math">{"f(x) = ax + 3"}</span> {". ຖ້າຫາກ f(2) = 11, ຈົ່ງຊອກຫາຄ່າຂອງສຳປະສິດ a."}
+              {"ໃຫ້ຕຳລາ "} <span className="math">{"f(x) = ax + 3"}</span> {". ຖ້າຫາກ f(2) = 11, ຈົ່ງຊອກຫາຄ່າຂອງສຳປະສິດ a."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: a ="}</span>
@@ -257,7 +257,7 @@ export const unit7Data: UnitData = {
             {"ໂຈດບັນຫາຄ່າບໍລິການລົດເຊົ່າ (Car Rental Flat + Mileage Cost): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ບໍລິສັດລົດເຊົ່າແຫ່ງໜຶ່ງຄິດຄ່າບໍລິການເລີ່ມຕົ້ນ 50,000 ກີບ ບວກກັບ 2,000 ກີບ ຕໍ່ກິໂລແມັດ x. ຂຽນເປັນຕຳລາ f(x) = 2,000x + 50,000. ຈົ່ງຄິດໄລ່ຄ່າເຊົ່າທັງໝົດເມື່ອເດີນທາງໄດ້ 10 ກິໂລແມັດ?"}
+            {"ບໍລິສັດລົດເຊົ່າແຫ່ງໜຶ່ງຄິດຄ່າບໍລິການເລີ່ມຕົ້ນ 50,000 ກີບ ບວກກັບ 2,000 ກີບ ຕໍ່ກິໂລແມັດ x. ຂຽນເປັນຕຳລາ f(x) = 2,000x + 50,000. ຈົ່ງຄິດໄລ່ຄ່າເຊົ່າທັງໝົດເມື່ອເດີນທາງໄດ້ 10 ກິໂລແມັດ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຄ່າເຊົ່າທັງໝົດແມ່ນ"}</span>

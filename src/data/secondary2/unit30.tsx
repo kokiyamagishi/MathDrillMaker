@@ -196,7 +196,7 @@ export const unit30Data: UnitData = {
               {"ຊອກຫາເສັ້ນເນັ່ງຈອມຮູບດອກຈັນຈາກເນື້ອທີ່: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ເນື້ອທີ່ຂອງຮູບດອກຈັນ ABCD ແມ່ນ 30 cm² ໂດຍມີເສັ້ນເນັ່ງຈອມໜຶ່ງ AC = 10 cm. ຈົ່ງຊອກຫາຄວາມຍາວຂອງເສັ້ນເນັ່ງຈອມ BD (x cm)."}
+              {"ເນື້ອທີ່ຂອງຮູບດອກຈັນ ABCD ແມ່ນ 30 cm² ໂດຍມີເສັ້ນເນັ່ງຈອມໜຶ່ງ AC = 10 cm. ຈົ່ງຊອກຫາຄວາມຍາວຂອງເສັ້ນເນັ່ງຈອມ BD (x cm)."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x ="}</span>
@@ -214,7 +214,7 @@ export const unit30Data: UnitData = {
               {"ຊອກຫາຂ້າງຂອງຮູບຈະຕຸລັດຈາກລວງຮອບ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຖ້າລວງຮອບຂອງຮູບຈະຕຸລັດແມ່ນ 36 cm. ຈົ່ງຊອກຫາຄວາມຍາວຂ้าง x ຂອງຮູບຈະຕຸລັດນັ້ນ. (ລວງຮອບ = 4x)"}
+              {"ຖ້າລວງຮອບຂອງຮູບຈະຕຸລັດແມ່ນ 36 cm. ຈົ່ງຊອກຫາຄວາມຍາວຂ้าง x ຂອງຮູບຈະຕຸລັດນັ້ນ. (ລວງຮອບ = 4x)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x ="}</span>
@@ -235,7 +235,7 @@ export const unit30Data: UnitData = {
             {"ຊອກຫາເນື້ອທີ່ຮູບຈະຕຸລັດຜ່ານສູດຮູບດອກຈັນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຖ້າຮູບຈະຕຸລັດໜຶ່ງມີເສັ້ນເນັ່ງຈອມ AC = 10 cm. ເນື້ອທີ່ຂອງມັນສາມາດຄິດໄລ່ຄືຮູບດອກຈັນໄດ້ (ເພາະເສັ້ນເນັ່ງຈອມຕັ້ງສາກ ແລະ ຍາວເທົ່າກັນ AC = BD). ຈົ່ງຊອກຫາເນື້ອທີ່ຂອງຮູບຈະຕຸລັດນີ້."}
+            {"ຖ້າຮູບຈະຕຸລັດໜຶ່ງມີເສັ້ນເນັ່ງຈອມ AC = 10 cm. ເນື້ອທີ່ຂອງມັນສາມາດຄິດໄລ່ຄືຮູບດອກຈັນໄດ້ (ເພາະເສັ້ນເນັ່ງຈອມຕັ້ງສາກ ແລະ ຍາວເທົ່າກັນ AC = BD). ຈົ່ງຊອກຫາເນື້ອທີ່ຂອງຮູບຈະຕຸລັດນີ້."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ເນື້ອທີ່ແມ່ນ"}</span>
@@ -253,7 +253,7 @@ export const unit30Data: UnitData = {
             {"ຂະໜາດຂອງມຸມຕັດກັນຂອງເສັ້ນເນັ່ງຈອມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ໃນຮູບດອກຈັນ ABCD ທີ່ມີເສັ້ນເນັ່ງຈອມ AC ແລະ BD ຕັດກັນຢູ່ O. ມຸມ AOB ຈະມີຂະໜາດຈັກອົງສາ?"}
+            {"ໃນຮູບດອກຈັນ ABCD ທີ່ມີເສັ້ນເນັ່ງຈອມ AC ແລະ BD ຕັດກັນຢູ່ O. ມຸມ AOB ຈະມີຂະໜາດຈັກອົງສາ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ມຸມ AOB ແມ່ນ"}</span>

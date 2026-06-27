@@ -219,7 +219,7 @@ export const unit26Data: UnitData = {
               {"ເນື້ອທີ່ທັງໝົດຂອງຮູບປີລາມິດຈະຕຸລັດ (Total Surface Area of Square Pyramid): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຮູບປີລາມິດຈະຕຸລັດສະໝໍ່າສະເໝີໜຶ່ງ ມີຂ້າງພື້ນຍາວ 10 cm ແລະ ມີຄວາມສູງ 12 cm (ເນື້ອທີ່ພື້ນແມ່ນ 100 cm², ຂ້າງຊັນ a = 13 cm). ຈົ່ງຊອກຫາເນື້ອທີ່ທັງໝົດຂອງຮູບປີລາມິດນີ້."}
+              {"ຮູບປີລາມິດຈະຕຸລັດສະໝໍ່າສະເໝີໜຶ່ງ ມີຂ້າງພື້ນຍາວ 10 cm ແລະ ມີຄວາມສູງ 12 cm (ເນື້ອທີ່ພື້ນແມ່ນ 100 cm², ຂ້າງຊັນ a = 13 cm). ຈົ່ງຊອກຫາເນື້ອທີ່ທັງໝົດຂອງຮູບປີລາມິດນີ້."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ເນື້ອທີ່ທັງໝົດແມ່ນ"}</span>
@@ -258,7 +258,7 @@ export const unit26Data: UnitData = {
             {"ໂຈດບໍລິມາດຂອງປີລາມິດພື້ນຮູບສີ່ແຈສາກ (Rectangular Pyramid Volume): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຮູບປີລາມິດໜຶ່ງມີພື້ນເປັນຮູບສີ່ແຈສາກຂະໜາດ 5 cm × 6 cm (ເນື້ອທີ່ພື້ນ 30 cm²) ແລະ ມີຄວາມສູງ h = 10 cm. ຈົ່ງຄິດໄລ່ບໍລິມາດ V ຂອງປີລາມິດນີ້."}
+            {"ຮູບປີລາມິດໜຶ່ງມີພື້ນເປັນຮູບສີ່ແຈສາກຂະໜາດ 5 cm × 6 cm (ເນື້ອທີ່ພື້ນ 30 cm²) ແລະ ມີຄວາມສູງ h = 10 cm. ຈົ່ງຄິດໄລ່ບໍລິມາດ V ຂອງປີລາມິດນີ້."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ບໍລິມາດແມ່ນ"}</span>

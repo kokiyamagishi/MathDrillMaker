@@ -202,7 +202,7 @@ export const unit15Data: UnitData = {
               {"ການຄິດໄລ່ກຳລັງປະສົມສາມຕົວ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຂຽນຜົນຄິດໄລ່ຕໍ່ໄປນີ້ໃນຮູບຮ່າງເລກກຳລັງດຽວ: "}
+              {"ຈົ່ງຂຽນຜົນຄິດໄລ່ຕໍ່ໄປນີ້ໃນຮູບຮ່າງເລກກຳລັງດຽວ: "}
               <span className="math" style={{ marginLeft: "6px" }}>
                 {"2⁻⁵ × 2⁸ × 2 = 2^?"}
               </span>
@@ -222,7 +222,7 @@ export const unit15Data: UnitData = {
               {"ສົມຜົນເລກກຳລັງຊອກຫາ x: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນຕໍ່ໄປນີ້: "}
+              {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນຕໍ່ໄປນີ້: "}
               <span className="math" style={{ marginLeft: "6px" }}>
                 {"3ˣ = 81"}
               </span>
@@ -245,7 +245,7 @@ export const unit15Data: UnitData = {
             {"ການປຽບທຽບຄ່າເລກກຳລັງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງປຽບທຽບຄ່າລະຫວ່າງ "} <span className="math">{"3³"}</span> {" ແລະ "} <span className="math">{"2⁵"}</span> {". (ຕອບ ຈຳນວນໃດຫຼາຍກວ່າ)"}
+            {"ຈົ່ງປຽບທຽບຄ່າລະຫວ່າງ "} <span className="math">{"3³"}</span> {" ແລະ "} <span className="math">{"2⁵"}</span> {". (ຕອບ ຈຳນວນໃດຫຼາຍກວ່າ)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຈຳນວນທີ່ຫຼາຍກວ່າແມ່ນ"}</span>
@@ -262,7 +262,7 @@ export const unit15Data: UnitData = {
             {"ການຄິດໄລ່ກຳລັງສູນ ແລະ ກຳລັງລົບປະສົມກັນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນຕໍ່ໄປນີ້: "}
+            {"ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນຕໍ່ໄປນີ້: "}
             <span className="math" style={{ marginLeft: "6px" }}>
               {"6⁻² × 6² + 9⁰ ="}
             </span>

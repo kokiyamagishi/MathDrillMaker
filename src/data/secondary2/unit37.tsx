@@ -194,7 +194,7 @@ export const unit37Data: UnitData = {
               {"ຊອກຫາ x ຈາກສົມຜົນມຸມໃນຮູບສີ່ແຈ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ໃນຮູບສີ່ແຈ ABCD, ມີຂະໜາດມຸມແມ່ນ "} <span className="math">{"A = x"}</span>{", "} <span className="math">{"B = 2x"}</span>{", "} <span className="math">{"C = 3x"}</span> {" ແລະ "} <span className="math">{"D = 4x"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ x. (ຜົນບວກ = 360°)"}
+              {"ໃນຮູບສີ່ແຈ ABCD, ມີຂະໜາດມຸມແມ່ນ "} <span className="math">{"A = x"}</span>{", "} <span className="math">{"B = 2x"}</span>{", "} <span className="math">{"C = 3x"}</span> {" ແລະ "} <span className="math">{"D = 4x"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ x. (ຜົນບວກ = 360°)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x ="}</span>
@@ -211,7 +211,7 @@ export const unit37Data: UnitData = {
               {"ຊອກຫາຈຳນວນຂ້າງ n ຂອງຮູບຫຼາຍແຈ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຖ້າຜົນບວກມຸມໃນຂອງຮູບຫຼາຍແຈສວດໜຶ່ງແມ່ນ "} <span className="math">{"900°"}</span>{". ຈົ່ງຊອກຫາຈຳນວນຂ້າງ n. ((n - 2) × 180 = 900)"}
+              {"ຖ້າຜົນບວກມຸມໃນຂອງຮູບຫຼາຍແຈສວດໜຶ່ງແມ່ນ "} <span className="math">{"900°"}</span>{". ຈົ່ງຊອກຫາຈຳນວນຂ້າງ n. ((n - 2) × 180 = 900)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຈຳນວນຂ້າງ n ="}</span>
@@ -232,7 +232,7 @@ export const unit37Data: UnitData = {
             {"ຜົນບວກມຸມນອກຂອງຮູບຫຼາຍແຈສວດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຜົນບວກຂອງທຸກໆມຸມນອກ (ໜຶ່ງມຸມຕໍ່ໜຶ່ງຈອມ) ຂອງຮູບຫຼາຍແຈສວດໃດໜຶ່ງ ຈະເທົ່າກັບຈັກອົງສາສະເໝີ?"}
+            {"ຜົນບວກຂອງທຸກໆມຸມນອກ (ໜຶ່ງມຸມຕໍ່ໜຶ່ງຈອມ) ຂອງຮູບຫຼາຍແຈສວດໃດໜຶ່ງ ຈະເທົ່າກັບຈັກອົງສາສະເໝີ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຜົນບວກແມ່ນ"}</span>
@@ -250,7 +250,7 @@ export const unit37Data: UnitData = {
             {"ຄິດໄລ່ມຸມໃນຮູບຄາງໝູ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ໃນຮູບຄາງໝູ ABCD (AB // CD) ທີ່ມີມຸມ A = 100° ແລະ B = 120°. ຈົ່ງຊອກຫາຜົນບວກຂອງມຸມ C + D."}
+            {"ໃນຮູບຄາງໝູ ABCD (AB // CD) ທີ່ມີມຸມ A = 100° ແລະ B = 120°. ຈົ່ງຊອກຫາຜົນບວກຂອງມຸມ C + D."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ມຸມ C + D ="}</span>

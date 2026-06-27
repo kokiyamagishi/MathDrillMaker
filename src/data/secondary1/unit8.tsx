@@ -262,7 +262,7 @@ export const unit8Data: UnitData = {
             {"ການປ່ຽນຈາກພື້ນຖານ 2 ໄປເປັນພື້ນຖານ 10: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຊອກຫາຄ່າໃນພື້ນຖານ 10 ຂອງ "}<strong>{"11110₂"}</strong>{"."}
+            {"ຈົ່ງຊອກຫາຄ່າໃນພື້ນຖານ 10 ຂອງ "}<strong>{"11110₂"}</strong>{"."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"11110₂ ="}</span>
@@ -279,7 +279,7 @@ export const unit8Data: UnitData = {
             {"ການປ່ຽນຈາກພື້ນຖານ 10 ໄປເປັນພື້ນຖານ 5: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງປ່ຽນຈຳນວນ "}<strong>{"74"}</strong>{" ໃນພື້ນຖານ 10 ໄປເປັນພື້ນຖານ 5."}
+            {"ຈົ່ງປ່ຽນຈຳນວນ "}<strong>{"74"}</strong>{" ໃນພື້ນຖານ 10 ໄປເປັນພື້ນຖານ 5."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"74 ="}</span>

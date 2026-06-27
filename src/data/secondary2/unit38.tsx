@@ -198,7 +198,7 @@ export const unit38Data: UnitData = {
               {"ຄິດໄລ່ເນື້ອທີ່ແຜ່ນມົນຈາກຄວາມຍາວຮອບວົງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຖ້າວົງມົນໜຶ່ງມີຄວາມຍາວຮອບວົງມົນແມ່ນ 12π cm. ຈົ່ງຊອກຫາເນື້ອທີ່ຂອງແຜ່ນມົນນີ້ (ແມ່ນຈັກπ cm²). (2πr = 12π)"}
+              {"ຖ້າວົງມົນໜຶ່ງມີຄວາມຍາວຮອບວົງມົນແມ່ນ 12π cm. ຈົ່ງຊອກຫາເນື້ອທີ່ຂອງແຜ່ນມົນນີ້ (ແມ່ນຈັກπ cm²). (2πr = 12π)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ເນື້ອທີ່ແມ່ນ"}</span>
@@ -216,7 +216,7 @@ export const unit38Data: UnitData = {
               {"ອັດຕາສ່ວນການປ່ຽນແປງຂອງເນື້ອທີ່: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຖ້າລັດສະໝີຂອງວົງມົນໜຶ່ງເພີ່ມຂຶ້ນ 2 ເທົ່າ (ຈາກ r ຫາ 2r). ຖາມວ່າເນື້ອທີ່ຂອງແຜ່ນມົນຈະເພີ່ມຂຶ້ນຈັກເທົ່າຈາກເນື້ອທີ່ເດີມ?"}
+              {"ຖ້າລັດສະໝີຂອງວົງມົນໜຶ່ງເພີ່ມຂຶ້ນ 2 ເທົ່າ (ຈາກ r ຫາ 2r). ຖາມວ່າເນື້ອທີ່ຂອງແຜ່ນມົນຈະເພີ່ມຂຶ້ນຈັກເທົ່າຈາກເນື້ອທີ່ເດີມ?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ເພີ່ມຂຶ້ນ"}</span>
@@ -237,7 +237,7 @@ export const unit38Data: UnitData = {
             {"ໂຈດບັນຫາເນື້ອທີ່ສວນວົງມົນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ສວນດອກໄມ້ແຫ່ງໜຶ່ງເປັນຮູບວົງມົນມີເສັ້ນຜ່ານສູນກາງ 14 m (ລັດສະໝີ r = 7 m). ຖ້າໃຊ້ຄ່າປະມານ "} <span className="math">{"π ≈ "} <Fraction num="22" den="7" /></span>{", ຈົ່ງຊອກຫາເນື້ອທີ່ຂອງສວນດອກໄມ້ນີ້."}
+            {"ສວນດອກໄມ້ແຫ່ງໜຶ່ງເປັນຮູບວົງມົນມີເສັ້ນຜ່ານສູນກາງ 14 m (ລັດສະໝີ r = 7 m). ຖ້າໃຊ້ຄ່າປະມານ "} <span className="math">{"π ≈ "} <Fraction num="22" den="7" /></span>{", ຈົ່ງຊອກຫາເນື້ອທີ່ຂອງສວນດອກໄມ້ນີ້."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ເນື້ອທີ່ແມ່ນ"}</span>
@@ -255,7 +255,7 @@ export const unit38Data: UnitData = {
             {"ຄິດໄລ່ຄວາມຍາວຮອບວົງລໍ້ລົດຖີບ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ລໍ້ລົດຖີບມີລັດສະໝີ r = 35 cm. ຖ້າໃຊ້ຄ່າປະມານ "} <span className="math">{"π ≈ "} <Fraction num="22" den="7" /></span>{", ຈົ່ງຊອກຫາຄວາມຍາວຮອບວົງລໍ້ລົດຖີບນີ້."}
+            {"ລໍ້ລົດຖີບມີລັດສະໝີ r = 35 cm. ຖ້າໃຊ້ຄ່າປະມານ "} <span className="math">{"π ≈ "} <Fraction num="22" den="7" /></span>{", ຈົ່ງຊອກຫາຄວາມຍາວຮອບວົງລໍ້ລົດຖີບນີ້."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຄວາມຍາວແມ່ນ"}</span>

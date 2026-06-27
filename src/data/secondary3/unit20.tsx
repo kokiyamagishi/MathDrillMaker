@@ -218,7 +218,7 @@ export const unit20Data: UnitData = {
               {"ການຊອກຫາຕົວປະສານງານ x ຈາກສົມຜົນໄລຍະຫ່າງ (Finding Coordinate from Distance Equation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ໃຫ້ໄລຍະຫ່າງລະຫວ່າງສອງເມັດ "} <span className="math">{"P(1, 2)"}</span> {" ແລະ "} <span className="math">{"Q(a, 6)"}</span> {" ແມ່ນ 5. ຖ້າຫາກ a > 0, ຈົ່ງຊອກຫາຄ່າຂອງ a."}
+              {"ໃຫ້ໄລຍະຫ່າງລະຫວ່າງສອງເມັດ "} <span className="math">{"P(1, 2)"}</span> {" ແລະ "} <span className="math">{"Q(a, 6)"}</span> {" ແມ່ນ 5. ຖ້າຫາກ a > 0, ຈົ່ງຊອກຫາຄ່າຂອງ a."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: a ="}</span>
@@ -256,7 +256,7 @@ export const unit20Data: UnitData = {
             {"ການຊອກຫາຂ້າງກົງຊາກຂອງສາມແຈສາກ (Finding Hypotenuse in Coordinate plane): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຮູບສາມແຈ ABC ມີສາມຈອມແມ່ນ A(1, 1), B(4, 1), C(1, 5). ຖ້າສາມແຈນີ້ແມ່ນສາມແຈສາກທີ່ມີມຸມ A ເປັນມຸມສາກ, ຈົ່ງຊອກຫາຄວາມຍາວຂອງຂ້າງກົງຊາກ BC."}
+            {"ຮູບສາມແຈ ABC ມີສາມຈອມແມ່ນ A(1, 1), B(4, 1), C(1, 5). ຖ້າສາມແຈນີ້ແມ່ນສາມແຈສາກທີ່ມີມຸມ A ເປັນມຸມສາກ, ຈົ່ງຊອກຫາຄວາມຍາວຂອງຂ້າງກົງຊາກ BC."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: BC ຍາວ"}</span>

@@ -205,7 +205,7 @@ export const unit25Data: UnitData = {
               {"ໂຈດບໍລິມາດນ້ຳໃນອ່າງກ່ອງສາກ (Water Volume in a Rectangular Tank): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ອ່າງເກັບນ້ຳຮູບກ່ອງສາກມີຄວາມຍາວພື້ນ 8 m, ຄວາມກວ້າງພື້ນ 5 m ແລະ ຖືກຕື່ມນ້ຳໃສ່ສູງ 2 m. ຈົ່ງຄິດໄລ່ບໍລິມາດຂອງນ້ຳໃນອ່າງນີ້."}
+              {"ອ່າງເກັບນ້ຳຮູບກ່ອງສາກມີຄວາມຍາວພື້ນ 8 m, ຄວາມກວ້າງພື້ນ 5 m ແລະ ຖືກຕື່ມນ້ຳໃສ່ສູງ 2 m. ຈົ່ງຄິດໄລ່ບໍລິມາດຂອງນ້ຳໃນອ່າງນີ້."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ບໍລິມາດນ້ຳແມ່ນ"}</span>
@@ -244,7 +244,7 @@ export const unit25Data: UnitData = {
             {"ໂຈດເນື້ອທີ່ທັງໝົດຂອງຮູບກ້ອນສາກ (Total Surface Area of a Cube): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຮູບກ້ອນສາກໜຶ່ງມີບໍລິມາດແມ່ນ "} <span className="math">{"64 cm³"}</span> {". ຈົ່ງຊອກຫາເນື້ອທີ່ທັງໝົດ (Total Surface Area) ຂອງຮູບກ້ອນສາກນີ້."}
+            {"ຮູບກ້ອນສາກໜຶ່ງມີບໍລິມາດແມ່ນ "} <span className="math">{"64 cm³"}</span> {". ຈົ່ງຊອກຫາເນື້ອທີ່ທັງໝົດ (Total Surface Area) ຂອງຮູບກ້ອນສາກນີ້."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ເນື້ອທີ່ທັງໝົດແມ່ນ"}</span>

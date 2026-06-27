@@ -213,7 +213,7 @@ export const unit16Data: UnitData = {
               {"ການຄັດຈ້ອນສຳນວນກຳລັງລະດັບສູງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຂຽນສຳນວນຕໍ່ໄປນີ້ໃນຮູບຮ່າງເລກກຳລັງດຽວ: "}
+              {"ຈົ່ງຂຽນສຳນວນຕໍ່ໄປນີ້ໃນຮູບຮ່າງເລກກຳລັງດຽວ: "}
               <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
                 <Fraction num="(3³)² × 3⁴" den="3⁵" /> {" = 3^?"}
               </span>
@@ -233,7 +233,7 @@ export const unit16Data: UnitData = {
               {"ສົມຜົນເລກກຳລັງຊອກຫາ x: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນຕໍ່ໄປນີ້: "}
+              {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນຕໍ່ໄປນີ້: "}
               <span className="math" style={{ marginLeft: "6px" }}>
                 {"(2ˣ)³ = 64"}
               </span>
@@ -256,7 +256,7 @@ export const unit16Data: UnitData = {
             {"ການຄິດໄລ່ກຳລັງຂອງເລກສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນຕໍ່ໄປນີ້: "}
+            {"ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນຕໍ່ໄປນີ້: "}
             <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
               {"("} <Fraction num="2" den="3" /> {")² × 9 ="}
             </span>
@@ -276,7 +276,7 @@ export const unit16Data: UnitData = {
             {"ຄຳຖາມທົດສອບຄວາມເຂົ້າໃຈຫຼັກການກຳລັງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ສຳນວນ "} <span className="math">{"(a³)² ÷ a⁴"}</span> {" ເທົ່າກັບເທົ່າໃດ? (ຂຽນໃນຮູບເລກກຳລັງດຽວ)"}
+            {"ສຳນວນ "} <span className="math">{"(a³)² ÷ a⁴"}</span> {" ເທົ່າກັບເທົ່າໃດ? (ຂຽນໃນຮູບເລກກຳລັງດຽວ)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຜົນຄັດຈ້ອນແມ່ນ"}</span>

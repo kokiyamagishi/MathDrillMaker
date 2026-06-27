@@ -255,7 +255,7 @@ export const unit8Data: UnitData = {
               {"ໂຈດບັນຫາການແບ່ງປັນນ້ຳດື່ມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ແມ່ມີນ້ຳດື່ມທັງໝົດ "} {"6"} {" ລິດຕ໌, ຕ້ອງການແບ່ງໃສ່ແກ້ວຂະໜາດແກ້ວລະ "} <Fraction num="3" den="4" /> {" ລິດຕ໌. ຖາມວ່າແມ່ຈະສາມາດແບ່ງນ້ຳດື່ມໄດ້ທັງໝົດຈັກແກ້ວ?"}
+              {"ແມ່ມີນ້ຳດື່ມທັງໝົດ "} {"6"} {" ລິດຕ໌, ຕ້ອງການແບ່ງໃສ່ແກ້ວຂະໜາດແກ້ວລະ "} <Fraction num="3" den="4" /> {" ລິດຕ໌. ຖາມວ່າແມ່ຈະສາມາດແບ່ງນ້ຳດື່ມໄດ້ທັງໝົດຈັກແກ້ວ?"}
             </p>
             <div style={{ display: "flex", justifyContent: "center", margin: "8px 0" }}>
               <svg viewBox="0 0 240 80" style={{ width: "100%", maxWidth: "200px", height: "auto" }}>
@@ -293,7 +293,7 @@ export const unit8Data: UnitData = {
               {"ການຫານເລກສ່ວນສາມຕົວຕໍ່ເນື່ອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຄິດໄລ່ສຳນວນຕໍ່ໄປນີ້: "}
+              {"ຈົ່ງຄິດໄລ່ສຳນວນຕໍ່ໄປນີ້: "}
               <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
                 <Fraction num="3" den="5" /> {" ÷ "} <Fraction num="6" den="7" /> {" ÷ "} <Fraction num="14" den="15" />
               </span>
@@ -316,7 +316,7 @@ export const unit8Data: UnitData = {
             {"ໂຈດບັນຫາການຕັດແພ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ມີແພຍາວ "} <Fraction num="5" den="2" /> {" ແມັດ, ຕ້ອງການຕັດອອກເປັນຕ່ອນ ຕ່ອນລະ "} <Fraction num="5" den="8" /> {" ແມັດ. ຖາມວ່າຈະຕັດໄດ້ທັງໝົດຈັກຕ່ອນ?"}
+            {"ມີແພຍາວ "} <Fraction num="5" den="2" /> {" ແມັດ, ຕ້ອງການຕັດອອກເປັນຕ່ອນ ຕ່ອນລະ "} <Fraction num="5" den="8" /> {" ແມັດ. ຖາມວ່າຈະຕັດໄດ້ທັງໝົດຈັກຕ່ອນ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຈະຕັດໄດ້ທັງໝົດ"}</span>
@@ -334,7 +334,7 @@ export const unit8Data: UnitData = {
             {"ຄິດໄລ່ຫາຄ່າ x ຈາກສົມຜົນການຄູນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນຕໍ່ໄປນີ້: "}
+            {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນຕໍ່ໄປນີ້: "}
             <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
               <Fraction num="2" den="3" /> {" × x = "} <Fraction num="8" den="9" />
             </span>

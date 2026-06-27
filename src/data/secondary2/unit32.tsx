@@ -194,7 +194,7 @@ export const unit32Data: UnitData = {
               {"ຊອກຫາ x ຈາກອັດຕາສ່ວນຂອງມຸມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ໃນຮູບສາມແຈ ABC, ມີຂະໜາດຂອງມຸມແມ່ນ "} <span className="math">{"A = x"}</span>{", "} <span className="math">{"B = 2x"}</span> {" ແລະ "} <span className="math">{"C = 3x"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ x. (x + 2x + 3x = 180)"}
+              {"ໃນຮູບສາມແຈ ABC, ມີຂະໜາດຂອງມຸມແມ່ນ "} <span className="math">{"A = x"}</span>{", "} <span className="math">{"B = 2x"}</span> {" ແລະ "} <span className="math">{"C = 3x"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ x. (x + 2x + 3x = 180)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x ="}</span>
@@ -211,7 +211,7 @@ export const unit32Data: UnitData = {
               {"ຊອກຫາ y ໃນຮູບສາມແຈທ່ຽງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຖ້າມຸມພື້ນຂອງຮູບສາມແຈທ່ຽງແມ່ນ "} <span className="math">{"3y + 10°"}</span> {" ແລະ ມຸມຈອມແມ່ນ "} <span className="math">{"100°"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ y. (ມຸມພື້ນ = 40°)"}
+              {"ຖ້າມຸມພື້ນຂອງຮູບສາມແຈທ່ຽງແມ່ນ "} <span className="math">{"3y + 10°"}</span> {" ແລະ ມຸມຈອມແມ່ນ "} <span className="math">{"100°"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ y. (ມຸມພື້ນ = 40°)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: y ="}</span>
@@ -231,7 +231,7 @@ export const unit32Data: UnitData = {
             {"ນຳໃຊ້ທິດສະດີມຸມນອກຂອງຮູບສາມແຈ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ມຸມນອກຂອງຮູບສາມແຈ ເທົ່າກັບຜົນບວກຂອງສອງມຸມໃນທີ່ບໍ່ຕິດກັບມັນ. ຖ້າມຸມໃນສອງມຸມແມ່ນ 50° ແລະ 60°. ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມນອກທີ່ຕິດກັບມຸມໃນທີສາມ."}
+            {"ມຸມນອກຂອງຮູບສາມແຈ ເທົ່າກັບຜົນບວກຂອງສອງມຸມໃນທີ່ບໍ່ຕິດກັບມັນ. ຖ້າມຸມໃນສອງມຸມແມ່ນ 50° ແລະ 60°. ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມນອກທີ່ຕິດກັບມຸມໃນທີສາມ."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ມຸມນອກແມ່ນ"}</span>
@@ -249,7 +249,7 @@ export const unit32Data: UnitData = {
             {"ຄິດໄລ່ລວງຮອບຂອງຮູບສາມແຈທ່ຽງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຖ້າຮູບສາມແຈທ່ຽງໜຶ່ງມີຂ້າງພື້ນຍາວ 8 cm, ແລະ ມີຂ້າງທ່ຽງຍາວ 6 cm. ຈົ່ງຊອກຫາລວງຮອບທັງໝົດຂອງຮູບສາມແຈທ່ຽງນີ້."}
+            {"ຖ້າຮູບສາມແຈທ່ຽງໜຶ່ງມີຂ້າງພື້ນຍາວ 8 cm, ແລະ ມີຂ້າງທ່ຽງຍາວ 6 cm. ຈົ່ງຊອກຫາລວງຮອບທັງໝົດຂອງຮູບສາມແຈທ່ຽງນີ້."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ລວງຮອບແມ່ນ"}</span>

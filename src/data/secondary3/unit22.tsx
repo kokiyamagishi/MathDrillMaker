@@ -228,7 +228,7 @@ export const unit22Data: UnitData = {
               {"ການຫາຄ່າຂໍ້ມູນທີ່ຕ້ອງເພີ່ມເພື່ອໄດ້ຄ່າສະເລ່ຍຕາມເປົ້າໝາຍ (Finding Needed Value for Target Mean): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ທ້າວ ສົມສີ ເສັງ 4 ຄັ້ງຜ່ານມາໄດ້ຄະແນນ 7, 8, 9, 6. ເພື່ອໃຫ້ຄ່າສະເລ່ຍຂອງການເສັງ 5 ຄັ້ງເທົ່າກັບ 8 ພໍດີ, ໃນການເສັງຄັ້ງທີ 5 ລາວຈະຕ້ອງເສັງໃຫ້ໄດ້ຈັກຄະແນນ?"}
+              {"ທ້າວ ສົມສີ ເສັງ 4 ຄັ້ງຜ່ານມາໄດ້ຄະແນນ 7, 8, 9, 6. ເພື່ອໃຫ້ຄ່າສະເລ່ຍຂອງການເສັງ 5 ຄັ້ງເທົ່າກັບ 8 ພໍດີ, ໃນການເສັງຄັ້ງທີ 5 ລາວຈະຕ້ອງເສັງໃຫ້ໄດ້ຈັກຄະແນນ?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຕ້ອງໄດ້"}</span>
@@ -266,7 +266,7 @@ export const unit22Data: UnitData = {
             {"ໂຈດຂອບເຂດອຸນຫະພູມປະຈຳອາທິດ (Weekly Temperature Range Challenge): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ອຸນຫະພູມທີ່ວັດແທກໄດ້ໃນ 7 ວັນຂອງອາທິດໜຶ່ງແມ່ນ 25, 27, 26, 29, 31, 28, 26 ອົງສາເຊ. ຈົ່ງຊອກຫາຂອບເຂດ (Range) ຂອງອຸນຫະພູມໃນອາທິດນີ້."}
+            {"ອຸນຫະພູມທີ່ວັດແທກໄດ້ໃນ 7 ວັນຂອງອາທິດໜຶ່ງແມ່ນ 25, 27, 26, 29, 31, 28, 26 ອົງສາເຊ. ຈົ່ງຊອກຫາຂອບເຂດ (Range) ຂອງອຸນຫະພູມໃນອາທິດນີ້."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຂອບເຂດແມ່ນ"}</span>

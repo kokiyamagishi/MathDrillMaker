@@ -225,7 +225,7 @@ export const unit11Data: UnitData = {
               {"ການພົວພັນລະຫວ່າງອັດຕາສ່ວນໄຕມຸມມິຕິ (Finding Trig Relations): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ໃນຮູບສາມແຈສາກໜຶ່ງ, ຖ້າຮູ້ວ່າ "} <span className="math">{"sin(A) = "} <Fraction num="4" den="5" /></span> {". ຈົ່ງຊອກຫາຄ່າຂອງ "} <span className="math">{"tan(A)"}</span> {" ໃນຮູບແບບເລກສ່ວນ."}
+              {"ໃນຮູບສາມແຈສາກໜຶ່ງ, ຖ້າຮູ້ວ່າ "} <span className="math">{"sin(A) = "} <Fraction num="4" den="5" /></span> {". ຈົ່ງຊອກຫາຄ່າຂອງ "} <span className="math">{"tan(A)"}</span> {" ໃນຮູບແບບເລກສ່ວນ."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: tan(A) ="}</span>
@@ -263,7 +263,7 @@ export const unit11Data: UnitData = {
             {"ໂຈດບັນຫາວ່າວລອຍຟ້າ (Kite String Height Calculation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ວ່າວຕິດເຊືອກຍາວ "} <span className="math">{"20 m"}</span> {" ປິວຂຶ້ນຟ້າ. ເສັ້ນເຊືອກເຮັດມຸມ "} <span className="math">{"30°"}</span> {" ກັບໜ້າດິນ. ຈົ່ງຊອກຫາຄວາມສູງຂອງວ່າວຈາກໜ້າດິນ."}
+            {"ວ່າວຕິດເຊືອກຍາວ "} <span className="math">{"20 m"}</span> {" ປິວຂຶ້ນຟ້າ. ເສັ້ນເຊືອກເຮັດມຸມ "} <span className="math">{"30°"}</span> {" ກັບໜ້າດິນ. ຈົ່ງຊອກຫາຄວາມສູງຂອງວ່າວຈາກໜ້າດິນ."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຄວາມສູງແມ່ນ"}</span>

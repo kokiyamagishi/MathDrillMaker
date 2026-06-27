@@ -206,7 +206,7 @@ export const unit3Data: UnitData = {
               {"ການແຍກສ່ວນຄູນຮູບຮ່າງ x² + sx + p (Cross Multiplication): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງແຍກສ່ວນຄູນຂອງ "} <span className="math">{"x² - 5x + 6"}</span> {" ໃຫ້ຢູ່ໃນຮູບແບບ "} <span className="math">{"(x - a)(x - b)"}</span> {" ໂດຍໃຫ້ຊອກຫາຄ່າຂອງ a + b. (ຊອກຫາຕົວເລກສອງຕົວທີ່ຄູນກັນໄດ້ 6 ແລະ ບວກກັນໄດ້ -5)"}
+              {"ຈົ່ງແຍກສ່ວນຄູນຂອງ "} <span className="math">{"x² - 5x + 6"}</span> {" ໃຫ້ຢູ່ໃນຮູບແບບ "} <span className="math">{"(x - a)(x - b)"}</span> {" ໂດຍໃຫ້ຊອກຫາຄ່າຂອງ a + b. (ຊອກຫາຕົວເລກສອງຕົວທີ່ຄູນກັນໄດ້ 6 ແລະ ບວກກັນໄດ້ -5)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: a + b ="}</span>
@@ -243,7 +243,7 @@ export const unit3Data: UnitData = {
             {"ໂຈດບັນຫາການຫາຂ້າງຂອງຮູບສີ່ແຈ (Rectangle Sides): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ດິນຕອນໜຶ່ງເປັນຮູບສີ່ແຈສາກທີ່ມີເນື້ອທີ່ "} <span className="math">{"3x² + 12x"}</span> {" ຕາແມັດ. ຖ້າເຮົາແຍກສ່ວນຄູນເພື່ອຫາຄວາມຍາວຂອງສອງຂ້າງ (ຂ້າງໜຶ່ງແມ່ນ 3x) ➔ ອີກຂ້າງໜຶ່ງຈະຍາວເທົ່າໃດ? (ຕອບເປັນສຳນວນພຶດຊະຄະນິດ)"}
+            {"ດິນຕອນໜຶ່ງເປັນຮູບສີ່ແຈສາກທີ່ມີເນື້ອທີ່ "} <span className="math">{"3x² + 12x"}</span> {" ຕາແມັດ. ຖ້າເຮົາແຍກສ່ວນຄູນເພື່ອຫາຄວາມຍາວຂອງສອງຂ້າງ (ຂ້າງໜຶ່ງແມ່ນ 3x) ➔ ອີກຂ້າງໜຶ່ງຈະຍາວເທົ່າໃດ? (ຕອບເປັນສຳນວນພຶດຊະຄະນິດ)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ອີກຂ້າງໜຶ່ງຍາວ"}</span>

@@ -207,7 +207,7 @@ export const unit13Data: UnitData = {
               {"ການຄິດໄລ່ ແລະ 简化 ສຳນວນຮາກປະສົມ (Simplifying Mixed Radical Expressions): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງເຮັດໃຫ້ສຳນວນຕໍ່ໄປນີ້ງ່າຍດາຍທີ່ສຸດ ຢູ່ໃນຮູບແບບ "} <span className="math">{"a√5"}</span> {": "}
+              {"ຈົ່ງເຮັດໃຫ້ສຳນວນຕໍ່ໄປນີ້ງ່າຍດາຍທີ່ສຸດ ຢູ່ໃນຮູບແບບ "} <span className="math">{"a√5"}</span> {": "}
               <span className="math" style={{ fontWeight: "bold" }}>{"√45 - 2√5 + √20"}</span>
               {". ຄ່າຂອງສຳປະສິດ a ແມ່ນເທົ່າໃດ?"}
             </p>
@@ -247,7 +247,7 @@ export const unit13Data: UnitData = {
             {"ໂຈດເນື້ອທີ່ດິນຮູບຈະຕຸລັດ (Square Plot of Land Area Application): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ດິນຕອນໜຶ່ງເປັນຮູບຈະຕຸລັດ ມີເນື້ອທີ່ທັງໝົດແມ່ນ "} <span className="math">{"80 m²"}</span> {". ຄວາມຍາວຂ້າງຂອງດິນຕອນນີ້ຂຽນໃນຮູບແບບງ່າຍດາຍແມ່ນ "} <span className="math">{"a√b m"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ a + b."}
+            {"ດິນຕອນໜຶ່ງເປັນຮູບຈະຕຸລັດ ມີເນື້ອທີ່ທັງໝົດແມ່ນ "} <span className="math">{"80 m²"}</span> {". ຄວາມຍາວຂ້າງຂອງດິນຕອນນີ້ຂຽນໃນຮູບແບບງ່າຍດາຍແມ່ນ "} <span className="math">{"a√b m"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ a + b."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: a + b ="}</span>

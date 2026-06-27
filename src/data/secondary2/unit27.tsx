@@ -210,7 +210,7 @@ export const unit27Data: UnitData = {
               {"ອະສົມຜົນຄ່າສຳບູນທີ່ມີຕົວເລກຢູ່ນອກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງແກ້ສົມຜົນອະສົມຜົນ "} <span className="math">{"2|x - 1| < 8"}</span> {" ແລ້ວຊອກຫາໃຈຜົນຄ່າຫຼາຍສຸດທີ່ເປັນຈຳນວນຖ້ວນ (x < 5)."}
+              {"ຈົ່ງແກ້ສົມຜົນອະສົມຜົນ "} <span className="math">{"2|x - 1| < 8"}</span> {" ແລ້ວຊອກຫາໃຈຜົນຄ່າຫຼາຍສຸດທີ່ເປັນຈຳນວນຖ້ວນ (x < 5)."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຈຳນວນຖ້ວນຫຼາຍສຸດແມ່ນ"}</span>
@@ -227,7 +227,7 @@ export const unit27Data: UnitData = {
               {"ອະສົມຜົນຄ່າສຳບູນແບບມີສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງແກ້ສົມຜົນອະສົມຜົນ "}
+              {"ຈົ່ງແກ້ສົມຜົນອະສົມຜົນ "}
               <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                 {"|"} <Fraction num="x" den="3" /> {" - 2| ≤ 1"}
               </span>
@@ -251,7 +251,7 @@ export const unit27Data: UnitData = {
             {"ອະສົມຜົນຄ່າສຳບູນເລກທົດສະນິຍົມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງແກ້ໄຂອະສົມຜົນ "} <span className="math">{"|x - 2.5| < 1.5"}</span> {" ແລ້ວຊອກຫາຄ່າຂອງ x ທີ່ເປັນຈຳນວນຖ້ວນຫຼາຍສຸດ (ເຂດໃຈຜົນ: 1 < x < 4)."}
+            {"ຈົ່ງແກ້ໄຂອະສົມຜົນ "} <span className="math">{"|x - 2.5| < 1.5"}</span> {" ແລ້ວຊອກຫາຄ່າຂອງ x ທີ່ເປັນຈຳນວນຖ້ວນຫຼາຍສຸດ (ເຂດໃຈຜົນ: 1 < x < 4)."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຈຳນວນຖ້ວນຫຼາຍສຸດແມ່ນ"}</span>
@@ -268,7 +268,7 @@ export const unit27Data: UnitData = {
             {"ໂຈດບັນຫາໄລຍະຫ່າງເທິງເສັ້ນຈຳນວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈຸດ P ຢູ່ເທິງເສັ້ນຈຳນວນຫ່າງຈາກຈຸດ -1 ເປັນໄລຍະທາງໜ້ອຍກວ່າ 4 ຫົວໜ່ວຍ. ຈົ່ງຊອກຫາຂອບເຂດສູງສຸດຂອງ A (ສົມຜົນ: |x - (-1)| < 4 ➔ x < _?)"}
+            {"ຈຸດ P ຢູ່ເທິງເສັ້ນຈຳນວນຫ່າງຈາກຈຸດ -1 ເປັນໄລຍະທາງໜ້ອຍກວ່າ 4 ຫົວໜ່ວຍ. ຈົ່ງຊອກຫາຂອບເຂດສູງສຸດຂອງ A (ສົມຜົນ: |x - (-1)| < 4 ➔ x < _?)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: x <"}</span>

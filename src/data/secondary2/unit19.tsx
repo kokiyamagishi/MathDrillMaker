@@ -195,7 +195,7 @@ export const unit19Data: UnitData = {
               {"ການແຍກສ່ວນຄູນທີ່ມີວົງເລັບເປັນຕົວຮ່ວມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງແຍກສ່ວນຄູນຂອງສຳນວນ d = x(a + b) + y(a + b) ໃຫ້ເປັນຮູບຮ່າງ (a + b)(x + ?)"}
+              {"ຈົ່ງແຍກສ່ວນຄູນຂອງສຳນວນ d = x(a + b) + y(a + b) ໃຫ້ເປັນຮູບຮ່າງ (a + b)(x + ?)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຕົວລັບ ? ແມ່ນ"}</span>
@@ -212,7 +212,7 @@ export const unit19Data: UnitData = {
               {"ໂຈດປະຍຸກເລຂາຄະນິດແຍກສ່ວນຄູນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ມີແຜ່ນໂລຫະຮູບຈະຕຸລັດຍາວ x cm, ຖືກຕັດຮູວົງມົນທີ່ມີລັດສະໝີ r. ສຳນວນເນື້ອທີ່ຍັງເຫຼືອແມ່ນ S = x² - πr². ຖ້າ r = x/2, ຈົ່ງແຍກສ່ວນຄູນສຳນວນ S ໃຫ້ເປັນຮູບ x²(1 - π/?)"}
+              {"ມີແຜ່ນໂລຫະຮູບຈະຕຸລັດຍາວ x cm, ຖືກຕັດຮູວົງມົນທີ່ມີລັດສະໝີ r. ສຳນວນເນື້ອທີ່ຍັງເຫຼືອແມ່ນ S = x² - πr². ຖ້າ r = x/2, ຈົ່ງແຍກສ່ວນຄູນສຳນວນ S ໃຫ້ເປັນຮູບ x²(1 - π/?)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຈຳນວນຖ້ວນ ? ຂອງພູດແມ່ນ"}</span>
@@ -232,7 +232,7 @@ export const unit19Data: UnitData = {
             {"ການແຍກສ່ວນຄູນຮາກຂັ້ນສອງຂອງສຳນວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງແຍກສ່ວນຄູນຂອງສຳນວນ 5x³ - 20x = 5x(x² - ?)"}
+            {"ຈົ່ງແຍກສ່ວນຄູນຂອງສຳນວນ 5x³ - 20x = 5x(x² - ?)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຈຳນວນຖ້ວນ ? ແມ່ນ"}</span>
@@ -249,7 +249,7 @@ export const unit19Data: UnitData = {
             {"ຄັດຈ້ອນສຳນວນໂດຍການຫານເລກກຳລັງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຄັດຈ້ອນເລກສ່ວນພຶດຊະຄະນິດລຸ່ມນີ້: "}
+            {"ຈົ່ງຄັດຈ້ອນເລກສ່ວນພຶດຊະຄະນິດລຸ່ມນີ້: "}
             <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
               <Fraction num="x² + 3x" den="x" /> {" = x + ?"}
             </span>

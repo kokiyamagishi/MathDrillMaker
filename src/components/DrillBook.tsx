@@ -390,6 +390,10 @@ export const DrillBook: React.FC<DrillBookProps> = ({
             advice: unit.answers.advice,
             startPage: unitPageRanges[index].start,
             endPage: unitPageRanges[index].end,
+            subSections: unit.subSections ? unit.subSections.map(sub => ({
+              title: sub.title,
+              problemsCount: sub.problems.length
+            })) : []
           };
           return <AnswerSheet key={`answer-${unit.unitNumber}`} pageNumber={answerPageNumber} unitData={answerData} />;
         })}

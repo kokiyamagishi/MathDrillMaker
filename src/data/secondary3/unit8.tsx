@@ -213,7 +213,7 @@ export const unit8Data: UnitData = {
               {"ການຊອກຫາສົມຜົນເສັ້ນຊື່ຜ່ານສອງເມັດ (Finding Line Equation Passing Through Two Points): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ເສັ້ນຊື່ເສັ້ນໜຶ່ງຜ່ານສອງເມັດ "} <span className="math">{"A(1, 5)"}</span> {" ແລະ "} <span className="math">{"B(3, 11)"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງສຳປະສິດສະໂລບ a ຂອງເສັ້ນຊື່ນີ້."}
+              {"ເສັ້ນຊື່ເສັ້ນໜຶ່ງຜ່ານສອງເມັດ "} <span className="math">{"A(1, 5)"}</span> {" ແລະ "} <span className="math">{"B(3, 11)"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງສຳປະສິດສະໂລບ a ຂອງເສັ້ນຊື່ນີ້."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: a ="}</span>
@@ -250,7 +250,7 @@ export const unit8Data: UnitData = {
             {"ໂຈດບັນຫາການຕື່ມນ້ຳໃສ່ອ່າງ (Water Filling Real-world Application): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ໃນອ່າງນ້ຳມີນ້ຳຢູ່ແລ້ວ 20 ລີດ, ເມື່ອໄຂກ໊ອກຕື່ມນ້ຳໃສ່ຕື່ມໃນອັດຕາ 3 ລີດຕໍ່ນາທີ. ຂຽນເປັນຕຳລາແມ່ນ "} <span className="math">{"y = 3x + 20"}</span> {" (ລີດ) ໂດຍ x ແມ່ນເວລາເປັນນາທີ. ຖ້າໄຂກ໊ອກນ້ຳເປັນເວລາ 10 ນາທີ, ຈະມີນ້ຳທັງໝົດໃນອ່າງຈັກລີດ?"}
+            {"ໃນອ່າງນ້ຳມີນ້ຳຢູ່ແລ້ວ 20 ລີດ, ເມື່ອໄຂກ໊ອກຕື່ມນ້ຳໃສ່ຕື່ມໃນອັດຕາ 3 ລີດຕໍ່ນາທີ. ຂຽນເປັນຕຳລາແມ່ນ "} <span className="math">{"y = 3x + 20"}</span> {" (ລີດ) ໂດຍ x ແມ່ນເວລາເປັນນາທີ. ຖ້າໄຂກ໊ອກນ້ຳເປັນເວລາ 10 ນາທີ, ຈະມີນ້ຳທັງໝົດໃນອ່າງຈັກລີດ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ມີນ້ຳທັງໝົດ"}</span>

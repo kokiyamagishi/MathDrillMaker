@@ -216,7 +216,7 @@ export const unit12Data: UnitData = {
               {"ການຊອກຫາເນື້ອທີ່ທັງໝົດຂອງຮູບທໍ່ກົມ (Total Surface Area of Cylinder): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຮູບທໍ່ກົມໜຶ່ງມີລັດສະໝີພື້ນ "} <span className="math">{"r = 4 cm"}</span> {" ແລະ ຄວາມສູງ "} <span className="math">{"h = 10 cm"}</span> {". ຈົ່ງຄິດໄລ່ເນື້ອທີ່ທັງໝົດ (Total Surface Area) ຂອງຮູບທໍ່ກົມນີ້ (ເນື້ອທີ່ພື້ນ 2 ດ້ານ + ເນື້ອທີ່ຂ້າງ)."}
+              {"ຮູບທໍ່ກົມໜຶ່ງມີລັດສະໝີພື້ນ "} <span className="math">{"r = 4 cm"}</span> {" ແລະ ຄວາມສູງ "} <span className="math">{"h = 10 cm"}</span> {". ຈົ່ງຄິດໄລ່ເນື້ອທີ່ທັງໝົດ (Total Surface Area) ຂອງຮູບທໍ່ກົມນີ້ (ເນື້ອທີ່ພື້ນ 2 ດ້ານ + ເນື້ອທີ່ຂ້າງ)."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ເນື້ອທີ່ທັງໝົດແມ່ນ"}</span>
@@ -255,7 +255,7 @@ export const unit12Data: UnitData = {
             {"ໂຈດບັນຫາຈອກນ້ຳຊົງກະບອກ (Cylindrical Water Glass): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈອກນ້ຳຮູບທໍ່ກົມມີລັດສະໝີພື້ນ 3 cm ແລະ ຄວາມສູງ 10 cm. ຖ້າເຮົາຕື່ມນ້ຳໃສ່ພຽງເຄິ່ງໜຶ່ງຂອງຄວາມສູງຈອກ, ຈະມີບໍລິມາດນ້ຳຈັກ cm³? (ຕອບຕິດຄ່າ π)"}
+            {"ຈອກນ້ຳຮູບທໍ່ກົມມີລັດສະໝີພື້ນ 3 cm ແລະ ຄວາມສູງ 10 cm. ຖ້າເຮົາຕື່ມນ້ຳໃສ່ພຽງເຄິ່ງໜຶ່ງຂອງຄວາມສູງຈອກ, ຈະມີບໍລິມາດນ້ຳຈັກ cm³? (ຕອບຕິດຄ່າ π)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ບໍລິມາດນ້ຳແມ່ນ"}</span>

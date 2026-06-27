@@ -246,7 +246,7 @@ export const unit3Data: UnitData = {
               {"ໂຈດບັນຫາການປຽບທຽບປະລິມານນ້ຳ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ມີຂວດນ້ຳສອງໃບ. ຂວດໃບທີໜຶ່ງມີນ້ຳ "} <Fraction num="5" den="8" /> {" ລິດຕ໌. ຂວດໃບທີສອງມີນ້ຳ "} <Fraction num="7" den="12" /> {" ລິດຕ໌. ຢາກຮູ້ວ່າຂວດໃດມີນ້ຳຫຼາຍກວ່າ ແລະ ຫຼາຍກວ່າກັນຈັກລິດຕ໌? (ໃຫ້ຂຶ້ນພູດຮ່ວມເພື່ອປຽບທຽບ)"}
+              {"ມີຂວດນ້ຳສອງໃບ. ຂວດໃບທີໜຶ່ງມີນ້ຳ "} <Fraction num="5" den="8" /> {" ລິດຕ໌. ຂວດໃບທີສອງມີນ້ຳ "} <Fraction num="7" den="12" /> {" ລິດຕ໌. ຢາກຮູ້ວ່າຂວດໃດມີນ້ຳຫຼາຍກວ່າ ແລະ ຫຼາຍກວ່າກັນຈັກລິດຕ໌? (ໃຫ້ຂຶ້ນພູດຮ່ວມເພື່ອປຽບທຽບ)"}
             </p>
             <div style={{ display: "flex", justifyContent: "center", gap: "30px", margin: "8px 0" }}>
               {/* Bottle 1 Graphic */}
@@ -288,7 +288,7 @@ export const unit3Data: UnitData = {
               {"ການຄັດຈ້ອນສຳນວນເລກສ່ວນຊ້ອນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຄັດຈ້ອນເລກສ່ວນຕໍ່ໄປນີ້ໃຫ້ເປັນເລກສ່ວນຂັ້ນຕໍ່າສຸດ: "}
+              {"ຈົ່ງຄັດຈ້ອນເລກສ່ວນຕໍ່ໄປນີ້ໃຫ້ເປັນເລກສ່ວນຂັ້ນຕໍ່າສຸດ: "}
               <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
                 <Fraction num={<span>{"120"}</span>} den={<span>{"180"}</span>} />
               </span>
@@ -311,7 +311,7 @@ export const unit3Data: UnitData = {
             {"ສົມທຽບອັດຕາສ່ວນຄະແນນສອບເສັງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ທ້າວ ສົມພອນ ເສຍຄະແນນໄດ້ "} <Fraction num="18" den="24" /> {" ຂອງຄະແນນເຕັມ, ນາງ ວັນເພັງ ເສຍໄດ້ "} <Fraction num="14" den="16" /> {" ຂອງຄະແນນເຕັມ. ຖາມວ່າໃຜໄດ້ອັດຕາສ່ວນຄະແນນສູງກວ່າກັນ? (ຄໍາແນະນໍາ: ຄັດຈ້ອນເລກສ່ວນທັງສອງກ່ອນສົມທຽບ)"}
+            {"ທ້າວ ສົມພອນ ເສຍຄະແນນໄດ້ "} <Fraction num="18" den="24" /> {" ຂອງຄະແນນເຕັມ, ນາງ ວັນເພັງ ເສຍໄດ້ "} <Fraction num="14" den="16" /> {" ຂອງຄະແນນເຕັມ. ຖາມວ່າໃຜໄດ້ອັດຕາສ່ວນຄະແນນສູງກວ່າກັນ? (ຄໍາແນະນໍາ: ຄັດຈ້ອນເລກສ່ວນທັງສອງກ່ອນສົມທຽບ)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຜູ້ທີ່ໄດ້ຄະແນນອັດຕາສ່ວນສູງກວ່າແມ່ນ"}</span>
@@ -328,7 +328,7 @@ export const unit3Data: UnitData = {
             {"ການຂຶ້ນພູດຮ່ວມຂອງສາມເລກສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຊອກຫາພູດຮ່ວມຂອງສາມເລກສ່ວນຕໍ່ໄປນີ້: "}
+            {"ຈົ່ງຊອກຫາພູດຮ່ວມຂອງສາມເລກສ່ວນຕໍ່ໄປນີ້: "}
             <span className="math" style={{ display: "inline-flex", alignItems: "center", margin: "0 4px" }}>
               <Fraction num="1" den="4" /> {", "} <Fraction num="2" den="5" /> {" ແລະ "} <Fraction num="3" den="10" />
             </span>

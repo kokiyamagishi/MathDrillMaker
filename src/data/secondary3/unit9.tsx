@@ -213,7 +213,7 @@ export const unit9Data: UnitData = {
               {"ໂຈດບັນຫາຂັ້ນໄດພາດຝາ (Ladder Leaning Against the Wall): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຂັ້ນໄດອັນໜຶ່ງຍາວ "} <span className="math">{"5 m"}</span> {" ພາດໃສ່ຝາຕັ້ງຊື່. ຖ້າຕີນຂັ້ນໄດຫ່າງຈາກຝາ "} <span className="math">{"3 m"}</span> {". ປາຍຂັ້ນໄດຈະຢູ່ສູງຈາກພື້ນດິນຈັກແມັດ?"}
+              {"ຂັ້ນໄດອັນໜຶ່ງຍາວ "} <span className="math">{"5 m"}</span> {" ພາດໃສ່ຝາຕັ້ງຊື່. ຖ້າຕີນຂັ້ນໄດຫ່າງຈາກຝາ "} <span className="math">{"3 m"}</span> {". ປາຍຂັ້ນໄດຈະຢູ່ສູງຈາກພື້ນດິນຈັກແມັດ?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຄວາມສູງແມ່ນ"}</span>
@@ -252,7 +252,7 @@ export const unit9Data: UnitData = {
             {"ຄວາມສູງຂອງຮູບສາມແຈທ່ຽງ (Height of an Isosceles Triangle): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຮູບສາມແຈທ່ຽງໜຶ່ງມີສອງຂ້າງເທົ່າກັນຍາວ "} <span className="math">{"5 cm"}</span> {" ແລະ ຂ້າງພື້ນຍາວ "} <span className="math">{"6 cm"}</span> {". ຈົ່ງຄິດໄລ່ຄວາມສູງ (h) ທີ່ຂີດຈາກຈອມຫາພື້ນ. (ຄຳແນະນຳ: ເສັ້ນສູງຈະແບ່ງພື້ນອອກເປັນສອງສ່ວນເທົ່າກັນ ພາກລະ 3 cm)"}
+            {"ຮູບສາມແຈທ່ຽງໜຶ່ງມີສອງຂ້າງເທົ່າກັນຍາວ "} <span className="math">{"5 cm"}</span> {" ແລະ ຂ້າງພື້ນຍາວ "} <span className="math">{"6 cm"}</span> {". ຈົ່ງຄິດໄລ່ຄວາມສູງ (h) ທີ່ຂີດຈາກຈອມຫາພື້ນ. (ຄຳແນະນຳ: ເສັ້ນສູງຈະແບ່ງພື້ນອອກເປັນສອງສ່ວນເທົ່າກັນ ພາກລະ 3 cm)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຄວາມສູງ h ແມ່ນ"}</span>

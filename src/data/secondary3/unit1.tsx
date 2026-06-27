@@ -224,7 +224,7 @@ export const unit1Data: UnitData = {
               {"ການເຮັດໃຫ້ສຳນວນເລກກຳລັງງ່າຍຂຶ້ນ (Simplification of Exponent): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງເຮັດໃຫ້ສຳນວນຕໍ່ໄປນີ້ງ່າຍດາຍທີ່ສຸດ: "} 
+              {"ຈົ່ງເຮັດໃຫ້ສຳນວນຕໍ່ໄປນີ້ງ່າຍດາຍທີ່ສຸດ: "} 
               <span className="math">
                 <Fraction num="x⁴ × y⁻²" den="x⁻¹ × y³" />
               </span>
@@ -266,7 +266,7 @@ export const unit1Data: UnitData = {
             {"ໂຈດບັນຫາວິທະຍາສາດ (Scientific Notation - Large Number): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ໄລຍະຫ່າງຈາກໂລກຫາສະໝຸດແມ່ນປະມານ 150,000,000 ກິໂລແມັດ. ຈົ່ງຂຽນໄລຍະຫ່າງນີ້ໃນຮູບແບບມາດຕະຖານວິທະຍາສາດ (a × 10ⁿ) ໂດຍໃຫ້ຊອກຫາຄ່າຂອງ n."}
+            {"ໄລຍະຫ່າງຈາກໂລກຫາສະໝຸດແມ່ນປະມານ 150,000,000 ກິໂລແມັດ. ຈົ່ງຂຽນໄລຍະຫ່າງນີ້ໃນຮູບແບບມາດຕະຖານວິທະຍາສາດ (a × 10ⁿ) ໂດຍໃຫ້ຊອກຫາຄ່າຂອງ n."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: n ="}</span>

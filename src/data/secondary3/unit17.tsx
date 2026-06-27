@@ -220,7 +220,7 @@ export const unit17Data: UnitData = {
               {"ລັດສະໝີວົງມົນແນບໃນຂອງຮູບສາມແຈສະເໝີ (Inradius of Equilateral Triangle): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຮູບສາມແຈສະເໝີໜຶ່ງມີຄວາມຍາວຂ້າງແມ່ນ 6 cm ແລະ ມີເນື້ອທີ່ S = 9√3 cm². ລັດສະໝີ r ຂອງວົງມົນແນບໃນຂຽນໃນຮູບແບບ a√3. ຈົ່ງຊອກຫາຄ່າຂອງ a."}
+              {"ຮູບສາມແຈສະເໝີໜຶ່ງມີຄວາມຍາວຂ້າງແມ່ນ 6 cm ແລະ ມີເນື້ອທີ່ S = 9√3 cm². ລັດສະໝີ r ຂອງວົງມົນແນບໃນຂຽນໃນຮູບແບບ a√3. ຈົ່ງຊອກຫາຄ່າຂອງ a."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: a ="}</span>
@@ -258,7 +258,7 @@ export const unit17Data: UnitData = {
             {"ຜົນບວກລັດສະໝີແນບນອກ ແລະ ແນບໃນ (Sum of Circumradius and Inradius): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຮູບສາມແຈສາກ ABC ມີມຸມ C = 90°, AC = 8 cm, BC = 6 cm. ຈົ່ງຄິດໄລ່ຜົນບວກຂອງລັດສະໝີວົງມົນແນບນອກ R ແລະ ລັດສະໝີວົງມົນແນບໃນ r (R + r) ຂອງຮູບສາມແຈນີ້."}
+            {"ຮູບສາມແຈສາກ ABC ມີມຸມ C = 90°, AC = 8 cm, BC = 6 cm. ຈົ່ງຄິດໄລ່ຜົນບວກຂອງລັດສະໝີວົງມົນແນບນອກ R ແລະ ລັດສະໝີວົງມົນແນບໃນ r (R + r) ຂອງຮູບສາມແຈນີ້."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: R + r ="}</span>

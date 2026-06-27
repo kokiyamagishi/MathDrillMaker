@@ -178,7 +178,7 @@ export const unit2Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold" }}>{""}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="y" den="y - 1" /> {" ÷ "} <Fraction num="y²" den="y² - 1" /> {" ="}
                   </span>
@@ -210,7 +210,7 @@ export const unit2Data: UnitData = {
               {"ການຄູນ ແລະ ຫານແບບປະສົມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຄິດໄລ່ ແລະ ຄັດຈ້ອນສຳນວນ: "}
+              {"ຈົ່ງຄິດໄລ່ ແລະ ຄັດຈ້ອນສຳນວນ: "}
               <strong style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
                 <Fraction num="x² - 4" den="x² - 5x + 6" /> {" × "} <Fraction num="x - 3" den="x + 2" />
               </strong>
@@ -230,7 +230,7 @@ export const unit2Data: UnitData = {
               {"ການຫານສຳນວນກຳລັງສອງ 3 ພົດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຄິດໄລ່ຜົນຫານຂອງ: "}
+              {"ຈົ່ງຄິດໄລ່ຜົນຫານຂອງ: "}
               <strong style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
                 <Fraction num="y² - y - 6" den="y² - 4y" /> {" ÷ "} <Fraction num="y² - 4" den="y² - 4" />
               </strong>
@@ -253,7 +253,7 @@ export const unit2Data: UnitData = {
             {"ການຄິດໄລ່ຜົນຄູນຂັ້ນສູງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຄິດໄລ່ຜົນຄູນຂອງ: "}
+            {"ຈົ່ງຄິດໄລ່ຜົນຄູນຂອງ: "}
             <strong style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
               <Fraction num="x² - 12x + 36" den="x² - 4" /> {" × "} <Fraction num="x + 2" den="x - 6" />
             </strong>
@@ -273,7 +273,7 @@ export const unit2Data: UnitData = {
             {"ການພົວພັນການຄູນ ແລະ ຫານສຳນວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຈົ່ງຄິດໄລ່ຜົນຫານຂັ້ນສູງ: "}
+            {"ຈົ່ງຄິດໄລ່ຜົນຫານຂັ້ນສູງ: "}
             <strong style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
               <Fraction num="a² - b²" den="2a" /> {" ÷ "} <Fraction num="a² + 2ab + b²" den="4a²" />
             </strong>

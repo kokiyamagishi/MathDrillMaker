@@ -204,7 +204,7 @@ export const unit33Data: UnitData = {
               {"ຊອກຫາ x ຈາກເສັ້ນຈອມກາງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຖ້າທ່ອນເສັ້ນຈອມກາງ AM ຍາວ "} <span className="math">{"3x cm"}</span>{", ໂດຍມີຈຸດ重心 G ເຊິ່ງເຮັດໃຫ້ AG = 10 cm. ຈົ່ງຊອກຫາຄ່າຂອງ x. (AG = 2/3 AM)"}
+              {"ຖ້າທ່ອນເສັ້ນຈອມກາງ AM ຍາວ "} <span className="math">{"3x cm"}</span>{", ໂດຍມີຈຸດ重心 G ເຊິ່ງເຮັດໃຫ້ AG = 10 cm. ຈົ່ງຊອກຫາຄ່າຂອງ x. (AG = 2/3 AM)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x ="}</span>
@@ -221,7 +221,7 @@ export const unit33Data: UnitData = {
               {"ຊອກຫາ y ໃນຮູບສາມແຈທ່ຽງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ໃນຮູບສາມແຈທ່ຽງ ABC (AB = AC), ເສັ້ນສູງ AH ແມ່ນເສັ້ນແບ່ງເຄິ່ງມຸມຈອມ A. ຖ້າມຸມ BAH = 25°. ຈົ່ງຊອກຫາມຸມ B (ມຸມພື້ນ)."}
+              {"ໃນຮູບສາມແຈທ່ຽງ ABC (AB = AC), ເສັ້ນສູງ AH ແມ່ນເສັ້ນແບ່ງເຄິ່ງມຸມຈອມ A. ຖ້າມຸມ BAH = 25°. ຈົ່ງຊອກຫາມຸມ B (ມຸມພື້ນ)."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ມຸມ B ແມ່ນ"}</span>
@@ -242,7 +242,7 @@ export const unit33Data: UnitData = {
             {"ຊອກຫາສ່ວນຕ່າງຂອງເສັ້ນຈອມກາງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ຖ້າເສັ້ນຈອມກາງ AM ຍາວ 18 cm, ຈົ່ງຊອກຫາສ່ວນຕ່າງລະຫວ່າງ AG ແລະ GM (AG - GM)."}
+            {"ຖ້າເສັ້ນຈອມກາງ AM ຍາວ 18 cm, ຈົ່ງຊອກຫາສ່ວນຕ່າງລະຫວ່າງ AG ແລະ GM (AG - GM)."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: AG - GM ="}</span>
@@ -260,7 +260,7 @@ export const unit33Data: UnitData = {
             {"ຄຸນລັກສະນະເສັ້ນແບ່ງເຄິ່ງຕັ້ງສາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ໄລຍະຫ່າງຈາກຈຸດໃດໜຶ່ງເທິງເສັ້ນແບ່ງເຄິ່ງຕັ້ງສາກ ຫາສອງປາຍທ່ອນຊື່ຍາວເທົ່າກັນ. ຖ້າໄລຍະຫ່າງຫາປາຍໜຶ່ງແມ່ນ 8 cm, ໄລຍະຫ່າງຫາປາຍທີສອງຈະແມ່ນຈັກ cm?"}
+            {"ໄລຍະຫ່າງຈາກຈຸດໃດໜຶ່ງເທິງເສັ້ນແບ່ງເຄິ່ງຕັ້ງສາກ ຫາສອງປາຍທ່ອນຊື່ຍາວເທົ່າກັນ. ຖ້າໄລຍະຫ່າງຫາປາຍໜຶ່ງແມ່ນ 8 cm, ໄລຍະຫ່າງຫາປາຍທີສອງຈະແມ່ນຈັກ cm?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຍາວ"}</span>

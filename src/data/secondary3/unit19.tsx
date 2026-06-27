@@ -237,7 +237,7 @@ export const unit19Data: UnitData = {
               {"ສົມຜົນເສັ້ນຊື່ຕັ້ງສາກຜ່ານຈຸດທີ່ກຳນົດ (Finding Perpendicular Line Equation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(1) ຈົ່ງຊອກຫາສົມຜົນເສັ້ນຊື່ທີ່ຜ່ານເມັດ "} <span className="math">{"A(2, 5)"}</span> {" ແລະ ຕັ້ງສາກກັບເສັ້ນຊື່ "} <span className="math">{"y = -"} <Fraction num="1" den="3" /> {"x + 2"}</span> {". ຂຽນໃນຮູບ y = ax + b, ຄ່າຂອງ a + b ແມ່ນເທົ່າໃດ?"}
+              {"ຈົ່ງຊອກຫາສົມຜົນເສັ້ນຊື່ທີ່ຜ່ານເມັດ "} <span className="math">{"A(2, 5)"}</span> {" ແລະ ຕັ້ງສາກກັບເສັ້ນຊື່ "} <span className="math">{"y = -"} <Fraction num="1" den="3" /> {"x + 2"}</span> {". ຂຽນໃນຮູບ y = ax + b, ຄ່າຂອງ a + b ແມ່ນເທົ່າໃດ?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: a + b ="}</span>
@@ -274,7 +274,7 @@ export const unit19Data: UnitData = {
             {"ຜົນບວກຕົວປະສານງານເມັດເຄິ່ງກາງ (Midpoint Coordinates Sum): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(1) ທ່ອນຊື່ AB ມີສອງສົ້ນແມ່ນ "} <span className="math">{"A(1, 2)"}</span> {" ແລະ "} <span className="math">{"B(5, 10)"}</span> {". ຈົ່ງຊອກຫາຈຸດເຄິ່ງກາງ M ຂອງທ່ອນຊື່ນີ້ ແລ້ວຄິດໄລ່ຜົນບວກຂອງຕົວປະສານງານ (x_M + y_M)."}
+            {"ທ່ອນຊື່ AB ມີສອງສົ້ນແມ່ນ "} <span className="math">{"A(1, 2)"}</span> {" ແລະ "} <span className="math">{"B(5, 10)"}</span> {". ຈົ່ງຊອກຫາຈຸດເຄິ່ງກາງ M ຂອງທ່ອນຊື່ນີ້ ແລ້ວຄິດໄລ່ຜົນບວກຂອງຕົວປະສານງານ (x_M + y_M)."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຜົນບວກແມ່ນ"}</span>
