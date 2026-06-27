@@ -171,18 +171,18 @@ export const unit5Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span className="math">{"85 = (9 ×"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "60px", width: "60px", height: "42px" }}></span>
                   <span className="math">{") +"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "60px", width: "60px", height: "42px" }}></span>
                 </div>
 
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span className="math">{"147 = (12 ×"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "60px", width: "60px", height: "42px" }}></span>
                   <span className="math">{") +"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "60px", width: "60px", height: "42px" }}></span>
                 </div>
               </div>
             </div>
