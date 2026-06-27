@@ -74,26 +74,26 @@ export const unit1Data: UnitData = {
               
               <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
+                <div style={{ fontSize: "1.375rem", lineHeight: "2" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "12px" }}>{"(1)"}</span>
+                  <span style={{ whiteSpace: "nowrap" }}>
                     {"507 = (5 × "}
+                    <span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "24px", verticalAlign: "middle", margin: "0 4px" }}></span>
+                    {") + (0 × 10) +"}
+                    <span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "24px", verticalAlign: "middle", margin: "0 4px" }}></span>
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px" }}></span>
-                  <span className="math">{") + (0 × 10) +"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px" }}></span>
                 </div>
                 
                 {/* Sub-question 2 */}
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
+                <div style={{ fontSize: "1.375rem", lineHeight: "2", marginTop: "12px" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "12px" }}>{"(2)"}</span>
+                  <span style={{ whiteSpace: "nowrap" }}>
                     {"2 532 = (2 × 1000) + ("}
+                    <span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "24px", verticalAlign: "middle", margin: "0 4px" }}></span>
+                    {"× 100) + (3 ×"}
+                    <span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "24px", verticalAlign: "middle", margin: "0 4px" }}></span>
+                    {") + 2"}
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px" }}></span>
-                  <span className="math">{"× 100) + (3 ×"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px" }}></span>
-                  <span className="math">{") + 2"}</span>
                 </div>
               </div>
             </div>
