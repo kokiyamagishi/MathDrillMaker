@@ -55,7 +55,7 @@ export const AnswerSheet: React.FC<AnswerSheetProps> = ({ pageNumber, unitData }
 
   // Dynamically scale font size, gaps, and padding based on the total items AND total answers count AND text lengths
   // to ensure everything fits into exactly one A4 page without cutoffs.
-  let fontSize = "0.98rem";
+  let fontSize = "15px";
   let gap = "6px 10px";
   let professorWidth = 65;
   let professorHeight = 78;
@@ -68,7 +68,6 @@ export const AnswerSheet: React.FC<AnswerSheetProps> = ({ pageNumber, unitData }
   // Trigger super-squeeze if total answers are huge OR total sheet characters are massive (Lao text size) OR any single answer is extremely verbose
   if (totalAnswersCount >= 22 || totalItems >= 15 || totalSheetLength >= 350) {
     // Hyper-squeeze layout for absolute maximum density sheets
-    fontSize = "0.55rem";
     gap = "0.5px 1px";
     professorWidth = 0;
     professorHeight = 0;
@@ -79,7 +78,6 @@ export const AnswerSheet: React.FC<AnswerSheetProps> = ({ pageNumber, unitData }
     hideAdvice = true;
   } else if (totalAnswersCount >= 14 || totalItems >= 10 || totalSheetLength >= 220 || maxSingleAnswerLength >= 50) {
     // Super-squeeze layout
-    fontSize = "0.62rem";
     gap = "1px 1.5px";
     professorWidth = 0; // Hide avatar to maximize content width
     professorHeight = 0;
@@ -90,7 +88,6 @@ export const AnswerSheet: React.FC<AnswerSheetProps> = ({ pageNumber, unitData }
     hideAdvice = true; // Automatically hide advice box to gain 100px+ height
   } else if (totalAnswersCount >= 8 || totalItems >= 6 || totalSheetLength >= 140 || maxSingleAnswerLength >= 30) {
     // Squeeze layout for large units
-    fontSize = "0.72rem";
     gap = "1.5px 2px";
     professorWidth = 30;
     professorHeight = 36;
@@ -99,7 +96,6 @@ export const AnswerSheet: React.FC<AnswerSheetProps> = ({ pageNumber, unitData }
     adviceMargin = "2px";
     lineHeight = "1.14";
   } else if (totalAnswersCount >= 5 || totalItems >= 4) {
-    fontSize = "0.84rem";
     gap = "2.5px 4px";
     professorWidth = 40;
     professorHeight = 48;
