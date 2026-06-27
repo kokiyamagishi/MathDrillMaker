@@ -168,7 +168,7 @@
   width: 120px;
   border-bottom: 1px solid var(--color-border);
   margin-left: var(--space-2);
-  vertical-align: -4px;
+  vertical-align: -8px;
 }
 
 /* 得点記入欄 */

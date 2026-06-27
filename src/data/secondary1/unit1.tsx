@@ -161,7 +161,7 @@ export const unit1Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຈົ່ງຕື່ມເຄື່ອງໝາຍ < , > ຫຼື = ໃສ່ບ່ອນວ່າງໃຫ້ຖືກຕ້ອງ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນន, ລວມ 5 ຄະແນន)"}</span>
+                {"ຈົ່ງຕື່ມເຄື່ອງໝາຍ < , > ຫຼື = ໃສ່ບ່ອນວ່າງໃຫ້ຖືກຕ້ອງ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນន, ລວມ 5 ຄະແນນន)"}</span>
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
@@ -221,7 +221,7 @@ export const unit1Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ໂຈດຊອກຫາຄ່າສູງສຸດ ແລະ ຕ່ຳສຸດ: "}<span className="point-label">{"(5 ຄະແນន)"}</span>
+              {"ໂຈດຊອກຫາຄ່າສູງສຸດ ແລະ ຕ່ຳສຸດ: "}<span className="point-label">{"(5 ຄະແນນន)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(1) ມີບັດຕົວເລກ 5 ໃບຄື: "}<strong>{"3, 1, 0, 0, 2"}</strong>
@@ -245,7 +245,7 @@ export const unit1Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ໂຈດການຂອບຂັ້ນຈຳນວນທຳມະຊາດ: "}<span className="point-label">{"(5 ຄະແນន)"}</span>
+              {"ໂຈດການຂອບຂັ້ນຈຳນວນທຳມະຊາດ: "}<span className="point-label">{"(5 ຄະແນນន)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(1) ຈົ່ງຂອບຂັ້ນຈຳນວນ "}<strong>{"85 243"}</strong>{" ດ້ວຍຄ່າໃກ້ຄຽງຫຼຸດ ແລະ ຄ່າໃກ້ຄຽງລື່ນຢູ່ຫຼັກສິບ ແລະ ຫຼັກຮ້ອຍ ໃຫ້ຖືກຕ້ອງ:"}
@@ -275,7 +275,7 @@ export const unit1Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ການອ່ານ ແລະ ຂຽນຈຳນວນທຳມະຊາດຂະໜາດໃຫຍ່: "}<span className="point-label">{"(5 ຄະແນន)"}</span>
+            {"ການອ່ານ ແລະ ຂຽນຈຳນວນທຳມະຊາດຂະໜາດໃຫຍ່: "}<span className="point-label">{"(5 ຄະແນນន)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(1) ຈົ່ງອ່ານຈຳນວນຖ້ວນ "}<strong>{"12 045 237 086"}</strong>{" ເປັນຕົວອັກສອນແນວໃດ? ຈົ່ງຕື່ມໃສ່ບ່ອນວ່າງລຸ່ມນີ້ໃຫ້ສົມບູນ:"}
@@ -295,7 +295,7 @@ export const unit1Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ການປຽບທຽບເລກໂຣແມັງ: "}<span className="point-label">{"(5 ຄະແນន)"}</span>
+            {"ການປຽບທຽບເລກໂຣແມັງ: "}<span className="point-label">{"(5 ຄະແນນន)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(1) ຈົ່ງຕື່ມເຄື່ອງໝາຍ <, > ຫຼື = ໃສ່ບ່ອນວ່າງລະຫວ່າງເລກໂຣແມັງຕໍ່ໄປນີ້:"}

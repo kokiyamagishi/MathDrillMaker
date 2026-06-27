@@ -267,7 +267,7 @@ export const unit10Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ມຸມໃນຮູບສາມແຈຈອມວົງມົນ (Angle Calculation inside Isosceles Circle sector): "}<span className="point-label">{"(5 ຄະແນന)"}</span>
+            {"ມຸມໃນຮູບສາມແຈຈອມວົງມົນ (Angle Calculation inside Isosceles Circle sector): "}<span className="point-label">{"(5 ຄະແນນന)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(2) ໃນວົງມົນທີ່ມີ O ເປັນໃຈກາງ, ມີຄອດ (Chord) AB. ເມັດ C ນອນຢູ່ເທິງເສັ້ນຮອບວົງ. ຖ້າຮູ້ວ່າ "} <span className="math">{"∠OAB = 25°"}</span> {", ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມໃຈກາງ "} <span className="math">{"∠AOB"}</span> {"."}
