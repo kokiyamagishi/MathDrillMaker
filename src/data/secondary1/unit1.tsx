@@ -78,9 +78,9 @@ export const unit1Data: UnitData = {
                   <span style={{ fontWeight: "bold", marginRight: "12px" }}>{"(1)"}</span>
                   <span style={{ whiteSpace: "nowrap" }}>
                     {"507 = (5 × "}
-                    <span className="answer-blank" style={{ display: "inline-block", minWidth: "30px", width: "30px", height: "24px", verticalAlign: "middle", margin: "0 4px" }}></span>
+                    <span className="answer-blank" style={{ display: "inline-block", minWidth: "45px", width: "45px", height: "24px", verticalAlign: "middle", margin: "0 4px" }}></span>
                     {") + (0 × 10) +"}
-                    <span className="answer-blank" style={{ display: "inline-block", minWidth: "30px", width: "30px", height: "24px", verticalAlign: "middle", margin: "0 4px" }}></span>
+                    <span className="answer-blank" style={{ display: "inline-block", minWidth: "45px", width: "45px", height: "24px", verticalAlign: "middle", margin: "0 4px" }}></span>
                   </span>
                 </div>
                 
@@ -89,9 +89,9 @@ export const unit1Data: UnitData = {
                   <span style={{ fontWeight: "bold", marginRight: "12px" }}>{"(2)"}</span>
                   <span style={{ whiteSpace: "nowrap" }}>
                     {"2 532 = (2 × 1000) + ("}
-                    <span className="answer-blank" style={{ display: "inline-block", minWidth: "30px", width: "30px", height: "24px", verticalAlign: "middle", margin: "0 4px" }}></span>
+                    <span className="answer-blank" style={{ display: "inline-block", minWidth: "45px", width: "45px", height: "24px", verticalAlign: "middle", margin: "0 4px" }}></span>
                     {"× 100) + (3 ×"}
-                    <span className="answer-blank" style={{ display: "inline-block", minWidth: "30px", width: "30px", height: "24px", verticalAlign: "middle", margin: "0 4px" }}></span>
+                    <span className="answer-blank" style={{ display: "inline-block", minWidth: "45px", width: "45px", height: "24px", verticalAlign: "middle", margin: "0 4px" }}></span>
                     {") + 2"}
                   </span>
                 </div>
