@@ -251,17 +251,17 @@ export const unit1Data: UnitData = {
               {"(1) ຈົ່ງຂອບຂັ້ນຈຳນວນ "}<strong>{"85 243"}</strong>{" ດ້ວຍຄ່າໃກ້ຄຽງຫຼຸດ ແລະ ຄ່າໃກ້ຄຽງລື່ນຢູ່ຫຼັກສິບ ແລະ ຫຼັກຮ້ອຍ ໃຫ້ຖືກຕ້ອງ:"}
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                 <span>{" - ຂອບຂັ້ນຢູ່ຫຼັກສິບ: "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "45px", width: "45px", height: "42px", verticalAlign: "middle" }}></span>
                 <span>{" < "} 85 243 {" < "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "45px", width: "45px", height: "42px", verticalAlign: "middle" }}></span>
               </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                 <span>{" - ຂອບຂັ້ນຢູ່ຫຼັກຮ້ອຍ: "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "45px", width: "45px", height: "42px", verticalAlign: "middle" }}></span>
                 <span>{" < "} 85 243 {" < "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "45px", width: "45px", height: "42px", verticalAlign: "middle" }}></span>
               </div>
             </div>
           </div>
