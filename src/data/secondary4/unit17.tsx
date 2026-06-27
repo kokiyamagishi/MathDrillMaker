@@ -130,7 +130,7 @@ export const unit17Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຈົ່ງຊອກຫາໄລຍະການຍ້າຍຂະໜານລະຫວ່າງສອງປາຣາໂບນ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແនນ)"}</span>
+                {"ຈົ່ງຊອກຫາໄລຍະການຍ້າຍຂະໜານລະຫວ່າງສອງປາຣາໂບນ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
               </p>
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
                 {"ຍ້າຍປາຣາໂບນ y = x² + 2x + 2 (ເມັດຈອມ S_1(-1, 1)) ເພື່ອໃຫ້ກາຍເປັນ y = x² - 6x + 7 (ເມັດຈອມ S_2(3, -2)):"}
