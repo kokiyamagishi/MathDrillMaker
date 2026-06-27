@@ -70,12 +70,17 @@ export const unit13Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ໃນການສ້າງເສັ້ນຊື່ຂະໜານ d′ // d, ຖ້າເຮົາກຳນົດ AB = 5 cm ແລະ BC = 7 cm, ຄວາມຍາວຂອງ CD ແລະ AD ທີ່ໄດ້ຈາກວົງວຽນຈະເທົ່າກັບຈັກ cm ຕາມລຳດັບ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                <span>{"ຕອບ: CD ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
-                <span>{"cm , AD ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
-                <span>{"cm"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "24px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{"ຕອບ: CD ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"cm"}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span>{", AD ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"cm"}</span>
+                </div>
               </div>
             </div>
           )
