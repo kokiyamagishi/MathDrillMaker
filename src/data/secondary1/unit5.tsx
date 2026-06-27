@@ -141,18 +141,18 @@ export const unit5Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"47 ຫານໃຫ້ 6 ໄດ້: ຜົນຫານ ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "60px", width: "60px", height: "42px" }}></span>
                   <span>{", ຕົວເສດ ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "60px", width: "60px", height: "42px" }}></span>
                 </div>
                 
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"108 ຫານໃຫ້ 9 ໄດ້: ຜົນຫານ ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "60px", width: "60px", height: "42px" }}></span>
                   <span>{", ຕົວເສດ ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "60px", width: "60px", height: "42px" }}></span>
                 </div>
               </div>
             </div>
