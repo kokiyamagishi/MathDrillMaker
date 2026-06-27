@@ -312,6 +312,38 @@ export const unit10Data: UnitData = {
               </div>
             </div>
           )
+        },
+        {
+          number: 6,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ສຳນວນທີ່ມີວົງຂໍຕໍ່ໄປນີ້ (ຊຸດທີ 2): "}<span className="point-label">{"(ຂໍ້ລະ 1.25 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math">{"20 - [4 × (9 - 7)] ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math">{"[6 + 3 × (4 - 2)] × 3 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                  <span className="math">{"[12 - 5 × (2 - 4)] - 8 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                  <span className="math">{"36 ÷ [15 - (3 + 3 × 3)] ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
         }
       ]
     }
@@ -439,6 +471,15 @@ export const unit10Data: UnitData = {
           <span key="3-2">{"(2) 20 ([4 + 2 × (5 - 2)] × 2 = [4 + 2 × 3] × 2 = [4 + 6] × 2 = 10 × 2 = 20)"}</span>,
           <span key="3-3">{"(3) 13 ([10 - 4 × (1 - 3)] - 5 = [10 - 4 × (-2)] - 5 = [10 + 8] - 5 = 18 - 5 = 13)"}</span>,
           <span key="3-4">{"(4) 5 (30 ÷ [12 - (2 + 2 × 2)] = 30 ÷ [12 - (2 + 4)] = 30 ÷ [12 - 6] = 30 ÷ 6 = 5)"}</span>
+        ]
+      },
+      {
+        questionNumber: 6,
+        answers: [
+          <span key="u10-ans-6-1">{"(1) 12 (20 - [4 × (9 - 7)] = 20 - 8 = 12)"}</span>,
+          <span key="u10-ans-6-2">{"(2) 36 ([6 + 3 × (4 - 2)] × 3 = [6 + 6] × 3 = 12 × 3 = 36)"}</span>,
+          <span key="u10-ans-6-3">{"(3) 14 ([12 - 5 × (2 - 4)] - 8 = 22 - 8 = 14)"}</span>,
+          <span key="u10-ans-6-4">{"(4) 12 (36 ÷ [15 - (3 + 3 × 3)] = 36 ÷ 3 = 12)"}</span>
         ]
       },
       {
