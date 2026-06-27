@@ -1,367 +1,293 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit14Data: UnitData = {
   unitNumber: 14,
-  unitTitle: "ພາກທີ II - ບົດທີ 14: ຕຳລາຂັ້ນສອງໃນຮູບຮ່າງ y = ax²",
-  unitGoal:
-    "ເຂົ້າໃຈການປ່ຽນແປງຂອງເສັ້ນສະແດງປາຣາໂບນ y = ax² ຕາມຄ່າສຳປະສິດ a (ການປິ່ນຂຶ້ນ/ລົງ ແລະ ຄວາມກວ້າງ/ແຄບ ຂອງເສັ້ນໂຄ້ງ)",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 14 ໜ້າ 79-84",
+  unitTitle: "ພາກທີ II - ບົດທີ 14: ຕຳລາຂັ້ນສອງໃນຮູບຮ່າງ y = ax² (Quadratic Functions in form y = ax²)",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບອິດທິພົນຂອງສຳປະສິດ a ຕໍ່ກັບຮູບຮ່າງຂອງປາຣາໂບນ y = ax², ຄວາມແຕກຕ່າງລະຫວ່າງປາຣາໂບນຫງາຍ (a > 0) ແລະ ປາຣາໂບນຂວ້ຳ (a < 0), ແລະ ການແກ້ໂຈດສົມຜົນ-ອະສົມຜົນດ້ວຍກຣາຟ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 72-76",
   subSections: [
     {
-      title: "1. ອິດທິພົນຂອງສຳປະສິດ a (Influence of Coefficient 'a')",
+      title: "1. ບົດບາດຂອງສຳປະສິດ a ແລະ ທິດທາງຂອງປາຣາໂບນ (Coefficient a & Parabola Direction)",
       keyPoint: {
-      title: "1. ອິດທິພົນຂອງສຳປະສິດ a (Influence of Coefficient 'a')",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ສຳປະສິດ a ຈະເປັນຕົວຊີ້ບອກທິດທາງ ແລະ ຄວາມກວ້າງຂອງເສັ້ນສະແດງປາຣາໂບນ y = ax²:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div>
-              <strong style={{ color: "#E65100" }}>{"• ທິດທາງຂອງການປິ່ນ (Direction): "}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px" }}>{"- ຖ້າ a > 0: ເສັ້ນສະແດງ ປິ່ນຂຶ້ນ ເທິງ (ມີຈຸດຕ່ຳສຸດຢູ່ (0, 0))."}</span>
-              <br />
-              <span style={{ paddingLeft: "20px" }}>{"- ຖ້າ a < 0: ເສັ້ນສະແດງ ປິ່ນລົງ ລຸ່ມ (ມີຈຸດສູງສຸດຢູ່ (0, 0))."}</span>
+        title: "ຫຼັກການກ່ຽວກັບສຳປະສິດ a",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ສຳປະສິດ a ຈະເປັນຕົວກຳນົດທັງທິດທາງ ແລະ ຄວາມກວ້າງ-ແຄບຂອງປາຣາໂບນ y = ax²:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ທິດທາງການຫງາຍ-ຂວ້ຳ:"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
+                <li><strong>{"ຖ້າ a > 0: "}</strong>{" ປາຣາໂບນຫງາຍ (opens upwards), ມີເມັດ O(0,0) ເປັນເມັດຕ່ຳສຸດ. ເຂດຄ່າ y ∈ [0, +∞[."}</li>
+                <li><strong>{"ຖ້າ a < 0: "}</strong>{" ປາຣາໂບນຂວ້ຳ (opens downwards), ມີເມັດ O(0,0) ເປັນເມັດສູງສຸດ. ເຂດຄ່າ y ∈ ]-∞, 0]."}</li>
+              </ul>
             </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#D84315" }}>{"• ຄວາມກວ້າງ/ແຄບ (Width of Curve): "}</strong>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"- ຄວາມກວ້າງ-ແຄບ: ຄ່າສຳບູນ |a| ຍິ່ງຫຼາຍ ປາຣາໂບນຈະຍິ່ງແຄບ (ຮີບ) ເຂົ້າຫາແກນ Oy. ຄ່າ |a| ຍິ່ງນ້ອຍ (ໃກ້ 0) ປາຣາໂບນຈະຍິ່ງກວ້າງອອກ."}
               <br />
-              <span style={{ paddingLeft: "20px" }}>{"- ຖ້າຄ່າສຳບູນ |a| ຍິ່ງໃຫຍ່, ເສັ້ນສະແດງຈະຍິ່ງ ແຄບ (ຫຍັບເຂົ້າຫາແກນ y)."}</span>
-              <br />
-              <span style={{ paddingLeft: "20px" }}>{"- ຖ້າຄ່າສຳບູນ |a| ຍິ່ງນ້ອຍ, ເສັ້ນສະແດງຈະຍິ່ງ ກວ້າງ (ຫ່າງຈາກແກນ y)."}</span>
-            </div>
+              {"  ເຊັ່ນ: y = 2x² ຈະແຄບກວ່າ y = x² ແລະ y = (1/2)x² ຈະກວ້າງກວ່າ y = x²."}
+            </p>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ຕົວຢ່າງ: ປາຣາໂບນ y = 2x² ຈະແຄບກວ່າ y = x², ແລະ y = -3x² ຈະປິ່ນລົງລຸ່ມ ແລະ ແຄບກວ່າ y = -x² ເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຈື່ສະເໝີ: ແກນເຄິ່ງຄືຂອງປາຣາໂບນ y = ax² ແມ່ນແກນ Oy (x = 0) ແລະ ເມັດຈອມແມ່ນ O(0,0) ສະເໝີ ບໍ່ວ່າ a ຈະເປັນບວກ ຫຼື ລົບ!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ຫາຄ່າ y ຂອງຕຳລາ y = ax² ຕາມຄ່າ x ທີ່ກຳນົດ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໃຫ້ຕຳລາ y = 3x². ຖ້າ x = 2, ຄ່າ y ຈະແມ່ນເທົ່າໃດ?:"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາເຂດຄ່າຂອງ y ຂອງຕຳລາ y = -2x² (ປາຣາໂບນຂວ້ຳ) ຕາມຫວ່າງຂອງ x: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ຖ້າ x ຢູ່ຫວ່າງ [-3, -1] ⇒ ເຂດຄ່າ y ຢູ່ຫວ່າງ [-18,"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"]"}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ຖ້າ x ຢູ່ຫວ່າງ [-5, 1] (x ຜ່ານເມັດຈອມ 0) ⇒ ເຂດຄ່າ y ຢູ່ຫວ່າງ ["}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{", 0]"}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ໃຫ້ຕຳລາ y = -2x². ຖ້າ x = -3, ຄ່າ y ຈະແມ່ນເທົ່າໃດ? (⚠️ ໄລ່ກຳລັງສອງ x ກ່ອນແລ້ວຈຶ່ງຄູນ -2):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງປຽບທຽບຄວາມແຄບ-ກວ້າງຂອງປາຣາໂບນຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ລະຫວ່າງ y = 2x² ແລະ y = 4x²: ປາຣາໂບນໃດຮີບ (ແຄບ) ກວ່າ? ⇒ ຕຳລາ y ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ລະຫວ່າງ y = -x² ແລະ y = -3x²: ປາຣາໂບນໃດກວ້າງກວ່າ? ⇒ ຕຳລາ y ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ແຜນວາດການປຽບທຽບເສັ້ນສະແດງ (Graphical Comparison)",
+      title: "2. ການແກ້ສົມຜົນ y = ax² ດ້ວຍກຣາຟ (Graphical Solutions of y = ax²)",
       keyPoint: {
-      title: "2. ແຜນວາດການປຽບທຽບເສັ້ນສະແດງ (Graphical Comparison)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <div style={{ display: "flex", gap: "20px", flexWrap: "wrap", justifyContent: "center" }}>
-            {/* a > 0 comparison */}
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <span style={{ fontSize: "1.125rem", color: "#666", marginBottom: "4px" }}>{"ປິ່ນຂຶ້ນ (y=2x² vs y=0.5x²)"}</span>
-              <svg viewBox="0 0 120 100" style={{ width: "120px", height: "100px", border: "1px solid #ccc", backgroundColor: "#fff" }}>
-                <line x1="10" y1="80" x2="110" y2="80" stroke="#333" strokeWidth="0.8" />
-                <line x1="60" y1="90" x2="60" y2="10" stroke="#333" strokeWidth="0.8" />
-                {/* y = 2x^2 (narrow) */}
-                <path d="M 40,20 Q 60,80 80,20" fill="none" stroke="#E91E63" strokeWidth="1.8" />
-                <text x="82" y="25" fill="#E91E63" fontSize="6">{"y=2x²"}</text>
-                {/* y = 0.5x^2 (wide) */}
-                <path d="M 20,40 Q 60,80 100,40" fill="none" stroke="#2196F3" strokeWidth="1.8" />
-                <text x="102" y="45" fill="#2196F3" fontSize="6">{"y=0.5x²"}</text>
-              </svg>
-            </div>
-            {/* a < 0 comparison */}
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <span style={{ fontSize: "1.125rem", color: "#666", marginBottom: "4px" }}>{"ປິ່ນລົງ (y=-x²)"}</span>
-              <svg viewBox="0 0 120 100" style={{ width: "120px", height: "100px", border: "1px solid #ccc", backgroundColor: "#fff" }}>
-                <line x1="10" y1="30" x2="110" y2="30" stroke="#333" strokeWidth="0.8" />
-                <line x1="60" y1="90" x2="60" y2="10" stroke="#333" strokeWidth="0.8" />
-                {/* y = -x^2 */}
-                <path d="M 30,80 Q 60,30 90,80" fill="none" stroke="#4CAF50" strokeWidth="1.8" />
-                <text x="92" y="75" fill="#4CAF50" fontSize="6">{"y=-x²"}</text>
-              </svg>
+        title: "ການແກ້ສົມຜົນ ax² = k",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ການແກ້ສົມຜົນ ax² = k ແມ່ນການຊອກຫາຈຸດຕັດລະຫວ່າງປາຣາໂບນ y = ax² ແລະ ເສັ້ນຊື່ y = k:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ວິທີການຄິດໄລ່:"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"ສົມຜົນ: ax² = k  ⇒  x² = k/a."}
+                <br />
+                {"- ຖ້າ k/a > 0: ຈະມີ 2 ໃຈຜົນແມ່ນ: x = ±√(k/a)."}
+                <br />
+                {"- ຖ້າ k/a = 0: ຈະມີ 1 ໃຈຜົນແມ່ນ: x = 0."}
+                <br />
+                {"- ຖ້າ k/a < 0: ສົມຜົນບໍ່ມີໃຈຜົນຕົວຈິງ."}
+              </p>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ຈຸດຈອມຂອງທຸກໆຕຳລາໃນຮູບຮ່າງ y = ax² ແມ່ນຢູ່ O(0, 0) ຄືກັນໝົດເດີ້!",
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງ: ແກ້ສົມຜົນ -2x² = -8 ⇒ x² = 4 ⇒ x = ±2. ແຕ່ສົມຜົນ -2x² = 8 ⇒ x² = -4 ⇒ ບໍ່ມີໃຈຜົນຕົວຈິງ!",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງບອກທິດທາງການປິ່ນຂອງເສັ້ນສະແດງ (ຕອບ ປິ່ນຂຶ້ນ ຫຼື ປິ່ນລົງ): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ເສັ້ນສະແດງຂອງຕຳລາ y = -5x² ຈະມີລັກສະນະແນວໃດ? (ຕອບ ປິ່ນຂຶ້ນ ຫຼື ປິ່ນລົງ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງແກ້ສົມຜົນຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ສົມຜົນ -2x² = -18 ⇒ x² = 9 ⇒ ໃຈຜົນ x = ±"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ສົມຜົນ (1/2)x² = 8 ⇒ x² = 16 ⇒ ໃຈຜົນ x = ±"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ເສັ້ນສະແດງຂອງຕຳລາ y = "} <Fraction num="1" den="3" /> {" x² ຈະມີລັກສະນະແນວໃດ?:"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຫາຫວ່າງຂອງຕົວປ່ຽນ x: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ຖ້າຕຳລາ y = -2x² ມີເຂດຄ່າ y ຢູ່ຫວ່າງ [-8, -2]. ຈົ່ງຊອກຫາຫວ່າງຂອງ x ທີ່ສອດຄ່ອງ (ສໍາລັບ x > 0)?"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ຕອບ: ຫວ່າງ x ແມ່ນ ["}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                <span>{", "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                <span>{"]"}</span>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ປຽບທຽບຄວາມກວ້າງ/ແຄບ ໂດຍເບິ່ງທີ່ຄ່າສຳບູນ |a|. ບົດທ້າທາຍ 2: ໃຫ້ຕັ້ງສົມຜົນ y = ax² ແລ້ວແທນພິກັດເມັດເພື່ອຊອກຫາຄ່າ a ເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງປຽບທຽບຄວາມແຄບຂອງເສັ້ນສະແດງ (Narrowness comparison): "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດແກ້ອະສົມຜົນປາຣາໂບນຂວ້ຳ (Quadratic Inequality of Negative Parabola): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ລະຫວ່າງສອງຕຳລາ A: y = 3x² ແລະ B: y = x², ເສັ້ນສະແດງໃດມີລັກສະນະ ແຄບ ກວ່າ? (ຕອບ A ຫຼື B):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ລະຫວ່າງສອງຕຳລາ C: y = -0.2x² ແລະ D: y = -2x², ເສັ້ນສະແດງໃດມີລັກສະນະ ແຄບ ກວ່າ? (⚠️ ເບິ່ງຄ່າສຳບູນ |a|):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຈົ່ງແກ້ອະສົມຜົນ: -3x² ≥ -12. ຈົ່ງຫາຫວ່າງໃຈຜົນຂອງ x?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <span>{"ຕອບ: ກຸ່ມໃຈຜົນແມ່ນ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+              <span>{"≤ x ≤"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາສຳປະສິດ a ຈາກເມັດພິກັດທີ່ເສັ້ນສະແດງຜ່ານ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດຊອກຫາຄົງຄ່າ a ຈາກກຣາຟ (Finding Coefficient a from Point): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ເສັ້ນສະແດງ y = ax² ຜ່ານເມັດ P(2, 8). ຄ່າຂອງສຳປະສິດ a ແມ່ນເທົ່າໃດ? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: a ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ເສັ້ນສະແດງ y = ax² ຜ່ານເມັດ Q(3, -9). ຄ່າຂອງສຳປະສິດ a ແມ່ນເທົ່າໃດ?:"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: a ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ປາຣາໂບນ y = ax² ຜ່ານເມັດ A(2, -12). ຈົ່ງຊອກຫາຄ່າຂອງສຳປະສິດ a ຂອງຕຳລານີ້?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: a ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "-3x² ≥ -12 ⇒ x² ≤ 4 ⇒ -2 ≤ x ≤ 2. ສ່ວນການຊອກຫາ a: ແທນ x = 2, y = -12 ໃສ່ y = ax² ⇒ -12 = a(2)² ⇒ -12 = 4a ⇒ a = -3!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ບົດສັງລວມກ່ຽວກັບຄຸນລັກສະນະຂອງ y = ax²: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ທິດສະເໜີຂອງປາຣາໂບນຂວ້ຳ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຖ້າກຳນົດ y = ax² ມີຈຸດສູງສຸດຢູ່ (0, 0), ຄ່າຂອງ a ຈະຕ້ອງເປັນຄ່າບວກ ຫຼື ຄ່າລົບ? (ຕອບ ຄ່າບວກ ຫຼື ຄ່າລົບ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຖ້າເສັ້ນສະແດງ y = ax² ແຄບກວ່າ y = -3x², ຄ່າສຳບູນ |a| ຕ້ອງໃຫຍ່ກວ່າ ຫຼື ນ້ອຍກວ່າ 3? (ຕອບ ໃຫຍ່ກວ່າ ຫຼື ນ້ອຍກວ່າ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ຕຳລາ y = -x² (a < 0) ຈະເພີ່ມ (increasing) ໃນຫວ່າງໃດ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ຫວ່າງ ]-∞,"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+            <span>{"]"}</span>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາຕົວຈິງກ່ຽວກັບການຕົກແບບເສລີ (Free Fall Gravity Problem): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ແກ້ສົມຜົນອັດຕາສ່ວນກຳລັງສອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ໄລຍະທາງຕົກ y (m) ຂອງວັດຖຸໃນເວລາ t (ວິນາທີ) ແມ່ນສະແດງດ້ວຍຕຳລາ y = 5t² (ປະມານ g/2 = 5). ຖ້າ t = 3 ວິນາທີ, ວັດຖຸຈະຕົກໄດ້ໄລຍະທາງຈັກແມັດ (m)?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ແມັດ (m)"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຖ້າວັດຖຸຕົກໄດ້ໄລຍະທາງ y = 80 m, ຈະຕ້ອງໃຊ້ເວລາຈັກວິນາທີ? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ວິນາທີ"}</span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ຈົ່ງແກ້ສົມຜົນ: -3x² = 27"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ສົມຜົນນີ້"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "42px" }}></span>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u14-ans-1-1">{"(1) 12 (ເພາະວ່າ y = 3 × 2² = 3 × 4 = 12)"}</span>,
-          <span key="u14-ans-1-2">{"(2) -18 (ເພາະວ່າ y = -2 × (-3)² = -2 × 9 = -18)"}</span>,
-        ],
+          <span key="1-1">{"(1) -2 (ຄິດໄລ່: ຕ່ຳສຸດແມ່ນ y = -2(-1)² = -2. ສູງສຸດແມ່ນ y = -2(-3)² = -18? ຂໍໂທດ, ຍ້ອນຂວ້ຳ, y ຢູ່ຫວ່າງ [-18, -2])"}</span>,
+          <span key="1-2">{"(2) -50 (ຄິດໄລ່: ຍ້ອນຜ່ານ 0, ສູງສຸດແມ່ນ 0, ຕ່ຳສຸດແມ່ນ y = -2(-5)² = -50 ⇒ y ∈ [-50, 0])"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u14-ans-2-1">{"(1) ປິ່ນລົງ (ເພາະວ່າສຳປະສິດ a = -5 < 0)"}</span>,
-          <span key="u14-ans-2-2">{"(2) ປິ່ນຂຶ້ນ (ເພາະວ່າສຳປະສິດ a = 1/3 > 0)"}</span>,
-        ],
+          <span key="2-1">{"(1) 4x² (ຄິດໄລ່: |4| > |2| ⇒ y = 4x² ແຄບກວ່າ)"}</span>,
+          <span key="2-2">{"(2) -x² (ຄິດໄລ່: |-1| < |-3| ⇒ y = -x² ກວ້າງກວ່າ)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"3 (ຄິດໄລ່: x² = 9 ⇒ x = ±3)"}</span>,
+          <span key="3-2">{"4 (ຄິດໄລ່: x² = 16 ⇒ x = ±4)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4">{"1, 2 (ຄິດໄລ່: -2x² = -8 ⇒ x = 2 ; -2x² = -2 ⇒ x = 1. ດັ່ງນັ້ນ x ∈ [1, 2])"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u14-ans-t1-1">{"(1) A (ເພາະວ່າ |3| > |1|, ດັ່ງນັ້ນ A ແຄບກວ່າ)"}</span>,
-          <span key="u14-ans-t1-2">{"(2) D (ເພາະວ່າ |-2| > |-0.2|, ດັ່ງນັ້ນ D ແຄບກວ່າ)"}</span>,
-        ],
+          <span key="c1">{"-2, 2 (ຄິດໄລ່: x² ≤ 4 ⇒ -2 ≤ x ≤ 2)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u14-ans-t2-1">{"(1) 2 (ເພາະວ່າ 8 = a × 2²  ⇒  4a = 8  ⇒  a = 2)"}</span>,
-          <span key="u14-ans-t2-2">{"(2) -1 (ເພາະວ່າ -9 = a × 3²  ⇒  9a = -9  ⇒  a = -1)"}</span>,
-        ],
+          <span key="c2">{"-3 (ຄິດໄລ່: -12 = a(2)² = 4a ⇒ a = -3)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u14-ans-s1-1">{"(1) ຄ່າລົບ (ເພາະວ່າປາຣາໂບນຕ້ອງປິ່ນລົງລຸ່ມ ຈຶ່ງຈະມີຈຸດຈອມເປັນຈຸດສູງສຸດ)"}</span>,
-          <span key="u14-ans-s1-2">{"(2) ໃຫຍ່ກວ່າ (ເພາະວ່າເພື່ອໃຫ້ແຄບກວ່າ, ຄ່າສຳບູນ |a| ຕ້ອງໃຫຍ່ກວ່າ |-3| = 3)"}</span>,
-        ],
+          <span key="s1">{"0 (ຄິດໄລ່: ຕຳລາ y = -x² ຈະເພີ່ມໃນຫວ່າງ ]-∞, 0] ແລະ ຫຼຸດໃນຫວ່າງ [0, +∞[)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u14-ans-s2-1">{"(1) 45 (ເພາະວ່າ y = 5 × 3² = 5 × 9 = 45 m)"}</span>,
-          <span key="u14-ans-s2-2">{"(2) 4 (ເພາະວ່າ 80 = 5t²  ⇒  t² = 16  ⇒  t = 4 ວິນາທີ)"}</span>,
-        ],
-      },
+          <span key="s2">{"ບໍ່ມີໃຈຜົນຕົວຈິງ (ຄິດໄລ່: -3x² = 27 ⇒ x² = -9 ເຊິ່ງເປັນໄປບໍ່ໄດ້)"}</span>
+        ]
+      }
     ],
-    advice: "ຈົ່ງຈື່ໄວ້ວ່າ ເຄື່ອງໝາຍຂອງ a ບອກທິດທາງການປິ່ນ, ສ່ວນຄ່າສຳບູນ |a| ບອກຄວາມແຄບຂອງເສັ້ນສະແດງເດີ້! ຍິ່ງ |a| ຫຼາຍ ເສັ້ນສະແດງຍິ່ງແຄບຫຍັບເຂົ້າຫາແກນ y!",
-  },
+    advice: "ເກັ່ງຫຼາຍ! ການເຂົ້າໃຈບົດບາດຂອງສຳປະສິດ a ໃນຕຳລາ y = ax² ຈະຊ່ວຍໃຫ້ເຈົ້າສາມາດຈິນຕະນາການຮູບຮ່າງຂອງປາຣາໂບນໄດ້ຢ່າງງ່າຍດາຍ. ພະຍາຍາມຕໍ່ໄປເດີ້!"
+  }
 };

@@ -1,403 +1,313 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", verticalAlign: "middle", alignItems: "center", padding: "0 4px", fontSize: "0.95em", transform: "translateY(-0.05em)" }}>
-    <span style={{ borderBottom: "1.5px solid currentColor", paddingBottom: "1px", lineHeight: 1, fontWeight: "bold" }}>{num}</span>
-    <span style={{ paddingTop: "1.5px", lineHeight: 1, fontWeight: "bold" }}>{den}</span>
-  </span>
-);
-
 export const unit3Data: UnitData = {
   unitNumber: 3,
   unitTitle: "ພາກທີ I - ບົດທີ 3: ການບວກ ແລະ ການລົບຈຳນວນທຳມະຊາດ",
-  unitGoal:
-    "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍ ແລະ ຊື່ເອີ້ນຂອງແຕ່ລະພົດໃນການບວກ ແລະ ການລົບ, ຄຸນລັກສະນະສະຫຼັບບ່ອນ, ຄຸນລັກສະນະໂຮມໝູ່ ແລະ ການພົວພັນປີ້ນກັບ",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 16-23",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບຄຸນລັກສະນະຂອງການບວກ ແລະ ການລົບຈຳນວນທຳມະຊາດ (ຄຸນລັກສະນະສະຫຼັບບ່ອນ, ຄຸນລັກສະນະໂຮມໝູ່) ແລະ ການແກ້ໂຈດບັນຫາຊີວິດປະຈຳວັນ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 14-20",
   subSections: [
     {
-      title: "1. ການບວກຈຳນວນທຳມະຊາດ",
+      title: "1. ການບວກຈຳນວນທຳມະຊາດ ແລະ ຄຸນລັກສະນະ",
       keyPoint: {
-      title: "1. ການບວກຈຳນວນທຳມະຊາດ",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ໃນການບວກ "}<strong>{"2,609 + 352 = 2,961"}</strong>{" :"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#E3F2FD",
-              border: "2px solid #2196F3",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"• "}<strong>{"2,609"}</strong>{" ແລະ "}<strong>{"352"}</strong>{" ເອີ້ນວ່າ "}<strong>{"ພົດ (Terms)"}</strong></div>
-            <div>{"• "}<strong>{"2,961"}</strong>{" ເອີ້ນວ່າ "}<strong>{"ຜົນບວກ (Sum)"}</strong></div>
-          </div>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຄຸນລັກສະນະຂອງການບວກ:"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div>{"• "}<strong>{"ຄຸນລັກສະນະສະຫຼັບບ່ອນ:"}</strong>{" a + b = b + a (ຕົວຢ່າງ: 75 + 12 = 12 + 75)"}</div>
-            <div>{"• "}<strong>{"ຄຸນລັກສະນະໂຮມໝູ່:"}</strong>{" (a + b) + c = a + (b + c)"}</div>
-            <div style={{ paddingLeft: "16px", color: "#2E7D32", fontWeight: "bold" }}>
-              {"ຕົວຢ່າງ: (75 + 8) + 12 = 75 + (8 + 12) = 75 + 20 = 95"}
+        title: "ຫຼັກການ ແລະ ຄຸນລັກສະນະຂອງການບວກ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ການບວກແມ່ນການລວມເອົາສອງ ຫຼື ຫຼາຍຈຳນວນເຂົ້າກັນ ເຊິ່ງຜົນໄດ້ຮັບເອີ້ນວ່າ ຜົນບວກ."}
+            </p>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຄຸນລັກສະນະພື້ນຖານຂອງການບວກ:"}
+            </p>
+            <ul style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.6" }}>
+              <li><strong>{"ຄຸນລັກສະນະສະຫຼັບບ່ອນ (Commutative): "}</strong>{" a + b = b + a. ຕົວຢ່າງ: 12 + 25 = 25 + 12 = 37."}</li>
+              <li><strong>{"ຄຸນລັກສະນະໂຮມໝູ່ (Associative): "}</strong>{" (a + b) + c = a + (b + c). ຕົວຢ່າງ: (5 + 7) + 3 = 5 + (7 + 3) = 15."}</li>
+            </ul>
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "16px", backgroundColor: "#F5F7FA", borderRadius: "12px", border: "1px dashed #B0BEC5" }}>
+              <span className="math" style={{ fontSize: "1.6rem", display: "inline-flex", alignItems: "center", gap: "8px" }}>
+                {"(a + b) + c = a + (b + c)"}
+              </span>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ຄຸນລັກສະນະໂຮມໝູ່ ຊ່ວຍໃຫ້ເຮົາເລືອກບວກຄູ່ທີ່ລົງທ້າຍດ້ວຍ 0 ກ່ອນ ເພື່ອໃຫ້ຄິດໄລ່ງ່າຍຂຶ້ນເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ນຳໃຊ້ຄຸນລັກສະນະໂຮມໝູ່ເພື່ອໂຮມຈຳນວນທີ່ບວກກັນແລ້ວລົງທ້າຍດ້ວຍ 0 ເຂົ້າກັນກ່ອນ ຈະຊ່ວຍໃຫ້ຄິດໄລ່ງ່າຍຂຶ້ນຫຼາຍ!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຕື່ມຊື່ເອີ້ນທາງຄະນິດສາດ (ພົດ, ຜົນບວກ, ຕົວຕັ້ງລົບ, ຕົວລົບ, ຜົນລົບ) ໃສ່ບ່ອນວ່າງໃຫ້ຖືກຕ້ອງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"ໃນປະໂຫຍກສັນຍະລັກ 125 + 45 = 170 :"}</span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ໂດຍນຳໃຊ້ຄຸນລັກສະນະຂອງການບວກໃຫ້ໄວທີ່ສຸດ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "12px 0" }}>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math">{"75 + 57 + 25 = (75 + 25) + 57 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math">{"140 + 89 + 60 = ("}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span className="math">{"+"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="math">{") + 89 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "20px" }}>
-              <span>{"(1) 125 ເອີ້ນວ່າ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຕື່ມຕົວເລກທີ່ເໝາະສົມໃສ່ບ່ອນວ່າງ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math">{"352 + 2591 = 2591 +"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math">{"(48 + 72) + 28 = 48 + ("}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{")"}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "20px" }}>
-              <span>{"(2) 170 ເອີ້ນວ່າ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", marginTop: "8px" }}>
-              <span>{"ໃນປະໂຫຍກສັນຍະລັກ 350 - 120 = 230 :"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "20px" }}>
-              <span>{"(3) 350 ເອີ້ນວ່າ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "20px" }}>
-              <span>{"(4) 120 ເອີ້ນວ່າ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "20px" }}>
-              <span>{"(5) 230 ເອີ້ນວ່າ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ການລົບຈຳນວນທຳມະຊາດ",
+      title: "2. ການລົບຈຳນວນທຳມະຊາດ ແລະ ການພົວພັນກັບການບວກ",
       keyPoint: {
-      title: "2. ການລົບຈຳນວນທຳມະຊາດ",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ໃນການລົບ "}<strong>{"8,632 - 4,725 = 3,907"}</strong>{" :"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#FFEBEE",
-              border: "2px solid #EF5350",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"• "}<strong>{"8,632"}</strong>{" ເອີ້ນວ່າ "}<strong>{"ຕົວຕັ້ງລົບ (Minuend)"}</strong></div>
-            <div>{"• "}<strong>{"4,725"}</strong>{" ເອີ້ນວ່າ "}<strong>{"ຕົວລົບ (Subtrahend)"}</strong></div>
-            <div>{"• "}<strong>{"3,907"}</strong>{" ເອີ້ນວ່າ "}<strong>{"ຜົນລົບ (Difference)"}</strong></div>
+        title: "ການລົບ ແລະ ການພົວພັນລະຫວ່າງການບວກ-ການລົບ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ການລົບແມ່ນການຄິດໄລ່ຫາຄວາມແຕກຕ່າງລະຫວ່າງສອງຈຳນວນ. ຖ້າ a ແລະ b ແມ່ນສອງຈຳນວນທຳມະຊາດ ເຊິ່ງ a ≥ b, ຜົນລົບ a - b = c ໝາຍເຖິງຈຳນວນ c ທີ່ເມື່ອເອົາມາບວກກັບ b ແລ້ວເທົ່າກັບ a:"}
+            </p>
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "12px", border: "1px dashed #2E7D32", margin: "8px 0" }}>
+              <span className="math" style={{ fontSize: "1.6rem", display: "inline-flex", alignItems: "center", gap: "8px" }}>
+                {"a - b = c  ⇔  b + c = a"}
+              </span>
+            </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຕົວຢ່າງ: 8 632 - 4 725 = 3 907 ເພາະວ່າ 4 725 + 3 907 = 8 632."}
+            </p>
           </div>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ການພົວພັນປີ້ນກັບ (ລົບ ແລະ ບວກ):"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#FFF3E0",
-              border: "2px solid #FF9800",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-            }}
-          >
-            {"ຖ້າ "}<strong>{"a - b = c"}</strong>{" ແລ້ວ "}<strong>{"c + b = a"}</strong>{" (ຕົວຢ່າງ: 8,632 - 4,725 = 3,907 → 3,907 + 4,725 = 8,632)"}
-          </div>
-          <p style={{ fontSize: "1.375rem", margin: 0, color: "#D32F2F", fontWeight: "bold" }}>
-            {"* ການລົບ ບໍ່ມີ ຄຸນລັກສະນະສະຫຼັບບ່ອນເດີ້! (a - b ≠ b - a)"}
-          </p>
-        </div>
-      ),
-      hint: {
-        text: "ໃນກຸ່ມຈຳນວນທຳມະຊາດ, ເຮົາຈະລົບໄດ້ກໍ່ຕໍ່ເມື່ອ ຕົວຕັ້ງລົບ ໃຫຍ່ກວ່າ ຫຼື ເທົ່າກັບ ຕົວລົບ ເທົ່ານັ້ນ!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຈື່ໄວ້ວ່າ: ໃນກຸ່ມຈຳນວນທຳມະຊາດ ℕ, ການລົບ a - b ຈະປະຕິບັດໄດ້ກໍຕໍ່ເມື່ອຕົວຕັ້ງລົບຫຼາຍກວ່າ ຫຼື ເທົ່າກັບຕົວລົບ (a ≥ b) ເທົ່ານັ້ນ!",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງໃຊ້ຄຸນລັກສະນະໂຮມໝູ່ ເພື່ອຄິດໄລ່ໃຫ້ໄວຂຶ້ນ ແລ້ວຕື່ມຄຳຕອບໃສ່ບ່ອນວ່າງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) 45 + 98 + 5 = (45 + 5) + 98 ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກການພົວພັນການບວກ ແລະ ການລົບ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math">{"x + 120 = 350 ⇔ x ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math">{"760 - x = 240 ⇔ x ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) 127 + 84 + 73 = (127 + 73) + 84 ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ຜົນລົບຕໍ່ໄປນີ້ໃຫ້ຖືກຕ້ອງ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math">{"4 725 - 3 907 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math">{"2 961 - 2 609 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ການພົວພັນປີ້ນກັບຊ່ວຍເຈົ້າໄດ້! ຖ້າ x - a = b, ເຮົາຈະໄດ້ x = b + a. ຖ້າ a - y = b, ເຮົາຈະໄດ້ y = a - b. ລອງນຳໃຊ້ເບິ່ງເດີ້!",
+    hintText: "💡 ບົດທ້າທາຍ: ນຳໃຊ້ຄວາມຮູ້ເລື່ອງການບວກ ແລະ ການລົບມາແກ້ໄຂໂຈດບັນຫາຕົວຈິງທີ່ມີຄວາມຊັບຊ້ອນ!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາຄ່າຂອງ x ແລະ y ໂດຍນຳໃຊ້ການພົວພັນປີ້ນກັບຂອງການລົບ ແລະ ການບວກ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດບັນຫານ້ຳໜັກລວມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "16px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-              }}
-            >
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                <span>{"(1) ຖ້າ x - 350 = 420, ຄ່າຂອງ x ແມ່ນ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                <span>{"(2) ຖ້າ 850 - y = 320, ຄ່າຂອງ y ແມ່ນ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"(1) ທ້າວ ທອງ ມີນ້ຳໜັກຕົວ 47 kg. ລາວໄດ້ແບກກະເປົາເຄື່ອງໜຶ່ງທີ່ມີນ້ຳໜັກ 8 kg ແລ້ວຂຶ້ນຢືນຊັ່ງນ້ຳໜັກ. ຖາມວ່ານ້ຳໜັກລວມທີ່ສະແດງເທິງໜ້າຈໍຊັ່ງນ້ຳໜັກຈະເທົ່າກັບຈັກກິໂລກຣາມ?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: ນ້ຳໜັກລວມແມ່ນ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span>{"kg"}</span>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງແກ້ໂຈດບັນຫາຕໍ່ໄປນີ້ໃຫ້ຖືກຕ້ອງ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດບັນຫາການປຽບທຽບໝາກບີ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ທ້າວ ທອງ ໜັກ 47 kg ແລະ ແບກກະເປົາເຄື່ອງໜັກ 8 kg. ຖ້າລາວຂຶ້ນຊັ່ງນ້ຳໜັກລວມທັງໝົດຈະເປັນຈັກ kg?"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"kg"}</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ນາງ ບຸນມີ ແບກກະເປົາເຄື່ອງຂຶ້ນຊັ່ງໄດ້ນ້ຳໜັກລວມ 50 kg. ຖ້າຮູ້ວ່ານາງ ບຸນມີ ໜັກ 45 kg, ກະເປົາຂອງລາວຈະໜັກຈັກ kg?"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"kg"}</span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"(1) ທ້າວ ຄຳມີ ມີໝາກບີ 38 ໜ່ວຍ. ທ້າວ ຄຳເພຍ ມີໝາກບີ 35 ໜ່ວຍ. ນາງ ມອນລີ ມີໝາກບີໜ້ອຍກວ່າ ທ້າວ ຄຳເພຍ 7 ໜ່ວຍ. ຈົ່ງຊອກຫາຈຳນວນໝາກບີທັງໝົດຂອງທັງສາມຄົນລວມກັນ?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: ໝາກບີທັງໝົດມີ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span>{"ໜ່ວຍ"}</span>
             </div>
           </div>
-        ),
-      },
-    ],
+        )
+      }
+    ]
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຕອບຄຳຖາມຕໍ່ໄປນີ້ເພື່ອທົດສອບຄວາມເຂົ້າໃຈທັງໝົດ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ການຄິດໄລ່ແບບສົມທົບຫຼັກການ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) (75 + 8) + 12 = 75 + (8 +"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{")"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) a + b"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"N (ຕື່ມ ∈ ຫຼື ∉, ຖ້າ a, b ເປັນຈຳນວນທຳມະຊາດ)"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(3) 35 - 12"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"12 - 35 (ຕື່ມ = ຫຼື ≠)"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(4) ຕົວຕັ້ງລົບ ໃນປະໂຫຍກສັນຍະລັກ 500 - 150 = 350 ແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(5) ຜົນລົບ ໃນປະໂຫຍກສັນຍະລັກ 500 - 150 = 350 ແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"(1) ຈົ່ງຊອກຫາຜົນບວກຂອງ: "}<strong>{"1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9"}</strong>{" ໂດຍຈັບຄູ່ໃຫ້ໄດ້ 10 ຢ່າງວ່ອງໄວ:"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຜົນບວກແມ່ນ:"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ເລກໂຈດ ແລະ ການຄິດໄລ່ດັ່ງຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດບັນຫາການລົບປຽບທຽບໄລຍະທາງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ປ່ຽນຮູບແບບ (23 + 89) + 11 = 23 + (89 + 11) ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຖ້າຊອກຫາ z ຈາກ z - 120 = 280, ຄ່າຂອງ z ແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"(1) ໄລຍະທາງແຕ່ເຮືອນ ທ້າວ ສົມສັກ ຫາ ໂຮງຮຽນແມ່ນ 1 250 m. ໄລຍະທາງແຕ່ເຮືອນ ທ້າວ ຄຳດີ ຫາ ໂຮງຮຽນແມ່ນ 890 m. ຖາມວ່າ ເຮືອນຂອງທ້າວ ສົມສັກ ຢູ່ຫ່າງຈາກໂຮງຮຽນຫຼາຍກວ່າເຮືອນຂອງທ້າວ ຄຳດີ ຈັກແມັດ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ຫຼາຍກວ່າ"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+            <span>{"ແມັດ"}</span>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u3-ans-1-1">{"(1) ພົດ"}</span>,
-          <span key="u3-ans-1-2">{"(2) ຜົນບວກ"}</span>,
-          <span key="u3-ans-1-3">{"(3) ຕົວຕັ້ງລົບ"}</span>,
-          <span key="u3-ans-1-4">{"(4) ຕົວລົບ"}</span>,
-          <span key="u3-ans-1-5">{"(5) ຜົນລົບ"}</span>,
-        ],
+          <span key="1-1">{"(1) 157"}</span>,
+          <span key="1-2">{"(2) (140 + 60) + 89 = 200 + 89 = 289"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u3-ans-2-1">{"(1) 148 (ເພາະ 50 + 98 = 148)"}</span>,
-          <span key="u3-ans-2-2">{"(2) 284 (ເພາະ 200 + 84 = 284)"}</span>,
-        ],
+          <span key="2-1">{"(1) 352"}</span>,
+          <span key="2-2">{"(2) 72 + 28 (ຫຼື 72 + 28 = 100)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"(1) 230"}</span>,
+          <span key="3-2">{"(2) 520"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4-1">{"(1) 818"}</span>,
+          <span key="4-2">{"(2) 352"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u3-ans-t1-1">{"(1) x = 770 (420 + 350)"}</span>,
-          <span key="u3-ans-t1-2">{"(2) y = 530 (850 - 320)"}</span>,
-        ],
+          <span key="t1">{"55 kg (ຄິດໄລ່: 47 + 8 = 55 kg)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u3-ans-t2-1">{"(1) 55 kg (47 + 8 = 55)"}</span>,
-          <span key="u3-ans-t2-2">{"(2) 5 kg (50 - 45 = 5)"}</span>,
-        ],
+          <span key="t2">{"101 ໜ່ວຍ (ນາງ ມອນລີ ມີ 35 - 7 = 28 ໜ່ວຍ. ທັງໝົດລວມກັນ: 38 + 35 + 28 = 101 ໜ່ວຍ)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u3-ans-s1-1">{"(1) 12"}</span>,
-          <span key="u3-ans-s1-2">{"(2) ∈"}</span>,
-          <span key="u3-ans-s1-3">{"(3) ≠"}</span>,
-          <span key="u3-ans-s1-4">{"(4) 500"}</span>,
-          <span key="u3-ans-s1-5">{"(5) 350"}</span>,
-        ],
+          <span key="s1">{"45 (ຄິດໄລ່ໂດຍຈັບຄູ່: (1+9) + (2+8) + (3+7) + (4+6) + 5 = 10 × 4 + 5 = 45)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u3-ans-s2-1">{"(1) 123 (23 + 100)"}</span>,
-          <span key="u3-ans-s2-2">{"(2) z = 400 (280 + 120)"}</span>,
-        ],
-      },
+          <span key="s2">{"360 ແມັດ (ຄິດໄລ່: 1 250 - 890 = 360 m)"}</span>
+        ]
+      }
     ],
-    advice: "ຈື່ໃຫ້ດີວ່າ: ການບວກມີຄຸນລັກສະນະສະຫຼັບບ່ອນ ແລະ ໂຮມໝູ່ໄດ້, ແຕ່ການລົບແມ່ນບໍ່ມີເດີ້! ຕົວຕັ້ງລົບກໍ່ຕ້ອງໃຫຍ່ກວ່າຕົວລົບສະເໝີ.",
-  },
+    advice: "ເກັ່ງຫຼາຍ! ການນຳໃຊ້ຄຸນລັກສະນະສະຫຼັບບ່ອນ ແລະ ໂຮມໝູ່ຂອງການບວກ ຈະຊ່ວຍໃຫ້ການຄິດໄລ່ເລກຂອງເຈົ້າໄວຂຶ້ນ ແລະ ຖືກຕ້ອງຫຼາຍຂຶ້ນສະເໝີ. ຝຶກຝົນຕໍ່ໄປເດີ້!"
+  }
 };

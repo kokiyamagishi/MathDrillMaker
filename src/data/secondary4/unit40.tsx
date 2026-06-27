@@ -1,339 +1,195 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit40Data: UnitData = {
   unitNumber: 40,
-  unitTitle: "ພາກທີ VII - ບົດທີ 40: ການແບ່ງປະເພດຂໍ້ມູນສະຖິຕິ",
-  unitGoal:
-    "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈວິທີແບ່ງປະເພດຂໍ້ມູນສະຖິຕິ ອອກເປັນຂໍ້ມູນຄຸນນະພາບ (Qualitative Data) ແລະ ຂໍ້ມູນປະລິມານ (Quantitative Data) ພ້ອມທັງຂໍ້ມູນບໍ່ຕໍ່ເນື່ອງ ແລະ ຕໍ່ເນື່ອງ",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 40 ໜ້າ 235-240",
+  unitTitle: "ພາກທີ V - ບົດທີ 40: ສະຖິຕິພື້ນຖານ (Basic Statistics)",
+  unitGoal: "ຮຽນຮູ້ວິທີການຄິດໄລ່ຄ່າສະເລ່ຍ (Mean), ຄ່າກາງ (Median), ຄ່ານິຍົມ (Mode), ແລະ ຄວາມເຂົ້າໃຈກ່ຽວກັບການແຈກແຈງຄວາມຖີ່ຂອງຂໍ້ມູນ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 200-205",
   subSections: [
     {
-      title: "1. ປະເພດຂອງຂໍ້ມູນສະຖິຕິ (Types of Statistical Data)",
+      title: "1. ຄ່າສະເລ່ຍ, ຄ່າກາງ ແລະ ຄ່ານິຍົມ (Mean, Median & Mode of Data)",
       keyPoint: {
-      title: "1. ປະເພດຂອງຂໍ້ມູນສະຖິຕິ (Types of Statistical Data)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຂໍ້ມູນສະຖິຕິສາມາດແບ່ງອອກເປັນສອງປະເພດໃຫຍ່ໆດັ່ງນີ້:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "12px",
-            }}
-          >
-            <div>
-              <strong style={{ color: "#E65100" }}>{"• 1. ຂໍ້ມູນຄຸນນະພາບ (Qualitative / Categorical Data):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px" }}>
-                {"- ແມ່ນຂໍ້ມູນທີ່ບອກລັກສະນະ, ສະພາບ ຫຼື ຄຸນສົມບັດ ທີ່ບໍ່ສາມາດວັດແທກເປັນຕົວເລກຄິດໄລ່ໄດ້ໂດຍກົງ."}
+        title: "ຄ່າວັດແທກທ່າອ່ຽງເຂົ້າສູ່ສ່ວນກາງ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃນສະຖິຕິພັນລະນາ, ຄ່າວັດແທກທ່າອ່ຽງເຂົ້າສູ່ສ່ວນກາງທີ່ນິຍົມໃຊ້ມີ 3 ຄ່າ:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }}>{"1. ຄ່າສະເລ່ຍຄະນິດ (Arithmetic Mean - x̄):"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"x̄ = (Σ x_i) / N"}
                 <br />
-                <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#2E7D32" }}>
-                  {"(ຕົວຢ່າງ: ເພດ, ສັນຊາດ, ກຸ່ມເລືອດ, ລະດັບການສຶກສາ, ຄວາມຄິດເຫັນ)"}
-                </span>
-              </span>
+                {"(ຜົນບວກຂອງຂໍ້ມູນທັງໝົດ ຫານໃຫ້ ຈຳນວນຂໍ້ມູນ)"}
+              </p>
             </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• 2. ຂໍ້ມູນປະລິມານ (Quantitative / Numerical Data):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px" }}>
-                {"- ແມ່ນຂໍ້ມູນທີ່ເປັນຕົວເລກ ທີ່ສາມາດນຳມາບວກ, ລົບ, ຄູນ, ຫານ ຫຼື ຄິດໄລ່ຄ່າສະເລ່ຍໄດ້."}
-                <br />
-                <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#D84315" }}>
-                  {"- ຂໍ້ມູນບໍ່ຕໍ່ເນື່ອງ (Discrete): ໄດ້ຈາກການນັບ (ຕົວຢ່າງ: ຈຳນວນຄົນ, ຈຳນວນລົດ, ຈຳນວນປຶ້ມ)."}
-                  <br />
-                  {"- ຂໍ້ມູນຕໍ່ເນື່ອງ (Continuous): ໄດ້ຈາກການວັດແທກ (ຕົວຢ່າງ: ສ່ວນສູງ, ນ້ຳໜັກ, ອຸນຫະພູມ, ເວລາ)."}
-                </span>
-              </span>
+            <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"2. ຄ່າກາງ (Median - Med):"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"ແມ່ນຄ່າທີ່ຢູ່ເຄິ່ງກາງຂອງຂໍ້ມູນ ເມື່ອໄດ້ຈັດລຽງຂໍ້ມູນຈາກນ້ອຍຫາຫຼາຍ."}
+              </p>
+            </div>
+            <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"3. ຄ່ານິຍົມ (Mode - Mod):"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"ແມ່ນຂໍ້ມູນທີ່ມີຄວາມຖີ່ສູງສຸດ (ປະກົດຕົວຫຼາຍທີ່ສຸດໃນຂໍ້ມູນ)."}
+              </p>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ວິທີຈື່ຈຳງ່າຍໆ: ຂໍ້ມູນຄຸນນະພາບແມ່ນບອກ 'ລັກສະນະ' (Categorical), ສ່ວນຂໍ້ມູນປະລິມານແມ່ນບອກ 'ຕົວເລກວັດແທກ' (Numerical) ເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງ: ຂໍ້ມູນ 3, 5, 5, 6, 7, 10 ⇒ x̄ = 36/6 = 6. ຄ່າກາງ Med = (5+6)/2 = 5.5. ຄ່ານິຍົມ Mod = 5!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຈຳແນກປະເພດຂໍ້ມູນ ວ່າແມ່ນຂໍ້ມູນຄຸນນະພາບ ຫຼື ຂໍ້ມູນປະລິມານ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) 'ກຸ່ມເລືອດ A, B, AB, O ຂອງນັກຮຽນ' ແມ່ນຂໍ້ມູນປະເພດໃດ? (ຕອບ: ຄຸນນະພາບ ຫຼື ປະລິມານ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາ x̄, Med, Mod ຂອງຂໍ້ມູນຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ໃຫ້ຊຸດຂໍ້ມູນ: 2, 4, 4, 5, 6, 9."}
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ຄ່າສະເລ່ຍ x̄ ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{" ແລະ ຄ່ານິຍົມ Mod ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ຄ່າກາງ Med ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) 'ສ່ວນສູງ (cm) ຂອງນັກຮຽນໃນຫ້ອງ' ແມ່ນຂໍ້ມູນປະເພດໃດ? (ຕອບ: ຄຸນນະພາບ ຫຼື ປະລິມານ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ບົດຮຽນພື້ນຖານ",
-      keyPoint: { content: <span /> },
-      problems: [
-        {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຈຳແນກຂໍ້ມູນປະລິມານ ວ່າແມ່ນຂໍ້ມູນບໍ່ຕໍ່ເນື່ອງ (Discrete) ຫຼື ຂໍ້ມູນຕໍ່ເນື່ອງ (Continuous): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) 'ຈຳນວນພີ່ນ້ອງຮ່ວມອຸທອນ (ຄົນ) ຂອງນັກຮຽນ' ແມ່ນຂໍ້ມູນປະເພດໃດ? (ຕອບ: ບໍ່ຕໍ່ເນື່ອງ ຫຼື ຕໍ່ເນື່ອງ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) 'ນ້ຳໜັກຕົວ (kg) ຂອງເດັກເກີດໃໝ່' ແມ່ນຂໍ້ມູນປະເພດໃດ? (ຕອບ: ບໍ່ຕໍ່ເນື່ອງ ຫຼື ຕໍ່ເນື່ອງ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+      title: "2. ການແຈກແຈງຄວາມຖີ່ ແລະ ຄ່າສະເລ່ຍຖ່ວງນ້ຳໜັກ (Frequency Distribution & Weighted Mean)",
+      keyPoint: {
+        title: "ຄ່າສະເລ່ຍຖ່ວງນ້ຳໜັກ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ເມື່ອຂໍ້ມູນມີຄວາມຖີ່ (f_i) ປະກົດຂຶ້ນ, ເຮົາຈະໃຊ້ສູດຄ່າສະເລ່ຍຖ່ວງນ້ຳໜັກ:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E0F2F1", borderRadius: "8px", border: "1px solid #B2DFDB" }}>
+              <strong style={{ fontSize: "1.5rem", color: "#00796B" }}>{"x̄ = (Σ f_i × x_i) / (Σ f_i)"}</strong>
             </div>
           </div>
-        </div>
-      ),
-    }
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງ: ຄະແນນ 2 (ຄວາມຖີ່ 3), ຄະແນນ 4 (ຄວາມຖີ່ 2), ຄະແນນ 5 (ຄວາມຖີ່ 5) ⇒ x̄ = (2×3 + 4×2 + 5×5) / 10 = 3.9!",
+          isBlue: false
+        }
+      },
+      problems: [
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ຄ່າສະເລ່ຍຈາກຕາຕະລາງຄວາມຖີ່: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ຄະແນນກວດກາຂອງນັກຮຽນກຸ່ມໜຶ່ງ: ຄະແນນ 5 (ມີ 2 ຄົນ), ຄະແນນ 7 (ມີ 5 ຄົນ), ຄະແນນ 10 (ມີ 3 ຄົນ). ຈົ່ງຊອກຫາຄ່າສະເລ່ຍ?"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                <span>{"ຕອບ: x̄ ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              </div>
+            </div>
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໃຫ້ລະວັງຕົວເລກທີ່ໃຊ້ເປັນລະຫັດ (ເຊັ່ນ ລະຫັດໄປສະນີ, ເບີໂທລະສັບ) ທີ່ບໍ່ສາມາດນຳມາບວກລົບກັນໄດ້! ບົດທ້າທາຍ 2: ຂໍ້ມູນລະດັບຄວາມພໍໃຈກໍແມ່ນຄຸນນະພາບເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຈຳແນກກໍລະນີພິເສດຂອງຕົວເລກ ທີ່ບໍ່ແມ່ນຂໍ້ມູນປະລິມານ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດຊອກຫາຄ່າກາງຂອງຄວາມສູງ (Median of Heights): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) 'ລະຫັດໄປສະນີ ຂອງແຂວງຕ່າງໆໃນປະເທດລາວ (ຕົວຢ່າງ: 01000)' ແມ່ນຂໍ້ມູນຄຸນນະພາບ ຫຼື ປະລິມານ? (ຕອບ: ຄຸນນະພາບ ຫຼື ປະລິມານ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) 'ເບີໂທລະສັບມືຖື ຂອງນັກຮຽນ' ແມ່ນຂໍ້ມູນຄຸນນະພາບ ຫຼື ປະລິມານ? (ຕອບ: ຄຸນນະພາບ ຫຼື ປະລິມານ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຄວາມສູງ (cm) ຂອງນັກຮຽນ 5 ຄົນແມ່ນ: 150, 163, 155, 152, 160. ຈົ່ງຊອກຫາຄ່າກາງ (Median)?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: Med ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span>{" cm"}</span>
             </div>
           </div>
-        ),
-      },
-      {
-        number: 2,
-        content: (
-          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຈຳແນກປະເພດຂໍ້ມູນການປະເມີນລະດັບ (Ordinal Qualitative Data): "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-            </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) 'ລະດັບຄວາມເພິ່ງພໍໃຈຕໍ່ການບໍລິການ (ດີຫຼາຍ, ດີ, ປານກາງ, ປັບປຸງ)' ແມ່ນຂໍ້ມູນຄຸນນະພາບ ຫຼື ປະລິມານ? (ຕອບ: ຄຸນນະພາບ ຫຼື ປະລິມານ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) 'ຄະແນນສອບເສັງວິຊາຄະນິດສາດ (ເຕັມ 10)' ແມ່ນຂໍ້ມູນຄຸນນະພາບ ຫຼື ປະລິມານ? (ຕອບ: ຄຸນນະພາບ ຫຼື ປະລິມານ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ຈັດລຽງຂໍ້ມູນຈາກນ້ອຍຫາຫຼາຍ: 150, 152, 155, 160, 163. ຄ່າທີ່ຢູ່ທາງກາງ (ລຳດັບທີ 3) ແມ່ນ 155!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຈຳແນກວິທີການເກັບກຳຂໍ້ມູນສະຖິຕິ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ຊອກຫາຄ່ານິຍົມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ການເກັບກຳຂໍ້ມູນໂດຍການສົ່ງແບບສອບຖາມ (Questionnaire) ໄປຫາລູກຄ້າ ເພື່ອຖາມກຸ່ມເລືອດ ແລະ ຄວາມຄິດເຫັນ ຈະໄດ້ຂໍ້ມູນປະເພດໃດ? (ຕອບ: ຄຸນນະພາບ ຫຼື ປະລິມານ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ການຊັ່ງນ້ຳໜັກ ແລະ ວັດສ່ວນສູງຂອງນັກຮຽນໃນຫ້ອງຮ່ວມກັບຕາຕະລາງບັນທຶກ ຈະໄດ້ຂໍ້ມູນປະເພດໃດ? (ຕອບ: ຄຸນນະພາບ ຫຼື ປະລິມານ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ຄ່ານິຍົມ (Mode) ຂອງຊຸດຂໍ້ມູນ 12, 15, 12, 18, 12, 15, 20 ແມ່ນເທົ່າໃດ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ:"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
-      ),
-    },
-    {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂջດບັນຫາຕົວຈິງກ່ຽວກັບການຈັດການຖານຂໍ້ມູນຂອງຮ້ານສະດວກຊື້ (Convenience Store Inventory Management): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຜູ້ຈັດການຮ້ານບັນທຶກ 'ຊື່ສິນຄ້າ ແລະ ປະເພດສິນຄ້າ (ເຄື່ອງດື່ມ, ອາຫານ, ເຄື່ອງໃຊ້)' ເພື່ອຈັດໝວດໝູ່. ຂໍ້ມູນນີ້ແມ່ນຂໍ້ມູນປະເພດໃດ? (ຕອບ: ຄຸນນະພາບ ຫຼື ປະລິມານ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຜູ້ຈັດການບັນທຶກ 'ຈຳນວນສິນຄ້າທີ່ຂາຍໄດ້ (ຊິ້ນ)' ໃນແຕ່ລະວັນ ເພື່ອຄິດໄລ່ລາຍຮັບ. ຂໍ້ມູນນີ້ແມ່ນຂໍ້ມູນປະເພດໃດ? (ຕອບ: ຄຸນນະພາບ ຫຼື ປະລິມານ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u40-ans-1-1">{"(1) ຄຸນນະພາບ (ເພາະວ່າກຸ່ມເລືອດເປັນຂໍ້ຄວາມບອກລັກສະນະ ສະພາບ ທີ່ບໍ່ສາມາດເອົາມາຄິດໄລ່ເລກໄດ້)"}</span>,
-          <span key="u40-ans-1-2">{"(2) ປະລິມານ (ເພາະວ່າສ່ວນສູງເປັນຕົວເລກວັດແທກ ທີ່ສາມາດນຳມາຫາຄ່າສະເລ່ຍໄດ້)"}</span>,
-        ],
+          <span key="1-1">{"5 (ຄິດໄລ່: x̄ = (2 + 4 + 4 + 5 + 6 + 9) / 6 = 30 / 6 = 5)"}</span>,
+          <span key="1-2">{"4 (ຄິດໄລ່: 4 ປະກົດຂຶ້ນ 2 ເທື່ອ, ຫຼາຍທີ່ສຸດ)"}</span>,
+          <span key="1-3">{"4.5 (ຄິດໄລ່: ຂໍ້ມູນຈັດລຽງແລ້ວມີ 4 ແລະ 5 ເປັນຄ່າກາງ ⇒ Med = (4+5)/2 = 4.5)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u40-ans-2-1">{"(1) ບໍ່ຕໍ່ເນື່ອງ (ເພາະວ່າຈຳນວນຄົນໄດ້ຈາກການນັບ ແລະ ຕ້ອງເປັນຕົວເລກຖ້ວນສະເໝີ)"}</span>,
-          <span key="u40-ans-2-2">{"(2) ຕໍ່ເນື່ອງ (ເພາະວ່ານ້ຳໜັກໄດ້ຈາກການວັດແທກ ເຊິ່ງສາມາດມີຄ່າທົດສະນິຍົມລະອຽດໄດ້)"}</span>,
-        ],
+          <span key="2">{"7.5 (ຄິດໄລ່: x̄ = (5×2 + 7×5 + 10×3) / 10 = (10 + 35 + 30) / 10 = 75 / 10 = 7.5)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3">{"155 (ຄິດໄລ່: 150, 152, [155], 160, 163)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u40-ans-t1-1">{"(1) ຄຸນນະພາບ (ເພາະລະຫັດໄປສະນີເຖິງວ່າຈະເປັນຕົວເລກ ແຕ່ມີໄວ້ເປັນສັນຍາລັກບອກແຂວງ ບໍ່ສາມາດເອົາມາບວກລົບກັນໄດ້)"}</span>,
-          <span key="u40-ans-t1-2">{"(2) ຄຸນນະພາບ (ເພາະເບີໂທລະສັບມີໄວ້ເປັນສັນຍາລັກຕິດຕໍ່ ບໍ່ສາມາດນຳມາຄິດໄລ່ເລກຄະນິດໄດ້)"}</span>,
-        ],
-      },
-      {
-        questionNumber: "ທ້າທາຍ 2",
-        answers: [
-          <span key="u40-ans-t2-1">{"(1) ຄຸນນະພາບ (ເພາະລະດັບຄວາມເພິ່ງພໍໃຈບອກເຖິງຄຸນສົມບັດ ຫຼື ສະພາບຄວາມຮູບສຶກ ເຖິງວ່າຈະສາມາດຈັດລຳດັບໄດ້ກໍຕາມ)"}</span>,
-          <span key="u40-ans-t2-2">{"(2) ປະລິມານ (ເພາະຄະແນນເປັນຕົວເລກທີ່ສາມາດນຳມາບວກລົບ ແລະ ຫາຄ່າສະເລ່ຍຫ້ອງໄດ້)"}</span>,
-        ],
+          <span key="c1">{"155 (ຄິດໄລ່: Med = 155)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u40-ans-s1-1">{"(1) ຄຸນນະພາບ (ເພາະວ່າໄດ້ຂໍ້ມູນກຸ່ມເລືອດ ແລະ ຄວາມຄິດເຫັນ)"}</span>,
-          <span key="u40-ans-s1-2">{"(2) ປະລິມານ (ເພາະວ່າໄດ້ຂໍ້ມູນສ່ວນສູງ ແລະ ນ້ຳໜັກ)"}</span>,
-        ],
-      },
-      {
-        questionNumber: "ທົດສອບປະຈຳບົດ 2",
-        answers: [
-          <span key="u40-ans-s2-1">{"(1) ຄຸນນະພາບ (ເພາະຊື່ສິນຄ້າ ແລະ ປະເພດສິນຄ້າ ບອກເຖິງໝວດໝູ່ລັກສະນະ)"}</span>,
-          <span key="u40-ans-s2-2">{"(2) ປະລິມານ (ເພາະຈຳນວນສິນຄ້າທີ່ຂາຍໄດ້ເປັນຕົວເລກທີ່ນຳມາບວກ ແລະ ຫາລາຍຮັບໄດ້)"}</span>,
-        ],
-      },
+          <span key="s1">{"12 (ຄິດໄລ່: 12 ປະກົດຂຶ້ນ 3 ເທື່ອ)"}</span>
+        ]
+      }
     ],
-    advice: "ການເຂົ້າໃຈຄວາມແຕກຕ່າງລະຫວ່າງຂໍ້ມູນຄຸນນະພາບ ແລະ ປະລິມານ ເປັນບາດກ້າວທຳອິດທີ່ສຳຄັນທີ່ສຸດ ໃນການເລືອກວິທີວິເຄາະສະຖິຕິ ແລະ ການສະເໜີຂໍ້ມູນໃຫ້ເໝາະສົມເດີ້!",
-  },
+    advice: "ດີຫຼາຍ! ເຈົ້າເຂົ້າໃຈວິທີວິເຄາະສະຖິຕິຂັ້ນພື້ນຖານແລ້ວ. ຄ່າເຫຼົ່ານີ້ຖືກນຳໃຊ້ຢ່າງກວ້າງຂວາງໃນການວິເຄາະຂໍ້ມູນຊີວິດປະຈຳວັນ!"
+  }
 };

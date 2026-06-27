@@ -1,350 +1,217 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit38Data: UnitData = {
   unitNumber: 38,
-  unitTitle: "ພາກທີ VI - ບົດທີ 38: ເນື້ອທີ່ໜ້າທັງໝົດຂອງຮູບທາດຈວຍ ແລະ ຮູບຈວຍ",
-  unitGoal:
-    "ຮຽນຮູ້ ແລະ ນຳໃຊ້ສູດຄິດໄລ່ເນື້ອທີ່ໜ້າທັງໝົດ (Total Surface Area) ຂອງຮູບທາດຈວຍ (Pyramid) ແລະ ຮູບຈວຍ (Cone) ໂດຍການບວກເນື້ອທີ່ພື້ນ ແລະ ເນື້ອທີ່ອ້ອມຂ້າງ",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 38 ໜ້າ 223-228",
+  unitTitle: "ພាកທີ IV - ບົດທີ 38: ແຜ່ນພຽງໃນອາວະກາດ (Planes in Space)",
+  unitGoal: "ຮຽນຮູ້ສົມຜົນທົ່ວໄປຂອງແຜ່ນພຽງ Ax + By + Cz + D = 0, ເວັກເຕີຕັ້ງສາກ n = [A, B, C], ການຊອກສົມຜົນແຜ່ນພຽງ ແລະ ເງື່ອນໄຂຕັ້ງສາກຂອງສອງແຜ່ນພຽງ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 189-194",
   subSections: [
     {
-      title: "1. ເນື້ອທີ່ໜ້າທັງໝົດຂອງຮູບຈວຍ (Surface Area of a Cone)",
+      title: "1. ສົມຜົນແຜ່ນພຽງ ແລະ ເວັກເຕີຕັ້ງສາກ (General Equation & Normal Vector of a Plane)",
       keyPoint: {
-      title: "1. ເນື້ອທີ່ໜ້າທັງໝົດຂອງຮູບຈວຍ (Surface Area of a Cone)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຮູບຈວຍທີ່ມີລັດສະໝີພື້ນ r ແລະ ລວງເນັ່ງ (母線) L, ເນື້ອທີ່ໜ້າທັງໝົດ S ໄດ້ມາຈາກ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "12px",
-            }}
-          >
-            <div>
-              <strong style={{ color: "#E65100" }}>{"• ເນື້ອທີ່ພື້ນ (Base Area):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#D84315" }}>
-                {"S_base = πr²"}
-              </span>
+        title: "ສົມຜົນແຜ່ນພຽງ ແລະ ສ່ວນປະກອບ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃນອາວະກາດ Oxyz, ສົມຜົນທົ່ວໄປຂອງແຜ່ນພຽງ (P) ມີຮູບຮ່າງ:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E8EAF6", borderRadius: "8px", border: "1px solid #C5CAE9" }}>
+              <strong style={{ fontSize: "1.5rem", color: "#1A237E" }}>{"Ax + By + Cz + D = 0"}</strong>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"ເຊິ່ງ A, B, C ບໍ່ເທົ່າສູນພ້ອມກັນ (A² + B² + C² ≠ 0)."}
+              </p>
             </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• ເນື້ອທີ່ອ້ອມຂ້າງ (Lateral Area):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#D84315" }}>
-                {"S_lateral = πrL"}
-              </span>
-            </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• ເນື້ອທີ່ໜ້າທັງໝົດ (Total Surface Area):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#2E7D32" }}>
-                {"S = S_base + S_lateral = πr² + πrL = πr(r + L)"}
-              </span>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ເວັກເຕີຕັ້ງສາກ (Normal Vector) ຂອງແຜ່ນພຽງ (P) ແມ່ນເວັກເຕີ n ທີ່ຕັ້ງສາກກັບທຸກໆເວັກເຕີໃນແຜ່ນພຽງ (P):"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E0F2F1", borderRadius: "8px", border: "1px solid #B2DFDB" }}>
+              <strong style={{ fontSize: "1.375rem", color: "#004D40" }}>{"n = [A, B, C]"}</strong>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ຕົວຢ່າງ: ຮູບຈວຍມີ r = 3 cm, L = 5 cm  ⇒  S = π * 3 * (3 + 5) = 24π cm² ເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງ: ແຜ່ນພຽງ 2x - y + 3z - 5 = 0 ມີເວັກເຕີຕັ້ງສາກ n = [2, -1, 3]!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ເນື້ອທີ່ອ້ອມຂ້າງ ແລະ ເນື້ອທີ່ໜ້າທັງໝົດຂອງຮູບຈວຍ (ຕອບໃນຮູບຮ່າງຕິດຄ່າ π): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຮູບຈວຍໜຶ່ງມີລັດສະໝີພື້ນ r = 4 cm ແລະ ລວງເນັ່ງ L = 6 cm. ເນື້ອທີ່ອ້ອມຂ້າງແມ່ນຈັກ π cm²? (ຕອບເປັນຕົວເລກຖ້ວນ, ຕົວຢ່າງ: 24):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"π"}</span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາເວັກເຕີຕັ້ງສາກຂອງແຜ່ນພຽງ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ແຜ່ນພຽງ (P): 3x + 2y - z + 4 = 0 ⇒ ເວັກເຕີຕັ້ງສາກ n = ["}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{", "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{", "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{"]"}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ແຜ່ນພຽງ (Q): -x + 5z - 2 = 0 ⇒ ເວັກເຕີຕັ້ງສາກ n = ["}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{", "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{", "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{"]"}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ເນື້ອທີ່ໜ້າທັງໝົດ ຂອງຮູບຈວຍນີ້ແມ່ນຈັກ π cm²? (ຕອບເປັນຕົວເລກຖ້ວນ, ຕົວຢ່າງ: 40):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"π"}</span>
-            </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ບົດຮຽນພື້ນຖານ",
-      keyPoint: { content: <span /> },
-      problems: [
-        {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ເນື້ອທີ່ໜ້າທັງໝົດຂອງຮູບທາດຈວຍ (Pyramid Surface Area): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຮູບທາດຈວຍສີ່ແຈສະເໝີໜຶ່ງ ມີຂ້າງພື້ນຍາວ 6 cm. ເນື້ອທີ່ພື້ນ S_base ແມ່ນຈັກ cm²? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"cm²"}</span>
+      title: "2. ສ້າງສົມຜົນແຜ່ນພຽງ ແລະ ເງື່ອນໄຂຕັ້ງສາກ (Equation Construction & Perpendicular Planes)",
+      keyPoint: {
+        title: "ການສ້າງສົມຜົນ ແລະ ເງື່ອນໄຂຕັ້ງສາກ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"- ສົມຜົນແຜ່ນພຽງທີ່ຜ່ານເມັດ M₀(x₀, y₀, z₀) ແລະ ມີເວັກເຕີຕັ້ງສາກ n = [A, B, C] ຈະມີຮູບຮ່າງ:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
+              <strong style={{ fontSize: "1.375rem", color: "#E65100" }}>{"A(x - x₀) + B(y - y₀) + C(z - z₀) = 0"}</strong>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຖ້າເນື້ອທີ່ອ້ອມຂ້າງ (ຜົນບວກ 4 ໜ້າສາມແຈ) ແມ່ນ 48 cm², ເນື້ອທີ່ໜ້າທັງໝົດ ຈະແມ່ນຈັກ cm²? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"cm²"}</span>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"- ສອງແຜ່ນພຽງ (P₁) ແລະ (P₂) ທີ່ມີເວັກເຕີຕັ້ງສາກ n₁ = [A₁, B₁, C₁] ແລະ n₂ = [A₂, B₂, C₂] ຕັ້ງສາກກັນ ກໍຕໍ່ເມື່ອ ຜົນຄູນສະກາແລຂອງເວັກເຕີຕັ້ງສາກເທົ່າກັບ 0:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#FFEBEE", borderRadius: "8px", border: "1px solid #FFCDD2" }}>
+              <strong style={{ fontSize: "1.375rem", color: "#C62828" }}>{"P₁ ⊥ P₂  ⇔  n₁·n₂ = A₁A₂ + B₁B₂ + C₁C₂ = 0"}</strong>
             </div>
           </div>
-        </div>
-      ),
-    }
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງ: ໃຫ້ແຜ່ນພຽງຜ່ານ A(1, 2, 3) ແລະ ມີ n = [1, -1, 2] ⇒ 1(x-1) - 1(y-2) + 2(z-3) = 0 ⇒ x - y + 2z - 5 = 0!",
+          isBlue: false
+        }
+      },
+      problems: [
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາຄ່າຄົງທີ່ D ຂອງສົມຜົນແຜ່ນພຽງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ແຜ່ນພຽງຜ່ານເມັດ A(1, 2, 3) ໂດຍມີເວັກເຕີຕັ້ງສາກ n = [1, -1, 2] ມີສົມຜົນຂຽນໃນຮູບຮ່າງ x - y + 2z + D = 0. ຈົ່ງຊອກຫາ D?"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                <span>{"ຕອບ: D ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາຄ່າຄົງທີ່ k ເພື່ອໃຫ້ສອງແຜ່ນພຽງຕັ້ງສາກກັນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ໃຫ້ (P): kx + 2y - z + 4 = 0 ແລະ (Q): 2x - y + 3z - 5 = 0. ຊອກຫາຄ່າ k ເພື່ອໃຫ້ P ⊥ Q?"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                <span>{"ຕອບ: k ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              </div>
+            </div>
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໃຫ້ໃຊ້ທິດສະດີປີຕາກໍເພື່ອຊອກຫາລວງເນັ່ງ L ຈາກລວງສູງ h ແລະ ລັດສະໝີ r ກ່ອນ (L = √(r² + h²))! ບົດທ້າທາຍ 2: ໃຫ້ຄຳນວນມຸມຂອງຂະແໜງວົງມົນແຜນວາດຄລີ່ເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາເນື້ອທີ່ໜ້າທັງໝົດ ໂດຍນຳໃຊ້ທິດສະດີປີຕາກໍຊອກຫາລວງເນັ່ງ L: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດແຜ່ນພຽງຜ່ານສາມເມັດ (Plane Passing Through Three Points): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ຮູບຈວຍໜຶ່ງມີລັດສະໝີພື້ນ r = 3 cm ແລະ ລວງສູງ h = 4 cm. ລວງເນັ່ງ L ຈະແມ່ນຈັກ cm? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: L ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"cm"}</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຈາກຂໍ້ (1), ເນື້ອທີ່ໜ້າທັງໝົດ ຂອງຮູບຈວຍນີ້ແມ່ນຈັກ π cm²? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"π"}</span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຈົ່ງຊອກຫາສົມຜົນແຜ່ນພຽງທີ່ຜ່ານສາມເມັດ A(1, 0, 0), B(0, 1, 0) ແລະ C(0, 0, 1) ພາຍໃຕ້ຮູບຮ່າງ x + y + z = C?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: C ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
-        ),
-      },
-      {
-        number: 2,
-        content: (
-          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຄິດໄລ່ມຸມໃຈກາງ α ຂອງຂະແໜງວົງມົນແຜນວາດຄລີ່ (Sector angle of cone development): "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-            </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>
-                  {"(1) ມຸມໃຈກາງ α ຂອງແຜນວາດຄລີ່ດ້ານຂ້າງຮູບຈວຍ ຄິດໄລ່ດ້ວຍສູດ α = 360° · "} <Fraction num="r" den="L" /> {". ຖ້າ r = 2 cm, L = 8 cm, ມຸມ α ຈະແມ່ນຈັກອົງສາ? (ຕອບເປັນຕົວເລກ):"}
-                </span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: α ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"°"}</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຈາກຂໍ້ (1), ຖ້າ r = 3 cm, L = 9 cm, ມຸມ α ຈະແມ່ນຈັກອົງສາ? (ຕອບເປັນຕົວເລກ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: α ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"°"}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ແຜ່ນພຽງທີ່ຕັດແກນ O x, O y, O z ຢູ່ເມັດ A(a, 0, 0), B(0, b, 0), C(0, 0, c) ຈະມີສົມຜົນແມ່ນ x/a + y/b + z/c = 1. ຍ້ອນ a = b = c = 1 ⇒ x/1 + y/1 + z/1 = 1 ⇒ x + y + z = 1. ດັ່ງນັ້ນ C = 1!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາລັດສະໝີພື້ນ r ຈາກເນື້ອທີ່ທີ່ກຳນົດໃຫ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ເມັດເທິງແຜ່ນພຽງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຮູບຈວຍໜຶ່ງມີລວງເນັ່ງ L = 10 cm, ເນື້ອທີ່ອ້ອມຂ້າງແມ່ນ 50π cm². ລັດສະໝີພື້ນ r ຈະແມ່ນຈັກ cm? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: r ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"cm"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຮູບຈວຍໜຶ່ງມີລັດສະໝີພື້ນ r = 5 cm, ເນື້ອທີ່ໜ້າທັງໝົດແມ່ນ 90π cm². ລວງເນັ່ງ L ຈະແມ່ນຈັກ cm? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: L ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"cm"}</span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ໃຫ້ເມັດ A(1, 1, 1) ນອນເທິງແຜ່ນພຽງ x + 2y - z + D = 0. ຊອກຫາຄ່າ D?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: D ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
-      ),
-    },
-    {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາຕົວຈິງກ່ຽວກັບການທາສີຫຼັງຄາທາດຈວຍ (Painting the roof of a pagoda): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຫຼັງຄາພຣະທາດເປັນຮູບທາດຈວຍສີ່ແຈສະເໝີ ມີຂ້າງພື້ນ 8 m, ແລະ ແຕ່ລະໜ້າສາມແຈດ້ານຂ້າງມີລວງສູງ (Apothem) ແມ່ນ 5 m. ຈົ່ງຊອກຫາເນື້ອທີ່ຫຼັງຄາທັງໝົດທີ່ຕ້ອງທາສີ (ຄຳແນະນຳ: ທາສີແຕ່ສ່ວນອ້ອມຂ້າງ, ຜົນບວກ 4 ໜ້າສາມແຈ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: ເນື້ອທີ່ ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"m²"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຖ້າສີ 1 ຖັງສາມາດທາໄດ້ 20 m², ຈະຕ້ອງໃຊ້ສີທັງໝົດຈັກຖັງຈຶ່ງຈະພໍດີ? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: ໃຊ້ສີ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ຖັງ"}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u38-ans-1-1">{"(1) 24 (ເພາະວ່າ S_lateral = πrL = π * 4 * 6 = 24π cm²)"}</span>,
-          <span key="u38-ans-1-2">{"(2) 40 (ເພາະ S = S_base + S_lateral = π * 4² + 24π = 16π + 24π = 40π cm²)"}</span>,
-        ],
+          <span key="1-1">{"3 (ຄິດໄລ່: ຈາກ 3x + 2y - z + 4 = 0 ⇒ n = [3, 2, -1])"}</span>,
+          <span key="1-2">{"2 (ຄິດໄລ່: n = [3, 2, -1])"}</span>,
+          <span key="1-3">{"-1 (ຄິດໄລ່: n = [3, 2, -1])"}</span>,
+          <span key="1-4">{"-1 (ຄິດໄລ່: ຈາກ -x + 0y + 5z - 2 = 0 ⇒ n = [-1, 0, 5])"}</span>,
+          <span key="1-5">{"0 (ຄິດໄລ່: n = [-1, 0, 5])"}</span>,
+          <span key="1-6">{"5 (ຄິດໄລ່: n = [-1, 0, 5])"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u38-ans-2-1">{"(1) 36 (ເພາະວ່າ S_base = 6² = 36 cm²)"}</span>,
-          <span key="u38-ans-2-2">{"(2) 72 (ເພາະວ່າ S = S_base + S_lateral = 36 + 48 = 72 cm²)"}</span>,
-        ],
+          <span key="2">{"-5 (ຄິດໄລ່: 1(1) - 1(2) + 2(3) + D = 0 ⇒ 1 - 2 + 6 + D = 0 ⇒ D = -5)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3">{"2.5 (ຄິດໄລ່: n₁·n₂ = k(2) + 2(-1) - 1(3) = 2k - 5 = 0 ⇒ k = 5/2 = 2.5)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u38-ans-t1-1">{"(1) 5 (ຍ້ອນວ່າ L = √(r² + h²) = √(3² + 4²) = √25 = 5 cm)"}</span>,
-          <span key="u38-ans-t1-2">{"(2) 24 (ຍ້ອນວ່າ S = πr(r + L) = π * 3 * (3 + 5) = 24π cm²)"}</span>,
-        ],
-      },
-      {
-        questionNumber: "ທ້າທາຍ 2",
-        answers: [
-          <span key="u38-ans-t2-1">{"(1) 90 (ຍ້ອນວ່າ α = 360° * 2/8 = 90°)"}</span>,
-          <span key="u38-ans-t2-2">{"(2) 120 (ຍ້ອນວ່າ α = 360° * 3/9 = 120°)"}</span>,
-        ],
+          <span key="c1">{"1 (ຄິດໄລ່: x + y + z = 1)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u38-ans-s1-1">{"(1) 5 (ເພາະວ່າ r = S_lateral / (πL) = 50π / 10π = 5 cm)"}</span>,
-          <span key="u38-ans-s1-2">{"(2) 13 (ເພາະວ່າ S = πr² + πrL = 25π + 5πL = 90π ⇒ 5πL = 65π ⇒ L = 13 cm)"}</span>,
-        ],
-      },
-      {
-        questionNumber: "ທົດສອບປະຈຳບົດ 2",
-        answers: [
-          <span key="u38-ans-s2-1">{"(1) 80 (ເພາະວ່າເນື້ອທີ່ 1 ໜ້າແມ່ນ 1/2 * 8 * 5 = 20 m². ຜົນບວກ 4 ໜ້າແມ່ນ 20 * 4 = 80 m²)"}</span>,
-          <span key="u38-ans-s2-2">{"(2) 4 (ເພາະວ່າ 80 / 20 = 4 ຖັງ)"}</span>,
-        ],
-      },
+          <span key="s1">{"-2 (ຄິດໄລ່: 1 + 2(1) - 1 + D = 0 ⇒ 2 + D = 0 ⇒ D = -2)"}</span>
+        ]
+      }
     ],
-    advice: "ການຄິດໄລ່ເນື້ອທີ່ໜ້າທັງໝົດຂອງຮູບຈວຍ ແລະ ທາດຈວຍ ຕ້ອງແຍກແຍະລະຫວ່າງ 'ລວງສູງ h' ແລະ 'ລວງເນັ່ງ L' ໃຫ້ຖືກຕ້ອງສະເໝີເດີ້!",
-  },
+    advice: "ເກັ່ງຫຼາຍ! ສົມຜົນແຜ່ນພຽງເປັນເຄື່ອງມືທີ່ມີພະລັງຫຼາຍໃນການວິເຄາະອາວະກາດສາມມິຕິ. ສູ້ໆຕໍ່ໄປເດີ້!"
+  }
 };

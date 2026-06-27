@@ -19,7 +19,7 @@ export const unit14Data: UnitData = {
             
             {/* Comparison table style block */}
             <div style={{ padding: "12px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0" }}>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", color: "#37474F" }}>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", color: "#37474F" }}>
                 <div>
                   <strong style={{ color: "#0D47A1" }}>{"1. ເຄິ່ງຄືທຽບໃສ່ແກນ (Line Symmetry)"}</strong>
                   <p style={{ margin: "4px 0 0 0", fontSize: "1.15rem" }}>{"ແມ່ນການພັບຮູບຕາມແກນ (折りたたみ) ແລ້ວສອງຊีกເຕັງກັນພໍດີ. ເຊັ່ນ: ຮູບສາມແຈທ່ຽງ, ຜີເສື້ອ."}</p>

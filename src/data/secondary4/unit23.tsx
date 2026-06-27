@@ -1,339 +1,287 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit23Data: UnitData = {
   unitNumber: 23,
-  unitTitle: "ພາກທີ II - ບົດທີ 23: ເຄື່ອງໝາຍຂອງໃຈຜົນ ແລະ ລະບົບອະສົມຜົນຂັ້ນສອງ",
-  unitGoal:
-    "ຮຽນຮູ້ວິທີພິຈາລະນາເຄື່ອງໝາຍບວກ/ລົບ ຂອງສອງໃຈຜົນ ໂດຍອີງໃສ່ຄ່າ Δ, ຜົນບວກ S ແລະ ຜົນຄູນ P ພ້ອມທັງວິທີແກ້ລະບົບອະສົມຜົນຂັ້ນສອງ",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 23 ໜ້າ 133-138",
+  unitTitle: "ພາກທີ II - ບົດທີ 23: ລະບົບອະສົມຜົນຂັ້ນສອງ ແລະ ເຄື່ອງໝາຍຂອງຮາກ (Systems of Quadratic Inequalities & Root Signs)",
+  unitGoal: "ຮຽນຮູ້ການແກ້ລະບົບອະສົມຜົນຂັ້ນສອງ, ການກວດສອບເຄື່ອງໝາຍຂອງຮາກສົມຜົນ (ຮາກບວກ, ຮາກລົບ, ຮາກຕ່າງເຄື່ອງໝາຍ) ໂດຍໃຊ້ Δ, S, P ແລະ ການປຽບທຽບຮາກກັບຈຳນວນ k",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 103-108",
   subSections: [
     {
-      title: "1. ເງື່ອນໄຂເຄື່ອງໝາຍຂອງສອງໃຈຜົນ (Conditions for Sign of Roots)",
+      title: "1. ການແກ້ລະບົບອະສົມຜົນຂັ້ນສອງ (Solving Systems of Quadratic Inequalities)",
       keyPoint: {
-      title: "1. ເງື່ອນໄຂເຄື່ອງໝາຍຂອງສອງໃຈຜົນ (Conditions for Sign of Roots)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ເພື່ອພິຈາລະນາເຄື່ອງໝາຍຂອງສອງໃຈຜົນ x₁ ແລະ x₂ ໂດຍບໍ່ຕ້ອງແກ້ສົມຜົນ, ເຮົາໃຊ້ເງື່ອນໄຂຕໍ່ໄປນີ້:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "12px",
-            }}
-          >
-            <div>
-              <strong style={{ color: "#E65100" }}>{"• ສອງໃຈຜົນມີເຄື່ອງໝາຍກົງກັນຂ້າມ (Opposite Signs):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#D84315" }}>
-                {"P = x₁ · x₂ < 0  (ບໍ່ຈຳເປັນຕ້ອງກວດ Δ ຍ້ອນວ່າ Δ ຈະໃຫຍ່ກວ່າສູນສະເໝີ)"}
-              </span>
-            </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• ສອງໃຈຜົນເປັນຄ່າບວກທັງສອງ (Both Positive):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", color: "#555" }}>
-                {"ເງື່ອນໄຂປະສົມ: "}
-                <strong style={{ color: "#D84315" }}>{"Δ ≥ 0,  S = x₁ + x₂ > 0,  P = x₁ · x₂ > 0"}</strong>
-              </span>
-            </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• ສອງໃຈຜົນເປັນຄ່າລົບທັງສອງ (Both Negative):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", color: "#555" }}>
-                {"%ເງື່ອນໄຂປະສົມ: "}
-                <strong style={{ color: "#D84315" }}>{"Δ ≥ 0,  S = x₁ + x₂ < 0,  P = x₁ · x₂ > 0"}</strong>
-              </span>
+        title: "ຫຼັກການແກ້ລະບົບອະສົມຜົນ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ການແກ້ລະບົບອະສົມຜົນແມ່ນການຊອກຫາຫວ່າງໃຈຜົນຮ່ວມ (Intersection) ໂດຍແກ້ແຕ່ລະອະສົມຜົນແຍກກັນ ແລ້ວເອົາມາລວມກັນເທິງເສັ້ນຈຳນວນ:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }}>{"ຕົວຢ່າງລະບົບອະສົມຜົນ:"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"ລະບົບ: { x² - 4 ≥ 0 并且 -x² + 5x - 4 > 0 }"}
+                <br />
+                {"- ອະສົມຜົນ (1): x² - 4 ≥ 0 ⇒ x ∈ ]-∞, -2] ∪ [2, +∞["}
+                <br />
+                {"- ອະສົມຜົນ (2): x² - 5x + 4 < 0 ⇒ x ∈ ]1, 4["}
+                <br />
+                {"- ໃຈຜົນຮ່ວມແມ່ນ: x ∈ [2, 4["}
+              </p>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ຈື່ໄວ້ວ່າ ຖ້າຜົນຄູນ P = c/a < 0 ໝາຍຄວາມວ່າຮາກທັງສອງມີເຄື່ອງໝາຍຕ່າງກັນທັນທີເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຈື່ສະເໝີ: ການແຕ້ມເສັ້ນຈຳນວນ ແລະ ຂີດຂ້າຫວ່າງທີ່ບໍ່ແມ່ນໃຈຜົນອອກ ຈະຊ່ວຍໃຫ້ຫາຫວ່າງໃຈຜົນຮ່ວມໄດ້ຢ່າງຖືກຕ້ອງ ແລະ ງ່າຍດາຍ!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງພິຈາລະນາເຄື່ອງໝາຍຂອງສອງໃຈຜົນ ໂດຍນຳໃຊ້ຫຼັກການວີແອດ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໃຫ້ສົມຜົນ x² - 5x + 6 = 0 (ມີ Δ = 1, S = 5, P = 6). ສອງໃຈຜົນນີ້ມີເຄື່ອງໝາຍແນວໃດ? (ຕອບ: ບວກທັງສອງ, ລົບທັງສອງ, ຫຼື ຕ່າງເຄື່ອງໝາຍ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງແກ້ລະບົບອະສົມຜົນຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ລະບົບ: { x² - 9 ≥ 0 ແລະ x² - 5x < 0 }. ໃຈຜົນຮ່ວມແມ່ນ ["}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{", "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{"["}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ລະບົບ: { x² - 1 > 0 ແລະ x² - 4 < 0 }. ໃຈຜົນຮ່ວມແມ່ນ ]-2, -1[ ∪ ]"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{", "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{"["}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ໃຫ້ສົມຜົນ x² - 3x - 10 = 0 (ມີ P = -10). ສອງໃຈຜົນນີ້ມີເຄື່ອງໝາຍແນວໃດ? (ຕອບ ບວກທັງສອງ, ລົບທັງສອງ, ຫຼື ຕ່າງເຄື່ອງໝາຍ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງກວດສອບເຄື່ອງໝາຍຂອງຮາກສົມຜົນຂັ້ນສອງ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ສົມຜົນ x² - 5x + 6 = 0 ມີ Δ = 1 > 0, S = 5 > 0, P = 6 > 0. ສອງຮາກເປັນຮາກ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ສົມຜົນ x² + 6x + 8 = 0 ມີ Δ = 4 > 0, S = -6 < 0, P = 8 > 0. ສອງຮາກເປັນຮາກ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ບົດຮຽນພື້ນຖານ",
-      keyPoint: { content: <span /> },
-      problems: [
-        {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ລະບົບອະສົມຜົນຂັ້ນສອງພື້ນຖານ (ຊອກຫວ່າງຮ່ວມກັນ): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ແກ້ລະບົບອະສົມຜົນ x > 2 ແລະ x² - 9 < 0 (ຫວ່າງໃຈຜົນແມ່ນ -3 < x < 3). ຫວ່າງໃຈຜົນຮ່ວມແມ່ນເທົ່າໃດ? (ຕອບແບບ a < x < b):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ແກ້ລະບົບອະສົມຜົນ x < 4 ແລະ x² - 4 > 0 (ຫວ່າງໃຈຜົນແມ່ນ x < -2 ຫຼື x > 2). ຫວ່າງໃຈຜົນຮ່ວມທີ່ມີແຕ່ຄ່າບວກແມ່ນເທົ່າໃດ? (ຕອບແບບ a < x < b):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+      title: "2. ການປຽບທຽບຮາກສົມຜົນກັບຈຳນວນຈິງ k (Comparing Roots with Real Number k)",
+      keyPoint: {
+        title: "ຫຼັກການປຽບທຽບຮາກກັບ k",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ເພື່ອປຽບທຽບຮາກ α, β ຂອງສົມຜົນ f(x) = ax² + bx + c = 0 ກັບຈຳນວນຈິງ k, ເຮົາໃຊ້ຫຼັກການ:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ເງື່ອນໄຂປຽບທຽບ:"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
+                <li><strong>{"ທັງສອງຮາກໃຫຍ່ກວ່າ k (α > k, β > k):"}</strong>{" ຕ້ອງມີ Δ ≥ 0, a·f(k) > 0, ແລະ x_jorn = -b/(2a) > k."}</li>
+                <li><strong>{"ທັງສອງຮາກນ້ອຍກວ່າ k (α < k, β < k):"}</strong>{" ຕ້ອງມີ Δ ≥ 0, a·f(k) > 0, ແລະ x_jorn = -b/(2a) < k."}</li>
+                <li><strong>{"ຈຳນວນ k ຢູ່ລະຫວ່າງສອງຮາກ (α < k < β):"}</strong>{" ຕ້ອງມີ a·f(k) < 0 (ເງື່ອນໄຂນີ້ພຽງພໍທີ່ຈະຮັບປະກັນ Δ > 0)."}</li>
+              </ul>
             </div>
           </div>
-        </div>
-      ),
-    }
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງ: ໃຫ້ສົມຜົນ x² - 2x + (m-3) = 0. ເພື່ອໃຫ້ຮາກໜຶ່ງບວກ ແລະ ຮາກໜຶ່ງລົບ (ໝາຍເຖິງ 0 ຢູ່ຫວ່າງກາງຮາກ) ຕ້ອງມີ a·f(0) < 0 ⇒ 1 × (m-3) < 0 ⇒ m < 3!",
+          isBlue: false
+        }
+      },
+      problems: [
+        {
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາເງື່ອນໄຂພາຣາມີເຕີ m: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ໃຫ້ສົມຜົນ x² - 2(m-1)x + 2m - 5 = 0. ຊອກຫາເງື່ອນໄຂຂອງ m ເພື່ອໃຫ້ສົມຜົນ:"}
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ມີສອງຮາກຕ່າງເຄື່ອງໝາຍກັນ (ຮາກບວກໜຶ່ງ, ຮາກລົບໜຶ່ງ) ⇒ ຕ້ອງມີ P = 2m - 5 < 0 ⇒ m <"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາເງື່ອນໄຂຂອງ a ເພື່ອໃຫ້ 1 ຢູ່ຫວ່າງກາງສອງຮາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ໃຫ້ສົມຜົນ x² - 2ax + a + 5 = 0. ຊອກຫາເງື່ອນໄຂຂອງ a ເພື່ອໃຫ້ 1 ຢູ່ຫວ່າງກາງສອງຮາກ (α < 1 < β)?"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                <span>{"ຕອບ: a >"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              </div>
+            </div>
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໃຫ້ຕັ້ງເງື່ອນໄຂລະບົບອະສົມຜົນສຳລັບຕົວປ່ຽນ m ເດີ້! ບົດທ້າທາຍ 2: ແກ້ອະສົມຜົນແຕ່ລະອັນ ແລ້ວນຳມາແຕ້ມເສັ້ນສະແດງຫວ່າງຮ່ວມກັນ!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາເງື່ອນໄຂ m ທີ່ສອດຄ່ອງກັບເຄື່ອງໝາຍຂອງໃຈຜົນ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດຊອກຫາເງື່ອນໄຂສອງຮາກບວກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ຊອກ m ເພື່ອໃຫ້ສົມຜົນ x² - 4x + m = 0 ມີສອງໃຈຜົນເປັນຄ່າບວກທັງສອງ. ຄ່າ m ຕ້ອງສອດຄ່ອງກັບ 0 < m ≤ K. ຄ່າ K ແມ່ນເທົ່າໃດ? (ຄຳແນະນຳ: Δ = 16 - 4m ≥ 0 ແລະ P = m > 0):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: K ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຊອກ m ເພື່ອໃຫ້ສົມຜົນ x² - 2x + m - 3 = 0 ມີສອງໃຈຜົນຕ່າງເຄື່ອງໝາຍກັນ. ຄ່າ m ຕ້ອງນ້ອຍກວ່າຕົວເລກໃດ? (ຄຳແນະນຳ: P = m - 3 < 0):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: m <"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃຫ້ສົມຜົນ x² - 2(m+1)x + m + 3 = 0. ຊອກຫາເງື່ອນໄຂຂອງ m ເພື່ອໃຫ້ສົມຜົນມີສອງຮາກບວກຕ່າງກັນ?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <span>{"ຕອບ: m >"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງແກ້ລະບົບອະສົມຜົນຂັ້ນສອງທີ່ຊັບຊ້ອນ (System of Quadratic Inequalities): "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດເງື່ອນໄຂພາຣາມີເຕີລະບົບອະສົມຜົນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ໃຫ້ລະບົບອະສົມຜົນ x² - 4 < 0 (ຫວ່າງແມ່ນ -2 < x < 2) ແລະ x² - 1 > 0 (ຫວ່າງແມ່ນ x < -1 ຫຼື x > 1). ຫວ່າງໃຈຜົນຮ່ວມໃນສ່ວນຄ່າບວກແມ່ນເທົ່າໃດ? (ຕອບແບບ a < x < b):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ໃຫ້ລະບົບອະສົມຜົນ x² - 5x + 6 < 0 (ຫວ່າງແມ່ນ 2 < x < 3) ແລະ x > 2.5. ຫວ່າງໃຈຜົນຮ່ວມແມ່ນເທົ່າໃດ? (ຕອບແບບ a.b < x < c, ຕົວຢ່າງ: 2.5 < x < 3):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຊອກຫາຄ່າ k ເພື່ອໃຫ້ລະບົບອະສົມຜົນ { x² - 5x + 4 ≤ 0 ແລະ x - k > 0 } ມີໃຈຜົນຮ່ວມ?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <span>{"ຕອບ: k <"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ສອງຮາກບວກຕ່າງກັນ: (1) Δ' = (m+1)² - (m+3) = m² + m - 2 > 0 ⇒ m < -2 ຫຼື m > 1. (2) S = 2(m+1) > 0 ⇒ m > -1. (3) P = m+3 > 0 ⇒ m > -3. ໃຈຜົນຮ່ວມແມ່ນ m > 1! ສຳລັບລະບົບອະສົມຜົນ: x²-5x+4 ≤ 0 ⇒ x ∈ [1, 4]. ຕ້ອງມີ x > k ແລະ ຫວ່າງນີ້ຕັດກັນ ⇒ ຕ້ອງມີ k < 4!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາເງື່ອນໄຂຂອງ m ເພື່ອໃຫ້ຮາກມີເຄື່ອງໝາຍລົບທັງສອງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ເຄື່ອງໝາຍຂອງຮາກສົມຜົນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ສົມຜົນ x² + 6x + m = 0 ມີສອງໃຈຜົນ. ເງື່ອນໄຂຜົນຄູນ P = m ຕ້ອງໃຫຍ່ກວ່າສູນ (m > 0) ແລະ Δ ≥ 0. ໃຫ້ຫາຄ່າ K ທີ່ເຮັດໃຫ້ m ≤ K: (ຄຳແນະນຳ: Δ = 36 - 4m ≥ 0):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: K ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຜົນບວກ S = -6 < 0 ເຮັດໃຫ້ຮາກທັງສອງເປັນຄ່າລົບ. ຫວ່າງຂອງ m ທີ່ຖືກຕ້ອງທັງໝົດແມ່ນ 0 < m ≤ 9. ຖ້າ m = 9, ສົມຜົນມີຮາກຄູ່ເທົ່າໃດ? (ຕອບເປັນຕົວເລກລົບ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: x ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ສົມຜົນ 2x² - 3x - 5 = 0 ມີສອງຮາກບວກ ຫຼື ລົບ ຫຼື ຕ່າງເຄື່ອງໝາຍ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ມີຮາກ"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "42px" }}></span>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາຕົວຈິງກ່ຽວກັບເຂດກໍານົດຄວາມຮ້ອນປອດໄພ (Safe Temperature Interval): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ເງື່ອນໄຂຮາກໃຫຍ່ກວ່າ k: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ເຄື່ອງຈັກໜຶ່ງເຮັດວຽກຢ່າງປອດໄພ ຖ້າອຸນຫະພູມ t ຕອບສະໜອງລະບົບອະສົມຜົນ t² - 40t + 300 < 0 (ຫວ່າງແມ່ນ 10 < t < 30) ແລະ t > 15. ຫວ່າງອຸນຫະພູມປອດໄພຮ່ວມແມ່ນເທົ່າໃດ? (ຕອບແບບ a < t < b):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                <span>{"°C"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຖ້າອຸນຫະພູມສະພາບແວດລ້ອມປັດຈຸບັນແມ່ນ 12 °C, ເຄື່ອງຈັກນີ້ຈະສາມາດເຮັດວຽກໄດ້ຢ່າງປອດໄພ ຫຼື ບໍ່? (ຕອບ ໄດ້ ຫຼື ບໍ່ໄດ້):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ເພື່ອໃຫ້ສົມຜົນ x² - 2x + (m-1) = 0 ມີສອງຮາກໃຫຍ່ກວ່າ 0 (ຮາກບວກ), ຕ້ອງມີ m ໃຫຍ່ກວ່າຈຳນວນໃດ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: m >"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u23-ans-1-1">{"(1) ບວກທັງສອງ (ຍ້ອນ S = 5 > 0, P = 6 > 0 ດັ່ງນັ້ນທັງສອງໃຈຜົນແມ່ນຄ່າບວກ (2 ແລະ 3))"}</span>,
-          <span key="u23-ans-1-2">{"(2) ຕ່າງເຄື່ອງໝາຍ (ຍ້ອນ P = -10 < 0 ດັ່ງນັ້ນສອງຮາກມີເຄື່ອງໝາຍຕ່າງກັນ (-2 ແລະ 5))"}</span>,
-        ],
+          <span key="1-1">{"3 (ຄິດໄລ່: x² - 9 ≥ 0 ⇒ x ∈ ]-∞, -3] ∪ [3, +∞[. x(x-5) < 0 ⇒ x ∈ ]0, 5[. ໃຈຜົນຮ່ວມແມ່ນ [3, 5[)"}</span>,
+          <span key="1-2">{"5 (ຄິດໄລ່: ໃຈຜົນຮ່ວມແມ່ນ [3, 5[)"}</span>,
+          <span key="1-3">{"1 (ຄິດໄລ່: x²-1 > 0 ⇒ |x| > 1. x²-4 < 0 ⇒ |x| < 2. ໃຈຜົນຮ່ວມແມ່ນ ]-2, -1[ ∪ ]1, 2[)"}</span>,
+          <span key="1-4">{"2 (ຄິດໄລ່: ໃຈຜົນຮ່ວມແມ່ນ ]-2, -1[ ∪ ]1, 2[)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u23-ans-2-1">{"(1) 2 < x < 3 (ຍ້ອນຫວ່າງຮ່ວມກັນລະຫວ່າງ x > 2 ແລະ -3 < x < 3)"}</span>,
-          <span key="u23-ans-2-2">{"(2) 2 < x < 4 (ຍ້ອນຫວ່າງ x < -2 ບໍ່ມີຄ່າບວກ, ເຫຼືອຫວ່າງ x > 2 ເຊິ່ງຕັດກັບ x < 4)"}</span>,
-        ],
+          <span key="2-1">{"ບວກທັງສອງ (ຄິດໄລ່: S > 0, P > 0, Δ > 0 ⇒ ສອງຮາກບວກ)"}</span>,
+          <span key="2-2">{"ລົບທັງສອງ (ຄິດໄລ່: S < 0, P > 0, Δ > 0 ⇒ ສອງຮາກລົບ)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"5/2 (ຄິດໄລ່: P = 2m - 5 < 0 ⇒ m < 5/2)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4">{"6 (ຄິດໄລ່: ຕ້ອງມີ f(1) < 0 ⇒ 1 - 2a + a + 5 < 0 ⇒ 6 - a < 0 ⇒ a > 6)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u23-ans-t1-1">{"(1) 4 (ຍ້ອນວ່າ Δ = 16 - 4m ≥ 0 ⇒ m ≤ 4, ດັ່ງນັ້ນ K = 4)"}</span>,
-          <span key="u23-ans-t1-2">{"(2) 3 (ຍ້ອນວ່າ P = m - 3 < 0 ⇒ m < 3)"}</span>,
-        ],
+          <span key="c1">{"1 (ຄິດໄລ່: Δ' > 0, S > 0, P > 0 ⇒ ໃຈຜົນຮ່ວມແມ່ນ m > 1)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u23-ans-t2-1">{"(1) 1 < x < 2 (ຍ້ອນຫວ່າງຮ່ວມແມ່ນ -2 < x < -1 ຫຼື 1 < x < 2. ສ່ວນຄ່າບວກແມ່ນ 1 < x < 2)"}</span>,
-          <span key="u23-ans-t2-2">{"(2) 2.5 < x < 3 (ຍ້ອນຫວ່າງຮ່ວມລະຫວ່າງ 2 < x < 3 ແລະ x > 2.5)"}</span>,
-        ],
+          <span key="c2">{"4 (ຄິດໄລ່: x ∈ [1, 4] ແລະ x > k ⇒ ຕ້ອງມີ k < 4)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u23-ans-s1-1">{"(1) 9 (ຍ້ອນວ່າ Δ = 36 - 4m ≥ 0 ⇒ 4m ≤ 36 ⇒ m ≤ 9)"}</span>,
-          <span key="u23-ans-s1-2">{"(2) -3 (ຍ້ອນວ່າສົມ求 h = x² + 6x + 9 = 0 ⇒ (x + 3)² = 0 ⇒ x = -3)"}</span>,
-        ],
+          <span key="s1">{"ຕ່າງເຄື່ອງໝາຍ (ຄິດໄລ່: a = 2, c = -5 ⇒ P = -5/2 < 0 ⇒ ສອງຮາກຕ່າງເຄື່ອງໝາຍກັນ)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u23-ans-s2-1">{"(1) 15 < t < 30 (ຍ້ອນຫວ່າງຮ່ວມລະຫວ່າງ 10 < t < 30 ແລະ t > 15)"}</span>,
-          <span key="u23-ans-s2-2">{"(2) ບໍ່ໄດ້ (ເພາະວ່າ 12 °C ຢູ່ນອກຫວ່າງຄວາມປອດໄພ 15 < t < 30)"}</span>,
-        ],
-      },
+          <span key="s2">{"1 (ຄິດໄລ່: Δ' = 1 - m + 1 ≥ 0 ⇒ m ≤ 2. S = 2 > 0, P = m-1 > 0 ⇒ m > 1. ດັ່ງນັ້ນ 1 < m ≤ 2 ⇒ m > 1)"}</span>
+        ]
+      }
     ],
-    advice: "ການວິເຄາະລະບົບອະສົມຜົນ ແລະ ເຄື່ອງໝາຍຂອງໃຈຜົນ ຊ່ວຍໃຫ້ເຮົາສາມາດສ້າງຂອບເຂດຄວາມປອດໄພ ແລະ ປະສິດທິພາບຂອງຫຼາຍໆຂະບວນການໄດ້ຢ່າງເປັນວິທະຍາສາດເດີ້!",
-  },
+    advice: "ເກັ່ງຫຼາຍ! ການແກ້ລະບົບອະສົມຜົນຂັ້ນສອງ ແລະ ການວິເຄາະຮາກສົມຜົນ ແມ່ນຫົວຂໍ້ຫຼັກທີ່ສຳຄັນທີ່ສຸດໃນພຶດຊະຄະນິດ ມ.4. ເຈົ້າເຮັດໄດ້ດີຫຼາຍ!"
+  }
 };

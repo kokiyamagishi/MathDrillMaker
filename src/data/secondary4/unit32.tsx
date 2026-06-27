@@ -1,354 +1,265 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit32Data: UnitData = {
   unitNumber: 32,
-  unitTitle: "ພາກທີ IV - ບົດທີ 32: ການຄູນເວັກເຕີກັບຈຳນວນຈິງ ແລະ ເງື່ອນໄຂຮ່ວມເສັ້ນຊື່",
-  unitGoal:
-    "ຮຽນຮູ້ ແລະ ນຳໃຊ້ຄຸນລັກສະນະຂອງການຄູນເວັກເຕີກັບຈຳນວນຈິງ k · u ພ້ອມທັງເງື່ອນໄຂທີ່ເຮັດໃຫ້ສອງເວັກເຕີຂະໜານກັນ ແລະ ສາມເມັດຮ່ວມເສັ້ນຊື່ດຽວກັນ (Collinearity)",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 32 ໜ້າ 187-192",
+  unitTitle: "ພາກທີ IV - ບົດທີ 32: ການຄູນເວກເຕີດ້ວຍສະກາແລ (Vector Multiplication by a Scalar)",
+  unitGoal: "ຮຽນຮູ້ການຄູນເວກເຕີດ້ວຍສະກາແລ a·u, ທິດທາງ ແລະ ຂະໜາດຂອງເວກເຕີຜົນຄູນ, ຄຸນລັກສະນະພຶດຊະຄະນິດ, ແລະ ການພິສູດຈຸດຮ່ວມເສັ້ນຊື່ (Collinearity)",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 150-153",
   subSections: [
     {
-      title: "1. ການຄູນເວັກເຕີກັບຈຳນວນຈິງ (Scalar Multiplication of a Vector)",
+      title: "1. ນິຍາມ ແລະ ຄຸນລັກສະນະຂອງ a·u (Definition & Properties of Scalar Multiplication)",
       keyPoint: {
-      title: "1. ການຄູນເວັກເຕີກັບຈຳນວນຈິງ (Scalar Multiplication of a Vector)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຜົນຄູນຂອງເວັກເຕີ u ກັບຈຳນວນຈິງ k ແມ່ນເວັກເຕີ k · u ທີ່ມີລັກສະນະດັ່ງນີ້:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "12px",
-            }}
-          >
-            <div>
-              <strong style={{ color: "#E65100" }}>{"• ທິດທາງຂອງເວັກເຕີ k · u:"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px" }}>
-                {"- ຖ້າ "}
-                <strong style={{ color: "#2E7D32" }}>{"k > 0"}</strong>
-                {": ມີທິດທາງ ດຽວກັນ ກັບ u."}
-                <br />
-                {"- ຖ້າ "}
-                <strong style={{ color: "#D84315" }}>{"k < 0"}</strong>
-                {": ມີທິດທາງ ກົງກັນຂ້າມ ກັບ u."}
-                <br />
-                {"- ຖ້າ "}
-                <strong style={{ color: "#757575" }}>{"k = 0"}</strong>
-                {": ຜົນຮັບແມ່ນເວັກເຕີສູນ 0."}
-              </span>
+        title: "ນິຍາມການຄູນເວກເຕີດ້ວຍສະກາແລ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຜົນຄູນຂອງເວກເຕີ u ດ້ວຍສະກາແລ a (ຈຳນວນຈິງ) ແມ່ນເວກເຕີ a·u ທີ່ມີເງື່ອນໄຂດັ່ງນີ້:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }}>{"ຄຸນລັກສະນະເວກເຕີໃຫມ່:"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
+                <li><strong>{"ຂະໜາດ (Magnitude):"}</strong>{" |a·u| = |a| × |u|"}</li>
+                <li><strong>{"ທິດທາງ (Direction):"}</strong>
+                  <ul style={{ paddingLeft: "20px", marginTop: "4px" }}>
+                    <li>{"ຖ້າ a > 0: a·u ມີທິດທາງດຽວກັນກັບ u."}</li>
+                    <li>{"ຖ້າ a < 0: a·u ມີທິດທາງກົງກັນຂ້າມກັບ u."}</li>
+                    <li>{"ຖ້າ a = 0 ຫຼື u = 0: a·u = 0 (ເວກເຕີສູນ)."}</li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• ຂະໜາດຂອງ k · u:"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#D84315" }}>
-                {"|k · u| = |k| · |u|  (ຂະໜາດແມ່ນຄ່າບວກສະເໝີ)"}
-              </span>
-            </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• ເງື່ອນໄຂຮ່ວມເສັ້ນຊື່ດຽວກັນ (Collinear Condition):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px" }}>
-                {"- ສອງເວັກເຕີ u ແລະ v ຂະໜານກັນ (u || v) ກໍຕໍ່ເມື່ອມີຈຳນວນຈິງ k ທີ່ເຮັດໃຫ້: "}
-                <strong style={{ color: "#D84315" }}>{"v = k · u"}</strong>
-                <br />
-                {"- ສາມເມັດ A, B, C ຮ່ວມເສັ້ນຊື່ດຽວກັນ ກໍຕໍ່ເມື່ອມີຈຳນວນຈິງ k ທີ່ເຮັດໃຫ້: "}
-                <strong style={{ color: "#D84315" }}>{"AB = k · AC"}</strong>
-              </span>
+            <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ຄຸນລັກສະນະພຶດຊະຄະນິດ:"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
+                <li>{"a(b·u) = (ab)·u"}</li>
+                <li>{"(a + b)·u = a·u + b·u"}</li>
+                <li>{"a(u + v) = a·u + a·v"}</li>
+              </ul>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ຕົວຢ່າງ: ຖ້າ AB = 3 · AC, ໝາຍຄວາມວ່າ A, B, C ຢູ່ເທິງເສັ້ນຊື່ດຽວກັນ ແລະ ຂ້າງ AB ຍາວເປັນ 3 ເທົ່າຂອງ AC ເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຄວາມຂະໜານ (Collinearity): ສອງເວກເຕີ u ແລະ v (v ≠ 0) ຂະໜານກັນ ກໍຕໍ່ເມື່ອມີຈຳນວນຈິງ k ທີ່ເຮັດໃຫ້ u = k·v!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາຂະໜາດຂອງເວັກເຕີ ຫຼັງຈາກຄູນກັບຈຳນວນຈິງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໃຫ້ເວັກເຕີ u ມີຂະໜາດ |u| = 6 cm. ຂະໜາດຂອງເວັກເຕີ v = -3u ຈະແມ່ນຈັກ cm? (ຕອບເປັນຕົວເລກບວກສະເໝີ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາຂະໜາດ ແລະ ທິດທາງຂອງເວກເຕີຜົນຄູນ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ໃຫ້ |u| = 4. ດັ່ງນັ້ນ ເວກເຕີ v = -3u ຈະມີຂະໜາດ |v| ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{" ແລະ ມີທິດທາງ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span>{" ກັບ u."}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ເວກເຕີ w = 2.5u ຈະມີຂະໜາດ |w| ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{" ແລະ ມີທິດທາງ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span>{" ກັບ u."}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>
-                {"(2) ໃຫ້ເວັກເຕີ u ມີຂະໜາດ |u| = 10 cm. ຂະໜາດຂອງເວັກເຕີ v = "} <Fraction num="1" den="2" /> {"u ຈະແມ່ນຈັກ cm? (ຕອບເປັນຕົວເລກຖ້ວນ):"}
-              </span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງເຮັດໃຫ້ສຳນວນເວກເຕີຕໍ່ໄປນີ້ງ່າຍດາຍ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) 2(3u - 2v) + 3(u + v) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"u -"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"v"}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) 5(u - 2v) - 3(2u - 3v) = -u -"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"v"}</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ບົດຮຽນພື້ນຖານ",
-      keyPoint: { content: <span /> },
+      title: "2. ເມັດເຄິ່ງກາງ ແລະ ການພິສູດສາມເມັດຊື່ດຽວກັນ (Midpoint & Collinearity)",
+      keyPoint: {
+        title: "ສູດເມັດເຄິ່ງກາງ ແລະ ເງື່ອນໄຂຈຸດຮ່ວມເສັ້ນຊື່",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"- ຖ້າ I ແມ່ນເມັດເຄິ່ງກາງຂອງທ່ອນຊື່ AB, ດັ່ງນັ້ນສໍາລັບທຸກໆເມັດ O ໃດໆ:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
+              <span style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100" }}>
+                {"OI = (1/2)(OA + OB)"}
+              </span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"ຫຼື ຖ້າ O ຢູ່ຈຸດ I ຈະໄດ້: IA + IB = 0."}
+              </p>
+            </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"- ສາມເມັດ A, B, C ນອນເທິງເສັ້ນຊື່ດຽວກັນ (Collinear) ກໍຕໍ່ເມື່ອ ເວກເຕີ AB ແລະ AC ຂະໜານກັນ: AC = k·AB."}
+            </p>
+          </div>
+        ),
+        hint: {
+          text: "💡 ສູດເມັດເຄິ່ງກາງ OI = (1/2)(OA + OB) ເປັນເຄື່ອງມືພື້ນຖານໃນເລຂາຄະນິດເວກເຕີເພື່ອຊອກຫາຈຸດໃຈກາງ!",
+          isBlue: false
+        }
+      },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງກຳນົດຄ່າສຳປະສິດ k ຈາກຄວາມສຳພັນລະຫວ່າງຈຸດເທິງເສັ້ນຊື່: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໃຫ້ C ແມ່ນຈຸດເຄິ່ງກາງຂອງ AB ( AC = CB ). ຈົ່ງຫາຄ່າ k ທີ່ເຮັດໃຫ້ AC = k · AB (ຕອບເປັນເລກສ່ວນ, ຕົວຢ່າງ: 1/2):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ຄົງຄ່າອັດຕາສ່ວນ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ໃຫ້ G ແມ່ນເມັດຖ່ວງໜັກຂອງຮູບສາມແຈ ABC ແລະ M ແມ່ນເມັດເຄິ່ງກາງຂອງ BC:"}
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ພົວພັນລະຫວ່າງ AG ແລະ AM ແມ່ນ AG ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span>{"AM"}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ພົວພັນລະຫວ່າງ GM ແລະ AM ແມ່ນ GM ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span>{"AM"}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຈົ່ງຫາຄ່າ k ທີ່ເຮັດໃຫ້ CA = k · CB (⚠️ ລະວັງທິດທາງກົງກັນຂ້າມ, ຕອບຕົວເລກຖ້ວນຕິດລົບ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາຕົວຄູນ k ເພື່ອໃຫ້ສາມເມັດຊື່ດຽວກັນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ໃຫ້ສາມເມັດ A, B, C ນອນເທິງເສັ້ນຊື່ດຽວກັນ ໂດຍມີຄວາມສຳພັນ AB = 3u - 2v ແລະ AC = 9u - kv. ຈົ່ງຊອກຫາຄ່າຂອງ k?"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                <span>{"ຕອບ: k ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໃຫ້ຄິດໄລ່ຄັດຈ້ອນສຳນວນໃນວົງເລັບກ່ອນ! ບົດທ້າທາຍ 2: ໃຊ້ເງື່ອນໄຂ v = k · u ເພື່ອຊອກຫາຄ່າຂອງ m ເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຄັດຈ້ອນສຳນວນພຶດຊະຄະນິດຂອງເວັກເຕີ (Simplifying Vector Algebra Expressions): "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດພິສູດເມັດຖ່ວງໜັກ (Centroid Vector Identity): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ຈົ່ງຄັດຈ້ອນສຳນວນ A = 3 · (u + 2v) - 2 · (u - v) (ຕອບໃນຮູບຮ່າງ au+bv, ຕົວຢ່າງ: u+8v):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: A ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຈົ່ງຄັດຈ້ອນສຳນວນ B = 2 · (3u - v) + 5 · (-u + v) (ຕອບໃນຮູບຮ່າງ au+bv, ຕົວຢ່າງ: u+3v):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: B ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃຫ້ G ແມ່ນເມັດຖ່ວງໜັກຂອງຮູບສາມແຈ ABC. ດັ່ງນັ້ນ GA + GB + GC = 0. ສໍາລັບຈຸດ O ໃດໆ, ຕົວຄູນ m ທີ່ສອດຄ່ອງກັບ OA + OB + OC = m·OG ແມ່ນເທົ່າໃດ?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: m ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
-        ),
-      },
-      {
-        number: 2,
-        content: (
-          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາຄ່າຂອງຕົວປ່ຽນ ເພື່ອໃຫ້ສອງເວັກເຕີຂະໜານກັນ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-            </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ໃຫ້ສອງເວັກເຕີ u = 2a + 3b ແລະ v = 6a + mb. ຖ້າ u ແລະ v ຂະໜານກັນ (v = k · u), ຄ່າ m ຈະແມ່ນເທົ່າໃດ? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: m ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ໃຫ້ສອງເວັກເຕີ u = a - 2b ແລະ v = ma + 4b. ຖ້າ u ແລະ v ຂະໜານກັນ, ຄ່າ m ຈະແມ່ນເທົ່າໃດ? (ຕອບເປັນຕົວເລກຖ້ວນຕິດລົບ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: m ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "OA + OB + OC = (OG+GA) + (OG+GB) + (OG+GC) = 3OG + (GA+GB+GC). ຍ້ອນ G ເປັນເມັດຖ່ວງໜັກ ⇒ GA+GB+GC = 0 ⇒ OA + OB + OC = 3OG. ດັ່ງນັ້ນ m = 3!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາຄວາມສຳພັນລະຫວ່າງຈຸດເທິງເສັ້ນຊື່ ໂດຍໃຊ້ຈຸດເຄິ່ງກາງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ຄ່າຂອງ 0·u: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ໃຫ້ M ແມ່ນຈຸດເຄິ່ງກາງຂອງຂ້າງ AB. ຈົ່ງຫາຄ່າ k ທີ່ເຮັດໃຫ້ MA + MB = k · AB (ຄຳແນະນຳ: MA ແລະ MB ແມ່ນເວັກເຕີກົງກັນຂ້າມກັນ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: k ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ໃຫ້ G ແມ່ນຈຸດໃຈກາງ (Centroid) ຂອງຮູບສາມແຈ ABC ທີ່ມີ M ແມ່ນຈຸດເຄິ່ງກາງຂອງ BC. ຈົ່ງຫາຄ່າ k ທີ່ເຮັດໃຫ້ AG = k · AM (ຕອບເປັນເລກສ່ວນ, ຕົວຢ່າງ: 2/3):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: k ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ສໍາລັບທຸກໆເວກເຕີ u ໃດໆ, ຜົນຄູນ 0·u ຈະໄດ້ເວກເຕີໃໝ່ແມ່ນຫຍັງ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ເວກເຕີ"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
-      ),
-    },
-    {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາຕົວຈິງກ່ຽວກັບການຂະຫຍາຍແຮງດຶງສະມໍ (Anchor Chain Tension Scaling): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ແຮງດຶງຂອງສະມໍ u ມີຂະໜາດແມ່ນ 150 N. ເພື່ອຄວາມປອດໄພຂອງເຮືອໃຫຍ່, ວິສະວະກອນຕ້ອງເພີ່ມແຮງເປັນ 3 ເທົ່າ ໂດຍໃຊ້ແຮງໃໝ່ v = 3u. ຂະໜາດຂອງແຮງ v ແມ່ນຈັກ N?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: |v| ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"N"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຖ້າແຮງດຶງໃໝ່ຊີ້ໄປໃນທິດທາງກົງກັນຂ້າມເພື່ອຜ່ອນຄວາມໄວ (v' = -2u), ຂະໜາດຂອງແຮງ v' ຈະແມ່ນຈັກນິວເຕີນ (N)? (ຕອບເປັນຕົວເລກບວກສະເໝີ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: |v'| ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"N"}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u32-ans-1-1">{"(1) 18 (ເພາະວ່າ |v| = |-3| · |u| = 3 * 6 = 18 cm)"}</span>,
-          <span key="u32-ans-1-2">{"(2) 5 (ເພາະວ່າ |v| = 1/2 · |u| = 0.5 * 10 = 5 cm)"}</span>,
-        ],
+          <span key="1-1">{"12 (ຄິດໄລ່: |-3u| = |-3| × |u| = 3 × 4 = 12)"}</span>,
+          <span key="1-2">{"ກົງກັນຂ້າມ (ຄິດໄລ່: ຍ້ອນ -3 < 0)"}</span>,
+          <span key="1-3">{"10 (ຄິດໄລ່: |2.5u| = 2.5 × 4 = 10)"}</span>,
+          <span key="1-4">{"ດຽວກັນ (ຄິດໄລ່: ຍ້ອນ 2.5 > 0)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u32-ans-2-1">{"(1) 1/2 (ເພາະວ່າ C ແມ່ນຈຸດເຄິ່ງກາງ ດັ່ງນັ້ນຄວາມຍາວ AC ແມ່ນເຄິ່ງໜຶ່ງຂອງ AB)"}</span>,
-          <span key="u32-ans-2-2">{"(2) -1 (ເພາະວ່າ CA ແລະ CB ມີຄວາມຍາວເທົ່າກັນ ແຕ່ມີທິດທາງກົງກັນຂ້າມ)"}</span>,
-        ],
+          <span key="2-1">{"9 (ຄິດໄລ່: 2(3u - 2v) + 3(u + v) = 6u - 4v + 3u + 3v = 9u - v)"}</span>,
+          <span key="2-2">{"1 (ຄິດໄລ່: 2(3u - 2v) + 3(u + v) = 9u - v)"}</span>,
+          <span key="2-3">{"1 (ຄິດໄລ່: 5(u - 2v) - 3(2u - 3v) = 5u - 10v - 6u + 9v = -u - v)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"2/3 (ຄິດໄລ່: ຕາມຄຸນລັກສະນະເສັ້ນຈອມຖ່ວງໜັກ AG = (2/3)AM)"}</span>,
+          <span key="3-2">{"1/3 (ຄິດໄລ່: ຕາມຄຸນລັກສະນະເສັ້ນຈອມຖ່ວງໜັກ GM = (1/3)AM)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4">{"6 (ຄິດໄລ່: ຕ້ອງມີ AC = 3AB ⇒ 9u - kv = 3(3u - 2v) = 9u - 6v ⇒ k = 6)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u32-ans-t1-1">{"(1) u+8v (ເພາະວ່າ 3u + 6v - 2u + 2v = (3 - 2)u + (6 + 2)v = u + 8v)"}</span>,
-          <span key="u32-ans-t1-2">{"(2) u+3v (ເພາະວ່າ 6u - 2v - 5u + 5v = (6 - 5)u + (-2 + 5)v = u + 3v)"}</span>,
-        ],
-      },
-      {
-        questionNumber: "ທ້າທາຍ 2",
-        answers: [
-          <span key="u32-ans-t2-1">{"(1) 9 (ຍ້ອນວ່າ v = 6a + mb = 3 · (2a + 3b) = 6a + 9b ດັ່ງນັ້ນ m = 9)"}</span>,
-          <span key="u32-ans-t2-2">{"(2) -2 (ຍ້ອນວ່າ v = ma + 4b = -2 · (a - 2b) = -2a + 4b ດັ່ງນັ້ນ m = -2)"}</span>,
-        ],
+          <span key="c1">{"3 (ຄິດໄລ່: OA + OB + OC = 3OG + (GA+GB+GC) = 3OG)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u32-ans-s1-1">{"(1) 0 (ຍ້ອນວ່າ MA + MB = 0, ສອງເວັກເຕີມີທິດກົງກັນຂ້າມ ແລະ ຂະໜາດເທົ່າກັນ ດັ່ງນັ້ນ k = 0)"}</span>,
-          <span key="u32-ans-s1-2">{"(2) 2/3 (ຍ້ອນວ່າຈຸດໃຈກາງ G ຢູ່ຫ່າງຈາກຈອມ A ເປັນ 2/3 ຂອງລວງຍາວເສັ້ນຈອມ AM)"}</span>,
-        ],
-      },
-      {
-        questionNumber: "ທົດສອບປະຈຳບົດ 2",
-        answers: [
-          <span key="u32-ans-s2-1">{"(1) 450 (ເພາະວ່າ |v| = 3 * 150 = 450 N)"}</span>,
-          <span key="u32-ans-s2-2">{"(2) 300 (ເພາະວ່າ |v'| = |-2| * 150 = 300 N)"}</span>,
-        ],
-      },
+          <span key="s1">{"ສູນ (ຄິດໄລ່: 0·u = 0, ເຊິ່ງແມ່ນເວກເຕີສູນ)"}</span>
+        ]
+      }
     ],
-    advice: "ການຄູນເວັກເຕີກັບຈຳນວນຈິງ ເປັນພື້ນຖານໃນການຂະຫຍາຍ ຫຼື ຫຍໍ້ຂະໜາດຂອງແຮງ ແລະ ຄວາມໄວ! ການຮ່ວມເສັ້ນຊື່ດຽວກັນເປັນຫຼັກການທີ່ດີເລີດໃນການພິສູດທາງເລຂາຄະນິດເດີ້!",
-  },
+    advice: "ເກັ່ງຫຼາຍ! ການຄູນເວກເຕີດ້ວຍສະກາແລ ເປັນພື້ນຖານໃນການສຶກສາຄວາມຂະໜານ ແລະ ເມັດຖ່ວງໜັກໃນເລຂາຄະນິດ. ພະຍາຍາມຕໍ່ໄປເດີ້!"
+  }
 };

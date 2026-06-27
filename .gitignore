@@ -39,3 +39,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# scratch directories and utility scripts
+/scratch/
+/add_unit*.js
+/add_units*.js
+/check_titles.js
+/fix-layouts*.js
+/fix*.js
+/fix_unit4.py
+/generate_units4.js
+/revert_units.js
+/update_*.js
+/editor-server.js
+/.agent/
+

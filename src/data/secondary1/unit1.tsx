@@ -1,444 +1,379 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", verticalAlign: "middle", alignItems: "center", padding: "0 4px", fontSize: "0.95em", transform: "translateY(-0.05em)" }}>
-    <span style={{ borderBottom: "1.5px solid currentColor", paddingBottom: "1px", lineHeight: 1, fontWeight: "bold" }}>{num}</span>
-    <span style={{ paddingTop: "1.5px", lineHeight: 1, fontWeight: "bold" }}>{den}</span>
-  </span>
-);
-
 export const unit1Data: UnitData = {
   unitNumber: 1,
   unitTitle: "ພາກທີ I - ບົດທີ 1: ຈຳນວນທຳມະຊາດ",
-  unitGoal:
-    "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍຂອງຈຳນວນທຳມະຊາດ, ການໃຊ້ເຄື່ອງໝາຍກຸ່ມ (∈, ∉), ການຂຽນຈຳນວນໃນຮູບແບບກະຈາຍ ແລະ ເລກໂຣມັນ",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 4-9",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍຂອງຈຳນວນທຳມະຊາດ, ລະບົບການຂຽນ ແລະ ການອ່ານຈຳນວນ, ການປຽບທຽບ, ການຂອບຂັ້ນ ແລະ ເລກໂຣແມັງ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 1-10",
   subSections: [
     {
-      title: "1. ຈຳນວນທຳມະຊາດ ແລະ ເຄື່ອງໝາຍກຸ່ມ",
+      title: "1. ຈຳນວນທຳມະຊາດ ແລະ ລະບົບການຂຽນຈຳນວນ",
       keyPoint: {
-      title: "1. ຈຳນວນທຳມະຊາດ ແລະ ເຄື່ອງໝາຍກຸ່ມ",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຈຳນວນທຳມະຊາດ ແມ່ນຈຳນວນທີ່ເຮົາໃຊ້ໃນການນັບ ເຊັ່ນ: 1, 2, 3, 4, ..."}
-          </p>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ກຸ່ມຂອງຈຳນວນທຳມະຊາດ ສັນຍະລັກດ້ວຍ "}<strong>{"N"}</strong>
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E3F2FD",
-              border: "2px solid #2196F3",
-              borderRadius: "8px",
-              display: "flex",
-              flexDirection: "column",
-              gap: "12px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <strong>{"∈"}</strong>{" (ແມ່ນອົງປະກອບ): ໃຊ້ບອກວ່າຈຳນວນນັ້ນຢູ່ໃນກຸ່ມ."}
-              <span style={{ color: "#0D47A1", fontWeight: "bold", marginLeft: "12px" }}>{"ຕົວຢ່າງ: 8 ∈ N"}</span>
+        title: "ຫຼັກການພື້ນຖານຂອງຈຳນວນທຳມະຊາດ ແລະ ການຂຽນໃນຮູບແບບກະຈາຍ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຈຳນວນທຳມະຊາດແມ່ນຈຳນວນທີ່ເຮົາໃຊ້ໃນການນັບ ຫຼື ບັນທຶກສິ່ງຂອງຕ່າງໆ ເຊິ່ງສັນຍາລັກດ້ວຍກຸ່ມ "}
+              <strong style={{ color: "#1E88E5" }}>{"ℕ = {1, 2, 3, 4, 5, ...}"}</strong>
+              {". ການຂຽນຈຳນວນໃນຮູບແບບກະຈາຍແມ່ນການຂຽນຕາມຄ່າປະຈຳຫຼັກຂອງແຕ່ລະຕົວເລກ:"}
+            </p>
+            
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "16px", backgroundColor: "#F5F7FA", borderRadius: "12px", border: "1px dashed #B0BEC5", margin: "8px 0" }}>
+              <span className="math" style={{ fontSize: "1.6rem", display: "inline-flex", alignItems: "center", gap: "8px", flexWrap: "wrap", justifyContent: "center" }}>
+                {"4 957 = (4 × 1000) + (9 × 100) + (5 × 10) + 7"}
+              </span>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <strong>{"∉"}</strong>{" (ບໍ່ແມ່ນອົງປະກອບ): ໃຊ້ບອກວ່າຈຳນວນນັ້ນບໍ່ຢູ່ໃນກຸ່ມ."}
-              <span style={{ color: "#D32F2F", fontWeight: "bold", marginLeft: "12px" }}>{"ຕົວຢ່າງ: 0.4 ∉ N"}</span>
+
+            <div style={{ padding: "12px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#1565C0", display: "block", marginBottom: "8px" }}>
+                {"💡 ຕາຕະລາງຫຼັກ ແລະ ຄ່າປະຈຳຫຼັກ (Place Value Chart):"}
+              </span>
+              <div style={{ overflowX: "auto" }}>
+                <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "center", fontSize: "1.1rem" }}>
+                  <thead>
+                    <tr style={{ backgroundColor: "#1565C0", color: "#FFFFFF" }}>
+                      <th style={{ padding: "8px", border: "1px solid #90CAF9" }}>{"ຫຼັກພັນ"}</th>
+                      <th style={{ padding: "8px", border: "1px solid #90CAF9" }}>{"ຫຼັກຮ້ອຍ"}</th>
+                      <th style={{ padding: "8px", border: "1px solid #90CAF9" }}>{"ຫຼັກສິບ"}</th>
+                      <th style={{ padding: "8px", border: "1px solid #90CAF9" }}>{"ຫຼັກໜ່ວຍ"}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style={{ backgroundColor: "#FFFFFF" }}>
+                      <td style={{ padding: "8px", border: "1px solid #90CAF9", fontWeight: "bold" }}>{"4"}</td>
+                      <td style={{ padding: "8px", border: "1px solid #90CAF9", fontWeight: "bold" }}>{"9"}</td>
+                      <td style={{ padding: "8px", border: "1px solid #90CAF9", fontWeight: "bold" }}>{"5"}</td>
+                      <td style={{ padding: "8px", border: "1px solid #90CAF9", fontWeight: "bold" }}>{"7"}</td>
+                    </tr>
+                    <tr style={{ backgroundColor: "#F5F7FA", color: "#555" }}>
+                      <td style={{ padding: "6px", border: "1px solid #90CAF9", fontSize: "0.95rem" }}>{"4,000"}</td>
+                      <td style={{ padding: "6px", border: "1px solid #90CAF9", fontSize: "0.95rem" }}>{"900"}</td>
+                      <td style={{ padding: "6px", border: "1px solid #90CAF9", fontSize: "0.95rem" }}>{"50"}</td>
+                      <td style={{ padding: "6px", border: "1px solid #90CAF9", fontSize: "0.95rem" }}>{"7"}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ຈຳນວນທົດສະນິຍົມ (0.4) ແລະ ເລກສ່ວນ ບໍ່ແມ່ນຈຳນວນທຳມະຊາດເດີ!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຈື່ໄວ້ວ່າ: ການຕື່ມເລກ 0 ໃສ່ເບື້ອງຂວາຂອງຈຳນວນທຳມະຊາດໃດໜຶ່ງ ຈະເຮັດໃຫ້ຄ່າຂອງມັນເພີ່ມຂຶ້ນ 10 ເທົ່າ!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຕື່ມເຄື່ອງໝາຍ "}<strong>{"∈"}</strong>{" ຫຼື "}<strong>{"∉"}</strong>{" ໃສ່ບ່ອນວ່າງໃຫ້ຖືກຕ້ອງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(1) 8"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"N"}</span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຂຽນຈຳນວນຕໍ່ໄປນີ້ໃນຮູບແບບກະຈາຍ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "12px 0" }}>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
+                    {"507 = (5 × "}
+                  </span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span className="math">{") + (0 × 10) +"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+                
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
+                    {"2 532 = (2 × 1000) + ("}
+                  </span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="math">{"× 100) + (3 ×"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="math">{") + 2"}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(2) 0.4"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"N"}</span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຂຽນຈຳນວນຕໍ່ໄປນີ້ເປັນຕົວເລກ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+
+              <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "12px 0" }}>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span>{"ຊາວເກົ້າພັນແປດສິບ ("}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span>{")"}</span>
+                </div>
+
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span>{"ຫ້າລ້ານເຈັດແສນສາມສິບພັນຮ້ອຍແປດສິບຫົກ ("}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span>{")"}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(3) 125"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"N"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(4) 2.5"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"N"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(5)"} <Fraction num="3" den="4" /></span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"N"}</span>
-            </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ການຂຽນຈຳນວນໃນຮູບແບບກະຈາຍ",
+      title: "2. ການປຽບທຽບ, ການຂອບຂັ້ນ ແລະ ເລກໂຣແມັງ",
       keyPoint: {
-      title: "2. ການຂຽນຈຳນວນໃນຮູບແບບກະຈາຍ",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ການຂຽນຈຳນວນໃນຮູບແບບກະຈາຍ ແມ່ນການຂຽນຕາມຄ່າຂອງແຕ່ລະຫຼັກ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              textAlign: "center",
-              fontWeight: "bold",
-              color: "#2E7D32",
-            }}
-          >
-            {"572 = 5 × 100 + 7 × 10 + 2"}
-            <br />
-            <span style={{ fontSize: "1.125rem", color: "#555", fontWeight: "normal" }}>
-              {"(ຫ້າຮ້ອຍເຈັດສິບສອງ)"}
-            </span>
+        title: "ການປຽບທຽບຈຳນວນ, ການຂອບຂັ້ນ ແລະ ສັນຍາລັກເລກໂຣແມັງ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"1. "}<strong>{"ການປຽບທຽບ:"}</strong>{" ປຽບທຽບຈາກຫຼັກທີ່ໃຫຍ່ທີ່ສຸດ (ຊ້າຍຫາຂວາ) ເຊັ່ນ: "}
+              <strong style={{ color: "#E65100" }}>{"8 913 > 8 590"}</strong>{" (ຫຼັກພັນເທົ່າກັນ, ແຕ່ຫຼັກຮ້ອຍ 9 > 5)."}
+            </p>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"2. "}<strong>{"ການຂອບຂັ້ນ:"}</strong>{" ການກຳນົດຂອບເຂດຂອງຈຳນວນໃດໜຶ່ງດ້ວຍຄ່າໃກ້ຄຽງຫຼຸດ ແລະ ຄ່າໃກ້ຄຽງລື່ນ ເຊັ່ນ: ຂອບຂັ້ນ 8 913 ຢູ່ຫຼັກຮ້ອຍແມ່ນ: "}
+              <strong style={{ color: "#2E7D32" }}>{"8 900 < 8 913 < 9 000"}</strong>
+            </p>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"3. "}<strong>{"ເລກໂຣແມັງ:"}</strong>{" ປະກອບດ້ວຍສັນຍາລັກພື້ນຖານ 7 ຕົວ: "}
+              <strong>{"I=1, V=5, X=10, L=50, C=100, D=500, M=1000"}</strong>
+              {". ຕົວຢ່າງ: IV = 4, IX = 9, XIV = 14, XL = 40."}
+            </p>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ເວລາຂຽນຮູບແບບກະຈາຍ ຕ້ອງເລີ່ມຄູນຈາກຫຼັກໃຫຍ່ສຸດກ່ອນສະເໝີ!",
+        ),
+        hint: {
+          text: "💡 ສັນຍາລັກເລກໂຣແມັງທີ່ມີຄ່ານ້ອຍຂຽນໄວ້ທາງໜ້າ (ຊ້າຍ) ຂອງຕົວທີ່ມີຄ່າໃຫຍ່ກວ່າ ແມ່ນການລົບອອກ ເຊັ່ນ: IX = 10 - 1 = 9!",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບຮູບແບບກະຈາຍຂອງຈຳນວນຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຈຳນວນ 4,765 = 4 × 1000 + 7 × 100 +"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              <span>{"+ 5"}</span>
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຕື່ມເຄື່ອງໝາຍ < , > ຫຼື = ໃສ່ບ່ອນວ່າງໃຫ້ຖືກຕ້ອງ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນន, ລວມ 5 ຄະແນន)"}</span>
+              </p>
+              
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math">{"4 398"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="math">{"3 999"}</span>
+                </div>
+                
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math">{"57 243"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="math">{"57 420"}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຄ່າຂອງ 3 × 10000 + 5 × 1000 + 2 × 10 + 4 ແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຂຽນເປັນເລກໂຣແມັງ ຫຼື ເລກອາຣັບໃຫ້ຖືກຕ້ອງ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span>{"ເລກອາຣັບ 19 = ເລກໂຣແມັງ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span>{"ເລກໂຣແມັງ CXLIX = ເລກອາຣັບ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
-      ]
-    },
-    {
-      title: "3. ເລກໂຣມັນ (Roman Numerals)",
-      keyPoint: {
-      title: "3. ເລກໂຣມັນ (Roman Numerals)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຕົວເລກພື້ນຖານຂອງເລກໂຣມັນມີ 7 ຕົວດັ່ງນີ້:"}
-          </p>
-          <table
-            className="drill-table math-illustration"
-            style={{
-              width: "100%",
-              borderCollapse: "collapse",
-              textAlign: "center",
-              fontSize: "1.125rem",
-              marginBottom: "12px",
-            }}
-          >
-            <thead>
-              <tr style={{ backgroundColor: "#F5F5F5" }}>
-                <th style={{ border: "1px solid #333", padding: "6px" }}>{"ເລກໂຣມັນ"}</th>
-                <th style={{ border: "1px solid #333", padding: "6px" }}>{"I"}</th>
-                <th style={{ border: "1px solid #333", padding: "6px" }}>{"V"}</th>
-                <th style={{ border: "1px solid #333", padding: "6px" }}>{"X"}</th>
-                <th style={{ border: "1px solid #333", padding: "6px" }}>{"L"}</th>
-                <th style={{ border: "1px solid #333", padding: "6px" }}>{"C"}</th>
-                <th style={{ border: "1px solid #333", padding: "6px" }}>{"D"}</th>
-                <th style={{ border: "1px solid #333", padding: "6px" }}>{"M"}</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style={{ border: "1px solid #333", padding: "6px", fontWeight: "bold" }}>{"ຄ່າເລກອາຣັບ"}</td>
-                <td style={{ border: "1px solid #333", padding: "6px" }}>{"1"}</td>
-                <td style={{ border: "1px solid #333", padding: "6px" }}>{"5"}</td>
-                <td style={{ border: "1px solid #333", padding: "6px" }}>{"10"}</td>
-                <td style={{ border: "1px solid #333", padding: "6px" }}>{"50"}</td>
-                <td style={{ border: "1px solid #333", padding: "6px" }}>{"100"}</td>
-                <td style={{ border: "1px solid #333", padding: "6px" }}>{"500"}</td>
-                <td style={{ border: "1px solid #333", padding: "6px" }}>{"1000"}</td>
-              </tr>
-            </tbody>
-          </table>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#FFF3E0",
-              border: "2px solid #FF9800",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div>{"• ຫຼັກການບວກ: ຂຽນຄ່າໜ້ອຍໄວ້ທາງຂວາ → "}<strong>{"VI = 5 + 1 = 6"}</strong></div>
-            <div>{"• ຫຼັກການລົບ: ຂຽນຄ່າໜ້ອຍໄວ້ທາງຊ້າຍ → "}<strong>{"IV = 5 - 1 = 4"}</strong></div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ຕົວເລກໂຣມັນຈະບໍ່ມີເລກ 0 ແລະ ຈະບໍ່ຂຽນສັນຍະລັກຊ້ຳກັນເກີນ 3 ເທື່ອເດີ!",
-        isBlue: true,
-      },
-    },
-      problems: [
-        
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "📏 ສັງເກດລວງຍາວຂອງທ່ອນຊື່ແຕ່ລະເສັ້ນ ໂດຍປຽບທຽບຕົວເລກ cm ຂອງມັນ ແລ້ວຕື່ມເຄື່ອງໝາຍ < ຫຼື > ເດີ! ສ່ວນເລກໂຣມັນ ຢ່າລືມຫຼັກການບວກແລະລົບ!",
+    hintText: "💡 ບົດທ້າທາຍ: ສັງເກດເບິ່ງຫຼັກການຂຽນຈຳນວນທຳມະຊາດ ແລະ ຄ່າປະຈຳຫຼັກໃຫ້ດີໆ ເພື່ອແກ້ໄຂໂຈດບັນຫາລະດັບສູງນີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງສັງເກດທ່ອນຊື່ລຸ່ມນີ້ ແລ້ວປຽບທຽບໂດຍຕື່ມເຄື່ອງໝາຍ "}<strong>{"<"}</strong>{" ຫຼື "}<strong>{">"}</strong>{" ໃສ່ບ່ອນວ່າງ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດຊອກຫາຄ່າສູງສຸດ ແລະ ຕ່ຳສຸດ: "}<span className="point-label">{"(5 ຄະແນន)"}</span>
             </p>
-            {/* SVG Visual Representation of Lines */}
-            <div style={{ alignSelf: "center", width: "100%", maxWidth: "500px", backgroundColor: "#fff", padding: "12px", borderRadius: "8px", border: "1px solid #ddd", display: "flex", justifyContent: "center" }}>
-              <svg viewBox="0 0 400 120" style={{ width: "100%", height: "auto" }}>
-                {/* Line AB = 3cm (approx 90px) */}
-                <line x1="30" y1="30" x2="120" y2="30" stroke="#1E88E5" strokeWidth="4" strokeLinecap="round" />
-                <line x1="30" y1="24" x2="30" y2="36" stroke="#1E88E5" strokeWidth="2" />
-                <line x1="120" y1="24" x2="120" y2="36" stroke="#1E88E5" strokeWidth="2" />
-                <text x="140" y="35" style={{ fontSize: "16px", fontWeight: "bold", fill: "#333", fontFamily: "Inter" }}>{"[AB] = 3 cm"}</text>
-
-                {/* Line CD = 5cm (approx 150px) */}
-                <line x1="30" y1="70" x2="180" y2="70" stroke="#43A047" strokeWidth="4" strokeLinecap="round" />
-                <line x1="30" y1="64" x2="30" y2="76" stroke="#43A047" strokeWidth="2" />
-                <line x1="180" y1="64" x2="180" y2="76" stroke="#43A047" strokeWidth="2" />
-                <text x="200" y="75" style={{ fontSize: "16px", fontWeight: "bold", fill: "#333", fontFamily: "Inter" }}>{"[CD] = 5 cm"}</text>
-              </svg>
-            </div>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "16px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-              }}
-            >
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"(1) ມີບັດຕົວເລກ 5 ໃບຄື: "}<strong>{"3, 1, 0, 0, 2"}</strong>
+              {". ຈົ່ງນຳໃຊ້ບັດທັງໝົດນີ້ຂຽນເປັນຈຳນວນທີ່ມີ 5 ຕົວເລກ ທີ່ມີຄ່າສູງສຸດ ແລະ ຈຳນວນທີ່ມີຄ່າຕ່ຳສຸດ (ໂດຍບໍ່ໃຫ້ເລກ 0 ຢູ່ທາງໜ້າຫຼັກທີ່ໃຫຍ່ທີ່ສຸດ)."}
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                <span>{"(1) ທ່ອນຊື່ [AB]"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-                <span>{"ທ່ອນຊື່ [CD]"}</span>
+                <span>{"- ຈຳນວນທີ່ມີຄ່າສູງສຸດແມ່ນ:"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "42px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                <span>{"(2) 3"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-                <span>{"5"}</span>
+                <span>{"- ຈຳນວນທີ່ມີຄ່າຕ່ຳສຸດແມ່ນ:"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "42px" }}></span>
               </div>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງປ່ຽນຕົວເລກໂຣມັນ ແລະ ຕົວເລກອາຣັບຕໍ່ໄປນີ້: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການຂອບຂັ້ນຈຳນວນທຳມະຊາດ: "}<span className="point-label">{"(5 ຄະແນន)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-              }}
-            >
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                <span>{"(1) ປ່ຽນເລກອາຣັບ 14 ໃຫ້ເປັນເລກໂຣມັນ: "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"(1) ຈົ່ງຂອບຂັ້ນຈຳນວນ "}<strong>{"85 243"}</strong>{" ດ້ວຍຄ່າໃກ້ຄຽງຫຼຸດ ແລະ ຄ່າໃກ້ຄຽງລື່ນຢູ່ຫຼັກສິບ ແລະ ຫຼັກຮ້ອຍ ໃຫ້ຖືກຕ້ອງ:"}
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
+                <span>{" - ຂອບຂັ້ນຢູ່ຫຼັກສິບ: "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span>{" < "} 85 243 {" < "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                <span>{"(2) ປ່ຽນເລກໂຣມັນ XIV ໃຫ້ເປັນເລກອາຣັບ: "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
+                <span>{" - ຂອບຂັ້ນຢູ່ຫຼັກຮ້ອຍ: "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span>{" < "} 85 243 {" < "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               </div>
             </div>
           </div>
-        ),
-      },
-    ],
+        )
+      }
+    ]
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຕອບຄຳຖາມຕໍ່ໄປນີ້ເພື່ອທົດສອບຄວາມເຂົ້າໃຈ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ການອ່ານ ແລະ ຂຽນຈຳນວນທຳມະຊາດຂະໜາດໃຫຍ່: "}<span className="point-label">{"(5 ຄະແນន)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) 12"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"N (ຕື່ມ ∈ ຫຼື ∉)"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) 1.5"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"N (ຕື່ມ ∈ ຫຼື ∉)"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(3) ປ່ຽນເລກອາຣັບ 25 ໃຫ້ເປັນເລກໂຣມັນ: "}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"(1) ຈົ່ງອ່ານຈຳນວນຖ້ວນ "}<strong>{"12 045 237 086"}</strong>{" ເປັນຕົວອັກສອນແນວໃດ? ຈົ່ງຕື່ມໃສ່ບ່ອນວ່າງລຸ່ມນີ້ໃຫ້ສົມບູນ:"}
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
+            <span>{"- ອ່ານວ່າ: ສິບສອງຕື້ ສີ່ສິບຫ້າລ້ານ ສອງແສນສາມສິບເຈັດພັນ ..."}</span>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span>{"ຕື່ມໃສ່ບ່ອນທີ່ເຫຼືອໃຫ້ຄົບຖ້ວນ:"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "42px" }}></span>
             </div>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາຕໍ່ໄປນີ້ກ່ຽວກັບເລກໂຣມັນ ແລະ ການປຽບທຽບ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2 ຄະແനນ, ລວມ 4 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ການປຽບທຽບເລກໂຣແມັງ: "}<span className="point-label">{"(5 ຄະແນន)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ປ່ຽນເລກໂຣມັນ IX ໃຫ້ເປັນເລກອາຣັບ: "}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"(1) ຈົ່ງຕື່ມເຄື່ອງໝາຍ <, > ຫຼື = ໃສ່ບ່ອນວ່າງລະຫວ່າງເລກໂຣແມັງຕໍ່ໄປນີ້:"}
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "8px 0" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+              <span>{"d) XCVI"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+              <span>{"CXIV"}</span>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ປຽບທຽບ 35"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"53 (ຕື່ມ < ຫຼື >)"}</span>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+              <span>{"e) CLXXX"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+              <span>{"CLXXIX"}</span>
             </div>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u1-ans-1-1">{"(1) ∈"}</span>,
-          <span key="u1-ans-1-2">{"(2) ∉"}</span>,
-          <span key="u1-ans-1-3">{"(3) ∈"}</span>,
-          <span key="u1-ans-1-4">{"(4) ∉"}</span>,
-          <span key="u1-ans-1-5">{"(5) ∉"}</span>,
-        ],
+          <span key="1-1">{"(1) 507 = (5 × 100) + (0 × 10) + 7"}</span>,
+          <span key="1-2">{"(2) 2 532 = (2 × 1000) + (5 × 100) + (3 × 10) + 2"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u1-ans-2-1">{"(1) 6 × 10"}</span>,
-          <span key="u1-ans-2-2">{"(2) 35,024"}</span>,
-        ],
+          <span key="2-1">{"(1) 29 080"}</span>,
+          <span key="2-2">{"(2) 5 730 186"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"(1) 4 398 > 3 999"}</span>,
+          <span key="3-2">{"(2) 57 243 < 57 420"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4-1">{"(1) XIX"}</span>,
+          <span key="4-2">{"(2) 149 (C = 100, XL = 40, IX = 9)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u1-ans-t1-1">{"(1) < (ເພາະວ່າ 3 cm < 5 cm)"}</span>,
-          <span key="u1-ans-t1-2">{"(2) <"}</span>,
-        ],
+          <span key="t1-1">{"- ຄ່າສູງສຸດ: 32 100"}</span>,
+          <span key="t1-2">{"- ຄ່າຕ່ຳສຸດ: 10 023"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u1-ans-t2-1">{"(1) XIV (10 + 4)"}</span>,
-          <span key="u1-ans-t2-2">{"(2) 14"}</span>,
-        ],
+          <span key="t2-1">{"- ຫຼັກສິບ: 85 240 < 85 243 < 85 250"}</span>,
+          <span key="t2-2">{"- ຫຼັກຮ້ອຍ: 85 200 < 85 243 < 85 300"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u1-ans-s1-1">{"(1) ∈ (ເພາະ 12 ແມ່ນຈຳນວນທຳມະຊາດ)"}</span>,
-          <span key="u1-ans-s1-2">{"(2) ∉ (ເພາະ 1.5 ແມ່ນເລກທົດສະນິຍົມ)"}</span>,
-          <span key="u1-ans-s1-3">{"(3) XXV (20 + 5)"}</span>,
-        ],
+          <span key="s1">{"ແປດສິບຫົກ (ຄຳອ່ານເຕັມແມ່ນ: ສິບສອງຕື້ ສີ່ສິບຫ້າລ້ານ ສອງແສນສາມສິບເຈັດພັນ ແປດສິບຫົກ)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u1-ans-s2-1">{"(1) 9 (10 - 1)"}</span>,
-          <span key="u1-ans-s2-2">{"(2) < (ເພາະ 35 ໜ້ອຍກວ່າ 53)"}</span>,
-        ],
-      },
+          <span key="s2-1">{"d) XCVI < CXIV (96 < 114)"}</span>,
+          <span key="s2-2">{"e) CLXXX > CLXXIX (180 > 179)"}</span>
+        ]
+      }
     ],
-    advice: "ຈຳນວນທຳມະຊາດແມ່ນເລກຖ້ວນບວກທີ່ບໍ່ມີຈຸດທົດສະນິຍົມ. ເວລາປຽບທຽບລວງຍາວໃຫ້ປຽບທຽບຕົວເລກເດີ!",
-  },
+    advice: "ເກັ່ງຫຼາຍ! ການເຂົ້າໃຈລະບົບຈຳນວນທຳມະຊາດ ແລະ ເລກໂຣແມັງ ເປັນພື້ນຖານທີ່ດີຫຼາຍສຳລັບວິຊາຄະນິດສາດ. ພະຍາຍາມຕໍ່ໄປເດີ້!"
+  }
 };

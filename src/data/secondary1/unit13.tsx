@@ -1,434 +1,297 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", verticalAlign: "middle", alignItems: "center", padding: "0 4px", fontSize: "0.95em", transform: "translateY(-0.05em)" }}>
-    <span style={{ borderBottom: "1.5px solid currentColor", paddingBottom: "1px", lineHeight: 1, fontWeight: "bold" }}>{num}</span>
-    <span style={{ paddingTop: "1.5px", lineHeight: 1, fontWeight: "bold" }}>{den}</span>
-  </span>
-);
-
 export const unit13Data: UnitData = {
   unitNumber: 13,
-  unitTitle: "ພາກທີ II - ບົດທີ 13: ການແຕ້ມເສັ້ນຊື່ຂະໜານ ແລະ ເສັ້ນຊື່ຕັ້ງສາກ",
-  unitGoal:
-    "ຮຽນຮູ້ຂັ້ນຕອນ ແລະ ວິທີການແຕ້ມເສັ້ນຊື່ຕັ້ງສາກ ແລະ ເສັ້ນຊື່ຂະໜານ ໂດຍໃຊ້ໄມ້ສາມແຈສາກ, ໄມ້ບັນທັດຊື່ ແລະ ກອມປາ ຢ່າງຖືກຕ້ອງ",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 85-90",
+  unitTitle: "ພາກທີ II - ບົດທີ 13: ການແຕ້ມເສັ້ນຊື່ຂະໜານ ແລະ ເສັ້ນຊື່ຕັ້ງສາກດ້ວຍວົງວຽນ",
+  unitGoal: "ຮຽນຮູ້ວິທີການສ້າງເສັ້ນຊື່ຂະໜານ ແລະ ເສັ້ນຊື່ຕັ້ງສາກ ໂດຍການນຳໃຊ້ວົງວຽນ (Compass) ແລະ ບັນທັດ (Ruler) ຕາມຂັ້ນຕອນເລຂາຄະນິດ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 94-98",
   subSections: [
     {
-      title: "1. ວິທີແຕ້ມເສັ້ນຊື່ຕັ້ງສາກ ໂດຍໃຊ້ໄມ້ສາມແຈສາກ (Drawing Perpendicular Lines)",
+      title: "1. ການສ້າງເສັ້ນຊື່ຂະໜານດ້ວຍວົງວຽນ (Constructing Parallel Lines)",
       keyPoint: {
-      title: "1. ວິທີແຕ້ມເສັ້ນຊື່ຕັ້ງສາກ ໂດຍໃຊ້ໄມ້ສາມແຈສາກ (Drawing Perpendicular Lines)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຂັ້ນຕອນການແຕ້ມເສັ້ນຊື່ຕັ້ງສາກກັບ d ຜ່ານເມັດ A ຢູ່ນອກເສັ້ນຊື່:"}
-          </p>
-          {/* Geometric SVG Instruction 1 */}
-          <div style={{ alignSelf: "center", width: "100%", maxWidth: "400px", backgroundColor: "#fff", padding: "12px", borderRadius: "8px", border: "1px solid #ddd", display: "flex", justifyContent: "center" }}>
-            <svg viewBox="0 0 300 120" style={{ width: "100%", height: "auto" }}>
-              {/* Line d */}
-              <line x1="20" y1="90" x2="280" y2="90" stroke="#333" strokeWidth="2" />
-              <text x="285" y="95" style={{ fontSize: "14px" }}>{"d"}</text>
-
-              {/* Point A */}
-              <circle cx="150" cy="30" r="4" fill="#D32F2F" />
-              <text x="145" y="20" style={{ fontSize: "14px", fontWeight: "bold", fill: "#D32F2F" }}>{"A"}</text>
-
-              {/* Set Square representation (Triangle) */}
-              <polygon points="150,90 150,30 230,90" fill="none" stroke="#2196F3" strokeWidth="2" strokeDasharray="3" />
-              <path d="M 150,80 L 160,80 L 160,90" fill="none" stroke="#2196F3" strokeWidth="1.5" />
-
-              {/* Arrow showing action */}
-              <path d="M 200,60 L 165,60" fill="none" stroke="#4CAF50" strokeWidth="2" markerEnd="url(#arrow)" />
-              <defs>
-                <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                  <path d="M 0 0 L 10 5 L 0 10 z" fill="#4CAF50" />
-                </marker>
-              </defs>
-            </svg>
+        title: "ຂັ້ນຕອນການສ້າງເສັ້ນຊື່ຂະໜານຜ່ານເມັດໜຶ່ງນອກເສັ້ນຊື່",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ເພື່ອສ້າງເສັ້ນຊື່ d′ ຜ່ານເມັດ A ແລະ ຂະໜານກັບເສັ້ນຊື່ d ທີ່ໃຫ້ກ່ອນ ໂດຍໃຊ້ວົງວຽນ, ເຮົາປະຕິບັດດັ່ງນີ້:"}
+            </p>
+            <ol style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.6" }}>
+              <li>{"ວາງສອງເມັດ B ແລະ C ທີ່ຕ່າງກັນຢູ່ເທິງເສັ້ນຊື່ d."}</li>
+              <li>{"ແຕ້ມສ່ວນໂຄ້ງມົນທີ່ມີຈຸດສູນກາງຢູ່ C ແລະ ມີລັດສະໝີເທົ່າກັບ AB."}</li>
+              <li>{"ແຕ້ມສ່ວນໂຄ້ງມົນທີ່ມີຈຸດສູນກາງຢູ່ A ແລະ ມີລັດສະໝີເທົ່າກັບ BC."}</li>
+              <li>{"ສອງສ່ວນໂຄ້ງມົນຕັດກັນຢູ່ເມັດ D. ຂີດເສັ້ນຊື່ຜ່ານ A ແລະ D. ເຮົາຈະໄດ້ເສັ້ນຊື່ (AD) ຂະໜານກັບ d."}</li>
+            </ol>
+            <p style={{ fontSize: "1.25rem", margin: 0, color: "#1E88E5", fontStyle: "italic" }}>
+              {"*ເນື່ອງຈາກຂ້າງກົງກັນຂ້າມ AB = CD ແລະ BC = AD, ຮູບ ABCD ທີ່ໄດ້ແມ່ນຮູບສີ່ແຈຂ້າງຂະໜານ, ດັ່ງນັ້ນ (AD) // (BC) ຫຼື (AD) // d."}
+            </p>
           </div>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#E3F2FD",
-              border: "2px solid #2196F3",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"1. ວາງຂ້າງໜຶ່ງຂອງມຸມສາກ ໄມ້ສາມແຈສາກ ທາບໃສ່ເສັ້ນຊື່ d."}</div>
-            <div>{"2. ເລື່ອນໄມ້ສາມແຈສາກໃຫ້ຂ້າງຕັ້ງສາກອີກຂ້າງໜຶ່ງ ຜ່ານເມັດ A."}</div>
-            <div>{"3. ຂີດເສັ້ນຊື່ຕາມຂ້າງນັ້ນຜ່ານເມັດ A, ເຮົາຈະໄດ້ເສັ້ນຊື່ຕັ້ງສາກທີ່ຕ້ອງການ."}</div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ຕ້ອງວາງໄມ້ສາມແຈສາກໃຫ້ແນບສະໜິດກັບເສັ້ນຊື່ d ຕະຫຼອດເວລາທີ່ເລື່ອນເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ການນຳໃຊ້ວົງວຽນຊ່ວຍໃຫ້ເຮົາສ້າງເສັ້ນຂະໜານໄດ້ຢ່າງຊັດເຈນໂດຍບໍ່ຕ້ອງແທກມຸມ!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງເລືອກເຄື່ອງມືທີ່ຖືກຕ້ອງທີ່ສຸດ ມາຕື່ມໃສ່ບ່ອນວ່າງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 1.66 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "12px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ເຄື່ອງມືທີ່ໃຊ້ແຕ້ມ ແລະ ກວດສອບມຸມສາກ (90°) ໄດ້ດີທີ່ສຸດແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຕື່ມຄຳສັບ ຫຼື ສັນຍະລັກທີ່ຖືກຕ້ອງໃສ່ບ່ອນວ່າງ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span>{"ເມື່ອສ້າງຮູບສີ່ແຈ ABCD ດ້ວຍວິທີຂ້າງເທິງ, ຮູບ ABCD ທີ່ໄດ້ແມ່ນຮູບສີ່ແຈ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                </div>
+                
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span>{"ດັ່ງນັ້ນ, ຂ້າງ AD ຈະມີລັກສະນະການພົວພັນແນວໃດກັບຂ້າງ BC? ຕອບ: AD"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"BC"}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ເຄື່ອງມືທີ່ໃຊ້ແຕ້ມເສັ້ນໂຄ້ງ ຫຼື ວົງມົນ ໃນການແຕ້ມເສັ້ນຕັ້ງສາກແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃນການສ້າງເສັ້ນຊື່ຂະໜານ d′ // d, ຖ້າເຮົາກຳນົດ AB = 5 cm ແລະ BC = 7 cm, ຄວາມຍາວຂອງ CD ແລະ AD ທີ່ໄດ້ຈາກວົງວຽນຈະເທົ່າກັບຈັກ cm ຕາມລຳດັບ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ຕອບ: CD ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span>{"cm , AD ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span>{"cm"}</span>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(3) ໄມ້ບັນທັດຊື່ ມີໜ້າທີ່ຕົ້ນຕໍໃນການແຕ້ມ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ວິທີແຕ້ມເສັ້ນຊື່ຂະໜານ ໂດຍໃຊ້ໄມ້ສາມແຈສາກ ແລະ ໄມ້ບັນທັດ",
+      title: "2. ການສ້າງເສັ້ນຊື່ຕັ້ງສາກດ້ວຍວົງວຽນ (Constructing Perpendicular Lines)",
       keyPoint: {
-      title: "2. ວິທີແຕ້ມເສັ້ນຊື່ຂະໜານ ໂດຍໃຊ້ໄມ້ສາມແຈສາກ ແລະ ໄມ້ບັນທັດ",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຂັ້ນຕອນການແຕ້ມເສັ້ນຊື່ຂະໜານກັບ d ຜ່ານເມັດ A ຢູ່ນອກເສັ້ນຊື່:"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"1. ວາງຂ້າງໜຶ່ງຂອງໄມ້ສາມແຈສາກ ທາບໃສ່ເສັ້ນຊື່ d."}</div>
-            <div>{"2. ວາງໄມ້ບັນທັດຊື່ ແນບໃສ່ຂ້າງທີສອງຂອງໄມ້ສາມແຈສາກເພື່ອເປັນແນວທາງເລື່ອນ."}</div>
-            <div>{"3. ເລື່ອນໄມ້ສາມແຈສາກໄປຕາມໄມ້ບັນທັດຊື່ ຈົນຮອດເມັດ A ແລ້ວຂີດເສັ້ນຊື່."}</div>
+        title: "ຂັ້ນຕອນການສ້າງເສັ້ນຊື່ຕັ້ງສາກຜ່ານເມັດໜຶ່ງນອກເສັ້ນຊື່",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ເພື່ອສ້າງເສັ້ນຊື່ຕັ້ງສາກກັບ d ຜ່ານເມັດ M ຢູ່ນອກເສັ້ນຊື່ d ໂດຍໃຊ້ວົງວຽນ:"}
+            </p>
+            <ol style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.6" }}>
+              <li>{"ແຕ້ມສ່ວນໂຄ້ງມົນທີ່ມີຈຸດສູນກາງ M ຕັດເສັ້ນຊື່ d ຢູ່ສອງເມັດ A ແລະ B."}</li>
+              <li>{"ແຕ້ມສອງສ່ວນໂຄ້ງມົນທີ່ມີຈຸດສູນກາງຢູ່ A ແລະ B ດ້ວຍລັດສະໝີອັນດຽວກັນ (ໃຫຍ່ກວ່າເຄິ່ງໜຶ່ງຂອງ AB) ໃຫ້ຕັດກັນຢູ່ເມັດ C ທີ່ຢູ່ຄົນລະເບື້ອງກັບ M ທຽບໃສ່ເສັ້ນຊື່ d."}</li>
+              <li>{"ຂີດເສັ້ນຊື່ (MC), ເຮົາຈະໄດ້ເສັ້ນຊື່ (MC) ຕັ້ງສາກກັບ d ຢູ່ເມັດເຄິ່ງກາງຂອງ [AB]."}</li>
+            </ol>
+            <p style={{ fontSize: "1.25rem", margin: 0, color: "#E65100", fontStyle: "italic" }}>
+              {"*ເສັ້ນຊື່ (MC) ທີ່ໄດ້ນີ້ຍັງເອີ້ນວ່າ ເສັ້ນຈອມກາງ (Perpendicular Bisector) ຂອງທ່ອນຊື່ [AB]."}
+            </p>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ວິທີນີ້ຊ່ວຍໃຫ້ເສັ້ນຊື່ໃໝ່ ຂະໜານກັບເສັ້ນຊື່ເກົ່າຢ່າງສົມບູນ ຍ້ອນໄລຍະຫ່າງເທົ່າກັນຕະຫຼອດ!",
+        ),
+        hint: {
+          text: "💡 ເສັ້ນຈອມກາງຂອງທ່ອນຊື່ AB ແມ່ນເສັ້ນຊື່ທີ່ຕັ້ງສາກກັບ AB ຢູ່ຈຸດເຄິ່ງກາງຂອງ AB ພໍດີ!",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຕອບກ່ຽວກັບຂັ້ນຕອນການແຕ້ມເສັ້ນຊື່ຕັ້ງສາກ ໂດຍເລືອກຄຳຕອບທີ່ຖືກຕ້ອງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຂັ້ນຕອນທຳອິດໃນການແຕ້ມເສັ້ນຕັ້ງສາກຜ່ານ A ຫາ d ແມ່ນ ວາງຂ້າງໜຶ່ງຂອງໄມ້ສາມແຈສາກທາບໃສ່"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງເລືອກຄຳສັບທີ່ຖືກຕ້ອງໃສ່ບ່ອນວ່າງ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "8px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span>{"ເສັ້ນຊື່ (MC) ທີ່ສ້າງຂຶ້ນນັ້ນ ຈະມີລັກສະນະ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span>{"ກັບເສັ້ນຊື່ d."}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span>{"ຈຸດຕັດ H ລະຫວ່າງ d ແລະ (MC) ຈະເປັນຈຸດ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                  <span>{"ຂອງທ່ອນຊື່ [AB]."}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຫຼັງຈາກເລື່ອນໄມ້ສາມແຈສາກໄປຮອດເມັດ A ແລ້ວ ເຮົາຕ້ອງແຕ້ມເສັ້ນຊື່ຜ່ານເມັດໃດ?"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຖ້າ AB = 8 cm ແລະ ເສັ້ນຊື່ (MC) ຕັດ [AB] ຢູ່ຈຸດ H. ຄວາມຍາວຂອງທ່ອນຊື່ AH ຈະເທົ່າກັບຈັກ cm? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                <span>{"ຕອບ: AH ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span>{"cm"}</span>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
-      ]
-    },
-    {
-      title: "3. ວິທີແຕ້ມເສັ້ນຊື່ຕັ້ງສາກ ໂດຍໃຊ້ກອມປາ (Compass Drawing)",
-      keyPoint: {
-      title: "3. ວິທີແຕ້ມເສັ້ນຊື່ຕັ້ງສາກ ໂດຍໃຊ້ກອມປາ (Compass Drawing)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ການໃຊ້ກອມປາແຕ້ມເສັ້ນຊື່ຕັ້ງສາກ ຜ່ານເມັດ A ທີ່ຢູ່ນອກເສັ້ນຊື່ d:"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#FFF3E0",
-              border: "2px solid #FF9800",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "10px",
-            }}
-          >
-            <div>{"1. ເອົາສົ້ນແຫຼມຂອງກອມປາຈ້ຳໃສ່ເມັດ A, ແຕ້ມເສັ້ນໂຄ້ງຕັດເສັ້ນຊື່ d ຢູ່ 2 ເມັດ (ເອີ້ນວ່າ M ແລະ N)."}</div>
-            <div>{"2. ຮັກສາລັດສະໝີເດີມ (ຫຼືປ່ຽນໃຫຍ່ຂຶ້ນເລັກໜ້ອຍ), ຈ້ຳກອມປາໃສ່ M ແລະ N ຕາມລຳດັບ ແລ້ວແຕ້ມເສັ້ນໂຄ້ງໃຫ້ຕັດກັນຢູ່ທາງລຸ່ມເສັ້ນຊື່ d (ເອີ້ນວ່າຈຸດ K)."}</div>
-            <div>{"3. ຂີດເສັ້ນຊື່ຜ່ານເມັດ A ແລະ K, ເຮົາຈະໄດ້ເສັ້ນຊື່ AK ຕັ້ງສາກກັບ d."}</div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ຈຸດ K ແລະ A ຈະຢູ່ຫ່າງຈາກ M ແລະ N ເປັນໄລຍະທາງເທົ່າກັນສະເໝີ!",
-        isBlue: true,
-      },
-    },
-      problems: [
-        
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໃນການແຕ້ມເສັ້ນຂະໜານ, ໄມ້ບັນທັດຊື່ມີບົດບາດເປັນແນວທາງໃນການເລື່ອນໄມ້ສາມແຈສາກ. ບົດທ້າທາຍ 2: ການໃຊ້ກອມປາແຕ້ມເສັ້ນໂຄ້ງຕັດເສັ້ນຊື່ d ຈະໄດ້ 2 ເມັດຕັດສະເໝີ ເຊິ່ງຢູ່ຫ່າງຈາກ A ເທົ່າກັນ!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຕື່ມຄຳສັບທີ່ເໝາະສົມ ກ່ຽວກັບການແຕ້ມເສັ້ນຊື່ຂະໜານ ໃສ່ບ່ອນວ່າງ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການສ້າງຮູບສາມແຈສ່ຽງ (Isosceles Triangle): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "16px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-              }}
-            >
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                <span>{"(1) ໃນການແຕ້ມເສັ້ນຊື່ຂະໜານ, ເຮົາໃຊ້ໄມ້ບັນທັດຊື່ເພື່ອເປັນ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "40px" }}></span>
-                <span>{"ໃນການເລື່ອນໄມ້ສາມແຈສາກ."}</span>
-              </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                <span>{"(2) ຫຼັງຈາກເລື່ອນໄມ້ສາມແຈສາກໄປຮອດເມັດ A ແລ້ວຂີດເສັ້ນຊື່, ເສັ້ນຊື່ໃໝ່ຈະ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                <span>{"ກັບເສັ້ນຊື່ເລີ່ມຕົ້ນ d."}</span>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຖ້າເຮົາສ້າງທ່ອນຊື່ [AB] ແລະ ເສັ້ນຈອມກາງ d′ ຂອງມັນ. ຈາກນັ້ນເຮົາເລືອກຈຸດ C ໃດໜຶ່ງຢູ່ເທິງ d′ (ທີ່ບໍ່ແມ່ນຈຸດເຄິ່ງກາງ H). ຖາມວ່າ ຮູບສາມແຈ ABC ທີ່ໄດ້ຈະເປັນຮູບສາມແຈຊະນິດໃດ?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: ເປັນຮູບສາມແຈ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບຄຸນລັກສະນະຂອງການແຕ້ມເສັ້ນຕັ້ງສາກ ໂດຍໃຊ້ກອມປາ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດກ່ຽວກັບໄລຍະຫ່າງລະຫວ່າງສອງເສັ້ນຂະໜານ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            {/* Geometric SVG Compass 2 */}
-            <div style={{ alignSelf: "center", width: "100%", maxWidth: "400px", backgroundColor: "#fff", padding: "12px", borderRadius: "8px", border: "1px solid #ddd", display: "flex", justifyContent: "center" }}>
-              <svg viewBox="0 0 300 120" style={{ width: "100%", height: "auto" }}>
-                <line x1="20" y1="70" x2="280" y2="70" stroke="#333" strokeWidth="2" />
-                <circle cx="150" cy="20" r="4" fill="#D32F2F" />
-                <text x="145" y="15" style={{ fontSize: "14px", fill: "#D32F2F" }}>{"A"}</text>
-
-                {/* Arc cutting line */}
-                <path d="M 70,30 Q 150,110 230,30" fill="none" stroke="#FF9800" strokeWidth="1.5" strokeDasharray="3" />
-                
-                {/* Points M and N */}
-                <circle cx="95" cy="70" r="4" fill="#333" />
-                <text x="90" y="90" style={{ fontSize: "14px" }}>{"M"}</text>
-                
-                <circle cx="205" cy="70" r="4" fill="#333" />
-                <text x="200" y="90" style={{ fontSize: "14px" }}>{"N"}</text>
-              </svg>
-            </div>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-              }}
-            >
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                <span>{"(1) ການແຕ້ມເສັ້ນໂຄ້ງຕັດ d ຈາກຈຸດສູນກາງ A ຈະໄດ້ເມັດຕັດ M ແລະ N ທັງໝົດຈັກເມັດ?"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ເມັດ"}</span>
-              </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                <span>{"(2) ໄລຍະຫ່າງແຕ່ເມັດ M ຫາເມັດ A ແລະ ໄລຍະຫ່າງແຕ່ເມັດ N ຫາເມັດ A ຈະເປັນແນວໃດກັນ?"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຖ້າ d₁ // d₂. ເຮົາແຕ້ມສອງທ່ອນຊື່ [AB] ແລະ [CD] ທີ່ຕັ້ງສາກກັບ d₁ ແລະ d₂ (ໂດຍ A, C ຢູ່ d₁ ແລະ B, D ຢູ່ d₂). ຖ້າ AB = 4 cm, ຖາມວ່າ CD ຈະຍາວຈັກ cm?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: CD ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              <span>{"cm"}</span>
             </div>
           </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ຈຸດໃດໜຶ່ງທີ່ນອນຢູ່ເທິງເສັ້ນຈອມກາງຂອງທ່ອນຊື່ AB ຈະມີໄລຍະຫ່າງຫາສົ້ນ A ແລະ B ເທົ່າກັນສະເໝີ (CA = CB) ດັ່ງນັ້ນມັນຈຶ່ງເປັນຮູບສາມແຈທ່ຽງ!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ ແລະ ຕອບຄຳຖາມກ່ຽວກັບຄຸນລັກສະນະທາງເລຂາຄະນິດຂອງການ作図: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 1.66 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດບັນຫາການສ້າງຮູບສີ່ແຈສາກ (Rectangle Construction): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ເສັ້ນຊື່ທີ່ແຕ້ມຕັ້ງສາກກັບ d ຜ່ານເມັດ A ທີ່ຢູ່ນອກເສັ້ນຊື່ ຈະມີໄດ້ທັງໝົດຈັກເສັ້ນ?"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"ເສັ້ນ"}</span>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ເພື່ອສ້າງຮູບສີ່ແຈສາກ ABCD ທີ່ຮູ້ຄວາມຍາວຂ້າງ AB = 6 cm ແລະ BC = 4 cm. ຖ້າເຮົາສ້າງຂ້າງ AB ແລະ ສ້າງເສັ້ນຊື່ ⊥ ກັບ AB ຢູ່ສົ້ນ B ເພື່ອກຳນົດຈຸດ C ໃຫ້ BC = 4 cm. ຈາກນັ້ນເຮົາໃຊ້ວົງວຽນແຕ້ມສ່ວນໂຄ້ງຈຸດສູນກາງ A ລັດສະໝີ 4 cm ແລະ ຈຸດສູນກາງ C ລັດສະໝີ 6 cm ຕັດກັນຢູ່ D. ຖາມວ່າ ຄວາມຍາວ AD ແລະ CD ຈະຍາວຈັກ cm ຕາມລຳດັບ?"}
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span>{"- ຄວາມຍາວ AD ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              <span>{"cm"}</span>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ເສັ້ນຊື່ທີ່ແຕ້ມຂະໜານກັບ d ຜ່ານເມັດ A ທີ່ຢູ່ນອກເສັ້ນຊື່ ຈະມີໄດ້ທັງໝົດຈັກເສັ້ນ?"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"ເສັ້ນ"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(3) ມຸມທີ່ເກີດຈາກເສັ້ນຊື່ຕັ້ງສາກກັນ ຈະມີຄ່າເທົ່າກັບຈັກອົງສາ?"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"ອົງສາ (°)"}</span>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span>{"- ຄວາມຍາວ CD ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              <span>{"cm"}</span>
             </div>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງປຽບທຽບຮູບພາບສອງຮູບຕໍ່ໄປນີ້ ແລ້ວເລືອກຮູບທີ່ຖືກຕ້ອງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດການພິສູດແຈເລຂາຄະນິດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          {/* Geometric SVG Drawing comparison */}
-          <div style={{ display: "flex", gap: "20px", flexWrap: "wrap", justifyContent: "center", backgroundColor: "#fff", padding: "12px", borderRadius: "8px", border: "1px solid #ddd" }}>
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <svg viewBox="0 0 160 100" style={{ width: "150px", height: "auto" }}>
-                <line x1="10" y1="80" x2="150" y2="80" stroke="#333" strokeWidth="2" />
-                <line x1="10" y1="30" x2="150" y2="30" stroke="#4CAF50" strokeWidth="2" />
-                <circle cx="80" cy="30" r="4" fill="#D32F2F" />
-                <text x="75" y="20" style={{ fontSize: "12px" }}>{"A"}</text>
-              </svg>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold" }}>{"ຮູບ (A)"}</span>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ໃນຮູບສີ່ແຈຂ້າງຂະໜານ ABCD, ຖ້າມີມຸມ A ເທົ່າກັບ 90°, ຖາມວ່າ ມຸມ B, C, D ທີ່ເຫຼືອຈະເທົ່າກັບຈັກອົງສາ? ແລະ ຮູບ ABCD ຈະກາຍເປັນຮູບສີ່ແຈຊະນິດໃດ?"}
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span>{"- ມຸມທີ່ເຫຼືອທັງໝົດແມ່ນ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              <span>{"°"}</span>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <svg viewBox="0 0 160 100" style={{ width: "150px", height: "auto" }}>
-                <line x1="10" y1="80" x2="150" y2="80" stroke="#333" strokeWidth="2" />
-                {/* Incorrect skewed line */}
-                <line x1="10" y1="40" x2="150" y2="20" stroke="#D32F2F" strokeWidth="2" />
-                <circle cx="80" cy="30" r="4" fill="#D32F2F" />
-                <text x="75" y="20" style={{ fontSize: "12px" }}>{"A"}</text>
-              </svg>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold" }}>{"ຮູບ (B)"}</span>
-            </div>
-          </div>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຮູບໃດທີ່ສະແດງການແຕ້ມເສັ້ນຊື່ຂະໜານກັບ d ຜ່ານເມັດ A ທີ່ຖືກຕ້ອງ?"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ໃນຮູບການແຕ້ມຂະໜານທີ່ຖືກຕ້ອງ, ໄລຍະຫ່າງລະຫວ່າງສອງເສັ້ນຊື່ຈະເປັນແນວໃດຕະຫຼອດໄປ?"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span>{"- ຮູບ ABCD ແມ່ນຮູບສີ່ແຈ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
             </div>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u13-ans-1-1">{"(1) ໄມ້ສາມແຈສາກ (Set Square)"}</span>,
-          <span key="u13-ans-1-2">{"(2) ກອມປາ (Compass)"}</span>,
-          <span key="u13-ans-1-3">{"(3) ເສັ້ນຊື່ (Line)"}</span>,
-        ],
+          <span key="1-1">{"(1) ຂ້າງຂະໜານ"}</span>,
+          <span key="1-2">{"(2) // (ຫຼື ຂະໜານ)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u13-ans-2-1">{"(1) ເສັ້ນຊື່ d (ວາງຂ້າງໜຶ່ງຂອງມຸມສາກແນບໃສ່ເສັ້ນຊື່)"}</span>,
-          <span key="u13-ans-2-2">{"(2) ເມັດ A (ແຕ້ມເສັ້ນຊື່ຜ່ານເມັດ A)"}</span>,
-        ],
+          <span key="2">{"CD = 5 cm , AD = 7 cm (ເນື່ອງຈາກຂ້າງກົງກັນຂ້າມຂອງຮູບສີ່ແຈຂ້າງຂະໜານມີຄວາມຍາວເທົ່າກັນ)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"(1) ຕັ້ງສາກ"}</span>,
+          <span key="3-2">{"(2) ເຄິ່ງກາງ"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4">{"4 (ເນື່ອງຈາກ H ແມ່ນຈຸດເຄິ່ງກາງຂອງ AB, ດັ່ງນັ້ນ AH = 8 / 2 = 4)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u13-ans-t1-1">{"(1) ແນວທາງເລື່ອນ (ຫຼື ແນວເລື່ອນ)"}</span>,
-          <span key="u13-ans-t1-2">{"(2) ຂະໜານ (ເສັ້ນຊື່ໃໝ່ຈະຂະໜານກັບ d)"}</span>,
-        ],
+          <span key="c1">{"ທ່ຽງ (ຫຼື ສາມແຈທ່ຽງ ເພາະມີສອງຂ້າງ CA = CB)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u13-ans-t2-1">{"(1) 2 ເມັດ (ຈຸດ M ແລະ N ທີ່ເສັ້ນໂຄ້ງຕັດເສັ້ນຊື່ d)"}</span>,
-          <span key="u13-ans-t2-2">{"(2) ເທົ່າກັນ (ເພາະແຕ້ມຈາກລັດສະໝີດຽວກັນ)"}</span>,
-        ],
+          <span key="c2">{"4 (ໄລຍະຫ່າງລະຫວ່າງສອງເສັ້ນຂະໜານມີຄ່າເທົ່າກັນສະເໝີ)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u13-ans-s1-1">{"(1) 1 ເສັ້ນ (ມີພຽງເສັ້ນດຽວເທົ່ານັ້ນ)"}</span>,
-          <span key="u13-ans-s1-2">{"(2) 1 ເສັ້ນ (ມີພຽງເສັ້ນດຽວເທົ່ານັ້ນ)"}</span>,
-          <span key="u13-ans-s1-3">{"(3) 90 ອົງສາ (90° / ມຸມສາກ)"}</span>,
-        ],
+          <span key="s1-1">{"- ຄວາມຍາວ AD = 4 cm"}</span>,
+          <span key="s1-2">{"- ຄວາມຍາວ CD = 6 cm"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u13-ans-s2-1">{"(1) ຮູບ (A) (ເພາະຮູບ A ສະແດງໄລຍະຫ່າງເທົ່າກັນ, ສ່ວນ B ແມ່ນເສັ້ນຊື່ມີຄວາມອຽງ)"}</span>,
-          <span key="u13-ans-s2-2">{"(2) ເທົ່າກັນຕະຫຼອດ (ໄລຍະຫ່າງບໍ່ປ່ຽນແປງ)"}</span>,
-        ],
-      },
+          <span key="s2-1">{"- ມຸມທີ່ເຫຼືອທັງໝົດແມ່ນ 90°"}</span>,
+          <span key="s2-2">{"- ຮູບ ABCD ແມ່ນຮູບສີ່ແຈສາກ"}</span>
+        ]
+      }
     ],
-    advice: "ໃນການແຕ້ມເສັ້ນຊື່ຂະໜານ, ໄລຍະຫ່າງລະຫວ່າງສອງເສັ້ນຊື່ຈະຕ້ອງເທົ່າກັນຕະຫຼອດ. ສ່ວນເສັ້ນຊື່ຕັ້ງສາກ ຜ່ານເມັດ A ທີ່ຢູ່ນອກ d ຈະມີໄດ້ພຽງແຕ່ 1 ເສັ້ນດຽວເທົ່ານັ້ນເດີ້!",
-  },
+    advice: "ດີເລີດ! ການຮຽນຮູ້ວິທີສ້າງຮູບເລຂາຄະນິດດ້ວຍວົງວຽນ ຊ່ວຍໃຫ້ເຮົາເຂົ້າໃຈຄຸນລັກສະນະຂອງຂ້າງ ແລະ ມຸມໄດ້ຢ່າງເລິກເຊິ່ງ. ສູ້ຕໍ່ໄປ!"
+  }
 };

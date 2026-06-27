@@ -1,332 +1,302 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit24Data: UnitData = {
   unitNumber: 24,
-  unitTitle: "ພາກທີ II - ບົດທີ 24: ລະບົບສົມຜົນຂັ້ນສອງທີ່ມີສອງຕົວປ່ຽນ",
-  unitGoal:
-    "ຮຽນຮູ້ວິທີແກ້ລະບົບສົມຜົນຂັ້ນສອງທີ່ມີສອງຕົວປ່ຽນ (Systems of Quadratic Equations in Two Variables) ໂດຍການນຳໃຊ້ວິທີແທນຄ່າ, ວິທີບວກພຶດຊະຄະນິດ ແລະ ຫຼັກການຜົນບວກ-ຜົນຄູນ",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 24 ໜ້າ 139-144",
+  unitTitle: "ພາກທີ II - ບົດທີ 24: ລະບົບສົມຜົນຂັ້ນສອງທີ່ມີສອງຕົວປ່ຽນ (Systems of Quadratic Equations with Two Variables)",
+  unitGoal: "ຮຽນຮູ້ການແກ້ລະບົບສົມຜົນຂັ້ນສອງທີ່ມີສອງຕົວປ່ຽນ ໂດຍນຳໃຊ້ວິທີແທນ (Substitution), ວິທີປ່ຽນຕົວປ່ຽນຫຼັກ (S, P Symmetrical), ແລະ ການຊອກຫາຄູ່ໃຈຜົນ (x, y)",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 109-111",
   subSections: [
     {
-      title: "1. ວິທີແກ້ໂດຍການແທນຄ່າ (Substitution Method)",
+      title: "1. ລະບົບສົມຜົນສົມມາດ S ແລະ P (Symmetrical Systems using S & P)",
       keyPoint: {
-      title: "1. ວິທີແກ້ໂດຍການແທນຄ່າ (Substitution Method)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ເມື່ອລະບົບສົມຜົນປະກອບດ້ວຍສົມຜົນຂັ້ນໜຶ່ງ ແລະ ສົມຜົນຂັ້ນສອງ, ເຮົາຈະຖອນຕົວປ່ຽນໜຶ່ງຈາກສົມຜົນຂັ້ນໜຶ່ງແລ້ວແທນເຂົ້າສົມຜົນຂັ້ນສອງ ດັ່ງນີ້:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "12px",
-            }}
-          >
-            <div>
-              <strong style={{ color: "#E65100" }}>{"• ຕົວຢ່າງຂັ້ນຕອນການແກ້:"}</strong>
-              <div style={{ paddingLeft: "20px", marginTop: "8px", display: "flex", flexDirection: "column", gap: "6px" }}>
-                <span>{"ລະບົບສົມຜົນ: { y - x = 2,  x² + y² = 10 }"}</span>
-                <span style={{ color: "#D84315", fontWeight: "bold" }}>
-                  {"1) ຖອນ y = x + 2 ຈາກສົມຜົນຂັ້ນໜຶ່ງ."}
-                </span>
-                <span style={{ color: "#D84315", fontWeight: "bold" }}>
-                  {"2) ແທນ y ເຂົ້າສົມຜົນຂັ້ນສອງ: x² + (x + 2)² = 10  ⇒  2x² + 4x - 6 = 0  ⇒  x² + 2x - 3 = 0."}
-                </span>
-                <span>{"3) ແກ້ສົມຜົນໄດ້ x = 1 ຫຼື x = -3. ແລ້ວແທນຄືນເພື່ອຫາ y: (1, 3) ແລະ (-3, -1)."}</span>
-              </div>
+        title: "ຫຼັກການລະບົບສົມຜົນສົມມາດ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ລະບົບສົມຜົນສົມມາດແມ່ນລະບົບທີ່ບໍ່ປ່ຽນແປງເມື່ອເຮົາສະຫຼັບບົດບາດລະຫວ່າງ x ແລະ y. ເຮົາວາງ S = x + y ແລະ P = xy:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ວິທີການຄິດໄລ່:"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"1. ປ່ຽນລະບົບສົມຜົນເດີມໃຫ້ຢູ່ໃນຮູບຮ່າງທີ່ມີ S ແລະ P."}
+                <br />
+                {"2. ແກ້ລະບົບສົມຜົນຫາ S ແລະ P."}
+                <br />
+                {"3. ຊອກຫາ x ແລະ y ໂດຍການແກ້ສົມຜົນຊ່ວຍ: t² - St + P = 0 (ຮາກແມ່ນ t_1, t_2)."}
+                <br />
+                {"4. ໃຈຜົນແມ່ນຄູ່ (x, y) = (t_1, t_2) ຫຼື (t_2, t_1)."}
+              </p>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ເຄັດລັບ: ການເລືອກຖອນຕົວປ່ຽນທີ່ມີສຳປະສິດເປັນ 1 ຈະຊ່ວຍໃຫ້ຄິດໄລ່ໄດ້ງ່າຍ ແລະ ບໍ່ມີເລກສ່ວນເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງ: { x + y = 4, x² + y² = 10 } ⇒ x² + y² = S² - 2P = 16 - 2P = 10 ⇒ P = 3. ສົມຜົນ t² - 4t + 3 = 0 ມີຮາກແມ່ນ 1 ແລະ 3 ⇒ ໃຈຜົນແມ່ນ (1, 3), (3, 1)!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ລະບົບສົມຜົນຂັ້ນສອງ ໂດຍການນຳໃຊ້ວິທີແທນຄ່າ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໃຫ້ລະບົບສົມຜົນ y = x² ແລະ y = x + 2. ຖ້າ x > 0, ພິກັດໃຈຜົນ (x, y) ແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ, ຕົວຢ່າງ: (2, 4)):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງແກ້ລະບົບສົມຜົນສົມມາດຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) { x + y = 5, xy = 6 } ⇒ ສົມຜົນຊ່ວຍ t² - 5t + 6 = 0. ຄູ່ໃຈຜົນ (x, y) ແມ່ນ (2, 3) ຫຼື ("}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{", "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{")"}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) { x + y = 6, x² + y² = 20 } ⇒ S = 6, P = 8. ສົມຜົນ t² - 6t + 8 = 0. ໃຈຜົນແມ່ນ (2, 4) ຫຼື ("}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{", "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{")"}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ໃຫ້ລະບົບສົມຜົນ y - x = 1 ແລະ x² + y² = 5. ຖ້າ x > 0, ພິກັດໃຈຜົນ (x, y) ແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງແກ້ລະບົບສົມຜົນໂດຍວິທີແທນ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) { y - x = 1, x² - y = 5 } ⇒ ແທນ y = x + 1 ໄດ້ x² - x - 6 = 0 ⇒ ຄ່າ x ທີ່ເປັນບວກແມ່ນ x ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) { y + x = 3, y - x² = 1 } ⇒ ແທນ y = 3 - x ໄດ້ x² + x - 2 = 0 ⇒ ຄ່າ x ທີ່ເປັນລົບແມ່ນ x ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ບົດຮຽນພື້ນຖານ",
-      keyPoint: { content: <span /> },
-      problems: [
-        {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ລະບົບສົມຜົນຂັ້ນສອງ ໂດຍນຳໃຊ້ຫຼັກການຜົນບວກ-ຜົນຄູນ (Vieta style): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໃຫ້ລະບົບສົມຜົນ x + y = 5 ແລະ x · y = 6. ຖ້າ x > y, ພິກັດໃຈຜົນ (x, y) ແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ, ຕົວຢ່າງ: (3, 2)):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ໃຫ້ລະບົບສົມຜົນ x + y = 7 ແລະ x · y = 10. ຖ້າ x < y, ພິກັດໃຈຜົນ (x, y) ແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+      title: "2. ລະບົບສົມຜົນຂັ້ນສູງທີ່ມີການຈັດຮູບຮ່າງ (Advanced Systems with Algebraic Manipulation)",
+      keyPoint: {
+        title: "ການແກ້ລະບົບທີ່ສັບສົນ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ບາງລະບົບຕ້ອງໃຊ້ການຄູນ, ບວກ ຫຼື ລົບສົມຜົນເພື່ອຫຼຸດຂັ້ນ ຫຼື ປ່ຽນເປັນສົມຜົນສົມມາດ:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ຕົວຢ່າງ:"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"{ x² + y² = 13, xy = 6 }"}
+                <br />
+                {"ເຮົາຮູ້ວ່າ: (x+y)² = x² + y² + 2xy = 13 + 12 = 25 ⇒ S = ±5."}
+                <br />
+                {"(x-y)² = x² + y² - 2xy = 13 - 12 = 1 ⇒ x-y = ±1."}
+                <br />
+                {"ຈາກນີ້, ເຮົາສາມາດຊອກຫາ x ແລະ y ໄດ້ຢ່າງວ່ອງໄວ."}
+              </p>
             </div>
           </div>
-        </div>
-      ),
-    }
+        ),
+        hint: {
+          text: "💡 ການນຳໃຊ້ເອກະລັກຄວນຈື່ ເຊັ່ນ (x+y)² ແລະ (x-y)² ແມ່ນເຄື່ອງມືຫຼັກໃນການແກ້ລະບົບສົມຜົນຂັ້ນສອງ!",
+          isBlue: false
+        }
+      },
+      problems: [
+        {
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ຄ່າຈາກລະບົບສົມຜົນຂັ້ນສູງ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ໃຫ້ລະບົບສົມຜົນ: { x² + y² = 25, xy = 12 } ທີ່ມີ x, y > 0:"}
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ຄ່າຂອງ S = x + y ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ຄູ່ໃຈຜົນ (x, y) ທີ່ເປັນໄປໄດ້ສໍາລັບ x > y ແມ່ນ ("}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{", "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{")"}</span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງແກ້ລະບົບສົມຜົນອັດຕາສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ໃຫ້ລະບົບສົມຜົນ { 1/x + 1/y = 5/6, xy = 6 }. ຈົ່ງຊອກຫາຄ່າຂອງ x + y?"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                <span>{"ຕອບ: x + y ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              </div>
+            </div>
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໃຫ້ແຍກສົມຜົນ x² - y² = 0 ເປັນ y = x ແລະ y = -x ແລ້ວແຍກແກ້ເປັນ 2 ກໍລະນີ! ບົດທ້າທາຍ 2: ໃຫ້ປ່ຽນຕົວປ່ຽນຮ່ວມກັນເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງແກ້ລະບົບສົມຜົນຂັ້ນສອງທີ່ມີສອງຕົວປ່ຽນ ໃນກໍລະນີພິເສດ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດຊອກຫາໃຈຜົນຈາກຜົນຄູນຮາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ໃຫ້ລະບົບສົມຜົນ x² - y² = 0 ແລະ x² + y² = 8. ຖ້າ x > 0 ແລະ y > 0, ພິກັດໃຈຜົນ (x, y) ແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ໃຫ້ລະບົບສົມຜົນ xy = 4 ແລະ x² + y² = 8. ຖ້າ x > 0 ແລະ y > 0, ພິກັດໃຈຜົນ (x, y) ແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ, ຄຳແນະນຳ: (x - y)² = x² + y² - 2xy = 8 - 8 = 0):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃຫ້ລະບົບສົມຜົນ { x + y + xy = 11, x² + y² + xy = 19 } ທີ່ມີ x, y > 0. ຈົ່ງຊອກຫາຄ່າຂອງ xy?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: xy ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງແກ້ໂຈດບັນຫາຕົວຈິງກ່ຽວກັບການອອກແບບຂະໜາດສະໜາມກິລາ (Stadium Dimensions): "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການນຳໃຊ້ເລຂາຄະນິດ (Geometry Application): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ສະໜາມກິລາຮູບສີ່ແຈສາກໜຶ່ງ ມີລວງຮອບແມ່ນ 300 ແມັດ (ຜົນບວກສອງຂ້າງ x + y = 150 ແມັດ) ແລະ ມີເນື້ອທີ່ແມ່ນ 5000 m². ຈົ່ງຊອກຫາຄວາມຍາວຂອງສະໜາມກິລານີ້ (m) (ຄຳແນະນຳ: ຄວາມຍາວແມ່ນຂ້າງທີ່ຍາວກວ່າ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: ຍາວ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"ແມັດ (m)"}</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຈາກຂໍ້ (1), ຄວາມກວ້າງ (ຂ້າງທີ່ສັ້ນກວ່າ) ຂອງສະໜາມກິລາແມ່ນຈັກແມັດ? (ຕອບເປັນຕົວເລກ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: ກວ້າງ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"m"}</span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ເນື້ອທີ່ຂອງຮູບສີ່ແຈສາກແມ່ນ 24 ແມັດມົນທົນ ແລະ ເສັ້ນເນັ່ງຈອມຍາວ 10 ແມັດ. ຈົ່ງຊອກຫາລວງຍາວຂອງດ້ານທີ່ໃຫຍ່ກວ່າ (ລວງຍາວ)?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: ດ້ານທີ່ໃຫຍ່ກວ່າແມ່ນ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span>{" ແມັດ"}</span>
             </div>
           </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ວາງ S = x+y, P = xy. ມີ S + P = 11 ແລະ S² - P = 19 ⇒ S² + S - 30 = 0 ⇒ S = 5 (ຍ້ອນ S > 0) ⇒ P = 6! ສຳລັບເລຂາຄະນິດ: xy = 24, x² + y² = 100 ⇒ (x+y)² = 148, (x-y)² = 52. ຫຼຶງ່າຍກວ່າ: x² + (24/x)² = 100 ⇒ x⁴ - 100x² + 576 = 0 ⇒ x² = 64 ຫຼື 36 ⇒ ດ້ານແມ່ນ 8 ແລະ 6!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ລະບົບສົມຜົນຂັ້ນສອງ ໂດຍການນຳໃຊ້ວິທີບວກພຶດຊະຄະນິດ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ຈຳນວນຄູ່ໃຈຜົນຂອງລະບົບສົມຜົນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ໃຫ້ລະບົບສົມຜົນ x² + y² = 13 ແລະ x² - y² = 5. ຖ້າ x > 0 ແລະ y > 0, ພິກັດໃຈຜົນ (x, y) ແມ່ນເທົ່າໃດ? (ຄຳແນະນຳ: ບວກສອງສົມຜົນເຂົ້າກັນເພື່ອຫາ x²):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ໃຫ້ລະບົບສົມຜົນ 2x² + y² = 9 ແລະ x² - y² = 3. ຖ້າ x > 0 ແລະ y > 0, ພິກັດໃຈຜົນ (x, y) ແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ລະບົບສົມຜົນ { x + y = 2, xy = 5 } (ມີ Δ = 4 - 20 = -16 < 0) ມີຈັກຄູ່ໃຈຜົນຕົວຈິງ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ມີ"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+            <span>{" ຄູ່"}</span>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາຕົວຈິງກ່ຽວກັບວົງຈອນໄຟຟ້າ (Electrical Circuit Current Optimization): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ຄ່າຂອງ x - y ຈາກລະບົບສົມຜົນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ໃນວົງຈອນໄຟຟ້າໜຶ່ງ, ຜົນບວກຂອງກະແສໄຟຟ້າສອງເສັ້ນແມ່ນ I₁ + I₂ = 6 A, ແລະ ຜົນຄູນຂອງພວກມັນແມ່ນ I₁ · I₂ = 8 A². ຖ້າ I₁ > I₂, ຈົ່ງຊອກຫາຄ່າຂອງກະແສໄຟຟ້າ I₁ (A) (ຕອບເປັນຕົວເລກ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: I₁ ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"A"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຄ່າຂອງກະແສໄຟຟ້າ I₂ ຈະແມ່ນຈັກແອມແປ (A)? (ຕອບເປັນຕົວເລກ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: I₂ ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"A"}</span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ໃຫ້ລະບົບສົມຜົນ { x + y = 7, xy = 12 } ທີ່ມີ x > y. ຈົ່ງຊອກຫາຄ່າຂອງ x - y?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: x - y ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u24-ans-1-1">{"(1) (2, 4) (ເພາະວ່າແທນ y = x² ໃສ່ y = x + 2 ⇒ x² - x - 2 = 0 有 root x = 2 (x > 0))"}</span>,
-          <span key="u24-ans-1-2">{"(2) (1, 2) (ເພາະວ່າແທນ y = x + 1 ໃສ່ x² + y² = 5 ⇒ x² + (x + 1)² = 5 ⇒ 2x² + 2x - 4 = 0 ⇒ x² + x - 2 = 0 有 root x = 1 (x > 0))"}</span>,
-        ],
+          <span key="1-1">{"3 (ຄິດໄລ່: ຄູ່ (3, 2))"}</span>,
+          <span key="1-2">{"2 (ຄິດໄລ່: ຄູ່ (3, 2))"}</span>,
+          <span key="1-3">{"4 (ຄິດໄລ່: ຄູ່ (4, 2))"}</span>,
+          <span key="1-4">{"2 (ຄິດໄລ່: ຄູ່ (4, 2))"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u24-ans-2-1">{"(1) (3, 2) (ເພາະວ່າ 3 + 2 = 5, 3 * 2 = 6)"}</span>,
-          <span key="u24-ans-2-2">{"(2) (2, 5) (ເພາະວ່າ 2 + 5 = 7, 2 * 5 = 10. ເນື່ອງຈາກ x < y ດັ່ງນັ້ນ x=2, y=5)"}</span>,
-        ],
+          <span key="2-1">{"3 (ຄິດໄລ່: x = 3, y = 4 ຫຼຶ x = -2, y = -1. ຄ່າ x ບວກແມ່ນ 3)"}</span>,
+          <span key="2-2">{"-2 (ຄິດໄລ່: x = -2, y = 5 ຫຼຶ x = 1, y = 2. ຄ່າ x ລົບແມ່ນ -2)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"5 (ຄິດໄລ່: (x+y)² = 25 + 24 = 49 ⇒ S = 7, ຍ້ອນ x,y > 0. ຂໍໂທດ, S = 7)"}</span>,
+          <span key="3-2">{"4 (ຄິດໄລ່: ຈາກ S=7, P=12 ⇒ ຮາກແມ່ນ 4 ແລະ 3. ຍ້ອນ x > y ⇒ x = 4)"}</span>,
+          <span key="3-3">{"3 (ຄິດໄລ່: y = 3)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4">{"5 (ຄິດໄລ່: 1/x + 1/y = (x+y)/xy = S/6 = 5/6 ⇒ S = 5)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u24-ans-t1-1">{"(1) (2, 2) (ຍ້ອນ x² = y² ⇒ x² + x² = 8 ⇒ 2x² = 8 ⇒ x² = 4 ⇒ x = 2 (x > 0), y = 2 (y > 0))"}</span>,
-          <span key="u24-ans-t1-2">{"(2) (2, 2) (ຍ້ອນ (x - y)² = 8 - 8 = 0 ⇒ x = y ⇒ x² = 4 ⇒ x = 2, y = 2)"}</span>,
-        ],
+          <span key="c1">{"6 (ຄິດໄລ່: S + P = 11, S² - P = 19 ⇒ S² + S - 30 = 0 ⇒ S = 5 ⇒ P = 6)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u24-ans-t2-1">{"(1) 100 (ຍ້ອນສົມຜົນແມ່ນ t² - 150t + 5000 = 0 ທີ່ມີຮາກແມ່ນ t = 50 ແລະ t = 100. ດັ່ງນັ້ນຂ້າງຍາວແມ່ນ 100 ແມັດ)"}</span>,
-          <span key="u24-ans-t2-2">{"(2) 50 (ຍ້ອນຄວາມກວ້າງແມ່ນ 50 ແມັດ)"}</span>,
-        ],
+          <span key="c2">{"8 (ຄິດໄລ່: x² + y² = 100, xy = 24 ⇒ x = 8, y = 6. ດ້ານຍາວແມ່ນ 8 ແມັດ)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u24-ans-s1-1">{"(1) (3, 2) (ຍ້ອນວ່າບວກສອງສົມຜົນໄດ້ 2x² = 18 ⇒ x² = 9 ⇒ x = 3, y² = 13 - 9 = 4 ⇒ y = 2)"}</span>,
-          <span key="u24-ans-s1-2">{"(2) (2, 1) (ຍ້ອນວ່າບວກສອງສົມຜົນໄດ້ 3x² = 12 ⇒ x² = 4 ⇒ x = 2, y² = 4 - 3 = 1 ⇒ y = 1)"}</span>,
-        ],
+          <span key="s1">{"0 (ຄິດໄລ່: ຍ້ອນ Δ = -16 < 0 ດັ່ງນັ້ນບໍ່ມີຄູ່ໃຈຜົນຕົວຈິງ)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u24-ans-s2-1">{"(1) 4 (ຍ້ອນວ່າສົມຜົນ t² - 6t + 8 = 0 ມີຮາກແມ່ນ 2 ແລະ 4. ເນື່ອງຈາກ I₁ > I₂ ດັ່ງນັ້ນ I₁ = 4)"}</span>,
-          <span key="u24-ans-s2-2">{"(2) 2 (ຍ້ອນວ່າຮາກທີ່ສັ້ນກວ່າແມ່ນ 2)"}</span>,
-        ],
-      },
+          <span key="s2">{"1 (ຄິດໄລ່: S = 7, P = 12 ⇒ ຮາກແມ່ນ 4 ແລະ 3. ຍ້ອນ x > y ⇒ x = 4, y = 3 ⇒ x - y = 1)"}</span>
+        ]
+      }
     ],
-    advice: "ການແກ້ລະບົບສົມຜົນຂັ້ນສອງທີ່ມີສອງຕົວປ່ຽນ ເປັນເຄື່ອງມືທາງຄະນິດສາດທີ່ດີເລີດ ໃນການຊອກຫາຈຸດສົມດຸນ ແລະ ຂະໜາດທີ່ເໝາະສົມໃນການອອກແບບຕ່າງໆເດີ້!",
-  },
+    advice: "ເກັ່ງຫຼາຍ! ການແກ້ລະບົບສົມຜົນຂັ້ນສອງທີ່ມີສອງຕົວປ່ຽນ ເປັນຫົວຂໍ້ທີ່ທ້າທາຍ ແຕ່ຊ່ວຍພັດທະນາທັກສະການຈັດຮູບຮ່າງພຶດຊະຄະນິດໄດ້ດີຫຼາຍ. ສູ້ໆຕໍ່ໄປເດີ້!"
+  }
 };

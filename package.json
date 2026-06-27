@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --webpack",
+    "editor": "node editor-server.js",
     "build": "next build",
     "start": "next start",
     "serve": "npx serve out",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check-layout": "node scratch/detect_overflows.js"
   },
   "dependencies": {
     "next": "16.2.6",
@@ -21,6 +23,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
+    "puppeteer": "^25.1.0",
     "typescript": "^5"
   }
 }

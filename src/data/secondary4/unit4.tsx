@@ -1,382 +1,285 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit4Data: UnitData = {
   unitNumber: 4,
-  unitTitle: "ພາກທີ I - ບົດທີ 4: ການບວກ ແລະ ການລົບ ເລກສ່ວນປົກກະຕິ",
-  unitGoal:
-    "ເຂົ້າໃຈວິທີການ通分 (ຊອກຫາພູດຮ່ວມ) ແລະ ສາມາດຄິດໄລ່ການບວກ ແລະ ການລົບເລກສ່ວນປົກກະຕິໄດ້ຢ່າງຖືກຕ້ອງ ພ້ອມທັງຄັດຈ້ອນຜົນຮັບໃຫ້ງ່າຍດາຍທີ່ສຸດ",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 4 ໜ້າ 21-25",
+  unitTitle: "ພາກທີ I - ບົດທີ 4: ການບວກ ແລະ ການລົບເສດສ່ວນ (Addition and Subtraction of Rational Expressions)",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບວິທີການບວກ ແລະ ລົບເສດສ່ວນທີ່ມີພູດຄືກັນ ແລະ ພູດຕ່າງກັນ, ການຊອກຫາທະວີຄູນຮ່ວມໜ້ອຍສຸດ (LCM) ຂອງພະຫຸພົດ, ແລະ ການຄິດໄລ່ເສດສ່ວນຊ້ອນ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 17-21",
   subSections: [
     {
-      title: "1. ການບວກລົບທີ່ມີພູດຄືກັນ (Addition/Subtraction with Same Denominator)",
+      title: "1. ການບວກ ແລະ ການລົບເສດສ່ວນທີ່ມີພູດຄືກັນ (Same Denominator)",
       keyPoint: {
-      title: "1. ການບວກລົບທີ່ມີພູດຄືກັນ (Addition/Subtraction with Same Denominator)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ເມື່ອເລກສ່ວນປົກກະຕິມີພູດຄືກັນ, ໃຫ້ເອົາຈຳນວນພູດບວກ ຫຼື ລົບກັນ ແລະ ຮັກສາພູດໄວ້ຄືເກົ່າ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• ສູດຄິດໄລ່: "}</strong>
-              <Fraction num="A" den="C" />
-              {" + "}
-              <Fraction num="B" den="C" />
-              {" = "}
-              <Fraction num="A + B" den="C" />
-              {" (C ≠ 0)"}
+        title: "ຫຼັກການພື້ນຖານ: ບວກ ຫຼື ລົບຕົວເສດ, ຮັກສາພູດເດີມ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ເມື່ອເສດສ່ວນມີພູດຄືກັນ, ເຮົາພຽງແຕ່ບວກ ຫຼື ລົບຕົວເສດ (Numerator) ເຂົ້າກັນ ແລະ ຮັກສາພູດ (Denominator) ໄວ້ຄືເກົ່າ:"}
+            </p>
+            <div style={{ display: "flex", justifyContent: "center", gap: "24px", margin: "8px 0", fontSize: "1.5rem", fontWeight: "bold", color: "#1565C0" }}>
+              <span>{"A/C + B/C = (A + B)/C"}</span>
+              <span>{"   ;   "}</span>
+              <span>{"A/C - B/C = (A - B)/C"}</span>
             </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <span style={{ color: "#555" }}>
-                {"ຕົວຢ່າງ: "}
-                <Fraction num="x + 2" den="x - 1" />
-                {" + "}
-                <Fraction num="2x - 5" den="x - 1" />
-                {" = "}
-                <Fraction num="(x + 2) + (2x - 5)" den="x - 1" />
-                {" = "}
-                <Fraction num="3x - 3" den="x - 1" />
-                {" = "}
-                <Fraction num="3(x - 1)" den="x - 1" />
-                {" = 3"}
-              </span>
+            <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ຕົວຢ່າງ:"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"- ຕົວຢ່າງ 1: "}<strong>{"a / (a - b) - b / (a - b) = (a - b) / (a - b) = 1"}</strong>
+                <br />
+                {"- ຕົວຢ່າງ 2: "}<strong>{"x / (x² - 1) + 1 / (x² - 1) = (x + 1) / ((x - 1)(x + 1)) = 1 / (x - 1)"}</strong>
+              </p>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ຫຼັງຈາກບວກລົບແລ້ວ ຢ່າລືມກວດເບິ່ງວ່າສາມາດແຍກສ່ວນຄູນ ແລະ ຄັດຈ້ອນໃຫ້ເປັນຮູບຮ່າງງ່າຍດາຍໄດ້ບໍ່ເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຫຼັງຈາກບວກ ຫຼື ລົບຕົວເສດແລ້ວ, ຢ່າລືມແຍກສ່ວນປະກອບຂອງຕົວເສດ ແລະ ຕົວພູດເພື່ອຄັດຈ້ອນໃຫ້ເປັນເສດສ່ວນຂັ້ນຕ່ຳສະເໝີ!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ການບວກ ແລະ ລົບເລກສ່ວນປົກກະຕິທີ່ມີພູດຄືກັນ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຄິດໄລ່: "} <Fraction num="3x" den="x + 2" /> {" + "} <Fraction num="6" den="x + 2" /> {" = (ຕອບຜົນຮັບງ່າຍດາຍທີ່ສຸດ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ ແລະ ຄັດຈ້ອນເສດສ່ວນຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) [ (2x - 3) / (x - 2) ] - [ (x - 1) / (x - 2) ] ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) [ x / (x² - 4) ] + [ 2 / (x² - 4) ] = 1 /"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຄິດໄລ່: "} <Fraction num="x²" den="x - 3" /> {" - "} <Fraction num="9" den="x - 3" /> {" ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາທະວີຄູນຮ່ວມໜ້ອຍສຸດ (LCM) ຂອງພະຫຸພົດ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) LCM ຂອງ (10x, 15x³, 18x²) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) LCM ຂອງ (x² - 4 ແລະ x² - 2x) = x × (x - 2) ×"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ການບວກລົບທີ່ມີພູດຕ່າງກັນ (Finding Least Common Denominator - LCD)",
+      title: "2. ການບວກ ແລະ ການລົບເສດສ່ວນທີ່ມີພູດຕ່າງກັນ (Different Denominators)",
       keyPoint: {
-      title: "2. ການບວກລົບທີ່ມີພູດຕ່າງກັນ (Finding Least Common Denominator - LCD)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ເມື່ອພູດຕ່າງກັນ, ເຮົາຕ້ອງຊອກຫາ ພູດຮ່ວມ (LCD) ໂດຍການຄູນສ່ວນຂາດໃສ່ທັງຈຳນວນພູດ ແລະ ພູດ ກ່ອນຈະບວກລົບກັນ:"}
-          </p>
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: "12px" }}>
-            <span style={{ fontSize: "1.125rem", color: "#666", marginBottom: "6px" }}>{"ຂັ້ນຕອນການເຮັດ通分 (ຊອກຫາພູດຮ່ວມ)"}</span>
-            <svg viewBox="0 0 320 80" style={{ width: "100%", maxWidth: "320px", height: "auto", border: "1px solid #ccc", backgroundColor: "#fff", borderRadius: "4px" }}>
-              {/* Left Term */}
-              <text x="40" y="32" fill="#333" fontSize="10" textAnchor="middle">{"1"}</text>
-              <line x1="25" y1="40" x2="55" y2="40" stroke="#333" strokeWidth="1.5" />
-              <text x="40" y="55" fill="#E65100" fontSize="10" textAnchor="middle">{"x"}</text>
-
-              {/* Plus */}
-              <text x="70" y="44" fill="#333" fontSize="12" textAnchor="middle">{"+"}</text>
-
-              {/* Right Term */}
-              <text x="100" y="32" fill="#333" fontSize="10" textAnchor="middle">{"1"}</text>
-              <line x1="85" y1="40" x2="115" y2="40" stroke="#333" strokeWidth="1.5" />
-              <text x="100" y="55" fill="#2196F3" fontSize="10" textAnchor="middle">{"x + 1"}</text>
-
-              {/* Arrow */}
-              <text x="140" y="44" fill="#333" fontSize="12" textAnchor="middle">{"⇒"}</text>
-
-              {/* Common denominator fraction */}
-              <text x="240" y="32" fill="#333" fontSize="10" textAnchor="middle">{"(x + 1) + x"}</text>
-              <line x1="170" y1="40" x2="310" y2="40" stroke="#333" strokeWidth="1.5" />
-              <text x="240" y="55" fill="#2E7D32" fontSize="10" textAnchor="middle">{"x(x + 1)"}</text>
-            </svg>
+        title: "ຂັ້ນຕອນການຂຶ້ນພູດຮ່ວມ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ເມື່ອພູດຕ່າງກັນ, ເຮົາຕ້ອງຂຶ້ນພູດຮ່ວມໂດຍການຊອກຫາ LCM ຂອງພູດທັງໝົດກ່ອນ:"}
+              <br />
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#E65100", display: "block", textAlign: "center", margin: "12px 0" }}>
+                {"A/B + C/D = (A·D + B·C) / (B·D)"}
+              </span>
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ຕົວຢ່າງ:"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"ຄິດໄລ່: 1 / (x - 1) + 1 / (x + 1)"}
+                <br />
+                {"- ພູດຮ່ວມແມ່ນ (x - 1)(x + 1) = x² - 1."}
+                <br />
+                {"- ຜົນໄດ້ຮັບແມ່ນ: [ (x + 1) + (x - 1) ] / (x² - 1) = 2x / (x² - 1)."}
+              </p>
+            </div>
           </div>
-          <p style={{ fontSize: "1.375rem", margin: "10px 0 0 0" }}>
-            {"ຜົນຮັບແມ່ນ "} 
-            <Fraction num="2x + 1" den="x(x + 1)" />
-            {"."}
-          </p>
-        </div>
-      ),
-      hint: {
-        text: "⚠️ ຂໍ້ຄວນລະວັງ: ເວລາລົບເລກສ່ວນ, ຢ່າລືມປ່ຽນເຄື່ອງໝາຍຂອງທຸກໆພົດໃນຈຳນວນພູດຂອງໂຕລົບ ເມື່ອເອົາມາລວມກັນເດີ້!",
+        ),
+        hint: {
+          text: "💡 ວິທີທີ່ດີທີ່ສຸດໃນການຂຶ້ນພູດຮ່ວມແມ່ນການແຍກສ່ວນປະກອບຂອງແຕ່ລະພູດ ເພື່ອຫຼີກເວັ້ນການຄູນພູດທີ່ຊ້ຳຊ້ອນ!",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ໂດຍການຊອກຫາພູດຮ່ວມ (ພູດຕ່າງກັນ): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຄິດໄລ່: "} <Fraction num="3" den="x" /> {" + "} <Fraction num="2" den="y" /> {" = (ຕອບແບບເລກສ່ວນ, ຕົວຢ່າງ: (3y+2x)/(xy)):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຂຶ້ນພູດຮ່ວມ ແລະ ຄິດໄລ່: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ຄິດໄລ່: [ 1 / (x - 1) ] - [ 1 / (x + 1) ]"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ຕອບ: ຕົວເສດແມ່ນ"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span>{"/ (x² - 1)"}</span>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຄິດໄລ່: "} <Fraction num="1" den="x - 1" /> {" - "} <Fraction num="1" den="x + 1" /> {" = (ຕອບແບບເລກສ່ວນ, ຕົວຢ່າງ: 2/(x²-1)):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄັດຈ້ອນເສດສ່ວນຊ້ອນ (Complex Fraction): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ຄັດຈ້ອນ: [ (1 + 1/x) / (1 - 1/x) ]"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ຕອບ: (x + 1) /"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໃຫ້ຊອກຫາພູດຮ່ວມ LCD ໃຫ້ລະອຽດກ່ອນ. ບົດທ້າທາຍ 2: ຖ້າມີເຄື່ອງໝາຍລົບຢູ່ທາງໜ້າເລກສ່ວນ, ໃຫ້ໃສ່ວົງເລັບໃສ່ຈຳນວນພູດກ່ອນ ແລ້ວຈຶ່ງແຕກວົງເລັບເພື່ອປ້ອງກັນການຫຼົງເຄື່ອງໝາຍ (+/-) ເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງແກ້ການບວກ ແລະ ລົບທີ່ມີພູດເປັນພະຫຸພົດຂັ້ນສອງ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດເສດສ່ວນຊ້ອນຂອງກ້ອງຖ່າຍຮູບ (Camera Lens Formula): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ຄິດໄລ່: "} <Fraction num="x" den="x² - 4" /> {" + "} <Fraction num="1" den="x - 2" /> {" ="}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຄິດໄລ່: "} <Fraction num="2" den="x² - x" /> {" - "} <Fraction num="2" den="x - 1" /> {" ="}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ສູດໄລຍະສຸມຂອງເລນກ້ອງຖ່າຍຮູບແມ່ນ: 1/f = 1/d + 1/a. ຖ້າເຮົາປ່ຽນສູດນີ້ເພື່ອຊອກຫາ f ໂດຍການຂຶ້ນພູດຮ່ວມ ແລະ ປີ້ນເສດສ່ວນ, ຈະໄດ້ f ເທົ່າກັບເທົ່າໃດ?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <span>{"f = (d × a) /"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງແກ້ສົມຜົນທີ່ມີການ通分 ແລະ ຈັດກຸ່ມໃຫ້ງ່າຍດາຍ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດຄິດໄລ່ຫາຄ່າສະເລ່ຍຮາໂມນິກ (Harmonic Mean): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ຄິດໄລ່: "} <Fraction num="2x" den="x - 1" /> {" - "} <Fraction num="2" den="x - 1" /> {" (ຕອບຜົນຮັບງ່າຍດາຍ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຄິດໄລ່: "} <Fraction num="x + 1" den="x² + 2x" /> {" - "} <Fraction num="1" den="x" /> {" = (ຕອບແບບເລກສ່ວນງ່າຍດາຍ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຄ່າສະເລ່ຍຮາໂມນິກ M ຂອງສອງຈຳນວນ a ແລະ b ແມ່ນກຳນົດດ້ວຍ: M = 2 / (1/a + 1/b). ຈົ່ງຄິດໄລ່ຫາຄ່າສະເລ່ຍຮາໂມນິກຂອງ a = 3 ແລະ b = 6?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"M ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ສູດ 1/f = (a+d)/ad ⇒ f = ad/(a+d). ຄ່າສະເລ່ຍຮາໂມນິກຂອງ 3 ແລະ 6: M = 2 / (1/3 + 1/6) = 2 / (2/6 + 1/6) = 2 / (3/6) = 2 / 0.5 = 4!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ການບວກ ແລະ ລົບສາມສຳນວນທີ່ມີພູດເປັນຕົວປ່ຽນ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ການຄິດໄລ່ຫຼາຍເສດສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຄິດໄລ່: "} <Fraction num="1" den="x" /> {" + "} <Fraction num="1" den="2x" /> {" + "} <Fraction num="1" den="3x" /> {" ="}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຄິດໄລ່: "} <Fraction num="x" den="x - 1" /> {" - "} <Fraction num="1" den="x" /> {" - 1 ="}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ຈົ່ງຄິດໄລ່: [ a / (a - b) ] + [ b / (b - a) ]"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ຜົນໄດ້ຮັບແມ່ນ"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາຕົວຈິງກ່ຽວກັບຄວາມໄວສະເລ່ຍ (Average speed fraction formula): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ການຄິດໄລ່ເສດສ່ວນຊ້ອນຕົວເລກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຖ້າການເດີນທາງໄປກັບໄລຍະທາງ d (km) ດ້ວຍຄວາມໄວໄປ v₁ = x (km/h) ແລະ ຄວາມໄວຂາກັບ v₂ = x + 2 (km/h). ສຳນວນເວລາທັງໝົດ T = T₁ + T₂ = "} <Fraction num="d" den="x" /> {" + "} <Fraction num="d" den="x + 2" /> {" ເມື່ອ通分ແລ້ວ ຈະມີຮູບຮ່າງແບບໃດ? (ຕອບແບບເລກສ່ວນແຍກ d ໄວ້ທາງໜ້າ, ຕົວຢ່າງ: d(2x+2)/(x(x+2))):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: T ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "220px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຖ້າໄລຍະທາງ d = 10 km ແລະ v₁ = 3 km/h. ເວລາທັງໝົດ T ທີ່ໃຊ້ແມ່ນຈັກຊົ່ວໂມງ? (ຕອບເປັນເລກສ່ວນງ່າຍດາຍ ຫຼື ຈຳນວນທົດສະນິຍົມ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: T ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ຊົ່ວໂມງ (h)"}</span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ຈົ່ງຄັດຈ້ອນເສດສ່ວນ: (3/10 + 2/5) / (4/15 - 1/2)"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ເທົ່າກັບ -"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span>{"/ 14"}</span>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u4-ans-1-1">{"(1) 3 (ເພາະວ່າ (3x + 6) / (x + 2) = 3(x + 2) / (x + 2) = 3)"}</span>,
-          <span key="u4-ans-1-2">{"(2) x + 3 (ເພາະວ່າ (x² - 9) / (x - 3) = (x - 3)(x + 3) / (x - 3) = x + 3)"}</span>,
-        ],
+          <span key="1-1">{"(1) 1 (ຄິດໄລ່: (2x-3 - (x-1)) / (x-2) = (x-2) / (x-2) = 1)"}</span>,
+          <span key="1-2">{"(2) x - 2 (ຄິດໄລ່: (x+2) / ((x-2)(x+2)) = 1 / (x-2))"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u4-ans-2-1">{"(1) (3y+2x)/(xy) (ເພາະວ່າ ພູດຮ່ວມແມ່ນ xy)"}</span>,
-          <span key="u4-ans-2-2">{"(2) 2/(x²-1) (ເພາະວ່າ [(x + 1) - (x - 1)] / [(x - 1)(x + 1)] = 2 / (x² - 1))"}</span>,
-        ],
+          <span key="2-1">{"(1) 90x³ (ຄິດໄລ່: LCM(10, 15, 18) = 90, LCM(x, x³, x²) = x³)"}</span>,
+          <span key="2-2">{"(2) x + 2 (ຄິດໄລ່: LCM((x-2)(x+2), x(x-2)) = x(x-2)(x+2))"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"2 (ຄິດໄລ່: [ (x+1) - (x-1) ] / (x²-1) = 2 / (x²-1))"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4-1">{"x - 1 (ຄິດໄລ່: ((x+1)/x) / ((x-1)/x) = (x+1)/(x-1))"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u4-ans-t1-1">{"(1) (2x+2)/(x²-4) (ເພາະວ່າ [x + (x + 2)] / [(x - 2)(x + 2)] = (2x + 2) / (x² - 4))"}</span>,
-          <span key="u4-ans-t1-2">{"(2) (2-2x)/(x²-x) (ເພາະວ່າ [2 - 2x] / [x(x - 1)] = 2(1 - x) / [x(x - 1)] = -2/x)"}</span>,
-        ],
+          <span key="c1-1">{"a + d (ຫຼື d + a) (ຄິດໄລ່: f = ad / (a + d))"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u4-ans-t2-1">{"(1) 2 (ເພາະວ່າ (2x - 2) / (x - 1) = 2(x - 1) / (x - 1) = 2)"}</span>,
-          <span key="u4-ans-t2-2">{"(2) -1/(x²+2x) (ເພາະວ່າ [(x + 1) - (x + 2)] / [x(x + 2)] = -1 / (x(x + 2)) = -1 / (x² + 2x))"}</span>,
-        ],
+          <span key="c2-1">{"4 (ຄິດໄລ່: 2 / (1/3 + 1/6) = 2 / (3/6) = 2 / (1/2) = 4)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u4-ans-s1-1">{"(1) 11/(6x) (ເພາະວ່າ [6 + 3 + 2] / 6x = 11/(6x))"}</span>,
-          <span key="u4-ans-s1-2">{"(2) 1/(x²-x) (ເພາະວ່າ [x² - (x - 1) - (x² - x)] / [x(x - 1)] = [x² - x + 1 - x² + x] / [x(x - 1)] = 1 / (x² - x))"}</span>,
-        ],
+          <span key="s1">{"1 (ຄິດໄລ່: a / (a-b) - b / (a-b) = 1)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u4-ans-s2-1">{"(1) d(2x+2)/(x(x+2)) (ເພາະວ່າ d[x + 2 + x] / [x(x + 2)] = d(2x + 2)/(x(x + 2)))"}</span>,
-          <span key="u4-ans-s2-2">{"(2) 16/3 (ຫຼື 5.33. ເພາະວ່າ T = 10/3 + 10/5 = 50/15 + 30/15 = 80/15 = 16/3 = 5.33)"}</span>,
-        ],
-      },
+          <span key="s2">{"3 (ຄິດໄລ່: (7/10) / (8/30 - 15/30) = (7/10) / (-7/30) = -3 = -42/14)"}</span>
+        ]
+      }
     ],
-    advice: "ການ通分 (ຊອກຫາພູດຮ່ວມ) ແມ່ນຂັ້ນຕອນທີ່ສຳຄັນທີ່ສຸດໃນການບວກລົບເລກສ່ວນປົກກະຕິ! ແລະ ຢ່າລືມກວດເບິ່ງເຄື່ອງໝາຍລົບໃຫ້ດີສະເໝີເດີ້!",
-  },
+    advice: "ດີຫຼາຍ! ເຈົ້າໄດ້ຜ່ານການບວກ, ລົບ ແລະ ການຈັດການກັບເສດສ່ວນພະຫຸພົດທີ່ສັບສົນໄດ້ແລ້ວ. ນີ້ແມ່ນຫົວໃຈຫຼັກໃນການຄຳນວນລະບົບສົມຜົນ ແລະ ຕຳລາຂັ້ນສູງຕໍ່ໄປ!"
+  }
 };

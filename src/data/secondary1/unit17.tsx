@@ -3,265 +3,285 @@ import { UnitData } from "../units2";
 
 export const unit17Data: UnitData = {
   unitNumber: 17,
-  unitTitle: "ພາກທີ II - ບົດທີ 17: ການເຄິ່ງຄື",
-  unitGoal:
-    "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈກ່ຽວກັບການເຄິ່ງຄືທຽບໃສ່ເສັ້ນຊື່ (ການເຄິ່ງຄືແກນ), ຄຸນລັກສະນະຂອງການເຄິ່ງຄື ແລະ ຮູບເຄິ່ງຄື",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ບົດທີ 17 ໜ້າ 116-121",
+  unitTitle: "ພາກທີ II - ບົດທີ 17: ການເຄິ່ງຄືທຽບໃສ່ເສັ້ນຊື່ (Line Symmetry)",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບຄວາມສຳນຶກຂອງການເຄິ່ງຄືທຽບໃສ່ເສັ້ນຊື່ (Reflection), ແກນເຄິ່ງຄື (Axis of Symmetry), ແລະ ຄຸນລັກສະນະຂອງເມັດເຄິ່ງຄື",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 129-133",
   subSections: [
     {
-      title: "1. ການເຄິ່ງຄືທຽບໃສ່ເສັ້ນຊື່ (Reflection across a Line)",
+      title: "1. ນິຍາມຂອງສອງເມັດເຄິ່ງຄືກັນ (Definition of Symmetric Points)",
       keyPoint: {
-      title: "1. ການເຄິ່ງຄືທຽບໃສ່ເສັ້ນຊື່ (Reflection across a Line)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ການເຄິ່ງຄືທຽບໃສ່ເສັ້ນຊື່ (d) ແມ່ນການປ່ຽນບ່ອນຂອງເມັດ ຫຼື ຮູບ ໂດຍມີເສັ້ນຊື່ (d) ເປັນແກນເຄິ່ງຄື:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E3F2FD",
-              border: "2px solid #2196F3",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div>{"• ຖ້າເມັດ A' ແມ່ນຮູບເຄິ່ງຄືຂອງເມັດ A ທຽບໃສ່ເສັ້ນຊື່ (d):"}</div>
-            <div style={{ color: "#0D47A1", paddingLeft: "16px", fontWeight: "bold" }}>
-              {"→ ເສັ້ນຊື່ (d) ຈະຕັ້ງສາກກັບທ່ອນຊື່ AA' ຢູ່ຈຸດເຄິ່ງກາງຂອງ AA'."}
-            </div>
-            <div style={{ color: "#0D47A1", paddingLeft: "16px", fontWeight: "bold" }}>
-              {"→ ໄລຍະຫ່າງຈາກ A ຫາ (d) ເທົ່າກັບໄລຍະຫ່າງຈາກ A' ຫາ (d)."}
+        title: "ເມັດເຄິ່ງຄືທຽບໃສ່ເສັ້ນຊື່ d",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ສອງເມັດ A ແລະ A′ ເອີ້ນວ່າເຄິ່ງຄືກັນທຽບໃສ່ເສັ້ນຊື່ d (ເຊິ່ງແມ່ນແກນເຄິ່ງຄື) ຖ້າວ່າ:"}
+            </p>
+            <ul style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.6" }}>
+              <li>{"ເສັ້ນຊື່ d ຕັ້ງສາກກັບທ່ອນຊື່ [AA′] ຢູ່ຈຸດເຄິ່ງກາງ H ຂອງ [AA′]."}</li>
+              <li>{"ເວົ້າອີກຢ່າງໜຶ່ງ, ເສັ້ນຊື່ d ແມ່ນ ເສັ້ນຈອມກາງ (Perpendicular Bisector) ຂອງທ່ອນຊື່ [AA′]."}</li>
+            </ul>
+
+            <div style={{ padding: "16px", backgroundColor: "#E0F2F1", borderRadius: "8px", border: "1px solid #80CBC4", display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#004D40" }}>{"ແຜນວາດສອງເມັດເຄິ່ງຄືທຽບໃສ່ d"}</span>
+              <svg width="240" height="100">
+                <line x1="120" y1="10" x2="120" y2="90" stroke="#004D40" strokeWidth="3" />
+                <text x="130" y="20" fontSize="14" fontWeight="bold" fill="#004D40">{"d (ແກນເຄິ່ງຄື)"}</text>
+                
+                <circle cx="40" cy="50" r="4" fill="#E53935" />
+                <text x="35" y="40" fontSize="14" fontWeight="bold">{"A"}</text>
+                
+                <circle cx="200" cy="50" r="4" fill="#E53935" />
+                <text x="195" y="40" fontSize="14" fontWeight="bold">{"A′"}</text>
+                
+                <line x1="40" y1="50" x2="200" y2="50" stroke="#757575" strokeDasharray="4" strokeWidth="1.5" />
+                <rect x="110" y="40" width="10" height="10" fill="none" stroke="#004D40" strokeWidth="1.5" />
+                
+                <circle cx="120" cy="50" r="3" fill="#000" />
+                <text x="125" y="65" fontSize="12" fontWeight="bold">{"H"}</text>
+              </svg>
+              <span style={{ fontSize: "1.2rem", fontStyle: "italic", color: "#00796B" }}>{"AH = A′H  ແລະ  (AA′) ⊥ d ຢູ່ H"}</span>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ເວົ້າງ່າຍໆແມ່ນຄືກັບການພັບເຈ້ຍຕາມເສັ້ນຊື່ (d), ເມັດ A ແລະ A' ຈະເຕັງກັນພໍດີເລີຍເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຖ້າເມັດ M ນອນຢູ່ເທິງແກນ d ພໍດີ, ເມັດເຄິ່ງຄືຂອງ M ກໍແມ່ນຕົວມັນເອງ (M′ ≡ M)!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p style={{ fontSize: "1.375rem" }}>
-            {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບຄຸນລັກສະນະຂອງການເຄິ່ງຄືແກນ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຖ້າທ່ອນຊື່ AB ຍາວ 6 cm, ຮູບເຄິ່ງຄື A'B' ຂອງມັນຈະຍາວຈັກ cm?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຕື່ມຄຳສັບ ຫຼື ສັນຍະລັກທີ່ຖືກຕ້ອງໃສ່ບ່ອນວ່າງ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄะແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span>{"ຖ້າ A ແລະ A′ ເຄິ່ງຄືກັນທຽບໃສ່ d ຢູ່ຈຸດຕັດ H, ແລ້ວທ່ອນຊື່ AH ຈະ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span>{"ທ່ອນຊື່ A′H."}</span>
+                </div>
+                
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span>{"ເສັ້ນຊື່ (AA′) ແລະ ແກນເຄິ່ງຄື d ຈະມີລັກສະນະການພົວພັນແມ່ນ: (AA′)"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"d."}</span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃຫ້ໄລຍະຫ່າງຈາກເມັດ A ຫາແກນ d ແມ່ນ 4.5 cm. ຖ້າ A′ ແມ່ນເມັດເຄິ່ງຄືຂອງ A ທຽບໃສ່ d, ໄລຍະຫ່າງລະຫວ່າງ A ແລະ A′ ຈະມີຈັກ cm? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ປະໂຫຍກສັນຍະລັກ: AA′ ="}</span>
+                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                <span>{"= "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 <span>{"cm"}</span>
               </div>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຖ້າມຸມ ABC ມີຂະໜາດ 45°, ມຸມເຄິ່ງຄື A'B'C' ຈະມີຂະໜາດຈັກອົງສາ?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"°"}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ຄຸນລັກສະນະຂອງການເຄິ່ງຄືແກນ",
+      title: "2. ຄຸນລັກສະນະຂອງການເຄິ່ງຄື (Properties of Line Reflection)",
       keyPoint: {
-      title: "2. ຄຸນລັກສະນະຂອງການເຄິ່ງຄືແກນ",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ການເຄິ່ງຄືທຽບໃສ່ເສັ້ນຊື່ ມີຄຸນລັກສະນະຮັກສາໄລຍະຫ່າງ ແລະ ຮູບຮ່າງ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"• ຮັກສາຄວາມຍາວຂອງທ່ອນຊື່: AB = A'B'"}</div>
-            <div>{"• ຮັກສາຂະໜາດຂອງມຸມ: ມຸມຂອງຮູບຕົ້ນແບບ ເທົ່າກັບມຸມຂອງຮູບເຄິ່ງຄື."}</div>
-            <div>{"• ຮັກສາເນື້ອທີ່: ຮູບເຄິ່ງຄືມີເນື້ອທີ່ເທົ່າກັບຮູບຕົ້ນແບບສະເໝີ."}</div>
+        title: "ການຮັກສາໄລຍະທາງ ແລະ ຮູບຮ່າງ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ການເຄິ່ງຄືທຽບໃສ່ເສັ້ນຊື່ມີຄຸນລັກສະນະການຮັກສາທີ່ສຳຄັນດັ່ງນີ້:"}
+            </p>
+            <ul style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.6" }}>
+              <li><strong>{"ຮັກສາໄລຍະຫ່າງ (Distance Preserved): "}</strong>{" ຄວາມຍາວຂອງທ່ອນຊື່ເຄິ່ງຄືຈະເທົ່າກັບຄວາມຍາວເດີມສະເໝີ. ຖ້າ [AB] ເຄິ່ງຄືກັບ [A′B′] ແລ້ວ A′B′ = AB."}</li>
+              <li><strong>{"ຮັກສາມຸມ (Angle Preserved): "}</strong>{" ມຸມເຄິ່ງຄືຈະມີຂະໜາດເທົ່າກັບມຸມເດີມສະເໝີ."}</li>
+              <li><strong>{"ຮັກສາເນື້ອທີ່ (Area Preserved): "}</strong>{" ຮູບເຄິ່ງຄືຈະມີເນື້ອທີ່ເທົ່າກັບຮູບເດີມສະເໝີ."}</li>
+            </ul>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ຮູບເຄິ່ງຄືຈະປ່ຽນທິດທາງ (ຊ້າຍ-ຂວາ) ແຕ່ຂະໜາດ ແລະ ຮູບຮ່າງຈະຍັງຄືເກົ່າທຸກປະການ!",
+        ),
+        hint: {
+          text: "💡 ຮູບສອງຮູບທີ່ເຄິ່ງຄືກັນ ຈະສາມາດພັບເຕັງກັນໄດ້ພໍດີ ຕາມແນວແກນເຄິ່ງຄື d!",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p style={{ fontSize: "1.375rem" }}>
-            {"ຈົ່ງພິຈາລະນາໄລຍະຫ່າງໃນການເຄິ່ງຄື: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຖ້າເມັດ M ຢູ່ຫ່າງຈາກແກນເຄິ່ງຄື (d) ເປັນໄລຍະ 4 cm, ເມັດເຄິ່ງຄື M' ຈະຢູ່ຫ່າງຈາກ (d) ຈັກ cm?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃຫ້ທ່ອນຊື່ AB = 8 cm. ຖ້າ [A′B′] ແມ່ນຮູບເຄິ່ງຄືຂອງ [AB] ທຽບໃສ່ແກນ d, ຄວາມຍາວຂອງ A′B′ ຈະເທົ່າກັບຈັກ cm? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                <span>{"ຕອບ: A′B′ ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 <span>{"cm"}</span>
               </div>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ທ່ອນຊື່ MM' ທີ່ເຊື່ອມລະຫວ່າງເມັດຕົ້ນແບບ ແລະ ຮູບເຄິ່ງຄື ຈະມີຄວາມຍາວທັງໝົດຈັກ cm?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"cm"}</span>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃຫ້ຮູບສາມແຈ ABC ມີເນື້ອທີ່ 24 cm². ຖ້າ A′B′C′ ແມ່ນຮູບເຄິ່ງຄືຂອງ ABC ທຽບໃສ່ແກນ d, ເນື້ອທີ່ຂອງຮູບສາມແຈ A′B′C′ ຈະເທົ່າກັບຈັກ cm²? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                <span>{"ຕອບ: ເນື້ອທີ່ແມ່ນ"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span>{"cm²"}</span>
               </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ການເຄິ່ງຄືຮັກສາເນື້ອທີ່ຂອງຮູບສະເໝີ. ບົດທ້າທາຍ 2: ຄິດໄລ່ຄວາມຍາວອ້ອມຮອບຮູບເຄິ່ງຄື ໂດຍມັນຈະເທົ່າກັບຄວາມຍາວອ້ອມຮອບຮູບຕົ້ນແບບ.",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p style={{ fontSize: "1.375rem" }}>
-              {"ຈົ່ງແກ້ໂຈດກ່ຽວກັບເນື້ອທີ່ ແລະ ຄວາມຍາວອ້ອມຮອບ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການຊອກຫາເມັດເຄິ່ງຄື ແລະ ໄລຍະຫ່າງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ຮູບສາມແຈ ABC ມີເນື້ອທີ່ 15 cm². ຮູບເຄິ່ງຄື A'B'C' ຂອງມັນຈະມີເນື້ອທີ່ຈັກ cm²?:"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"cm²"}</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຮູບສີ່ແຈຂະໜານໜຶ່ງມີຄວາມຍາວອ້ອມຮອບ 24 cm. ຮູບເຄິ່ງຄືຂອງມັນຈະມີຄວາມຍາວອ້ອມຮອບຈັກ cm?:"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"cm"}</span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃຫ້ສອງເມັດ A ແລະ B ຢູ່ເບື້ອງດຽວກັນຂອງເສັ້ນຊື່ d, ໂດຍມີ H ແລະ K ແມ່ນຈຸດສາຍສາກຂອງ A ແລະ B ລົງໃສ່ d ຕາມລຳດັບ (AH = 3 cm, BK = 5 cm). ຖ້າ A′ ແລະ B′ ແມ່ນເມັດເຄິ່ງຄືຂອງ A ແລະ B ທຽບໃສ່ d, ໄລຍະຫ່າງລະຫວ່າງ A′ ຫາ B′ ຈະຍາວເທົ່າໃດ ຖ້າຮູ້ວ່າ AB = 10 cm?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: A′B′ ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span>{"cm."}</span>
             </div>
           </div>
-        ),
+        )
       },
+      {
+        number: 2,
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດບັນຫາການເຄິ່ງຄືຂອງຮູບສາມແຈສາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            </p>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃຫ້ຮູບສາມແຈ ABC ສາກຢູ່ B ໂດຍ AB = 6 cm ແລະ BC = 8 cm. ຖ້າສ້າງຮູບເຄິ່ງຄື A′B′C′ ຂອງ ABC ທຽບໃສ່ເສັ້ນຊື່ d ໃດໜຶ່ງ, ຄວາມຍາວຂອງຂ້າງ A′C′ ຈະເທົ່າກັບຈັກ cm? (ຊອກຫາໂດຍນຳໃຊ້ທິດສະດີປີຕາກໍ)"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: A′C′ ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span>{"cm."}</span>
+            </div>
+          </div>
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ເນື່ອງຈາກການເຄິ່ງຄືຮັກສາໄລຍະທາງຢ່າງສົມບູນ, ດັ່ງນັ້ນ A′B′ = AB = 10 cm ແລະ A′C′ = AC = √ (6² + 8²) = 10 cm!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p style={{ fontSize: "1.375rem" }}>
-            {"ຈົ່ງຕື່ມຄຳສັບ ຫຼື ຄຳຕອບທີ່ຖືກຕ້ອງໃສ່ບ່ອນວ່າງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດຄຸນລັກສະນະການເຄິ່ງຄືຂອງມຸມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ເສັ້ນຊື່ທີ່ແບ່ງເຄິ່ງ ແລະ ຕັ້ງສາກກັບທ່ອນຊື່ AA' ເອີ້ນວ່າ ເສັ້ນກາງສາກ ຫຼື ແກນເຄິ່ງຄື. ແມ່ນ ຫຼື ບໍ່? (ຕອບ 'ແມ່ນ' ຫຼື 'ບໍ່ແມ່ນ'):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຖ້າເມັດ P ຢູ່ເທິງແກນເຄິ່ງຄື (d) ພໍດີ, ຮູບເຄິ່ງຄື P' ຂອງມັນຈະຢູ່ຫ່າງຈາກເມັດ P ຈັກ cm?:"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"cm"}</span>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ໃຫ້ມຸມ ∠ABC ມີຂະໜາດ 45°. ຖ້າ ∠A′B′C′ ແມ່ນຮູບເຄິ່ງຄືຂອງ ∠ABC ທຽບໃສ່ແກນ d, ມຸມ ∠A′B′C′ ຈະມີຂະໜາດຈັກອົງສາ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ∠A′B′C′ ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span>{"°."}</span>
           </div>
         </div>
-      ),
+      )
     },
+    {
+      number: 2,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດກ່ຽວກັບເມັດທີ່ນອນຢູ່ເທິງແກນ d: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+          </p>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ໃຫ້ເມັດ M ຢູ່ເທິງແກນເຄິ່ງຄື d ພໍດີ. ຖ້າໄລຍະຫ່າງລະຫວ່າງ M ຫາເມັດເຄິ່ງຄື M′ ຂອງມັນແມ່ນ x, ຖາມວ່າ x ຈະມີຄ່າເທົ່າໃດ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: x ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span>{"cm."}</span>
+          </div>
+        </div>
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u17-ans-1-1">{"(1) 6 (ເພາະການເຄິ່ງຄືຮັກສາຄວາມຍາວຂອງທ່ອນຊື່ AB = A'B')"}</span>,
-          <span key="u17-ans-1-2">{"(2) 45 (ເພາະການເຄິ່ງຄືຮັກສາຂະໜາດຂອງມຸມ)"}</span>,
-        ],
+          <span key="1-1">{"(1) ເທົ່າກັບ (ຫຼື ຍາວເທົ່າກັບ)"}</span>,
+          <span key="1-2">{"(2) ⊥ (ຫຼື ຕັ້ງສາກ)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u17-ans-2-1">{"(1) 4 (ເພາະໄລຍະຫ່າງຈາກເມັດຕົ້ນແບບຫາແກນ ເທົ່າກັບໄລຍະຫ່າງຈາກຮູບເຄິ່ງຄືຫາແກນ)"}</span>,
-          <span key="u17-ans-2-2">{"(2) 8 (ເພາະ MM' = 4 + 4 = 8 cm)"}</span>,
-        ],
+          <span key="2-1">{"4.5 × 2 (ຫຼື 4.5 + 4.5)"}</span>,
+          <span key="2-2">{"9"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3">{"8 (ຍ້ອນການເຄິ່ງຄືຮັກສາໄລຍະທາງ)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4">{"24 (ຍ້ອນການເຄິ່ງຄືຮັກສາເນື້ອທີ່)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u17-ans-t1-1">{"(1) 15 (ເພາະການເຄິ່ງຄືຮັກສາເນື້ອທີ່ຂອງຮູບ)"}</span>,
-          <span key="u17-ans-t1-2">{"(2) 24 (ເພາະການເຄິ່ງຄືຮັກສາຄວາມຍາວອ້ອມຮອບ)"}</span>,
-        ],
+          <span key="c1">{"10 (ເນື່ອງຈາກ A′B′ = AB = 10 cm)"}</span>
+        ]
+      },
+      {
+        questionNumber: "ທ້າທາຍ 2",
+        answers: [
+          <span key="c2">{"10 (ຄິດໄລ່: AC = √ (6² + 8²) = 10 cm, ແລະ A′C′ = AC = 10 cm)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u17-ans-s1-1">{"(1) ແມ່ນ (ເສັ້ນຊື່ທີ່ແບ່ງເຄິ່ງ ແລະ ຕັ້ງສາກກັບທ່ອນຊື່ AA' ແມ່ນເສັ້ນກາງສາກ ທີ່ເຮັດໜ້າທີ່ເປັນແກນເຄິ່ງຄື)"}</span>,
-          <span key="u17-ans-s1-2">{"(2) 0 (ເພາະຖ້າເມັດຢູ່ເທິງແກນເຄິ່ງຄື, ຮູບເຄິ່ງຄືຂອງມັນຈະເຕັງກັບເມັດຕົ້ນແບບພໍດີ ໄລຍະຫ່າງຈຶ່ງເປັນ 0)"}</span>,
-        ],
+          <span key="s1">{"45 (ຍ້ອນການເຄິ່ງຄືຮັກສາຂະໜາດຂອງມຸມ)"}</span>
+        ]
       },
+      {
+        questionNumber: "ທົດສອບປະຈຳບົດ 2",
+        answers: [
+          <span key="s2">{"0 (ເນື່ອງຈາກເມັດທີ່ນອນຢູ່ເທິງແກນເຄິ່ງຄື ຈະມີເມັດເຄິ່ງຄືແມ່ນຕົວມັນເອງ M′ ≡ M)"}</span>
+        ]
+      }
     ],
-    advice: "ການເຄິ່ງຄືທຽບໃສ່ເສັ້ນຊື່ແມ່ນຄ້າຍຄືກັບການສ່ອງແວ່ນແຍງ. ຮູບທີ່ໄດ້ຈະມີຂະໜາດເທົ່າເດີມ ແຕ່ປ່ຽນທິດທາງດ້ານຊ້າຍ ແລະ ຂວາ ເດີ້!",
-  },
+    advice: "ດີຫຼາຍ! ຄວາມເຂົ້າໃຈກ່ຽວກັບການເຄິ່ງຄືທຽບໃສ່ເສັ້ນຊື່ ຈະຊ່ວຍໃຫ້ເຮົາສາມາດແຕ້ມຮູບທີ່ສົມດຸນ (Symmetrical) ແລະ ຮຽນຮູ້ເລຂາຄະນິດໃນບົດຕໍ່ໄປໄດ້ຢ່າງງ່າຍດາຍ!"
+  }
 };

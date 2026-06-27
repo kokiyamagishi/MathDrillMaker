@@ -1,376 +1,294 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit6Data: UnitData = {
   unitNumber: 6,
-  unitTitle: "ພາກທີ I - ບົດທີ 6: ອັດຕາສ່ວນ ແລະ ອັດຕາສ່ວນພົວພັນ",
-  unitGoal:
-    "ເຂົ້າໃຈນິຍາມຂອງອັດຕາສ່ວນ, ການພົວພັນກົງ (Direct Proportion) ແລະ ການພົວພັນປີ້ນ (Inverse Proportion) ພ້ອມທັງສາມາດແກ້ບັນຫາຕົວຈິງໄດ້",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 6 ໜ້າ 31-36",
+  unitTitle: "ພາກທີ I - ບົດທີ 6: ອັດຕາສ່ວນ ແລະ ອັດຕາສ່ວນພົວພັນ (Ratios and Proportions)",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍຂອງອັດຕາສ່ວນ (Ratio), ການແກ້ໂຈດບັນຫາອັດຕາການເຮັດວຽກຮ່ວມກັນ (Combined Work Rates), ແລະ ການແບ່ງປັນສ່ວນພົວພັນ (Proportional Sharing)",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 25-28",
   subSections: [
     {
-      title: "1. ການພົວພັນກົງ ແລະ ການພົວພັນປີ້ນ (Direct & Inverse Proportions)",
+      title: "1. ຄວາມໝາຍຂອງອັດຕາສ່ວນ (Concept of Ratio)",
       keyPoint: {
-      title: "1. ການພົວພັນກົງ ແລະ ການພົວພັນປີ້ນ (Direct & Inverse Proportions)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ການພົວພັນລະຫວ່າງສອງປະລິມານ x ແລະ y ມີສອງຮູບແບບພື້ນຖານຄື:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "10px",
-            }}
-          >
-            <div>
-              <strong style={{ color: "#E65100" }}>{"• ການພົວພັນກົງ (Direct Proportion): "}</strong>
-              <span>{"ເມື່ອ x ເພີ່ມຂຶ້ນ y ກໍເພີ່ມຂຶ້ນຕາມອັດຕາສ່ວນຄົງທີ່:"}</span>
+        title: "ອັດຕາສ່ວນແມ່ນຫຍັງ?",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"- ອັດຕາສ່ວນແມ່ນການປຽບທຽບສອງປະລິມານ ຫຼື ສອງຂະໜາດທີ່ມີຫົວໜ່ວຍດຽວກັນ, ຂຽນໃນຮູບແບບ ເລກເສດສ່ວນ A/B ຫຼື A : B."}
               <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#555" }}>
-                {"y = kx  (k ແມ່ນສຳປະສິດພົວພັນກົງ)  ⇒  "}
-                <Fraction num="y" den="x" />
-                {" = k"}
-              </span>
-            </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#D84315" }}>{"• ການພົວພັນປີ້ນ (Inverse Proportion): "}</strong>
-              <span>{"ເມື່ອ x ເພີ່ມຂຶ້ນ y ຈະຫຼຸດລົງຕາມອັດຕາສ່ວນຄົງທີ່:"}</span>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#555" }}>
-                {"y = "}
-                <Fraction num="k" den="x" />
-                {"  (k ແມ່ນສຳປະສິດພົວພັນປີ້ນ)  ⇒  x × y = k"}
-              </span>
+              {"- ມາດຕາສ່ວນແຜນຜັງ (Scale): ອັດຕາສ່ວນລະຫວ່າງຂະໜາດໃນແຜນຜັງ ແລະ ຂະໜາດຈິງ. ເຊັ່ນ ມາດຕາສ່ວນ 1 : 50,000 ໝາຍຄວາມວ່າ 1 cm ໃນແຜນຜັງ ເທົ່າກັບ 50,000 cm (0.5 km) ຕົວຈິງ."}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }}>{"ຕົວຢ່າງ:"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"ພໍ່ມີອາຍຸ 45 ປີ ແລະ ລູກມີອາຍຸ 11 ປີ."}
+                <br />
+                {"- ອັດຕາສ່ວນອາຍຸພໍ່ຕໍ່ອາຍຸລູກແມ່ນ: "}<strong>{"45 : 11  (ຫຼື 45/11)"}</strong>
+                <br />
+                {"- ອັດຕາສ່ວນອາຍຸລູກຕໍ່ອາຍຸພໍ່ແມ່ນ: "}<strong>{"11 : 45  (ຫຼື 11/45)"}</strong>
+              </p>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ຈົ່ງຈື່ໄວ້ວ່າ ຖ້າເປັນພົວພັນກົງ ຜົນຫານຈະຄົງທີ່; ແຕ່ຖ້າເປັນພົວພັນປີ້ນ ຜົນຄູນຈະຄົງທີ່ສະເໝີ ເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ອັດຕາສ່ວນສາມາດຄັດຈ້ອນໃຫ້ເປັນອັດຕາສ່ວນຂັ້ນຕ່ຳໄດ້ຄືກັບເລກເສດສ່ວນທົ່ວໄປ!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ຫາສຳປະສິດ ແລະ ຄ່າຂອງຕົວປ່ຽນໃນອັດຕາສ່ວນພົວພັນກົງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໃຫ້ y ພົວພັນກົງກັບ x. ເມື່ອ x = 3 ຈະໄດ້ y = 12. ສຳປະສິດພົວພັນກົງ k ແມ່ນເທົ່າໃດ? (k = y/x):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຂຽນອັດຕາສ່ວນຕໍ່ໄປນີ້ໃນຮູບແບບອັດຕາສ່ວນຂັ້ນຕ່ຳ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ອັດຕາສ່ວນ 120 cm ຕໍ່ 3 m (ປ່ຽນເປັນ cm ຄືກັນກ່ອນ) ⇒ 120 :"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"= 2 :"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ອັດຕາສ່ວນ 500 Kip ຕໍ່ 30 Kip ⇒"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{": 3"}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຈົ່ງຊອກຫາຄ່າຂອງ y ເມື່ອ x = 5 (y = kx):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໂຈດແຜນຜັງ ແລະ ໄລຍະທາງຕົວຈິງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ແຜນຜັງມີມາດຕາສ່ວນ 1 : 150,000 (1 cm ແທນ 1.5 km ຈິງ). ຖ້າໄລຍະທາງໃນແຜນຜັງແມ່ນ 2.3 cm, ໄລຍະທາງຕົວຈິງແມ່ນຈັກ km?"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ປະໂຫຍກສັນຍະລັກ: 2.3 × 1.5 ="}</span>
+                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                <span>{"km"}</span>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ເສັ້ນສະແດງການພົວພັນ (Graphical Representation)",
+      title: "2. ໂຈດບັນຫາອັດຕາການເຮັດວຽກຮ່ວມກັນ ແລະ ການແບ່ງປັນສ່ວນພົວພັນ (Combined Rates & Proportional Sharing)",
       keyPoint: {
-      title: "2. ເສັ້ນສະແດງການພົວພັນ (Graphical Representation)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <div style={{ display: "flex", gap: "20px", flexWrap: "wrap", justifyContent: "center" }}>
-            {/* Direct Proportion SVG */}
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <span style={{ fontSize: "1.125rem", color: "#666", marginBottom: "4px" }}>{"ພົວພັນກົງ (y = 2x)"}</span>
-              <svg viewBox="0 0 120 100" style={{ width: "120px", height: "100px", border: "1px solid #ccc", backgroundColor: "#fff" }}>
-                <line x1="15" y1="85" x2="105" y2="85" stroke="#333" strokeWidth="1" />
-                <line x1="20" y1="90" x2="20" y2="10" stroke="#333" strokeWidth="1" />
-                <line x1="20" y1="85" x2="90" y2="15" stroke="#E91E63" strokeWidth="2" />
-                <text x="105" y="93" fill="#333" fontSize="8">{"x"}</text>
-                <text x="12" y="15" fill="#333" fontSize="8">{"y"}</text>
-              </svg>
-            </div>
-            {/* Inverse Proportion SVG */}
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <span style={{ fontSize: "1.125rem", color: "#666", marginBottom: "4px" }}>{"ພົວພັນປີ້ນ (y = 12/x)"}</span>
-              <svg viewBox="0 0 120 100" style={{ width: "120px", height: "100px", border: "1px solid #ccc", backgroundColor: "#fff" }}>
-                <line x1="15" y1="85" x2="105" y2="85" stroke="#333" strokeWidth="1" />
-                <line x1="20" y1="90" x2="20" y2="10" stroke="#333" strokeWidth="1" />
-                <path d="M 25,20 Q 35,70 95,80" fill="none" stroke="#2196F3" strokeWidth="2" />
-                <text x="105" y="93" fill="#333" fontSize="8">{"x"}</text>
-                <text x="12" y="15" fill="#333" fontSize="8">{"y"}</text>
-              </svg>
-            </div>
+        title: "ສູດການຄິດໄລ່ອັດຕາຮ່ວມ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"- ຖ້າຄົນທີ 1 ເຮັດວຽກແລ້ວໃນ a ຊົ່ວໂມງ, ຄົນທີ 2 ໃນ b ຊົ່ວໂມງ, ແລະ ຄົນທີ 3 ໃນ c ຊົ່ວໂມງ. ເວລາຮ່ວມກັນ t ແມ່ນ:"}
+              <br />
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#2E7D32", display: "block", textAlign: "center", margin: "8px 0" }}>{"1/t = 1/a + 1/b + 1/c"}</span>
+              {"- ການແບ່ງປັນສ່ວນພົວພັນ: ເພື່ອແບ່ງປັນຈຳນວນ S ອອກເປັນພາກສ່ວນໃນອັດຕາສ່ວນ x : y : z. ແຕ່ລະສ່ວນຈະເທົ່າກັບ:"}
+              <br />
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#D84315", display: "block", textAlign: "center", margin: "8px 0" }}>{"S_x = S × x / (x + y + z)"}</span>
+            </p>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ເສັ້ນສະແດງການພົວພັນກົງຈະເປັນເສັ້ນຊື່ຜ່ານເມັດເຄົ້າ O, ສ່ວນການພົວພັນປີ້ນຈະເປັນເສັ້ນໂຄ້ງ (Hyperbola) ເດີ້!",
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງ: ແບ່ງເງິນ 45,000 Kip ໃນອັດຕາສ່ວນ 7 : 5 : 3. ສ່ວນທີ 3 ຈະໄດ້: 45,000 × 3 / (7 + 5 + 3) = 45,000 × 3 / 15 = 9,000 Kip!",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ຫາສຳປະສິດ ແລະ ຄ່າຂອງຕົວປ່ຽນໃນອັດຕາສ່ວນພົວພັນປີ້ນ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໃຫ້ y ພົວພັນປີ້ນກັບ x. ເມື່ອ x = 2 ຈະໄດ້ y = 6. ສຳປະສິດພົວພັນປີ້ນ k ແມ່ນເທົ່າໃດ? (k = x × y):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໂຈດອັດຕາການເຮັດວຽກຮ່ວມກັນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ທ້າວ ຄຳ ດຳນາແລ້ວຄົນດຽວໃນ 6 ຊົ່ວໂມງ, ນາງ ລີ ດຳນາແລ້ວຄົນດຽວໃນ 3 ຊົ່ວໂມງ, ແລະ ທ້າວ ສີ ດຳນາແລ້ວຄົນດຽວໃນ 4 ຊົ່ວໂມງ. ຖ້າທັງສາມຄົນຊ່ວຍກັນ ຈະໃຊ້ເວລາຈັກຊົ່ວໂມງ?"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ປະໂຫຍກສັນຍະລັກ: 1/t = 1/6 + 1/3 + 1/4 = 9/12 ⇒ t = 12/9 ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span>{"ຊົ່ວໂມງ (ເທົ່າກັບ 1 ຊົ່ວໂມງ"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                <span>{"ນາທີ)"}</span>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຈົ່ງຊອກຫາຄ່າຂອງ y ເມື່ອ x = 4 (y = k/x):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໂຈດການແບ່ງປັນສ່ວນພົວພັນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ແບ່ງເງິນ 45,000 ກີບ ອອກເປັນ 3 ສ່ວນໃນອັດຕາສ່ວນພົວພັນ 7 : 5 : 3. ຈົ່ງຊອກຫາສ່ວນແບ່ງຂອງສ່ວນທີ 1 (ສ່ວນທີ່ຫຼາຍສຸດ)?"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ປະໂຫຍກສັນຍະລັກ: 45,000 × (7 / 15) ="}</span>
+                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "140px", height: "42px" }}></span>
+                <span>{"ກີບ"}</span>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໃຫ້ຕັ້ງສົມຜົນພົວພັນໃຫ້ຖືກຕ້ອງກ່ອນ. ບົດທ້າທາຍ 2: ຄິດໄລ່ຕາມອັດຕາສ່ວນສາມຕົວແປ (Joint Variation or Multiple Ratio) ໂດຍການຄູນ ຫຼື ຫານຢ່າງເປັນລະບົບ ເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງແກ້ໂຈດບັນຫາຕົວຈິງກ່ຽວກັບອັດຕາສ່ວນພົວພັນກົງ ແລະ ປີ້ນ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການແບ່ງປັນຈຳນວນໃຫຍ່ (Large Number Distribution): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ລົດຄັນໜຶ່ງແລ່ນດ້ວຍຄວາມໄວສະເໝີ. ຖ້າໃຊ້ເວລາ 2 ຊົ່ວໂມງ ແລ່ນໄດ້ 120 km. ຖ້າແລ່ນໄດ້ 300 km ຈະຕ້ອງໃຊ້ເວລາຈັກຊົ່ວໂມງ? (ພົວພັນກົງ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"ຊົ່ວໂມງ"}</span>
-                </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຈົ່ງແບ່ງຈຳນວນ 2,409 ອອກເປັນ 3 ສ່ວນໃນອັດຕາສ່ວນພົວພັນ 6 : 3 : 2. ຈົ່ງຊອກຫາຈຳນວນຂອງແຕ່ລະສ່ວນ?"}
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <span>{"- ສ່ວນທີ 1 (6 ສ່ວນ) ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຄົນງານ 6 ຄົນ ເຮັດວຽກຢ່າງໜຶ່ງແລ້ວໃນ 4 ວັນ. ຖ້າຕ້ອງການໃຫ້ວຽກນັ້ນແລ້ວພາຍໃນ 3 ວັນ, ຈະຕ້ອງໃຊ້ຄົນງານທັງໝົດຈັກຄົນ? (ພົວພັນປີ້ນ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"ຄົນ"}</span>
-                </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <span>{"- ສ່ວນທີ 2 (3 ສ່ວນ) ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <span>{"- ສ່ວນທີ 3 (2 ສ່ວນ) ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               </div>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຄິດໄລ່ແບ່ງປັນສ່ວນແບ່ງຕາມອັດຕາສ່ວນ (Dividing into ratios): "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການເປີດກັອກນ້ຳໃສ່ອ່າງ (Water Tap Filling): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ເຮົາຕ້ອງການແບ່ງເງິນ 120,000 ກີບ ໃຫ້ທ້າວ A ແລະ ນາງ B ຕາມອັດຕາສ່ວນ 2 : 3. ທ້າວ A ຈະໄດ້ຮັບເງິນຈັກກີບ? (ຄຳແນະນຳ: ສ່ວນແບ່ງ A = 120,000 × 2/(2+3)):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: A ໄດ້"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
-                  <span>{"ກີບ"}</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຈາກຂໍ້ (1), ນາງ B ຈະໄດ້ຮັບເງິນຫຼາຍກວ່າທ້າວ A ຈັກກີບ? (ຕອບເປັນຕົວເລກ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
-                  <span>{"ກີບ"}</span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ກັອກນ້ຳທີ 1 ແລະ ທີ 2 ໄຂໃສ່ອ່າງພ້ອມກັນຈະເຮັດໃຫ້ນ້ຳເຕັມອ່າງໃນ 30 ນາທີ ແລະ 20 ນາທີ ຕາມລຳດັບ. ຖ້າເປີດກັອກທີ 3 ປ່ອຍນ້ຳອອກຈະເຮັດໃຫ້ນ້ຳໝົດອ່າງໃນ 40 ນາທີ. ຖ້າໄຂທັງ 3 ກັອກພ້ອມກັນ ຈະໃຊ້ເວລາຈັກນາທີຈຶ່ງເຕັມອ່າງ?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <span>{"ເວລາຮ່ວມ t = 240 /"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+              <span>{"="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span>{"ນາທີ"}</span>
             </div>
           </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ຜົນບວກອັດຕາສ່ວນແມ່ນ 6 + 3 + 2 = 11. ສ່ວນທີ 1: 2409 × 6 / 11 = 1314. ສ່ວນທີ 2: 2409 × 3 / 11 = 657. ສ່ວນທີ 3: 2409 × 2 / 11 = 438. ສ່ວນກັອກນ້ຳ: 1/t = 1/30 + 1/20 - 1/40 = (4 + 6 - 3)/120 = 7/120 ⇒ t = 120/7 ນາທີ (ຫຼື 240/14 = 120/7 = 17.14 ນາທີ)!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາລະດັບສາກົນກ່ຽວກັບອັດຕາສ່ວນ ແລະ ແຜນທີ່: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດຄັດຈ້ອນອັດຕາສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ແຜນທີ່ແຜ່ນໜຶ່ງມີມາດຕາສ່ວນ (Scale) 1 : 50,000. ຖ້າວັດແທກໄລຍະທາງໃນແຜນທີ່ໄດ້ 4 cm, ໄລຍະທາງຈິງຈະແມ່ນຈັກກິໂລແມັດ (km)? (1 km = 100,000 cm):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ກິໂລແມັດ (km)"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຖ້າໄລຍະທາງຈິງລະຫວ່າງສອງບ້ານແມ່ນ 10 km, ໃນແຜນທີ່ມາດຕາສ່ວນ 1 : 50,000 ດຽວກັນນີ້ ຈະມີຄວາມຍາວຈັກຊັງຕີແມັດ (cm)?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ຊັງຕີແມັດ (cm)"}</span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ອັດຕາສ່ວນ 30 cm ຕໍ່ 1 m ໃນຮູບແບບຂັ້ນຕ່ຳແມ່ນເທົ່າໃດ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: 3 :"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ອັດຕາສ່ວນຮູບສາມແຈຄ້າຍຄືກັນ (Proportional Triangles): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດການແບ່ງປັນສ່ວນພົວພັນງ່າຍດາຍ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຮູບສາມແຈສອງຮູບຄ້າຍຄືກັນ ມີອັດຕາສ່ວນຄ້າຍຄືກັນແມ່ນ 2 : 3. ຖ້າຮູບສາມແຈນ້ອຍມີລວງຮອບ 24 cm, ລວງຮອບຂອງຮູບສາມແຈໃຫຍ່ຈະແມ່ນຈັກຊັງຕີແມັດ (cm)?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"cm"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຖ້າອັດຕາສ່ວນເນື້ອທີ່ແມ່ນກຳລັງສອງຂອງອັດຕາສ່ວນຂ້າງ (2² : 3² = 4 : 9), ແລະ ຮູບສາມແຈນ້ອຍມີເນື້ອທີ່ 16 cm², ຮູບສາມແຈໃຫຍ່ຈະມີເນື້ອທີ່ຈັກຊັງຕີແມັດມົນທົນ (cm²)?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"cm²"}</span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ແບ່ງເງິນ 45,000 Kip ໃຫ້ 3 ສ່ວນໃນອັດຕາສ່ວນ 7 : 5 : 3. ສ່ວນແບ່ງທີ່ນ້ອຍທີ່ສຸດແມ່ນຈັກ Kip?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ໄດ້ຮັບ"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+            <span>{"Kip."}</span>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u6-ans-1-1">{"(1) 4 (ເພາະວ່າ k = y/x = 12/3 = 4)"}</span>,
-          <span key="u6-ans-1-2">{"(2) 20 (ເພາະວ່າ y = 4 × 5 = 20)"}</span>,
-        ],
+          <span key="1-1">{"(1) 300 (cm), 5 (ຄິດໄລ່: 120 / 300 = 12 / 30 = 2 / 5)"}</span>,
+          <span key="1-2">{"(2) 50 (ຄິດໄລ່: 500 : 30 = 50 : 3)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u6-ans-2-1">{"(1) 12 (ເພາະວ່າ k = 2 × 6 = 12)"}</span>,
-          <span key="u6-ans-2-2">{"(2) 3 (ເພາະວ່າ y = 12 / 4 = 3)"}</span>,
-        ],
+          <span key="2">{"3.45 (ຄິດໄລ່: 2.3 × 1.5 = 3.45 km)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"1.33 (ຫຼື 4/3)"}</span>,
+          <span key="3-2">{"20"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4">{"21,000 (ຄິດໄລ່: 45,000 × 7 / 15 = 21,000 ກີບ)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u6-ans-t1-1">{"(1) 5 (ເພາະວ່າອັດຕາສ່ວນຄວາມໄວແມ່ນ 60 km/ຊົ່ວໂມງ, ດັ່ງນັ້ນ 300 / 60 = 5 ຊົ່ວໂມງ)"}</span>,
-          <span key="u6-ans-t1-2">{"(2) 8 (ເພາະວ່າຜົນຄູນຄົນງານ × ວັນ ຕ້ອງຄົງທີ່: 6 × 4 = 24. ດັ່ງນັ້ນ 24 / 3 = 8 ຄົນ)"}</span>,
-        ],
+          <span key="c1-1">{"- ສ່ວນທີ 1 = 1,314"}</span>,
+          <span key="c1-2">{"- ສ່ວນທີ 2 = 657"}</span>,
+          <span key="c1-3">{"- ສ່ວນທີ 3 = 438 (ຄິດໄລ່: 2,409 / 11 = 219. ຄູນກັບ 6, 3, 2 ຕາມລຳດັບ)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u6-ans-t2-1">{"(1) 48,000 (ຫຼື 48000. ເພາະວ່າ A ໄດ້ 120,000 × 2/5 = 48,000 ກີບ)"}</span>,
-          <span key="u6-ans-t2-2">{"(2) 24,000 (ຫຼື 24000. ເພາະວ່າ B ໄດ້ 120,000 × 3/5 = 72,000 ກີບ. ຜົນຕ່າງແມ່ນ 72,000 - 48,000 = 24,000 ກີບ)"}</span>,
-        ],
+          <span key="c2-1">{"14"}</span>,
+          <span key="c2-2">{"17.14 (ຄິດໄລ່: 1/t = 1/30 + 1/20 - 1/40 = 7/120 ⇒ t = 120/7 = 17.14 ນາທີ)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u6-ans-s1-1">{"(1) 2 (ເພາະວ່າ 4 cm × 50,000 = 200,000 cm = 2 km)"}</span>,
-          <span key="u6-ans-s1-2">{"(2) 20 (ເພາະວ່າ 10 km = 1,000,000 cm. ດັ່ງນັ້ນ 1,000,000 / 50,000 = 20 cm)"}</span>,
-        ],
+          <span key="s1">{"10 (ຄິດໄລ່: 30 cm : 100 cm = 3 : 10)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u6-ans-s2-1">{"(1) 36 (ເພາະວ່າ ອັດຕາສ່ວນແມ່ນ 2/3 = 24 / L_ໃຫຍ່  ⇒  L_ໃຫຍ່ = 36 cm)"}</span>,
-          <span key="u6-ans-s2-2">{"(2) 36 (ເພາະວ່າ ອັດຕາສ່ວນເນື້ອທີ່ແມ່ນ 4/9 = 16 / S_ໃຫຍ່  ⇒  S_ໃຫຍ່ = 36 cm²)"}</span>,
-        ],
-      },
+          <span key="s2">{"9,000 (ຄິດໄລ່: 45,000 × 3 / 15 = 9,000 Kip)"}</span>
+        ]
+      }
     ],
-    advice: "ຈົ່ງສັງເກດໃຫ້ດີວ່າ ປະລິມານທີ່ກຳນົດແມ່ນການພົວພັນກົງ (ຜົນຫານຄົງທີ່) ຫຼື ການພົວພັນປີ້ນ (ຜົນຄູນຄົງທີ່) ເພື່ອຈະໄດ້ຕັ້ງສົມຜົນໄດ້ຢ່າງຖືກຕ້ອງເດີ້!",
-  },
+    advice: "ດີເລີດ! ເຈົ້າໄດ້ຮຽນຮູ້ກ່ຽວກັບອັດຕາສ່ວນ, ໂຈດການເຮັດວຽກຮ່ວມກັນ ແລະ ການແບ່ງປັນຕາມອັດຕາສ່ວນພົວພັນຢ່າງຄົບຖ້ວນແລ້ວ. ນີ້ແມ່ນຫົວຂໍ້ທີ່ມີປະໂຫຍດຫຼາຍໃນຊີວິດຈິງ!"
+  }
 };

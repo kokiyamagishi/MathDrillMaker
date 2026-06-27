@@ -1,341 +1,285 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit28Data: UnitData = {
   unitNumber: 28,
-  unitTitle: "ພາກທີ III - ບົດທີ 28: ຫຼັກເກັນໂກຊິນ (Cosine Rule)",
-  unitGoal:
-    "ຮຽນຮູ້ ແລະ ນຳໃຊ້ຫຼັກເກັນໂກຊິນ (Cosine Law) ເພື່ອຄິດໄລ່ຂ້າງທີສາມ ເມື່ອຮູ້ສອງຂ້າງ ແລະ ມຸມໜຶ່ງ, ຫຼື ຊອກຫາຂະໜາດຂອງມຸມ ເມື່ອຮູ້ສາມຂ້າງຂອງຮູບສາມແຈ",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 28 ໜ້າ 163-168",
+  unitTitle: "ພາກທີ III - ບົດທີ 28: ຫຼັກເກນໂກຊີນ (The Law of Cosines)",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບຫຼັກເກນໂກຊີນໃນຮູບສາມແຈໃດໆ a² = b² + c² - 2bc cos A, ການຄິດໄລ່ຂ້າງ ແລະ ມຸມ, ແລະ ການປະສົມປະສານຫຼັກເກນຊີນ-ໂກຊີນໃນການແກ້ໂຈດ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 130-134",
   subSections: [
     {
-      title: "1. ເນື້ອໃນຫຼັກເກັນໂກຊິນ (Trigonometric Cosine Law)",
+      title: "1. ຫຼັກເກນໂກຊີນ ແລະ ການຫາຂ້າງທີສາມ (The Law of Cosines & Finding the Third Side)",
       keyPoint: {
-      title: "1. ເນື້ອໃນຫຼັກເກັນໂກຊິນ (Trigonometric Cosine Law)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ໃນຮູບສາມແຈ ABC ໃດໜຶ່ງ, ເຮົາຈະມີສູດຫຼັກເກັນໂກຊິນດັ່ງນີ້:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "12px",
-            }}
-          >
-            <div>
-              <strong style={{ color: "#E65100" }}>{"• ສູດຊອກຫາຄວາມຍາວຂ້າງ (Side Formula):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#D84315" }}>
-                {"a² = b² + c² - 2bc · cos A"}
-              </span>
-              <br />
-              <span style={{ paddingLeft: "20px", color: "#555" }}>
-                {"(ເຊັ່ນດຽວກັນ: b² = a² + c² - 2ac · cos B  ແລະ  c² = a² + b² - 2ab · cos C)"}
-              </span>
+        title: "ຫຼັກເກນໂກຊີນພື້ນຖານ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃນຮູບສາມແຈ ABC ໃດໆ ທີ່ມີຂ້າງກົງກັນຂ້າມມຸມ A, B, C ແມ່ນ a, b, c ຕາມລໍາດັບ:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ສູດຫຼັກເກນໂກຊີນ:"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
+                <li><strong>{"ຊອກຫາຂ້າງ a:"}</strong>{" a² = b² + c² - 2bc cos A"}</li>
+                <li><strong>{"ຊອກຫາຂ້າງ b:"}</strong>{" b² = a² + c² - 2ac cos B"}</li>
+                <li><strong>{"ຊອກຫາຂ້າງ c:"}</strong>{" c² = a² + b² - 2ab cos C"}</li>
+              </ul>
             </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• ສູດຊອກຫາຂະໜາດຂອງມຸມ (Angle Formula):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#D84315", display: "inline-flex", alignItems: "center", gap: "6px" }}>
-                {"cos A = "}
-                <Fraction num="b² + c² - a²" den="2bc" />
-              </span>
-            </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຫຼັກເກນໂກຊີນແມ່ນຮູບແບບທົ່ວໄປຂອງຫຼັກເກນປີຕາກໍ (ເມື່ອ A = 90°, cos 90° = 0 ຈະກາຍເປັນ a² = b² + c²)."}
+            </p>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ຫຼັກເກັນໂກຊິນເປັນການຂະຫຍາຍຂອງທິດສະດີປີຕາກໍ! ຖ້າມຸມ A = 90° (cos 90° = 0), ສູດຈະກາຍເປັນ a² = b² + c² ທັນທີເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຫຼັກເກນໂກຊີນມີປະໂຫຍດຫຼາຍໃນການຊອກຫາຂ້າງທີສາມ ເມື່ອເຮົາຮູ້ສອງຂ້າງ ແລະ ມຸມລະຫວ່າງສອງຂ້າງນັ້ນ (SAS)!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ຄວາມຍາວຂອງຂ້າງທີສາມ ໂດຍນຳໃຊ້ຫຼັກເກັນໂກຊິນ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໃນຮູບສາມແຈ ABC ມີ b = 3 cm, c = 4 cm ແລະ ມຸມ A = 90°. ຂ້າງ a ຈະແມ່ນຈັກ cm? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃນຮູບສາມແຈ ABC, ໃຫ້ b = 2, a = √3 - 1, ແລະ ມຸມ C = 120°. ຈົ່ງຊອກຫາຂ້າງ c (AB): "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ຄ່າຂອງ cos 120° ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ຄ່າຂອງ c² = 6. ດັ່ງນັ້ນຂ້າງ c (AB) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) 在ຮູບສາມແຈ ABC ມີ a = 2 cm, c = 3 cm ແລະ ມຸມ B = 60°. ຂ້າງ b ຈະແມ່ນຈັກ cm? (ຕອບເປັນຕົວເລກຖ້ວນ, ຄຳແນະນຳ: cos 60° = 0.5):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃນຮູບສາມແຈ ABC, ໃຫ້ a = 1, b = 2, ແລະ c = √3. ຈົ່ງຄິດໄລ່: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ຄ່າຂອງ cos A = (b² + c² - a²) / 2bc ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ຄ່າຂອງມຸມ A ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"ອົງສາ"}</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ບົດຮຽນພື້ນຖານ",
-      keyPoint: { content: <span /> },
-      problems: [
-        {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມ ຈາກຄວາມຍາວຂອງສາມຂ້າງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໃນຮູບສາມແຈ ABC ມີ a = 3 cm, b = 5 cm, c = 7 cm. ຈົ່ງຊອກຫາຄ່າ cos C (ຕອບເປັນເລກສ່ວນຕິດລົບ, ຕົວຢ່າງ: -1/2):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ມຸມ C ຈະມີຂະໜາດແມ່ນຈັກອົງສາ? (ຕອບເປັນຕົວເລກຖ້ວນ, ຕົວຢ່າງ: 120):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+      title: "2. ການຄິດໄລ່ມຸມ ແລະ ການປະສົມປະສານຫຼັກເກນ (Finding Angles & Combined Methods)",
+      keyPoint: {
+        title: "ການຫາທຸກມຸມເມື່ອຮູ້ສາມດ້ານ (SSS)",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ເມື່ອຮູ້ສາມດ້ານ a, b, c, ເຮົາສາມາດຊອກຫາມຸມໃດໜຶ່ງໄດ້ສະເໝີ ໂດຍນຳໃຊ້ສູດຍ້າຍຂ້າງ:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ສູດຊອກຫາມຸມ:"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
+                <li>{"cos A = (b² + c² - a²) / 2bc"}</li>
+                <li>{"cos B = (a² + c² - b²) / 2ac"}</li>
+                <li>{"cos C = (a² + b² - c²) / 2ab"}</li>
+              </ul>
             </div>
           </div>
-        </div>
-      ),
-    }
+        ),
+        hint: {
+          text: "💡 ຫຼັງຈາກຊອກຫາມຸມທຳອິດໂດຍໃຊ້ຫຼັກເກນໂກຊີນ, ມຸມທີສອງສາມາດຊອກໄດ້ງ່າຍຂຶ້ນໂດຍການໃຊ້ຫຼັກເກນຊີນ!",
+          isBlue: false
+        }
+      },
+      problems: [
+        {
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃນຮູບສາມແຈ ABC, ໃຫ້ b = √6 - √2, c = 2√3, ແລະ ມຸມ A = 45°. ຈົ່ງຊອກຫາ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ຄ່າຂອງ a² = 8. ດັ່ງນັ້ນຂ້າງ a ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ຄ່າຂອງມຸມ C ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"ອົງສາ"}</span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາໄລຍະຫ່າງລະຫວ່າງສອງຈຸດສັງເກດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ໃຫ້ຈຸດ A ຫ່າງຈາກຈຸດ P ແມ່ນ AP = 50√6 ແມັດ, ແລະ ຈຸດ A ຫ່າງຈາກ Q ແມ່ນ AQ = 100√2 ແມັດ. ມຸມ PAQ = 30°. ຈົ່ງຊອກຫາໄລຍະຫ່າງ PQ?"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ຕອບ: PQ ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                <span>{" ແມັດ (ຂຽນໃນຮູບຮ່າງ √2)"}</span>
+              </div>
+            </div>
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໃຫ້ລະວັງເຄື່ອງໝາຍລົບຂອງ cos θ ເມື່ອເປັນມຸມຫວາ (cos 120° = -1/2)! ບົດທ້າທາຍ 2: ໃຊ້ຄວາມຮູ້ເລກກຳລັງສອງໃຫ້ຖືກຕ້ອງ!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາຄວາມຍາວຂ້າງ ເມື່ອມຸມທີ່ໃຫ້ເປັນມຸມຫວາ (Obtuse Angle): "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດຊອກຫາຂ້າງຂອງສາມແຈ (Trigonometry Parameter Calculation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ໃນຮູບສາມແຈ ABC ມີ a = 3 cm, b = 5 cm ແລະ ມຸມ C = 120°. ຂ້າງ c ຈະມີຄວາມຍາວຈັກ cm? (⚠️ cos 120° = -0.5, ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: c ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"cm"}</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ໃນຮູບສາມແຈ ABC ມີ b = 5 cm, c = 8 cm ແລະ ມຸມ A = 60°. ຂ້າງ a ຈະມີຄວາມຍາວຈັກ cm? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: a ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"cm"}</span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃນຮູບສາມແຈ ABC, ໃຫ້ a = 3, ມຸມ B = 45°, ມຸມ C = 15°. ຈົ່ງຊອກຫາຂ້າງ b (AC)?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <span>{"ຕອບ: b ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span>{" (ຂຽນຮູບຮ່າງ √ ຖ້າມີ)"}</span>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາຄວາມຍາວຂ້າງ ໂດຍໃຊ້ລະບົບສົມຜົນກັບຫຼັກເກັນໂກຊິນ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການຊອກຫາມຸມໃຫຍ່ສຸດ (Finding the Largest Angle): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ໃນຮູບສາມແຈ ABC ມີ a = 7 cm, b = 5 cm ແລະ cos C = 1/5. ຂ້າງ c ຈະມີຄວາມຍາວຈັກ cm? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: c ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"cm"}</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ໃນຮູບສາມແຈ ABC ມີ a = 5 cm, b = 6 cm, c = 9 cm. ມຸມ A ຂອງຮູບສາມແຈນີ້ ຈະແມ່ນມຸມແຫຼມ (cos A > 0) ຫຼື ມຸມຫວາ (cos A < 0)? (ຕອບ ມຸມແຫຼມ ຫຼື ມຸມຫວາ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃນຮູບສາມແຈ ABC, ໃຫ້ຂ້າງ a = 3, b = 5, c = 7. ຈົ່ງຊອກຫາຄ່າຂອງມຸມທີ່ໃຫຍ່ທີ່ສຸດ (ມຸມ C ກົງກັນຂ້າມດ້ານຍາວສຸດ)?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <span>{"ຕອບ: ມຸມໃຫຍ່ສຸດແມ່ນ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span>{" ອົງສາ"}</span>
             </div>
           </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ມຸມ A = 180° - (45° + 15°) = 120°. ຫຼັກເກນຊີນ: a/sin A = b/sin B ⇒ 3/sin 120° = b/sin 45° ⇒ b = 3 sin 45° / sin 120° = 3(√2/2) / (√3/2) = √6! ສຳລັບມຸມໃຫຍ່ສຸດ: cos C = (a²+b²-c²)/2ab = (9+25-49)/30 = -15/30 = -1/2 ⇒ C = 120°!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາມຸມພິເສດ ໂດຍນຳໃຊ້ສູດ Cosine: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ສູດຫຼັກເກນໂກຊີນສໍາລັບມຸມ C = 90°: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ໃນຮູບສາມແຈ ABC ທີ່ມີ a = 2, b = 2, c = 2. ມຸມ A ຈະມີຂະໜາດຈັກອົງສາ? (ຄຳແນະນຳ: ຮູບສາມແຈສະເໝີ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: A ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"°"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ໃນຮູບສາມແຈ ABC ທີ່ມີ a = √3, b = 1, c = 2. ມຸມ B ຈະມີຂະໜາດຈັກອົງສາ? (ຄຳແນະນຳ: cos B = (3 + 4 - 1)/(2*√3*2) = 6/(4√3) = √3/2):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: B ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"°"}</span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ຖ້າ C = 90°, ຫຼັກເກນ c² = a² + b² - 2ab cos C ຈະກາຍເປັນສູດໃດ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: c² ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາຕົວຈິງກ່ຽວກັບໄລຍະຫ່າງການຍິງເປົ້າ (Target Shooting Distance): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ຄຳນວນດ້ານ c ຈາກມຸມ 60°: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ທ້າວພອນຢືນຢູ່ຈຸດ A ຍິງປືນໃສ່ເປົ້າ B ທີ່ຢູ່ຫ່າງ 8 m. ຫຼັງຈາກນັ້ນລາວຫັນປ່ຽນມຸມ 60° ຍິງໃສ່ເປົ້າ C ທີ່ຢູ່ຫ່າງ 5 m. ຈົ່ງຊອກຫາໄລຍະຫ່າງ BC ລະຫວ່າງສອງເປົ້ານີ້ (m) (ຕອບເປັນຕົວເລກຖ້ວນ, ໝາຍເຫດ: ມຸມ BAC = 60°):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: BC ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ແມັດ (m)"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຖ້າໄລຍະຫ່າງ BAC ປ່ຽນເປັນ 90° (ຍິງຕັ້ງສາກກັນ), ໄລຍະຫ່າງ BC ຈະແມ່ນຈັກແມັດ? (ຕອບໃນຮູບຮ່າງ √a, ຕົວຢ່າງ: √89):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: BC ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"m"}</span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ໃຫ້ຮູບສາມແຈ ABC ມີ a = 3, b = 8, ມຸມ C = 60°. ຈົ່ງຊອກຫາຂ້າງ c?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: c ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u28-ans-1-1">{"(1) 5 (ເພາະວ່າ a² = 3² + 4² - 2*3*4*cos 90° = 9 + 16 - 0 = 25 ⇒ a = 5 cm)"}</span>,
-          <span key="u28-ans-1-2">{"(2) √7 (ເພາະວ່າ b² = 2² + 3² - 2*2*3*cos 60° = 4 + 9 - 6 = 7 ⇒ b = √7 cm, ຂໍໂທດ! ຖ້າຖາມຕົວເລກຖ້ວນ ມັນຄື √7, ແຕ່ໃນຕົວຈິງແມ່ນ √7)"}</span>,
-        ],
+          <span key="1-1">{"-1/2 (ຄິດໄລ່: cos 120° = -1/2)"}</span>,
+          <span key="1-2">{"√6 (ຄິດໄລ່: c² = 2² + (√3-1)² - 2(2)(√3-1)(-1/2) = 4 + 4 - 2√3 + 2√3 - 2 = 6 ⇒ c = √6)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u28-ans-2-1">{"(1) -1/2 (ເພາະວ່າ cos C = (3² + 5² - 7²) / (2*3*5) = (9 + 25 - 49) / 30 = -15/30 = -1/2)"}</span>,
-          <span key="u28-ans-2-2">{"(2) 120 (ເພາະວ່າ cos C = -1/2 ດັ່ງນັ້ນ ມຸມ C = 120°)"}</span>,
-        ],
+          <span key="2-1">{"√3 / 2 (ຄິດໄລ່: cos A = (4 + 3 - 1) / 4√3 = 6 / 4√3 = √3/2)"}</span>,
+          <span key="2-2">{"30 (ຄິດໄລ່: cos A = √3/2 ⇒ A = 30°)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"2√2 (ຄິດໄລ່: a = √8 = 2√2)"}</span>,
+          <span key="3-2">{"120 (ຄິດໄລ່: cos C = (a²+b²-c²)/2ab = -1/2 ⇒ C = 120°)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4">{"50√2 (ຄິດໄລ່: PQ² = AP² + AQ² - 2 AP AQ cos 30° = 15000 + 20000 - 30000 = 5000 ⇒ PQ = 50√2)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u28-ans-t1-1">{"(1) 7 (ຍ້ອນ c² = 3² + 5² - 2*3*5*(-0.5) = 9 + 25 + 15 = 49 ⇒ c = 7 cm)"}</span>,
-          <span key="u28-ans-t1-2">{"(2) 7 (ຍ້ອນ a² = 5² + 8² - 2*5*8*0.5 = 25 + 64 - 40 = 49 ⇒ a = 7 cm)"}</span>,
-        ],
+          <span key="c1">{"√6 (ຄິດໄລ່: b = a sin B / sin A = 3 × sin 45° / sin 120° = √6)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u28-ans-t2-1">{"(1) 6 (ຍ້ອນ c² = 7² + 5² - 2*7*5*(1/5) = 49 + 25 - 14 = 60, ຂໍໂທດ! c = √60 = 2√15 cm)"}</span>,
-          <span key="u28-ans-t2-2">{"(2) ມຸມແຫຼມ (ເພາະວ່າ cos A = (5² + 6² - 9²) / (2*5*6) = (25 + 36 - 81) / 60 = -20/60 = -1/3 < 0, ດັ່ງນັ້ນເປັນມຸມຫວາ)"}</span>,
-        ],
+          <span key="c2">{"120 (ຄິດໄລ່: cos C = (9 + 25 - 49)/30 = -1/2 ⇒ C = 120°)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u28-ans-s1-1">{"(1) 60 (ເພາະວ່າຮູບສາມແຈສະເໝີ ມຸມທັງໝົດແມ່ນ 60°)"}</span>,
-          <span key="u28-ans-s1-2">{"(2) 30 (ເພາະວ່າ cos B = √3/2 ດັ່ງນັ້ນ ມຸມ B = 30°)"}</span>,
-        ],
+          <span key="s1">{"a² + b² (ຄິດໄລ່: cos 90° = 0 ⇒ c² = a² + b²)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u28-ans-s2-1">{"(1) 7 (ເພາະ BC² = 8² + 5² - 2*8*5*cos 60° = 64 + 25 - 40 = 49 ⇒ BC = 7 m)"}</span>,
-          <span key="u28-ans-s2-2">{"(2) √89 (ເພາະ BC² = 8² + 5² - 0 = 64 + 25 = 89 ⇒ BC = √89 m)"}</span>,
-        ],
-      },
+          <span key="s2">{"7 (ຄິດໄລ່: c² = 9 + 64 - 48 cos 60° = 73 - 24 = 49 ⇒ c = 7)"}</span>
+        ]
+      }
     ],
-    advice: "ຫຼັກເກັນໂກຊິນ ເປັນເຄື່ອງມືທີ່ດີເລີດທີ່ສຸດໃນການຄິດໄລ່ຄວາມຍາວ ແລະ ມຸມຂອງຮູບສາມແຈທົ່ວໄປ! ມັນປຽບເໝືອນທິດສະດີປີຕາກໍສຳລັບທຸກໆມຸມເດີ້!",
-  },
+    advice: "ເກັ່ງຫຼາຍ! ການນຳໃຊ້ຫຼັກເກນໂກຊີນ ຈະຊ່ວຍໃຫ້ເຈົ້າແກ້ໄຂບັນຫາເລຂາຄະນິດ ແລະ ວັດແທກໄລຍະທາງໃນຊີວິດຈິງໄດ້ຢ່າງງ່າຍດາຍ. ສູ້ໆຕໍ່ໄປເດີ້!"
+  }
 };

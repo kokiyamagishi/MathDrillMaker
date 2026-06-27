@@ -1,288 +1,299 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", verticalAlign: "middle", alignItems: "center", padding: "0 4px", fontSize: "0.95em", transform: "translateY(-0.05em)" }}>
-    <span style={{ borderBottom: "1.5px solid currentColor", paddingBottom: "1px", lineHeight: 1, fontWeight: "bold" }}>{num}</span>
-    <span style={{ paddingTop: "1.5px", lineHeight: 1, fontWeight: "bold" }}>{den}</span>
-  </span>
-);
-
 export const unit21Data: UnitData = {
   unitNumber: 21,
-  unitTitle: "ພາກທີ II - ບົດທີ 21: ມາດຕາສ່ວນ",
-  unitGoal:
-    "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈຄວາມໝາຍຂອງມາດຕາສ່ວນ, ວິທີອ່ານມາດຕາສ່ວນໃນແຜນທີ່ ແລະ ການຄິດໄລ່ຫາໄລຍະທາງຕົວຈິງ ຫຼື ໄລຍະທາງໃນແຜນທີ່",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ບົດທີ 21 ໜ້າ 142-146",
+  unitTitle: "ພາກທີ III - ບົດທີ 21: ມາດຕາສ່ວນ (Scale)",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍຂອງມາດຕາສ່ວນ, ມາດຕາສ່ວນຫຍໍ້ (Reduction Scale), ມາດຕາສ່ວນຂະຫຍາຍ (Enlargement Scale) ແລະ ການປ່ຽນແປງຄິດໄລ່ໄລຍະທາງຕົວຈິງກັບໄລຍະທາງໃນແຜນຜັງ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 168-172",
   subSections: [
     {
-      title: "1. ຄວາມໝາຍຂອງມາດຕາສ່ວນ (Definition of Scale)",
+      title: "1. ຄວາມໝາຍຂອງມາດຕາສ່ວນ (Concept of Scale)",
       keyPoint: {
-      title: "1. ຄວາມໝາຍຂອງມາດຕາສ່ວນ (Definition of Scale)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ມາດຕາສ່ວນ ແມ່ນອັດຕາສ່ວນລະຫວ່າງ ໄລຍະທາງໃນແຜນທີ່ (ຫຼື ໃນຮູບແຕ້ມ) ຕໍ່ກັບ ໄລຍະທາງຕົວຈິງ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E3F2FD",
-              border: "2px solid #2196F3",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              textAlign: "center",
-              fontWeight: "bold",
-              color: "#0D47A1",
-            }}
-          >
-            {"ມາດຕາສ່ວນ = "}
-            <Fraction num="ໄລຍະທາງໃນແຜນທີ່" den="ໄລຍະທາງຕົວຈິງ" />
+        title: "ສູດຄິດໄລ່ມາດຕາສ່ວນ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ມາດຕາສ່ວນ ແມ່ນອັດຕາສ່ວນລະຫວ່າງ ໄລຍະທາງໃນແຜນຜັງ (ຫຼື ແຜນວາດ) ກັບ ໄລຍະທາງຕົວຈິງ:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9", display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
+              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#1565C0" }}>{"ມາດຕາສ່ວນ = ໄລຍະທາງໃນຮູບແຕ້ມ / ໄລຍະທາງຕົວຈິງ"}</span>
+              <span style={{ fontSize: "1.25rem", color: "#0D47A1" }}>{"*ໝາຍເຫດ: ທັງສອງໄລຍະທາງຕ້ອງຄິດໄລ່ໃນຫົວໜ່ວຍດຽວກັນສະເໝີ (ເຊັ່ນ: ປ່ຽນເປັນ cm ທັງໝົດ)"}</span>
+            </div>
+
+            <div style={{ padding: "16px", backgroundColor: "#F9F9F9", borderRadius: "8px", border: "1px solid #E0E0E0" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#37474F" }}>{"ປະເພດຂອງມາດຕາສ່ວນ:"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6" }}>
+                <li><strong>{"ມາດຕາສ່ວນຫຍໍ້: "}</strong>{" ເຊັ່ນ: 1/100, 1:5,000... (ຄ່າຂອງມັນນ້ອຍກວ່າ 1). ໃຊ້ເພື່ອຍໍ້ຂະໜາດຕົວຈິງໃຫ້ມີຂະໜາດນ້ອຍລົງໃນເຈ້ຍ."}</li>
+                <li><strong>{"ມາດຕາສ່ວນຂະຫຍາຍ: "}</strong>{" ເຊັ່ນ: 5/1, 10:1... (ຄ່າຂອງມັນໃຫຍ່ກວ່າ 1). ໃຊ້ເພື່ອຂະຫຍາຍວັດຖຸຂະໜາດນ້ອຍ (ເຊັ່ນ: ຈຸລັງ, ແມງໄມ້) ໃຫ້ເຫັນຊັດເຈນ."}</li>
+              </ul>
+            </div>
           </div>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"• ຕົວຢ່າງ: ມາດຕາສ່ວນ "}<strong>{"1:10,000"}</strong>{" (ຫຼື "}
-            <Fraction num="1" den="10,000" />
-            {") ໝາຍຄວາມວ່າ 1 cm ໃນແຜນທີ່ ເທົ່າກັບ 10,000 cm (ຫຼື 100 m) ໃນຕົວຈິງ."}
-          </p>
-        </div>
-      ),
-      hint: {
-        text: "💡 ເວລາຄິດໄລ່ ຕ້ອງປ່ຽນຫົວໜ່ວຍຂອງໄລຍະທາງຕົວຈິງ ແລະ ໄລຍະທາງໃນແຜນທີ່ໃຫ້ເປັນຫົວໜ່ວຍດຽວກັນກ່ອນສະເໝີ (ປົກກະຕິແມ່ນ cm)!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ວິທີຈື່: 1:5,000 ໝາຍຄວາມວ່າ 1 cm ໃນແຜນຜັງ ຈະເທົ່າກັບ 5,000 cm (ຫຼື 50 m) ໃນໄລຍະທາງຕົວຈິງ!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p style={{ fontSize: "1.375rem" }}>
-            {"ຈົ່ງຄິດໄລ່ຊອກຫາໄລຍະທາງຕົວຈິງ (ຕອບເປັນຫົວໜ່ວຍທີ່ກຳນົດໃຫ້): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ໃນແຜນທີ່ມາດຕາສ່ວນ 1:20,000. ໄລຍະທາງໃນແຜນທີ່ແມ່ນ 5 cm. ໄລຍະທາງຕົວຈິງແມ່ນຈັກ ແມັດ (m)?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"m"}</span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຕື່ມຕົວເລກ ຫຼື ມາດຕາສ່ວນທີ່ຖືກຕ້ອງໃສ່ຕາຕະລາງຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span>{"ໄລຍະທາງຕົວຈິງ 200 m (20,000 cm), ໄລຍະທາງໃນແຜນຜັງ 2 cm. ມາດຕາສ່ວນແມ່ນ 1:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                </div>
+                
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span>{"ໄລຍະທາງຕົວຈິງ 12 m (1,200 cm), ມາດຕາສ່ວນ 1:100. ໄລຍະທາງໃນແຜນຜັງແມ່ນ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"cm"}</span>
+                </div>
               </div>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ໃນແຜນທີ່ມາດຕາສ່ວນ 1:100,000. ໄລຍະທາງໃນແຜນທີ່ແມ່ນ 3 cm. ໄລຍະທາງຕົວຈິງແມ່ນຈັກ ກິໂລແມັດ (km)?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"km"}</span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃນແຜນຜັງຫ້ອງການໜຶ່ງມີມາດຕາສ່ວນຂະຫຍາຍແມ່ນ 5:1. ຖ້າໄລຍະທາງໃນຮູບແຕ້ມຂອງອົງປະກອບເຄື່ອງຈັກແມ່ນ 15 cm, ໄລຍະທາງຕົວຈິງຂອງມັນຈະມີຈັກ cm? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ປະໂຫຍກສັນຍະລັກ: ໄລຍະທາງຕົວຈິງ ="}</span>
+                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                <span>{"= "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span>{"cm"}</span>
               </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ການຄິດໄລ່ໄລຍະທາງຕົວຈິງ (Calculating Real Distance)",
+      title: "2. ການຄິດໄລ່ໄລຍະທາງຕົວຈິງ ແລະ ໄລຍະທາງໃນແຜນຜັງ (Scale Calculations)",
       keyPoint: {
-      title: "2. ການຄິດໄລ່ໄລຍະທາງຕົວຈິງ (Calculating Real Distance)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ສູດຄິດໄລ່ຊອກຫາໄລຍະທາງຕົວຈິງ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div style={{ fontWeight: "bold", color: "#2E7D32" }}>
-              {"• ໄລຍະທາງຕົວຈິງ = ໄລຍະທາງໃນແຜນທີ່ × ພູດຂອງມາດຕາສ່ວນ"}
-            </div>
-            <div>
-              {"ຕົວຢ່າງ: ໃນແຜນທີ່ມາດຕາສ່ວນ "}<strong>{"1:50,000"}</strong>{", ໄລຍະທາງລະຫວ່າງສອງເມັດແມ່ນ 4 cm."}
-              <br />
-              <span style={{ color: "#2E7D32", paddingLeft: "16px" }}>
-                {"→ ໄລຍະທາງຕົວຈິງ = 4 cm × 50,000 = 200,000 cm = 2,000 m = 2 km."}
-              </span>
-            </div>
+        title: "ວິທີການປ່ຽນແປງຄິດໄລ່",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ເຮົາມີຫຼັກການຄິດໄລ່ພື້ນຖານດັ່ງນີ້:"}
+            </p>
+            <ul style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.6" }}>
+              <li><strong>{"ຊອກຫາໄລຍະທາງຕົວຈິງ: "}</strong>{" ໄລຍະທາງຕົວຈິງ = ໄລຍະທາງໃນແຜນຜັງ × ສ່ວນສ່ວນ (ຕົວຫານ) ຂອງມາດຕາສ່ວນ."}</li>
+              <li><strong>{"ຊອກຫາໄລຍະທາງໃນແຜນຜັງ: "}</strong>{" ໄລຍະທາງໃນແຜນຜັງ = ໄລຍະທາງຕົວຈິງ / ສ່ວນສ່ວນ (ຕົວຫານ) ຂອງມາດຕາສ່ວນ."}</li>
+            </ul>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ການແປງຫົວໜ່ວຍທີ່ຄວນຈື່: 1 m = 100 cm | 1 km = 1,000 m = 100,000 cm ເດີ້!",
+        ),
+        hint: {
+          text: "💡 ຢ່າລືມປ່ຽນຫົວໜ່ວຍຈາກ cm ເປັນ m (ຫານໃຫ້ 100) ຫຼື ເປັນ km (ຫານໃຫ້ 100,000) ຫຼັງຈາກໄດ້ຄຳຕອບຕົວຈິງ!",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p style={{ fontSize: "1.375rem" }}>
-            {"ຈົ່ງຄິດໄລ່ຊອກຫາໄລຍະທາງໃນແຜນທີ່ (ຕອບເປັນ cm): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ໄລຍະທາງຕົວຈິງລະຫວ່າງສອງບ້ານແມ່ນ 1,500 m. ໃນແຜນທີ່ມາດຕາສ່ວນ 1:50,000, ໄລຍະທາງໃນແຜນທີ່ແມ່ນຈັກ cm?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໄລຍະທາງຕົວຈິງລະຫວ່າງສອງເມັດ A ແລະ B ແມ່ນ 100 km. ຖ້າແຕ້ມໃສ່ແຜນທີ່ທີ່ມີມາດຕາສ່ວນ 1:2,000,000, ໄລຍະຫ່າງລະຫວ່າງ A ແລະ B ໃນແຜນທີ່ ຈະຍາວຈັກ cm? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ປະໂຫຍກສັນຍະລັກ: ໄລຍະຫ່າງໃນແຜນທີ່ ="}</span>
+                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "200px", height: "42px" }}></span>
+                <span>{"= "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 <span>{"cm"}</span>
               </div>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ໄລຍະທາງຕົວຈິງແມ່ນ 10 km. ໃນແຜນທີ່ມາດຕາສ່ວນ 1:200,000, ໄລຍະທາງໃນແຜນທີ່ແມ່ນຈັກ cm?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"cm"}</span>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃນແຜນຜັງທີ່ມີມາດຕາສ່ວນ 1:5,000. ຖ້າວັດແທກໄລຍະຫ່າງຂອງສອງສະຖານທີ່ໄດ້ 8 cm, ໄລຍະຫ່າງຕົວຈິງຂອງສອງສະຖານທີ່ນັ້ນຈະມີຈັກ m? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ປະໂຫຍກສັນຍະລັກ: ໄລຍະຕົວຈິງ (m) ="}</span>
+                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "200px", height: "42px" }}></span>
+                <span>{"= "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span>{"m"}</span>
               </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ຊອກຫາມາດຕາສ່ວນໂດຍເອົາ ໄລຍະທາງໃນແຜນທີ່ ຫານໃຫ້ ໄລຍະທາງຕົວຈິງ ຫຼັງຈາກປ່ຽນຫົວໜ່ວຍໃຫ້ຄືກັນແລ້ວ. ບົດທ້າທາຍ 2: ຄິດໄລ່ໄລຍະທາງຕົວຈິງຈາກຄວາມກວ້າງ ແລະ ຄວາມຍາວໃນແຜນວາດ.",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p style={{ fontSize: "1.375rem" }}>
-              {"ຈົ່ງຊອກຫາມາດຕາສ່ວນ ແລະ ຄິດໄລ່ເນື້ອທີ່ຕົວຈິງ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການຊອກຫາຂະໜາດໃນເຈ້ຍແຕ້ມຮູບ (Scale Selection): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ໄລຍະທາງຕົວຈິງແມ່ນ 4 km, ໃນແຜນທີ່ແທກໄດ້ 8 cm. ຖາມວ່າມາດຕາສ່ວນຂອງແຜນທີ່ນີ້ແມ່ນ 1 ຕໍ່ກັບເທົ່າໃດ? (ຕອບເປັນຕົວເລກພູດ ເຊັ່ນ 50000):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: 1 :"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຕ້ອງການແຕ້ມແຜນຜັງສະໜາມບິນທີ່ມີຄວາມຍາວຕົວຈິງ AB = 800 m ໃສ່ປຶ້ມຂຽນຂອງນັກຮຽນ. ຖ້ານັກຮຽນເລືອກມາດຕາສ່ວນ 1:4,000, ຖາມວ່າຄວາມຍາວ AB ໃນປຶ້ມຂຽນຈະຍາວຈັກ cm? ແລະ ມັນເໝາະສົມທີ່ຈະແຕ້ມໃສ່ເຈ້ຍປຶ້ມຂຽນທີ່ມີຄວາມຍາວປະມານ 20 cm ຫຼື ບໍ່? (ຕອບ: 'ເໝາະສົມ' ຫຼື 'ບໍ່ເໝາະສົມ')"}
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <span>{"- ຄວາມຍາວໃນເຈ້ຍ ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span>{"cm"}</span>
               </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຫ້ອງຮຽນໜຶ່ງໃນແຜນວາດມາດຕາສ່ວນ 1:100 ມີຄວາມຍາວ 8 cm. ຄວາມຍາວຕົວຈິງຂອງຫ້ອງຮຽນນີ້ແມ່ນຈັກ ແມັດ (m)?:"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"m"}</span>
-                </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <span>{"- ຄວາມເໝາະສົມແມ່ນ"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "42px" }}></span>
               </div>
             </div>
           </div>
-        ),
+        )
       },
+      {
+        number: 2,
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການຊອກຫາໄລຍະທາງຕົວຈິງລະຫວ່າງສອງເມືອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            </p>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໄລຍະຫ່າງລະຫວ່າງເມືອງ A ແລະ ເມືອງ B ໃນແຜນຜັງທີ່ມີມາດຕາສ່ວນ 1:5,000,000 ແມ່ນ 8.4 cm. ຈົ່ງຊອກຫາໄລຍະທາງຕົວຈິງລະຫວ່າງສອງເມືອງນີ້ມີຈັກ km?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: ໄລຍະທາງຕົວຈິງແມ່ນ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span>{"km."}</span>
+            </div>
+          </div>
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "800 m = 80,000 cm. ຄວາມຍາວໃນເຈ້ຍ = 80,000 / 4,000 = 20 cm. ເນື່ອງຈາກຂະໜາດເຈ້ຍມີພຽງ 20 cm ພໍດີ, ມັນຈະແຕ້ມໄດ້ພໍດີຂອບເຈ້ຍຫຼາຍເກີນໄປ ດັ່ງນັ້ນຈຶ່ງບໍ່ເໝາະສົມ (ຄວນໃຊ້ 1:5,000 ຫຼື 1:8,000)!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p style={{ fontSize: "1.375rem" }}>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາຊີວິດປະຈຳວັນກ່ຽວກັບມາດຕາສ່ວນ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດການແຕ້ມຮູບຫຍໍ້ກະດານດຳ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ສວນຜັກຮູບສີ່ແຈສາກໜຶ່ງມີຄວາມຍາວຕົວຈິງ 50 m. ຖ້າແຕ້ມໃນແຜນຜັງມາດຕາສ່ວນ 1:500, ຄວາມຍາວໃນແຜນຜັງຈະແມ່ນຈັກ cm?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"cm"}</span>
-              </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ກະດານດຳແຜ່ນໜຶ່ງມີຄວາມຍາວຕົວຈິງ 4 m ແລະ ຄວາມກວ້າງ 2 m. ຖ້າຢາກແຕ້ມໃສ່ປຶ້ມຂຽນໂດຍໃຫ້ຄວາມຍາວຂອງມັນເທົ່າກັບ 10 cm, ເຮົາຈະຕ້ອງໃຊ້ມາດຕາສ່ວນເທົ່າໃດ? ແລະ ຄວາມກວ້າງຂອງກະດານໃນຮູບແຕ້ມຈະມີຈັກ cm?"}
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span>{"- ມາດຕາສ່ວນແມ່ນ 1:"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຖ້າຄວາມກວ້າງຕົວຈິງແມ່ນ 30 m, ຄວາມກວ້າງໃນແຜນຜັງຈະແມ່ນຈັກ cm?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"cm"}</span>
-              </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span>{"- ຄວາມກວ້າງໃນຮູບແຕ້ມ ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              <span>{"cm"}</span>
             </div>
           </div>
         </div>
-      ),
+      )
     },
+    {
+      number: 2,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດຄິດໄລ່ມຸມ ແລະ ຂະໜາດໃນຮູບຂະຫຍາຍ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+          </p>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ຮູບສາມແຈ ABC ທີ່ມີສາມຂ້າງແມ່ນ 3 cm, 4 cm, 5 cm. ເຮົາຂະຫຍາຍຮູບສາມແຈນີ້ດ້ວຍມາດຕາສ່ວນ 2:1 (ຂະຫຍາຍເປັນ 2 ເທື່ອ). ຖາມວ່າ ຮູບສາມແຈໃໝ່ທີ່ໄດ້ຈະເປັນຮູບສາມແຈຊະນິດໃດ? ແລະ ຂ້າງທີ່ຍາວທີ່ສຸດຂອງຮູບສາມແຈໃໝ່ຈະມີຈັກ cm?"}
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span>{"- ເປັນຮູບສາມແຈ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span>{"- ຂ້າງຍາວທີ່ສຸດ ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              <span>{"cm"}</span>
+            </div>
+          </div>
+        </div>
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u21-ans-1-1">{"(1) 1,000 (ເພາະ 5 cm × 20,000 = 100,000 cm = 1,000 m)"}</span>,
-          <span key="u21-ans-1-2">{"(2) 3 (ເພາະ 3 cm × 100,000 = 300,000 cm = 3,000 m = 3 km)"}</span>,
-        ],
+          <span key="1-1">{"10000 (ຄິດໄລ່: 2 / 20000 = 1/10000)"}</span>,
+          <span key="1-2">{"12 (ຄິດໄລ່: 1200 / 100 = 12)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u21-ans-2-1">{"(1) 3 (ເພາະ 1,500 m = 150,000 cm. ໄລຍະທາງໃນແຜນທີ່ = 150,000 ÷ 50,000 = 3 cm)"}</span>,
-          <span key="u21-ans-2-2">{"(2) 5 (ເພາະ 10 km = 1,000,000 cm. ໄລຍະທາງໃນແຜນທີ່ = 1,000,000 ÷ 200,000 = 5 cm)"}</span>,
-        ],
+          <span key="2-1">{"15 / 5"}</span>,
+          <span key="2-2">{"3"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"10000000 / 2000000"}</span>,
+          <span key="3-2">{"5"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4-1">{"8 × 5000 / 100"}</span>,
+          <span key="4-2">{"400"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u21-ans-t1-1">{"(1) 50000 (ເພາະ 4 km = 400,000 cm. ມາດຕາສ່ວນ = 8 : 400,000 = 1 : 50,000)"}</span>,
-          <span key="u21-ans-t1-2">{"(2) 8 (ເພາະ 8 cm × 100 = 800 cm = 8 m)"}</span>,
-        ],
+          <span key="c1-1">{"20"}</span>,
+          <span key="c1-2">{"ບໍ່ເໝາະສົມ (ເພາະຍາວເທົ່າກັບເຈ້ຍພໍດີ, ບໍ່ມີຂອບແຕ້ມ)"}</span>
+        ]
+      },
+      {
+        questionNumber: "ທ້າທາຍ 2",
+        answers: [
+          <span key="c2">{"420 (ຄິດໄລ່: 8.4 × 5,000,000 = 42,000,000 cm = 420 km)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u21-ans-s1-1">{"(1) 10 (ເພາະ 50 m = 5,000 cm. ໄລຍະທາງໃນແຜນຜັງ = 5,000 ÷ 500 = 10 cm)"}</span>,
-          <span key="u21-ans-s1-2">{"(2) 6 (ເພາະ 30 m = 3,000 cm. ໄລຍະທາງໃນແຜນຜັງ = 3,000 ÷ 500 = 6 cm)"}</span>,
-        ],
+          <span key="s1-1">{"- ມາດຕາສ່ວນແມ່ນ 1:40 (10 / 400 = 1/40)"}</span>,
+          <span key="s1-2">{"- ຄວາມກວ້າງໃນຮູບແຕ້ມ = 5 cm (200 / 40 = 5)"}</span>
+        ]
       },
+      {
+        questionNumber: "ທົດສອບປະຈຳບົດ 2",
+        answers: [
+          <span key="s2-1">{"- ເປັນຮູບສາມແຈສາກ (ເນື່ອງຈາກ 3² + 4² = 5²)"}</span>,
+          <span key="s2-2">{"- ຂ້າງຍາວທີ່ສຸດ = 10 cm (5 × 2 = 10)"}</span>
+        ]
+      }
     ],
-    advice: "ມາດຕາສ່ວນຊ່ວຍໃຫ້ເຮົາສາມາດແຕ້ມວັດຖຸຂະໜາດໃຫຍ່ (ເຊັ່ນ ປະເທດ, ເມືອງ ຫຼື ອາຄານ) ລົງເທິງເຈ້ຍແຜ່ນນ້ອຍໆໄດ້ຢ່າງຖືກຕ້ອງຕາມອັດຕາສ່ວນຕົວຈິງ. ຢ່າລືມແປງຫົວໜ່ວຍເປັນ cm ກ່ອນສະເໝີເດີ້!",
-  },
+    advice: "ດີເລີດ! ຄວາມເຂົ້າໃຈເລື່ອງມາດຕາສ່ວນ ຊ່ວຍໃຫ້ເຮົາເຂົ້າໃຈແຜນທີ່, ແຜນຜັງອາຄານ, ແລະ ການຫຍໍ້-ຂະຫຍາຍຮູບພາບໄດ້ຢ່າງຖືກຕ້ອງ. ພະຍາຍາມຕໍ່ໄປ!"
+  }
 };

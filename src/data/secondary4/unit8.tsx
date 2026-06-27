@@ -1,396 +1,283 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit8Data: UnitData = {
   unitNumber: 8,
-  unitTitle: "ພາກທີ I - ບົດທີ 8: ການແກ້ໂຈດກ່ຽວກັບຄວາມໄວ, ໄລຍະທາງ ແລະ ເວລາ",
-  unitGoal:
-    "ຮຽນຮູ້ວິທີແກ້ໂຈດບັນຫາຄະນິດສາດກ່ຽວກັບການເຄື່ອນທີ່ (Word Problems of Motion) ໂດຍນຳໃຊ້ສົມຜົນພົວພັນລະຫວ່າງ ໄລຍະທາງ (Distance), ຄວາມໄວ (Speed) ແລະ ເວລາ (Time)",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 8 ໜ້າ 43-48",
+  unitTitle: "ພາກທີ I - ບົດທີ 8: ການແກ້ໂຈດບັນຫາກ່ຽວກັບຄວາມໄວ, ໄລຍະທາງ ແລະ ເວລາ (Speed, Distance, and Time Problems)",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບຄວາມສຳພັນລະຫວ່າງ ຄວາມໄວສະເລ່ຍ (v), ໄລຍະທາງ (S) ແລະ ເວລາ (t), ການແກ້ໂຈດບັນຫາລົດແລ່ນຂຶ້ນ-ລົງຄ້ອຍ, ແລະ ການແກ້ໂຈດບັນຫາກຣາຟການເຄື່ອນທີ່ສວນທາງກັນ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 39-44",
   subSections: [
     {
-      title: "1. ສູດພື້ນຖານຂອງການເຄື່ອນທີ່ (Fundamental Motion Formulas)",
+      title: "1. ຄວາມໄວສະເລ່ຍ ແລະ ສູດພື້ນຖານ (Average Speed Formulas)",
       keyPoint: {
-      title: "1. ສູດພື້ນຖານຂອງການເຄື່ອນທີ່ (Fundamental Motion Formulas)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ການເຄື່ອນທີ່ຂອງວັດຖຸໃນຄວາມໄວສະເໝີ ມີ 3 ສູດພົວພັນທີ່ສຳຄັນດັ່ງນີ້:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div>
-              <strong style={{ color: "#E65100" }}>{"• ໄລຍະທາງ (Distance - d): "}</strong>
-              <span style={{ fontWeight: "bold" }}>{"d = v × t"}</span>
+        title: "ສູດຫຼັກການເຄື່ອນທີ່ສະເໝີ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ການເຄື່ອນທີ່ສະເໝີແມ່ນການເຄື່ອນທີ່ທີ່ມີຄວາມໄວຄົງທີ່. ຄວາມສຳພັນລະຫວ່າງ ຄວາມໄວ (v), ໄລຍະທາງ (S) ແລະ ເວລາ (t) ແມ່ນ:"}
+            </p>
+            <div style={{ display: "flex", justifyContent: "center", gap: "24px", margin: "8px 0", fontSize: "1.6rem", fontWeight: "bold", color: "#1565C0" }}>
+              <span>{"v = S / t"}</span>
+              <span>{"   ;   "}</span>
+              <span>{"S = v × t"}</span>
+              <span>{"   ;   "}</span>
+              <span>{"t = S / v"}</span>
             </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• ຄວາມໄວ (Speed - v): "}</strong>
-              <span style={{ fontWeight: "bold" }}>
-                {"v = "}
-                <Fraction num="d" den="t" />
-              </span>
-            </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• ເວລາ (Time - t): "}</strong>
-              <span style={{ fontWeight: "bold" }}>
-                {"t = "}
-                <Fraction num="d" den="v" />
-              </span>
+            <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ຕົວຢ່າງໂຈດຂຶ້ນ-ລົງຄ້ອຍ (Up and Down Hill):"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"ທ້າວ ແກ້ວ ຖີບລົດຂຶ້ນຄ້ອຍໄລຍະທາງ 10 km ດ້ວຍຄວາມໄວ 10 km/h, ແລ້ວຖີບລົງຄ້ອຍທາງເດີມ 10 km ດ້ວຍຄວາມໄວ 15 km/h. ຄວາມໄວສະເລ່ຍແມ່ນ:"}
+                <br />
+                {"- ໄລຍະທາງທັງໝົດ S = 10 + 10 = 20 km."}
+                <br />
+                {"- ເວລາທັງໝົດ t = t₁ + t₂ = (10/10) + (10/15) = 1 + 2/3 = 5/3 ຊົ່ວໂມງ."}
+                <br />
+                {"- ຄວາມໄວສະເລ່ຍ v = 20 / (5/3) = 20 × 3/5 = 12 km/h."}
+              </p>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ຈົ່ງລະວັງຫົວໜ່ວຍການວັດແທກ! ຖ້າໄລຍະທາງເປັນ km ແລະ ເວລາເປັນ ຊົ່ວໂມງ (h), ຄວາມໄວຕ້ອງເປັນ km/h ເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຈື່ໄວ້ວ່າ ຄວາມໄວສະເລ່ຍ ບໍ່ແມ່ນການເອົາຄວາມໄວສອງອັນມາສະເລ່ຍກັນໂດຍກົງ (ເຊັ່ນ (10+15)/2 = 12.5 ແມ່ນຜິດ!), ແຕ່ຕ້ອງເອົາ ໄລຍະທາງທັງໝົດ ຫານໃຫ້ ເວລາທັງໝົດ ເທົ່ານັ້ນ!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ຫາໄລຍະທາງ, ຄວາມໄວ ຫຼື ເວລາ ຂອງການເຄື່ອນທີ່ພື້ນຖານ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ລົດຈັກຄັນໜຶ່ງແລ່ນດ້ວຍຄວາມໄວ 50 km/h ເປັນເວລາ 3 ຊົ່ວໂມງ. ໄລຍະທາງ d ທີ່ແລ່ນໄດ້ແມ່ນຈັກ km? (d = v × t):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"km"}</span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ຫາຄວາມໄວສະເລ່ຍ ແລະ ເວລາເດີນທາງ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ລົດຈັກຄັນໜຶ່ງແລ່ນໄດ້ 165 km ໃນເວລາ 2 ຊົ່ວໂມງ 45 ນາທີ (2.75 ຊົ່ວໂມງ) ⇒ ຄວາມໄວ v ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span>{"km/h"}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ລົດຖີບແລ່ນຂຶ້ນຄ້ອຍ 12 km ດ້ວຍຄວາມໄວ 12 km/h ແລະ ລົງຄ້ອຍ 12 km ດ້ວຍຄວາມໄວ 24 km/h ⇒ ຄວາມໄວສະເລ່ຍ v ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span>{"km/h"}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ລົດໃຫຍ່ຄັນໜຶ່ງແລ່ນໄດ້ໄລຍະທາງ 240 km ໃນເວລາ 4 ຊົ່ວໂມງ. ຄວາມໄວສະເລ່ຍ v ຂອງລົດແມ່ນຈັກ km/h? (v = d/t):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"km/h"}</span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໂຈດວາງແຜນການເດີນທາງໃຫ້ທັນເວລາ (Target Arrival Time): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+                {"ທ້າວ ພອນ ຕັ້ງໃຈຈະຂັບລົດໄລຍະທາງ 300 km ໃຫ້ຮອດໃນເວລາ 3 ຊົ່ວໂມງ. ແຕ່ໃນ 100 km ທຳອິດ, ລົດຕິດເຮັດໃຫ້ລາວຂັບໄດ້ພຽງຄວາມໄວ 50 km/h. ຖາມວ່າໃນໄລຍະທາງ 200 km ທີ່ເຫຼືອ ລາວຕ້ອງຂັບດ້ວຍຄວາມໄວເທົ່າໃດ ຈຶ່ງຈະຮອດຕາມກຳນົດ?"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ປະໂຫຍກສັນຍະລັກ: v = 200 / (3 - (100 / 50)) ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span>{"km/h"}</span>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ແຜນວາດການເຄື່ອນທີ່ສວນທາງ ແລະ ໄລ່ທັນ (Two Motion Scenarios)",
+      title: "2. ກຣາຟໄລຍະທາງ-ເວລາ ແລະ ການເຄື່ອນທີ່ສວນທາງກັນ (Distance-Time Graphs & Intersecting Paths)",
       keyPoint: {
-      title: "2. ແຜນວາດການເຄື່ອນທີ່ສວນທາງ ແລະ ໄລ່ທັນ (Two Motion Scenarios)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <div style={{ display: "flex", gap: "20px", flexWrap: "wrap", justifyContent: "center" }}>
-            {/* Overtaking / Chase SVG */}
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <span style={{ fontSize: "1.125rem", color: "#666", marginBottom: "4px" }}>{"ການເຄື່ອນທີ່ໄລ່ທັນ (Overtake)"}</span>
-              <svg viewBox="0 0 140 80" style={{ width: "140px", height: "80px", border: "1px solid #ccc", backgroundColor: "#fff" }}>
-                {/* Road */}
-                <line x1="10" y1="60" x2="130" y2="60" stroke="#666" strokeWidth="2" strokeDasharray="3,3" />
-
-                {/* Car A (front) */}
-                <circle cx="70" cy="50" r="4" fill="#2196F3" />
-                <line x1="70" y1="50" x2="95" y2="50" stroke="#2196F3" strokeWidth="1.5" />
-                <polygon points="95,48 99,50 95,52" fill="#2196F3" />
-                <text x="70" y="42" fill="#2196F3" fontSize="7" textAnchor="middle">{"A: v₁"}</text>
-
-                {/* Car B (behind, faster) */}
-                <circle cx="25" cy="50" r="4" fill="#E91E63" />
-                <line x1="25" y1="50" x2="65" y2="50" stroke="#E91E63" strokeWidth="1.5" />
-                <polygon points="65,48 69,50 65,52" fill="#E91E63" />
-                <text x="25" y="42" fill="#E91E63" fontSize="7" textAnchor="middle">{"B: v₂ (v₂ > v₁)"}</text>
-              </svg>
-            </div>
-            {/* Meeting SVG */}
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <span style={{ fontSize: "1.125rem", color: "#666", marginBottom: "4px" }}>{"ການເຄື່ອນທີ່ພົບກັນ (Opposite)"}</span>
-              <svg viewBox="0 0 140 80" style={{ width: "140px", height: "80px", border: "1px solid #ccc", backgroundColor: "#fff" }}>
-                {/* Road */}
-                <line x1="10" y1="60" x2="130" y2="60" stroke="#666" strokeWidth="2" strokeDasharray="3,3" />
-
-                {/* Object A (moves right) */}
-                <circle cx="20" cy="50" r="4" fill="#4CAF50" />
-                <line x1="20" y1="50" x2="55" y2="50" stroke="#4CAF50" strokeWidth="1.5" />
-                <polygon points="55,48 59,50 55,52" fill="#4CAF50" />
-                <text x="20" y="42" fill="#4CAF50" fontSize="7" textAnchor="middle">{"A →"}</text>
-
-                {/* Object B (moves left) */}
-                <circle cx="120" cy="50" r="4" fill="#FF9800" />
-                <line x1="120" y1="50" x2="85" y2="50" stroke="#FF9800" strokeWidth="1.5" />
-                <polygon points="85,48 81,50 85,52" fill="#FF9800" />
-                <text x="120" y="42" fill="#FF9800" fontSize="7" textAnchor="middle">{"← B"}</text>
-              </svg>
-            </div>
+        title: "ການແກ້ໂຈດສວນທາງກັນດ້ວຍພຶດຊະຄະນິດ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"- ເມື່ອສອງວັດຖຸເຄື່ອນທີ່ສວນທາງກັນ, ເຮົາສາມາດຊອກຫາຈຸດພົບກັນ ແລະ ເວລາພົບກັນໄດ້ໂດຍການຕັ້ງສົມຜົນໄລຍະທາງໃຫ້ເທົ່າກັນ ຫຼື ໃຊ້ສົມຜົນກຣາຟ."}
+              <br />
+              {"- ຖ້າໄລຍະທາງລະຫວ່າງ A ແລະ B ແມ່ນ D. ວັດຖຸ 1 ອອກຈາກ A ດ້ວຍຄວາມໄວ v₁ ແລະ ວັດຖຸ 2 ອອກຈາກ B ດ້ວຍຄວາມໄວ v₂ ພ້ອມກັນ, ເວລາທີ່ທັງສອງຈະພົບກັນແມ່ນ:"}
+              <br />
+              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#D84315", display: "block", textAlign: "center", margin: "8px 0" }}>{"t = D / (v₁ + v₂)"}</span>
+            </p>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ຖ້າເຄື່ອນທີ່ສວນທາງກັນ ຄວາມໄວລວມຈະແມ່ນ v₁ + v₂. ແຕ່ຖ້າແລ່ນໄລ່ທັນກັນໃນທິດດຽວກັນ ຄວາມໄວຜົນຕ່າງຈະແມ່ນ v₂ - v₁ ເດີ້!",
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງ: ວຽງຈັນ ແລະ ອ່າງນ້ຳງຶມ ຫ່າງກັນ 95 km. ລົດທີ 1 ອອກຈາກວຽງຈັນ g;]k 11:00 ດ້ວຍຄວາມໄວ 47.5 km/h. ລົດທີ 2 ອອກຈາກນ້ຳງຶມ g;]k 12:00 ດ້ວຍຄວາມໄວ 47.5 km/h. ທັງສອງຈະສວນທາງກັນໃນເວລາ 12:30 ຢູ່ໄລຍະທາງ 71.25 km ຈາກວຽງຈັນ!",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ເວລາ ແລະ ຜັນປ່ຽນຫົວໜ່ວຍເວລາໃຫ້ຖືກຕ້ອງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຄົນຜູ້ໜຶ່ງຍ່າງດ້ວຍຄວາມໄວ 4 km/h ເພື່ອໄປບ້ານທີ່ຢູ່ຫ່າງອອກໄປ 10 km. ລາວຕ້ອງໃຊ້ເວລາຈັກຊົ່ວໂມງ? (ຕອບເປັນທົດສະນິຍົມ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"ຊົ່ວໂມງ"}</span>
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໂຈດການເຄື່ອນທີ່ສວນທາງກັນ (Meeting Point): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ເມືອງ A ແລະ ເມືອງ B ຫ່າງກັນ 90 km. ລົດເມຄັນໜຶ່ງອອກຈາກເມືອງ A ເວລາ 6:00 ແລະ ຮອດເມືອງ B ເວລາ 8:00 (ຄວາມໄວ v = 45 km/h). ລົດເມອີກຄັນໜຶ່ງອອກຈາກເມືອງ B ເວລາ 6:00 ໄປຫາເມືອງ A. ທັງສອງຄັນສວນທາງກັນໃນເວລາ 7:00 ພໍດີ. ຖາມວ່າລົດຄັນທີ 2 ຕ້ອງແລ່ນດ້ວຍຄວາມໄວຈັກ km/h?"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ປະໂຫຍກສັນຍະລັກ: v₂ = (90 - 45) / 1 ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span>{"km/h"}</span>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ລົດໄຟແລ່ນດ້ວຍຄວາມໄວ 80 km/h. ຖ້າຕ້ອງການແລ່ນໃຫ້ໄດ້ໄລຍະທາງ 120 km, ຈະຕ້ອງໃຊ້ເວລາຈັກຊົ່ວໂມງ ແລະ ຈັກນາທີ? (ຈົ່ງຕອບສະເພາະຈຳນວນນາທີທັງໝົດ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"ນາທີ"}</span>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໂຈດການເດີນທາງຫຼາຍໄລຍະ (Multi-stage Journey): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ທ້າວ ບຸນ ເດີນທາງ 10 km: ລາວເລີ່ມເດີນທາງດ້ວຍການຍ່າງ 2 km ດ້ວຍຄວາມໄວ 4 km/h. ຫຼັງຈາກນັ້ນ, ລາວຂີ່ລົດເມຕໍ່ເປັນໄລຍະທາງ 8 km ດ້ວຍຄວາມໄວ 16 km/h. ຖາມວ່າລາວໃຊ້ເວລາເດີນທາງທັງໝົດຈັກຊົ່ວໂມງ?"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ປະໂຫຍກສັນຍະລັກ: t = (2 / 4) + (8 / 16) ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span>{"ຊົ່ວໂມງ"}</span>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ການແລ່ນສວນທາງກັນ ໃຫ້ເອົາຄວາມໄວບວກກັນ v_ລວມ = v₁ + v₂. ບົດທ້າທາຍ 2: ການແລ່ນໄລ່ທັນກັນ ໃຫ້ຕັ້ງສົມຜົນ d = v₁ × t = v₂ × (t - t_ຊ້າ) ເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງແກ້ໂຈດບັນຫາການເຄື່ອນທີ່ສວນທາງກັນ (Opposite Directions): "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການແລ່ນໄລ່ທັນກັນ (Catching Up): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ສອງເມືອງ A ແລະ B ຢູ່ຫ່າງກັນ 180 km. ທ້າວ A ຂີ່ລົດຈັກອອກຈາກເມືອງ A ດ້ວຍຄວາມໄວ 40 km/h, ສ່ວນທ້າວ B ຂີ່ລົດໃຫຍ່ອອກຈາກເມືອງ B ສວນທາງມາດ້ວຍຄວາມໄວ 50 km/h. ຫຼັງຈາກຈັກຊົ່ວໂມງ ເຂົາເຈົ້າຈຶ່ງຈະພົບກັນ? (t = d / (v₁ + v₂)):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"ຊົ່ວໂມງ"}</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຈາກຂໍ້ (1), ເມື່ອພົບກັນ ທ້າວ A (ທີ່ອອກຈາກເມືອງ A ດ້ວຍຄວາມໄວ 40 km/h) ຈະແລ່ນໄດ້ໄລຍະທາງທັງໝົດຈັກກິໂລແມັດ (km)?:"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"km"}</span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ລົດຈັກຄັນໜຶ່ງອອກເດີນທາງຈາກວຽງຈັນເວລາ 8:00 ດ້ວຍຄວາມໄວສະເໝີ 40 km/h. ຕໍ່ມາໃນເວລາ 9:00 (1 ຊົ່ວໂມງຫຼັງຈາກນັ້ນ), ລົດເກັງຄັນໜຶ່ງອອກເດີນທາງຕາມຫຼັງເສັ້ນທາງດຽວກັນດ້ວຍຄວາມໄວສະເໝີ 60 km/h. ຖາມວ່າລົດເກັງຈະແລ່ນໄລ່ທັນລົດຈັກໃນເວລາຈັກໂມງ?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <span>{"ເວລາທີ່ໄລ່ທັນແມ່ນ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              <span>{": 00 ໂມງ"}</span>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງແກ້ໂຈດບັນຫາການເຄື່ອນທີ່ໄລ່ທັນກັນ (Catch-up/Overtake): "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດຄວາມໄວສະເລ່ຍ 3 ໄລຍະ (Three-stage Average Speed): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ທ້າວຈັນທາ ຂີ່ລົດຖີບອອກຈາກບ້ານກ່ອນ ດ້ວຍຄວາມໄວ 12 km/h. ຫຼັງຈາກຜ່ານໄປ 1 ຊົ່ວໂມງ, ທ້າວບຸນມີ ຈຶ່ງຂີ່ລົດຈັກໄລ່ຕາມຫຼັງມາດ້ວຍຄວາມໄວ 36 km/h. ຖ້າທ້າວບຸນມີອອກເດີນທາງ, ລາວຈະຕ້ອງໃຊ້ເວລາຈັກຊົ່ວໂມງ ຈຶ່ງຈະໄລ່ທັນທ້າວຈັນທາ? (t = d_ຫ່າງ / (v₂ - v₁)):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"ຊົ່ວໂມງ"}</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຈາກຂໍ້ (1), ທ້າວບຸນມີ ຈະໄລ່ທັນທ້າວຈັນທາ ຢູ່ຈຸດທີ່ຫ່າງຈາກບ້ານເປັນໄລຍະທາງຈັກກິໂລແມັດ (km)?:"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"km"}</span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ນາງ ຈັນ ຂັບລົດ 12 km ທຳອິດດ້ວຍຄວາມໄວ 60 km/h. ຫຼັງຈາກນັ້ນ ຂີ່ເຮືອບິນ 1,500 km ດ້ວຍຄວາມໄວ 1,000 km/h. ສຸດທ້າຍ ຂີ່ລົດແທັກຊີ 40 km ດ້ວຍຄວາມໄວ 80 km/h. ຈົ່ງຊອກຫາຄວາມໄວສະເລ່ຍຂອງການເດີນທາງທັງໝົດ? (ປັດເສດເປັນເລກຖ້ວນ)"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຄວາມໄວສະເລ່ຍ v ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span>{"km/h"}</span>
             </div>
           </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ໄລຍະທາງທີ່ລົດຈັກແລ່ນກ່ອນ 1 ຊົ່ວໂມງແມ່ນ 40 km. ລົດເກັງແລ່ນໄວກວ່າລົດຈັກ 20 km/h (60 - 40). ດັ່ງນັ້ນ ຈະໃຊ້ເວລາ 40 / 20 = 2 ຊົ່ວໂມງ ເພື່ອໄລ່ທັນ. ເວລາແມ່ນ 9:00 + 2 = 11:00 ໂມງ. ສ່ວນໂຈດ 3 ໄລຍະ: ໄລຍະທາງທັງໝົດ S = 12 + 1500 + 40 = 1552 km. ເວລາທັງໝົດ t = 12/60 + 1500/1000 + 40/80 = 0.2 + 1.5 + 0.5 = 2.2 ຊົ່ວໂມງ. v = 1552 / 2.2 = 705.45 km/h ⇒ 705 km/h!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາການເຄື່ອນທີ່ໃນແມ່ນ້ຳ (River Current Word Problems): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ຄິດໄລ່ໄລຍະທາງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ເຮືອລຳໜຶ່ງແລ່ນໃນນ້ຳນິ້ງດ້ວຍຄວາມໄວ 20 km/h. ຖ້າແລ່ນຕາມກະແສນ້ຳທີ່ມີຄວາມໄວ 4 km/h ໄປເປັນໄລຍະທາງ 48 km, ຈະຕ້ອງໃຊ້ເວລາຈັກຊົ່ວໂມງ? (v_ຕາມ = v_ເຮືອ + v_ນ້ຳ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ຊົ່ວໂມງ"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຖ້າເຮືອລຳດຽວກັນນີ້ ແລ່ນທວນກະແສນ້ຳ (v_ທວນ = v_ເຮືອ - v_ນ້ຳ) ໃນໄລຍະທາງ 48 km ເທົ່າເດີມ, ຈະຕ້ອງໃຊ້ເວລາຈັກຊົ່ວໂມງ?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ຊົ່ວໂມງ"}</span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ລົດຍົນແລ່ນດ້ວຍຄວາມໄວສະເລ່ຍ 80 km/h ເປັນເວລາ 3.5 ຊົ່ວໂມງ ຈະໄດ້ໄລຍະທາງທັງໝົດຈັກ km?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ໄລຍະທາງ ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span>{"km"}</span>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາສະເລ່ຍຄວາມໄວ ແລະ ການເຄື່ອນທີ່ສອງຂັ້ນຕອນ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ຄິດໄລ່ຄວາມໄວສະເລ່ຍຮ່ວມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ລົດຄັນໜຶ່ງເຄິ່ງທາງທຳອິດແລ່ນ 60 km ດ້ວຍຄວາມໄວ 30 km/h, ເຄິ່ງທາງຫຼັງແລ່ນ 60 km ດ້ວຍຄວາມໄວ 60 km/h. ເວລາທັງໝົດທີ່ໃຊ້ໃນການເດີນທາງແມ່ນຈັກຊົ່ວໂມງ?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ຊົ່ວໂມງ"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຄວາມໄວສະເລ່ຍຕະຫຼອດການເດີນທາງ 120 km ນີ້ແມ່ນຈັກ km/h? (v_ສະເລ່ຍ = d_ທັງໝົດ / t_ທັງໝົດ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"km/h"}</span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ລົດຈັກຄັນໜຶ່ງແລ່ນຂຶ້ນພູ 60 km ດ້ວຍຄວາມໄວ 30 km/h, ແລະ ລົງພູ 60 km ດ້ວຍຄວາມໄວ 60 km/h. ຄວາມໄວສະເລ່ຍຂອງການເຄື່ອນທີ່ທັງໝົດແມ່ນຈັກ km/h?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ຄວາມໄວສະເລ່ຍ ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span>{"km/h."}</span>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u8-ans-1-1">{"(1) 150 (ເພາະວ່າ d = 50 × 3 = 150 km)"}</span>,
-          <span key="u8-ans-1-2">{"(2) 60 (ເພາະວ່າ v = 240 / 4 = 60 km/h)"}</span>,
-        ],
+          <span key="1-1">{"(1) 60 km/h (ຄິດໄລ່: 165 / 2.75 = 60)"}</span>,
+          <span key="1-2">{"(2) 16 km/h (ຄິດໄລ່: S = 24 km, t = 12/12 + 12/24 = 1.5 ຊົ່ວໂມງ. v = 24 / 1.5 = 16)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u8-ans-2-1">{"(1) 2.5 (ເພາະວ່າ t = 10 / 4 = 2.5 ຊົ່ວໂມງ)"}</span>,
-          <span key="u8-ans-2-2">{"(2) 90 (ເພາະວ່າ t = 120 / 80 = 1.5 ຊົ່ວໂມງ = 90 นาທີ)"}</span>,
-        ],
+          <span key="2">{"200 km/h (ຄິດໄລ່: ເວລາທີ່ເຫຼືອແມ່ນ 1 ຊົ່ວໂມງ, ດັ່ງນັ້ນ 200 / 1 = 200 km/h)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3">{"45 km/h (ຄິດໄລ່: ລົດຄັນທີ 1 ແລ່ນໄດ້ 45 km ພາຍໃນ 1 ຊົ່ວໂມງ, ດັ່ງນັ້ນ ລົດຄັນທີ 2 ຕ້ອງແລ່ນໄດ້ 90 - 45 = 45 km ພາຍໃນ 1 ຊົ່ວໂມງ)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4">{"1 (ຄິດໄລ່: t = 2/4 + 8/16 = 0.5 + 0.5 = 1 ຊົ່ວໂມງ)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u8-ans-t1-1">{"(1) 2 (ເພາະວ່າ ຄວາມໄວລວມແມ່ນ 40 + 50 = 90 km/h. ດັ່ງນັ້ນ 180 / 90 = 2 ຊົ່ວໂມງ)"}</span>,
-          <span key="u8-ans-t1-2">{"(2) 80 (ເພາະວ່າ d_A = 40 × 2 = 80 km)"}</span>,
-        ],
+          <span key="c1">{"11 (ຄິດໄລ່: ລົດເກັງແລ່ນ 2 ຊົ່ວໂມງ ໄດ້ 120 km. ລົດຈັກແລ່ນ 3 ຊົ່ວໂມງ ໄດ້ 120 km. ພົບກັນໃນເວລາ 8:00 + 3 = 11:00)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u8-ans-t2-1">{"(1) 0.5 (ຫຼື 1/2. ເພາະວ່າໄລຍະທາງຫ່າງກັນແມ່ນ 12 km, ຄວາມໄວຜົນຕ່າງແມ່ນ 36 - 12 = 24 km/h. ດັ່ງນັ້ນ t = 12 / 24 = 0.5 ຊົ່ວໂມງ)"}</span>,
-          <span key="u8-ans-t2-2">{"(2) 18 (ເພາະວ່າ d = 36 × 0.5 = 18 km)"}</span>,
-        ],
+          <span key="c2">{"705 (ຄິດໄລ່: S = 1552 km, t = 2.2 ຊົ່ວໂມງ. v = 1552 / 2.2 = 705.45 km/h)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u8-ans-s1-1">{"(1) 2 (ເພາະວ່າ v_ຕາມ = 20 + 4 = 24 km/h. ດັ່ງນັ້ນ t = 48 / 24 = 2 ຊົ່ວໂມງ)"}</span>,
-          <span key="u8-ans-s1-2">{"(2) 3 (ເພາະວ່າ v_ທວນ = 20 - 4 = 16 km/h. ດັ່ງນັ້ນ t = 48 / 16 = 3 ຊົ່ວໂມງ)"}</span>,
-        ],
+          <span key="s1">{"280 (ຄິດໄລ່: 80 × 3.5 = 280 km)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u8-ans-s2-1">{"(1) 3 (ເພາະວ່າ t₁ = 60/30 = 2 ຊົ່ວໂມງ, t₂ = 60/60 = 1 ຊົ່ວໂມງ, ລວມ 3 ຊົ່ວໂມງ)"}</span>,
-          <span key="u8-ans-s2-2">{"(2) 40 (ເພາະວ່າ v_ສະເລ່ຍ = 120 / 3 = 40 km/h)"}</span>,
-        ],
-      },
+          <span key="s2">{"40 (ຄິດໄລ່: S = 120 km, t = 60/30 + 60/60 = 2 + 1 = 3 ຊົ່ວໂມງ. v = 120 / 3 = 40 km/h)"}</span>
+        ]
+      }
     ],
-    advice: "ຈົ່ງແຕ້ມແຜນວາດການເຄື່ອນທີ່ກ່ອນແກ້ໂຈດສະເໝີ! ມັນຈະຊ່ວຍໃຫ້ເຫັນພາບວ່າຕ້ອງເອົາຄວາມວົຍມາບວກ ຫຼື ລົບກັນໄດ້ຢ່າງງ່າຍດາຍເດີ້!",
-  },
+    advice: "ດີເລີດ! ໂຈດບັນຫາກ່ຽວກັບຄວາມໄວ, ໄລຍະທາງ ແລະ ເວລາ ເປັນພາກສ່ວນສຳຄັນທີ່ນຳໃຊ້ໃນຟີຊິກສາດ ແລະ ຊີວິດປະຈຳວັນ. ພະຍາຍາມຕໍ່ໄປເດີ້!"
+  }
 };

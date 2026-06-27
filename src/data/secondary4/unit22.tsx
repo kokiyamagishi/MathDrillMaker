@@ -1,342 +1,304 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit22Data: UnitData = {
   unitNumber: 22,
-  unitTitle: "ພາກທີ II - ບົດທີ 22: ຫຼັກເກັນວີແອດ (Vieta's Formula)",
-  unitGoal:
-    "ເຂົ້າໃຈ ແລະ ນຳໃຊ້ຫຼັກເກັນວີແອດ (Vieta's Theorem) ເພື່ອຊອກຫາຜົນບວກ ແລະ ຜົນຄູນຂອງສອງໃຈຜົນ ໂດຍບໍ່ຈຳເປັນຕ້ອງແກ້ສົມຜົນຂັ້ນສອງໂດຍກົງ",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 22 ໜ້າ 127-132",
+  unitTitle: "ພາກທີ II - ບົດທີ 22: ສູດວີແອດ (Vieta's Formulas)",
+  unitGoal: "ຮຽນຮູ້ສູດວີແອດກ່ຽວກັບຜົນບວກ ແລະ ຜົນຄູນຂອງຮາກສົມຜົນຂັ້ນສອງ, ການຄິດໄລ່ສຳນວນສົມມາດຂອງຮາກ, ແລະ ການສ້າງສົມຜົນຂັ້ນສອງຈາກຮາກທີ່ກຳນົດ",
+  textbookRef: "ปຶ້ມແບບຮຽນ ມ.4 ໜ້າ 100-102",
   subSections: [
     {
-      title: "1. ນິຍາມຂອງຫຼັກເກັນວີແອດ (Definition of Vieta's Theorem)",
+      title: "1. ຫຼັກການສູດວີແອດ ແລະ ການຄິດໄລ່ສຳນວນຮາກ (Vieta's Principles & Root Expressions)",
       keyPoint: {
-      title: "1. ນິຍາມຂອງຫຼັກເກັນວີແອດ (Definition of Vieta's Theorem)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຖ້າສົມຜົນ ax² + bx + c = 0 (a ≠ 0) ມີສອງໃຈຜົນແມ່ນ x₁ ແລະ x₂, ເຮົາຈະມີການພົວພັນດັ່ງນີ້:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "12px",
-            }}
-          >
-            <div>
-              <strong style={{ color: "#E65100" }}>{"• ຜົນບວກຂອງສອງໃຈຜົນ (Sum of Roots):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#D84315" }}>
-                {"S = x₁ + x₂ = "} <Fraction num="-b" den="a" />
-              </span>
+        title: "ຫຼັກການສູດວີແອດ (Vieta's Formulas)",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ສໍາລັບສົມຜົນຂັ້ນສອງ ax² + bx + c = 0 ທີ່ມີສອງຮາກ α ແລະ β, ສູດວີແອດກຳນົດວ່າ:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ສູດພື້ນຖານ:"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
+                <li><strong>{"ຜົນບວກຂອງຮາກ (Sum, S):"}</strong>{" S = α + β = -b/a"}</li>
+                <li><strong>{"ຜົນຄູນຂອງຮາກ (Product, P):"}</strong>{" P = α × β = c/a"}</li>
+              </ul>
             </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• ຜົນຄູນຂອງສອງໃຈຜົນ (Product of Roots):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#D84315" }}>
-                {"P = x₁ · x₂ = "} <Fraction num="c" den="a" />
-              </span>
-            </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• ການສ້າງສົມຜົນໃໝ່ຈາກ S ແລະ P:"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px" }}>
-                {"ຖ້າຮູ້ຜົນບວກ S ແລະ ຜົນຄູນ P, ສອງໃຈຜົນນັ້ນແມ່ນຮາກຂອງສົມຜົນ: "}
-                <br />
-                <span style={{ fontWeight: "bold", color: "#2E7D32", paddingLeft: "20px" }}>{"X² - SX + P = 0"}</span>
-              </span>
+            <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ສຳນວນສົມມາດທີ່ພົບເລື້ອຍ:"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
+                <li>{"α² + β² = (α + β)² - 2αβ = S² - 2P"}</li>
+                <li>{"1/α + 1/β = (α + β)/(αβ) = S/P"}</li>
+                <li>{"(α - β)² = (α + β)² - 4αβ = S² - 4P"}</li>
+              </ul>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ຕົວຢ່າງ: ສົມຜົນ x² - 5x + 6 = 0  ⇒  ຜົນບວກ S = 5, ຜົນຄູນ P = 6. ໃຈຜົນແມ່ນ 2 ແລະ 3 ເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງ: ໃຫ້ສົມຜົນ 2x² - 3x - 4 = 0. ມີ S = 3/2, P = -2. ດັ່ງນັ້ນ α² + β² = (3/2)² - 2(-2) = 9/4 + 4 = 25/4!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາຜົນບວກ S ແລະ ຜົນຄູນ P ຂອງສອງໃຈຜົນ ໂດຍໃຊ້ຫຼັກເກັນວີແອດ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ສົມຜົນ x² - 7x + 12 = 0. ຜົນບວກ S = x₁ + x₂ ແມ່ນເທົ່າໃດ? (ຕອບເປັນຕົວເລກ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃຫ້ສົມຜົນ 2x² - 3x - 4 = 0 ທີ່ມີຮາກແມ່ນ α ແລະ β. ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ຜົນບວກ S = α + β ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{" ແລະ ຜົນຄູນ P = αβ ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ຄ່າຂອງ 1/α + 1/β ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ສົມຜົນ 2x² - 8x + 6 = 0. ຜົນຄູນ P = x₁ · x₂ ແມ່ນເທົ່າໃດ? (⚠️ ສັງເກດຄ່າ a ໃຫ້ດີ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງສ້າງສົມຜົນຂັ້ນສອງຈາກຮາກທີ່ໃຫ້ມາ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ສ້າງສົມຜົນທີ່ມີຮາກແມ່ນ x_1 = 2 ແລະ x_2 = 3 (S=5, P=6) ⇒ x² -"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{"x +"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{"= 0"}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ສ້າງສົມຜົນທີ່ມີຮາກແມ່ນ x_1 = -4 ແລະ x_2 = 5 (S=1, P=-20) ⇒ x² -"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{"x -"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{"= 0"}</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ບົດຮຽນພື້ນຖານ",
-      keyPoint: { content: <span /> },
-      problems: [
-        {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງສ້າງສົມຜົນຂັ້ນສອງ ຈາກຜົນບວກ ແລະ ຜົນຄູນທີ່ກຳນົດໃຫ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ສ້າງສົມຜົນຂັ້ນສອງ x² - Sx + P = 0 ທີ່ມີຜົນບວກ S = 6 ແລະ ຜົນຄູນ P = 8. (ຕອບສົມຜົນ, ຕົວຢ່າງ: x²-6x+8=0):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ສ້າງສົມຜົນຂັ້ນສອງ ທີ່ມີສອງໃຈຜົນແມ່ນ x₁ = -2 ແລະ x₂ = 5. (ຄຳແນະນຳ: ຊອກ S ແລະ P ກ່ອນ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
+      title: "2. ການນຳໃຊ້ສູດວີແອດໃນການແກ້ບັນຫາຂອບເຂດ (Vieta's Applications in Boundaries & Parameters)",
+      keyPoint: {
+        title: "ການພົວພັນລະຫວ່າງອະສົມຜົນ ແລະ ຮາກສົມຜົນ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"- ຖ້າຫວ່າງໃຈຜົນຂອງອະສົມຜົນ x² + ax + b < 0 ແມ່ນ ]x_1, x_2[:"}
+              <br />
+              {"  ຫມາຍຄວາມວ່າ x_1 ແລະ x_2 ແມ່ນສອງຮາກຂອງສົມຜົນ x² + ax + b = 0. ດັ່ງນັ້ນ:"}
+              <br />
+              {"  S = x_1 + x_2 = -a  ແລະ  P = x_1 × x_2 = b."}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }}>{"ຕົວຢ່າງການນຳໃຊ້:"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"ໃຫ້ຫວ່າງໃຈຜົນຂອງ x² + ax + b < 0 ແມ່ນ ]1/3, 1/2[. ຊອກຫາ a ແລະ b:"}
+                <br />
+                {"- S = 1/3 + 1/2 = 5/6 ⇒ a = -5/6"}
+                <br />
+                {"- P = 1/3 × 1/2 = 1/6 ⇒ b = 1/6."}
+              </p>
             </div>
           </div>
-        </div>
-      ),
-    }
+        ),
+        hint: {
+          text: "💡 ສູດວີແອດເປັນເຄື່ອງມືທີ່ມີປະສິດທິພາບສູງໃນການຊອກຫາສຳປະສິດຂອງສົມຜົນ ໂດຍບໍ່ຈຳເປັນຕ້ອງແກ້ສົມຜົນໂດຍກົງ!",
+          isBlue: false
+        }
+      },
+      problems: [
+        {
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາສຳປະສິດຈາກຫວ່າງໃຈຜົນທີ່ກຳນົດ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ຖ້າຫວ່າງໃຈຜົນຂອງອະສົມຜົນ x² + ax + b < 0 ແມ່ນ ]2, 5[:"}
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ສຳປະສິດ a ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ສຳປະສິດ b ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາພາຣາມີເຕີ m ຈາກຄວາມສຳພັນຂອງຮາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ສົມຜົນ x² - 8x + m = 0 ມີຮາກໜຶ່ງໃຫຍ່ກວ່າອີກຮາກໜຶ່ງ 2 ຫົວໜ່ວຍ (β - α = 2). ຈົ່ງຊອກຫາຄ່າຂອງ m?"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                <span>{"ຕອບ: m ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              </div>
+            </div>
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໃຫ້ຜັນປ່ຽນສູດ x₁² + x₂² = (x₁ + x₂)² - 2x₁x₂ = S² - 2P ຈະຊ່ວຍໃຫ້ຫາຄຳຕອບໄດ້ໄວ! ບົດທ້າທາຍ 2: ຄິດໄລ່ເລກສ່ວນໂດຍການ通分ເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນສົມມາດຂອງຮາກ (Symmetric Functions of Roots): "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດຊອກຫາສຳນວນກຳລັງສາມຂອງຮາກ (Sum of Cubes): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ໃຫ້ສົມຜົນ x² - 5x + 3 = 0. ຈົ່ງຄິດໄລ່ຄ່າຂອງ x₁² + x₂² (ຕອບເປັນຕົວເລກ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>
-                  {"(2) ໃຫ້ສົມຜົນ x² - 4x + 2 = 0. ຈົ່ງຄິດໄລ່ຄ່າຂອງ "} <Fraction num="1" den="x₁" /> {" + "} <Fraction num="1" den="x₂" /> {" (ຄຳແນະນຳ: ຜັນປ່ຽນເປັນ "} <Fraction num="x₁ + x₂" den="x₁ · x₂" /> {"):"}
-                </span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃຫ້ສົມຜົນ x² - 3x + 1 = 0 ມີຮາກແມ່ນ α ແລະ β. ຈົ່ງຄິດໄລ່ຄ່າຂອງ α³ + β³?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: α³ + β³ ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາຄ່າຂອງສຳປະສິດ K ໂດຍນຳໃຊ້ເງື່ອນໄຂໃຈຜົນ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການຊອກຫາສົມຜົນໃໝ່ (New Quadratic Equation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ໃຫ້ສົມຜົນ x² - Kx + 8 = 0. ຖ້າຮູ້ວ່າໃຈຜົນໜຶ່ງແມ່ນ 2 ເທົ່າຂອງອີກໃຈຜົນໜຶ່ງ (x₁ = 2x₂) ແລະ K > 0. ຄ່າ K ຈະແມ່ນເທົ່າໃດ? (ຄຳແນະນຳ: P = 8 ⇒ 2x₂² = 8 ⇒ x₂ = 2):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: K ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ໃຫ້ສົມຜົນ x² - 6x + m = 0. ຖ້າຜົນຕ່າງຂອງສອງໃຈຜົນແມ່ນ x₁ - x₂ = 2. ຄ່າ m ຈະແມ່ນເທົ່າໃດ? (ຄຳແນະນຳ: ໃຊ້ລະບົບສົມຜົນ x₁ + x₂ = 6 ແລະ x₁ - x₂ = 2):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: m ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃຫ້ α, β ແມ່ນຮາກຂອງ x² - 4x + 2 = 0. ຈົ່ງສ້າງສົມຜົນຂັ້ນສອງໃໝ່ທີ່ມີຮາກແມ່ນ 2α ແລະ 2β. ສົມຜົນນັ້ນມີຮູບຮ່າງ x² - Sx + P = 0. ຈົ່ງຊອກຫາ P?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: P ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "α³ + β³ = (α+β)(α²+β²-αβ) = S(S²-3P). ມີ S=3, P=1 ⇒ 3 × (9-3) = 18! ສຳລັບສົມຜົນໃໝ່: ຮາກແມ່ນ 2α ແລະ 2β. ຜົນຄູນໃໝ່ P' = 4αβ = 4(2) = 8!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ເລກເພື່ອຊອກຫາຄ່າສຳນວນຂັ້ນສູງຂອງຮາກ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ຄ່າຂອງຜົນຄູນຮາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ໃຫ້ສົມຜົນ x² - 3x - 2 = 0. ຈົ່ງຄິດໄລ່ຄ່າຂອງ (x₁ - x₂)² (ຄຳແນະນຳ: (x₁ - x₂)² = S² - 4P):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ໃຫ້ສົມຜົນ x² - 4x + 1 = 0. ຈົ່ງຄິດໄລ່ຄ່າຂອງ x₁³ + x₂³ (ຄຳແນະນຳ: x₁³ + x₂³ = S(S² - 3P)):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ສົມຜົນ -3x² + 9x - 12 = 0 ມີຜົນຄູນຂອງຮາກ P = αβ ເທົ່າໃດ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: P ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາຕົວຈິງກ່ຽວກັບການອອກແບບຂະໜາດຂອງກ່ອງ (Box Dimension Design): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ຄ່າຂອງຜົນບວກກຳລັງສອງຂອງຮາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ແຜ່ນເຈ້ຍຮູບສີ່ແຈສາກໜຶ່ງ ມີລວງຮອບແມ່ນ 28 cm (ຜົນບວກສອງຂ້າງ S = 14 cm) ແລະ ມີເນື້ອທີ່ P = 48 cm². ຈົ່ງຊອກຫາຄວາມຍາວຂອງຂ້າງທີ່ໃຫຍ່ກວ່າ (cm):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: ຂ້າງຍາວ ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"cm"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຂ້າງທີ່ສັ້ນກວ່າ (ຄວາມກວ້າງ) ຈະມີຄວາມຍາວຈັກ cm? (ຕອບເປັນຕົວເລກ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: ຂ້າງສັ້ນ ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"cm"}</span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ໃຫ້ສົມຜົນ x² - 5x + 3 = 0. ຈົ່ງຄິດໄລ່ α² + β²?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: α² + β² ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u22-ans-1-1">{"(1) 7 (ເພາະວ່າ S = -b/a = -(-7)/1 = 7)"}</span>,
-          <span key="u22-ans-1-2">{"(2) 3 (⚠️ ເພາະວ່າ P = c/a = 6/2 = 3)"}</span>,
-        ],
+          <span key="1-1">{"3/2 (ຄິດໄລ່: S = -b/a = -(-3)/2 = 3/2)"}</span>,
+          <span key="1-2">{"-2 (ຄິດໄລ່: P = c/a = -4/2 = -2)"}</span>,
+          <span key="1-3">{"-3/4 (ຄິດໄລ່: 1/α + 1/β = S/P = (3/2)/(-2) = -3/4)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u22-ans-2-1">{"(1) x²-6x+8=0 (ເພາະສົມຜົນແມ່ນ x² - Sx + P = 0)"}</span>,
-          <span key="u22-ans-2-2">{"(2) x²-3x-10=0 (ເພາະວ່າ S = -2 + 5 = 3, P = -2 * 5 = -10)"}</span>,
-        ],
+          <span key="2-1">{"5 (ຄິດໄລ່: S = 5)"}</span>,
+          <span key="2-2">{"6 (ຄິດໄລ່: P = 6)"}</span>,
+          <span key="2-3">{"1 (ຄິດໄລ່: S = 1)"}</span>,
+          <span key="2-4">{"20 (ຄິດໄລ່: P = -20 ⇒ x² - x - 20 = 0)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"-7 (ຄິດໄລ່: S = 2 + 5 = 7 ⇒ a = -7)"}</span>,
+          <span key="3-2">{"10 (ຄິດໄລ່: P = 2 × 5 = 10 ⇒ b = 10)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4">{"15 (ຄິດໄລ່: S = α+β = 8, β-α = 2 ⇒ β=5, α=3 ⇒ m = αβ = 15)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u22-ans-t1-1">{"(1) 19 (ຍ້ອນວ່າ S = 5, P = 3. x₁² + x₂² = 5² - 2*3 = 25 - 6 = 19)"}</span>,
-          <span key="u22-ans-t1-2">{"(2) 2 (ຍ້ອນວ່າ S = 4, P = 2. (x₁ + x₂)/(x₁ · x₂) = 4/2 = 2)"}</span>,
-        ],
+          <span key="c1">{"18 (ຄິດໄລ່: α³+β³ = S(S²-3P) = 3(9-3) = 18)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u22-ans-t2-1">{"(1) 6 (ຍ້ອນວ່າ x₁ = 2x₂. P = 2x₂² = 8 ⇒ x₂ = 2, x₁ = 4. S = x₁ + x₂ = 6 ⇒ K = 6)"}</span>,
-          <span key="u22-ans-t2-2">{"(2) 8 (ຍ້ອນວ່າ x₁ + x₂ = 6, x₁ - x₂ = 2 ⇒ x₁ = 4, x₂ = 2. m = P = x₁ · x₂ = 8)"}</span>,
-        ],
+          <span key="c2">{"8 (ຄິດໄລ່: P' = 4αβ = 4(2) = 8)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u22-ans-s1-1">{"(1) 17 (ຍ້ອນວ່າ S = 3, P = -2. (x₁ - x₂)² = S² - 4P = 9 - 4*(-2) = 17)"}</span>,
-          <span key="u22-ans-s1-2">{"(2) 52 (ຍ້ອນວ່າ S = 4, P = 1. x₁³ + x₂³ = 4 * (16 - 3) = 4 * 13 = 52)"}</span>,
-        ],
+          <span key="s1">{"4 (ຄິດໄລ່: P = c/a = -12/(-3) = 4)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u22-ans-s2-1">{"(1) 8 (ເພາະສົມຜົນແມ່ນ x² - 14x + 48 = 0 ເຊິ່ງມີສອງຮາກແມ່ນ 6 ແລະ 8)"}</span>,
-          <span key="u22-ans-s2-2">{"(2) 6 (ເພາະວ່າຄວາມກວ້າງແມ່ນ 6 cm)"}</span>,
-        ],
-      },
+          <span key="s2">{"19 (ຄິດໄລ່: S = 5, P = 3 ⇒ α²+β² = S²-2P = 25 - 6 = 19)"}</span>
+        ]
+      }
     ],
-    advice: "ຫຼັກເກັນວີແອດ ເປັນເຄື່ອງມືທີ່ຊົງພະລັງທີ່ສຸດໃນການຄິດໄລ່ກ່ຽວກັບຮາກຂອງສົມຜົນ! ມັນຊ່ວຍຫຼີກເວັ້ນການຄິດໄລ່ເລກຮາກທີ່ຊັບຊ້ອນໄດ້ຢ່າງຫຼວງຫຼາຍເດີ້!",
-  },
+    advice: "ເກັ່ງຫຼາຍ! ການນຳໃຊ້ສູດວີແອດ ຈະຊ່ວຍໃຫ້ເຈົ້າແກ້ສົມຜົນ ແລະ ວິເຄາະຮາກສົມຜົນຂັ້ນສອງໄດ້ຢ່າງວ່ອງໄວ ແລະ ຖືກຕ້ອງ. ສູ້ໆຕໍ່ໄປເດີ້!"
+  }
 };

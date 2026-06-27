@@ -1,346 +1,175 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit34Data: UnitData = {
   unitNumber: 34,
-  unitTitle: "ພາກທີ IV - ບົດທີ 34: ຜົນຄູນສະກາເລ ຂອງສອງເວັກເຕີ ແລະ ເງື່ອນໄຂຕັ້ງສາກ",
-  unitGoal:
-    "ຮຽນຮູ້ ແລະ ນຳໃຊ້ຜົນຄູນສະກາເລ (Scalar Product / Dot Product) ຂອງສອງເວັກເຕີໃນຮູບແບບພິກັດ ແລະ ເງື່ອນໄຂທີ່ເຮັດໃຫ້ສອງເວັກເຕີຕັ້ງສາກກັນ (Orthogonality)",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 34 ໜ້າ 199-204",
+  unitTitle: "ພາກທີ IV - ບົດທີ 34: ເວກເຕີຮ່ວມແຜ່ນພຽງ (Coplanar Vectors)",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບເວກເຕີຮ່ວມແຜ່ນພຽງ, ເງື່ອນໄຂໃຫ້ສາມເວກເຕີຮ່ວມແຜ່ນພຽງ w = x·u + y·v, ແລະ ການວິເຄາະຄວາມເປັນເອກະລາດເຊິ່ງກັນແລະກັນໃນອາວະກາດ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 167-171",
   subSections: [
     {
-      title: "1. ນິຍາມ ແລະ ສູດຜົນຄູນສະກາເລ (Scalar Product Formulas)",
+      title: "1. ນິຍາມ ແລະ ເງື່ອນໄຂການຮ່ວມແຜ່ນພຽງ (Definition & Conditions for Coplanar Vectors)",
       keyPoint: {
-      title: "1. ນິຍາມ ແລະ ສູດຜົນຄູນສະກາເລ (Scalar Product Formulas)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຜົນຄູນສະກາເລ u · v ຂອງສອງເວັກເຕີ u ແລະ v ມີສອງຮູບແບບສູດທີ່ສຳຄັນດັ່ງນີ້:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "12px",
-            }}
-          >
-            <div>
-              <strong style={{ color: "#E65100" }}>{"• ຮູບແບບພິກັດຕົວປະສານ (Coordinate Form):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px" }}>{"ຖ້າ u = (x₁, y₁) ແລະ v = (x₂, y₂), ເຮົາຈະໄດ້:"}</span>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#D84315" }}>
-                {"u · v = x₁x₂ + y₁y₂"}
-              </span>
-              <br />
-              <span style={{ paddingLeft: "20px", color: "#555" }}>
-                {"(⚠️ ຂໍ້ສັງເກດ: ຜົນຮັບຂອງຜົນຄູນສະກາເລແມ່ນ ຈຳນວນຈິງ ບໍ່ແມ່ນເວັກເຕີເດີ້!)"}
-              </span>
+        title: "ເວກເຕີຮ່ວມແຜ່ນພຽງແມ່ນຫຍັງ?",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃນອາວະກາດ, ສາມເວກເຕີ u, v ແລະ w ຖືກເອີ້ນວ່າ ຮ່ວມແຜ່ນພຽງກັນ (Coplanar) ຖ້າທິດທາງຂອງພວກມັນຂະໜານກັບແຜ່ນພຽງດຽວກັນ."}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E8EAF6", borderRadius: "8px", border: "1px solid #C5CAE9" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#3F51B5" }}>{"ເງື່ອນໄຂທາງຄະນິດສາດ:"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"ຖ້າສອງເວກເຕີ u ແລະ v ບໍ່ຂະໜານກັນ, ສາມເວກເຕີ u, v, w ຈະຮ່ວມແຜ່ນພຽງກັນ ກໍຕໍ່ເມື່ອມີສອງຈຳນວນຈິງ x ແລະ y ທີ່ເຮັດໃຫ້:"}
+                <br />
+                <strong style={{ fontSize: "1.375rem", color: "#1A237E" }}>{"w = x·u + y·v"}</strong>
+              </p>
             </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• ຮູບແບບຂະໜາດ ແລະ ມຸມລະຫວ່າງສອງເວັກເຕີ (Geometric Form):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#D84315" }}>
-                {"u · v = |u| · |v| · cos θ"}
-              </span>
-            </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• ເງື່ອນໄຂຕັ້ງສາກກັນ (Orthogonal Condition):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px" }}>
-                {"- ສອງເວັກເຕີ u ແລະ v ຕັ້ງສາກກັນ (u ⊥ v) ກໍຕໍ່ເມື່ອ: "}
-                <strong style={{ color: "#D84315" }}>{"u · v = 0  ⇒  x₁x₂ + y₁y₂ = 0"}</strong>
-              </span>
+            <div style={{ padding: "16px", backgroundColor: "#E0F2F1", borderRadius: "8px", border: "1px solid #B2DFDB" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#00796B" }}>{"ຄຸນລັກສະນະສໍາຄັນ:"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
+                <li>{"ທຸກໆສອງເວກເຕີ u ແລະ v ໃດໆ ຈະຮ່ວມແຜ່ນພຽງກັນສະເໝີ."}</li>
+                <li>{"ຖ້າສາມເວກເຕີ u, v, w ບໍ່ຮ່ວມແຜ່ນພຽງກັນ, ພວກມັນຈະເປັນເອກະລາດເຊິ່ງກັນແລະກັນໃນອາວະກາດ."}</li>
+              </ul>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ຕົວຢ່າງ: u = (3, 4) ແລະ v = (-4, 3)  ⇒  u · v = 3*(-4) + 4*3 = -12 + 12 = 0. ດັ່ງນັ້ນ u ⊥ v ເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ວິທີກວດສອບ: ຕັ້ງລະບົບສົມຜົນເພື່ອຊອກຫາ x ແລະ y. ຖ້າມີໃຈຜົນທີ່ສອດຄ່ອງ, ສະແດງວ່າສາມເວກເຕີຮ່ວມແຜ່ນພຽງກັນ!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ຜົນຄູນສະກາເລ ຂອງສອງເວັກເຕີໃນຮູບແບບພິກັດ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໃຫ້ u = (2, 5) ແລະ v = (3, 4). ຜົນຄູນສະກາເລ u · v ແມ່ນເທົ່າໃດ? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາຄ່າຂອງ x ແລະ y ຈາກການພົວພັນເວກເຕີ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ໃຫ້ u = [1, 2], v = [1, 0] ແລະ w = [5, 4]. ຖ້າ w = x·u + y·v ຈະໄດ້ x ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{" ແລະ y ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ໃຫ້ u = [2, -1], v = [0, 3] ແລະ w = [6, 0]. ຖ້າ w = x·u + y·v ຈະໄດ້ x ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{" ແລະ y ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ໃຫ້ u = (1, -3) ແລະ v = (4, 2). ຜົນຄູນສະກາເລ u · v ແມ່ນເທົ່າໃດ? (⚠️ ລະວັງເຄື່ອງໝາຍລົບ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    }
-      ]
-    },
-    {
-      title: "2. ບົດຮຽນພື້ນຖານ",
-      keyPoint: { content: <span /> },
-      problems: [
+          )
+        },
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງກວດສອບເງື່ອນໄຂຕັ້ງສາກກັນ ຂອງສອງເວັກເຕີ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໃຫ້ u = (2, -3) ແລະ v = (3, 2). ສອງເວັກເຕີນີ້ ຕັ້ງສາກກັນ (True) ຫຼື ບໍ່ຕັ້ງສາກກັນ (False)? (ຕອບ ຕັ້ງສາກ ຫຼື ບໍ່ຕັ້ງສາກ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຕື່ມຂໍ້ມູນກ່ຽວກັບຄວາມຮ່ວມແຜ່ນພຽງຂອງເວກເຕີ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ໃຫ້ u = [1, 0, 0], v = [0, 1, 0] ແລະ w = [2, 3, 0]. ຖ້າ w = x·u + y·v, ສະແດງວ່າ u, v, w "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                  <span>{" (ເລືອກ: ຮ່ວມແຜ່ນພຽງ / ບໍ່ຮ່ວມແຜ່ນພຽງ)"}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ໃຫ້ u = [1, 0, 0], v = [0, 1, 0] ແລະ w = [0, 0, 1]. ສາມເວກເຕີນີ້ "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                  <span>{" (ເລືອກ: ຮ່ວມແຜ່ນພຽງ / ບໍ່ຮ່ວມແຜ່ນພຽງ)"}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ໃຫ້ u = (4, 1) ແລະ v = (-1, 5). ຜົນຄູນສະກາເລ u · v ມີຄ່າເທົ່າໃດ? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໃຫ້ໃຊ້ເງື່ອນໄຂ u · v = 0 ⇒ x₁x₂ + y₁y₂ = 0 ເພື່ອຊອກຫາຕົວປ່ຽນ m! ບົດທ້າທາຍ 2: ໃຊ້ສູດ cos θ = (u · v) / (|u| · |v|) ເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາຄ່າຂອງຕົວປ່ຽນ m ເພື່ອໃຫ້ສອງເວັກເຕີຕັ້ງສາກກັນ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການຮ່ວມແຜ່ນພຽງຂອງສີ່ເມັດ (Coplanar Points in Space): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ໃຫ້ u = (4, 2) ແລະ v = (m, -6). ຖ້າ u ⊥ v, ຄ່າ m ຈະແມ່ນເທົ່າໃດ? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: m ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ໃຫ້ u = (m, 3) ແລະ v = (2, m - 5). ຖ້າ u ⊥ v, ຄ່າ m ຈະແມ່ນເທົ່າໃດ? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: m ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃຫ້ສີ່ເມັດ A(1, 1, 1), B(2, 3, 1), C(1, 2, 2) ແລະ D(2, 4, k). ຊອກຫາຄ່າ k ເພື່ອໃຫ້ສີ່ເມັດ A, B, C, D ຕັ້ງຢູ່ເທິງແຜ່ນພຽງດຽວກັນ (ຮ່ວມແຜ່ນພຽງກັນ)?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: k ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
-        ),
-      },
-      {
-        number: 2,
-        content: (
-          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາຂະໜາດມຸມລະຫວ່າງສອງເວັກເຕີ (Angle Between Two Vectors): "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-            </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ໃຫ້ u = (1, 0) ແລະ v = (1, 1). ຈົ່ງຊອກຫາຄ່າ cos θ ລະຫວ່າງສອງເວັກເຕີນີ້ (ຕອບເປັນເລກສ່ວນ, ຕົວอย่าง: √2/2):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: cos θ ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຈາກຂໍ້ (1), ຂະໜາດຂອງມຸມ θ ລະຫວ່າງສອງເວັກເຕີນີ້ ຈະແມ່ນຈັກອົງສາ? (ຕອບເປັນຕົວເລກຖ້ວນ, ຕົວຢ່າງ: 45):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: θ ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"°"}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ຊອກຫາ AB = [1, 2, 0], AC = [0, 1, 1], AD = [1, 3, k-1]. ໃຫ້ AD = x·AB + y·AC ⇒ [1, 3, k-1] = [x, 2x+y, y] ⇒ x = 1, y = k-1. ແລ້ວ 2(1) + (k-1) = 3 ⇒ 2 + k - 1 = 3 ⇒ k = 2!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ຜົນຄູນສະກາເລ ໂດຍນຳໃຊ້ຂະໜາດ ແລະ ມຸມ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ຄວາມຮ່ວມແຜ່ນພຽງຂອງສອງເວກເຕີ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ໃຫ້ສອງເວັກເຕີ u ແລະ v ມີຂະໜາດ |u| = 4, |v| = 5 ແລະ ມຸມລະຫວ່າງພວກມັນແມ່ນ θ = 60°. ຜົນຄູນສະກາເລ u · v ແມ່ນເທົ່າໃດ? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: u · v ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ໃຫ້ສອງເວັກເຕີ u ແລະ v ມີຂະໜາດ |u| = 3, |v| = 6 ແລະ ມຸມລະຫວ່າງພວກມັນແມ່ນ θ = 120°. ຜົນຄູນສະກາເລ u · v ແມ່ນເທົ່າໃດ? (⚠️ cos 120° = -0.5, ຕອບຕົວເລກຖ້ວນຕິດລົບ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: u · v ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ໃນອາວະກາດ, ສອງເວກເຕີໃດໆ ຈະຮ່ວມແຜ່ນພຽງກັນສະເໝີ ແມ່ນ ຫຼື ບໍ່?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ:"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span>{" (ຕອບ: ແມ່ນ / ບໍ່ແມ່ນ)"}</span>
           </div>
         </div>
-      ),
-    },
-    {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາຕົວຈິງກ່ຽວກັບວຽກຂອງແຮງດຶງໃນກົນລະສາດ (Mechanical Work Done by a Vector Force): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ເວັກເຕີແຮງ F = (10, 5) N ດຶງວັດຖຸໃຫ້ເຄື່ອນທີ່ຕາມເວັກເຕີຍ້າຍຂະໜານ d = (4, 2) m. ຈົ່ງຄິດໄລ່ວຽກ W = F · d ທີ່ເກີດຂຶ້ນ (Joule, J) (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: W ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ຈູນ (J)"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຖ້າເວັກເຕີແຮງ F' = (-2, 10) ຕັ້ງສາກກັບການເຄື່ອນທີ່ d = (4, 2) ຢ່າງສົມບູນ, ວຽກທີ່ເກີດຂຶ້ນ W' = F' · d ຈະແມ່ນຈັກຈູນ (J)? (ຕອບເປັນຕົວເລກ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: W' ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"J"}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u34-ans-1-1">{"(1) 26 (ເພາະວ່າ u · v = 2*3 + 5*4 = 6 + 20 = 26)"}</span>,
-          <span key="u34-ans-1-2">{"(2) -2 (⚠️ ເພາະວ່າ u · v = 1*4 + (-3)*2 = 4 - 6 = -2)"}</span>,
-        ],
+          <span key="1-1">{"2 (ຄິດໄລ່: 2x = 4 ⇒ x = 2)"}</span>,
+          <span key="1-2">{"3 (ຄິດໄລ່: x + y = 5 ⇒ 2 + y = 5 ⇒ y = 3)"}</span>,
+          <span key="1-3">{"3 (ຄິດໄລ່: 2x = 6 ⇒ x = 3)"}</span>,
+          <span key="1-4">{"1 (ຄິດໄລ່: -x + 3y = 0 ⇒ -3 + 3y = 0 ⇒ y = 1)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u34-ans-2-1">{"(1) ຕັ້ງສາກ (ເພາະວ່າ u · v = 2*3 + (-3)*2 = 6 - 6 = 0)"}</span>,
-          <span key="u34-ans-2-2">{"(2) 1 (ເພາະວ່າ u · v = 4*(-1) + 1*5 = -4 + 5 = 1)"}</span>,
-        ],
+          <span key="2-1">{"ຮ່ວມແຜ່ນພຽງ (ຄິດໄລ່: w = 2u + 3v, ເຊິ່ງແມ່ນການລວມເສັ້ນຊື່)"}</span>,
+          <span key="2-2">{"ບໍ່ຮ່ວມແຜ່ນພຽງ (ຄິດໄລ່: ບໍ່ມີ x, y ທີ່ເຮັດໃຫ້ w = x·u + y·v ຍ້ອນມີອົງປະກອບແກນ z)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3">{"2 (ຄິດໄລ່: k - 1 = y = 1 ⇒ k = 2)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u34-ans-t1-1">{"(1) 3 (ຍ້ອນວ່າ u · v = 4m - 12 = 0 ⇒ 4m = 12 ⇒ m = 3)"}</span>,
-          <span key="u34-ans-t1-2">{"(2) 3 (ຍ້ອນວ່າ u · v = 2m + 3(m - 5) = 5m - 15 = 0 ⇒ 5m = 15 ⇒ m = 3)"}</span>,
-        ],
-      },
-      {
-        questionNumber: "ທ້າທາຍ 2",
-        answers: [
-          <span key="u34-ans-t2-1">{"(1) √2/2 (ຍ້ອນວ່າ u · v = 1, |u| = 1, |v| = √2. cos θ = 1 / √2 = √2/2)"}</span>,
-          <span key="u34-ans-t2-2">{"(2) 45 (ຍ້ອນວ່າ cos θ = √2/2 ດັ່ງນັ້ນ ມຸມ θ = 45°)"}</span>,
-        ],
+          <span key="c1">{"2 (ຄິດໄລ່: k = 2 ເຮັດໃຫ້ AD = AB + AC)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u34-ans-s1-1">{"(1) 10 (ເພາະວ່າ u · v = 4 * 5 * cos 60° = 20 * 0.5 = 10)"}</span>,
-          <span key="u34-ans-s1-2">{"(2) -9 (ເພາະວ່າ u · v = 3 * 6 * cos 120° = 18 * (-0.5) = -9)"}</span>,
-        ],
-      },
-      {
-        questionNumber: "ທົດສອບປະຈຳບົດ 2",
-        answers: [
-          <span key="u34-ans-s2-1">{"(1) 50 (ເພາະວ່າ W = F · d = 10*4 + 5*2 = 40 + 10 = 50 J)"}</span>,
-          <span key="u34-ans-s2-2">{"(2) 0 (ເພາະວ່າ F' ຕັ້ງສາກກັບ d, ດັ່ງນັ້ນ W' = -2*4 + 10*2 = -8 + 20 = 12, ຂໍໂທດ! W' = -8 + 20 = 12 J. ຖ້າ F' = (-5, 10) ຕັ້ງສາກ W' = 0)"}</span>,
-        ],
-      },
+          <span key="s1">{"ແມ່ນ (ຄິດໄລ່: ສອງເວກເຕີໃດໆ ສາມາດກຳນົດແຜ່ນພຽງໜຶ່ງດຽວຜ່ານພວກມັນໄດ້ສະເໝີ)"}</span>
+        ]
+      }
     ],
-    advice: "ຜົນຄູນສະກາເລ ເປັນເຄື່ອງມືທີ່ຍອດຢ້ຽມໃນການຊອກຫາມຸມລະຫວ່າງສອງເວັກເຕີ ແລະ ຄິດໄລ່ວຽກໃນທາງຟີຊິກສາດ! ຈື່ເງື່ອນໄຂຕັ້ງສາກໃຫ້ດີເດີ້!",
-  },
+    advice: "ດີຫຼາຍ! ເຈົ້າເຂົ້າໃຈຫຼັກການຂອງຄວາມຮ່ວມແຜ່ນພຽງຂອງເວກເຕີໃນອາວະກາດແລ້ວ. ນີ້ແມ່ນກະແຈສຳຄັນໃນການກ້າວໄປສູ່ການຮຽນເລຂາຄະນິດ 3 ມິຕິ!"
+  }
 };

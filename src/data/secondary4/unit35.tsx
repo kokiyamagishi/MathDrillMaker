@@ -1,335 +1,211 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit35Data: UnitData = {
   unitNumber: 35,
-  unitTitle: "ພາກທີ V - ບົດທີ 35: ການຍ້າຍຂະໜານຮູບເລຂາຄະນິດເທິງໜ້າພຽງ",
-  unitGoal:
-    "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈຫຼັກການຍ້າຍຂະໜານ (Translation) ຂອງຮູບເລຂາຄະນິດເທິງໜ້າພຽງພິກັດ Oxy ແລະ ສູດຄິດໄລ່ພິກັດໃໝ່ x' = x + a, y' = y + b",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 35 ໜ້າ 205-210",
+  unitTitle: "ພາກທີ IV - ບົດທີ 35: ຜົນຄູນສະກາແລຂອງສອງເວກເຕີ (Scalar Product of Two Vectors)",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບຜົນຄູນສະກາແລ u·v = |u|·|v|·cos(θ) ແລະ ສູດໃນລະບົບເສັ້ນເຄົ້າ Oxy, ຄິດໄລ່ມູນລະຫວ່າງສອງເວກເຕີ, ແລະ ນຳໃຊ້ເງື່ອນໄຂຕັ້ງສາກ u·v = 0",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 172-177",
   subSections: [
     {
-      title: "1. ນິຍາມ ແລະ ສູດພິກັດຂອງການຍ້າຍຂະໜານ (Translation Coordinate Formula)",
+      title: "1. ນິຍາມ ແລະ ຄຸນລັກສະນະພື້ນຖານ (Definition & Geometric Meaning of Dot Product)",
       keyPoint: {
-      title: "1. ນິຍາມ ແລະ ສູດພິກັດຂອງການຍ້າຍຂະໜານ (Translation Coordinate Formula)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ການຍ້າຍຂະໜານ ຕາມເວັກເຕີ v = (a, b) ແມ່ນການຍ້າຍທຸກໆເມັດ P(x, y) ໄປຫາເມັດໃໝ່ P'(x', y') ໂດຍມີສູດພົວພັນດັ່ງນີ້:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "12px",
-            }}
-          >
-            <div>
-              <strong style={{ color: "#E65100" }}>{"• ສູດພະຍາກອນພິກັດໃໝ່ (Image Coordinates):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#D84315" }}>
-                {"x' = x + a"}
-                <br />
-                {"y' = y + b"}
-              </span>
+        title: "ສູດຄິດໄລ່ຜົນຄູນສະກາແລ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຜົນຄູນສະກາແລຂອງສອງເວກເຕີ u ແລະ v (ທີ່ບໍ່ແມ່ນເວກເຕີສູນ) ແມ່ນຈຳນວນຈິງ ທີ່ກຳນົດດ້ວຍສູດ:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E1F5FE", borderRadius: "8px", border: "1px solid #81D4FA" }}>
+              <strong style={{ fontSize: "1.5rem", color: "#0288D1" }}>{"u·v = |u| × |v| × cos(θ)"}</strong>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"ເຊິ່ງ θ ແມ່ນມູນລະຫວ່າງສອງເວກເຕີ u ແລະ v (0° ≤ θ ≤ 180°)."}
+              </p>
             </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• ຕົວຢ່າງການເຄື່ອນຍ້າຍຕົວຈິງ:"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", color: "#555" }}>
-                {"- ຍ້າຍເມັດ P(3, 4) ຕາມເວັກເຕີ v = (2, -1):"}
-                <br />
-                <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#2E7D32" }}>
-                  {"x' = 3 + 2 = 5,  y' = 4 + (-1) = 3  ⇒  P'(5, 3)."}
-                </span>
-              </span>
+            <div style={{ padding: "16px", backgroundColor: "#FFF8E1", borderRadius: "8px", border: "1px solid #FFE082" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#F57F17" }}>{"ຄຸນລັກສະນະທີ່ຄວນຈື່:"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
+                <li>{"u·v = v·u (ສະຫຼັບບ່ອນໄດ້)"}</li>
+                <li>{"u·(v + w) = u·v + u·w (ແຈກຢາຍໄດ້)"}</li>
+                <li>{"u·u = |u|² (ຜົນຄູນສະກາແລຂອງເວກເຕີກັບຕົວມັນເອງ)"}</li>
+              </ul>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ຈື່ໄວ້ວ່າ ພຽງແຕ່ເອົາພິກັດ x ບວກໃຫ້ a ແລະ ພິກັດ y ບວກໃຫ້ b ເຮົາກໍຈະໄດ້ພິກັດໃໝ່ຢ່າງງ່າຍດາຍເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງ: ຖ້າ |u| = 3, |v| = 4 ແລະ ມູນ θ = 60° (ເຊິ່ງ cos(60°) = 0.5) ⇒ u·v = 3 × 4 × 0.5 = 6!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາພິກັດໃໝ່ P' ຂອງເມັດ P ຫຼັງຈາກການຍ້າຍຂະໜານ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຍ້າຍເມັດ P(1, 2) ຕາມເວັກເຕີ v = (3, 4). ພິກັດໃໝ່ P'(x', y') ແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ, ຕົວຢ່າງ: (4, 6)):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ຜົນຄູນສະກາແລທາງເລຂາຄະນິດ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແനນ, ລວມ 5 ຄະແനນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ໃຫ້ |u| = 5, |v| = 6 ແລະ θ = 0° (cos(0°) = 1) ⇒ u·v ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ໃຫ້ |u| = 4, |v| = 10 ແລະ θ = 120° (cos(120°) = -0.5) ⇒ u·v ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຍ້າຍເມັດ P(-2, 5) ຕາມເວັກເຕີ v = (4, -3). ພິກັດໃໝ່ P'(x', y') ແມ່ນເທົ່າໃດ? (⚠️ ສັງເກດເຄື່ອງໝາຍລົບ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ບົດຮຽນພື້ນຖານ",
-      keyPoint: { content: <span /> },
-      problems: [
-        {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາເວັກເຕີຍ້າຍຂະໜານ v = (a, b) ຈາກພິກັດເກົ່າ ແລະ ໃໝ່: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຍ້າຍເມັດ A(1, 1) ໄປຫາ A'(4, 5). ເວັກເຕີຍ້າຍຂະໜານ v = (a, b) ແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ, ຕົວຢ່າງ: (3, 4)):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+      title: "2. ສູດໃນລະບົບເສັ້ນເຄົ້າ Oxy ແລະ ເງື່ອນໄຂຕັ້ງສາກ (Coordinate Formula & Orthogonality)",
+      keyPoint: {
+        title: "ສູດຄິດໄລ່ດ້ວຍຕົວປະສານ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃນລະບົບເສັ້ນເຄົ້າ Oxy, ໃຫ້ສອງເວກເຕີ u = [x₁, y₁] ແລະ v = [x₂, y₂]:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
+              <strong style={{ fontSize: "1.5rem", color: "#2E7D32" }}>{"u·v = x₁·x₂ + y₁·y₂"}</strong>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຍ້າຍເມັດ B(3, -2) ໄປຫາ B'(1, 2). ເວັກເຕີຍ້າຍຂະໜານ v = (a, b) ແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ເງື່ອນໄຂຕັ້ງສາກ (Orthogonality): ສອງເວກເຕີ u ແລະ v ຕັ້ງສາກກັນ (u ⊥ v) ກໍຕໍ່ເມື່ອ ຜົນຄູນສະກາແລຂອງພວກມັນເທົ່າກັບ 0:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#FFEBEE", borderRadius: "8px", border: "1px solid #FFCDD2" }}>
+              <strong style={{ fontSize: "1.375rem", color: "#C62828" }}>{"u ⊥ v  ⇔  u·v = 0  ⇔  x₁·x₂ + y₁·y₂ = 0"}</strong>
             </div>
           </div>
-        </div>
-      ),
-    }
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງ: ໃຫ້ u = [2, 3] ແລະ v = [4, -1] ⇒ u·v = (2 × 4) + (3 × -1) = 8 - 3 = 5!",
+          isBlue: false
+        }
+      },
+      problems: [
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ຜົນຄູນສະກາແລດ້ວຍຕົວປະສານ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແനນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ໃຫ້ u = [3, 2] ແລະ v = [4, -5] ⇒ u·v ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ໃຫ້ u = [-2, 4] ແລະ v = [3, 1] ⇒ u·v ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາຄ່າ k ເພື່ອໃຫ້ສອງເວກເຕີຕັ້ງສາກກັນ: "}<span className="point-label">{"(5 ຄະແനນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ໃຫ້ u = [k, 2] ແລະ v = [3, -6]. ຊອກຫາຄ່າ k ເພື່ອໃຫ້ u ⊥ v?"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                <span>{"ຕອບ: k ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              </div>
+            </div>
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ຍ້າຍແຕ່ລະເມັດຈອມ A, B, C ຂອງຮູບສາມແຈແຍກກັນ ແລ້ວຊອກຫາພິກັດໃໝ່! ບົດທ້າທາຍ 2: ຍ້າຍຈຸດຈອມຂອງປາຣາໂບນເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາພິກັດໃໝ່ຂອງຮູບສາມແຈ ABC ຫຼັງຈາກການຍ້າຍຂະໜານ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດຊອກຫາມູນລະຫວ່າງສອງເວກເຕີ (Angle Between Two Vectors): "}<span className="point-label">{"(5 ຄະແനນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ຮູບສາມແຈ ABC ມີຈອມ A(0, 0), B(2, 4), C(5, 1) ຍ້າຍຕາມເວັກເຕີ v = (1, 2). ພິກັດຈອມໃໝ່ A' ຈະແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: A' ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຈາກຂໍ້ (1), ພິກັດຈອມໃໝ່ B' ຈະແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: B' ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃຫ້ສອງເວກເຕີ u = [1, √3] ແລະ v = [√3, 1]. ຈົ່ງຊອກຫາຂະໜາດມູນ θ ລະຫວ່າງສອງເວກເຕີນີ້ (ເປັນອົງສາ)?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: θ ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span>{" ອົງສາ"}</span>
             </div>
           </div>
-        ),
-      },
-      {
-        number: 2,
-        content: (
-          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາສົມຜົນປາຣາໂບນໃໝ່ ຫຼັງຈາກການຍ້າຍຂະໜານ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-            </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ຍ້າຍເສັ້ນສະແດງ y = x² ຕາມເວັກເຕີ v = (3, 0) (ຍ້າຍຂວາ 3). ສູດຕຳລາໃໝ່ຈະແມ່ນຫຍັງ? (ຕອບແບບ (x-p)^2, ຕົວຢ່າງ: (x-3)^2):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: y ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຍ້າຍເສັ້ນສະແດງ y = x² ຕາມເວັກເຕີ v = (0, -4) (ຍ້າຍລົງ 4). ສູດຕຳລາໃໝ່ຈະແມ່ນຫຍັງ? (ຕອບແບບ x^2-q, ຕົວຢ່າງ: x^2-4):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: y ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ຄິດໄລ່: u·v = 1·√3 + √3·1 = 2√3. ຂະໜາດ: |u| = √(1² + (√3)²) = 2, |v| = 2. ຈະໄດ້ cos(θ) = u·v / (|u|·|v|) = 2√3 / 4 = √3 / 2. ຍ້ອນ cos(30°) = √3 / 2 ⇒ θ = 30°!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາພິກັດຕົ້ນກຳເນີດ P ກ່ອນການຍ້າຍຂະໜານ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ເງື່ອນໄຂຕັ້ງສາກຂອງສອງເວກເຕີ: "}<span className="point-label">{"(5 ຄະແനນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຫຼັງຈາກຍ້າຍຂະໜານຕາມ v = (2, 3), ເຮົາໄດ້ເມັດໃໝ່ P'(5, 7). ພິກັດເກົ່າ P(x, y) ແມ່ນເທົ່າໃດ? (ຄຳແນະນຳ: x = x' - a, y = y' - b):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: P ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຫຼັງຈາກຍ້າຍຂະໜານຕາມ v = (-4, 1), ເຮົາໄດ້ເມັດໃໝ່ Q'(2, 2). ພິກັດເກົ່າ Q(x, y) ແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: Q ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ຖ້າສອງເວກເຕີ u ແລະ v ຕັ້ງສາກກັນ, ຜົນຄູນສະກາແລ u·v ຈະເທົ່າກັບເທົ່າໃດ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ:"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
-      ),
-    },
-    {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາຕົວຈິງก່ຽວກັບການເຄື່ອນຍ້າຍຕົວໝາກໝາກເສິກ (Chess Piece Movement on coordinates): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ໝາກມ້າຢູ່ຕຳແໜ່ງ A(2, 1) ເທິງກະດານໝາກເສິກ. ມັນຖືກຍ້າຍຕາມເວັກເຕີ v = (1, 2). ຕຳແໜ່ງໃໝ່ B ຂອງໝາກມ້າຈະແມ່ນພິກັດໃດ? (ຕອບແບບພິກັດ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: B ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຕຳແໜ່ງ B ໃໝ່ນັ້ນ, ຖ້າຍ້າຍຕໍ່ຕາມເວັກເຕີ w = (-2, 3), ຕຳແໜ່ງສຸດທ້າຍ C ຈະແມ່ນພິກັດໃດ? (ຕອບແບບພິກັດ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: C ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u35-ans-1-1">{"(1) (4, 6) (ເພາະວ່າ x' = 1 + 3 = 4, y' = 2 + 4 = 6)"}</span>,
-          <span key="u35-ans-1-2">{"(2) (2, 2) (⚠️ ເພາະວ່າ x' = -2 + 4 = 2, y' = 5 + (-3) = 2)"}</span>,
-        ],
+          <span key="1-1">{"30 (ຄິດໄລ່: u·v = 5 × 6 × cos(0°) = 30)"}</span>,
+          <span key="1-2">{"-20 (ຄິດໄລ່: u·v = 4 × 10 × (-0.5) = -20)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u35-ans-2-1">{"(1) (3, 4) (ເພາະວ່າ a = 4 - 1 = 3, b = 5 - 1 = 4)"}</span>,
-          <span key="u35-ans-2-2">{"(2) (-2, 4) (ເພາະວ່າ a = 1 - 3 = -2, b = 2 - (-2) = 4)"}</span>,
-        ],
+          <span key="2-1">{"-2 (ຄິດໄລ່: u·v = 3·4 + 2·(-5) = 12 - 10 = -2)"}</span>,
+          <span key="2-2">{"-2 (ຄິດໄລ່: u·v = (-2)·3 + 4·1 = -6 + 4 = -2)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3">{"4 (ຄິດໄລ່: u·v = 3k - 12 = 0 ⇒ k = 4)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u35-ans-t1-1">{"(1) (1, 2) (ຍ້ອນວ່າ A' = (0+1, 0+2) = (1, 2))"}</span>,
-          <span key="u35-ans-t1-2">{"(2) (3, 6) (ຍ້ອນວ່າ B' = (2+1, 4+2) = (3, 6))"}</span>,
-        ],
-      },
-      {
-        questionNumber: "ທ້າທາຍ 2",
-        answers: [
-          <span key="u35-ans-t2-1">{"(1) (x-3)^2 (ເພາະຍ້າຍຂວາ 3 ຫົວໜ່ວຍ ຈະໄດ້ y = (x - 3)²)"}</span>,
-          <span key="u35-ans-t2-2">{"(2) x^2-4 (ເພາະຍ້າຍລົງລຸ່ມ 4 ຫົວໜ່ວຍ ຈະໄດ້ y = x² - 4)"}</span>,
-        ],
+          <span key="c1">{"30 (ຄິດໄລ່: cos(θ) = √3/2 ⇒ θ = 30°)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u35-ans-s1-1">{"(1) (3, 4) (ເພາະວ່າ x = 5 - 2 = 3, y = 7 - 3 = 4)"}</span>,
-          <span key="u35-ans-s1-2">{"(2) (6, 1) (ເພາະວ່າ x = 2 - (-4) = 6, y = 2 - 1 = 1)"}</span>,
-        ],
-      },
-      {
-        questionNumber: "ທົດສອບປະຈຳບົດ 2",
-        answers: [
-          <span key="u35-ans-s2-1">{"(1) (3, 3) (ເພາະວ່າ B = (2 + 1, 1 + 2) = (3, 3))"}</span>,
-          <span key="u35-ans-s2-2">{"(2) (1, 6) (ເພາະວ່າ C = (3 - 2, 3 + 3) = (1, 6))"}</span>,
-        ],
-      },
+          <span key="s1">{"0 (ຄິດໄລ່: ເພາະ cos(90°) = 0 ⇒ u·v = 0)"}</span>
+        ]
+      }
     ],
-    advice: "ການຍ້າຍຂະໜານເປັນການປ່ຽນແປງທາງເລຂາຄະນິດທີ່ຮັກສາຂະໜາດ ແລະ ຮູບຮ່າງຂອງ图形ໄວ້ຄືເກົ່າ! ມັນເປັນພື້ນຖານທີ່ດີໃນການເຂົ້າໃຈລະບົບພິກັດ Oxy ເດີ້!",
-  },
+    advice: "ສຸດຍອດຫຼາຍ! ຜົນຄູນສະກາແລເປັນບົດຮຽນທີ່ນຳໃຊ້ຫຼາຍທີ່ສຸດໃນເລຂາຄະນິດວິເຄາະ ແລະ ຟີຊິກສາດ. ພະຍາຍາມຕໍ່ໄປເດີ້!"
+  }
 };

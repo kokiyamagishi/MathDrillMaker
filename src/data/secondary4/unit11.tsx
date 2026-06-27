@@ -1,357 +1,287 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit11Data: UnitData = {
   unitNumber: 11,
-  unitTitle: "ພາກທີ I - ບົດທີ 11: ການແກ້ສົມຜົນຮາກຂັ້ນ 2",
-  unitGoal:
-    "ຮຽນຮູ້ວິທີແກ້ສົມຜົນຮາກຂັ້ນສອງ (Irrational Equations) ໂດຍການຂຶ້ນກຳລັງສອງທັງສອງພາກ, ການຊອກເງື່ອນໄຂກຳນົດ ແລະ ການຕັດໃຈຜົນນອກເງື່ອນໄຂ",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 11 ໜ້າ 61-66",
+  unitTitle: "ພາກທີ I - ບົດທີ 11: ການແກ້ສົມຜົນຮາກຂັ້ນສອງ (Solving Radical Equations)",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບວິທີການແກ້ສົມຜົນຮາກຂັ້ນສອງ (Radical Equations), ການກໍານົດເງື່ອນໄຂ ຫຼື ເຂດກໍານົດຂອງສົມຜົນ, ແລະ ການກວດຄືນໃຈຜົນເພື່ອຕັດໃຈຜົນນອກຂອບເຂດ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 58-61",
   subSections: [
     {
-      title: "1. ຂັ້ນຕອນການແກ້ສົມຜົນຮາກຂັ້ນ 2 (Steps for Solving Irrational Equations)",
+      title: "1. ຫຼັກການແກ້ສົມຜົນຮາກຂັ້ນສອງພື້ນຖານ (Basic Radical Equations)",
       keyPoint: {
-      title: "1. ຂັ້ນຕອນການແກ້ສົມຜົນຮາກຂັ້ນ 2 (Steps for Solving Irrational Equations)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ສົມຜົນຮາກຂັ້ນ 2 ແມ່ນສົມຜົນທີ່ມີຕົວປ່ຽນຢູ່ກ້ອງເຄື່ອງໝາຍຮາກຂັ້ນສອງ. ມີຂັ້ນຕອນການແກ້ດັ່ງນີ້:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "10px",
-            }}
-          >
-            <div>
-              <strong style={{ color: "#E65100" }}>{"1. ຊອກຫາເງື່ອນໄຂກຳນົດ (Domain): "}</strong>
-              <span>{"ກຳນົດໃຫ້ສຳນວນກ້ອງຮາກຕ້ອງໃຫຍ່ກວ່າ ຫຼື ເທົ່າກັບ 0 (f(x) ≥ 0)."}</span>
+        title: "ຫຼັກການແກ້ສົມຜົນ √A = B",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ສົມຜົນຮາກຂັ້ນສອງພື້ນຖານຢູ່ໃນຮູບແບບ √A = B. ເພື່ອແກ້ສົມຜົນນີ້ ເຮົາຕ້ອງປະຕິບັດຕາມຫຼັກການ:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ເງື່ອນໄຂ ແລະ ການຂຶ້ນກຳລັງສອງ:"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"ສົມຜົນ "}<strong>{"√A = B"}</strong>{" ສາມາດແກ້ໄດ້ກໍຕໍ່ເມື່ອ: "}
+                <br />
+                <span style={{ fontSize: "1.30rem", fontWeight: "bold", color: "#1565C0" }}>{"B ≥ 0   ແລະ   A = B²"}</span>
+              </p>
             </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"2. ຂຶ້ນກຳລັງສອງທັງສອງພາກ: "}</strong>
-              <span>{"ເພື່ອປົດເຄື່ອງໝາຍຮາກອອກ (√f(x))² = (g(x))²  ⇒  f(x) = [g(x)]² (ເງື່ອນໄຂ g(x) ≥ 0)."}</span>
-            </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#D84315" }}>{"3. ⚠️ ກວດກາໃຈຜົນ (Verification): "}</strong>
-              <span>{"ແທນຄ່າໃຈຜົນຄືນໃສ່ສົມຜົນເດີມ. ໃຈຜົນທີ່ເຮັດໃຫ້ພາກສ່ວນອື່ນຂັດແຍ່ງ ຈະຕ້ອງຕັດອອກ!"}</span>
-            </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຕົວຢ່າງ: ແກ້ສົມຜົນ √2x - 1 = x - 2."}
+              <br />
+              {"- ເງື່ອນໄຂ: x - 2 ≥ 0 ⇒ x ≥ 2."}
+              <br />
+              {"- ຂຶ້ນກຳລັງສອງທັງສອງພາກ: 2x - 1 = (x - 2)² ⇒ 2x - 1 = x² - 4x + 4 ⇒ x² - 6x + 5 = 0."}
+              <br />
+              {"- ແກ້ສົມຜົນໄດ້: x = 1 ຫຼື x = 5."}
+              <br />
+              {"- ກວດເບິ່ງເງື່ອນໄຂ x ≥ 2: ພົບວ່າ x = 1 (ຂັດກັບເງື່ອນໄຂ) ແລະ x = 5 (ສອດຄ່ອງ). ດັ່ງນັ້ນ ໃຈຜົນແມ່ນ S = {5}."}
+            </p>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ຕົວຢ່າງ: ສົມຜົນ √x = -3. ເນື່ອງຈາກຄ່າຂອງຮາກຂັ້ນສອງ ຫ້າມເປັນຄ່າລົບເດັດຂາດ! ສົມຜົນນີ້ຈຶ່ງ ບໍ່ມີໃຈຜົນ ໂດຍບໍ່ຕ້ອງໄລ່ເລີຍ ເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ໝາຍເຫດ: ຜົນໄດ້ຮັບຈາກເຄື່ອງໝາຍຮາກຂັ້ນສອງ (√) ຕ້ອງມີຄ່າບວກ ຫຼື ເທົ່າກັບສູນສະເໝີ. ດັ່ງນັ້ນ ພາກສ່ວນ B ຕ້ອງຕ່າງຈາກຄ່າລົບ!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ສົມຜົນຮາກຂັ້ນ 2 ພື້ນຖານຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ແກ້ສົມຜົນ: √(2x - 3) = 3. ຄ່າ x ແມ່ນເທົ່າໃດ? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງແກ້ສົມຜົນຮາກຂັ້ນສອງພື້ນຖານຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) √(x - 1) = 3 ⇒ ໃຈຜົນ x ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) √(2x + 5) = x + 1 (ເງື່ອນໄຂ x ≥ -1) ⇒ ໃຈຜົນ x ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"(ໝາຍເຫດ: ໃຈຜົນ x = -2 ຖືກຕັດອອກ)"}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ແກ້ສົມຜົນ: √(x + 5) = 4. ຄ່າ x ແມ່ນເທົ່າໃດ?:"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງແກ້ສົມຜົນ ແລະ ກວດຄືນເງື່ອນໄຂ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ແກ້ສົມຜົນ: √(x² - 3x + 4) = x - 1. (ເງື່ອນໄຂ x ≥ 1)"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ຂຶ້ນກຳລັງສອງ: x² - 3x + 4 = x² - 2x + 1 ⇒ x ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ເສັ້ນສະແດງເງື່ອນໄຂໃຈຜົນ (Visual Condition Check)",
+      title: "2. ສົມຜົນທີ່ມີຫຼາຍເລກຮາກ (Radical Equations with Multiple Radicals)",
       keyPoint: {
-      title: "2. ເສັ້ນສະແດງເງື່ອນໄຂໃຈຜົນ (Visual Condition Check)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຕົວຢ່າງ: ສຳລັບສົມຜົນ √(x + 3) = x - 3. (ເງື່ອນໄຂ x ≥ -3 ແລະ x - 3 ≥ 0  ⇒  x ≥ 3)."}
-          </p>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ເມື່ອຂຶ້ນກຳລັງສອງ: x + 3 = (x - 3)²  ⇒  x² - 7x + 6 = 0  ⇒  x = 6 ຫຼື x = 1."}
-          </p>
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: "12px" }}>
-            <svg viewBox="0 0 280 80" style={{ width: "100%", maxWidth: "280px", height: "auto", border: "1px solid #ccc", backgroundColor: "#fff", borderRadius: "4px" }}>
-              {/* x = 6 check */}
-              <rect x="20" y="20" width="100" height="40" rx="4" fill="#E8F5E9" stroke="#4CAF50" strokeWidth="1.5" />
-              <text x="70" y="38" fill="#1B5E20" fontSize="10" textAnchor="middle" fontWeight="bold">{"x = 6"}</text>
-              <text x="70" y="52" fill="#1B5E20" fontSize="9" textAnchor="middle">{"✓ ເໝາະສົມ (6 ≥ 3)"}</text>
-
-              {/* x = 1 cross */}
-              <rect x="160" y="20" width="100" height="40" rx="4" fill="#FFEBEE" stroke="#F44336" strokeWidth="1.5" />
-              <text x="210" y="38" fill="#C62828" fontSize="10" textAnchor="middle" fontWeight="bold">{"x = 1"}</text>
-              <text x="210" y="52" fill="#C62828" fontSize="9" textAnchor="middle">{"✗ ບໍ່ເໝາະສົມ (1 < 3)"}</text>
-            </svg>
+        title: "ການຍ້າຍພົດ ແລະ ການຂຶ້ນກຳລັງສອງຫຼາຍເທື່ອ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"- ເມື່ອສົມຜົນມີຫຼາຍເລກຮາກ, ເຮົາຄວນຍ້າຍພົດໃຫ້ຮາກຢູ່ແຕ່ລະພາກຂອງສົມຜົນ ເພື່ອໃຫ້ງ່າຍໃນການຂຶ້ນກຳລັງສອງ."}
+              <br />
+              {"- ຫຼັງຈາກຂຶ້ນກຳລັງສອງເທື່ອທຳອິດແລ້ວ, ຖ້າຍັງມີຮາກເຫຼືອຢູ່, ໃຫ້ຈັດກຸ່ມໃຫ້ຮາກຢູ່ພາກດຽວ ແລ້ວຂຶ້ນກຳລັງສອງອີກເທື່ອໜຶ່ງ."}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ຕົວຢ່າງສົມຜົນ:"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"ແກ້ສົມຜົນ: √(x + 7) - √(2x - 8) = 1"}
+                <br />
+                {"- ຍ້າຍພົດ: √(x + 7) = 1 + √(2x - 8)"}
+                <br />
+                {"- ເງື່ອນໄຂ: x ≥ 4."}
+                <br />
+                {"- ແກ້ສົມຜົນ ແລະ ຂຶ້ນກຳລັງສອງສອງເທື່ອ ຈະໄດ້ໃຈຜົນ S = {9}."}
+              </p>
+            </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ດັ່ງນັ້ນ ໃຈຜົນແທ້ຈິງຂອງສົມຜົນ √(x+3) = x-3 ມີພຽງແຕ່ x = 6 ເທົ່ານັ້ນ!",
+        ),
+        hint: {
+          text: "💡 ຕ້ອງກວດເບິ່ງເງື່ອນໄຂທຸກໆຄັ້ງຫຼັງຈາກແກ້ສົມຜົນສອງຮາກ ເພາະມີໂອກາດສູງທີ່ຈະໄດ້ໃຈຜົນນອກຂອບເຂດ!",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ສົມຜົນຮາກຂັ້ນ 2 ໂດຍກວດເງື່ອນໄຂຄ່າລົບ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ແກ້ສົມຜົນ: √(x - 2) = -4 (ຖ້າບໍ່ມີໃຈຜົນ ໃຫ້ຕອບວ່າ: ບໍ່ມີໃຈຜົນ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງແກ້ສົມຜົນສອງຮາກຕໍ່ໄປນີ້: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ແກ້ສົມຜົນ: √(x + 7) - √(2x - 8) = 1"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ຕອບ: ໃຈຜົນ x ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ແກ້ສົມຜົນ: √(3x + 1) = x - 1 (ຊອກຫາໃຈຜົນທີ່ເໝາະສົມ, ຕອບຕົວເລກຖ້ວນ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໂຈດບັນຫາຟີຊິກສາດເລື່ອງ Pendulum (ເວລາແກວ່ງຂອງລູກຕຸ້ມ): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ສູດເວລາແກວ່ງຂອງລູກຕຸ້ມແມ່ນ: T = 2π√(L / g). ຖ້າເຮົາປ່ຽນສູດນີ້ເພື່ອຊອກຫາ L (ຄວາມຍາວລູກຕຸ້ມ), ຈະໄດ້ L ເທົ່າກັບເທົ່າໃດ?"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ຕອບ: L = (T² × g) / (4 ×"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span>{")"}</span>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໃຫ້ຂຶ້ນກຳລັງສອງທັງສອງພາກຢ່າງລະອຽດ. ບົດທ້າທາຍ 2: ຢ່າລືມກວດເງື່ອນໄຂຂອງຕົວປ່ຽນກ້ອງຮາກ ແລະ ພາກສ່ວນຂວາມືສະເໝີ ເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງແກ້ສົມຜົນຮາກຂັ້ນ 2 ທີ່ປ່ຽນເປັນສົມຜົນຂັ້ນສອງ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດແກ້ສົມຜົນຮາກຂັ້ນສອງຍາກ (Advanced Radical Equation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ແກ້ສົມຜົນ: √(x² + 5) = x + 1 (ຊອກຫາໃຈຜົນ x, ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: x ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ແກ້ສົມຜົນ: √(x² - 3x) = 2 (ຕອບຄ່າ x ທັງໝົດ ແຍກດ້ວຍຈຸດ, ຕົວຢ່າງ: 4, -1):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: x ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຈົ່ງແກ້ສົມຜົນ: √(3x + 1) - √(x - 1) = 2. (ຊອກຫາໃຈຜົນ x)"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: ໃຈຜົນ x ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span>{"(ໝາຍເຫດ: x = 1 ຖືກຕັດອອກຫຼືບໍ່? ໃຫ້ກວດເບິ່ງ)"}</span>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງແກ້ສົມຜົນຮາກຂັ້ນ 2 ທີ່ມີຮາກທັງສອງພາກ (Roots on both sides): "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດຟີຊິກສາດເລື່ອງ Rocket Escape Velocity (ຄວາມໄວຫຼຸດພົ້ນ): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ແກ້ສົມຜົນ: √(3x - 5) = √(x + 1) (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: x ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ແກ້ສົມຜົນ: √(x² - 1) = √(2x - 1) (ຊອກຫາໃຈຜົນ x ທີ່ເໝາະສົມ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: x ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ສູດຄວາມໄວຫຼຸດພົ້ນແມ່ນ: v = √(2GM / R). ຈົ່ງປ່ຽນສູດນີ້ເພື່ອຊອກຫາລັດສະໝີຂອງໂລກ R ຕາມຕົວປ່ຽນອື່ນໆ?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <span>{"ຕອບ: R = (2 × G × M) /"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ສົມຜົນ √(3x + 1) = 2 + √(x - 1) ⇒ 3x + 1 = 4 + 4√(x - 1) + x - 1 ⇒ 2x - 2 = 4√(x - 1) ⇒ x - 1 = 2√(x - 1) ⇒ (x - 1)² = 4(x - 1) ⇒ (x - 1)(x - 1 - 4) = 0 ⇒ x = 1 ຫຼື x = 5. ທັງສອງຄ່າແມ່ນສອດຄ່ອງ! ສ່ວນສູດຄວາມໄວຫຼຸດພົ້ນ: v² = 2GM/R ⇒ R = 2GM/v²!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ບົດສັງລວມສົມຜົນຮາກຂັ້ນ 2: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ສົມຜົນຮາກຂັ້ນສອງບໍ່ມີໃຈຜົນ (No Solution): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ແກ້ສົມຜົນ: √(x - 1) = x - 3 (ຊອກຫາໃຈຜົນແທ້ຈິງ, ຕອບຕົວເລກຖ້ວນ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: x ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ແກ້ສົມຜົນ: x - √x - 6 = 0 (ຄຳແນະນຳ: ວາງ t = √x, t ≥ 0 ຈະໄດ້ສົມຜົນ t² - t - 6 = 0):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: x ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ຈົ່ງແກ້ສົມຜົນ: √(x - 5) = -3"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ສົມຜົນນີ້"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "42px" }}></span>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາຕົວຈິງກ່ຽວກັບໄລຍະສາຍຕາແນມເຫັນ (Sight Distance Word Problem): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ສົມຜົນຮາກຂັ້ນສອງພື້ນຖານງ່າຍດາຍ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ໄລຍະສາຍຕາແນມເຫັນ d (km) ຈາກຫໍຄອຍສູງ h (m) ຖືກສະແດງດ້ວຍສູດ: d = 3.57 × √h. ຖ້າໄລຍະສາຍຕາແນມເຫັນ d = 17.85 km, ຫໍຄອຍນີ້ຈະສູງຈັກແມັດ (m)? (ຄຳແນະນຳ: √h = 17.85 / 3.57 = 5):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: h ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ແມັດ (m)"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຖ້າຕ້ອງການໃຫ້ໄລຍະສາຍຕາແນມເຫັນ d ເພີ່ມຂຶ້ນເປັນສອງເທົ່າ (35.7 km), ຫໍຄອຍຕ້ອງສູງຈັກແມັດ (m)?:(ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: h ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ແມັດ (m)"}</span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ຈົ່ງແກ້ສົມຜົນ: √(3x - 2) = 4"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ໃຈຜົນ x ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u11-ans-1-1">{"(1) 6 (ເພາະວ່າ 2x - 3 = 9  ⇒  2x = 12  ⇒  x = 6)"}</span>,
-          <span key="u11-ans-1-2">{"(2) 11 (ເພาະວ່າ x + 5 = 16  ⇒  x = 11)"}</span>,
-        ],
+          <span key="1-1">{"(1) 10 (ຄິດໄລ່: x - 1 = 3² = 9 ⇒ x = 10)"}</span>,
+          <span key="1-2">{"(2) 2 (ຄິດໄລ່: 2x+5 = (x+1)² = x²+2x+1 ⇒ x² = 4 ⇒ x = 2, ເພາະ x = -2 ຂັດກັບເງື່ອນໄຂ x ≥ -1)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u11-ans-2-1">{"(1) ບໍ່ມີໃຈຜົນ (ເພາະວ່າຮາກຂັ້ນສອງບໍ່ສາມາດເທົ່າກັບຄ່າລົບ -4)"}</span>,
-          <span key="u11-ans-2-2">{"(2) 3 (ເພາະວ່າ 3x + 1 = (x - 1)²  ⇒  x² - 5x = 0  ⇒  x = 0 ຫຼື x = 5. ແຕ່ເງື່ອນໄຂ x - 1 ≥ 0  ⇒  x ≥ 1, ແລະ ຈາກການແທນຄືນ x = 3 ຈະໄດ້ √(9+1) = √10 ບໍ່ແມ່ນ. ຂໍອະໄພ: 3x+1 = (x-1)²  ⇒  3x+1 = x²-2x+1  ⇒  x²-5x = 0  ⇒  x = 5. ດັ່ງນັ້ນ x = 5)"}</span>,
-        ],
+          <span key="2">{"3 (ຄິດໄລ່: x² - 3x + 4 = x² - 2x + 1 ⇒ -x = -3 ⇒ x = 3)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3">{"9 (ຄິດໄລ່: ຈັດກຸ່ມ ແລະ ຂຶ້ນກຳລັງສອງສອງເທື່ອ ຈະໄດ້ x = 9)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4">{"π² (ຄິດໄລ່: T² = 4π²(L / g) ⇒ L = T²g / 4π²)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u11-ans-t1-1">{"(1) 2 (ເພາະວ່າ x² + 5 = x² + 2x + 1  ⇒  2x = 4  ⇒  x = 2)"}</span>,
-          <span key="u11-ans-t1-2">{"(2) 4, -1 (ຫຼື 4, -1. ເພາະວ່າ x² - 3x = 4  ⇒  x² - 3x - 4 = 0  ⇒  x = 4 ຫຼື x = -1. ທັງສອງຄ່າລ້ວນແຕ່ຕອບສະໜອງ)"}</span>,
-        ],
+          <span key="c1">{"1 ແລະ 5 (ຄິດໄລ່: (x - 1)(x - 5) = 0. ທັງສອງຄ່າແມ່ນສອດຄ່ອງກັບເງື່ອນໄຂ x ≥ 1)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u11-ans-t2-1">{"(1) 3 (ເພາະວ່າ 3x - 5 = x + 1  ⇒  2x = 6  ⇒  x = 3)"}</span>,
-          <span key="u11-ans-t2-2">{"(2) 2 (ເພາະວ່າ x² - 1 = 2x - 1  ⇒  x² - 2x = 0  ⇒  x = 2 ຫຼື 0. ແຕ່ເງື່ອນໄຂ 2x - 1 ≥ 0  ⇒  x ≥ 0.5, ດັ່ງນັ້ນມີພຽງ x = 2)"}</span>,
-        ],
+          <span key="c2">{"v² (ຄິດໄລ່: v² = 2GM / R ⇒ R = 2GM / v²)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u11-ans-s1-1">{"(1) 5 (ເພາະວ່າ x - 1 = (x - 3)²  ⇒  x - 1 = x² - 6x + 9  ⇒  x² - 7x + 10 = 0  ⇒  x = 5 ຫຼື x = 2. ແຕ່ເງື່ອນໄຂ x - 3 ≥ 0  ⇒  x ≥ 3, ດັ່ງນັ້ນມີພຽງ x = 5)"}</span>,
-          <span key="u11-ans-s1-2">{"(2) 9 (ເພາະວ່າ t² - t - 6 = 0  ⇒  (t - 3)(t + 2) = 0. ເນື່ອງຈາກ t ≥ 0, ຈະໄດ້ t = 3  ⇒  √x = 3  ⇒  x = 9)"}</span>,
-        ],
+          <span key="s1">{"ບໍ່ມີໃຈຜົນ (ຄິດໄລ່: ເພາະຮາກຂັ້ນສອງບໍ່ສາມາດມີຄ່າເປັນລົບ -3 ໄດ້)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u11-ans-s2-1">{"(1) 25 (ເພາະວ່າ √h = 5  ⇒  h = 25)"}</span>,
-          <span key="u11-ans-s2-2">{"(2) 100 (ເພາະວ່າ √h = 10  ⇒  h = 100)"}</span>,
-        ],
-      },
+          <span key="s2">{"6 (ຄິດໄລ່: 3x - 2 = 16 ⇒ 3x = 18 ⇒ x = 6)"}</span>
+        ]
+      }
     ],
-    advice: "ຈົ່ງລະວັງທີ່ສຸດກ່ຽວກັບເງື່ອນໄຂຂອງສົມຜົນຮາກຂັ້ນ 2! ຕ້ອງແທນຄ່າໃຈຜົນຄືນໃສ່ສົມຜົນເດີມສະເໝີ ເພາະການຂຶ້ນກຳລັງສອງອາດຈະພາໃຫ້ເກີດໃຈຜົນນອກທີ່ບໍ່ຖືກຕ້ອງເດີ້!",
-  },
+    advice: "ຍອດຢ້ຽມຫຼາຍ! ເຈົ້າໄດ້ຮຽນຮູ້ກ່ຽວກັບການແກ້ສົມຜົນຮາກຂັ້ນສອງ ແລະ ການກວດຄືນເງື່ອນໄຂຢ່າງລະອຽດແລ້ວ. ພະຍາຍາມຝຶກຝົນຕໍ່ໄປເດີ້!"
+  }
 };

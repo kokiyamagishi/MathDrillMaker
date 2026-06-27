@@ -1,399 +1,388 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", verticalAlign: "middle", alignItems: "center", padding: "0 4px", fontSize: "0.95em", transform: "translateY(-0.05em)" }}>
-    <span style={{ borderBottom: "1.5px solid currentColor", paddingBottom: "1px", lineHeight: 1, fontWeight: "bold" }}>{num}</span>
-    <span style={{ paddingTop: "1.5px", lineHeight: 1, fontWeight: "bold" }}>{den}</span>
-  </span>
-);
-
 export const unit7Data: UnitData = {
   unitNumber: 7,
-  unitTitle: "ພາກທີ I - ບົດທີ 7: ທະວີຄູນຮ່ວມໜ້ອຍສຸດ ແລະ ອຸປະຄູນຮ່ວມຫຼາຍສຸດ",
-  unitGoal:
-    "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍ ແລະ ວິທີຊອກຫາ ທະວີຄູນຮ່ວມໜ້ອຍສຸດ (ທ.ຮ.ນ / LCM), ອຸປະຄູນຮ່ວມຫຼາຍສຸດ (ອ.ຮ.ລ / GCD) ແລະ ຈຳນວນມູນ",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 49-53",
+  unitTitle: "ພາກທີ I - ບົດທີ 7: ທະວີຄູນຮ່ວມໜ້ອຍສຸດ (LCM) ແລະ ອຸປະຄູນຮ່ວມຫຼາຍສຸດ (GCD)",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບທະວີຄູນຮ່ວມໜ້ອຍສຸດ (LCM), ອຸປະຄູນຮ່ວມຫຼາຍສຸດ (GCD), ຈຳນວນມູນທີ່ໜ້ອຍກວ່າ 100, ແລະ ການຂຽນຈຳນວນທຳມະຊາດເປັນຜົນຄູນຂອງຈຳນວນມູນ (ການແຍກຕົວປະກອບມູນ).",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 46-51",
   subSections: [
     {
-      title: "1. ທະວີຄູນຮ່ວມໜ້ອຍສຸດ (ທ.ຮ.ນ)",
+      title: "1. ທະວີຄູນຮ່ວມໜ້ອຍສຸດ (LCM)",
       keyPoint: {
-      title: "1. ທະວີຄູນຮ່ວມໜ້ອຍສຸດ (ທ.ຮ.ນ)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ທ.ຮ.ນ ແມ່ນຈຳນວນຄູນຮ່ວມທີ່ນ້ອຍທີ່ສຸດ (ຕ່າງຈາກ 0) ຂອງສອງ ຫຼື ຫຼາຍຈຳນວນ:"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#E3F2FD",
-              border: "2px solid #2196F3",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"• ຕົວທະວີຄູນຂອງ 3: {3, 6, 9, "}<strong>{"12"}</strong>{", 15, 18, 21, "}<strong>{"24"}</strong>{", ...}"}</div>
-            <div>{"• ຕົວທະວີຄູນຂອງ 4: {4, 8, "}<strong>{"12"}</strong>{", 16, 20, "}<strong>{"24"}</strong>{", 28, ...}"}</div>
-            <div>{"• ຕົວທະວີຄູນຮ່ວມຂອງ 3 ແລະ 4: {"}<strong>{"12"}</strong>{", "}<strong>{"24"}</strong>{", 36, ...}"}</div>
-            <div style={{ color: "#0D47A1", fontWeight: "bold", borderTop: "1px solid #B3E5FC", paddingTop: "6px", marginTop: "4px" }}>
-              {"→ ທ.ຮ.ນ (3, 4) = 12"}
+        title: "ທະວີຄູນ ແລະ ທະວີຄູນຮ່ວມໜ້ອຍສຸດ (LCM / ທ.ຮ.ນ)",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"• "}<strong>{"ທະວີຄູນ (Multiples)"}</strong>{" ຂອງຈຳນວນໃດໜຶ່ງແມ່ນຜົນຄູນຂອງຈຳນວນນັ້ນກັບ 1, 2, 3, 4, ..."}
+              <br />
+              {"• "}<strong>{"ທະວີຄູນຮ່ວມໜ້ອຍສຸດ (LCM)"}</strong>{" ຂອງສອງ ຫຼື ຫຼາຍຈຳນວນ ແມ່ນຈຳນວນທຳມະຊາດທີ່ໜ້ອຍສຸດ (ຕ່າງຈາກ 0) ທີ່ຫານຂາດໃຫ້ທຸກໆຈຳນວນເຫຼົ່ານັ້ນ."}
+            </p>
+
+            {/* Visual Comparison Diagram */}
+            <div style={{ padding: "20px", backgroundColor: "#E8F5E9", borderRadius: "12px", border: "1px solid #81C784" }}>
+              <h4 style={{ fontSize: "1.3rem", margin: "0 0 12px 0", color: "#2E7D32", fontWeight: "bold" }}>
+                {"📊 ຕົວຢ່າງການຊອກຫາ LCM(3, 4):"}
+              </h4>
+              <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+                <div>
+                  <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#1B5E20" }}>{"ທະວີຄູນຂອງ 3: "}</span>
+                  <span style={{ fontSize: "1.25rem" }}>
+                    {"3, 6, 9, "}
+                    <strong style={{ color: "#D84315", backgroundColor: "#FFCCBC", padding: "2px 6px", borderRadius: "4px" }}>{"12"}</strong>
+                    {", 15, 18, 21, "}
+                    <strong style={{ color: "#D84315", textDecoration: "underline" }}>{"24"}</strong>
+                    {", 27, 30, 33, "}
+                    <strong style={{ color: "#D84315", textDecoration: "underline" }}>{"36"}</strong>
+                    {", ..."}
+                  </span>
+                </div>
+                <div>
+                  <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#1B5E20" }}>{"ທະວີຄູນຂອງ 4: "}</span>
+                  <span style={{ fontSize: "1.25rem" }}>
+                    {"4, 8, "}
+                    <strong style={{ color: "#D84315", backgroundColor: "#FFCCBC", padding: "2px 6px", borderRadius: "4px" }}>{"12"}</strong>
+                    {", 16, 20, "}
+                    <strong style={{ color: "#D84315", textDecoration: "underline" }}>{"24"}</strong>
+                    {", 28, 32, "}
+                    <strong style={{ color: "#D84315", textDecoration: "underline" }}>{"36"}</strong>
+                    {", 40, ..."}
+                  </span>
+                </div>
+                <div style={{ borderTop: "1px dashed #A5D6A7", paddingTop: "8px", marginTop: "4px" }}>
+                  <p style={{ fontSize: "1.25rem", margin: 0, lineHeight: "1.5" }}>
+                    {"• ທະວີຄູນຮ່ວມຂອງ 3 ແລະ 4 ແມ່ນ: {12, 24, 36, ...}"}
+                    <br />
+                    {"• ທະວີຄູນຮ່ວມທີ່ໜ້ອຍສຸດ (LCM) ຕ່າງ 0 ແມ່ນ "}
+                    <strong style={{ color: "#D84315", fontSize: "1.35rem" }}>{"12"}</strong>
+                    {". ດັ່ງນັ້ນ, LCM(3, 4) = 12."}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ທ.ຮ.ນ ແມ່ນຈຳນວນທີ່ນ້ອຍທີ່ສຸດ ທີ່ຫານໃຫ້ທັງສອງຕົວເລກນັ້ນຂາດເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ວິທີຊອກ LCM ທີ່ໄວ: ເລີ່ມຈາກທະວີຄູນຂອງຈຳນວນທີ່ໃຫຍ່ກວ່າ ແລ້ວກວດເບິ່ງວ່າຈຳນວນນັ້ນຫານຂາດໃຫ້ຈຳນວນທີ່ເຫຼືອບໍ່!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຕອບວ່າຈຳນວນລຸ່ມນີ້ ແມ່ນຈຳນວນມູນ ຫຼື ບໍ່ແມ່ນຈຳນວນມູນ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "12px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(1) 2 ແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາທະວີຄູນຮ່ວມໜ້ອຍສຸດ (LCM) ຂອງຄູ່ຈຳນວນລຸ່ມນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math">{"LCM(6, 8) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math">{"LCM(5, 15) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(2) 13 ແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(3) 15 ແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(4) 1 ແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(5) 29 ແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ອຸປະຄູນຮ່ວມຫຼາຍສຸດ (ອ.ຮ.ລ)",
+      title: "2. ອຸປະຄູນຮ່ວມຫຼາຍສຸດ (GCD)",
       keyPoint: {
-      title: "2. ອຸປະຄູນຮ່ວມຫຼາຍສຸດ (ອ.ຮ.ລ)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ອ.ຮ.ລ ແມ່ນຕົວຫານຮ່ວມທີ່ໃຫຍ່ທີ່ສຸດ ຂອງສອງ ຫຼື ຫຼາຍຈຳນວນ:"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"• ຕົວອຸປະຄູນ (ຕົວຫານ) ຂອງ 12: {"}<strong>{"1"}</strong>{", "}<strong>{"2"}</strong>{", "}<strong>{"3"}</strong>{", 4, "}<strong>{"6"}</strong>{", 12}"}</div>
-            <div>{"• ຕົວອຸປະຄູນ (ຕົວຫານ) ຂອງ 18: {"}<strong>{"1"}</strong>{", "}<strong>{"2"}</strong>{", "}<strong>{"3"}</strong>{", "}<strong>{"6"}</strong>{", 9, 18}"}</div>
-            <div>{"• ຕົວຫານຮ່ວມຂອງ 12 ແລະ 18: {"}<strong>{"1, 2, 3, 6"}</strong>{"}"}</div>
-            <div style={{ color: "#2E7D32", fontWeight: "bold", borderTop: "1px solid #C8E6C9", paddingTop: "6px", marginTop: "4px" }}>
-              {"→ ອ.ຮ.ລ (12, 18) = 6"}
+        title: "ອຸປະຄູນ ແລະ ອຸປະຄູນຮ່ວມຫຼາຍສຸດ (GCD / ອ.ຮ.ຫ)",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"• "}<strong>{"ອຸປະຄູນ (Divisors)"}</strong>{" ຂອງຈຳນວນທຳມະຊາດໃດໜຶ່ງ ແມ່ນບັນດາຈຳນວນທຳມະຊາດທີ່ຫານຂາດໃຫ້ຈຳນວນນັ້ນ."}
+              <br />
+              {"• "}<strong>{"ອຸປະຄູນຮ່ວມຫຼາຍສຸດ (GCD)"}</strong>{" ຂອງສອງ ຫຼື ຫຼາຍຈຳນວນ ແມ່ນຈຳນວນທຳມະຊາດທີ່ໃຫຍ່ສຸດ ທີ່ຫານຂາດໃຫ້ທຸກໆຈຳນວນເຫຼົ່ານັ້ນ."}
+            </p>
+
+            {/* Divisors lists for 24, 36, 48 */}
+            <div style={{ padding: "20px", backgroundColor: "#E0F7FA", borderRadius: "12px", border: "1px solid #4DD0E1" }}>
+              <h4 style={{ fontSize: "1.3rem", margin: "0 0 12px 0", color: "#006064", fontWeight: "bold" }}>
+                {"📊 ຕົວຢ່າງການຊອກຫາ GCD(24, 36, 48):"}
+              </h4>
+              <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.25rem" }}>
+                <div>
+                  {"• ອຸປະຄູນຂອງ 24: {1, 2, 3, 4, 6, 8, "}
+                  <strong style={{ color: "#E65100", backgroundColor: "#FFE0B2", padding: "2px 6px", borderRadius: "4px" }}>{"12"}</strong>
+                  {", 24}"}
+                </div>
+                <div>
+                  {"• ອຸປະຄູນຂອງ 36: {1, 2, 3, 4, 6, 9, "}
+                  <strong style={{ color: "#E65100", backgroundColor: "#FFE0B2", padding: "2px 6px", borderRadius: "4px" }}>{"12"}</strong>
+                  {", 18, 36}"}
+                </div>
+                <div>
+                  {"• ອຸປະຄູນຂອງ 48: {1, 2, 3, 4, 6, 8, "}
+                  <strong style={{ color: "#E65100", backgroundColor: "#FFE0B2", padding: "2px 6px", borderRadius: "4px" }}>{"12"}</strong>
+                  {", 16, 24, 48}"}
+                </div>
+                <div style={{ borderTop: "1px dashed #80DEEA", paddingTop: "8px", marginTop: "4px" }}>
+                  <p style={{ margin: 0, lineHeight: "1.5" }}>
+                    {"• ອຸປະຄູນຮ່ວມຂອງ 24, 36, 48 ແມ່ນ: {1, 2, 3, 4, 6, 12}"}
+                    <br />
+                    {"• ອຸປະຄູນຮ່ວມທີ່ໃຫຍ່ສຸດ (GCD) ແມ່ນ "}
+                    <strong style={{ color: "#E65100", fontSize: "1.35rem" }}>{"12"}</strong>
+                    {". ດັ່ງນັ້ນ, GCD(24, 36, 48) = 12."}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ອ.ຮ.ລ ແມ່ນຂະໜາດທີ່ໃຫຍ່ທີ່ສຸດ ທີ່ສາມາດຫານທັງສອງຈຳນວນນັ້ນໄດ້ລົງຕົວ!",
+        ),
+        hint: {
+          text: "💡 ການຊອກ GCD ຊ່ວຍເຮົາໃນການຮຸບເລກສ່ວນໃຫ້ເປັນເລກສ່ວນຂາດຕົວທີ່ງ່າຍທີ່ສຸດ!",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາ ທະວີຄູນຮ່ວມໜ້ອຍສຸດ (ທ.ຮ.ນ / LCM) ຂອງຄູ່ຈຳນວນລຸ່ມນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ທ.ຮ.ນ (6, 8) ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາອຸປະຄູນຮ່ວມຫຼາຍສຸດ (GCD) ຂອງຄູ່ຈຳນວນລຸ່ມນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math">{"GCD(18, 30) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math">{"GCD(16, 40) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ທ.ຮ.ນ (5, 12) ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "3. ຈຳນວນມູນ (Prime Numbers)",
+      title: "3. ຈຳນວນມູນ ແລະ ການແຍກຕົວປະກອບມູນ",
       keyPoint: {
-      title: "3. ຈຳນວນມູນ (Prime Numbers)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຈຳນວນມູນ ແມ່ນຈຳນວນທຳມະຊາດທີ່ໃຫຍ່ກວ່າ 1 ແລະ ມີຕົວຫານພຽງແຕ່ 2 ຕົວເທົ່ານັ້ນ ຄື: 1 ແລະ ຕົວມັນເອງ."}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#FFF3E0",
-              border: "2px solid #FF9800",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"• ຈຳນວນມູນທີ່ນ້ອຍກວ່າ 20: "}<strong>{"2, 3, 5, 7, 11, 13, 17, 19"}</strong></div>
-            <div style={{ color: "#D84315", fontWeight: "bold" }}>{"* ຈຳນວນ 1 ບໍ່ແມ່ນຈຳນວນມູນ!"}</div>
-            <div>{"* ຈຳນວນ 2 ແມ່ນຈຳນວນມູນທີ່ເປັນເລກຄູ່ພຽງຕົວດຽວສະເໝີ."}</div>
+        title: "ຈຳນວນມູນ (Prime Numbers) ແລະ ການຂຽນເປັນຜົນຄູນຂອງຈຳນວນມູນ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"• "}<strong>{"ຈຳນວນມູນ (Prime Numbers)"}</strong>{" ແມ່ນຈຳນວນທຳມະຊາດທີ່ໃຫຍ່ກວ່າ 1 ເຊິ່ງມີພຽງແຕ່ສອງອຸປະຄູນເທົ່ານັ້ນ ຄື: 1 ແລະ ຕົວມັນເອງ."}
+              <br />
+              {"• ຈຳນວນມູນທີ່ໜ້ອຍກວ່າ 100 ມີທັງໝົດ 25 ຈຳນວນຄື:"}
+            </p>
+
+            {/* List of Primes grid */}
+            <div style={{ padding: "16px", backgroundColor: "#F3E5F5", borderRadius: "12px", border: "1px solid #BA68C8" }}>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", justifyContent: "center" }}>
+                {[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97].map((p) => (
+                  <span key={p} style={{
+                    fontSize: "1.25rem",
+                    fontWeight: "bold",
+                    color: "#4A148C",
+                    backgroundColor: "#E1BEE7",
+                    padding: "4px 10px",
+                    borderRadius: "6px",
+                    boxShadow: "0 2px 4px rgba(0,0,0,0.05)"
+                  }}>
+                    {p}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"• "}<strong>{"ການແຍກຕົວປະກອບມູນ (Prime Factorization)"}</strong>{" ແມ່ນການຂຽນຈຳນວນໃດໜຶ່ງໃນຮູບແບບຜົນຄູນຂອງບັນດາຈຳນວນມູນ. ເຊັ່ນ:"}
+              <br />
+              <strong style={{ fontSize: "1.45rem", color: "#7B1FA2", display: "block", textAlign: "center", margin: "8px 0" }}>
+                {"36 = 2² × 3²"}
+              </strong>
+            </p>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ເລກ 2, 3, 5, 7 ແມ່ນພື້ນຖານຂອງຈຳນວນມູນທັງໝົດເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ເລກ 2 ແມ່ນຈຳນວນມູນດຽວທີ່ເປັນເລກຄູ່! ເລກ 1 ບໍ່ແມ່ນຈຳນວນມູນ ເພາະມັນມີອຸປະຄູນພຽງຕົວດຽວ.",
+          isBlue: true
+        }
       },
-    },
       problems: [
-        
+        {
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຂຽນຈຳນວນຕໍ່ໄປນີ້ເປັນຜົນຄູນຂອງຈຳນວນມູນ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+
+              <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "12px 0" }}>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math">{"45 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                  <span style={{ fontSize: "1.1rem", color: "#7F8C8D" }}>{"(ຕົວຢ່າງການຕອບ: 3^2 * 5)"}</span>
+                </div>
+
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math">{"72 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                  <span style={{ fontSize: "1.1rem", color: "#7F8C8D" }}>{"(ຕົວຢ່າງການຕອບ: 2^3 * 3^2)"}</span>
+                </div>
+              </div>
+            </div>
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ຊອກຫາຕົວຫານຮ່ວມທີ່ໃຫຍ່ທີ່ສຸດຂອງຕົວເລກ. ບົດທ້າທາຍ 2 (1) ແມ່ນການຊອກຫາ ອ.ຮ.ລ ເພາະຕ້ອງການຂະໜາດຕັດເຈ້ຍໃຫຍ່ສຸດ, ສ່ວນ (2) ແມ່ນຊອກຫາ ທ.ຮ.ນ ເພື່ອຫາເວລາພົບກັນຄືນ!",
+    hintText: "💡 ບົດທ້າທາຍ: ນຳໃຊ້ການແຍກຕົວປະກອບມູນເພື່ອຊອກຫາ LCM ແລະ GCD, ແລະ ແກ້ໄຂໂຈດບັນຫາຕົວຈິງ!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາ ອຸປະຄູນຮ່ວມຫຼາຍສຸດ (ອ.ຮ.ລ / GCD) ຂອງຄູ່ຈຳນວນລຸ່ມນີ້: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ການຊອກຫາ LCM ແລະ GCD ໂດຍການແຍກຕົວປະກອບມູນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "16px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-              }}
-            >
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                <span>{"(1) ອ.ຮ.ລ (12, 18) ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"(1) ຈົ່ງຊອກຫາ "}<strong>{"LCM(12, 18)"}</strong>{" ແລະ "}<strong>{"GCD(12, 18)"}</strong>{"."}
+            </p>
+            <div style={{ display: "flex", gap: "24px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <span>{"LCM(12, 18) ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                <span>{"(2) ອ.ຮ.ລ (24, 36) ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <span>{"GCD(12, 18) ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               </div>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງແກ້ໂຈດບັນຫາຕໍ່ໄປນີ້ໂດຍໃຊ້ຄວາມຮູ້ກ່ຽວກັບ ທ.ຮ.ນ ແລະ ອ.ຮ.ລ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດບັນຫາລະດັງສຽງລະຄັງຮ່ວມກັນ (LCM Application): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ມີເຈ້ຍຮູບສີ່ແຈສາກ ກວ້າງ 12 cm ແລະ ຍາວ 18 cm. ຖ້າຕ້ອງການຕັດເປັນຮູບຈະຕຸລັດເທົ່າກັນ ແລະ ໃຫຍ່ທີ່ສຸດ ໂດຍບໍ່ໃຫ້ມີເສດເຈ້ຍ. ຖາມວ່າແຕ່ລະຂ້າງຂອງຮູບຈະຕຸລັດນັ້ນຈະຍາວຈັກ cm?"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"cm"}</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ລົດເມສອງຄັນອອກພ້ອມກັນ. ຄັນທີ 1 ຈະກັບມາຄິວທຸກໆ 12 ນາທີ, ຄັນທີ 2 ທຸກໆ 18 ນາທີ. ອີກຈັກນາທີທັງສອງຄັນຈຶ່ງຈະມາພົບກັນຢູ່ຄິວລົດພ້ອມກັນອີກ?"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: ອີກ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"ນາທີ"}</span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"(1) ມີລະຄັງ 3 ໜ່ວຍ ທີ່ມີກຳນົດເວລາການດັງແຕກຕ່າງກັນ. ລະຄັງໜ່ວຍທີໜຶ່ງດັງທຸກໆ 4 ນາທີ, ໜ່ວຍທີສອງດັງທຸກໆ 6 ນາທີ, ແລະ ໜ່ວຍທີສາມດັງທຸກໆ 10 ນາທີ. ຖ້າລະຄັງທັງສາມໜ່ວຍດັງພ້ອມກັນໃນເວລານີ້, ຖາມວ່າອີກຈັກນາທີຕໍ່ມາພວກມັນຈຶ່ງຈະດັງພ້ອມກັນອີກຄັ້ງ?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: ອີກ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+              <span>{"ນາທີ ພວກມັນຈະດັງພ້ອມກັນອີກ."}</span>
             </div>
           </div>
-        ),
-      },
-    ],
+        )
+      }
+    ]
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຕອບຄຳຖາມຕໍ່ໄປນີ້ເພື່ອທົດສອບຄວາມເຂົ້າໃຈທັງໝົດ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 1 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ການຊອກຫາ LCM ຂອງສອງຈຳນວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(1) ທ.ຮ.ນ (4, 6) ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(2) ອ.ຮ.ລ (15, 20) ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(3) ຈຳນວນມູນທີ່ນ້ອຍທີ່ສຸດແມ່ນເລກໃດ?"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(4) ຕົວອຸປະຄູນຂອງ 6 ແມ່ນ {1, 2, 3, 6}. (ຕື່ມ ∈ ຫຼື ∉: 3"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"ກຸ່ມຕົວອຸປະຄູນຂອງ 6)"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(5) ທ.ຮ.ນ ຂອງສອງຈຳນວນມູນ 3 ແລະ 5 ແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"(1) ຈົ່ງຊອກຫາຄ່າຂອງ "}<strong>{"LCM(15, 20)"}</strong>{"."}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"LCM(15, 20) ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາຜົນຄິດໄລ່ຂອງ 3 ຈຳນວນດັ່ງຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ການຊອກຫາ GCD ຂອງສອງຈຳນວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ອ.ຮ.ລ (24, 36, 48) ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ທ.ຮ.ນ (8, 12, 24) ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"(1) ຈົ່ງຊອກຫາຄ່າຂອງ "}<strong>{"GCD(28, 42)"}</strong>{"."}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"GCD(28, 42) ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u7-ans-1-1">{"(1) ແມ່ນຈຳນວນມູນ (ເພາະມີແຕ່ 1 ແລະ 2 ຫານຂາດ)"}</span>,
-          <span key="u7-ans-1-2">{"(2) ແມ່ນຈຳນວນມູນ"}</span>,
-          <span key="u7-ans-1-3">{"(3) ບໍ່ແມ່ນຈຳນວນມູນ (ເພາະ 3 ແລະ 5 ກໍ່ຫານຂາດ)"}</span>,
-          <span key="u7-ans-1-4">{"(4) ບໍ່ແມ່ນຈຳນວນມູນ (ເພາະບໍ່ໃຫຍ່ກວ່າ 1)"}</span>,
-          <span key="u7-ans-1-5">{"(5) ແມ່ນຈຳນວນມູນ"}</span>,
-        ],
+          <span key="1-1">{"(1) 24 (ທະວີຄູນຂອງ 6: 6, 12, 18, 24, 30...; ທະວີຄູນຂອງ 8: 8, 16, 24, 32...; LCM ແມ່ນ 24)"}</span>,
+          <span key="1-2">{"(2) 15 (ເພາະວ່າ 15 ຫານຂາດໃຫ້ 5, ດັ່ງນັ້ນ LCM ແມ່ນ 15)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u7-ans-2-1">{"(1) 24 (ຕົວທະວີຄູນຄືກັນ: 24, 48...) "}</span>,
-          <span key="u7-ans-2-2">{"(2) 60 (5 × 12 = 60)"}</span>,
-        ],
+          <span key="2-1">{"(1) 6 (ອຸປະຄູນຮ່ວມຂອງ 18 ແລະ 30 ແມ່ນ {1, 2, 3, 6}; GCD ແມ່ນ 6)"}</span>,
+          <span key="2-2">{"(2) 8 (ອຸປະຄູນຮ່ວມຂອງ 16 ແລະ 40 ແມ່ນ {1, 2, 4, 8}; GCD ແມ່ນ 8)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"(1) 3² × 5 ຫຼື 3^2 * 5 (ເພາະວ່າ 45 = 9 × 5 = 3 × 3 × 5)"}</span>,
+          <span key="3-2">{"(2) 2³ × 3² ຫຼື 2^3 * 3^2 (ເພາະວ່າ 72 = 8 × 9 = 2 × 2 × 2 × 3 × 3)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u7-ans-t1-1">{"(1) 6 (ຕົວຫານຮ່ວມໃຫຍ່ສຸດຂອງ 12 ແລະ 18)"}</span>,
-          <span key="u7-ans-t1-2">{"(2) 12"}</span>,
-        ],
+          <span key="t1">{"LCM(12, 18) = 36 ແລະ GCD(12, 18) = 6 (ແຍກຕົວປະກອບ: 12 = 2² × 3, 18 = 2 × 3²; LCM = 2² × 3² = 36; GCD = 2 × 3 = 6)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u7-ans-t2-1">{"(1) 6 cm (ເພາະ ອ.ຮ.ລ (12, 18) = 6)"}</span>,
-          <span key="u7-ans-t2-2">{"(2) 36 ນາທີ (ເພາະ ທ.ຮ.ນ (12, 18) = 36)"}</span>,
-        ],
+          <span key="t2">{"60 ນາທີ (ເພາະວ່າ LCM(4, 6, 10) = 60. 4 = 2², 6 = 2 × 3, 10 = 2 × 5; ດັ່ງນັ້ນ LCM = 2² × 3 × 5 = 60)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u7-ans-s1-1">{"(1) 12"}</span>,
-          <span key="u7-ans-s1-2">{"(2) 5"}</span>,
-          <span key="u7-ans-s1-3">{"(3) 2"}</span>,
-          <span key="u7-ans-s1-4">{"(4) ∈"}</span>,
-          <span key="u7-ans-s1-5">{"(5) 15 (3 × 5)"}</span>,
-        ],
+          <span key="s1">{"60 (ເພາະວ່າ 15 = 3 × 5, 20 = 2² × 5; ດັ່ງນັ້ນ LCM = 2² × 3 × 5 = 60)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u7-ans-s2-1">{"(1) 12 (ຕົວຫານຮ່ວມຂອງ 24, 36, 48 ແມ່ນ 1, 2, 3, 4, 6, 12)"}</span>,
-          <span key="u7-ans-s2-2">{"(2) 24 (ເພາະ 24 ຫານໃຫ້ 8 ແລະ 12 ຂາດ)"}</span>,
-        ],
-      },
+          <span key="s2">{"14 (ເພາະວ່າ 28 = 2² × 7, 42 = 2 × 3 × 7; ດັ່ງນັ້ນ GCD = 2 × 7 = 14)"}</span>
+        ]
+      }
     ],
-    advice: "ຈຳນວນມູນມີພຽງ 1 ແລະ ຕົວມັນເອງທີ່ຫານຂາດ. ທ.ຮ.ນ ໃຊ້ແກ້ໂຈດເວລາພົບກັນຄືນ, ອ.ຮ.ລ ໃຊ້ແກ້ໂຈດການແບ່ງປັນໃຫ້ໃຫຍ່ທີ່ສຸດເດີ້!",
-  },
+    advice: "ດີຫຼາຍ! ການເຂົ້າໃຈ LCM, GCD ແລະ ຈຳນວນມູນ ແມ່ນພື້ນຖານທີ່ສຳຄັນທີ່ສຸດໃນຄະນິດສາດ. ມັນຈະຊ່ວຍໃຫ້ເຈົ້າຄຳນວນເລກສ່ວນ ແລະ ແກ້ໄຂສົມຜົນຕ່າງໆໄດ້ງ່າຍຂຶ້ນຢ່າງຫຼວງຫຼາຍ!"
+  }
 };

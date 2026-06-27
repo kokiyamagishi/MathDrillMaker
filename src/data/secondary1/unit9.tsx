@@ -1,409 +1,382 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", verticalAlign: "middle", alignItems: "center", padding: "0 4px", fontSize: "0.95em", transform: "translateY(-0.05em)" }}>
-    <span style={{ borderBottom: "1.5px solid currentColor", paddingBottom: "1px", lineHeight: 1, fontWeight: "bold" }}>{num}</span>
-    <span style={{ paddingTop: "1.5px", lineHeight: 1, fontWeight: "bold" }}>{den}</span>
-  </span>
-);
-
 export const unit9Data: UnitData = {
   unitNumber: 9,
-  unitTitle: "ພາກທີ I - ບົດທີ 9: ຈຳນວນສົມບູນ",
-  unitGoal:
-    "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍຂອງຈຳນວນສົມບູນ (ຄ່າສໍາບູນ) ຢູ່ເທິງເສັ້ນຈຳນວນ, ວິທີຊອກຫາໄລຍະຫ່າງລະຫວ່າງສອງຈຳນວນ ແລະ ການປຽບທຽບ",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 65-70",
+  unitTitle: "ພາກທີ I - ບົດທີ 9: ຄ່າສຳບູນ ແລະ ໄລຍະຫ່າງ (Absolute Value and Distance)",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບໄລຍະຫ່າງລະຫວ່າງສອງຈຳນວນເທິງເສັ້ນຊື່, ນິຍາມຂອງຄ່າສຳບູນ (Absolute Value) ຂອງໜຶ່ງຈຳນວນ, ແລະ ການຄິດໄລ່ກ່ຽວກັບຄ່າສຳບູນ.",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 65-68",
   subSections: [
     {
-      title: "1. ຄວາມໝາຍຂອງຈຳນວນສົມບູນ (Absolute Value)",
+      title: "1. ໄລຍະຫ່າງລະຫວ່າງສອງຈຳນວນເທິງເສັ້ນຊື່ (Distance on a Number Line)",
       keyPoint: {
-      title: "1. ຄວາມໝາຍຂອງຈຳນວນສົມບູນ (Absolute Value)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຈຳນວນສົມບູນ ຂອງຈຳນວນຖ້ວນ a (ສັນຍະລັກດ້ວຍ |a|) ແມ່ນ ໄລຍະຫ່າງ ແຕ່ຈຸດ 0 ຫາ ຈຸດປະສານ a ຢູ່ເທິງເສັ້ນຈຳນວນ:"}
-          </p>
-          {/* SVG Visual Representation of Number Line for Absolute Value */}
-          <div style={{ alignSelf: "center", width: "100%", maxWidth: "500px", backgroundColor: "#fff", padding: "12px", borderRadius: "8px", border: "1px solid #ddd", display: "flex", justifyContent: "center" }}>
-            <svg viewBox="0 0 400 100" style={{ width: "100%", height: "auto" }}>
-              {/* Main Line */}
-              <line x1="20" y1="50" x2="380" y2="50" stroke="#333" strokeWidth="2" />
-              <polygon points="380,45 390,50 380,55" fill="#333" />
-              
-              {/* Ticks */}
-              <line x1="80" y1="45" x2="80" y2="55" stroke="#333" strokeWidth="2" />
-              <text x="75" y="75" style={{ fontSize: "14px", fill: "#333" }}>{"-3"}</text>
+        title: "ໄລຍະຫ່າງລະຫວ່າງສອງຈຳນວນ (Distance between two numbers)",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+            <p style={{ fontSize: "1.35rem", margin: 0, lineHeight: "1.4" }}>
+              {"ໄລຍະຫ່າງລະຫວ່າງສອງຈຳນວນ "}<strong>{"a"}</strong>{" ແລະ "}<strong>{"b"}</strong>{" ແມ່ນໄລຍະທາງລະຫວ່າງສອງຈຸດນັ້ນ, ມີຄ່າເປັນບວກ ຫຼື ສູນສະເໝີ. ສັນຍາລັກ: "}<strong>{"Distance(a, b) = |a - b|"}</strong>{"."}
+            </p>
 
-              <line x1="200" y1="45" x2="200" y2="55" stroke="#333" strokeWidth="2" />
-              <text x="195" y="75" style={{ fontSize: "14px", fontWeight: "bold", fill: "#D32F2F" }}>{"0"}</text>
+            <div style={{ padding: "8px 12px", backgroundColor: "#F0F4C3", borderRadius: "12px", border: "1px solid #C0CA33" }}>
+              <h4 style={{ fontSize: "1.25rem", margin: "0 0 4px 0", color: "#827717", fontWeight: "bold" }}>
+                {"📐 ວິທີການຄິດໄລ່ງ່າຍໆ:"}
+              </h4>
+              <p style={{ fontSize: "1.2rem", margin: 0, lineHeight: "1.4" }}>
+                {"• ຖ້າ "}<strong>{"a ≥ b"}</strong>{", ໄລຍະຫ່າງແມ່ນ: "}<strong>{"a - b"}</strong>{" (ໃຫຍ່ ລົບ ນ້ອຍ)"}
+                <br />
+                {"• ຖ້າ "}<strong>{"a {" < "} b"}</strong>{", ໄລຍະຫ່າງແມ່ນ: "}<strong>{"b - a"}</strong>
+              </p>
+            </div>
 
-              <line x1="320" y1="45" x2="320" y2="55" stroke="#333" strokeWidth="2" />
-              <text x="315" y="75" style={{ fontSize: "14px", fill: "#333" }}>{"+3"}</text>
-
-              {/* Distance Brackets */}
-              <path d="M 80,40 Q 140,20 200,40" fill="none" stroke="#2196F3" strokeWidth="2" strokeDasharray="4" />
-              <text x="125" y="25" style={{ fontSize: "14px", fill: "#2196F3", fontWeight: "bold" }}>{"3 ຫົວໜ່ວຍ"}</text>
-
-              <path d="M 200,40 Q 260,20 320,40" fill="none" stroke="#4CAF50" strokeWidth="2" strokeDasharray="4" />
-              <text x="245" y="25" style={{ fontSize: "14px", fill: "#4CAF50", fontWeight: "bold" }}>{"3 ຫົວໜ່ວຍ"}</text>
-            </svg>
-          </div>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#E3F2FD",
-              border: "2px solid #2196F3",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"• |+3| = 3 (ໄລຍະຫ່າງຈາກ 0 ຫາ +3 ແມ່ນ 3 ຫົວໜ່ວຍ)"}</div>
-            <div>{"• |-3| = 3 (ໄລຍະຫ່າງຈາກ 0 ຫາ -3 ແມ່ນ 3 ຫົວໜ່ວຍ)"}</div>
-            <div style={{ color: "#0D47A1", fontWeight: "bold" }}>
-              {"* ຈຳນວນສົມບູນຈະມີຄ່າເປັນບວກ ຫຼື 0 ສະເໝີ, ບໍ່ມີທາງເປັນຄ່າລົບເດີ້!"}
+            <div style={{ padding: "8px 12px", backgroundColor: "#E8EAF6", borderRadius: "12px", border: "1px solid #C5CAE9" }}>
+              <h4 style={{ fontSize: "1.25rem", margin: "0 0 4px 0", color: "#1A237E", fontWeight: "bold" }}>
+                {"📊 ຕົວຢ່າງການຄິດໄລ່ໄລຍະຫ່າງ:"}
+              </h4>
+              <p style={{ fontSize: "1.2rem", margin: 0, lineHeight: "1.4" }}>
+                <strong>{"1) ລະຫວ່າງ 5 ແລະ 2:"}</strong>{" ເນື່ອງຈາກ 5 > 2, ຈະໄດ້: 5 - 2 = "}<strong>{"3"}</strong>
+                <br />
+                <strong>{"2) ລະຫວ່າງ -3 ແລະ 4:"}</strong>{" ເນື່ອງຈາກ 4 > -3, ຈະໄດ້: 4 - (-3) = 4 + 3 = "}<strong>{"7"}</strong>
+                <br />
+                <strong>{"3) ລະຫວ່າງ -8 ແລະ -2:"}</strong>{" ເນື່ອງຈາກ -2 > -8, ຈະໄດ້: -2 - (-8) = -2 + 8 = "}<strong>{"6"}</strong>
+              </p>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ຄິດງ່າຍໆກໍ່ຄື ບໍ່ວ່າຈະມີເຄື່ອງໝາຍບວກ ຫຼື ລົບ ທາງໃນເຄື່ອງໝາຍ | |, ເວລາຖອດອອກມາຈະເປັນບວກສະເໝີ!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ໄລຍະຫ່າງລະຫວ່າງສອງຈຳນວນບໍ່ມີທາງເປັນຄ່າລົບເດັດຂາດ! ຖ້າຄິດໄລ່ອອກມາເປັນຄ່າລົບ ສະແດງວ່າຜິດເດີ້.",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາຄ່າຂອງຈຳນວນສົມບູນຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ้ລະ 1.66 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "12px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(1) |+7| ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາໄລຍະຫ່າງລະຫວ່າງສອງຈຳນວນທີ່ກຳນົດໃຫ້ຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 1.25 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span>{"ລະຫວ່າງ 8 ແລະ 3 ແມ່ນ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span>{"ລະຫວ່າງ -5 ແລະ 2 ແມ່ນ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+
+                {/* Sub-question 3 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                  <span>{"ລະຫວ່າງ -9 ແລະ -4 ແມ່ນ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+
+                {/* Sub-question 4 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                  <span>{"ລະຫວ່າງ 0 ແລະ -6 ແມ່ນ:"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(2) |-12| ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(3) |0| ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ໄລຍະຫ່າງລະຫວ່າງສອງຈຳນວນ (Distance between two numbers)",
+      title: "2. ນິຍາມຂອງຄ່າສຳບູນ (Definition of Absolute Value)",
       keyPoint: {
-      title: "2. ໄລຍະຫ່າງລະຫວ່າງສອງຈຳນວນ (Distance between two numbers)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ໄລຍະຫ່າງລະຫວ່າງສອງຈຳນວນ a ແລະ b ແມ່ນເທົ່າກັບ |a - b| (ຫຼື ເອົາຕົວເລກໃຫຍ່ລົບຕົວເລກນ້ອຍ):"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div><strong>{"ຕົວຢ່າງ 1: "}</strong>{"ໄລຍະຫ່າງລະຫວ່າງ 5 ແລະ 15 ແມ່ນ:"}</div>
-            <div style={{ paddingLeft: "16px", color: "#2E7D32" }}>{"|15 - 5| = |10| = 10 ຫົວໜ່ວຍ"}</div>
-            <div><strong>{"ຕົວຢ່າງ 2: "}</strong>{"ໄລຍະຫ່າງລະຫວ່າງ -12 ແລະ -7 ແມ່ນ:"}</div>
-            <div style={{ paddingLeft: "16px", color: "#2E7D32" }}>{"|-7 - (-12)| = |-7 + 12| = |+5| = 5 ຫົວໜ່ວຍ"}</div>
+        title: "ຄ່າສຳບູນແມ່ນຫຍັງ? (What is Absolute Value?)",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.5" }}>
+              {"ຄ່າສຳບູນຂອງ "}<strong>{"a"}</strong>{" (ຂຽນແທນດ້ວຍ "}<strong>{"|a|"}</strong>{") ແມ່ນໄລຍະຫ່າງຈາກຈຸດທີ່ສະແດງຈຳນວນ "}<strong>{"a"}</strong>{" ຫາຈຸດສູນ (0) ເທິງເສັ້ນຊື່."}
+            </p>
+
+            <div style={{ padding: "12px 16px", backgroundColor: "#E0F2F1", borderRadius: "12px", border: "1px solid #4DB6AC" }}>
+              <h4 style={{ fontSize: "1.3rem", margin: "0 0 6px 0", color: "#00796B", fontWeight: "bold" }}>
+                {"📌 ນິຍາມທາງຄະນິດສາດ:"}
+              </h4>
+              <p style={{ fontSize: "1.25rem", margin: 0, lineHeight: "1.5" }}>
+                {"• ຖ້າ "}<strong>{"a ≥ 0"}</strong>{" ຈະໄດ້: "}<strong>{"|a| = a"}</strong>{" (ຄ່າສຳບູນຂອງຈຳນວນບວກ/ສູນ ເທົ່າກັບຕົວມັນເອງ)"}
+                <br />
+                {"• ຖ້າ "}<strong>{"a {" < "} 0"}</strong>{" ຈະໄດ້: "}<strong>{"|a| = -a"}</strong>{" (ຄ່າສຳບູນຂອງຈຳນວນລົບ ຈະປ່ຽນເປັນຈຳນວນກົງກັນຂ້າມ)"}
+              </p>
+            </div>
+
+            <div style={{ padding: "12px 16px", backgroundColor: "#FFF3E0", borderRadius: "12px", border: "1px solid #FFB74D" }}>
+              <h4 style={{ fontSize: "1.3rem", margin: "0 0 6px 0", color: "#E65100", fontWeight: "bold" }}>
+                {"📊 ຕົວຢ່າງຄ່າສຳບູນ:"}
+              </h4>
+              <p style={{ fontSize: "1.25rem", margin: 0, lineHeight: "1.5" }}>
+                {"• "}<strong>{"|7| = 7"}</strong>{" (ໄລຍະຫ່າງຈາກ 7 ຫາ 0)"}
+                <br />
+                {"• "}<strong>{"|-10| = 10"}</strong>{" (ໄລຍະຫ່າງຈາກ -10 ຫາ 0)"}
+                <br />
+                {"• "}<strong>{"|0| = 0"}</strong>{" (ໄລຍະຫ່າງຈາກ 0 ຫາ 0)"}
+              </p>
+            </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ເວລາຊອກຫາໄລຍະຫ່າງລະຫວ່າງສອງຈຳນວນ ໃຫ້ເອົາຕົວເລກທີ່ຢູ່ເບື້ອງຂວາ (ໃຫຍ່ກວ່າ) ລົບໃຫ້ຕົວເລກເບື້ອງຊ້າຍ (ນ້ອຍກວ່າ) ຢູ່ເທິງເສັ້ນຈຳນວນຈະງ່າຍທີ່ສຸດ!",
+        ),
+        hint: {
+          text: "💡 ຈົ່ງຈື່ສະເໝີວ່າ ຄ່າສຳບູນຂອງຈຳນວນໃດໜຶ່ງຈະອອກມາເປັນຄ່າບວກ (Positive Value) ຫຼື ສູນສະເໝີ!",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງປຽບທຽບຈຳນວນລຸ່ມນີ້ ໂດຍຕື່ມເຄື່ອງໝາຍ "}<strong>{"<"}</strong>{" ຫຼື "}<strong>{">"}</strong>{" ໃສ່ບ່ອນວ່າງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) -8"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"-3"}</span>
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາຄ່າສຳບູນຂອງຈຳນວນຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 1.25 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math">{"|-15| ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math">{"|24| ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+
+                {/* Sub-question 3 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                  <span className="math">{"|-1.5| ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+
+                {/* Sub-question 4 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                  <span className="math">{"|-2026| ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) |-15|"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"|-10|"}</span>
-            </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "3. ການປຽບທຽບຈຳນວນລົບ ໂດຍໃຊ້ຈຳນວນສົມບູນ",
+      title: "3. ການຄິດໄລ່ກ່ຽວກັບຄ່າສຳບູນ (Absolute Value Arithmetic)",
       keyPoint: {
-      title: "3. ການປຽບທຽບຈຳນວນລົບ ໂດຍໃຊ້ຈຳນວນສົມບູນ",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ສຳລັບສອງຈຳນວນລົບ, ຈຳນວນທີ່ມີຈຳນວນສົມບູນ (ໄລຍະຫ່າງຈາກ 0) ໃຫຍ່ກວ່າ ຈະເປັນຈຳນວນທີ່ນ້ອຍກວ່າ:"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#FFF3E0",
-              border: "2px solid #FF9800",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"ປຽບທຽບ -5 ແລະ -3:"}</div>
-            <div>{"• |-5| = 5 (ຢູ່ຫ່າງຈາກ 0 ຫຼາຍກວ່າ)"}</div>
-            <div>{"• |-3| = 3 (ຢູ່ໃກ້ 0 ຫຼາຍກວ່າ)"}</div>
-            <div style={{ color: "#D84315", fontWeight: "bold", borderTop: "1px solid #FFE0B2", paddingTop: "6px", marginTop: "4px" }}>
-              {"→ ດັ່ງນັ້ນ -5 < -3 (ເພາະ -5 ຢູ່ເບື້ອງຊ້າຍຂອງ -3 ເທິງເສັ້ນຈຳນວນ)"}
+        title: "ຫຼັກການຄິດໄລ່ຄ່າສຳບູນ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃນການຄິດໄລ່ເລກທີ່ມີເຄື່ອງໝາຍຄ່າສຳບູນ, ເຮົາຕ້ອງຄິດໄລ່ ແລະ ຖອດຄ່າສຳບູນອອກມາກ່ອນ, ແລ້ວຈຶ່ງດຳເນີນການຄິດໄລ່ຕາມຫຼັກການຄຳນວນເລກທຳມະດາ."}
+            </p>
+
+            <div style={{ padding: "20px", backgroundColor: "#F3E5F5", borderRadius: "12px", border: "1px solid #E1BEE7" }}>
+              <h4 style={{ fontSize: "1.3rem", margin: "0 0 12px 0", color: "#4A148C", fontWeight: "bold" }}>
+                {"📝 ຕົວຢ່າງການຄຳນວນ:"}
+              </h4>
+              <p style={{ fontSize: "1.25rem", margin: 0, lineHeight: "1.6" }}>
+                {"• "}<strong>{"|-7| + 2"}</strong>{" = 7 + 2 = "}<strong>{"9"}</strong>
+                <br />
+                {"• "}<strong>{"|8| - |-6|"}</strong>{" = 8 - 6 = "}<strong>{"2"}</strong>
+                <br />
+                {"• "}<strong>{"|4| × |3| + 5"}</strong>{" = 4 × 3 + 5 = 12 + 5 = "}<strong>{"17"}</strong>
+              </p>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ຍິ່ງຕິດລົບຫຼາຍ ຄ່າຂອງມັນຍິ່ງນ້ອຍລົງເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ໝາຍເຫດ: ໃຫ້ຖອດຄ່າສຳບູນແຕ່ລະຕົວອອກມາກ່ອນ ແລ້ວຈຶ່ງເອົາມາ ບວກ, ລົບ, ຄູນ, ຫຼື ຫານ ກັນເດີ້!",
+          isBlue: true
+        }
       },
-    },
       problems: [
-        
+        {
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ຜົນລັບຂອງການສະແດງຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 1.25 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span className="math">{"|-12| + 8 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span className="math">{"|15| - |-9| ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+
+                {/* Sub-question 3 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                  <span className="math">{"|-6| × |4| - 7 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+
+                {/* Sub-question 4 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                  <span className="math">{"|-25| ÷ |5| + 3 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໄລຍະຫ່າງລະຫວ່າງສອງຈຸດແມ່ນຜົນຕ່າງຂອງຄ່າປະສານ ໂດຍຄິດໄລ່ຄ່າສົມບູນ |a - b|. ບົດທ້າທາຍ 2: ການຊອກຫາການປ່ຽນແປງອຸນຫະພູມ ໃຫ້ເອົາອຸນຫະພູມຫຼ້າສຸດ ລົບໃຫ້ອຸນຫະພູມເລີ່ມຕົ້ນ (20 - (-5)) ຈະໄດ້ໄລຍະຫ່າງທັງໝົດເດີ້!",
+    hintText: "💡 ບົດທ້າທາຍ: ນຳໃຊ້ຄວາມເຂົ້າໃຈກ່ຽວກັບຄ່າສຳບູນ ແລະ ໄລຍະຫ່າງເພື່ອແກ້ໄຂບັນຫາຕົວຈິງ ແລະ ຄະນິດສາດລະດັບສູງ!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາໄລຍະຫ່າງລະຫວ່າງສອງຈຸດ ຢູ່ເທິງເສັ້ນຈຳນວນຕໍ່ໄປນີ້: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ການຄິດໄລ່ຄວາມຕ່າງຂອງອຸນຫະພູມ (Temperature Difference): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "16px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-              }}
-            >
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                <span>{"(1) ໄລຍະຫ່າງລະຫວ່າງຈຸດ 5 ແລະ 15 ແມ່ນ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ຫົວໜ່ວຍ"}</span>
-              </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                <span>{"(2) ໄລຍະຫ່າງລະຫວ່າງຈຸດ -2 ແລະ 3 ແມ່ນ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ຫົວໜ່ວຍ"}</span>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຢູ່ເມືອງໜຶ່ງໃນລະດູໜາວ, ອຸນຫະພູມຕໍ່າສຸດແມ່ນ "}<strong>{"-8 °C"}</strong>{" ແລະ ອຸນຫະພູມສູງສຸດແມ່ນ "}<strong>{"12 °C"}</strong>{"."}
+              {" ຈົ່ງຄິດໄລ່ໄລຍະຫ່າງລະຫວ່າງສອງອຸນຫະພູມນີ້ (ຜົນຕ່າງອຸນຫະພູມໃນຮູບແບບຄ່າສຳບູນ |12 - (-8)|)."}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <span>{"ຄວາມຕ່າງອຸນຫະພູມແມ່ນ ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+              <span>{"°C"}</span>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງແກ້ໂຈດບັນຫາກ່ຽວກັບອຸນຫະພູມຕໍ່ໄປນີ້ (ໃຊ້ຄວາມຮູ້ເລື່ອງໄລຍະຫ່າງ): "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນຄ່າສຳບູນ (Simple Absolute Value Equation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ອາຫານແຊ່ແຂງມີອຸນຫະພູມ -5°C. ຫຼັງຈາກເອົາມາປະໄວ້ທາງນອກ, ອຸນຫະພູມໄດ້ເພີ່ມຂຶ້ນເປັນ 20°C. ຖາມວ່າອຸນຫະພູມໄດ້ເພີ່ມຂຶ້ນຈັກອົງສາ (°C)?"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: ເພີ່ມຂຶ້ນ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"°C"}</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ອຸນຫະພູມຂອງແຂວງໜຶ່ງປ່ຽນແປງຈາກ -12°C ຫາ -7°C ໃນຕອນກາງຄືນ. ຖາມວ່າອຸນຫະພູມປ່ຽນແປງ (ໄລຍະຫ່າງ) ຈັກອົງສາ (°C)?"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: ປ່ຽນແປງ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"°C"}</span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຈົ່ງຊອກຫາຄ່າຂອງ "}<strong>{"x"}</strong>{" ທີ່ເປັນຈຳນວນບວກ (x {" > "} 0) ທີ່ເຮັດໃຫ້ສົມຜົນ "}<strong>{"|x - 3| = 5"}</strong>{" ເປັນຈິງ."}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <span>{"ຄ່າຂອງ x ທີ່ເປັນຈຳນວນບວກແມ່ນ x ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
             </div>
           </div>
-        ),
-      },
-    ],
+        )
+      }
+    ]
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ຜົນຄຳນວນຂອງຈຳນວນສົມບູນຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 1.66 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ການຄິດໄລ່ຄ່າສຳບູນແບບປະສົມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(1) |-8| + |+3| ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(2) |-20| - |-12| ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(3) |-5| × |+4| ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ຈົ່ງຊອກຫາຜົນຮັບຂອງການຄິດໄລ່: "}<strong>{"|-18| - |-10| + 3"}</strong>
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຜົນຮັບແມ່ນ ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາໄລຍະຫ່າງລະຫວ່າງຈຳນວນລຸ່ມນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໄລຍະຫ່າງລະຫວ່າງສອງຈຳນວນລົບ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໄລຍະຫ່າງລະຫວ່າງ -10 ແລະ +5 ແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"ຫົວໜ່ວຍ"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ໄລຍະຫ່າງລະຫວ່າງ -8 ແລະ -2 ແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"ຫົວໜ່ວຍ"}</span>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ຈົ່ງຊອກຫາໄລຍະຫ່າງລະຫວ່າງ "}<strong>{"-15"}</strong>{" ແລະ "}<strong>{"-3"}</strong>{" ເທິງເສັ້ນຊື່."}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ໄລຍະຫ່າງແມ່ນ ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u9-ans-1-1">{"(1) 7"}</span>,
-          <span key="u9-ans-1-2">{"(2) 12"}</span>,
-          <span key="u9-ans-1-3">{"(3) 0"}</span>,
-        ],
+          <span key="1-1">{"(1) 5 (8 - 3 = 5)"}</span>,
+          <span key="1-2">{"(2) 7 (2 - (-5) = 2 + 5 = 7)"}</span>,
+          <span key="1-3">{"(3) 5 (-4 - (-9) = -4 + 9 = 5)"}</span>,
+          <span key="1-4">{"(4) 6 (0 - (-6) = 0 + 6 = 6)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u9-ans-2-1">{"(1) < (ເພາະ -8 ຢູ່ເບື້ອງຊ້າຍຂອງ -3 ເທິງເສັ້ນຈຳນວນ)"}</span>,
-          <span key="u9-ans-2-2">{"(2) > (ເພາະ |-15| = 15 ແລະ |-10| = 10, ດັ່ງນັ້ນ 15 > 10)"}</span>,
-        ],
+          <span key="2-1">{"(1) 15 (ຄ່າສຳບູນຂອງ -15 ແມ່ນ 15)"}</span>,
+          <span key="2-2">{"(2) 24 (ຄ່າສຳບູນຂອງ 24 ແມ່ນ 24)"}</span>,
+          <span key="2-3">{"(3) 1.5 (ຄ່າສຳບູນຂອງ -1.5 ແມ່ນ 1.5)"}</span>,
+          <span key="2-4">{"(4) 2026 (ຄ່າສຳບູນຂອງ -2026 ແມ່ນ 2026)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"(1) 20 (|-12| + 8 = 12 + 8 = 20)"}</span>,
+          <span key="3-2">{"(2) 6 (|15| - |-9| = 15 - 9 = 6)"}</span>,
+          <span key="3-3">{"(3) 17 (|-6| × |4| - 7 = 6 × 4 - 7 = 24 - 7 = 17)"}</span>,
+          <span key="3-4">{"(4) 8 (|-25| ÷ |5| + 3 = 25 ÷ 5 + 3 = 5 + 3 = 8)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u9-ans-t1-1">{"(1) 10 (ຄິດໄລ່ຈາກ |15 - 5| = 10)"}</span>,
-          <span key="u9-ans-t1-2">{"(2) 5 (ຄິດໄລ່ຈາກ |3 - (-2)| = |3 + 2| = 5)"}</span>,
-        ],
+          <span key="t1">{"20 (ໄລຍະຫ່າງລະຫວ່າງ 12 ແລະ -8 ແມ່ນ |12 - (-8)| = |12 + 8| = 20)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u9-ans-t2-1">{"(1) 25°C (ຄິດໄລ່ຈາກ 20 - (-5) = 20 + 5 = 25)"}</span>,
-          <span key="u9-ans-t2-2">{"(2) 5°C (ຄິດໄລ່ຈາກ |-7 - (-12)| = |-7 + 12| = 5)"}</span>,
-        ],
+          <span key="t2">{"8 (ຖ້າ |x - 3| = 5, ຈະໄດ້ x - 3 = 5 ຫຼື x - 3 = -5. ສະນັ້ນ x = 8 ຫຼື x = -2. ເນື່ອງຈາກເພິ່ນກຳນົດໃຫ້ x ເປັນຈຳນວນບວກ, ດັ່ງນັ້ນ x = 8)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u9-ans-s1-1">{"(1) 11 (ເພາະ 8 + 3 = 11)"}</span>,
-          <span key="u9-ans-s1-2">{"(2) 8 (ເພາະ 20 - 12 = 8)"}</span>,
-          <span key="u9-ans-s1-3">{"(3) 20 (ເພາະ 5 × 4 = 20)"}</span>,
-        ],
+          <span key="s1">{"11 (|-18| - |-10| + 3 = 18 - 10 + 3 = 8 + 3 = 11)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u9-ans-s2-1">{"(1) 15 (ຄິດໄລ່ຈາກ |+5 - (-10)| = |5 + 10| = 15)"}</span>,
-          <span key="u9-ans-s2-2">{"(2) 6 (ຄິດໄລ່ຈາກ |-2 - (-8)| = |-2 + 8| = 6)"}</span>,
-        ],
-      },
+          <span key="s2">{"12 (ໄລຍະຫ່າງລະຫວ່າງ -15 ແລະ -3 ແມ່ນ |-3 - (-15)| = |-3 + 15| = |12| = 12)"}</span>
+        ]
+      }
     ],
-    advice: "ຈຳນວນສົມບູນ (Absolute Value) ແມ່ນໄລຍະຫ່າງ ດັ່ງນັ້ນຄຳຕອບຈະຕ້ອງເປັນຈຳນວນບວກສະເໝີ. ເມື່ອຊອກຫາໄລຍະຫ່າງລະຫວ່າງສອງອຸນຫະພູມ ຫຼື ສອງຈຸດ ໃຫ້ເອົາຕົວໃຫຍ່ລົບຕົວນ້ອຍເດີ້!",
-  },
+    advice: "ດີຫຼາຍ! ໄລຍະຫ່າງ ແລະ ຄ່າສຳບູນ (Absolute Value) ເປັນພື້ນຖານສຳຄັນຫຼາຍໃນການຮຽນເລກຂັ້ນສູງ ເຊັ່ນ: ສົມຜົນ ແລະ ອະສົມຜົນຄ່າສຳບູນ, ຟັງຊັນ, ແລະ ເລຂາຄະນິດວິເຄາະ. ຈົ່ງໝັ່ນຝຶກຝົນເລື້ອຍໆເດີ້!"
+  }
 };

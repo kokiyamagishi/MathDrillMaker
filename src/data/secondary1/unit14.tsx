@@ -1,410 +1,282 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", verticalAlign: "middle", alignItems: "center", padding: "0 4px", fontSize: "0.95em", transform: "translateY(-0.05em)" }}>
-    <span style={{ borderBottom: "1.5px solid currentColor", paddingBottom: "1px", lineHeight: 1, fontWeight: "bold" }}>{num}</span>
-    <span style={{ paddingTop: "1.5px", lineHeight: 1, fontWeight: "bold" }}>{den}</span>
-  </span>
-);
-
 export const unit14Data: UnitData = {
   unitNumber: 14,
-  unitTitle: "ພາກທີ II - ບົດທີ 14: ການບວກ, ການລົບ ແລະ ການຄູນລວງຍາວ",
-  unitGoal:
-    "ຮຽນຮູ້ກ່ຽວກັບການບວກ, ການລົບ ແລະ ການຄູນລວງຍາວໃນຫົວໜ່ວຍວັດແທກທີ່ຕ່າງກັນ ໂດຍການປ່ຽນຫົວໜ່ວຍໃຫ້ເປັນລະບົບດຽວກັນກ່ອນຄິດໄລ່",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 97-102",
+  unitTitle: "ພາກທີ II - ບົດທີ 14: ການບວກຄວາມຍາວທ່ອນຊື່ ແລະ ການຄູນກັບຈຳນວນໃດໜຶ່ງ",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບການຄິດໄລ່ບວກຄວາມຍາວຂອງທ່ອນຊື່ທີ່ລຽງກັນຕາມແຖວຊື່ (Segment Addition Postulate) ແລະ ການຄູນຄວາມຍາວທ່ອນຊື່ກັບຈຳນວນຖ້ວນ ຫຼື ເລກສ່ວນ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 101-104",
   subSections: [
     {
-      title: "1. ພື້ນຖານຫົວໜ່ວຍວັດແທກລວງຍາວ (Length Conversion)",
+      title: "1. ການບວກ ແລະ ລົບຄວາມຍາວທ່ອນຊື່ (Addition and Subtraction of Segments)",
       keyPoint: {
-      title: "1. ພື້ນຖານຫົວໜ່ວຍວັດແທກລວງຍາວ (Length Conversion)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ເພື່ອຄິດໄລ່ລວງຍາວໃຫ້ຖືກຕ້ອງ, ເຮົາຕ້ອງເຂົ້າໃຈການພົວພັນລະຫວ່າງຫົວໜ່ວຍວັດແທກລະບົບແມັດ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E3F2FD",
-              border: "2px solid #2196F3",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gap: "8px",
-            }}
-          >
-            <div>{"• 1 km (ກິໂລແມັດ) = 1,000 m"}</div>
-            <div>{"• 1 m (ແມັດ) = 100 cm"}</div>
-            <div>{"• 1 m = 10 dm (ເດຊີແມັດ)"}</div>
-            <div>{"• 1 dm = 10 cm"}</div>
-            <div>{"• 1 m = 1,000 mm (ມິລິແມັດ)"}</div>
-            <div>{"• 1 cm = 10 mm"}</div>
+        title: "ຫຼັກການບວກຄວາມຍາວທ່ອນຊື່",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ເມື່ອສາມເມັດ A, B, C ລຽງກັນຕາມແຖວຊື່ຕາມລຳດັບນີ້ (ເມັດ B ຢູ່ລະຫວ່າງ A ແລະ C):"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9", display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
+              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#1565C0" }}>{"AC = AB + BC"}</span>
+              <span style={{ fontSize: "1.25rem", color: "#0D47A1" }}>{"ຈາກສູດນີ້ ເຮົາສາມາດຊອກຫາ: AB = AC - BC  ຫຼື  BC = AC - AB"}</span>
+            </div>
+
+            <div style={{ padding: "16px", backgroundColor: "#F9F9F9", borderRadius: "8px", border: "1px solid #E0E0E0" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#37474F" }}>{"ຕົວຢ່າງການຄິດໄລ່:"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6" }}>
+                <li>{"ໃຫ້ AB = 6.7 cm ແລະ BC = 4.6 cm ໂດຍ B ຢູ່ລະຫວ່າງ A ແລະ C. ຈະໄດ້ AC = 6.7 + 4.6 = 11.3 cm."}</li>
+                <li>{"ໃຫ້ AC = 8 cm ແລະ AM = 5 cm ໂດຍ M ຢູ່ລະຫວ່າງ A ແລະ C. ຈະໄດ້ MC = 8 - 5 = 3 cm."}</li>
+              </ul>
+            </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ຫົວໜ່ວຍແມັດ (m), ຊັງຕີແມັດ (cm) ແລະ ມິລິແມັດ (mm) ແມ່ນຫົວໜ່ວຍທີ່ນິຍົມໃຊ້ຫຼາຍທີ່ສຸດເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຂໍ້ຄວນລະວັງ: ຕ້ອງໝັ້ນໃຈວ່າສາມເມັດນັ້ນລຽງແຖວຊື່ດຽວກັນ ຈຶ່ງຈະສາມາດເອົາຄວາມຍາວມາບວກກັນໄດ້ໂດຍກົງ!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ຜົນບວກລວງຍາວລຸ່ມນີ້ ໂດຍຕອບເປັນຫົວໜ່ວຍທີ່ກຳນົດໃຫ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 1.66 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "12px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) 1 m + 50 cm ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"cm"}</span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃຫ້ຈຸດ K ຢູ່ເທິງທ່ອນຊື່ [MN] ໂດຍ MN = 9.5 cm ແລະ MK = 5.6 cm. ຈົ່ງຊອກຫາຄວາມຍາວຂອງທ່ອນຊື່ KN? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ປະໂຫຍກສັນຍະລັກ: KN ="}</span>
+                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                <span>{"= "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span>{"cm"}</span>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) 2.5 m + 30 cm ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"cm"}</span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃຫ້ຈຸດ A, B, C, D ລຽງກັນຕາມລຳດັບຢູ່ເທິງເສັ້ນຊື່ດຽວກັນ ໂດຍມີ AB = 3 cm, BC = 4 cm ແລະ CD = 5 cm. ຈົ່ງຊອກຫາຄວາມຍາວຂອງ AD? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ປະໂຫຍກສັນຍະລັກ: AD ="}</span>
+                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                <span>{"= "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span>{"cm"}</span>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(3) 12 cm + 50 mm ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"cm"}</span>
-            </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ການບວກ ແລະ ການລົບລວງຍາວ (Addition & Subtraction)",
+      title: "2. ການຄູນຄວາມຍາວທ່ອນຊື່ກັບຈຳນວນໃດໜຶ່ງ (Multiplication of Segment Lengths)",
       keyPoint: {
-      title: "2. ການບວກ ແລະ ການລົບລວງຍາວ (Addition & Subtraction)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຫຼັກການສຳຄັນ: ຖ້າຫົວໜ່ວຍວັດແທກຕ່າງກັນ, ເຮົາຕ້ອງ ປ່ຽນໃຫ້ເປັນຫົວໜ່ວຍດຽວກັນ ກ່ອນແລ້ວຈຶ່ງບວກ ຫຼື ລົບກັນ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div>
-              <strong>{"ຕົວຢ່າງ 1 (ການບວກ): "}</strong>{"1.5 m + 45 cm"}
-              <br />
-              <span style={{ paddingLeft: "40px" }}>{"= 150 cm + 45 cm = 195 cm (ຫຼື 1.95 m)"}</span>
-            </div>
-            <div style={{ borderTop: "1px solid #C8E6C9", paddingTop: "8px" }}>
-              <strong>{"ຕົວຢ່າງ 2 (ການລົບ): "}</strong>{"3 m - 80 cm"}
-              <br />
-              <span style={{ paddingLeft: "40px" }}>{"= 300 cm - 80 cm = 220 cm (ຫຼື 2.2 m)"}</span>
+        title: "ການຄູນດ້ວຍຈຳນວນຖ້ວນ ແລະ ເລກສ່ວນ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ເຮົາສາມາດກຳນົດຄວາມຍາວທ່ອນຊື່ໃໝ່ໂດຍການຄູນຄວາມຍາວທ່ອນຊື່ເກົ່າກັບຈຳນວນ k ໃດໜຶ່ງ:"}
+            </p>
+            <ul style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.6" }}>
+              <li><strong>{"ຄູນກັບຈຳນວນຖ້ວນ: "}</strong>{" ຖ້າ AE = 3 × CD ໝາຍຄວາມວ່າ ເຮົາເອົາຄວາມຍາວ CD ມາຕໍ່ກັນ 3 ເທື່ອ."}</li>
+              <li><strong>{"ຄູນກັບເລກສ່ວນ: "}</strong>{" ຖ້າ EF = 3/4 ຂອງ AB ໝາຍຄວາມວ່າ ແບ່ງ AB ອອກເປັນ 4 ສ່ວນເທົ່າກັນ ແລ້ວເອົາ 3 ສ່ວນ."}</li>
+            </ul>
+
+            <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2", display: "flex", flexDirection: "column", gap: "8px" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ກໍລະນີພິເສດ (ເມັດເຄິ່ງກາງ):"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6" }}>
+                {"ຖ້າ M ແມ່ນເມັດເຄິ່ງກາງຂອງ [AB], ເຮົາໄດ້: AM = MB = 1/2 AB (ຫຼື AM = 0.5 × AB), ແລະ AB = 2 × AM."}
+              </p>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ປົກກະຕິແລ້ວ ປ່ຽນຫົວໜ່ວຍໃຫຍ່ໃຫ້ເປັນຫົວໜ່ວຍນ້ອຍ (ເຊັ່ນ ແມັດ ເປັນ ຊັງຕີແມັດ) ຈະຊ່ວຍໃຫ້ບໍ່ຕິດເລກຈຸດທົດສະນິຍົມ ແລະ ຄິດໄລ່ງ່າຍຂຶ້ນ!",
+        ),
+        hint: {
+          text: "💡 ການຄູນຄວາມຍາວແມ່ນໃຊ້ວິທີດຽວກັນກັບການຄູນຕົວເລກທຳມະດາເລີຍ!",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ຜົນລົບລວງຍາວລຸ່ມນີ້ ໂດຍຕອບເປັນຫົວໜ່ວຍທີ່ກຳນົດໃຫ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) 3 m - 80 cm ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"cm"}</span>
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃຫ້ທ່ອນຊື່ AB ຍາວ 6 cm. ຖ້າສ້າງທ່ອນຊື່ CD ໃຫ້ມີຄວາມຍາວເທົ່າກັບ 3 ເທື່ອຂອງ AB, ຄວາມຍາວຂອງ CD ຈະເທົ່າກັບຈັກ cm? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                <span>{"ຕອບ: CD ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span>{"cm"}</span>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) 1.5 km - 500 m ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"m"}</span>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃຫ້ທ່ອນຊື່ AB ຍາວ 12 cm. ຖ້າສ້າງທ່ອນຊື່ EF ໃຫ້ມີຄວາມຍາວເທົ່າກັບ 3/4 ຂອງ AB, ຄວາມຍາວຂອງ EF ຈະເທົ່າກັບຈັກ cm? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ປະໂຫຍກສັນຍະລັກ: EF ="}</span>
+                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                <span>{"= "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span>{"cm"}</span>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
-      ]
-    },
-    {
-      title: "3. ການຄູນລວງຍາວ (Multiplication of Lengths)",
-      keyPoint: {
-      title: "3. ການຄູນລວງຍາວ (Multiplication of Lengths)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ການຄູນລວງຍາວແມ່ນການຄິດໄລ່ເມື່ອເອົາລວງຍາວທີ່ເທົ່າກັນຫຼາຍໆສ່ວນມາຕໍ່ກັນ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF3E0",
-              border: "2px solid #FF9800",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>
-              <strong>{"ຕົວຢ່າງ: "}</strong>{"ເຊືອກເສັ້ນໜຶ່ງຍາວ 80 cm. ຖ້າເອົາ 5 ເສັ້ນມາຕໍ່ກັນ ຈະຍາວທັງໝົດຈັກແມັດ?"}
-              <br />
-              <span style={{ paddingLeft: "80px", color: "#E65100", fontWeight: "bold" }}>{"ຄິດໄລ່: 80 cm × 5 = 400 cm"}</span>
-              <br />
-              <span style={{ paddingLeft: "80px", color: "#E65100", fontWeight: "bold" }}>{"→ ປ່ຽນເປັນແມັດ: 400 cm = 4 m"}</span>
-            </div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ຢ່າລືມກວດສອບເດີວ່າ ໂຈດຖາມຫາຫົວໜ່ວຍແມັດ (m) ຫຼື ຊັງຕີແມັດ (cm) ເພື່ອປ່ຽນຄຳຕອບໃຫ້ຖືກຕ້ອງ!",
-        isBlue: true,
-      },
-    },
-      problems: [
-        
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໄລຍະທາງທັງໝົດຂອງການຕໍ່ໄມ້ ຫຼື ເຊືອກ ແມ່ນການຄູນລວງຍາວໜຶ່ງເສັ້ນໃຫ້ຈຳນວນເສັ້ນ (80 cm × 5 = 400 cm = 4 m). ບົດທ້າທາຍ 2: ປ່ຽນທຸກຢ່າງໃຫ້ເປັນແມັດ ຫຼື ຊັງຕີແມັດກ່ອນບວກກັນ ແລ້ວຈຶ່ງປ່ຽນເປັນ km ຫຼື cm ຕາມທີ່ໂຈດຖາມເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງແກ້ໂຈດບັນຫາການຄູນລວງຍາວຕໍ່ໄປນີ້: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການພົວພັນຄວາມຍາວທ່ອນຊື່ (ລະດັບສູງ): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "16px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ໄມ້ເສັ້ນໜຶ່ງຍາວ 80 cm. ຖ້າເອົາ 5 ເເສັ້ນມາຕໍ່ກັນ ຈະຍາວທັງໝົດຈັກ ແມັດ (m)?"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"m"}</span>
-                </div>
-              </div>
-              <div style={{ display: "column", gap: "8px" }}>
-                <span>{"(2) ເຊືອກເສັ້ນໜຶ່ງຍາວ 1.2 m. ຖ້າຊື້ມາ 3 ເສັ້ນ ຈະຍາວທັງໝົດຈັກ ຊັງຕີແມັດ (cm)?"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px", marginTop: "8px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"cm"}</span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃຫ້ຈຸດ A, B, C, D, E, F ລຽງກັນຕາມລຳດັບຢູ່ເທິງເສັ້ນຊື່ d ໂດຍຮູ້ວ່າ AB = CD = DE = 2.8 cm, AF = 10.2 cm ແລະ BC = EF. ຈົ່ງຊອກຫາຄວາມຍາວຂອງ BC?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: BC ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span>{"cm"}</span>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງແກ້ໂຈດບັນຫາຊີວິດປະຈຳວັນກ່ຽວກັບລວງຍາວລຸ່ມນີ້: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດບັນຫາການປຽບທຽບຄວາມຍາວ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ນາງ ຈຳພາ ຍ່າງໄດ້ໄລຍະທາງ 1 km 200 m ໃນຕອນເຊົ້າ ແລະ 800 m ໃນຕອນແລງ. ລວມທັງໝົດລາວຍ່າງໄດ້ຈັກ ກິໂລແມັດ (km)?"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"km"}</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ປຶ້ມແບບຮຽນວິຊາຄະນິດສາດໜາ 8 mm. ຖ້າວາງຊ້ອນກັນ 10 ຫົວ ຈະສູງທັງໝົດຈັກ ຊັງຕີແມັດ (cm)?"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"cm"}</span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃຫ້ 1 ຟຸດ (foot) = 12 ນິ້ວ (inches). ຖ້າທ່ອນຊື່ AB ຍາວ 18 ນິ້ວ ແລະ ທ່ອນຊື່ CD ຍາວ 1.5 ຟຸດ. ຖາມວ່າ AB ຈະ ຍາວກວ່າ, ສັ້ນກວ່າ ຫຼື ເທົ່າກັບ CD?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: AB"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+              <span>{"CD"}</span>
             </div>
           </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ຊອກຫາຄວາມຍາວທັງໝົດທີ່ຮູ້ກ່ອນ: AB + CD + DE = 2.8 + 2.8 + 2.8 = 8.4 cm. ຈາກນັ້ນ BC + EF = AF - 8.4 = 10.2 - 8.4 = 1.8 cm. ເນື່ອງຈາກ BC = EF, ດັ່ງນັ້ນ BC = 1.8 / 2 = 0.9 cm!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ເພື່ອທົດສອບຄວາມເຂົ້າໃຈທັງໝົດ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 1.66 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດກ່ຽວກັບຈຸດເຄິ່ງກາງຫຼາຍຈຸດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) 4.5 m + 150 cm ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"m"}</span>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ໃຫ້ທ່ອນຊື່ AB ຍາວ 16 cm. ຖ້າ M ແມ່ນເມັດເຄິ່ງກາງຂອງ [AB], ແລະ N ແມ່ນເມັດເຄິ່ງກາງຂອງ [AM]. ຈົ່ງຊອກຫາຄວາມຍາວຂອງທ່ອນຊື່ AN ແລະ NB?"}
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span>{"- AN ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              <span>{"cm"}</span>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) 500 m × 4 ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"km"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(3) 80 cm - 300 mm ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span>{"- NB ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               <span>{"cm"}</span>
             </div>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາລວງຍາວປະສົມຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດຄິດໄລ່ຄວາມຍາວອ້ອມຮອບຮູບ (Perimeter): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ໂຕະນັກຮຽນໜຶ່ງຍາວ 1.8 m. ຖ້າເອົາໂຕະ 4 ໂຕມາຕໍ່ລຽງກັນ ຈະຍາວທັງໝົດຈັກ ແມັດ (m)?"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"m"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ເສັ້ນທາງແລ່ນຮອບສະໜາມກິລາແຫ່ງໜຶ່ງຍາວ 400 m. ຖ້າແລ່ນໄດ້ 5 ຮອບ ຈະໄດ້ໄລຍະທາງທັງໝົດຈັກ ກິໂລແມັດ (km)?"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"km"}</span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ໃຫ້ຮູບສາມແຈ ABC ທີ່ມີຂ້າງ AB = 5 cm, BC = 7 cm, ແລະ AC = 6 cm. ຖ້າເຮົາສ້າງຮູບສາມແຈໃໝ່ A′B′C′ ໃຫ້ແຕ່ລະຂ້າງມີຄວາມຍາວເປັນ 2.5 ເທື່ອຂອງຂ້າງເດີມ. ຈົ່ງຊອກຫາລວມຄວາມຍາວອ້ອມຮອບຂອງຮູບສາມແຈ A′B′C′?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ລວມຄວາມຍາວອ້ອມຮອບແມ່ນ"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+            <span>{"cm."}</span>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u14-ans-1-1">{"(1) 150 cm (ເພາະ 1 m = 100 cm, ດັ່ງນັ້ນ 100 + 50 = 150)"}</span>,
-          <span key="u14-ans-1-2">{"(2) 280 cm (2.5 m = 250 cm, ດັ່ງນັ້ນ 250 + 30 = 280)"}</span>,
-          <span key="u14-ans-1-3">{"(3) 17 cm (50 mm = 5 cm, ດັ່ງນັ້ນ 12 + 5 = 17)"}</span>,
-        ],
+          <span key="1-1">{"MN - MK = 9.5 - 5.6"}</span>,
+          <span key="1-2">{"3.9"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u14-ans-2-1">{"(1) 220 cm (3 m = 300 cm, ດັ່ງນັ້ນ 300 - 80 = 220)"}</span>,
-          <span key="u14-ans-2-2">{"(2) 1000 m (1.5 km = 1500 m, ດັ່ງນັ້ນ 1500 - 500 = 1000)"}</span>,
-        ],
+          <span key="2-1">{"AB + BC + CD = 3 + 4 + 5"}</span>,
+          <span key="2-2">{"12"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3">{"18 (ເນື່ອງຈາກ 3 × 6 = 18)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4-1">{"12 × 3/4"}</span>,
+          <span key="4-2">{"9"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u14-ans-t1-1">{"(1) 4 m (80 cm × 5 = 400 cm = 4 m)"}</span>,
-          <span key="u14-ans-t1-2">{"(2) 360 cm (1.2 m = 120 cm, 120 × 3 = 360 cm)"}</span>,
-        ],
+          <span key="c1">{"0.9 (ຄິດໄລ່: 10.2 - 3 × 2.8 = 1.8; BC = 1.8 / 2 = 0.9 cm)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u14-ans-t2-1">{"(1) 2 km (1 km 200 m = 1200 m, 1200 + 800 = 2000 m = 2 km)"}</span>,
-          <span key="u14-ans-t2-2">{"(2) 8 cm (8 mm × 10 = 80 mm = 8 cm)"}</span>,
-        ],
+          <span key="c2">{"ເທົ່າກັບ (ເນື່ອງຈາກ 1.5 ຟຸດ = 1.5 × 12 = 18 ນິ້ວ)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u14-ans-s1-1">{"(1) 6 m (4.5 m = 450 cm, 450 + 150 = 600 cm = 6 m)"}</span>,
-          <span key="u14-ans-s1-2">{"(2) 2 km (500 m × 4 = 2000 m = 2 km)"}</span>,
-          <span key="u14-ans-s1-3">{"(3) 50 cm (300 mm = 30 cm, 80 - 30 = 50)"}</span>,
-        ],
+          <span key="s1-1">{"- AN = 4 cm (AM = 16/2 = 8, AN = 8/2 = 4)"}</span>,
+          <span key="s1-2">{"- NB = 12 cm (NB = NM + MB = 4 + 8 = 12)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u14-ans-s2-1">{"(1) 7.2 m (1.8 m × 4 = 7.2)"}</span>,
-          <span key="u14-ans-s2-2">{"(2) 2 km (400 m × 5 = 2000 m = 2 km)"}</span>,
-        ],
-      },
+          <span key="s2">{"45 (ລວມຄວາມຍາວອ້ອມຮອບເກົ່າ = 5 + 7 + 6 = 18 cm, ໃໝ່ = 18 × 2.5 = 45 cm)"}</span>
+        ]
+      }
     ],
-    advice: "ໃນການຄິດໄລ່ລວງຍາວ ຕ້ອງປ່ຽນຫົວໜ່ວຍໃຫ້ຄືກັນກ່ອນສະເໝີ. ຢ່າລືມການພົວພັນຫຼັກ: 1 km = 1,000 m ແລະ 1 m = 100 cm = 1,000 mm ເດີ້!",
-  },
+    advice: "ເກັ່ງຫຼາຍ! การຄິດໄລ່ບວກຄວາມຍາວ ແລະ ຄູນຄວາມຍາວທ່ອນຊື່ ແມ່ນພື້ນຖານສຳຄັນຂອງເລຂາຄະນິດໃນການຫາລວມຂ້າງ ແລະ ໄລຍະຫ່າງ. ພະຍາຍາມຕໍ່ໄປເດີ້!"
+  }
 };

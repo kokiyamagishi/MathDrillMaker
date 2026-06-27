@@ -3,266 +3,294 @@ import { UnitData } from "../units2";
 
 export const unit23Data: UnitData = {
   unitNumber: 23,
-  unitTitle: "ພາກທີ I - ບົດທີ 23: ກຸ່ມ, ແລະ ອົງປະກອບຂອງກຸ່ມ",
-  unitGoal:
-    "ຮຽນຮູ້ກ່ຽວກັບຄວາມຮັບຮູ້ເບື້ອງຕົ້ນຂອງກຸ່ມ, ວິທີການກຳນົດກຸ່ມໂດຍການຂຽນແບບແຈກຢາຍອົງປະກອບ ແລະ ການລະບຸຄຸນລັກສະນະ",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ບົດທີ 23 ໜ້າ 153-157",
+  unitTitle: "ພາກທີ IV - ບົດທີ 23: ກຸ່ມ ແລະ ອົງປະກອບຂອງກຸ່ມ",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍຂອງກຸ່ມ (Set), ອົງປະກອບຂອງກຸ່ມ (Elements, ∈, ∉), ການຂຽນກຸ່ມແບບແຈກຢາຍອົງປະກອບ ແລະ ແບບບອກເງື່ອນໄຂ, ແລະ ກຸ່ມເປົ່າ (Empty Set)",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 183-187",
   subSections: [
     {
-      title: "1. ຄວາມຮັບຮູ້ກ່ຽວກັບກຸ່ມ (Concept of Sets)",
+      title: "1. ຄວາມໝາຍຂອງກຸ່ມ ແລະ ສັນຍະລັກອົງປະກອບ (Concept of Sets and Elements)",
       keyPoint: {
-      title: "1. ຄວາມຮັບຮູ້ກ່ຽວກັບກຸ່ມ (Concept of Sets)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ກຸ່ມແມ່ນການເກັບໂຮມບັນດາວັດຖຸ, ສິ່ງຂອງ ຫຼື ຕົວເລກທີ່ມີຄຸນລັກສະນະຈະແຈ້ງ ແລະ ສາມາດກຳນົດໄດ້ວ່າສິ່ງໃດຢູ່ໃນກຸ່ມນັ້ນ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E3F2FD",
-              border: "2px solid #2196F3",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div>{"• ວັດຖຸ ຫຼື ຕົວເລກໃນກຸ່ມ ເອີ້ນວ່າ 'ອົງປະກອບ' (elements) ຂອງກຸ່ມ."}</div>
-            <div>{"• ປົກກະຕິເພິ່ນຕັ້ງຊື່ກຸ່ມດ້ວຍຕົວອັກສອນໃຫຍ່ ເຊັ່ນ: A, B, C, N, ..."}</div>
-            <div style={{ color: "#0D47A1", fontWeight: "bold" }}>
-              {"• ຕົວຢ່າງ: ກຸ່ມ A ຂອງບັນດາຕົວເລກຄູ່ແຕ່ 1 ຫາ 9 ແມ່ນ A = {2, 4, 6, 8}."}
+        title: "ກຸ່ມ, ອົງປະກອບ ແລະ ເຄື່ອງໝາຍ ∈, ∉",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"- "}<strong>{"ກຸ່ມ (Set)"}</strong>{" ແມ່ນການຮວບຮວມບັນດາສິ່ງຂອງ, ວັດຖຸ, ຕົວເລກ ຫຼື ຕົວອັກສອນ ທີ່ມີລັກສະນະສະເພາະຮ່ວມກັນ."}
+              <br />
+              {"- ສິ່ງຂອງທີ່ຢູ່ໃນກຸ່ມ ເອີ້ນວ່າ "}<strong>{"ອົງປະກອບ (Element)"}</strong>{"."}
+            </p>
+            
+            <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9", display: "flex", flexDirection: "column", gap: "8px" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }}>{"ສັນຍະລັກການເປັນອົງປະກອບ:"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6" }}>
+                <li><strong>{"a ∈ A: "}</strong>{" ອ່ານວ່າ 'a ແມ່ນອົງປະກອບຂອງກຸ່ມ A' (a ນອນຢູ່ໃນກຸ່ມ A)."}</li>
+                <li><strong>{"b ∉ A: "}</strong>{" ອ່ານວ່າ 'b ບໍ່ແມ່ນອົງປະກອບຂອງກຸ່ມ A' (b ບໍ່ນອນຢູ່ໃນກຸ່ມ A)."}</li>
+              </ul>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ອົງປະກອບແຕ່ລະຕົວໃນກຸ່ມຈະຂຽນແຍກກັນດ້ວຍເຄື່ອງໝາຍຈຸດ (,) ແລະ ຢູ່ພາຍໃນວົງປີກກາ { } ເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງ: ຖ້າ S ແມ່ນກຸ່ມຂອງ 7 ວັນໃນໜຶ່ງອາທິດ, ວັນພຸດ ∈ S  ແຕ່  ວັນປີໃໝ່ ∉ S!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p style={{ fontSize: "1.375rem" }}>
-            {"ຈົ່ງຂຽນກຸ່ມຕໍ່ໄປນີ້ແບບແຈກຢາຍອົງປະກອບ (ຂຽນອົງປະກອບລຽງແຕ່ໜ້ອຍຫາຫຼາຍ ໃສ່ໃນວົງປີກກາ ເຊັ່ນ {2, 4, 6}): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ກຸ່ມ A ຂອງບັນດາຕົວເລກຄີກແຕ່ 1 ຫາ 7 (ລວມທັງ 1 ແລະ 7):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: A ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃຫ້ S ແມ່ນກຸ່ມຂອງ 7 ວັນໃນໜຶ່ງອາທິດ. ຈົ່ງຕື່ມເຄື່ອງໝາຍ ∈ ຫຼື ∉ ໃສ່ບ່ອນວ່າງໃຫ້ຖືກຕ້ອງ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span>{"ວັນເສົາ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"S"}</span>
+                </div>
+                
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span>{"ວັນປີໃໝ່"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"S"}</span>
+                </div>
               </div>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ກຸ່ມ B ຂອງບັນດາຕົວເລກທຳມະຊາດທີ່ເປັນຕົວຫານຂອງ 12 (ຕົວຫານຮ່ວມຂອງ 12 ແຕ່ໜ້ອຍຫາຫຼາຍ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: B ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "240px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃຫ້ A ແມ່ນກຸ່ມຂອງຕົວເລກທີ່ໃຊ້ຂຽນຈຳນວນ 42,124. ຈົ່ງຂຽນກຸ່ມ A ແບບແຈກຢາຍອົງປະກອບໃຫ້ຖືກຕ້ອງ? (ກົດລະບຽບ: ແຕ່ລະອົງປະກອບຂຽນພຽງເທື່ອດຽວ) "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ຕອບ: A = {"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                <span>{"}"}</span>
               </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ວິທີກຳນົດກຸ່ມ (Methods of Defining Sets)",
+      title: "2. ວິທີການຂຽນກຸ່ມ ແລະ ກຸ່ມພິເສດ (Methods of Representing Sets & Special Sets)",
       keyPoint: {
-      title: "2. ວິທີກຳນົດກຸ່ມ (Methods of Defining Sets)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ມີ 2 ວິທີຫຼັກໃນການຂຽນກຳນົດກຸ່ມ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "10px",
-            }}
-          >
-            <div>
-              <strong>{"• ວິທີ 1: ຂຽນແບບແຈກຢາຍອົງປະກອບ: "}</strong>{"ຂຽນທຸກອົງປະກອບອອກມາ."}
-              <br />
-              <span style={{ color: "#2E7D32", paddingLeft: "16px" }}>{"ຕົວຢ່າງ: B = {1, 3, 5, 7, 9}"}</span>
-            </div>
-            <div style={{ borderTop: "1px solid #C8E6C9", paddingTop: "8px" }}>
-              <strong>{"• ວິທີ 2: ຂຽນແບບບອກຄຸນລັກສະນະຮ່ວມ: "}</strong>{"ບອກເງື່ອນໄຂຂອງອົງປະກອບ."}
-              <br />
-              <span style={{ color: "#2E7D32", paddingLeft: "16px" }}>{"ຕົວຢ່າງ: B = {x ∈ N | x ແມ່ນຈຳນວນຄີກ ແລະ x < 10}"}</span>
+        title: "ການຂຽນກຸ່ມ 2 ແບບ ແລະ ກຸ່ມເປົ່າ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ເຮົາມີ 2 ວິທີການຂຽນກຸ່ມຫຼັກ:"}
+            </p>
+            <ul style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.6" }}>
+              <li><strong>{"1. ແບບແຈກຢາຍອົງປະກອບ (Roster Method): "}</strong>{" ຂຽນອົງປະກອບທັງໝົດໃນວົງປີກກາ ເຊັ່ນ: A = {2, 4, 6, 8}."}</li>
+              <li><strong>{"2. ແບບບອກເງື່ອນໄຂ ຫຼື ຄຸນລັກສະນະ (Set-builder Method): "}</strong>{" ບອກຄຸນລັກສະນະຂອງອົງປະກອບ ເຊັ່ນ: 'A ແມ່ນກຸ່ມຂອງເລກຄູ່ທຳມະຊາດທີ່ນ້ອຍກວ່າ 10'."}</li>
+            </ul>
+
+            <div style={{ padding: "16px", backgroundColor: "#FFE0B2", borderRadius: "8px", border: "1px solid #FFB74D", display: "flex", flexDirection: "column", gap: "8px" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ກຸ່ມພິເສດ:"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6" }}>
+                <li><strong>{"ກຸ່ມເປົ່າ (Empty Set): "}</strong>{" ແມ່ນກຸ່ມທີ່ບໍ່ມີອົງປະກອບໃດໆເລີຍ, ສັນຍະລັກດ້ວຍ ∅ ຫຼື { }."}</li>
+                <li><strong>{"ກຸ່ມບໍ່ສິ້ນສຸດ (Infinite Set): "}</strong>{" ແມ່ນກຸ່ມທີ່ມີອົງປະກອບຫຼາຍບໍ່ສິ້ນສຸດ ເຊັ່ນ: ກຸ່ມຂອງຈຳນວນທຳມະຊາດ ℕ = {0, 1, 2, 3, ...}."}</li>
+              </ul>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ເຄື່ອງໝາຍ | ໃນວົງປີກກາອ່ານວ່າ 'ໂດຍທີ່' ຫຼື 'ເຊິ່ງວ່າ' ເດີ້!",
+        ),
+        hint: {
+          text: "💡 ກົດລະບຽບການຂຽນກຸ່ມ: ລະຫວ່າງສອງອົງປະກອບຕ້ອງຂັ້ນດ້ວຍໝາຍຈຸດ (,), ລຳດັບຂອງການຂຽນບໍ່ສຳຄັນ!",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p style={{ fontSize: "1.375rem" }}>
-            {"ຈົ່ງຊອກຫາຈຳນວນອົງປະກອບຂອງກຸ່ມ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ກຸ່ມ C = {5, 10, 15, 20, 25, 30}. ກຸ່ມ C ມີຈຳນວນອົງປະກອບທັງໝົດຈັກຕົວ?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ຕົວ"}</span>
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຂຽນກຸ່ມ E ຂອງ 'ເດືອນທີ່ມີ 31 ວັນ' ແບບແຈກຢາຍອົງປະກອບ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "8px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span>{"ເດືອນທຳອິດທີ່ມີ 31 ວັນໃນປີແມ່ນ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span>{"ຈຳນວນອົງປະກອບທັງໝົດຂອງກຸ່ມ E ແມ່ນ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"ເດືອນ."}</span>
+                </div>
               </div>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ກຸ່ມ D ຂອງບັນດາວັນໃນໜຶ່ງອາທິດ ມີຈຳນວນອົງປະກອບທັງໝົດຈັກຕົວ?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ຕົວ"}</span>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ກຸ່ມຂອງ 'ເດືອນທີ່ມີ 32 ວັນ' ຈະເປັນກຸ່ມຊະນິດໃດ? ແລະ ສັນຍະລັກດ້ວຍເຄື່ອງໝາຍໃດ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ຕອບ: ເປັນກຸ່ມ"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span>{"ສັນຍະລັກດ້ວຍ"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ຕົວອັກສອນທີ່ຊ້ຳກັນໃນຄຳສັບ ຈະຖືກຂຽນພຽງແຕ່ເທື່ອດຽວໃນກຸ່ມ. ບົດທ້າທາຍ 2: ກຸ່ມເປົ່າແມ່ນກຸ່ມທີ່ບໍ່ມີອົງປະກອບໃດໆເລີຍ, ສັນຍະລັກດ້ວຍ Ø ຫຼື {}.",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p style={{ fontSize: "1.375rem" }}>
-              {"ຈົ່ງແກ້ໂຈດບັນຫາກ່ຽວກັບກຸ່ມລະດັບສູງ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການຊອກຫາອົງປະກອບຮ່ວມ (Intersection of Sets): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ກຸ່ມ E ຂອງບັນດາຕົວອັກສອນທີ່ປະກອບຢູ່ໃນຄຳສັບ 'MATHS' ແມ່ນກຸ່ມໃດ? (ຂຽນແບບແຈກຢາຍອົງປະກອບ ເຊັ່ນ {A, B, C}):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: E ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
-                </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃຫ້ A = {3, 5, 7, 9, 11, 13} ແມ່ນກຸ່ມເລກຄີກ. ໃຫ້ B = {2, 3, 5, 7, 11, 13} ແມ່ນກຸ່ມຈຳນວນມູນ (Prime numbers). ຈົ່ງຊອກຫາອົງປະກອບທີ່ນອນຢູ່ໃນທັງສອງກຸ່ມ A ແລະ B?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: ອົງປະກອບຮ່ວມແມ່ນ {"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "42px" }}></span>
+              <span>{"}"}</span>
+            </div>
+          </div>
+        )
+      },
+      {
+        number: 2,
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການວິເຄາະກຸ່ມບໍ່ສິ້ນສຸດ (Infinite Sets): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            </p>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃຫ້ ℕ ແມ່ນກຸ່ມຈຳນວນທຳມະຊາດ ℕ = {0, 1, 2, 3, ...}. ຖາມວ່າ ຈຳນວນ 8.5 ແລະ ຈຳນວນ 100 ແມ່ນອົງປະກອບຂອງກຸ່ມ ℕ ບໍ່? (ຕອບ: 8.5 ∈ ℕ ຫຼື 8.5 ∉ ℕ ຕາມລຳດັບ)"}
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem", paddingLeft: "16px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <span>{"- 8.5"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span>{"ℕ"}</span>
               </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ກຸ່ມ F = {x ∈ N | x < 0} (ກຸ່ມຈຳນວນທຳມະຊາດທີ່ນ້ອຍກວ່າ 0) ມີຈຳນວນອົງປະກອບຈັກຕົວ?:"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"ຕົວ"}</span>
-                </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <span>{"- 100"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span>{"ℕ"}</span>
               </div>
             </div>
           </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ອົງປະກອບຮ່ວມແມ່ນຕົວເລກທີ່ປະກົດຢູ່ໃນທັງ A ແລະ B: {3, 5, 7, 11, 13}. ສ່ວນຈຳນວນທຳມະຊາດແມ່ນເລກຖ້ວນບວກ ແລະ ສູນ, ດັ່ງນັ້ນ 8.5 ∉ ℕ ແລະ 100 ∈ ℕ!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p style={{ fontSize: "1.375rem" }}>
-            {"ຈົ່ງທົດສອບຄວາມເຂົ້າໃຈລວມກ່ຽວກັບກຸ່ມ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດການນັບອົງປະກອບໃນກຸ່ມຕົວອັກສອນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ກຸ່ມຂອງຈຳນວນທຳມະຊາດ N = {1, 2, 3, ...} ປະກອບມີຈຳນວນອົງປະກອບທີ່ຈຳກັດ ຫຼື ບໍ່ຈຳກັດ? (ຕອບ 'ຈຳກັດ' ຫຼື 'ບໍ່ຈຳກັດ'):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຖ້າກຸ່ມ G = {x ∈ N | x ແມ່ນຕົວຫານຂອງ 5}. ກຸ່ມ G ຂຽນແບບແຈກຢາຍອົງປະກອບແມ່ນແນວໃດ?:"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "40px" }}></span>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ໃຫ້ D ແມ່ນກຸ່ມຂອງຕົວອັກສອນທີ່ໃຊ້ຂຽນຄຳສັບ 'antigravity'. ຈົ່ງຂຽນກຸ່ມ D ແບບແຈກຢາຍອົງປະກອບ? (ໝາຍເຫດ: ບໍ່ຂຽນຕົວອັກສອນຊ້ຳກັນ)"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: D = {"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "240px", height: "42px" }}></span>
+            <span>{"}"}</span>
           </div>
         </div>
-      ),
+      )
     },
+    {
+      number: 2,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດການຊອກຫາຈຳນວນທຳມະຊາດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+          </p>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ໃຫ້ A ແມ່ນກຸ່ມຂອງຈຳນວນທຳມະຊາດຄູ່ທີ່ໃຫຍ່ກວ່າ 3 ແລະ ນ້ອຍກວ່າ 13. ຈົ່ງຂຽນກຸ່ມ A ແບບແຈກຢາຍອົງປະກອບ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: A = {"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+            <span>{"}"}</span>
+          </div>
+        </div>
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u23-ans-1-1">{"(1) {1, 3, 5, 7} (ເພາະແມ່ນຕົວເລກຄີກແຕ່ 1 ຫາ 7)"}</span>,
-          <span key="u23-ans-1-2">{"(2) {1, 2, 3, 4, 6, 12} (ເພາະທຸກຕົວເລກເຫຼົ່ານີ້ຫານ 12 ຂາດ)"}</span>,
-        ],
+          <span key="1-1">{"(1) ∈"}</span>,
+          <span key="1-2">{"(2) ∉"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u23-ans-2-1">{"(1) 6 (ເພາະມີ 6 ຕົວເລກຢູ່ໃນວົງປີກກາ)"}</span>,
-          <span key="u23-ans-2-2">{"(2) 7 (ເພາະໜຶ່ງອາທິດມີ 7 ວັນ: ວັນຈັນ ຫາ ວັນອາທິດ)"}</span>,
-        ],
+          <span key="2">{"1, 2, 4 (ຫຼື {1, 2, 4})"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"(1) ມັງກອນ (ຫຼື ເດືອນ 1)"}</span>,
+          <span key="3-2">{"(2) 7"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4-1">{"ກຸ່ມເປົ່າ"}</span>,
+          <span key="4-2">{"∅ (ຫຼື { })"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u23-ans-t1-1">{"(1) {M, A, T, H, S} (ເພາະເປັນກຸ່ມຂອງຕົວອັກສອນແຕ່ລະຕົວໃນຄຳສັບ)"}</span>,
-          <span key="u23-ans-t1-2">{"(2) 0 (ເພາະຈຳນວນທຳມະຊາດເລີ່ມຕົ້ນແຕ່ 1 ຂຶ້ນໄປ ດັ່ງນັ້ນບໍ່ມີຈຳນວນໃດນ້ອຍກວ່າ 0 ມັນຈຶ່ງເປັນກຸ່ມເປົ່າ)"}</span>,
-        ],
+          <span key="c1">{"3, 5, 7, 11, 13 (ຫຼື {3, 5, 7, 11, 13})"}</span>
+        ]
+      },
+      {
+        questionNumber: "ທ້າທາຍ 2",
+        answers: [
+          <span key="c2-1">{"- 8.5 ∉ ℕ"}</span>,
+          <span key="c2-2">{"- 100 ∈ ℕ"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u23-ans-s1-1">{"(1) ບໍ່ຈຳກັດ (ເພາະເຮົາສາມາດນັບຕົວເລກຕໍ່ໄປໄດ້ເລື່ອຍໆບໍ່ມີວັນສິ້ນສຸດ)"}</span>,
-          <span key="u23-ans-s1-2">{"(2) {1, 5} (ເພາະຕົວຫານຂອງ 5 ທີ່ມີແຕ່ຈຳນວນທຳມະຊາດແມ່ນມີແຕ່ 1 ແລະ 5)"}</span>,
-        ],
+          <span key="s1">{"a, n, t, i, g, r, v, y (ຕົວອັກສອນຊ້ຳກັນຄື a, t, i ຈະຖືກຂຽນພຽງເທື່ອດຽວ)"}</span>
+        ]
       },
+      {
+        questionNumber: "ທົດສອບປະຈຳບົດ 2",
+        answers: [
+          <span key="s2">{"4, 6, 8, 10, 12 (ເລກຄູ່ທຳມະຊາດລະຫວ່າງ 3 ຫາ 13)"}</span>
+        ]
+      }
     ],
-    advice: "ໃນການຂຽນກຸ່ມແບບແຈກຢາຍອົງປະກອບ ຢ່າລືມໃຊ້ວົງປີກກາ { } ແລະ ຂຽນເຄື່ອງໝາຍຈຸດ (,) ຂັ້ນລະຫວ່າງອົງປະກອບແຕ່ລະຕົວເດີ້! ຖ້າມີອົງປະກອບຊ້ຳກັນແມ່ນຂຽນພຽງແຕ່ເທື່ອດຽວເທົ່ານັ້ນ!",
-  },
+    advice: "ດີຫຼາຍ! ຄວາມເຂົ້າໃຈກ່ຽວກັບກຸ່ມ ແລະ ອົງປະກອບ ເປັນພື້ນຖານຄະນິດສາດທີ່ສຳຄັນທີ່ສຸດ ເພາະມັນເປັນພາສາຫຼັກໃນຄະນິດສາດທຸກຂະແໜງການ. ສູ້ຕໍ່ໄປເດີ້!"
+  }
 };

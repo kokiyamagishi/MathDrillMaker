@@ -4,370 +4,346 @@ import { UnitData } from "../units2";
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
   <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{den}</span>
   </span>
 );
 
 export const unit1Data: UnitData = {
   unitNumber: 1,
-  unitTitle: "ພາກທີ I - ບົດທີ 1: ເລກສ່ວນປົກກະຕິ ແລະ ເງື່ອນໄຂກຳນົດ",
-  unitGoal:
-    "ຮຽນຮູ້ກ່ຽວກັບນິຍາມຂອງເລກສ່ວນປົກກະຕິ, ຊອກຫາເງື່ອນໄຂກຳນົດຂອງຕົວປ່ຽນທີ່ເຮັດໃຫ້ພູດຕ່າງຈາກສູນ ແລະ ການຄັດຈ້ອນເລກສ່ວນປົກກະຕິໃຫ້ຢູ່ໃນຮູບຮ່າງງ່າຍດາຍທີ່ສຸດ",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 1 ໜ້າ 5-10",
+  unitTitle: "ພາກທີ I - ບົດທີ 1: ສຳນວນປົກກະຕິ",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍຂອງສຳນວນປົກກະຕິ, ເງື່ອນໄຂທີ່ເຮັດໃຫ້ສຳນວນປົກກະຕິບໍ່ກຳນົດ ແລະ ການຄັດຈ້ອນສຳນວນປົກກະຕິ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 1-3",
   subSections: [
     {
-      title: "1. ນິຍາມ ແລະ ເງື່ອນໄຂກຳນົດຂອງເລກສ່ວນປົກກະຕິ (Definition and Undefined Conditions)",
+      title: "1. ນິຍາມ ແລະ ເງື່ອນໄຂຂອງສຳນວນປົກກະຕິ",
       keyPoint: {
-      title: "1. ນິຍາມ ແລະ ເງື່ອນໄຂກຳນົດຂອງເລກສ່ວນປົກກະຕິ (Definition and Undefined Conditions)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ເລກສ່ວນປົກກະຕິ ແມ່ນສຳນວນທີ່ມີຮູບຮ່າງ "} <Fraction num="A" den="B" /> {" ເຊິ່ງ A ແລະ B ແມ່ນພະຫຸພົດ ແລະ B ຕ້ອງຕ່າງຈາກ 0 (B ≠ 0)."}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div>
-              <strong style={{ color: "#D84315" }}>{"⚠️ ເງື່ອນໄຂກຳນົດ (Defined Condition): "}</strong>
-              <span>{"ສຳນວນເລກສ່ວນຈະບໍ່ມີຄວາມໝາຍທາງຄະນິດສາດ (ບໍ່ກຳນົດ) ເມື່ອພູດ (Denominator) ເທົ່າກັບ 0."}</span>
-              <br />
-              <span style={{ paddingLeft: "20px", color: "#555" }}>
-                {"ຕົວຢ່າງ: ສຳນວນ "} <Fraction num="x + 3" den="x - 2" /> {" ຈະບໍ່ກຳນົດເມື່ອ x - 2 = 0 ໝາຍຄວາມວ່າ x = 2."}
+        title: "ຄວາມໝາຍ ແລະ ເງື່ອນໄຂບໍ່ກຳນົດ (Undefined Conditions)",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ສຳນວນປົກກະຕິແມ່ນສຳນວນທີ່ຂຽນໃນຮູບແບບເລກສ່ວນ "}
+              <Fraction num="A" den="B" />
+              {" ເຊິ່ງ A ແລະ B ແມ່ນພະຫຸພົດ ໂດຍທີ່ຕົວຫານ B ຕ້ອງຕ່າງຈາກ 0 (B ≠ 0)."}
+            </p>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຄ່າຂອງຕົວປ່ຽນທີ່ເຮັດໃຫ້ສຳນວນປົກກະຕິ "}<strong>{"ບໍ່ກຳນົດ"}</strong>{" ແມ່ນຄ່າທີ່ເຮັດໃຫ້ຕົວຫານ (ພູດ) ເທົ່າກັບ 0 (B = 0)."}
+            </p>
+            <div style={{ padding: "12px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#1565C0", display: "block", marginBottom: "4px" }}>
+                {"ຕົວຢ່າງ:"}
               </span>
-              <br />
-              <span style={{ paddingLeft: "20px", color: "#555" }}>
-                {"ດັ່ງນັ້ນ, ເງື່ອນໄຂທີ່ເຮັດໃຫ້ສຳນວນມີຄວາມໝາຍຄື x ຕ້ອງຕ່າງຈາກ 2 (x ≠ 2)."}
-              </span>
+              <p style={{ fontSize: "1.3rem", margin: 0, lineHeight: "1.6" }}>
+                {"ສຳນວນ "} <Fraction num="x + 3" den="x - 1" /> {" ຈະບໍ່ກຳນົດເມື່ອຕົວຫານ x - 1 = 0 ⇔ x = 1."}
+              </p>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ພູດຂອງເລກສ່ວນປົກກະຕິ ຫ້າມເທົ່າກັບ 0 ເດັດຂາດ! ຈົ່ງຊອກຫາຄ່າ x ທີ່ເຮັດໃຫ້ພູດເປັນ 0 ແລ້ວຕັດຄ່ານັ້ນອອກ ເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ເພື່ອຊອກຫາເງື່ອນໄຂທີ່ເຮັດໃຫ້ສຳນວນບໍ່ກຳນົດ, ໃຫ້ຕັ້ງສົມຜົນ ຕົວຫານ = 0 ແລ້ວແກ້ສົມຜົນຊອກຫາຄ່າຂອງຕົວປ່ຽນ!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາຄ່າຂອງ x ທີ່ເຮັດໃຫ້ເລກສ່ວນປົກກະຕິຕໍ່ໄປນີ້ບໍ່ກຳນົດ (ພູດເທົ່າກັບ 0): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ສຳນວນ: "} <Fraction num="x - 1" den="x - 5" /> {" ຈະບໍ່ກຳນົດເມື່ອ x ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາຄ່າຂອງຕົວປ່ຽນ x ທີ່ເຮັດໃຫ້ສຳນວນປົກກະຕິຕໍ່ໄປນີ້ບໍ່ກຳນົດ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center" }}>
+                    <Fraction num="8" den="x - 2" /> {" ບໍ່ກຳນົດເມື່ອ x ="}
+                  </span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center" }}>
+                    <Fraction num="5" den="3 - x" /> {" ບໍ່ກຳນົດເມື່ອ x ="}
+                  </span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ສຳນວນ: "} <Fraction num="2x + 4" den="3x - 12" /> {" ຈະບໍ່ກຳນົດເມື່ອ x ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາຄ່າຂອງຕົວປ່ຽນ y ທີ່ເຮັດໃຫ້ສຳນວນປົກກະຕິຕໍ່ໄປນີ້ບໍ່ກຳນົດ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center" }}>
+                    <Fraction num="y + 6" den="3y + 9" /> {" ບໍ່ກຳນົດເມື່ອ y ="}
+                  </span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center" }}>
+                    <Fraction num="7" den="y² - 16" /> {" ບໍ່ກຳນົດເມື່ອ y ="}
+                  </span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ການຄັດຈ້ອນເລກສ່ວນປົກກະຕິ (Simplification of Rational Expressions)",
+      title: "2. ການຄັດຈ້ອນສຳນວນປົກກະຕິ (Simplifying Rational Expressions)",
       keyPoint: {
-      title: "2. ການຄັດຈ້ອນເລກສ່ວນປົກກະຕິ (Simplification of Rational Expressions)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ການຄັດຈ້ອນແມ່ນການແຍກສ່ວນຄູນທັງຈຳນວນພູດ ແລະ ພູດ, ແລ້ວຫານສ່ວນຄູນຮ່ວມ (Common factor) ທີ່ຄືກັນອອກ:"}
-          </p>
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: "12px" }}>
-            <span style={{ fontSize: "1.125rem", color: "#666", marginBottom: "6px" }}>{"ແຜນວາດຂັ້ນຕອນການຄັດຈ້ອນສຳນວນ"}</span>
-            <svg viewBox="0 0 320 80" style={{ width: "100%", maxWidth: "320px", height: "auto", border: "1px solid #ccc", backgroundColor: "#fff", borderRadius: "4px" }}>
-              {/* Box 1 */}
-              <rect x="10" y="20" width="80" height="40" rx="4" fill="#E3F2FD" stroke="#2196F3" strokeWidth="1.5" />
-              <text x="50" y="44" fill="#0D47A1" fontSize="9" textAnchor="middle" fontWeight="bold">{"ແຍກສ່ວນຄູນ"}</text>
-              
-              {/* Arrow 1 */}
-              <line x1="95" y1="40" x2="115" y2="40" stroke="#333" strokeWidth="1.5" />
-              <polygon points="115,37 120,40 115,43" fill="#333" />
-
-              {/* Box 2 */}
-              <rect x="125" y="20" width="80" height="40" rx="4" fill="#E8F5E9" stroke="#4CAF50" strokeWidth="1.5" />
-              <text x="165" y="44" fill="#1B5E20" fontSize="9" textAnchor="middle" fontWeight="bold">{"ຄັດສ່ວນຮ່ວມ"}</text>
-
-              {/* Arrow 2 */}
-              <line x1="210" y1="40" x2="230" y2="40" stroke="#333" strokeWidth="1.5" />
-              <polygon points="230,37 235,40 230,43" fill="#333" />
-
-              {/* Box 3 */}
-              <rect x="240" y="20" width="70" height="40" rx="4" fill="#FFF3E0" stroke="#FF9800" strokeWidth="1.5" />
-              <text x="275" y="44" fill="#E65100" fontSize="9" textAnchor="middle" fontWeight="bold">{"ຮູບຮ່າງງ່າຍ"}</text>
-            </svg>
+        title: "ຫຼັກການຄັດຈ້ອນສຳນວນປົກກະຕິ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ເພື່ອຄັດຈ້ອນສຳນວນປົກກະຕິ, ເຮົາຈະແຍກພະຫຸພົດຢູ່ຕົວເສດ (ຈຳນວນພູດ) ແລະ ຕົວຫານ (ພູດ) ອອກເປັນສ່ວນຄູນ ແລ້ວຄັດສ່ວນຄູນທີ່ຄືກັນອອກ:"}
+            </p>
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "16px", backgroundColor: "#F5F7FA", borderRadius: "12px", border: "1px dashed #B0BEC5", margin: "8px 0" }}>
+              <span className="math" style={{ fontSize: "1.6rem", display: "inline-flex", alignItems: "center", gap: "8px" }}>
+                <Fraction num="A × K" den="B × K" /> {" = "} <Fraction num="A" den="B" /> {" (ໂດຍທີ່ B, K ≠ 0)"}
+              </span>
+            </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຕົວຢ່າງ: ຄັດຈ້ອນສຳນວນ "}
+              <Fraction num="2x + 6" den="x² - 9" /> {" = "} <Fraction num="2(x + 3)" den="(x - 3)(x + 3)" /> {" = "} <Fraction num="2" den="x - 3" /> {" (ເງື່ອນໄຂ x ≠ ±3)."}
+            </p>
           </div>
-          <p style={{ fontSize: "1.375rem", margin: "10px 0 0 0" }}>
-            {"ຕົວຢ່າງ: "} 
-            <Fraction num="x² - 9" den="x² - 3x" /> 
-            {" = "}
-            <Fraction num="(x - 3)(x + 3)" den="x(x - 3)" />
-            {" = "}
-            <Fraction num="x + 3" den="x" />
-            {" (ເມື່ອ x ≠ 3 ແລະ x ≠ 0)."}
-          </p>
-        </div>
-      ),
-      hint: {
-        text: "ຕ້ອງຜັນປ່ຽນໃຫ້ເປັນສ່ວນຄູນກ່ອນຈຶ່ງຄັດຈ້ອນໄດ້! ຫ້າມຄັດຈ້ອນໂຕ x ທີ່ຢູ່ໃນຮູບການບວກລົບໂດຍກົງເດັດຂາດ!",
+        ),
+        hint: {
+          text: "💡 ໝັ່ນທວນຄືນສະເໝີຄູ່ຄວນຈື່ ເຊັ່ນ: a² - b² = (a - b)(a + b) ເພື່ອຊ່ວຍໃນການແຍກສ່ວນຄູນໄດ້ຢ່າງວ່ອງໄວ!",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄັດຈ້ອນເລກສ່ວນປົກກະຕິຕໍ່ໄປນີ້ໃຫ້ເປັນຮູບຮ່າງງ່າຍດາຍທີ່ສຸດ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຄັດຈ້ອນ: "} <Fraction num="5x" den="15x²" /> {" = (ຕອບເປັນເລກສ່ວນ, ຕົວຢ່າງ: 1/(3x)):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄັດຈ້ອນສຳນວນປົກກະຕິຕໍ່ໄປນີ້ໃຫ້ເປັນຮູບແບບງ່າຍດາຍ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center" }}>
+                    <Fraction num="6x³" den="3x⁵" /> {" ="}
+                  </span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center" }}>
+                    <Fraction num="5a + 5b" den="ab + b²" /> {" ="}
+                  </span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຄັດຈ້ອນ: "} <Fraction num="x² - 4" den="x - 2" /> {" = (ຕອບໃນຮູບຮ່າງພະຫຸພົດ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄັດຈ້ອນສຳນວນປົກກະຕິຂັ້ນສູງຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center" }}>
+                    <Fraction num="x² - 4" den="x² - 2x" /> {" ="}
+                  </span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center" }}>
+                    <Fraction num="x² - 9" den="x² + 6x + 9" /> {" ="}
+                  </span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ຄຳແນະນຳ: ຂໍ້ 1 ໃຫ້ແຍກຕົວຮ່ວມຂອງພູດກ່ອນ ແລ້ວຊອກຫາເງື່ອນໄຂ (ພູດອາດມີສອງຄ່າ). ຂໍ້ 2 ໃຫ້ໃຊ້ສູດສະເໝີຜົນຄວນຈື່ A² - B² = (A-B)(A+B) ເຂົ້າໃນການແຍກສ່ວນຄູນທັງພູດ ແລະ ຈຳນວນພູດ ເດີ້!",
+    hintText: "💡 ບົດທ້າທາຍ: ແຍກສ່ວນຄູນຢູ່ພູດ ແລະ ຈຳນວນພູດໃຫ້ລະອຽດ ເພື່ອເຮັດໃຫ້ການຄັດຈ້ອນສຳນວນປົກກະຕິຊັ້ນສູງນີ້ຖືກຕ້ອງ!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາເງື່ອນໄຂກຳນົດຂອງເລກສ່ວນທີ່ມີພູດເປັນຮູບຮ່າງກຳລັງສອງ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ການຄັດຈ້ອນໂດຍການແຍກຕົວຄູນຮ່ວມ 3 ພົດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ຊອກຫາຄ່າ x ທັງໝົດ ທີ່ເຮັດໃຫ້ "} <Fraction num="x + 1" den="x² - 9" /> {" ບໍ່ມີຄວາມໝາຍ (ຕອບຕົວເລກແຍກດ້ວຍຈຸດ, ຕົວຢ່າງ: 3, -3):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: x ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຊອກຫາຄ່າ x ທັງໝົດ ທີ່ເຮັດໃຫ້ "} <Fraction num="x - 2" den="x(x - 4)" /> {" ບໍ່ມີຄວາມໝາຍ (ຕອບຕົວເລກແຍກດ້ວຍຈຸດ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: x ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"(1) ຈົ່ງຄັດຈ້ອນສຳນວນປົກກະຕິ: "}
+              <strong style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                <Fraction num="x² + 5x + 6" den="x² - 4" />
+              </strong>
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: ຜົນຄັດຈ້ອນແມ່ນ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຄັດຈ້ອນເລກສ່ວນປົກກະຕິທີ່ມີລະດັບຂັ້ນສອງ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ການຫາເງື່ອນໄຂບໍ່ກຳນົດຂອງສຳນວນກຳລັງສອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ຄັດຈ້ອນ: "} <Fraction num="x² - 3x" den="x² - 9" /> {" (ຕອບແບບເລກສ່ວນ, ຕົວຢ່າງ: x/(x+3)): Warm-up"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຄັດຈ້ອນ: "} <Fraction num="x² - 2x + 1" den="x² - 1" /> {" (ຕອບແບບເລກສ່ວນ, ຕົວຢ່າງ: (x-1)/(x+1)):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"(1) ຈົ່ງຊອກຫາຄ່າຂອງ x ທັງໝົດທີ່ເຮັດໃຫ້ສຳນວນປົກກະຕິ: "}
+              <strong style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                <Fraction num="x - 1" den="x² - 5x + 6" />
+              </strong>
+              {" ບໍ່ກຳນົດ."}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: x ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
             </div>
           </div>
-        ),
-      },
-    ],
+        )
+      }
+    ]
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ບົດສັງລວມກ່ຽວກັບເງື່ອນໄຂກຳນົດ ແລະ ການຄັດຈ້ອນ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ການຄັດຈ້ອນສຳນວນປົກກະຕິຊັ້ນສູງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຈົ່ງກຳນົດເງື່ອນໄຂຂອງ x ເພື່ອໃຫ້ສຳນວນ "} <Fraction num="5" den="x² - 4x" /> {" ມີຄວາມໝາຍ (ຕອບໂດຍໃຊ້ເຄື່ອງໝາຍ ≠ ແລະ ຕອບແຍກດ້ວຍຈຸດ, ຕົວຢ່າງ: x ≠ 0, x ≠ 4):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "180px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຄັດຈ້ອນສຳນວນທີ່ຊ້ອນກັນ: "} <Fraction num="2x - 4" den="x² - 4" /> {" (ຕອບແບບເລກສ່ວນງ່າຍດາຍ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"(1) ຈົ່ງຄັດຈ້ອນສຳນວນປົກກະຕິ: "}
+            <strong style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+              <Fraction num="3x² + 6x" den="x² - x - 6" />
+            </strong>
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ຜົນຄັດຈ້ອນແມ່ນ"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "42px" }}></span>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາຕົວຈິງກ່ຽວກັບອັດຕາສ່ວນ (Real-world fraction ratios): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດບັນຫາປະຍຸກພຶດຊະຄະນິດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ສວນພັກແຫ່ງໜຶ່ງເປັນຮູບສີ່ແຈສາກ ມີເນື້ອທີ່ A = x² - x (m²) ແລະ ມີລວງກວ້າງ W = x - 1 (m). ຈົ່ງຊອກຫາສຳນວນສະແດงລວງຍາວ L ຂອງຮູບສີ່ແຈນີ້ (ຄຳແນະນຳ: L = A/W, ຕອບໃນຮູບແບບພະຫຸພົດ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: L ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"మీటర్ (m)"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຖ້າມີເງື່ອນໄຂວ່າທັງເນື້ອທີ່ ແລະ ລວງກວ້າງຕ້ອງເປັນບວກ (+), ຄ່າ x ຕ້ອງມີເງື່ອນໄຂແນວໃດ? (ຕອບແບບອະສົມຜົນງ່າຍໆ ເຊັ່ນ: x > 1):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"(1) ຖ້າສຳນວນ "}
+            <strong style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+              <Fraction num="x + a" den="x - 3" />
+            </strong>
+            {" ຄັດຈ້ອນກັບ "}
+            <strong style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+              <Fraction num="x² - 9" den="x² - 6x + 9" />
+            </strong>
+            {" ໄດ້ຢ່າງສົມບູນ. ຈົ່ງຊອກຫາຄ່າຂອງຄົງຈຳນວນ a?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: a ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u1-ans-1-1">{"(1) x = 5 (ເພາະວ່າ x - 5 = 0)"}</span>,
-          <span key="u1-ans-1-2">{"(2) x = 4 (ເພາະວ່າ 3x - 12 = 0  ⇒  3x = 12  ⇒  x = 4)"}</span>,
-        ],
+          <span key="1-1">{"(1) x = 2 (ຕົວຫານ x - 2 = 0)"}</span>,
+          <span key="1-2">{"(2) x = 3 (ຕົວຫານ 3 - x = 0)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u1-ans-2-1">{"(1) 1/(3x) (ເພາະວ່າ 5x / (15x²) = 5x / (3 * 5x * x) = 1/(3x))"}</span>,
-          <span key="u1-ans-2-2">{"(2) x + 2 (ເພາະວ່າ (x - 2)(x + 2) / (x - 2) = x + 2)"}</span>,
-        ],
+          <span key="2-1">{"(1) y = -3 (ຕົວຫານ 3y + 9 = 0)"}</span>,
+          <span key="2-2">{"(2) y = 4 ແລະ y = -4 (ຫຼື y = ±4 ເພາະວ່າ y² - 16 = 0)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"(1) "}<Fraction num="2" den="x²" /></span>,
+          <span key="3-2">{"(2) "}<Fraction num="5" den="b" /> {" (ຄິດໄລ່: 5(a+b)/[b(a+b)] = 5/b)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4-1">{"(1) "}<Fraction num="x + 2" den="x" /> {" (ຄິດໄລ່: (x-2)(x+2)/[x(x-2)] = (x+2)/x)"}</span>,
+          <span key="4-2">{"(2) "}<Fraction num="x - 3" den="x + 3" /> {" (ຄິດໄລ່: (x-3)(x+3)/(x+3)² = (x-3)/(x+3))"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u1-ans-t1-1">{"(1) 3, -3 (ຫຼື 3, -3. ເພາະວ່າ x² - 9 = 0  ⇒  x² = 9  ⇒  x = 3 ຫຼື -3)"}</span>,
-          <span key="u1-ans-t1-2">{"(2) 0, 4 (ຫຼື 0, 4. ເພາະວ່າ x(x - 4) = 0  ⇒  x = 0 ຫຼື x = 4)"}</span>,
-        ],
+          <span key="t1">{" "}<Fraction num="x + 3" den="x - 2" /> {" (ຄິດໄລ່: (x+2)(x+3)/[(x-2)(x+2)] = (x+3)/(x-2))"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u1-ans-t2-1">{"(1) x/(x+3) (ເພາະວ່າ x(x - 3) / [(x - 3)(x + 3)] = x / (x + 3))"}</span>,
-          <span key="u1-ans-t2-2">{"(2) (x-1)/(x+1) (ເພາະວ່າ (x - 1)² / [(x - 1)(x + 1)] = (x - 1) / (x + 1))"}</span>,
-        ],
+          <span key="t2">{"x = 2 ແລະ x = 3 (ເພາະວ່າ x² - 5x + 6 = (x - 2)(x - 3) = 0)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u1-ans-s1-1">{"(1) x ≠ 0, x ≠ 4 (ຫຼື x != 0, x != 4. ເພາະວ່າພູດ x(x - 4) ຕ້ອງຕ່າງຈາກ 0)"}</span>,
-          <span key="u1-ans-s1-2">{"(2) 2/(x+2) (ເພາະວ່າ 2(x - 2) / [(x - 2)(x + 2)] = 2 / (x + 2))"}</span>,
-        ],
+          <span key="s1">{" "}<Fraction num="3x" den="x - 3" /> {" (ຄິດໄລ່: 3x(x+2)/[(x-3)(x+2)] = 3x/(x-3))"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u1-ans-s2-1">{"(1) x (ເພາະວ່າ L = A/W = x(x - 1) / (x - 1) = x)"}</span>,
-          <span key="u1-ans-s2-2">{"(2) x > 1 (ເພາະວ່າລວງກວ້າງ x - 1 > 0  ⇒  x > 1)"}</span>,
-        ],
-      },
+          <span key="s2">{"a = 3 (ຄິດໄລ່: (x²-9)/(x²-6x+9) = (x-3)(x+3)/(x-3)² = (x+3)/(x-3) ດັ່ງນັ້ນ a = 3)"}</span>
+        ]
+      }
     ],
-    advice: "ຈົ່ງຈື່ໄວ້ສະເໝີວ່າ ເລກສ່ວນປົກກະຕິຈະບໍ່ກຳນົດເມື່ອພູດເທົ່າກັບ 0! ແລະ ເວລາຄັດຈ້ອນ ຕ້ອງແຍກໃຫ້ເປັນສ່ວນຄູນກ່ອນຈຶ່ງຫານກັນໄດ້ເດີ້!",
-  },
+    advice: "ເກັ່ງຫຼາຍ! ການເຮັດວຽກກັບສຳນວນປົກກະຕິ, ການຊອກຫາເງື່ອນໄຂບໍ່ກຳນົດ ແລະ ການຄັດຈ້ອນພຶດຊະຄະນິດ ເປັນຫົວໃຈຫຼັກຂອງຄະນິດສາດ ມ.4. ໝັ່ນຝຶກຝົນຕໍ່ໄປເດີ້!"
+  }
 };

@@ -1,336 +1,196 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit36Data: UnitData = {
   unitNumber: 36,
-  unitTitle: "ພາກທີ V - ບົດທີ 36: ການເຄິ່ງຄືຮູບເລຂາຄະນິດເທິງໜ້າພຽງ",
-  unitGoal:
-    "ຮຽນຮູ້ ແລະ ນຳໃຊ້ຫຼັກການເຄິ່ງຄື (Reflection/Symmetry) ຂອງຮູບເລຂາຄະນິດທຽບໃສ່ແກນ x, ແກນ y ແລະ ທຽບໃສ່ເມັດເຄິ່ງກາງ O(0, 0)",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 36 ໜ້າ 211-216",
+  unitTitle: "ພາກທີ IV - ບົດທີ 36: ເສັ້ນຊື່ໃນແຜ່ນພຽງ (Straight Lines in the Plane)",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບສົມຜົນທົ່ວໄປຂອງເສັ້ນຊື່ ax + by + c = 0, ເວັກເຕີຊີ້ນຳ u = [-b, a], ເວັກເຕີຕັ້ງສາກ n = [a, b], ແລະ ສູດຄິດໄລ່ໄລຍະຫ່າງຈາກເມັດໜຶ່ງຫາເສັ້ນຊື່",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 178-183",
   subSections: [
     {
-      title: "1. ສູດພິກັດຂອງການເຄິ່ງຄື (Symmetry Coordinate Rules)",
+      title: "1. ເວັກເຕີຊີ້ນຳ ແລະ ເວັກເຕີຕັ້ງສາກ (Direction & Normal Vectors of a Line)",
       keyPoint: {
-      title: "1. ສູດພິກັດຂອງການເຄິ່ງຄື (Symmetry Coordinate Rules)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ເມື່ອມີເມັດ P(x, y), ພິກັດຂອງເມັດເຄິ່ງຄື P' ພາຍໃຕ້ເງື່ອນໄຂຕ່າງໆກຳນົດດັ່ງນີ້:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "12px",
-            }}
-          >
-            <div>
-              <strong style={{ color: "#E65100" }}>{"• ການເຄິ່ງຄືທຽບໃສ່ແກນ x (Reflection across x-axis):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#D84315" }}>
-                {"P'(x,  -y)  (ພິກັດ x ຄືເກົ່າ, ພິກັດ y ປ່ຽນເຄື່ອງໝາຍ)"}
-              </span>
+        title: "ນິຍາມຂອງເວັກເຕີຊີ້ນຳ ແລະ ເວັກເຕີຕັ້ງສາກ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ສໍາລັບເສັ້ນຊື່ d ທີ່ມີສົມຜົນທົ່ວໄປ ax + by + c = 0 (ເຊິ່ງ a² + b² ≠ 0):"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"1. ເວັກເຕີຕັ້ງສາກ (Normal Vector) n:"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"n = [a, b] (ແມ່ນເວັກເຕີທີ່ມີທິດທາງຕັ້ງສາກກັບເສັ້ນຊື່ d)"}
+              </p>
             </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• ການເຄິ່ງຄືທຽບໃສ່ແກນ y (Reflection across y-axis):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#D84315" }}>
-                {"P'(-x,  y)  (ພິກັດ y ຄືເກົ່າ, ພິກັດ x ປ່ຽນເຄື່ອງໝາຍ)"}
-              </span>
+            <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }}>{"2. ເວັກເຕີຊີ້ນຳ (Direction Vector) u:"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"u = [-b, a] (ແມ່ນເວັກເຕີທີ່ມີທິດທາງຂະໜານ ຫຼື ນອນເທິງເສັ້ນຊື່ d)"}
+              </p>
             </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• การເຄິ່ງຄືທຽບໃສ່ເມັດເຄິ່ງກາງ O(0, 0) (Reflection through Origin):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#2E7D32" }}>
-                {"P'(-x,  -y)  (ປ່ຽນເຄື່ອງໝາຍທັງສອງພິກັດ)"}
-              </span>
-            </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ສໍາປະສິດມຸມ (Slope) m ຂອງເສັ້ນຊື່ ແມ່ນ m = -a/b (ເມື່ອ b ≠ 0)."}
+            </p>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ຕົວຢ່າງ: ໃຫ້ P(3, 2). ທຽບແກນ x ຈະໄດ້ (3, -2). ທຽບແກນ y ຈະໄດ້ (-3, 2). ທຽບເມັດ O ຈະໄດ້ (-3, -2) ເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງ: ເສັ້ນຊື່ 3x - 4y + 5 = 0 ມີເວັກເຕີຕັ້ງສາກ n = [3, -4], ເວັກເຕີຊີ້ນຳ u = [4, 3] ແລະ ສໍາປະສິດມຸມ m = 3/4!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາພິກັດຂອງເມັດເຄິ່ງຄື ພາຍໃຕ້ແກນທີ່ກຳນົດ: "}{" "}
-            <span className="point-label">{"(ຂໍ้ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໃຫ້ເມັດ P(4, 5). ພິກັດເມັດເຄິ່ງຄື P' ທຽບໃສ່ແກນ x ແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ, ຕົວຢ່າງ: (4, -5)):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາເວັກເຕີຕັ້ງສາກ ແລະ ເວັກເຕີຊີ້ນຳ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ໃຫ້ເສັ້ນຊື່ d: 2x - 3y + 7 = 0 ⇒ ເວັກເຕີຕັ້ງສາກ n = ["}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{", "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{"]"}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ໃຫ້ເສັ້ນຊື່ d: 5x + 4y - 3 = 0 ⇒ ເວັກເຕີຊີ້ນຳ u = ["}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{", "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{"]"}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ໃຫ້ເມັດ P(-2, 7). ພິກັດເມັດເຄິ່ງຄື P' ທຽບໃສ່ແກນ y ແມ່ນເທົ່າໃດ? (⚠️ ສັງເກດເຄື່ອງໝາຍໃຫ້ດີ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ບົດຮຽນພື້ນຖານ",
-      keyPoint: { content: <span /> },
-      problems: [
-        {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາພິກັດຂອງເມັດເຄິ່ງຄື ທຽບໃສ່ເມັດເຄິ່ງກາງ O(0, 0): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໃຫ້ເມັດ P(3, -6). ພິກັດເມັດເຄິ່ງຄື P' ທຽບໃສ່ເມັດ O(0, 0) ແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ໃຫ້ເມັດ P(-5, -2). ພິກັດເມັດເຄິ່ງຄື P' ທຽບໃສ່ເມັດ O(0, 0) ແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+      title: "2. ໄລຍະຫ່າງຈາກເມັດໜຶ່ງຫາເສັ້ນຊື່ (Distance from a Point to a Line)",
+      keyPoint: {
+        title: "ສູດຄິດໄລ່ໄລຍະຫ່າງ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃນລະບົບເສັ້ນເຄົ້າ Oxy, ໄລຍະຫ່າງຈາກເມັດ M(x₀, y₀) ຫາເສັ້ນຊື່ Δ: ax + by + c = 0 ແມ່ນຄິດໄລ່ດ້ວຍສູດ:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
+              <strong style={{ fontSize: "1.5rem", color: "#E65100" }}>{"d(M, Δ) = |a·x₀ + b·y₀ + c| / √(a² + b²)"}</strong>
             </div>
           </div>
-        </div>
-      ),
-    }
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງ: ໄລຍະຫ່າງຈາກ M(1, 2) ຫາເສັ້ນຊື່ 3x - 4y + 15 = 0 ແມ່ນ d = |3(1) - 4(2) + 15| / √(3² + (-4)²) = |3 - 8 + 15| / 5 = 10 / 5 = 2!",
+          isBlue: false
+        }
+      },
+      problems: [
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ໄລຍະຫ່າງຈາກເມັດຫາເສັ້ນຊື່: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ໄລຍະຫ່າງຈາກ M(3, 4) ຫາເສັ້ນຊື່ d: 3x + 4y - 5 = 0 ແມ່ນ d ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ໄລຍະຫ່າງຈາກ N(2, -1) ຫາເສັ້ນຊື່ d: 6x - 8y + 5 = 0 ແມ່ນ d ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໃຫ້ເຄິ່ງຄືແຕ່ລະຈຸດຈອມແຍກກັນ ແລ້ວຊອກຫາພິກັດໃໝ່! ບົດທ້າທາຍ 2: ຍ້າຍປາຣາໂບນທຽບແກນ x ຈະປ່ຽນ y ເປັນ -y ເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາພິກັດຂອງຮູບສາມແຈໃໝ່ ຫຼັງຈາກການເຄິ່ງຄື: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດຊອກຫາສົມຜົນເສັ້ນຊື່ (Line Equation construction): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ຮູບສາມແຈ ABC ມີຈອມ A(1, 2), B(3, 5), C(4, 0). ຫຼັງຈາກການເຄິ່ງຄືທຽບໃສ່ແກນ x, ພິກັດຈອມໃໝ່ B' ຈະແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: B' ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຈາກຂໍ້ (1), ຖ້າເຄິ່ງຄືທຽບໃສ່ແກນ y ພົບວ່າຈອມ C' ຈະມີພິກັດແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: C' ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຈົ່ງຊອກຫາສົມຜົນເສັ້ນຊື່ d ທີ່ຜ່ານເມັດ A(2, 3) ແລະ ມີເວັກເຕີຕັ້ງສາກ n = [2, -1] ພາຍໃຕ້ຮູບຮ່າງ 2x - y = C?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: C ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
-        ),
-      },
-      {
-        number: 2,
-        content: (
-          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາສົມຜົນປາຣາໂບນໃໝ່ ຫຼັງຈາກການເຄິ່ງຄື: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-            </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ເສັ້ນສະແດງ y = (x - 2)² + 3 ເຄິ່ງຄືທຽບໃສ່ແກນ x ຈະມີສົມຜົນແມ່ນ -y = (x - 2)² + 3 ⇒ y = -(x - 2)² - 3. ພິກັດຈຸດຈອມໃໝ່ແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ, ຕົວຢ່າງ: (2, -3)):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ເສັ້ນສະແດງ y = (x - 2)² + 3 ເຄິ່ງຄືທຽບໃສ່ແກນ y ຈະມີພິກັດຈຸດຈອມໃໝ່ແມ່ນເທົ່າໃດ? (ຄຳແນະນຳ: ປ່ຽນ x ເປັນ -x):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ສົມຜົນເສັ້ນຊື່ d ຜ່ານ A(2, 3) ມີ n = [2, -1] ແມ່ນ: 2(x - 2) - 1(y - 3) = 0 ⇒ 2x - 4 - y + 3 = 0 ⇒ 2x - y - 1 = 0 ⇒ 2x - y = 1. ດັ່ງນັ້ນ C = 1!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາພິກັດຂອງເມັດເຄິ່ງຄື ທຽບໃສ່ເສັ້ນຊື່ພິເສດ (Symmetry across x = a or y = b): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໄລຍະຫ່າງຈາກເມັດເຄົ້າຫາເສັ້ນຊື່: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ໃຫ້ເມັດ P(1, 4). ພິກັດເມັດເຄິ່ງຄື P' ທຽບໃສ່ເສັ້ນຊື່ແນວຕັ້ງ x = 3 ແມ່ນເທົ່າໃດ? (ຄຳແນະນຳ: ໄລຍະທາງແນວນອນຈາກ x=1 ຫາ x=3 ແມ່ນ 2 ຫົວໜ່ວຍ, ດັ່ງນັ້ນ x' = 3 + 2 = 5):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: P' ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ໃຫ້ເມັດ Q(3, 2). ພິກັດເມັດເຄິ່ງຄື Q' ທຽບໃສ່ເສັ້ນຊື່ແນວນອນ y = 4 ແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: Q' ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ໄລຍະຫ່າງຈາກຈຸດເລີ່ມຕົ້ນ O(0, 0) ຫາເສັ້ນຊື່ 5x + 12y - 26 = 0 ແມ່ນເທົ່າໃດ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ:"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
-      ),
-    },
-    {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາຕົວຈິງກ່ຽວກັບການອອກແບບລວດລາຍຜ້າໄໝລາວ (Silk Pattern Reflection Design): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ໃນການແຕ້ມລວດລາຍ, ຊ່າງແຕ້ມເມັດ A(5, 3) ໃສ່ເຄິ່ງເບື້ອງຂວາ. ລາວຕ້ອງການເຄິ່ງຄືເມັດນີ້ທຽບໃສ່ແກນ y ເພື່ອສ້າງລາຍເຄິ່ງຊ້າຍທີ່ຄືກັນ. ພິກັດເມັດໃໝ່ A' ຈະແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: A' ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຖ້າລາວຕ້ອງການເຄິ່ງຄືເມັດ A(5, 3) ນັ້ນລົງລຸ່ມທຽບໃສ່ແກນ x, ພິກັດເມັດໃໝ່ A'' ຈະແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: A'' ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u36-ans-1-1">{"(1) (4, -5) (ເພາະວ່າການເຄິ່ງຄືທຽບແກນ x ຈະປ່ຽນເຄື່ອງໝາຍ y ເປັນຄ່າກົງກັນຂ້າມ)"}</span>,
-          <span key="u36-ans-1-2">{"(2) (2, 7) (⚠️ ເພາະວ່າການເຄິ່ງຄືທຽບແກນ y ຈະປ່ຽນເຄື່ອງໝາຍ x ເປັນຄ່າກົງກັນຂ້າມ)"}</span>,
-        ],
+          <span key="1-1">{"2 (ຄິດໄລ່: ຈາກ 2x - 3y + 7 = 0 ⇒ n = [2, -3])"}</span>,
+          <span key="1-2">{"-3 (ຄິດໄລ່: n = [2, -3])"}</span>,
+          <span key="1-3">{"-4 (ຄິດໄລ່: ຈາກ 5x + 4y - 3 = 0 ⇒ u = [-b, a] = [-4, 5])"}</span>,
+          <span key="1-4">{"5 (ຄິດໄລ່: u = [-4, 5])"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u36-ans-2-1">{"(1) (-3, 6) (ເພາະວ່າປ່ຽນເຄື່ອງໝາຍທັງສອງພິກັດ)"}</span>,
-          <span key="u36-ans-2-2">{"(2) (5, 2) (ເພາະວ່າປ່ຽນເຄື່ອງໝາຍທັງສອງພິກັດ ຈາກລົບເປັນບວກ)"}</span>,
-        ],
+          <span key="2-1">{"4 (ຄິດໄລ່: d = |3(3) + 4(4) - 5| / √(3²+4²) = |9 + 16 - 5| / 5 = 20/5 = 4)"}</span>,
+          <span key="2-2">{"2.5 (ຄິດໄລ່: d = |6(2) - 8(-1) + 5| / √(6²+8²) = |12 + 8 + 5| / 10 = 25/10 = 2.5)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3">{"1 (ຄິດໄລ່: 2x - y = 2(2) - 3 = 1 ⇒ C = 1)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u36-ans-t1-1">{"(1) (3, -5) (ຍ້ອນວ່າທຽບແກນ x ຈະປ່ຽນພິກັດ y ຂອງ B(3, 5) ເປັນ -5)"}</span>,
-          <span key="u36-ans-t1-2">{"(2) (-4, 0) (ຍ້ອນວ່າທຽບແກນ y ຈະປ່ຽນພິກັດ x ຂອງ C(4, 0) ເປັນ -4)"}</span>,
-        ],
-      },
-      {
-        questionNumber: "ທ້າທາຍ 2",
-        answers: [
-          <span key="u36-ans-t2-1">{"(1) (2, -3) (ເພາະວ່າຈຸດຈອມເກົ່າແມ່ນ (2, 3) ດັ່ງນັ້ນທຽບແກນ x ພິກັດຈຸດຈອມໃໝ່ແມ່ນ (2, -3))"}</span>,
-          <span key="u36-ans-t2-2">{"(2) (-2, 3) (ເພາະວ່າຈຸດຈອມເກົ່າແມ່ນ (2, 3) ດັ່ງນັ້ນທຽບແກນ y ພິກັດຈຸດຈອມໃໝ່ແມ່ນ (-2, 3))"}</span>,
-        ],
+          <span key="c1">{"1 (ຄິດໄລ່: C = 1)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u36-ans-s1-1">{"(1) (5, 4) (ເພາະວ່າ x' = 2*3 - 1 = 5, y' = 4)"}</span>,
-          <span key="u36-ans-s1-2">{"(2) (3, 6) (ເພາະວ່າ x' = 3, y' = 2*4 - 2 = 6)"}</span>,
-        ],
-      },
-      {
-        questionNumber: "ທົດສອບປະຈຳບົດ 2",
-        answers: [
-          <span key="u36-ans-s2-1">{"(1) (-5, 3) (ເພາະວ່າທຽບແກນ y ຈະໄດ້ A'(-5, 3))"}</span>,
-          <span key="u36-ans-s2-2">{"(2) (5, -3) (ເພາະວ່າທຽບແກນ x ຈະໄດ້ A''(5, -3))"}</span>,
-        ],
-      },
+          <span key="s1">{"2 (ຄິດໄລ່: d = |5(0) + 12(0) - 26| / √(5²+12²) = 26 / 13 = 2)"}</span>
+        ]
+      }
     ],
-    advice: "ການເຄິ່ງຄືຮູບເລຂາຄະນິດ ຊ່ວຍສ້າງຄວາມສົມດຸນທາງສິລະປະ ແລະ ການອອກແບບສະຖາປັດຕະຍະກຳ! ຈື່ຫຼັກການເຄື່ອງໝາຍແກນ x, y ໃຫ້ດີເດີ້!",
-  },
+    advice: "ເກັ່ງຫຼາຍ! ການຊອກຫາສົມຜົນເສັ້ນຊື່ ແລະ ໄລຍະຫ່າງ ເປັນຄວາມຮູ້ພື້ນຖານທີ່ສຳຄັນໃນການແກ້ໄຂບັນຫາເລຂາຄະນິດແບບວິເຄາະ. ກ້າວຕໍ່ໄປເດີ້!"
+  }
 };

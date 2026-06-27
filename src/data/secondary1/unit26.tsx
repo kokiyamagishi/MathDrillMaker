@@ -3,264 +3,274 @@ import { UnitData } from "../units2";
 
 export const unit26Data: UnitData = {
   unitNumber: 26,
-  unitTitle: "ພາກທີ I - ບົດທີ 26: ການຕັດກັນຂອງກຸ່ມ, ການໂຮມກັນຂອງກຸ່ມ",
-  unitGoal:
-    "ຮຽນຮູ້ກ່ຽວກັບການປະຕິບັດການຂອງກຸ່ມ: ການຕັດກັນ (Intersection) ດ້ວຍເຄື່ອງໝາຍ ∩ ແລະ ການໂຮມກັນ (Union) ດ້ວຍເຄື່ອງໝາຍ ∪",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ບົດທີ 26 ໜ້າ 169-174",
+  unitTitle: "ພາກທີ IV - ບົດທີ 26: ການຕັດ ແລະ ການໂຮມກຸ່ມ",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບການປະຕິບັດການເທິງກຸ່ມ: ການຕັດກຸ່ມ (Intersection, ∩), ການໂຮມກຸ່ມ (Union, ∪), ຄຸນລັກສະນະ ແລະ ການແກ້ໂຈດບັນຫານັບສະມາຊິກໃນຊີວິດຈິງ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 198-202",
   subSections: [
     {
-      title: "1. ການຕັດກັນຂອງສອງກຸ່ມ (Intersection of Sets)",
+      title: "1. ການຕັດກຸ່ມ (Intersection of Sets)",
       keyPoint: {
-      title: "1. ການຕັດກັນຂອງສອງກຸ່ມ (Intersection of Sets)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ການຕັດກັນຂອງກຸ່ມ A ແລະ ກຸ່ມ B (ຂຽນ A ∩ B) ແມ່ນກຸ່ມທີ່ປະກອບດ້ວຍບັນດາອົງປະກອບທີ່ຮ່ວມກັນ (ຢູ່ໃນທັງ A ແລະ B):"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E3F2FD",
-              border: "2px solid #2196F3",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div>{"• ສັນຍະລັກ ∩ ອ່ານວ່າ 'ຕັດກັນ' (Intersection)."}</div>
-            <div>{"• A ∩ B = {x | x ∈ A ແລະ x ∈ B}"}</div>
-            <div style={{ color: "#0D47A1", fontWeight: "bold" }}>
-              {"• ຕົວຢ່າງ: ຖ້າ A = {1, 2, 3} ແລະ B = {2, 3, 4} → A ∩ B = {2, 3}"}
+        title: "ນິຍາມ ແລະ ຄຸນລັກສະນະການຕັດກຸ່ມ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"- "}<strong>{"ການຕັດກຸ່ມ"}</strong>{" ຂອງສອງກຸ່ມ A ແລະ B, ສັນຍະລັກດ້ວຍ "}<strong>{"A ∩ B"}</strong>{" (ອ່ານວ່າ A ຕັດ B), ແມ່ນກຸ່ມທີ່ປະກອບດ້ວຍບັນດາອົງປະກອບທີ່ນອນຢູ່ໃນທັງກຸ່ມ A ແລະ ກຸ່ມ B ຮ່ວມກັນ."}
+              <br />
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#00796B", paddingLeft: "16px" }}>{"A ∩ B = { x | x ∈ A  ແລະ  x ∈ B }"}</span>
+            </p>
+            
+            <div style={{ padding: "16px", backgroundColor: "#E0F2F1", borderRadius: "8px", border: "1px solid #80CBC4" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#004D40" }}>{"ຄຸນລັກສະນະການຕັດ:"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6", marginTop: "8px" }}>
+                <li>{"ການສັບປ່ຽນບ່ອນໄດ້: A ∩ B = B ∩ A"}</li>
+                <li>{"ການໂຮມໝູ່ໄດ້: (A ∩ B) ∩ C = A ∩ (B ∩ C)"}</li>
+              </ul>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ວິທີຈື່: ການຕັດກັນແມ່ນການເລືອກເອົາແຕ່ອົງປະກອບ 'ໜ້າຄືກັນ' ທີ່ຊ້ຳກັນໃນສອງກຸ່ມເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງ: ຖ້າ A = {1, 2, 3} ແລະ B = {3, 4, 5} ⇒ A ∩ B = {3}.",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p style={{ fontSize: "1.375rem" }}>
-            {"ຈົ່ງຊອກຫາການຕັດກັນ ແລະ ການໂຮມກັນຂອງກຸ່ມ (ກຳນົດໃຫ້ A = {1, 3, 5} ແລະ B = {3, 5, 7}): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຈົ່ງຂຽນກຸ່ມ A ∩ B ແບບແຈກຢາຍອົງປະກອບ (ເຊັ່ນ {3, 5}):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: A ∩ B ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃຫ້ A = {1, 3, 5, 7} ແລະ B = {2, 3, 5, 7, 11}. ຈົ່ງຊອກຫາອົງປະກອບຂອງກຸ່ມ A ∩ B? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ຕອບ: A ∩ B = {"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                <span>{"}"}</span>
               </div>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) จົ່ງຂຽນກຸ່ມ A ∪ B ແບບແຈກຢາຍອົງປະກອບ (ລຽງແຕ່ໜ້ອຍຫາຫຼາຍ ເຊັ່ນ {1, 3, 5, 7}):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: A ∪ B ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "220px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃຫ້ສອງກຸ່ມ X = {a, b} ແລະ Y = {c, d}. ຖາມວ່າ X ∩ Y ຈະເປັນກຸ່ມໃດ ແລະ ຂຽນດ້ວຍສັນຍະລັກໃດ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ຕອບ: ເປັນກຸ່ມ"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span>{"ສັນຍະລັກດ້ວຍ"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ການໂຮມກັນຂອງສອງກຸ່ມ (Union of Sets)",
+      title: "2. ການໂຮມກຸ່ມ (Union of Sets)",
       keyPoint: {
-      title: "2. ການໂຮມກັນຂອງສອງກຸ່ມ (Union of Sets)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ການໂຮມກັນຂອງກຸ່ມ A ແລະ ກຸ່ມ B (ຂຽນ A ∪ B) ແມ່ນກຸ່ມທີ່ປະກອບດ້ວຍທຸກໆອົງປະກອບຂອງ A ແລະ B ເຂົ້າກັນ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div>{"• ສັນຍະລັກ ∪ ອ່ານວ່າ 'ໂຮມກັນ' (Union)."}</div>
-            <div>{"• A ∪ B = {x | x ∈ A ຫຼື x ∈ B}"}</div>
-            <div style={{ color: "#2E7D32", fontWeight: "bold" }}>
-              {"• ຕົວຢ່າງ: ຖ້າ A = {1, 2} ແລະ B = {2, 3, 4} → A ∪ B = {1, 2, 3, 4}"}
+        title: "ນິຍາມ ແລະ ຄຸນລັກສະນະການໂຮມກຸ່ມ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"- "}<strong>{"การໂຮມກຸ່ມ"}</strong>{" ຂອງສອງກຸ່ມ A ແລະ B, ສັນຍະລັກດ້ວຍ "}<strong>{"A ∪ B"}</strong>{" (ອ່ານວ່າ A ໂຮມ B), ແມ່ນກຸ່ມທີ່ປະກອບດ້ວຍບັນດາອົງປະກອບທີ່ນອນຢູ່ໃນກຸ່ມ A ຫຼື ຢູ່ໃນກຸ່ມ B ຫຼື ຢູ່ໃນທັງສອງກຸ່ມ (ຮວບຮວມສະມາຊິກທັງໝົດ ແຕ່ບໍ່ຂຽນຕົວຊ້ຳ)."}
+              <br />
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#E65100", paddingLeft: "16px" }}>{"A ∪ B = { x | x ∈ A  ຫຼື  x ∈ B }"}</span>
+            </p>
+            
+            <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ຄຸນລັກສະນະການໂຮມ:"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6", marginTop: "8px" }}>
+                <li>{"ການສັບປ່ຽນບ່ອນໄດ້: A ∪ B = B ∪ A"}</li>
+                <li>{"ການໂຮມໝູ່ໄດ້: (A ∪ B) ∪ C = A ∪ (B ∪ C)"}</li>
+              </ul>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ໃນການໂຮມກັນ ຖ້າມີອົງປະກອບທີ່ຊ້ຳກັນ (ເຊັ່ນ ເລກ 2) ເຮົາຈະຂຽນມັນພຽງແຕ່ເທື່ອດຽວເທົ່ານັ້ນໃນກຸ່ມໃໝ່!",
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງ: ຖ້າ A = {1, 2, 3} ແລະ B = {3, 4, 5} ⇒ A ∪ B = {1, 2, 3, 4, 5}.",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p style={{ fontSize: "1.375rem" }}>
-            {"ຈົ່ງຊອກຫາຜົນການຕັດກັນກັບກຸ່ມເປົ່າ ແລະ ຕົວມັນເອງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ໃຫ້ກຸ່ມ M = {2, 4, 6}. ຖາມວ່າ M ∩ Ø ຈະເທົ່າກັບກຸ່ມໃດ? (ຕອບ 'Ø' ຫຼື 'M'):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃຫ້ M = {1, 4, 6, 8} ແລະ N = {5, 6, 7, 8, 9}. ຈົ່ງຊອກຫາອົງປະກອບຂອງກຸ່ມ M ∪ N? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ຕອບ: M ∪ N = {"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "240px", height: "42px" }}></span>
+                <span>{"}"}</span>
               </div>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກກຸ່ມ M, ຖາມວ່າ M ∪ Ø ຈະເທົ່າກັບກຸ່ມໃດ? (ຕອບ 'Ø' ຫຼື 'M' ຫຼື ລະບຸກຸ່ມ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃຫ້ F ແມ່ນກຸ່ມຂອງພະຍັນຊະນະແຖວກາງພາສາລາວ ແລະ D ແມ່ນກຸ່ມຂອງພະຍັນຊະນະແຖວຕ່ຳ. ຖ້າສອງກຸ່ມນີ້ບໍ່ມີອົງປະກອບຮ່ວມກັນເລີຍ, ຖາມວ່າ F ∩ D ຈະເທົ່າກັບກຸ່ມໃດ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                <span>{"ຕອບ: F ∩ D ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ຖ້າສອງກຸ່ມບໍ່ມີອົງປະກອບໃດໆຮ່ວມກັນເລີຍ, ຜົນຂອງການຕັດກັນຈະແມ່ນ ກຸ່ມເປົ່າ (Ø). ບົດທ້າທາຍ 2: ປ່ຽນກຸ່ມບອກເງື່ອນໄຂໃຫ້ເປັນແຈກຢາຍອົງປະກອບກ່ອນ ແລ້ວຈຶ່ງໂຮມກັນ.",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p style={{ fontSize: "1.375rem" }}>
-              {"ຈົ່ງແກ້ໂຈດບັນຫາລະດັບສູງກ່ຽວກັບກຸ່ມ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດບັນຫາການນັບສະມາຊິກກິລາ (Venn Diagram Word Problem): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ໃຫ້ P = {1, 2} ແລະ Q = {3, 4}. ຜົນຂອງ P ∩ Q ແມ່ນເທົ່າໃດ? (ຕອບ 'Ø' ຫຼື ລະບຸກຸ່ມ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: P ∩ Q ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ໃຫ້ A = {x ∈ N | x ແມ່ນຕົວຫານຂອງ 4} ແລະ B = {x ∈ N | x ແມ່ນຕົວຫານຂອງ 6}. ກຸ່ມ A ∩ B ຈະແມ່ນກຸ່ມໃດ?:"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: A ∩ B ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ນັກຮຽນຫ້ອງ ມ.1 ມີ 23 ຄົນ ທີ່ຫລິ້ນກິລາຢ່າງໜ້ອຍໜຶ່ງປະເພດ. ຮູ້ວ່າ 18 ຄົນຫລິ້ນເຕະບານ, 15 ຄົນຫລິ້ນສົ່ງບານ. ຖາມວ່າມີນັກຮຽນຈັກຄົນທີ່ຫລິ້ນທັງສອງປະເພດກິລາ? (ແນະນຳ: ໃຊ້ສູດ n(A ∪ B) = n(A) + n(B) - n(A ∩ B))"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: ມີນັກຮຽນ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span>{"ຄົນ."}</span>
             </div>
           </div>
-        ),
+        )
       },
+      {
+        number: 2,
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການນັບສະມາຊິກຮຽນພາສາ (Venn Counting): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            </p>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃນກຸ່ມນັກຮຽນ 30 ຄົນ, ມີ 20 ຄົນຮຽນພາສາອັງກິດ, 12 ຄົນຮຽນພາສາຝຣັ່ງ, ແລະ 5 ຄົນຮຽນທັງສອງພາສາ. ຖາມວ່າມີນັກຮຽນຈັກຄົນທີ່ບໍ່ຮຽນພາສາໃດເລີຍໃນສອງພາສານີ້?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: ມີນັກຮຽນ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span>{"ຄົນ."}</span>
+            </div>
+          </div>
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ນັກຮຽນຫລິ້ນທັງສອງປະເພດ = 18 + 15 - 23 = 10 ຄົນ. ສ່ວນນັກຮຽນຮຽນຢ່າງໜ້ອຍໜຶ່ງພາສາ = 20 + 12 - 5 = 27 ຄົນ. ດັ່ງນັ້ນ ບໍ່ຮຽນເລີຍ = 30 - 27 = 3 ຄົນ!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p style={{ fontSize: "1.375rem" }}>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາປະສົມ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດການຕັດ ແລະ ໂຮມຂອງກຸ່ມຈຳນວນຖ້ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຖ້າ A ⊂ B. ຖາມວ່າ A ∩ B ຈະເທົ່າກັບກຸ່ມໃດ? (ຕອບ 'A' ຫຼື 'B'):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ໃຫ້ A = {1, 2, 3, 4} ແລະ B = {3, 4, 5, 6}. ຈົ່ງຫາຈຳນວນອົງປະກອບຂອງກຸ່ມ A ∩ B ແລະ ກຸ່ມ A ∪ B ຕາມລຳດັບ?"
+            }</p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span>{"- ຈຳນວນອົງປະກອບຂອງ A ∩ B ແມ່ນ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              <span>{"ອົງປະກອບ"}</span>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຖ້າ A ⊂ B. ຖາມວ່າ A ∪ B ຈະເທົ່າກັບກຸ່ມໃດ? (ຕອບ 'A' ຫຼື 'B'):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span>{"- ຈຳນວນອົງປະກອບຂອງ A ∪ B ແມ່ນ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              <span>{"ອົງປະກອບ"}</span>
             </div>
           </div>
         </div>
-      ),
+      )
     },
+    {
+      number: 2,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດກວດສອບຄຸນລັກສະນະກຸ່ມເປົ່າ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+          </p>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ໃຫ້ກຸ່ມ A ໃດໜຶ່ງ ແລະ ∅ ແມ່ນກຸ່ມເປົ່າ. ຈົ່ງຫາຄຳຕອບຂອງ A ∩ ∅ ແລະ A ∪ ∅?"}</p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span>{"- A ∩ ∅ ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span>{"- A ∪ ∅ ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+            </div>
+          </div>
+        </div>
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u26-ans-1-1">{"(1) {3, 5} (ເພາະເລກ 3 ແລະ 5 ແມ່ນອົງປະກອບທີ່ມີຢູ່ໃນທັງສອງກຸ່ມ)"}</span>,
-          <span key="u26-ans-1-2">{"(2) {1, 3, 5, 7} (ເພາະເປັນການເອົາທຸກອົງປະກອບມາໂຮມກັນ ໂດຍເລກ 3 ແລະ 5 ທີ່ຊ້ຳກັນຂຽນພຽງເທື່ອດຽວ)"}</span>,
-        ],
+          <span key="1">{"3, 5, 7 (ຫຼື {3, 5, 7})"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u26-ans-2-1">{"(1) Ø (ເພາະກຸ່ມເປົ່າບໍ່ມີອົງປະກອບໃດໆເລີຍ ຜົນການຕັດກັນຈຶ່ງບໍ່ມີຕົວຮ່ວມ)"}</span>,
-          <span key="u26-ans-2-2">{"(2) M (ເພາະການໂຮມກຸ່ມໃດໜຶ່ງກັບກຸ່ມເປົ່າ ຈະໄດ້ກຸ່ມເດີມສະເໝີ)"}</span>,
-        ],
+          <span key="2-1">{"ກຸ່ມເປົ່າ"}</span>,
+          <span key="2-2">{"∅ (ຫຼື { })"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3">{"1, 4, 5, 6, 7, 8, 9 (ຫຼື {1, 4, 5, 6, 7, 8, 9})"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4">{"∅ (ເນື່ອງຈາກທັງສອງກຸ່ມບໍ່ມີອົງປະກອບຮ່ວມກັນເລີຍ)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u26-ans-t1-1">{"(1) Ø (ເພາະບໍ່ມີອົງປະກອບໃດໆຮ່ວມກັນເລີຍ)"}</span>,
-          <span key="u26-ans-t1-2">{"(2) {1, 2} (ເພາະ A = {1, 2, 4} ແລະ B = {1, 2, 3, 6} ດັ່ງນັ້ນອົງປະກອບຮ່ວມແມ່ນ 1 ແລະ 2)"}</span>,
-        ],
+          <span key="c1">{"10 (ຄິດໄລ່: 18 + 15 - 23 = 10 ຄົນ)"}</span>
+        ]
+      },
+      {
+        questionNumber: "ທ້າທາຍ 2",
+        answers: [
+          <span key="c2">{"3 (ຄິດໄລ່: 20 + 12 - 5 = 27 ຄົນຮຽນ; 30 - 27 = 3 ຄົນບໍ່ຮຽນ)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u26-ans-s1-1">{"(1) A (ເພາະ A ຢູ່ທາງໃນ B ທັງໝົດ ດັ່ງນັ້ນອົງປະກອບຮ່ວມຂອງພວກມັນແມ່ນ A ທັງໝົດ)"}</span>,
-          <span key="u26-ans-s1-2">{"(2) B (ເພາະ A ⊂ B ດັ່ງນັ້ນເມື່ອເອົາ A ມາໂຮມກັບ B ຈະໄດ້ B ໃຫຍ່ຄືເກົ່າ)"}</span>,
-        ],
+          <span key="s1-1">{"- A ∩ B = {3, 4} ມີ 2 ອົງປະກອບ"}</span>,
+          <span key="s1-2">{"- A ∪ B = {1, 2, 3, 4, 5, 6} ມີ 6 ອົງປະກອບ"}</span>
+        ]
       },
+      {
+        questionNumber: "ທົດສອບປະຈຳບົດ 2",
+        answers: [
+          <span key="s2-1">{"- A ∩ ∅ = ∅ (ຫຼື ກຸ່ມເປົ່າ)"}</span>,
+          <span key="s2-2">{"- A ∪ ∅ = A"}</span>
+        ]
+      }
     ],
-    advice: "ຈົ່ງຈື່ຈຳງ່າຍໆ: ຕັດກັນ (∩) ເອົາແຕ່ໂຕຊ້ຳ, ໂຮມກັນ (∪) ເອົາທັງໝົດມາລວມກັນ ແຕ່ໂຕຊ້ຳຂຽນພຽງເທື່ອດຽວເດີ້!",
-  },
+    advice: "ດີເລີດ! ການຄິດໄລ່ການຕັດ ແລະ ການໂຮມກຸ່ມ ເປັນການເປີດປະຕູສູ່ການວິເຄາະທາງຄະນິດສາດ ແລະ ວິທະຍາສາດຄອມພິວເຕີ (Set Theory). ສູ້ຕໍ່ໄປເດີ້!"
+  }
 };

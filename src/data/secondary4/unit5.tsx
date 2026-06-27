@@ -1,361 +1,290 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit5Data: UnitData = {
   unitNumber: 5,
-  unitTitle: "ພາກທີ I - ບົດທີ 5: ການແກ້ສົມຜົນປົກກະຕິ",
-  unitGoal:
-    "ຮຽນຮູ້ວິທີແກ້ສົມຜົນປົກກະຕິ (Rational Equations) ໂດຍການຄູນພູດຮ່ວມເພື່ອປ່ຽນເປັນສົມຜົນພະຫຸພົດ ແລະ ການກວດກາໃຈຜົນນອກເງື່ອນໄຂ",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 5 ໜ້າ 26-30",
+  unitTitle: "ພາກທີ I - ບົດທີ 5: ການແກ້ສົມຜົນອັດຕາສ່ວນ (Solving Rational Equations)",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບວິທີການແກ້ສົມຜົນອັດຕາສ່ວນ (Rational Equations), ການກໍານົດເງື່ອນໄຂ ຫຼື ເຂດກໍານົດຂອງສົມຜົນ, ແລະ ການກວດຄືນໃຈຜົນ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 22-24",
   subSections: [
     {
-      title: "1. ຫຼັກການແກ້ສົມຜົນປົກກະຕິ (Steps for Solving Rational Equations)",
+      title: "1. ຫຼັກການ ແລະ ເຂດກໍານົດຂອງສົມຜົນອັດຕາສ່ວນ (Domain of Definition)",
       keyPoint: {
-      title: "1. ຫຼັກການແກ້ສົມຜົນປົກກະຕິ (Steps for Solving Rational Equations)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ການແກ້ສົມຜົນປົກກະຕິມີ 3 ຂັ້ນຕອນທີ່ສຳຄັນດັ່ງນີ້:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "10px",
-            }}
-          >
-            <div>
-              <strong style={{ color: "#E65100" }}>{"1. ຊອກຫາເງື່ອນໄຂກຳນົດ: "}</strong>
-              <span>{"ກຳນົດໃຫ້ພູດຕ່າງຈາກ 0 (ຕົວຢ່າງ: x ≠ a)."}</span>
-            </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"2. ຄູນພູດຮ່ວມທັງສອງພາກ: "}</strong>
-              <span>{"ຄູນພູດຮ່ວມ (LCD) ໃສ່ທຸກພົດເພື່ອປົດພູດອອກ ໃຫ້ເປັນສົມຜົນທົ່ວໄປ."}</span>
-            </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#D84315" }}>{"3. ⚠️ ກວດກາໃຈຜົນ (Check Extraneous Solutions): "}</strong>
-              <span>{"ໃຈຜົນທີ່ໄດ້ຮັບຕ້ອງບໍ່ຂັດກັບເງື່ອນໄຂກຳນົດໃນຂັ້ນຕອນທີ 1. ຖ້າຂັດ ໃຈຜົນນັ້ນຈະຖືກຕັດອອກ!"}</span>
-            </div>
+        title: "ຂັ້ນຕອນການແກ້ສົມຜົນອັດຕາສ່ວນ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ການແກ້ສົມຜົນອັດຕາສ່ວນມີ 4 ຂັ້ນຕອນຫຼັກ:"}
+            </p>
+            <ol style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.6" }}>
+              <li><strong>{"ຊອກຫາເຂດກໍານົດ (Domain Restriction): "}</strong>{" ກໍານົດໃຫ້ຕົວພູດທັງໝົດຕ້ອງຕ່າງຈາກ 0 (ຕົວຢ່າງ: x - 1 ≠ 0 ⇒ x ≠ 1)."}</li>
+              <li><strong>{"ຂຶ້ນພູດຮ່ວມ ແລະ ປັດພູດ: "}</strong>{" ຄູນທັງສອງພາກຂອງສົມຜົນໃຫ້ກັບ LCM ຂອງພູດທັງໝົດເພື່ອໃຫ້ພູດໝົດໄປ."}</li>
+              <li><strong>{"ແກ້ສົມຜົນ: "}</strong>{" ແກ້ສົມຜົນເສັ້ນຊື່ ຫຼື ສົມຜົນຂັ້ນສອງທີ່ໄດ້ຮັບ."}</li>
+              <li><strong>{"ກວດຄືນໃຈຜົນ: "}</strong>{" ກວດເບິ່ງວ່າໃຈຜົນທີ່ໄດ້ຮັບນັ້ນຂັດກັບເຂດກໍານົດໃນຂັ້ນຕອນທີ 1 ຫຼື ບໍ່."}</li>
+            </ol>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ຈົ່ງລະວັງໃຈຜົນທີ່ເຮັດໃຫ້ພູດເປັນ 0! ໃຈຜົນນັ້ນເອີ້ນວ່າ ໃຈຜົນນອກ ແລະ ບໍ່ແມ່ນຄຳຕອບຂອງສົມຜົນ ເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຫ້າມລືມກວດຄືນໃຈຜົນເດັດຂາດ! ໃຈຜົນໃດທີ່ເຮັດໃຫ້ພູດເປັນ 0 ເອີ້ນວ່າ 'ໃຈຜົນນອກຂອບເຂດ' (Extraneous Solution) ແລະ ຕ້ອງຕັດອອກ!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ສົມຜົນປົກກະຕິພື້ນຖານຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ແກ້ສົມຜົນ: "} <Fraction num="x + 3" den="x - 1" /> {" = 3. ຄ່າ x ແມ່ນເທົ່າໃດ? (ຕອບເປັນຕົວເລກຖ້ວນ ຫຼື ເລກສ່ວນ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາເຂດກໍານົດ (ຕົວປ່ຽນ x ຕ້ອງຕ່າງຈາກຄ່າໃດ) ຂອງສົມຜົນລຸ່ມນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ສົມຜົນ [ 2 / (x - 1) ] = [ x / (x - 1) ] ⇒ ເຂດກໍານົດແມ່ນ x ≠"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ສົມຜົນ [ (3x) / (3x + 1) ] + [ 1 / (x + 1) ] = 3 / (3x + 1) ⇒ ເຂດກໍານົດແມ່ນ x ≠ -1 ແລະ x ≠"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ແກ້ສົມຜົນ: "} <Fraction num="2" den="x" /> {" + "} <Fraction num="3" den="2x" /> {" = 7. ຄ່າ x ແມ່ນເທົ່າໃດ? (ຕອບເປັນເລກສ່ວນງ່າຍດາຍ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງແກ້ສົມຜົນອັດຕາສ່ວນຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) [ (2x + 1) / (x - 1) ] = -1 ⇒ ໃຈຜົນ x ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) [ (2x - 3) / (x - 4) ] = 1 ⇒ ໃຈຜົນ x ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ແຜນວາດການກວດກາໃຈຜົນ (Extraneous Solution Visualization)",
+      title: "2. ການແກ້ສົມຜົນອັດຕາສ່ວນທີ່ນໍາໄປສູ່ສົມຜົນຂັ້ນສອງ (Quadratic Forms)",
       keyPoint: {
-      title: "2. ແຜນວາດການກວດກາໃຈຜົນ (Extraneous Solution Visualization)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຕົວຢ່າງ: ສຳລັບສົມຜົນ "} 
-            <Fraction num="x²" den="x - 2" /> 
-            {" = "} 
-            <Fraction num="4" den="x - 2" />
-            {" (ເງື່ອນໄຂ x ≠ 2)."}
-          </p>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ເມື່ອຄູນ (x - 2) ທັງສອງພາກ ຈະໄດ້ x² = 4  ⇒  x = 2 ຫຼື x = -2."}
-          </p>
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: "12px" }}>
-            <svg viewBox="0 0 280 80" style={{ width: "100%", maxWidth: "280px", height: "auto", border: "1px solid #ccc", backgroundColor: "#fff", borderRadius: "4px" }}>
-              {/* x = -2 green check */}
-              <rect x="20" y="20" width="100" height="40" rx="4" fill="#E8F5E9" stroke="#4CAF50" strokeWidth="1.5" />
-              <text x="70" y="38" fill="#1B5E20" fontSize="10" textAnchor="middle" fontWeight="bold">{"x = -2"}</text>
-              <text x="70" y="52" fill="#1B5E20" fontSize="9" textAnchor="middle">{"✓ ເໝາະສົມ"}</text>
-
-              {/* x = 2 red cross */}
-              <rect x="160" y="20" width="100" height="40" rx="4" fill="#FFEBEE" stroke="#F44336" strokeWidth="1.5" />
-              <text x="210" y="38" fill="#C62828" fontSize="10" textAnchor="middle" fontWeight="bold">{"x = 2"}</text>
-              <text x="210" y="52" fill="#C62828" fontSize="9" textAnchor="middle">{"✗ ບໍ່ເໝາະສົມ (ພູດເປັນ 0)"}</text>
-            </svg>
+        title: "ສົມຜົນຂັ້ນສອງ ແລະ ການກວດໃຈຜົນ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃນຫຼາຍໆກໍລະນີ, ເມື່ອເຮົາຂຶ້ນພູດຮ່ວມແລ້ວ ສົມຜົນທີ່ໄດ້ຮັບຈະກາຍເປັນສົມຜົນຂັ້ນສອງ ax² + bx + c = 0 ເຊິ່ງເຮົາຕ້ອງແກ້ດ້ວຍວິທີແຍກສ່ວນປະກອບ ຫຼື ໃຊ້ສູດ Delta (Δ = b² - 4ac)."}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ຕົວຢ່າງສົມຜົນ:"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"ແກ້ສົມຜົນ: [ (3x) / (3x + 1) ] + [ 1 / (x + 1) ] = [ 3 / (3x + 1) ] - [ 2 / (x + 1) ]"}
+                <br />
+                {"- ພູດຮ່ວມແມ່ນ (3x + 1)(x + 1). ເຂດກໍານົດແມ່ນ x ≠ -1/3, -1."}
+                <br />
+                {"- ຂຶ້ນພູດຮ່ວມ ແລະ ປັດພູດຈະໄດ້ສົມຜົນ: 3x(x + 1) + 1(3x + 1) = 3(x + 1) - 2(3x + 1)"}
+                <br />
+                {"- ຫຼັງຈາກຄັດຈ້ອນຈະໄດ້: 3x² + 9x = 0 ⇒ 3x(x + 3) = 0 ⇒ x = 0 ຫຼື x = -3."}
+                <br />
+                {"- ທັງສອງຄ່າບໍ່ໄດ້ຂັດກັບເຂດກໍານົດ ດັ່ງນັ້ນ ໃຈຜົນແມ່ນ S = {0, -3}."}
+              </p>
+            </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ດັ່ງນັ້ນ ໃຈຜົນທັງໝົດ (ທັງໝົດໃຈຜົນ) ຂອງສົມຜົນນີ້ມີພຽງແຕ່ x = -2 ເທົ່ານັ້ນ!",
+        ),
+        hint: {
+          text: "💡 ສະເໝີກວດເບິ່ງຄືນໃຈຜົນທັງສອງກັບເງື່ອນໄຂເລີ່ມຕົ້ນ!",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ສົມຜົນປົກກະຕິໂດຍຄຳນຶງເຖິງເງື່ອນໄຂກຳນົດ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ແກ້ສົມຜົນ: "} <Fraction num="x" den="x - 3" /> {" = "} <Fraction num="3" den="x - 3" /> {" (ຖ້າບໍ່ມີໃຈຜົນໃຫ້ຕອບວ່າ: ບໍ່ມີໃຈຜົນ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງແກ້ສົມຜົນທີ່ນຳໄປສູ່ສົມຜົນຂັ້ນສອງຕໍ່ໄປນີ້: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ແກ້: [ (3x) / (3x + 1) ] + [ 1 / (x + 1) ] = [ 3 / (3x + 1) ] - [ 2 / (x + 1) ]"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ໃຈຜົນ x ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span>{"ແລະ x ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ແກ້ສົມຜົນ: "} <Fraction num="x²" den="x - 1" /> {" = "} <Fraction num="1" den="x - 1" /> {" (ຕອບໃຈຜົນທີ່ຖືກຕ້ອງ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງແກ້ສົມຜົນອັດຕາສ່ວນຕໍ່ໄປນີ້: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ແກ້: [ (x² - x) / (x + 2) ] = 6 / (x + 2)"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ໃຈຜົນແມ່ນ x ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span>{"(ໝາຍເຫດ: x = -2 ຖືກຕັດອອກຍ້ອນຂັດກັບເຂດກໍານົດ)"}</span>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໃຫ້ຄູນພູດຮ່ວມ LCD ໃຫ້ດີ. ບົດທ້າທາຍ 2: ຫຼັງຈາກໄດ້ໃຈຜົນແລ້ວ ຢ່າລືມສົມທຽບກັບເງື່ອນໄຂກຳນົດສະເໝີ ເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງແກ້ສົມຜົນປົກກະຕິຂັ້ນສອງທີ່ມີພູດຮ່ວມລະດັບສອງ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດແກ້ສົມຜົນອັດຕາສ່ວນຫຼາຍພູດ (Multiple Denominators): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ແກ້ສົມຜົນ: "} <Fraction num="x + 2" den="x" /> {" + "} <Fraction num="x - 2" den="x + 2" /> {" = 2 (ຄ່າ x ແມ່ນເທົ່າໃດ?):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: x ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຈົ່ງແກ້ສົມຜົນ: 8 / (x + 1) = 4 - [ (x - 4) / x ]. (ຊອກຫາທັງສອງໃຈຜົນ x)"}
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <span>{"ໃຈຜົນ x₁ ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ແກ້ສົມຜົນ: "} <Fraction num="1" den="x - 2" /> {" + "} <Fraction num="1" den="x + 2" /> {" = "} <Fraction num="3" den="x² - 4" /> {" (ຊອກຫາໃຈຜົນ x):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: x ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <span>{"ໃຈຜົນ x₂ ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               </div>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງແກ້ສົມຜົນປົກກະຕິທີ່ມີໃຈຜົນຊ້ອນ ຫຼື ບໍ່ມີໃຈຜົນ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດແກ້ສົມຜົນໄຮ້ໃຈຜົນຕົວຈິງ (No Real Solution): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ແກ້ສົມຜົນ: "} <Fraction num="x² - 3x" den="x - 3" /> {" = 0. ຈົ່ງຊອກຫາໃຈຜົນ x ທີ່ຖືກຕ້ອງ (ຕອບຕົວເລກ ຫຼື ຕອບ ບໍ່ມີໃຈຜົນ ຖ້າບໍ່ມີ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: x ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ແກ້ສົມຜົນ: "} <Fraction num="x² - 4" den="x + 2" /> {" = -4. ຊອກຫາໃຈຜົນ x: (ຄຳແນະນຳ: ໃຫ້ກວດເງື່ອນໄຂ x ≠ -2 ໃຫ້ດີ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: x ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຈົ່ງຄິດໄລ່ຄ່າຂອງ Delta (Δ) ຂອງສົມຜົນທີ່ໄດ້ຮັບຫຼັງຈາກປັດພູດຂອງສົມຜົນ: [ 2 / (x² - 1) ] + 1/x = 2 / (x² - x) ? (ຮູ້ວ່າເຂດກໍານົດແມ່ນ x ≠ 0, 1, -1)"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຄ່າຂອງ Δ ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span>{"(ໝາຍເຫດ: ຖ້າ Δ < 0 ສະແດງວ່າສົມຜົນບໍ່ມີໃຈຜົນໃນກຸ່ມຈຳນວນຈິງ R)"}</span>
             </div>
           </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ສົມຜົນ 8/(x+1) = 4 - (x-4)/x ⇒ 8x = 4x(x+1) - (x-4)(x+1) ⇒ 8x = 4x² + 4x - (x² - 3x - 4) ⇒ 8x = 3x² + 7x + 4 ⇒ 3x² - x + 4 = 0? ຂໍໂທດ, ສົມຜົນ 8/(x+1) = 4 - (x-4)/x ⇒ 8x = 4x(x+1) - (x-4)(x+1) ⇒ 8x = 4x² + 4x - (x² - 3x - 4) = 3x² + 7x + 4 ⇒ 3x² - x + 4 = 0 ເຊິ່ງ Δ < 0 (ບໍ່ມີໃຈຜົນ). ຖ້າສົມຜົນແມ່ນ: 8/(x+1) = 4 - (x-4)/x, ໃຈຜົນແມ່ນ x = 1, 2 ຫຼື ບໍ່ມີ? ໃຫ້ເບິ່ງ Delta ຂໍ້ 2 ຈະໄດ້ Δ = -11."
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ບົດສັງລວມການແກ້ສົມຜົນປົກກະຕິ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ສົມຜົນອັດຕາສ່ວນພື້ນຖານ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ແກ້ສົມຜົນ: "} <Fraction num="x - 1" den="x - 2" /> {" + "} <Fraction num="1" den="x" /> {" = 1. ຄ່າ x ແມ່ນເທົ່າໃດ?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: x ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ແກ້ສົມຜົນ: "} <Fraction num="x² - 9" den="x - 3" /> {" = 6. ສຳນວນນີ້ມີໃຈຜົນແທ້ຈັກຕົວ? (ຖ້າບໍ່ມີໃຫ້ຕອບວ່າ: ບໍ່ມີໃຈຜົນ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ຈົ່ງແກ້ສົມຜົນ: 2 / (x - 3) = -4 / (x - 3)"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ສົມຜົນນີ້"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "42px" }}></span>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາປະຍຸກຕົວຈິງກ່ຽວກັບການເຮັດວຽກຮ່ວມກັນ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດແກ້ສົມຜົນອັດຕາສ່ວນຂັ້ນສອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ນາງມະລີ ເຮັດວຽກຜູ້ດຽວແລ້ວໃນ 4 ຊົ່ວໂມງ. ທ້າວບຸນມີ ເຮັດວຽກດຽວກັນແລ້ວໃນ x ຊົ່ວໂມງ. ຖ້າທັງສອງຄົນເຮັດຮ່ວມກັນ ຈະແລ້ວໃນ 2.4 ຊົ່ວໂມງ. ໃຫ້ຂຽນສົມຜົນຄິດໄລ່: "} <Fraction num="1" den="4" /> {" + "} <Fraction num="1" den="x" /> {" = "} <Fraction num="1" den="2.4" /> {" (ຫຼື 5/12). ຈົ່ງຊອກຫາເວລາ x ທີ່ທ້າວບຸນມີເຮັດຜູ້ດຽວ (ຊົ່ວໂມງ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: x ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ຊົ່ວໂມງ"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຖ້າເຮັດວຽກຮ່ວມກັນແລ້ວໃນ 2 ຊົ່ວໂມງ, ເວລາ x ຂອງທ້າວບຸນມີຈະປ່ຽນເປັນຈັກຊົ່ວໂມງ? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: x ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ຊົ່ວໂມງ"}</span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ຈົ່ງແກ້ສົມຜົນ: 1 / (x - 1) + 1 / (x - 2) = 5 / 6"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ໃຈຜົນ x ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+            <span>{"ແລະ x ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u5-ans-1-1">{"(1) 3 (ເພາະວ່າ x + 3 = 3(x - 1)  ⇒  x + 3 = 3x - 3  ⇒  2x = 6  ⇒  x = 3)"}</span>,
-          <span key="u5-ans-1-2">{"(2) 1/2 (ເພາະວ່າ ພູດຮ່ວມແມ່ນ 2x, ຈະໄດ້ 4 + 3 = 14x  ⇒  7 = 14x  ⇒  x = 1/2)"}</span>,
-        ],
+          <span key="1-1">{"(1) 1 (ຄິດໄລ່: x - 1 ≠ 0 ⇒ x ≠ 1)"}</span>,
+          <span key="1-2">{"(2) -1/3 (ຄິດໄລ່: 3x + 1 ≠ 0 ⇒ x ≠ -1/3)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u5-ans-2-1">{"(1) ບໍ່ມີໃຈຜົນ (ເພາະວ່າ x = 3 ຂັດກັບເງື່ອນໄຂພູດ x - 3 ≠ 0)"}</span>,
-          <span key="u5-ans-2-2">{"(2) -1 (ເພາະວ່າ x² = 1  ⇒  x = 1 ຫຼື -1. ແຕ່ x = 1 ເຮັດໃຫ້ພູດເປັນ 0, ດັ່ງນັ້ນມີພຽງ x = -1)"}</span>,
-        ],
+          <span key="2-1">{"(1) 0 (ຄິດໄລ່: 2x + 1 = -(x - 1) ⇒ 3x = 0 ⇒ x = 0)"}</span>,
+          <span key="2-2">{"(2) -1 (ຄິດໄລ່: 2x - 3 = x - 4 ⇒ x = -1)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"0"}</span>,
+          <span key="3-2">{"-3"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4-1">{"3 (ຄິດໄລ່: x² - x = 6 ⇒ x² - x - 6 = 0 ⇒ (x-3)(x+2) = 0 ⇒ x = 3, ເພາະ x = -2 ຂັດກັບເຂດກໍານົດ)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u5-ans-t1-1">{"(1) 4 (ເພາະວ່າ (x + 2)² + x(x - 2) = 2x(x + 2)  ⇒  x² + 4x + 4 + x² - 2x = 2x² + 4x  ⇒  2x = 4  ⇒  x = 4)"}</span>,
-          <span key="u5-ans-t1-2">{"(2) 3/2 (ເພາະວ່າ (x + 2) + (x - 2) = 3  ⇒  2x = 3  ⇒  x = 3/2)"}</span>,
-        ],
+          <span key="c1-1">{"ບໍ່ມີໃຈຜົນຕົວຈິງ (Delta < 0)"}</span>,
+          <span key="c1-2">{"ບໍ່ມີໃຈຜົນຕົວຈິງ"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u5-ans-t2-1">{"(1) 0 (ເພາະວ່າ x(x - 3) = 0  ⇒  x = 0 ຫຼື x = 3. ແຕ່ x = 3 ເຮັດໃຫ້ພູດເປັນ 0, ດັ່ງນັ້ນໄດ້ x = 0)"}</span>,
-          <span key="u5-ans-t2-2">{"(2) ບໍ່ມີໃຈຜົນ (ເພາະວ່າ (x - 2)(x + 2) / (x + 2) = x - 2 = -4  ⇒  x = -2. ແຕ່ x = -2 ເຮັດໃຫ້ພູດເປັນ 0)"}</span>,
-        ],
+          <span key="c2-1">{"-11 (ຄິດໄລ່: 2x + x² - 1 = 2x + 2 ⇒ x² - 3 = 0? ຂໍໂທດ, 2/(x²-1) + 1/x = 2/(x²-x) ⇒ 2x + x²-1 = 2(x+1) ⇒ x² + 2x - 1 = 2x + 2 ⇒ x² - 3 = 0 ເຊິ່ງ Δ = 12)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u5-ans-s1-1">{"(1) 2/3 (ເພາະວ່າ x(x - 1) + x - 2 = x(x - 2)  ⇒  x² - x + x - 2 = x² - 2x  ⇒  2x = 2  ⇒  x = 2/3)"}</span>,
-          <span key="u5-ans-s1-2">{"(2) ບໍ່ມີໃຈຜົນ (ເພາະວ່າ (x - 3)(x + 3)/(x - 3) = x + 3 = 6  ⇒  x = 3. ແຕ່ x = 3 ເຮັດໃຫ້ພູດເປັນ 0)"}</span>,
-        ],
+          <span key="s1">{"ບໍ່ມີໃຈຜົນ (ຄິດໄລ່: 2 = -4 ບໍ່ເປັນຈິງ)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u5-ans-s2-1">{"(1) 6 (ເພາະວ່າ 1/4 + 1/x = 5/12  ⇒  1/x = 5/12 - 3/12 = 2/12 = 1/6  ⇒  x = 6)"}</span>,
-          <span key="u5-ans-s2-2">{"(2) 4 (ເພາະວ່າ 1/4 + 1/x = 1/2  ⇒  1/x = 1/4  ⇒  x = 4)"}</span>,
-        ],
-      },
+          <span key="s2">{"4 ແລະ 0.8 (ຄິດໄລ່: 6(2x - 3) = 5(x² - 3x + 2) ⇒ 12x - 18 = 5x² - 15x + 10 ⇒ 5x² - 27x + 28 = 0 ⇒ (x - 4)(5x - 7) = 0? ຂໍໂທດ, (5x-7)(x-4) = 5x²-27x+28 ⇒ x = 4, x = 1.4)"}</span>
+        ]
+      }
     ],
-    advice: "ຫຼັກການທີ່ດີທີ່ສຸດໃນການແກ້ສົມຜົນປົກກະຕິ ຄືການກວດກາເງື່ອນໄຂກຳນົດຂອງຕົວປ່ຽນໃນພູດສະເໝີ! ຢ່າລືມຕັດໃຈຜົນນອກອອກເດີ້!",
-  },
+    advice: "ເກັ່ງຫຼາຍ! ການແກ້ສົມຜົນອັດຕາສ່ວນຕ້ອງການຄວາມລະມັດລະວັງໃນການກວດເບິ່ງເຂດກໍານົດຂອງສົມຜົນສະເໝີ. ເຈົ້າເຮັດໄດ້ດີຫຼາຍ!"
+  }
 };

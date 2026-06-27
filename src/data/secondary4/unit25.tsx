@@ -1,377 +1,300 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit25Data: UnitData = {
   unitNumber: 25,
-  unitTitle: "ພາກທີ III - ບົດທີ 25: ນິຍາມຂອງອັດຕາສ່ວນໄຕມຸມມິຕິໃນຮູບສາມແຈສາກ",
-  unitGoal:
-    "ຮຽນຮູ້ ແລະ ຈື່ຈຳນິຍາມຂອງອັດຕາສ່ວນໄຕມຸມມິຕິ sin, cos, tan ໃນຮູບສາມແຈສາກ ພ້ອມທັງຄິດໄລ່ຄ່າຂອງມຸມພິເສດ 30°, 45°, 60°",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 25 ໜ້າ 145-150",
+  unitTitle: "ພາກທີ III - ບົດທີ 25: ໄຕມູມມິຕິໃນຮູບສາມແຈສາກ (Trigonometry in Right Triangles)",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບອັດຕາສ່ວນໄຕມູມມິຕິ sin, cos, tan ໃນຮູບສາມແຈສາກ, ຄ່າຂອງມຸມພິເສດ (30°, 45°, 60°), ແລະ ເອກະລັກໄຕມູມມິຕິພື້ນຖານ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 111-115",
   subSections: [
     {
-      title: "1. ນິຍາມຂອງ Sin, Cos, Tan (Definitions of Trigonometric Ratios)",
+      title: "1. ອັດຕາສ່ວນໄຕມູມມິຕິໃນຮູບສາມແຈສາກ (Trigonometric Ratios in Right Triangles)",
       keyPoint: {
-      title: "1. ນິຍາມຂອງ Sin, Cos, Tan (Definitions of Trigonometric Ratios)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ໃນຮູບສາມແຈສາກ ABC ທີ່ມີມຸມ A ເປັນມຸມສາກ ແລະ ພິຈາລະນາມຸມ B (θ), ອັດຕາສ່ວນໄຕມຸມມິຕິກຳນົດດັ່ງນີ້:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "12px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• sin B = "}</strong>
-              <Fraction num="ຂ້າງກົງໜ້າມຸມ B (Opposite)" den="ຂ້າງກົງໜ້າມຸມສາກ (Hypotenuse)" />
-              <span>{" = "}</span>
-              <Fraction num="AC" den="BC" />
-            </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px", display: "flex", alignItems: "center", gap: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• cos B = "}</strong>
-              <Fraction num="ຂ້າງຕິດແປະມຸມ B (Adjacent)" den="ຂ້າງກົງໜ້າມຸມສາກ (Hypotenuse)" />
-              <span>{" = "}</span>
-              <Fraction num="AB" den="BC" />
-            </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px", display: "flex", alignItems: "center", gap: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• tan B = "}</strong>
-              <Fraction num="ຂ້າງກົງໜ້າມຸມ B (Opposite)" den="ຂ້າງຕິດແປະມຸມ B (Adjacent)" />
-              <span>{" = "}</span>
-              <Fraction num="AC" den="AB" />
+        title: "ນິຍາມ sin, cos, tan",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃນຮູບສາມແຈສາກ ABC ທີ່ສາກຢູ່ C (ຂ້າງກົງສາກແມ່ນ c, ຂ້າງກົງໜ້າມຸມ A ແມ່ນ a, ຂ້າງຕິດແປະແມ່ນ b):"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }}>{"ສູດອັດຕາສ່ວນ:"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
+                <li><strong>{"ຊີນ (sin A):"}</strong>{" sin A = ຂ້າງກົງໜ້າ / ຂ້າງກົງສາກ = a/c"}</li>
+                <li><strong>{"ໂກຊີນ (cos A):"}</strong>{" cos A = ຂ້າງຕິດແປະ / ຂ້າງກົງສາກ = b/c"}</li>
+                <li><strong>{"ຕັງ (tan A):"}</strong>{" tan A = ຂ້າງກົງໜ້າ / ຂ້າງຕິດແປະ = a/b = sin A / cos A"}</li>
+              </ul>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ວິທີຈື່ຈຳງ່າຍໆ: Sin = ກົງໜ້າ/ກົງສາກ, Cos = ແປະ/ກົງສາກ, Tan = ກົງໜ້າ/ແປະ ເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຈື່ສະເໝີເອກະລັກພື້ນຖານ: sin² A + cos² A = 1 ແລະ tan A = sin A / cos A!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ໃຫ້ຮູບສາມແຈສາກ ABC ທີ່ມີ AC = 3 cm, AB = 4 cm ແລະ ຂ້າງກົງໜ້າມຸມສາກ BC = 5 cm. ຈົ່ງຊອກຫາຄ່າຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຈົ່ງຊອກຫາຄ່າຂອງ sin B (ຕອບເປັນເລກສ່ວນ, ຕົວຢ່າງ: 3/5):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃນຮູບສາມແຈສາກ ABC ສາກຢູ່ B ທີ່ມີຂ້າງ AB = 4 ແລະ BC = 3. ຈົ່ງຄິດໄລ່: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ຂ້າງກົງສາກ AC (ໂດຍນຳໃຊ້ປີຕາກໍ) ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ຄ່າຂອງ sin A ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{" ແລະ cos A ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) จົ່ງຊອກຫາຄ່າຂອງ tan B (ຕອບເປັນເລກສ່ວນ, ຕົວຢ່າງ: 3/4):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາອັດຕາສ່ວນໄຕມູມມິຕິຈາກເອກະລັກ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ໃຫ້ cos A = 4/5 ຂອງມຸມແຫຼມ A. ຄ່າຂອງ sin A ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ໃຫ້ sin A = 3/5 ຂອງມຸມແຫຼມ A. ຄ່າຂອງ tan A ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ຕາຕະລາງຄ່າໄຕມຸມມິຕິຂອງມຸມພິເສດ (Special Angles Table)",
+      title: "2. ຄ່າໄຕມູມມິຕິຂອງມຸມພິເສດ ແລະ ເອກະລັກພົວພັນ (Trigonometry of Special Angles & Identities)",
       keyPoint: {
-      title: "2. ຕາຕະລາງຄ່າໄຕມຸມມິຕິຂອງມຸມພິເສດ (Special Angles Table)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "1.25rem", textAlign: "center", marginTop: "8px" }}>
-            <thead>
-              <tr style={{ backgroundColor: "#FFE082" }}>
-                <th style={{ border: "1px solid #FFB300", padding: "8px" }}>{"ມຸມ B"}</th>
-                <th style={{ border: "1px solid #FFB300", padding: "8px" }}>{"30°"}</th>
-                <th style={{ border: "1px solid #FFB300", padding: "8px" }}>{"45°"}</th>
-                <th style={{ border: "1px solid #FFB300", padding: "8px" }}>{"60°"}</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style={{ border: "1px solid #FFB300", padding: "8px", fontWeight: "bold" }}>{"sin B"}</td>
-                <td style={{ border: "1px solid #FFB300", padding: "8px" }}><Fraction num="1" den="2" /></td>
-                <td style={{ border: "1px solid #FFB300", padding: "8px" }}><Fraction num="√2" den="2" /></td>
-                <td style={{ border: "1px solid #FFB300", padding: "8px" }}><Fraction num="√3" den="2" /></td>
-              </tr>
-              <tr>
-                <td style={{ border: "1px solid #FFB300", padding: "8px", fontWeight: "bold" }}>{"cos B"}</td>
-                <td style={{ border: "1px solid #FFB300", padding: "8px" }}><Fraction num="√3" den="2" /></td>
-                <td style={{ border: "1px solid #FFB300", padding: "8px" }}><Fraction num="√2" den="2" /></td>
-                <td style={{ border: "1px solid #FFB300", padding: "8px" }}><Fraction num="1" den="2" /></td>
-              </tr>
-              <tr>
-                <td style={{ border: "1px solid #FFB300", padding: "8px", fontWeight: "bold" }}>{"tan B"}</td>
-                <td style={{ border: "1px solid #FFB300", padding: "8px" }}><Fraction num="√3" den="3" /></td>
-                <td style={{ border: "1px solid #FFB300", padding: "8px" }}>{"1"}</td>
-                <td style={{ border: "1px solid #FFB300", padding: "8px" }}>{"√3"}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      ),
-      hint: {
-        text: "ຄ່າເຫຼົ່ານີ້ຈະພົບເລື້ອຍທີ່ສຸດໃນຟີຊິກສາດ ແລະ ວິສະວະກຳສາດ, ຈົ່ງຈື່ໃຫ້ຂຶ້ນໃຈເດີ້!",
+        title: "ຕາຕະລາງມຸມພິເສດ 30°, 45°, 60°",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "1.20rem", textAlign: "center" }}>
+              <thead>
+                <tr style={{ backgroundColor: "#F5F5F5", borderBottom: "2px solid #DDD" }}>
+                  <th style={{ padding: "10px" }}>{"ມຸມ A"}</th>
+                  <th style={{ padding: "10px" }}>{"30°"}</th>
+                  <th style={{ padding: "10px" }}>{"45°"}</th>
+                  <th style={{ padding: "10px" }}>{"60°"}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style={{ borderBottom: "1px solid #EEE" }}>
+                  <td style={{ padding: "10px", fontWeight: "bold" }}>{"sin A"}</td>
+                  <td style={{ padding: "10px" }}>{"1/2"}</td>
+                  <td style={{ padding: "10px" }}>{"√2 / 2"}</td>
+                  <td style={{ padding: "10px" }}>{"√3 / 2"}</td>
+                </tr>
+                <tr style={{ borderBottom: "1px solid #EEE" }}>
+                  <td style={{ padding: "10px", fontWeight: "bold" }}>{"cos A"}</td>
+                  <td style={{ padding: "10px" }}>{"√3 / 2"}</td>
+                  <td style={{ padding: "10px" }}>{"√2 / 2"}</td>
+                  <td style={{ padding: "10px" }}>{"1/2"}</td>
+                </tr>
+                <tr style={{ borderBottom: "1px solid #EEE" }}>
+                  <td style={{ padding: "10px", fontWeight: "bold" }}>{"tan A"}</td>
+                  <td style={{ padding: "10px" }}>{"√3 / 3"}</td>
+                  <td style={{ padding: "10px" }}>{"1"}</td>
+                  <td style={{ padding: "10px" }}>{"√3"}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        ),
+        hint: {
+          text: "💡 ຈື່ສູດມຸມປະກອບເພີ່ມ: sin(90° - A) = cos A ແລະ cos(90° - A) = sin A. ເຊັ່ນ sin 30° = cos 60° = 1/2!",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາຄ່າໄຕມຸມມິຕິຂອງມຸມພິເສດ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຄ່າຂອງ cos 60° ແມ່ນເທົ່າໃດ? (ຕອບເປັນເລກສ່ວນ, ຕົວຢ່າງ: 1/2):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນໄຕມູມມິຕິ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) sin 30° + cos 60° ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) tan² 60° + sin² 45° = 3 + 1/2 ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຄ່າຂອງ tan 45° ແມ່ນເທົ່າໃດ? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາຄວາມສູງຂອງຕົ້ນໄມ້: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ຢືນຫ່າງຈາກຕົ້ນໄມ້ 10 ແມັດ. ຫຼຽວເບິ່ງຍອດໄມ້ດ້ວຍມຸມເງີຍ 30°. ຈົ່ງຊອກຫາຄວາມສູງຂອງຕົ້ນໄມ້ (ບໍ່ນັບຄວາມສູງຂອງຕາ, tan 30° = √3 / 3 ≈ 0.577)?"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ຕອບ: ຄວາມສູງແມ່ນ"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span>{" ແມັດ (ຂຽນຮູບຮ່າງ √3)"}</span>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໃຫ້ໃຊ້ທິດສະດີປີຕາກໍ (Pythagoras) ຊອກຫາຂ້າງທີ່ເຫຼືອກ່ອນ! ບົດທ້າທາຍ 2: ຜັນປ່ຽນສູດ sin²θ + cos²θ = 1 ເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາຄ່າໄຕມຸມມິຕິ ຫຼັງຈາກນຳໃຊ້ທິດສະດີປີຕາກໍ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດເອກະລັກພິສູດ (Trigonometric Proof Problem): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ໃຫ້ຮູບສາມແຈ ABC ສາກຢູ່ A ທີ່ມີ AC = 5 cm, BC = 13 cm. ຂ້າງ AB ແມ່ນຈັກ cm? (ຕອບເປັນຕົວເລກ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"cm"}</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຈາກຂໍ້ (1), ຄ່າຂອງ cos B ຈະແມ່ນເທົ່າໃດ? (ຕອບເປັນເລກສ່ວນ, ຕົວຢ່າງ: 12/13):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃຫ້ sin A + cos A = 1.2. ຈົ່ງຊອກຫາຄ່າຂອງຜົນຄູນ sin A × cos A?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: sin A × cos A ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນໄຕມຸມມິຕິ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການຊອກຫາ tan 15° (Trigonometry Challenge): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ຄິດໄລ່ຄ່າຂອງສຳນວນ A = sin² 30° + cos² 30° (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: A ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຄິດໄລ່ຄ່າຂອງສຳນວນ B = 2 · sin 30° + √3 · tan 60° (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: B ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃຫ້ຮູບສາມແຈ ABC ມີ AB = AC = 2, ມຸມ A = 30° ແລະ ຫຼຸດລົງຈົນໄດ້ tan 15° = 2 - √3. ຈົ່ງຄິດໄລ່ tan 15° ເປັນຈຳນວນທົດສະນິຍົມ (√3 ≈ 1.732)?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: tan 15° ≈"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ຂຶ້ນກຳລັງສອງ: (sin A + cos A)² = 1.2² ⇒ sin² A + cos² A + 2 sin A cos A = 1.44 ⇒ 1 + 2 sin A cos A = 1.44 ⇒ 2 sin A cos A = 0.44 ⇒ sin A cos A = 0.22! ສຳລັບ tan 15°: 2 - 1.732 = 0.268!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາລວງຍາວຂ້າງ ໂດຍການນຳໃຊ້ໄຕມຸມມິຕິ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ຄ່າຂອງ cos 30°: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ໃຫ້ຮູບສາມແຈສາກ ABC ມີມຸມ B = 30° ແລະ ຂ້າງກົງໜ້າມຸມສາກ BC = 10 cm. ຈົ່ງຊອກຫາຄວາມຍາວຂອງຂ້າງ AC (cm) (ຄຳແນະນຳ: AC = BC · sin 30°):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: AC ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"cm"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຈົ່ງຊອກຫາຄວາມຍາວຂອງຂ້າງ AB (cm) ໂດຍຕອບໃນຮູບຮ່າງ a√3 (ຕົວຢ່າງ: 5√3):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: AB ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                <span>{"cm"}</span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ຄ່າຂອງ cos 30° ແມ່ນເທົ່າໃດ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ:"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາຕົວຈິງກ່ຽວກັບການວັດແທກຄວາມສູງຂອງຕົ້ນໄມ້ (Tree Height Measurement): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ເອກະລັກ sin² A + cos² A: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ທ້າວສົມດີຢືນຫ່າງຈາກຕົ້ນໄມ້ 10 ແມັດ ແລະ ແນມເບິ່ງປາຍຕົ້ນໄມ້ດ້ວຍມຸມເງີຍ 45°. ຄວາມສູງຂອງຕົ້ນໄມ້ສ່ວນທີ່ຢູ່ເໜືອລະດັບສາຍຕາແມ່ນຈັກແມັດ? (ຄຳແນະນຳ: ໃຊ້ tan 45° = H / 10):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ແມັດ (m)"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຖ້າລະດັບສາຍຕາຂອງລາວສູງຈາກພື້ນດິນ 1.5 ແມັດ, ຄວາມສູງທັງໝົດຂອງຕົ້ນໄມ້ແມ່ນຈັກແມັດ? (ຕອບເປັນເລກທົດສະນິຍົມ, ຕົວຢ່າງ: 11.5):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"m"}</span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ສໍາລັບທຸກໆມຸມແຫຼມ A, ຄ່າຂອງ sin² A + cos² A ແມ່ນເທົ່າໃດ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ:"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u25-ans-1-1">{"(1) 3/5 (ເພາະວ່າ sin B = AC/BC = 3/5)"}</span>,
-          <span key="u25-ans-1-2">{"(2) 3/4 (ເພາະວ່າ tan B = AC/AB = 3/4)"}</span>,
-        ],
+          <span key="1-1">{"5 (ຄິດໄລ່: AC² = AB² + BC² = 16 + 9 = 25 ⇒ AC = 5)"}</span>,
+          <span key="1-2">{"3/5 (ຄິດໄລ່: sin A = BC/AC = 3/5)"}</span>,
+          <span key="1-3">{"4/5 (ຄິດໄລ່: cos A = AB/AC = 4/5)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u25-ans-2-1">{"(1) 1/2 (ເພາະວ່າ cos 60° = 1/2)"}</span>,
-          <span key="u25-ans-2-2">{"(2) 1 (ເພາະວ່າ tan 45° = 1)"}</span>,
-        ],
+          <span key="2-1">{"3/5 (ຄິດໄລ່: sin² A + cos² A = 1 ⇒ sin A = √(1 - 16/25) = 3/5)"}</span>,
+          <span key="2-2">{"3/4 (ຄິດໄລ່: tan A = sin A / cos A = (3/5)/(4/5) = 3/4)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"1 (ຄິດໄລ່: sin 30° + cos 60° = 1/2 + 1/2 = 1)"}</span>,
+          <span key="3-2">{"7/2 (ຄິດໄລ່: tan² 60° + sin² 45° = 3 + 1/2 = 7/2)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4">{"10√3 / 3 (ຄິດໄລ່: h = 10 × tan 30° = 10√3 / 3)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u25-ans-t1-1">{"(1) 12 (ເພາະວ່າ AB² = BC² - AC² = 169 - 25 = 144 ⇒ AB = 12 cm)"}</span>,
-          <span key="u25-ans-t1-2">{"(2) 12/13 (ເພາະວ່າ cos B = AB/BC = 12/13)"}</span>,
-        ],
+          <span key="c1">{"0.22 (ຄິດໄລ່: (sin A + cos A)² = 1 + 2 sin A cos A = 1.44 ⇒ sin A cos A = 0.22)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u25-ans-t2-1">{"(1) 1 (ເພາະວ່າ sin²θ + cos²θ = 1 ຖືກຕ້ອງກັບທຸກໆມຸມ)"}</span>,
-          <span key="u25-ans-t2-2">{"(2) 4 (ເພາະວ່າ B = 2 * (1/2) + √3 * √3 = 1 + 3 = 4)"}</span>,
-        ],
+          <span key="c2">{"0.268 (ຄິດໄລ່: 2 - 1.732 = 0.268)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u25-ans-s1-1">{"(1) 5 (ເພາະວ່າ AC = 10 * sin 30° = 10 * 0.5 = 5 cm)"}</span>,
-          <span key="u25-ans-s1-2">{"(2) 5√3 (ເພາະວ່າ AB = 10 * cos 30° = 10 * (√3/2) = 5√3 cm)"}</span>,
-        ],
+          <span key="s1">{"√3 / 2 (ຄິດໄລ່: cos 30° = √3 / 2)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u25-ans-s2-1">{"(1) 10 (ເພາະວ່າ H = 10 * tan 45° = 10 * 1 = 10 m)"}</span>,
-          <span key="u25-ans-s2-2">{"(2) 11.5 (ເພາະວ່າຄວາມສູງທັງໝົດແມ່ນ 10 + 1.5 = 11.5 ແມັດ)"}</span>,
-        ],
-      },
+          <span key="s2">{"1 (ຄິດໄລ່: ເອກະລັກພື້ນຖານ sin² A + cos² A = 1 ສະເໝີ)"}</span>
+        ]
+      }
     ],
-    advice: "ອັດຕາສ່ວນໄຕມຸມມິຕິໃນຮູບສາມແຈສາກ ເປັນພື້ນຖານອັນຍິ່ງໃຫຍ່ໃນການວັດແທກໄລຍະທາງ ແລະ ຄວາມສູງທາງອ້ອມ ໂດຍບໍ່ຕ້ອງປີນຂຶ້ນໄປແທັກຕົວຈິງເດີ້!",
-  },
+    advice: "ເກັ່ງຫຼາຍ! ເຈົ້າໄດ້ເຂົ້າໃຈພື້ນຖານຂອງອັດຕາສ່ວນໄຕມູມມິຕິໃນຮູບສາມແຈສາກຢ່າງສົມບູນ. ນີ້ແມ່ນຫົວຂໍ້ທີ່ສໍາຄັນ ແລະ ສວຍງາມຫຼາຍໃນເລຂາຄະນິດ!"
+  }
 };

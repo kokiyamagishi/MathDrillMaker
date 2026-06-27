@@ -1,371 +1,302 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit15Data: UnitData = {
   unitNumber: 15,
-  unitTitle: "ພາກທີ II - ບົດທີ 15: ຕຳລາໃນຮູບຮ່າງ y = a(x - b)²",
-  unitGoal:
-    "ຮຽນຮູ້ກ່ຽວກັບການຍ້າຍຂະໜານ (Translation) ຂອງເສັ້ນສະແດງປາຣາໂບນຕາມແກນ x (Horizontal translation) ແລະ ວິທີກຳນົດພິກັດຈຸດຈອມໃໝ່",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 15 ໜ້າ 85-90",
+  unitTitle: "ພາກທີ II - ບົດທີ 15: ຕຳລາໃນຮູບຮ່າງ y = a(x-b)² (Quadratic Functions in form y = a(x-b)²)",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບການຍ້າຍຂະໜານປາຣາໂບນຕາມແກນນອນ (ແກນ Ox) ດ້ວຍໄລຍະ b, ສຶກສາຈຸດຈອມ S(b, 0), ສົມຜົນແກນເຄິ່ງຄື x = b, ແລະ ການຜັນປ່ຽນຂອງຕຳລາ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 77-80",
   subSections: [
     {
-      title: "1. ການຍ້າຍຂະໜານຕາມແກນ x (Horizontal Shift along the x-axis)",
+      title: "1. ການຍ້າຍຂະໜານຕາມແກນນອນ ແລະ ເມັດຈອມ (Horizontal Translation & Vertex)",
       keyPoint: {
-      title: "1. ການຍ້າຍຂະໜານຕາມແກນ x (Horizontal Shift along the x-axis)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ເສັ້ນສະແດງຂອງ y = a(x - b)² ໄດ້ມາຈາກການຍ້າຍຂະໜານເສັ້ນສະແດງ y = ax² ຕາມແນວນອນ (ແກນ x) ເປັນໄລຍະ b ຫົວໜ່ວຍ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div>
-              <strong style={{ color: "#E65100" }}>{"• ⚠️ ທິດທາງການຍ້າຍ (⚠️ ຢ່າລືມເຄື່ອງໝາຍ): "}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px" }}>{"- ຖ້າ b > 0 (ໃນຮູບ y = a(x - b)²): ເສັ້ນສະແດງຈະຍ້າຍໄປທາງ ຂວາ b ຫົວໜ່ວຍ."}</span>
-              <br />
-              <span style={{ paddingLeft: "20px" }}>{"- ຖ້າ b < 0 (ໃນຮູບ y = a(x + |b|)²): ເსັ້ນສະແດງຈະຍ້າຍໄປທາງ ຊ້າຍ |b| ຫົວໜ່ວຍ."}</span>
+        title: "ຫຼັກການຍ້າຍຂະໜານຂອງ y = a(x-b)²",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ກຣາຟຂອງຕຳລາ y = a(x-b)² ໄດ້ມາຈາກການຍ້າຍຂະໜານກຣາຟຂອງຕຳລາ y = ax² ຕາມແກນນອນ (Ox):"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }}>{"ທິດທາງການຍ້າຍຂະໜານ:"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
+                <li><strong>{"ຖ້າ b > 0: "}</strong>{" ຍ້າຍຂະໜານໄປທາງຂວາ b ຫົວໜ່ວຍ."}</li>
+                <li><strong>{"ຖ້າ b < 0: "}</strong>{" ຍ້າຍຂະໜານໄປທາງຊ້າຍ |b| ຫົວໜ່ວຍ."}</li>
+              </ul>
             </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#D84315" }}>{"• ຈຸດຈອມ ແລະ ແກນເຄິ່ງຄືໃໝ່: "}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px" }}>{"- ຈຸດຈອມ (Vertex) ຍ້າຍຈາກ (0, 0) ໄປເປັນ (b, 0)."}</span>
-              <br />
-              <span style={{ paddingLeft: "20px" }}>{"- ແກນເຄິ່ງຄື (Axis of Symmetry) ປ່ຽນຈາກ x = 0 ໄປເປັນ x = b."}</span>
+            <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ຄຸນລັກສະນະສະເພາະ:"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
+                <li><strong>{"ເມັດຈອມ (Vertex):"}</strong>{" S(b, 0) ເຊິ່ງຈະຢູ່ເທິງແກນ Ox ສະເໝີ."}</li>
+                <li><strong>{"ແກນເຄິ່ງຄື (Axis of Symmetry):"}</strong>{" ແມ່ນເສັ້ນຊື່ x = b (ຂະໜານກັບແກນ Oy)."}</li>
+              </ul>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ຕົວຢ່າງ: ຕຳລາ y = (x - 3)² ຈະມີຈຸດຈອມແມ່ນ (3, 0) (ຍ້າຍໄປຂວາ 3), ສ່ວນ y = (x + 2)² ຈະມີຈຸດຈອມແມ່ນ (-2, 0) (ຍ້າຍໄປຊ້າຍ 2) ເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ລະວັງເຄື່ອງໝາຍ: ຕຳລາ y = 2(x-3)² ມີ b = 3 (ຍ້າຍໄປຂວາ 3), ແຕ່ y = 2(x+3)² ມີ b = -3 (ຍ້າຍໄປຊ້າຍ 3, ເພາະ x+3 = x-(-3))!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາພິກັດຈຸດຈອມຂອງຕຳລາໃນຮູບຮ່າງ y = a(x - b)²: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໃຫ້ຕຳລາ y = 2(x - 4)². ພິກັດຈຸດຈອມ (x, y) ແມ່ນເທົ່າໃດ? (ຕອບໃນຮູບແບບ (x, y), ຕົວຢ່າງ: (4, 0)):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງກຳນົດທິດທາງການຍ້າຍຂະໜານ ແລະ ເມັດຈອມຂອງປາຣາໂບນຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) y = 3(x - 5)² ໄດ້ມາຈາກການຍ້າຍ y = 3x² ໄປທາງຂວາ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{"ຫົວໜ່ວຍ, ມີເມັດຈອມແມ່ນ S("}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{", 0)"}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) y = -2(x + 4)² ໄດ້ມາຈາກການຍ້າຍ y = -2x² ໄປທາງຊ້າຍ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{"ຫົວໜ່ວຍ, ມີເມັດຈອມແມ່ນ S("}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{", 0)"}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ໃຫ້ຕຳລາ y = -(x + 5)². ພິກັດຈຸດຈອມ (x, y) ແມ່ນເທົ່າໃດ? (⚠️ ຢ່າລືມເຄື່ອງໝາຍໃນວົງເລັບ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາສົມຜົນແກນເຄິ່ງຄື x = b ຂອງປາຣາໂບນ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ຕຳລາ y = 4(x - 7)² ມີສົມຜົນແກນເຄິ່ງຄືແມ່ນ x ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ຕຳລາ y = -0.5(x + 2)² ມີສົມຜົນແກນເຄິ່ງຄືແມ່ນ x ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ແຜນວາດການຍ້າຍຂະໜານຕາມແນວນອນ (Horizontal Translation Graph)",
+      title: "2. ທິດທາງການຜັນປ່ຽນຂອງຕຳລາ (Increasing & Decreasing Intervals)",
       keyPoint: {
-      title: "2. ແຜນວາດການຍ້າຍຂະໜານຕາມແນວນອນ (Horizontal Translation Graph)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ແຜນວາດສະແດງການຍ້າຍຂະໜານຈາກ y = x² ໄປຫາ y = (x - 3)²:"}
-          </p>
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: "12px" }}>
-            <svg viewBox="0 0 240 120" style={{ width: "100%", maxWidth: "240px", height: "auto", border: "1px solid #ccc", backgroundColor: "#fff", borderRadius: "4px" }}>
-              {/* Grid */}
-              <line x1="80" y1="10" x2="80" y2="110" stroke="#eee" strokeWidth="1" />
-              <line x1="160" y1="10" x2="160" y2="110" stroke="#eee" strokeWidth="1" />
-              <line x1="20" y1="90" x2="220" y2="90" stroke="#eee" strokeWidth="1" />
-
-              {/* Axes */}
-              <line x1="80" y1="10" x2="80" y2="110" stroke="#666" strokeWidth="1.2" />
-              <line x1="20" y1="90" x2="220" y2="90" stroke="#666" strokeWidth="1.2" />
-
-              {/* y = x^2 (original, dashed grey) */}
-              <path d="M 40,30 Q 80,90 120,30" fill="none" stroke="#bbb" strokeWidth="1.5" strokeDasharray="3,3" />
-              <text x="80" y="25" fill="#999" fontSize="7" textAnchor="middle">{"y=x²"}</text>
-
-              {/* y = (x-3)^2 shifted to right by 3 units (scale: 1 unit = 26 pixels) */}
-              {/* x-shift = 3 * 26.6 = 80 pixels. New vertex is cx = 80 + 80 = 160 */}
-              <path d="M 120,30 Q 160,90 200,30" fill="none" stroke="#E91E63" strokeWidth="2.5" />
-              <text x="160" y="25" fill="#E91E63" fontSize="7" textAnchor="middle" fontWeight="bold">{"y=(x-3)²"}</text>
-
-              {/* Shift Arrow */}
-              <path d="M 85,75 L 145,75" stroke="#4CAF50" strokeWidth="1.5" />
-              <polygon points="145,72 150,75 145,78" fill="#4CAF50" />
-              <text x="115" y="68" fill="#4CAF50" fontSize="7" textAnchor="middle" fontWeight="bold">{"ຍ້າຍຂວາ +3"}</text>
-            </svg>
+        title: "ການກຳນົດຫວ່າງຂຶ້ນ ແລະ ຫວ່າງແຮມ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ທິດທາງການຜັນປ່ຽນຂອງ y = a(x-b)² ຈະແບ່ງໂດຍແກນເຄິ່ງຄື x = b:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ຖ້າ a > 0 (ປາຣາໂບນຫງາຍ):"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"- ຕຳລາຈະຫຼຸດ (decreasing) ໃນຫວ່າງ ]-∞, b]"}
+                <br />
+                {"- ຕຳລາຈະເພີ່ມ (increasing) ໃນຫວ່າງ [b, +∞["}
+              </p>
+            </div>
+            <div style={{ padding: "16px", backgroundColor: "#FFEBEE", borderRadius: "8px", border: "1px solid #FFCDD2" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#C62828" }}>{"ຖ້າ a < 0 (ປາຣາໂບນຂວ້ຳ):"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"- ຕຳລາຈະເພີ່ມ (increasing) ໃນຫວ່າງ ]-∞, b]"}
+                <br />
+                {"- ຕຳລາຈະຫຼຸດ (decreasing) 在ຫວ່າງ [b, +∞["}
+              </p>
+            </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ເວລາເບິ່ງໃນວົງເລັບ (x - b) ໃຫ້ຈື່ໄວ້ວ່າ ຄ່າ b ຈະມີເຄື່ອງໝາຍກົງກັນຂ້າມສະເໝີເດີ້!",
+        ),
+        hint: {
+          text: "💡 ຈື່ສະເໝີ: ເມັດຈອມ S(b, 0) ຈະເປັນເມັດຕ່ຳສຸດເມື່ອ a > 0 ແລະ ເປັນເມັດສູງສຸດເມື່ອ a < 0 ໂດຍຄ່າຕ່ຳສຸດ/ສູງສຸດຂອງ y ແມ່ນ 0 ສະເໝີ!",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາສົມຜົນຂອງແກນເຄິ່ງຄື ຂອງປາຣາໂບນ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໃຫ້ຕຳລາ y = (x - 3)². ສົມຜົນຂອງແກນເຄິ່ງຄືແມ່ນ x ເທົ່າກັບເທົ່າໃດ? (ຕອບເປັນຕົວເລກ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງກຳນົດຫວ່າງເພີ່ມ ຫຼື ຫຼຸດຂອງຕຳລາ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ຕຳລາ y = 2(x - 3)² (a > 0) ຈະຫຼຸດ (decreasing) ໃນຫວ່າງ ]-∞,"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"]"}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ຕຳລາ y = -3(x + 1)² (a < 0) ຈະຫຼຸດ (decreasing) ໃນຫວ່າງ ["}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{", +∞["}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ໃຫ້ຕຳລາ y = -3(x + 6)². ສົມຜົນຂອງແກນເຄິ່ງຄືແມ່ນ x ເທົ່າກັບເທົ່າໃດ?:"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາຄ່າຂອງ y ຈາກສົມຜົນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ໃຫ້ຕຳລາ y = -2(x - 3)². ຖ້າ x = 1, ຈົ່ງຄິດໄລ່ຄ່າຂອງ y ທີ່ສອດຄ່ອງ?"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                <span>{"ຕອບ: y ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໃຫ້ຄິດໄລ່ແທນຄ່າ x ໃສ່ໃນຕຳລາໃຫ້ລະອຽດ. ບົດທ້າທາຍ 2: ຊອກຫາໄລຍະຫ່າງການຍ້າຍຂະໜານລະຫວ່າງຈຸດຈອມສອງເສັ້ນສະແດງ ເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຄິດໄລ່ຄ່າ y ຂອງຕຳລາທີ່ມີວົງເລັບກຳລັງສອງ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດຊອກຫາສົມຜົນປາຣາໂບນຈາກເມັດຈອມ ແລະ ເມັດຜ່ານ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ໃຫ້ຕຳລາ y = 2(x - 3)². ຖ້າ x = 5, ຄ່າ y ຈະແມ່ນເທົ່າໃດ?:"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: y ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ໃຫ້ຕຳລາ y = -(x + 2)². ຖ້າ x = 1, ຄ່າ y ຈະແມ່ນເທົ່າໃດ? (⚠️ ຢ່າລືມເຄື່ອງໝາຍລົບທາງໜ້າວົງເລັບ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: y ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ປາຣາໂບນ y = a(x-b)² ມີເມັດຈອມຢູ່ S(3, 0) ແລະ ຜ່ານເມັດ A(5, 8). ຈົ່ງຊອກຫາຄ່າຂອງສຳປະສິດ a?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: a ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາໄລຍະຫ່າງການຍ້າຍຂະໜານຕາມແນວນອນ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການແກ້ສົມຜົນກຳລັງສອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ເສັ້ນສະແດງ y = (x - 1)² ຈະຍ້າຍຂະໜານໄປທາງຂວາຈັກຫົວໜ່ວຍ ຈາກເສັ້ນສະແດງ y = x²? (ຕອບເປັນຕົວເລກ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"ຫົວໜ່ວຍ"}</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ເພື່ອຍ້າຍເສັ້ນສະແດງ y = 2(x + 2)² ໃຫ້ກາຍເປັນ y = 2(x - 3)², ຈະຕ້ອງຍ້າຍຂະໜານໄປທາງຂວາຈັກຫົວໜ່ວຍ? (ຕອບເປັນຕົວເລກ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"ຫົວໜ່ວຍ"}</span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຈົ່ງຊອກຫາໃຈຜົນຂອງສົມຜົນ: 3(x - 2)² = 27 (ຊອກຫາຄ່າ x ທັງໝົດ)?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <span>{"ຕອບ: x ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "42px" }}></span>
             </div>
           </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ຈາກເມັດຈອມ S(3,0) ຈະໄດ້ y = a(x-3)². ແທນເມັດ A(5,8) ເຂົ້າ: 8 = a(5-3)² ⇒ 8 = 4a ⇒ a = 2. ສຳລັບສົມຜົນ: (x-2)² = 9 ⇒ x-2 = ±3 ⇒ x = 5 ຫຼື x = -1!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາສູດຕຳລາໃໝ່ ຫຼັງຈາກການຍ້າຍຂະໜານຕາມແກນ x: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ຈຳນວນເມັດຕັດລະຫວ່າງປາຣາໂບນ ແລະ ແກນ Ox: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຍ້າຍຂະໜານເສັ້ນສະແດງ y = 3x² ໄປທາງຂວາ 2 ຫົວໜ່ວຍ ຈະໄດ້ສູດຕຳລາໃໝ່ແມ່ນ y ເທົ່າກັບເທົ່າໃດ? (ຕອບໃນຮູບແບບ a(x-b)^2, ຕົວຢ່າງ: 3(x-2)^2):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: y ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຍ້າຍຂະໜານເສັ້ນສະແດງ y = -x² ໄປທາງຊ້າຍ 4 ຫົວໜ່ວຍ ຈະໄດ້ສູດຕຳລາໃໝ່ແມ່ນ y ເທົ່າກັບເທົ່າໃດ? (ຕອບໃນຮູບແບບ - (x+b)^2, ຕົວຢ່າງ: -(x+4)^2):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: y ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "150px", height: "40px" }}></span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ປາຣາໂບນໃນຮູບຮ່າງ y = a(x - b)² ຕັດ (ຫຼື ສຳຜັດ) ກັບແກນ Ox ຢູ່ຈັກເມັດ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ຈຳນວນເມັດແມ່ນ"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+            <span>{"ເມັດ"}</span>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາຕົວຈິງກ່ຽວກັບເນື້ອທີ່ຂອບທາງຍ່າງ (Path surrounding a Lawn): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ການສົມທຽບຕຳລາ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ສວນຫຍ້າຮູບສີ່ແຈມົນທົນໜຶ່ງມີເນື້ອທີ່ A = (x - 3)² (cm²) ເນື່ອງຈາກມີການຫັກເນື້ອທີ່ດິນເຮັດທາງຍ່າງ 3 cm ອ້ອມຮອບ. ຖ້າ x = 10 cm, ເນື້ອທີ່ສວນຫຍ້າ A ຈະແມ່ນຈັກ cm²?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: A ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"cm²"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຖ້າຕ້ອງການໃຫ້ສວນຫຍ້າມີເນື້ອທີ່ A = 25 cm² ພໍດີ, ຄວາມຍາວທີ່ດິນ x ຈະຕ້ອງແມ່ນຈັກ cm?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: x ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"cm"}</span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ຖ້າປາຣາໂບນ y = -4(x - b)² ຖືກຍ້າຍຂະໜານມາຈາກ y = ax² ຕາມແກນ Ox. ຈົ່ງຊອກຫາຄ່າຂອງ a?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: a ="}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u15-ans-1-1">{"(1) (4, 0) (ແມ່ນພິກັດຈຸດຈອມ ຍ້າຍຂວາ 4)"}</span>,
-          <span key="u15-ans-1-2">{"(2) (-5, 0) (ແມ່ນພິກັດຈຸດຈອມ ຍ້າຍຊ້າຍ 5)"}</span>,
-        ],
+          <span key="1-1">{"5 (ຄິດໄລ່: b = 5 ຍ້າຍໄປທາງຂວາ 5 ຫົວໜ່ວຍ)"}</span>,
+          <span key="1-2">{"5 (ຄິດໄລ່: ເມັດຈອມແມ່ນ S(5, 0))"}</span>,
+          <span key="1-3">{"4 (ຄິດໄລ່: b = -4 ຍ້າຍໄປທາງຊ້າຍ 4 ຫົວໜ່ວຍ)"}</span>,
+          <span key="1-4">{"-4 (ຄິດໄລ່: ເມັດຈອມແມ່ນ S(-4, 0))"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u15-ans-2-1">{"(1) 3 (ແກນເຄິ່ງຄືແມ່ນ x = 3)"}</span>,
-          <span key="u15-ans-2-2">{"(2) -6 (ແກນເຄິ່ງຄືແມ່ນ x = -6)"}</span>,
-        ],
+          <span key="2-1">{"7 (ຄິດໄລ່: ແກນເຄິ່ງຄື x = b = 7)"}</span>,
+          <span key="2-2">{"-2 (ຄິດໄລ່: ແກນເຄິ່ງຄື x = b = -2)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"3 (ຄິດໄລ່: ຕຳລາຫງາຍ a > 0 ຫຼຸດໃນຫວ່າງ ]-∞, b] = ]-∞, 3])"}</span>,
+          <span key="3-2">{"-1 (ຄິດໄລ່: ຕຳລາຂວ້ຳ a < 0 ຫຼຸດໃນຫວ່າງ [b, +∞[ = [-1, +∞[)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4">{"-8 (ຄິດໄລ່: y = -2(1 - 3)² = -2(-2)² = -2 × 4 = -8)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u15-ans-t1-1">{"(1) 8 (ເພາະວ່າ y = 2 × (5 - 3)² = 2 × 2² = 2 × 4 = 8)"}</span>,
-          <span key="u15-ans-t1-2">{"(2) -9 (ເພາະວ່າ y = -(1 + 2)² = -(3)² = -9)"}</span>,
-        ],
+          <span key="c1">{"2 (ຄິດໄລ່: 8 = a(5 - 3)² = 4a ⇒ a = 2)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u15-ans-t2-1">{"(1) 1 (ເພາະວ່າ b = 1, ຍ້າຍຂວາ 1 ຫົວໜ່ວຍ)"}</span>,
-          <span key="u15-ans-t2-2">{"(2) 5 (ເພາະວ່າຈຸດຈອມຍ້າຍຈາກ -2 ໄປຫາ 3, ໄລຍະຫ່າງແມ່ນ 3 - (-2) = 5 ຫົວໜ່ວຍ)"}</span>,
-        ],
+          <span key="c2">{"5, -1 (ຄິດໄລ່: (x - 2)² = 9 ⇒ x - 2 = ±3 ⇒ x = 5 ຫຼື x = -1)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u15-ans-s1-1">{"(1) 3(x-2)^2 (ເພາະວ່າຍ້າຍຂວາ 2 ຫົວໜ່ວຍ ຈະແທນ x ດ້ວຍ x-2)"}</span>,
-          <span key="u15-ans-s1-2">{"(2) -(x+4)^2 (ເພາະວ່າຍ້າຍຊ້າຍ 4 ຫົວໜ່ວຍ ຈະແທນ x ດ້ວຍ x+4)"}</span>,
-        ],
+          <span key="s1">{"1 (ຄິດໄລ່: ມີແຕ່ເມັດຈອມ S(b, 0) ເທົ່ານັ້ນທີ່ຢູ່ເທິງແກນ Ox, ດັ່ງນັ້ນມີພຽງ 1 ເມັດຕັດ)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u15-ans-s2-1">{"(1) 49 (ເພາະວ່າ A = (10 - 3)² = 7² = 49 cm²)"}</span>,
-          <span key="u15-ans-s2-2">{"(2) 8 (ເພາະວ່າ (x - 3)² = 25  ⇒  x - 3 = 5  ⇒  x = 8 cm)"}</span>,
-        ],
-      },
+          <span key="s2">{"-4 (ຄິດໄລ່: ສຳປະສິດໜ້າວົງເລັບກຳລັງສອງ a ບໍ່ປ່ຽນແປງໃນການຍ້າຍຂະໜານ, ດັ່ງນັ້ນ a = -4)"}</span>
+        ]
+      }
     ],
-    advice: "ຈົ່ງລະວັງເຄື່ອງໝາຍໃນວົງເລັບ (x - b)² ສະເໝີ! ເມື່ອວົງເລັບເປັນລົບ ຈະຍ້າຍໄປທາງຂວາ (b ບວກ), ແລະ ເມື່ອວົງເລັບເປັນບວກ ຈະຍ້າຍໄປທາງຊ້າຍ (b ລົບ) ເດີ້!",
-  },
+    advice: "ເກັ່ງຫຼາຍ! ເຈົ້າເລີ່ມເຂົ້າໃຈການຍ້າຍຂະໜານປາຣາໂບນຕາມແກນນອນຢ່າງເລິກເຊິ່ງແລ້ວ. ບົດບາດຂອງ b ແມ່ນມີຄວາມສຳຄັນຫຼາຍໃນການກຳນົດເມັດຈອມ ແລະ ແກນເຄິ່ງຄື. ສູ້ໆຕໍ່ໄປ!"
+  }
 };

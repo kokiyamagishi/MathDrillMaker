@@ -1,345 +1,198 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit39Data: UnitData = {
   unitNumber: 39,
-  unitTitle: "ພາກທີ VI - ບົດທີ 39: ບໍລິມາດຂອງຮູບທາດຈວຍ ແລະ ຮູບຈວຍ",
-  unitGoal:
-    "ຮຽນຮູ້ ແລະ ນຳໃຊ້ສູດຄິດໄລ່ບໍລິມາດ (Volume) ຂອງຮູບທາດຈວຍ (Pyramid) ແລະ ຮູບຈວຍ (Cone) ໂດຍນຳໃຊ້ສູດ V = 1/3 · S_base · h",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 39 ໜ້າ 229-234",
+  unitTitle: "ພាកທີ IV - ບົດທີ 39: ໜ້າກົມ (Spheres)",
+  unitGoal: "ຮຽນຮູ້ສົມຜົນມາດຕະຖານຂອງໜ້າກົມ (x - a)² + (y - b)² + (z - c)² = R² ທີ່ມີຈຸດໃຈກາງ I(a, b, c) ແລະ ລັດສະໝີ R, ພ້ອມທັງສົມຜົນທົ່ວໄປ ແລະ ການກວດສອບຄວາມຖືກຕ້ອງ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 195-199",
   subSections: [
     {
-      title: "1. ສູດບໍລິມາດຂອງຮູບທາດຈວຍ ແລະ ຮູບຈວຍ (Volume Formulas)",
+      title: "1. ສົມຜົນມາດຕະຖານ ແລະ ສົມຜົນທົ່ວໄປ (Standard & General Equations of a Sphere)",
       keyPoint: {
-      title: "1. ສູດບໍລິມາດຂອງຮູບທາດຈວຍ ແລະ ຮູບຈວຍ (Volume Formulas)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ບໍລິມາດ V ຂອງຮູບທາດຈວຍ ຫຼື ຮູບຈວຍ ທີ່ມີເນື້ອທີ່ພື້ນ S_base ແລະ ລວງສູງ h ( height ) ແມ່ນ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "12px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
-              <strong style={{ color: "#E65100" }}>{"• ສູດບໍລິມາດທົ່ວໄປ: "}</strong>
-              <span>{"V = "}</span>
-              <Fraction num="1" den="3" />
-              <span>{"· S_base · h"}</span>
+        title: "ຮູບຮ່າງສົມຜົນໜ້າກົມ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃນລະບົບເສັ້ນເຄົ້າ Oxyz, ໜ້າກົມ S ທີ່ມີຈຸດໃຈກາງ I(a, b, c) ແລະ ລັດສະໝີ R ມີສອງຮູບຮ່າງສົມຜົນ:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }}>{"1. ສົມຜົນມາດຕະຖານ (Standard Form):"}</span>
+              <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6", marginTop: "8px", fontWeight: "bold", color: "#0D47A1" }}>
+                {"(x - a)² + (y - b)² + (z - c)² = R²"}
+              </p>
             </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px", display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
-              <strong style={{ color: "#E65100" }}>{"• ບໍລິມາດຂອງຮູບຈວຍ (Volume of Cone): "}</strong>
-              <span>{"V = "}</span>
-              <Fraction num="1" den="3" />
-              <span>{"πr²h"}</span>
-            </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px", display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
-              <strong style={{ color: "#E65100" }}>{"• ບໍລິມາດຂອງຮູບທາດຈວຍສີ່ແຈ (Volume of Square Pyramid): "}</strong>
-              <span>{"V = "}</span>
-              <Fraction num="1" den="3" />
-              <span>{"a²h  (ເມື່ອຂ້າງພື້ນແມ່ນ a)"}</span>
+            <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"2. ສົມຜົນທົ່ວໄປ (General Form):"}</span>
+              <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6", marginTop: "8px", fontWeight: "bold", color: "#2E7D32" }}>
+                {"x² + y² + z² - 2ax - 2by - 2cz + d = 0"}
+              </p>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"ເຊິ່ງ d = a² + b² + c² - R² ພາຍໃຕ້ເງື່ອນໄຂ a² + b² + c² - d > 0."}
+              </p>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ຈື່ໄວ້ວ່າ ບໍລິມາດຂອງຮູບຈວຍ ຫຼື ທາດຈວຍ ຈະມີຄ່າເທົ່າກັບ 1/3 ຂອງບໍລິມາດຮູບທໍ່ກົມ ຫຼື ຮູບທໍ່ຫຼ່ຽມ ທີ່ມີພື້ນ ແລະ ລວງສູງເທົ່າກັນເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງ: ໜ້າກົມ (x - 1)² + (y + 3)² + (z - 2)² = 36 ມີຈຸດໃຈກາງ I(1, -3, 2) ແລະ ລັດສະໝີ R = √36 = 6!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ບໍລິມາດຂອງຮູບຈວຍ (ຕອບໃນຮູບຮ່າງຕິດຄ່າ π): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຮູບຈວຍໜຶ່ງມີລັດສະໝີພື້ນ r = 3 cm ແລະ ລວງສູງ h = 5 cm. ບໍລິມາດ V ແມ່ນຈັກ π cm³? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"π"}</span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາຈຸດໃຈກາງ ແລະ ລັດສະໝີຂອງໜ້າກົມ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ໜ້າກົມ S: (x - 2)² + (y - 5)² + (z - 3)² = 16 ⇒ ຈຸດໃຈກາງ I("}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{", "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{", "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{") ແລະ ລັດສະໝີ R ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ໜ້າກົມ S: (x + 1)² + (y - 3)² + z² = 49 ⇒ ຈຸດໃຈກາງ I("}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{", "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{", "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{") ແລະ ລັດສະໝີ R ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຮູບຈວຍໜຶ່ງມີລັດສະໝີພື້ນ r = 6 cm ແລະ ລວງສູງ h = 10 cm. ບໍລິມາດ V ແມ່ນຈັກ π cm³? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"π"}</span>
-            </div>
-          </div>
-        </div>
-      ),
-    }
-      ]
-    },
-    {
-      title: "2. ບົດຮຽນພື້ນຖານ",
-      keyPoint: { content: <span /> },
-      problems: [
+          )
+        },
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ບໍລິມາດຂອງຮູບທາດຈວຍສີ່ແຈສະເໝີ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຮູບທາດຈວຍສີ່ແຈສະເໝີມີຂ້າງພື້ນ a = 4 cm ແລະ ລວງສູງ h = 6 cm. ບໍລິມາດ V ຈະແມ່ນຈັກ cm³? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"cm³"}</span>
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງແປງສົມຜົນທົ່ວໄປໃຫ້ເປັນສົມຜົນມາດຕະຖານ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ໃຫ້ໜ້າກົມ S: x² + y² + z² - 4x + 6y - 2z - 2 = 0. ຈົ່ງຊອກຫາຮູບຮ່າງມາດຕະຖານ (x - a)² + (y - b)² + (z - c)² = R²:"}
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"ສົມຜົນມາດຕະຖານແມ່ນ (x -"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{")² + (y +"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{")² + (z -"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{")² ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຮູບທາດຈວຍສີ່ແຈສະເໝີມີຂ້າງພື້ນ a = 5 cm ແລະ ລວງສູງ h = 12 cm. ບໍລິມາດ V ຈະແມ່ນຈັກ cm³? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"cm³"}</span>
-            </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໃຫ້ໃຊ້ທິດສະດີປີຕາກໍເພື່ອຊອກຫາລວງສູງ h ຈາກລວງເນັ່ງ L ແລະ ລັດສະໝີ r ກ່ອນ (h = √(L² - r²))! ບົດທ້າທາຍ 2: ໃຫ້ທຽບອັດຕາສ່ວນບໍລິມາດເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາບໍລິມາດ ຫຼັງຈາກນຳໃຊ້ທິດສະດີປີຕາກໍຊອກຫາລວງສູງ h: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດຊອກຫາສົມຜົນໜ້າກົມຜ່ານຈຸດ (Sphere Passing Through Point): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ຮູບຈວຍໜຶ່ງມີລັດສະໝີພື້ນ r = 6 cm ແລະ ລວງເນັ່ງ L = 10 cm. ລວງສູງ h ຈະແມ່ນຈັກ cm? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: h ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"cm"}</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຈາກຂໍ້ (1), ບໍລິມາດ V ຂອງຮູບຈວຍນີ້ແມ່ນຈັກ π cm³? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"π"}</span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຊອກຫາສົມຜົນໜ້າກົມທີ່ມີຈຸດໃຈກາງ I(1, 2, 2) ແລະ ຜ່ານຈຸດເຄົ້າ O(0, 0, 0) ພາຍໃຕ້ຮູບຮ່າງ (x - 1)² + (y - 2)² + (z - 2)² = R²?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: R² ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
-        ),
-      },
-      {
-        number: 2,
-        content: (
-          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຄິດໄລ່ອັດຕາສ່ວນການປ່ຽນແປງຂອງບໍລິມາດ (Volume Scaling Analysis): "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-            </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ຖ້າເຮົາເພີ່ມລວງສູງ h ຂອງຮູບຈວຍຂຶ້ນເປັນ 3 ເທົ່າ ໂດຍຮັກສາລັດສະໝີ r ຄືເກົ່າ, ບໍລິມາດຂອງຮູບຈວຍໃໝ່ ຈະເພີ່ມຂຶ້ນເປັນຈັກເທົ່າ? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: ເພີ່ມຂຶ້ນ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"ເທົ່າ"}</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຖ້າເຮົາເພີ່ມລັດສະໝີພື້ນ r ຂອງຮູບຈວຍຂຶ້ນເປັນ 2 ເທົ່າ ໂດຍຮັກສາລວງສູງ h ຄືເກົ່າ, ບໍລິມາດຂອງຮູບຈວຍໃໝ່ ຈະເພີ່ມຂຶ້ນເປັນຈັກເທົ່າ? (⚠️ ລະວັງການຂຶ້ນກຳລັງສອງຂອງ r):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: ເພີ່ມຂຶ້ນ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"ເທົ່າ"}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ລັດສະໝີ R ແມ່ນໄລຍະຫ່າງຈາກ I ຫາ O ⇒ R² = IO² = (1 - 0)² + (2 - 0)² + (2 - 0)² = 1 + 4 + 4 = 9. ດັ່ງນັ້ນ R² = 9!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາລວງສູງ h ຫຼື ລັດສະໝີ r ຈາກບໍລິມາດທີ່ກຳນົດໃຫ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ຊອກຫາຈຸດໃຈກາງໜ້າກົມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຮູບຈວຍໜຶ່ງມີບໍລິມາດແມ່ນ 12π cm³ ແລະ ມີລັດສະໝີພື້ນ r = 3 cm. ລວງສູງ h ຈະແມ່ນຈັກ cm? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: h ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"cm"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຮູບທາດຈວຍສີ່ແຈສະເໝີໜຶ່ງ ມີບໍລິມາດແມ່ນ 50 cm³ ແລະ ມີລວງສູງ h = 6 cm. ເນື້ອທີ່ພື້ນ S_base ຈະແມ່ນຈັກ cm²? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: S_base ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"cm²"}</span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ໜ້າກົມ S: x² + y² + z² - 6x + 8z = 0 ມີຈຸດໃຈກາງ I(a, b, c) ແມ່ນເທົ່າໃດ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: I("}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+            <span>{", "}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+            <span>{", "}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+            <span>{")"}</span>
           </div>
         </div>
-      ),
-    },
-    {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາຕົວຈິງກ່ຽວກັບການຊອກຫາບໍລິມາດຖັງເກັບເມັດພັນພືດ (Grain Silo Volume Optimization): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຖັງເກັບມ້ຽນເຂົ້າຮູບທາດຈວຍສີ່ແຈສະເໝີ ມີຂ້າງພື້ນ 3 m ແລະ ລວງສູງ 4 m. ບໍລິມາດຖັງເກັບມ້ຽນນີ້ແມ່ນຈັກ m³? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: V ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"m³"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຖ້າເຂົ້າ 1 m³ ມີນ້ຳໜັກປະມານ 800 kg, ຖັງເກັບນີ້ສາມາດເກັບຮັກສາເຂົ້າໄດ້ສູງສຸດຈັກກິໂລກຣາມ (kg)? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                <span>{"kg"}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u39-ans-1-1">{"(1) 15 (ເພາະວ່າ V = 1/3 * π * 3² * 5 = 1/3 * 45π = 15π cm³)"}</span>,
-          <span key="u39-ans-1-2">{"(2) 120 (ເພາະວ່າ V = 1/3 * π * 6² * 10 = 1/3 * 360π = 120π cm³)"}</span>,
-        ],
+          <span key="1-1">{"2 (ຄິດໄລ່: x-2 = 0 ⇒ a = 2)"}</span>,
+          <span key="1-2">{"5 (ຄິດໄລ່: y-5 = 0 ⇒ b = 5)"}</span>,
+          <span key="1-3">{"3 (ຄິດໄລ່: z-3 = 0 ⇒ c = 3)"}</span>,
+          <span key="1-4">{"4 (ຄິດໄລ່: R² = 16 ⇒ R = 4)"}</span>,
+          <span key="1-5">{"-1 (ຄິດໄລ່: x+1 = 0 ⇒ a = -1)"}</span>,
+          <span key="1-6">{"3 (ຄິດໄລ່: y-3 = 0 ⇒ b = 3)"}</span>,
+          <span key="1-7">{"0 (ຄິດໄລ່: z = 0 ⇒ c = 0)"}</span>,
+          <span key="1-8">{"7 (ຄິດໄລ່: R² = 49 ⇒ R = 7)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u39-ans-2-1">{"(1) 32 (ເພາະວ່າ V = 1/3 * S_base * h = 1/3 * 16 * 6 = 32 cm³)"}</span>,
-          <span key="u39-ans-2-2">{"(2) 100 (ເພາະວ່າ V = 1/3 * 25 * 12 = 100 cm³)"}</span>,
-        ],
+          <span key="2-1">{"2 (ຄິດໄລ່: x² - 4x = (x - 2)² - 4)"}</span>,
+          <span key="2-2">{"3 (ຄິດໄລ່: y² + 6y = (y + 3)² - 9)"}</span>,
+          <span key="2-3">{"1 (ຄິດໄລ່: z² - 2z = (z - 1)² - 1)"}</span>,
+          <span key="2-4">{"16 (ຄິດໄລ່: (x - 2)² - 4 + (y + 3)² - 9 + (z - 1)² - 1 - 2 = 0 ⇒ (x-2)² + (y+3)² + (z-1)² = 16)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3">{"9 (ຄິດໄລ່: R² = IO² = 1² + 2² + 2² = 9)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u39-ans-t1-1">{"(1) 8 (ຍ້ອນວ່າ h = √(L² - r²) = √(10² - 6²) = √64 = 8 cm)"}</span>,
-          <span key="u39-ans-t1-2">{"(2) 96 (ຍ້ອນວ່າ V = 1/3 * π * 6² * 8 = 1/3 * 288π = 96π cm³)"}</span>,
-        ],
-      },
-      {
-        questionNumber: "ທ້າທາຍ 2",
-        answers: [
-          <span key="u39-ans-t2-1">{"(1) 3 (ເພາະວ່າບໍລິມາດ V ພົວພັນກົງກັບ h ດັ່ງນັ້ນ V ຈະເພີ່ມຂຶ້ນ 3 ເທົ່າ)"}</span>,
-          <span key="u39-ans-t2-2">{"(2) 4 (ເພາະວ່າ V ພົວພັນກັບ r² ດັ່ງນັ້ນ 2² = 4 ເທົ່າ)"}</span>,
-        ],
+          <span key="c1">{"9 (ຄິດໄລ່: R² = 9)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u39-ans-s1-1">{"(1) 4 (ເພາະວ່າ h = 3V / (πr²) = 36π / 9π = 4 cm)"}</span>,
-          <span key="u39-ans-s1-2">{"(2) 25 (ເພາະວ່າ S_base = 3V / h = 150 / 6 = 25 cm²)"}</span>,
-        ],
-      },
-      {
-        questionNumber: "ທົດສອບປະຈຳບົດ 2",
-        answers: [
-          <span key="u39-ans-s2-1">{"(1) 12 (ເພາະວ່າ V = 1/3 * 3² * 4 = 1/3 * 36 = 12 m³)"}</span>,
-          <span key="u39-ans-s2-2">{"(2) 9600 (ເພາະວ່າ 12 * 800 = 9600 kg)"}</span>,
-        ],
-      },
+          <span key="s1">{"3 (ຄິດໄລ່: a = -(-6)/2 = 3)"}</span>,
+          <span key="s2">{"0 (ຄິດໄລ່: b = 0)"}</span>,
+          <span key="s3">{"-4 (ຄິດໄລ່: c = -8/2 = -4)"}</span>
+        ]
+      }
     ],
-    advice: "ບໍລິມາດຂອງຮູບທາດຈວຍ ແລະ ຮູບຈວຍ ແມ່ນ 1/3 ຂອງເນື້ອທີ່ພື້ນຄູນໃຫ້ລວງສູງສະເໝີ! ການນຳໃຊ້ປີຕາກໍຊອກຫາລວງສູງເປັນທັກສະທີ່ພົບເລື້ອຍຫຼາຍເດີ້!",
-  },
+    advice: "ເກັ່ງຫຼາຍ! ສົມຜົນໜ້າກົມເປັນການຂະຫຍາຍແນວຄິດສົມຜົນວົງມົນຈາກ 2 ມິຕິ ໄປຫາ 3 ມິຕິ. ເຈົ້າເຮັດໄດ້ດີຫຼາຍ!"
+  }
 };

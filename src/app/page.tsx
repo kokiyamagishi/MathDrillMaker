@@ -54,6 +54,7 @@ export default function Home() {
             { href: "/secondary2", lao: "ມ.2", jp: "中学2年生", color: "#3F51B5" },
             { href: "/secondary3", lao: "ມ.3", jp: "中学3年生", color: "#E91E63" },
             { href: "/secondary4", lao: "ມ.4", jp: "中学4年生", color: "#607D8B" },
+            { href: "/secondary4_science", lao: "ມ.4 ວິທະຍາສາດ", jp: "中4自然科学", color: "#E91E63" },
           ].map((grade) => (
             <Link key={grade.href} href={grade.href} style={{ textDecoration: "none" }}>
               <div className="glass-card" style={{
@@ -67,7 +68,7 @@ export default function Home() {
                 justifyContent: "center",
                 borderTop: `4px solid ${grade.color}`
               }}>
-                <h3 style={{ fontSize: "2rem", marginBottom: "4px", fontWeight: "800" }}>{grade.lao}</h3>
+                <h3 style={{ fontSize: "2rem", marginBottom: "4px", fontWeight: "800", whiteSpace: "nowrap" }}>{grade.lao}</h3>
                 <p style={{ fontSize: "0.85rem", fontWeight: "600", color: "var(--color-text-light)" }}>{grade.jp}</p>
               </div>
             </Link>

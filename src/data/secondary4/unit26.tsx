@@ -1,340 +1,300 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit26Data: UnitData = {
   unitNumber: 26,
-  unitTitle: "ພາກທີ III - ບົດທີ 26: ການຂະຫຍາຍອັດຕາສ່ວນໄຕມຸມມິຕິແຕ່ 0 ຫາ 180 ອົງສາ",
-  unitGoal:
-    "ຮຽນຮູ້ວິທີຂະຫຍາຍນິຍາມຂອງໄຕມຸມມິຕິໄປຫາຫວ່າງມຸມຫວາ (鈍角: 90° ຫາ 180°) ໂດຍການນຳໃຊ້ມຸມປະກອບ 180° - θ ແລະ ວົງມົນຫົວໜ່ວຍ",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 26 ໜ້າ 151-156",
+  unitTitle: "ພາກທີ III - ບົດທີ 26: ໂກຊີນ, ຊີນ ແລະ ຕັງຂອງມຸມລະຫວ່າງ 0° ຫາ 180° (Trigonometry from 0° to 180°)",
+  unitGoal: "ຮຽນຮູ້ການຂະຫຍາຍອັດຕາສ່ວນໄຕມູມມິຕິໃສ່ວົງມົນຫົວໜ່ວຍ (Unit Circle), ສຶກສາເຄື່ອງໝາຍຂອງ sin, cos, tan ໃນພາກສ່ວນຕ່າງໆ (Quadrants), ແລະ ນຳໃຊ້ສູດມຸມເພີ່ມ/ມຸມປະກອບ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 116-121",
   subSections: [
     {
-      title: "1. ສູດພົວພັນຂອງມຸມປະກອບ 180° (Supplementary Angle Formulas)",
+      title: "1. ໄຕມູມມິຕິໃນວົງມົນຫົວໜ່ວຍ ແລະ ເຄື່ອງໝາຍ (Trigonometry in Unit Circle & Signs)",
       keyPoint: {
-      title: "1. ສູດພົວພັນຂອງມຸມປະກອບ 180° (Supplementary Angle Formulas)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ສຳລັບມຸມຫວາ θ (90° < θ ≤ 180°), ຄ່າໄຕມຸມມິຕິພົວພັນກັບມຸມແຫຼມ (180° - θ) ດັ່ງນີ້:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "12px",
-            }}
-          >
-            <div>
-              <strong style={{ color: "#E65100" }}>{"• sin (180° - θ) = sin θ"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#2E7D32" }}>
-                {"(ຄ່າຂອງ Sin ຈະເປັນບວກ (+) ສະເໝີ ທັງມຸມແຫຼມ ແລະ ມຸມຫວາ)"}
-              </span>
+        title: "ນິຍາມເທິງວົງມົນຫົວໜ່ວຍ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ສໍາລັບມຸມ θ ໃດໆ ລະຫວ່າງ 0° ຫາ 180°, ຈຸດ P(a, b) ເທິງວົງມົນຫົວໜ່ວຍ (ລັດສະໝີ R = 1) ຈະກຳນົດຄ່າດັ່ງນີ້:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E0F2F1", borderRadius: "8px", border: "1px solid #B2DFDB" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#004D40" }}>{"ຈຸດປະສານໄຕມູມມິຕີ:"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
+                <li><strong>{"ແກນນອນ Ox (ຄ່າຂອງ a):"}</strong>{" cos θ = a  (ມີຄ່າແຕ່ -1 ຫາ 1)."}</li>
+                <li><strong>{"ແກນຕັ້ງ Oy (ຄ່າຂອງ b):"}</strong>{" sin θ = b  (ມີຄ່າແຕ່ 0 ຫາ 1)."}</li>
+                <li><strong>{"ເສັ້ນສໍາຜັດ (tan θ):"}</strong>{" tan θ = b/a = sin θ / cos θ (ສໍາລັບ θ ≠ 90°)."}</li>
+              </ul>
             </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• cos (180° - θ) = -cos θ"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#D84315" }}>
-                {"(ຄ່າຂອງ Cos ຈະປ່ຽນເປັນເຄື່ອງໝາຍລົບ (-) ເມື່ອເປັນມຸມຫວາ)"}
-              </span>
-            </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• tan (180° - θ) = -tan θ"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#D84315" }}>
-                {"(ຄ່າຂອງ Tan ຈະປ່ຽນເປັນເຄື່ອງໝາຍລົບ (-) ເມື່ອເປັນມຸມຫວາ, θ ≠ 90°)"}
-              </span>
+            <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ເຄື່ອງໝາຍໃນແຕ່ລະພາກສ່ວນ (Quadrants):"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
+                <li><strong>{"ພາກສ່ວນທີ I (0° ≤ θ ≤ 90°):"}</strong>{" sin θ ≥ 0, cos θ ≥ 0, tan θ ≥ 0."}</li>
+                <li><strong>{"ພາກສ່ວນທີ II (90° ≤ θ ≤ 180°):"}</strong>{" sin θ ≥ 0, cos θ ≤ 0, tan θ ≤ 0 (cos ແລະ tan ຈະຕິດລົບ)."}</li>
+              </ul>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ຕົວຢ່າງ: sin 120° = sin (180° - 60°) = sin 60° = √3/2. ແຕ່ cos 120° = -cos 60° = -1/2 ເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ລະວັງ: ມຸມ 90° ຈະບໍ່ມີຄ່າ tan θ ເພາະ cos 90° = 0 (ຕົວຫານເປັນ 0)!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາຄ່າຂອງ Sin ຂອງມຸມຫວາ (ຄ່າບວກ): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຄ່າຂອງ sin 150° ແມ່ນເທົ່າໃດ? (ຕອບເປັນເລກສ່ວນ, ຕົວຢ່າງ: 1/2):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງບອກເຄື່ອງໝາຍ (+ ຫຼື -) ຂອງອັດຕາສ່ວນໄຕມູມມິຕິດຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) cos 120° (ພາກສ່ວນທີ II) ມີເຄື່ອງໝາຍ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{" ແລະ sin 120° (ພາກສ່ວນທີ II) ມີເຄື່ອງໝາຍ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) tan 135° (ພາກສ່ວນທີ II) ມີເຄື່ອງໝາຍ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>
-                {"(2) ຄ່າຂອງ sin 135° ແມ່ນເທົ່າໃດ? (ຕອບເປັນເລກສ່ວນ, ຕົວຢ່າງ: √2/2):"}
-              </span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາຄ່າຈາກວົງມົນຫົວໜ່ວຍໂດຍກົງ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ມຸມ θ = 180° ມີຕົວປະສານແມ່ນ P(-1, 0). ດັ່ງນັ້ນ cos 180° ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ມຸມ θ = 90° ມີຕົວປະສານແມ່ນ P(0, 1). ດັ່ງນັ້ນ sin 90° ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ບົດຮຽນພື້ນຖານ",
-      keyPoint: { content: <span /> },
-      problems: [
-        {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາຄ່າຂອງ Cos ຂອງມຸມຫວາ (⚠️ ສັງເກດເຄື່ອງໝາຍລົບ): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຄ່າຂອງ cos 120° ແມ່ນເທົ່າໃດ? (ຕອບເປັນເລກສ່ວນຕິດລົບ, ຕົວຢ່າງ: -1/2):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+      title: "2. ສູດມຸມປະກອບເພີ່ມ ແລະ ມຸມພົວພັນ (Reduction Formulas)",
+      keyPoint: {
+        title: "ສູດຫຼຸດມຸມໃຫຍ່ກວ່າ 90°",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ການພົວພັນລະຫວ່າງມຸມປະກອບເພີ່ມ (180° - θ) ແລະ ມຸມປະກອບ (90° ± θ):"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#F3E5F5", borderRadius: "8px", border: "1px solid #E1BEE7" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#4A148C" }}>{"ມຸມປະກອບເພີ່ມ (180° - θ):"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"- sin(180° - θ) = sin θ"}
+                <br />
+                {"- cos(180° - θ) = -cos θ"}
+                <br />
+                {"- tan(180° - θ) = -tan θ"}
+              </p>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຄ່າຂອງ cos 150° ແມ່ນເທົ່າໃດ? (ຕອບເປັນເລກສ່ວນຕິດລົບ, ຕົວຢ່າງ: -√3/2):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+            <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }}>{"ມຸມປະກອບ (90° + θ):"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"- sin(90° + θ) = cos θ"}
+                <br />
+                {"- cos(90° + θ) = -sin θ"}
+                <br />
+                {"- tan(90° + θ) = -1 / tan θ"}
+              </p>
             </div>
           </div>
-        </div>
-      ),
-    }
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງ: cos 135° = cos(180° - 45°) = -cos 45° = -√2/2. sin 120° = sin(180° - 60°) = sin 60° = √3/2!",
+          isBlue: false
+        }
+      },
+      problems: [
+        {
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ຄ່າຂອງມຸມຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) cos 150° = -cos 30° ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) sin 135° = sin 45° ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                </div>
+              </div>
+            </div>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນໄຕມູມມິຕິ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນ: A = cos 135° × sin 120° × tan 150° / cos 60°?"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                <span>{"ຕອບ: A ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              </div>
+            </div>
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໃຫ້ຄິດໄລ່ແຕ່ລະສ່ວນ ແລ້ວນຳມາບວກລົບກັນໃຫ້ລະອຽດ! ບົດທ້າທາຍ 2: ຄ່າຂອງ tan 90° ແມ່ນບໍ່ກຳນົດ, ສ່ວນ cos 90° = 0 ແລະ sin 90° = 1 ເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນທີ່ມີມຸມຫວາ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການພິສູດຜົນບວກສຳນວນ (Trigonometric Expression Simplification): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ຄິດໄລ່ຄ່າຂອງ A = 2 · sin 150° + cos 120° (ຕອບເປັນເລກສ່ວນ, ຕົວຢ່າງ: 1/2):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: A ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຄິດໄລ່ຄ່າຂອງ B = tan 135° - cos 180° (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: B ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນ: B = sin 80° + cos 110° + sin 160° + cos 170°?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: B ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງບອກຄ່າໄຕມຸມມິຕິຢູ່ຈຸດພິເສດເທິງແກນປະສານ (Boundary Angles): "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການຊອກຫາມຸມຈາກຄ່າ cos (Finding Angle from Value): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ຄ່າຂອງ sin 90° ແມ່ນເທົ່າໃດ? (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຄ່າຂອງ cos 180° ແມ່ນເທົ່າໃດ? (ຕອບເປັນຕົວເລກຖ້ວນຕິດລົບ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃຫ້ cos θ = -1/2 ສໍາລັບ 0° ≤ θ ≤ 180°. ຈົ່ງຊອກຫາຄ່າຂອງມຸມ θ?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <span>{"ຕອບ: θ ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span>{" ອົງສາ"}</span>
             </div>
           </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: " B = sin 80° + cos 110° + sin 160° + cos 170°. ຍ້ອນ sin 80° = cos 10°, cos 110° = -sin 20°, sin 160° = sin 20°, cos 170° = -cos 10° ⇒ B = cos 10° - sin 20° + sin 20° - cos 10° = 0! ສໍາລັບ cos θ = -1/2 ⇒ θ = 180° - 60° = 120°!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາມຸມ θ (0° ≤ θ ≤ 180°) ຈາກຄ່າໄຕມຸມມິຕິ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ຄ່າຂອງ sin 150°: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຖ້າ cos θ = -1/2, ມຸມ θ ຈະແມ່ນຈັກອົງສາ? (ຕອບເປັນຕົວເລກ, ຕົວຢ່າງ: 120):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: θ ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ອົງສາ (°)"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຖ້າ tan θ = -1, ມຸມ θ ຈະແມ່ນຈັກອົງສາ? (ຕອບເປັນຕົວເລກ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: θ ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ອົງສາ (°)"}</span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ຄ່າຂອງ sin 150° ແມ່ນເທົ່າໃດ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ:"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາຕົວຈິງກ່ຽວກັບແຮງງານໃນຟີຊິກສາດ (Work Done in Physics by a Force): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ຄ່າຂອງ cos 135°: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ແຮງດຶງວັດຖຸ F = 100 N ເຮັດມຸມ θ = 120° ກັບທິດທາງການເຄື່ອນທີ່. ຈົ່ງຄິດໄລ່ຄ່າ cos 120° ເພື່ອຊອກຫາທິດທາງຂອງວຽກ (ຕອບເປັນເລກສ່ວນຕິດລົບ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: cos 120° ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ວຽກທີ່ເກີດຂຶ້ນ W = F · d · cos θ ຈະມີຄ່າເປັນບວກ (+) ຫຼື ເປັນລົບ (-)? (ຄຳແນະນຳ: ວຽກຕ້ານໃນຟີຊິກ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ຄ່າຂອງ cos 135° ແມ່ນເທົ່າໃດ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ:"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u26-ans-1-1">{"(1) 1/2 (ເພາະວ່າ sin 150° = sin (180° - 150°) = sin 30° = 1/2)"}</span>,
-          <span key="u26-ans-1-2">{"(2) √2/2 (ເພາະວ່າ sin 135° = sin (180° - 135°) = sin 45° = √2/2)"}</span>,
-        ],
+          <span key="1-1">{"ລົບ (ຄິດໄລ່: cos 120° = -1/2 < 0)"}</span>,
+          <span key="1-2">{"ບວກ (ຄິດໄລ່: sin 120° = √3/2 > 0)"}</span>,
+          <span key="1-3">{"ລົບ (ຄິດໄລ່: tan 135° = -1 < 0)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u26-ans-2-1">{"(1) -1/2 (ເພາະວ່າ cos 120° = -cos (180° - 120°) = -cos 60° = -1/2)"}</span>,
-          <span key="u26-ans-2-2">{"(2) -√3/2 (ເພາະວ່າ cos 150° = -cos 30° = -√3/2)"}</span>,
-        ],
+          <span key="2-1">{"-1 (ຄິດໄລ່: ຈາກຕົວປະສານ x ຂອງ P(-1, 0))"}</span>,
+          <span key="2-2">{"1 (ຄິດໄລ່: ຈາກຕົວປະສານ y ຂອງ P(0, 1))"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"-√3 / 2 (ຄິດໄລ່: cos 150° = -cos 30° = -√3/2)"}</span>,
+          <span key="3-2">{"√2 / 2 (ຄິດໄລ່: sin 135° = sin 45° = √2/2)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4">{"√2 / 2 (ຄິດໄລ່: A = (-√2/2) × (√3/2) × (-√3/3) / (1/2) = (√2/2) × (3/6) / (1/2) = √2/2)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u26-ans-t1-1">{"(1) 1/2 (ເພາະວ່າ A = 2 * (1/2) + (-1/2) = 1 - 1/2 = 1/2)"}</span>,
-          <span key="u26-ans-t1-2">{"(2) 0 (ເພາະວ່າ B = tan 135° - cos 180° = -1 - (-1) = -1 + 1 = 0)"}</span>,
-        ],
+          <span key="c1">{"0 (ຄິດໄລ່: ປ່ຽນຮູບຮ່າງໄດ້ cos 10° - sin 20° + sin 20° - cos 10° = 0)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u26-ans-t2-1">{"(1) 1 (ເພາະວ່າ sin 90° = 1, ຈຸດສູງສຸດເທິງວົງມົນຫົວໜ່ວຍ)"}</span>,
-          <span key="u26-ans-t2-2">{"(2) -1 (ເພາະວ່າ cos 180° = -1, ຈຸດເບື້ອງຊ້າຍສຸດເທິງວົງມົນຫົວໜ່ວຍ)"}</span>,
-        ],
+          <span key="c2">{"120 (ຄິດໄລ່: cos θ = -1/2 ⇒ θ = 180° - 60° = 120°)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u26-ans-s1-1">{"(1) 120 (ເພາະວ່າ cos 120° = -1/2 ພາຍໃນຫວ່າງ [0°, 180°])"}</span>,
-          <span key="u26-ans-s1-2">{"(2) 135 (ເພາະວ່າ tan 135° = -1 ພາຍໃນຫວ່າງ [0°, 180°])"}</span>,
-        ],
+          <span key="s1">{"1/2 (ຄິດໄລ່: sin 150° = sin 30° = 1/2)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u26-ans-s2-1">{"(1) -1/2 (ເພາະວ່າ cos 120° = -0.5)"}</span>,
-          <span key="u26-ans-s2-2">{"(2) - (ເພາະວ່າ cos 120° < 0 ເຮັດໃຫ້ຜົນຄູນ W ຕິດລົບ ເຊິ່ງແມ່ນວຽກຕ້ານ)"}</span>,
-        ],
-      },
+          <span key="s2">{"-√2 / 2 (ຄິດໄລ່: cos 135° = -cos 45° = -√2/2)"}</span>
+        ]
+      }
     ],
-    advice: "ການຂະຫຍາຍໄຕມຸມມິຕິໄປຫາຫວ່າງມຸມຫວາ ເປັນກຸນແຈສຳຄັນໃນການແກ້ບັນຫາຟີຊິກສາດກ່ຽວກັບແຮງງານ, ເວັກເຕີ ແລະ ການເຄື່ອນທີ່ໃນສອງມິຕິເດີ້!",
-  },
+    advice: "ເກັ່ງຫຼາຍ! ເຈົ້າເລີ່ມມີຄວາມຊໍານານໃນການນໍາໃຊ້ວົງມົນຫົວໜ່ວຍ ແລະ ສູດຫຼຸດມຸມໄຕມູມມິຕິແລ້ວ. ສູ້ໆຕໍ່ໄປເດີ້!"
+  }
 };

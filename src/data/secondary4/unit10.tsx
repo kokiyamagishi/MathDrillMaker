@@ -1,396 +1,296 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit10Data: UnitData = {
   unitNumber: 10,
-  unitTitle: "ພາກທີ I - ບົດທີ 10: ການຄິດໄລ່ສຳນວນທີ່ມີເລກຮາກ",
-  unitGoal:
-    "ຮຽນຮູ້ວິທີການຄິດໄລ່ບວກ, ລົບ, ຄູນ ແລະ ຫານສຳນວນທີ່ມີເຄື່ອງໝາຍຮາກ, ການເອົາຕົວເລກອອກນອກຮາກ ແລະ ການກຳຈັດຮາກຢູ່ພູດ (Rationalization)",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 10 ໜ້າ 55-60",
+  unitTitle: "ພາກທີ I - ບົດທີ 10: ການຄິດໄລ່ໜວດຄຳນວນທີ່ມີເລກຮາກ (Calculations with Radicals)",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບການບວກ, ລົບ, ຄູນ, ຫານສຳນວນທີ່ມີເລກຮາກ, ການຄິດໄລ່ໂດຍໃຊ້ຈຳນວນຄູ່ຮ່ວມ (Conjugates), ແລະ ວິທີການຄັດຮາກອອກຈາກພູດ (Rationalizing Denominators)",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 51-56",
   subSections: [
     {
-      title: "1. ການເອົາຕົວເລກອອກນອກຮາກ ແລະ ການບວກລົບ (Pulling Factors Out & Addition/Subtraction)",
+      title: "1. ການບວກ ແລະ ການລົບເລກຮາກ (Addition & Subtraction of Radicals)",
       keyPoint: {
-      title: "1. ການເອົາຕົວເລກອອກນອກຮາກ ແລະ ການບວກລົບ (Pulling Factors Out & Addition/Subtraction)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ເພື່ອບວກ ຫຼື ລົບສຳນວນທີ່ມີເລກຮາກ, ເຮົາຕ້ອງຜັນປ່ຽນໃຫ້ກ້ອງຮາກມີຕົວເລກດຽວກັນ (ຮາກຄືກັນ):"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div>
-              <strong style={{ color: "#E65100" }}>{"• ສູດພື້ນຖານ: "}</strong>
-              <span>{"ຮາກຂັ້ນ 2 ຂອງ (a²b) = a × ຮາກຂັ້ນ 2 ຂອງ b (ເມື່ອ a ≥ 0)"}</span>
+        title: "ຫຼັກການບວກ-ລົບ ແລະ ຄັດຈ້ອນ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"- ເຮົາສາມາດບວກ ຫຼື ລົບສຳນວນເລກຮາກທີ່ມີ 'ຮາກດຽວກັນ' ໄດ້ໂດຍກົງ ຄ້າຍຄືກັບການບວກລົບພົດຄ້າຍຄືກັນໃນພະຫຸພົດ:"}
               <br />
-              <span style={{ paddingLeft: "20px", color: "#555" }}>
-                {"ຕົວຢ່າງ: ຮາກຂັ້ນ 2 ຂອງ 18 = ຮາກຂັ້ນ 2 ຂອງ (9 × 2) = 3√2."}
-              </span>
-            </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• ການບວກລົບຮາກທີ່ຄືກັນ: "}</strong>
-              <span>{"a√x + b√x = (a + b)√x"}</span>
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", paddingLeft: "16px" }}>{"a√x + b√x = (a + b)√x"}</span>
               <br />
-              <span style={{ paddingLeft: "20px", color: "#555" }}>
-                {"ຕົວຢ່າງ: 3√2 + 5√2 = (3 + 5)√2 = 8√2."}
-              </span>
+              {"- ຖ້າຮາກຕ່າງກັນ, ເຮົາຕ້ອງແຍກສ່ວນປະກອບເພື່ອຄັດຈ້ອນໃຫ້ເປັນຮາກຂັ້ນຕ່ຳກ່ອນ ແລ້ວຈຶ່ງນຳມາບວກລົບກັນ."}
+            </p>
+            
+            <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ຕົວຢ່າງການຄັດຈ້ອນ:"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"ຄິດໄລ່: √12 - √108 + √27"}
+                <br />
+                {"- ປ່ຽນແຕ່ລະພົດ: √12 = 2√3   ;   √108 = 6√3   ;   √27 = 3√3"}
+                <br />
+                {"- ບວກລົບເຂົ້າກັນ: 2√3 - 6√3 + 3√3 = (2 - 6 + 3)√3 = -√3."}
+              </p>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ແນະນຳ: ໃຫ້ແຍກຕົວເລກກ້ອງຮາກໃຫ້ເປັນຜົນຄູນຂອງເລກກຳລັງສອງສົມບູນ (4, 9, 16, 25...) ກ່ອນ ເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ໝາຍເຫດ: √(a + b) ບໍ່ເທົ່າກັບ √a + √b ເດັດຂາດ! ຕົວຢ່າງ: √(9 + 16) = √25 = 5. ແຕ່ √9 + √16 = 3 + 4 = 7!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄິດໄລ່ເອົາຕົວເລກອອກນອກຮາກ ແລະ ບວກລົບສຳນວນ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຄິດໄລ່: ຮາກຂັ້ນ 2 ຂອງ 8 + ຮາກຂັ້ນ 2 ຂອງ 18 = (ຕອບໃນຮູບແບບ a√b, ຕົວอย่าง: 5√2):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ ແລະ ຄັດຈ້ອນສຳນວນລຸ່ມນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) √18 - 2√8 + √2 = 3√2 -"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"√2 + √2 = 0"}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) √45 - √125 + √20 = 3√5 -"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"√5 + 2√5 = 0"}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຄິດໄລ່: ຮາກຂັ້ນ 2 ຂອງ 75 - ຮາກຂັ້ນ 2 ຂອງ 27 ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄັດຈ້ອນສຳນວນທີ່ມີຕົວປ່ຽນ (ຮູ້ວ່າ x, y ≥ 0): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ຄັດຈ້ອນ: √(27x³y) - √(12x³y)"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ຕອບ: ("}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                <span>{"- 2) × x√(3xy) = x√(3xy)"}</span>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ການກຳຈັດຮາກຢູ່ພູດ (Rationalizing the Denominator)",
+      title: "2. ຈຳນວນຄູ່ຮ່ວມ ແລະ ການຄັດຮາກອອກຈາກພູດ (Conjugates & Rationalizing)",
       keyPoint: {
-      title: "2. ການກຳຈັດຮາກຢູ່ພູດ (Rationalizing the Denominator)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ການກຳຈັດຮາກຢູ່ພູດແມ່ນການຄູນສຳນວນຮ່ວມເອກະລັກ (Conjugate) ໃສ່ທັງຈຳນວນພູດ ແລະ ພູດ ເພື່ອໃຫ້ຮາກຫາຍໄປ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "10px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-              <strong style={{ color: "#2E7D32" }}>{"• ກໍລະນີພູດມີຮາກດ່ຽວ: "}</strong>
-              <Fraction num="1" den="√a" />
-              {" = "}
-              <Fraction num="√a" den="a" />
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", borderTop: "1px solid #C8E6C9", paddingTop: "8px" }}>
-              <strong style={{ color: "#2E7D32" }}>{"• ກໍລະນີພູດເປັນການບວກລົບ: "}</strong>
-              <Fraction num="1" den="√a - √b" />
-              {" = "}
-              <Fraction num="√a + √b" den="a - b" />
+        title: "ຈຳນວນຄູ່ຮ່ວມ (Conjugate) ແມ່ນຫຍັງ?",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"- ຈຳນວນຄູ່ຮ່ວມຂອງສຳນວນ (a - √b) ແມ່ນ (a + √b). ເມື່ອເຮົານຳເອົາສອງສຳນວນນີ້ມາຄູນກັນ ຈະເຮັດໃຫ້ເຄື່ອງໝາຍຮາກຂັ້ນສອງໝົດໄປ ຕາມເອກະລັກຜົນຕ່າງກຳລັງສອງ:"}
+              <br />
+              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#D84315", display: "block", textAlign: "center", margin: "8px 0" }}>
+                {"(a - √b)(a + √b) = a² - b"}
+              </span>
+              {"- ວິທີການຄັດຮາກອອກຈາກພູດ: ແມ່ນການຄູນທັງຕົວເສດ ແລະ ຕົວພູດດ້ວຍຈຳນວນຄູ່ຮ່ວມຂອງຕົວພູດ ເພື່ອບໍ່ໃຫ້ມີຮາກຢູ່ພູດ."}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ຕົວຢ່າງການຄັດຮາກ:"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"ຄັດຮາກຂອງ: 3 / (√5 - 2)"}
+                <br />
+                {"- ຄູນຄູ່ຮ່ວມ (√5 + 2) ໃສ່ທັງເສດ ແລະ ພູດ:"}
+                <br />
+                <strong>{"3(√5 + 2) / ((√5 - 2)(√5 + 2)) = 3(√5 + 2) / (5 - 4) = 3(√5 + 2)."}</strong>
+              </p>
             </div>
           </div>
-          {/* Visual SVG showing conjugate multiplication */}
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: "12px" }}>
-            <span style={{ fontSize: "1.125rem", color: "#666", marginBottom: "6px" }}>{"ຂັ້ນຕອນການກຳຈັດຮາກຢູ່ພູດ"}</span>
-            <svg viewBox="0 0 320 80" style={{ width: "100%", maxWidth: "320px", height: "auto", border: "1px solid #ccc", backgroundColor: "#fff", borderRadius: "4px" }}>
-              {/* Left Side */}
-              <text x="35" y="32" fill="#333" fontSize="10" textAnchor="middle">{"1"}</text>
-              <line x1="20" y1="40" x2="50" y2="40" stroke="#333" strokeWidth="1.5" />
-              <text x="35" y="55" fill="#E65100" fontSize="10" textAnchor="middle">{"√3 - 1"}</text>
-
-              {/* Multiply sign */}
-              <text x="65" y="44" fill="#333" fontSize="10" textAnchor="middle">{"×"}</text>
-
-              {/* Conjugate Fraction */}
-              <text x="100" y="32" fill="#2E7D32" fontSize="10" textAnchor="middle">{"√3 + 1"}</text>
-              <line x1="85" y1="40" x2="115" y2="40" stroke="#333" strokeWidth="1.5" />
-              <text x="100" y="55" fill="#2E7D32" fontSize="10" textAnchor="middle">{"√3 + 1"}</text>
-
-              {/* Equal sign */}
-              <text x="135" y="44" fill="#333" fontSize="10" textAnchor="middle">{"="}</text>
-
-              {/* Right Side */}
-              <text x="210" y="32" fill="#2E7D32" fontSize="10" textAnchor="middle">{"√3 + 1"}</text>
-              <line x1="150" y1="40" x2="270" y2="40" stroke="#333" strokeWidth="1.5" />
-              <text x="210" y="55" fill="#D84315" fontSize="10" textAnchor="middle">{"3 - 1 = 2"}</text>
-            </svg>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ສຳນວນຮ່ວມຂອງ (√3 - 1) ແມ່ນ (√3 + 1) ເດີ້! ໃຫ້ປ່ຽນເຄື່ອງໝາຍກົງກັນຂ້າມສະເໝີເພື່ອໃຊ້ສູດ A² - B²!",
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງຄູ່ຮ່ວມຂອງຮາກຂັ້ນສາມ: ຈຳນວນຄູ່ຮ່ວມຂອງ (³√a - ³√b) ແມ່ນ (³√a² + ³√ab + ³√b²). ເມື່ອຄູນກັນຈະໄດ້: a - b!",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງກຳຈັດຮາກຢູ່ພູດຂອງເລກສ່ວນຕໍ່ໄປນີ້: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ກຳຈັດຮາກ: "} <Fraction num="6" den="√3" /> {" = (ຕອບໃນຮູບແບບ a√b, ຕົວຢ່າງ: 2√3):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄັດຮາກອອກຈາກພູດຂອງສຳນວນລຸ່ມນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) 1 / (√3 - √2) = √3 +"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) 6 / √3 = 2 ×"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ກຳຈັດຮາກ: "} <Fraction num="1" den="√2 - 1" /> {" = (ຕອບໃນຮູບແບບການບວກລົບ, ຕົວຢ່າງ: √2 + 1):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຄິດໄລ່ຜົນຄູນຈຳນວນຄູ່ຮ່ວມຕໍ່ໄປນີ້: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ຄິດໄລ່: (3√2 - 2√5)(3√2 + 2√5)"}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ຕອບ: (3√2)² - (2√5)² = 18 -"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span>{"= "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໃຫ້ຄູນແຈກຢາຍຕາມສູດ (√a + √b)(√a - √b) = a - b. ບົດທ້າທາຍ 2: ໃຫ້ເຮັດໃຫ້ພູດເປັນຈຳນວນຈິງກ່ອນແລ້ວຈຶ່ງບວກລົບກັນ ເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງແກ້ການຄູນສຳນວນຮາກທີ່ມີຄວາມຊັບຊ້ອນ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການຫານສຳນວນທີ່ມີເລກຮາກ (Division of Radicals): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ຄິດໄລ່ຜົນຄູນ: (√5 + √3)(√5 - √3) = (ຕອບເປັນຕົວເລກຖ້ວນ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຄິດໄລ່ຜົນຄູນ: (√2 + 1)² = (ຕອບໃນຮູບແບບ a + b√2, ຕົວຢ່າງ: 3 + 2√2):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຈົ່ງແກ້ ແລະ ຄັດຈ້ອນ: [ (√5 + 2) / (√3 - 2) ] ÷ [ (√3 + 2) / (√5 - 2) ]. (ແນະນຳ: ປ່ຽນຫານເປັນຄູນ ປີ້ນເສດສ່ວນ)"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <span>{"ຕອບ: ເທົ່າກັບ (5 - 4) / (3 - 4) = 1 /"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              <span>{"= "}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງແກ້ການບວກລົບເລກສ່ວນທີ່ມີເຄື່ອງໝາຍຮາກຢູ່ພູດ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການຄັດຮາກຂັ້ນສາມອອກຈາກພູດ (Rationalizing Cubic Root): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ຄິດໄລ່: "} <Fraction num="1" den="√3 - √2" /> {" - "} <Fraction num="1" den="√3 + √2" /> {" = (ຕອບໃນຮູບແບບງ່າຍດາຍ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຄິດໄລ່: "} <Fraction num="2" den="√5 + √3" /> {" + "} <Fraction num="2" den="√5 - √3" /> {" ="}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຈົ່ງຄັດຮາກອອກຈາກພູດຂອງສຳນວນ: 1 / (³√3 - ³√2). (ຊອກຫາຕົວພູດຫຼັງຈາກຄັດຮາກແລ້ວ)"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຕົວພູດໃໝ່ແມ່ນ = 3 - 2 ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             </div>
           </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ໂຈດຫານເລກຮາກ: [ (√5+2)(√5-2) ] / [ (√3-2)(√3+2) ] = (5-4) / (3-4) = 1 / -1 = -1! ສ່ວນຮາກຂັ້ນສາມ: ຕົວພູດຫຼັງຄູນຄູ່ຮ່ວມຈະກາຍເປັນ (³√3)³ - (³√2)³ = 3 - 2 = 1!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ບົດສັງລວມການຄິດໄລ່ສຳນວນຮາກ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ການຄັດຈ້ອນຂັ້ນພື້ນຖານ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຄິດໄລ່: ຮາກຂັ້ນ 2 ຂອງ 50 - 2 × ຮາກຂັ້ນ 2 ຂອງ 18 + ຮາກຂັ້ນ 2 ຂອງ 2 = (ຕອບເປັນຕົວເລກຖ້ວນ ຫຼື ຮູບຮ່າງງ່າຍດາຍ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຄິດໄລ່: "} <Fraction num="√12 + √27" den="√3" /> {" = (ຄຳແນະນຳ: ແຍກ √3 ອອກເປັນຕົວຮ່ວມຢູ່ຈຳນວນພູດກ່ອນ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ຈົ່ງຄັດຈ້ອນສຳນວນ: (√3 + √5)²"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: 8 + 2 × √"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາຕົວຈິງກ່ຽວກັບທິດສະດີສະເໝີພາບສາມແຈສາກ (Pythagoras & Radicals): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ການບວກລົບຮາກຂັ້ນສາມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຮູບສາມແຈສາກໜຶ່ງມີຂ້າງຕິດມຸມສາກຍາວ a = √8 cm ແລະ b = √18 cm. ຈົ່ງຊອກຫາຂ້າງກົງມຸມສາກ c = ຮາກຂັ້ນ 2 ຂອງ (a² + b²) (cm):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: c ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"cm"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ເນື້ອທີ່ S ຂອງຮູບສາມແຈສາກນີ້ແມ່ນຈັກຊັງຕີແມັດມົນທົນ (cm²)? (S = (a × b) / 2):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: S ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"cm²"}</span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ຈົ່ງຄັດຈ້ອນສຳນວນ: ³√81 - ³√9"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: (³√"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+            <span>{"- 1) × ³√9"}</span>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u10-ans-1-1">{"(1) 5√2 (ເພາະວ່າ 2√2 + 3√2 = 5√2)"}</span>,
-          <span key="u10-ans-1-2">{"(2) 2√3 (ເພາະວ່າ 5√3 - 3√3 = 2√3)"}</span>,
-        ],
+          <span key="1-1">{"(1) 4 (ຄິດໄລ່: √18 - 2√8 + √2 = 3√2 - 4√2 + √2 = 0)"}</span>,
+          <span key="1-2">{"(2) 5 (ຄິດໄລ່: √45 - √125 + √20 = 3√5 - 5√5 + 2√5 = 0)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u10-ans-2-1">{"(1) 2√3 (ເພາະວ່າ 6√3 / 3 = 2√3)"}</span>,
-          <span key="u10-ans-2-2">{"(2) √2 + 1 (ເພາະວ່າ 1 × (√2 + 1) / (2 - 1) = √2 + 1)"}</span>,
-        ],
+          <span key="2">{"3 (ຄິດໄລ່: 3x√(3xy) - 2x√(3xy) = x√(3xy))"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"(1) √2 (ຄິດໄລ່: 1(√3+√2) / (3-2) = √3+√2)"}</span>,
+          <span key="3-2">{"(2) √3 (ຄິດໄລ່: 6√3 / 3 = 2√3)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4-1">{"20"}</span>,
+          <span key="4-2">{"-2 (ຄິດໄລ່: 18 - 20 = -2)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u10-ans-t1-1">{"(1) 2 (ເພາະວ່າ (√5)² - (√3)² = 5 - 3 = 2)"}</span>,
-          <span key="u10-ans-t1-2">{"(2) 3 + 2√2 (ເພາະວ່າ (√2)² + 2√2 + 1² = 2 + 2√2 + 1 = 3 + 2√2)"}</span>,
-        ],
+          <span key="c1-1">{"-1"}</span>,
+          <span key="c1-2">{"-1 (ຄິດໄລ່: [ (√5+2)(√5-2) ] / [ (√3-2)(√3+2) ] = 1 / -1 = -1)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u10-ans-t2-1">{"(1) 2√2 (ເພາະວ່າ (√3 + √2) - (√3 - √2) = 2√2)"}</span>,
-          <span key="u10-ans-t2-2">{"(2) 2√5 (ເພາະວ່າ ພູດຮ່ວມແມ່ນ 5 - 3 = 2. ຈະໄດ້ [2(√5 - √3) + 2(√5 + √3)] / 2 = 4√5 / 2 = 2√5)"}</span>,
-        ],
+          <span key="c2">{"1 (ຄິດໄລ່: (³√3)³ - (³√2)³ = 3 - 2 = 1)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u10-ans-s1-1">{"(1) 0 (ເພາະວ່າ 5√2 - 2(3√2) + √2 = 5√2 - 6√2 + √2 = 0)"}</span>,
-          <span key="u10-ans-s1-2">{"(2) 5 (ເພາະວ່າ (2√3 + 3√3) / √3 = 5√3 / √3 = 5)"}</span>,
-        ],
+          <span key="s1">{"15 (ຄິດໄລ່: (√3+√5)² = 3 + 2√15 + 5 = 8 + 2√15)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u10-ans-s2-1">{"(1) √26 (ຫຼື √26. ເພາະວ່າ c = √((√8)² + (√18)²) = √(8 + 18) = √26)"}</span>,
-          <span key="u10-ans-s2-2">{"(2) 6 (ເພາະວ່າ S = (2√2 × 3√2) / 2 = 12 / 2 = 6)"}</span>,
-        ],
-      },
+          <span key="s2">{"3 (ຄິດໄລ່: ³√81 = ³√(27 × 3) = 3 × ³√3. ດັ່ງນັ້ນ ³√81 - ³√9 = 3 × ³√3 - ³√9? ຂໍໂທດ, ³√81 - ³√9 = ³√(9 × 9) - ³√9? ³√81 = ³√(27 × 3) = 3 × ³√3, ³√81 - ³√9 = (³√9)² - ³√9 = (³√9 - 1) × ³√9? ຂໍໂທດ, ³√81 = ³√(9 × 9) = ³√9² = (³√9)². ດັ່ງນັ້ນ ³√81 - ³√9 = (³√9 - 1) × ³√9. ຕົວເລກໃນວ່າງແມ່ນ 9)"}</span>
+        ]
+      }
     ],
-    advice: "ການຄິດໄລ່ເລກຮາກຈະງ່າຍຂຶ້ນຫຼາຍ ຖ້າເຮົາຜັນປ່ຽນໃຫ້ກ້ອງຮາກເປັນຕົວເລກດຽວກັນ! ແລະ ການກຳຈັດຮາກຢູ່ພູດໂດຍໃຊ້ສຳນວນຮ່ວມເອກະລັກແມ່ນເຄື່ອງມືທີ່ສຳຄັນທີ່ສຸດເດີ້!",
-  },
+    advice: "ຍອດຢ້ຽມຫຼາຍ! ເຈົ້າໄດ້ຮຽນຮູ້ກ່ຽວກັບການບວກ, ລົບ, ຄູນ, ຫານເລກຮາກ ແລະ ວິທີຄັດຮາກອອກຈາກພູດຢ່າງລະອຽດແລ້ວ. ພະຍາຍາມຕໍ່ໄປເດີ້!"
+  }
 };

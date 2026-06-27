@@ -1,290 +1,276 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", verticalAlign: "middle", alignItems: "center", padding: "0 4px", fontSize: "0.95em", transform: "translateY(-0.05em)" }}>
-    <span style={{ borderBottom: "1.5px solid currentColor", paddingBottom: "1px", lineHeight: 1, fontWeight: "bold" }}>{num}</span>
-    <span style={{ paddingTop: "1.5px", lineHeight: 1, fontWeight: "bold" }}>{den}</span>
-  </span>
-);
-
 export const unit31Data: UnitData = {
   unitNumber: 31,
-  unitTitle: "ພາກທີ I - ບົດທີ 31: ອັດຕາສ່ວນພົວພັນປີ້ນ",
-  unitGoal:
-    "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈກ່ຽວກັບອັດຕາສ່ວນພົວພັນປີ້ນ (Inverse Proportion), ຄວາມແຕກຕ່າງຈາກອັດຕາສ່ວນພົວພັນກົງ ແລະ ການແກ້ໂຈດບັນຫາຕົວຈິງ",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ບົດທີ 31 ໜ້າ 195-200",
+  unitTitle: "ພາກທີ V - ບົດທີ 31: ອັດຕາສ່ວນພົວພັນປີ້ນ (Inverse Proportion)",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍຂອງອັດຕາສ່ວນພົວພັນປີ້ນ (Inverse Proportion), ຄວາມແຕກຕ່າງລະຫວ່າງພົວພັນກົງ ແລະ ພົວພັນປີ້ນ, ຫຼັກການຄົງທີ່ຂອງຜົນຄູນ x × y = C, ແລະ ການແກ້ໂຈດບັນຫາຕົວຈິງ",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 243-248",
   subSections: [
     {
-      title: "1. ຄວາມໝາຍຂອງອັດຕາສ່ວນພົວພັນປີ້ນ (Definition of Inverse Proportion)",
+      title: "1. ຄວາມໝາຍຂອງອັດຕາສ່ວນພົວພັນປີ້ນ (Concept of Inverse Proportion)",
       keyPoint: {
-      title: "1. ຄວາມໝາຍຂອງອັດຕາສ່ວນພົວພັນປີ້ນ (Definition of Inverse Proportion)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ສອງປະລິມານ x ແລະ y ມີອັດຕາສ່ວນພົວພັນປີ້ນນຳກັນ ຖ້າປະລິມານໜຶ່ງເພີ່ມຂຶ້ນ k ເທື່ອ ແລ້ວອີກປະລິມານໜຶ່ງຫຼຸດລົງ k ເທື່ອ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E3F2FD",
-              border: "2px solid #2196F3",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div style={{ fontWeight: "bold", color: "#0D47A1", textAlign: "center" }}>
-              {"x × y = C  (ຄ່າຄົງທີ່)  ຫຼື  y = "}
-              <Fraction num="C" den="x" />
-            </div>
-            <div>{"• ຕົວຢ່າງ: ໂຈດກ່ຽວກັບ ຈຳນວນກຳມະກອນ ແລະ ເວລາເຮັດວຽກ."}</div>
-            <div style={{ color: "#0D47A1", paddingLeft: "16px" }}>
-              {"→ ຖ້າກຳມະກອນເພີ່ມຂຶ້ນ → ເວລາທີ່ໃຊ້ຈະຫຼຸດລົງ (ເຮັດແລ້ວໄວຂຶ້ນ)."}
+        title: "ນິຍາມ ແລະ ຜົນຄູນຄົງທີ່",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"- ສອງປະລິມານ x ແລະ y ເອີ້ນວ່າ "}<strong>{"ອັດຕາສ່ວນພົວພັນປີ້ນ"}</strong>{" ຖ້າວ່າປະລິມານໜຶ່ງເພີ່ມຂຶ້ນ n ເທື່ອ, ອີກປະລິມານໜຶ່ງຈະຫຼຸດລົງ n ເທື່ອຕາມລຳດັບ."}
+              <br />
+              {"- ຜົນຄູນຂອງສອງປະລິມານນີ້ຈະມີຄ່າຄົງທີ່ສະເໝີ:"}
+              <br />
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", paddingLeft: "16px" }}>{"x × y = C   (C ແມ່ນຕົວເລກຄົງທີ່)"}</span>
+            </p>
+            
+            <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }}>{"ຕົວຢ່າງ:"}</span>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"ນັກຮຽນ 3 ຄົນ ຊ່ວຍກັນຂຸດໜານຜັກແລ້ວໃນເວລາ 4 ມື້ (ຜົນຄູນຄົງທີ່ C = 3 × 4 = 12 ມື້-ຄົນ)."}
+                <br />
+                {"- ຖ້າມີ 1 ຄົນ ຕ້ອງໃຊ້ເວລາ: 12 / 1 = 12 ມື້."}
+                <br />
+                {"- ຖ້າມີ 6 ຄົນ ຕ້ອງໃຊ້ເວລາ: 12 / 6 = 2 ມື້."}
+              </p>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ຈື່ໄວ້ວ່າ: ຜົນຄູນລະຫວ່າງສອງປະລິມານທີ່ພົວພັນປີ້ນ ຈະມີຄ່າຄົງທີ່ສະເໝີ (x₁ × y₁ = x₂ × y₂) ເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຈື່ສະເໝີ: ໃນອັດຕາສ່ວນພົວພັນປີ້ນ, ຜົນຄູນຂອງແຕ່ລະຄູ່ປະລິມານ (x × y) ຈະເທົ່າກັນສະເໝີ!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p style={{ fontSize: "1.375rem" }}>
-            {"ຈົ່ງຄິດໄລ່ຄ່າຄົງທີ່ ແລະ ຕົວລັບໃນອັດຕາສ່ວນພົວພັນປີ້ນ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຖ້າ x ແລະ y ພົວພັນປີ້ນນຳກັນ, ໂດຍ x = 3, y = 8. ຖ້າ x = 6, ຖາມວ່າ y ຈະເທົ່າກັບເທົ່າໃດ?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: y ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຕື່ມຕົວເລກໃສ່ບ່ອນວ່າງໃຫ້ຖືກຕ້ອງຕາມຫຼັກອັດຕາສ່ວນພົວພັນປີ້ນ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ຖ້ານັກຮຽນ 3 ຄົນ ຂຸດດິນແລ້ວໃນ 4 ມື້ ⇒ ນັກຮຽນ 6 ຄົນ ຈະຂຸດແລ້ວໃນ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"ມື້"}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ຖ້ານັກຮຽນ 3 ຄົນ ຂຸດດິນແລ້ວໃນ 4 ມື້ ⇒ ນັກຮຽນ 1 ຄົນ ຈະຂຸດແລ້ວໃນ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"ມື້"}</span>
+                </div>
               </div>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຖ້າ x ແລະ y ພົວພັນປີ້ນນຳກັນ, ໂດຍ x = 5, y = 12. ຖ້າ y = 10, ຖາມວ່າ x ຈະເທົ່າກັບເທົ່າໃດ?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: x ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ກຳມະກອນ 15 ຄົນ ປຸກເຮືອນຫຼັງໜຶ່ງແລ້ວໃນ 20 ມື້. ຖ້າຢາກໃຫ້ປຸກແລ້ວພາຍໃນ 10 ມື້ ຈະຕ້ອງໃຊ້ກຳມະກອນຈັກຄົນ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ປະໂຫຍກສັນຍະລັກ: ຄົນ = (15 × 20) /"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span>{"= "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span>{"ຄົນ"}</span>
               </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ວິທີຄິດໄລ່ ແລະ ປຽບທຽບ (Calculation Strategy)",
+      title: "2. ການແກ້ໂຈດບັນຫາພົວພັນປີ້ນໃນຊີວິດປະຈຳວັນ (Solving Inverse Proportion Problems)",
       keyPoint: {
-      title: "2. ວິທີຄິດໄລ່ ແລະ ປຽບທຽບ (Calculation Strategy)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ສົມຜົນພົວພັນປີ້ນລະຫວ່າງສອງສະຖານະການ:"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "8px",
-            }}
-          >
-            <div style={{ fontWeight: "bold", color: "#2E7D32", textAlign: "center" }}>
-              {"x₁ × y₁ = x₂ × y₂"}
-            </div>
-            <div>
-              <strong>{"ຕົວຢ່າງ: "}</strong>{"ກຳມະກອນ 4 ຄົນ ເຮັດວຽກແລ້ວໃນ 6 ວັນ. ຖ້າໃຊ້ກຳມະກອນ 8 ຄົນ ຈະແລ້ວໃນຈັກວັນ?"}
-              <br />
-              <span style={{ color: "#2E7D32", paddingLeft: "16px" }}>
-                {"→ ເຮົາໄດ້: 4 ຄົນ × 6 ວັນ = 8 ຄົນ × d ວັນ"}
-                <br />
-                <span style={{ paddingLeft: "16px" }}>
-                  {"→ d = (4 × 6) ÷ 8 = 24 ÷ 8 = 3 ວັນ."}
-                </span>
-              </span>
-            </div>
+        title: "ການແກ້ໂຈດບັນຫາໂດຍການຄິດໄລ່ຜົນຄູນຄົງທີ່",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ວິທີການແກ້ໂຈດອັດຕາສ່ວນພົວພັນປີ້ນ:"}
+            </p>
+            <ol style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.6" }}>
+              <li><strong>{"ຊອກຫາຄ່າຜົນຄູນຄົງທີ່ (C): "}</strong>{" ຄູນປະລິມານຄູ່ທຳອິດທີ່ຮູ້ຄ່າທັງສອງ."}</li>
+              <li><strong>{"ຫານໃຫ້ປະລິມານທີ່ຮູ້ຄ່າທີສາມ: "}</strong>{" ເອົາ C ຫານໃຫ້ປະລິມານໃໝ່ເພື່ອຊອກຫາຄຳຕອບ."}</li>
+            </ol>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ສັງເກດເບິ່ງດີໆວ່າ ຖ້າກຳມະກອນເພີ່ມຂຶ້ນ 2 ເທົ່າ (ຈາກ 4 ເປັນ 8), ເວລາກໍຈະຫຼຸດລົງ 2 ເທົ່າ (ຈາກ 6 ເປັນ 3) ພໍດີເລີຍ!",
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງ: ຖອກນ້ຳໃສ່ຕຸກຂະໜາດ 75 cL ໄດ້ 79 ຕຸກ. ຖ້າປ່ຽນມາໃສ່ຕຸກຂະໜາດ 25 cL ຈະໄດ້: (75 × 79) / 25 = 3 × 79 = 237 ຕຸກ!",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p style={{ fontSize: "1.375rem" }}>
-            {"ຈົ່ງພິຈາລະນາປະເພດການພົວພັນ (ຕອບ 'ພົວພັນກົງ' ຫຼື 'ພົວພັນປີ້ນ'): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ຄວາມສຳພັນລະຫວ່າງ ຄວາມໄວຂອງລົດ (v) ແລະ ເວລາທີ່ໃຊ້ໃນການເດີນທາງ (t) ຢູ່ເທິງໄລຍະທາງຄົງທີ່ ແມ່ນແນວໃດ?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "40px" }}></span>
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຄົນງານ 10 ຄົນ ໃຊ້ເວລາ 6 ມື້ ເພື່ອສ້າງຫົນທາງໄດ້ 125 m. ຖ້າໃຊ້ຄົນງານ 12 ຄົນ ເພື່ອສ້າງຫົນທາງ 125 m ຄືເກົ່າ ຈະຕ້ອງໃຊ້ເວລາຈັກມື້? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ປະໂຫຍກສັນຍະລັກ: ເວລາ = (10 × 6) / 12 ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span>{"ມື້"}</span>
               </div>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຄວາມສຳພັນລະຫວ່າງ ນ້ຳໜັກຂອງໝາກກ້ຽງ (kg) ແລະ ລາຄາທີ່ຕ້ອງຈ່າຍ (ກີບ) ແມ່ນແນວໃດ?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "140px", height: "40px" }}></span>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຖອກນ້ຳມັນໃສ່ຖັງຂະໜາດ 60 ລິດ ໄດ້ 40 ຖັງ. ຖ້າຢາກຖອກໃສ່ຖັງຂະໜາດ 80 ລິດ ຈະໄດ້ຈັກຖັງ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                <span>{"ປະໂຫຍກສັນຍະລັກ: ຈຳນວນຖັງ = ("}</span>
+                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
+                <span>{") / 80 ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span>{"ຖັງ"}</span>
               </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ຕັ້ງສົມຜົນ ຄວາມໄວ × ເວລາ = ຄວາມໄວໃໝ່ × ເວລາໃໝ່. ບົດທ້າທາຍ 2: ຕັ້ງສົມຜົນ ກຳມະກອນ × ເວລາ = ກຳມະກອນໃໝ່ × ເວລາໃໝ່.",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p style={{ fontSize: "1.375rem" }}>
-              {"ຈົ່ງແກ້ໂຈດບັນຫາພົວພັນປີ້ນໃນຊີວິດປະຈຳວັນ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດຄວາມໄວ ແລະ ໄລຍະເວລາ (Speed vs Time): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ລົດຄັນໜຶ່ງແລ່ນດ້ວຍຄວາມໄວ 60 km/h ຈະຮອດຈຸດໝາຍປາຍທາງໃນ 4 ຊົ່ວໂມງ. ຖ້າຕ້ອງການໃຫ້ຮອດໃນ 3 ຊົ່ວໂມງ ຈະຕ້ອງແລ່ນດ້ວຍຄວາມໄວຈັກ km/h?:"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"km/h"}</span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ມີກຳມະກອນ 6 ຄົນ ແຕ້ມຮູບຝາຫ້ອງແລ້ວໃນ 10 ວັນ. ຖ້າຕ້ອງການໃຫ້ແຕ້ມແລ້ວພາຍໃນ 5 ວັນ ຈະຕ້ອງໃຊ້ກຳມະກອນທັງໝົດຈັກຄົນ?:"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ:"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                  <span>{"ຄົນ"}</span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ລົດຍົນຄັນໜຶ່ງແລ່ນດ້ວຍຄວາມໄວ 30 km/h ໃຊ້ເວລາເດີນທາງ 72 ນາທີ. ຖ້າຫາກລົດຍົນຄັນນີ້ແລ່ນດ້ວຍຄວາມໄວ 48 km/h ຈະຕ້ອງໃຊ້ເວລາເດີນທາງຈັກນາທີ?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ເວລາເດີນທາງ ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span>{"ນາທີ"}</span>
             </div>
           </div>
-        ),
+        )
       },
+      {
+        number: 2,
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດງົວແລະເຟືອງຫຍ້າ (Cows vs Food Days): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            </p>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ງົວ 12 ຕົວ ກິນຫຍ້າ 3 ມັດ ໝົດພາຍໃນ 15 ມື້. ຖ້າຫາກມີງົວ 18 ຕົວ ຈະກິນຫຍ້າ 3 ມັດ ໝົດພາຍໃນຈັກມື້? (ສົມມຸດວ່າງົວທຸກຕົວມີອັດຕາການກິນເທົ່າກັນ)"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຈຳນວນມື້ ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span>{"ມື້"}</span>
+            </div>
+          </div>
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ໄລຍະທາງຄົງທີ່: 30 km/h × 72 ນາທີ = 2,160. ດັ່ງນັ້ນ ຄວາມໄວ 48 km/h ຈະໃຊ້ເວລາ 2,160 / 48 = 45 ນາທີ. ສ່ວນໂຈດງົວ: ຜົນຄູນຄົງທີ່ແມ່ນ 12 ຕົວ × 15 ມື້ = 180 ມື້-ຕົວ. ງົວ 18 ຕົວ ຈະໃຊ້ເວລາ 180 / 18 = 10 ມື້!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p style={{ fontSize: "1.375rem" }}>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາພົວພັນປີ້ນປະສົມ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດການສ້າງເຮືອນ (Building Workers): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ມີອາຫານກຽມໄວ້ໃຫ້ໄກ່ 20 ໂຕ ກິນໄດ້ 15 ວັນ. ຖ້າຊື້ໄກ່ມາເພີ່ມອີກ 10 ໂຕ (ລວມເປັນ 30 ໂຕ), ອາຫານນັ້ນຈະກິນໄດ້ຈັກວັນ?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ວັນ"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຂໍ້ (1), ຖ້າໄກ່ຫຼຸດລົງເຫຼືອພຽງແຕ່ 10 ໂຕ, ອາຫານນັ້ນຈະກິນໄດ້ທັງໝົດຈັກວັນ?:"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ວັນ"}</span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ກຳມະກອນ 6 ຄົນ ໃຊ້ເວລາ 8 ມື້ ເພື່ອເຮັດວຽກໜຶ່ງໃຫ້ສຳເລັດ. ຖ້າຢາກໃຫ້ວຽກນັ້ນສຳເລັດພາຍໃນ 4 ມື້ ຈະຕ້ອງໃຊ້ກຳມະກອນທັງໝົດຈັກຄົນ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ຕ້ອງໃຊ້"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span>{"ຄົນ."}</span>
           </div>
         </div>
-      ),
+      )
     },
+    {
+      number: 2,
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດການຖອກນ້ຳ (Water Filling Bottles): "}<span className="point-label">{"(5 ຄะແນນ)"}</span>
+          </p>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ຖອກນ້ຳໃສ່ຕຸກຂະໜາດ 75 cL ໄດ້ 79 ຕຸກ. ຖ້າປ່ຽນມາໃສ່ຕຸກຂະໜາດ 25 cL ຈະໄດ້ທັງໝົດຈັກຕຸກ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ໄດ້ທັງໝົດ"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span>{"ຕຸກ."}</span>
+          </div>
+        </div>
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u31-ans-1-1">{"(1) 4 (ເພາະຜົນຄູນຄົງທີ່ x × y = 3 × 8 = 24. ດັ່ງນັ້ນຖ້າ x = 6 → y = 24 ÷ 6 = 4)"}</span>,
-          <span key="u31-ans-1-2">{"(2) 6 (ເພາະຜົນຄູນຄົງທີ່ x × y = 5 × 12 = 60. ດັ່ງນັ້ນຖ້າ y = 10 → x = 60 ÷ 10 = 6)"}</span>,
-        ],
+          <span key="1-1">{"(1) 2 (ຄິດໄລ່: 3 × 4 / 6)"}</span>,
+          <span key="1-2">{"(2) 12 (ຄິດໄລ່: 3 × 4 / 1)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u31-ans-2-1">{"(1) ພົວພັນປີ້ນ (ເພາະຄວາມໄວເພີ່ມຂຶ້ນ ເວລາທີ່ໃຊ້ໃນການເດີນທາງຈະຫຼຸດລົງ)"}</span>,
-          <span key="u31-ans-2-2">{"(2) ພົວພັນກົງ (ເພາະນ້ຳໜັກເພີ່ມຂຶ້ນ ລາຄາທີ່ຕ້ອງຈ່າຍກໍເພີ່ມຂຶ້ນຕາມອັດຕາສ່ວນ)"}</span>,
-        ],
+          <span key="2-1">{"10"}</span>,
+          <span key="2-2">{"30 (ຄິດໄລ່: 15 × 20 / 10)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"5 (ຄິດໄລ່: 10 × 6 / 12)"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4-1">{"60 × 40"}</span>,
+          <span key="4-2">{"30 (ຄິດໄລ່: 60 × 40 / 80)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u31-ans-t1-1">{"(1) 80 (ເພາະ 60 km/h × 4 h = v₂ × 3 h → v₂ = 240 ÷ 3 = 80 km/h)"}</span>,
-          <span key="u31-ans-t1-2">{"(2) 12 (ເພາະ 6 ຄົນ × 10 ວັນ = n₂ × 5 ວັນ → n₂ = 60 ÷ 5 = 12 ຄົນ)"}</span>,
-        ],
+          <span key="c1-1">{"45 (ຄິດໄລ່: 30 × 72 / 48)"}</span>
+        ]
+      },
+      {
+        questionNumber: "ທ້າທາຍ 2",
+        answers: [
+          <span key="c2-1">{"10 (ຄິດໄລ່: 12 × 15 / 18)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u31-ans-s1-1">{"(1) 10 (ເພາະ 20 ໂຕ × 15 ວັນ = 30 ໂຕ × d ວັນ → d = 300 ÷ 30 = 10 ວັນ)"}</span>,
-          <span key="u31-ans-s1-2">{"(2) 30 (ເພາະ 20 ໂຕ × 15 ວັນ = 10 ໂຕ × d ວັນ → d = 300 ÷ 10 = 30 ວັນ)"}</span>,
-        ],
+          <span key="s1">{"12 (ຄິດໄລ່: 6 × 8 / 4)"}</span>
+        ]
       },
+      {
+        questionNumber: "ທົດສອບປະຈຳບົດ 2",
+        answers: [
+          <span key="s2">{"237 (ຄິດໄລ່: 75 × 79 / 25)"}</span>
+        ]
+      }
     ],
-    advice: "ຈົ່ງສັງເກດຄວາມແຕກຕ່າງ: ອັດຕາສ່ວນພົວພັນກົງແມ່ນ ຫານກັນຄົງທີ່ (y/x = k), ສ່ວນອັດຕາສ່ວນພົວພັນປີ້ນແມ່ນ ຄູນກັນຄົງທີ່ (x × y = C). ຄວາມເຂົ້າໃຈນີ້ຈະຊ່ວຍໃຫ້ເຮົາເລືອກວິທີແກ້ໂຈດໄດ້ຖືກຕ້ອງ ແລະ ວ່ອງໄວສະເໝີເດີ້!",
-  },
+    advice: "ເກັ່ງຫຼາຍ! ການພົວພັນປີ້ນເປັນທັກສະທີ່ສຳຄັນຫຼາຍໃນການວາງແຜນການເຮັດວຽກ, ຄຳນວນເວລາເດີນທາງ ແລະ ການຄຸ້ມຄອງຊັບພະຍາກອນ. ເຈົ້າຮຽນຈົບພາກອັດຕາສ່ວນແລ້ວ!"
+  }
 };

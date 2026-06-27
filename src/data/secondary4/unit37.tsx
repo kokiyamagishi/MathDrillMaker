@@ -1,337 +1,186 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1" }}>{den}</span>
-  </span>
-);
-
 export const unit37Data: UnitData = {
   unitNumber: 37,
-  unitTitle: "ພາກທີ V - ບົດທີ 37: ການໝູນປິ່ນຮູບເລຂາຄະນິດເທິງໜ້າພຽງ",
-  unitGoal:
-    "ຮຽນຮູ້ ແລະ ນຳໃຊ້ຫຼັກການໝູນປິ່ນ (Rotation) ຂອງຮູບເລຂາຄະນິດ ໂດຍເນັ້ນໃສ່ການໝູນປິ່ນອ້ອມເມັດເຄິ່ງກາງ O(0, 0) ດ້ວຍມຸມ 90°, 180° ແລະ 270°",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ບົດທີ 37 ໜ້າ 217-222",
+  unitTitle: "ພាកທີ IV - ບົດທີ 37: ວົງມົນ (Circles)",
+  unitGoal: "ຮຽນຮູ້ສົມຜົນມາດຕະຖານຂອງວົງມົນ (x - a)² + (y - b)² = R² ທີ່ມີຈຸດໃຈກາງ I(a, b) ແລະ ລັດສະໝີ R, ພ້ອມທັງສົມຜົນທົ່ວໄປ x² + y² - 2ax - 2by + c = 0",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.4 ໜ້າ 184-188",
   subSections: [
     {
-      title: "1. ສູດພິກັດຂອງການໝູນປິ່ນອ້ອມເມັດ O(0, 0) (Rotation Coordinate Rules)",
+      title: "1. ສົມຜົນມາດຕະຖານ ແລະ ສົມຜົນທົ່ວໄປ (Standard & General Equations of a Circle)",
       keyPoint: {
-      title: "1. ສູດພິກັດຂອງການໝູນປິ່ນອ້ອມເມັດ O(0, 0) (Rotation Coordinate Rules)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ເມື່ອໝູນປິ່ນເມັດ P(x, y) ອ້ອມເມັດ O(0, 0) ໃນທິດທາງກົງກັນຂ້າມກັບເຂັມໂມງ (Positive direction):"}
-          </p>
-          <div
-            style={{
-              padding: "16px",
-              backgroundColor: "#FFF8E1",
-              border: "2px solid #FFB300",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "12px",
-            }}
-          >
-            <div>
-              <strong style={{ color: "#E65100" }}>{"• ການໝູນປິ່ນ ມຸມ 90° (Counter-clockwise):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#D84315" }}>
-                {"P'(-y,  x)  (ປ່ຽນບ່ອນກັນ ແລະ ປ່ຽນເຄື່ອງໝາຍ y ໃໝ່)"}
-              </span>
+        title: "ຮູບຮ່າງສົມຜົນວົງມົນ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃນລະບົບເສັ້ນເຄົ້າ Oxy, ວົງມົນ C ທີ່ມີຈຸດໃຈກາງ I(a, b) ແລະ ລັດສະໝີ R ມີສອງຮູບຮ່າງສົມຜົນ:"}
+            </p>
+            <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }}>{"1. ສົມຜົນມາດຕະຖານ (Standard Form):"}</span>
+              <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6", marginTop: "8px", fontWeight: "bold", color: "#0D47A1" }}>
+                {"(x - a)² + (y - b)² = R²"}
+              </p>
             </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• ການໝູນປິ່ນ ມຸມ 180°:"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#D84315" }}>
-                {"P'(-x,  -y)  (ຄືກັນກັບການເຄິ່ງຄືທຽບເມັດ O)"}
-              </span>
-            </div>
-            <div style={{ borderTop: "1px solid #FFE082", paddingTop: "8px" }}>
-              <strong style={{ color: "#E65100" }}>{"• ການໝູນປິ່ນ ມຸມ 270° (ຫຼື 90° ຕາມເຂັມໂມງ):"}</strong>
-              <br />
-              <span style={{ paddingLeft: "20px", fontWeight: "bold", color: "#2E7D32" }}>
-                {"P'(y,  -x)  (ປ່ຽນບ່ອນກັນ ແລະ ປ່ຽນເຄື່ອງໝາຍ x ໃໝ່)"}
-              </span>
+            <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"2. ສົມຜົນທົ່ວໄປ (General Form):"}</span>
+              <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6", marginTop: "8px", fontWeight: "bold", color: "#2E7D32" }}>
+                {"x² + y² - 2ax - 2by + c = 0"}
+              </p>
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
+                {"ເຊິ່ງ c = a² + b² - R² ພາຍໃຕ້ເງື່ອນໄຂ a² + b² - c > 0."}
+              </p>
             </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "💡 ຈື່ໄວ້ວ່າ ຖ້າໝູນປິ່ນ 90° ຕາມເຂັມໂມງ ມັນຈະເທົ່າກັບການໝູນປິ່ນ 270° ກົງກັນຂ້າມເຂັມໂມງ ເຊິ່ງຈະໄດ້ພິກັດ (y, -x) ເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຕົວຢ່າງ: ວົງມົນ (x - 3)² + (y + 2)² = 16 ມີຈຸດໃຈກາງ I(3, -2) ແລະ ລັດສະໝີ R = √16 = 4!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາພິກັດໃໝ່ P' ຫຼັງຈາກການໝູນປິ່ນ ມຸມ 90°: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໝູນປິ່ນເມັດ P(3, 4) ມຸມ 90° ກົງກັນຂ້າມເຂັມໂມງ. ພິກັດໃໝ່ P'(x', y') ແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ, ຕົວຢ່າງ: (-4, 3)):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຊອກຫາຈຸດໃຈກາງ ແລະ ລັດສະໝີຂອງວົງມົນ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(1) ວົງມົນ C: (x - 5)² + (y - 1)² = 9 ⇒ ຈຸດໃຈກາງ I("}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{", "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{") ແລະ ລັດສະໝີ R ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"(2) ວົງມົນ C: (x + 2)² + (y - 3)² = 25 ⇒ ຈຸດໃຈກາງ I("}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{", "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{") ແລະ ລັດສະໝີ R ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ໝູນປິ່ນເມັດ P(-2, 5) ມຸມ 90° ກົງກັນຂ້າມເຂັມໂມງ. ພິກັດໃໝ່ P'(x', y') ແມ່ນເທົ່າໃດ? (⚠️ ລະວັງເຄື່ອງໝາຍລົບ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    }
-      ]
-    },
-    {
-      title: "2. ບົດຮຽນພື້ນຖານ",
-      keyPoint: { content: <span /> },
-      problems: [
+          )
+        },
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຊອກຫາພິກັດໃໝ່ P' ຫຼັງຈາກການໝູນປິ່ນ ມຸມ 180° ແລະ 270°: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ໝູນປິ່ນເມັດ P(2, -5) ມຸມ 180° ອ້ອມ O(0, 0). ພິກັດໃໝ່ P'(x', y') ແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງແປງສົມຜົນທົ່ວໄປໃຫ້ເປັນສົມຜົນມາດຕະຖານ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              <p style={{ fontSize: "1.375rem", margin: 0 }}>
+                {"ໃຫ້ວົງມົນ C: x² + y² - 4x + 6y - 3 = 0. ຈົ່ງຊອກຫາຮູບຮ່າງມາດຕະຖານ (x - a)² + (y - b)² = R²:"}
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span>{"ສົມຜົນມາດຕະຖານແມ່ນ (x -"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{")² + (y +"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span>{")² ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ໝູນປິ່ນເມັດ P(1, 3) ມຸມ 270° ກົງກັນຂ້າມເຂັມໂມງ. ພິກັດໃໝ່ P'(x', y') ແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ໃຫ້ໝູນປິ່ນແຕ່ລະເມັດຈອມແຍກກັນ ແລ້ວຊອກຫາພິກັດໃໝ່! ບົດທ້າທາຍ 2: ຍ້າຍປາຣາໂບນຫຼັງການໝູນປິ່ນເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາພິກັດຂອງຮູບສາມແຈໃໝ່ ຫຼັງຈາກການໝູນປິ່ນ 90°: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດຊອກຫາສົມຜົນເສັ້ນສໍາຜັດວົງມົນ (Tangent to a Circle): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ຮູບສາມແຈ ABC ມີຈອມ A(0, 0), B(3, 1), C(4, 3) ໝູນປິ່ນ 90° ກົງກັນຂ້າມເຂັມໂມງ. ພິກັດຈອມໃໝ່ B' ຈະແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: B' ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຈາກຂໍ້ (1), ພິກັດຈອມໃໝ່ C' ຈະແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: C' ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ຊອກຫາສົມຜົນເສັ້ນສໍາຜັດ Δ ຂອງວົງມົນ x² + y² = 25 ຢູ່ເມັດ M(3, 4) ພາຍໃຕ້ຮູບຮ່າງ 3x + 4y = C?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: C ="}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
-        ),
-      },
-      {
-        number: 2,
-        content: (
-          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງຊອກຫາສົມຜົນຂອງເສັ້ນຊື່ໃໝ່ ຫຼັງຈາກການໝູນປິ່ນ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-            </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-                lineHeight: "1.6",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(1) ເສັ້ນຊື່ y = 2x ຜ່ານເມັດ A(1, 2) ຫຼັງຈາກໝູນປິ່ນ 90° ກົງກັນຂ້າມເຂັມໂມງ ຈະໄດ້ເສັ້ນຊື່ໃໝ່ຜ່ານເມັດ A' ທີ່ມີພິກັດແມ່ນເທົ່າໃດ? (ຕອບແບບພິກັດ):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: A' ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <span>{"(2) ຈາກຂໍ້ (1), ຄວາມຊັນ (Slope) ຂອງເສັ້ນຊື່ໃໝ່ ທີ່ຕັ້ງສາກກັບເສັ້ນຊື່ເກົ່າ ຈະມີຄ່າແມ່ນເທົ່າໃດ? (ຕອບເປັນເລກສ່ວນຕິດລົບ, ຕົວຢ່າງ: -1/2):"}</span>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                  <span>{"ຕອບ: m' ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ເສັ້ນສໍາຜັດວົງມົນ x² + y² = R² ຢູ່ເມັດ M(x₀, y₀) ມີສົມຜົນແມ່ນ x₀·x + y₀·y = R². ດັ່ງນັ້ນ ສົມຜົນແມ່ນ 3x + 4y = 25 ⇒ C = 25!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຄົ້ນຫາຄວາມສຳພັນລະຫວ່າງມຸມໝູນປິ່ນ ແລະ ພິກັດ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ຊອກຫາຈຸດໃຈກາງວົງມົນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ໃຫ້ເມັດ P(5, 2) ຖືກໝູນປິ່ນໄປຫາ P'(-2, 5). ມຸມໝູນປິ່ນກົງກັນຂ້າມເຂັມໂມງນີ້ແມ່ນຈັກອົງສາ? (ຕອບເປັນຕົວເລກຖ້ວນ, ຕົວຢ່າງ: 90):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ:"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ອົງສາ (°)"}</span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ໃຫ້ເມັດ P(3, 4) ຖືກໝູນປິ່ນ 90° ຕາມເຂັມໂມງ (Clockwise). ພິກັດເມັດໃໝ່ P' ຈະແມ່ນເທົ່າໃດ? (ຄຳແນະນຳ: ມັນຄືການໝູນ 270° ກົງກັນຂ້າມເຂັມໂມງ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: P' ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ວົງມົນ C: x² + y² + 8x - 10y = 0 ມີຈຸດໃຈກາງ I(a, b) ແມ່ນເທົ່າໃດ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: I("}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+            <span>{", "}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+            <span>{")"}</span>
           </div>
         </div>
-      ),
-    },
-    {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງແກ້ໂຈດບັນຫາຕົວຈິງກ່ຽວກັບການໝູນປິ່ນຂອງຫຸ່ນຍົນອຸດສາຫະກຳ (Robotic Arm Rotation on xy-plane): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-              lineHeight: "1.6",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(1) ແຂນຫຸ່ນຍົນຈັບວັດຖຸຢູ່ຕຳແໜ່ງ A(6, 2). ມັນຖືກໝູນປິ່ນອ້ອມຈຸດໝູນ O(0, 0) ໄປເປັນມຸມ 90° ກົງກັນຂ້າມເຂັມໂມງ. ຕຳແໜ່ງໃໝ່ B ຂອງວັດຖຸແມ່ນພິກັດໃດ? (ຕອບແບບພິກັດ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: B ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span>{"(2) ຈາກຕຳແໜ່ງ B ນັ້ນ, ຖ້າຫຸ່ນຍົນໝູນປິ່ນຕໍ່ໄປອີກ ມຸມ 180°, ຕຳແໜ່ງສຸດທ້າຍ C ຈະແມ່ນພິກັດໃດ? (ຕອບແບບພິກັດ):"}</span>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "16px" }}>
-                <span>{"ຕອບ: C ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u37-ans-1-1">{"(1) (-4, 3) (ເພາະວ່າ x' = -y = -4, y' = x = 3)"}</span>,
-          <span key="u37-ans-1-2">{"(2) (-5, -2) (⚠️ ເພາະວ່າ x' = -y = -5, y' = x = -2)"}</span>,
-        ],
+          <span key="1-1">{"5 (ຄິດໄລ່: x-5 = 0 ⇒ a = 5)"}</span>,
+          <span key="1-2">{"1 (ຄິດໄລ່: y-1 = 0 ⇒ b = 1)"}</span>,
+          <span key="1-3">{"3 (ຄິດໄລ່: R² = 9 ⇒ R = 3)"}</span>,
+          <span key="1-4">{"-2 (ຄິດໄລ່: x+2 = 0 ⇒ a = -2)"}</span>,
+          <span key="1-5">{"3 (ຄິດໄລ່: y-3 = 0 ⇒ b = 3)"}</span>,
+          <span key="1-6">{"5 (ຄິດໄລ່: R² = 25 ⇒ R = 5)"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u37-ans-2-1">{"(1) (-2, 5) (ເພາະວ່າ x' = -x = -2, y' = -y = 5 ຍ້ອນ y=-5)"}</span>,
-          <span key="u37-ans-2-2">{"(2) (3, -1) (ເພາະວ່າ x' = y = 3, y' = -x = -1)"}</span>,
-        ],
+          <span key="2-1">{"2 (ຄິດໄລ່: x² - 4x = (x - 2)² - 4)"}</span>,
+          <span key="2-2">{"3 (ຄິດໄລ່: y² + 6y = (y + 3)² - 9)"}</span>,
+          <span key="2-3">{"16 (ຄິດໄລ່: (x - 2)² - 4 + (y + 3)² - 9 - 3 = 0 ⇒ (x-2)² + (y+3)² = 16)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3">{"25 (ຄິດໄລ່: C = 3(3) + 4(4) = 9 + 16 = 25)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u37-ans-t1-1">{"(1) (-1, 3) (ຍ້ອນວ່າ B' = (-y, x) = (-1, 3))"}</span>,
-          <span key="u37-ans-t1-2">{"(2) (-3, 4) (ຍ້ອນວ່າ C' = (-y, x) = (-3, 4))"}</span>,
-        ],
-      },
-      {
-        questionNumber: "ທ້າທາຍ 2",
-        answers: [
-          <span key="u37-ans-t2-1">{"(1) (-2, 1) (ຍ້ອນວ່າ A' = (-y, x) = (-2, 1))"}</span>,
-          <span key="u37-ans-t2-2">{"(2) -1/2 (ເພາະວ່າຄວາມຊັນຂອງເສັ້ນຊື່ຕັ້ງສາກ m' = -1/m = -1/2)"}</span>,
-        ],
+          <span key="c1">{"25 (ຄິດໄລ່: C = 25)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u37-ans-s1-1">{"(1) 90 (ເພາະວ່າ (5, 2) ໝູນ 90° ຈະໄດ້ (-2, 5))"}</span>,
-          <span key="u37-ans-s1-2">{"(2) (4, -3) (ເພາະວ່າໝູນ 90° ຕາມເຂັມໂມງ ພິກັດຈະແມ່ນ (y, -x) = (4, -3))"}</span>,
-        ],
-      },
-      {
-        questionNumber: "ທົດສອບປະຈຳບົດ 2",
-        answers: [
-          <span key="u37-ans-s2-1">{"(1) (-2, 6) (ເພາະວ່າ B = (-y, x) = (-2, 6))"}</span>,
-          <span key="u37-ans-s2-2">{"(2) (2, -6) (ເພາະວ່າໝູນ 180° ຈາກ B(-2, 6) ຈະໄດ້ C(2, -6))"}</span>,
-        ],
-      },
+          <span key="s1">{"-4 (ຄິດໄລ່: a = -8/2 = -4)"}</span>,
+          <span key="s2">{"5 (ຄິດໄລ່: b = 10/2 = 5)"}</span>
+        ]
+      }
     ],
-    advice: "ການໝູນປິ່ນຮູບເລຂາຄະນິດ ເປັນການຫັນປ່ຽນທາງຄະນິດສາດທີ່ໜ້າສົນໃຈຫຼາຍ! ມັນຖືກນຳໃຊ້ຢ່າງກວ້າງຂວາງໃນການອອກແບບເກມ ແລະ ການຄວບຄຸມຫຸ່ນຍົນເດີ້!",
-  },
+    advice: "ເກັ່ງຫຼາຍ! ສົມຜົນວົງມົນເປັນສ່ວນປະກອບສຳຄັນຂອງເລຂາຄະນິດແບບວິເຄາະ. ການເຂົ້າໃຈທັງຮູບຮ່າງມາດຕະຖານ ແລະ ທົ່ວໄປ ຈະຊ່ວຍໃຫ້ເຈົ້າແກ້ໂຈດໄດ້ຫຼາກຫຼາຍ!"
+  }
 };

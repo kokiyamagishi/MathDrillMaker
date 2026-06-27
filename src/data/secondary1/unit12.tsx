@@ -1,458 +1,309 @@
 import React from "react";
 import { UnitData } from "../units2";
 
-// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
-const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", verticalAlign: "middle", alignItems: "center", padding: "0 4px", fontSize: "0.95em", transform: "translateY(-0.05em)" }}>
-    <span style={{ borderBottom: "1.5px solid currentColor", paddingBottom: "1px", lineHeight: 1, fontWeight: "bold" }}>{num}</span>
-    <span style={{ paddingTop: "1.5px", lineHeight: 1, fontWeight: "bold" }}>{den}</span>
-  </span>
-);
-
 export const unit12Data: UnitData = {
   unitNumber: 12,
   unitTitle: "ພາກທີ II - ບົດທີ 12: ເສັ້ນຊື່ຂະໜານ ແລະ ເສັ້ນຊື່ຕັ້ງສາກ",
-  unitGoal:
-    "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍ ແລະ ສັນຍະລັກຂອງເສັ້ນຊື່ຂະໜານ (//) ແລະ ເສັ້ນຊື່ຕັ້ງສາກ (⊥) ພ້ອມທັງຄຸນລັກສະນະພື້ນຖານຂອງເລຂາຄະນິດ",
-  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 81-84",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບນິຍາມ, ຄຸນລັກສະນະ ແລະ ສັນຍະລັກຂອງເສັ້ນຊື່ຂະໜານ (Parallel Lines, //) ແລະ ເສັ້ນຊື່ຕັ້ງສາກ (Perpendicular Lines, ⊥)",
+  textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 88-92",
   subSections: [
     {
-      title: "1. ເສັ້ນຊື່ຕັ້ງສາກ (Perpendicular Lines)",
+      title: "1. ເສັ້ນຊື່ຂະໜານ ແລະ ເສັ້ນຊື່ຕັ້ງສາກ (Parallel & Perpendicular Lines)",
       keyPoint: {
-      title: "1. ເສັ້ນຊື່ຕັ້ງສາກ (Perpendicular Lines)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ສອງເສັ້ນຊື່ d₁ ແລະ d₂ ຕັດກັນ ແລະ ປະກອບເປັນມຸມສາກ (90°) ເອີ້ນວ່າ 'ເສັ້ນຊື່ຕັ້ງສາກກັນ':"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#E3F2FD",
-              border: "2px solid #2196F3",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"• ສັນຍະລັກ: "}<strong>{"d₁ ⊥ d₂"}</strong>{" (ອ່ານວ່າ d₁ ຕັ້ງສາກກັບ d₂)"}</div>
-            <div>{"• ມຸມຕັດກັນເທົ່າກັບ "}<strong>{"90°"}</strong>{" ສະເໝີ."}</div>
+        title: "ນິຍາມ ແລະ ສັນຍະລັກ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃນເລຂາຄະນິດ, ສອງເສັ້ນຊື່ຢູ່ໃນແຜ່ນພຽງດຽວກັນມີສອງຕຳແໜ່ງທີ່ສຳຄັນ:"}
+            </p>
+            <ul style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.6" }}>
+              <li><strong>{"ເສັ້ນຊື່ຂະໜານ: "}</strong>{" ແມ່ນສອງເສັ້ນຊື່ທີ່ບໍ່ມີເມັດຮ່ວມກັນເລີຍ (ບໍ່ຕັດກັນຈັກເທື່ອ). ສັນຍະລັກດ້ວຍ "}<strong>{"//"}</strong>{" ເຊັ່ນ: d₁ // d₂."}</li>
+              <li><strong>{"ເສັ້ນຊື່ຕັ້ງສາກ: "}</strong>{" ແມ່ນສອງເສັ້ນຊື່ທີ່ຕັດກັນ ແລະ ປະກອບເປັນ 4 ມຸມສາກ (90°). ສັນຍະລັກດ້ວຍ "}<strong>{"⊥"}</strong>{" ເຊັ່ນ: d₁ ⊥ d₂."}</li>
+            </ul>
+
+            <div style={{ display: "flex", justifyContent: "space-around", padding: "16px", backgroundColor: "#ECEFF1", borderRadius: "8px", border: "1px solid #CFD8DC" }}>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
+                <span style={{ fontSize: "1.2rem", fontWeight: "bold" }}>{"ເສັ້ນຊື່ຂະໜານ (d₁ // d₂)"}</span>
+                <svg width="120" height="80">
+                  <line x1="10" y1="25" x2="110" y2="25" stroke="#37474F" strokeWidth="3" />
+                  <line x1="10" y1="55" x2="110" y2="55" stroke="#37474F" strokeWidth="3" />
+                  <text x="110" y="20" fontSize="12" fontWeight="bold">{"d₁"}</text>
+                  <text x="110" y="50" fontSize="12" fontWeight="bold">{"d₂"}</text>
+                </svg>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
+                <span style={{ fontSize: "1.2rem", fontWeight: "bold" }}>{"ເສັ້ນຊື່ຕັ້ງສາກ (d₁ ⊥ d₂)"}</span>
+                <svg width="120" height="80">
+                  <line x1="60" y1="10" x2="60" y2="70" stroke="#37474F" strokeWidth="3" />
+                  <line x1="20" y1="40" x2="100" y2="40" stroke="#37474F" strokeWidth="3" />
+                  <rect x="60" y="30" width="10" height="10" fill="none" stroke="#D32F2F" strokeWidth="2" />
+                  <text x="70" y="20" fontSize="12" fontWeight="bold">{"d₁"}</text>
+                  <text x="110" y="35" fontSize="12" fontWeight="bold">{"d₂"}</text>
+                </svg>
+              </div>
+            </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ເຄື່ອງໝາຍ ⊥ ຈະຄ້າຍຄືກັບໂຕ T ປີ້ນ ເຊິ່ງສະແດງເຖິງການຕັ້ງສາກກັນເດີ້!",
-        isBlue: true,
+        ),
+        hint: {
+          text: "💡 ຈື່ສັນຍະລັກໃຫ້ດີ: // ແມ່ນຂະໜານ, ⊥ ແມ່ນຕັ້ງສາກ!",
+          isBlue: true
+        }
       },
-    },
       problems: [
         {
-      number: 1,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງສັງເກດຮູບພາບ ແລ້ວຕື່ມສັນຍະລັກ "}<strong>{"//"}</strong>{" ຫຼື "}<strong>{"⊥"}</strong>{" ໃສ່ບ່ອນວ່າງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 1.66 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          {/* Geometric SVG 1 */}
-          <div style={{ alignSelf: "center", width: "100%", maxWidth: "400px", backgroundColor: "#fff", padding: "12px", borderRadius: "8px", border: "1px solid #ddd", display: "flex", justifyContent: "center" }}>
-            <svg viewBox="0 0 300 120" style={{ width: "100%", height: "auto" }}>
-              {/* Parallel lines a and b */}
-              <line x1="20" y1="30" x2="280" y2="30" stroke="#4CAF50" strokeWidth="2" />
-              <text x="285" y="35" style={{ fontSize: "16px", fontWeight: "bold", fill: "#4CAF50" }}>{"a"}</text>
-
-              <line x1="20" y1="80" x2="280" y2="80" stroke="#4CAF50" strokeWidth="2" />
-              <text x="285" y="85" style={{ fontSize: "16px", fontWeight: "bold", fill: "#4CAF50" }}>{"b"}</text>
-
-              {/* Perpendicular line c */}
-              <line x1="120" y1="10" x2="120" y2="110" stroke="#2196F3" strokeWidth="2" />
-              <text x="110" y="20" style={{ fontSize: "16px", fontWeight: "bold", fill: "#2196F3" }}>{"c"}</text>
-
-              {/* Right angle symbol at c and a */}
-              <path d="M 120,40 L 130,40 L 130,30" fill="none" stroke="#2196F3" strokeWidth="1.5" />
-              {/* Right angle symbol at c and b */}
-              <path d="M 120,90 L 130,90 L 130,80" fill="none" stroke="#2196F3" strokeWidth="1.5" />
-            </svg>
-          </div>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "12px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(1) ເສັ້ນຊື່ a"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"ເສັ້ນຊື່ b"}</span>
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຕື່ມເຄື່ອງໝາຍ // ຫຼື ⊥ ໃສ່ບ່ອນວ່າງໃຫ້ຖືກຕ້ອງ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span>{"ຖ້າສອງເສັ້ນຊື່ d₁ ແລະ d₂ ບໍ່ມີເມັດຮ່ວມກັນເລີຍ, ເຮົາຂຽນ: d₁"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"d₂"}</span>
+                </div>
+                
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span>{"ຖ້າສອງເສັ້ນຊື່ d₁ ແລະ d₂ ຕັດກັນເປັນມຸມ 90°, ເຮົາຂຽນ: d₁"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"d₂"}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(2) ເສັ້ນຊື່ a"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"ເສັ້ນຊື່ c"}</span>
+          )
+        },
+        {
+          number: 2,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ສອງເສັ້ນຊື່ຕັ້ງສາກກັນຈະປະກອບເປັນມຸມສາກທັງໝົດຈັກມຸມ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                <span>{"ຕອບ: ປະກອບເປັນມຸມສາກທັງໝົດ"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span>{"ມຸມ."}</span>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span>{"(3) ເສັ້ນຊື່ b"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"ເສັ້ນຊື່ c"}</span>
-            </div>
-          </div>
-        </div>
-      ),
-    }
+          )
+        }
       ]
     },
     {
-      title: "2. ເສັ້ນຊື່ຂະໜານ (Parallel Lines)",
+      title: "2. ຄຸນລັກສະນະຂອງເສັ້ນຊື່ຂະໜານ ແລະ ເສັ້ນຊື່ຕັ້ງສາກ (Theorems & Properties)",
       keyPoint: {
-      title: "2. ເສັ້ນຊື່ຂະໜານ (Parallel Lines)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ສອງເສັ້ນຊື່ d₁ ແລະ d₂ ທີ່ນອນຢູ່ໃນໜ້າພຽງດຽວກັນ ແລະ ບໍ່ມີເມັດຕັດກັນຈັກເມັດ ເອີ້ນວ່າ 'ເສັ້ນຊື່ຂະໜານກັນ':"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#E8F5E9",
-              border: "2px solid #4CAF50",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
-            <div>{"• ສັນຍະລັກ: "}<strong>{"d₁ // d₂"}</strong>{" (ອ່ານວ່າ d₁ ຂະໜານກັບ d₂)"}</div>
-            <div>{"• ຈຳນວນເມັດຕັດກັນແມ່ນ "}<strong>{"0 ເມັດ"}</strong>{" (ບໍ່ມີມື້ພົບກັນ)."}</div>
+        title: "ຫຼັກເກນທີ່ສຳຄັນ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ເຮົາມີຄຸນລັກສະນະພື້ນຖານທີ່ນຳໃຊ້ໃນການພິສູດ ແລະ ແກ້ເລກດັ່ງນີ້:"}
+            </p>
+            <ul style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.6" }}>
+              <li><strong>{"ຄຸນລັກສະນະ 1: "}</strong>{" ຖ້າສອງເສັ້ນຊື່ d₁ ແລະ d₂ ຕ່າງກັນ ຕັ້ງສາກກັບເສັ້ນຊື່ d₃ ດຽວກັນ, ແລ້ວ d₁ ຈະຂະໜານກັບ d₂."}</li>
+              <li><strong>{"ຄຸນລັກສະນະ 2: "}</strong>{" ຖ້າສອງເສັ້ນຊື່ d₁ // d₂ ຂະໜານກັນ, ທຸກເສັ້ນຊື່ d₃ ທີ່ຕັ້ງສາກກັບ d₁ ກໍຕ້ອງຕັ້ງສາກກັບ d₂ ເຊັ່ນກັນ."}</li>
+            </ul>
+
+            <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2", display: "flex", flexDirection: "column", gap: "8px" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ສະຫຼຸບເປັນສູດສັນຍະລັກ:"}</span>
+              <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6" }}>
+                <li>{"ຖ້າ d₁ ⊥ d₃ ແລະ d₂ ⊥ d₃  ⇒  d₁ // d₂"}</li>
+                <li>{"ຖ້າ d₁ // d₂ ແລະ d₃ ⊥ d₁  ⇒  d₃ ⊥ d₂"}</li>
+              </ul>
+            </div>
           </div>
-        </div>
-      ),
-      hint: {
-        text: "ເສັ້ນຊື່ຂະໜານກັນ ຈະມີໄລຍະຫ່າງລະຫວ່າງເສັ້ນຊື່ເທົ່າກັນຕະຫຼອດໄປ!",
+        ),
+        hint: {
+          text: "💡 ຄຸນລັກສະນະເຫຼົ່ານີ້ມີປະໂຫຍດຫຼາຍໃນການຄິດໄລ່ ແລະ ພິສູດເລຂາຄະນິດໃນຂັ້ນສູງ!",
+          isBlue: false
+        }
       },
-    },
       problems: [
         {
-      number: 2,
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບນິຍາມຂອງເສັ້ນຊື່ຂະໜານ ແລະ ຕັ້ງສາກ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
-          </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ສອງເສັ້ນຊື່ຂະໜານກັນ ຈະມີເມັດຕັດກັນທັງໝົດຈັກເມັດ?"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"ເມັດ"}</span>
+          number: 3,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ຈົ່ງຕື່ມສັນຍະລັກເລຂາຄະນິດທີ່ຖືກຕ້ອງໃສ່ບ່ອນວ່າງ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+              </p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "8px 0" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span>{"ຖ້າ d₁ ⊥ d₃ ແລະ d₂ ⊥ d₃ ແລ້ວສະຫຼຸບໄດ້ວ່າ: d₁"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"d₂"}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span>{"ຖ້າ d₁ // d₂ ແລະ d₃ ⊥ d₁ ແລ້ວສະຫຼຸບໄດ້ວ່າ: d₃"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span>{"d₂"}</span>
+                </div>
+              </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ສອງເສັ້ນຊື່ຕັ້ງສາກກັນ ຈະປະກອບເປັນມຸມຕັດກັນເທົ່າກັບຈັກອົງສາ?"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-              <span>{"ອົງສາ (°)"}</span>
+          )
+        },
+        {
+          number: 4,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃຫ້ສາມເສັ້ນຊື່ a, b, c. ຖ້າ a // b ແລະ b // c, ຖາມວ່າເສັ້ນຊື່ a ແລະ c ຈະມີການພົວພັນກັນແນວໃດ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
+                <span>{"ຕອບ: a"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span>{"c"}</span>
+              </div>
             </div>
-          </div>
-        </div>
-      ),
-    }
-      ]
-    },
-    {
-      title: "3. ຄຸນລັກສະນະພື້ນຖານ (Basic Geometric Rules)",
-      keyPoint: {
-      title: "3. ຄຸນລັກສະນະພື້ນຖານ (Basic Geometric Rules)",
-      content: (
-        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontSize: "1.375rem", margin: 0 }}>
-            {"ຄຸນລັກສະນະສຳຄັນທີ່ນຳໃຊ້ໃນການພິສູດເລຂາຄະນິດ:"}
-          </p>
-          <div
-            style={{
-              padding: "12px",
-              backgroundColor: "#FFF3E0",
-              border: "2px solid #FF9800",
-              borderRadius: "8px",
-              fontSize: "1.375rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "10px",
-            }}
-          >
-            <div>
-              <strong>{"ຫຼັກເກນ 1: "}</strong>{"ຖ້າສອງເສັ້ນຊື່ຕ່າງກັນ ຫາກຕັ້ງສາກກັບເສັ້ນຊື່ດຽວກັນ, ພວກມັນຈະຂະໜານກັນ:"}
-              <br />
-              <span style={{ color: "#E65100", paddingLeft: "16px", fontWeight: "bold" }}>{"→ ຖ້າ x ⊥ d ແລະ y ⊥ d ດັ່ງນັ້ນ x // y"}</span>
-            </div>
-            <div style={{ borderTop: "1px solid #FFE0B2", paddingTop: "8px" }}>
-              <strong>{"ຫຼັກເກນ 2: "}</strong>{"ຖ້າເສັ້ນຊື່ໜຶ່ງ ຫາກຕັ້ງສາກກັບເສັ້ນຊື່ໜຶ່ງໃນສອງເສັ້ນຊື່ຂະໜານກັນ, ມັນກໍ່ຈະຕັ້ງສາກກັບເສັ້ນຊື່ທີ່ເຫຼືອຄືກັນ:"}
-              <br />
-              <span style={{ color: "#E65100", paddingLeft: "16px", fontWeight: "bold" }}>{"→ ຖ້າ d₁ // d₂ ແລະ T ⊥ d₁ ດັ່ງນັ້ນ T ⊥ d₂"}</span>
-            </div>
-          </div>
-        </div>
-      ),
-      hint: {
-        text: "ຫຼັກເກນເຫຼົ່ານີ້ມີປະໂຫຍດຫຼາຍໃນການພິສູດຄຸນລັກສະນະຂອງຮູບເລຂາຄະນິດຕ່າງໆ!",
-        isBlue: true,
-      },
-    },
-      problems: [
-        
+          )
+        }
       ]
     }
   ],
   challengeProblems: {
-    hintText:
-      "💡 ບົດທ້າທາຍ 1: ນຳໃຊ້ຫຼັກເກນທີ່ວ່າ ຖ້າສອງເສັ້ນຊື່ຕັ້ງສາກກັບເສັ້ນຊື່ດຽວກັນ, ພວກມັນຈະຂະໜານກັນ. ບົດທ້າທາຍ 2: ຖ້າເສັ້ນຊື່ໜຶ່ງຕັ້ງສາກກັບເສັ້ນຊື່ໜຶ່ງໃນສອງເສັ້ນຊື່ຂະໜານກັນ, ມັນກໍ່ຈະຕັ້ງສາກກັບເສັ້ນຊື່ທີ່ເຫຼືອຄືກັນ!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງສັງເກດຮູບພາບ ແລ້ວຕື່ມຄຳສັບ ຫຼື ສັນຍະລັກໃສ່ບ່ອນວ່າງໃຫ້ຖືກຕ້ອງ: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດການພົວພັນລະຫວ່າງເສັ້ນຊື່ຂະໜານ ແລະ ຕັ້ງສາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            {/* Geometric SVG 2 */}
-            <div style={{ alignSelf: "center", width: "100%", maxWidth: "400px", backgroundColor: "#fff", padding: "12px", borderRadius: "8px", border: "1px solid #ddd", display: "flex", justifyContent: "center" }}>
-              <svg viewBox="0 0 300 120" style={{ width: "100%", height: "auto" }}>
-                {/* Vertical line d */}
-                <line x1="50" y1="10" x2="50" y2="110" stroke="#333" strokeWidth="2" />
-                <text x="40" y="20" style={{ fontSize: "16px", fontWeight: "bold", fill: "#333" }}>{"d"}</text>
-
-                {/* Horizontal lines x and y perpendicular to d */}
-                <line x1="30" y1="40" x2="270" y2="40" stroke="#FF9800" strokeWidth="2" />
-                <text x="275" y="45" style={{ fontSize: "16px", fontWeight: "bold", fill: "#FF9800" }}>{"x"}</text>
-
-                <line x1="30" y1="80" x2="270" y2="80" stroke="#FF9800" strokeWidth="2" />
-                <text x="275" y="85" style={{ fontSize: "16px", fontWeight: "bold", fill: "#FF9800" }}>{"y"}</text>
-
-                {/* Right angle symbols */}
-                <path d="M 50,50 L 60,50 L 60,40" fill="none" stroke="#FF9800" strokeWidth="1.5" />
-                <path d="M 50,90 L 60,90 L 60,80" fill="none" stroke="#FF9800" strokeWidth="1.5" />
-              </svg>
-            </div>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "16px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-              }}
-            >
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                <span>{"(1) ຖ້າເສັ້ນຊື່ x ⊥ d ແລະ y ⊥ d. ດັ່ງນັ້ນເສັ້ນຊື່ x"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-                <span>{"ເສັ້ນຊື່ y"}</span>
-              </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                <span>{"(2) ເຫດຜົນ: ຍ້ອນສອງເສັ້ນຊື່ຕັ້ງສາກກັບເສັ້ນຊື່ດຽວກັນ ຈະເປັນເສັ້ນຊື່"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "120px", height: "40px" }}></span>
-                <span>{"ກັນ."}</span>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃຫ້ສີ່ເສັ້ນຊື່ d₁, d₂, d₃, d₄ ໂດຍຮູ້ວ່າ d₁ // d₂, d₂ ⊥ d₃, ແລະ d₃ // d₄. ຖາມວ່າ d₁ ຈະມີການພົວພັນແນວໃດກັບ d₄?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: d₁"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              <span>{"d₄"}</span>
             </div>
           </div>
-        ),
+        )
       },
       {
         number: 2,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p>
-              {"ຈົ່ງສັງເກດຮູບພາບ ແລ້ວຄິດໄລ່ຄຸນລັກສະນະຕໍ່ໄປນີ້: "}{" "}
-              <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+            <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
+              {"ໂຈດບັນຫາການແຕ້ມຮູບ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            {/* Geometric SVG 3 */}
-            <div style={{ alignSelf: "center", width: "100%", maxWidth: "400px", backgroundColor: "#fff", padding: "12px", borderRadius: "8px", border: "1px solid #ddd", display: "flex", justifyContent: "center" }}>
-              <svg viewBox="0 0 300 120" style={{ width: "100%", height: "auto" }}>
-                {/* L1 and L2 parallel */}
-                <line x1="20" y1="30" x2="280" y2="30" stroke="#E040FB" strokeWidth="2" />
-                <text x="285" y="35" style={{ fontSize: "16px", fontWeight: "bold", fill: "#E040FB" }}>{"L₁"}</text>
-
-                <line x1="20" y1="80" x2="280" y2="80" stroke="#E040FB" strokeWidth="2" />
-                <text x="285" y="85" style={{ fontSize: "16px", fontWeight: "bold", fill: "#E040FB" }}>{"L₂"}</text>
-
-                {/* Line T perpendicular to L1 */}
-                <line x1="100" y1="10" x2="100" y2="110" stroke="#333" strokeWidth="2" />
-                <text x="90" y="20" style={{ fontSize: "16px", fontWeight: "bold", fill: "#333" }}>{"T"}</text>
-
-                {/* Right angle at T and L1 */}
-                <path d="M 100,40 L 110,40 L 110,30" fill="none" stroke="#333" strokeWidth="1.5" />
-              </svg>
-            </div>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
-                gap: "20px",
-                fontSize: "1.375rem",
-                padding: "8px 16px",
-              }}
-            >
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                <span>{"(1) ຖ້າຮູ້ວ່າ L₁ // L₂ ແລະ ເສັ້ນຊື່ T ⊥ L₁. ດັ່ງນັ້ນ ເສັ້ນຊື່ T"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-                <span>{"L₂"}</span>
-              </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                <span>{"(2) ມຸມທີ່ເສັ້ນຊື່ T ປະກອບກັບເສັ້ນຊື່ L₂ ຈະເປັນມຸມສາກ ເທົ່າກັບຈັກອົງສາ?"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span>{"ອົງສາ (°)"}</span>
-              </div>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+              {"ໃນຮູບສາມແຈສາກ ABC ທີ່ສາກຢູ່ B, ເສັ້ນຊື່ AB ແລະ ເສັ້ນຊື່ BC ຈະມີການພົວພັນກັນແນວໃດ?"}
+            </p>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+              <span>{"ຕອບ: AB"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              <span>{"BC"}</span>
             </div>
           </div>
-        ),
-      },
+        )
+      }
     ],
+    hintIndex: 0,
+    hintText: "ໃຊ້ຫຼັກການປ່ຽນແທນ: ຖ້າ d₁ // d₂ ແລະ d₂ ⊥ d₃ ໝາຍຄວາມວ່າ d₁ ⊥ d₃. ຈາກນັ້ນ, ຖ້າ d₃ // d₄ ແລ້ວ d₁ ⊥ d₄ ເດີ້!"
   },
   summaryProblems: [
     {
       number: 1,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງສັງເກດຮູບສີ່ແຈສາກ ABCD ແລ້ວຕື່ມສັນຍະລັກ "}<strong>{"//"}</strong>{" ຫຼື "}<strong>{"⊥"}</strong>{" ໃສ່ບ່ອນວ່າງ: "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 1.66 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດບັນຫາໃນຮູບຈະຕຸລັດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          {/* Geometric SVG 4 */}
-          <div style={{ alignSelf: "center", width: "100%", maxWidth: "400px", backgroundColor: "#fff", padding: "12px", borderRadius: "8px", border: "1px solid #ddd", display: "flex", justifyContent: "center" }}>
-            <svg viewBox="0 0 300 150" style={{ width: "100%", height: "auto" }}>
-              {/* Rectangle ABCD */}
-              <rect x="50" y="30" width="200" height="90" fill="none" stroke="#2196F3" strokeWidth="3" />
-
-              {/* Point Labels */}
-              <text x="35" y="35" style={{ fontSize: "16px", fontWeight: "bold", fill: "#0D47A1" }}>{"A"}</text>
-              <text x="255" y="35" style={{ fontSize: "16px", fontWeight: "bold", fill: "#0D47A1" }}>{"B"}</text>
-              <text x="255" y="130" style={{ fontSize: "16px", fontWeight: "bold", fill: "#0D47A1" }}>{"C"}</text>
-              <text x="35" y="130" style={{ fontSize: "16px", fontWeight: "bold", fill: "#0D47A1" }}>{"D"}</text>
-
-              {/* Corner squares to show right angles */}
-              <rect x="50" y="30" width="10" height="10" fill="none" stroke="#2196F3" strokeWidth="1" />
-              <rect x="240" y="30" width="10" height="10" fill="none" stroke="#2196F3" strokeWidth="1" />
-              <rect x="240" y="110" width="10" height="10" fill="none" stroke="#2196F3" strokeWidth="1" />
-              <rect x="50" y="110" width="10" height="10" fill="none" stroke="#2196F3" strokeWidth="1" />
-            </svg>
-          </div>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "16px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຂ້າງ AB"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"ຂ້າງ CD"}</span>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ໃຫ້ຮູບຈະຕຸລັດ ABCD. ການພົວພັນລະຫວ່າງສອງຂ້າງທີ່ຢູ່ກົງກັນຂ້າມ AB ແລະ CD ແມ່ນຫຍັງ? ແລະ ສອງຂ້າງຕິດກັນ AB ແລະ BC ແມ່ນຫຍັງ?"}
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span>{"- AB ກັບ CD ແມ່ນ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ຂ້າງ AB"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"ຂ້າງ BC"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(3) ຂ້າງ AD"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"ຂ້າງ CD"}</span>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span>{"- AB ກັບ BC ແມ່ນ"}</span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             </div>
           </div>
         </div>
-      ),
+      )
     },
     {
       number: 2,
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <p>
-            {"ຈົ່ງຕອບຄຳຖາມກ່ຽວກັບຫຼັກເກນການຂະໜານກັນຂອງ 3 ເສັ້ນຊື່ (ຄວາມຂະໜານສົ່ງຕໍ່): "}{" "}
-            <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+          <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
+            {"ໂຈດການພົວພັນຫຼາຍເສັ້ນຊື່: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "20px",
-              fontSize: "1.375rem",
-              padding: "8px 16px",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(1) ຖ້າຮູ້ວ່າເສັ້ນຊື່ p // q ແລະ q // r. ດັ່ງນັ້ນ p"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
-              <span>{"r (ຕື່ມສັນຍະລັກ)"}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-              <span>{"(2) ເສັ້ນຊື່ p ແລະ ເսັ້ນຊື່ r ມີເມັດຕັດກັນຮ່ວມກັນ ຫຼື ບໍ່? (ຕື່ມ ມີ ຫຼື ບໍ່ມີ):"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-            </div>
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+            {"ໃຫ້ເສັ້ນຊື່ a // b. ຖ້າມີເສັ້ນຊື່ c ຕັດເສັ້ນຊື່ a ດ້ວຍມຸມ 45°, ຖາມວ່າເສັ້ນຊື່ c ຈະຕັດເສັ້ນຊື່ b ດ້ວຍມຸມຈັກອົງສາ?"}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <span>{"ຕອບ: ຕັດເສັ້ນຊື່ b ດ້ວຍມຸມ"}</span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span>{"°"}</span>
           </div>
         </div>
-      ),
-    },
+      )
+    }
   ],
   answers: {
     items: [
       {
         questionNumber: 1,
         answers: [
-          <span key="u12-ans-1-1">{"(1) // (ເສັ້ນຊື່ a ແລະ b ຂະໜານກັນ)"}</span>,
-          <span key="u12-ans-1-2">{"(2) ⊥ (ເສັ້ນຊື່ a ແລະ c ຕັ້ງສາກກັນ)"}</span>,
-          <span key="u12-ans-1-3">{"(3) ⊥ (ເສັ້ນຊື່ b ແລະ c ຕັ້ງສາກກັນ)"}</span>,
-        ],
+          <span key="1-1">{"(1) //"}</span>,
+          <span key="1-2">{"(2) ⊥"}</span>
+        ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="u12-ans-2-1">{"(1) 0 ເມັດ (ເພາະເສັ້ນຊື່ຂະໜານກັນຈະບໍ່ມີມື້ຕັດກັນ)"}</span>,
-          <span key="u12-ans-2-2">{"(2) 90° (ມຸມສາກ)"}</span>,
-        ],
+          <span key="2">{"4 (ສີ່ແຈສາກ)"}</span>
+        ]
+      },
+      {
+        questionNumber: 3,
+        answers: [
+          <span key="3-1">{"(1) //"}</span>,
+          <span key="3-2">{"(2) ⊥"}</span>
+        ]
+      },
+      {
+        questionNumber: 4,
+        answers: [
+          <span key="4">{"// (ເນື່ອງຈາກທັງສອງເສັ້ນຊື່ຂະໜານກັບເສັ້ນຊື່ b ດຽວກັນ)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="u12-ans-t1-1">{"(1) // (x ແລະ y ຈະຂະໜານກັນ)"}</span>,
-          <span key="u12-ans-t1-2">{"(2) ຂະໜານ (ຕາມຫຼັກເກນເລຂາຄະນິດ ມ.1)"}</span>,
-        ],
+          <span key="c1">{"⊥ (ຕັ້ງສາກກັນ)"}</span>
+        ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="u12-ans-t2-1">{"(1) ⊥ (ເສັ້ນຊື່ T ຈະຕັ້ງສາກກັບ L₂ ຄືກັນ)"}</span>,
-          <span key="u12-ans-t2-2">{"(2) 90° (ເພາະເປັນການຕັ້ງສາກກັນ)"}</span>,
-        ],
+          <span key="c2">{"⊥ (ເນື່ອງຈາກມຸມ B ແມ່ນມຸມສາກ 90°)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="u12-ans-s1-1">{"(1) // (ຂ້າງກົງກັນຂ້າມຂອງຮູບສີ່ແຈສາກຈະຂະໜານກັນ)"}</span>,
-          <span key="u12-ans-s1-2">{"(2) ⊥ (ຂ້າງຕິດກັນຂອງຮູບສີ່ແຈສາກຈະຕັ້ງສາກກັນ)"}</span>,
-          <span key="u12-ans-s1-3">{"(3) ⊥"}</span>,
-        ],
+          <span key="s1-1">{"- AB ກັບ CD ແມ່ນ // (ຂະໜານ)"}</span>,
+          <span key="s1-2">{"- AB ກັບ BC ແມ່ນ ⊥ (ຕັ້ງສາກ)"}</span>
+        ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="u12-ans-s2-1">{"(1) // (ຖ້າສອງເສັ້ນຊື່ຂະໜານກັບເສັ້ນຊື່ທີສາມ ພວກມັນຈະຂະໜານກັນ)"}</span>,
-          <span key="u12-ans-s2-2">{"(2) ບໍ່ມີ (ເພາະພວກມັນຂະໜານກັນ ດັ່ງນັ້ນຈຶ່ງບໍ່ມີເມັດຕັດກັນ)"}</span>,
-        ],
-      },
+          <span key="s2">{"45 (ເນື່ອງຈາກສອງເສັ້ນຊື່ຂະໜານກັນ ມຸມທີ່ເກີດຂຶ້ນກັບເສັ້ນຕັດຈະເທົ່າກັນ)"}</span>
+        ]
+      }
     ],
-    advice: "ສອງເສັ້ນຊື່ຂະໜານກັນ (//) ຈະບໍ່ມີວັນຕັດກັນ (0 ເມັດຕັດກັນ), ສ່ວນສອງເສັ້ນຊື່ຕັ້ງສາກກັນ (⊥) ຈະປະກອບເປັນມຸມ 90 ອົງສາສະເໝີເດີ້!",
-  },
+    advice: "ດີຫຼາຍ! ເສັ້ນຊື່ຂະໜານ ແລະ ເສັ້ນຊື່ຕັ້ງສາກ ເປັນພື້ນຖານຂອງການແຕ້ມຮູບເລຂາຄະນິດ ແລະ ໂຄງສ້າງຕ່າງໆໃນຊີວິດຈິງ. ສູ້ໆ!"
+  }
 };
