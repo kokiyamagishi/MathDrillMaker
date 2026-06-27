@@ -253,15 +253,15 @@ export const unit1Data: UnitData = {
             <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                 <span>{" - ຂອບຂັ້ນຢູ່ຫຼັກສິບ: "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", minWidth: "45px", width: "45px", height: "42px", verticalAlign: "middle" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "65px", width: "65px", height: "42px", verticalAlign: "middle" }}></span>
                 <span>{" < "} 85 243 {" < "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", minWidth: "45px", width: "45px", height: "42px", verticalAlign: "middle" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "65px", width: "65px", height: "42px", verticalAlign: "middle" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                 <span>{" - ຂອບຂັ້ນຢູ່ຫຼັກຮ້ອຍ: "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", minWidth: "45px", width: "45px", height: "42px", verticalAlign: "middle" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "65px", width: "65px", height: "42px", verticalAlign: "middle" }}></span>
                 <span>{" < "} 85 243 {" < "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", minWidth: "45px", width: "45px", height: "42px", verticalAlign: "middle" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "65px", width: "65px", height: "42px", verticalAlign: "middle" }}></span>
               </div>
             </div>
           </div>
