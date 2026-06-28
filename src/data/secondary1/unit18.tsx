@@ -26,9 +26,9 @@ export const unit18Data: UnitData = {
               <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ການຈຳແນກມຸມຕາມຂະໜາດ (ອົງສາ):"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6" }}>
                 <li><strong>{"ມຸມສູນ (Null Angle): "}</strong>{" ມີຂະໜາດເທົ່າກັບ 0°"}</li>
-                <li><strong>{"ມຸມແຫຼມ (Acute Angle): "}</strong>{" ໃຫຍ່ກວ່າ 0° ແຕ່ ນ້ອຍກວ່າ 90° (0° < style={{\" < \"} θ < style={{\" < \"} 90°)"}</li>
+                <li><strong>{"ມຸມແຫຼມ (Acute Angle): "}</strong>{" ໃຫຍ່ກວ່າ 0° ແຕ່ ນ້ອຍກວ່າ 90° (0° < θ < 90°)"}</li>
                 <li><strong>{"ມຸມສາກ (Right Angle): "}</strong>{" ມີຂະໜາດເທົ່າກັບ 90°"}</li>
-                <li><strong>{"ມຸມຫວາ (Obtuse Angle): "}</strong>{" ໃຫຍ່ກວ່າ 90° ແຕ່ ນ້ອຍກວ່າ 180° (90° < style={{\" < \"} θ < style={{\" < \"} 180°)"}</li>
+                <li><strong>{"ມຸມຫວາ (Obtuse Angle): "}</strong>{" ໃຫຍ່ກວ່າ 90° ແຕ່ ນ້ອຍກວ່າ 180° (90° < θ < 180°)"}</li>
                 <li><strong>{"ມຸມພຽງ (Straight Angle): "}</strong>{" ມີຂະໜາດເທົ່າກັບ 180°"}</li>
                 <li><strong>{"ມຸມເຕັມ (Full Angle): "}</strong>{" ມີຂະໜາດເທົ່າກັບ 360°"}</li>
               </ul>
