@@ -44,18 +44,27 @@ export const unit6Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#FFF9C4", borderRadius: "8px", border: "1px solid #FFF59D", fontSize: "1.15rem", color: "#F57F17" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
                 <span>{"ແຜນວາດການປ່ຽນພູດໃຫ້ເທົ່າກັນ (ສ່ວນ 12)"}</span>
-                <svg viewBox="0 0 200 40" style={{ width: "100%", maxWidth: "180px", height: "auto" }}>
-                  {/* Visualizing 4/12 + 3/12 */}
-                  <rect x="0" y="10" width="120" height="20" fill="none" stroke="#37474F" strokeWidth="2" />
-                  <line x1="40" y1="10" x2="40" y2="30" stroke="#37474F" strokeWidth="1" />
-                  <line x1="80" y1="10" x2="80" y2="30" stroke="#37474F" strokeWidth="1" />
-                  <rect x="0" y="10" width="40" height="20" fill="#2196F3" opacity="0.6" />
-                  <text x="20" y="24" fill="#0D47A1" fontSize="10" fontWeight="bold" textAnchor="middle">{"1/3 (4/12)"}</text>
+                <svg viewBox="0 0 340 90" style={{ width: "100%", maxWidth: "320px", height: "auto" }}>
+                  {/* 1/3 (4/12) Box */}
+                  <rect x="10" y="25" width="120" height="40" fill="none" stroke="#37474F" strokeWidth="2" rx="4" />
+                  <line x1="50" y1="25" x2="50" y2="65" stroke="#37474F" strokeWidth="1" />
+                  <line x1="90" y1="25" x2="90" y2="65" stroke="#37474F" strokeWidth="1" />
+                  <rect x="10" y="25" width="40" height="40" fill="#2196F3" opacity="0.6" rx="4" />
                   
-                  <text x="135" y="26" fill="#37474F" fontSize="16" fontWeight="bold" textAnchor="middle">{"+"}</text>
+                  <text x="30" y="16" fill="#0D47A1" fontSize="11" fontWeight="bold" textAnchor="middle">{"1/3"}</text>
+                  <text x="30" y="80" fill="#0D47A1" fontSize="11" fontWeight="bold" textAnchor="middle">{"(4/12)"}</text>
                   
-                  <rect x="150" y="10" width="40" height="20" fill="#4CAF50" opacity="0.6" />
-                  <text x="170" y="24" fill="#1B5E20" fontSize="10" fontWeight="bold" textAnchor="middle">{"1/4 (3/12)"}</text>
+                  <text x="170" y="50" fill="#37474F" fontSize="24" fontWeight="bold" textAnchor="middle">{"+"}</text>
+                  
+                  {/* 1/4 (3/12) Box */}
+                  <rect x="210" y="25" width="120" height="40" fill="none" stroke="#37474F" strokeWidth="2" rx="4" />
+                  <line x1="240" y1="25" x2="240" y2="65" stroke="#37474F" strokeWidth="1" />
+                  <line x1="270" y1="25" x2="270" y2="65" stroke="#37474F" strokeWidth="1" />
+                  <line x1="300" y1="25" x2="300" y2="65" stroke="#37474F" strokeWidth="1" />
+                  <rect x="210" y="25" width="30" height="40" fill="#4CAF50" opacity="0.6" rx="4" />
+                  
+                  <text x="225" y="16" fill="#1B5E20" fontSize="11" fontWeight="bold" textAnchor="middle">{"1/4"}</text>
+                  <text x="225" y="80" fill="#1B5E20" fontSize="11" fontWeight="bold" textAnchor="middle">{"(3/12)"}</text>
                 </svg>
               </div>
             </div>
