@@ -42,7 +42,7 @@ export const unit1Data: UnitData = {
                   <line x1="40" y1="20" x2="40" y2="160" stroke="#37474F" strokeWidth="3" />
                   
                   {/* Graph line representing 2^n */}
-                  <path d="M 40,156 L 160,146 L 280,110 L 360,30" fill="none" stroke="#E65100" strokeWidth="5" />
+                  <path d="M 40,156 C 80,156 120,152 160,146 C 200,140 240,130 280,110 C 310,95 340,70 360,30" fill="none" stroke="#E65100" strokeWidth="5" />
                   
                   {/* Nodes */}
                   <circle cx="40" cy="156" r="6" fill="#D32F2F" />
