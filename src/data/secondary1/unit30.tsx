@@ -119,16 +119,24 @@ export const unit30Data: UnitData = {
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
               <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ຕົວຢ່າງ:"}</span>
-              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
-                {"ມີນັກຮຽນທັງໝົດ 350 ຄົນ, ມາຮ່ວມກິດຈະກຳ 280 ຄົນ. ຄິດເປັນສ່ວນຮ້ອຍແມ່ນ:"}
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", display: "flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+                <span>{"ມີນັກຮຽນທັງໝົດ 350 ຄົນ, ມາຮ່ວມກິດຈະກຳ 280 ຄົນ. ຄິດເປັນສ່ວນຮ້ອຍແມ່ນ:"}</span>
                 <br />
-                <span style={{ fontWeight: "bold" }}>{"(280 / 350) × 100% = 0.8 × 100% = 80%."}</span>
+                <span style={{ fontWeight: "bold", display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                  <span>{"("}</span>
+                  <Fraction num={"280"} den={"350"} />
+                  <span>{") × 100% = 0.8 × 100% = 80%."}</span>
+                </span>
               </p>
             </div>
           </div>
         ),
         hint: {
-          text: "💡 ຕົວຢ່າງ: 9.1 g ເປັນຈັກສ່ວນຮ້ອຍຂອງ 91 g? ຄິດໄລ່: (9.1 / 91) × 100% = 10%!",
+          text: <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+            <span>{"💡 ຕົວຢ່າງ: 9.1 g ເປັນຈັກສ່ວນຮ້ອຍຂອງ 91 g? ຄິດໄລ່: ("}</span>
+            <Fraction num={"9.1"} den={"91"} />
+            <span>{") × 100% = 10%!"}</span>
+          </span>,
           isBlue: false
         }
       },
@@ -142,9 +150,9 @@ export const unit30Data: UnitData = {
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                 <span>{"ປະໂຫຍກສັນຍະລັກ: ("}</span>
-                <span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "42px", flexShrink: 0 }}></span>
+                <Fraction num={<span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "24px", verticalAlign: "middle" }}></span>} den={<span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "24px", verticalAlign: "middle" }}></span>} />
                 <span>{") × 100 ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "42px", flexShrink: 0 }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "30px", verticalAlign: "middle" }}></span>
                 <span>{"%"}</span>
               </div>
             </div>
@@ -158,8 +166,10 @@ export const unit30Data: UnitData = {
                 {"ໃນການສອບເສັງວິຊາຄະນິດສາດ, ນັກຮຽນຕອບຖືກ 18 ຂໍ້ ຈາກທັງໝົດ 25 ຂໍ້. ຖາມວ່ານັກຮຽນຕອບຖືກຄິດເປັນຈັກສ່ວນຮ້ອຍ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                <span>{"ປະໂຫຍກສັນຍະລັກ: (18 / 25) × 100 ="}</span>
-                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
+                <span>{"ປະໂຫຍກສັນຍະລັກ: ("}</span>
+                <Fraction num={"18"} den={"25"} />
+                <span>{") × 100 ="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                 <span>{"%"}</span>
               </div>
             </div>
@@ -267,14 +277,14 @@ export const unit30Data: UnitData = {
       {
         questionNumber: 2,
         answers: [
-          <span key="2-1">{"1.25 (ຫຼື 125 / 100)"}</span>,
+          <span key="2-1">{"1.25 (ຫຼື "} <Fraction num={"125"} den={"100"} /> {")"}</span>,
           <span key="2-2">{"250 (ຄິດໄລ່: 200 × 1.25)"}</span>
         ]
       },
       {
         questionNumber: 3,
         answers: [
-          <span key="3-1">{"280 / 350"}</span>,
+          <span key="3-1"><Fraction num={"280"} den={"350"} /></span>,
           <span key="3-2">{"80"}</span>
         ]
       },
@@ -294,13 +304,13 @@ export const unit30Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="c2-1">{"21 (ຄິດໄລ່: 72,450 / 345,000 × 100)"}</span>
+          <span key="c2-1">{"21 (ຄິດໄລ່: "} <Fraction num={"72,450"} den={"345,000"} /> {" × 100)"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="s1">{"300 (ຄິດໄລ່: (600 / 200) × 100)"}</span>
+          <span key="s1">{"300 (ຄິດໄລ່: ("} <Fraction num={"600"} den={"200"} /> {") × 100)"}</span>
         ]
       },
       {
