@@ -306,13 +306,13 @@ export const unit27Data: UnitData = {
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="s1">{"16 (ຄິດໄລ່: 24 × 2/3 = 16 ຕາຕະລາງ)"}</span>
+          <span key="s1">{"16 (ຄິດໄລ່: 24 × "} <Fraction num={"2"} den={"3"} /> {" = 16 ຕາຕະລາງ)"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="s2">{"108 (ສ່ວນທີ່ເຫຼືອແມ່ນ 1 - 3/4 = 1/4 ຂອງຖັງ; 1/4 ຂອງຖັງ = 27 ລິດ; ບໍລິມາດລວມ = 27 × 4 = 108 ລິດ)"}</span>
+          <span key="s2">{"108 (ສ່ວນທີ່ເຫຼືອແມ່ນ 1 - "} <Fraction num={"3"} den={"4"} /> {" = "} <Fraction num={"1"} den={"4"} /> {" ຂອງຖັງ; "} <Fraction num={"1"} den={"4"} /> {" ຂອງຖັງ = 27 ລິດ; ບໍລິມາດລວມ = 27 × 4 = 108 ລິດ)"}</span>
         ]
       }
     ],
