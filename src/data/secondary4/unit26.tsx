@@ -202,7 +202,7 @@ export const unit26Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: " B = sin 80° + cos 110° + sin 160° + cos 170°. ຍ້ອນ sin 80° = cos 10°, cos 110° = -sin 20°, sin 160° = sin 20°, cos 170° = -cos 10° ⇒ B = cos 10° - sin 20° + sin 20° - cos 10° = 0! ສໍາລັບ cos θ = -1/2 ⇒ θ = 180° - 60° = 120°!"
+    hintText: ""
   },
   summaryProblems: [
     {

@@ -215,7 +215,7 @@ export const unit20Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ເພື່ອໃຫ້ f(x) > 0 ບວກສະເໝີ ຕ້ອງມີ a > 0 (ເຊິ່ງ 1 > 0 ແມ່ນຖືກແລ້ວ) ແລະ Δ' = (k+1)² - (k+3) < 0 ⇒ k² + k - 2 < 0 ⇒ (k+2)(k-1) < 0 ⇒ -2 < k < 1! ສຳລັບອະສົມຜົນທີສອງ: x²-6x+5 < 0 ⇒ (x-1)(x-5) < 0 ⇒ 1 < x < 5!"
+    hintText: ""
   },
   summaryProblems: [
     {

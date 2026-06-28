@@ -194,7 +194,7 @@ export const unit13Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ຈຸດໃດໜຶ່ງທີ່ນອນຢູ່ເທິງເສັ້ນຈອມກາງຂອງທ່ອນຊື່ AB ຈະມີໄລຍະຫ່າງຫາສົ້ນ A ແລະ B ເທົ່າກັນສະເໝີ (CA = CB) ດັ່ງນັ້ນມັນຈຶ່ງເປັນຮູບສາມແຈທ່ຽງ!"
+    hintText: ""
   },
   summaryProblems: [
     {

@@ -174,7 +174,7 @@ export const unit38Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ແຜ່ນພຽງທີ່ຕັດແກນ O x, O y, O z ຢູ່ເມັດ A(a, 0, 0), B(0, b, 0), C(0, 0, c) ຈະມີສົມຜົນແມ່ນ x/a + y/b + z/c = 1. ຍ້ອນ a = b = c = 1 ⇒ x/1 + y/1 + z/1 = 1 ⇒ x + y + z = 1. ດັ່ງນັ້ນ C = 1!"
+    hintText: ""
   },
   summaryProblems: [
     {

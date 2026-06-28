@@ -166,7 +166,7 @@ export const unit26Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ນັກຮຽນຫລິ້ນທັງສອງປະເພດ = 18 + 15 - 23 = 10 ຄົນ. ສ່ວນນັກຮຽນຮຽນຢ່າງໜ້ອຍໜຶ່ງພາສາ = 20 + 12 - 5 = 27 ຄົນ. ດັ່ງນັ້ນ ບໍ່ຮຽນເລີຍ = 30 - 27 = 3 ຄົນ!"
+    hintText: ""
   },
   summaryProblems: [
     {

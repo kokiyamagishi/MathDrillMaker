@@ -148,7 +148,7 @@ export const unit43Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ໃຊ້ເຫດການກົງກັນຂ້າມ: P(ບໍ່ມີໃຜຖືກ) = P(ຄົນທີ 1 ພາດ) × P(ຄົນທີ 2 ພາດ) = (1 - 0.6) × (1 - 0.8) = 0.4 × 0.2 = 0.08. ດັ່ງນັ້ນ P(ຢ່າງໜ້ອຍໜຶ່ງ) = 1 - 0.08 = 0.92!"
+    hintText: ""
   },
   summaryProblems: [
     {

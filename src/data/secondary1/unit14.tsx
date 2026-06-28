@@ -187,7 +187,7 @@ export const unit14Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ຊອກຫາຄວາມຍາວທັງໝົດທີ່ຮູ້ກ່ອນ: AB + CD + DE = 2.8 + 2.8 + 2.8 = 8.4 cm. ຈາກນັ້ນ BC + EF = AF - 8.4 = 10.2 - 8.4 = 1.8 cm. ເນື່ອງຈາກ BC = EF, ດັ່ງນັ້ນ BC = 1.8 / 2 = 0.9 cm!"
+    hintText: ""
   },
   summaryProblems: [
     {

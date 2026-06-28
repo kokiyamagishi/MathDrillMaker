@@ -188,7 +188,7 @@ export const unit28Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ມຸມ A = 180° - (45° + 15°) = 120°. ຫຼັກເກນຊີນ: a/sin A = b/sin B ⇒ 3/sin 120° = b/sin 45° ⇒ b = 3 sin 45° / sin 120° = 3(√2/2) / (√3/2) = √6! ສຳລັບມຸມໃຫຍ່ສຸດ: cos C = (a²+b²-c²)/2ab = (9+25-49)/30 = -15/30 = -1/2 ⇒ C = 120°!"
+    hintText: ""
   },
   summaryProblems: [
     {

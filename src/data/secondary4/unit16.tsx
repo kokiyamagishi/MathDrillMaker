@@ -210,7 +210,7 @@ export const unit16Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ຈາກເມັດຈອມ S(2,9) ຈະໄດ້ y = a(x-2)² + 9. ແທນເມັດ A(4,-3) ໃສ່: -3 = a(4-2)² + 9 ⇒ -12 = 4a ⇒ a = -3. ສຳລັບເມັດຕັດແກນ Ox, ໃຫ້ y = 0 ⇒ 2(x-3)² - 8 = 0 ⇒ (x-3)² = 4 ⇒ x-3 = ±2 ⇒ x = 5 ຫຼື x = 1!"
+    hintText: ""
   },
   summaryProblems: [
     {

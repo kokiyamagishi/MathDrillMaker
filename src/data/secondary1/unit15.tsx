@@ -211,7 +211,7 @@ export const unit15Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ປ່ຽນ 20 ວາ ເປັນສອກ: 20 × 4 = 80 ສອກ. ຈາກນັ້ນປ່ຽນເປັນຄືບ: 80 × 2.5 = 200 ຄືບ!"
+    hintText: ""
   },
   summaryProblems: [
     {

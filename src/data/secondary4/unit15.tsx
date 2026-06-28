@@ -210,7 +210,7 @@ export const unit15Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ຈາກເມັດຈອມ S(3,0) ຈະໄດ້ y = a(x-3)². ແທນເມັດ A(5,8) ເຂົ້າ: 8 = a(5-3)² ⇒ 8 = 4a ⇒ a = 2. ສຳລັບສົມຜົນ: (x-2)² = 9 ⇒ x-2 = ±3 ⇒ x = 5 ຫຼື x = -1!"
+    hintText: ""
   },
   summaryProblems: [
     {

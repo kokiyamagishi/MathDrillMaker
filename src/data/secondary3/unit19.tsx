@@ -227,7 +227,7 @@ export const unit19Data: UnitData = {
     }
   ],
   challengeProblems: {
-    hintText: "💡 ບົດທ້າທາຍ: ໃຊ້ຫຼັກການ m₁ × m₂ = -1 ເພື່ອຊອກຫາຄວາມຊັນຕັ້ງສາກ ແລ້ວຈຶ່ງສ້າງສົມຜົນເດີ້!",
+    hintText: "",
     problems: [
       {
         number: 1,

@@ -206,7 +206,7 @@ export const unit32Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "OA + OB + OC = (OG+GA) + (OG+GB) + (OG+GC) = 3OG + (GA+GB+GC). ຍ້ອນ G ເປັນເມັດຖ່ວງໜັກ ⇒ GA+GB+GC = 0 ⇒ OA + OB + OC = 3OG. ດັ່ງນັ້ນ m = 3!"
+    hintText: ""
   },
   summaryProblems: [
     {

@@ -166,7 +166,7 @@ export const unit35Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ຄິດໄລ່: u·v = 1·√3 + √3·1 = 2√3. ຂະໜາດ: |u| = √(1² + (√3)²) = 2, |v| = 2. ຈະໄດ້ cos(θ) = u·v / (|u|·|v|) = 2√3 / 4 = √3 / 2. ຍ້ອນ cos(30°) = √3 / 2 ⇒ θ = 30°!"
+    hintText: ""
   },
   summaryProblems: [
     {

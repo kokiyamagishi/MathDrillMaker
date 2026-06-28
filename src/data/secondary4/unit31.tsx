@@ -173,7 +173,7 @@ export const unit31Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "AB + AC = (AM + MB) + (AM + MC) = 2AM + (MB + MC). ຍ້ອນ M ເປັນເມັດເຄິ່ງກາງ BC ⇒ MB + MC = 0 ⇒ AB + AC = 2AM!"
+    hintText: ""
   },
   summaryProblems: [
     {

@@ -149,7 +149,7 @@ export const unit44Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ໃຊ້ສູດການບວກທົ່ວໄປ: P(F ∪ B) = P(F) + P(B) - P(F ∩ B) = 0.40 + 0.30 - 0.15 = 0.55!"
+    hintText: ""
   },
   summaryProblems: [
     {

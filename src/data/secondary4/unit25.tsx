@@ -202,7 +202,7 @@ export const unit25Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ຂຶ້ນກຳລັງສອງ: (sin A + cos A)² = 1.2² ⇒ sin² A + cos² A + 2 sin A cos A = 1.44 ⇒ 1 + 2 sin A cos A = 1.44 ⇒ 2 sin A cos A = 0.44 ⇒ sin A cos A = 0.22! ສຳລັບ tan 15°: 2 - 1.732 = 0.268!"
+    hintText: ""
   },
   summaryProblems: [
     {

@@ -199,7 +199,7 @@ export const unit14Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "-3x² ≥ -12 ⇒ x² ≤ 4 ⇒ -2 ≤ x ≤ 2. ສ່ວນການຊອກຫາ a: ແທນ x = 2, y = -12 ໃສ່ y = ax² ⇒ -12 = a(2)² ⇒ -12 = 4a ⇒ a = -3!"
+    hintText: ""
   },
   summaryProblems: [
     {

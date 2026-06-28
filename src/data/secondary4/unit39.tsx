@@ -122,7 +122,7 @@ export const unit39Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ລັດສະໝີ R ແມ່ນໄລຍະຫ່າງຈາກ I ຫາ O ⇒ R² = IO² = (1 - 0)² + (2 - 0)² + (2 - 0)² = 1 + 4 + 4 = 9. ດັ່ງນັ້ນ R² = 9!"
+    hintText: ""
   },
   summaryProblems: [
     {

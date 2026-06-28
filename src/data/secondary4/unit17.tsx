@@ -209,7 +209,7 @@ export const unit17Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ຈາກເມັດຈອມ S(1,-2) ຈະໄດ້ y = a(x-1)² - 2. ແທນ A(2,0) ⇒ 0 = a(2-1)² - 2 ⇒ a = 2. ດັ່ງນັ້ນ y = 2(x-1)² - 2 = 2(x² - 2x + 1) - 2 = 2x² - 4x ⇒ c = 0! ສຳລັບເມັດຕັດ Ox: x² - 4x - 5 = 0 ⇒ (x-5)(x+1) = 0 ⇒ x = 5, -1!"
+    hintText: ""
   },
   summaryProblems: [
     {

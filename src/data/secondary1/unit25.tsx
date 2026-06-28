@@ -194,7 +194,7 @@ export const unit25Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ຈຳນວນອະນຸກຸ່ມຂອງກຸ່ມທີ່ມີ 3 ອົງປະກອບແມ່ນ 2³ = 8 ກຸ່ມ (ປະກອບມີ: ∅, {1}, {2}, {3}, {1,2}, {1,3}, {2,3}, {1,2,3}). ແລະ ຖ້າ R ⊂ V, V ⊂ E ແລ້ວ R ⊂ E ສະເໝີ!"
+    hintText: ""
   },
   summaryProblems: [
     {

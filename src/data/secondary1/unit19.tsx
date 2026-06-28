@@ -199,7 +199,7 @@ export const unit19Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ການເຄິ່ງຄືຮັກສາຂະໜາດຂ້າງ ແລະ ມຸມສະເໝີ. ດັ່ງນັ້ນ A′B′ = AB = 3 cm, ∠B′ = ∠B = 45°. ສ່ວນຮູບວົງມົນມີແກນເຄິ່ງຄືແມ່ນເສັ້ນຜ່ານໃຈກາງ ເຊິ່ງມີຫຼາຍບໍ່ສິ້ນສຸດ!"
+    hintText: ""
   },
   summaryProblems: [
     {

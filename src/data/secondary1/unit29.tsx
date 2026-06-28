@@ -193,7 +193,7 @@ export const unit29Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ມາດຕາສ່ວນແມ່ນ 12 / 2400 = 1 / 200. ດັ່ງນັ້ນ ຂະໜາດຈິງ a = 6 × 200 = 1,200 cm. ຂະໜາດຫຍໍ້ b = 1,600 / 200 = 8 cm. ສ່ວນມວນສານທອງແດງ: x = (71.2 × 50) / 8 = 445 g!"
+    hintText: ""
   },
   summaryProblems: [
     {

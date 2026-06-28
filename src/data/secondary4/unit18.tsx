@@ -202,7 +202,7 @@ export const unit18Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ແທນ y = 6-x ເຂົ້າ P: P = x² + (6-x)² = 2x² - 12x + 36. ປ່ຽນຮູບຮ່າງໄດ້: P = 2(x-3)² + 18 ⇒ ຕ່ຳສຸດແມ່ນ P = 18 ເມື່ອ x = y = 3! ສຳລັບເນື້ອທີ່ S: x + y = 20 (ເຄິ່ງຮອບຮົ້ວ) ⇒ S = x(20-x) = -x² + 20x = -(x-10)² + 100 ⇒ ສູງສຸດ S = 100 ແມັດມົນທົນ!"
+    hintText: ""
   },
   summaryProblems: [
     {

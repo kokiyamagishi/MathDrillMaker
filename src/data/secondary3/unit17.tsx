@@ -210,7 +210,7 @@ export const unit17Data: UnitData = {
     }
   ],
   challengeProblems: {
-    hintText: "💡 ບົດທ້າທາຍ: ນຳໃຊ້ສູດ r = S / s ເຂົ້າໃນຮູບສາມແຈພິເສດ ແລະ ຄຳນວນຖອດຮາກໃຫ້ລະອຽດເດີ້!",
+    hintText: "",
     problems: [
       {
         number: 1,

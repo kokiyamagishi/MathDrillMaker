@@ -188,7 +188,7 @@ export const unit4Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ສູດ 1/f = (a+d)/ad ⇒ f = ad/(a+d). ຄ່າສະເລ່ຍຮາໂມນິກຂອງ 3 ແລະ 6: M = 2 / (1/3 + 1/6) = 2 / (2/6 + 1/6) = 2 / (3/6) = 2 / 0.5 = 4!"
+    hintText: ""
   },
   summaryProblems: [
     {

@@ -191,7 +191,7 @@ export const unit18Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ໜ້າປັດໂມງ 1 ຊົ່ວໂມງ = 360° / 12 = 30°. ເວລາ 3:00 ໂມງ ແມ່ນມີໄລຍະຫ່າງ 3 ຊົ່ວໂມງພໍດີ ດັ່ງນັ້ນ 30° × 3 = 90°!"
+    hintText: ""
   },
   summaryProblems: [
     {

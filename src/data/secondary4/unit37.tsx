@@ -116,7 +116,7 @@ export const unit37Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ເສັ້ນສໍາຜັດວົງມົນ x² + y² = R² ຢູ່ເມັດ M(x₀, y₀) ມີສົມຜົນແມ່ນ x₀·x + y₀·y = R². ດັ່ງນັ້ນ ສົມຜົນແມ່ນ 3x + 4y = 25 ⇒ C = 25!"
+    hintText: ""
   },
   summaryProblems: [
     {

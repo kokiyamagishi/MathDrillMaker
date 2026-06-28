@@ -184,7 +184,7 @@ export const unit37Data: UnitData = {
     }
   ],
   challengeProblems: {
-    hintText: "💡 ບົດທ້າທາຍ: ນຳໃຊ້ສູດ (n-2)×180° ເພື່ອແກ້ສົມຜົນຊອກຫາຕົວລັບຢ່າງຖືກຕ້ອງເດີ້!",
+    hintText: "",
     problems: [
       {
         number: 1,

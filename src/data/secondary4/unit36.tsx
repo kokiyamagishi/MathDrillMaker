@@ -180,7 +180,7 @@ export const unit36Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ສົມຜົນເສັ້ນຊື່ d ຜ່ານ A(2, 3) ມີ n = [2, -1] ແມ່ນ: 2(x - 2) - 1(y - 3) = 0 ⇒ 2x - 4 - y + 3 = 0 ⇒ 2x - y - 1 = 0 ⇒ 2x - y = 1. ດັ່ງນັ້ນ C = 1!"
+    hintText: ""
   },
   summaryProblems: [
     {

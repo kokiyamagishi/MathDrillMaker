@@ -195,7 +195,7 @@ export const unit9Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "³√(27x³y⁹) = ³√(3³ · x³ · (y³)³) = 3xy³. ດັ່ງນັ້ນ ຄຳຕອບແມ່ນ 3xy³ (ກຳລັງຂອງ y ແມ່ນ 3). ສ່ວນ √6.25 = 2.5!"
+    hintText: ""
   },
   summaryProblems: [
     {

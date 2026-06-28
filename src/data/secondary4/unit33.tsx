@@ -209,7 +209,7 @@ export const unit33Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "AB = [4 - 1, 5 - 2] = [3, 3]. DC = [6 - x, 2 - y]. ໃຫ້ AB = DC ⇒ 6 - x = 3 ⇒ x = 3. ແລະ 2 - y = 3 ⇒ y = -1. ດັ່ງນັ້ນ ເມັດ D(3, -1)!"
+    hintText: ""
   },
   summaryProblems: [
     {

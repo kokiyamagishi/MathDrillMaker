@@ -194,7 +194,7 @@ export const unit20Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ຈຸດ I ຢູ່ເສັ້ນກາງສາກຂອງ AB ⇒ IA = IB. ຈຸດ I ຢູ່ເສັ້ນກາງສາກຂອງ AC ⇒ IA = IC. ດັ່ງນັ້ນ IA = IB = IC = 6 cm. ສ່ວນມຸມ ∠aOb = 1/2 ∠xOy + 1/2 ∠yOz = 1/2 (∠xOy + ∠yOz) = 1/2 × 180 = 90°!"
+    hintText: ""
   },
   summaryProblems: [
     {

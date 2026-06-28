@@ -190,7 +190,7 @@ export const unit22Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ຫຍໍ້ລົງ k ເທື່ອ ໝາຍຄວາມວ່າ ເອົາມາດຕາສ່ວນເກົ່າຄູນໃຫ້ 1/k. ດັ່ງນັ້ນ 1/24 × 1/3 = 1/72. ແລະ 1/60 × 1/4 = 1/240 ເດີ້!"
+    hintText: ""
   },
   summaryProblems: [
     {

@@ -212,7 +212,7 @@ export const unit22Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "α³ + β³ = (α+β)(α²+β²-αβ) = S(S²-3P). ມີ S=3, P=1 ⇒ 3 × (9-3) = 18! ສຳລັບສົມຜົນໃໝ່: ຮາກແມ່ນ 2α ແລະ 2β. ຜົນຄູນໃໝ່ P' = 4αβ = 4(2) = 8!"
+    hintText: ""
   },
   summaryProblems: [
     {

@@ -192,7 +192,7 @@ export const unit11Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ສົມຜົນ √(3x + 1) = 2 + √(x - 1) ⇒ 3x + 1 = 4 + 4√(x - 1) + x - 1 ⇒ 2x - 2 = 4√(x - 1) ⇒ x - 1 = 2√(x - 1) ⇒ (x - 1)² = 4(x - 1) ⇒ (x - 1)(x - 1 - 4) = 0 ⇒ x = 1 ຫຼື x = 5. ທັງສອງຄ່າແມ່ນສອດຄ່ອງ! ສ່ວນສູດຄວາມໄວຫຼຸດພົ້ນ: v² = 2GM/R ⇒ R = 2GM/v²!"
+    hintText: ""
   },
   summaryProblems: [
     {

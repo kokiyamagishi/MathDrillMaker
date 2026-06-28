@@ -197,7 +197,7 @@ export const unit27Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ຍ້ອນ a/sin A = b/sin B = c/sin C ⇒ sin A : sin B : sin C = a : b : c = 4:5:6! ສໍາລັບ R: a/sin A = 2R ⇒ 5 / sin 150° = 2R. ຍ້ອນ sin 150° = 1/2 ⇒ 5 / (1/2) = 10 = 2R ⇒ R = 5!"
+    hintText: ""
   },
   summaryProblems: [
     {

@@ -111,7 +111,7 @@ export const unit34Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ຊອກຫາ AB = [1, 2, 0], AC = [0, 1, 1], AD = [1, 3, k-1]. ໃຫ້ AD = x·AB + y·AC ⇒ [1, 3, k-1] = [x, 2x+y, y] ⇒ x = 1, y = k-1. ແລ້ວ 2(1) + (k-1) = 3 ⇒ 2 + k - 1 = 3 ⇒ k = 2!"
+    hintText: ""
   },
   summaryProblems: [
     {

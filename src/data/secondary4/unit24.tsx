@@ -213,7 +213,7 @@ export const unit24Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ວາງ S = x+y, P = xy. ມີ S + P = 11 ແລະ S² - P = 19 ⇒ S² + S - 30 = 0 ⇒ S = 5 (ຍ້ອນ S > 0) ⇒ P = 6! ສຳລັບເລຂາຄະນິດ: xy = 24, x² + y² = 100 ⇒ (x+y)² = 148, (x-y)² = 52. ຫຼຶງ່າຍກວ່າ: x² + (24/x)² = 100 ⇒ x⁴ - 100x² + 576 = 0 ⇒ x² = 64 ຫຼື 36 ⇒ ດ້ານແມ່ນ 8 ແລະ 6!"
+    hintText: ""
   },
   summaryProblems: [
     {

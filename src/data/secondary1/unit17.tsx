@@ -193,7 +193,7 @@ export const unit17Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ເນື່ອງຈາກການເຄິ່ງຄືຮັກສາໄລຍະທາງຢ່າງສົມບູນ, ດັ່ງນັ້ນ A′B′ = AB = 10 cm ແລະ A′C′ = AC = √ (6² + 8²) = 10 cm!"
+    hintText: ""
   },
   summaryProblems: [
     {

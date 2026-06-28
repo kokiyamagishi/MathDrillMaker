@@ -197,7 +197,7 @@ export const unit21Data: UnitData = {
       }
     ],
     hintIndex: 0,
-    hintText: "ສົມຜົນສຳຜັດ: x² + 4x + 2 = 2x + n ⇒ x² + 2x + (2-n) = 0. ມີ Δ' = 1 - (2-n) = n - 1 = 0 ⇒ n = 1! ສຳລັບການບໍ່ຕັດກັນ: 2x² - 4x + (3+k) = 0. ມີ Δ' = 4 - 2(3+k) = -2k - 2 < 0 ⇒ -2k < 2 ⇒ k > -1!"
+    hintText: ""
   },
   summaryProblems: [
     {
