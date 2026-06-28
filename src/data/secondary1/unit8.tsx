@@ -105,7 +105,7 @@ export const unit8Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ເພື່ອປ່ຽນຈຳນວນໃນພື້ນຖານ "}<strong>{"a"}</strong>{" ໄປເປັນພື້ນຖານ 10, ເຮົາຈະຂຽນຈຳນວນນັ້ນໃນຮູບແບບການກະຈາຍຄູນກັບກຳລັງຂອງພື້ນຖານ "}<strong>{"a"}</strong>{" ໂດຍເລີ່ມແຕ່ຂວາຫາຊ້າຍ (ເລີ່ມແຕ່ກຳລັງ 0)."}
+              {"ການປ່ຽນເລກຖານອື່ນໃຫ້ເປັນເລກຖານ 10 ແມ່ນການ \"ເອົາຕົວເລກແຕ່ລະຫຼັກ ໄປຄູນກັບຄ່າປະຈຳຫຼັກຂອງມັນ (ເລີ່ມຈາກຂວາຫາຊ້າຍ ໂດຍເລີ່ມແຕ່ກຳລັງ 0) ແລ້ວເອົາຜົນຄູນທັງໝົດມາບວກກັນ\"."}
             </p>
 
             <div style={{ padding: "20px", backgroundColor: "#E0F7FA", borderRadius: "12px", border: "1px solid #4DD0E1" }}>
