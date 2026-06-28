@@ -125,10 +125,6 @@ export const unit8Data: UnitData = {
                 <div style={{ borderTop: "1px dashed #80DEEA", paddingTop: "8px", marginTop: "4px" }}>
                   <strong style={{ color: "#E65100" }}>{"2) ປ່ຽນ 1101₂ ໄປເປັນພື້ນຖານ 10:"}</strong>
                   <br />
-                  <span style={{ color: "#37474F", fontSize: "1.2rem", display: "inline-block", margin: "4px 0" }}>
-                    {"ເລກຖານ 2 ຈະມີຄ່າປະຈຳຫຼັກ (ນັບຈາກຂວາຫາຊ້າຍ) ແມ່ນ 2⁰, 2¹, 2², 2³:"}
-                  </span>
-                  <br />
                   {"1101₂ = 1 × 2³ + 1 × 2² + 0 × 2¹ + 1 × 2⁰"}
                   <br />
                   {"= (1 × 8) + (1 × 4) + (0 × 2) + (1 × 1)"}

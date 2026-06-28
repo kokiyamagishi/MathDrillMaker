@@ -107,7 +107,7 @@ export const unit20Data: UnitData = {
           </div>
         ),
         hint: {
-          text: "💡 ເສັ້ນແບ່ງເຄິ່ງມຸມ ກໍຄື ແກນເຄິ່ງຄື (Axis of Symmetry) ຂອງມຸມ xOy ນັ້ນເອງ!",
+          text: <span>{"💡 ເສັ້ນແບ່ງເຄິ່ງມຸມ ກໍຄື ແກນເຄິ່ງຄື (Axis of Symmetry) ຂອງມຸມ "} <Angle>xOy</Angle> {" ນັ້ນເອງ!"}</span>,
           isBlue: false
         }
       },
