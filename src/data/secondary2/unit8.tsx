@@ -292,23 +292,29 @@ export const unit8Data: UnitData = {
               {"ແມ່ມີນ້ຳດື່ມທັງໝົດ "} {"6"} {" ລິດຕ໌, ຕ້ອງການແບ່ງໃສ່ແກ້ວຂະໜາດແກ້ວລະ "} <Fraction num="3" den="4" /> {" ລິດຕ໌. ຖາມວ່າແມ່ຈະສາມາດແບ່ງນ້ຳດື່ມໄດ້ທັງໝົດຈັກແກ້ວ?"}
             </p>
             <div style={{ display: "flex", justifyContent: "center", margin: "8px 0" }}>
-              <svg viewBox="0 0 240 80" style={{ width: "100%", maxWidth: "200px", height: "auto" }}>
+              <svg viewBox="0 0 280 80" style={{ width: "100%", maxWidth: "280px", height: "auto" }}>
                 {/* 6L big tank */}
                 <rect x="10" y="10" width="60" height="60" rx="5" fill="#E1F5FE" stroke="#0288D1" strokeWidth="2" />
-                <text x="40" y="44" fill="#0288D1" fontSize="16" fontWeight="bold" textAnchor="middle">{"6 L"}</text>
+                <text x="40" y="45" fill="#0288D1" fontSize="16" fontWeight="bold" textAnchor="middle">{"6 L"}</text>
                 
                 {/* Division arrow */}
-                <path d="M 85 40 L 125 40" stroke="#E65100" strokeWidth="2" markerEnd="url(#arrow)" />
+                <path d="M 85 40 L 130 40" stroke="#E65100" strokeWidth="2" markerEnd="url(#arrow)" />
                 
                 {/* Small bottles */}
-                <rect x="145" y="15" width="20" height="35" rx="3" fill="#E1F5FE" stroke="#0288D1" strokeWidth="1.5" />
-                <text x="155" y="36" fill="#0288D1" fontSize="8" textAnchor="middle">{"3/4L"}</text>
+                <rect x="150" y="12" width="30" height="56" rx="3" fill="#E1F5FE" stroke="#0288D1" strokeWidth="1.5" />
+                <text x="165" y="27" fill="#0288D1" fontSize="9" fontWeight="bold" textAnchor="middle">{"3"}</text>
+                <line x1="159" y1="31" x2="171" y2="31" stroke="#0288D1" strokeWidth="1.2" />
+                <text x="165" y="41" fill="#0288D1" fontSize="9" fontWeight="bold" textAnchor="middle">{"4"}</text>
+                <text x="165" y="52" fill="#0288D1" fontSize="9" fontWeight="bold" textAnchor="middle">{"L"}</text>
                 
-                <rect x="175" y="15" width="20" height="35" rx="3" fill="#E1F5FE" stroke="#0288D1" strokeWidth="1.5" />
-                <text x="185" y="36" fill="#0288D1" fontSize="8" textAnchor="middle">{"3/4L"}</text>
+                <rect x="190" y="12" width="30" height="56" rx="3" fill="#E1F5FE" stroke="#0288D1" strokeWidth="1.5" />
+                <text x="205" y="27" fill="#0288D1" fontSize="9" fontWeight="bold" textAnchor="middle">{"3"}</text>
+                <line x1="199" y1="31" x2="211" y2="31" stroke="#0288D1" strokeWidth="1.2" />
+                <text x="205" y="41" fill="#0288D1" fontSize="9" fontWeight="bold" textAnchor="middle">{"4"}</text>
+                <text x="205" y="52" fill="#0288D1" fontSize="9" fontWeight="bold" textAnchor="middle">{"L"}</text>
                 
-                <rect x="205" y="15" width="20" height="35" rx="3" fill="#E1F5FE" stroke="#0288D1" strokeWidth="1.5" />
-                <text x="215" y="36" fill="#0288D1" fontSize="8" textAnchor="middle">{"..."}</text>
+                <rect x="230" y="12" width="30" height="56" rx="3" fill="#E1F5FE" stroke="#0288D1" strokeWidth="1.5" />
+                <text x="245" y="40" fill="#0288D1" fontSize="14" fontWeight="bold" textAnchor="middle">{"..."}</text>
               </svg>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
