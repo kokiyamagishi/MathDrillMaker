@@ -242,12 +242,20 @@ export const unit7Data: UnitData = {
               {"ທ້າວ ສົມສັກ ມີເນື້ອທີ່ດິນທັງໝົດ "} <Fraction num="4" den="5" /> {" ເຮັກຕາ. ລາວໄດ້ແບ່ງດິນ "} <Fraction num="2" den="3" /> {" ຂອງດິນທັງໝົດເພື່ອຂຸດໜອງລ້ຽງປາ. ຖາມວ່າເນື້ອທີ່ໜອງລ້ຽງປາມີຈັກເຮັກຕາ?"}
             </p>
             <div style={{ display: "flex", justifyContent: "center", margin: "8px 0" }}>
-              <svg viewBox="0 0 200 100" style={{ width: "100%", maxWidth: "160px", height: "auto" }}>
+              <svg viewBox="0 0 200 100" style={{ width: "100%", maxWidth: "260px", height: "auto" }}>
                 <rect x="10" y="10" width="180" height="80" fill="#E8F5E9" stroke="#2E7D32" strokeWidth="2" rx="6" />
                 {/* Pond section (2/3 of 4/5) */}
                 <rect x="10" y="10" width="120" height="80" fill="#80DEEA" stroke="#00838F" strokeWidth="1" rx="4" />
-                <text x="70" y="55" fill="#006064" fontSize="12" fontWeight="bold" textAnchor="middle">{"ໜອງປາ"}</text>
-                <text x="70" y="70" fill="#006064" fontSize="10" textAnchor="middle">{"(2/3 ຂອງ 4/5)"}</text>
+                <text x="70" y="36" fill="#006064" fontSize="12" fontWeight="bold" textAnchor="middle">{"ໜອງປາ"}</text>
+                <text x="34" y="62" fill="#006064" fontSize="10" fontWeight="bold" textAnchor="middle">{"("}</text>
+                <text x="44" y="53" fill="#006064" fontSize="10" fontWeight="bold" textAnchor="middle">{"2"}</text>
+                <line x1="39" y1="56" x2="49" y2="56" stroke="#006064" strokeWidth="1.2" />
+                <text x="44" y="66" fill="#006064" fontSize="10" fontWeight="bold" textAnchor="middle">{"3"}</text>
+                <text x="69" y="62" fill="#006064" fontSize="10" fontWeight="bold" textAnchor="middle">{" ຂອງ "}</text>
+                <text x="94" y="53" fill="#006064" fontSize="10" fontWeight="bold" textAnchor="middle">{"4"}</text>
+                <line x1="89" y1="56" x2="99" y2="56" stroke="#006064" strokeWidth="1.2" />
+                <text x="94" y="66" fill="#006064" fontSize="10" fontWeight="bold" textAnchor="middle">{"5"}</text>
+                <text x="104" y="62" fill="#006064" fontSize="10" fontWeight="bold" textAnchor="middle">{")"}</text>
               </svg>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
