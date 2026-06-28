@@ -48,22 +48,22 @@ export const unit50Data: UnitData = {
                   {/* Banana: 15 (y=70, h=90) */}
                   <rect x="80" y="70" width="40" height="90" fill="#FFEB3B" stroke="#FBC02D" strokeWidth="2" />
                   <text x="100" y="60" fill="#F57F17" fontSize="14" textAnchor="middle" fontWeight="bold">{"15"}</text>
-                  <text x="100" y="176" fill="#37474F" fontSize="14" textAnchor="middle">{"ກ້ວຍ"}</text>
+                  <text x="100" y="186" fill="#37474F" fontSize="14" textAnchor="middle">{"ກ້ວຍ"}</text>
 
                   {/* Mango: 20 (y=40, h=120) */}
                   <rect x="150" y="40" width="40" height="120" fill="#FF9800" stroke="#E65100" strokeWidth="2" />
                   <text x="170" y="30" fill="#E65100" fontSize="14" textAnchor="middle" fontWeight="bold">{"20"}</text>
-                  <text x="170" y="176" fill="#37474F" fontSize="14" textAnchor="middle">{"ມ່ວງ"}</text>
+                  <text x="170" y="186" fill="#37474F" fontSize="14" textAnchor="middle">{"ມ່ວງ"}</text>
 
                   {/* Orange: 10 (y=100, h=60) */}
                   <rect x="220" y="100" width="40" height="60" fill="#4CAF50" stroke="#2E7D32" strokeWidth="2" />
                   <text x="240" y="90" fill="#2E7D32" fontSize="14" textAnchor="middle" fontWeight="bold">{"10"}</text>
-                  <text x="240" y="176" fill="#37474F" fontSize="14" textAnchor="middle">{"ກ້ຽງ"}</text>
+                  <text x="240" y="186" fill="#37474F" fontSize="14" textAnchor="middle">{"ກ້ຽງ"}</text>
 
                   {/* Apple: 5 (y=130, h=30) */}
                   <rect x="290" y="130" width="40" height="30" fill="#F44336" stroke="#C62828" strokeWidth="2" />
                   <text x="310" y="120" fill="#C62828" fontSize="14" textAnchor="middle" fontWeight="bold">{"5"}</text>
-                  <text x="310" y="176" fill="#37474F" fontSize="14" textAnchor="middle">{"ແອບເປິລ"}</text>
+                  <text x="310" y="186" fill="#37474F" fontSize="14" textAnchor="middle">{"ແອບເປິລ"}</text>
 
                   {/* y-axis labels */}
                   <text x="40" y="46" fill="#37474F" fontSize="14" textAnchor="end">{"20"}</text>
