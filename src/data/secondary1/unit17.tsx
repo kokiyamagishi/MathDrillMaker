@@ -96,7 +96,7 @@ export const unit17Data: UnitData = {
                 <span style={{ flexShrink: 0 }}>{"ປະໂຫຍກສັນຍະລັກ: AA′ ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px", flexShrink: 0 }}></span>
                 <span style={{ flexShrink: 0 }}>{"= "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "45px", height: "42px", flexShrink: 0 }}></span>
                 <span style={{ flexShrink: 0 }}>{"cm"}</span>
               </div>
             </div>
