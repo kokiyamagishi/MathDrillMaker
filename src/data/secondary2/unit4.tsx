@@ -35,7 +35,10 @@ export const unit4Data: UnitData = {
             {/* Visual comparison representation */}
             <div style={{ display: "flex", justifyContent: "center", gap: "24px", padding: "10px", backgroundColor: "#FFF9C4", borderRadius: "8px", border: "1px solid #FFF59D", fontSize: "1.15rem", color: "#F57F17" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
-                <span>{"3/5 (ມີ 3 ສ່ວນສີຟ້າ)"}</span>
+                <span className="math" style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                  <Fraction num="3" den="5" />
+                  <span>{" (ມີ 3 ສ່ວນສີຟ້າ)"}</span>
+                </span>
                 <svg viewBox="0 0 100 20" style={{ width: "100%", maxWidth: "100px", height: "auto" }}>
                   <rect x="0" y="2" width="100" height="16" fill="none" stroke="#37474F" strokeWidth="2" />
                   <line x1="20" y1="2" x2="20" y2="18" stroke="#37474F" strokeWidth="1" />
@@ -47,7 +50,10 @@ export const unit4Data: UnitData = {
               </div>
               <div style={{ display: "flex", alignItems: "center", fontSize: "1.5rem" }}>{">"}</div>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
-                <span>{"2/5 (ມີ 2 ສ່ວນສີຟ້າ)"}</span>
+                <span className="math" style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                  <Fraction num="2" den="5" />
+                  <span>{" (ມີ 2 ສ່ວນສີຟ້າ)"}</span>
+                </span>
                 <svg viewBox="0 0 100 20" style={{ width: "100%", maxWidth: "100px", height: "auto" }}>
                   <rect x="0" y="2" width="100" height="16" fill="none" stroke="#37474F" strokeWidth="2" />
                   <line x1="20" y1="2" x2="20" y2="18" stroke="#37474F" strokeWidth="1" />
