@@ -51,15 +51,15 @@ export const unit28Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
-                  <span>{"(1) ຈຳນວນປາກກາ x = 6 ກ້ານ ⇒ ລາຄາ y ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
-                  <span>{"ກີບ"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
+                  <span style={{ flexShrink: 0 }}>{"(1) ຈຳນວນປາກກາ x = 6 ກ້ານ ⇒ ລາຄາ y ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "42px", flexShrink: 0 }}></span>
+                  <span style={{ flexShrink: 0 }}>{"ກີບ"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
-                  <span>{"(2) ລາຄາ y = 24,000 ກີບ ⇒ ຈຳນວນປາກກາ x ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                  <span>{"ກ້ານ"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
+                  <span style={{ flexShrink: 0 }}>{"(2) ລາຄາ y = 24,000 ກີບ ⇒ ຈຳນວນປາກກາ x ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "42px", flexShrink: 0 }}></span>
+                  <span style={{ flexShrink: 0 }}>{"ກ້ານ"}</span>
                 </div>
               </div>
             </div>
