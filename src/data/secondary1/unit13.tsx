@@ -54,15 +54,16 @@ export const unit13Data: UnitData = {
                   </div>
                 </div>
                 
+                {/* Sub-question 2 */}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                    <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                    <span>{"ດັ່ງນັ້ນ, ຂ້າງ AD ຈະມີລັກສະນະການພົວພັນແນວໃດກັບຂ້າງ BC?"}</span>
-                  </div>
-                  <div style={{ display: "flex", alignItems: "center", gap: "12px", paddingLeft: "32px" }}>
-                    <span>{"ຕອບ: AD"}</span>
+                  <p style={{ margin: 0, lineHeight: "1.5" }}>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                    {"ດັ່ງນັ້ນ, ຂ້າງ AD ຈະມີລັກສະນະການພົວພັນແນວໃດກັບຂ້າງ BC?"}
+                  </p>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
+                    <span>{"ຕອບ: AD "}</span>
                     <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                    <span>{"BC"}</span>
+                    <span>{" BC"}</span>
                   </div>
                 </div>
               </div>
