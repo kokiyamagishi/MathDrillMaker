@@ -72,36 +72,61 @@ export const unit13Data: UnitData = {
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "18px", padding: "8px 0" }}>
                 {/* 5 Questions */}
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຖ້າທ່ອນຊື່ AB ຍາວ 6 cm, ທ່ອນຊື່ເຄິ່ງຄື A'B' ຂອງມັນຈະຍາວຈັກ cm?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
-                  <span>{"cm"}</span>
+                <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
+                  <p style={{ margin: 0, lineHeight: "1.5" }}>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                    {"ຖ້າທ່ອນຊື່ AB ຍາວ 6 cm, ท່ອນຊື່ເຄິ່ງຄື A'B' ຂອງມັນຈະຍາວຈັກ cm?"}
+                  </p>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
+                    <span>{"ຕອບ: "}</span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                    <span>{"cm"}</span>
+                  </div>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ເສັ້ນຊື່ L' ທີ່ເຄິ່ງຄືກັບ L ທຽບໃສ່ເມັດ O ຈະມີລັກສະນະແນວໃດກັບ L?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
+                  <p style={{ margin: 0, lineHeight: "1.5" }}>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                    {"ເສັ້ນຊື່ L' ທີ່ເຄິ່ງຄືກັບ L ທຽບໃສ່ເມັດ O ຈະມີລັກສະນະແນວໃດກັບ L?"}
+                  </p>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
+                    <span>{"ຕອບ: "}</span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  </div>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ຖ້າທ່ອນຊື່ AB ແລະ A'B' ເຄິ່ງຄືກັນທຽບໃສ່ O, ຖາມວ່າ AB ແລະ A'B' ຂະໜານກັນ ຫຼື ບໍ່?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
+                  <p style={{ margin: 0, lineHeight: "1.5" }}>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
+                    {"ຖ້າທ່ອນຊື່ AB ແລະ A'B' ເຄິ່ງຄືກັນທຽບໃສ່ O, ຖາມວ່າ AB ແລະ A'B' ຂະໜານກັນ ຫຼື ບໍ່?"}
+                  </p>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
+                    <span>{"ຕອບ: "}</span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  </div>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
-                  <span>{"ຖ້າທ່ອນຊື່ເຄິ່ງຄື A'B' ຍາວ 12.5 cm, ຖາມວ່າທ່ອນຊື່ຕົ້ນແບບ AB ຈະຍາວຈັກ cm?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
-                  <span>{"cm"}</span>
+                <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
+                  <p style={{ margin: 0, lineHeight: "1.5" }}>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
+                    {"ຖ້າທ່ອນຊື່ເຄິ່ງຄື A'B' ຍາວ 12.5 cm, ຖາມວ່າທ່ອນຊື່ຕົ້ນແບບ AB ຈະຍາວຈັກ cm?"}
+                  </p>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
+                    <span>{"ຕອບ: "}</span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                    <span>{"cm"}</span>
+                  </div>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
-                  <span>{"ຖ້າມີເສັ້ນຊື່ L ຜ່ານເມັດ O (ໃຈກາງເຄິ່ງຄື), ເສັ້ນຊື່ເຄິ່ງຄື L' ຂອງ L ຈະເຕັງກັບ L ຫຼື ບໍ່?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
+                  <p style={{ margin: 0, lineHeight: "1.5" }}>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
+                    {"ຖ້າມີເສັ້ນຊື່ L ຜ່ານເມັດ O (ໃຈກາງເຄິ່ງຄື), ເສັ້ນຊື່ເຄິ່ງຄື L' ຂອງ L ຈະເຕັງກັບ L ຫຼື ບໍ່?"}
+                  </p>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
+                    <span>{"ຕອບ: "}</span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  </div>
                 </div>
               </div>
             </div>
