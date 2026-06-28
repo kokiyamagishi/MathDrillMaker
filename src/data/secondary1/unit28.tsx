@@ -1,6 +1,14 @@
 import React from "react";
 import { UnitData } from "../units2";
 
+// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
+const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" }}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" }}>{den}</span>
+  </span>
+);
+
 export const unit28Data: UnitData = {
   unitNumber: 28,
   unitTitle: "ພາກທີ V - ບົດທີ 28: ອັດຕາສ່ວນພົວພັນ (Direct Proportion)",
@@ -16,7 +24,11 @@ export const unit28Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"- ສອງປະລິມານ x ແລະ y ເອີ້ນວ່າ "}<strong>{"ອັດຕາສ່ວນພົວພັນກົງ"}</strong>{" ຖ້າວ່າມີຕົວເລກ k ທີ່ບໍ່ແມ່ນສູນ ເຮັດໃຫ້ y ເທົ່າກັບ k ຄູນ x:"}
               <br />
-              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", paddingLeft: "16px" }}>{"y = k × x   ຫຼື   y/x = k"}</span>
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", paddingLeft: "16px", display: "inline-flex", alignItems: "center" }}>
+                {"y = k × x   ຫຼື   "}
+                <Fraction num="y" den="x" />
+                {" = k"}
+              </span>
               <br />
               {"- ຕົວເລກ k ເອີ້ນວ່າ "}<strong>{"ຕົວປະສິດອັດຕາສ່ວນພົວພັນ (Coefficient of Proportionality)"}</strong>{"."}
             </p>
@@ -34,7 +46,13 @@ export const unit28Data: UnitData = {
           </div>
         ),
         hint: {
-          text: "💡 ຖ້າ x ເພີ່ມຂຶ້ນ 2 ເທື່ອ, y ກໍຈະເພີ່ມຂຶ້ນ 2 ເທື່ອຕາມລຳດັບ ເຊິ່ງຄົງອັດຕາສ່ວນ y/x = k ໄວ້ສະເໝີ!",
+          text: (
+            <span>
+              {"💡 ຖ້າ x ເພີ່ມຂຶ້ນ 2 ເທື່ອ, y ກໍຈະເພີ່ມຂຶ້ນ 2 ເທື່ອຕາມລຳດັບ ເຊິ່ງຄົງອັດຕາສ່ວນ "}
+              <Fraction num="y" den="x" />
+              {" = k ໄວ້ສະເໝີ!"}
+            </span>
+          ),
           isBlue: true
         }
       },
