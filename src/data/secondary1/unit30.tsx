@@ -115,7 +115,11 @@ export const unit30Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"- ເພື່ອຊອກຫາວ່າປະລິມານ B ເປັນຈັກສ່ວນຮ້ອຍຂອງ A, ເຮົາໃຊ້ສູດ:"}
               <br />
-              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#D84315", display: "block", margin: "8px 0" }}>{"ສ່ວນຮ້ອຍ = (B / A) × 100%"}</span>
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#D84315", display: "inline-flex", alignItems: "center", gap: "4px", margin: "8px 0" }}>
+                <span>{"ສ່ວນຮ້ອຍ = ("}</span>
+                <Fraction num={"B"} den={"A"} />
+                <span>{") × 100%"}</span>
+              </span>
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
               <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ຕົວຢ່າງ:"}</span>
