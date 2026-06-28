@@ -17,15 +17,15 @@ export const unit14Data: UnitData = {
               {"ເມື່ອສາມເມັດ A, B, C ລຽງກັນຕາມແຖວຊື່ຕາມລຳດັບນີ້ (ເມັດ B ຢູ່ລະຫວ່າງ A ແລະ C):"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9", display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
-              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#1565C0" }}>{"AC = AB + BC"}</span>
-              <span style={{ fontSize: "1.25rem", color: "#0D47A1" }}>{"ຈາກສູດນີ້ ເຮົາສາມາດຊອກຫາ: AB = AC - BC  ຫຼື  BC = AC - AB"}</span>
+              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#1565C0", whiteSpace: "nowrap" }}>{"AC = AB + BC"}</span>
+              <span style={{ fontSize: "1.25rem", color: "#0D47A1", whiteSpace: "nowrap" }}>{"ຈາກສູດນີ້ ເຮົາສາມາດຊອກຫາ: AB = AC - BC  ຫຼື  BC = AC - AB"}</span>
             </div>
 
             <div style={{ padding: "16px", backgroundColor: "#F9F9F9", borderRadius: "8px", border: "1px solid #E0E0E0" }}>
               <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#37474F" }}>{"ຕົວຢ່າງການຄິດໄລ່:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6" }}>
-                <li>{"ໃຫ້ AB = 6.7 cm ແລະ BC = 4.6 cm ໂດຍ B ຢູ່ລະຫວ່າງ A ແລະ C. ຈະໄດ້ AC = 6.7 + 4.6 = 11.3 cm."}</li>
-                <li>{"ໃຫ້ AC = 8 cm ແລະ AM = 5 cm ໂດຍ M ຢູ່ລະຫວ່າງ A ແລະ C. ຈະໄດ້ MC = 8 - 5 = 3 cm."}</li>
+                <li>{"ໃຫ້ AB = 6.7 cm ແລະ BC = 4.6 cm ໂດຍ B ຢູ່ລະຫວ່າງ A ແລະ C. ຈະໄດ້ "}<span style={{ whiteSpace: "nowrap" }}>{"AC = 6.7 + 4.6 = 11.3 cm."}</span></li>
+                <li>{"ໃຫ້ AC = 8 cm ແລະ AM = 5 cm ໂດຍ M ຢູ່ລະຫວ່າງ A ແລະ C. ຈະໄດ້ "}<span style={{ whiteSpace: "nowrap" }}>{"MC = 8 - 5 = 3 cm."}</span></li>
               </ul>
             </div>
           </div>
