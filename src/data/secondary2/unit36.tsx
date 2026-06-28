@@ -33,27 +33,27 @@ export const unit36Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ແຜນວາດສະແດງມຸມນອກຂອງຮູບສາມແຈ"}</span>
-                <svg viewBox="0 0 240 100" style={{ width: "100%", maxWidth: "200px", height: "auto" }}>
+                <svg viewBox="0 0 480 200" style={{ width: "100%", maxWidth: "450px", height: "auto" }}>
                   {/* Triangle path with extended bottom edge */}
-                  <polygon points="80,20 160,80 30,80" fill="none" stroke="#2E7D32" strokeWidth="2" />
-                  <line x1="160" y1="80" x2="220" y2="80" stroke="#37474F" strokeWidth="1.5" strokeDasharray="3,3" />
+                  <polygon points="160,40 320,160 60,160" fill="none" stroke="#2E7D32" strokeWidth="3" />
+                  <line x1="320" y1="160" x2="440" y2="160" stroke="#37474F" strokeWidth="2.5" strokeDasharray="6,6" />
 
                   {/* Vertices and labels */}
-                  <text x="80" y="14" fill="#37474F" fontSize="9" fontWeight="bold" textAnchor="middle">{"A"}</text>
-                  <text x="25" y="92" fill="#37474F" fontSize="9" fontWeight="bold">{"B"}</text>
-                  <text x="160" y="92" fill="#37474F" fontSize="9" fontWeight="bold">{"C"}</text>
-                  <text x="220" y="92" fill="#37474F" fontSize="9" fontWeight="bold">{"D"}</text>
+                  <text x="160" y="28" fill="#37474F" fontSize="18" fontWeight="bold" textAnchor="middle">{"A"}</text>
+                  <text x="45" y="184" fill="#37474F" fontSize="18" fontWeight="bold">{"B"}</text>
+                  <text x="320" y="184" fill="#37474F" fontSize="18" fontWeight="bold">{"C"}</text>
+                  <text x="440" y="184" fill="#37474F" fontSize="18" fontWeight="bold">{"D"}</text>
 
                   {/* Interior angles */}
-                  <path d="M 75,30 A 10,10 0 0,0 85,30" fill="none" stroke="#1565C0" strokeWidth="1.5" />
-                  <text x="80" y="42" fill="#1565C0" fontSize="8" textAnchor="middle">{"40°"}</text>
+                  <path d="M 148,60 A 20,20 0 0,0 172,60" fill="none" stroke="#1565C0" strokeWidth="2.5" />
+                  <text x="160" y="86" fill="#1565C0" fontSize="17" textAnchor="middle">{"40°"}</text>
 
-                  <path d="M 45,80 A 15,15 0 0,1 42,65" fill="none" stroke="#1565C0" strokeWidth="1.5" />
-                  <text x="50" y="75" fill="#1565C0" fontSize="8">{"60°"}</text>
+                  <path d="M 90,160 A 30,30 0 0,1 84,130" fill="none" stroke="#1565C0" strokeWidth="2.5" />
+                  <text x="100" y="152" fill="#1565C0" fontSize="17">{"60°"}</text>
 
                   {/* Exterior angle */}
-                  <path d="M 175,80 A 15,15 0 0,0 168,68" fill="none" stroke="#D32F2F" strokeWidth="1.5" />
-                  <text x="185" y="72" fill="#D32F2F" fontSize="8" fontWeight="bold">{"100°"}</text>
+                  <path d="M 350,160 A 30,30 0 0,0 336,136" fill="none" stroke="#D32F2F" strokeWidth="2.5" />
+                  <text x="360" y="146" fill="#D32F2F" fontSize="18" fontWeight="bold">{"100°"}</text>
                 </svg>
               </div>
             </div>
