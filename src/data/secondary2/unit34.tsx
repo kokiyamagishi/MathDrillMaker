@@ -34,20 +34,20 @@ export const unit34Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ແຜນວາດສະແດງສູດເນື້ອທີ່ (Area Formulas)"}</span>
-                <svg viewBox="0 0 300 70" style={{ width: "100%", maxWidth: "260px", height: "auto" }}>
+                <svg viewBox="0 0 360 85" style={{ width: "100%", maxWidth: "320px", height: "auto" }}>
                   {/* Rectangle */}
-                  <rect x="10" y="10" width="60" height="35" fill="none" stroke="#2E7D32" strokeWidth="1.5" />
-                  <text x="40" y="58" fill="#37474F" fontSize="7" textAnchor="middle" fontWeight="bold">{"ສີ່ແຈສາກ: a×b"}</text>
+                  <rect x="20" y="10" width="80" height="40" fill="none" stroke="#2E7D32" strokeWidth="1.5" />
+                  <text x="60" y="68" fill="#37474F" fontSize="9" textAnchor="middle" fontWeight="bold">{"ສີ່ແຈສາກ: a×b"}</text>
                   
                   {/* Square */}
-                  <rect x="110" y="10" width="40" height="40" fill="none" stroke="#2E7D32" strokeWidth="1.5" />
-                  <text x="130" y="60" fill="#37474F" fontSize="7" textAnchor="middle" fontWeight="bold">{"ຈະຕຸລັດ: a²"}</text>
+                  <rect x="145" y="10" width="50" height="40" fill="none" stroke="#2E7D32" strokeWidth="1.5" />
+                  <text x="170" y="68" fill="#37474F" fontSize="9" textAnchor="middle" fontWeight="bold">{"ຈະຕຸລັດ: a²"}</text>
 
                   {/* Rhombus */}
-                  <polygon points="230,10 260,30 230,50 200,30" fill="none" stroke="#2E7D32" strokeWidth="1.5" />
-                  <line x1="200" y1="30" x2="260" y2="30" stroke="#E65100" strokeWidth="1" strokeDasharray="2,2" />
-                  <line x1="230" y1="10" x2="230" y2="50" stroke="#0288D1" strokeWidth="1" strokeDasharray="2,2" />
-                  <text x="230" y="60" fill="#37474F" fontSize="7" textAnchor="middle" fontWeight="bold">{"ດອກຈັນ: (d₁×d₂)/2"}</text>
+                  <polygon points="290,10 320,30 290,50 260,30" fill="none" stroke="#2E7D32" strokeWidth="1.5" />
+                  <line x1="260" y1="30" x2="320" y2="30" stroke="#E65100" strokeWidth="1" strokeDasharray="2,2" />
+                  <line x1="290" y1="10" x2="290" y2="50" stroke="#0288D1" strokeWidth="1" strokeDasharray="2,2" />
+                  <text x="290" y="68" fill="#37474F" fontSize="9" textAnchor="middle" fontWeight="bold">{"ດອກຈັນ: (d₁×d₂)/2"}</text>
                 </svg>
               </div>
             </div>
