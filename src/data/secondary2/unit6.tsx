@@ -44,12 +44,12 @@ export const unit6Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#FFF9C4", borderRadius: "8px", border: "1px solid #FFF59D", fontSize: "1.15rem", color: "#F57F17" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
                 <span>{"ແຜນວາດການປ່ຽນພູດໃຫ້ເທົ່າກັນ (ສ່ວນ 12)"}</span>
-                <svg viewBox="0 0 340 115" style={{ width: "100%", maxWidth: "320px", height: "auto" }}>
+                <svg viewBox="0 0 340 120" style={{ width: "100%", maxWidth: "320px", height: "auto" }}>
                   {/* 1/3 (4/12) Box */}
-                  <rect x="10" y="35" width="120" height="40" fill="none" stroke="#37474F" strokeWidth="2" rx="4" />
-                  <line x1="50" y1="35" x2="50" y2="75" stroke="#37474F" strokeWidth="1" />
-                  <line x1="90" y1="35" x2="90" y2="75" stroke="#37474F" strokeWidth="1" />
-                  <rect x="10" y="35" width="40" height="40" fill="#2196F3" opacity="0.6" rx="4" />
+                  <rect x="10" y="45" width="120" height="30" fill="none" stroke="#37474F" strokeWidth="2" rx="4" />
+                  <line x1="50" y1="45" x2="50" y2="75" stroke="#37474F" strokeWidth="1" />
+                  <line x1="90" y1="45" x2="90" y2="75" stroke="#37474F" strokeWidth="1" />
+                  <rect x="10" y="45" width="40" height="30" fill="#2196F3" opacity="0.6" rx="4" />
                   
                   {/* 1/3 top fraction */}
                   <text x="30" y="14" fill="#0D47A1" fontSize="11" fontWeight="bold" textAnchor="middle">{"1"}</text>
@@ -57,21 +57,21 @@ export const unit6Data: UnitData = {
                   <text x="30" y="28" fill="#0D47A1" fontSize="11" fontWeight="bold" textAnchor="middle">{"3"}</text>
                   
                   {/* (4/12) bottom fraction */}
-                  <text x="16" y="96" fill="#0D47A1" fontSize="11" fontWeight="bold" textAnchor="middle">{"("}</text>
-                  <text x="30" y="87" fill="#0D47A1" fontSize="11" fontWeight="bold" textAnchor="middle">{"4"}</text>
-                  <line x1="22" y1="91" x2="38" y2="91" stroke="#0D47A1" strokeWidth="1.5" />
-                  <text x="30" y="101" fill="#0D47A1" fontSize="11" fontWeight="bold" textAnchor="middle">{"12"}</text>
-                  <text x="44" y="96" fill="#0D47A1" fontSize="11" fontWeight="bold" textAnchor="middle">{")"}</text>
+                  <text x="16" y="105" fill="#0D47A1" fontSize="11" fontWeight="bold" textAnchor="middle">{"("}</text>
+                  <text x="30" y="96" fill="#0D47A1" fontSize="11" fontWeight="bold" textAnchor="middle">{"4"}</text>
+                  <line x1="22" y1="100" x2="38" y2="100" stroke="#0D47A1" strokeWidth="1.5" />
+                  <text x="30" y="110" fill="#0D47A1" fontSize="11" fontWeight="bold" textAnchor="middle">{"12"}</text>
+                  <text x="44" y="105" fill="#0D47A1" fontSize="11" fontWeight="bold" textAnchor="middle">{")"}</text>
                   
                   {/* Plus Operator */}
-                  <text x="170" y="60" fill="#37474F" fontSize="24" fontWeight="bold" textAnchor="middle">{"+"}</text>
+                  <text x="170" y="65" fill="#37474F" fontSize="24" fontWeight="bold" textAnchor="middle">{"+"}</text>
                   
                   {/* 1/4 (3/12) Box */}
-                  <rect x="210" y="35" width="120" height="40" fill="none" stroke="#37474F" strokeWidth="2" rx="4" />
-                  <line x1="240" y1="35" x2="240" y2="75" stroke="#37474F" strokeWidth="1" />
-                  <line x1="270" y1="35" x2="270" y2="75" stroke="#37474F" strokeWidth="1" />
-                  <line x1="300" y1="35" x2="300" y2="75" stroke="#37474F" strokeWidth="1" />
-                  <rect x="210" y="35" width="30" height="40" fill="#4CAF50" opacity="0.6" rx="4" />
+                  <rect x="210" y="45" width="120" height="30" fill="none" stroke="#37474F" strokeWidth="2" rx="4" />
+                  <line x1="240" y1="45" x2="240" y2="75" stroke="#37474F" strokeWidth="1" />
+                  <line x1="270" y1="45" x2="270" y2="75" stroke="#37474F" strokeWidth="1" />
+                  <line x1="300" y1="45" x2="300" y2="75" stroke="#37474F" strokeWidth="1" />
+                  <rect x="210" y="45" width="30" height="30" fill="#4CAF50" opacity="0.6" rx="4" />
                   
                   {/* 1/4 top fraction */}
                   <text x="225" y="14" fill="#1B5E20" fontSize="11" fontWeight="bold" textAnchor="middle">{"1"}</text>
@@ -79,11 +79,11 @@ export const unit6Data: UnitData = {
                   <text x="225" y="28" fill="#1B5E20" fontSize="11" fontWeight="bold" textAnchor="middle">{"4"}</text>
                   
                   {/* (3/12) bottom fraction */}
-                  <text x="211" y="96" fill="#1B5E20" fontSize="11" fontWeight="bold" textAnchor="middle">{"("}</text>
-                  <text x="225" y="87" fill="#1B5E20" fontSize="11" fontWeight="bold" textAnchor="middle">{"3"}</text>
-                  <line x1="217" y1="91" x2="233" y2="91" stroke="#1B5E20" strokeWidth="1.5" />
-                  <text x="225" y="101" fill="#1B5E20" fontSize="11" fontWeight="bold" textAnchor="middle">{"12"}</text>
-                  <text x="239" y="96" fill="#1B5E20" fontSize="11" fontWeight="bold" textAnchor="middle">{")"}</text>
+                  <text x="211" y="105" fill="#1B5E20" fontSize="11" fontWeight="bold" textAnchor="middle">{"("}</text>
+                  <text x="225" y="96" fill="#1B5E20" fontSize="11" fontWeight="bold" textAnchor="middle">{"3"}</text>
+                  <line x1="217" y1="100" x2="233" y2="100" stroke="#1B5E20" strokeWidth="1.5" />
+                  <text x="225" y="110" fill="#1B5E20" fontSize="11" fontWeight="bold" textAnchor="middle">{"12"}</text>
+                  <text x="239" y="105" fill="#1B5E20" fontSize="11" fontWeight="bold" textAnchor="middle">{")"}</text>
                 </svg>
               </div>
             </div>
