@@ -42,19 +42,19 @@ export const unit20Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ເສັ້ນກາງສາກຂອງທ່ອນຊື່ [AB] ແມ່ນເສັ້ນຊື່ທີ່ຜ່ານຈຸດເຄິ່ງກາງ ແລະ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                  <span>{"ກັບ [AB]."}</span>
-                </div>
+                <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }}>{"(1)"}</span>
+                  {"ເສັ້ນກາງສາກຂອງທ່ອນຊື່ [AB] ແມ່ນເສັ້ນຊື່ທີ່ຜ່ານຈຸດເຄິ່ງກາງ ແລະ "}
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                  {" ກັບ [AB]."}
+                </p>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຖ້າ M ນອນຢູ່ເທິງເສັ້ນກາງສາກຂອງ [AB], ແລ້ວໄລຍະຫ່າງ MA ຈະ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                  <span>{"ໄລຍະຫ່າງ MB."}</span>
-                </div>
+                <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }}>{"(2)"}</span>
+                  {"ຖ້າ M ນອນຢູ່ເທິງເສັ້ນກາງສາກຂອງ [AB], ແລ້ວໄລຍະຫ່າງ MA ຈະ "}
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                  {" ໄລຍະຫ່າງ MB."}
+                </p>
               </div>
             </div>
           )
@@ -125,9 +125,9 @@ export const unit20Data: UnitData = {
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                   <span><Angle>xOz</Angle>{" = "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
                   <span>{" = "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
                   <span style={{ flexShrink: 0 }}>{"°"}</span>
                 </div>
               </div>
@@ -147,9 +147,9 @@ export const unit20Data: UnitData = {
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                   <span><Angle>AOB</Angle>{" = "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
                   <span>{" = "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
                   <span style={{ flexShrink: 0 }}>{"°"}</span>
                 </div>
               </div>
