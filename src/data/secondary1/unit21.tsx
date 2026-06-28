@@ -1,10 +1,17 @@
 import React from "react";
 import { UnitData } from "../units2";
 
+const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px", fontSize: "0.9em", lineHeight: "1.1" }}>
+    <span style={{ borderBottom: "1.5px solid currentColor", padding: "0 4px", textAlign: "center", display: "block", width: "100%" }}>{num}</span>
+    <span style={{ padding: "0 4px", textAlign: "center", display: "block", width: "100%" }}>{den}</span>
+  </span>
+);
+
 export const unit21Data: UnitData = {
   unitNumber: 21,
   unitTitle: "ພາກທີ III - ບົດທີ 21: ມາດຕາສ່ວນ (Scale)",
-  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍຂອງມາດຕາສ່ວນ, ມາດຕາສ່ວນຫຍໍ້ (Reduction Scale), ມາດຕາສ່ວນຂະຫຍາຍ (Enlargement Scale) ແລະ ການປ່ຽນແປງຄິດໄລ່ໄລຍະທາງຕົວຈິງກັບໄລຍະທາງໃນແຜນຜັງ",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍຂອງມາດຕາສ່ວນ, ມາດຕາສ່ວນຫຍໍ້ (Reduction Scale), ມາດຕາສ່ວນຂະຫຍາຍ (Enlargement Scale) ແລະ การປ່ຽນແປງຄິດໄລ່ໄລຍະທາງຕົວຈິງກັບໄລຍະທາງໃນແຜນຜັງ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 168-172",
   subSections: [
     {
@@ -17,15 +24,28 @@ export const unit21Data: UnitData = {
               {"ມາດຕາສ່ວນ ແມ່ນອັດຕາສ່ວນລະຫວ່າງ ໄລຍະທາງໃນແຜນຜັງ (ຫຼື ແຜນວາດ) ກັບ ໄລຍະທາງຕົວຈິງ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9", display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
-              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#1565C0" }}>{"ມາດຕາສ່ວນ = ໄລຍະທາງໃນຮູບແຕ້ມ / ໄລຍະທາງຕົວຈິງ"}</span>
+              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#1565C0", display: "inline-flex", alignItems: "center", gap: "8px" }}>
+                <span>{"ມາດຕາສ່ວນ = "}</span>
+                <Fraction num={"ໄລຍະທາງໃນຮູບແຕ້ມ"} den={"ໄລຍະທາງຕົວຈິງ"} />
+              </span>
               <span style={{ fontSize: "1.25rem", color: "#0D47A1" }}>{"*ໝາຍເຫດ: ທັງສອງໄລຍະທາງຕ້ອງຄິດໄລ່ໃນຫົວໜ່ວຍດຽວກັນສະເໝີ (ເຊັ່ນ: ປ່ຽນເປັນ cm ທັງໝົດ)"}</span>
             </div>
 
             <div style={{ padding: "16px", backgroundColor: "#F9F9F9", borderRadius: "8px", border: "1px solid #E0E0E0" }}>
               <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#37474F" }}>{"ປະເພດຂອງມາດຕາສ່ວນ:"}</span>
-              <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6" }}>
-                <li><strong>{"ມາດຕາສ່ວນຫຍໍ້: "}</strong>{" ເຊັ່ນ: 1/100, 1:5,000... (ຄ່າຂອງມັນນ້ອຍກວ່າ 1). ໃຊ້ເພື່ອຍໍ້ຂະໜາດຕົວຈິງໃຫ້ມີຂະໜາດນ້ອຍລົງໃນເຈ້ຍ."}</li>
-                <li><strong>{"ມາດຕາສ່ວນຂະຫຍາຍ: "}</strong>{" ເຊັ່ນ: 5/1, 10:1... (ຄ່າຂອງມັນໃຫຍ່ກວ່າ 1). ໃຊ້ເພື່ອຂະຫຍາຍວັດຖຸຂະໜາດນ້ອຍ (ເຊັ່ນ: ຈຸລັງ, ແມງໄມ້) ໃຫ້ເຫັນຊັດເຈນ."}</li>
+              <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "2.0", display: "flex", flexDirection: "column", gap: "12px" }}>
+                <li style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+                  <strong>{"ມາດຕາສ່ວນຫຍໍ້: "}</strong>
+                  <span>{" ເຊັ່ນ: "}</span>
+                  <Fraction num={"1"} den={"100"} />
+                  <span>{", 1:5,000... (ຄ່າຂອງມັນນ້ອຍກວ່າ 1). ໃຊ້ເພື່ອຍໍ້ຂະໜາດຕົວຈິງໃຫ້ມີຂະໜາດນ້ອຍລົງໃນເຈ້ຍ."}</span>
+                </li>
+                <li style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+                  <strong>{"ມາດຕາສ່ວນຂະຫຍາຍ: "}</strong>
+                  <span>{" ເຊັ່ນ: "}</span>
+                  <Fraction num={"5"} den={"1"} />
+                  <span>{", 10:1... (ຄ່າຂອງມັນໃຫຍ່ກວ່າ 1). ໃຊ້ເພື່ອຂະຫຍາຍວັດຖຸຂະໜາດນ້ອຍ (ເຊັ່ນ: ຈຸລັງ, ແມງໄມ້) ໃຫ້ເຫັນຊັດເຈນ."}</span>
+                </li>
               </ul>
             </div>
           </div>
@@ -74,9 +94,9 @@ export const unit21Data: UnitData = {
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                   <span>{"ໄລຍະທາງຕົວຈິງ = "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{" = "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   <span style={{ flexShrink: 0 }}>{"cm"}</span>
                 </div>
               </div>
@@ -86,7 +106,7 @@ export const unit21Data: UnitData = {
       ]
     },
     {
-      title: "2. ການຄິດໄລ່ໄລຍະທາງຕົວຈິງ ແລະ ໄລຍະທາງໃນແຜນຜັງ (Scale Calculations)",
+      title: "2. การຄິດໄລ່ໄລຍະທາງຕົວຈິງ ແລະ ໄລຍະທາງໃນແຜນຜັງ (Scale Calculations)",
       keyPoint: {
         title: "ວິທີການປ່ຽນແປງຄິດໄລ່",
         content: (
@@ -94,14 +114,15 @@ export const unit21Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ເຮົາມີຫຼັກການຄິດໄລ່ພື້ນຖານດັ່ງນີ້:"}
             </p>
-             <ul style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.6" }}>
-                <li style={{ marginBottom: "8px" }}>
+             <ul style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.8", display: "flex", flexDirection: "column", gap: "12px" }}>
+                <li>
                   <strong>{"ຊອກຫາໄລຍະທາງຕົວຈິງ:"}</strong>
                   <div style={{ paddingLeft: "16px", whiteSpace: "nowrap" }}>{"ໄລຍະທາງຕົວຈິງ = ໄລຍະທາງໃນແຜນຜັງ × ສ່ວນສ່ວນ (ຕົວຫານ) ຂອງມາດຕາສ່ວນ."}</div>
                 </li>
-                <li>
-                  <strong>{"ຊອກຫາໄລຍະທາງໃນແຜນຜັງ:"}</strong>
-                  <div style={{ paddingLeft: "16px", whiteSpace: "nowrap" }}>{"ໄລຍະທາງໃນແຜນຜັງ = ໄລຍະທາງຕົວຈິງ / ສ່ວນສ່ວນ (ຕົວຫານ) ຂອງມາດຕາສ່ວນ."}</div>
+                <li style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+                  <strong>{"ຊອກຫາໄລຍະທາງໃນແຜນຜັງ: "}</strong>
+                  <span>{" ໄລຍະທາງໃນແຜນຜັງ = "}</span>
+                  <Fraction num={"ໄລຍະທາງຕົວຈິງ"} den={"ສ່ວນສ່ວນ (ຕົວຫານ) ຂອງມາດຕາສ່ວນ"} />
                 </li>
               </ul>
           </div>
@@ -125,9 +146,9 @@ export const unit21Data: UnitData = {
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                   <span>{"ໄລຍະໃນແຜນທີ່ = "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{" = "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   <span style={{ flexShrink: 0 }}>{"cm"}</span>
                 </div>
               </div>
@@ -147,9 +168,9 @@ export const unit21Data: UnitData = {
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                   <span>{"ໄລຍະຕົວຈິງ (m) = "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{" = "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   <span style={{ flexShrink: 0 }}>{"m"}</span>
                 </div>
               </div>
@@ -174,12 +195,12 @@ export const unit21Data: UnitData = {
             <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <span>{"- ຄວາມຍາວໃນເຈ້ຍ ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "80px", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 <span>{"cm"}</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <span>{"- ຄວາມເໝາະສົມແມ່ນ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "100px", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
               </div>
             </div>
           </div>
@@ -197,7 +218,7 @@ export const unit21Data: UnitData = {
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ໄລຍະທາງຕົວຈິງແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", minWidth: "80px", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
               <span>{"km."}</span>
             </div>
           </div>
@@ -216,16 +237,16 @@ export const unit21Data: UnitData = {
             {"ໂຈດການແຕ້ມຮູບຫຍໍ້ກະດານດຳ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ກະດານດຳແຜ່ນໜຶ່ງມີຄວາມຍາວຕົວຈິງ 4 m ແລະ ຄວາມກວ້າງ 2 m. ຖ້າຢາກແຕ້ມໃສ່ປຶ້ມຂຽນໂດຍໃຫ້ຄວາມຍາວຂອງມັນເທົ່າກັບ 10 cm, ເຮົາຈະຕ້ອງໃຊ້ມາດຕາສ່ວນເທົ່າໃດ? ແລະ ຄວາມກວ້າງຂອງກະດານໃນຮູບແຕ້ມຈະມີຈັກ cm?"}
+            {"ກະດານດຳແຜ່ນໜຶ່ງມີຄວາມຍາວຕົວຈິງ 4 m และ ຄວາມກວ້າງ 2 m. ຖ້າຢາກແຕ້ມໃສ່ປຶ້ມຂຽນໂດຍໃຫ້ຄວາມຍາວຂອງມັນເທົ່າກັບ 10 cm, ເຮົາຈະຕ້ອງໃຊ້ມາດຕາສ່ວນເທົ່າໃດ? ແລະ ຄວາມກວ້າງຂອງກະດານໃນຮູບແຕ້ມຈະມີຈັກ cm?"}
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <span>{"- ມາດຕາສ່ວນແມ່ນ 1:"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", minWidth: "80px", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <span>{"- ຄວາມກວ້າງໃນຮູບແຕ້ມ ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
               <span>{"cm"}</span>
             </div>
           </div>
@@ -237,7 +258,7 @@ export const unit21Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດຄິດໄລ່ມຸມ ແລະ ຂະໜາດໃນຮູບຂະຫຍາຍ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດຄິດໄລ່ມຸມ ແລະ ຂະໜາດໃນຮູບຂะຫຍາຍ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຮູບສາມແຈ ABC ທີ່ມີສາມຂ້າງແມ່ນ 3 cm, 4 cm, 5 cm. ເຮົາຂະຫຍາຍຮູບສາມແຈນີ້ດ້ວຍມາດຕາສ່ວນ 2:1 (ຂະຫຍາຍເປັນ 2 ເທື່ອ). ຖາມວ່າ ຮູບສາມແຈໃໝ່ທີ່ໄດ້ຈະເປັນຮູບສາມແຈຊະນິດໃດ? ແລະ ຂ້າງທີ່ຍາວທີ່ສຸດຂອງຮູບສາມແຈໃໝ່ຈະມີຈັກ cm?"}
@@ -245,11 +266,11 @@ export const unit21Data: UnitData = {
           <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <span>{"- ເປັນຮູບສາມແຈ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", minWidth: "100px", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <span>{"- ຂ້າງຍາວທີ່ສຸດ ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", minWidth: "80px", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
               <span>{"cm"}</span>
             </div>
           </div>
@@ -262,28 +283,40 @@ export const unit21Data: UnitData = {
       {
         questionNumber: 1,
         answers: [
-          <span key="1-1">{"10000 (ຄິດໄລ່: 2 / 20000 = 1/10000)"}</span>,
-          <span key="1-2">{"12 (ຄິດໄລ່: 1200 / 100 = 12)"}</span>
+          <span key="1-1" style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+            <span>{"10000 (ຄິດໄລ່: "}</span>
+            <Fraction num={"2"} den={"20000"} />
+            <span>{" = "}</span>
+            <Fraction num={"1"} den={"10000"} />
+            <span>{")"}</span>
+          </span>,
+          <span key="1-2" style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+            <span>{"12 (ຄິດໄລ່: "}</span>
+            <Fraction num={"1200"} den={"100"} />
+            <span>{" = 12)"}</span>
+          </span>
         ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="2-1">{"15 / 5"}</span>,
+          <span key="2-1"><Fraction num={"15"} den={"5"} /></span>,
           <span key="2-2">{"3"}</span>
         ]
       },
       {
         questionNumber: 3,
         answers: [
-          <span key="3-1">{"10000000 / 2000000"}</span>,
+          <span key="3-1"><Fraction num={"10000000"} den={"2000000"} /></span>,
           <span key="3-2">{"5"}</span>
         ]
       },
       {
         questionNumber: 4,
         answers: [
-          <span key="4-1">{"8 × 5000 / 100"}</span>,
+          <span key="4-1" style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+            <Fraction num={<span>{"8 × 5000"}</span>} den={"100"} />
+          </span>,
           <span key="4-2">{"400"}</span>
         ]
       },
@@ -303,7 +336,13 @@ export const unit21Data: UnitData = {
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="s1-1">{"- ມາດຕາສ່ວນແມ່ນ 1:40 (10 / 400 = 1/40)"}</span>,
+          <span key="s1-1" style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+            <span>{"- ມາດຕາສ່ວນແມ່ນ 1:40 ("}</span>
+            <Fraction num={"10"} den={"400"} />
+            <span>{" = "}</span>
+            <Fraction num={"1"} den={"40"} />
+            <span>{")"}</span>
+          </span>,
           <span key="s1-2">{"- ຄວາມກວ້າງໃນຮູບແຕ້ມ = 5 cm (200 / 40 = 5)"}</span>
         ]
       },
