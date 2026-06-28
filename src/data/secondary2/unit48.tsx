@@ -34,27 +34,27 @@ export const unit48Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2", fontSize: "1.15rem", color: "#E65100" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ແຜນວາດກໍລະນີຄ້າຍຄື ມຸມ-ມຸມ (AA)"}</span>
-                <div style={{ display: "flex", alignItems: "flex-end", gap: "30px" }}>
-                  <svg viewBox="0 0 80 70" style={{ width: "80px", height: "auto" }}>
-                    <polygon points="40,10 10,60 70,60" fill="none" stroke="#E65100" strokeWidth="2" />
+                <div style={{ display: "flex", alignItems: "flex-end", gap: "40px" }}>
+                  <svg viewBox="0 0 160 145" style={{ width: "100%", maxWidth: "160px", height: "auto" }}>
+                    <polygon points="80,20 20,120 140,120" fill="none" stroke="#E65100" strokeWidth="3" />
                     {/* Angle B arc */}
-                    <path d="M 18,60 A 8,8 0 0,1 21,48" fill="none" stroke="#2196F3" strokeWidth="1.5" />
+                    <path d="M 40,120 A 20,20 0 0,1 30,103" fill="none" stroke="#2196F3" strokeWidth="2" />
                     {/* Angle C arc */}
-                    <path d="M 62,60 A 8,8 0 0,0 60,50" fill="none" stroke="#4CAF50" strokeWidth="1.5" />
-                    <text x="18" y="55" fill="#2196F3" fontSize="6">{"60°"}</text>
-                    <text x="50" y="55" fill="#4CAF50" fontSize="6">{"50°"}</text>
-                    <text x="40" y="66" fill="#37474F" fontSize="6" textAnchor="middle">{"ΔABC"}</text>
+                    <path d="M 120,120 A 20,20 0 0,0 130,103" fill="none" stroke="#4CAF50" strokeWidth="2" />
+                    <text x="44" y="115" fill="#2196F3" fontSize="14" fontWeight="bold">{"60°"}</text>
+                    <text x="92" y="115" fill="#4CAF50" fontSize="14" fontWeight="bold">{"50°"}</text>
+                    <text x="80" y="140" fill="#37474F" fontSize="14" fontWeight="bold" textAnchor="middle">{"ΔABC"}</text>
                   </svg>
 
-                  <svg viewBox="0 0 110 95" style={{ width: "110px", height: "auto" }}>
-                    <polygon points="55,10 10,85 95,85" fill="none" stroke="#E65100" strokeWidth="2" />
+                  <svg viewBox="0 0 220 195" style={{ width: "100%", maxWidth: "220px", height: "auto" }}>
+                    <polygon points="110,20 20,170 190,170" fill="none" stroke="#E65100" strokeWidth="3" />
                     {/* Angle B' arc */}
-                    <path d="M 21,85 A 11,11 0 0,1 25,68" fill="none" stroke="#2196F3" strokeWidth="1.5" />
+                    <path d="M 45,170 A 25,25 0 0,1 33,149" fill="none" stroke="#2196F3" strokeWidth="2" />
                     {/* Angle C' arc */}
-                    <path d="M 83,85 A 11,11 0 0,0 80,71" fill="none" stroke="#4CAF50" strokeWidth="1.5" />
-                    <text x="22" y="78" fill="#2196F3" fontSize="7">{"60°"}</text>
-                    <text x="70" y="78" fill="#4CAF50" fontSize="7">{"50°"}</text>
-                    <text x="55" y="92" fill="#37474F" fontSize="7" textAnchor="middle">{"ΔA'B'C'"}</text>
+                    <path d="M 165,170 A 25,25 0 0,0 178,148" fill="none" stroke="#4CAF50" strokeWidth="2" />
+                    <text x="50" y="165" fill="#2196F3" fontSize="14" fontWeight="bold">{"60°"}</text>
+                    <text x="142" y="165" fill="#4CAF50" fontSize="14" fontWeight="bold">{"50°"}</text>
+                    <text x="110" y="190" fill="#37474F" fontSize="14" fontWeight="bold" textAnchor="middle">{"ΔA'B'C'"}</text>
                   </svg>
                 </div>
               </div>
