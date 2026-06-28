@@ -316,6 +316,7 @@
 }
 
 /* 各問題行のレイアウト制御：インラインフローとして文章の横に解答欄を配置する */
+.problem__content div[style*="display:flex"],
 .problem__content div[style*="display: flex"] {
   display: block !important;
   margin-bottom: var(--space-2);
@@ -323,7 +324,9 @@
   word-break: break-word; /* Ensure Lao text wraps properly */
 }
 
+.problem__content div[style*="display:flex"] > span,
 .problem__content div[style*="display: flex"] > span,
+.problem__content div[style*="display:flex"] > div,
 .problem__content div[style*="display: flex"] > div {
   display: inline !important;
   min-width: 0 !important;
@@ -331,7 +334,9 @@
   white-space: normal !important;
 }
 
+.problem__content div[style*="display:flex"] > span:first-child,
 .problem__content div[style*="display: flex"] > span:first-child,
+.problem__content div[style*="display:flex"] > div:first-child,
 .problem__content div[style*="display: flex"] > div:first-child {
   display: inline !important;
   white-space: nowrap !important; /* (1) itself doesn't wrap */
@@ -341,6 +346,7 @@
   margin-right: 8px !important;
 }
 
+.problem__content div[style*="display:flex"] > .answer-blank,
 .problem__content div[style*="display: flex"] > .answer-blank {
   display: inline-block !important;
   vertical-align: middle !important;
