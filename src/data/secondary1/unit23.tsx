@@ -49,19 +49,19 @@ export const unit23Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ວັນເສົາ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                  <span>{"S"}</span>
-                </div>
+                <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }}>{"(1)"}</span>
+                  {"ວັນເສົາ "}
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                  {" S"}
+                </p>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ວັນປີໃໝ່"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                  <span>{"S"}</span>
-                </div>
+                <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }}>{"(2)"}</span>
+                  {"ວັນປີໃໝ່ "}
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                  {" S"}
+                </p>
               </div>
             </div>
           )
@@ -73,9 +73,9 @@ export const unit23Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ໃຫ້ A ແມ່ນກຸ່ມຂອງຕົວເລກທີ່ໃຊ້ຂຽນຈຳນວນ 42,124. ຈົ່ງຂຽນກຸ່ມ A ແບບແຈກຢາຍອົງປະກອບໃຫ້ຖືກຕ້ອງ? (ກົດລະບຽບ: ແຕ່ລະອົງປະກອບຂຽນພຽງເທື່ອດຽວ) "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                 <span>{"ຕອບ: A = {"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "80px", width: "80px", height: "42px", flexShrink: 0 }}></span>
                 <span>{"}"}</span>
               </div>
             </div>
@@ -121,17 +121,17 @@ export const unit23Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }}>{"(1)"}</span>
-                  <span>{"ເດືອນທຳອິດທີ່ມີ 31 ວັນໃນປີແມ່ນ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "42px", flexShrink: 0 }}></span>
-                </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }}>{"(2)"}</span>
-                  <span>{"ຈຳນວນອົງປະກອບທັງໝົດຂອງກຸ່ມ E ແມ່ນ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "42px", flexShrink: 0 }}></span>
-                  <span style={{ flexShrink: 0 }}>{"ເດືອນ."}</span>
-                </div>
+                <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }}>{"(1)"}</span>
+                  {"ເດືອນທຳອິດທີ່ມີ 31 ວັນໃນປີແມ່ນ "}
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                </p>
+                <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }}>{"(2)"}</span>
+                  {"ຈຳນວນອົງປະກອບທັງໝົດຂອງກຸ່ມ E ແມ່ນ "}
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                  {" ເດືອນ."}
+                </p>
               </div>
             </div>
           )
@@ -143,11 +143,11 @@ export const unit23Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ກຸ່ມຂອງ 'ເດືອນທີ່ມີ 32 ວັນ' ຈະເປັນກຸ່ມຊະນິດໃດ? ແລະ ສັນຍະລັກດ້ວຍເຄື່ອງໝາຍໃດ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                 <span>{"ຕອບ: ເປັນກຸ່ມ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "60px", width: "60px", height: "42px", flexShrink: 0 }}></span>
                 <span>{"ສັນຍະລັກດ້ວຍ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
               </div>
             </div>
           )
@@ -167,9 +167,9 @@ export const unit23Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ໃຫ້ A = {3, 5, 7, 9, 11, 13} ແມ່ນກຸ່ມເລກຄີກ. ໃຫ້ B = {2, 3, 5, 7, 11, 13} ແມ່ນກຸ່ມຈຳນວນມູນ (Prime numbers). ຈົ່ງຊອກຫາອົງປະກອບທີ່ນອນຢູ່ໃນທັງສອງກຸ່ມ A ແລະ B?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "nowrap", whiteSpace: "nowrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ອົງປະກອບຮ່ວມແມ່ນ {"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", minWidth: "80px", width: "80px", height: "42px", flexShrink: 0 }}></span>
               <span>{"}"}</span>
             </div>
           </div>
@@ -186,14 +186,14 @@ export const unit23Data: UnitData = {
               {"ໃຫ້ ℕ ແມ່ນກຸ່ມຈຳນວນທຳມະຊາດ ℕ = {0, 1, 2, 3, ...}. ຖາມວ່າ ຈຳນວນ 8.5 ແລະ ຈຳນວນ 100 ແມ່ນອົງປະກອບຂອງກຸ່ມ ℕ ບໍ່? (ຕອບ: 8.5 ∈ ℕ ຫຼື 8.5 ∉ ℕ ຕາມລຳດັບ)"}
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem", paddingLeft: "16px" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                 <span>{"- 8.5"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
                 <span>{"ℕ"}</span>
               </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                 <span>{"- 100"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
                 <span>{"ℕ"}</span>
               </div>
             </div>
