@@ -33,39 +33,39 @@ export const unit44Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#F5F5F5", borderRadius: "8px", border: "1px solid #E0E0E0", fontSize: "1.15rem", color: "#424242" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ແຜນວາດການສາຍຂະໜານ: ຮັກສາຈຸດເຄິ່ງກາງ M ➔ M' ແລະ ອັດຕາສ່ວນ"}</span>
-                <svg viewBox="0 0 200 100" style={{ width: "100%", maxWidth: "180px", height: "auto" }}>
+                <svg viewBox="0 0 400 200" style={{ width: "100%", maxWidth: "450px", height: "auto" }}>
                   {/* Line L1 (original segment AB) */}
-                  <line x1="20" y1="20" x2="180" y2="40" stroke="#1E88E5" strokeWidth="2.5" />
-                  <text x="15" y="18" fill="#1E88E5" fontSize="8" fontWeight="bold">{"(L₁)"}</text>
+                  <line x1="40" y1="40" x2="360" y2="80" stroke="#1E88E5" strokeWidth="3" />
+                  <text x="10" y="32" fill="#1E88E5" fontSize="18" fontWeight="bold">{"(L₁)"}</text>
                   
                   {/* Line L2 (projection line d) */}
-                  <line x1="20" y1="80" x2="180" y2="80" stroke="#43A047" strokeWidth="2.5" />
-                  <text x="15" y="85" fill="#43A047" fontSize="8" fontWeight="bold">{"(d)"}</text>
+                  <line x1="40" y1="160" x2="360" y2="160" stroke="#43A047" strokeWidth="3" />
+                  <text x="10" y="170" fill="#43A047" fontSize="18" fontWeight="bold">{"(d)"}</text>
 
                   {/* Points on L1 */}
-                  <circle cx="40" cy="22.5" r="3.5" fill="#1E88E5" />
-                  <text x="36" y="15" fill="#1E88E5" fontSize="8" fontWeight="bold">{"A"}</text>
+                  <circle cx="80" cy="45" r="5" fill="#1E88E5" />
+                  <text x="72" y="30" fill="#1E88E5" fontSize="18" fontWeight="bold">{"A"}</text>
                   
-                  <circle cx="100" cy="30" r="3.5" fill="#E65100" />
-                  <text x="96" y="22" fill="#E65100" fontSize="8" fontWeight="bold">{"M"}</text>
+                  <circle cx="200" cy="60" r="5" fill="#E65100" />
+                  <text x="192" y="45" fill="#E65100" fontSize="18" fontWeight="bold">{"M"}</text>
 
-                  <circle cx="160" cy="37.5" r="3.5" fill="#1E88E5" />
-                  <text x="156" y="30" fill="#1E88E5" fontSize="8" fontWeight="bold">{"B"}</text>
+                  <circle cx="320" cy="75" r="5" fill="#1E88E5" />
+                  <text x="312" y="60" fill="#1E88E5" fontSize="18" fontWeight="bold">{"B"}</text>
 
                   {/* Projection rays (parallel dashed lines) */}
-                  <line x1="40" y1="22.5" x2="50" y2="80" stroke="#757575" strokeWidth="1" strokeDasharray="3,3" />
-                  <line x1="100" y1="30" x2="110" y2="80" stroke="#757575" strokeWidth="1" strokeDasharray="3,3" />
-                  <line x1="160" y1="37.5" x2="170" y2="80" stroke="#757575" strokeWidth="1" strokeDasharray="3,3" />
+                  <line x1="80" y1="45" x2="100" y2="160" stroke="#757575" strokeWidth="1.5" strokeDasharray="5,5" />
+                  <line x1="200" y1="60" x2="220" y2="160" stroke="#757575" strokeWidth="1.5" strokeDasharray="5,5" />
+                  <line x1="320" y1="75" x2="340" y2="160" stroke="#757575" strokeWidth="1.5" strokeDasharray="5,5" />
 
                   {/* Points on L2 */}
-                  <circle cx="50" cy="80" r="3.5" fill="#43A047" />
-                  <text x="46" y="93" fill="#43A047" fontSize="8" fontWeight="bold">{"A'"}</text>
+                  <circle cx="100" cy="160" r="5" fill="#43A047" />
+                  <text x="92" y="186" fill="#43A047" fontSize="18" fontWeight="bold">{"A'"}</text>
 
-                  <circle cx="110" cy="80" r="3.5" fill="#D84315" />
-                  <text x="106" y="93" fill="#D84315" fontSize="8" fontWeight="bold">{"M'"}</text>
+                  <circle cx="220" cy="160" r="5" fill="#D84315" />
+                  <text x="212" y="186" fill="#D84315" fontSize="18" fontWeight="bold">{"M'"}</text>
 
-                  <circle cx="170" cy="80" r="3.5" fill="#43A047" />
-                  <text x="166" y="93" fill="#43A047" fontSize="8" fontWeight="bold">{"B'"}</text>
+                  <circle cx="340" cy="160" r="5" fill="#43A047" />
+                  <text x="332" y="186" fill="#43A047" fontSize="18" fontWeight="bold">{"B'"}</text>
                 </svg>
               </div>
             </div>
