@@ -117,7 +117,17 @@ export const unit28Data: UnitData = {
             </p>
             <ul style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.6" }}>
               <li><strong>{"1. ວິທີຊອກຫາຫົວໜ່ວຍກ່ອນ (Unit Rate Method): "}</strong>{" ຊອກຫາຄ່າຂອງ 1 ຫົວໜ່ວຍກ່ອນ (ເຊັ່ນ: ລາຄາ 1 ແມັດ), ແລ້ວຈຶ່ງຄູນໃຫ້ຈຳນວນທີ່ຕ້ອງການ."}</li>
-              <li><strong>{"2. ວິທີຄູນສະຫຼັບ (Cross-Multiplication): "}</strong>{" ຖ້າ x₁ ພົວພັນກັບ y₁ ແລະ x₂ ພົວພັນກັບ y₂, ເຮົາໄດ້: x₁/y₁ = x₂/y₂  ⇒  y₂ = (x₂ × y₁) / x₁."}</li>
+              <li style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap" }}>
+                <strong>{"2. ວິທີຄູນສະຫຼັບ (Cross-Multiplication): "}</strong>
+                {" ຖ້າ x"}<sub style={{ fontSize: "0.75rem", bottom: "-0.1em" }}>{"1"}</sub>{" ພົວພັນກັບ y"}<sub style={{ fontSize: "0.75rem", bottom: "-0.1em" }}>{"1"}</sub>{" ແລະ x"}<sub style={{ fontSize: "0.75rem", bottom: "-0.1em" }}>{"2"}</sub>{" ພົວພັນກັບ y"}<sub style={{ fontSize: "0.75rem", bottom: "-0.1em" }}>{"2"}</sub>{", ເຮົາໄດ້: "}
+                <span style={{ display: "inline-flex", alignItems: "center", paddingLeft: "4px" }}>
+                  <Fraction num={<span>{"x"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"1"}</sub></span>} den={<span>{"y"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"1"}</sub></span>} />
+                  {" = "}
+                  <Fraction num={<span>{"x"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"2"}</sub></span>} den={<span>{"y"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"2"}</sub></span>} />
+                  {" ⇒ y"}<sub style={{ fontSize: "0.75rem", bottom: "-0.1em" }}>{"2"}</sub>{" = "}
+                  <Fraction num={<span>{"x"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"2"}</sub>{" × y"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"1"}</sub></span>} den={<span>{"x"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"1"}</sub></span>} />
+                </span>
+              </li>
             </ul>
           </div>
         ),
