@@ -46,15 +46,16 @@ export const unit16Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ຕ້ອງການປັກເສົາຮົ້ວອ້ອມຮອບສວນຫຼັງບ້ານຕາມແນວຊື່ຍາວ 120 m ໂດຍໃຫ້ແຕ່ລະເສົາຫ່າງກັນ 4 m. ຖ້າປັກເສົາຢູ່ສົ້ນທາງທັງສອງເບື້ອງນຳ, ຈະຕ້ອງໃຊ້ເສົາທັງໝົດຈັກຕົ້ນ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
+                <div>
                   <span>{"ປະໂຫຍກສັນຍະລັກ: ຈຳນວນເສົາ ="}</span>
-                  <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap" }}>
                   <span>{"= "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
-                  <span>{"ຕົ້ນ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px", flexShrink: 0 }}></span>
+                  <span>{"= "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
+                  <span style={{ flexShrink: 0 }}>{"ຕົ້ນ"}</span>
                 </div>
               </div>
             </div>
@@ -67,15 +68,16 @@ export const unit16Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ແຄມທາງຍາວ 300 m ຕ້ອງການຕັ້ງໂຄມໄຟຫ່າງກັນ 10 m ຕໍ່ດອກ. ຖ້າບໍ່ຕັ້ງໂຄມໄຟຢູ່ສົ້ນທາງທັງສອງເບື້ອງເລີຍ, ຈະຕ້ອງໃຊ້ໂຄມໄຟທັງໝົດຈັກດອກ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
+                <div>
                   <span>{"ປະໂຫຍກສັນຍະລັກ: ຈຳນວນໂຄມໄຟ ="}</span>
-                  <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap" }}>
                   <span>{"= "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
-                  <span>{"ດອກ"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px", flexShrink: 0 }}></span>
+                  <span>{"= "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
+                  <span style={{ flexShrink: 0 }}>{"ດອກ"}</span>
                 </div>
               </div>
             </div>
