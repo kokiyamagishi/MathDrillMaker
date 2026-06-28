@@ -44,28 +44,28 @@ export const unit8Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#FFF9C4", borderRadius: "8px", border: "1px solid #FFF59D", fontSize: "1.15rem", color: "#E65100" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
                 <span>{"ແຜນວາດສະແດງການປີ້ນເລກສ່ວນ (Reciprocal)"}</span>
-                <svg viewBox="0 0 240 60" style={{ width: "100%", maxWidth: "240px", height: "auto" }}>
+                <svg viewBox="0 0 300 60" style={{ width: "100%", maxWidth: "280px", height: "auto" }}>
                   {/* Left Fraction */}
-                  <rect x="10" y="5" width="40" height="50" rx="5" fill="#FFE0B2" stroke="#FB8C00" strokeWidth="1.5" />
-                  <text x="30" y="24" fill="#E65100" fontSize="16" fontWeight="bold" textAnchor="middle">{"5"}</text>
-                  <line x1="15" y1="30" x2="45" y2="30" stroke="#FB8C00" strokeWidth="1.5" />
-                  <text x="30" y="48" fill="#E65100" fontSize="16" fontWeight="bold" textAnchor="middle">{"7"}</text>
+                  <rect x="20" y="5" width="40" height="50" rx="5" fill="#FFE0B2" stroke="#FB8C00" strokeWidth="1.5" />
+                  <text x="40" y="24" fill="#E65100" fontSize="16" fontWeight="bold" textAnchor="middle">{"5"}</text>
+                  <line x1="25" y1="30" x2="55" y2="30" stroke="#FB8C00" strokeWidth="1.5" />
+                  <text x="40" y="48" fill="#E65100" fontSize="16" fontWeight="bold" textAnchor="middle">{"7"}</text>
                   
                   {/* Arrow with Reciprocal text */}
-                  <path d="M 65 30 L 105 30" stroke="#E65100" strokeWidth="2" markerEnd="url(#arrow)" />
-                  <text x="85" y="22" fill="#E65100" fontSize="10" fontWeight="bold" textAnchor="middle">{"ປີ້ນເລກສ່ວນ"}</text>
+                  <path d="M 90 30 L 210 30" stroke="#E65100" strokeWidth="2" markerEnd="url(#arrow)" />
+                  <text x="150" y="22" fill="#E65100" fontSize="10" fontWeight="bold" textAnchor="middle">{"ປີ້ນເລກສ່ວນ"}</text>
                   
                   {/* Right Fraction (Flipped) */}
-                  <rect x="120" y="5" width="40" height="50" rx="5" fill="#FFF9C4" stroke="#FBC02D" strokeWidth="1.5" />
-                  <text x="140" y="24" fill="#F57F17" fontSize="16" fontWeight="bold" textAnchor="middle">{"7"}</text>
-                  <line x1="125" y1="30" x2="155" y2="30" stroke="#FBC02D" strokeWidth="1.5" />
-                  <text x="140" y="48" fill="#F57F17" fontSize="16" fontWeight="bold" textAnchor="middle">{"5"}</text>
-
+                  <rect x="240" y="5" width="40" height="50" rx="5" fill="#FFF9C4" stroke="#FBC02D" strokeWidth="1.5" />
+                  <text x="260" y="24" fill="#F57F17" fontSize="16" fontWeight="bold" textAnchor="middle">{"7"}</text>
+                  <line x1="245" y1="30" x2="275" y2="30" stroke="#FBC02D" strokeWidth="1.5" />
+                  <text x="260" y="48" fill="#F57F17" fontSize="16" fontWeight="bold" textAnchor="middle">{"5"}</text>
+ 
                   {/* Marker definitions */}
                   <defs>
-                    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                      <path d="M 0 1 L 10 5 L 0 9 z" fill="#E65100" />
-                    </marker>
+                     <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                       <path d="M 0 1 L 10 5 L 0 9 z" fill="#E65100" />
+                     </marker>
                   </defs>
                 </svg>
               </div>
@@ -143,7 +143,7 @@ export const unit8Data: UnitData = {
               {"ເມື່ອຫານຈຳນວນຖ້ວນໃຫ້ເລກສ່ວນ (ຫຼື ຫານເລກສ່ວນໃຫ້ຈຳນວນຖ້ວນ), ໃຫ້ຄິດວ່າຈຳນວນຖ້ວນ "} <span className="math">{"n"}</span> {" ກໍແມ່ນເລກສ່ວນທີ່ມີພູດເປັນ 1:"}
             </p>
             
-            {/* Visual Formula box */}
+            {/* Visual Formula block */}
             <div style={{ padding: "12px", backgroundColor: "#E8F5E9", borderRadius: "10px", border: "1px solid #A5D6A7", fontSize: "1.25rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "10px", margin: "8px 0" }}>
                 <span className="math" style={{ fontSize: "1.5rem" }}>
@@ -193,7 +193,7 @@ export const unit8Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຈົ່ງຫານຈຳນວນຖ້ວນ ແລະ ເລກສ່ວນລຸ່ມນີ້ໃຫ້ຖືກຕ້ອງ: "}<span className="point-label">{"(ຂໍ้ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
+                {"ຈົ່ງຫານຈຳນວນຖ້ວນ ແລະ ເລກສ່ວນລຸ່ມນີ້ໃຫ້ຖືກຕ້ອງ: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px 24px", padding: "8px 0" }}>
@@ -290,7 +290,7 @@ export const unit8Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຫານເລກສ່ວນສາມຕົວຕໍ່ເນື່ອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"การຫານເລກສ່ວນສາມຕົວຕໍ່ເນື່ອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງຄິດໄລ່ສຳນວນຕໍ່ໄປນີ້: "}
@@ -372,25 +372,73 @@ export const unit8Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="t1">{"(1) 8 ແກ້ວ (ຄິດໄລ່: 6 ÷ 3/4 = 6 × 4/3 = 24/3 = 8)"}</span>
+          <span key="t1" style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+            <span>{"(1) 8 ແກ້ວ (ຄິດໄລ່: 6 ÷ "}</span>
+            <Fraction num="3" den="4" />
+            <span>{" = 6 × "}</span>
+            <Fraction num="4" den="3" />
+            <span>{" = "}</span>
+            <Fraction num="24" den="3" />
+            <span>{" = 8)"}</span>
+          </span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="t2">{"(1) "} <Fraction num="3" den="4" /> {" (ຄິດໄລ່: 3/5 × 7/6 × 15/14 = (3 × 7 × 15)/(5 × 6 × 14) = 315/420 = 3/4)"}</span>
+          <span key="t2" style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+            <span>{"(1) "}</span>
+            <Fraction num="3" den="4" />
+            <span>{" (ຄິດໄລ່: "}</span>
+            <Fraction num="3" den="5" />
+            <span>{" × "}</span>
+            <Fraction num="7" den="6" />
+            <span>{" × "}</span>
+            <Fraction num="15" den="14" />
+            <span>{" = "}</span>
+            <Fraction num="315" den="420" />
+            <span>{" = "}</span>
+            <Fraction num="3" den="4" />
+            <span>{")"}</span>
+          </span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="s1">{"(1) 4 ຕ່ອນ (ຄິດໄລ່: 5/2 ÷ 5/8 = 5/2 × 8/5 = 4)"}</span>
+          <span key="s1" style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+            <span>{"(1) 4 ຕ່ອນ (ຄິດໄລ່: "}</span>
+            <Fraction num="5" den="2" />
+            <span>{" ÷ "}</span>
+            <Fraction num="5" den="8" />
+            <span>{" = "}</span>
+            <Fraction num="5" den="2" />
+            <span>{" × "}</span>
+            <Fraction num="8" den="5" />
+            <span>{" = 4)"}</span>
+          </span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="s2">{"(1) "} <Fraction num="4" den="3" /> {" (ຄິດໄລ່: x = 8/9 ÷ 2/3 = 8/9 × 3/2 = 24/18 = 4/3)"}</span>
+          <span key="s2" style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+            <span>{"(1) "}</span>
+            <Fraction num="4" den="3" />
+            <span>{" (ຄິດໄລ່: x = "}</span>
+            <Fraction num="8" den="9" />
+            <span>{" ÷ "}</span>
+            <Fraction num="2" den="3" />
+            <span>{" = "}</span>
+            <Fraction num="8" den="9" />
+            <span>{" × "}</span>
+            <Fraction num="3" den="2" />
+            <span>{" = "}</span>
+            <Fraction num="24" den="18" />
+            <span>{" = "}</span>
+            <Fraction num="4" den="3" />
+            <span>{")"}</span>
+          </span>
         ]
       }
     ],
