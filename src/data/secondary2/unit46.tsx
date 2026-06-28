@@ -16,7 +16,7 @@ export const unit46Data: UnitData = {
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.2 ໜ້າ 211-215",
   subSections: [
     {
-      title: "1. ການຊອກຫາທ່ອນຊື່ດ້ວຍຫຼັກເກັນຕາແລັດ (Calculating Segments with Thales' Theorem)",
+      title: "1. ການຊອກຫາທ່ອນຊື່ດ້ວຍຫຼັກເກັນຕາແລັດ",
       keyPoint: {
         title: "ຫຼັກເກັນຕາແລັດໃນຮູບສາມແຈ",
         content: (
