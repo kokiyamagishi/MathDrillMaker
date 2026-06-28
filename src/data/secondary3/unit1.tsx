@@ -40,22 +40,23 @@ export const unit1Data: UnitData = {
                   {/* Grid Lines */}
                   <line x1="40" y1="160" x2="360" y2="160" stroke="#37474F" strokeWidth="3" />
                   <line x1="40" y1="20" x2="40" y2="160" stroke="#37474F" strokeWidth="3" />
+                  <text x="25" y="170" fill="#37474F" fontSize="14">{"0"}</text>
                   
                   {/* Graph line representing 2^n */}
-                  <path d="M 40,156 C 80,156 120,152 160,146 C 200,140 240,130 280,110 C 310,95 340,70 360,30" fill="none" stroke="#E65100" strokeWidth="5" />
+                  <path d="M 40,144 C 80,144 120,138 160,128 C 200,118 240,108 280,96 C 310,87 340,65 360,32" fill="none" stroke="#E65100" strokeWidth="5" />
                   
                   {/* Nodes */}
-                  <circle cx="40" cy="156" r="6" fill="#D32F2F" />
-                  <text x="50" y="150" fill="#37474F" fontSize="16">{"2⁰ = 1"}</text>
+                  <circle cx="40" cy="144" r="6" fill="#D32F2F" />
+                  <text x="50" y="146" fill="#37474F" fontSize="16">{"2⁰ = 1"}</text>
 
-                  <circle cx="160" cy="146" r="6" fill="#D32F2F" />
-                  <text x="170" y="140" fill="#37474F" fontSize="16">{"2¹ = 2"}</text>
+                  <circle cx="160" cy="128" r="6" fill="#D32F2F" />
+                  <text x="170" y="130" fill="#37474F" fontSize="16">{"2¹ = 2"}</text>
 
-                  <circle cx="280" cy="110" r="6" fill="#D32F2F" />
-                  <text x="290" y="100" fill="#37474F" fontSize="16">{"2² = 4"}</text>
+                  <circle cx="280" cy="96" r="6" fill="#D32F2F" />
+                  <text x="290" y="98" fill="#37474F" fontSize="16">{"2² = 4"}</text>
 
-                  <circle cx="360" cy="30" r="6" fill="#D32F2F" />
-                  <text x="340" y="20" fill="#37474F" fontSize="16">{"2³ = 8"}</text>
+                  <circle cx="360" cy="32" r="6" fill="#D32F2F" />
+                  <text x="315" y="26" fill="#37474F" fontSize="16">{"2³ = 8"}</text>
                 </svg>
               </div>
             </div>
