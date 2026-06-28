@@ -140,8 +140,17 @@ export const unit5Data: UnitData = {
             {/* Visual Subtraction representation */}
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#FFF9C4", borderRadius: "8px", border: "1px solid #FFF59D", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
-                <span>{"8/9 - 5/9 = 3/9 (ຫຼື 1/3)"}</span>
-                <svg viewBox="0 0 180 20" style={{ width: "100%", maxWidth: "160px", height: "auto" }}>
+                <span className="math" style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                  <Fraction num="8" den="9" />
+                  <span>{" - "}</span>
+                  <Fraction num="5" den="9" />
+                  <span>{" = "}</span>
+                  <Fraction num="3" den="9" />
+                  <span>{" (ຫຼື "}</span>
+                  <Fraction num="1" den="3" />
+                  <span>{")"}</span>
+                </span>
+                <svg viewBox="0 0 180 40" style={{ width: "100%", maxWidth: "160px", height: "auto" }}>
                   <rect x="0" y="2" width="180" height="16" fill="none" stroke="#37474F" strokeWidth="2" />
                   {/* 9 parts grid */}
                   <line x1="20" y1="2" x2="20" y2="18" stroke="#37474F" strokeWidth="1" />
@@ -155,7 +164,7 @@ export const unit5Data: UnitData = {
                   {/* Shading remaining 3, x-out the removed 5 */}
                   <rect x="0" y="2" width="60" height="16" fill="#F44336" />
                   <rect x="60" y="2" width="100" height="16" fill="#ECEFF1" />
-                  <text x="110" y="14" fill="#B0BEC5" fontSize="10" fontWeight="bold" textAnchor="middle">{"ສ່ວນທີ່ຖືກລົບ"}</text>
+                  <text x="110" y="32" fill="#78909C" fontSize="10" fontWeight="bold" textAnchor="middle">{"ສ່ວນທີ່ຖືກລົບ"}</text>
                 </svg>
               </div>
             </div>
