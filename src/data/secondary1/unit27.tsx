@@ -1,6 +1,14 @@
 import React from "react";
 import { UnitData } from "../units2";
 
+// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
+const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" }}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" }}>{den}</span>
+  </span>
+);
+
 export const unit27Data: UnitData = {
   unitNumber: 27,
   unitTitle: "ພາກທີ V - ບົດທີ 27: ອັດຕາສ່ວນ (Ratio)",
@@ -13,18 +21,26 @@ export const unit27Data: UnitData = {
         title: "ນິຍາມ ແລະ ການຂຽນອັດຕາສ່ວນ",
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"- "}<strong>{"ອັດຕາສ່ວນ"}</strong>{" ລະຫວ່າງສອງປະລິມານ a ແລະ b (ເຊິ່ງ b ≠ 0) ແມ່ນຜົນຫານລະຫວ່າງ a ແລະ b, ຂຽນເປັນສັນຍະລັກດ້ວຍ: "}<strong>{"a/b"}</strong>{" ຫຼື "}<strong>{"a:b"}</strong>{"."}
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6", display: "flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+              <span>{"- "}<strong>{"ອັດຕາສ່ວນ"}</strong>{" ລະຫວ່າງສອງປະລິມານ a ແລະ b (ເຊິ່ງ b ≠ 0) ແມ່ນຜົນຫານລະຫວ່າງ a ແລະ b, ຂຽນເປັນສັນຍະລັກດ້ວຍ: "}</span>
+              <Fraction num={"a"} den={"b"} />
+              <span>{" ຫຼື "}<strong>{"a:b"}</strong>{"."}</span>
               <br />
               {"- a ເອີ້ນວ່າ ພົດທີໜຶ່ງ (First term) ແລະ b ເອີ້ນວ່າ ພົດທີສອງ (Second term)."}
             </p>
             
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9", display: "flex", flexDirection: "column", gap: "8px" }}>
               <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }}>{"ຄຸນລັກສະນະພື້ນຖານ:"}</span>
-              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6" }}>
-                {"ອັດຕາສ່ວນຈະບໍ່ປ່ຽນແປງ ຖ້າເຮົາຄູນ ຫຼື ຫານທັງພົດທີໜຶ່ງ ແລະ ພົດທີສອງດ້ວຍຈຳນວນດຽວກັນ (ທີ່ຕ່າງຈາກ 0):"}
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", display: "flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+                <span>{"ອັດຕາສ່ວນຈະບໍ່ປ່ຽນແປງ ຖ້າເຮົາຄູນ ຫຼື ຫານທັງພົດທີໜຶ່ງ ແລະ ພົດທີສອງດ້ວຍຈຳນວນດຽວກັນ (ທີ່ຕ່າງຈາກ 0):"}</span>
                 <br />
-                <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", paddingLeft: "16px" }}>{"a:b = (a × n) : (b × n) = (a / m) : (b / m)"}</span>
+                <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", paddingLeft: "16px", display: "flex", alignItems: "center", gap: "4px" }}>
+                  <span>{"a:b = (a × n) : (b × n) = ("}</span>
+                  <Fraction num={"a"} den={"m"} />
+                  <span>{") : ("}</span>
+                  <Fraction num={"b"} den={"m"} />
+                  <span>{")"}</span>
+                </span>
               </p>
             </div>
           </div>
@@ -45,15 +61,17 @@ export const unit27Data: UnitData = {
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"15/50 = 3/"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 }}>{"(1)"}</span>
+                  <Fraction num={"15"} den={"50"} />
+                  <span>{" = "}</span>
+                  <Fraction num={"3"} den={<span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "24px", verticalAlign: "middle" }}></span>} />
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"5/100 = 1/"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 }}>{"(2)"}</span>
+                  <Fraction num={"5"} den={"100"} />
+                  <span>{" = "}</span>
+                  <Fraction num={"1"} den={<span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "24px", verticalAlign: "middle" }}></span>} />
                 </div>
               </div>
             </div>
@@ -66,14 +84,13 @@ export const unit27Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ໃນໂຮງຮຽນແຫ່ງໜຶ່ງ, ອັດຕາສ່ວນຂອງນັກຮຽນຍິງຕໍ່ນັກຮຽນຊາຍແມ່ນ 3:5. ຖ້າມີນັກຮຽນຊາຍທັງໝົດ 105 ຄົນ, ຈະມີນັກຮຽນຍິງຈັກຄົນ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span>{"ປະໂຫຍກສັນຍະລັກ: ຈຳນວນນັກຮຽນຍິງ = 105 ×"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
-                </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span>{"= "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
+              <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
+                <div>{"ປະໂຫຍກສັນຍະລັກ:"}</div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", marginTop: "4px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
+                  <span>{"ຈຳນວນນັກຮຽນຍິງ = 105 ×"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                  <span>{" = "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ຄົນ"}</span>
                 </div>
               </div>
@@ -114,14 +131,13 @@ export const unit27Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ໃນທະນາຄານແຫ່ງໜຶ່ງ, ອັດຕາສ່ວນຂອງຜູ້ກູ້ຢືມຕໍ່ຜູ້ຝາກເງິນແມ່ນ 2:7. ຖ້າມີຜູ້ຝາກເງິນທັງໝົດ 140 ຄົນ, ຈະມີຜູ້ກູ້ຢືມເງິນຈັກຄົນ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span>{"ປະໂຫຍກສັນຍະລັກ: ຈຳນວນຜູ້ກູ້ຢືມ = 140 ×"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
-                </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span>{"= "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
+              <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
+                <div>{"ປະໂຫຍກສັນຍະລັກ:"}</div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", marginTop: "4px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
+                  <span>{"ຈຳນວນຜູ້ກູ້ຢືມ = 140 ×"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                  <span>{" = "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ຄົນ"}</span>
                 </div>
               </div>
@@ -135,14 +151,13 @@ export const unit27Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ອັດຕາສ່ວນຂອງນັກຮຽນທີ່ເສັງເກັ່ງຂອງຫ້ອງ ມ.1 ຕໍ່ນັກຮຽນທັງໝົດແມ່ນ 1:4. ຖ້າມີນັກຮຽນເສັງເກັ່ງທັງໝົດ 9 ຄົນ, ຖາມວ່ານັກຮຽນທັງໝົດໃນຫ້ອງມີຈັກຄົນ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span>{"ປະໂຫຍກສັນຍະລັກ: ນັກຮຽນທັງໝົດ = 9 ×"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
-                </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span>{"= "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
+              <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
+                <div>{"ປະໂຫຍກສັນຍະລັກ:"}</div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", marginTop: "4px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
+                  <span>{"ນັກຮຽນທັງໝົດ = 9 ×"}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                  <span>{" = "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ຄົນ"}</span>
                 </div>
               </div>
