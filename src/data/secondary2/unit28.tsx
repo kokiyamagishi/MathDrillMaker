@@ -223,13 +223,13 @@ export const unit28Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ຊອກຫາ x ຈາກຄວາມຍາວຂ້າງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ຊອກຫາ 𝑥 ຈາກຄວາມຍາວຂ້າງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ໃນຮູບສີ່ແຈຂະໜານ ABCD, ມີຂ້າງ "} <span className="math">{"AB = 3x - 5 cm"}</span> {" ແລະ "} <span className="math">{"CD = 10 cm"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ x ເພື່ອເຮັດໃຫ້ສອງຂ້າງນີ້ເທົ່າກັນ."}
+              {"ໃນຮູບສີ່ແຈຂະໜານ ABCD, ມີຂ້າງ "} <span className="math">{"AB = 3𝑥 - 5 cm"}</span> {" ແລະ "} <span className="math">{"CD = 10 cm"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥 ເພື່ອເຮັດໃຫ້ສອງຂ້າງນີ້ເທົ່າກັນ."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -240,13 +240,13 @@ export const unit28Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ຊອກຫາ y ຈາກຂະໜາດຂອງມຸມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ຊອກຫາ 𝑦 ຈາກຂະໜາດຂອງມຸມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຖ້າມຸມ A = "} <span className="math">{"2y + 10°"}</span> {" ແລະ ມຸມກົງກັນຂ້າມ C = "} <span className="math">{"80°"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ y."}
+              {"ຖ້າມຸມ A = "} <span className="math">{"2𝑦 + 10°"}</span> {" ແລະ ມຸມກົງກັນຂ້າມ C = "} <span className="math">{"80°"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ 𝑦."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: y ="}</span>
+              <span>{"ຕອບ: 𝑦 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -317,13 +317,13 @@ export const unit28Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="11">{"5 (ເພາະວ່າ 3x - 5 = 10 ➔ 3x = 15 ➔ x = 5)"}</span>
+          <span key="11">{"5 (ເພາະວ່າ 3𝑥 - 5 = 10 ➔ 3𝑥 = 15 ➔ 𝑥 = 5)"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="12">{"35 (ເພາະວ່າ 2y + 10 = 80 ➔ 2y = 70 ➔ y = 35)"}</span>
+          <span key="12">{"35 (ເພາະວ່າ 2𝑦 + 10 = 80 ➔ 2𝑦 = 70 ➔ 𝑦 = 35)"}</span>
         ]
       },
       {

@@ -31,7 +31,7 @@ export const unit20Data: UnitData = {
                 <span className="math">{"• ຖ້າ a = b, ຈະໄດ້: a + c = b + c"}</span>
                 <span className="math">{"• ຖ້າ a = b, ຈະໄດ້: a - c = b - c"}</span>
                 <span style={{ color: "#0D47A1" }}>
-                  <strong>{"ຕົວຢ່າງ: "}</strong> {"ຖ້າ x - 3 = 7, ເອົາ 3 ບວກໃສ່ທັງສອງຟາກ: x - 3 + 3 = 7 + 3 ➔ x = 10."}
+                  <strong>{"ຕົວຢ່າງ: "}</strong> {"ຖ້າ 𝑥 - 3 = 7, ເອົາ 3 ບວກໃສ່ທັງສອງຟາກ: 𝑥 - 3 + 3 = 7 + 3 ➔ 𝑥 = 10."}
                 </span>
               </div>
             </div>
@@ -52,7 +52,7 @@ export const unit20Data: UnitData = {
                   <line x1="40" y1="20" x2="20" y2="40" stroke="#757575" strokeWidth="1" />
                   <line x1="40" y1="20" x2="60" y2="40" stroke="#757575" strokeWidth="1" />
                   <rect x="15" y="40" width="50" height="4" fill="#0288D1" />
-                  <text x="40" y="36" fill="#0D47A1" fontSize="9" fontWeight="bold" textAnchor="middle">{"x - 3"}</text>
+                  <text x="40" y="36" fill="#0D47A1" fontSize="9" fontWeight="bold" textAnchor="middle">{"𝑥 - 3"}</text>
                   
                   {/* Right Pan */}
                   <line x1="160" y1="20" x2="140" y2="40" stroke="#757575" strokeWidth="1" />
@@ -68,7 +68,7 @@ export const unit20Data: UnitData = {
           </div>
         ),
         hint: {
-          text: "💡 ເພື່ອຊອກຫາ x, ໃຫ້ກຳຈັດຕົວເລກທີ່ຢູ່ຟາກດຽວກັນກັບ x ໂດຍໃຊ້ການປະຕິບັດການກົງກັນຂ້າມເດີ້!",
+          text: "💡 ເພື່ອຊອກຫາ 𝑥, ໃຫ້ກຳຈັດຕົວເລກທີ່ຢູ່ຟາກດຽວກັນກັບ 𝑥 ໂດຍໃຊ້ການປະຕິບັດການກົງກັນຂ້າມເດີ້!",
           isBlue: true
         }
       },
@@ -78,38 +78,38 @@ export const unit20Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຈົ່ງຫາຄ່າຂອງ x ໂດຍນຳໃຊ້ຄຸນລັກສະນະບວກລົບໃນສະເໝີຜົນ: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
+                {"ຈົ່ງຫາຄ່າຂອງ 𝑥 ໂດຍນຳໃຊ້ຄຸນລັກສະນະບວກລົບໃນສະເໝີຜົນ: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "18px", padding: "8px 0" }}>
                 {/* 5 Questions */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຖ້າ x - 3 = 7, ຈະໄດ້ x ="}</span>
+                  <span>{"ຖ້າ 𝑥 - 3 = 7, ຈະໄດ້ 𝑥 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຖ້າ x + 5 = 12, ຈະໄດ້ x ="}</span>
+                  <span>{"ຖ້າ 𝑥 + 5 = 12, ຈະໄດ້ 𝑥 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ຖ້າ x - 8 = -2, ຈະໄດ້ x ="}</span>
+                  <span>{"ຖ້າ 𝑥 - 8 = -2, ຈະໄດ້ 𝑥 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
-                  <span>{"ຖ້າ 10 + x = 4, ຈະໄດ້ x ="}</span>
+                  <span>{"ຖ້າ 10 + 𝑥 = 4, ຈະໄດ້ 𝑥 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
-                  <span>{"ຖ້າ x - 1.5 = 3.5, ຈະໄດ້ x ="}</span>
+                  <span>{"ຖ້າ 𝑥 - 1.5 = 3.5, ຈະໄດ້ 𝑥 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -136,14 +136,14 @@ export const unit20Data: UnitData = {
                   {"• ຖ້າ a = b, ຈະໄດ້: "} <Fraction num="a" den="c" /> {" = "} <Fraction num="b" den="c" /> {" (ເຊິ່ງ c ≠ 0)"}
                 </span>
                 <span style={{ color: "#2E7D32" }}>
-                  <strong>{"ຕົວຢ່າງ: "}</strong> {"ຖ້າ "} <Fraction num="x" den="2" /> {" = 6, ເອົາ 2 ຄູນໃສ່ທັງສອງຟາກ ➔ x = 12."}
+                  <strong>{"ຕົວຢ່າງ: "}</strong> {"ຖ້າ "} <Fraction num="𝑥" den="2" /> {" = 6, ເອົາ 2 ຄູນໃສ່ທັງສອງຟາກ ➔ 𝑥 = 12."}
                 </span>
               </div>
             </div>
           </div>
         ),
         hint: {
-          text: "💡 ການຫານກໍຄືການຄູນກັບເລກສ່ວນປີ້ນ, ໃຊ້ກຳຈັດຕົວເລກທາງໜ້າ x ເດີ້!",
+          text: "💡 ການຫານກໍຄືການຄູນກັບເລກສ່ວນປີ້ນ, ໃຊ້ກຳຈັດຕົວເລກທາງໜ້າ 𝑥 ເດີ້!",
           isBlue: false
         }
       },
@@ -153,7 +153,7 @@ export const unit20Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຈົ່ງຫາຄ່າຂອງ x ໂດຍນຳໃຊ້ຄຸນລັກສະນະຄູນຫານໃນສະເໝີຜົນ: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
+                {"ຈົ່ງຫາຄ່າຂອງ 𝑥 ໂດຍນຳໃຊ້ຄຸນລັກສະນະຄູນຫານໃນສະເໝີຜົນ: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "18px", padding: "8px 0" }}>
@@ -161,35 +161,35 @@ export const unit20Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
-                    <Fraction num="x" den="2" /> {" = 6, ຈະໄດ້ x ="}
+                    <Fraction num="𝑥" den="2" /> {" = 6, ຈະໄດ້ 𝑥 ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span className="math">{"3x = 15, ຈະໄດ້ x ="}</span>
+                  <span className="math">{"3𝑥 = 15, ຈະໄດ້ 𝑥 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
-                    <Fraction num="x" den="5" /> {" = -3, ຈະໄດ້ x ="}
+                    <Fraction num="𝑥" den="5" /> {" = -3, ຈະໄດ້ 𝑥 ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
-                  <span className="math">{"-4x = 24, ຈະໄດ້ x ="}</span>
+                  <span className="math">{"-4𝑥 = 24, ຈະໄດ້ 𝑥 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
-                    <Fraction num="2" den="3" /> {"x = 8, ຈະໄດ້ x ="}
+                    <Fraction num="2" den="3" /> {"𝑥 = 8, ຈະໄດ້ 𝑥 ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -211,10 +211,10 @@ export const unit20Data: UnitData = {
               {"ການແກ້ສົມຜົນສອງຂັ້ນຕອນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຈົ່ງຊອກຫາຄ່າ x ຈາກສົມຜົນ "} <span className="math">{"2x + 4 = 16"}</span> {" ໂດຍການລົບ 4 ກ່ອນ ແລ້ວຈຶ່ງຫານດ້ວຍ 2 ທັງສອງຟາກ"}
+              {"ຈົ່ງຊອກຫາຄ່າ 𝑥 ຈາກສົມຜົນ "} <span className="math">{"2𝑥 + 4 = 16"}</span> {" ໂດຍການລົບ 4 ກ່ອນ ແລ້ວຈຶ່ງຫານດ້ວຍ 2 ທັງສອງຟາກ"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -228,13 +228,13 @@ export const unit20Data: UnitData = {
               {"ຄິດໄລ່ສົມຜົນເລກສ່ວນສອງຟາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນຕໍ່ໄປນີ້: "}
+              {"ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥 ຈາກສົມຜົນຕໍ່ໄປນີ້: "}
               <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
-                <Fraction num="x - 1" den="3" /> {" = "} <Fraction num="2" den="3" />
+                <Fraction num="𝑥 - 1" den="3" /> {" = "} <Fraction num="2" den="3" />
               </span>
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -251,10 +251,10 @@ export const unit20Data: UnitData = {
             {"ໂຈດສົມຜົນການແບ່ງປັນເຄື່ອງຫຼິ້ນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ຖ້າແບ່ງເຂົ້າໜົມ x ກ້ອນ ອອກເປັນ 4 ສ່ວນເທົ່າກັນ ຈະໄດ້ສ່ວນລະ 5 ກ້ອນ. ຂຽນເປັນສົມຜົນແມ່ນ x/4 = 5. ຈົ່ງຊອກຫາຈຳນວນເຂົ້າໜົມ x ທັງໝົດ"}
+            {"ຖ້າແບ່ງເຂົ້າໜົມ 𝑥 ກ້ອນ ອອກເປັນ 4 ສ່ວນເທົ່າກັນ ຈະໄດ້ສ່ວນລະ 5 ກ້ອນ. ຂຽນເປັນສົມຜົນແມ່ນ 𝑥/4 = 5. ຈົ່ງຊອກຫາຈຳນວນເຂົ້າໜົມ 𝑥 ທັງໝົດ"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-            <span>{"ຕອບ: x ="}</span>
+            <span>{"ຕອບ: 𝑥 ="}</span>
             <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             <span>{"ກ້ອນ"}</span>
           </div>
@@ -266,13 +266,13 @@ export const unit20Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ຊອກຫາຄ່າ x ຈາກການລົບຄູນປະສົມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ຊອກຫາຄ່າ 𝑥 ຈາກການລົບຄູນປະສົມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນ: 5x - 7 = 8"}
+            {"ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥 ຈາກສົມຜົນ: 5𝑥 - 7 = 8"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-            <span>{"ຕອບ: x ="}</span>
+            <span>{"ຕອບ: 𝑥 ="}</span>
             <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
@@ -304,25 +304,25 @@ export const unit20Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="t1">{"(1) 6 (ຄິດໄລ່: 2x = 12 ➔ x = 6)"}</span>
+          <span key="t1">{"(1) 6 (ຄິດໄລ່: 2𝑥 = 12 ➔ 𝑥 = 6)"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="t2">{"(1) 3 (ຄິດໄລ່: x - 1 = 2 ➔ x = 3)"}</span>
+          <span key="t2">{"(1) 3 (ຄິດໄລ່: 𝑥 - 1 = 2 ➔ 𝑥 = 3)"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="s1">{"(1) 20 ກ້ອນ (ຄິດໄລ່: x = 5 × 4 = 20)"}</span>
+          <span key="s1">{"(1) 20 ກ້ອນ (ຄິດໄລ່: 𝑥 = 5 × 4 = 20)"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="s2">{"(1) 3 (ຄິດໄລ່: 5x = 15 ➔ x = 3)"}</span>
+          <span key="s2">{"(1) 3 (ຄິດໄລ່: 5𝑥 = 15 ➔ 𝑥 = 3)"}</span>
         ]
       }
     ],

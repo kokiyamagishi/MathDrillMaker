@@ -103,7 +103,7 @@ export const unit11Data: UnitData = {
             </p>
             <ul style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.6" }}>
               <li><strong>{"ທ່ອນຊື່ [AB]: "}</strong>{" ແມ່ນສ່ວນໜຶ່ງຂອງເສັ້ນຊື່ (AB) ທີ່ຈຳກັດດ້ວຍສອງເມັດ A ແລະ B (ເອີ້ນວ່າ ສົ້ນ). ເຮົາສາມາດວັດແທກຄວາມຍາວໄດ້, ສັນຍະລັກຄວາມຍາວແມ່ນ AB."}</li>
-              <li><strong>{"ເຄິ່ງເສັ້ນຊື່ [Ax) ຫຼື [Ay): "}</strong>{" ແມ່ນສ່ວນໜຶ່ງຂອງເສັ້ນຊື່ ທີ່ມີເມັດເຄົ້າ A (ຈຸດເລີ່ມຕົ້ນ) ແຕ່ແກ່ຍາວອອກໄປທາງເບື້ອງ x ຫຼື y ຢ່າງບໍ່ມີຂອບເຂດ."}</li>
+              <li><strong>{"ເຄິ່ງເສັ້ນຊື່ [Ax) ຫຼື [Ay): "}</strong>{" ແມ່ນສ່ວນໜຶ່ງຂອງເສັ້ນຊື່ ທີ່ມີເມັດເຄົ້າ A (ຈຸດເລີ່ມຕົ້ນ) ແຕ່ແກ່ຍາວອອກໄປທາງເບື້ອງ 𝑥 ຫຼື 𝑦 ຢ່າງບໍ່ມີຂອບເຂດ."}</li>
             </ul>
 
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2", display: "flex", flexDirection: "column", gap: "8px" }}>
@@ -130,7 +130,7 @@ export const unit11Data: UnitData = {
                   <tr>
                     <td style={{ padding: "8px", fontFamily: "monospace", fontWeight: "bold" }}>{"[Ax)"}</td>
                     <td style={{ padding: "8px" }}>{"ເຄິ່ງເສັ້ນຊື່ Ax"}</td>
-                    <td style={{ padding: "8px" }}>{"ຈຳກັດຢູ່ສົ້ນ A, ບໍ່ຈຳກັດຢູ່ສົ້ນ x"}</td>
+                    <td style={{ padding: "8px" }}>{"ຈຳກັດຢູ່ສົ້ນ A, ບໍ່ຈຳກັດຢູ່ສົ້ນ 𝑥"}</td>
                   </tr>
                 </tbody>
               </table>

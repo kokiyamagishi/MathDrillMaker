@@ -102,7 +102,7 @@ export const unit18Data: UnitData = {
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6" }}>
                 {"ສອງມຸມຂ້າມຈອມກັນ ຈະມີຂະໜາດເທົ່າກັນສະເໝີ!"}
                 <br />
-                {"ຕົວຢ່າງ: ຖ້າເສັ້ນຊື່ (xy) ຕັດ (zt) ຢູ່ O. ເຮົາໄດ້ "} <Angle>xOz</Angle> {" ແລະ "} <Angle>yOt</Angle> {" ແມ່ນມຸມຂ້າມຈອມກັນ, ດັ່ງນັ້ນ "} <Angle>xOz</Angle> {" = "} <Angle>yOt</Angle> {"."}
+                {"ຕົວຢ່າງ: ຖ້າເສັ້ນຊື່ (𝑥𝑦) ຕັດ (zt) ຢູ່ O. ເຮົາໄດ້ "} <Angle>xOz</Angle> {" ແລະ "} <Angle>yOt</Angle> {" ແມ່ນມຸມຂ້າມຈອມກັນ, ດັ່ງນັ້ນ "} <Angle>xOz</Angle> {" = "} <Angle>yOt</Angle> {"."}
               </p>
             </div>
           </div>
@@ -133,7 +133,7 @@ export const unit18Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ໃຫ້ສອງເສັ້ນຊື່ (xy) ຕັດ (zt) ຢູ່ O. ຖ້າ "} <Angle>xOz</Angle> {" = 60°, ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມ "} <Angle>xOt</Angle> {" ທີ່ຢູ່ຕິດກັນເທິງເສັ້ນຊື່ (zt)? "}
+                {"ໃຫ້ສອງເສັ້ນຊື່ (𝑥𝑦) ຕັດ (zt) ຢູ່ O. ຖ້າ "} <Angle>xOz</Angle> {" = 60°, ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມ "} <Angle>xOt</Angle> {" ທີ່ຢູ່ຕິດກັນເທິງເສັ້ນຊື່ (zt)? "}
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>

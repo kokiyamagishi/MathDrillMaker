@@ -4,7 +4,7 @@ import { UnitData } from "../units2";
 export const unit4Data: UnitData = {
   unitNumber: 4,
   unitTitle: "ພາກທີ I - ບົດທີ 4: ການບວກ ແລະ ການລົບຈຳນວນຖ້ວນ",
-  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບວິທີການບວກ ແລະ ການລົບຈຳນວນຖ້ວນ (ທີ່ມີເຄື່ອງໝາຍຄືກັນ ແລະ ຕ່າງກັນ), ການຄິດໄລ່ສຳນວນທີ່ມີວົງເລັບ ແລະ ການຊອກຫາຕົວລັບ x",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບວິທີການບວກ ແລະ ການລົບຈຳນວນຖ້ວນ (ທີ່ມີເຄື່ອງໝາຍຄືກັນ ແລະ ຕ່າງກັນ), ການຄິດໄລ່ສຳນວນທີ່ມີວົງເລັບ ແລະ ການຊອກຫາຕົວລັບ 𝑥",
   textbookRef: "ปຶ້ມແບບຮຽນ ມ.1 ໜ້າ 25-31",
   subSections: [
     {
@@ -114,7 +114,7 @@ export const unit4Data: UnitData = {
           </div>
         ),
         hint: {
-          text: "💡 ຈື່ໄວ້ວ່າ: ລົບຄູນລົບເປັນບວກ -(-x) = +x ແລະ ລົບຄູນບວກເປັນລົບ -(+x) = -x!",
+          text: "💡 ຈື່ໄວ້ວ່າ: ລົບຄູນລົບເປັນບວກ -(-𝑥) = +𝑥 ແລະ ລົບຄູນບວກເປັນລົບ -(+𝑥) = -𝑥!",
           isBlue: false
         }
       },
@@ -150,21 +150,21 @@ export const unit4Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+                {"ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥 ຈາກສົມຜົນຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span className="math">{"x + (-7) = 15 ⇔ x ="}</span>
+                  <span className="math">{"𝑥 + (-7) = 15 ⇔ 𝑥 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span className="math">{"x - (-9) = -4 ⇔ x ="}</span>
+                  <span className="math">{"𝑥 - (-9) = -4 ⇔ 𝑥 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
               </div>
@@ -200,14 +200,14 @@ export const unit4Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ໂຈດແກ້ສົມຜົນຊອກຫາຕົວລັບ x: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ໂຈດແກ້ສົມຜົນຊອກຫາຕົວລັບ 𝑥: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນ: "}
-              <strong style={{ color: "#E65100" }}>{"(19 - 3) + x = (25 - 18)"}</strong>
+              {"ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥 ຈາກສົມຜົນ: "}
+              <strong style={{ color: "#E65100" }}>{"(19 - 3) + 𝑥 = (25 - 18)"}</strong>
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -239,13 +239,13 @@ export const unit4Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດແກ້ໄຂຕົວລັບ x ຂັ້ນສູງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດແກ້ໄຂຕົວລັບ 𝑥 ຂັ້ນສູງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກເງື່ອນໄຂ: "}<strong>{"(-15) - x = 8"}</strong>
+            {"ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥 ຈາກເງື່ອນໄຂ: "}<strong>{"(-15) - 𝑥 = 8"}</strong>
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-            <span>{"ຕອບ: x ="}</span>
+            <span>{"ຕອບ: 𝑥 ="}</span>
             <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
           </div>
         </div>
@@ -278,8 +278,8 @@ export const unit4Data: UnitData = {
       {
         questionNumber: 4,
         answers: [
-          <span key="4-1">{"(1) 22 (ຄິດໄລ່: x = 15 - (-7) = 15 + 7 = 22)"}</span>,
-          <span key="4-2">{"(2) -13 (ຄິດໄລ່: x = -4 + (-9) = -13)"}</span>
+          <span key="4-1">{"(1) 22 (ຄິດໄລ່: 𝑥 = 15 - (-7) = 15 + 7 = 22)"}</span>,
+          <span key="4-2">{"(2) -13 (ຄິດໄລ່: 𝑥 = -4 + (-9) = -13)"}</span>
         ]
       },
       {
@@ -291,7 +291,7 @@ export const unit4Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="t2">{"-9 (ຄິດໄລ່: 16 + x = 7 ⇔ x = 7 - 16 = -9)"}</span>
+          <span key="t2">{"-9 (ຄິດໄລ່: 16 + 𝑥 = 7 ⇔ 𝑥 = 7 - 16 = -9)"}</span>
         ]
       },
       {
@@ -303,10 +303,10 @@ export const unit4Data: UnitData = {
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="s2">{"-23 (ຄິດໄລ່: -15 - x = 8 ⇔ x = -15 - 8 = -23)"}</span>
+          <span key="s2">{"-23 (ຄິດໄລ່: -15 - 𝑥 = 8 ⇔ 𝑥 = -15 - 8 = -23)"}</span>
         ]
       }
     ],
-    advice: "ຍອດຢ້ຽມຫຼາຍ! ການຮຽນຮູ້ວິທີບວກ ແລະ ລົບຈຳນວນຖ້ວນ ພ້ອມທັງການແກ້ສົມຜົນທີ່ມີ x ເປັນພື້ນຖານຫຼັກໃນການຮຽນພຶດຊະຄະນິດໃນອະນາຄົດ. ໝັ່ນຝຶກຝົນຕໍ່ໄປເດີ້!"
+    advice: "ຍອດຢ້ຽມຫຼາຍ! ການຮຽນຮູ້ວິທີບວກ ແລະ ລົບຈຳນວນຖ້ວນ ພ້ອມທັງການແກ້ສົມຜົນທີ່ມີ 𝑥 ເປັນພື້ນຖານຫຼັກໃນການຮຽນພຶດຊະຄະນິດໃນອະນາຄົດ. ໝັ່ນຝຶກຝົນຕໍ່ໄປເດີ້!"
   }
 };

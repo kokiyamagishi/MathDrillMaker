@@ -258,10 +258,10 @@ export const unit5Data: UnitData = {
             {"ການພິສູດການຫານແບບເອີຄຼິດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ຖ້າຕ້ອງການຊອກຫາຄ່າຂອງ x ເຊິ່ງແມ່ນຕົວຕັ້ງຫານ ຈາກເງື່ອນໄຂການຫານໃຫ້ 12 ໄດ້ຜົນຫານແມ່ນ 15 ແລະ ຕົວເສດແມ່ນ 7:"}
+            {"ຖ້າຕ້ອງການຊອກຫາຄ່າຂອງ 𝑥 ເຊິ່ງແມ່ນຕົວຕັ້ງຫານ ຈາກເງື່ອນໄຂການຫານໃຫ້ 12 ໄດ້ຜົນຫານແມ່ນ 15 ແລະ ຕົວເສດແມ່ນ 7:"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-            <span>{"ຕອບ: x ="}</span>
+            <span>{"ຕອບ: 𝑥 ="}</span>
             <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
           </div>
         </div>
@@ -313,13 +313,13 @@ export const unit5Data: UnitData = {
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="s1">{"15 (ຄິດໄລ່: 10x - x = 135 ⇔ 9x = 135 ⇔ x = 15)"}</span>
+          <span key="s1">{"15 (ຄິດໄລ່: 10𝑥 - 𝑥 = 135 ⇔ 9𝑥 = 135 ⇔ 𝑥 = 15)"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="s2">{"187 (ຄິດໄລ່: x = 12 × 15 + 7 = 180 + 7 = 187)"}</span>
+          <span key="s2">{"187 (ຄິດໄລ່: 𝑥 = 12 × 15 + 7 = 180 + 7 = 187)"}</span>
         ]
       }
     ],

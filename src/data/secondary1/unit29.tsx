@@ -31,25 +31,25 @@ export const unit29Data: UnitData = {
                 <span>{"   ⇒   a × d = b × c"}</span>
               </span>
               <br />
-              <span>{"ເຊິ່ງເຮົາສາມາດຊອກຫາພົດໃດໜຶ່ງທີ່ບໍ່ຮູ້ຄ່າ (ຕົວຢ່າງ: x) ໄດ້ຢ່າງງ່າຍດາຍ:"}</span>
+              <span>{"ເຊິ່ງເຮົາສາມາດຊອກຫາພົດໃດໜຶ່ງທີ່ບໍ່ຮູ້ຄ່າ (ຕົວຢ່າງ: 𝑥) ໄດ້ຢ່າງງ່າຍດາຍ:"}</span>
             </p>
             <div style={{ padding: "16px", backgroundColor: "#F9F9F9", borderRadius: "8px", borderLeft: "4px solid #4CAF50" }}>
               <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ສູດການຊອກຫາ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: "8px 0 0 0", paddingLeft: "20px", lineHeight: "1.8", display: "flex", flexDirection: "column", gap: "8px" }}>
                 <li style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
-                  <span>{"ຖ້າຊອກຫາ x ໃນ "}</span>
+                  <span>{"ຖ້າຊອກຫາ 𝑥 ໃນ "}</span>
                   <Fraction num={"a"} den={"b"} />
                   <span>{" = "}</span>
-                  <Fraction num={"c"} den={"x"} />
-                  <span>{" ⇒ x = "}</span>
+                  <Fraction num={"c"} den={"𝑥"} />
+                  <span>{" ⇒ 𝑥 = "}</span>
                   <Fraction num={<span>{"b × c"}</span>} den={"a"} />
                 </li>
                 <li style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
-                  <span>{"ຖ້າຊອກຫາ x ໃນ "}</span>
-                  <Fraction num={"x"} den={"b"} />
+                  <span>{"ຖ້າຊອກຫາ 𝑥 ໃນ "}</span>
+                  <Fraction num={"𝑥"} den={"b"} />
                   <span>{" = "}</span>
                   <Fraction num={"c"} den={"d"} />
-                  <span>{" ⇒ x = "}</span>
+                  <span>{" ⇒ 𝑥 = "}</span>
                   <Fraction num={<span>{"b × c"}</span>} den={"d"} />
                 </li>
               </ul>
@@ -67,7 +67,7 @@ export const unit29Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຈົ່ງຊອກຫາພົດທີບໍ່ທັນຮູ້ (x, y, z) ຈາກອັດຕາສ່ວນລຸ່ມນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+                {"ຈົ່ງຊອກຫາພົດທີບໍ່ທັນຮູ້ (𝑥, 𝑦, 𝑧) ຈາກອັດຕາສ່ວນລຸ່ມນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
@@ -76,8 +76,8 @@ export const unit29Data: UnitData = {
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", marginTop: "4px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                     <Fraction num={"35"} den={"25"} />
                     <span>{" = "}</span>
-                    <Fraction num={"21"} den={"x"} />
-                    <span>{" ⇒ 35 × x = 25 × 21 ⇒ x = "}</span>
+                    <Fraction num={"21"} den={"𝑥"} />
+                    <span>{" ⇒ 35 × 𝑥 = 25 × 21 ⇒ 𝑥 = "}</span>
                     <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   </div>
                 </div>
@@ -86,8 +86,8 @@ export const unit29Data: UnitData = {
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", marginTop: "4px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                     <Fraction num={"24"} den={"32"} />
                     <span>{" = "}</span>
-                    <Fraction num={"y"} den={"64"} />
-                    <span>{" ⇒ 32 × y = 24 × 64 ⇒ y = "}</span>
+                    <Fraction num={"𝑦"} den={"64"} />
+                    <span>{" ⇒ 32 × 𝑦 = 24 × 64 ⇒ 𝑦 = "}</span>
                     <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   </div>
                 </div>
@@ -100,14 +100,14 @@ export const unit29Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຊອກຫາຄ່າຂອງ z ຈາກອັດຕາສ່ວນຕໍ່ໄປນີ້: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+                {"ຊອກຫາຄ່າຂອງ 𝑧 ຈາກອັດຕາສ່ວນຕໍ່ໄປນີ້: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
               <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", marginTop: "4px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <Fraction num={"152"} den={"z"} />
+                  <Fraction num={"152"} den={"𝑧"} />
                   <span>{" = "}</span>
                   <Fraction num={"95"} den={"55"} />
-                  <span>{" ⇒ z = "}</span>
+                  <span>{" ⇒ 𝑧 = "}</span>
                   <Fraction num={<span className="answer-blank" style={{ display: "inline-block", minWidth: "70px", width: "70px", height: "24px", verticalAlign: "middle" }}></span>} den={"95"} />
                   <span>{" = "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
@@ -128,7 +128,7 @@ export const unit29Data: UnitData = {
               {"ການແກ້ໂຈດບັນຫາອັດຕາສ່ວນພົວພັນມີ 3 ຂັ້ນຕອນຫຼັກ:"}
             </p>
             <ol style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.6" }}>
-              <li><strong>{"ຕັ້ງຕົວປ່ຽນ: "}</strong>{" ກໍານົດຕົວປ່ຽນ (ເຊັ່ນ x) ແທນປະລິມານທີ່ຕ້ອງການຊອກຫາ."}</li>
+              <li><strong>{"ຕັ້ງຕົວປ່ຽນ: "}</strong>{" ກໍານົດຕົວປ່ຽນ (ເຊັ່ນ 𝑥) ແທນປະລິມານທີ່ຕ້ອງການຊອກຫາ."}</li>
               <li><strong>{"ຂຽນສົມຜົນອັດຕາສ່ວນ: "}</strong>{" ຕັ້ງອັດຕາສ່ວນໃຫ້ຖືກຕ້ອງຕາມຄວາມສຳພັນ."}</li>
               <li><strong>{"ຄິດໄລ່: "}</strong>{" ໃຊ້ຫຼັກການຄູນສະຫຼັບເພື່ອຊອກຫາຄ່າຂອງຕົວປ່ຽນນັ້ນ."}</li>
             </ol>
@@ -136,13 +136,13 @@ export const unit29Data: UnitData = {
         ),
         hint: {
           text: <span style={{ display: "inline-flex", flexDirection: "column", gap: "8px" }}>
-            <span>{"💡 ຕົວຢ່າງ: ແປ້ງ 15 kg ເຮັດເຂົ້າຈີ່ໄດ້ 21 kg. ຖ້າມີແປ້ງ 22 kg ຈະເຮັດໄດ້ x kg."}</span>
+            <span>{"💡 ຕົວຢ່າງ: ແປ້ງ 15 kg ເຮັດເຂົ້າຈີ່ໄດ້ 21 kg. ຖ້າມີແປ້ງ 22 kg ຈະເຮັດໄດ້ 𝑥 kg."}</span>
             <span style={{ display: "inline-flex", alignItems: "center", gap: "4px", whiteSpace: "nowrap" }}>
               <span>{"ຕັ້ງເປັນ: "}</span>
               <Fraction num={"21"} den={"15"} />
               <span>{" = "}</span>
-              <Fraction num={"x"} den={"22"} />
-              <span>{" ⇒ x = "}</span>
+              <Fraction num={"𝑥"} den={"22"} />
+              <span>{" ⇒ 𝑥 = "}</span>
               <Fraction num={<span>{"21 × 22"}</span>} den={"15"} />
               <span>{" = 30.8 kg!"}</span>
             </span>
@@ -161,10 +161,10 @@ export const unit29Data: UnitData = {
               <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
                 <div>{"ສົມຜົນ:"}</div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", marginTop: "4px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <Fraction num={"x"} den={"900"} />
+                  <Fraction num={"𝑥"} den={"900"} />
                   <span>{" = "}</span>
                   <Fraction num={"15,000"} den={"600"} />
-                  <span>{" ⇒ x = "}</span>
+                  <span>{" ⇒ 𝑥 = "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{" = "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
@@ -184,10 +184,10 @@ export const unit29Data: UnitData = {
               <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
                 <div>{"ສົມຜົນ:"}</div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", marginTop: "4px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <Fraction num={"x"} den={"85"} />
+                  <Fraction num={"𝑥"} den={"85"} />
                   <span>{" = "}</span>
                   <Fraction num={"260"} den={"13"} />
-                  <span>{" ⇒ x = "}</span>
+                  <span>{" ⇒ 𝑥 = "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{" = "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
@@ -238,7 +238,7 @@ export const unit29Data: UnitData = {
               {"ທອງແດງມີມວນສານພົວພັນກົງກັບບໍລິມາດ. ບໍລິມາດທອງແດງ 8 cm³ ມີມວນສານ 71.2 g. ຖ້າມີບໍລິມາດ 50 cm³, ຈະມີມວນສານຈັກ g? (ປັດເສດເປັນເລກທົດສະນິຍົມ 1 ຕຳແໜ່ງ)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem" }}>
-              <span>{"ມວນສານ x ="}</span>
+              <span>{"ມວນສານ 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               <span>{"g"}</span>
             </div>
@@ -255,16 +255,16 @@ export const unit29Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ຄິດໄລ່ຫາຄ່າ y ຈາກສົມຜົນອັດຕາສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ຄິດໄລ່ຫາຄ່າ 𝑦 ຈາກສົມຜົນອັດຕາສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6", display: "flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
-            <span>{"ຊອກຫາ y ຈາກ: "}</span>
+            <span>{"ຊອກຫາ 𝑦 ຈາກ: "}</span>
             <Fraction num={"34"} den={"136"} />
             <span>{" = "}</span>
-            <Fraction num={"y"} den={"6"} />
+            <Fraction num={"𝑦"} den={"6"} />
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-            <span>{"ຕອບ: y ="}</span>
+            <span>{"ຕອບ: 𝑦 ="}</span>
             <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>

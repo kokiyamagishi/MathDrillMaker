@@ -182,20 +182,20 @@ export const unit48Data: UnitData = {
     }
   ],
   challengeProblems: {
-    hintText: "💡 ບົດທ້າທາຍ: ໃຊ້ຫຼັກການອັດຕາສ່ວນຂອງຂ້າງທີ່ກົງກັນຂ້າມກັບມຸມທີ່ເທົ່າກັນເພື່ອຊອກຫາຄ່າຂອງ x ເດີ້!",
+    hintText: "💡 ບົດທ້າທາຍ: ໃຊ້ຫຼັກການອັດຕາສ່ວນຂອງຂ້າງທີ່ກົງກັນຂ້າມກັບມຸມທີ່ເທົ່າກັນເພື່ອຊອກຫາຄ່າຂອງ 𝑥 ເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຊອກຫາຂ້າງ x ດ້ວຍຫຼັກການ SAS: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຊອກຫາຂ້າງ 𝑥 ດ້ວຍຫຼັກການ SAS: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ສອງຮູບສາມແຈຄ້າຍຄືກັນ. ຮູບ A ມີຂ້າງ 6 cm ແລະ 8 cm ທີ່ມີມຸມລະຫວ່າງກາງແມ່ນ 40°. ຮູບ B ມີຂ້າງ 9 cm ແລະ x cm ທີ່ມີມຸມແມ່ນ 40° ➔ ຈົ່ງຊອກຫາ x. (9 / 6 = x / 8)"}
+              {"ສອງຮູບສາມແຈຄ້າຍຄືກັນ. ຮູບ A ມີຂ້າງ 6 cm ແລະ 8 cm ທີ່ມີມຸມລະຫວ່າງກາງແມ່ນ 40°. ຮູບ B ມີຂ້າງ 9 cm ແລະ 𝑥 cm ທີ່ມີມຸມແມ່ນ 40° ➔ ຈົ່ງຊອກຫາ 𝑥. (9 / 6 = 𝑥 / 8)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"cm"}</span>
             </div>
@@ -285,7 +285,7 @@ export const unit48Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="11">{"12 (ເພາະວ່າ x = 8 × (9/6) = 12 cm)"}</span>
+          <span key="11">{"12 (ເພາະວ່າ 𝑥 = 8 × (9/6) = 12 cm)"}</span>
         ]
       },
       {

@@ -22,16 +22,16 @@ export const unit24Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ການແກ້ສົມຜົນອະສົມຜົນຂັ້ນໜຶ່ງ ແມ່ນຄ້າຍຄືກັນກັບສົມຜົນ. ເຮົາໃຊ້ການຍ້າຍພົດ ແລະ ຫານເພື່ອຊອກຫາຂອບເຂດຂອງ x:"}
+              {"ການແກ້ສົມຜົນອະສົມຜົນຂັ້ນໜຶ່ງ ແມ່ນຄ້າຍຄືກັນກັບສົມຜົນ. ເຮົາໃຊ້ການຍ້າຍພົດ ແລະ ຫານເພື່ອຊອກຫາຂອບເຂດຂອງ 𝑥:"}
             </p>
             
             {/* Basic inequality block */}
             <div style={{ padding: "12px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0" }}>
-              <strong>{"ຕົວຢ່າງ: "}</strong>{"ແກ້ສົມຜົນອະສົມຜົນ "} <span className="math">{"3x + 2 < 11"}</span>
+              <strong>{"ຕົວຢ່າງ: "}</strong>{"ແກ້ສົມຜົນອະສົມຜົນ "} <span className="math">{"3𝑥 + 2 < 11"}</span>
               <div style={{ paddingLeft: "12px", borderLeft: "3px solid #2196F3", marginTop: "6px", display: "flex", flexDirection: "column", gap: "4px", color: "#37474F" }}>
-                <span className="math">{"• ຍ້າຍ +2 ໄປຂວາ ➔ ປ່ຽນເປັນ -2: 3x < 11 - 2 ➔ 3x < 9"}</span>
+                <span className="math">{"• ຍ້າຍ +2 ໄປຂວາ ➔ ປ່ຽນເປັນ -2: 3𝑥 < 11 - 2 ➔ 3𝑥 < 9"}</span>
                 <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
-                  {"• ຫານທັງສອງຟາກໃຫ້ 3: x < "} <Fraction num="9" den="3" /> {" ➔ x < 3"}
+                  {"• ຫານທັງສອງຟາກໃຫ້ 3: 𝑥 < "} <Fraction num="9" den="3" /> {" ➔ 𝑥 < 3"}
                 </span>
               </div>
             </div>
@@ -39,7 +39,7 @@ export const unit24Data: UnitData = {
             {/* Shaded Number Line SVG */}
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#FFF9C4", borderRadius: "8px", border: "1px solid #FFF59D", fontSize: "1.15rem", color: "#E65100" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
-                <span>{"ແຜນວາດສະແດງເຂດໃຈຜົນ x < 3 ເທິງເສັ້ນຈຳນວນ"}</span>
+                <span>{"ແຜນວາດສະແດງເຂດໃຈຜົນ 𝑥 < 3 ເທິງເສັ້ນຈຳນວນ"}</span>
                 <svg viewBox="0 0 200 40" style={{ width: "100%", maxWidth: "160px", height: "auto" }}>
                   <line x1="10" y1="20" x2="190" y2="20" stroke="#37474F" strokeWidth="1.5" />
                   
@@ -75,32 +75,32 @@ export const unit24Data: UnitData = {
                 {/* 5 Questions */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span className="math">{"3x + 2 < 11 ➔ x <"}</span>
+                  <span className="math">{"3𝑥 + 2 < 11 ➔ 𝑥 <"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span className="math">{"2x - 7 > 3 ➔ x >"}</span>
+                  <span className="math">{"2𝑥 - 7 > 3 ➔ 𝑥 >"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span className="math">{"5x + 8 ≤ 23 ➔ x ≤"}</span>
+                  <span className="math">{"5𝑥 + 8 ≤ 23 ➔ 𝑥 ≤"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
-                  <span className="math">{"4x - 9 ≥ 15 ➔ x ≥"}</span>
+                  <span className="math">{"4𝑥 - 9 ≥ 15 ➔ 𝑥 ≥"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
-                    <Fraction num="x" den="4" /> {" - 2 < 1 ➔ x <"}
+                    <Fraction num="𝑥" den="4" /> {" - 2 < 1 ➔ 𝑥 <"}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -117,22 +117,22 @@ export const unit24Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ເມື່ອແກ້ສົມຜົນອະສົມຜົນທີ່ມີການຫານ ຫຼື ຄູນດ້ວຍຈຳນວນລົບ (ຫຼື ຍ້າຍສຳປະສິດລົບທາງໜ້າ x ໄປຫານ), ຕ້ອງປິ່ນທິດທາງເຄື່ອງໝາຍສະເໝີ:"}
+              {"ເມື່ອແກ້ສົມຜົນອະສົມຜົນທີ່ມີການຫານ ຫຼື ຄູນດ້ວຍຈຳນວນລົບ (ຫຼື ຍ້າຍສຳປະສິດລົບທາງໜ້າ 𝑥 ໄປຫານ), ຕ້ອງປິ່ນທິດທາງເຄື່ອງໝາຍສະເໝີ:"}
             </p>
             
             {/* Negative inequality box */}
             <div style={{ padding: "12px", backgroundColor: "#E8F5E9", borderRadius: "10px", border: "1px solid #A5D6A7", fontSize: "1.25rem", color: "#2E7D32" }}>
               <div style={{ paddingLeft: "12px", borderLeft: "3px solid #4CAF50", display: "flex", flexDirection: "column", gap: "4px", color: "#37474F" }}>
                 <strong>{"ຕົວຢ່າງ: "}</strong>
-                <span className="math">{"ແກ້ສົມຜົນອະສົມຜົນ 10 - 2x < 4"}</span>
-                <span className="math">{"• ຍ້າຍ 10 ໄປຂວາ: -2x < 4 - 10 ➔ -2x < -6"}</span>
-                <span className="math">{"• ຫານດ້ວຍ -2 (ປ່ຽນປິ່ນເຄື່ອງໝາຍ): x > 3"}</span>
+                <span className="math">{"ແກ້ສົມຜົນອະສົມຜົນ 10 - 2𝑥 < 4"}</span>
+                <span className="math">{"• ຍ້າຍ 10 ໄປຂວາ: -2𝑥 < 4 - 10 ➔ -2𝑥 < -6"}</span>
+                <span className="math">{"• ຫານດ້ວຍ -2 (ປ່ຽນປິ່ນເຄື່ອງໝາຍ): 𝑥 > 3"}</span>
               </div>
             </div>
           </div>
         ),
         hint: {
-          text: "💡 ຈົ່ງລະມັດລະວັງເຄື່ອງໝາຍເວລາແກ້ສົມຜົນອະສົມຜົນທີ່ມີ x ຢູ່ທາງຫຼັງເລກລົບເດີ້!",
+          text: "💡 ຈົ່ງລະມັດລະວັງເຄື່ອງໝາຍເວລາແກ້ສົມຜົນອະສົມຜົນທີ່ມີ 𝑥 ຢູ່ທາງຫຼັງເລກລົບເດີ້!",
           isBlue: false
         }
       },
@@ -149,32 +149,32 @@ export const unit24Data: UnitData = {
                 {/* 5 Questions */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span className="math">{"5 - x > 2 ➔ x <"}</span>
+                  <span className="math">{"5 - 𝑥 > 2 ➔ 𝑥 <"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span className="math">{"10 - 2x < 4 ➔ x >"}</span>
+                  <span className="math">{"10 - 2𝑥 < 4 ➔ 𝑥 >"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span className="math">{"8 - 3x ≥ 20 ➔ x ≤"}</span>
+                  <span className="math">{"8 - 3𝑥 ≥ 20 ➔ 𝑥 ≤"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
-                  <span className="math">{"2 - 5x ≤ -13 ➔ x ≥"}</span>
+                  <span className="math">{"2 - 5𝑥 ≤ -13 ➔ 𝑥 ≥"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
-                    {"6 - "} <Fraction num="x" den="2" /> {" < 4 ➔ x >"}
+                    {"6 - "} <Fraction num="𝑥" den="2" /> {" < 4 ➔ 𝑥 >"}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -196,10 +196,10 @@ export const unit24Data: UnitData = {
               {"ການແກ້ສົມຜົນອະສົມຜົນທີ່ມີວົງເລັບ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຈົ່ງຊອກຫາຂອບເຂດ x ຈາກອະສົມຜົນ "} <span className="math">{"3(x - 2) < 2x + 4"}</span> {" ໂດຍການຄູນແຈກຢາຍກ່ອນ ແລ້ວຍ້າຍພົດ"}
+              {"ຈົ່ງຊອກຫາຂອບເຂດ 𝑥 ຈາກອະສົມຜົນ "} <span className="math">{"3(𝑥 - 2) < 2𝑥 + 4"}</span> {" ໂດຍການຄູນແຈກຢາຍກ່ອນ ແລ້ວຍ້າຍພົດ"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x <"}</span>
+              <span>{"ຕອບ: 𝑥 <"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -210,16 +210,16 @@ export const unit24Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ອະສົມຜົນເລກສ່ວນຊອກຫາ x: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ອະສົມຜົນເລກສ່ວນຊອກຫາ 𝑥: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຈົ່ງຊອກຫາຂອບເຂດຂອງ x ຈາກອະສົມຜົນຕໍ່ໄປນີ້: "}
+              {"ຈົ່ງຊອກຫາຂອບເຂດຂອງ 𝑥 ຈາກອະສົມຜົນຕໍ່ໄປນີ້: "}
               <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
-                <Fraction num="x + 1" den="2" /> {" - "} <Fraction num="x - 1" den="3" /> {" < 1"}
+                <Fraction num="𝑥 + 1" den="2" /> {" - "} <Fraction num="𝑥 - 1" den="3" /> {" < 1"}
               </span>
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x <"}</span>
+              <span>{"ຕອບ: 𝑥 <"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -236,7 +236,7 @@ export const unit24Data: UnitData = {
             {"ໂຈດບັນຫາການຂຶ້ນລົດເມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ທ້າວ ແດງ ຕ້ອງການຂຶ້ນລົດເມທີ່ມີຄ່າໂດຍສານ 3,000 ກີບຕໍ່ຄັ້ງ. ຖ້າລາວມີເງິນທັງໝົດ 20,000 ກີບ ແລະ ຕ້ອງການຍັງເຫຼືອເງິນຢ່າງໜ້ອຍ 5,000 ກີບ. ຖາມວ່າລາວຈະຂຶ້ນລົດເມໄດ້ຫຼາຍສຸດຈັກຄັ້ງ (x ຄັ້ງ)? (ສົມຜົນ: 20000 - 3000x ≥ 5000)"}
+            {"ທ້າວ ແດງ ຕ້ອງການຂຶ້ນລົດເມທີ່ມີຄ່າໂດຍສານ 3,000 ກີບຕໍ່ຄັ້ງ. ຖ້າລາວມີເງິນທັງໝົດ 20,000 ກີບ ແລະ ຕ້ອງການຍັງເຫຼືອເງິນຢ່າງໜ້ອຍ 5,000 ກີບ. ຖາມວ່າລາວຈະຂຶ້ນລົດເມໄດ້ຫຼາຍສຸດຈັກຄັ້ງ (𝑥 ຄັ້ງ)? (ສົມຜົນ: 20000 - 3000𝑥 ≥ 5000)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຂຶ້ນໄດ້ຫຼາຍສຸດ"}</span>
@@ -254,10 +254,10 @@ export const unit24Data: UnitData = {
             {"ຄັດຈ້ອນອະສົມຜົນລົບສອງຟາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ຈົ່ງຊອກຫາຂອບເຂດຂອງ x ຈາກອະສົມຜົນ: 2 - 3x > 8 - x"}
+            {"ຈົ່ງຊອກຫາຂອບເຂດຂອງ 𝑥 ຈາກອະສົມຜົນ: 2 - 3𝑥 > 8 - 𝑥"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-            <span>{"ຕອບ: x <"}</span>
+            <span>{"ຕອບ: 𝑥 <"}</span>
             <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
@@ -269,45 +269,45 @@ export const unit24Data: UnitData = {
       {
         questionNumber: 1,
         answers: [
-          <span key="1-1">{"(1) 3 (ຄິດໄລ່: 3x < 9 ➔ x < 3)"}</span>,
-          <span key="1-2">{"(2) 5 (ຄິດໄລ່: 2x > 10 ➔ x > 5)"}</span>,
-          <span key="1-3">{"(3) 3 (ຄິດໄລ່: 5x ≤ 15 ➔ x ≤ 3)"}</span>,
-          <span key="1-4">{"(4) 6 (ຄິດໄລ່: 4x ≥ 24 ➔ x ≥ 6)"}</span>,
-          <span key="1-5">{"(5) 12 (ຄິດໄລ່: x/4 < 3 ➔ x < 12)"}</span>
+          <span key="1-1">{"(1) 3 (ຄິດໄລ່: 3𝑥 < 9 ➔ 𝑥 < 3)"}</span>,
+          <span key="1-2">{"(2) 5 (ຄິດໄລ່: 2𝑥 > 10 ➔ 𝑥 > 5)"}</span>,
+          <span key="1-3">{"(3) 3 (ຄິດໄລ່: 5𝑥 ≤ 15 ➔ 𝑥 ≤ 3)"}</span>,
+          <span key="1-4">{"(4) 6 (ຄິດໄລ່: 4𝑥 ≥ 24 ➔ 𝑥 ≥ 6)"}</span>,
+          <span key="1-5">{"(5) 12 (ຄິດໄລ່: 𝑥/4 < 3 ➔ 𝑥 < 12)"}</span>
         ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="2-1">{"(1) 3 (ຄິດໄລ່: -x > -3 ➔ x < 3)"}</span>,
-          <span key="2-2">{"(2) 3 (ຄິດໄລ່: -2x < -6 ➔ x > 3)"}</span>,
-          <span key="2-3">{"(3) -4 (ຄິດໄລ່: -3x ≥ 12 ➔ x ≤ -4)"}</span>,
-          <span key="2-4">{"(4) 3 (ຄິດໄລ່: -5x ≤ -15 ➔ x ≥ 3)"}</span>,
-          <span key="2-5">{"(5) 4 (ຄິດໄລ່: -x/2 < -2 ➔ x > 4)"}</span>
+          <span key="2-1">{"(1) 3 (ຄິດໄລ່: -𝑥 > -3 ➔ 𝑥 < 3)"}</span>,
+          <span key="2-2">{"(2) 3 (ຄິດໄລ່: -2𝑥 < -6 ➔ 𝑥 > 3)"}</span>,
+          <span key="2-3">{"(3) -4 (ຄິດໄລ່: -3𝑥 ≥ 12 ➔ 𝑥 ≤ -4)"}</span>,
+          <span key="2-4">{"(4) 3 (ຄິດໄລ່: -5𝑥 ≤ -15 ➔ 𝑥 ≥ 3)"}</span>,
+          <span key="2-5">{"(5) 4 (ຄິດໄລ່: -𝑥/2 < -2 ➔ 𝑥 > 4)"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="t1">{"(1) 10 (ຄິດໄລ່: 3x - 6 < 2x + 4 ➔ x < 10)"}</span>
+          <span key="t1">{"(1) 10 (ຄິດໄລ່: 3𝑥 - 6 < 2𝑥 + 4 ➔ 𝑥 < 10)"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="t2">{"(1) 1 (ຄິດໄລ່: 3(x+1) - 2(x-1) < 6 ➔ 3x + 3 - 2x + 2 < 6 ➔ x + 5 < 6 ➔ x < 1)"}</span>
+          <span key="t2">{"(1) 1 (ຄິດໄລ່: 3(𝑥+1) - 2(𝑥-1) < 6 ➔ 3𝑥 + 3 - 2𝑥 + 2 < 6 ➔ 𝑥 + 5 < 6 ➔ 𝑥 < 1)"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="s1">{"(1) 5 ຄັ້ງ (ຄິດໄລ່: -3000x ≥ -15000 ➔ x ≤ 5)"}</span>
+          <span key="s1">{"(1) 5 ຄັ້ງ (ຄິດໄລ່: -3000𝑥 ≥ -15000 ➔ 𝑥 ≤ 5)"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="s2">{"(1) -3 (ຄິດໄລ່: -2x > 6 ➔ x < -3)"}</span>
+          <span key="s2">{"(1) -3 (ຄິດໄລ່: -2𝑥 > 6 ➔ 𝑥 < -3)"}</span>
         ]
       }
     ],

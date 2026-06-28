@@ -64,7 +64,7 @@ export const unit8Data: UnitData = {
                   {/* Marker definitions */}
                   <defs>
                      <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                       <path d="M 0 1 L 10 5 L 0 9 z" fill="#E65100" />
+                       <path d="M 0 1 L 10 5 L 0 9𝑧" fill="#E65100" />
                      </marker>
                   </defs>
                 </svg>

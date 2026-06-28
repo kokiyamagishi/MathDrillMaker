@@ -133,21 +133,21 @@ export const unit3Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກການພົວພັນການບວກ ແລະ ການລົບ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+                {"ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥 ຈາກການພົວພັນການບວກ ແລະ ການລົບ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span className="math">{"x + 120 = 350 ⇔ x ="}</span>
+                  <span className="math">{"𝑥 + 120 = 350 ⇔ 𝑥 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span className="math">{"760 - x = 240 ⇔ x ="}</span>
+                  <span className="math">{"760 - 𝑥 = 240 ⇔ 𝑥 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>

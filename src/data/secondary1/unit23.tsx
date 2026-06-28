@@ -287,7 +287,7 @@ export const unit23Data: UnitData = {
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="s1">{"a, n, t, i, g, r, v, y (ຕົວອັກສອນຊ້ຳກັນຄື a, t, i ຈະຖືກຂຽນພຽງເທື່ອດຽວ)"}</span>
+          <span key="s1">{"a, n, t, i, g, r, v, 𝑦 (ຕົວອັກສອນຊ້ຳກັນຄື a, t, i ຈະຖືກຂຽນພຽງເທື່ອດຽວ)"}</span>
         ]
       },
       {

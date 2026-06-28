@@ -191,13 +191,13 @@ export const unit32Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ຊອກຫາ x ຈາກອັດຕາສ່ວນຂອງມຸມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ຊອກຫາ 𝑥 ຈາກອັດຕາສ່ວນຂອງມຸມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ໃນຮູບສາມແຈ ABC, ມີຂະໜາດຂອງມຸມແມ່ນ "} <span className="math">{"A = x"}</span>{", "} <span className="math">{"B = 2x"}</span> {" ແລະ "} <span className="math">{"C = 3x"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ x. (x + 2x + 3x = 180)"}
+              {"ໃນຮູບສາມແຈ ABC, ມີຂະໜາດຂອງມຸມແມ່ນ "} <span className="math">{"A = 𝑥"}</span>{", "} <span className="math">{"B = 2𝑥"}</span> {" ແລະ "} <span className="math">{"C = 3𝑥"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥. (𝑥 + 2𝑥 + 3𝑥 = 180)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -208,13 +208,13 @@ export const unit32Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ຊອກຫາ y ໃນຮູບສາມແຈທ່ຽງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ຊອກຫາ 𝑦 ໃນຮູບສາມແຈທ່ຽງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຖ້າມຸມພື້ນຂອງຮູບສາມແຈທ່ຽງແມ່ນ "} <span className="math">{"3y + 10°"}</span> {" ແລະ ມຸມຈອມແມ່ນ "} <span className="math">{"100°"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ y. (ມຸມພື້ນ = 40°)"}
+              {"ຖ້າມຸມພື້ນຂອງຮູບສາມແຈທ່ຽງແມ່ນ "} <span className="math">{"3𝑦 + 10°"}</span> {" ແລະ ມຸມຈອມແມ່ນ "} <span className="math">{"100°"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ 𝑦. (ມຸມພື້ນ = 40°)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: y ="}</span>
+              <span>{"ຕອບ: 𝑦 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -285,13 +285,13 @@ export const unit32Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="11">{"30 (ເພາະວ່າ x + 2x + 3x = 180 ➔ 6x = 180 ➔ x = 30)"}</span>
+          <span key="11">{"30 (ເພາະວ່າ 𝑥 + 2𝑥 + 3𝑥 = 180 ➔ 6𝑥 = 180 ➔ 𝑥 = 30)"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="12">{"10 (ເພາະວ່າມຸມພື້ນແມ່ນ (180 - 100) / 2 = 40° ➔ 3y + 10 = 40 ➔ 3y = 30 ➔ y = 10)"}</span>
+          <span key="12">{"10 (ເພາະວ່າມຸມພື້ນແມ່ນ (180 - 100) / 2 = 40° ➔ 3𝑦 + 10 = 40 ➔ 3𝑦 = 30 ➔ 𝑦 = 10)"}</span>
         ]
       },
       {

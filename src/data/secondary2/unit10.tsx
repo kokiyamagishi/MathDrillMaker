@@ -287,16 +287,16 @@ export const unit10Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ຄິດໄລ່ຫາຄ່າ x ຈາກການປະສົມຄູນລົບ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ຄິດໄລ່ຫາຄ່າ 𝑥 ຈາກການປະສົມຄູນລົບ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນຕໍ່ໄປນີ້: "}
+            {"ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥 ຈາກສົມຜົນຕໍ່ໄປນີ້: "}
             <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
-              {"3 × x - "} <Fraction num="1" den="2" /> {" = "} <Fraction num="5" den="2" />
+              {"3 × 𝑥 - "} <Fraction num="1" den="2" /> {" = "} <Fraction num="5" den="2" />
             </span>
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-            <span>{"ຕອບ: x ="}</span>
+            <span>{"ຕອບ: 𝑥 ="}</span>
             <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
           </div>
         </div>
@@ -346,7 +346,7 @@ export const unit10Data: UnitData = {
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="s2">{"(1) 1 (ຄິດໄລ່: 3x = 5/2 + 1/2 = 6/2 = 3 ➔ x = 1)"}</span>
+          <span key="s2">{"(1) 1 (ຄິດໄລ່: 3𝑥 = 5/2 + 1/2 = 6/2 = 3 ➔ 𝑥 = 1)"}</span>
         ]
       }
     ],

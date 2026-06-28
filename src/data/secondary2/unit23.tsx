@@ -31,7 +31,7 @@ export const unit23Data: UnitData = {
                 <span className="math">{"• ຖ້າ a < b, ຈະໄດ້: a + c < b + c"}</span>
                 <span className="math">{"• ຖ້າ a < b, ຈະໄດ້: a - c < b - c"}</span>
                 <span style={{ color: "#0D47A1" }}>
-                  <strong>{"ຕົວຢ່າງ: "}</strong> {"ຖ້າ x - 2 < 5, ເອົາ 2 ບວກໃສ່ທັງສອງຟາກ: x - 2 + 2 < 5 + 2 ➔ x < 7."}
+                  <strong>{"ຕົວຢ່າງ: "}</strong> {"ຖ້າ 𝑥 - 2 < 5, ເອົາ 2 ບວກໃສ່ທັງສອງຟາກ: 𝑥 - 2 + 2 < 5 + 2 ➔ 𝑥 < 7."}
                 </span>
               </div>
             </div>
@@ -39,7 +39,7 @@ export const unit23Data: UnitData = {
             {/* Number Line SVG */}
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#FFF9C4", borderRadius: "8px", border: "1px solid #FFF59D", fontSize: "1.15rem", color: "#E65100" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
-                <span>{"ແຜນວາດຂອບເຂດ x < 7 ເທິງເສັ້ນສະແດງຈຳນວນ"}</span>
+                <span>{"ແຜນວາດຂອບເຂດ 𝑥 < 7 ເທິງເສັ້ນສະແດງຈຳນວນ"}</span>
                 <svg viewBox="0 0 200 40" style={{ width: "100%", maxWidth: "160px", height: "auto" }}>
                   {/* Number line */}
                   <line x1="10" y1="20" x2="190" y2="20" stroke="#37474F" strokeWidth="1.5" />
@@ -69,38 +69,38 @@ export const unit23Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຈົ່ງຫາຂອບເຂດ x ໂດຍນຳໃຊ້ຄຸນລັກສະນະບວກລົບໃນອະສະເໝີຜົນ: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
+                {"ຈົ່ງຫາຂອບເຂດ 𝑥 ໂດຍນຳໃຊ້ຄຸນລັກສະນະບວກລົບໃນອະສະເໝີຜົນ: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "18px", padding: "8px 0" }}>
                 {/* 5 Questions */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຖ້າ x - 2 < 5, ຈະໄດ້ x <"}</span>
+                  <span>{"ຖ້າ 𝑥 - 2 < 5, ຈະໄດ້ 𝑥 <"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຖ້າ x + 4 > 10, ຈະໄດ້ x >"}</span>
+                  <span>{"ຖ້າ 𝑥 + 4 > 10, ຈະໄດ້ 𝑥 >"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ຖ້າ x - 7 ≥ -3, ຈະໄດ້ x ≥"}</span>
+                  <span>{"ຖ້າ 𝑥 - 7 ≥ -3, ຈະໄດ້ 𝑥 ≥"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
-                  <span>{"ຖ້າ 6 + x ≤ 2, ຈະໄດ້ x ≤"}</span>
+                  <span>{"ຖ້າ 6 + 𝑥 ≤ 2, ຈະໄດ້ 𝑥 ≤"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
-                  <span>{"ຖ້າ x - 1.2 < -2.8, ຈະໄດ້ x <"}</span>
+                  <span>{"ຖ້າ 𝑥 - 1.2 < -2.8, ຈະໄດ້ 𝑥 <"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -125,7 +125,7 @@ export const unit23Data: UnitData = {
                 <span className="math">{"• ຖ້າ a < b ແລະ c > 0 (ຈຳນວນບວກ) ➔ ac < bc"}</span>
                 <span className="math" style={{ color: "#C62828", fontWeight: "bold" }}>{"• ຖ້າ a < b ແລະ c < 0 (ຈຳນວນລົບ) ➔ ac > bc  (ເຄື່ອງໝາຍປ່ຽນປິ່ນ!)"}</span>
                 <span style={{ color: "#C62828" }}>
-                  <strong>{"ຕົວຢ່າງ: "}</strong> {"ຖ້າ -2x < 6, ຫານໃຫ້ -2 ➔ x > -3 (ປ່ຽນຈາກ < ມາເປັນ >)."}
+                  <strong>{"ຕົວຢ່າງ: "}</strong> {"ຖ້າ -2𝑥 < 6, ຫານໃຫ້ -2 ➔ 𝑥 > -3 (ປ່ຽນຈາກ < ມາເປັນ >)."}
                 </span>
               </div>
             </div>
@@ -136,14 +136,14 @@ export const unit23Data: UnitData = {
                 <span>{"ແຜນວາດເຄື່ອງໝາຍປ່ຽນປິ່ນ (Sign Flipping)"}</span>
                 <svg viewBox="0 0 200 40" style={{ width: "100%", maxWidth: "160px", height: "auto" }}>
                   {/* Left Side */}
-                  <text x="30" y="24" fill="#37474F" fontSize="12" fontWeight="bold">{"-2x < 6"}</text>
+                  <text x="30" y="24" fill="#37474F" fontSize="12" fontWeight="bold">{"-2𝑥 < 6"}</text>
                   
                   {/* Flip Arrow */}
                   <path d="M 65 20 Q 100 5 135 20" stroke="#C62828" strokeWidth="1.5" fill="none" markerEnd="url(#arrow)" />
                   <text x="100" y="34" fill="#C62828" fontSize="8" fontWeight="bold" textAnchor="middle">{"ຫານໃຫ້ -2 (ປ່ຽນປິ່ນ)"}</text>
                   
                   {/* Right Side */}
-                  <text x="160" y="24" fill="#C62828" fontSize="12" fontWeight="bold">{"x > -3"}</text>
+                  <text x="160" y="24" fill="#C62828" fontSize="12" fontWeight="bold">{"𝑥 > -3"}</text>
                 </svg>
               </div>
             </div>
@@ -160,40 +160,40 @@ export const unit23Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຈົ່ງຫາຂອບເຂດ x ໂດຍຄຳນຶງເຖິງເຄື່ອງໝາຍອະສະເໝີຜົນ: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
+                {"ຈົ່ງຫາຂອບເຂດ 𝑥 ໂດຍຄຳນຶງເຖິງເຄື່ອງໝາຍອະສະເໝີຜົນ: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "18px", padding: "8px 0" }}>
                 {/* 5 Questions */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span className="math">{"ຖ້າ -2x < 6 ➔ x >"}</span>
+                  <span className="math">{"ຖ້າ -2𝑥 < 6 ➔ 𝑥 >"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span className="math">{"ຖ້າ 3x < 15 ➔ x <"}</span>
+                  <span className="math">{"ຖ້າ 3𝑥 < 15 ➔ 𝑥 <"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span className="math">{"ຖ້າ -5x ≥ 20 ➔ x ≤"}</span>
+                  <span className="math">{"ຖ້າ -5𝑥 ≥ 20 ➔ 𝑥 ≤"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
-                    <Fraction num="x" den="-3" /> {" < 4 ➔ x >"}
+                    <Fraction num="𝑥" den="-3" /> {" < 4 ➔ 𝑥 >"}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
-                  <span className="math">{"-x ≤ -7 ➔ x ≥"}</span>
+                  <span className="math">{"-𝑥 ≤ -7 ➔ 𝑥 ≥"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -214,10 +214,10 @@ export const unit23Data: UnitData = {
               {"ການແກ້ສົມຜົນສອງຂັ້ນຕອນທີ່ມີຕົວລົບ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຈົ່ງຊອກຫາຂອບເຂດ x ຈາກອະສົມຜົນ "} <span className="math">{"-3x + 5 < 17"}</span> {" ໂດຍການຍ້າຍ 5 ໄປລົບກ່ອນ ແລ້ວຈຶ່ງຫານດ້ວຍ -3"}
+              {"ຈົ່ງຊອກຫາຂອບເຂດ 𝑥 ຈາກອະສົມຜົນ "} <span className="math">{"-3𝑥 + 5 < 17"}</span> {" ໂດຍການຍ້າຍ 5 ໄປລົບກ່ອນ ແລ້ວຈຶ່ງຫານດ້ວຍ -3"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x >"}</span>
+              <span>{"ຕອບ: 𝑥 >"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -231,10 +231,10 @@ export const unit23Data: UnitData = {
               {"ການປຽບທຽບສອງສຳນວນອະສົມຜົນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຈົ່ງຊອກຫາຂອບເຂດຂອງ x ທີ່ເຮັດໃຫ້ສຳນວນ 4x - 3 ມີຄ່າຫຼາຍກວ່າ ສຳນວນ 2x + 5. (ສົມຜົນ: 4x - 3 > 2x + 5)"}
+              {"ຈົ່ງຊອກຫາຂອບເຂດຂອງ 𝑥 ທີ່ເຮັດໃຫ້ສຳນວນ 4𝑥 - 3 ມີຄ່າຫຼາຍກວ່າ ສຳນວນ 2𝑥 + 5. (ສົມຜົນ: 4𝑥 - 3 > 2𝑥 + 5)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x >"}</span>
+              <span>{"ຕອບ: 𝑥 >"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -251,10 +251,10 @@ export const unit23Data: UnitData = {
             {"ໂຈດບັນຫາຂອບເຂດຄະແນນເສັງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ຖ້າເສັງ 3 ວິຊາ ຕ້ອງໄດ້ຄະແນນສະເລ່ຍຫຼາຍກວ່າ ຫຼື ເທົ່າກັບ 7 ຄະແນນ. ສອງວິຊາທຳອິດໄດ້ 8 ແລະ 6 ຄະແນນ. ຖ້າສົມຜົນແມ່ນ (8 + 6 + x)/3 ≥ 7. ວິຊາທີສາມ x ຕ້ອງໄດ້ຢ່າງໜ້ອຍຈັກຄະແນນ?"}
+            {"ຖ້າເສັງ 3 ວິຊາ ຕ້ອງໄດ້ຄະແນນສະເລ່ຍຫຼາຍກວ່າ ຫຼື ເທົ່າກັບ 7 ຄະແນນ. ສອງວິຊາທຳອິດໄດ້ 8 ແລະ 6 ຄະແນນ. ຖ້າສົມຜົນແມ່ນ (8 + 6 + 𝑥)/3 ≥ 7. ວິຊາທີສາມ 𝑥 ຕ້ອງໄດ້ຢ່າງໜ້ອຍຈັກຄະແນນ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-            <span>{"ຕອບ: x ≥"}</span>
+            <span>{"ຕອບ: 𝑥 ≥"}</span>
             <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
@@ -268,10 +268,10 @@ export const unit23Data: UnitData = {
             {"ຄັດຈ້ອນອະສົມຜົນຕົວຄູນເລກສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ຈົ່ງຊອກຫາຂອບເຂດຂອງ x ຈາກອະສົມຜົນຕໍ່ໄປນີ້: -3/4 x < 9"}
+            {"ຈົ່ງຊອກຫາຂອບເຂດຂອງ 𝑥 ຈາກອະສົມຜົນຕໍ່ໄປນີ້: -3/4𝑥 < 9"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-            <span>{"ຕອບ: x >"}</span>
+            <span>{"ຕອບ: 𝑥 >"}</span>
             <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
@@ -303,25 +303,25 @@ export const unit23Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="t1">{"(1) -4 (ຄິດໄລ່: -3x < 12 ➔ x > -4)"}</span>
+          <span key="t1">{"(1) -4 (ຄິດໄລ່: -3𝑥 < 12 ➔ 𝑥 > -4)"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="t2">{"(1) 4 (ຄິດໄລ່: 2x > 8 ➔ x > 4)"}</span>
+          <span key="t2">{"(1) 4 (ຄິດໄລ່: 2𝑥 > 8 ➔ 𝑥 > 4)"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="s1">{"(1) 7 ຄະແນນ (ຄິດໄລ່: 14 + x ≥ 21 ➔ x ≥ 7)"}</span>
+          <span key="s1">{"(1) 7 ຄະແນນ (ຄິດໄລ່: 14 + 𝑥 ≥ 21 ➔ 𝑥 ≥ 7)"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="s2">{"(1) -12 (ຄິດໄລ່: x > 9 × -4/3 = -12)"}</span>
+          <span key="s2">{"(1) -12 (ຄິດໄລ່: 𝑥 > 9 × -4/3 = -12)"}</span>
         ]
       }
     ],

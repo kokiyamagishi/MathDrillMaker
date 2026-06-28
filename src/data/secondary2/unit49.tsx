@@ -207,10 +207,10 @@ export const unit49Data: UnitData = {
               {"ການຊອກຫາຄວາມຖີ່ທີ່ຂາດຫາຍໄປ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຕາຕະລາງຄວາມຖີ່ຂອງສັດລ້ຽງ N = 30. ປະກອບມີ ໝາ: 12 ໂຕ, ແມວ: x ໂຕ, ແລະ ນົກ: 10 ໂຕ. ຈົ່ງຊອກຫາ x. (12 + x + 10 = 30)"}
+              {"ຕາຕະລາງຄວາມຖີ່ຂອງສັດລ້ຽງ N = 30. ປະກອບມີ ໝາ: 12 ໂຕ, ແມວ: 𝑥 ໂຕ, ແລະ ນົກ: 10 ໂຕ. ຈົ່ງຊອກຫາ 𝑥. (12 + 𝑥 + 10 = 30)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"ໂຕ"}</span>
             </div>
@@ -300,7 +300,7 @@ export const unit49Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="11">{"8 (ເພາະວ່າ x = 30 - 12 - 10 = 8 ໂຕ)"}</span>
+          <span key="11">{"8 (ເພາະວ່າ 𝑥 = 30 - 12 - 10 = 8 ໂຕ)"}</span>
         ]
       },
       {

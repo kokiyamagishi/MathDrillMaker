@@ -27,9 +27,9 @@ export const unit17Data: UnitData = {
             
             {/* Substitution Formula Block */}
             <div style={{ padding: "12px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0" }}>
-              <strong>{"ຕົວຢ່າງ: "}</strong>{"ຄິດໄລ່ຄ່າຂອງສຳນວນ "} <span className="math">{"2x + 5"}</span> {" ເມື່ອ "} <span className="math">{"x = 3"}</span>
+              <strong>{"ຕົວຢ່າງ: "}</strong>{"ຄິດໄລ່ຄ່າຂອງສຳນວນ "} <span className="math">{"2𝑥 + 5"}</span> {" ເມື່ອ "} <span className="math">{"𝑥 = 3"}</span>
               <div style={{ paddingLeft: "12px", borderLeft: "3px solid #2196F3", marginTop: "6px", display: "flex", flexDirection: "column", gap: "4px", color: "#37474F" }}>
-                <span className="math">{"• ແທນ x = 3 ໃສ່ສຳນວນ: 2 × 3 + 5"}</span>
+                <span className="math">{"• ແທນ 𝑥 = 3 ໃສ່ສຳນວນ: 2 × 3 + 5"}</span>
                 <span className="math">{"➔ ຜົນໄດ້ຮັບແມ່ນ: 6 + 5 = 11"}</span>
               </div>
             </div>
@@ -41,14 +41,14 @@ export const unit17Data: UnitData = {
                 <svg viewBox="0 0 240 50" style={{ width: "100%", maxWidth: "240px", height: "auto" }}>
                   {/* Input */}
                   <rect x="5" y="10" width="50" height="30" rx="3" fill="#FFE0B2" stroke="#FF9800" strokeWidth="1" />
-                  <text x="30" y="28" fill="#E65100" fontSize="10" fontWeight="bold" textAnchor="middle">{"x = 3"}</text>
+                  <text x="30" y="28" fill="#E65100" fontSize="10" fontWeight="bold" textAnchor="middle">{"𝑥 = 3"}</text>
                   
                   {/* Arrow 1 */}
                   <path d="M 60 25 L 85 25" stroke="#37474F" strokeWidth="1.5" markerEnd="url(#arrow)" />
                   
                   {/* Machine */}
                   <rect x="90" y="10" width="70" height="30" rx="3" fill="#FFF9C4" stroke="#FBC02D" strokeWidth="1" />
-                  <text x="125" y="28" fill="#F57F17" fontSize="10" fontWeight="bold" textAnchor="middle">{"2x + 5"}</text>
+                  <text x="125" y="28" fill="#F57F17" fontSize="10" fontWeight="bold" textAnchor="middle">{"2𝑥 + 5"}</text>
 
                   {/* Arrow 2 */}
                   <path d="M 165 25 L 190 25" stroke="#37474F" strokeWidth="1.5" markerEnd="url(#arrow)" />
@@ -72,38 +72,38 @@ export const unit17Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນລຸ່ມນີ້ ເມື່ອແທນຄ່າ x ທີ່ກຳນົດໃຫ້: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
+                {"ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນລຸ່ມນີ້ ເມື່ອແທນຄ່າ 𝑥 ທີ່ກຳນົດໃຫ້: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "18px", padding: "8px 0" }}>
                 {/* 5 Questions */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຄ່າຂອງສຳນວນ 2x + 5 ເມື່ອ x = 3 ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຄ່າຂອງສຳນວນ 2𝑥 + 5 ເມື່ອ 𝑥 = 3 ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຄ່າຂອງສຳນວນ 3x - 4 ເມື່ອ x = 5 ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຄ່າຂອງສຳນວນ 3𝑥 - 4 ເມື່ອ 𝑥 = 5 ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ຄ່າຂອງສຳນວນ 8 - 4x ເມື່ອ x = 2 ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຄ່າຂອງສຳນວນ 8 - 4𝑥 ເມື່ອ 𝑥 = 2 ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
-                  <span>{"ຄ່າຂອງສຳນວນ x² + 2 ເມື່ອ x = -3 ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຄ່າຂອງສຳນວນ 𝑥² + 2 ເມື່ອ 𝑥 = -3 ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
-                  <span>{"ຄ່າຂອງສຳນວນ 10 - x³ ເມື່ອ x = 2 ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຄ່າຂອງສຳນວນ 10 - 𝑥³ ເມື່ອ 𝑥 = 2 ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -119,14 +119,14 @@ export const unit17Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ໃນກໍລະນີສຳນວນມີຫຼາຍຕົວລັບ ເຊັ່ນ "} <span className="math">{"x, y"}</span> {", ເຮົາຕ້ອງເອົາແຕ່ລະຄ່າທີ່ກຳນົດໃຫ້ໄປແທນໃສ່ຕົວລັບໃຫ້ຖືກຕ້ອງຕາມຕຳແໜ່ງ:"}
+              {"ໃນກໍລະນີສຳນວນມີຫຼາຍຕົວລັບ ເຊັ່ນ "} <span className="math">{"𝑥, 𝑦"}</span> {", ເຮົາຕ້ອງເອົາແຕ່ລະຄ່າທີ່ກຳນົດໃຫ້ໄປແທນໃສ່ຕົວລັບໃຫ້ຖືກຕ້ອງຕາມຕຳແໜ່ງ:"}
             </p>
             
             {/* Multi-variable Box */}
             <div style={{ padding: "12px", backgroundColor: "#E8F5E9", borderRadius: "10px", border: "1px solid #A5D6A7", fontSize: "1.25rem", color: "#2E7D32" }}>
               <div style={{ paddingLeft: "12px", borderLeft: "3px solid #4CAF50", display: "flex", flexDirection: "column", gap: "4px", color: "#37474F" }}>
                 <strong>{"ຕົວຢ່າງ: "}</strong>
-                <span className="math">{"ຄິດໄລ່ຄ່າຂອງສຳນວນ 3x - y ເມື່ອ x = 2 ແລະ y = 4"}</span>
+                <span className="math">{"ຄິດໄລ່ຄ່າຂອງສຳນວນ 3𝑥 - 𝑦 ເມື່ອ 𝑥 = 2 ແລະ 𝑦 = 4"}</span>
                 <span className="math">{"➔ ແທນຄ່າ: 3 × 2 - 4"}</span>
                 <span className="math">{"➔ ຜົນຄິດໄລ່: 6 - 4 = 2"}</span>
               </div>
@@ -151,19 +151,19 @@ export const unit17Data: UnitData = {
                 {/* 5 Questions */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຄ່າຂອງ 3x - y ເມື່ອ x = 2 ແລະ y = 4 ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຄ່າຂອງ 3𝑥 - 𝑦 ເມື່ອ 𝑥 = 2 ແລະ 𝑦 = 4 ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຄ່າຂອງ 2x + 3y ເມື່ອ x = 3 ແລະ y = 1 ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຄ່າຂອງ 2𝑥 + 3𝑦 ເມື່ອ 𝑥 = 3 ແລະ 𝑦 = 1 ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ຄ່າຂອງ xy - 5 ເມື່ອ x = 4 ແລະ y = 2 ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຄ່າຂອງ 𝑥𝑦 - 5 ເມື່ອ 𝑥 = 4 ແລະ 𝑦 = 2 ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
@@ -196,9 +196,9 @@ export const unit17Data: UnitData = {
               {"ການຄິດໄລ່ຄ່າສຳນວນເລກສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນຕໍ່ໄປນີ້ ເມື່ອ x = 6 ແລະ y = 3: "}
+              {"ຈົ່ງຄິດໄລ່ຄ່າຂອງສຳນວນຕໍ່ໄປນີ້ ເມື່ອ 𝑥 = 6 ແລະ 𝑦 = 3: "}
               <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
-                <Fraction num="x + y" den="3" /> {" + xy"}
+                <Fraction num="𝑥 + 𝑦" den="3" /> {" + 𝑥𝑦"}
               </span>
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
@@ -216,7 +216,7 @@ export const unit17Data: UnitData = {
               {"ໂຈດບັນຫາສ້າງສຳນວນເລກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ມີຮູບສີ່ແຈສາກໜຶ່ງທີ່ມີລວງຍາວ x = 8 cm ແລະ ລວງກວ້າງ y = 5 cm. ສຳນວນເນື້ອທີ່ແມ່ນ S = xy. ຈົ່ງຄິດໄລ່ເນື້ອທີ່ S ຂອງຮູບນີ້"}
+              {"ມີຮູບສີ່ແຈສາກໜຶ່ງທີ່ມີລວງຍາວ 𝑥 = 8 cm ແລະ ລວງກວ້າງ 𝑦 = 5 cm. ສຳນວນເນື້ອທີ່ແມ່ນ S = 𝑥𝑦. ຈົ່ງຄິດໄລ່ເນື້ອທີ່ S ຂອງຮູບນີ້"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: S ="}</span>

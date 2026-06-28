@@ -209,7 +209,7 @@ export const unit12Data: UnitData = {
               {"ການຊອກຫາຂອບເຂດຂອງຈຳນວນອະປົກກະຕິ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຈຳນວນ "} <span className="math">{"√10"}</span> {" ຢູ່ລະຫວ່າງສອງຈຳນວນຖ້ວນໃດ? (ຕອບເປັນຮູບແບບ x ແລະ y)"}
+              {"ຈຳນວນ "} <span className="math">{"√10"}</span> {" ຢູ່ລະຫວ່າງສອງຈຳນວນຖ້ວນໃດ? (ຕອບເປັນຮູບແບບ 𝑥 ແລະ 𝑦)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຢູ່ລະຫວ່າງ"}</span>

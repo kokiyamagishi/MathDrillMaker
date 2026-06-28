@@ -196,10 +196,10 @@ export const unit30Data: UnitData = {
               {"ຊອກຫາເສັ້ນເນັ່ງຈອມຮູບດອກຈັນຈາກເນື້ອທີ່: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ເນື້ອທີ່ຂອງຮູບດອກຈັນ ABCD ແມ່ນ 30 cm² ໂດຍມີເສັ້ນເນັ່ງຈອມໜຶ່ງ AC = 10 cm. ຈົ່ງຊອກຫາຄວາມຍາວຂອງເສັ້ນເນັ່ງຈອມ BD (x cm)."}
+              {"ເນື້ອທີ່ຂອງຮູບດອກຈັນ ABCD ແມ່ນ 30 cm² ໂດຍມີເສັ້ນເນັ່ງຈອມໜຶ່ງ AC = 10 cm. ຈົ່ງຊອກຫາຄວາມຍາວຂອງເສັ້ນເນັ່ງຈອມ BD (𝑥 cm)."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"cm"}</span>
             </div>
@@ -214,10 +214,10 @@ export const unit30Data: UnitData = {
               {"ຊອກຫາຂ້າງຂອງຮູບຈະຕຸລັດຈາກລວງຮອບ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຖ້າລວງຮອບຂອງຮູບຈະຕຸລັດແມ່ນ 36 cm. ຈົ່ງຊອກຫາຄວາມຍາວຂ้าง x ຂອງຮູບຈະຕຸລັດນັ້ນ. (ລວງຮອບ = 4x)"}
+              {"ຖ້າລວງຮອບຂອງຮູບຈະຕຸລັດແມ່ນ 36 cm. ຈົ່ງຊອກຫາຄວາມຍາວຂ้าง 𝑥 ຂອງຮູບຈະຕຸລັດນັ້ນ. (ລວງຮອບ = 4𝑥)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"cm"}</span>
             </div>
@@ -295,7 +295,7 @@ export const unit30Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="12">{"9 (ເພາະວ່າ 4 × x = 36 ➔ x = 9 cm)"}</span>
+          <span key="12">{"9 (ເພາະວ່າ 4 × 𝑥 = 36 ➔ 𝑥 = 9 cm)"}</span>
         ]
       },
       {

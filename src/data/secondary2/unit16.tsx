@@ -110,7 +110,7 @@ export const unit16Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
                   <span className="math">
-                    <Fraction num="x⁹" den="x²" /> {" = x^?"}
+                    <Fraction num="𝑥⁹" den="𝑥²" /> {" = 𝑥^?"}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
@@ -144,7 +144,7 @@ export const unit16Data: UnitData = {
                 <span className="math">{"• ກຳລັງຊ້ອນ: (aᵐ)ⁿ = aᵐ ˣ ⁿ"}</span>
                 <span className="math">{"• ກຳລັງຂອງຜົນຄູນ: (ab)ⁿ = aⁿbⁿ"}</span>
                 <span style={{ color: "#2E7D32" }}>
-                  <strong>{"ຕົວຢ່າງ: "}</strong> {"(2²)³ = 2² ˣ ³ = 2⁶ = 64,  (xy)² = x²y²"}
+                  <strong>{"ຕົວຢ່າງ: "}</strong> {"(2²)³ = 2² ˣ ³ = 2⁶ = 64,  (𝑥𝑦)² = 𝑥²𝑦²"}
                 </span>
               </div>
             </div>
@@ -186,7 +186,7 @@ export const unit16Data: UnitData = {
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
-                  <span className="math">{"(2x)³ = ? · x³"}</span>
+                  <span className="math">{"(2𝑥)³ = ? · 𝑥³"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
@@ -230,16 +230,16 @@ export const unit16Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ສົມຜົນເລກກຳລັງຊອກຫາ x: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ສົມຜົນເລກກຳລັງຊອກຫາ 𝑥: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນຕໍ່ໄປນີ້: "}
+              {"ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥 ຈາກສົມຜົນຕໍ່ໄປນີ້: "}
               <span className="math" style={{ marginLeft: "6px" }}>
                 {"(2ˣ)³ = 64"}
               </span>
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -317,7 +317,7 @@ export const unit16Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="t2">{"(1) 2 (ຄິດໄລ່: 2³ˣ = 2⁶ ➔ 3x = 6 ➔ x = 2)"}</span>
+          <span key="t2">{"(1) 2 (ຄິດໄລ່: 2³ˣ = 2⁶ ➔ 3𝑥 = 6 ➔ 𝑥 = 2)"}</span>
         ]
       },
       {

@@ -214,13 +214,13 @@ export const unit1Data: UnitData = {
             {"ຊອກຫາຄ່າຂອງຕົວລັບຈາກອັດຕາສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ຖ້າຊອກຫາຄ່າຂອງ x ຈາກເງື່ອນໄຂ: "}
+            {"ຖ້າຊອກຫາຄ່າຂອງ 𝑥 ຈາກເງື່ອນໄຂ: "}
             <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "8px" }}>
-              {"x = 360 × "} <Fraction num="7" den="12" />
+              {"𝑥 = 360 × "} <Fraction num="7" den="12" />
             </span>
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-            <span>{"ຕອບ: x ="}</span>
+            <span>{"ຕອບ: 𝑥 ="}</span>
             <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
           </div>
         </div>

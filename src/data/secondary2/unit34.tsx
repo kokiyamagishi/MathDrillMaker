@@ -193,10 +193,10 @@ export const unit34Data: UnitData = {
               {"ສົມທຽບເນື້ອທີ່ຮູບຈະຕຸລັດ ແລະ ຮູບສີ່ແຈສາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຮູບຈະຕຸລັດໜຶ່ງມີຂ້າງຍາວ 6 cm. ຮູບສີ່ແຈສາກໜຶ່ງມີເນື້ອທີ່ເທົ່າກັບເນື້ອທີ່ຮູບຈະຕຸລັດນັ້ນ. ຖ້າຮູບສີ່ແຈສາກມີຂ້າງກວ້າງ 4 cm, ຈົ່ງຊອກຫາຄວາມຍາວຂ້າງ x. (6² = 4x)"}
+              {"ຮູບຈະຕຸລັດໜຶ່ງມີຂ້າງຍາວ 6 cm. ຮູບສີ່ແຈສາກໜຶ່ງມີເນື້ອທີ່ເທົ່າກັບເນື້ອທີ່ຮູບຈະຕຸລັດນັ້ນ. ຖ້າຮູບສີ່ແຈສາກມີຂ້າງກວ້າງ 4 cm, ຈົ່ງຊອກຫາຄວາມຍາວຂ້າງ 𝑥. (6² = 4𝑥)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"cm"}</span>
             </div>
@@ -211,10 +211,10 @@ export const unit34Data: UnitData = {
               {"ສົມທຽບລວງຮອບຮູບຈະຕຸລັດ ແລະ ຮູບດອກຈັນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຖ້າລວງຮອບຂອງຮູບຈະຕຸລັດທີ່ມີຂ້າງ 8 cm ແມ່ນເທົ່າກັບລວງຮອບຂອງຮູບດອກຈັນ. ຈົ່ງຊອກຫາຄວາມຍາວຂ້າງ y ຂອງຮູບດອກຈັນນັ້ນ."}
+              {"ຖ້າລວງຮອບຂອງຮູບຈະຕຸລັດທີ່ມີຂ້າງ 8 cm ແມ່ນເທົ່າກັບລວງຮອບຂອງຮູບດອກຈັນ. ຈົ່ງຊອກຫາຄວາມຍາວຂ້າງ 𝑦 ຂອງຮູບດອກຈັນນັ້ນ."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: y ="}</span>
+              <span>{"ຕອບ: 𝑦 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"cm"}</span>
             </div>
@@ -270,7 +270,7 @@ export const unit34Data: UnitData = {
           <span key="2">{"(2) 20 cm (ເພາະວ່າ P = 2 × (4 + 6) = 20 cm)"}</span>,
           <span key="3">{"(3) 25 cm² (ເພາະວ່າ S = 5 × 5 = 25 cm²)"}</span>,
           <span key="4">{"(4) 20 cm (ເພາະວ່າ P = 4 × 5 = 20 cm)"}</span>,
-          <span key="5">{"(5) 10 cm (ເພາະວ່າ P = 2 × (5 + y) = 30 ➔ y = 10 cm)"}</span>
+          <span key="5">{"(5) 10 cm (ເພາະວ່າ P = 2 × (5 + 𝑦) = 30 ➔ 𝑦 = 10 cm)"}</span>
         ]
       },
       {
@@ -286,7 +286,7 @@ export const unit34Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="11">{"9 (ເພາະວ່າ 6² = 36 cm² ➔ 4 × x = 36 ➔ x = 9 cm)"}</span>
+          <span key="11">{"9 (ເພາະວ່າ 6² = 36 cm² ➔ 4 × 𝑥 = 36 ➔ 𝑥 = 9 cm)"}</span>
         ]
       },
       {

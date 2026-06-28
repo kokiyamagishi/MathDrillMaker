@@ -22,11 +22,11 @@ export const unit28Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"- ສອງປະລິມານ x ແລະ y ເອີ້ນວ່າ "}<strong>{"ອັດຕາສ່ວນພົວພັນກົງ"}</strong>{" ຖ້າວ່າມີຕົວເລກ k ທີ່ບໍ່ແມ່ນສູນ ເຮັດໃຫ້ y ເທົ່າກັບ k ຄູນ x:"}
+              {"- ສອງປະລິມານ 𝑥 ແລະ 𝑦 ເອີ້ນວ່າ "}<strong>{"ອັດຕາສ່ວນພົວພັນກົງ"}</strong>{" ຖ້າວ່າມີຕົວເລກ k ທີ່ບໍ່ແມ່ນສູນ ເຮັດໃຫ້ 𝑦 ເທົ່າກັບ k ຄູນ 𝑥:"}
               <br />
               <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", paddingLeft: "16px", display: "inline-flex", alignItems: "center" }}>
-                {"y = k × x   ຫຼື   "}
-                <Fraction num="y" den="x" />
+                {"𝑦 = k × 𝑥   ຫຼື   "}
+                <Fraction num="𝑦" den="𝑥" />
                 {" = k"}
               </span>
               <br />
@@ -40,7 +40,7 @@ export const unit28Data: UnitData = {
                 <br />
                 {"- ຖ້າຊື້ 5 ຫົວ ຕ້ອງຈ່າຍ: 4,500 × 5 = 22,500 ກີບ."}
                 <br />
-                {"- ຖ້າຊື້ x ຫົວ ຕ້ອງຈ່າຍ: y = 4,500 × x (ເຊິ່ງ k = 4,500 ແມ່ນຕົວປະສິດອັດຕາສ່ວນພົວພັນ)."}
+                {"- ຖ້າຊື້ 𝑥 ຫົວ ຕ້ອງຈ່າຍ: 𝑦 = 4,500 × 𝑥 (ເຊິ່ງ k = 4,500 ແມ່ນຕົວປະສິດອັດຕາສ່ວນພົວພັນ)."}
               </p>
             </div>
           </div>
@@ -48,8 +48,8 @@ export const unit28Data: UnitData = {
         hint: {
           text: (
             <span>
-              {"💡 ຖ້າ x ເພີ່ມຂຶ້ນ 2 ເທື່ອ, y ກໍຈະເພີ່ມຂຶ້ນ 2 ເທື່ອຕາມລຳດັບ ເຊິ່ງຄົງອັດຕາສ່ວນ "}
-              <Fraction num="y" den="x" />
+              {"💡 ຖ້າ 𝑥 ເພີ່ມຂຶ້ນ 2 ເທື່ອ, 𝑦 ກໍຈະເພີ່ມຂຶ້ນ 2 ເທື່ອຕາມລຳດັບ ເຊິ່ງຄົງອັດຕາສ່ວນ "}
+              <Fraction num="𝑦" den="𝑥" />
               {" = k ໄວ້ສະເໝີ!"}
             </span>
           ),
@@ -65,17 +65,17 @@ export const unit28Data: UnitData = {
                 {"ຈົ່ງຕື່ມຕົວເລກທີ່ຖືກຕ້ອງໃສ່ບ່ອນວ່າງໃນຕາຕະລາງອັດຕາສ່ວນພົວພັນ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
               </p>
               <p style={{ fontSize: "1.375rem", margin: 0 }}>
-                {"(ຮູ້ວ່າຍອດລາຄາ ປາກກາ (y) ພົວພັນກົງກັບຈຳນວນປາກກາ (x) ໂດຍມີ ຕົວປະສິດ k = 3,000)"}
+                {"(ຮູ້ວ່າຍອດລາຄາ ປາກກາ (𝑦) ພົວພັນກົງກັບຈຳນວນປາກກາ (𝑥) ໂດຍມີ ຕົວປະສິດ k = 3,000)"}
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "12px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span style={{ flexShrink: 0 }}>{"(1) ຈຳນວນປາກກາ x = 6 ກ້ານ ⇒ ລາຄາ y ="}</span>
+                  <span style={{ flexShrink: 0 }}>{"(1) ຈຳນວນປາກກາ 𝑥 = 6 ກ້ານ ⇒ ລາຄາ 𝑦 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "42px", flexShrink: 0 }}></span>
                   <span style={{ flexShrink: 0 }}>{"ກີບ"}</span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span style={{ flexShrink: 0 }}>{"(2) ລາຄາ y = 24,000 ກີບ ⇒ ຈຳນວນປາກກາ x ="}</span>
+                  <span style={{ flexShrink: 0 }}>{"(2) ລາຄາ 𝑦 = 24,000 ກີບ ⇒ ຈຳນວນປາກກາ 𝑥 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "42px", flexShrink: 0 }}></span>
                   <span style={{ flexShrink: 0 }}>{"ກ້ານ"}</span>
                 </div>
@@ -118,13 +118,13 @@ export const unit28Data: UnitData = {
               <li><strong>{"1. ວິທີຊອກຫາຫົວໜ່ວຍກ່ອນ (Unit Rate Method): "}</strong>{" ຊອກຫາຄ່າຂອງ 1 ຫົວໜ່ວຍກ່ອນ (ເຊັ່ນ: ລາຄາ 1 ແມັດ), ແລ້ວຈຶ່ງຄູນໃຫ້ຈຳນວນທີ່ຕ້ອງການ."}</li>
               <li style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap" }}>
                 <strong>{"2. ວິທີຄູນສະຫຼັບ (Cross-Multiplication): "}</strong>
-                {" ຖ້າ x"}<sub style={{ fontSize: "0.75rem", bottom: "-0.1em" }}>{"1"}</sub>{" ພົວພັນກັບ y"}<sub style={{ fontSize: "0.75rem", bottom: "-0.1em" }}>{"1"}</sub>{" ແລະ x"}<sub style={{ fontSize: "0.75rem", bottom: "-0.1em" }}>{"2"}</sub>{" ພົວພັນກັບ y"}<sub style={{ fontSize: "0.75rem", bottom: "-0.1em" }}>{"2"}</sub>{", ເຮົາໄດ້: "}
+                {" ຖ້າ 𝑥"}<sub style={{ fontSize: "0.75rem", bottom: "-0.1em" }}>{"1"}</sub>{" ພົວພັນກັບ 𝑦"}<sub style={{ fontSize: "0.75rem", bottom: "-0.1em" }}>{"1"}</sub>{" ແລະ 𝑥"}<sub style={{ fontSize: "0.75rem", bottom: "-0.1em" }}>{"2"}</sub>{" ພົວພັນກັບ 𝑦"}<sub style={{ fontSize: "0.75rem", bottom: "-0.1em" }}>{"2"}</sub>{", ເຮົາໄດ້: "}
                 <span style={{ display: "inline-flex", alignItems: "center", paddingLeft: "4px" }}>
-                  <Fraction num={<span>{"x"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"1"}</sub></span>} den={<span>{"y"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"1"}</sub></span>} />
+                  <Fraction num={<span>{"𝑥"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"1"}</sub></span>} den={<span>{"𝑦"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"1"}</sub></span>} />
                   {" = "}
-                  <Fraction num={<span>{"x"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"2"}</sub></span>} den={<span>{"y"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"2"}</sub></span>} />
-                  {" ⇒ y"}<sub style={{ fontSize: "0.75rem", bottom: "-0.1em" }}>{"2"}</sub>{" = "}
-                  <Fraction num={<span>{"x"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"2"}</sub>{" × y"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"1"}</sub></span>} den={<span>{"x"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"1"}</sub></span>} />
+                  <Fraction num={<span>{"𝑥"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"2"}</sub></span>} den={<span>{"𝑦"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"2"}</sub></span>} />
+                  {" ⇒ 𝑦"}<sub style={{ fontSize: "0.75rem", bottom: "-0.1em" }}>{"2"}</sub>{" = "}
+                  <Fraction num={<span>{"𝑥"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"2"}</sub>{" × 𝑦"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"1"}</sub></span>} den={<span>{"𝑥"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"1"}</sub></span>} />
                 </span>
               </li>
             </ul>

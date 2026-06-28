@@ -273,13 +273,13 @@ export const unit9Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນຄ່າສຳບູນ (Simple Absolute Value Equation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ຊອກຫາຄ່າຂອງ 𝑥 ຈາກສົມຜົນຄ່າສຳບູນ (Simple Absolute Value Equation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຈົ່ງຊອກຫາຄ່າຂອງ "}<strong>{"x"}</strong>{" ທີ່ເປັນຈຳນວນບວກ (x {" > "} 0) ທີ່ເຮັດໃຫ້ສົມຜົນ "}<strong>{"|x - 3| = 5"}</strong>{" ເປັນຈິງ."}
+              {"ຈົ່ງຊອກຫາຄ່າຂອງ "}<strong>{"𝑥"}</strong>{" ທີ່ເປັນຈຳນວນບວກ (𝑥 {" > "} 0) ທີ່ເຮັດໃຫ້ສົມຜົນ "}<strong>{"|𝑥 - 3| = 5"}</strong>{" ເປັນຈິງ."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຄ່າຂອງ x ທີ່ເປັນຈຳນວນບວກແມ່ນ x ="}</span>
+              <span>{"ຄ່າຂອງ 𝑥 ທີ່ເປັນຈຳນວນບວກແມ່ນ 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             </div>
           </div>
@@ -361,7 +361,7 @@ export const unit9Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="t2">{"8 (ຖ້າ |x - 3| = 5, ຈະໄດ້ x - 3 = 5 ຫຼື x - 3 = -5. ສະນັ້ນ x = 8 ຫຼື x = -2. ເນື່ອງຈາກເພິ່ນກຳນົດໃຫ້ x ເປັນຈຳນວນບວກ, ດັ່ງນັ້ນ x = 8)"}</span>
+          <span key="t2">{"8 (ຖ້າ |𝑥 - 3| = 5, ຈະໄດ້ 𝑥 - 3 = 5 ຫຼື 𝑥 - 3 = -5. ສະນັ້ນ 𝑥 = 8 ຫຼື 𝑥 = -2. ເນື່ອງຈາກເພິ່ນກຳນົດໃຫ້ 𝑥 ເປັນຈຳນວນບວກ, ດັ່ງນັ້ນ 𝑥 = 8)"}</span>
         ]
       },
       {

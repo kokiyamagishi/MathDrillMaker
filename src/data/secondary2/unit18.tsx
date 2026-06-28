@@ -27,11 +27,11 @@ export const unit18Data: UnitData = {
             
             {/* Grouping Formula block */}
             <div style={{ padding: "12px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0" }}>
-              <strong>{"ຕົວຢ່າງ: "}</strong>{"ທ້ອນໂຮມສຳນວນ "} <span className="math">{"4x + 7 - 2x + 3"}</span>
+              <strong>{"ຕົວຢ່າງ: "}</strong>{"ທ້ອນໂຮມສຳນວນ "} <span className="math">{"4𝑥 + 7 - 2𝑥 + 3"}</span>
               <div style={{ paddingLeft: "12px", borderLeft: "3px solid #2196F3", marginTop: "6px", display: "flex", flexDirection: "column", gap: "4px", color: "#37474F" }}>
-                <span className="math">{"• ໂຮມພົດທີ່ມີ x: 4x - 2x = 2x"}</span>
+                <span className="math">{"• ໂຮມພົດທີ່ມີ 𝑥: 4𝑥 - 2𝑥 = 2𝑥"}</span>
                 <span className="math">{"• ໂຮມພົດຈຳນວນຖ້ວນ: 7 + 3 = 10"}</span>
-                <span className="math" style={{ color: "#0D47A1" }}>{"➔ ຜົນທ້ອນໂຮມແມ່ນ: 2x + 10"}</span>
+                <span className="math" style={{ color: "#0D47A1" }}>{"➔ ຜົນທ້ອນໂຮມແມ່ນ: 2𝑥 + 10"}</span>
               </div>
             </div>
 
@@ -41,14 +41,14 @@ export const unit18Data: UnitData = {
                 <span>{"ແຜນວາດການຈັດກຸ່ມພົດທີ່ຄ້າຍຄືກັນ"}</span>
                 <svg viewBox="0 0 240 50" style={{ width: "100%", maxWidth: "240px", height: "auto" }}>
                   {/* Terms */}
-                  <text x="30" y="20" fill="#2196F3" fontSize="12" fontWeight="bold" textAnchor="middle">{"4x"}</text>
+                  <text x="30" y="20" fill="#2196F3" fontSize="12" fontWeight="bold" textAnchor="middle">{"4𝑥"}</text>
                   <text x="70" y="20" fill="#4CAF50" fontSize="12" fontWeight="bold" textAnchor="middle">{"+ 7"}</text>
-                  <text x="110" y="20" fill="#2196F3" fontSize="12" fontWeight="bold" textAnchor="middle">{"- 2x"}</text>
+                  <text x="110" y="20" fill="#2196F3" fontSize="12" fontWeight="bold" textAnchor="middle">{"- 2𝑥"}</text>
                   <text x="150" y="20" fill="#4CAF50" fontSize="12" fontWeight="bold" textAnchor="middle">{"+ 3"}</text>
                   
                   {/* Connectors for X */}
                   <path d="M 30 25 L 30 35 L 70 35 L 70 25" stroke="#2196F3" strokeWidth="1" fill="none" />
-                  <text x="50" y="46" fill="#0D47A1" fontSize="9" textAnchor="middle">{"2x"}</text>
+                  <text x="50" y="46" fill="#0D47A1" fontSize="9" textAnchor="middle">{"2𝑥"}</text>
                   
                   {/* Connectors for Integers */}
                   <path d="M 70 25 L 70 30 L 150 30 L 150 25" stroke="#4CAF50" strokeWidth="1" fill="none" />
@@ -59,7 +59,7 @@ export const unit18Data: UnitData = {
           </div>
         ),
         hint: {
-          text: "💡 ພົດທີ່ມີຕົວລັບຕ່າງກັນ ຫຼື ກຳລັງຕ່າງກັນ ບໍ່ສາມາດບວກລົບກັນໄດ້ເດີ້ ເຊັ່ນ x² + x ບໍ່ສາມາດໂຮມກັນໄດ້!",
+          text: "💡 ພົດທີ່ມີຕົວລັບຕ່າງກັນ ຫຼື ກຳລັງຕ່າງກັນ ບໍ່ສາມາດບວກລົບກັນໄດ້ເດີ້ ເຊັ່ນ 𝑥² + 𝑥 ບໍ່ສາມາດໂຮມກັນໄດ້!",
           isBlue: true
         }
       },
@@ -76,7 +76,7 @@ export const unit18Data: UnitData = {
                 {/* 5 Questions */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span className="math">{"4x + 7 - 2x + 3 = ?x + 10"}</span>
+                  <span className="math">{"4𝑥 + 7 - 2𝑥 + 3 = ?𝑥 + 10"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
                 
@@ -88,13 +88,13 @@ export const unit18Data: UnitData = {
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span className="math">{"5y + 12 - 9y - 4 = ?y + 8"}</span>
+                  <span className="math">{"5𝑦 + 12 - 9𝑦 - 4 = ?𝑦 + 8"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
-                  <span className="math">{"3x² + 4x - x² + 2x = 2x² + ?x"}</span>
+                  <span className="math">{"3x² + 4𝑥 - 𝑥² + 2𝑥 = 2x² + ?𝑥"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
@@ -125,14 +125,14 @@ export const unit18Data: UnitData = {
                 <span className="math">{"• ສູດແຈກຢາຍ: a(b + c) = ab + ac"}</span>
                 <span className="math">{"• ສູດແຈກຢາຍລົບ: a(b - c) = ab - ac"}</span>
                 <span style={{ color: "#2E7D32" }}>
-                  <strong>{"ຕົວຢ່າງ: "}</strong> {"3(2x + 4) = 3 × 2x + 3 × 4 = 6x + 12"}
+                  <strong>{"ຕົວຢ່າງ: "}</strong> {"3(2𝑥 + 4) = 3 × 2𝑥 + 3 × 4 = 6𝑥 + 12"}
                 </span>
               </div>
             </div>
           </div>
         ),
         hint: {
-          text: "💡 ຈົ່ງລະວັງເຄື່ອງໝາຍເວລາຄູນເລກລົບແຈກຢາຍ ເຊັ່ນ -2(3x - 5) = -6x + 10!",
+          text: "💡 ຈົ່ງລະວັງເຄື່ອງໝາຍເວລາຄູນເລກລົບແຈກຢາຍ ເຊັ່ນ -2(3𝑥 - 5) = -6𝑥 + 10!",
           isBlue: false
         }
       },
@@ -149,7 +149,7 @@ export const unit18Data: UnitData = {
                 {/* 5 Questions */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span className="math">{"3(2x + 4) = ?x + 12"}</span>
+                  <span className="math">{"3(2𝑥 + 4) = ?𝑥 + 12"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
@@ -167,13 +167,13 @@ export const unit18Data: UnitData = {
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
-                  <span className="math">{"2(x + 3) + 4(2x - 1) = ?x + 2"}</span>
+                  <span className="math">{"2(𝑥 + 3) + 4(2𝑥 - 1) = ?𝑥 + 2"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
-                  <span className="math">{"6(y - 2) - 3(2y - 4) = ?"}</span>
+                  <span className="math">{"6(𝑦 - 2) - 3(2𝑦 - 4) = ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
               </div>
@@ -196,11 +196,11 @@ export const unit18Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງຄັດຈ້ອນສຳນວນຕໍ່ໄປນີ້ໃຫ້ງ່າຍດາຍ: "}
               <span className="math" style={{ display: "inline-flex", alignItems: "center", marginLeft: "6px" }}>
-                <Fraction num="1" den="2" /> {"(4x + 6) + "} <Fraction num="1" den="3" /> {"(9x - 12) = ?x - 1"}
+                <Fraction num="1" den="2" /> {"(4𝑥 + 6) + "} <Fraction num="1" den="3" /> {"(9𝑥 - 12) = ?𝑥 - 1"}
               </span>
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: ສຳປະສິດ ? ຂອງ x ແມ່ນ"}</span>
+              <span>{"ຕອບ: ສຳປະສິດ ? ຂອງ 𝑥 ແມ່ນ"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
             </div>
           </div>
@@ -214,7 +214,7 @@ export const unit18Data: UnitData = {
               {"ໂຈດບັນຫາຊອກຫາເນື້ອທີ່ຂອບທາງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ມີສວນດອກໄມ້ຮູບສີ່ແຈສາກຍາວ 2x ແມັດ ແລະ ກວ້າງ x ແມັດ. ເນື້ອທີ່ຂອງສວນແມ່ນກຳນົດດ້ວຍສຳນວນ S = 2x². ຖ້າເນື້ອທີ່ສວນຖືກຂະຫຍາຍເພີ່ມຂຶ້ນ 50 ຕາແມັດ, ສຳນວນເນື້ອທີ່ໃໝ່ແມ່ນເທົ່າໃດ?"}
+              {"ມີສວນດອກໄມ້ຮູບສີ່ແຈສາກຍາວ 2𝑥 ແມັດ ແລະ ກວ້າງ 𝑥 ແມັດ. ເນື້ອທີ່ຂອງສວນແມ່ນກຳນົດດ້ວຍສຳນວນ S = 2x². ຖ້າເນື້ອທີ່ສວນຖືກຂະຫຍາຍເພີ່ມຂຶ້ນ 50 ຕາແມັດ, ສຳນວນເນື້ອທີ່ໃໝ່ແມ່ນເທົ່າໃດ?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ເນື້ອທີ່ໃໝ່ແມ່ນ"}</span>
@@ -236,7 +236,7 @@ export const unit18Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຈົ່ງຄັດຈ້ອນສຳນວນຕໍ່ໄປນີ້ໃຫ້ງ່າຍດາຍ: "}
             <span className="math" style={{ marginLeft: "6px" }}>
-              {"(5x + 8) - (2x - 3) = ?x + 11"}
+              {"(5𝑥 + 8) - (2𝑥 - 3) = ?𝑥 + 11"}
             </span>
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
@@ -256,11 +256,11 @@ export const unit18Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຈົ່ງຄັດຈ້ອນສຳນວນຕໍ່ໄປນີ້: "}
             <span className="math" style={{ marginLeft: "6px" }}>
-              {"2(x² + 3) + 3(2 - x²) = 12 - ?x²"}
+              {"2(𝑥² + 3) + 3(2 - 𝑥²) = 12 - ?𝑥²"}
             </span>
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-            <span>{"ຕອບ: ສຳປະສິດ ? ຂອງ x² ແມ່ນ"}</span>
+            <span>{"ຕອບ: ສຳປະສິດ ? ຂອງ 𝑥² ແມ່ນ"}</span>
             <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
           </div>
         </div>
@@ -272,27 +272,27 @@ export const unit18Data: UnitData = {
       {
         questionNumber: 1,
         answers: [
-          <span key="1-1">{"(1) 2 (ຄິດໄລ່: 4x - 2x = 2x)"}</span>,
+          <span key="1-1">{"(1) 2 (ຄິດໄລ່: 4𝑥 - 2𝑥 = 2𝑥)"}</span>,
           <span key="1-2">{"(2) 11 (ຄິດໄລ່: 8a + 3a = 11a)"}</span>,
-          <span key="1-3">{"(3) -4 (ຄິດໄລ່: 5y - 9y = -4y)"}</span>,
-          <span key="1-4">{"(4) 6 (ຄິດໄລ່: 4x + 2x = 6x)"}</span>,
+          <span key="1-3">{"(3) -4 (ຄິດໄລ່: 5𝑦 - 9𝑦 = -4𝑦)"}</span>,
+          <span key="1-4">{"(4) 6 (ຄິດໄລ່: 4𝑥 + 2𝑥 = 6𝑥)"}</span>,
           <span key="1-5">{"(5) 5 (ຄິດໄລ່: -3m - 2m = -5m)"}</span>
         ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="2-1">{"(1) 6 (ຄິດໄລ່: 3 × 2x = 6x)"}</span>,
+          <span key="2-1">{"(1) 6 (ຄິດໄລ່: 3 × 2𝑥 = 6𝑥)"}</span>,
           <span key="2-2">{"(2) 15 (ຄິດໄລ່: 5 × 3a = 15a)"}</span>,
           <span key="2-3">{"(3) 6 (ຄິດໄລ່: -2 × -3 = 6)"}</span>,
-          <span key="2-4">{"(4) 10 (ຄິດໄລ່: 2x + 8x = 10x)"}</span>,
-          <span key="2-5">{"(5) 0 (ຄິດໄລ່: 6y - 12 - 6y + 12 = 0)"}</span>
+          <span key="2-4">{"(4) 10 (ຄິດໄລ່: 2𝑥 + 8𝑥 = 10𝑥)"}</span>,
+          <span key="2-5">{"(5) 0 (ຄິດໄລ່: 6𝑦 - 12 - 6𝑦 + 12 = 0)"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="t1">{"(1) 5 (ຄິດໄລ່: 2x + 3 + 3x - 4 = 5x - 1)"}</span>
+          <span key="t1">{"(1) 5 (ຄິດໄລ່: 2𝑥 + 3 + 3𝑥 - 4 = 5𝑥 - 1)"}</span>
         ]
       },
       {
@@ -304,7 +304,7 @@ export const unit18Data: UnitData = {
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="s1">{"(1) 3 (ຄິດໄລ່: 5x + 8 - 2x + 3 = 3x + 11)"}</span>
+          <span key="s1">{"(1) 3 (ຄິດໄລ່: 5𝑥 + 8 - 2𝑥 + 3 = 3𝑥 + 11)"}</span>
         ]
       },
       {

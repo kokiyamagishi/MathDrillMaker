@@ -12,7 +12,7 @@ const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) 
 export const unit39Data: UnitData = {
   unitNumber: 39,
   unitTitle: "ພາກທີ VI - ບົດທີ 39: ໜ້າພຽງຕົວປະສານ",
-  unitGoal: "ຮຽນຮູ້ລະບົບເສັ້ນເຄົ້າຕົວປະສານສາກ (Cartesian Coordinate System), ການອ່ານ ແລະ ກຳນົດພິກັດຂອງເມັດ (x, y) ພ້ອມທັງຄິດໄລ່ຫາໄລຍະຫ່າງພື້ນຖານ",
+  unitGoal: "ຮຽນຮູ້ລະບົບເສັ້ນເຄົ້າຕົວປະສານສາກ (Cartesian Coordinate System), ການອ່ານ ແລະ ກຳນົດພິກັດຂອງເມັດ (𝑥, 𝑦) ພ້ອມທັງຄິດໄລ່ຫາໄລຍະຫ່າງພື້ນຖານ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.2 ໜ້າ 176-180",
   subSections: [
     {
@@ -25,9 +25,9 @@ export const unit39Data: UnitData = {
               {"ໜ້າພຽງຕົວປະສານປະກອບດ້ວຍສອງແກນຕັ້ງສາກກັນຢູ່ຈຸດ O(0,0):"}
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
-              <div>{"• ແກນນອນ Ox: ເອີ້ນວ່າ ແກນອັບຊິດ (Abscissa) ➔ ສະແດງຄ່າ x"}</div>
-              <div>{"• ແກນຕັ້ງ Oy: ເອີ້ນວ່າ ແກນອໍໂດເນ (Ordinate) ➔ ສະແດງຄ່າ y"}</div>
-              <div>{"• ພິກັດຂອງເມັດ P ໃດໜຶ່ງຂຽນໃນຮູບຮ່າງ: "} <span className="math">{"P(x, y)"}</span></div>
+              <div>{"• ແກນນອນ Ox: ເອີ້ນວ່າ ແກນອັບຊິດ (Abscissa) ➔ ສະແດງຄ່າ 𝑥"}</div>
+              <div>{"• ແກນຕັ້ງ Oy: ເອີ້ນວ່າ ແກນອໍໂດເນ (Ordinate) ➔ ສະແດງຄ່າ 𝑦"}</div>
+              <div>{"• ພິກັດຂອງເມັດ P ໃດໜຶ່ງຂຽນໃນຮູບຮ່າງ: "} <span className="math">{"P(𝑥, 𝑦)"}</span></div>
             </div>
 
             {/* Coordinate Plane Grid SVG */}
@@ -67,15 +67,15 @@ export const unit39Data: UnitData = {
                   <line x1="140" y1="40" x2="80" y2="40" stroke="#D32F2F" strokeWidth="1" strokeDasharray="2,2" />
 
                   {/* Axis labels */}
-                  <text x="150" y="75" fill="#37474F" fontSize="8" fontWeight="bold" textAnchor="end">{"x"}</text>
-                  <text x="85" y="18" fill="#37474F" fontSize="8" fontWeight="bold">{"y"}</text>
+                  <text x="150" y="75" fill="#37474F" fontSize="8" fontWeight="bold" textAnchor="end">{"𝑥"}</text>
+                  <text x="85" y="18" fill="#37474F" fontSize="8" fontWeight="bold">{"𝑦"}</text>
                 </svg>
               </div>
             </div>
           </div>
         ),
         hint: {
-          text: "💡 ເວລາອ່ານຕົວປະສານ ຕ້ອງອ່ານຄ່າແກນນອນ x ກ່ອນ ແລ້ວຈຶ່ງອ່ານຄ່າແກນຕັ້ງ y ເດີ້! ຕົວຢ່າງ: (x, y)",
+          text: "💡 ເວລາອ່ານຕົວປະສານ ຕ້ອງອ່ານຄ່າແກນນອນ 𝑥 ກ່ອນ ແລ້ວຈຶ່ງອ່ານຄ່າແກນຕັ້ງ 𝑦 ເດີ້! ຕົວຢ່າງ: (𝑥, 𝑦)",
           isBlue: true
         }
       },
@@ -115,7 +115,7 @@ export const unit39Data: UnitData = {
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
-                  <span>{"ຈຸດເຄົ້າ O ຂອງລະບົບເສັ້ນເຄົ້າຕົວປະສານສາກ ມີຕົວປະສານ x ແລະ y ເທົ່າກັບຈັກ?"}</span>
+                  <span>{"ຈຸດເຄົ້າ O ຂອງລະບົບເສັ້ນເຄົ້າຕົວປະສານສາກ ມີຕົວປະສານ 𝑥 ແລະ 𝑦 ເທົ່າກັບຈັກ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -135,13 +135,13 @@ export const unit39Data: UnitData = {
             </p>
             
             <div style={{ padding: "12px 16px", backgroundColor: "#FFFDE7", borderRadius: "10px", border: "1px solid #FFF59D", fontSize: "1.25rem", color: "#F57F17" }}>
-              {"• ຖ້າເມັດຕັ້ງຢູ່ເທິງແກນ Ox ➔ ຄ່າຕົວປະສານ Oy (y) ຈະເທົ່າກັບ 0 (ຕົວຢ່າງ: A(3, 0))"}<br />
-              {"• ຖ້າເມັດຕັ້ງຢູ່ເທິງແກນ Oy ➔ ຄ່າຕົວປະສານ Ox (x) ຈະເທົ່າກັບ 0 (ຕົວຢ່າງ: B(0, -5))"}
+              {"• ຖ້າເມັດຕັ້ງຢູ່ເທິງແກນ Ox ➔ ຄ່າຕົວປະສານ Oy (𝑦) ຈະເທົ່າກັບ 0 (ຕົວຢ່າງ: A(3, 0))"}<br />
+              {"• ຖ້າເມັດຕັ້ງຢູ່ເທິງແກນ Oy ➔ ຄ່າຕົວປະສານ Ox (𝑥) ຈະເທົ່າກັບ 0 (ຕົວຢ່າງ: B(0, -5))"}
             </div>
           </div>
         ),
         hint: {
-          text: "💡 ຈື່ສະຫຼັບກັນ: ຢູ່ແກນ Ox ➔ y=0, ຢູ່ແກນ Oy ➔ x=0 ເດີ້!",
+          text: "💡 ຈື່ສະຫຼັບກັນ: ຢູ່ແກນ Ox ➔ 𝑦=0, ຢູ່ແກນ Oy ➔ 𝑥=0 ເດີ້!",
           isBlue: false
         }
       },
@@ -157,13 +157,13 @@ export const unit39Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຖ້າເມັດ Q ຕັ້ງຢູ່ເທິງແກນ Ox (ແກນນອນ), ຕົວປະສານ Oy (y) ຂອງມັນຈະເທົ່າກັບຈັກສະເໝີ?"}</span>
+                  <span>{"ຖ້າເມັດ Q ຕັ້ງຢູ່ເທິງແກນ Ox (ແກນນອນ), ຕົວປະສານ Oy (𝑦) ຂອງມັນຈະເທົ່າກັບຈັກສະເໝີ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຖ້າເມັດ R ຕັ້ງຢູ່ເທິງແກນ Oy (ແກນຕັ້ງ), ຕົວປະສານ Ox (x) ຂອງມັນຈະເທົ່າກັບຈັກສະເໝີ?"}</span>
+                  <span>{"ຖ້າເມັດ R ຕັ້ງຢູ່ເທິງແກນ Oy (ແກນຕັ້ງ), ຕົວປະສານ Ox (𝑥) ຂອງມັນຈະເທົ່າກັບຈັກສະເໝີ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
@@ -181,7 +181,7 @@ export const unit39Data: UnitData = {
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
-                  <span>{"ຖ້າເມັດ A(x, 3) ຕັ້ງຢູ່ເທິງແກນ Oy, ຄ່າຂອງ x ຈະແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຖ້າເມັດ A(𝑥, 3) ຕັ້ງຢູ່ເທິງແກນ Oy, ຄ່າຂອງ 𝑥 ຈະແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -199,13 +199,13 @@ export const unit39Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ຊອກຫາຕົວປະສານ x ຂອງເມັດເຄິ່ງກາງ M: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ຊອກຫາຕົວປະສານ 𝑥 ຂອງເມັດເຄິ່ງກາງ M: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຖ້າເມັດ A(2, 4) ແລະ B(6, 8) ມີເມັດເຄິ່ງກາງລະຫວ່າງພວກມັນແມ່ນ M(x, y). ຈົ່ງຊອກຫາຕົວປະສານ x ຂອງ M. (ສູດ: x_M = (x_A + x_B) / 2)"}
+              {"ຖ້າເມັດ A(2, 4) ແລະ B(6, 8) ມີເມັດເຄິ່ງກາງລະຫວ່າງພວກມັນແມ່ນ M(𝑥, 𝑦). ຈົ່ງຊອກຫາຕົວປະສານ 𝑥 ຂອງ M. (ສູດ: x_M = (x_A + x_B) / 2)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -216,13 +216,13 @@ export const unit39Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ຊອກຫາຕົວປະສານ y ຂອງເມັດເຄິ່ງກາງ M: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ຊອກຫາຕົວປະສານ 𝑦 ຂອງເມັດເຄິ່ງກາງ M: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຈາກເມັດ A(2, 4) ແລະ B(6, 8) ທີ່ມີເມັດເຄິ່ງກາງ M(x, y). ຈົ່ງຊອກຫາຕົວປະສານ y ຂອງ M. (ສູດ: y_M = (y_A + y_B) / 2)"}
+              {"ຈາກເມັດ A(2, 4) ແລະ B(6, 8) ທີ່ມີເມັດເຄິ່ງກາງ M(𝑥, 𝑦). ຈົ່ງຊອກຫາຕົວປະສານ 𝑦 ຂອງ M. (ສູດ: y_M = (y_A + y_B) / 2)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: y ="}</span>
+              <span>{"ຕອບ: 𝑦 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -273,8 +273,8 @@ export const unit39Data: UnitData = {
       {
         questionNumber: 1,
         answers: [
-          <span key="1">{"(1) 4 (ຕົວປະສານທຳອິດໃນ P(4, 5) ສະແດງເຖິງຄ່າ x ເທິງ Ox)"}</span>,
-          <span key="2">{"(2) 5 (ຕົວປະສານທີສອງໃນ P(4, 5) ສະແດງເຖິງຄ່າ y ເທິງ Oy)"}</span>,
+          <span key="1">{"(1) 4 (ຕົວປະສານທຳອິດໃນ P(4, 5) ສະແດງເຖິງຄ່າ 𝑥 ເທິງ Ox)"}</span>,
+          <span key="2">{"(2) 5 (ຕົວປະສານທີສອງໃນ P(4, 5) ສະແດງເຖິງຄ່າ 𝑦 ເທິງ Oy)"}</span>,
           <span key="3">{"(3) -3 (ຕົວປະສານທຳອິດໃນ A(-3, 2) ແມ່ນ -3)"}</span>,
           <span key="4">{"(4) -7 (ຕົວປະສານທີສອງໃນ B(2, -7) ແມ່ນ -7)"}</span>,
           <span key="5">{"(5) 0 (ເພາະວ່າຈຸດເຄົ້າ O ມີພິກັດແມ່ນ (0, 0))"}</span>
@@ -283,23 +283,23 @@ export const unit39Data: UnitData = {
       {
         questionNumber: 2,
         answers: [
-          <span key="6">{"(1) 0 (ເພາະວ່າທຸກໆເມັດເທິງ Ox ມີ y = 0 ສະເໝີ)"}</span>,
-          <span key="7">{"(2) 0 (ເພາະວ່າທຸກໆເມັດເທິງ Oy ມີ x = 0 ສະເໝີ)"}</span>,
-          <span key="8">{"(3) Oy (ເພາະວ່າ x = 0 ➔ ຕັ້ງຢູ່ເທິງ Oy)"}</span>,
-          <span key="9">{"(4) Ox (ເພາະວ່າ y = 0 ➔ ຕັ້ງຢູ່ເທິງ Ox)"}</span>,
-          <span key="10">{"(5) 0 (ເພາະວ່າເມັດຕັ້ງຢູ່ເທິງ Oy ➔ ຕົວປະສານ x ຕ້ອງເປັນ 0)"}</span>
+          <span key="6">{"(1) 0 (ເພາະວ່າທຸກໆເມັດເທິງ Ox ມີ 𝑦 = 0 ສະເໝີ)"}</span>,
+          <span key="7">{"(2) 0 (ເພາະວ່າທຸກໆເມັດເທິງ Oy ມີ 𝑥 = 0 ສະເໝີ)"}</span>,
+          <span key="8">{"(3) Oy (ເພາະວ່າ 𝑥 = 0 ➔ ຕັ້ງຢູ່ເທິງ Oy)"}</span>,
+          <span key="9">{"(4) Ox (ເພາະວ່າ 𝑦 = 0 ➔ ຕັ້ງຢູ່ເທິງ Ox)"}</span>,
+          <span key="10">{"(5) 0 (ເພາະວ່າເມັດຕັ້ງຢູ່ເທິງ Oy ➔ ຕົວປະສານ 𝑥 ຕ້ອງເປັນ 0)"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="11">{"4 (ເພາະວ່າ x = (2 + 6) / 2 = 8 / 2 = 4)"}</span>
+          <span key="11">{"4 (ເພາະວ່າ 𝑥 = (2 + 6) / 2 = 8 / 2 = 4)"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="12">{"6 (ເພາະວ່າ y = (4 + 8) / 2 = 12 / 2 = 6)"}</span>
+          <span key="12">{"6 (ເພາະວ່າ 𝑦 = (4 + 8) / 2 = 12 / 2 = 6)"}</span>
         ]
       },
       {

@@ -201,20 +201,20 @@ export const unit46Data: UnitData = {
     }
   ],
   challengeProblems: {
-    hintText: "💡 ບົດທ້າທາຍ: ໃຊ້ຫຼັກການແທນຄ່າ ແລະ ແກ້ສົມຜົນເພື່ອຊອກຫາຄ່າຂອງ x ກ່ອນ ແລ້ວຈຶ່ງຕອບເດີ້!",
+    hintText: "💡 ບົດທ້າທາຍ: ໃຊ້ຫຼັກການແທນຄ່າ ແລະ ແກ້ສົມຜົນເພື່ອຊອກຫາຄ່າຂອງ 𝑥 ກ່ອນ ແລ້ວຈຶ່ງຕອບເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການແກ້ສົມຜົນ Thales ຊອກຫາ x: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການແກ້ສົມຜົນ Thales ຊອກຫາ 𝑥: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ໃຫ້ AM = x, MB = x + 3. AN = 4 cm, NC = 6 cm. ຈົ່ງຊອກຫາຄ່າຂອງ x. (x / (x+3) = 4 / 6 = 2 / 3)"}
+              {"ໃຫ້ AM = 𝑥, MB = 𝑥 + 3. AN = 4 cm, NC = 6 cm. ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥. (𝑥 / (𝑥+3) = 4 / 6 = 2 / 3)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"cm"}</span>
             </div>
@@ -304,7 +304,7 @@ export const unit46Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="11">{"6 (ເພາະວ່າ x / (x+3) = 2/3 ➔ 3x = 2x + 6 ➔ x = 6)"}</span>
+          <span key="11">{"6 (ເພາະວ່າ 𝑥 / (𝑥+3) = 2/3 ➔ 3𝑥 = 2𝑥 + 6 ➔ 𝑥 = 6)"}</span>
         ]
       },
       {

@@ -25,15 +25,15 @@ export const unit30Data: UnitData = {
               <span>{"- ສ່ວນຮ້ອຍ (%) ແມ່ນອັດຕາສ່ວນທີ່ມີພູດເປັນ 100. ເຊັ່ນ: "}</span>
               <br />
               <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", display: "inline-flex", alignItems: "center", gap: "4px", paddingLeft: "16px" }}>
-                <span>{"x% = "}</span>
-                <Fraction num={"x"} den={"100"} />
+                <span>{"𝑥% = "}</span>
+                <Fraction num={"𝑥"} den={"100"} />
               </span>
               <br />
-              <span>{"- ເພື່ອຊອກຫາ "}<strong>{"x% ຂອງຈຳນວນ A"}</strong>{" ເຮົາຄູນ A ໃຫ້ກັບ x%:"}</span>
+              <span>{"- ເພື່ອຊອກຫາ "}<strong>{"𝑥% ຂອງຈຳນວນ A"}</strong>{" ເຮົາຄູນ A ໃຫ້ກັບ 𝑥%:"}</span>
               <br />
               <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#2E7D32", display: "inline-flex", alignItems: "center", gap: "4px", paddingLeft: "16px" }}>
                 <span>{"ຜົນໄດ້ຮັບ = A × ("}</span>
-                <Fraction num={"x"} den={"100"} />
+                <Fraction num={"𝑥"} den={"100"} />
                 <span>{")"}</span>
               </span>
             </p>

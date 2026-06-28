@@ -234,10 +234,10 @@ export const unit17Data: UnitData = {
             {"ໂຈດກ່ຽວກັບເມັດທີ່ນອນຢູ່ເທິງແກນ d: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ໃຫ້ເມັດ M ຢູ່ເທິງແກນເຄິ່ງຄື d ພໍດີ. ຖ້າໄລຍະຫ່າງລະຫວ່າງ M ຫາເມັດເຄິ່ງຄື M′ ຂອງມັນແມ່ນ x, ຖາມວ່າ x ຈະມີຄ່າເທົ່າໃດ?"}
+            {"ໃຫ້ເມັດ M ຢູ່ເທິງແກນເຄິ່ງຄື d ພໍດີ. ຖ້າໄລຍະຫ່າງລະຫວ່າງ M ຫາເມັດເຄິ່ງຄື M′ ຂອງມັນແມ່ນ 𝑥, ຖາມວ່າ 𝑥 ຈະມີຄ່າເທົ່າໃດ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-            <span>{"ຕອບ: x ="}</span>
+            <span>{"ຕອບ: 𝑥 ="}</span>
             <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             <span>{"cm."}</span>
           </div>

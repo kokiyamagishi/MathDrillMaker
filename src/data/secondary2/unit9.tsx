@@ -29,10 +29,10 @@ export const unit9Data: UnitData = {
             <div style={{ padding: "12px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0" }}>
               <div style={{ display: "flex", flexDirection: "column", gap: "6px", color: "#37474F" }}>
                 <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
-                  {"• ທົດສະນິຍົມ 1 ຫຼັກ: 0.x = "} <Fraction num="x" den="10" />
+                  {"• ທົດສະນິຍົມ 1 ຫຼັກ: 0.𝑥 = "} <Fraction num="𝑥" den="10" />
                 </span>
                 <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
-                  {"• ທົດສະນິຍົມ 2 ຫຼັກ: 0.xy = "} <Fraction num="xy" den="100" />
+                  {"• ທົດສະນິຍົມ 2 ຫຼັກ: 0.𝑥𝑦 = "} <Fraction num="𝑥𝑦" den="100" />
                 </span>
                 <span className="math" style={{ display: "inline-flex", alignItems: "center", color: "#0D47A1" }}>
                   <strong>{"ຕົວຢ່າງ: "}</strong> {"0.75 = "} <Fraction num="75" den="100" /> {" = "} <Fraction num="3" den="4" /> {" (ຄັດຈ້ອນໃຫ້ເປັນເລກສ່ວນຂັ້ນຕ່ຳ)"}

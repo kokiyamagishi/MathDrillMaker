@@ -240,10 +240,10 @@ export const unit19Data: UnitData = {
             {"ໂຈດຄຸນລັກສະນະການເຄິ່ງຄືຂອງສອງເສັ້ນຕັ້ງສາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ໃຫ້ເສັ້ນຊື່ Δ₁ ⊥ Δ₂. ຖ້າ Δ₁′ ແລະ Δ₂′ ແມ່ນເສັ້ນຊື່ເຄິ່ງຄືຂອງພວກມັນທຽບໃສ່ d. ຖ້າມຸມລະຫວ່າງ Δ₁′ ແລະ Δ₂′ ແມ່ນ x, ຖາມວ່າ x ຈະມີຄ່າຈັກອົງສາ?"}
+            {"ໃຫ້ເສັ້ນຊື່ Δ₁ ⊥ Δ₂. ຖ້າ Δ₁′ ແລະ Δ₂′ ແມ່ນເສັ້ນຊື່ເຄິ່ງຄືຂອງພວກມັນທຽບໃສ່ d. ຖ້າມຸມລະຫວ່າງ Δ₁′ ແລະ Δ₂′ ແມ່ນ 𝑥, ຖາມວ່າ 𝑥 ຈະມີຄ່າຈັກອົງສາ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-            <span>{"ຕອບ: x ="}</span>
+            <span>{"ຕອບ: 𝑥 ="}</span>
             <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             <span>{"°."}</span>
           </div>

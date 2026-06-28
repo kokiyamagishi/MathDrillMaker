@@ -12,7 +12,7 @@ const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) 
 export const unit31Data: UnitData = {
   unitNumber: 31,
   unitTitle: "ພາກທີ V - ບົດທີ 31: ອັດຕາສ່ວນພົວພັນປີ້ນ (Inverse Proportion)",
-  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍຂອງອັດຕາສ່ວນພົວພັນປີ້ນ (Inverse Proportion), ຄວາມແຕກຕ່າງລະຫວ່າງພົວພັນກົງ ແລະ ພົວພັນປີ້ນ, ຫຼັກການຄົງທີ່ຂອງຜົນຄູນ x × y = C, ແລະ ການແກ້ໂຈດບັນຫາຕົວຈິງ",
+  unitGoal: "ຮຽນຮູ້ກ່ຽວກັບຄວາມໝາຍຂອງອັດຕາສ່ວນພົວພັນປີ້ນ (Inverse Proportion), ຄວາມແຕກຕ່າງລະຫວ່າງພົວພັນກົງ ແລະ ພົວພັນປີ້ນ, ຫຼັກການຄົງທີ່ຂອງຜົນຄູນ 𝑥 × 𝑦 = C, ແລະ ການແກ້ໂຈດບັນຫາຕົວຈິງ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.1 ໜ້າ 243-248",
   subSections: [
     {
@@ -22,11 +22,11 @@ export const unit31Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"- ສອງປະລິມານ x ແລະ y ເອີ້ນວ່າ "}<strong>{"ອັດຕາສ່ວນພົວພັນປີ້ນ"}</strong>{" ຖ້າວ່າປະລິມານໜຶ່ງເພີ່ມຂຶ້ນ n ເທື່ອ, ອີກປະລິມານໜຶ່ງຈະຫຼຸດລົງ n ເທື່ອຕາມລຳດັບ."}
+              {"- ສອງປະລິມານ 𝑥 ແລະ 𝑦 ເອີ້ນວ່າ "}<strong>{"ອັດຕາສ່ວນພົວພັນປີ້ນ"}</strong>{" ຖ້າວ່າປະລິມານໜຶ່ງເພີ່ມຂຶ້ນ n ເທື່ອ, ອີກປະລິມານໜຶ່ງຈະຫຼຸດລົງ n ເທື່ອຕາມລຳດັບ."}
               <br />
               {"- ຜົນຄູນຂອງສອງປະລິມານນີ້ຈະມີຄ່າຄົງທີ່ສະເໝີ:"}
               <br />
-              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", paddingLeft: "16px" }}>{"x × y = C   (C ແມ່ນຕົວເລກຄົງທີ່)"}</span>
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", paddingLeft: "16px" }}>{"𝑥 × 𝑦 = C   (C ແມ່ນຕົວເລກຄົງທີ່)"}</span>
             </p>
             
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
@@ -50,7 +50,7 @@ export const unit31Data: UnitData = {
           </div>
         ),
         hint: {
-          text: "💡 ຈື່ສະເໝີ: ໃນອັດຕາສ່ວນພົວພັນປີ້ນ, ຜົນຄູນຂອງແຕ່ລະຄູ່ປະລິມານ (x × y) ຈະເທົ່າກັນສະເໝີ!",
+          text: "💡 ຈື່ສະເໝີ: ໃນອັດຕາສ່ວນພົວພັນປີ້ນ, ຜົນຄູນຂອງແຕ່ລະຄູ່ປະລິມານ (𝑥 × 𝑦) ຈະເທົ່າກັນສະເໝີ!",
           isBlue: true
         }
       },
@@ -177,13 +177,13 @@ export const unit31Data: UnitData = {
               <tbody>
                 <tr>
                   <td style={{ padding: "10px", border: "1px solid #CFD8DC", fontWeight: "bold" }}>{"ການປ່ຽນແປງ"}</td>
-                  <td style={{ padding: "10px", border: "1px solid #CFD8DC" }}>{"x ເພີ່ມ ⇒ y ເພີ່ມ, x ຫຼຸດ ⇒ y ຫຼຸດ"}</td>
-                  <td style={{ padding: "10px", border: "1px solid #CFD8DC" }}>{"x ເພີ່ມ ⇒ y ຫຼຸດ, x ຫຼຸດ ⇒ y ເພີ່ມ"}</td>
+                  <td style={{ padding: "10px", border: "1px solid #CFD8DC" }}>{"𝑥 ເພີ່ມ ⇒ 𝑦 ເພີ່ມ, 𝑥 ຫຼຸດ ⇒ 𝑦 ຫຼຸດ"}</td>
+                  <td style={{ padding: "10px", border: "1px solid #CFD8DC" }}>{"𝑥 ເພີ່ມ ⇒ 𝑦 ຫຼຸດ, 𝑥 ຫຼຸດ ⇒ 𝑦 ເພີ່ມ"}</td>
                 </tr>
                 <tr style={{ backgroundColor: "#F9F9F9" }}>
                   <td style={{ padding: "10px", border: "1px solid #CFD8DC", fontWeight: "bold" }}>{"ຄວາມສຳພັນຄົງທີ່"}</td>
-                  <td style={{ padding: "10px", border: "1px solid #CFD8DC", color: "#0D47A1" }}>{"y / x = k (ຜົນຫານຄົງທີ່)"}</td>
-                  <td style={{ padding: "10px", border: "1px solid #CFD8DC", color: "#E65100" }}>{"x × y = C (ຜົນຄູນຄົງທີ່)"}</td>
+                  <td style={{ padding: "10px", border: "1px solid #CFD8DC", color: "#0D47A1" }}>{"𝑦 / 𝑥 = k (ຜົນຫານຄົງທີ່)"}</td>
+                  <td style={{ padding: "10px", border: "1px solid #CFD8DC", color: "#E65100" }}>{"𝑥 × 𝑦 = C (ຜົນຄູນຄົງທີ່)"}</td>
                 </tr>
                 <tr>
                   <td style={{ padding: "10px", border: "1px solid #CFD8DC", fontWeight: "bold" }}>{"ຕົວຢ່າງຕົວຈິງ"}</td>
@@ -195,7 +195,7 @@ export const unit31Data: UnitData = {
           </div>
         ),
         hint: {
-          text: "💡 ຈື່ໄວ້: ພົວພັນກົງ x ເພີ່ມ y ເພີ່ມ; ພົວພັນປີ້ນ x ເພີ່ມ y ຫຼຸດ!",
+          text: "💡 ຈື່ໄວ້: ພົວພັນກົງ 𝑥 ເພີ່ມ 𝑦 ເພີ່ມ; ພົວພັນປີ້ນ 𝑥 ເພີ່ມ 𝑦 ຫຼຸດ!",
           isBlue: false
         }
       },
@@ -209,13 +209,13 @@ export const unit31Data: UnitData = {
               </p>
               <div style={{ fontSize: "1.25rem", border: "1px solid #BDC3C7", borderRadius: "8px", overflow: "hidden", width: "100%", margin: "8px 0" }}>
                 <div style={{ display: "flex", backgroundColor: "#ECF0F1", fontWeight: "bold", borderBottom: "1px solid #BDC3C7" }}>
-                  <div style={{ flex: 1, padding: "8px", textAlign: "center", borderRight: "1px solid #BDC3C7" }}>{"x"}</div>
+                  <div style={{ flex: 1, padding: "8px", textAlign: "center", borderRight: "1px solid #BDC3C7" }}>{"𝑥"}</div>
                   <div style={{ flex: 1, padding: "8px", textAlign: "center", borderRight: "1px solid #BDC3C7" }}>{"2"}</div>
                   <div style={{ flex: 1, padding: "8px", textAlign: "center", borderRight: "1px solid #BDC3C7" }}>{"4"}</div>
                   <div style={{ flex: 1, padding: "8px", textAlign: "center" }}>{"8"}</div>
                 </div>
                 <div style={{ display: "flex" }}>
-                  <div style={{ flex: 1, padding: "8px", textAlign: "center", borderRight: "1px solid #BDC3C7", fontWeight: "bold" }}>{"y"}</div>
+                  <div style={{ flex: 1, padding: "8px", textAlign: "center", borderRight: "1px solid #BDC3C7", fontWeight: "bold" }}>{"𝑦"}</div>
                   <div style={{ flex: 1, padding: "8px", textAlign: "center", borderRight: "1px solid #BDC3C7" }}>{"12"}</div>
                   <div style={{ flex: 1, padding: "8px", textAlign: "center", borderRight: "1px solid #BDC3C7" }}>{"6"}</div>
                   <div style={{ flex: 1, padding: "8px", textAlign: "center" }}>{"3"}</div>

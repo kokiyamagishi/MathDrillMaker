@@ -28,9 +28,9 @@ export const unit22Data: UnitData = {
             {/* Steps block */}
             <div style={{ padding: "12px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0" }}>
               <div style={{ display: "flex", flexDirection: "column", gap: "6px", color: "#37474F" }}>
-                <span>{"• "}<strong>{"ຂັ້ນຕອນ 1:"}</strong> {"ກຳນົດຕົວລັບ x (ສິ່ງທີ່ໂຈດຕ້ອງການໃຫ້ຊອກຫາ)."}</span>
+                <span>{"• "}<strong>{"ຂັ້ນຕອນ 1:"}</strong> {"ກຳນົດຕົວລັບ 𝑥 (ສິ່ງທີ່ໂຈດຕ້ອງການໃຫ້ຊອກຫາ)."}</span>
                 <span>{"• "}<strong>{"ຂັ້ນຕອນ 2:"}</strong> {"ສ້າງສົມຜົນຕາມເງື່ອນໄຂຂອງໂຈດ."}</span>
-                <span>{"• "}<strong>{"ຂັ້ນຕອນ 3:"}</strong> {"ແກ້ສົມຜົນເພື່ອຊອກຫາຄ່າຂອງ x."}</span>
+                <span>{"• "}<strong>{"ຂັ້ນຕອນ 3:"}</strong> {"ແກ້ສົມຜົນເພື່ອຊອກຫາຄ່າຂອງ 𝑥."}</span>
                 <span>{"• "}<strong>{"ຂັ້ນຕອນ 4:"}</strong> {"ກວດຄືນຄຳຕອບກັບເງື່ອນໄຂໂຈດ."}</span>
               </div>
             </div>
@@ -42,7 +42,7 @@ export const unit22Data: UnitData = {
                 <svg viewBox="0 0 240 40" style={{ width: "100%", maxWidth: "240px", height: "auto" }}>
                   {/* Step 1 */}
                   <rect x="5" y="10" width="45" height="20" rx="3" fill="#FFE0B2" stroke="#FF9800" strokeWidth="1" />
-                  <text x="27.5" y="23" fill="#E65100" fontSize="8" fontWeight="bold" textAnchor="middle">{"1. ຕັ້ງ x"}</text>
+                  <text x="27.5" y="23" fill="#E65100" fontSize="8" fontWeight="bold" textAnchor="middle">{"1. ຕັ້ງ 𝑥"}</text>
                   
                   <path d="M 50 20 L 60 20" stroke="#37474F" strokeWidth="1" markerEnd="url(#arrow)" />
                   
@@ -84,31 +84,31 @@ export const unit22Data: UnitData = {
                 {/* 5 Questions */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ສອງເທື່ອຂອງຈຳນວນໜຶ່ງ ບວກກັບ 5 ເທົ່າກັບ 15. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? (ສົມຜົນ: 2x + 5 = 15)"}</span>
+                  <span>{"ສອງເທື່ອຂອງຈຳນວນໜຶ່ງ ບວກກັບ 5 ເທົ່າກັບ 15. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? (ສົມຜົນ: 2𝑥 + 5 = 15)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ສາມເທື່ອຂອງຈຳນວນໜຶ່ງ ລົບອອກ 4 ເທົ່າກັບ 14. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? (ສົມຜົນ: 3x - 4 = 14)"}</span>
+                  <span>{"ສາມເທື່ອຂອງຈຳນວນໜຶ່ງ ລົບອອກ 4 ເທົ່າກັບ 14. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? (ສົມຜົນ: 3𝑥 - 4 = 14)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ຫ້າເທື່ອຂອງຈຳນວນໜຶ່ງ ບວກກັບ 12 ເທົ່າກັບ 2. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? (ສົມຜົນ: 5x + 12 = 2)"}</span>
+                  <span>{"ຫ້າເທື່ອຂອງຈຳນວນໜຶ່ງ ບວກກັບ 12 ເທົ່າກັບ 2. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? (ສົມຜົນ: 5𝑥 + 12 = 2)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
-                  <span>{"ເຄິ່ງໜຶ່ງຂອງຈຳນວນໜຶ່ງ ບວກກັບ 3 ເທົ່າກັບ 8. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? (ສົມຜົນ: x/2 + 3 = 8)"}</span>
+                  <span>{"ເຄິ່ງໜຶ່ງຂອງຈຳນວນໜຶ່ງ ບວກກັບ 3 ເທົ່າກັບ 8. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? (ສົມຜົນ: 𝑥/2 + 3 = 8)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
-                  <span>{"ຜົນບວກຂອງສາມຈຳນວນຖ້ວນລຽນຕິດກັນເທົ່າກັບ 24. ຈຳນວນນ້ອຍສຸດແມ່ນເທົ່າໃດ? (ສົມຜົນ: x + (x+1) + (x+2) = 24)"}</span>
+                  <span>{"ຜົນບວກຂອງສາມຈຳນວນຖ້ວນລຽນຕິດກັນເທົ່າກັບ 24. ຈຳນວນນ້ອຍສຸດແມ່ນເທົ່າໃດ? (ສົມຜົນ: 𝑥 + (𝑥+1) + (𝑥+2) = 24)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -132,8 +132,8 @@ export const unit22Data: UnitData = {
               <div style={{ paddingLeft: "12px", borderLeft: "3px solid #4CAF50", display: "flex", flexDirection: "column", gap: "4px", color: "#37474F" }}>
                 <strong>{"ໂຈດຕົວຢ່າງ: "}</strong>
                 <span>{"ພໍ່ມີອາຍຸເປັນ 3 ເທື່ອຂອງລູກ. ຖ້າພໍ່ມີອາຍຸ 45 ປີ, ລູກຈະມີອາຍຸຈັກປີ?"}</span>
-                <span>{"• ຕັ້ງ x ແມ່ນອາຍຸລູກ ➔ ສົມຜົນ: 3x = 45"}</span>
-                <span>{"➔ ແກ້ສົມຜົນ: x = 45 ÷ 3 = 15 ປີ."}</span>
+                <span>{"• ຕັ້ງ 𝑥 ແມ່ນອາຍຸລູກ ➔ ສົມຜົນ: 3𝑥 = 45"}</span>
+                <span>{"➔ ແກ້ສົມຜົນ: 𝑥 = 45 ÷ 3 = 15 ປີ."}</span>
               </div>
             </div>
           </div>
@@ -177,7 +177,7 @@ export const unit22Data: UnitData = {
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
-                  <span>{"ຮູບສີ່ແຈສາກມີລວງຍາວເປັນ 2 ເທື່ອຂອງລວງກວ້າງ, ລວງຮອບແມ່ນ 60 cm. ລວງກວ້າງແມ່ນຈັກ cm? (ສົມຜົນ: 2(2x + x) = 60)"}</span>
+                  <span>{"ຮູບສີ່ແຈສາກມີລວງຍາວເປັນ 2 ເທື່ອຂອງລວງກວ້າງ, ລວງຮອບແມ່ນ 60 cm. ລວງກວ້າງແມ່ນຈັກ cm? (ສົມຜົນ: 2(2𝑥 + 𝑥) = 60)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                   <span>{"cm"}</span>
                 </div>
@@ -206,7 +206,7 @@ export const unit22Data: UnitData = {
               {"ໂຈດບັນຫາລົດແລ່ນສວນທາງກັນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ລົດ A ແລ່ນດ້ວຍຄວາມໄວ 60 km/h ແລະ ລົດ B ແລ່ນດ້ວຍຄວາມໄວ 40 km/h ອອກເດີນທາງພ້ອມກັນຈາກສອງຕົວເມືອງທີ່ຫ່າງກັນ 200 km. ຖາມວ່າອີກຈັກຊົ່ວໂມງ (x ຊົ່ວໂມງ) ລົດທັງສອງຈຶ່ງຈະແລ່ນສວນທາງກັນພໍດີ? (ສົມຜົນ: 60x + 40x = 200)"}
+              {"ລົດ A ແລ່ນດ້ວຍຄວາມໄວ 60 km/h ແລະ ລົດ B ແລ່ນດ້ວຍຄວາມໄວ 40 km/h ອອກເດີນທາງພ້ອມກັນຈາກສອງຕົວເມືອງທີ່ຫ່າງກັນ 200 km. ຖາມວ່າອີກຈັກຊົ່ວໂມງ (𝑥 ຊົ່ວໂມງ) ລົດທັງສອງຈຶ່ງຈະແລ່ນສວນທາງກັນພໍດີ? (ສົມຜົນ: 60𝑥 + 40𝑥 = 200)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຈະສວນທາງກັນໃນອີກ"}</span>
@@ -224,7 +224,7 @@ export const unit22Data: UnitData = {
               {"ໂຈດອັດຕາສ່ວນປະສົມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຫ້ອງຮຽນໜຶ່ງມີອັດຕາສ່ວນລະຫວ່າງ ນັກຮຽນຍິງ ແລະ ນັກຮຽນຊາຍ ແມ່ນ 3:2. ຖ້ານັກຮຽນຍິງມີຫຼາຍກວ່ານັກຮຽນຊາຍ 6 ຄົນ. ຈົ່ງຊອກຫາຈຳນວນນັກຮຽນຊາຍທັງໝົດ. (ສົມຜົນ: 3x - 2x = 6 ➔ x = 6)"}
+              {"ຫ້ອງຮຽນໜຶ່ງມີອັດຕາສ່ວນລະຫວ່າງ ນັກຮຽນຍິງ ແລະ ນັກຮຽນຊາຍ ແມ່ນ 3:2. ຖ້ານັກຮຽນຍິງມີຫຼາຍກວ່ານັກຮຽນຊາຍ 6 ຄົນ. ຈົ່ງຊອກຫາຈຳນວນນັກຮຽນຊາຍທັງໝົດ. (ສົມຜົນ: 3𝑥 - 2𝑥 = 6 ➔ 𝑥 = 6)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຈຳນວນນັກຮຽນຊາຍແມ່ນ"}</span>
@@ -263,7 +263,7 @@ export const unit22Data: UnitData = {
             {"ໂຈດບັນຫາລວງຮອບຮູບສາມແຈທ່ຽງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ຮູບສາມແຈທ່ຽງໜຶ່ງມີລວງຮອບ 32 cm. ຂ້າງພື້ນຍາວ 12 cm, ຈົ່ງຊອກຫາລວງຍາວຂອງຂ້າງທ່ຽງແຕ່ລະຂ້າງ (x cm). (ສົມຜົນ: 2x + 12 = 32)"}
+            {"ຮູບສາມແຈທ່ຽງໜຶ່ງມີລວງຮອບ 32 cm. ຂ້າງພື້ນຍາວ 12 cm, ຈົ່ງຊອກຫາລວງຍາວຂອງຂ້າງທ່ຽງແຕ່ລະຂ້າງ (𝑥 cm). (ສົມຜົນ: 2𝑥 + 12 = 32)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຂ້າງທ່ຽງຍາວ"}</span>
@@ -279,45 +279,45 @@ export const unit22Data: UnitData = {
       {
         questionNumber: 1,
         answers: [
-          <span key="1-1">{"(1) 5 (ຄິດໄລ່: 2x = 10 ➔ x = 5)"}</span>,
-          <span key="1-2">{"(2) 6 (ຄິດໄລ່: 3x = 18 ➔ x = 6)"}</span>,
-          <span key="1-3">{"(3) -2 (ຄິດໄລ່: 5x = -10 ➔ x = -2)"}</span>,
-          <span key="1-4">{"(4) 10 (ຄິດໄລ່: x/2 = 5 ➔ x = 10)"}</span>,
-          <span key="1-5">{"(5) 7 (ຄິດໄລ່: 3x + 3 = 24 ➔ 3x = 21 ➔ x = 7)"}</span>
+          <span key="1-1">{"(1) 5 (ຄິດໄລ່: 2𝑥 = 10 ➔ 𝑥 = 5)"}</span>,
+          <span key="1-2">{"(2) 6 (ຄິດໄລ່: 3𝑥 = 18 ➔ 𝑥 = 6)"}</span>,
+          <span key="1-3">{"(3) -2 (ຄິດໄລ່: 5𝑥 = -10 ➔ 𝑥 = -2)"}</span>,
+          <span key="1-4">{"(4) 10 (ຄິດໄລ່: 𝑥/2 = 5 ➔ 𝑥 = 10)"}</span>,
+          <span key="1-5">{"(5) 7 (ຄິດໄລ່: 3𝑥 + 3 = 24 ➔ 3𝑥 = 21 ➔ 𝑥 = 7)"}</span>
         ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="2-1">{"(1) 15 ປີ (ຄິດໄລ່: 3x = 45 ➔ x = 15)"}</span>,
-          <span key="2-2">{"(2) 5,000 ກີບ (ຄິດໄລ່: 3x = 15000 ➔ x = 5000)"}</span>,
-          <span key="2-3">{"(3) 50 ຕາແມັດ (ຄິດໄລ່: (x + 20) + x = 120 ➔ 2x = 100 ➔ x = 50)"}</span>,
-          <span key="2-4">{"(4) 10 cm (ຄິດໄລ່: 6x = 60 ➔ x = 10)"}</span>,
-          <span key="2-5">{"(5) 8 ກ້ອນ (ຄິດໄລ່: x + (x+2) + (x+4) = 30 ➔ 3x + 6 = 30 ➔ 3x = 24 ➔ x = 8)"}</span>
+          <span key="2-1">{"(1) 15 ປີ (ຄິດໄລ່: 3𝑥 = 45 ➔ 𝑥 = 15)"}</span>,
+          <span key="2-2">{"(2) 5,000 ກີບ (ຄິດໄລ່: 3𝑥 = 15000 ➔ 𝑥 = 5000)"}</span>,
+          <span key="2-3">{"(3) 50 ຕາແມັດ (ຄິດໄລ່: (𝑥 + 20) + 𝑥 = 120 ➔ 2𝑥 = 100 ➔ 𝑥 = 50)"}</span>,
+          <span key="2-4">{"(4) 10 cm (ຄິດໄລ່: 6𝑥 = 60 ➔ 𝑥 = 10)"}</span>,
+          <span key="2-5">{"(5) 8 ກ້ອນ (ຄິດໄລ່: 𝑥 + (𝑥+2) + (𝑥+4) = 30 ➔ 3𝑥 + 6 = 30 ➔ 3𝑥 = 24 ➔ 𝑥 = 8)"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="t1">{"(1) 2 ຊົ່ວໂມງ (ຄິດໄລ່: 100x = 200 ➔ x = 2)"}</span>
+          <span key="t1">{"(1) 2 ຊົ່ວໂມງ (ຄິດໄລ່: 100𝑥 = 200 ➔ 𝑥 = 2)"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="t2">{"(1) 12 ຄົນ (ຄິດໄລ່: ຍິງ 3x = 18, ຊາຍ 2x = 12, ຜົນຕ່າງ 18 - 12 = 6)"}</span>
+          <span key="t2">{"(1) 12 ຄົນ (ຄິດໄລ່: ຍິງ 3𝑥 = 18, ຊາຍ 2𝑥 = 12, ຜົນຕ່າງ 18 - 12 = 6)"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="s1">{"(1) 25,000 ກີບ (ຄິດໄລ່: (x + 15000) + x = 65000 ➔ 2x = 50000 ➔ x = 25000)"}</span>
+          <span key="s1">{"(1) 25,000 ກີບ (ຄິດໄລ່: (𝑥 + 15000) + 𝑥 = 65000 ➔ 2𝑥 = 50000 ➔ 𝑥 = 25000)"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="s2">{"(1) 10 cm (ຄິດໄລ່: 2x = 20 ➔ x = 10)"}</span>
+          <span key="s2">{"(1) 10 cm (ຄິດໄລ່: 2𝑥 = 20 ➔ 𝑥 = 10)"}</span>
         ]
       }
     ],

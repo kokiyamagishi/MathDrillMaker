@@ -220,10 +220,10 @@ export const unit29Data: UnitData = {
               {"ຊອກຫາລວງຍາວຈາກເນື້ອທີ່: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ເນື້ອທີ່ຂອງຮູບສີ່ແຈສາກ ABCD ແມ່ນ 48 cm² ໂດຍມີລວງກວ້າງ AD = 6 cm. ຈົ່ງຊອກຫາລວງຍາວ x ຂອງຂ້າງ AB. (ເນື້ອທີ່ = ຍາວ × ກວ້າງ)"}
+              {"ເນື້ອທີ່ຂອງຮູບສີ່ແຈສາກ ABCD ແມ່ນ 48 cm² ໂດຍມີລວງກວ້າງ AD = 6 cm. ຈົ່ງຊອກຫາລວງຍາວ 𝑥 ຂອງຂ້າງ AB. (ເນື້ອທີ່ = ຍາວ × ກວ້າງ)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"cm"}</span>
             </div>
@@ -235,13 +235,13 @@ export const unit29Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ຊອກຫາ y ຈາກເສັ້ນເນັ່ງຈອມທີ່ເທົ່າກັນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ຊອກຫາ 𝑦 ຈາກເສັ້ນເນັ່ງຈອມທີ່ເທົ່າກັນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຖ້າເສັ້ນເນັ່ງຈອມ AC = "} <span className="math">{"3y - 2 cm"}</span> {" ແລະ BD = "} <span className="math">{"13 cm"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ y."}
+              {"ຖ້າເສັ້ນເນັ່ງຈອມ AC = "} <span className="math">{"3𝑦 - 2 cm"}</span> {" ແລະ BD = "} <span className="math">{"13 cm"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ 𝑦."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: y ="}</span>
+              <span>{"ຕອບ: 𝑦 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -312,13 +312,13 @@ export const unit29Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="11">{"8 (ເພາະວ່າ 6 × x = 48 ➔ x = 8 cm)"}</span>
+          <span key="11">{"8 (ເພາະວ່າ 6 × 𝑥 = 48 ➔ 𝑥 = 8 cm)"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="12">{"5 (ເພາະວ່າ 3y - 2 = 13 ➔ 3y = 15 ➔ y = 5)"}</span>
+          <span key="12">{"5 (ເພາະວ່າ 3𝑦 - 2 = 13 ➔ 3𝑦 = 15 ➔ 𝑦 = 5)"}</span>
         ]
       },
       {

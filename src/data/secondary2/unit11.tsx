@@ -270,7 +270,7 @@ export const unit11Data: UnitData = {
             {"ການເຄິ່ງຄືຂອງເມັດໃນລະບົບພິກັດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ເມັດ P ມີພິກັດແມ່ນ (2, 3), ເມັດເຄິ່ງຄື P' ຂອງ P ທຽບໃສ່ເມັດເຄິ່ງຄື (0, 0) ຈະມີພິກັດແມ່ນເທົ່າໃດ? (ຂຽນໃນຮູບແບບ (x, y))"}
+            {"ເມັດ P ມີພິກັດແມ່ນ (2, 3), ເມັດເຄິ່ງຄື P' ຂອງ P ທຽບໃສ່ເມັດເຄິ່ງຄື (0, 0) ຈະມີພິກັດແມ່ນເທົ່າໃດ? (ຂຽນໃນຮູບແບບ (𝑥, 𝑦))"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: P' ="}</span>

@@ -228,10 +228,10 @@ export const unit45Data: UnitData = {
               {"ການຊອກຫາຂ້າງພື້ນຈາກສົມຜົນຕົວລັບ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(2) ໃຫ້ MN ແມ່ນເສັ້ນເຊື່ອມຈຸດເຄິ່ງກາງ. ຖ້າ MN = 2x - 3 ແລະ BC = 3x. ຈົ່ງຊອກຫາຄ່າຂອງ x. (BC = 2 × MN ➔ 3x = 2(2x - 3))"}
+              {"(2) ໃຫ້ MN ແມ່ນເສັ້ນເຊື່ອມຈຸດເຄິ່ງກາງ. ຖ້າ MN = 2𝑥 - 3 ແລະ BC = 3𝑥. ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥. (BC = 2 × MN ➔ 3𝑥 = 2(2𝑥 - 3))"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -308,7 +308,7 @@ export const unit45Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="12">{"6 (ເພາະວ່າ 3x = 2(2x - 3) ➔ 3x = 4x - 6 ➔ x = 6)"}</span>
+          <span key="12">{"6 (ເພາະວ່າ 3𝑥 = 2(2𝑥 - 3) ➔ 3𝑥 = 4𝑥 - 6 ➔ 𝑥 = 6)"}</span>
         ]
       },
       {

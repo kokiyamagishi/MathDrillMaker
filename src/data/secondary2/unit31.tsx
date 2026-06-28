@@ -234,10 +234,10 @@ export const unit31Data: UnitData = {
               {"ຊອກຫາຄວາມຍາວພື້ນໃຫຍ່ຈາກເນື້ອທີ່: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຖ້າເນື້ອທີ່ຮູບຄາງໝູແມ່ນ 36 cm², ມີລວງສູງ h = 4 cm, ພື້ນນ້ອຍ = 6 cm. ຈົ່ງຊອກຫາຄວາມຍາວພື້ນໃຫຍ່ x ຂອງຮູບຄາງໝູນີ້."}
+              {"ຖ້າເນື້ອທີ່ຮູບຄາງໝູແມ່ນ 36 cm², ມີລວງສູງ h = 4 cm, ພື້ນນ້ອຍ = 6 cm. ຈົ່ງຊອກຫາຄວາມຍາວພື້ນໃຫຍ່ 𝑥 ຂອງຮູບຄາງໝູນີ້."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"cm"}</span>
             </div>
@@ -315,7 +315,7 @@ export const unit31Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="12">{"12 (ເພາະວ່າ ((6 + x) × 4) / 2 = 36 ➔ 2(6 + x) = 36 ➔ 6 + x = 18 ➔ x = 12 cm)"}</span>
+          <span key="12">{"12 (ເພາະວ່າ ((6 + 𝑥) × 4) / 2 = 36 ➔ 2(6 + 𝑥) = 36 ➔ 6 + 𝑥 = 18 ➔ 𝑥 = 12 cm)"}</span>
         ]
       },
       {

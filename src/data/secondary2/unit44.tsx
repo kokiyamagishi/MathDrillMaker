@@ -195,7 +195,7 @@ export const unit44Data: UnitData = {
     }
   ],
   challengeProblems: {
-    hintText: "💡 ບົດທ້າທາຍ: ໃຊ້ຫຼັກການຮັກສາອັດຕາສ່ວນ ແລະ ຕັ້ງສົມຖົນຄູນໄຂວ້ເພື່ອຊອກຫາຄ່າຂອງ x ເດີ້!",
+    hintText: "💡 ບົດທ້າທາຍ: ໃຊ້ຫຼັກການຮັກສາອັດຕາສ່ວນ ແລະ ຕັ້ງສົມຖົນຄູນໄຂວ້ເພື່ອຊອກຫາຄ່າຂອງ 𝑥 ເດີ້!",
     problems: [
       {
         number: 1,
@@ -205,10 +205,10 @@ export const unit44Data: UnitData = {
               {"ການຊອກຫາຄວາມຍາວທ່ອນຊື່ຈາກອັດຕາສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ໃຫ້ສາມຈຸດ A, B, C ລຽງກັນເທິງເສັ້ນຊື່ໜຶ່ງ. ຖ້າ AB = x, BC = 8 cm. ເມື່ອສາຍຂະໜານໄດ້ A'B' = 3 cm, B'C' = 6 cm. ຈົ່ງຊອກຫາ x. (x / 8 = 3 / 6)"}
+              {"ໃຫ້ສາມຈຸດ A, B, C ລຽງກັນເທິງເສັ້ນຊື່ໜຶ່ງ. ຖ້າ AB = 𝑥, BC = 8 cm. ເມື່ອສາຍຂະໜານໄດ້ A'B' = 3 cm, B'C' = 6 cm. ຈົ່ງຊອກຫາ 𝑥. (𝑥 / 8 = 3 / 6)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"cm"}</span>
             </div>
@@ -298,7 +298,7 @@ export const unit44Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="11">{"4 (ເພາະວ່າ x/8 = 3/6 = 1/2 ➔ x = 8 / 2 = 4 cm)"}</span>
+          <span key="11">{"4 (ເພາະວ່າ 𝑥/8 = 3/6 = 1/2 ➔ 𝑥 = 8 / 2 = 4 cm)"}</span>
         ]
       },
       {

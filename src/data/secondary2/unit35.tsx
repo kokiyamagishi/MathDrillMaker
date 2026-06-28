@@ -198,10 +198,10 @@ export const unit35Data: UnitData = {
               {"ສົມທຽບເນື້ອທີ່ຮູບສາມແຈ ແລະ ຮູບສີ່ແຈຂະໜານ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຮູບສາມແຈໜຶ່ງມີພື້ນ 12 cm ແລະ ເສັ້ນສູງ 6 cm (ເນື້ອທີ່ = 36 cm²). ຮູບສີ່ແຈຂະໜານໜຶ່ງມີເນື້ອທີ່ເທົ່າກັບຮູບສາມແຈນີ້. ຖ້າຮູບສີ່ແຈຂະໜານມີຂ້າງພື້ນ 9 cm. ຈົ່ງຊອກຫາເສັ້ນສູງ x ຂອງມັນ."}
+              {"ຮູບສາມແຈໜຶ່ງມີພື້ນ 12 cm ແລະ ເສັ້ນສູງ 6 cm (ເນື້ອທີ່ = 36 cm²). ຮູບສີ່ແຈຂະໜານໜຶ່ງມີເນື້ອທີ່ເທົ່າກັບຮູບສາມແຈນີ້. ຖ້າຮູບສີ່ແຈຂະໜານມີຂ້າງພື້ນ 9 cm. ຈົ່ງຊອກຫາເສັ້ນສູງ 𝑥 ຂອງມັນ."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"cm"}</span>
             </div>
@@ -216,10 +216,10 @@ export const unit35Data: UnitData = {
               {"ສົມທຽບເນື້ອທີ່ຮູບຈະຕຸລັດ ແລະ ຮູບຄາງໝູ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຮູບຈະຕຸລັດໜຶ່ງມີຂ້າງຍາວ 6 cm (ເນື້ອທີ່ = 36 cm²). ຮູບຄາງໝູໜຶ່ງມີເນື້ອທີ່ເທົ່າກັບຮູບຈະຕຸລັດນີ້. ຖ້າຮູບຄາງໝູມີພື້ນນ້ອຍ = 5 cm, ພື້ນໃຫຍ່ = 7 cm, ຈົ່ງຊອກຫາລວງສູງ y ຂອງມັນ."}
+              {"ຮູບຈະຕຸລັດໜຶ່ງມີຂ້າງຍາວ 6 cm (ເນື້ອທີ່ = 36 cm²). ຮູບຄາງໝູໜຶ່ງມີເນື້ອທີ່ເທົ່າກັບຮູບຈະຕຸລັດນີ້. ຖ້າຮູບຄາງໝູມີພື້ນນ້ອຍ = 5 cm, ພື້ນໃຫຍ່ = 7 cm, ຈົ່ງຊອກຫາລວງສູງ 𝑦 ຂອງມັນ."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: y ="}</span>
+              <span>{"ຕອບ: 𝑦 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"cm"}</span>
             </div>
@@ -291,13 +291,13 @@ export const unit35Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="11">{"4 (S_tri = 12 × 6 / 2 = 36 cm² ➔ S_para = 9 × x = 36 ➔ x = 4 cm)"}</span>
+          <span key="11">{"4 (S_tri = 12 × 6 / 2 = 36 cm² ➔ S_para = 9 × 𝑥 = 36 ➔ 𝑥 = 4 cm)"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="12">{"6 (S_sq = 6² = 36 cm² ➔ S_trap = (5 + 7) × y / 2 = 6y = 36 ➔ y = 6 cm)"}</span>
+          <span key="12">{"6 (S_sq = 6² = 36 cm² ➔ S_trap = (5 + 7) × 𝑦 / 2 = 6𝑦 = 36 ➔ 𝑦 = 6 cm)"}</span>
         ]
       },
       {

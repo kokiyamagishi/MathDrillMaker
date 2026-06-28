@@ -191,13 +191,13 @@ export const unit37Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ຊອກຫາ x ຈາກສົມຜົນມຸມໃນຮູບສີ່ແຈ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ຊອກຫາ 𝑥 ຈາກສົມຜົນມຸມໃນຮູບສີ່ແຈ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ໃນຮູບສີ່ແຈ ABCD, ມີຂະໜາດມຸມແມ່ນ "} <span className="math">{"A = x"}</span>{", "} <span className="math">{"B = 2x"}</span>{", "} <span className="math">{"C = 3x"}</span> {" ແລະ "} <span className="math">{"D = 4x"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ x. (ຜົນບວກ = 360°)"}
+              {"ໃນຮູບສີ່ແຈ ABCD, ມີຂະໜາດມຸມແມ່ນ "} <span className="math">{"A = 𝑥"}</span>{", "} <span className="math">{"B = 2𝑥"}</span>{", "} <span className="math">{"C = 3𝑥"}</span> {" ແລະ "} <span className="math">{"D = 4𝑥"}</span>{". ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥. (ຜົນບວກ = 360°)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -286,7 +286,7 @@ export const unit37Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="11">{"36 (ເພາະວ່າ x + 2x + 3x + 4x = 360 ➔ 10x = 360 ➔ x = 36)"}</span>
+          <span key="11">{"36 (ເພາະວ່າ 𝑥 + 2𝑥 + 3𝑥 + 4𝑥 = 360 ➔ 10𝑥 = 360 ➔ 𝑥 = 36)"}</span>
         ]
       },
       {

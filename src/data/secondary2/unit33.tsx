@@ -201,13 +201,13 @@ export const unit33Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ຊອກຫາ x ຈາກເສັ້ນຈອມກາງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ຊອກຫາ 𝑥 ຈາກເສັ້ນຈອມກາງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຖ້າທ່ອນເສັ້ນຈອມກາງ AM ຍາວ "} <span className="math">{"3x cm"}</span>{", ໂດຍມີຈຸດ G ເຊິ່ງເຮັດໃຫ້ AG = 10 cm. ຈົ່ງຊອກຫາຄ່າຂອງ x. (AG = 2/3 AM)"}
+              {"ຖ້າທ່ອນເສັ້ນຈອມກາງ AM ຍາວ "} <span className="math">{"3𝑥 cm"}</span>{", ໂດຍມີຈຸດ G ເຊິ່ງເຮັດໃຫ້ AG = 10 cm. ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥. (AG = 2/3 AM)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -218,7 +218,7 @@ export const unit33Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ຊອກຫາ y ໃນຮູບສາມແຈທ່ຽງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ຊອກຫາ 𝑦 ໃນຮູບສາມແຈທ່ຽງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ໃນຮູບສາມແຈທ່ຽງ ABC (AB = AC), ເສັ້ນສູງ AH ແມ່ນເສັ້ນແບ່ງເຄິ່ງມຸມຈອມ A. ຖ້າມຸມ BAH = 25°. ຈົ່ງຊອກຫາມຸມ B (ມຸມພື້ນ)."}
@@ -296,7 +296,7 @@ export const unit33Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="11">{"5 (ເພາະວ່າ AG = 2/3 AM ➔ 10 = (2/3) × 3x ➔ 10 = 2x ➔ x = 5)"}</span>
+          <span key="11">{"5 (ເພາະວ່າ AG = 2/3 AM ➔ 10 = (2/3) × 3𝑥 ➔ 10 = 2𝑥 ➔ 𝑥 = 5)"}</span>
         ]
       },
       {

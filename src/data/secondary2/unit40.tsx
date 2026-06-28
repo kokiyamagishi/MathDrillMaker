@@ -12,7 +12,7 @@ const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) 
 export const unit40Data: UnitData = {
   unitNumber: 40,
   unitTitle: "ພາກທີ VI - ບົດທີ 40: ການເປັນອັດຕາສ່ວນພົວພັນກົງ",
-  unitGoal: "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈສົມຜົນອັດຕາສ່ວນພົວພັນກົງ y = kx, ການຊອກຫາສຳປະສິດພົວພັນກົງ k = y/x ແລະ ການແກ້ໂຈດບັນຫາພົວພັນກົງ",
+  unitGoal: "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈສົມຜົນອັດຕາສ່ວນພົວພັນກົງ 𝑦 = kx, ການຊອກຫາສຳປະສິດພົວພັນກົງ k = 𝑦/𝑥 ແລະ ການແກ້ໂຈດບັນຫາພົວພັນກົງ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.2 ໜ້າ 181-185",
   subSections: [
     {
@@ -22,20 +22,20 @@ export const unit40Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ສອງປະລິມານ x ແລະ y ພົວພັນກົງກັນ ເມື່ອອັດຕາສ່ວນລະຫວ່າງ y ແລະ x ມີຄ່າຄົງທີ່:"}
+              {"ສອງປະລິມານ 𝑥 ແລະ 𝑦 ພົວພັນກົງກັນ ເມື່ອອັດຕາສ່ວນລະຫວ່າງ 𝑦 ແລະ 𝑥 ມີຄ່າຄົງທີ່:"}
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0" }}>
-              {"• ສູດພົວພັນກົງ: "} <span className="math">{"y = k × x"}</span><br />
+              {"• ສູດພົວພັນກົງ: "} <span className="math">{"𝑦 = k × 𝑥"}</span><br />
               <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
-                {"• ສຳປະສິດພົວພັນກົງ: "} <span style={{ fontWeight: "bold", color: "#D32F2F" }}>{"k = "}</span> <Fraction num="y" den="x" />
+                {"• ສຳປະສິດພົວພັນກົງ: "} <span style={{ fontWeight: "bold", color: "#D32F2F" }}>{"k = "}</span> <Fraction num="𝑦" den="𝑥" />
               </span><br />
-              {"• ຕົວຢ່າງ: ຖ້າ x = 3 ➔ y = 12 ➔ ຈະໄດ້ k = 12 / 3 = 4."}
+              {"• ຕົວຢ່າງ: ຖ້າ 𝑥 = 3 ➔ 𝑦 = 12 ➔ ຈະໄດ້ k = 12 / 3 = 4."}
             </div>
 
             {/* Direct Proportion Graph SVG */}
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
-                <span>{"ເສັ້ນສະແດງອັດຕາສ່ວນພົວພັນກົງ y = 3x (ຜ່ານຈຸດ 0)"}</span>
+                <span>{"ເສັ້ນສະແດງອັດຕາສ່ວນພົວພັນກົງ 𝑦 = 3𝑥 (ຜ່ານຈຸດ 0)"}</span>
                 <svg viewBox="0 0 160 160" style={{ width: "100%", maxWidth: "140px", height: "auto" }}>
                   {/* Grid */}
                   <line x1="10" y1="80" x2="150" y2="80" stroke="#B0BEC5" strokeWidth="1" />
@@ -51,8 +51,8 @@ export const unit40Data: UnitData = {
                   <line x1="120" y1="20" x2="80" y2="20" stroke="#D32F2F" strokeWidth="0.8" strokeDasharray="2,2" />
 
                   {/* Labels */}
-                  <text x="150" y="75" fill="#37474F" fontSize="8">{"x"}</text>
-                  <text x="85" y="18" fill="#37474F" fontSize="8">{"y"}</text>
+                  <text x="150" y="75" fill="#37474F" fontSize="8">{"𝑥"}</text>
+                  <text x="85" y="18" fill="#37474F" fontSize="8">{"𝑦"}</text>
                   <text x="73" y="90" fill="#37474F" fontSize="8">{"O"}</text>
                 </svg>
               </div>
@@ -76,34 +76,34 @@ export const unit40Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຖ້າ x = 3 ➔ y = 12. ສຳປະສິດພົວພັນກົງ k (k = y/x) ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຖ້າ 𝑥 = 3 ➔ 𝑦 = 12. ສຳປະສິດພົວພັນກົງ k (k = 𝑦/𝑥) ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຖ້າ x = 5 ➔ y = 35. ສຳປະສິດພົວພັນກົງ k ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຖ້າ 𝑥 = 5 ➔ 𝑦 = 35. ສຳປະສິດພົວພັນກົງ k ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
-                    {"ຖ້າ x = 8 ➔ y = 4. ສຳປະສິດພົວພັນກົງ k (ຕອບເປັນເລກສ່ວນຂັ້ນຕໍ່າ) ແມ່ນ:"}
+                    {"ຖ້າ 𝑥 = 8 ➔ 𝑦 = 4. ສຳປະສິດພົວພັນກົງ k (ຕອບເປັນເລກສ່ວນຂັ້ນຕໍ່າ) ແມ່ນ:"}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
-                  <span>{"ຖ້າ x = -2 ➔ y = 10. ສຳປະສິດພົວພັນກົງ k ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຖ້າ 𝑥 = -2 ➔ 𝑦 = 10. ສຳປະສິດພົວພັນກົງ k ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
-                    {"ຖ້າ x = 6 ➔ y = 9. ສຳປະສິດພົວພັນກົງ k (ຕອບເປັນເລກສ່ວນຂັ້ນຕໍ່າ) ແມ່ນ:"}
+                    {"ຖ້າ 𝑥 = 6 ➔ 𝑦 = 9. ສຳປະສິດພົວພັນກົງ k (ຕອບເປັນເລກສ່ວນຂັ້ນຕໍ່າ) ແມ່ນ:"}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -114,17 +114,17 @@ export const unit40Data: UnitData = {
       ]
     },
     {
-      title: "2. ການຄິດໄລ່ y ຈາກ x ແລະ k (Calculating y from x and k)",
+      title: "2. ການຄິດໄລ່ 𝑦 ຈາກ 𝑥 ແລະ k (Calculating 𝑦 from 𝑥 and k)",
       keyPoint: {
         title: "ການຕື່ມຄ່າຕາຕະລາງ ແລະ ສົມຜົນພົວພັນກົງ",
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ເມື່ອຮູ້ສຳປະສິດ k ເຮົາສາມາດຊອກຫາຄ່າ y ໄດ້ໂດຍການຄູນ k ໃສ່ x (y = kx):"}
+              {"ເມື່ອຮູ້ສຳປະສິດ k ເຮົາສາມາດຊອກຫາຄ່າ 𝑦 ໄດ້ໂດຍການຄູນ k ໃສ່ 𝑥 (𝑦 = kx):"}
             </p>
             
             <div style={{ padding: "12px 16px", backgroundColor: "#FFFDE7", borderRadius: "10px", border: "1px solid #FFF59D", fontSize: "1.25rem", color: "#F57F17" }}>
-              {"• ຕົວຢ່າງ: ຖ້າສົມຜົນແມ່ນ y = 4x, ເມື່ອ x = 5 ➔ y = 4 × 5 = 20."}
+              {"• ຕົວຢ່າງ: ຖ້າສົມຜົນແມ່ນ 𝑦 = 4𝑥, ເມື່ອ 𝑥 = 5 ➔ 𝑦 = 4 × 5 = 20."}
             </div>
           </div>
         ),
@@ -139,40 +139,40 @@ export const unit40Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຈົ່ງຊອກຫາຄ່າຂອງ y ຈາກສົມຜົນພົວພັນກົງລຸ່ມນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
+                {"ຈົ່ງຊອກຫາຄ່າຂອງ 𝑦 ຈາກສົມຜົນພົວພັນກົງລຸ່ມນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຈາກສູດ y = 4x. ຖ້າ x = 5, y ຈະເທົ່າກັບຈັກ?"}</span>
+                  <span>{"ຈາກສູດ 𝑦 = 4𝑥. ຖ້າ 𝑥 = 5, 𝑦 ຈະເທົ່າກັບຈັກ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຈາກສູດ y = 7x. ຖ້າ x = 6, y ຈະເທົ່າກັບຈັກ?"}</span>
+                  <span>{"ຈາກສູດ 𝑦 = 7𝑥. ຖ້າ 𝑥 = 6, 𝑦 ຈະເທົ່າກັບຈັກ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
-                    {"ຈາກສູດ y = "} <Fraction num="1" den="2" /> {"x. ຖ້າ x = 16, y ຈະເທົ່າກັບຈັກ?"}
+                    {"ຈາກສູດ 𝑦 = "} <Fraction num="1" den="2" /> {"𝑥. ຖ້າ 𝑥 = 16, 𝑦 ຈະເທົ່າກັບຈັກ?"}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
-                  <span>{"ຈາກສູດ y = -3x. ຖ້າ x = 4, y ຈະເທົ່າກັບຈັກ?"}</span>
+                  <span>{"ຈາກສູດ 𝑦 = -3𝑥. ຖ້າ 𝑥 = 4, 𝑦 ຈະເທົ່າກັບຈັກ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
-                    {"ຈາກສູດ y = "} <Fraction num="2" den="3" /> {"x. ຖ້າ x = 15, y ຈະເທົ່າກັບຈັກ?"}
+                    {"ຈາກສູດ 𝑦 = "} <Fraction num="2" den="3" /> {"𝑥. ຖ້າ 𝑥 = 15, 𝑦 ຈະເທົ່າກັບຈັກ?"}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -194,7 +194,7 @@ export const unit40Data: UnitData = {
               {"ຊອກຫາຕົວປະສານທີສອງຈາກຕາຕະລາງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຖ້າ x ແລະ y ພົວພັນກົງກັນ. ຖ້າ x = 2 ➔ y = 6. ຖ້າ x = 7 ➔ y = a. ຈົ່ງຊອກຫາຄ່າຂອງ a."}
+              {"ຖ້າ 𝑥 ແລະ 𝑦 ພົວພັນກົງກັນ. ຖ້າ 𝑥 = 2 ➔ 𝑦 = 6. ຖ້າ 𝑥 = 7 ➔ 𝑦 = a. ຈົ່ງຊອກຫາຄ່າຂອງ a."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: a ="}</span>
@@ -208,13 +208,13 @@ export const unit40Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ຊອກຫາ x ຈາກ y ໃນສົມຜົນພົວພັນກົງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ຊອກຫາ 𝑥 ຈາກ 𝑦 ໃນສົມຜົນພົວພັນກົງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຈາກສົມຜົນພົວພັນກົງ y = 5x. ຖ້າ y = 35, ຄ່າຂອງ x ຈະແມ່ນເທົ່າໃດ?"}
+              {"ຈາກສົມຜົນພົວພັນກົງ 𝑦 = 5𝑥. ຖ້າ 𝑦 = 35, ຄ່າຂອງ 𝑥 ຈະແມ່ນເທົ່າໃດ?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -265,7 +265,7 @@ export const unit40Data: UnitData = {
       {
         questionNumber: 1,
         answers: [
-          <span key="1">{"(1) 4 (ເພາະວ່າ k = y / x = 12 / 3 = 4)"}</span>,
+          <span key="1">{"(1) 4 (ເພາະວ່າ k = 𝑦 / 𝑥 = 12 / 3 = 4)"}</span>,
           <span key="2">{"(2) 7 (ເພາະວ່າ k = 35 / 5 = 7)"}</span>,
           <span key="3">{"(3) 1/2 (ເພາະວ່າ k = 4 / 8 = 1/2)"}</span>,
           <span key="4">{"(4) -5 (ເພາະວ່າ k = 10 / -2 = -5)"}</span>,
@@ -275,11 +275,11 @@ export const unit40Data: UnitData = {
       {
         questionNumber: 2,
         answers: [
-          <span key="6">{"(1) 20 (y = 4 × 5 = 20)"}</span>,
-          <span key="7">{"(2) 42 (y = 7 × 6 = 42)"}</span>,
-          <span key="8">{"(3) 8 (y = 1/2 × 16 = 8)"}</span>,
-          <span key="9">{"(4) -12 (y = -3 × 4 = -12)"}</span>,
-          <span key="10">{"(5) 10 (y = 2/3 × 15 = 10)"}</span>
+          <span key="6">{"(1) 20 (𝑦 = 4 × 5 = 20)"}</span>,
+          <span key="7">{"(2) 42 (𝑦 = 7 × 6 = 42)"}</span>,
+          <span key="8">{"(3) 8 (𝑦 = 1/2 × 16 = 8)"}</span>,
+          <span key="9">{"(4) -12 (𝑦 = -3 × 4 = -12)"}</span>,
+          <span key="10">{"(5) 10 (𝑦 = 2/3 × 15 = 10)"}</span>
         ]
       },
       {
@@ -291,7 +291,7 @@ export const unit40Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="12">{"7 (y = 5x ➔ 35 = 5x ➔ x = 35 / 5 = 7)"}</span>
+          <span key="12">{"7 (𝑦 = 5𝑥 ➔ 35 = 5𝑥 ➔ 𝑥 = 35 / 5 = 7)"}</span>
         ]
       },
       {

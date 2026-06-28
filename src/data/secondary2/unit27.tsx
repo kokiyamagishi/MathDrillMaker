@@ -12,11 +12,11 @@ const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) 
 export const unit27Data: UnitData = {
   unitNumber: 27,
   unitTitle: "ພາກທີ IV - ບົດທີ 27: ອະສົມຜົນທີ່ມີຄ່າສຳບູນ",
-  unitGoal: "ຮຽນຮູ້ ແລະ ຝຶກທັກສະການແກ້ສົມຜົນອະສົມຜົນທີ່ມີເຄື່ອງໝາຍຄ່າສຳບູນ |x| < a ແລະ |x| > a ພ້ອມທັງສະແດງເຂດໃຈຜົນເທິງເສັ້ນຈຳນວນ",
+  unitGoal: "ຮຽນຮູ້ ແລະ ຝຶກທັກສະການແກ້ສົມຜົນອະສົມຜົນທີ່ມີເຄື່ອງໝາຍຄ່າສຳບູນ |𝑥| < a ແລະ |𝑥| > a ພ້ອມທັງສະແດງເຂດໃຈຜົນເທິງເສັ້ນຈຳນວນ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.2 ໜ້າ 116-119",
   subSections: [
     {
-      title: "1. ອະສົມຜົນຄ່າສຳບູນແບບ |x| < a (Absolute Value Inequality |x| < a)",
+      title: "1. ອະສົມຜົນຄ່າສຳບູນແບບ |𝑥| < a (Absolute Value Inequality |𝑥| < a)",
       keyPoint: {
         title: "ຫຼັກການແຍກອະສົມຜົນ ແລະ ເຂດໃຈຜົນ",
         content: (
@@ -25,14 +25,14 @@ export const unit27Data: UnitData = {
               {"ເມື່ອເຄື່ອງໝາຍອະສົມຜົນຫັນປາກໄປຫາຈຳນວນຈິງບວກ (ເຊັ່ນ: < ຫຼື ≤), ເຂດໃຈຜົນຈະຢູ່ລະຫວ່າງສອງຈຸດສະເໝີ:"}
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0" }}>
-              {"• ຖ້າ "} <span className="math">{"|x| < a"}</span> {" (ໂດຍທີ່ "} <span className="math">{"a > 0"}</span>{") ➔ ແຍກໄດ້ "} <span className="math">{"-a < x < a"}</span><br />
-              {"• ຕົວຢ່າງ: "} <span className="math">{"|x - 2| < 4 ➔ -4 < x - 2 < 4 ➔ -2 < x < 6"}</span> {" (ບວກ 2 ໃສ່ທັງ 3 ຟາກ)"}
+              {"• ຖ້າ "} <span className="math">{"|𝑥| < a"}</span> {" (ໂດຍທີ່ "} <span className="math">{"a > 0"}</span>{") ➔ ແຍກໄດ້ "} <span className="math">{"-a < 𝑥 < a"}</span><br />
+              {"• ຕົວຢ່າງ: "} <span className="math">{"|𝑥 - 2| < 4 ➔ -4 < 𝑥 - 2 < 4 ➔ -2 < 𝑥 < 6"}</span> {" (ບວກ 2 ໃສ່ທັງ 3 ຟາກ)"}
             </div>
 
             {/* Shaded interval SVG */}
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
-                <span>{"ແຜນວາດສະແດງເຂດໃຈຜົນ -2 < x < 6 ເທິງເສັ້ນຈຳນວນ"}</span>
+                <span>{"ແຜນວາດສະແດງເຂດໃຈຜົນ -2 < 𝑥 < 6 ເທິງເສັ້ນຈຳນວນ"}</span>
                 <svg viewBox="0 0 300 50" style={{ width: "100%", maxWidth: "260px", height: "auto" }}>
                   <line x1="10" y1="25" x2="290" y2="25" stroke="#37474F" strokeWidth="1.5" />
                   
@@ -65,38 +65,38 @@ export const unit27Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຈົ່ງຊອກຫາຂອບເຂດຂອງ x ຈາກອະສົມຜົນຄ່າສຳບູນລຸ່ມນີ້ໃຫ້ຖືກຕ້ອງ: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
+                {"ຈົ່ງຊອກຫາຂອບເຂດຂອງ 𝑥 ຈາກອະສົມຜົນຄ່າສຳບູນລຸ່ມນີ້ໃຫ້ຖືກຕ້ອງ: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span className="math">{"|x| < 5 ➔ -5 < x <"}</span>
+                  <span className="math">{"|𝑥| < 5 ➔ -5 < 𝑥 <"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span className="math">{"|x| ≤ 8 ➔"}</span>
+                  <span className="math">{"|𝑥| ≤ 8 ➔"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
-                  <span className="math">{"≤ x ≤ 8"}</span>
+                  <span className="math">{"≤ 𝑥 ≤ 8"}</span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span className="math">{"|x - 2| < 4 ➔ -2 < x <"}</span>
+                  <span className="math">{"|𝑥 - 2| < 4 ➔ -2 < 𝑥 <"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
-                  <span className="math">{"≤ x ≤ 2 (ຊອກຫາຂີດຈຳກັດລຸ່ມ ຈາກ |x + 3| ≤ 5)"}</span>
+                  <span className="math">{"≤ 𝑥 ≤ 2 (ຊອກຫາຂີດຈຳກັດລຸ່ມ ຈາກ |𝑥 + 3| ≤ 5)"}</span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
-                  <span className="math">{"|2x| < 6 ➔ -3 < x <"}</span>
+                  <span className="math">{"|2𝑥| < 6 ➔ -3 < 𝑥 <"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -106,7 +106,7 @@ export const unit27Data: UnitData = {
       ]
     },
     {
-      title: "2. ອະສົມຜົນຄ່າສຳບູນແບບ |x| > a (Absolute Value Inequality |x| > a)",
+      title: "2. ອະສົມຜົນຄ່າສຳບູນແບບ |𝑥| > a (Absolute Value Inequality |𝑥| > a)",
       keyPoint: {
         title: "ຫຼັກການແຍກອະສົມຜົນອອກສອງຟາກ",
         content: (
@@ -116,14 +116,14 @@ export const unit27Data: UnitData = {
             </p>
             
             <div style={{ padding: "12px 16px", backgroundColor: "#FFFDE7", borderRadius: "10px", border: "1px solid #FFF59D", fontSize: "1.25rem", color: "#F57F17" }}>
-              {"• ຖ້າ "} <span className="math">{"|x| > a"}</span> {" (ໂດຍທີ່ "} <span className="math">{"a > 0"}</span>{") ➔ ແຍກໄດ້ "} <span className="math">{"x > a"}</span> {" ຫຼື "} <span className="math">{"x < -a"}</span><br />
-              {"• ຕົວຢ່າງ: "} <span className="math">{"|x - 1| > 3 ➔ x - 1 > 3 ➔ x > 4"}</span> {" ຫຼື "} <span className="math">{"x - 1 < -3 ➔ x < -2"}</span>
+              {"• ຖ້າ "} <span className="math">{"|𝑥| > a"}</span> {" (ໂດຍທີ່ "} <span className="math">{"a > 0"}</span>{") ➔ ແຍກໄດ້ "} <span className="math">{"𝑥 > a"}</span> {" ຫຼື "} <span className="math">{"𝑥 < -a"}</span><br />
+              {"• ຕົວຢ່າງ: "} <span className="math">{"|𝑥 - 1| > 3 ➔ 𝑥 - 1 > 3 ➔ 𝑥 > 4"}</span> {" ຫຼື "} <span className="math">{"𝑥 - 1 < -3 ➔ 𝑥 < -2"}</span>
             </div>
 
             {/* Split interval SVG */}
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#FFEBEE", borderRadius: "8px", border: "1px solid #FFCDD2", fontSize: "1.15rem", color: "#C62828" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
-                <span>{"ແຜນວາດສະແດງເຂດໃຈຜົນ x > 4 ຫຼື x < -2 ເທິງເສັ້ນຈຳນວນ"}</span>
+                <span>{"ແຜນວາດສະແດງເຂດໃຈຜົນ 𝑥 > 4 ຫຼື 𝑥 < -2 ເທິງເສັ້ນຈຳນວນ"}</span>
                 <svg viewBox="0 0 300 50" style={{ width: "100%", maxWidth: "260px", height: "auto" }}>
                   <line x1="10" y1="25" x2="290" y2="25" stroke="#37474F" strokeWidth="1.5" />
                   
@@ -157,40 +157,40 @@ export const unit27Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຈົ່ງຊອກຫາຂອບເຂດຂອງ x ຈາກອະສົມຜົນຄ່າສຳບູນລຸ່ມນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
+                {"ຈົ່ງຊອກຫາຂອບເຂດຂອງ 𝑥 ຈາກອະສົມຜົນຄ່າສຳບູນລຸ່ມນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span className="math">{"|x| > 4 ➔ x > 4 ຫຼື x <"}</span>
+                  <span className="math">{"|𝑥| > 4 ➔ 𝑥 > 4 ຫຼື 𝑥 <"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span className="math">{"|x| ≥ 7 ➔ x ≥ 7 ຫຼື x ≤"}</span>
+                  <span className="math">{"|𝑥| ≥ 7 ➔ 𝑥 ≥ 7 ຫຼື 𝑥 ≤"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span className="math">{"|x - 1| > 3 ➔ x > 4 ຫຼື x <"}</span>
+                  <span className="math">{"|𝑥 - 1| > 3 ➔ 𝑥 > 4 ຫຼື 𝑥 <"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
-                  <span className="math">{"|x + 4| ≥ 2 ➔ x ≥"}</span>
+                  <span className="math">{"|𝑥 + 4| ≥ 2 ➔ 𝑥 ≥"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
-                  <span className="math">{"ຫຼື x ≤ -6"}</span>
+                  <span className="math">{"ຫຼື 𝑥 ≤ -6"}</span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
-                  <span className="math">{"|3x| > 9 ➔ x >"}</span>
+                  <span className="math">{"|3𝑥| > 9 ➔ 𝑥 >"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
-                  <span className="math">{"ຫຼື x < -3"}</span>
+                  <span className="math">{"ຫຼື 𝑥 < -3"}</span>
                 </div>
               </div>
             </div>
@@ -210,7 +210,7 @@ export const unit27Data: UnitData = {
               {"ອະສົມຜົນຄ່າສຳບູນທີ່ມີຕົວເລກຢູ່ນອກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຈົ່ງແກ້ສົມຜົນອະສົມຜົນ "} <span className="math">{"2|x - 1| < 8"}</span> {" ແລ້ວຊອກຫາໃຈຜົນຄ່າຫຼາຍສຸດທີ່ເປັນຈຳນວນຖ້ວນ (x < 5)."}
+              {"ຈົ່ງແກ້ສົມຜົນອະສົມຜົນ "} <span className="math">{"2|𝑥 - 1| < 8"}</span> {" ແລ້ວຊອກຫາໃຈຜົນຄ່າຫຼາຍສຸດທີ່ເປັນຈຳນວນຖ້ວນ (𝑥 < 5)."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຈຳນວນຖ້ວນຫຼາຍສຸດແມ່ນ"}</span>
@@ -229,9 +229,9 @@ export const unit27Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງແກ້ສົມຜົນອະສົມຜົນ "}
               <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
-                {"|"} <Fraction num="x" den="3" /> {" - 2| ≤ 1"}
+                {"|"} <Fraction num="𝑥" den="3" /> {" - 2| ≤ 1"}
               </span>
-              {" ແລ້ວຊອກຫາຄ່າຂອງ x ທີ່ໜ້ອຍສຸດ (ເຂດໃຈຜົນ: 3 ≤ x ≤ 9)."}
+              {" ແລ້ວຊອກຫາຄ່າຂອງ 𝑥 ທີ່ໜ້ອຍສຸດ (ເຂດໃຈຜົນ: 3 ≤ 𝑥 ≤ 9)."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຄ່ານ້ອຍສຸດແມ່ນ"}</span>
@@ -251,7 +251,7 @@ export const unit27Data: UnitData = {
             {"ອະສົມຜົນຄ່າສຳບູນເລກທົດສະນິຍົມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ຈົ່ງແກ້ໄຂອະສົມຜົນ "} <span className="math">{"|x - 2.5| < 1.5"}</span> {" ແລ້ວຊອກຫາຄ່າຂອງ x ທີ່ເປັນຈຳນວນຖ້ວນຫຼາຍສຸດ (ເຂດໃຈຜົນ: 1 < x < 4)."}
+            {"ຈົ່ງແກ້ໄຂອະສົມຜົນ "} <span className="math">{"|𝑥 - 2.5| < 1.5"}</span> {" ແລ້ວຊອກຫາຄ່າຂອງ 𝑥 ທີ່ເປັນຈຳນວນຖ້ວນຫຼາຍສຸດ (ເຂດໃຈຜົນ: 1 < 𝑥 < 4)."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຈຳນວນຖ້ວນຫຼາຍສຸດແມ່ນ"}</span>
@@ -268,10 +268,10 @@ export const unit27Data: UnitData = {
             {"ໂຈດບັນຫາໄລຍະຫ່າງເທິງເສັ້ນຈຳນວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ຈຸດ P ຢູ່ເທິງເສັ້ນຈຳນວນຫ່າງຈາກຈຸດ -1 ເປັນໄລຍະທາງໜ້ອຍກວ່າ 4 ຫົວໜ່ວຍ. ຈົ່ງຊອກຫາຂອບເຂດສູງສຸດຂອງ A (ສົມຜົນ: |x - (-1)| < 4 ➔ x < _?)"}
+            {"ຈຸດ P ຢູ່ເທິງເສັ້ນຈຳນວນຫ່າງຈາກຈຸດ -1 ເປັນໄລຍະທາງໜ້ອຍກວ່າ 4 ຫົວໜ່ວຍ. ຈົ່ງຊອກຫາຂອບເຂດສູງສຸດຂອງ A (ສົມຜົນ: |𝑥 - (-1)| < 4 ➔ 𝑥 < _?)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-            <span>{"ຕອບ: x <"}</span>
+            <span>{"ຕອບ: 𝑥 <"}</span>
             <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
@@ -283,45 +283,45 @@ export const unit27Data: UnitData = {
       {
         questionNumber: 1,
         answers: [
-          <span key="1">{"(1) 5 (ເພາະວ່າ -5 < x < 5)"}</span>,
-          <span key="2">{"(2) -8 (ເພາະວ່າ -8 ≤ x ≤ 8)"}</span>,
-          <span key="3">{"(3) 6 (ເພາະວ່າ -4 < x - 2 < 4 ➔ -2 < x < 6)"}</span>,
-          <span key="4">{"(4) -8 (ເພາະວ່າ -5 ≤ x + 3 ≤ 5 ➔ -8 ≤ x ≤ 2)"}</span>,
-          <span key="5">{"(5) 3 (ເພາະວ່າ -6 < 2x < 6 ➔ -3 < x < 3)"}</span>
+          <span key="1">{"(1) 5 (ເພາະວ່າ -5 < 𝑥 < 5)"}</span>,
+          <span key="2">{"(2) -8 (ເພາະວ່າ -8 ≤ 𝑥 ≤ 8)"}</span>,
+          <span key="3">{"(3) 6 (ເພາະວ່າ -4 < 𝑥 - 2 < 4 ➔ -2 < 𝑥 < 6)"}</span>,
+          <span key="4">{"(4) -8 (ເພາະວ່າ -5 ≤ 𝑥 + 3 ≤ 5 ➔ -8 ≤ 𝑥 ≤ 2)"}</span>,
+          <span key="5">{"(5) 3 (ເພາະວ່າ -6 < 2𝑥 < 6 ➔ -3 < 𝑥 < 3)"}</span>
         ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="6">{"(1) -4 (ເພາະວ່າ x > 4 ຫຼື x < -4)"}</span>,
-          <span key="7">{"(2) -7 (ເພາະວ່າ x ≥ 7 ຫຼື x ≤ -7)"}</span>,
-          <span key="8">{"(3) -2 (ເພາະວ່າ x - 1 > 3 ➔ x > 4; x - 1 < -3 ➔ x < -2)"}</span>,
-          <span key="9">{"(4) -2 (ເພາະວ່າ x + 4 ≥ 2 ➔ x ≥ -2)"}</span>,
-          <span key="10">{"(5) 3 (ເພາະວ່າ 3x > 9 ➔ x > 3)"}</span>
+          <span key="6">{"(1) -4 (ເພາະວ່າ 𝑥 > 4 ຫຼື 𝑥 < -4)"}</span>,
+          <span key="7">{"(2) -7 (ເພາະວ່າ 𝑥 ≥ 7 ຫຼື 𝑥 ≤ -7)"}</span>,
+          <span key="8">{"(3) -2 (ເພາະວ່າ 𝑥 - 1 > 3 ➔ 𝑥 > 4; 𝑥 - 1 < -3 ➔ 𝑥 < -2)"}</span>,
+          <span key="9">{"(4) -2 (ເພາະວ່າ 𝑥 + 4 ≥ 2 ➔ 𝑥 ≥ -2)"}</span>,
+          <span key="10">{"(5) 3 (ເພາະວ່າ 3𝑥 > 9 ➔ 𝑥 > 3)"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="11">{"4 (ເພາະວ່າ |x - 1| < 4 ➔ -3 < x < 5, ດັ່ງນັ້ນຈຳນວນຖ້ວນຫຼາຍສຸດແມ່ນ 4)"}</span>
+          <span key="11">{"4 (ເພາະວ່າ |𝑥 - 1| < 4 ➔ -3 < 𝑥 < 5, ດັ່ງນັ້ນຈຳນວນຖ້ວນຫຼາຍສຸດແມ່ນ 4)"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="12">{"3 (ເພາະວ່າ -1 ≤ x/3 - 2 ≤ 1 ➔ 1 ≤ x/3 ≤ 3 ➔ 3 ≤ x ≤ 9)"}</span>
+          <span key="12">{"3 (ເພາະວ່າ -1 ≤ 𝑥/3 - 2 ≤ 1 ➔ 1 ≤ 𝑥/3 ≤ 3 ➔ 3 ≤ 𝑥 ≤ 9)"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="13">{"3 (ເພາະວ່າ -1.5 < x - 2.5 < 1.5 ➔ 1 < x < 4, ດັ່ງນັ້ນຈຳນວນຖ້ວນຫຼາຍສຸດແມ່ນ 3)"}</span>
+          <span key="13">{"3 (ເພາະວ່າ -1.5 < 𝑥 - 2.5 < 1.5 ➔ 1 < 𝑥 < 4, ດັ່ງນັ້ນຈຳນວນຖ້ວນຫຼາຍສຸດແມ່ນ 3)"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="14">{"3 (ເພາະວ່າ -4 < x + 1 < 4 ➔ -5 < x < 3)"}</span>
+          <span key="14">{"3 (ເພາະວ່າ -4 < 𝑥 + 1 < 4 ➔ -5 < 𝑥 < 3)"}</span>
         ]
       }
     ],

@@ -271,10 +271,10 @@ export const unit2Data: UnitData = {
             {"ການປຽບທຽບ ແລະ ຊອກຫາຈຳນວນຖ້ວນທີ່ເໝາະສົມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ຈົ່ງຊອກຫາຈຳນວນຖ້ວນ x ທັງໝົດທີ່ຕອບສະໜອງເງື່ອນໄຂ: "}<strong>{" -3 < x ≤ +2 "}</strong>
+            {"ຈົ່ງຊອກຫາຈຳນວນຖ້ວນ 𝑥 ທັງໝົດທີ່ຕອບສະໜອງເງື່ອນໄຂ: "}<strong>{" -3 < 𝑥 ≤ +2 "}</strong>
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-            <span>{"ຕອບ: x ປະກອບມີ"}</span>
+            <span>{"ຕອບ: 𝑥 ປະກອບມີ"}</span>
             <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
           </div>
         </div>
