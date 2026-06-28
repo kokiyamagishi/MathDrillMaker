@@ -164,32 +164,32 @@ export const unit4Data: UnitData = {
               </div>
             </div>
 
-            {/* Visual Number Line Graphic */}
+             {/* Visual Number Line Graphic */}
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "10px", backgroundColor: "#ECEFF1", borderRadius: "8px", border: "1px solid #CFD8DC" }}>
-              <svg viewBox="0 0 300 100" style={{ width: "100%", maxWidth: "280px", height: "auto" }}>
+              <svg viewBox="0 0 450 100" style={{ width: "100%", maxWidth: "400px", height: "auto" }}>
                 {/* Number Line */}
-                <line x1="20" y1="50" x2="280" y2="50" stroke="#37474F" strokeWidth="3" />
-                <line x1="20" y1="40" x2="20" y2="60" stroke="#37474F" strokeWidth="2" />
-                <text x="20" y="72" fill="#37474F" fontSize="12" fontWeight="bold" textAnchor="middle">{"0"}</text>
+                <line x1="40" y1="50" x2="410" y2="50" stroke="#37474F" strokeWidth="3" />
+                <line x1="40" y1="40" x2="40" y2="60" stroke="#37474F" strokeWidth="2" />
+                <text x="40" y="72" fill="#37474F" fontSize="12" fontWeight="bold" textAnchor="middle">{"0"}</text>
                 
-                <line x1="280" y1="40" x2="280" y2="60" stroke="#37474F" strokeWidth="2" />
-                <text x="280" y="72" fill="#37474F" fontSize="12" fontWeight="bold" textAnchor="middle">{"1"}</text>
+                <line x1="410" y1="40" x2="410" y2="60" stroke="#37474F" strokeWidth="2" />
+                <text x="410" y="72" fill="#37474F" fontSize="12" fontWeight="bold" textAnchor="middle">{"1"}</text>
                 
                 {/* Pin for 2/5 (0.4) - Label Above */}
-                <line x1="124" y1="50" x2="124" y2="40" stroke="#E53935" strokeWidth="1.5" strokeDasharray="2,2" />
-                <circle cx="124" cy="50" r="5" fill="#E53935" />
-                <text x="124" y="14" fill="#E53935" fontSize="11" fontWeight="bold" textAnchor="middle">{"2"}</text>
-                <line x1="117" y1="17" x2="131" y2="17" stroke="#E53935" strokeWidth="1.5" />
-                <text x="124" y="26" fill="#E53935" fontSize="11" fontWeight="bold" textAnchor="middle">{"5"}</text>
-                <text x="124" y="38" fill="#E53935" fontSize="10" fontWeight="bold" textAnchor="middle">{"(0.4)"}</text>
+                <line x1="188" y1="50" x2="188" y2="40" stroke="#E53935" strokeWidth="1.5" strokeDasharray="2,2" />
+                <circle cx="188" cy="50" r="5" fill="#E53935" />
+                <text x="188" y="14" fill="#E53935" fontSize="11" fontWeight="bold" textAnchor="middle">{"2"}</text>
+                <line x1="181" y1="17" x2="195" y2="17" stroke="#E53935" strokeWidth="1.5" />
+                <text x="188" y="26" fill="#E53935" fontSize="11" fontWeight="bold" textAnchor="middle">{"5"}</text>
+                <text x="188" y="38" fill="#E53935" fontSize="10" fontWeight="bold" textAnchor="middle">{"(0.4)"}</text>
 
                 {/* Pin for 1/2 (0.5) - Label Below */}
-                <line x1="150" y1="50" x2="150" y2="60" stroke="#1E88E5" strokeWidth="1.5" strokeDasharray="2,2" />
-                <circle cx="150" cy="50" r="5" fill="#1E88E5" />
-                <text x="150" y="69" fill="#1E88E5" fontSize="10" fontWeight="bold" textAnchor="middle">{"(0.5)"}</text>
-                <text x="150" y="80" fill="#1E88E5" fontSize="11" fontWeight="bold" textAnchor="middle">{"1"}</text>
-                <line x1="143" y1="83" x2="157" y2="83" stroke="#1E88E5" strokeWidth="1.5" />
-                <text x="150" y="92" fill="#1E88E5" fontSize="11" fontWeight="bold" textAnchor="middle">{"2"}</text>
+                <line x1="225" y1="50" x2="225" y2="60" stroke="#1E88E5" strokeWidth="1.5" strokeDasharray="2,2" />
+                <circle cx="225" cy="50" r="5" fill="#1E88E5" />
+                <text x="225" y="69" fill="#1E88E5" fontSize="10" fontWeight="bold" textAnchor="middle">{"(0.5)"}</text>
+                <text x="225" y="80" fill="#1E88E5" fontSize="11" fontWeight="bold" textAnchor="middle">{"1"}</text>
+                <line x1="218" y1="83" x2="232" y2="83" stroke="#1E88E5" strokeWidth="1.5" />
+                <text x="225" y="92" fill="#1E88E5" fontSize="11" fontWeight="bold" textAnchor="middle">{"2"}</text>
               </svg>
             </div>
           </div>
