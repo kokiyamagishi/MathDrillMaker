@@ -44,15 +44,16 @@ export const unit22Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ໃນແຜນຜັງທີ່ມີມາດຕາສ່ວນ 1:250,000, ວັດແທກໄລຍະທາງລະຫວ່າງເມືອງ A ຫາ B ໄດ້ 6 cm. ໄລຍະທາງຕົວຈິງລະຫວ່າງສອງເມືອງນີ້ແມ່ນຈັກ km? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <span>{"ປະໂຫຍກສັນຍະລັກ: ໄລຍະທາງຕົວຈິງ ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
+                <div>
+                  <span>{"ປະໂຫຍກສັນຍະລັກ:"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <span>{"= "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                  <span>{"km"}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap" }}>
+                  <span>{"ໄລຍະທາງຕົວຈິງ = "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px", flexShrink: 0 }}></span>
+                  <span>{" = "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px", flexShrink: 0 }}></span>
+                  <span style={{ flexShrink: 0 }}>{"km"}</span>
                 </div>
               </div>
             </div>

@@ -46,18 +46,22 @@ export const unit16Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ຕ້ອງການປັກເສົາຮົ້ວອ້ອມຮອບສວນຫຼັງບ້ານຕາມແນວຊື່ຍາວ 120 m ໂດຍໃຫ້ແຕ່ລະເສົາຫ່າງກັນ 4 m. ຖ້າປັກເສົາຢູ່ສົ້ນທາງທັງສອງເບື້ອງນຳ, ຈະຕ້ອງໃຊ້ເສົາທັງໝົດຈັກຕົ້ນ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
-                <div>
-                  <span>{"ປະໂຫຍກສັນຍະລັກ:"}</span>
-                </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
+              <div>
+                <span>{"ປະໂຫຍກສັນຍະລັກ:"}</span>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", paddingLeft: "24px", gap: "4px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
                   <span>{"ຈຳນວນເສົາ = "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px", flexShrink: 0 }}></span>
-                  <span>{"= "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
-                  <span style={{ flexShrink: 0 }}>{"ຕົ້ນ"}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+                  <span>{"= "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "42px", flexShrink: 0 }}></span>
+                  <span>{"ຕົ້ນ"}</span>
                 </div>
               </div>
+            </div>
             </div>
           )
         },
