@@ -11,7 +11,7 @@ const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) 
 
 export const unit6Data: UnitData = {
   unitNumber: 6,
-  unitTitle: "ພាកທີ I - ບົດທີ 6: ການບວກ ແລະ ການລົບເລກສ່ວນທີ່ມີພູດຕ່າງກັນ",
+  unitTitle: "ພາກທີ I - ບົດທີ 6: ການບວກ ແລະ ການລົບເລກສ່ວນທີ່ມີພູດຕ່າງກັນ",
   unitGoal: "ຮຽນຮູ້ການບວກ ແລະ ການລົບເລກສ່ວນທີ່ມີພູດຕ່າງກັນໂດຍການຂຶ້ນພູດຮ່ວມກ່ອນແລ້ວຈຶ່ງຄິດໄລ່",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.2 ໜ້າ 18-22",
   subSections: [
