@@ -12,11 +12,11 @@ const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) 
 export const unit21Data: UnitData = {
   unitNumber: 21,
   unitTitle: "ພាកທີ VI - ບົດທີ 21: ຄວາມຖີ່ສະສົມ",
-  unitGoal: "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈວິທີການສ້າງຕາຕະລາງແຈກແຈງຄວາມຖີ່, ການຊອກຫາຄວາມຖີ່ສະສົມ (Cumulative Frequency) ແລະ ຄວາມຖີ່ທຽບຖານ (Relative Frequency)",
+  unitGoal: "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈວິທີການສ້າງຕາຕະລາງແຈກແຈງຄວາມຖີ່, ການຊອກຫາຄວາມຖີ່ສະສົມ ແລະ ຄວາມຖີ່ທຽບຖານ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 103-108",
   subSections: [
     {
-      title: "1. ຄວາມຖີ່ ແລະ ຄວາມຖີ່ສະສົມ (Frequency and Cumulative Frequency)",
+      title: "1. ຄວາມຖີ່ ແລະ ຄວາມຖີ່ສະສົມ",
       keyPoint: {
         title: "ນິຍາມ ແລະ ຕາຕະລາງຄວາມຖີ່ສະສົມ",
         content: (
@@ -33,30 +33,30 @@ export const unit21Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ຕາຕະລາງການເພີ່ມຂຶ້ນຂອງຄວາມຖີ່ສະສົມ"}</span>
-                <svg viewBox="0 0 200 80" style={{ width: "100%", maxWidth: "180px", height: "auto" }}>
+                <svg viewBox="0 0 400 160" style={{ width: "100%", maxWidth: "360px", height: "auto" }}>
                   {/* Table headers */}
-                  <rect x="10" y="5" width="60" height="20" fill="#2E7D32" stroke="#FFFFFF" />
-                  <text x="40" y="18" fill="#FFFFFF" fontSize="8" textAnchor="middle">{"ຄະແນນ"}</text>
-                  <rect x="70" y="5" width="60" height="20" fill="#2E7D32" stroke="#FFFFFF" />
-                  <text x="100" y="18" fill="#FFFFFF" fontSize="8" textAnchor="middle">{"ຄວາມຖີ່ (f)"}</text>
-                  <rect x="130" y="5" width="60" height="20" fill="#E65100" stroke="#FFFFFF" />
-                  <text x="160" y="18" fill="#FFFFFF" fontSize="8" textAnchor="middle">{"ສະສົມ (cf)"}</text>
+                  <rect x="20" y="10" width="120" height="40" fill="#2E7D32" stroke="#FFFFFF" />
+                  <text x="80" y="36" fill="#FFFFFF" fontSize="16" textAnchor="middle">{"ຄະແນນ"}</text>
+                  <rect x="140" y="10" width="120" height="40" fill="#2E7D32" stroke="#FFFFFF" />
+                  <text x="200" y="36" fill="#FFFFFF" fontSize="16" textAnchor="middle">{"ຄວາມຖີ່ (f)"}</text>
+                  <rect x="260" y="10" width="120" height="40" fill="#E65100" stroke="#FFFFFF" />
+                  <text x="320" y="36" fill="#FFFFFF" fontSize="16" textAnchor="middle">{"ສະສົມ (cf)"}</text>
 
                   {/* Row 1 */}
-                  <rect x="10" y="25" width="60" height="15" fill="#E8F5E9" stroke="#37474F" strokeWidth="0.5" />
-                  <text x="40" y="35" fill="#37474F" fontSize="8" textAnchor="middle">{"1"}</text>
-                  <rect x="70" y="25" width="60" height="15" fill="#E8F5E9" stroke="#37474F" strokeWidth="0.5" />
-                  <text x="100" y="35" fill="#37474F" fontSize="8" textAnchor="middle">{"2"}</text>
-                  <rect x="130" y="25" width="60" height="15" fill="#FFE0B2" stroke="#37474F" strokeWidth="0.5" />
-                  <text x="160" y="35" fill="#E65100" fontSize="8" textAnchor="middle" fontWeight="bold">{"2"}</text>
+                  <rect x="20" y="50" width="120" height="30" fill="#E8F5E9" stroke="#37474F" strokeWidth="1" />
+                  <text x="80" y="70" fill="#37474F" fontSize="16" textAnchor="middle">{"1"}</text>
+                  <rect x="140" y="50" width="120" height="30" fill="#E8F5E9" stroke="#37474F" strokeWidth="1" />
+                  <text x="200" y="70" fill="#37474F" fontSize="16" textAnchor="middle">{"2"}</text>
+                  <rect x="260" y="50" width="120" height="30" fill="#FFE0B2" stroke="#37474F" strokeWidth="1" />
+                  <text x="320" y="70" fill="#E65100" fontSize="16" textAnchor="middle" fontWeight="bold">{"2"}</text>
 
                   {/* Row 2 */}
-                  <rect x="10" y="40" width="60" height="15" fill="#E8F5E9" stroke="#37474F" strokeWidth="0.5" />
-                  <text x="40" y="50" fill="#37474F" fontSize="8" textAnchor="middle">{"2"}</text>
-                  <rect x="70" y="40" width="60" height="15" fill="#E8F5E9" stroke="#37474F" strokeWidth="0.5" />
-                  <text x="100" y="50" fill="#37474F" fontSize="8" textAnchor="middle">{"3"}</text>
-                  <rect x="130" y="40" width="60" height="15" fill="#FFE0B2" stroke="#37474F" strokeWidth="0.5" />
-                  <text x="160" y="50" fill="#E65100" fontSize="8" textAnchor="middle" fontWeight="bold">{"5 (2+3)"}</text>
+                  <rect x="20" y="80" width="120" height="30" fill="#E8F5E9" stroke="#37474F" strokeWidth="1" />
+                  <text x="80" y="100" fill="#37474F" fontSize="16" textAnchor="middle">{"2"}</text>
+                  <rect x="140" y="80" width="120" height="30" fill="#E8F5E9" stroke="#37474F" strokeWidth="1" />
+                  <text x="200" y="100" fill="#37474F" fontSize="16" textAnchor="middle">{"3"}</text>
+                  <rect x="260" y="80" width="120" height="30" fill="#FFE0B2" stroke="#37474F" strokeWidth="1" />
+                  <text x="320" y="100" fill="#E65100" fontSize="16" textAnchor="middle" fontWeight="bold">{"5 (2+3)"}</text>
                 </svg>
               </div>
             </div>
@@ -125,7 +125,7 @@ export const unit21Data: UnitData = {
       ]
     },
     {
-      title: "2. ຄວາມຖີ່ທຽບຖານ ແລະ ເປີເຊັນ (Relative Frequency and Percentage)",
+      title: "2. ຄວາມຖີ່ທຽບຖານ ແລະ ເປີເຊັນ",
       keyPoint: {
         title: "ອັດຕາສ່ວນຄວາມຖີ່ ແລະ ເປີເຊັນ",
         content: (
@@ -217,7 +217,7 @@ export const unit21Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຊອກຫາຄວາມຖີ່ທຽບຖານຈາກການສຳຫຼວດ (Relative Frequency Calculation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຊອກຫາຄວາມຖີ່ທຽບຖານຈາກການສຳຫຼວດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈາກການສຳຫຼວດວິຊາຮຽນທີ່ນັກຮຽນ 50 ຄົນມັກ, ພົບວ່ານັກຮຽນມັກວິຊາຄະນິດສາດມີ 15 ຄົນ. ຈົ່ງຊອກຫາຄວາມຖີ່ທຽບຖານ (ເປັນເລກທົດສະນິຍົມ) ຂອງວິຊາຄະນິດສາດ."}
@@ -234,7 +234,7 @@ export const unit21Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຊອກຫາຄວາມຖີ່ສະເພາະຫ້ອງຈາກຄວາມຖີ່ສະສົມ (Finding Frequency from cf): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຊອກຫາຄວາມຖີ່ສະເພາະຫ້ອງຈາກຄວາມຖີ່ສະສົມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ໃນຕາຕະລາງຄວາມຖີ່ຂອງກຸ່ມຕົວຢ່າງ 40 ຕົວຢ່າງ, ຄວາມຖີ່ສະສົມຮອດຫ້ອງ A ແມ່ນ 18, ແລະ ຄວາມຖີ່ສະສົມຮອດຫ້ອງ B (ຫ້ອງຖັດໄປ) ແມ່ນ 30. ຈົ່ງຊອກຫາຄວາມຖີ່ສະເພາະຂອງຫ້ອງ B."}
@@ -254,7 +254,7 @@ export const unit21Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດເປີເຊັນຂອງນັກຮຽນທີ່ໄດ້ເກຣດ A (Grade A Percentage Calculation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດເປີເຊັນຂອງນັກຮຽນທີ່ໄດ້ເກຣດ A: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ໃນຫ້ອງຮຽນທີ່ມີນັກຮຽນ 30 ຄົນ, ມີນັກຮຽນ 6 ຄົນທີ່ໄດ້ເກຣດ A ວິຊາຄະນິດສາດ. ຈົ່ງຊອກຫາເປີເຊັນ (%) ຂອງນັກຮຽນທີ່ໄດ້ເກຣດ A ໃນຫ້ອງຮຽນນີ້. (ຕອບສະເພາະຕົວເລກ)"}
@@ -272,7 +272,7 @@ export const unit21Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ການຊອກຫາຄວາມຖີ່ຕົວຈິງຈາກຄວາມຖີ່ທຽບຖານ (Finding Frequency from rf): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ການຊອກຫາຄວາມຖີ່ຕົວຈິງຈາກຄວາມຖີ່ທຽບຖານ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(2) ຄວາມຖີ່ທຽບຖານຂອງຄະແນນໜຶ່ງແມ່ນ 0.15. ຖ້າຈຳນວນຕົວຢ່າງທັງໝົດແມ່ນ 60 ຄົນ, ຈົ່ງຊອກຫາຄວາມຖີ່ຕົວຈິງ (ຈຳນວນນັກຮຽນ) ຂອງຄະແນນນີ້."}

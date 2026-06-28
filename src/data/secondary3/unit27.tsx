@@ -16,7 +16,7 @@ export const unit27Data: UnitData = {
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 145-150",
   subSections: [
     {
-      title: "1. ເນື້ອທີ່ໜ້າຂອງຮູບໜ່ວຍມົນ (Surface Area of a Sphere)",
+      title: "1. ເນື້ອທີ່ໜ້າຂອງຮູບໜ່ວຍມົນ",
       keyPoint: {
         title: "ສູດເນື້ອທີ່ໜ້າຂອງຮູບໜ່ວຍມົນ",
         content: (
@@ -37,8 +37,8 @@ export const unit27Data: UnitData = {
             {/* 3D Sphere SVG Visual Asset */}
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "12px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
-                <span style={{ fontWeight: "bold" }}>{"ຮູບສະແດງຮູບໜ່ວຍມົນ 3 ມິຕິ (Sphere)"}</span>
-                <svg viewBox="0 0 200 130" style={{ width: "100%", maxWidth: "160px", height: "auto" }}>
+                <span style={{ fontWeight: "bold" }}>{"ຮູບສະແດງຮູບໜ່ວຍມົນ 3 ມິຕິ"}</span>
+                <svg viewBox="0 0 400 260" style={{ width: "100%", maxWidth: "320px", height: "auto" }}>
                   <defs>
                     <radialGradient id="sphereGrad" cx="30%" cy="30%" r="70%">
                       <stop offset="0%" stopColor="#E8F5E9" />
@@ -48,20 +48,20 @@ export const unit27Data: UnitData = {
                   </defs>
                   
                   {/* The Sphere outer circle */}
-                  <circle cx="100" cy="65" r="50" fill="url(#sphereGrad)" stroke="#1B5E20" strokeWidth="1.5" />
+                  <circle cx="200" cy="130" r="100" fill="url(#sphereGrad)" stroke="#1B5E20" strokeWidth="3" />
                   
-                  {/* Equator Ellipse (Front half) */}
-                  <path d="M 50,65 A 50,15 0 0,0 150,65" fill="none" stroke="#1B5E20" strokeWidth="1.5" />
-                  {/* Equator Ellipse (Back half dashed) */}
-                  <path d="M 50,65 A 50,15 0 0,1 150,65" fill="none" stroke="#1B5E20" strokeWidth="1.5" strokeDasharray="4,4" />
+                  {/* Equator Ellipse */}
+                  <path d="M 100,130 A 100,30 0 0,0 300,130" fill="none" stroke="#1B5E20" strokeWidth="3" />
+                  {/* Equator Ellipse */}
+                  <path d="M 100,130 A 100,30 0 0,2 300,130" fill="none" stroke="#1B5E20" strokeWidth="3" strokeDasharray="4,4" />
                   
                   {/* Center Point */}
-                  <circle cx="100" cy="65" r="2.5" fill="#B71C1C" />
-                  <text x="96" y="58" fill="#B71C1C" fontSize="8" fontWeight="bold">{"O"}</text>
+                  <circle cx="200" cy="130" r="5" fill="#B71C1C" />
+                  <text x="192" y="116" fill="#B71C1C" fontSize="16" fontWeight="bold">{"O"}</text>
                   
                   {/* Radius line */}
-                  <line x1="100" y1="65" x2="150" y2="65" stroke="#B71C1C" strokeWidth="2" />
-                  <text x="122" y="58" fill="#B71C1C" fontSize="10" fontWeight="bold">{"r"}</text>
+                  <line x1="200" y1="130" x2="300" y2="130" stroke="#B71C1C" strokeWidth="4" />
+                  <text x="244" y="116" fill="#B71C1C" fontSize="20" fontWeight="bold">{"r"}</text>
                 </svg>
               </div>
             </div>
@@ -130,7 +130,7 @@ export const unit27Data: UnitData = {
       ]
     },
     {
-      title: "2. ບໍລິມາດຂອງຮູບກ້ອນມົນ (Volume of a Sphere)",
+      title: "2. ບໍລິມາດຂອງຮູບກ້ອນມົນ",
       keyPoint: {
         title: "ສູດບໍລິມາດຂອງຮູບກ້ອນມົນ",
         content: (
@@ -220,7 +220,7 @@ export const unit27Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການພົວພັນລະຫວ່າງຮູບຊົງກະບອກ ແລະ ຮູບໜ່ວຍມົນ (Cylinder and Sphere Interaction): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການພົວພັນລະຫວ່າງຮູບຊົງກະບອກ ແລະ ຮູບໜ່ວຍມົນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຮູບຊົງກະບອກໜຶ່ງມີລັດສະໝີພື້ນ 6 cm ແລະ ຄວາມສູງ 12 cm ບັນຈຸຮູບໜ່ວຍມົນທີ່ມີລັດສະໝີ 6 cm ໄວ້ທາງໃນໄດ້ພໍດີ. ຈົ່ງຄິດໄລ່ບໍລິມາດຂອງສ່ວນທີ່ເຫຼືອພາຍໃນຮູບຊົງກະບອກຫຼັງຈາກລົບບໍລິມາດຂອງຮູບໜ່ວຍມົນອອກ (ຕອບຕິດຄ່າ π)."}
@@ -238,7 +238,7 @@ export const unit27Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ໜ້າຕັດພຽງຂອງຮູບໜ່ວຍມົນ (Cross Section of a Sphere): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ໜ້າຕັດພຽງຂອງຮູບໜ່ວຍມົນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ໜ້າຕັດພຽງໜຶ່ງຕັດຮູບໜ່ວຍມົນ ໂດຍໄລຍະຫ່າງຈາກໃຈກາງຮູບໜ່ວຍມົນຫາໜ້າຕັດພຽງແມ່ນ 3 cm. ຖ້າລັດສະໝີຂອງວົງມົນໜ້າຕັດທີ່ໄດ້ຮັບແມ່ນ 4 cm. ຈົ່ງຊອກຫາລັດສະໝີ R ຂອງຮູບໜ່ວຍມົນນັ້ນ ( cm)."}
@@ -259,7 +259,7 @@ export const unit27Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ອັດຕາສ່ວນບໍລິມາດຮູບໜ່ວຍມົນ ແລະ ຮູບຊົງກະບອກ (Sphere to Cylinder Volume Ratio): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ອັດຕາສ່ວນບໍລິມາດຮູບໜ່ວຍມົນ ແລະ ຮູບຊົງກະບອກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຈົ່ງຊອກຫາອັດຕາສ່ວນລະຫວ່າງ ບໍລິມາດຂອງຮູບໜ່ວຍມົນ ແລະ ບໍລິມາດຂອງຮູບຊົງກະບອກ ທີ່ສາມາດບັນຈຸຮູບໜ່ວຍມົນນັ້ນໄດ້ພໍດີ (ລັດສະໝີພື້ນ ແລະ ຄວາມສູງຂອງຮູບຊົງກະບອກເທົ່າກັບເສັ້ນຜ່ານໃຈກາງຂອງຮູບໜ່ວຍມົນ). ຕອບເປັນເລກສ່ວນ."}
@@ -276,7 +276,7 @@ export const unit27Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ການພົວພັນລະຫວ່າງເນື້ອທີ່ໜ້າ ແລະ ບໍລິມາດ (Surface Area to Volume Relation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ການພົວພັນລະຫວ່າງເນື້ອທີ່ໜ້າ ແລະ ບໍລິມາດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(2) ຖ້າເນື້ອທີ່ໜ້າຂອງຮູບໜ່ວຍມົນໜຶ່ງແມ່ນ "} <span className="math">{"100π cm²"}</span> {". ຈົ່ງຄິດໄລ່ບໍລິມາດ V ຂອງຮູບກ້ອນມົນນັ້ນ (ຕອບຕິດຄ່າ π ແລະ ເປັນເລກສ່ວນ ເຊັ່ນ: 500π/3)."}

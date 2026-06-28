@@ -12,17 +12,17 @@ const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) 
 export const unit23Data: UnitData = {
   unitNumber: 23,
   unitTitle: "ພາກທີ VI - ບົດທີ 23: ຮູບສະແດງຂໍ້ມູນຄວາມຖີ່",
-  unitGoal: "ຮຽນຮູ້ ແລະ ນຳໃຊ້ຮູບຖັນສະແດງຄວາມຖີ່ (Histogram) ແລະ ເສັ້ນຫັກກົງສະແດງຄວາມຖີ່ (Frequency Polygon) ໃນການອ່ານ ແລະ ວິເຄາະຂໍ້ມູນ",
+  unitGoal: "ຮຽນຮູ້ ແລະ ນຳໃຊ້ຮູບຖັນສະແດງຄວາມຖີ່ ແລະ ເສັ້ນຫັກກົງສະແດງຄວາມຖີ່ ໃນການອ່ານ ແລະ ວິເຄາະຂໍ້ມູນ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 115-120",
   subSections: [
     {
-      title: "1. ຮູບຖັນສະແດງຄວາມຖີ່ (Histograms)",
+      title: "1. ຮູບຖັນສະແດງຄວາມຖີ່",
       keyPoint: {
         title: "ນິຍາມ ແລະ ການອ່ານຮູບຖັນຄວາມຖີ່",
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຮູບຖັນສະແດງຄວາມຖີ່ (Histogram) ແມ່ນຮູບເລຂາຄະນິດທີ່ໃຊ້ຮູບສີ່ແຈສາກຕິດກັນ ເພື່ອສະແດງຄວາມຖີ່ຂອງແຕ່ລະຊັ້ນຂໍ້ມູນ:"}
+              {"ຮູບຖັນສະແດງຄວາມຖີ່ ແມ່ນຮູບເລຂາຄະນິດທີ່ໃຊ້ຮູບສີ່ແຈສາກຕິດກັນ ເພື່ອສະແດງຄວາມຖີ່ຂອງແຕ່ລະຊັ້ນຂໍ້ມູນ:"}
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
               <div>{"• ລວງກວ້າງຂອງຖັນ: ສະແດງເຖິງຄວາມກວ້າງຂອງອັນຕະພາກຊັ້ນ."}</div>
@@ -32,37 +32,37 @@ export const unit23Data: UnitData = {
             {/* Histogram SVG */}
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
-                <span>{"ຮູບຖັນສະແດງຄວາມຖີ່ (Histogram)"}</span>
-                <svg viewBox="0 0 200 90" style={{ width: "100%", maxWidth: "180px", height: "auto" }}>
+                <span>{"ຮູບຖັນສະແດງຄວາມຖີ່"}</span>
+                <svg viewBox="0 0 400 180" style={{ width: "100%", maxWidth: "360px", height: "auto" }}>
                   {/* Grid */}
-                  <line x1="20" y1="20" x2="180" y2="20" stroke="#E0E0E0" strokeWidth="0.5" />
-                  <line x1="20" y1="40" x2="180" y2="40" stroke="#E0E0E0" strokeWidth="0.5" />
-                  <line x1="20" y1="60" x2="180" y2="60" stroke="#E0E0E0" strokeWidth="0.5" />
+                  <line x1="40" y1="40" x2="360" y2="40" stroke="#E0E0E0" strokeWidth="1" />
+                  <line x1="40" y1="80" x2="360" y2="80" stroke="#E0E0E0" strokeWidth="1" />
+                  <line x1="40" y1="120" x2="360" y2="120" stroke="#E0E0E0" strokeWidth="1" />
 
                   {/* Axes */}
-                  <line x1="20" y1="80" x2="180" y2="80" stroke="#37474F" strokeWidth="1.5" />
-                  <line x1="20" y1="10" x2="20" y2="80" stroke="#37474F" strokeWidth="1.5" />
+                  <line x1="40" y1="160" x2="360" y2="160" stroke="#37474F" strokeWidth="3" />
+                  <line x1="40" y1="20" x2="40" y2="160" stroke="#37474F" strokeWidth="3" />
 
                   {/* Bars (Classes: 10-20 (30px), 20-30 (80px), 30-40 (50px), 40-50 (20px)) */}
                   {/* Scale: 10 units height = 20px */}
-                  <rect x="30" y="50" width="30" height="30" fill="#2196F3" opacity="0.8" stroke="#0D47A1" />
-                  <text x="45" y="45" fill="#0D47A1" fontSize="7" textAnchor="middle">{"3"}</text>
+                  <rect x="60" y="100" width="60" height="60" fill="#2196F3" opacity="0.8" stroke="#0D47A1" />
+                  <text x="90" y="90" fill="#0D47A1" fontSize="14" textAnchor="middle">{"3"}</text>
 
-                  <rect x="60" y="20" width="30" height="60" fill="#4CAF50" opacity="0.8" stroke="#1B5E20" />
-                  <text x="75" y="15" fill="#1B5E20" fontSize="7" textAnchor="middle">{"8"}</text>
+                  <rect x="120" y="40" width="60" height="120" fill="#4CAF50" opacity="0.8" stroke="#1B5E20" />
+                  <text x="150" y="30" fill="#1B5E20" fontSize="14" textAnchor="middle">{"8"}</text>
 
-                  <rect x="90" y="40" width="30" height="40" fill="#FF9800" opacity="0.8" stroke="#E65100" />
-                  <text x="105" y="35" fill="#E65100" fontSize="7" textAnchor="middle">{"5"}</text>
+                  <rect x="180" y="80" width="60" height="80" fill="#FF9800" opacity="0.8" stroke="#E65100" />
+                  <text x="210" y="70" fill="#E65100" fontSize="14" textAnchor="middle">{"5"}</text>
 
-                  <rect x="120" y="70" width="30" height="10" fill="#E91E63" opacity="0.8" stroke="#880E4F" />
-                  <text x="135" y="65" fill="#880E4F" fontSize="7" textAnchor="middle">{"2"}</text>
+                  <rect x="240" y="140" width="60" height="20" fill="#E91E63" opacity="0.8" stroke="#880E4F" />
+                  <text x="270" y="130" fill="#880E4F" fontSize="14" textAnchor="middle">{"2"}</text>
 
                   {/* X-axis labels */}
-                  <text x="30" y="88" fill="#37474F" fontSize="6" textAnchor="middle">{"10"}</text>
-                  <text x="60" y="88" fill="#37474F" fontSize="6" textAnchor="middle">{"20"}</text>
-                  <text x="90" y="88" fill="#37474F" fontSize="6" textAnchor="middle">{"30"}</text>
-                  <text x="120" y="88" fill="#37474F" fontSize="6" textAnchor="middle">{"40"}</text>
-                  <text x="150" y="88" fill="#37474F" fontSize="6" textAnchor="middle">{"50"}</text>
+                  <text x="60" y="176" fill="#37474F" fontSize="12" textAnchor="middle">{"10"}</text>
+                  <text x="120" y="176" fill="#37474F" fontSize="12" textAnchor="middle">{"20"}</text>
+                  <text x="180" y="176" fill="#37474F" fontSize="12" textAnchor="middle">{"30"}</text>
+                  <text x="240" y="176" fill="#37474F" fontSize="12" textAnchor="middle">{"40"}</text>
+                  <text x="300" y="176" fill="#37474F" fontSize="12" textAnchor="middle">{"50"}</text>
                 </svg>
               </div>
             </div>
@@ -79,7 +79,7 @@ export const unit23Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຄຳຖາມທີ 1: ອີງຕາມຮູບຖັນສະແດງຄວາມຖີ່ (Histogram) ຂ້າງເທິງ, ຈົ່ງຕອບຄຳຖາມລຸ່ມນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span>
+                {"ຄຳຖາມທີ 1: ອີງຕາມຮູບຖັນສະແດງຄວາມຖີ່ ຂ້າງເທິງ, ຈົ່ງຕອບຄຳຖາມລຸ່ມນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span>
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
@@ -131,13 +131,13 @@ export const unit23Data: UnitData = {
       ]
     },
     {
-      title: "2. ເສັ້ນຫັກກົງສະແດງຄວາມຖີ່ (Frequency Polygons)",
+      title: "2. ເສັ້ນຫັກກົງສະແດງຄວາມຖີ່",
       keyPoint: {
         title: "ການສ້າງເສັ້ນຫັກກົງຄວາມຖີ່",
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ເສັ້ນຫັກກົງສະແດງຄວາມຖີ່ (Frequency Polygon) ສ້າງຂຶ້ນໂດຍການເຊື່ອມຕໍ່ເມັດເຄິ່ງກາງຊັ້ນ ຢູ່ລະດັບຄວາມຖີ່ຂອງແຕ່ລະຊັ້ນ:"}
+              {"ເສັ້ນຫັກກົງສະແດງຄວາມຖີ່ ສ້າງຂຶ້ນໂດຍການເຊື່ອມຕໍ່ເມັດເຄິ່ງກາງຊັ້ນ ຢູ່ລະດັບຄວາມຖີ່ຂອງແຕ່ລະຊັ້ນ:"}
             </p>
             
             <div style={{ padding: "12px 16px", backgroundColor: "#FFFDE7", borderRadius: "10px", border: "1px solid #FFF59D", fontSize: "1.25rem", color: "#F57F17", display: "flex", flexDirection: "column", gap: "6px" }}>
@@ -218,7 +218,7 @@ export const unit23Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຊອກຫາເມັດເຄິ່ງກາງຊັ້ນທີຫ້າຂອງຮູບຖັນ (Finding 5th Class Midpoint): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຊອກຫາເມັດເຄິ່ງກາງຊັ້ນທີຫ້າຂອງຮູບຖັນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຮູບຖັນສະແດງຄວາມຖີ່ໜຶ່ງມີຄວາມກວ້າງແຕ່ລະຊັ້ນແມ່ນ 10. ຖ້າຊັ້ນທຳອິດແມ່ນ 0 - 10, ຈົ່ງຊອກຫາເມັດເຄິ່ງກາງຊັ້ນ ຂອງຊັ້ນທີຫ້າ (ຊັ້ນທີ 5)."}
@@ -235,7 +235,7 @@ export const unit23Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຊອກຫາຈຳນວນກຸ່ມຕົວຢ່າງຈາກເສັ້ນຫັກກົງ (Finding Total Samples N from Polygon): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຊອກຫາຈຳນວນກຸ່ມຕົວຢ່າງຈາກເສັ້ນຫັກກົງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ໃນເສັ້ນຫັກກົງຄວາມຖີ່ຄະແນນສອບເສັງ, ຈຸດຕ່າງໆຖືກໝາຍຢູ່ປະສານງານ: (55, 3), (65, 8), (75, 15), (85, 10), (95, 4). ຈົ່ງຊອກຫາຈຳນວນນັກຮຽນທັງໝົດທີ່ເຂົ້າເສັງ."}
@@ -256,7 +256,7 @@ export const unit23Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດເປີເຊັນຄວາມສູງຂອງນັກຮຽນ (Student Height Percentage Challenge): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດເປີເຊັນຄວາມສູງຂອງນັກຮຽນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ໃນຮູບຖັນສະແດງຄວາມຖີ່ຂອງລວງສູງນັກຮຽນ, ຊັ້ນລວງສູງ 150 - 160 cm ມີຄວາມຖີ່ແມ່ນ 12 ຄົນ. ຖ້ານັກຮຽນທັງໝົດມີ 40 ຄົນ. ຈົ່ງຊອກຫາເປີເຊັນ (%) ຂອງນັກຮຽນໃນຊັ້ນນີ້. (ຕອບສະເພาະຕົວເລກ)"}
@@ -274,10 +274,10 @@ export const unit23Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ການຊອກຫາຂອບເຂດເທິງຂອງຊັ້ນຂໍ້ມູນ (Finding Upper Limit of Peak Class): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ການຊອກຫາຂອບເຂດເທິງຂອງຊັ້ນຂໍ້ມູນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(2) ຈຸດຍອດສູງສຸດຂອງເສັ້ນຫັກກົງຄວາມຖີ່ຢູ່ທີ່ (165, 18). ຖ້າຫາກຄວາມກວ້າງແຕ່ລະຊັ້ນແມ່ນ 10 cm, ຈົ່ງຊອກຫາຂອບເຂດເທິງ (Upper Limit) ຂອງຊັ້ນທີ່ມີຄວາມຖີ່ສູງສຸດນີ້."}
+            {"(2) ຈຸດຍອດສູງສຸດຂອງເສັ້ນຫັກກົງຄວາມຖີ່ຢູ່ທີ່ (165, 18). ຖ້າຫາກຄວາມກວ້າງແຕ່ລະຊັ້ນແມ່ນ 10 cm, ຈົ່ງຊອກຫາຂອບເຂດເທິງ ຂອງຊັ້ນທີ່ມີຄວາມຖີ່ສູງສຸດນີ້."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຂອບເຂດເທິງແມ່ນ"}</span>

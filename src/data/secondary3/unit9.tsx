@@ -12,11 +12,11 @@ const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) 
 export const unit9Data: UnitData = {
   unitNumber: 9,
   unitTitle: "ພາກທີ II - ບົດທີ 9: ຫຼັກເກີນປີຕາກໍ",
-  unitGoal: "ຮຽນຮູ້ ແລະ ນຳໃຊ້ຫຼັກເກີນປີຕາກໍ (Pythagorean Theorem) ໃນການຊອກຫາຄວາມຍາວຂ້າງຂອງຮູບສາມແຈສາກ ແລະ ການປະຍຸກໃຊ້ໃນຊີວິດປະຈຳວັນ",
+  unitGoal: "ຮຽນຮູ້ ແລະ ນຳໃຊ້ຫຼັກເກີນປີຕາກໍ ໃນການຊອກຫາຄວາມຍາວຂ້າງຂອງຮູບສາມແຈສາກ ແລະ ການປະຍຸກໃຊ້ໃນຊີວິດປະຈຳວັນ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 37-42",
   subSections: [
     {
-      title: "1. ຫຼັກເກີນປີຕາກໍ ແລະ ການຊອກຫາຂ້າງກົງຊາກ (Pythagorean Theorem and Hypotenuse Calculation)",
+      title: "1. ຫຼັກເກີນປີຕາກໍ ແລະ ການຊອກຫາຂ້າງກົງຊາກ",
       keyPoint: {
         title: "ຫຼັກການພື້ນຖານຂອງປີຕາກໍ",
         content: (
@@ -39,22 +39,22 @@ export const unit9Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ຮູບສາມແຈສາກ ແລະ ຂ້າງຕ່າງໆ"}</span>
-                <svg viewBox="0 0 200 120" style={{ width: "100%", maxWidth: "200px", height: "auto" }}>
+                <svg viewBox="0 0 400 240" style={{ width: "100%", maxWidth: "400px", height: "auto" }}>
                   {/* Right Triangle */}
-                  <polygon points="50,20 50,100 150,100" fill="#E8F5E9" stroke="#2E7D32" strokeWidth="2" />
+                  <polygon points="50,20 50,100 150,100" fill="#E8F5E9" stroke="#2E7D32" strokeWidth="4" />
                   
                   {/* Right Angle Square */}
-                  <rect x="50" y="90" width="10" height="10" fill="none" stroke="#2E7D32" strokeWidth="1.5" />
+                  <rect x="100" y="180" width="20" height="20" fill="none" stroke="#2E7D32" strokeWidth="3" />
                   
                   {/* Labels */}
-                  <text x="32" y="65" fill="#37474F" fontSize="10" fontWeight="bold">{"a (ຕິດຊາກ)"}</text>
-                  <text x="95" y="112" fill="#37474F" fontSize="10" fontWeight="bold">{"b (ຕິດຊາກ)"}</text>
-                  <text x="110" y="55" fill="#E65100" fontSize="10" fontWeight="bold">{"c (ກົງຊາກ)"}</text>
+                  <text x="64" y="130" fill="#37474F" fontSize="20" fontWeight="bold">{"a (ຕິດຊາກ)"}</text>
+                  <text x="190" y="224" fill="#37474F" fontSize="20" fontWeight="bold">{"b (ຕິດຊາກ)"}</text>
+                  <text x="220" y="110" fill="#E65100" fontSize="20" fontWeight="bold">{"c (ກົງຊາກ)"}</text>
 
                   {/* Vertices */}
-                  <text x="42" y="16" fill="#37474F" fontSize="10">{"A"}</text>
-                  <text x="40" y="112" fill="#37474F" fontSize="10">{"B"}</text>
-                  <text x="155" y="105" fill="#37474F" fontSize="10">{"C"}</text>
+                  <text x="84" y="32" fill="#37474F" fontSize="20">{"A"}</text>
+                  <text x="80" y="224" fill="#37474F" fontSize="20">{"B"}</text>
+                  <text x="310" y="210" fill="#37474F" fontSize="20">{"C"}</text>
                 </svg>
               </div>
             </div>
@@ -123,7 +123,7 @@ export const unit9Data: UnitData = {
       ]
     },
     {
-      title: "2. ການຊອກຫາຂ້າງຕິດຊາກ ແລະ ເສັ້ນເນັ່ງຈອມ (Finding Perpendicular Sides and Diagonals)",
+      title: "2. ການຊອກຫາຂ້າງຕິດຊາກ ແລະ ເສັ້ນເນັ່ງຈອມ",
       keyPoint: {
         title: "ການຜັນປ່ຽນສູດປີຕາກໍ",
         content: (
@@ -203,14 +203,14 @@ export const unit9Data: UnitData = {
     }
   ],
   challengeProblems: {
-    hintText: "💡 ບົດທ້າທາຍ: ນຳໃຊ້ຫຼັກເກີນປີຕາກໍເຂົ້າໃນສາມມິຕິ (3D Space) ຫຼື ໂຈດບັນຫາຕົວຈິງ ໂດຍແຕ້ມຮູບສະແດງເດີ້!",
+    hintText: "💡 ບົດທ້າທາຍ: ນຳໃຊ້ຫຼັກເກີນປີຕາກໍເຂົ້າໃນສາມມິຕິ ຫຼື ໂຈດບັນຫາຕົວຈິງ ໂດຍແຕ້ມຮູບສະແດງເດີ້!",
     problems: [
       {
         number: 1,
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ໂຈດບັນຫາຂັ້ນໄດພາດຝາ (Ladder Leaning Against the Wall): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ໂຈດບັນຫາຂັ້ນໄດພາດຝາ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຂັ້ນໄດອັນໜຶ່ງຍາວ "} <span className="math">{"5 m"}</span> {" ພາດໃສ່ຝາຕັ້ງຊື່. ຖ້າຕີນຂັ້ນໄດຫ່າງຈາກຝາ "} <span className="math">{"3 m"}</span> {". ປາຍຂັ້ນໄດຈະຢູ່ສູງຈາກພື້ນດິນຈັກແມັດ?"}
@@ -228,10 +228,10 @@ export const unit9Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ຄວາມຍາວເສັ້ນເນັ່ງຈອມກາງຫາວຂອງຮູບກ່ອງສາກ (Space Diagonal of a Cuboid): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ຄວາມຍາວເສັ້ນເນັ່ງຈອມກາງຫາວຂອງຮູບກ່ອງສາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(2) ຮູບກ່ອງສາກໜຶ່ງມີຂະໜາດ "} <span className="math">{"3 cm × 4 cm × 12 cm"}</span> {". ຈົ່ງຊອກຫາຄວາມຍາວຂອງເສັ້ນເນັ່ງຈອມກາງຫາວ (Space Diagonal) ຂອງກ່ອງນີ້."}
+              {"(2) ຮູບກ່ອງສາກໜຶ່ງມີຂະໜາດ "} <span className="math">{"3 cm × 4 cm × 12 cm"}</span> {". ຈົ່ງຊອກຫາຄວາມຍາວຂອງເສັ້ນເນັ່ງຈອມກາງຫາວ ຂອງກ່ອງນີ້."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ເສັ້ນເນັ່ງຈອມກາງຫາວແມ່ນ"}</span>
@@ -249,7 +249,7 @@ export const unit9Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ຄວາມສູງຂອງຮູບສາມແຈທ່ຽງ (Height of an Isosceles Triangle): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ຄວາມສູງຂອງຮູບສາມແຈທ່ຽງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຮູບສາມແຈທ່ຽງໜຶ່ງມີສອງຂ້າງເທົ່າກັນຍາວ "} <span className="math">{"5 cm"}</span> {" ແລະ ຂ້າງພື້ນຍາວ "} <span className="math">{"6 cm"}</span> {". ຈົ່ງຄິດໄລ່ຄວາມສູງ (h) ທີ່ຂີດຈາກຈອມຫາພື້ນ. (ຄຳແນະນຳ: ເສັ້ນສູງຈະແບ່ງພື້ນອອກເປັນສອງສ່ວນເທົ່າກັນ ພາກລະ 3 cm)"}
@@ -267,7 +267,7 @@ export const unit9Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໄລຍະຫ່າງລະຫວ່າງສອງເມັດໃນລະບົບປະສານງານ (Distance in Coordinate Plane): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໄລຍະຫ່າງລະຫວ່າງສອງເມັດໃນລະບົບປະສານງານ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(2) ຈົ່ງຊອກຫາໄລຍະຫ່າງ d ຈາກເມັດເຄົ້າ "} <span className="math">{"O(0, 0)"}</span> {" ຫາເມັດ "} <span className="math">{"P(8, 6)"}</span> {" ຢູ່ເທິງໜ້າພຽງປະສານງານ."}

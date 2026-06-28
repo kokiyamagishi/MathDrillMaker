@@ -12,11 +12,11 @@ const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) 
 export const unit26Data: UnitData = {
   unitNumber: 26,
   unitTitle: "ພາກທີ VIII - ບົດທີ 26: ຮູບປີລາມິດ",
-  unitGoal: "ຮຽນຮູ້ ແລະ ນຳໃຊ້ສູດຄິດໄລ່ເນື້ອທີ່ຂ้าง, ເນື້ອທີ່ທັງໝົດ ແລະ ບໍລິມາດຂອງຮູບປີລາມິດ (Pyramid) ທີ່ມີພື້ນເປັນຮູບຕ່າງໆ",
+  unitGoal: "ຮຽນຮູ້ ແລະ ນຳໃຊ້ສູດຄິດໄລ່ເນື້ອທີ່ຂ้าง, ເນື້ອທີ່ທັງໝົດ ແລະ ບໍລິມາດຂອງຮູບປີລາມິດ ທີ່ມີພື້ນເປັນຮູບຕ່າງໆ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 139-144",
   subSections: [
     {
-      title: "1. ເນື້ອທີ່ຂ້າງ ແລະ ເນື້ອທີ່ທັງໝົດ (Lateral and Total Surface Area of Pyramids)",
+      title: "1. ເນື້ອທີ່ຂ້າງ ແລະ ເນື້ອທີ່ທັງໝົດ",
       keyPoint: {
         title: "ສູດເນື້ອທີ່ຂອງຮູບປີລາມິດ",
         content: (
@@ -39,24 +39,24 @@ export const unit26Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ຮູບສະແດງຮູບປີລາມິດສີ່ຫຼ່ຽມ"}</span>
-                <svg viewBox="0 0 200 120" style={{ width: "100%", maxWidth: "160px", height: "auto" }}>
+                <svg viewBox="0 0 400 240" style={{ width: "100%", maxWidth: "320px", height: "auto" }}>
                   {/* Base Quadrilateral */}
-                  <polygon points="50,90 150,90 120,70 30,70" fill="none" stroke="#2E7D32" strokeWidth="1.5" strokeDasharray="3,3" />
+                  <polygon points="50,90 150,90 120,70 30,70" fill="none" stroke="#2E7D32" strokeWidth="3" strokeDasharray="3,3" />
                   
                   {/* Apex S (100, 20) */}
                   {/* Vertical edges from apex */}
-                  <line x1="100" y1="20" x2="50" y2="90" stroke="#2E7D32" strokeWidth="2" />
-                  <line x1="100" y1="20" x2="150" y2="90" stroke="#2E7D32" strokeWidth="2" />
-                  <line x1="100" y1="20" x2="30" y2="70" stroke="#2E7D32" strokeWidth="1.5" strokeDasharray="3,3" />
-                  <line x1="100" y1="20" x2="120" y2="70" stroke="#2E7D32" strokeWidth="2" />
+                  <line x1="200" y1="40" x2="100" y2="180" stroke="#2E7D32" strokeWidth="4" />
+                  <line x1="200" y1="40" x2="300" y2="180" stroke="#2E7D32" strokeWidth="4" />
+                  <line x1="200" y1="40" x2="60" y2="140" stroke="#2E7D32" strokeWidth="3" strokeDasharray="3,3" />
+                  <line x1="200" y1="40" x2="240" y2="140" stroke="#2E7D32" strokeWidth="4" />
 
                   {/* Slant Height a (Apex to base midpoint (100, 90)) */}
-                  <line x1="100" y1="20" x2="100" y2="90" stroke="#E65100" strokeWidth="1.5" />
-                  <text x="104" y="60" fill="#E65100" fontSize="9" fontWeight="bold">{"a (ຊັນ)"}</text>
+                  <line x1="200" y1="40" x2="200" y2="180" stroke="#E65100" strokeWidth="3" />
+                  <text x="208" y="120" fill="#E65100" fontSize="18" fontWeight="bold">{"a (ຊັນ)"}</text>
                   
                   {/* Perpendicular Height h (Apex to base center (90, 80)) */}
-                  <line x1="100" y1="20" x2="90" y2="80" stroke="#1565C0" strokeWidth="1.5" strokeDasharray="3,3" />
-                  <text x="75" y="50" fill="#1565C0" fontSize="9" fontWeight="bold">{"h (ສູງ)"}</text>
+                  <line x1="200" y1="40" x2="180" y2="160" stroke="#1565C0" strokeWidth="3" strokeDasharray="3,3" />
+                  <text x="150" y="100" fill="#1565C0" fontSize="18" fontWeight="bold">{"h (ສູງ)"}</text>
                 </svg>
               </div>
             </div>
@@ -125,7 +125,7 @@ export const unit26Data: UnitData = {
       ]
     },
     {
-      title: "2. ບໍລິມາດຂອງຮູບປີລາມິດ (Volume of Pyramids)",
+      title: "2. ບໍລິມາດຂອງຮູບປີລາມິດ",
       keyPoint: {
         title: "ສູດບໍລິມາດທົ່ວໄປຂອງຮູບປີລາມິດ",
         content: (
@@ -216,7 +216,7 @@ export const unit26Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ເນື້ອທີ່ທັງໝົດຂອງຮູບປີລາມິດຈະຕຸລັດ (Total Surface Area of Square Pyramid): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ເນື້ອທີ່ທັງໝົດຂອງຮູບປີລາມິດຈະຕຸລັດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຮູບປີລາມິດຈະຕຸລັດສະໝໍ່າສະເໝີໜຶ່ງ ມີຂ້າງພື້ນຍາວ 10 cm ແລະ ມີຄວາມສູງ 12 cm (ເນື້ອທີ່ພື້ນແມ່ນ 100 cm², ຂ້າງຊັນ a = 13 cm). ຈົ່ງຊອກຫາເນື້ອທີ່ທັງໝົດຂອງຮູບປີລາມິດນີ້."}
@@ -234,7 +234,7 @@ export const unit26Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຊອກຫາຄວາມສູງຂອງປີລາມິດຈາກບໍລິມາດຕິດຄ່າຮາກ (Finding Pyramid Height with Radical values): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຊອກຫາຄວາມສູງຂອງປີລາມິດຈາກບໍລິມາດຕິດຄ່າຮາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ຮູບປີລາມິດສາມແຈໜຶ່ງມີເນື້ອທີ່ພື້ນແມ່ນ "} <span className="math">{"15√3 cm²"}</span> {" ແລະ ມີບໍລິມາດແມ່ນ "} <span className="math">{"45√3 cm³"}</span> {". ຈົ່ງຊອກຫາຄວາມສູງ h ຂອງປີລາມິດນີ້."}
@@ -255,7 +255,7 @@ export const unit26Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດບໍລິມາດຂອງປີລາມິດພື້ນຮູບສີ່ແຈສາກ (Rectangular Pyramid Volume): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດບໍລິມາດຂອງປີລາມິດພື້ນຮູບສີ່ແຈສາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຮູບປີລາມິດໜຶ່ງມີພື້ນເປັນຮູບສີ່ແຈສາກຂະໜາດ 5 cm × 6 cm (ເນື້ອທີ່ພື້ນ 30 cm²) ແລະ ມີຄວາມສູງ h = 10 cm. ຈົ່ງຄິດໄລ່ບໍລິມາດ V ຂອງປີລາມິດນີ້."}
@@ -273,7 +273,7 @@ export const unit26Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ເນື້ອທີ່ຂ້າງຂອງປີລາມິດຈາກສ່ວນທີ່ເຫຼືອ (Finding Lateral Area from Total): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ເນື້ອທີ່ຂ້າງຂອງປີລາມິດຈາກສ່ວນທີ່ເຫຼືອ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(2) ຖ້າເນື້ອທີ່ທັງໝົດຂອງຮູບປີລາມິດຈະຕຸລັດສະໝໍ່າສະເໝີໜຶ່ງແມ່ນ 360 cm² ແລະ ມີເນື້ອທີ່ພື້ນແມ່ນ 100 cm². ເນື້ອທີ່ຂ้าง ຂອງມັນແມ່ນຈັກ cm²?"}

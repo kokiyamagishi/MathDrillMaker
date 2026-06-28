@@ -16,7 +16,7 @@ export const unit8Data: UnitData = {
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 61-66",
   subSections: [
     {
-      title: "1. ສຳປະສິດ ແລະ ຈຸດຕັດແກນ y ຂອງຕຳລາຂັ້ນໜຶ່ງ (Slope and Y-Intercept of Linear Functions)",
+      title: "1. ສຳປະສິດ ແລະ ຈຸດຕັດແກນ y ຂອງຕຳລາຂັ້ນໜຶ່ງ",
       keyPoint: {
         title: "ຮູບແບບທົ່ວໄປຂອງຕຳລາຂັ້ນໜຶ່ງ",
         content: (
@@ -25,36 +25,36 @@ export const unit8Data: UnitData = {
               {"ຕຳລາຂັ້ນໜຶ່ງແມ່ນຕຳລາທີ່ມີຮູບແບບທົ່ວໄປແມ່ນ "} <span className="math" style={{ fontWeight: "bold" }}>{"y = ax + b"}</span> {" (ໃນນັ້ນ a ແລະ b ແມ່ນຈຳນວນຈິງ ແລະ a ≠ 0):"}
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
-              <div>{"• "} <span className="math" style={{ fontWeight: "bold" }}>{"a"}</span> {" ເອີ້ນວ່າ "} <span style={{ fontWeight: "bold" }}>{"ສຳປະສິດສະໂລບ (Slope)"}</span> {" ຫຼື ອັດຕາການປ່ຽນແປງ ທີ່ສະແດງເຖິງຄວາມຊັນຂອງເສັ້ນຊື່."}</div>
-              <div>{"• "} <span className="math" style={{ fontWeight: "bold" }}>{"b"}</span> {" ເອີ້ນວ່າ "} <span style={{ fontWeight: "bold" }}>{"ຈຸດຕັດແກນ y (y-intercept)"}</span> {" ເຊິ່ງແມ່ນຈຸດປະສານງານ (0, b) ທີ່ເສັ້ນຊື່ຕັດແກນຕັ້ງ."}</div>
+              <div>{"• "} <span className="math" style={{ fontWeight: "bold" }}>{"a"}</span> {" ເອີ້ນວ່າ "} <span style={{ fontWeight: "bold" }}>{"ສຳປະສິດສະໂລບ"}</span> {" ຫຼື ອັດຕາການປ່ຽນແປງ ທີ່ສະແດງເຖິງຄວາມຊັນຂອງເສັ້ນຊື່."}</div>
+              <div>{"• "} <span className="math" style={{ fontWeight: "bold" }}>{"b"}</span> {" ເອີ້ນວ່າ "} <span style={{ fontWeight: "bold" }}>{"ຈຸດຕັດແກນ y"}</span> {" ເຊິ່ງແມ່ນຈຸດປະສານງານ (0, b) ທີ່ເສັ້ນຊື່ຕັດແກນຕັ້ງ."}</div>
             </div>
 
             {/* Linear Function Graph SVG */}
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ເສັ້ນສະແດງຂອງຕຳລາ: y = 2x + 1"}</span>
-                <svg viewBox="0 0 200 120" style={{ width: "100%", maxWidth: "200px", height: "auto" }}>
+                <svg viewBox="0 0 400 240" style={{ width: "100%", maxWidth: "400px", height: "auto" }}>
                   {/* Grid background */}
-                  <path d="M 0,20 L 200,20 M 0,40 L 200,40 M 0,60 L 200,60 M 0,80 L 200,80 M 0,100 L 200,100" stroke="#E0E0E0" strokeWidth="0.5" />
-                  <path d="M 20,0 L 20,120 M 40,0 L 40,120 M 60,0 L 60,120 M 80,0 L 80,120 M 100,0 L 100,120 M 120,0 L 120,120 M 140,0 L 140,120 M 160,0 L 160,120 M 180,0 L 180,120" stroke="#E0E0E0" strokeWidth="0.5" />
+                  <path d="M 0,40 L 400,40 M 0,80 L 400,80 M 0,120 L 400,120 M 0,160 L 400,160 M 0,200 L 400,200" stroke="#E0E0E0" strokeWidth="1" />
+                  <path d="M 40,0 L 40,240 M 80,0 L 80,240 M 120,0 L 120,240 M 160,0 L 160,240 M 200,0 L 200,240 M 240,0 L 240,240 M 280,0 L 280,240 M 320,0 L 320,240 M 360,0 L 360,240" stroke="#E0E0E0" strokeWidth="1" />
                   
                   {/* Axes */}
-                  <line x1="10" y1="80" x2="190" y2="80" stroke="#37474F" strokeWidth="1.5" /> {/* x-axis */}
-                  <line x1="100" y1="10" x2="100" y2="110" stroke="#37474F" strokeWidth="1.5" /> {/* y-axis */}
-                  <text x="185" y="92" fill="#37474F" fontSize="8" fontWeight="bold">{"x"}</text>
-                  <text x="105" y="15" fill="#37474F" fontSize="8" fontWeight="bold">{"y"}</text>
+                  <line x1="20" y1="160" x2="380" y2="160" stroke="#37474F" strokeWidth="3" /> {/* x-axis */}
+                  <line x1="200" y1="20" x2="200" y2="220" stroke="#37474F" strokeWidth="3" /> {/* y-axis */}
+                  <text x="370" y="184" fill="#37474F" fontSize="16" fontWeight="bold">{"x"}</text>
+                  <text x="210" y="30" fill="#37474F" fontSize="16" fontWeight="bold">{"y"}</text>
 
                   {/* Line y = 2x + 1. Scale: Origin (100,80), 1 unit = 20px. Point (0,1) -> (100, 60), Point (1,3) -> (120, 20) */}
-                  <line x1="60" y1="120" x2="140" y2="-40" stroke="#E65100" strokeWidth="2.5" />
+                  <line x1="120" y1="240" x2="280" y2="-80" stroke="#E65100" strokeWidth="5" />
 
                   {/* Intercept Point (0, 1) */}
-                  <circle cx="100" cy="60" r="3.5" fill="#D32F2F" />
-                  <text x="106" y="63" fill="#D32F2F" fontSize="8" fontWeight="bold">{"(0, 1)"}</text>
+                  <circle cx="200" cy="120" r="7" fill="#D32F2F" />
+                  <text x="212" y="126" fill="#D32F2F" fontSize="16" fontWeight="bold">{"(0, 1)"}</text>
                   
                   {/* Slope indication */}
-                  <path d="M 100,60 L 120,60 L 120,20" fill="none" stroke="#2E7D32" strokeWidth="1.5" strokeDasharray="3,3" />
-                  <text x="110" y="70" fill="#2E7D32" fontSize="7">{"ໄປຂວາ 1"}</text>
-                  <text x="124" y="45" fill="#2E7D32" fontSize="7">{"ຂຶ້ນເທິງ 2"}</text>
+                  <path d="M 200,120 L 240,120 L 240,40" fill="none" stroke="#2E7D32" strokeWidth="3" strokeDasharray="3,3" />
+                  <text x="220" y="140" fill="#2E7D32" fontSize="14">{"ໄປຂວາ 1"}</text>
+                  <text x="248" y="90" fill="#2E7D32" fontSize="14">{"ຂຶ້ນເທິງ 2"}</text>
                 </svg>
               </div>
             </div>
@@ -123,7 +123,7 @@ export const unit8Data: UnitData = {
       ]
     },
     {
-      title: "2. ການແທນຄ່າ ແລະ ຈຸດຕັດແກນ x ຂອງເສັ້ນສະແດງ (Evaluating and Finding X-Intercepts of Linear Graphs)",
+      title: "2. ການແທນຄ່າ ແລະ ຈຸດຕັດແກນ x ຂອງເສັ້ນສະແດງ",
       keyPoint: {
         title: "ການຊອກຫາຈຸດພິເສດເທິງເສັ້ນສະແດງ",
         content: (
@@ -134,7 +134,7 @@ export const unit8Data: UnitData = {
             
             <div style={{ padding: "12px 16px", backgroundColor: "#FFFDE7", borderRadius: "10px", border: "1px solid #FFF59D", fontSize: "1.25rem", color: "#F57F17", display: "flex", flexDirection: "column", gap: "6px" }}>
               <div>{"• "} <span style={{ fontWeight: "bold" }}>{"ການຫາຄ່າ f(x):"}</span> {" ແທນຄ່າ x ທີ່ກຳນົດໃສ່ສົມຜົນ ເພື່ອຊອກຫາຄ່າຂອງ y."}</div>
-              <div>{"• "} <span style={{ fontWeight: "bold" }}>{"ຈຸດຕັດແກນ x (x-intercept):"}</span> {" ແມ່ນຈຸດທີ່ y = 0. ດັ່ງນັ້ນ ເຮົາແກ້ສົມຜົນ ax + b = 0 ➔ x = "} <Fraction num="-b" den="a" /> {" ຈະໄດ້ຈຸດຕັດແມ່ນ ("} <Fraction num="-b" den="a" /> {", 0)."}</div>
+              <div>{"• "} <span style={{ fontWeight: "bold" }}>{"ຈຸດຕັດແກນ x:"}</span> {" ແມ່ນຈຸດທີ່ y = 0. ດັ່ງນັ້ນ ເຮົາແກ້ສົມຜົນ ax + b = 0 ➔ x = "} <Fraction num="-b" den="a" /> {" ຈະໄດ້ຈຸດຕັດແມ່ນ ("} <Fraction num="-b" den="a" /> {", 0)."}</div>
               <div style={{ fontWeight: "bold", color: "#D84315" }}>{"• ຕົວຢ່າງ: ຕຳລາ y = 2x - 6 ➔ ໃຫ້ y = 0 ➔ 2x - 6 = 0 ➔ 2x = 6 ➔ x = 3."}</div>
             </div>
           </div>
@@ -210,7 +210,7 @@ export const unit8Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຊອກຫາສົມຜົນເສັ້ນຊື່ຜ່ານສອງເມັດ (Finding Line Equation Passing Through Two Points): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຊອກຫາສົມຜົນເສັ້ນຊື່ຜ່ານສອງເມັດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ເສັ້ນຊື່ເສັ້ນໜຶ່ງຜ່ານສອງເມັດ "} <span className="math">{"A(1, 5)"}</span> {" ແລະ "} <span className="math">{"B(3, 11)"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງສຳປະສິດສະໂລບ a ຂອງເສັ້ນຊື່ນີ້."}
@@ -227,7 +227,7 @@ export const unit8Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຊອກຫາເມັດຕັດກັນຂອງສອງເສັ້ນສະແດງ (Intersection of Two Linear Graphs): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຊອກຫາເມັດຕັດກັນຂອງສອງເສັ້ນສະແດງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ຈົ່ງຊອກຫາຄ່າປະສານງານ x ຂອງເມັດຕັດກັນລະຫວ່າງສອງເສັ້ນຊື່ "} <span className="math">{"y = 3x - 1"}</span> {" ແລະ "} <span className="math">{"y = x + 5"}</span> {". (ຄຳແນະນຳ: ໃຫ້ຕັ້ງສົມຜົນ 3x - 1 = x + 5 ແລ້ວແກ້ຫາ x)"}
@@ -247,7 +247,7 @@ export const unit8Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດບັນຫາການຕື່ມນ້ຳໃສ່ອ່າງ (Water Filling Real-world Application): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດບັນຫາການຕື່ມນ້ຳໃສ່ອ່າງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ໃນອ່າງນ້ຳມີນ້ຳຢູ່ແລ້ວ 20 ລີດ, ເມື່ອໄຂກ໊ອກຕື່ມນ້ຳໃສ່ຕື່ມໃນອັດຕາ 3 ລີດຕໍ່ນາທີ. ຂຽນເປັນຕຳລາແມ່ນ "} <span className="math">{"y = 3x + 20"}</span> {" (ລີດ) ໂດຍ x ແມ່ນເວລາເປັນນາທີ. ຖ້າໄຂກ໊ອກນ້ຳເປັນເວລາ 10 ນາທີ, ຈະມີນ້ຳທັງໝົດໃນອ່າງຈັກລີດ?"}
@@ -265,7 +265,7 @@ export const unit8Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ການຫາຄ່າຕຳລາຈາກເງື່ອນໄຂເລີ່ມຕົ້ນ (Function Evaluation from Coordinates): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ການຫາຄ່າຕຳລາຈາກເງື່ອນໄຂເລີ່ມຕົ້ນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(2) ໃຫ້ຕຳລາຂັ້ນໜຶ່ງ "} <span className="math">{"f(x) = ax + b"}</span> {" ໂດຍຮູ້ວ່າ "} <span className="math">{"f(0) = 4"}</span> {" ແລະ "} <span className="math">{"f(2) = 10"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ "} <span className="math">{"f(5)"}</span> {"."}

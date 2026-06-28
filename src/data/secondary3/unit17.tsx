@@ -12,11 +12,11 @@ const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) 
 export const unit17Data: UnitData = {
   unitNumber: 17,
   unitTitle: "ພាកທີ II - ບົດທີ 10: ຮູບສາມແຈ ແລະ ວົງມົນ",
-  unitGoal: "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈຄຸນລັກສະນະຂອງວົງມົນແນບນອກ (Circumscribed Circle) ແລະ ວົງມົນແນບໃນ (Inscribed Circle) ຂອງຮູບສາມແຈ",
+  unitGoal: "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈຄຸນລັກສະນະຂອງວົງມົນແນບນອກ ແລະ ວົງມົນແນບໃນ ຂອງຮູບສາມແຈ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 43-48",
   subSections: [
     {
-      title: "1. ວົງມົນແນບນອກຮູບສາມແຈ (Circumscribed Circles of Triangles)",
+      title: "1. ວົງມົນແນບນອກຮູບສາມແຈ",
       keyPoint: {
         title: "ໃຈກາງ ແລະ ຄຸນລັກສະນະວົງມົນແນບນອກ",
         content: (
@@ -34,29 +34,29 @@ export const unit17Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ຮູບສາມແຈສາກແນບໃນວົງມົນ (O ຢູ່ເຄິ່ງກາງຂ້າງກົງຊາກ)"}</span>
-                <svg viewBox="0 0 200 120" style={{ width: "100%", maxWidth: "180px", height: "auto" }}>
+                <svg viewBox="0 0 400 240" style={{ width: "100%", maxWidth: "360px", height: "auto" }}>
                   {/* Circle */}
-                  <circle cx="100" cy="60" r="45" fill="none" stroke="#2E7D32" strokeWidth="2" />
+                  <circle cx="200" cy="120" r="90" fill="none" stroke="#2E7D32" strokeWidth="4" />
                   
                   {/* Right Triangle inside */}
                   {/* Diameter: (55, 60) to (145, 60) -> length 90 */}
-                  <polygon points="55,60 145,60 100,20" fill="#E8F5E9" stroke="#1565C0" strokeWidth="1.5" />
+                  <polygon points="55,60 145,60 100,20" fill="#E8F5E9" stroke="#1565C0" strokeWidth="3" />
                   
                   {/* Right Angle Indicator at (100, 20) */}
-                  <path d="M 95,25 L 100,30 L 105,25" fill="none" stroke="#1565C0" strokeWidth="1" />
+                  <path d="M 190,50 L 200,60 L 210,50" fill="none" stroke="#1565C0" strokeWidth="2" />
 
                   {/* Center O */}
-                  <circle cx="100" cy="60" r="2.5" fill="#37474F" />
-                  <text x="100" y="72" fill="#37474F" fontSize="8" textAnchor="middle" fontWeight="bold">{"O"}</text>
+                  <circle cx="200" cy="120" r="5" fill="#37474F" />
+                  <text x="200" y="144" fill="#37474F" fontSize="16" textAnchor="middle" fontWeight="bold">{"O"}</text>
 
                   {/* Vertices */}
-                  <text x="45" y="63" fill="#37474F" fontSize="8">{"A"}</text>
-                  <text x="150" y="63" fill="#37474F" fontSize="8">{"B"}</text>
-                  <text x="100" y="14" fill="#37474F" fontSize="8">{"C (ມຸມສາກ)"}</text>
+                  <text x="90" y="126" fill="#37474F" fontSize="16">{"A"}</text>
+                  <text x="300" y="126" fill="#37474F" fontSize="16">{"B"}</text>
+                  <text x="200" y="28" fill="#37474F" fontSize="16">{"C (ມຸມສາກ)"}</text>
                   
                   {/* Radius indication */}
-                  <text x="75" y="55" fill="#E65100" fontSize="8" fontWeight="bold">{"R"}</text>
-                  <text x="120" y="55" fill="#E65100" fontSize="8" fontWeight="bold">{"R"}</text>
+                  <text x="150" y="110" fill="#E65100" fontSize="16" fontWeight="bold">{"R"}</text>
+                  <text x="240" y="110" fill="#E65100" fontSize="16" fontWeight="bold">{"R"}</text>
                 </svg>
               </div>
             </div>
@@ -125,7 +125,7 @@ export const unit17Data: UnitData = {
       ]
     },
     {
-      title: "2. ວົງມົນແນບໃນຮູບສາມແຈ (Inscribed Circles of Triangles)",
+      title: "2. ວົງມົນແນບໃນຮູບສາມແຈ",
       keyPoint: {
         title: "ໃຈກາງ ແລະ ການພົວພັນເນື້ອທີ່ກັບລັດສະໝີແນບໃນ (r)",
         content: (
@@ -217,7 +217,7 @@ export const unit17Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ລັດສະໝີວົງມົນແນບໃນຂອງຮູບສາມແຈສະເໝີ (Inradius of Equilateral Triangle): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ລັດສະໝີວົງມົນແນບໃນຂອງຮູບສາມແຈສະເໝີ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຮູບສາມແຈສະເໝີໜຶ່ງມີຄວາມຍາວຂ້າງແມ່ນ 6 cm ແລະ ມີເນື້ອທີ່ S = 9√3 cm². ລັດສະໝີ r ຂອງວົງມົນແນບໃນຂຽນໃນຮູບແບບ a√3. ຈົ່ງຊອກຫາຄ່າຂອງ a."}
@@ -234,7 +234,7 @@ export const unit17Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ລັດສະໝີວົງມົນແນບໃນຮູບສາມແຈສາກຂະໜາດນ້ອຍ (Inradius of standard Right Triangle): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ລັດສະໝີວົງມົນແນບໃນຮູບສາມແຈສາກຂະໜາດນ້ອຍ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ຮູບສາມແຈສາກໜຶ່ງມີສອງຂ້າງຕິດຊາກແມ່ນ 3 cm ແລະ 4 cm (ຂ້າງກົງຊາກຍາວ 5 cm, ເນື້ອທີ່ແມ່ນ 6 cm²). ຈົ່ງຄິດໄລ່ລັດສະໝີ r ຂອງວົງມົນແນບໃນຮູບສາມແຈສາກນີ້."}
@@ -255,7 +255,7 @@ export const unit17Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ຜົນບວກລັດສະໝີແນບນອກ ແລະ ແນບໃນ (Sum of Circumradius and Inradius): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ຜົນບວກລັດສະໝີແນບນອກ ແລະ ແນບໃນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຮູບສາມແຈສາກ ABC ມີມຸມ C = 90°, AC = 8 cm, BC = 6 cm. ຈົ່ງຄິດໄລ່ຜົນບວກຂອງລັດສະໝີວົງມົນແນບນອກ R ແລະ ລັດສະໝີວົງມົນແນບໃນ r (R + r) ຂອງຮູບສາມແຈນີ້."}
@@ -273,10 +273,10 @@ export const unit17Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ການຊອກຫາລວງຮອບຈາກເນື້ອທີ່ ແລະ ລັດສະໝີ (Finding Perimeter from Area and Inradius): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ການຊອກຫາລວງຮອບຈາກເນື້ອທີ່ ແລະ ລັດສະໝີ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(2) ຮູບສາມແຈໜຶ່ງມີເນື້ອທີ່ແມ່ນ 36 cm² ແລະ ມີລັດສະໝີວົງມົນແນບໃນ r = 3 cm. ຈົ່ງຄິດໄລ່ລວງຮອບ (Perimeter) ຂອງຮູບສາມແຈນີ້."}
+            {"(2) ຮູບສາມແຈໜຶ່ງມີເນື້ອທີ່ແມ່ນ 36 cm² ແລະ ມີລັດສະໝີວົງມົນແນບໃນ r = 3 cm. ຈົ່ງຄິດໄລ່ລວງຮອບ ຂອງຮູບສາມແຈນີ້."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ລວງຮອບແມ່ນ"}</span>

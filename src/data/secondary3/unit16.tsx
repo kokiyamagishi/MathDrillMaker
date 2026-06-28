@@ -17,7 +17,7 @@ export const unit16Data: UnitData = {
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 49-54",
   subSections: [
     {
-      title: "1. ມຸມໃນຂອງຮູບສາມແຈ ແລະ ມຸມນອກ (Interior and Exterior Angles of Triangles)",
+      title: "1. ມຸມໃນຂອງຮູບສາມແຈ ແລະ ມຸມນອກ",
       keyPoint: {
         title: "ຫຼັກການມຸມໃນ ແລະ ມຸມນອກຂອງສາມແຈ",
         content: (
@@ -35,19 +35,19 @@ export const unit16Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ຮູບສາມແຈ ແລະ ມຸມນອກຢູ່ຈອມ C"}</span>
-                <svg viewBox="0 0 200 100" style={{ width: "100%", maxWidth: "180px", height: "auto" }}>
+                <svg viewBox="0 0 400 200" style={{ width: "100%", maxWidth: "360px", height: "auto" }}>
                   {/* Triangle with extended base */}
-                  <polygon points="50,20 30,80 130,80" fill="#E8F5E9" stroke="#2E7D32" strokeWidth="2" />
-                  <line x1="130" y1="80" x2="180" y2="80" stroke="#2E7D32" strokeWidth="2" strokeDasharray="3,3" />
+                  <polygon points="50,20 30,80 130,80" fill="#E8F5E9" stroke="#2E7D32" strokeWidth="4" />
+                  <line x1="260" y1="160" x2="360" y2="160" stroke="#2E7D32" strokeWidth="4" strokeDasharray="3,3" />
 
                   {/* Vertices */}
-                  <text x="48" y="15" fill="#37474F" fontSize="8" fontWeight="bold">{"A (50°)"}</text>
-                  <text x="18" y="85" fill="#37474F" fontSize="8" fontWeight="bold">{"B (60°)"}</text>
-                  <text x="120" y="75" fill="#37474F" fontSize="8" fontWeight="bold">{"C"}</text>
+                  <text x="96" y="30" fill="#37474F" fontSize="16" fontWeight="bold">{"A (50°)"}</text>
+                  <text x="36" y="170" fill="#37474F" fontSize="16" fontWeight="bold">{"B (60°)"}</text>
+                  <text x="240" y="150" fill="#37474F" fontSize="16" fontWeight="bold">{"C"}</text>
 
                   {/* Exterior angle arc indicator */}
-                  <path d="M 130,80 A 15,15 0 0,0 143,70" fill="none" stroke="#E65100" strokeWidth="1.5" />
-                  <text x="145" y="75" fill="#E65100" fontSize="8" fontWeight="bold">{"ມຸມນອກ (110°)"}</text>
+                  <path d="M 260,160 A 30,30 0 0,0 286,140" fill="none" stroke="#E65100" strokeWidth="3" />
+                  <text x="290" y="150" fill="#E65100" fontSize="16" fontWeight="bold">{"ມຸມນອກ (110°)"}</text>
                 </svg>
               </div>
             </div>
@@ -116,7 +116,7 @@ export const unit16Data: UnitData = {
       ]
     },
     {
-      title: "2. ມຸມໃນຂອງຮູບສີ່ແຈຂະໜານ (Interior Angles of Parallelograms)",
+      title: "2. ມຸມໃນຂອງຮູບສີ່ແຈຂະໜານ",
       keyPoint: {
         title: "ຄຸນລັກສະນະມຸມຂອງຮູບສີ່ແຈຂະໜານ",
         content: (
@@ -135,15 +135,15 @@ export const unit16Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ຮູບສີ່ແຈຂະໜານ ABCD"}</span>
-                <svg viewBox="0 0 200 100" style={{ width: "100%", maxWidth: "180px", height: "auto" }}>
+                <svg viewBox="0 0 400 200" style={{ width: "100%", maxWidth: "360px", height: "auto" }}>
                   {/* Parallelogram shape */}
-                  <polygon points="50,20 170,20 150,80 30,80" fill="#FFE0B2" stroke="#E65100" strokeWidth="2" />
+                  <polygon points="50,20 170,20 150,80 30,80" fill="#FFE0B2" stroke="#E65100" strokeWidth="4" />
 
                   {/* Labels */}
-                  <text x="45" y="32" fill="#E65100" fontSize="9" fontWeight="bold">{"A (70°)"}</text>
-                  <text x="155" y="32" fill="#37474F" fontSize="9" fontWeight="bold">{"B (110°)"}</text>
-                  <text x="135" y="74" fill="#E65100" fontSize="9" fontWeight="bold">{"C (70°)"}</text>
-                  <text x="35" y="74" fill="#37474F" fontSize="9" fontWeight="bold">{"D (110°)"}</text>
+                  <text x="90" y="64" fill="#E65100" fontSize="18" fontWeight="bold">{"A (70°)"}</text>
+                  <text x="310" y="64" fill="#37474F" fontSize="18" fontWeight="bold">{"B (110°)"}</text>
+                  <text x="270" y="148" fill="#E65100" fontSize="18" fontWeight="bold">{"C (70°)"}</text>
+                  <text x="70" y="148" fill="#37474F" fontSize="18" fontWeight="bold">{"D (110°)"}</text>
                 </svg>
               </div>
             </div>
@@ -220,7 +220,7 @@ export const unit16Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ອັດຕາສ່ວນມຸມໃນຮູບສາມແຈ (Trigonometrical Angle Ratio inside Triangles): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ອັດຕາສ່ວນມຸມໃນຮູບສາມແຈ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ສາມມຸມໃນຂອງຮູບສາມແຈໜຶ່ງມີອັດຕາສ່ວນແມ່ນ "} <span className="math">{"2 : 3 : 5"}</span> {". ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມທີ່ໃຫຍ່ທີ່ສຸດໃນຮູບສາມແຈນີ້."}
@@ -238,7 +238,7 @@ export const unit16Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ສົມຜົນມຸມໃນຮູບສີ່ແຈຂະໜານ (Solving Angle Variable in Parallelograms): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ສົມຜົນມຸມໃນຮູບສີ່ແຈຂະໜານ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ໃນຮູບສີ່ແຈຂະໜານ ABCD, ມີສອງມຸມຖັດກັນແມ່ນ "} <span className="math">{"<Angle>A</Angle> = 2x + 10"}</span> {" ແລະ "} <span className="math">{"<Angle>B</Angle> = 3x - 20"}</span> {" (ອົງສາ). ຈົ່ງຊອກຫາຄ່າຂອງ x."}
@@ -258,7 +258,7 @@ export const unit16Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດມຸມໃນຮູບສາມແຈທ່ຽງ (Isosceles Triangle Exterior-Interior Challenge): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດມຸມໃນຮູບສາມແຈທ່ຽງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຮູບສາມແຈທ່ຽງ ABC ມີ AB = AC. ມຸມນອກຢູ່ຈອມ A ມີຂະໜາດແມ່ນ 110°. ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມຢູ່ພື້ນ <Angle>B</Angle>."}
@@ -276,7 +276,7 @@ export const unit16Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດຜົນບວກມຸມໃນຮູບສີ່ແຈທົ່ວໄປ (Quadrilateral Ratios Challenge): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດຜົນບວກມຸມໃນຮູບສີ່ແຈທົ່ວໄປ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(2) ສີ່ຄ່າມຸມໃນຂອງຮູບສີ່ແຈໜຶ່ງແມ່ນ x, 2x, 3x, 4x. ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມທີ່ໃຫຍ່ທີ່ສຸດ."}

@@ -12,17 +12,17 @@ const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) 
 export const unit22Data: UnitData = {
   unitNumber: 22,
   unitTitle: "ພາກທີ VI - ບົດທີ 22: ຄ່າສະເລ່ຍ ແລະ ຂອບເຂດ",
-  unitGoal: "ຮຽນຮູ້ ແລະ ນຳໃຊ້ວິທີຄິດໄລ່ຄ່າສະເລ່ຍ (Mean) ແລະ ຂອບເຂດ (Range) ຂອງຂໍ້ມູນດ່ຽວ ແລະ ຂໍ້ມູນແບ່ງຊັ້ນ",
+  unitGoal: "ຮຽນຮູ້ ແລະ ນຳໃຊ້ວິທີຄິດໄລ່ຄ່າສະເລ່ຍ ແລະ ຂອບເຂດ ຂອງຂໍ້ມູນດ່ຽວ ແລະ ຂໍ້ມູນແບ່ງຊັ້ນ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 109-114",
   subSections: [
     {
-      title: "1. ຄ່າສະເລ່ຍ ແລະ ຂອບເຂດຂອງຂໍ້ມູນດ່ຽວ (Mean and Range of Ungrouped Data)",
+      title: "1. ຄ່າສະເລ່ຍ ແລະ ຂອບເຂດຂອງຂໍ້ມູນດ່ຽວ",
       keyPoint: {
         title: "ນິຍາມ ແລະ ສູດຄິດໄລ່ຂໍ້ມູນດ່ຽວ",
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຄ່າສະເລ່ຍ (Mean) ສະແດງເຖິງຄ່າຈຸດໃຈກາງຂອງຂໍ້ມູນ, ສ່ວນຂອບເຂດ (Range) ສະແດງເຖິງການກະຈາຍຂອງຂໍ້ມູນ:"}
+              {"ຄ່າສະເລ່ຍ ສະແດງເຖິງຄ່າຈຸດໃຈກາງຂອງຂໍ້ມູນ, ສ່ວນຂອບເຂດ ສະແດງເຖິງການກະຈາຍຂອງຂໍ້ມູນ:"}
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
               <div style={{ display: "inline-flex", alignItems: "center" }}>
@@ -31,35 +31,35 @@ export const unit22Data: UnitData = {
                   {"x̄ = "} <Fraction num="ຜົນບວກຂອງຂໍ້ມູນທັງໝົດ" den="ຈຳນວນຂໍ້ມູນ N" />
                 </span>
               </div>
-              <div>{"• ຂອບເຂດ (Range): "} <span className="math" style={{ fontWeight: "bold" }}>{"Range = Max - Min"}</span> {" (ຄ່າຫຼາຍສຸດ - ຄ່ານ້ອຍສຸດ)"}</div>
+              <div>{"• ຂອບເຂດ: "} <span className="math" style={{ fontWeight: "bold" }}>{"Range = Max - Min"}</span> {" (ຄ່າຫຼາຍສຸດ - ຄ່ານ້ອຍສຸດ)"}</div>
             </div>
 
             {/* Mean balance scale SVG */}
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ແຜນວາດສະແດງຄວາມໝາຍຂອງຄ່າສະເລ່ຍ (ຈຸດສົມດຸນ)"}</span>
-                <svg viewBox="0 0 200 80" style={{ width: "100%", maxWidth: "180px", height: "auto" }}>
+                <svg viewBox="0 0 400 160" style={{ width: "100%", maxWidth: "360px", height: "auto" }}>
                   {/* Balance Scale lever */}
-                  <line x1="20" y1="50" x2="180" y2="50" stroke="#37474F" strokeWidth="3" />
+                  <line x1="40" y1="100" x2="360" y2="100" stroke="#37474F" strokeWidth="6" />
                   
                   {/* Pivot */}
                   <polygon points="100,50 90,75 110,75" fill="#2E7D32" />
-                  <text x="100" y="87" fill="#2E7D32" fontSize="8" textAnchor="middle" fontWeight="bold">{"ຄ່າສະເລ່ຍ (x̄ = 6)"}</text>
+                  <text x="200" y="174" fill="#2E7D32" fontSize="16" textAnchor="middle" fontWeight="bold">{"ຄ່າສະເລ່ຍ (x̄ = 6)"}</text>
 
                   {/* Weights */}
-                  {/* Left weight (2 and 4) */}
-                  <rect x="35" y="38" width="12" height="12" fill="#E65100" />
-                  <text x="41" y="47" fill="#FFFFFF" fontSize="7" textAnchor="middle">{"2"}</text>
+                  {/* Left weight */}
+                  <rect x="70" y="76" width="24" height="24" fill="#E65100" />
+                  <text x="82" y="94" fill="#FFFFFF" fontSize="14" textAnchor="middle">{"2"}</text>
 
-                  <rect x="65" y="38" width="12" height="12" fill="#E65100" />
-                  <text x="71" y="47" fill="#FFFFFF" fontSize="7" textAnchor="middle">{"4"}</text>
+                  <rect x="130" y="76" width="24" height="24" fill="#E65100" />
+                  <text x="142" y="94" fill="#FFFFFF" fontSize="14" textAnchor="middle">{"4"}</text>
 
-                  {/* Right weight (8 and 10) */}
-                  <rect x="125" y="38" width="12" height="12" fill="#E65100" />
-                  <text x="131" y="47" fill="#FFFFFF" fontSize="7" textAnchor="middle">{"8"}</text>
+                  {/* Right weight */}
+                  <rect x="250" y="76" width="24" height="24" fill="#E65100" />
+                  <text x="262" y="94" fill="#FFFFFF" fontSize="14" textAnchor="middle">{"8"}</text>
 
-                  <rect x="153" y="38" width="12" height="12" fill="#E65100" />
-                  <text x="159" y="47" fill="#FFFFFF" fontSize="7" textAnchor="middle">{"10"}</text>
+                  <rect x="306" y="76" width="24" height="24" fill="#E65100" />
+                  <text x="318" y="94" fill="#FFFFFF" fontSize="14" textAnchor="middle">{"10"}</text>
                 </svg>
               </div>
             </div>
@@ -94,7 +94,7 @@ export const unit22Data: UnitData = {
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ຂອບເຂດ (Range) ຂອງກຸ່ມຂໍ້ມູນນີ້ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຂອບເຂດ ຂອງກຸ່ມຂໍ້ມູນນີ້ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -118,7 +118,7 @@ export const unit22Data: UnitData = {
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຂອບເຂດ (Range) ຂອງກຸ່ມຂໍ້ມູນນີ້ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຂອບເຂດ ຂອງກຸ່ມຂໍ້ມູນນີ້ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -128,13 +128,13 @@ export const unit22Data: UnitData = {
       ]
     },
     {
-      title: "2. ຄ່າສະເລ່ຍຂອງຂໍ້ມູນແບ່ງຊັ້ນ (Mean of Grouped Data)",
+      title: "2. ຄ່າສະເລ່ຍຂອງຂໍ້ມູນແບ່ງຊັ້ນ",
       keyPoint: {
         title: "ເມັດເຄິ່ງກາງຊັ້ນ ແລະ ການຄິດໄລ່",
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ສຳລັບຂໍ້ມູນແບ່ງຊັ້ນ (Grouped Data), ເຮົາຕ້ອງຊອກຫາເມັດເຄິ່ງກາງຊັ້ນ (xᵢ) ຂອງແຕ່ລະຊັ້ນກ່ອນ:"}
+              {"ສຳລັບຂໍ້ມູນແບ່ງຊັ້ນ, ເຮົາຕ້ອງຊອກຫາເມັດເຄິ່ງກາງຊັ້ນ (xᵢ) ຂອງແຕ່ລະຊັ້ນກ່ອນ:"}
             </p>
             
             <div style={{ padding: "12px 16px", backgroundColor: "#FFFDE7", borderRadius: "10px", border: "1px solid #FFF59D", fontSize: "1.25rem", color: "#F57F17", display: "flex", flexDirection: "column", gap: "6.5px" }}>
@@ -225,7 +225,7 @@ export const unit22Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຫາຄ່າຂໍ້ມູນທີ່ຕ້ອງເພີ່ມເພື່ອໄດ້ຄ່າສະເລ່ຍຕາມເປົ້າໝາຍ (Finding Needed Value for Target Mean): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຫາຄ່າຂໍ້ມູນທີ່ຕ້ອງເພີ່ມເພື່ອໄດ້ຄ່າສະເລ່ຍຕາມເປົ້າໝາຍ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ທ້າວ ສົມສີ ເສັງ 4 ຄັ້ງຜ່ານມາໄດ້ຄະແນນ 7, 8, 9, 6. ເພື່ອໃຫ້ຄ່າສະເລ່ຍຂອງການເສັງ 5 ຄັ້ງເທົ່າກັບ 8 ພໍດີ, ໃນການເສັງຄັ້ງທີ 5 ລາວຈະຕ້ອງເສັງໃຫ້ໄດ້ຈັກຄະແນນ?"}
@@ -243,7 +243,7 @@ export const unit22Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຊອກຫາຄ່າສະເລ່ຍໃໝ່ຫຼັງຈາກເພີ່ມຂໍ້ມູນ (New Mean after Adding a Data Point): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຊອກຫາຄ່າສະເລ່ຍໃໝ່ຫຼັງຈາກເພີ່ມຂໍ້ມູນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ກຸ່ມຂໍ້ມູນໜຶ່ງມີ 10 ຄ່າ, ມີຄ່າສະເລ່ຍແມ່ນ 15. ຖ້າເຮົາເພີ່ມຂໍ້ມູນໃໝ່ທີ່ມີຄ່າແມ່ນ 37 ເຂົ້າໄປໃນກຸ່ມຂໍ້ມູນນີ້, ຄ່າສະເລ່ຍໃໝ່ຂອງກຸ່ມຂໍ້ມູນ (ທີ່ມີ 11 ຄ່າ) ຈະແມ່ນເທົ່າໃດ?"}
@@ -263,10 +263,10 @@ export const unit22Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດຂອບເຂດອຸນຫະພູມປະຈຳອາທິດ (Weekly Temperature Range Challenge): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດຂອບເຂດອຸນຫະພູມປະຈຳອາທິດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ອຸນຫະພູມທີ່ວັດແທກໄດ້ໃນ 7 ວັນຂອງອາທິດໜຶ່ງແມ່ນ 25, 27, 26, 29, 31, 28, 26 ອົງສາເຊ. ຈົ່ງຊອກຫາຂອບເຂດ (Range) ຂອງອຸນຫະພູມໃນອາທິດນີ້."}
+            {"ອຸນຫະພູມທີ່ວັດແທກໄດ້ໃນ 7 ວັນຂອງອາທິດໜຶ່ງແມ່ນ 25, 27, 26, 29, 31, 28, 26 ອົງສາເຊ. ຈົ່ງຊອກຫາຂອບເຂດ ຂອງອຸນຫະພູມໃນອາທິດນີ້."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຂອບເຂດແມ່ນ"}</span>
@@ -281,7 +281,7 @@ export const unit22Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ຄ່າສະເລ່ຍຂອງອຸນຫະພູມໃນອາທິດ (Weekly Mean Temperature Challenge): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ຄ່າສະເລ່ຍຂອງອຸນຫະພູມໃນອາທິດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(2) ໃຫ້ອຸນຫະພູມທີ່ວັດແທກໄດ້ໃນ 7 ວັນແມ່ນ: 24, 26, 25, 28, 30, 27, 22 ອົງສາເຊ. ຈົ່ງຄິດໄລ່ຫາຄ່າສະເລ່ຍ (x̄) ຂອງອຸນຫະພູມໃນອາທິດນີ້."}

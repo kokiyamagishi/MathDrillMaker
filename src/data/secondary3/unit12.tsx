@@ -12,11 +12,11 @@ const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) 
 export const unit12Data: UnitData = {
   unitNumber: 12,
   unitTitle: "ພາກທີ VIII - ບົດທີ 26: ຮູບທໍ່ກົມ ແລະ ຮູບຈວຍ",
-  unitGoal: "ຮຽນຮູ້ ແລະ ນຳໃຊ້ສູດຄິດໄລ່ເນື້ອທີ່ຂ້າງ, ເນື້ອທີ່ທັງໝົດ ແລະ ບໍລິມາດຂອງຮູບທໍ່ກົມ (Cylinder) ແລະ ຮູບຈວຍ (Cone)",
+  unitGoal: "ຮຽນຮູ້ ແລະ ນຳໃຊ້ສູດຄິດໄລ່ເນື້ອທີ່ຂ້າງ, ເນື້ອທີ່ທັງໝົດ ແລະ ບໍລິມາດຂອງຮູບທໍ່ກົມ ແລະ ຮູບຈວຍ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 127-132",
   subSections: [
     {
-      title: "1. ເນື້ອທີ່ ແລະ ບໍລິມາດຂອງຮູບທໍ່ກົມ (Surface Area and Volume of Cylinders)",
+      title: "1. ເນື້ອທີ່ ແລະ ບໍລິມາດຂອງຮູບທໍ່ກົມ",
       keyPoint: {
         title: "ສູດຄິດໄລ່ຮູບທໍ່ກົມ",
         content: (
@@ -35,24 +35,24 @@ export const unit12Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ຮູບສະແດງຮູບທໍ່ກົມ"}</span>
-                <svg viewBox="0 0 200 120" style={{ width: "100%", maxWidth: "160px", height: "auto" }}>
+                <svg viewBox="0 0 400 240" style={{ width: "100%", maxWidth: "320px", height: "auto" }}>
                   {/* Bottom Ellipse */}
-                  <ellipse cx="100" cy="95" rx="40" ry="15" fill="none" stroke="#2E7D32" strokeWidth="2" />
+                  <ellipse cx="200" cy="190" rx="40" ry="15" fill="none" stroke="#2E7D32" strokeWidth="4" />
                   
                   {/* Top Ellipse */}
-                  <ellipse cx="100" cy="25" rx="40" ry="15" fill="#E8F5E9" stroke="#2E7D32" strokeWidth="2" />
+                  <ellipse cx="200" cy="50" rx="40" ry="15" fill="#E8F5E9" stroke="#2E7D32" strokeWidth="4" />
                   
                   {/* Sides */}
-                  <line x1="60" y1="25" x2="60" y2="95" stroke="#2E7D32" strokeWidth="2" />
-                  <line x1="140" y1="25" x2="140" y2="95" stroke="#2E7D32" strokeWidth="2" />
+                  <line x1="120" y1="50" x2="120" y2="190" stroke="#2E7D32" strokeWidth="4" />
+                  <line x1="280" y1="50" x2="280" y2="190" stroke="#2E7D32" strokeWidth="4" />
 
                   {/* Height line */}
-                  <line x1="100" y1="25" x2="100" y2="95" stroke="#1565C0" strokeWidth="1.5" strokeDasharray="3,3" />
-                  <text x="105" y="65" fill="#1565C0" fontSize="9" fontWeight="bold">{"h (ສູງ)"}</text>
+                  <line x1="200" y1="50" x2="200" y2="190" stroke="#1565C0" strokeWidth="3" strokeDasharray="3,3" />
+                  <text x="210" y="130" fill="#1565C0" fontSize="18" fontWeight="bold">{"h (ສູງ)"}</text>
 
                   {/* Radius line */}
-                  <line x1="100" y1="25" x2="140" y2="25" stroke="#E65100" strokeWidth="1.5" />
-                  <text x="115" y="20" fill="#E65100" fontSize="9" fontWeight="bold">{"r"}</text>
+                  <line x1="200" y1="50" x2="280" y2="50" stroke="#E65100" strokeWidth="3" />
+                  <text x="230" y="40" fill="#E65100" fontSize="18" fontWeight="bold">{"r"}</text>
                 </svg>
               </div>
             </div>
@@ -121,9 +121,9 @@ export const unit12Data: UnitData = {
       ]
     },
     {
-      title: "2. ເນື້ອທີ່ ແລະ ບໍລິມາດຂອງຮູບຈວຍ (Surface Area and Volume of Cones)",
+      title: "2. ເນື້ອທີ່ ແລະ ບໍລິມາດຂອງຮູບຈວຍ",
       keyPoint: {
-        title: "ສູດຄິດໄລ່ຮູບຈວຍ ແລະ ການຊອກຂ້າງໃຫ້ຊັນ (slant height)",
+        title: "ສູດຄິດໄລ່ຮູບຈວຍ ແລະ ການຊອກຂ້າງໃຫ້ຊັນ",
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
@@ -213,10 +213,10 @@ export const unit12Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຊອກຫາເນື້ອທີ່ທັງໝົດຂອງຮູບທໍ່ກົມ (Total Surface Area of Cylinder): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຊອກຫາເນື້ອທີ່ທັງໝົດຂອງຮູບທໍ່ກົມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຮູບທໍ່ກົມໜຶ່ງມີລັດສະໝີພື້ນ "} <span className="math">{"r = 4 cm"}</span> {" ແລະ ຄວາມສູງ "} <span className="math">{"h = 10 cm"}</span> {". ຈົ່ງຄິດໄລ່ເນື້ອທີ່ທັງໝົດ (Total Surface Area) ຂອງຮູບທໍ່ກົມນີ້ (ເນື້ອທີ່ພື້ນ 2 ດ້ານ + ເນື້ອທີ່ຂ້າງ)."}
+              {"ຮູບທໍ່ກົມໜຶ່ງມີລັດສະໝີພື້ນ "} <span className="math">{"r = 4 cm"}</span> {" ແລະ ຄວາມສູງ "} <span className="math">{"h = 10 cm"}</span> {". ຈົ່ງຄິດໄລ່ເນື້ອທີ່ທັງໝົດ ຂອງຮູບທໍ່ກົມນີ້ (ເນື້ອທີ່ພື້ນ 2 ດ້ານ + ເນື້ອທີ່ຂ້າງ)."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ເນື້ອທີ່ທັງໝົດແມ່ນ"}</span>
@@ -231,7 +231,7 @@ export const unit12Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຊອກຫາຄວາມສູງຂອງຮູບຈວຍຈາກບໍລິມາດ (Finding Height of Cone from Volume): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຊອກຫາຄວາມສູງຂອງຮູບຈວຍຈາກບໍລິມາດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ຮູບຈວຍໜຶ່ງມີລັດສະໝີພື້ນ "} <span className="math">{"r = 6 cm"}</span> {" ແລະ ບໍລິມາດແມ່ນ "} <span className="math">{"96π cm³"}</span> {". ຈົ່ງຊອກຫາຄວາມສູງ h ຂອງຮູບຈວຍນີ້."}
@@ -252,7 +252,7 @@ export const unit12Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດບັນຫາຈອກນ້ຳຊົງກະບອກ (Cylindrical Water Glass): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດບັນຫາຈອກນ້ຳຊົງກະບອກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຈອກນ້ຳຮູບທໍ່ກົມມີລັດສະໝີພື້ນ 3 cm ແລະ ຄວາມສູງ 10 cm. ຖ້າເຮົາຕື່ມນ້ຳໃສ່ພຽງເຄິ່ງໜຶ່ງຂອງຄວາມສູງຈອກ, ຈະມີບໍລິມາດນ້ຳຈັກ cm³? (ຕອບຕິດຄ່າ π)"}
@@ -270,7 +270,7 @@ export const unit12Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດບັນຫາຈວຍຕອງນ້ຳ (Conical Funnel Volume): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດບັນຫາຈວຍຕອງນ້ຳ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(2) ຈວຍຕອງນ້ຳອັນໜຶ່ງມີລັດສະໝີພື້ນແມ່ນ 6 cm ແລະ ມີຄວາມສູງແມ່ນ 10 cm. ບໍລິມາດຂອງຈວຍຕອງນ້ຳນີ້ແມ່ນຈັກ cm³? (ຕອບຕິດຄ່າ π)"}

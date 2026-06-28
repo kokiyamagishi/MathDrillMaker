@@ -16,7 +16,7 @@ export const unit1Data: UnitData = {
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 1-6",
   subSections: [
     {
-      title: "1. ຄຸນລັກສະນະພື້ນຖານຂອງເລກກຳລັງ (Basic Properties of Exponents)",
+      title: "1. ຄຸນລັກສະນະພື້ນຖານຂອງເລກກຳລັງ",
       keyPoint: {
         title: "ນິຍາມ ແລະ ສູດຄຸນລັກສະນະເລກກຳລັງ",
         content: (
@@ -35,27 +35,27 @@ export const unit1Data: UnitData = {
             {/* Exponent Visualization SVG */}
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
-                <span>{"ແຜນວາດສະແດງການເພີ່ມຂຶ້ນແບບທະວີຄູນ (Exponential Growth): 2ⁿ"}</span>
-                <svg viewBox="0 0 200 90" style={{ width: "100%", maxWidth: "180px", height: "auto" }}>
+                <span>{"ແຜນວາດສະແດງການເພີ່ມຂຶ້ນແບບທະວີຄູນ: 2ⁿ"}</span>
+                <svg viewBox="0 0 400 180" style={{ width: "100%", maxWidth: "360px", height: "auto" }}>
                   {/* Grid Lines */}
-                  <line x1="20" y1="80" x2="180" y2="80" stroke="#37474F" strokeWidth="1.5" />
-                  <line x1="20" y1="10" x2="20" y2="80" stroke="#37474F" strokeWidth="1.5" />
+                  <line x1="40" y1="160" x2="360" y2="160" stroke="#37474F" strokeWidth="3" />
+                  <line x1="40" y1="20" x2="40" y2="160" stroke="#37474F" strokeWidth="3" />
                   
                   {/* Graph line representing 2^n */}
-                  <path d="M 20,78 Q 80,75 140,55 T 180,15" fill="none" stroke="#E65100" strokeWidth="2.5" />
+                  <path d="M 40,156 Q 160,150 280,110 T 360,30" fill="none" stroke="#E65100" strokeWidth="5" />
                   
                   {/* Nodes */}
-                  <circle cx="20" cy="78" r="3" fill="#D32F2F" />
-                  <text x="25" y="75" fill="#37474F" fontSize="8">{"2⁰ = 1"}</text>
+                  <circle cx="40" cy="156" r="6" fill="#D32F2F" />
+                  <text x="50" y="150" fill="#37474F" fontSize="16">{"2⁰ = 1"}</text>
 
-                  <circle cx="80" cy="73" r="3" fill="#D32F2F" />
-                  <text x="85" y="70" fill="#37474F" fontSize="8">{"2¹ = 2"}</text>
+                  <circle cx="160" cy="146" r="6" fill="#D32F2F" />
+                  <text x="170" y="140" fill="#37474F" fontSize="16">{"2¹ = 2"}</text>
 
-                  <circle cx="140" cy="55" r="3" fill="#D32F2F" />
-                  <text x="145" y="50" fill="#37474F" fontSize="8">{"2² = 4"}</text>
+                  <circle cx="280" cy="110" r="6" fill="#D32F2F" />
+                  <text x="290" y="100" fill="#37474F" fontSize="16">{"2² = 4"}</text>
 
-                  <circle cx="180" cy="15" r="3" fill="#D32F2F" />
-                  <text x="170" y="10" fill="#37474F" fontSize="8">{"2³ = 8"}</text>
+                  <circle cx="360" cy="30" r="6" fill="#D32F2F" />
+                  <text x="340" y="20" fill="#37474F" fontSize="16">{"2³ = 8"}</text>
                 </svg>
               </div>
             </div>
@@ -124,7 +124,7 @@ export const unit1Data: UnitData = {
       ]
     },
     {
-      title: "2. ເລກກຳລັງທີ່ມີຕົວຊີ້ບອກເປັນຈຳນວນຖ້ວນລົບ (Exponents with Negative Integer Indices)",
+      title: "2. ເລກກຳລັງທີ່ມີຕົວຊີ້ບອກເປັນຈຳນວນຖ້ວນລົບ",
       keyPoint: {
         title: "ເລກກຳລັງກຳລັງລົບ ແລະ ຫານ",
         content: (
@@ -221,7 +221,7 @@ export const unit1Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການເຮັດໃຫ້ສຳນວນເລກກຳລັງງ່າຍຂຶ້ນ (Simplification of Exponent): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການເຮັດໃຫ້ສຳນວນເລກກຳລັງງ່າຍຂຶ້ນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງເຮັດໃຫ້ສຳນວນຕໍ່ໄປນີ້ງ່າຍດາຍທີ່ສຸດ: "} 
@@ -242,7 +242,7 @@ export const unit1Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການແກ້ສົມຜົນເລກກຳລັງ (Solving Exponent Equation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການແກ້ສົມຜົນເລກກຳລັງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນເລກກຳລັງ: "} 
@@ -263,7 +263,7 @@ export const unit1Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດບັນຫາວິທະຍາສາດ (Scientific Notation - Large Number): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດບັນຫາວິທະຍາສາດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ໄລຍະຫ່າງຈາກໂລກຫາສະໝຸດແມ່ນປະມານ 150,000,000 ກິໂລແມັດ. ຈົ່ງຂຽນໄລຍະຫ່າງນີ້ໃນຮູບແບບມາດຕະຖານວິທະຍາສາດ (a × 10ⁿ) ໂດຍໃຫ້ຊອກຫາຄ່າຂອງ n."}
@@ -280,7 +280,7 @@ export const unit1Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດບັນຫາຈຸລິນຊີ (Scientific Notation - Small Number): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດບັນຫາຈຸລິນຊີ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(2) ຂະໜາດຂອງເຊື້ອແບັກທີເຣຍຊະນິດໜຶ່ງແມ່ນ 0.000004 ແມັດ. ຈົ່ງຂຽນຂະໜາດນີ້ໃນຮູບແບບມາດຕະຖານວິທະຍາສາດ (4 × 10ⁿ) ໂດຍໃຫ້ຊອກຫາຄ່າຂອງ n."}

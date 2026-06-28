@@ -16,7 +16,7 @@ export const unit13Data: UnitData = {
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 19-24",
   subSections: [
     {
-      title: "1. ນິຍາມ ແລະ ການຖອດຮາກຂັ້ນສອງພື້ນຖານ (Definition and Simplifying Square Roots)",
+      title: "1. ນິຍາມ ແລະ ການຖອດຮາກຂັ້ນສອງພື້ນຖານ",
       keyPoint: {
         title: "ຫຼັກການ ແລະ ຄຸນລັກສະນະຂອງຮາກ",
         content: (
@@ -34,16 +34,16 @@ export const unit13Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ຄວາມກ່ຽວຂ້ອງລະຫວ່າງເນື້ອທີ່ຮູບຈະຕຸລັດ ແລະ ຂ້າງ (√Area)"}</span>
-                <svg viewBox="0 0 200 100" style={{ width: "100%", maxWidth: "160px", height: "auto" }}>
+                <svg viewBox="0 0 400 200" style={{ width: "100%", maxWidth: "320px", height: "auto" }}>
                   {/* Square of Area 9 */}
-                  <rect x="30" y="20" width="50" height="50" fill="#E8F5E9" stroke="#2E7D32" strokeWidth="2" />
-                  <text x="55" y="48" fill="#2E7D32" fontSize="9" fontWeight="bold">{"ເນື້ອທີ່ = 9"}</text>
-                  <text x="55" y="82" fill="#37474F" fontSize="9">{"ຂ້າງ = √9 = 3"}</text>
+                  <rect x="60" y="40" width="100" height="100" fill="#E8F5E9" stroke="#2E7D32" strokeWidth="4" />
+                  <text x="110" y="96" fill="#2E7D32" fontSize="18" fontWeight="bold">{"ເນື້ອທີ່ = 9"}</text>
+                  <text x="110" y="164" fill="#37474F" fontSize="18">{"ຂ້າງ = √9 = 3"}</text>
 
                   {/* Square of Area 25 */}
-                  <rect x="120" y="20" width="50" height="50" fill="#FFE0B2" stroke="#E65100" strokeWidth="2" />
-                  <text x="145" y="48" fill="#E65100" fontSize="9" fontWeight="bold">{"ເນື້ອທີ່ = 25"}</text>
-                  <text x="145" y="82" fill="#37474F" fontSize="9">{"ຂ້າງ = √25 = 5"}</text>
+                  <rect x="240" y="40" width="100" height="100" fill="#FFE0B2" stroke="#E65100" strokeWidth="4" />
+                  <text x="290" y="96" fill="#E65100" fontSize="18" fontWeight="bold">{"ເນື້ອທີ່ = 25"}</text>
+                  <text x="290" y="164" fill="#37474F" fontSize="18">{"ຂ້າງ = √25 = 5"}</text>
                 </svg>
               </div>
             </div>
@@ -112,7 +112,7 @@ export const unit13Data: UnitData = {
       ]
     },
     {
-      title: "2. ການຄູນ, ການຫານ ແລະ ການເຮັດໃຫ້ສ່ວນບໍ່ມີຮາກ (Operations and Rationalizing Denominators)",
+      title: "2. ການຄູນ, ການຫານ ແລະ ການເຮັດໃຫ້ສ່ວນບໍ່ມີຮາກ",
       keyPoint: {
         title: "ການຄິດໄລ່ປະສົມ ແລະ ກຳຈັດຮາກຈາກຕົວຫານ",
         content: (
@@ -204,7 +204,7 @@ export const unit13Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຄິດໄລ່ ແລະ ເຮັດໃຫ້ງ່າຍດາຍ ສຳນວນຮາກປະສົມ (Simplifying Mixed Radical Expressions): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຄິດໄລ່ ແລະ ເຮັດໃຫ້ງ່າຍດາຍ ສຳນວນຮາກປະສົມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງເຮັດໃຫ້ສຳນວນຕໍ່ໄປນີ້ງ່າຍດາຍທີ່ສຸດ ຢູ່ໃນຮູບແບບ "} <span className="math">{"a√5"}</span> {": "}
@@ -223,7 +223,7 @@ export const unit13Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການແກ້ສົມຜົນຕິດຮາກຂັ້ນສອງ (Solving Radical Equation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການແກ້ສົມຜົນຕິດຮາກຂັ້ນສອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນຕິດຮາກຕໍ່ໄປນີ້: "}
@@ -244,7 +244,7 @@ export const unit13Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດເນື້ອທີ່ດິນຮູບຈະຕຸລັດ (Square Plot of Land Area Application): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດເນື້ອທີ່ດິນຮູບຈະຕຸລັດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ດິນຕອນໜຶ່ງເປັນຮູບຈະຕຸລັດ ມີເນື້ອທີ່ທັງໝົດແມ່ນ "} <span className="math">{"80 m²"}</span> {". ຄວາມຍາວຂ້າງຂອງດິນຕອນນີ້ຂຽນໃນຮູບແບບງ່າຍດາຍແມ່ນ "} <span className="math">{"a√b m"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ a + b."}
@@ -261,7 +261,7 @@ export const unit13Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ການຄັດຈາມເລກສ່ວນຕິດຮາກ (Rationalizing Compound Fraction): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ການຄັດຈາມເລກສ່ວນຕິດຮາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(2) ຈົ່ງກຳຈັດຮາກຈາກຕົວຫານຂອງສຳນວນ "} <span className="math"><Fraction num="√2" den="√3" /></span> {" ໃຫ້ຢູ່ໃນຮູບແບບ "} <span className="math"><Fraction num="√a" den="b" /></span> {". ຄ່າຂອງ a + b ແມ່ນເທົ່າໃດ?"}

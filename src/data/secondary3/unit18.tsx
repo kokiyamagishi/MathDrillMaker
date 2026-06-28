@@ -16,7 +16,7 @@ export const unit18Data: UnitData = {
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 85-90",
   subSections: [
     {
-      title: "1. ຮູບແບບສົມຜົນເສັ້ນຊື່ ແລະ ຄວາມຊັນ (Slope and General Form of a Line)",
+      title: "1. ຮູບແບບສົມຜົນເສັ້ນຊື່ ແລະ ຄວາມຊັນ",
       keyPoint: {
         title: "ຮູບແບບຕ່າງໆຂອງສົມຜົນເສັ້ນຊື່",
         content: (
@@ -26,27 +26,27 @@ export const unit18Data: UnitData = {
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
               <div>{"• ຮູບແບບທົ່ວໄປ: "} <span className="math" style={{ fontWeight: "bold" }}>{"ax + by + c = 0"}</span></div>
-              <div>{"• ຮູບແບບຄວາມຊັນ (Slope-Intercept Form): "} <span className="math" style={{ fontWeight: "bold" }}>{"y = mx + n"}</span></div>
-              <div style={{ paddingLeft: "16px" }}>{"- m ແມ່ນຄວາມຊັນ (Slope) ຂອງເສັ້ນຊື່."}</div>
-              <div style={{ paddingLeft: "16px" }}>{"- n ແມ່ນຈຸດຕັດແກນ y (y-intercept)."}</div>
+              <div>{"• ຮູບແບບຄວາມຊັນ: "} <span className="math" style={{ fontWeight: "bold" }}>{"y = mx + n"}</span></div>
+              <div style={{ paddingLeft: "16px" }}>{"- m ແມ່ນຄວາມຊັນ ຂອງເສັ້ນຊື່."}</div>
+              <div style={{ paddingLeft: "16px" }}>{"- n ແມ່ນຈຸດຕັດແກນ y."}</div>
             </div>
 
             {/* Coordinate Slopes SVG */}
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ທິດທາງຂອງຄວາມຊັນ m (ທິດທາງຂອງຄວາມຊັນ)"}</span>
-                <svg viewBox="0 0 200 100" style={{ width: "100%", maxWidth: "180px", height: "auto" }}>
+                <svg viewBox="0 0 400 200" style={{ width: "100%", maxWidth: "360px", height: "auto" }}>
                   {/* Axes */}
-                  <line x1="10" y1="50" x2="190" y2="50" stroke="#37474F" strokeWidth="1" />
-                  <line x1="100" y1="10" x2="100" y2="90" stroke="#37474F" strokeWidth="1" />
+                  <line x1="20" y1="100" x2="380" y2="100" stroke="#37474F" strokeWidth="2" />
+                  <line x1="200" y1="20" x2="200" y2="180" stroke="#37474F" strokeWidth="2" />
 
                   {/* Positive Slope m > 0 */}
-                  <line x1="30" y1="80" x2="90" y2="20" stroke="#4CAF50" strokeWidth="2" />
-                  <text x="35" y="30" fill="#4CAF50" fontSize="8" fontWeight="bold">{"m > 0 (ຂຶ້ນ)"}</text>
+                  <line x1="60" y1="160" x2="180" y2="40" stroke="#4CAF50" strokeWidth="4" />
+                  <text x="70" y="60" fill="#4CAF50" fontSize="16" fontWeight="bold">{"m > 0 (ຂຶ້ນ)"}</text>
 
                   {/* Negative Slope m < 0 */}
-                  <line x1="110" y1="20" x2="170" y2="80" stroke="#F44336" strokeWidth="2" />
-                  <text x="135" y="30" fill="#F44336" fontSize="8" fontWeight="bold">{"m < 0 (ລົງ)"}</text>
+                  <line x1="220" y1="40" x2="340" y2="160" stroke="#F44336" strokeWidth="4" />
+                  <text x="270" y="60" fill="#F44336" fontSize="16" fontWeight="bold">{"m < 0 (ລົງ)"}</text>
                 </svg>
               </div>
             </div>
@@ -115,7 +115,7 @@ export const unit18Data: UnitData = {
       ]
     },
     {
-      title: "2. ສົມຜົນເສັ້ນຊື່ຜ່ານໜຶ່ງເມັດ ແລະ ມີຄວາມຊັນ (Line Equation Given a Point and a Slope)",
+      title: "2. ສົມຜົນເສັ້ນຊື່ຜ່ານໜຶ່ງເມັດ ແລະ ມີຄວາມຊັນ",
       keyPoint: {
         title: "ການສ້າງສົມຜົນເສັ້ນຊື່",
         content: (
@@ -201,7 +201,7 @@ export const unit18Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຊອກຫາສົມຜົນເສັ້ນຊື່ຂະໜານ (Finding Parallel Line Equation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຊອກຫາສົມຜົນເສັ້ນຊື່ຂະໜານ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງຊອກຫາສົມຜົນເສັ້ນຊື່ທີ່ຜ່ານເມັດ "} <span className="math">{"P(3, 4)"}</span> {" ແລະ ຂະໜານກັບເສັ້ນຊື່ "} <span className="math">{"y = 2x - 1"}</span> {". ຂຽນໃນຮູບແບບ y = ax + b, ຄ່າຂອງ a + b ແມ່ນເທົ່າໃດ?"}
@@ -218,7 +218,7 @@ export const unit18Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຫາຄ່າຄົງຕົວ k ຈາກຄວາມຊັນ (Finding Constant k from Slope): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຫາຄ່າຄົງຕົວ k ຈາກຄວາມຊັນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ຈົ່ງຊອກຫາຄ່າຂອງ k ທີ່ເຮັດໃຫ້ເສັ້ນຊື່ "} <span className="math">{"kx - 2y + 6 = 0"}</span> {" ມີຄວາມຊັນເທົ່າກັບ 3."}
@@ -238,7 +238,7 @@ export const unit18Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ການຊອກຫາຈຸດຕັດແກນນອນ x (Finding X-Intercept of a Line): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ການຊອກຫາຈຸດຕັດແກນນອນ x: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຈົ່ງຊອກຫາຈຸດຕັດແກນ x (ຄ່າຂອງ x ເມື່ອ y = 0) ຂອງເສັ້ນຊື່ "} <span className="math">{"2x - 3y - 12 = 0"}</span> {"."}
@@ -255,7 +255,7 @@ export const unit18Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ຄວາມຊັນຂອງເສັ້ນຊື່ຜ່ານເມັດເຄົ້າ (Slope of Line Passing Through Origin): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ຄວາມຊັນຂອງເສັ້ນຊື່ຜ່ານເມັດເຄົ້າ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(2) ເສັ້ນຊື່ເສັ້ນໜຶ່ງຜ່ານເມັດເຄົ້າ "} <span className="math">{"O(0, 0)"}</span> {" ແລະ ເມັດ "} <span className="math">{"P(3, 6)"}</span> {". ຈົ່ງຊອກຫາຄ່າຄວາມຊັນ m ຂອງເສັ້ນຊື່ນີ້."}

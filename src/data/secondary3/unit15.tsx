@@ -16,13 +16,13 @@ export const unit15Data: UnitData = {
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 43-48",
   subSections: [
     {
-      title: "1. ການແກ້ສົມຜົນໂດຍການປ່ຽນຕົວປ່ຽນຊ່ວຍ (Solving Quadratic Equations by Substitution)",
+      title: "1. ການແກ້ສົມຜົນໂດຍການປ່ຽນຕົວປ່ຽນຊ່ວຍ",
       keyPoint: {
         title: "ສົມຜົນຂັ້ນສີ່ຄູ່ ແລະ ການແກ້ໄຂ",
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ສົມຜົນຂັ້ນສີ່ຄູ່ (Biquadratic Equation) ຮູບຮ່າງ ax⁴ + bx² + c = 0 ສາມາດແກ້ໄດ້ໂດຍການວາງຕົວປ່ຽນຊ່ວຍ t = x² (t ≥ 0):"}
+              {"ສົມຜົນຂັ້ນສີ່ຄູ່ ຮູບຮ່າງ ax⁴ + bx² + c = 0 ສາມາດແກ້ໄດ້ໂດຍການວາງຕົວປ່ຽນຊ່ວຍ t = x² (t ≥ 0):"}
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
               <div>{"• ຫຼັກການ: ປ່ຽນ ax⁴ + bx² + c = 0 ➔ at² + bt + c = 0"}</div>
@@ -39,22 +39,22 @@ export const unit15Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ແຜນວາດຂັ້ນຕອນການປ່ຽນຕົວປ່ຽນຊ່ວຍ"}</span>
-                <svg viewBox="0 0 200 80" style={{ width: "100%", maxWidth: "180px", height: "auto" }}>
+                <svg viewBox="0 0 400 160" style={{ width: "100%", maxWidth: "360px", height: "auto" }}>
                   {/* Step 1 */}
-                  <rect x="5" y="25" width="55" height="30" rx="4" fill="#4CAF50" />
-                  <text x="32" y="44" fill="#FFFFFF" fontSize="8" textAnchor="middle" fontWeight="bold">{"x⁴ - 5x² + 4 = 0"}</text>
+                  <rect x="10" y="50" width="110" height="60" rx="4" fill="#4CAF50" />
+                  <text x="64" y="88" fill="#FFFFFF" fontSize="16" textAnchor="middle" fontWeight="bold">{"x⁴ - 5x² + 4 = 0"}</text>
 
-                  <line x1="60" y1="40" x2="70" y2="40" stroke="#37474F" strokeWidth="1" />
+                  <line x1="120" y1="80" x2="140" y2="80" stroke="#37474F" strokeWidth="2" />
 
                   {/* Step 2 */}
-                  <rect x="72" y="25" width="55" height="30" rx="4" fill="#2196F3" />
-                  <text x="100" y="44" fill="#FFFFFF" fontSize="8" textAnchor="middle" fontWeight="bold">{"t² - 5t + 4 = 0"}</text>
+                  <rect x="144" y="50" width="110" height="60" rx="4" fill="#2196F3" />
+                  <text x="200" y="88" fill="#FFFFFF" fontSize="16" textAnchor="middle" fontWeight="bold">{"t² - 5t + 4 = 0"}</text>
 
-                  <line x1="127" y1="40" x2="137" y2="40" stroke="#37474F" strokeWidth="1" />
+                  <line x1="254" y1="80" x2="274" y2="80" stroke="#37474F" strokeWidth="2" />
 
                   {/* Step 3 */}
-                  <rect x="140" y="25" width="55" height="30" rx="4" fill="#FF9800" />
-                  <text x="167" y="44" fill="#FFFFFF" fontSize="8" textAnchor="middle" fontWeight="bold">{"x = ±1, ±2"}</text>
+                  <rect x="280" y="50" width="110" height="60" rx="4" fill="#FF9800" />
+                  <text x="334" y="88" fill="#FFFFFF" fontSize="16" textAnchor="middle" fontWeight="bold">{"x = ±1, ±2"}</text>
                 </svg>
               </div>
             </div>
@@ -123,7 +123,7 @@ export const unit15Data: UnitData = {
       ]
     },
     {
-      title: "2. ໂຈດບັນຫາເລຂາຄະນິດ ແລະ ຜົນຄູນຈຳນວນ (Geometric and Integer Product Word Problems)",
+      title: "2. ໂຈດບັນຫາເລຂາຄະນິດ ແລະ ຜົນຄູນຈຳນວນ",
       keyPoint: {
         title: "ການສ້າງ ແລະ ແກ້ສົມຜົນຈາກໂຈດ",
         content: (
@@ -210,7 +210,7 @@ export const unit15Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ຜົນບວກຄ່າສຳບູນຂອງທຸກໆໃຈຜົນ (Sum of Absolute Values of Roots): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ຜົນບວກຄ່າສຳບູນຂອງທຸກໆໃຈຜົນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງແກ້ສົມຜົນຂັ້ນສີ່ຄູ່ "} <span className="math">{"x⁴ - 13x² + 36 = 0"}</span> {". ແລ້ວຊອກຫາຜົນບວກຂອງຄ່າສຳບູນຂອງທຸກໆໃຈຜົນຈິງ (|x₁| + |x₂| + |x₃| + |x₄|)."}
@@ -227,7 +227,7 @@ export const unit15Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ໂຈດບັນຫາການຕັດມຸມເຮັດກ່ອງ (Box Volume Construction Application): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ໂຈດບັນຫາການຕັດມຸມເຮັດກ່ອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ແຜ່ນເຈ້ຍແຂງຮູບຈະຕຸລັດຖືກຕັດມຸມທັງສີ່ອອກເປັນຮູບຈະຕຸລັດນ້ອຍຂະໜາດ "} <span className="math">{"2 cm × 2 cm"}</span> {" ແລ້ວພັບຂຶ້ນເປັນກ່ອງບໍ່ມີຝາ. ຖ້າກ່ອງມີບໍລິມາດແມ່ນ "} <span className="math">{"72 cm³"}</span> {". ຈົ່ງຊອກຫາຄວາມຍາວຂ້າງຂອງເຈ້ຍແຂງເລີ່ມຕົ້ນ."}
@@ -265,7 +265,7 @@ export const unit15Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດບັນຫາທາງຍ່າງອ້ອມສະລອຍນ້ຳ (Uniform Path Width around a Pool): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດບັນຫາທາງຍ່າງອ້ອມສະລອຍນ້ຳ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(2) ສະລອຍນ້ຳຮູບສີ່ແຈສາກຂະໜາດ "} <span className="math">{"10 m × 5 m"}</span> {" ຖືກອ້ອມຮອບດ້ວຍທາງຍ່າງທີ່ມີຄວາມກວ້າງ x ແມັດເທົ່າກັນທຸກດ້ານ. ຖ້າເນື້ອທີ່ລວມທັງໝົດ (ສະນ້ຳ + ທາງຍ່າງ) ແມ່ນ "} <span className="math">{"84 m²"}</span> {". ຈົ່ງຊອກຫາຄວາມກວ້າງ x ຂອງທາງຍ່າງ."}

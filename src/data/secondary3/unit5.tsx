@@ -12,11 +12,11 @@ const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) 
 export const unit5Data: UnitData = {
   unitNumber: 5,
   unitTitle: "ພາກທີ I - ບົດທີ 5: ສົມຜົນຂັ້ນສອງ",
-  unitGoal: "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈວິທີການແກ້ສົມຜົນຂັ້ນສອງ (Quadratic Equations) ໂດຍວິທີການແຍກສ່ວນຄູນ ແລະ ການຖອນຮາກຂັ້ນສອງ",
+  unitGoal: "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈວິທີການແກ້ສົມຜົນຂັ້ນສອງ ໂດຍວິທີການແຍກສ່ວນຄູນ ແລະ ການຖອນຮາກຂັ້ນສອງ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 25-30",
   subSections: [
     {
-      title: "1. ການແກ້ສົມຜົນຂັ້ນສອງບໍ່ສົມບູນ (Solving Incomplete Quadratic Equations)",
+      title: "1. ການແກ້ສົມຜົນຂັ້ນສອງບໍ່ສົມບູນ",
       keyPoint: {
         title: "ສົມຜົນຮູບຮ່າງ ax² + c = 0 ແລະ ax² + bx = 0",
         content: (
@@ -35,20 +35,20 @@ export const unit5Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ຂັ້ນຕອນການແກ້ສົມຜົນ: x² - 25 = 0"}</span>
-                <svg viewBox="0 0 180 80" style={{ width: "100%", maxWidth: "160px", height: "auto" }}>
+                <svg viewBox="0 0 360 160" style={{ width: "100%", maxWidth: "320px", height: "auto" }}>
                   {/* Flow chart boxes */}
-                  <rect x="10" y="25" width="40" height="30" rx="5" fill="#4CAF50" />
-                  <text x="30" y="44" fill="#FFFFFF" fontSize="9" textAnchor="middle" fontWeight="bold">{"x² - 25 = 0"}</text>
+                  <rect x="20" y="50" width="80" height="60" rx="5" fill="#4CAF50" />
+                  <text x="60" y="88" fill="#FFFFFF" fontSize="18" textAnchor="middle" fontWeight="bold">{"x² - 25 = 0"}</text>
 
-                  <line x1="50" y1="40" x2="65" y2="40" stroke="#37474F" strokeWidth="1.5" markerEnd="url(#arrow)" />
+                  <line x1="100" y1="80" x2="130" y2="80" stroke="#37474F" strokeWidth="3" markerEnd="url(#arrow)" />
                   
-                  <rect x="70" y="25" width="40" height="30" rx="5" fill="#2196F3" />
-                  <text x="90" y="44" fill="#FFFFFF" fontSize="9" textAnchor="middle" fontWeight="bold">{"x² = 25"}</text>
+                  <rect x="140" y="50" width="80" height="60" rx="5" fill="#2196F3" />
+                  <text x="180" y="88" fill="#FFFFFF" fontSize="18" textAnchor="middle" fontWeight="bold">{"x² = 25"}</text>
 
-                  <line x1="110" y1="40" x2="125" y2="40" stroke="#37474F" strokeWidth="1.5" />
+                  <line x1="220" y1="80" x2="250" y2="80" stroke="#37474F" strokeWidth="3" />
 
-                  <rect x="130" y="25" width="40" height="30" rx="5" fill="#FF9800" />
-                  <text x="150" y="44" fill="#FFFFFF" fontSize="9" textAnchor="middle" fontWeight="bold">{"x = ±5"}</text>
+                  <rect x="260" y="50" width="80" height="60" rx="5" fill="#FF9800" />
+                  <text x="300" y="88" fill="#FFFFFF" fontSize="18" textAnchor="middle" fontWeight="bold">{"x = ±5"}</text>
                 </svg>
               </div>
             </div>
@@ -117,7 +117,7 @@ export const unit5Data: UnitData = {
       ]
     },
     {
-      title: "2. ການແກ້ສົມຜົນຂັ້ນສອງສົມບູນໂດຍການແຍກສ່ວນຄູນ (Solving Complete Quadratic Equations by Factoring)",
+      title: "2. ການແກ້ສົມຜົນຂັ້ນສອງສົມບູນໂດຍການແຍກສ່ວນຄູນ",
       keyPoint: {
         title: "ສົມຜົນຮູບຮ່າງ (x - p)(x - q) = 0",
         content: (
@@ -222,7 +222,7 @@ export const unit5Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການແກ້ສົມຜົນຮູບແບບກຳລັງສອງ (Solving Polynomial Identity Equation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການແກ້ສົມຜົນຮູບແບບກຳລັງສອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ຈົ່ງແກ້ສົມຜົນ "} <span className="math">{"(2x - 1)² = 9"}</span> {" ແລະ ຊອກຫາຄ່າຂອງໃຈຜົນທີ່ເປັນຈຳນວນບວກ. (ຖອນຮາກ 2x - 1 = ±3)"}
@@ -242,7 +242,7 @@ export const unit5Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດບັນຫາຂະໜາດເນື້ອທີ່ດິນ (Land Dimension Problem): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດບັນຫາຂະໜາດເນື້ອທີ່ດິນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ເນື້ອທີ່ຂອງດິນຕອນໜຶ່ງເປັນຮູບສີ່ແຈສາກແມ່ນ 40 m². ຖ້າຂ້າງຍາວ ຍາວກວ່າຂ້າງກວ້າງ 3 ແມັດ. ໃຫ້ x ແມ່ນຂ້າງກວ້າງ (ສົມຜົນ: x(x+3) = 40 ➔ x² + 3x - 40 = 0). ຈົ່ງຊອກຫາຂ້າງກວ້າງ x. (ຕອບເປັນຕົວເລກບວກ)"}

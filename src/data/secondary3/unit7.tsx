@@ -12,11 +12,11 @@ const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) 
 export const unit7Data: UnitData = {
   unitNumber: 7,
   unitTitle: "ພາກທີ III - ບົດທີ 11: ການພົວພັນ ແລະ ຕຳລາ",
-  unitGoal: "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈນິຍາມຂອງຕຳລາ (Functions), ການຊອກຫາຄ່າຂອງຕຳລາ f(x), ແລະ ການກຳນົດເຂດກຳນົດ (Domain) ຂອງຕຳລາເລກສ່ວນ",
+  unitGoal: "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈນິຍາມຂອງຕຳລາ, ການຊອກຫາຄ່າຂອງຕຳລາ f(x), ແລະ ການກຳນົດເຂດກຳນົດ ຂອງຕຳລາເລກສ່ວນ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 55-60",
   subSections: [
     {
-      title: "1. ນິຍາມ ແລະ ການຊອກຫາຄ່າຂອງຕຳລາ (Definition and Value of a Function)",
+      title: "1. ນິຍາມ ແລະ ການຊອກຫາຄ່າຂອງຕຳລາ",
       keyPoint: {
         title: "ຕຳລາ ແລະ ການແທນຄ່າຕົວປ່ຽນ x",
         content: (
@@ -34,25 +34,25 @@ export const unit7Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ແຜນວາດການພົວພັນແບບຕຳລາ: f(x) = 2x"}</span>
-                <svg viewBox="0 0 200 90" style={{ width: "100%", maxWidth: "160px", height: "auto" }}>
+                <svg viewBox="0 0 400 180" style={{ width: "100%", maxWidth: "320px", height: "auto" }}>
                   {/* Domain Ellipse */}
-                  <ellipse cx="50" cy="45" rx="25" ry="35" fill="none" stroke="#2E7D32" strokeWidth="1.5" />
-                  <text x="50" y="87" fill="#2E7D32" fontSize="8" textAnchor="middle" fontWeight="bold">{"ເຂດກຳນົດ X"}</text>
-                  <text x="50" y="25" fill="#37474F" fontSize="8" textAnchor="middle">{"1"}</text>
-                  <text x="50" y="45" fill="#37474F" fontSize="8" textAnchor="middle">{"2"}</text>
-                  <text x="50" y="65" fill="#37474F" fontSize="8" textAnchor="middle">{"3"}</text>
+                  <ellipse cx="100" cy="90" rx="25" ry="35" fill="none" stroke="#2E7D32" strokeWidth="3" />
+                  <text x="100" y="174" fill="#2E7D32" fontSize="16" textAnchor="middle" fontWeight="bold">{"ເຂດກຳນົດ X"}</text>
+                  <text x="100" y="50" fill="#37474F" fontSize="16" textAnchor="middle">{"1"}</text>
+                  <text x="100" y="90" fill="#37474F" fontSize="16" textAnchor="middle">{"2"}</text>
+                  <text x="100" y="130" fill="#37474F" fontSize="16" textAnchor="middle">{"3"}</text>
 
                   {/* Mapping Arrows */}
-                  <path d="M 60,25 L 130,25" fill="none" stroke="#E65100" strokeWidth="1" markerEnd="url(#arrow)" />
-                  <path d="M 60,45 L 130,45" fill="none" stroke="#E65100" strokeWidth="1" />
-                  <path d="M 60,65 L 130,65" fill="none" stroke="#E65100" strokeWidth="1" />
+                  <path d="M 120,50 L 260,50" fill="none" stroke="#E65100" strokeWidth="2" markerEnd="url(#arrow)" />
+                  <path d="M 120,90 L 260,90" fill="none" stroke="#E65100" strokeWidth="2" />
+                  <path d="M 120,130 L 260,130" fill="none" stroke="#E65100" strokeWidth="2" />
 
                   {/* Range Ellipse */}
-                  <ellipse cx="150" cy="45" rx="25" ry="35" fill="none" stroke="#1565C0" strokeWidth="1.5" />
-                  <text x="150" y="87" fill="#1565C0" fontSize="8" textAnchor="middle" fontWeight="bold">{"ເຂດຄ່າ Y"}</text>
-                  <text x="150" y="25" fill="#37474F" fontSize="8" textAnchor="middle">{"2"}</text>
-                  <text x="150" y="45" fill="#37474F" fontSize="8" textAnchor="middle">{"4"}</text>
-                  <text x="150" y="65" fill="#37474F" fontSize="8" textAnchor="middle">{"6"}</text>
+                  <ellipse cx="300" cy="90" rx="25" ry="35" fill="none" stroke="#1565C0" strokeWidth="3" />
+                  <text x="300" y="174" fill="#1565C0" fontSize="16" textAnchor="middle" fontWeight="bold">{"ເຂດຄ່າ Y"}</text>
+                  <text x="300" y="50" fill="#37474F" fontSize="16" textAnchor="middle">{"2"}</text>
+                  <text x="300" y="90" fill="#37474F" fontSize="16" textAnchor="middle">{"4"}</text>
+                  <text x="300" y="130" fill="#37474F" fontSize="16" textAnchor="middle">{"6"}</text>
                 </svg>
               </div>
             </div>
@@ -121,13 +121,13 @@ export const unit7Data: UnitData = {
       ]
     },
     {
-      title: "2. ເຂດກຳນົດຂອງຕຳລາເລກສ່ວນ (Domain of Rational Functions)",
+      title: "2. ເຂດກຳນົດຂອງຕຳລາເລກສ່ວນ",
       keyPoint: {
         title: "ເງື່ອນໄຂພື້ນຖານຂອງເຂດກຳນົດ",
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ເຂດກຳນົດ (Domain) ແມ່ນທຸກຄ່າຂອງ x ທີ່ເຮັດໃຫ້ຕຳລາມີຄວາມໝາຍ. ສຳລັບຕຳລາເລກສ່ວນ ຕົວສ່ວນຕ້ອງຕ່າງຈາກສູນສະເໝີ:"}
+              {"ເຂດກຳນົດ ແມ່ນທຸກຄ່າຂອງ x ທີ່ເຮັດໃຫ້ຕຳລາມີຄວາມໝາຍ. ສຳລັບຕຳລາເລກສ່ວນ ຕົວສ່ວນຕ້ອງຕ່າງຈາກສູນສະເໝີ:"}
             </p>
             
             <div style={{ padding: "12px 16px", backgroundColor: "#FFFDE7", borderRadius: "10px", border: "1px solid #FFF59D", fontSize: "1.25rem", color: "#F57F17", display: "flex", flexDirection: "column", gap: "6px" }}>
@@ -184,7 +184,7 @@ export const unit7Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຄຳຖາມທີ 2: ຈົ່ງຊອກຫາຄ່າຫຼາຍສຸດໃນເຂດຄ່າ (Range) ຂອງຕຳລາລຸ່ມນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
+                {"ຄຳຖາມທີ 2: ຈົ່ງຊອກຫາຄ່າຫຼາຍສຸດໃນເຂດຄ່າ ຂອງຕຳລາລຸ່ມນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
@@ -214,7 +214,7 @@ export const unit7Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຊອກຫາສຳປະສິດຈາກຄ່າຕຳລາ (Finding Coefficient from Function Value): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຊອກຫາສຳປະສິດຈາກຄ່າຕຳລາ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ໃຫ້ຕຳລາ "} <span className="math">{"f(x) = ax + 3"}</span> {". ຖ້າຫາກ f(2) = 11, ຈົ່ງຊອກຫາຄ່າຂອງສຳປະສິດ a."}
@@ -272,7 +272,7 @@ export const unit7Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດບັນຫາຕຳລາຊ້ອນຕຳລາ (Composite Function Value): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດບັນຫາຕຳລາຊ້ອນຕຳລາ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(2) ໃຫ້ສອງຕຳລາ "} <span className="math">{"f(x) = 2x"}</span> {" ແລະ "} <span className="math">{"g(x) = x + 3"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ "} <span className="math">{"g(f(4))"}</span> {" (ຄຳແນະນຳ: ຊອກຫາ f(4) ກ່ອນ ແລ້ວຈຶ່ງແທນຄ່າໃສ່ g)"}

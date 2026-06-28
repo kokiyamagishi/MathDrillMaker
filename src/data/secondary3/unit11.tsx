@@ -16,7 +16,7 @@ export const unit11Data: UnitData = {
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 121-126",
   subSections: [
     {
-      title: "1. ອັດຕາສ່ວນໄຕມຸມມິຕິພື້ນຖານ (Basic Trigonometric Ratios)",
+      title: "1. ອັດຕາສ່ວນໄຕມຸມມິຕິພື້ນຖານ",
       keyPoint: {
         title: "ນິຍາມຂອງ sin, cos, tan ໃນຮູບສາມແຈສາກ",
         content: (
@@ -26,19 +26,19 @@ export const unit11Data: UnitData = {
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
               <div style={{ display: "inline-flex", alignItems: "center" }}>
-                {"• ໄຊ (sine): "}
+                {"• ໄຊ: "}
                 <span className="math" style={{ marginLeft: "4px" }}>
                   {"sin(A) = "} <Fraction num="ຂ້າງກົງມຸມ" den="ຂ້າງກົງຊາກ" />
                 </span>
               </div>
               <div style={{ display: "inline-flex", alignItems: "center" }}>
-                {"• ໂກໄຊ (cosine): "}
+                {"• ໂກໄຊ: "}
                 <span className="math" style={{ marginLeft: "4px" }}>
                   {"cos(A) = "} <Fraction num="້າງຕິດມຸມ" den="້າງກົງຊາກ" />
                 </span>
               </div>
               <div style={{ display: "inline-flex", alignItems: "center" }}>
-                {"• ຕັງຊັງ (tangent): "}
+                {"• ຕັງຊັງ: "}
                 <span className="math" style={{ marginLeft: "4px" }}>
                   {"tan(A) = "} <Fraction num="້າງກົງມຸມ" den="້າງຕິດມຸມ" />
                 </span>
@@ -49,21 +49,21 @@ export const unit11Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ຮູບສາມແຈສາກ ແລະ ຂ້າງຕ່າງໆທຽບໃສ່ມຸມ A"}</span>
-                <svg viewBox="0 0 200 120" style={{ width: "100%", maxWidth: "200px", height: "auto" }}>
+                <svg viewBox="0 0 400 240" style={{ width: "100%", maxWidth: "400px", height: "auto" }}>
                   {/* Right Triangle */}
-                  <polygon points="40,20 40,100 160,100" fill="#E8F5E9" stroke="#2E7D32" strokeWidth="2" />
+                  <polygon points="40,20 40,100 160,100" fill="#E8F5E9" stroke="#2E7D32" strokeWidth="4" />
                   
                   {/* Right Angle Square */}
-                  <rect x="40" y="90" width="10" height="10" fill="none" stroke="#2E7D32" strokeWidth="1.5" />
+                  <rect x="80" y="180" width="20" height="20" fill="none" stroke="#2E7D32" strokeWidth="3" />
                   
                   {/* Labels */}
-                  <text x="50" y="94" fill="#E65100" fontSize="10" fontWeight="bold">{"A"}</text>
-                  <text x="30" y="16" fill="#37474F" fontSize="10">{"B"}</text>
-                  <text x="165" y="105" fill="#37474F" fontSize="10">{"C (ມຸມສາກ)"}</text>
+                  <text x="100" y="188" fill="#E65100" fontSize="20" fontWeight="bold">{"A"}</text>
+                  <text x="60" y="32" fill="#37474F" fontSize="20">{"B"}</text>
+                  <text x="330" y="210" fill="#37474F" fontSize="20">{"C (ມຸມສາກ)"}</text>
 
-                  <text x="12" y="65" fill="#37474F" fontSize="9" fontWeight="bold">{"ກົງມຸມ (3)"}</text>
-                  <text x="90" y="112" fill="#37474F" fontSize="9" fontWeight="bold">{"ຕິດມຸມ (4)"}</text>
-                  <text x="110" y="55" fill="#1565C0" fontSize="9" fontWeight="bold">{"ກົງຊາກ (5)"}</text>
+                  <text x="24" y="130" fill="#37474F" fontSize="18" fontWeight="bold">{"ກົງມຸມ (3)"}</text>
+                  <text x="180" y="224" fill="#37474F" fontSize="18" fontWeight="bold">{"ຕິດມຸມ (4)"}</text>
+                  <text x="220" y="110" fill="#1565C0" fontSize="18" fontWeight="bold">{"ກົງຊາກ (5)"}</text>
                 </svg>
               </div>
             </div>
@@ -132,7 +132,7 @@ export const unit11Data: UnitData = {
       ]
     },
     {
-      title: "2. ຄ່າຂອງໄຕມຸມມິຕິສຳລັບມຸມພິເສດ (Trigonometric Values for Special Angles)",
+      title: "2. ຄ່າຂອງໄຕມຸມມິຕິສຳລັບມຸມພິເສດ",
       keyPoint: {
         title: "ຕາຕະລາງຄ່າໄຕມຸມມິຕິພິເສດ",
         content: (
@@ -222,7 +222,7 @@ export const unit11Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການພົວພັນລະຫວ່າງອັດຕາສ່ວນໄຕມຸມມິຕິ (Finding Trig Relations): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການພົວພັນລະຫວ່າງອັດຕາສ່ວນໄຕມຸມມິຕິ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ໃນຮູບສາມແຈສາກໜຶ່ງ, ຖ້າຮູ້ວ່າ "} <span className="math">{"sin(A) = "} <Fraction num="4" den="5" /></span> {". ຈົ່ງຊອກຫາຄ່າຂອງ "} <span className="math">{"tan(A)"}</span> {" ໃນຮູບແບບເລກສ່ວນ."}
@@ -239,7 +239,7 @@ export const unit11Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ໂຈດບັນຫາຄວາມສູງຂອງຕົ້ນໄມ້ (Angle of Elevation Application): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ໂຈດບັນຫາຄວາມສູງຂອງຕົ້ນໄມ້: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ຈາກຈຸດໜຶ່ງເທິງພື້ນດິນທີ່ຫ່າງຈາກກົກຕົ້ນໄມ້ "} <span className="math">{"10 m"}</span> {", ມຸມເງີຍໄປຫາປາຍຕົ້ນໄມ້ແມ່ນ "} <span className="math">{"45°"}</span> {". ຈົ່ງຊອກຫາຄວາມສູງຂອງຕົ້ນໄມ້ນີ້."}
@@ -260,7 +260,7 @@ export const unit11Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດບັນຫາວ່າວລອຍຟ້າ (Kite String Height Calculation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດບັນຫາວ່າວລອຍຟ້າ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ວ່າວຕິດເຊືອກຍາວ "} <span className="math">{"20 m"}</span> {" ປິວຂຶ້ນຟ້າ. ເສັ້ນເຊືອກເຮັດມຸມ "} <span className="math">{"30°"}</span> {" ກັບໜ້າດິນ. ຈົ່ງຊອກຫາຄວາມສູງຂອງວ່າວຈາກໜ້າດິນ."}
@@ -278,7 +278,7 @@ export const unit11Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ການຊອກຫາຂ້າງກົງຊາກຈາກຄ່າ cos (Finding Hypotenuse from Cosine Value): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ການຊອກຫາຂ້າງກົງຊາກຈາກຄ່າ cos: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(2) ໃນຮູບສາມແຈ ABC ສາກຢູ່ C, ຖ້າຫາກ "} <span className="math">{"cos(B) = "} <Fraction num="12" den="13" /></span> {" ແລະ ຂ້າງຕິດມຸມ B ຍາວ "} <span className="math">{"24 cm"}</span> {". ຈົ່ງຊອກຫາຄວາມຍາວຂອງຂ້າງກົງຊາກ AB."}

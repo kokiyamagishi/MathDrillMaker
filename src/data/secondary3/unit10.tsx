@@ -13,17 +13,17 @@ const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) 
 export const unit10Data: UnitData = {
   unitNumber: 10,
   unitTitle: "ພາກທີ VII - ບົດທີ 24: ມຸມແນບວົງມົນ ແລະ ມຸມໃຈກາງ",
-  unitGoal: "ຮຽນຮູ້ ແລະ ນຳໃຊ້ຄຸນລັກສະນະຂອງມຸມແນບວົງມົນ (Inscribed Angle) ແລະ ມຸມໃຈກາງ (Central Angle) ຂອງວົງມົນໃນການຊອກຫາຂະໜາດຂອງມຸມ",
+  unitGoal: "ຮຽນຮູ້ ແລະ ນຳໃຊ້ຄຸນລັກສະນະຂອງມຸມແນບວົງມົນ ແລະ ມຸມໃຈກາງ ຂອງວົງມົນໃນການຊອກຫາຂະໜາດຂອງມຸມ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 115-120",
   subSections: [
     {
-      title: "1. ຄວາມສຳພັນລະຫວ່າງມຸມແນບວົງມົນ ແລະ ມຸມໃຈກາງ (Relationship Between Inscribed and Central Angles)",
+      title: "1. ຄວາມສຳພັນລະຫວ່າງມຸມແນບວົງມົນ ແລະ ມຸມໃຈກາງ",
       keyPoint: {
         title: "ຫຼັກການພື້ນຖານຂອງມຸມໃນວົງມົນ",
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ມຸມໃຈກາງແມ່ນມຸມທີ່ມີຈອມຢູ່ໃຈກາງຂອງວົງມົນ, ສ່ວນມຸມແນບວົງມົນແມ່ນມຸມທີ່ມີຈອມຢູ່ເທິງເສັ້ນຮອບວົງມົນ. ເມື່ອທັງສອງມຸມຮັບອາກ (Arc) ດຽວກັນ:"}
+              {"ມຸມໃຈກາງແມ່ນມຸມທີ່ມີຈອມຢູ່ໃຈກາງຂອງວົງມົນ, ສ່ວນມຸມແນບວົງມົນແມ່ນມຸມທີ່ມີຈອມຢູ່ເທິງເສັ້ນຮອບວົງມົນ. ເມື່ອທັງສອງມຸມຮັບອາກ ດຽວກັນ:"}
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
               <div style={{ fontWeight: "bold", fontSize: "1.375rem" }}>{"• ຫຼັກການ: ມຸມໃຈກາງ = 2 × ມຸມແນບວົງມົນ"}</div>
@@ -35,29 +35,29 @@ export const unit10Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ແຜນວາດສະແດງມຸມໃຈກາງ (2θ) ແລະ ມຸມແນບວົງມົນ (θ)"}</span>
-                <svg viewBox="0 0 200 120" style={{ width: "100%", maxWidth: "200px", height: "auto" }}>
+                <svg viewBox="0 0 400 240" style={{ width: "100%", maxWidth: "400px", height: "auto" }}>
                   {/* Circle */}
-                  <circle cx="100" cy="60" r="45" fill="none" stroke="#2E7D32" strokeWidth="2" />
+                  <circle cx="200" cy="120" r="90" fill="none" stroke="#2E7D32" strokeWidth="4" />
                   
                   {/* Center O */}
-                  <circle cx="100" cy="60" r="2.5" fill="#37474F" />
-                  <text x="96" y="54" fill="#37474F" fontSize="8" fontWeight="bold">{"O (ໃຈກາງ)"}</text>
+                  <circle cx="200" cy="120" r="5" fill="#37474F" />
+                  <text x="192" y="108" fill="#37474F" fontSize="16" fontWeight="bold">{"O (ໃຈກາງ)"}</text>
                   
                   {/* Arc points A and C */}
                   {/* A = (100 - 45*cos(30), 60 + 45*sin(30)) = (61, 82) */}
                   {/* C = (100 + 45*cos(30), 60 + 45*sin(30)) = (139, 82) */}
                   {/* B = (100, 15) */}
-                  <polygon points="100,60 61,82 139,82" fill="none" stroke="#1565C0" strokeWidth="1" />
-                  <polygon points="100,15 61,82 139,82" fill="none" stroke="#E65100" strokeWidth="1.5" />
+                  <polygon points="100,60 61,82 139,82" fill="none" stroke="#1565C0" strokeWidth="2" />
+                  <polygon points="100,15 61,82 139,82" fill="none" stroke="#E65100" strokeWidth="3" />
 
                   {/* Vertices text */}
-                  <text x="96" y="10" fill="#37474F" fontSize="8">{"B"}</text>
-                  <text x="50" y="87" fill="#37474F" fontSize="8">{"A"}</text>
-                  <text x="143" y="87" fill="#37474F" fontSize="8">{"C"}</text>
+                  <text x="192" y="20" fill="#37474F" fontSize="16">{"B"}</text>
+                  <text x="100" y="174" fill="#37474F" fontSize="16">{"A"}</text>
+                  <text x="286" y="174" fill="#37474F" fontSize="16">{"C"}</text>
                   
                   {/* Angle indicators */}
-                  <text x="98" y="27" fill="#E65100" fontSize="8" fontWeight="bold">{"θ"}</text>
-                  <text x="96" y="73" fill="#1565C0" fontSize="8" fontWeight="bold">{"2θ"}</text>
+                  <text x="196" y="54" fill="#E65100" fontSize="16" fontWeight="bold">{"θ"}</text>
+                  <text x="192" y="146" fill="#1565C0" fontSize="16" fontWeight="bold">{"2θ"}</text>
                 </svg>
               </div>
             </div>
@@ -126,7 +126,7 @@ export const unit10Data: UnitData = {
       ]
     },
     {
-      title: "2. ມຸມແນບເຄິ່ງວົງມົນ ແລະ ຮູບສີ່ແຈແນບວົງມົນ (Inscribed Angles in Semicircles and Cyclic Quadrilaterals)",
+      title: "2. ມຸມແນບເຄິ່ງວົງມົນ ແລະ ຮູບສີ່ແຈແນບວົງມົນ",
       keyPoint: {
         title: "ຄຸນລັກສະນະຂັ້ນສູງຂອງມຸມໃນວົງມົນ",
         content: (
@@ -212,7 +212,7 @@ export const unit10Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຊອກຫາມຸມແນບວົງມົນຈາກມຸມໃຈກາງໃຫຍ່ (Angle Subtended by Major Arc): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຊອກຫາມຸມແນບວົງມົນຈາກມຸມໃຈກາງໃຫຍ່: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ໃນວົງມົນທີ່ມີ O ເປັນໃຈກາງ, ມຸມໃຈກາງ "} <span className="math">{"<Angle>AOC</Angle> = 130°"}</span> {". ຖ້າເມັດ B ນອນຢູ່ເທິງເສັ້ນຮອບວົງໃນພາກສ່ວນອາກໃຫຍ່ AC, ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມແນບວົງມົນ "} <span className="math">{"<Angle>ABC</Angle>"}</span> {"."}
@@ -230,7 +230,7 @@ export const unit10Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການແກ້ສົມຜົນຊອກຫາຕົວປ່ຽນ x ຈາກມຸມວົງມົນ (Solving for Variable x): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການແກ້ສົມຜົນຊອກຫາຕົວປ່ຽນ x ຈາກມຸມວົງມົນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ໃນວົງມົນໜຶ່ງ, ມຸມໃຈກາງມີຂະໜາດແມ່ນ "} <span className="math">{"4x + 10"}</span> {" ອົງສາ ແລະ ມຸມແນບວົງມົນທີ່ຮັບອາກດຽວກັນມີຂະໜາດແມ່ນ "} <span className="math">{"x + 25"}</span> {" ອົງສາ. ຈົ່ງຊອກຫາຄ່າຂອງ x."}
@@ -250,7 +250,7 @@ export const unit10Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດປະສົມປີຕາກໍ ແລະ ວົງມົນ (Pythagoras Combined with Circle Geometry): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດປະສົມປີຕາກໍ ແລະ ວົງມົນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ແຜ່ນເຫຼັກຮູບສາມແຈ ABC ແນບຢູ່ໃນວົງມົນທີ່ມີ AB ເປັນເສັ້ນຜ່ານກາງຍາວ "} <span className="math">{"10 cm"}</span> {". ຖ້າຂ້າງ "} <span className="math">{"AC = 6 cm"}</span> {", ຈົ່ງຊອກຫາຄວາມຍາວຂອງຂ້າງ BC ທີ່ເຫຼືອ."}
@@ -268,10 +268,10 @@ export const unit10Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ມຸມໃນຮູບສາມແຈຈອມວົງມົນ (Angle Calculation inside Isosceles Circle sector): "}<span className="point-label">{"(5 ຄະແນນന)"}</span>
+            {"ມຸມໃນຮູບສາມແຈຈອມວົງມົນ: "}<span className="point-label">{"(5 ຄະແນນന)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(2) ໃນວົງມົນທີ່ມີ O ເປັນໃຈກາງ, ມີຄອດ (Chord) AB. ເມັດ C ນອນຢູ່ເທິງເສັ້ນຮອບວົງ. ຖ້າຮູ້ວ່າ "} <span className="math">{"<Angle>OAB</Angle> = 25°"}</span> {", ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມໃຈກາງ "} <span className="math">{"<Angle>AOB</Angle>"}</span> {"."}
+            {"(2) ໃນວົງມົນທີ່ມີ O ເປັນໃຈກາງ, ມີຄອດ AB. ເມັດ C ນອນຢູ່ເທິງເສັ້ນຮອບວົງ. ຖ້າຮູ້ວ່າ "} <span className="math">{"<Angle>OAB</Angle> = 25°"}</span> {", ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມໃຈກາງ "} <span className="math">{"<Angle>AOB</Angle>"}</span> {"."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: <Angle>AOB</Angle> ="}</span>

@@ -16,7 +16,7 @@ export const unit19Data: UnitData = {
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 91-96",
   subSections: [
     {
-      title: "1. ສົມຜົນເສັ້ນຊື່ຜ່ານສອງເມັດ (Equation of a Line Passing Through Two Points)",
+      title: "1. ສົມຜົນເສັ້ນຊື່ຜ່ານສອງເມັດ",
       keyPoint: {
         title: "ການຫາຄວາມຊັນ ແລະ ສ້າງສົມຜົນຈາກສອງເມັດ",
         content: (
@@ -41,20 +41,20 @@ export const unit19Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ເສັ້ນຊື່ຜ່ານສອງເມັດ A ແລະ B"}</span>
-                <svg viewBox="0 0 200 100" style={{ width: "100%", maxWidth: "180px", height: "auto" }}>
+                <svg viewBox="0 0 400 200" style={{ width: "100%", maxWidth: "360px", height: "auto" }}>
                   {/* Axes */}
-                  <line x1="10" y1="80" x2="190" y2="80" stroke="#37474F" strokeWidth="1" />
-                  <line x1="40" y1="10" x2="40" y2="90" stroke="#37474F" strokeWidth="1" />
+                  <line x1="20" y1="160" x2="380" y2="160" stroke="#37474F" strokeWidth="2" />
+                  <line x1="80" y1="20" x2="80" y2="180" stroke="#37474F" strokeWidth="2" />
 
                   {/* Line passing A(80, 60) and B(140, 30) */}
-                  <line x1="40" y1="80" x2="180" y2="10" stroke="#E65100" strokeWidth="2" />
+                  <line x1="80" y1="160" x2="360" y2="20" stroke="#E65100" strokeWidth="4" />
 
                   {/* Points */}
-                  <circle cx="80" cy="60" r="3" fill="#D32F2F" />
-                  <text x="85" y="65" fill="#37474F" fontSize="8" fontWeight="bold">{"A(x₁, y₁)"}</text>
+                  <circle cx="160" cy="120" r="6" fill="#D32F2F" />
+                  <text x="170" y="130" fill="#37474F" fontSize="16" fontWeight="bold">{"A(x₁, y₁)"}</text>
 
-                  <circle cx="140" cy="30" r="3" fill="#D32F2F" />
-                  <text x="145" y="35" fill="#37474F" fontSize="8" fontWeight="bold">{"B(x₂, y₂)"}</text>
+                  <circle cx="280" cy="60" r="6" fill="#D32F2F" />
+                  <text x="290" y="70" fill="#37474F" fontSize="16" fontWeight="bold">{"B(x₂, y₂)"}</text>
                 </svg>
               </div>
             </div>
@@ -123,7 +123,7 @@ export const unit19Data: UnitData = {
       ]
     },
     {
-      title: "2. ເສັ້ນຊື່ທີ່ຕັ້ງສາກກັນ (Perpendicular Lines)",
+      title: "2. ເສັ້ນຊື່ທີ່ຕັ້ງສາກກັນ",
       keyPoint: {
         title: "ຄຸນລັກສະນະຄວາມຊັນຂອງເສັ້ນຊື່ຕັ້ງສາກ",
         content: (
@@ -147,17 +147,17 @@ export const unit19Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ສອງເສັ້ນຊື່ຕັ້ງສາກກັນຢູ່ຈຸດຕັດ"}</span>
-                <svg viewBox="0 0 200 100" style={{ width: "100%", maxWidth: "180px", height: "auto" }}>
+                <svg viewBox="0 0 400 200" style={{ width: "100%", maxWidth: "360px", height: "auto" }}>
                   {/* Line 1: y = x */}
-                  <line x1="40" y1="80" x2="160" y2="20" stroke="#1565C0" strokeWidth="2" />
-                  <text x="145" y="15" fill="#1565C0" fontSize="8" fontWeight="bold">{"L₁ (m₁=1)"}</text>
+                  <line x1="80" y1="160" x2="320" y2="40" stroke="#1565C0" strokeWidth="4" />
+                  <text x="290" y="30" fill="#1565C0" fontSize="16" fontWeight="bold">{"L₁ (m₁=1)"}</text>
 
                   {/* Line 2: y = -x + 100 */}
-                  <line x1="40" y1="20" x2="160" y2="80" stroke="#F44336" strokeWidth="2" />
-                  <text x="145" y="85" fill="#F44336" fontSize="8" fontWeight="bold">{"L₂ (m₂=-1)"}</text>
+                  <line x1="80" y1="40" x2="320" y2="160" stroke="#F44336" strokeWidth="4" />
+                  <text x="290" y="170" fill="#F44336" fontSize="16" fontWeight="bold">{"L₂ (m₂=-1)"}</text>
                   
                   {/* Right angle symbol at (100, 50) */}
-                  <path d="M 95,45 L 100,40 L 105,45" fill="none" stroke="#37474F" strokeWidth="1" />
+                  <path d="M 190,90 L 200,80 L 210,90" fill="none" stroke="#37474F" strokeWidth="2" />
                 </svg>
               </div>
             </div>
@@ -234,7 +234,7 @@ export const unit19Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ສົມຜົນເສັ້ນຊື່ຕັ້ງສາກຜ່ານຈຸດທີ່ກຳນົດ (Finding Perpendicular Line Equation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ສົມຜົນເສັ້ນຊື່ຕັ້ງສາກຜ່ານຈຸດທີ່ກຳນົດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງຊອກຫາສົມຜົນເສັ້ນຊື່ທີ່ຜ່ານເມັດ "} <span className="math">{"A(2, 5)"}</span> {" ແລະ ຕັ້ງສາກກັບເສັ້ນຊື່ "} <span className="math">{"y = -"} <Fraction num="1" den="3" /> {"x + 2"}</span> {". ຂຽນໃນຮູບ y = ax + b, ຄ່າຂອງ a + b ແມ່ນເທົ່າໃດ?"}
@@ -251,7 +251,7 @@ export const unit19Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຊອກຫາຕົວປະສານງານຈາກເງື່ອນໄຂຕັ້ງສາກ (Finding Coordinate from Perpendicularity): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຊອກຫາຕົວປະສານງານຈາກເງື່ອນໄຂຕັ້ງສາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ເສັ້ນຊື່ໜຶ່ງຜ່ານສອງເມັດ "} <span className="math">{"(1, 3)"}</span> {" ແລະ "} <span className="math">{"(4, y)"}</span> {". ຖ້າເສັ້ນຊື່ນີ້ຕັ້ງສາກກັບເສັ້ນຊື່ທີ່ມີຄວາມຊັນ m = -1. ຈົ່ງຊອກຫາຄ່າຂອງ y."}
@@ -271,7 +271,7 @@ export const unit19Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ຜົນບວກຕົວປະສານງານເມັດເຄິ່ງກາງ (Midpoint Coordinates Sum): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ຜົນບວກຕົວປະສານງານເມັດເຄິ່ງກາງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ທ່ອນຊື່ AB ມີສອງສົ້ນແມ່ນ "} <span className="math">{"A(1, 2)"}</span> {" ແລະ "} <span className="math">{"B(5, 10)"}</span> {". ຈົ່ງຊອກຫາຈຸດເຄິ່ງກາງ M ຂອງທ່ອນຊື່ນີ້ ແລ້ວຄິດໄລ່ຜົນບວກຂອງຕົວປະສານງານ (x_M + y_M)."}
@@ -288,10 +288,10 @@ export const unit19Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ຄວາມຊັນຂອງເສັ້ນຕັ້ງສາກເຄິ່ງກາງ (Slope of Perpendicular Bisector): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ຄວາມຊັນຂອງເສັ້ນຕັ້ງສາກເຄິ່ງກາງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(2) ຈົ່ງຊອກຫາຄວາມຊັນ m ຂອງເສັ້ນຕັ້ງສາກເຄິ່ງກາງ (Perpendicular Bisector) ຂອງທ່ອນຊື່ AB ທີ່ມີຈຸດປະສານງານ A(0, 2) ແລະ B(4, 6)."}
+            {"(2) ຈົ່ງຊອກຫາຄວາມຊັນ m ຂອງເສັ້ນຕັ້ງສາກເຄິ່ງກາງ ຂອງທ່ອນຊື່ AB ທີ່ມີຈຸດປະສານງານ A(0, 2) ແລະ B(4, 6)."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: m ="}</span>

@@ -12,17 +12,17 @@ const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) 
 export const unit25Data: UnitData = {
   unitNumber: 25,
   unitTitle: "ພາກທີ VIII - ບົດທີ 25: ຮູບທໍ່ຫຼ່ຽມ",
-  unitGoal: "ຮຽນຮູ້ ແລະ ນຳໃຊ້ສູດຄິດໄລ່ເນື້ອທີ່ຂ້າງ, ເນື້ອທີ່ທັງໝົດ ແລະ ບໍລິມາດຂອງຮູບທໍ່ຫຼ່ຽມ (Prism) ທີ່ມີພື້ນເປັນຮູບຕ່າງໆ",
+  unitGoal: "ຮຽນຮູ້ ແລະ ນຳໃຊ້ສູດຄິດໄລ່ເນື້ອທີ່ຂ້າງ, ເນື້ອທີ່ທັງໝົດ ແລະ ບໍລິມາດຂອງຮູບທໍ່ຫຼ່ຽມ ທີ່ມີພື້ນເປັນຮູບຕ່າງໆ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 133-138",
   subSections: [
     {
-      title: "1. ເນື້ອທີ່ຂ້າງ ແລະ ເນື້ອທີ່ທັງໝົດ (Lateral and Total Surface Area of Prisms)",
+      title: "1. ເນື້ອທີ່ຂ້າງ ແລະ ເນື້ອທີ່ທັງໝົດ",
       keyPoint: {
         title: "ສູດເນື້ອທີ່ຂອງຮູບທໍ່ຫຼ່ຽມ",
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຮູບທໍ່ຫຼ່ຽມ (Prism) ແມ່ນຮູບຊົງສາມມິຕິທີ່ມີພື້ນສອງດ້ານຂະໜານກັນ ແລະ ເປັນຮູບຫຼາຍຫຼ່ຽມທີ່ເທົ່າກັນສະເໝີ:"}
+              {"ຮູບທໍ່ຫຼ່ຽມ ແມ່ນຮູບຊົງສາມມິຕິທີ່ມີພື້ນສອງດ້ານຂະໜານກັນ ແລະ ເປັນຮູບຫຼາຍຫຼ່ຽມທີ່ເທົ່າກັນສະເໝີ:"}
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
               <div>{"• ເນື້ອທີ່ຂ້າງ: "} <span className="math">{"S_lateral = P_base × h"}</span> {" (ລວງຮອບພື້ນ × ຄວາມສູງ)"}</div>
@@ -33,21 +33,21 @@ export const unit25Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ຮູບສະແດງຮູບທໍ່ຫຼ່ຽມສາມແຈ"}</span>
-                <svg viewBox="0 0 200 120" style={{ width: "100%", maxWidth: "160px", height: "auto" }}>
+                <svg viewBox="0 0 400 240" style={{ width: "100%", maxWidth: "320px", height: "auto" }}>
                   {/* Bottom Triangle */}
-                  <polygon points="50,95 130,95 90,80" fill="none" stroke="#2E7D32" strokeWidth="1.5" strokeDasharray="3,3" />
+                  <polygon points="50,95 130,95 90,80" fill="none" stroke="#2E7D32" strokeWidth="3" strokeDasharray="3,3" />
                   
                   {/* Top Triangle */}
-                  <polygon points="50,35 130,35 90,20" fill="#E8F5E9" stroke="#2E7D32" strokeWidth="2" />
+                  <polygon points="50,35 130,35 90,20" fill="#E8F5E9" stroke="#2E7D32" strokeWidth="4" />
                   
                   {/* Vertical Edges */}
-                  <line x1="50" y1="35" x2="50" y2="95" stroke="#2E7D32" strokeWidth="2" />
-                  <line x1="130" y1="35" x2="130" y2="95" stroke="#2E7D32" strokeWidth="2" />
-                  <line x1="90" y1="20" x2="90" y2="80" stroke="#2E7D32" strokeWidth="1.5" strokeDasharray="3,3" />
+                  <line x1="100" y1="70" x2="100" y2="190" stroke="#2E7D32" strokeWidth="4" />
+                  <line x1="260" y1="70" x2="260" y2="190" stroke="#2E7D32" strokeWidth="4" />
+                  <line x1="180" y1="40" x2="180" y2="160" stroke="#2E7D32" strokeWidth="3" strokeDasharray="3,3" />
 
                   {/* Dimension labels */}
-                  <text x="35" y="65" fill="#1565C0" fontSize="9" fontWeight="bold">{"h (ສູງ)"}</text>
-                  <text x="90" y="107" fill="#E65100" fontSize="9" fontWeight="bold">{"ພື້ນ (Base)"}</text>
+                  <text x="70" y="130" fill="#1565C0" fontSize="18" fontWeight="bold">{"h (ສູງ)"}</text>
+                  <text x="180" y="214" fill="#E65100" fontSize="18" fontWeight="bold">{"ພື້ນ"}</text>
                 </svg>
               </div>
             </div>
@@ -106,7 +106,7 @@ export const unit25Data: UnitData = {
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຮູບກ້ອນສາກ (Cube) ໜຶ່ງມີຄວາມຍາວຂ້າງແມ່ນ "} <span className="math">{"3 cm"}</span> {". ເນື້ອທີ່ທັງໝົດຂອງມັນແມ່ນຈັກ cm²?"}</span>
+                  <span>{"ຮູບກ້ອນສາກ ໜຶ່ງມີຄວາມຍາວຂ້າງແມ່ນ "} <span className="math">{"3 cm"}</span> {". ເນື້ອທີ່ທັງໝົດຂອງມັນແມ່ນຈັກ cm²?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -116,7 +116,7 @@ export const unit25Data: UnitData = {
       ]
     },
     {
-      title: "2. ບໍລິມາດຂອງຮູບທໍ່ຫຼ່ຽມ (Volume of Prisms)",
+      title: "2. ບໍລິມາດຂອງຮູບທໍ່ຫຼ່ຽມ",
       keyPoint: {
         title: "ສູດບໍລິມາດທົ່ວໄປຂອງຮູບທໍ່ຫຼ່ຽມ",
         content: (
@@ -178,7 +178,7 @@ export const unit25Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຮູບກ້ອນສາກ (Cube) ໜຶ່ງມີຄວາມຍາວຂ້າງແມ່ນ "} <span className="math">{"5 cm"}</span> {". ບໍລິມາດຂອງມັນແມ່ນຈັກ cm³?"}</span>
+                  <span>{"ຮູບກ້ອນສາກ ໜຶ່ງມີຄວາມຍາວຂ້າງແມ່ນ "} <span className="math">{"5 cm"}</span> {". ບໍລິມາດຂອງມັນແມ່ນຈັກ cm³?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
@@ -202,7 +202,7 @@ export const unit25Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ໂຈດບໍລິມາດນ້ຳໃນອ່າງກ່ອງສາກ (Water Volume in a Rectangular Tank): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ໂຈດບໍລິມາດນ້ຳໃນອ່າງກ່ອງສາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ອ່າງເກັບນ້ຳຮູບກ່ອງສາກມີຄວາມຍາວພື້ນ 8 m, ຄວາມກວ້າງພື້ນ 5 m ແລະ ຖືກຕື່ມນ້ຳໃສ່ສູງ 2 m. ຈົ່ງຄິດໄລ່ບໍລິມາດຂອງນ້ຳໃນອ່າງນີ້."}
@@ -220,7 +220,7 @@ export const unit25Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ເນື້ອທີ່ທັງໝົດຂອງຮູບທໍ່ຫຼ່ຽມສາມແຈສາກ (Total Surface Area of Triangular Prism): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ເນື້ອທີ່ທັງໝົດຂອງຮູບທໍ່ຫຼ່ຽມສາມແຈສາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ຮູບທໍ່ຫຼ່ຽມສາມແຈສາກໜຶ່ງມີພື້ນເປັນຮູບສາມແຈສາກຍາວ 5 cm, 12 cm, 13 cm (ເນື້ອທີ່ພື້ນແມ່ນ 30 cm²). ຖ້າບໍລິມາດແມ່ນ 300 cm³, ຈົ່ງຊອກຫາເນື້ອທີ່ທັງໝົດຂອງຮູບທໍ່ຫຼ່ຽມນີ້."}
@@ -241,10 +241,10 @@ export const unit25Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດເນື້ອທີ່ທັງໝົດຂອງຮູບກ້ອນສາກ (Total Surface Area of a Cube): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດເນື້ອທີ່ທັງໝົດຂອງຮູບກ້ອນສາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ຮູບກ້ອນສາກໜຶ່ງມີບໍລິມາດແມ່ນ "} <span className="math">{"64 cm³"}</span> {". ຈົ່ງຊອກຫາເນື້ອທີ່ທັງໝົດ (Total Surface Area) ຂອງຮູບກ້ອນສາກນີ້."}
+            {"ຮູບກ້ອນສາກໜຶ່ງມີບໍລິມາດແມ່ນ "} <span className="math">{"64 cm³"}</span> {". ຈົ່ງຊອກຫາເນື້ອທີ່ທັງໝົດ ຂອງຮູບກ້ອນສາກນີ້."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ເນື້ອທີ່ທັງໝົດແມ່ນ"}</span>
@@ -259,7 +259,7 @@ export const unit25Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ບໍລິມາດຂອງເສົາປູນຮູບຫຼ່ຽມຫົກຫຼ່ຽມ (Hexagonal Prism Pillar Volume): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ບໍລິມາດຂອງເສົາປູນຮູບຫຼ່ຽມຫົກຫຼ່ຽມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(2) ເສົາປູນຮູບທໍ່ຫຼ່ຽມຫົກຫຼ່ຽມສະເໝີໜຶ່ງ ມີເນື້ອທີ່ພື້ນແມ່ນ "} <span className="math">{"24 cm²"}</span> {" ແລະ ມີຄວາມສູງແມ່ນ "} <span className="math">{"3 m"}</span> {" (300 cm). ຈົ່ງຊອກຫາບໍລິມາດຂອງເສົາປູນນີ້."}

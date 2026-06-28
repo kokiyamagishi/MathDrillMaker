@@ -16,7 +16,7 @@ export const unit6Data: UnitData = {
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 70-75",
   subSections: [
     {
-      title: "1. ການແກ້ລະບົບສົມຜົນໂດຍວິທີບວກພຶດຊະຄະນິດ (Solving by Elimination Method)",
+      title: "1. ການແກ້ລະບົບສົມຜົນໂດຍວິທີບວກພຶດຊະຄະນິດ",
       keyPoint: {
         title: "ຫຼັກການບວກພຶດຊະຄະນິດເພື່ອຄັດຕົວລັບ",
         content: (
@@ -38,27 +38,27 @@ export const unit6Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ການແກ້ລະບົບສົມຜົນທາງເລຂາຄະນິດ: ຈຸດຕັດກັນ (3, 2)"}</span>
-                <svg viewBox="0 0 160 160" style={{ width: "100%", maxWidth: "130px", height: "auto" }}>
+                <svg viewBox="0 0 320 320" style={{ width: "100%", maxWidth: "260px", height: "auto" }}>
                   {/* Grid and Axes */}
-                  <line x1="10" y1="130" x2="150" y2="130" stroke="#37474F" strokeWidth="1.5" />
-                  <line x1="30" y1="10" x2="30" y2="150" stroke="#37474F" strokeWidth="1.5" />
+                  <line x1="20" y1="260" x2="300" y2="260" stroke="#37474F" strokeWidth="3" />
+                  <line x1="60" y1="20" x2="60" y2="300" stroke="#37474F" strokeWidth="3" />
                   
                   {/* Line 1: x + y = 5 (y = 5 - x) */}
-                  <line x1="30" y1="30" x2="130" y2="130" stroke="#F44336" strokeWidth="2" />
-                  <text x="110" y="115" fill="#F44336" fontSize="7" fontWeight="bold">{"x+y=5"}</text>
+                  <line x1="60" y1="60" x2="260" y2="260" stroke="#F44336" strokeWidth="4" />
+                  <text x="220" y="230" fill="#F44336" fontSize="14" fontWeight="bold">{"x+y=5"}</text>
 
                   {/* Line 2: x - y = 1 (y = x - 1) */}
-                  <line x1="30" y1="110" x2="130" y2="10" stroke="#2196F3" strokeWidth="2" />
-                  <text x="110" y="25" fill="#2196F3" fontSize="7" fontWeight="bold">{"x-y=1"}</text>
+                  <line x1="60" y1="220" x2="260" y2="20" stroke="#2196F3" strokeWidth="4" />
+                  <text x="220" y="50" fill="#2196F3" fontSize="14" fontWeight="bold">{"x-y=1"}</text>
 
                   {/* Intersection point (3, 2) -> scaled coordinate */}
                   {/* x = 3 -> 30 + 3*20 = 90, y = 2 -> 130 - 2*20 = 90 */}
-                  <circle cx="90" cy="90" r="4.5" fill="#D32F2F" />
-                  <text x="95" y="85" fill="#D32F2F" fontSize="8" fontWeight="bold">{"P(3, 2)"}</text>
+                  <circle cx="180" cy="180" r="9" fill="#D32F2F" />
+                  <text x="190" y="170" fill="#D32F2F" fontSize="16" fontWeight="bold">{"P(3, 2)"}</text>
                   
                   {/* Labels */}
-                  <text x="145" y="125" fill="#37474F" fontSize="8">{"x"}</text>
-                  <text x="35" y="18" fill="#37474F" fontSize="8">{"y"}</text>
+                  <text x="290" y="250" fill="#37474F" fontSize="16">{"x"}</text>
+                  <text x="70" y="36" fill="#37474F" fontSize="16">{"y"}</text>
                 </svg>
               </div>
             </div>
@@ -127,7 +127,7 @@ export const unit6Data: UnitData = {
       ]
     },
     {
-      title: "2. ການແກ້ລະບົບສົມຜົນໂດຍວິທີຄັດແທນ (Solving by Substitution Method)",
+      title: "2. ການແກ້ລະບົບສົມຜົນໂດຍວິທີຄັດແທນ",
       keyPoint: {
         title: "ຫຼັກການຄັດແທນເພື່ອປ່ຽນເປັນສົມຜົນຕົວລັບດຽວ",
         content: (
@@ -218,7 +218,7 @@ export const unit6Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການແກ້ລະບົບສົມົນຂັ້ນສູງ (Advanced Linear System): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການແກ້ລະບົບສົມົນຂັ້ນສູງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງແກ້ລະບົບສົມຜົນຕໍ່ໄປນີ້: "} <span className="math">{"2x + 3y = 13"}</span> {" ແລະ "} <span className="math">{"3x - y = 3"}</span> {". ແລ້ວຊອກຫາຄ່າຂອງ "} <span className="math">{"x + y"}</span> {"."}
@@ -235,7 +235,7 @@ export const unit6Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ລະບົບສົມຜົນທີ່ມີເລກສ່ວນ (Linear System with Fractions): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ລະບົບສົມຜົນທີ່ມີເລກສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ຈົ່ງແກ້ລະບົບສົມຜົນ: "} 
@@ -259,7 +259,7 @@ export const unit6Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດບັນຫາຊອກຫາຕົວເລກ (Finding Two Numbers): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດບັນຫາຊອກຫາຕົວເລກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຜົນບວກຂອງສອງຈຳນວນແມ່ນ 20, ແລະ ຜົນລົບຂອງພວກມັນແມ່ນ 6. ຈົ່ງຊອກຫາຈຳນວນທີ່ມີຄ່າຫຼາຍກວ່າ. (ໃຫ້ສົມຜົນ x + y = 20, x - y = 6 ➔ ຊອກຫາ x)"}
@@ -276,7 +276,7 @@ export const unit6Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດບັນຫາການຊື້ເຄື່ອງຂາຍເຄື່ອງ (Shopping Purchase Problem): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດບັນຫາການຊື້ເຄື່ອງຂາຍເຄື່ອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(2) ລາຄາລວມຂອງສໍດຳ 3 ກ້ານ ແລະ ປຶ້ມຂຽນ 2 ຫົວ ແມ່ນ 12,000 ກີບ. ແຕ່ລາຄາສໍດຳ 1 ກ້ານ ແລະ ປຶ້ມຂຽນ 2 ຫົວ ແມ່ນ 8,000 ກີບ. ຈົ່ງຊອກຫາລາຄາຂອງປຶ້ມຂຽນ 1 ຫົວ?"}

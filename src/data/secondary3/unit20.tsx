@@ -16,7 +16,7 @@ export const unit20Data: UnitData = {
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 97-102",
   subSections: [
     {
-      title: "1. ໄລຍະຫ່າງຈາກເມັດເຄົ້າ ຫາ ເມັດໜຶ່ງ (Distance From the Origin to a Point)",
+      title: "1. ໄລຍະຫ່າງຈາກເມັດເຄົ້າ ຫາ ເມັດໜຶ່ງ",
       keyPoint: {
         title: "ສູດໄລຍະຫ່າງຈາກເມັດ O(0, 0)",
         content: (
@@ -33,34 +33,34 @@ export const unit20Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ໄລຍະຫ່າງ d ຈາກເມັດ O ຫາ P(3, 4)"}</span>
-                <svg viewBox="0 0 200 110" style={{ width: "100%", maxWidth: "180px", height: "auto" }}>
+                <svg viewBox="0 0 400 220" style={{ width: "100%", maxWidth: "360px", height: "auto" }}>
                   {/* Grid background */}
-                  <path d="M 0,20 L 200,20 M 0,40 L 200,40 M 0,60 L 200,60 M 0,80 L 200,80" stroke="#E0E0E0" strokeWidth="0.5" />
-                  <path d="M 40,0 L 40,110 M 80,0 L 80,110 M 120,0 L 120,110 M 160,0 L 160,110" stroke="#E0E0E0" strokeWidth="0.5" />
+                  <path d="M 0,40 L 400,40 M 0,80 L 400,80 M 0,120 L 400,120 M 0,160 L 400,160" stroke="#E0E0E0" strokeWidth="1" />
+                  <path d="M 80,0 L 80,220 M 160,0 L 160,220 M 240,0 L 240,220 M 320,0 L 320,220" stroke="#E0E0E0" strokeWidth="1" />
 
                   {/* Axes */}
-                  <line x1="10" y1="90" x2="190" y2="90" stroke="#37474F" strokeWidth="1.5" />
-                  <line x1="40" y1="10" x2="40" y2="100" stroke="#37474F" strokeWidth="1.5" />
-                  <text x="185" y="99" fill="#37474F" fontSize="8">{"x"}</text>
-                  <text x="45" y="15" fill="#37474F" fontSize="8">{"y"}</text>
+                  <line x1="20" y1="180" x2="380" y2="180" stroke="#37474F" strokeWidth="3" />
+                  <line x1="80" y1="20" x2="80" y2="200" stroke="#37474F" strokeWidth="3" />
+                  <text x="370" y="198" fill="#37474F" fontSize="16">{"x"}</text>
+                  <text x="90" y="30" fill="#37474F" fontSize="16">{"y"}</text>
 
                   {/* Origin O */}
-                  <circle cx="40" cy="90" r="3.5" fill="#37474F" />
-                  <text x="28" y="101" fill="#37474F" fontSize="8" fontWeight="bold">{"O(0,0)"}</text>
+                  <circle cx="80" cy="180" r="7" fill="#37474F" />
+                  <text x="56" y="202" fill="#37474F" fontSize="16" fontWeight="bold">{"O(0,0)"}</text>
 
                   {/* Point P(3, 4) -> scale: 1 unit = 20px. (3, 4) -> (40 + 60, 90 - 80) = (100, 10) */}
-                  <circle cx="100" cy="30" r="3.5" fill="#D32F2F" />
-                  <text x="105" y="27" fill="#D32F2F" fontSize="8" fontWeight="bold">{"P(3, 4)"}</text>
+                  <circle cx="200" cy="60" r="7" fill="#D32F2F" />
+                  <text x="210" y="54" fill="#D32F2F" fontSize="16" fontWeight="bold">{"P(3, 4)"}</text>
 
                   {/* Distance line */}
-                  <line x1="40" y1="90" x2="100" y2="30" stroke="#E65100" strokeWidth="2.0" />
-                  <text x="65" y="55" fill="#E65100" fontSize="8" fontWeight="bold">{"d = 5"}</text>
+                  <line x1="80" y1="180" x2="200" y2="60" stroke="#E65100" strokeWidth="4" />
+                  <text x="130" y="110" fill="#E65100" fontSize="16" fontWeight="bold">{"d = 5"}</text>
 
                   {/* Perpendicular helper lines */}
-                  <line x1="100" y1="30" x2="100" y2="90" stroke="#2E7D32" strokeWidth="1.5" strokeDasharray="3,3" />
-                  <line x1="40" y1="30" x2="100" y2="30" stroke="#2E7D32" strokeWidth="1.5" strokeDasharray="3,3" />
-                  <text x="105" y="65" fill="#2E7D32" fontSize="8">{"y=4"}</text>
-                  <text x="65" y="85" fill="#2E7D32" fontSize="8">{"x=3"}</text>
+                  <line x1="200" y1="60" x2="200" y2="180" stroke="#2E7D32" strokeWidth="3" strokeDasharray="3,3" />
+                  <line x1="80" y1="60" x2="200" y2="60" stroke="#2E7D32" strokeWidth="3" strokeDasharray="3,3" />
+                  <text x="210" y="130" fill="#2E7D32" fontSize="16">{"y=4"}</text>
+                  <text x="130" y="170" fill="#2E7D32" fontSize="16">{"x=3"}</text>
                 </svg>
               </div>
             </div>
@@ -129,7 +129,7 @@ export const unit20Data: UnitData = {
       ]
     },
     {
-      title: "2. ໄລຍະຫ່າງລະຫວ່າງສອງເມັດທົ່ວໄປ (Distance Between Two General Points)",
+      title: "2. ໄລຍະຫ່າງລະຫວ່າງສອງເມັດທົ່ວໄປ",
       keyPoint: {
         title: "ສູດໄລຍະຫ່າງທົ່ວໄປໃນໜ້າພຽງປະສານງານ",
         content: (
@@ -215,7 +215,7 @@ export const unit20Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຊອກຫາຕົວປະສານງານ x ຈາກສົມຜົນໄລຍະຫ່າງ (Finding Coordinate from Distance Equation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຊອກຫາຕົວປະສານງານ x ຈາກສົມຜົນໄລຍະຫ່າງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ໃຫ້ໄລຍະຫ່າງລະຫວ່າງສອງເມັດ "} <span className="math">{"P(1, 2)"}</span> {" ແລະ "} <span className="math">{"Q(a, 6)"}</span> {" ແມ່ນ 5. ຖ້າຫາກ a > 0, ຈົ່ງຊອກຫາຄ່າຂອງ a."}
@@ -232,10 +232,10 @@ export const unit20Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ລວງຮອບຂອງຮູບສາມແຈໃນລະບົບປະສານງານ (Perimeter of a Triangle in Coordinate System): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ລວງຮອບຂອງຮູບສາມແຈໃນລະບົບປະສານງານ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(2) ຈົ່ງຊອກຫາລວງຮອບ (Perimeter) ຂອງຮູບສາມແຈທີ່ມີສາມຈອມແມ່ນ "} <span className="math">{"A(0, 0)"}</span> {", "} <span className="math">{"B(3, 0)"}</span> {" ແລະ "} <span className="math">{"C(0, 4)"}</span> {" ຢູ່ໃນລະບົບປະສານງານ."}
+              {"(2) ຈົ່ງຊອກຫາລວງຮອບ ຂອງຮູບສາມແຈທີ່ມີສາມຈອມແມ່ນ "} <span className="math">{"A(0, 0)"}</span> {", "} <span className="math">{"B(3, 0)"}</span> {" ແລະ "} <span className="math">{"C(0, 4)"}</span> {" ຢູ່ໃນລະບົບປະສານງານ."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ລວງຮອບແມ່ນ"}</span>
@@ -253,7 +253,7 @@ export const unit20Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ການຊອກຫາຂ້າງກົງຊາກຂອງສາມແຈສາກ (Finding Hypotenuse in Coordinate plane): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ການຊອກຫາຂ້າງກົງຊາກຂອງສາມແຈສາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຮູບສາມແຈ ABC ມີສາມຈອມແມ່ນ A(1, 1), B(4, 1), C(1, 5). ຖ້າສາມແຈນີ້ແມ່ນສາມແຈສາກທີ່ມີມຸມ A ເປັນມຸມສາກ, ຈົ່ງຊອກຫາຄວາມຍາວຂອງຂ້າງກົງຊາກ BC."}
@@ -271,10 +271,10 @@ export const unit20Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດເສັ້ນຜ່ານກາງຂອງວົງມົນ (Circle Diameter Calculation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດເສັ້ນຜ່ານກາງຂອງວົງມົນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(2) ວົງມົນວົງໜຶ່ງມີເມັດໃຈກາງຢູ່ O(0, 0) ແລະ ຜ່ານເມັດ P(8, -6). ຈົ່ງຊອກຫາຄວາມຍາວຂອງເສັ້ນຜ່ານກາງ (Diameter) ຂອງວົງມົນນີ້."}
+            {"(2) ວົງມົນວົງໜຶ່ງມີເມັດໃຈກາງຢູ່ O(0, 0) ແລະ ຜ່ານເມັດ P(8, -6). ຈົ່ງຊອກຫາຄວາມຍາວຂອງເສັ້ນຜ່ານກາງ ຂອງວົງມົນນີ້."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ເສັ້ນຜ່ານກາງຍາວ"}</span>

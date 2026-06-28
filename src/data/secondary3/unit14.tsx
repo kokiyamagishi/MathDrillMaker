@@ -16,7 +16,7 @@ export const unit14Data: UnitData = {
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 31-36",
   subSections: [
     {
-      title: "1. ຕົວຈຳນວນເດລຕາ ແລະ ຈຳນວນໃຈຜົນ (Discriminant Delta and Number of Roots)",
+      title: "1. ຕົວຈຳນວນເດລຕາ ແລະ ຈຳນວນໃຈຜົນ",
       keyPoint: {
         title: "ການກວດສອບໃຈຜົນດ້ວຍເດລຕາ (Δ)",
         content: (
@@ -35,28 +35,28 @@ export const unit14Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ການວິເຄາະຈຳນວນໃຈຜົນຕາມຄ່າ Δ"}</span>
-                <svg viewBox="0 0 200 80" style={{ width: "100%", maxWidth: "180px", height: "auto" }}>
+                <svg viewBox="0 0 400 160" style={{ width: "100%", maxWidth: "360px", height: "auto" }}>
                   {/* Delta Box */}
-                  <rect x="75" y="5" width="50" height="20" rx="4" fill="#1565C0" />
-                  <text x="100" y="18" fill="#FFFFFF" fontSize="9" textAnchor="middle" fontWeight="bold">{"Δ = b²-4ac"}</text>
+                  <rect x="150" y="10" width="100" height="40" rx="4" fill="#1565C0" />
+                  <text x="200" y="36" fill="#FFFFFF" fontSize="18" textAnchor="middle" fontWeight="bold">{"Δ = b²-4ac"}</text>
 
                   {/* Branches */}
-                  <line x1="100" y1="25" x2="40" y2="50" stroke="#37474F" strokeWidth="1" />
-                  <line x1="100" y1="25" x2="100" y2="50" stroke="#37474F" strokeWidth="1" />
-                  <line x1="100" y1="25" x2="160" y2="50" stroke="#37474F" strokeWidth="1" />
+                  <line x1="200" y1="50" x2="80" y2="100" stroke="#37474F" strokeWidth="2" />
+                  <line x1="200" y1="50" x2="200" y2="100" stroke="#37474F" strokeWidth="2" />
+                  <line x1="200" y1="50" x2="320" y2="100" stroke="#37474F" strokeWidth="2" />
 
                   {/* Nodes */}
-                  <circle cx="40" cy="50" r="10" fill="#4CAF50" />
-                  <text x="40" y="53" fill="#FFFFFF" fontSize="8" textAnchor="middle" fontWeight="bold">{"> 0"}</text>
-                  <text x="40" y="72" fill="#37474F" fontSize="8" textAnchor="middle">{"2 ໃຈຜົນ"}</text>
+                  <circle cx="80" cy="100" r="20" fill="#4CAF50" />
+                  <text x="80" y="106" fill="#FFFFFF" fontSize="16" textAnchor="middle" fontWeight="bold">{"> 0"}</text>
+                  <text x="80" y="144" fill="#37474F" fontSize="16" textAnchor="middle">{"2 ໃຈຜົນ"}</text>
 
-                  <circle cx="100" cy="50" r="10" fill="#FF9800" />
-                  <text x="100" y="53" fill="#FFFFFF" fontSize="8" textAnchor="middle" fontWeight="bold">{"= 0"}</text>
-                  <text x="100" y="72" fill="#37474F" fontSize="8" textAnchor="middle">{"1 ໃຈຜົນຊ້ອນ"}</text>
+                  <circle cx="200" cy="100" r="20" fill="#FF9800" />
+                  <text x="200" y="106" fill="#FFFFFF" fontSize="16" textAnchor="middle" fontWeight="bold">{"= 0"}</text>
+                  <text x="200" y="144" fill="#37474F" fontSize="16" textAnchor="middle">{"1 ໃຈຜົນຊ້ອນ"}</text>
 
-                  <circle cx="160" cy="50" r="10" fill="#F44336" />
-                  <text x="160" y="53" fill="#FFFFFF" fontSize="8" textAnchor="middle" fontWeight="bold">{"< 0"}</text>
-                  <text x="160" y="72" fill="#37474F" fontSize="8" textAnchor="middle">{"ບໍ່ມີໃຈຜົນ"}</text>
+                  <circle cx="320" cy="100" r="20" fill="#F44336" />
+                  <text x="320" y="106" fill="#FFFFFF" fontSize="16" textAnchor="middle" fontWeight="bold">{"< 0"}</text>
+                  <text x="320" y="144" fill="#37474F" fontSize="16" textAnchor="middle">{"ບໍ່ມີໃຈຜົນ"}</text>
                 </svg>
               </div>
             </div>
@@ -125,7 +125,7 @@ export const unit14Data: UnitData = {
       ]
     },
     {
-      title: "2. ການນຳໃຊ້ສູດໃຈຜົນຂອງສົມຜົນຂັ້ນສອງ (Using the Quadratic Formula)",
+      title: "2. ການນຳໃຊ້ສູດໃຈຜົນຂອງສົມຜົນຂັ້ນສອງ",
       keyPoint: {
         title: "ສູດທົ່ວໄປໃນການຫາໃຈຜົນ",
         content: (
@@ -236,10 +236,10 @@ export const unit14Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຫາຄ່າພາຣາມິເຕີເພື່ອໃຫ້ສົມຜົນມີ 1 ໃຈຜົນຊ້ອນ (Finding Parameter m for Double Root): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຫາຄ່າພາຣາມິເຕີເພື່ອໃຫ້ສົມຜົນມີ 1 ໃຈຜົນຊ້ອນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(2) ຈົ່ງຊອກຫາຄ່າຂອງຕົວປ່ຽນ m ທີ່ເຮັດໃຫ້ສົມຜົນຂັ້ນສອງ "} <span className="math">{"x² - 6x + m = 0"}</span> {" ມີພຽງແຕ່ 1 ໃຈຜົນຊ້ອນ (double root)."}
+              {"(2) ຈົ່ງຊອກຫາຄ່າຂອງຕົວປ່ຽນ m ທີ່ເຮັດໃຫ້ສົມຜົນຂັ້ນສອງ "} <span className="math">{"x² - 6x + m = 0"}</span> {" ມີພຽງແຕ່ 1 ໃຈຜົນຊ້ອນ."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: m ="}</span>
@@ -256,7 +256,7 @@ export const unit14Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໃຈຜົນຕິດຮາກຂັ້ນສອງ (Irrational Roots of Quadratic Equation): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໃຈຜົນຕິດຮາກຂັ້ນສອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຈົ່ງແກ້ສົມຜົນ "} <span className="math">{"x² - 2x - 1 = 0"}</span> {" ໂດຍນຳໃຊ້ສູດທົ່ວໄປ ຈະໄດ້ໃຈຜົນບວກຢູ່ໃນຮູບແບບ "} <span className="math">{"a + √b"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ a + b."}
@@ -273,7 +273,7 @@ export const unit14Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດບັນຫາຂະໜາດສວນຄົວ (Garden Dimensions Application): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດບັນຫາຂະໜາດສວນຄົວ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(2) ສວນຄົວຮູບສີ່ແຈສາກໜຶ່ງມີເນື້ອທີ່ "} <span className="math">{"24 m²"}</span> {" ແລະ ມີລວງຮອບແມ່ນ "} <span className="math">{"20 m"}</span> {". ຈົ່ງຊອກຫາຄວາມຍາວຂອງຂ້າງທີ່ຍາວກວ່າ (ລວງຍາວ) ຂອງສວນຄົວນີ້."}

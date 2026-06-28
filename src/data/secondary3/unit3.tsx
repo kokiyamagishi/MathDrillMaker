@@ -12,11 +12,11 @@ const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) 
 export const unit3Data: UnitData = {
   unitNumber: 3,
   unitTitle: "ພາກທີ I - ບົດທີ 3: ການແຍກສ່ວນຄູນ",
-  unitGoal: "ຮຽນຮູ້ ແລະ ຝຶກຝົນການແຍກສ່ວນຄູນ (Factoring Polynomials) ໂດຍວິທີການແຍກຕົວຮ່ວມ ແລະ ນຳໃຊ້ສະເໝີຜົນຄວນຈື່",
+  unitGoal: "ຮຽນຮູ້ ແລະ ຝຶກຝົນການແຍກສ່ວນຄູນ ໂດຍວິທີການແຍກຕົວຮ່ວມ ແລະ ນຳໃຊ້ສະເໝີຜົນຄວນຈື່",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 13-18",
   subSections: [
     {
-      title: "1. ການແຍກສ່ວນຄູນໂດຍການແຍກຕົວຮ່ວມ (Factoring by Pulling Out a Common Factor)",
+      title: "1. ການແຍກສ່ວນຄູນໂດຍການແຍກຕົວຮ່ວມ",
       keyPoint: {
         title: "ຫຼັກການແຍກຕົວຮ່ວມ",
         content: (
@@ -34,19 +34,19 @@ export const unit3Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ການແບ່ງເນື້ອທີ່: 3x + 6 = 3(x + 2)"}</span>
-                <svg viewBox="0 0 160 80" style={{ width: "100%", maxWidth: "140px", height: "auto" }}>
+                <svg viewBox="0 0 320 160" style={{ width: "100%", maxWidth: "280px", height: "auto" }}>
                   {/* Rectangle 3 x x */}
-                  <rect x="10" y="10" width="70" height="60" fill="#4CAF50" stroke="#2E7D32" strokeWidth="1" />
-                  <text x="45" y="45" fill="#FFFFFF" fontSize="10" textAnchor="middle">{"3x"}</text>
+                  <rect x="20" y="20" width="140" height="120" fill="#4CAF50" stroke="#2E7D32" strokeWidth="2" />
+                  <text x="90" y="90" fill="#FFFFFF" fontSize="20" textAnchor="middle">{"3x"}</text>
                   
                   {/* Rectangle 3 x 2 */}
-                  <rect x="80" y="10" width="60" height="60" fill="#2196F3" stroke="#1565C0" strokeWidth="1" />
-                  <text x="110" y="45" fill="#FFFFFF" fontSize="10" textAnchor="middle">{"6"}</text>
+                  <rect x="160" y="20" width="120" height="120" fill="#2196F3" stroke="#1565C0" strokeWidth="2" />
+                  <text x="220" y="90" fill="#FFFFFF" fontSize="20" textAnchor="middle">{"6"}</text>
 
                   {/* Labels */}
-                  <text x="4" y="45" fill="#37474F" fontSize="8" textAnchor="middle">{"3"}</text>
-                  <text x="45" y="6" fill="#37474F" fontSize="8" textAnchor="middle">{"x"}</text>
-                  <text x="110" y="6" fill="#37474F" fontSize="8" textAnchor="middle">{"2"}</text>
+                  <text x="8" y="90" fill="#37474F" fontSize="16" textAnchor="middle">{"3"}</text>
+                  <text x="90" y="12" fill="#37474F" fontSize="16" textAnchor="middle">{"x"}</text>
+                  <text x="220" y="12" fill="#37474F" fontSize="16" textAnchor="middle">{"2"}</text>
                 </svg>
               </div>
             </div>
@@ -115,7 +115,7 @@ export const unit3Data: UnitData = {
       ]
     },
     {
-      title: "2. ການແຍກສ່ວນຄູນໂດຍນຳໃຊ້ສະເໝີຜົນຄວນຈື່ (Factoring Using Notable Identities)",
+      title: "2. ການແຍກສ່ວນຄູນໂດຍນຳໃຊ້ສະເໝີຜົນຄວນຈື່",
       keyPoint: {
         title: "ການແຍກສ່ວນຄູນດ້ວຍກຳລັງສອງ ແລະ ຜົນຕ່າງ",
         content: (
@@ -203,7 +203,7 @@ export const unit3Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການແຍກສ່ວນຄູນຮູບຮ່າງ x² + sx + p (Cross Multiplication): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການແຍກສ່ວນຄູນຮູບຮ່າງ x² + sx + p: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງແຍກສ່ວນຄູນຂອງ "} <span className="math">{"x² - 5x + 6"}</span> {" ໃຫ້ຢູ່ໃນຮູບແບບ "} <span className="math">{"(x - a)(x - b)"}</span> {" ໂດຍໃຫ້ຊອກຫາຄ່າຂອງ a + b. (ຊອກຫາຕົວເລກສອງຕົວທີ່ຄູນກັນໄດ້ 6 ແລະ ບວກກັນໄດ້ -5)"}
@@ -220,7 +220,7 @@ export const unit3Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການແຍກສ່ວນຄູນຮູບຮ່າງຊັບຊ້ອນ (Advanced Difference of Squares): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການແຍກສ່ວນຄູນຮູບຮ່າງຊັບຊ້ອນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ຈົ່ງແຍກສ່ວນຄູນຂອງ "} <span className="math">{"(x + 2)² - 9"}</span> {" ໃຫ້ຢູ່ໃນຮູບແບບ "} <span className="math">{"(x - a)(x + b)"}</span> {" ໂດຍຊອກຫາຄ່າຂອງ b - a."}
@@ -240,7 +240,7 @@ export const unit3Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດບັນຫາການຫາຂ້າງຂອງຮູບສີ່ແຈ (Rectangle Sides): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດບັນຫາການຫາຂ້າງຂອງຮູບສີ່ແຈ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ດິນຕອນໜຶ່ງເປັນຮູບສີ່ແຈສາກທີ່ມີເນື້ອທີ່ "} <span className="math">{"3x² + 12x"}</span> {" ຕາແມັດ. ຖ້າເຮົາແຍກສ່ວນຄູນເພື່ອຫາຄວາມຍາວຂອງສອງຂ້າງ (ຂ້າງໜຶ່ງແມ່ນ 3x) ➔ ອີກຂ້າງໜຶ່ງຈະຍາວເທົ່າໃດ? (ຕອບເປັນສຳນວນພຶດຊະຄະນິດ)"}

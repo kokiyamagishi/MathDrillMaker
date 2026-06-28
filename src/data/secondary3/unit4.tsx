@@ -12,7 +12,7 @@ const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) 
 export const unit4Data: UnitData = {
   unitNumber: 4,
   unitTitle: "ພາກທີ I - ບົດທີ 4: ເສັ້ນສະແດງຂອງຕຳລາຂັ້ນສອງ",
-  unitGoal: "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈຄຸນລັກສະນະຂອງເສັ້ນສະແດງພາລາໂບລາ (Parabola) ຂອງຕຳລາຂັ້ນສອງ y = ax² ແລະ ການຊອກຫາຈຸດຍອດ, ເສັ້ນເຄິ່ງຄື",
+  unitGoal: "ຮຽນຮູ້ ແລະ ເຂົ້າໃຈຄຸນລັກສະນະຂອງເສັ້ນສະແດງພາລາໂບລາ ຂອງຕຳລາຂັ້ນສອງ y = ax² ແລະ ການຊອກຫາຈຸດຍອດ, ເສັ້ນເຄິ່ງຄື",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 19-24",
   subSections: [
     {
@@ -22,11 +22,11 @@ export const unit4Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ເສັ້ນສະແດງຂອງຕຳລາຂັ້ນສອງ y = ax² (a ≠ 0) ເປັນເສັ້ນໂຄ້ງທີ່ເອີ້ນວ່າ ພາລາໂບລາ (Parabola):"}
+              {"ເສັ້ນສະແດງຂອງຕຳລາຂັ້ນສອງ y = ax² (a ≠ 0) ເປັນເສັ້ນໂຄ້ງທີ່ເອີ້ນວ່າ ພາລາໂບລາ:"}
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
-              <div>{"• ຖ້າ a > 0: ເສັ້ນສະແດງຈະ ງາຍ (Opens upward) ແລະ ມີຈຸດຍອດເປັນ ຈຸດຕ່ຳສຸດ."}</div>
-              <div>{"• ຖ້າ a < 0: ເສັ້ນສະແດງຈະ ຄວ້ຳ (Opens downward) ແລະ ມີຈຸດຍອດເປັນ ຈຸດສູງສຸດ."}</div>
+              <div>{"• ຖ້າ a > 0: ເສັ້ນສະແດງຈະ ງາຍ ແລະ ມີຈຸດຍອດເປັນ ຈຸດຕ່ຳສຸດ."}</div>
+              <div>{"• ຖ້າ a < 0: ເສັ້ນສະແດງຈະ ຄວ້ຳ ແລະ ມີຈຸດຍອດເປັນ ຈຸດສູງສຸດ."}</div>
               <div>{"• ຖ້າ |a| ຍິ່ງໃຫຍ່ ເສັ້ນສະແດງຈະຍິ່ງ ແຄບ (Steeper/Narrower)."}</div>
             </div>
 
@@ -34,24 +34,24 @@ export const unit4Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ເສັ້ນສະແດງພາລາໂບລາ y = x² (ງາຍ) ແລະ y = -x² (ຄວ້ຳ)"}</span>
-                <svg viewBox="0 0 160 160" style={{ width: "100%", maxWidth: "140px", height: "auto" }}>
+                <svg viewBox="0 0 320 320" style={{ width: "100%", maxWidth: "280px", height: "auto" }}>
                   {/* Axes */}
-                  <line x1="10" y1="80" x2="150" y2="80" stroke="#37474F" strokeWidth="1.5" />
-                  <line x1="80" y1="10" x2="80" y2="150" stroke="#37474F" strokeWidth="1.5" />
+                  <line x1="20" y1="160" x2="300" y2="160" stroke="#37474F" strokeWidth="3" />
+                  <line x1="160" y1="20" x2="160" y2="300" stroke="#37474F" strokeWidth="3" />
                   
-                  {/* Upward Parabola y = x^2 (scaled coordinate) */}
-                  <path d="M 30,30 Q 80,130 130,30" fill="none" stroke="#2196F3" strokeWidth="2.5" />
-                  <text x="125" y="25" fill="#2196F3" fontSize="8" fontWeight="bold">{"y = x²"}</text>
+                  {/* Upward Parabola y = x^2 */}
+                  <path d="M 60,60 Q 160,260 260,60" fill="none" stroke="#2196F3" strokeWidth="5" />
+                  <text x="250" y="50" fill="#2196F3" fontSize="16" fontWeight="bold">{"y = x²"}</text>
 
                   {/* Downward Parabola y = -x^2 */}
-                  <path d="M 30,130 Q 80,30 130,130" fill="none" stroke="#F44336" strokeWidth="2.5" />
-                  <text x="125" y="140" fill="#F44336" fontSize="8" fontWeight="bold">{"y = -x²"}</text>
+                  <path d="M 60,260 Q 160,60 260,260" fill="none" stroke="#F44336" strokeWidth="5" />
+                  <text x="250" y="280" fill="#F44336" fontSize="16" fontWeight="bold">{"y = -x²"}</text>
 
                   {/* Origin */}
-                  <circle cx="80" cy="80" r="3" fill="#37474F" />
-                  <text x="85" y="88" fill="#37474F" fontSize="8">{"(0,0)"}</text>
-                  <text x="145" y="75" fill="#37474F" fontSize="8">{"x"}</text>
-                  <text x="85" y="18" fill="#37474F" fontSize="8">{"y"}</text>
+                  <circle cx="160" cy="160" r="6" fill="#37474F" />
+                  <text x="170" y="176" fill="#37474F" fontSize="16">{"(0,0)"}</text>
+                  <text x="290" y="150" fill="#37474F" fontSize="16">{"x"}</text>
+                  <text x="170" y="36" fill="#37474F" fontSize="16">{"y"}</text>
                 </svg>
               </div>
             </div>
@@ -120,7 +120,7 @@ export const unit4Data: UnitData = {
       ]
     },
     {
-      title: "2. ຈຸດຍອດ ແລະ ເສັ້ນເຄິ່ງຄື (Vertex and Axis of Symmetry)",
+      title: "2. ຈຸດຍອດ ແລະ ເສັ້ນເຄິ່ງຄື",
       keyPoint: {
         title: "ຈຸດພິເສດຂອງພາລາໂບລາ y = ax²",
         content: (
@@ -130,8 +130,8 @@ export const unit4Data: UnitData = {
             </p>
             
             <div style={{ padding: "12px 16px", backgroundColor: "#FFFDE7", borderRadius: "10px", border: "1px solid #FFF59D", fontSize: "1.25rem", color: "#F57F17", display: "flex", flexDirection: "column", gap: "6px" }}>
-              <div>{"• ຈຸດຍອດ (Vertex): ຢູ່ທີ່ຈຸດເຄິ່ງກາງພິກັດສະເໝີ ➔ O(0, 0)."}</div>
-              <div>{"• ເສັ້ນເຄິ່ງຄື (Axis of Symmetry): ແມ່ນແກນຕັ້ງ Oy ➔ ມີສົມຜົນ x = 0."}</div>
+              <div>{"• ຈຸດຍອດ: ຢູ່ທີ່ຈຸດເຄິ່ງກາງພິກັດສະເໝີ ➔ O(0, 0)."}</div>
+              <div>{"• ເສັ້ນເຄິ່ງຄື: ແມ່ນແກນຕັ້ງ Oy ➔ ມີສົມຜົນ x = 0."}</div>
               <div>{"• ການຊອກຫາສຳປະສິດ a: ຖ້າຮູ້ຈຸດໜຶ່ງ (x₁, y₁) ທີ່ຢູ່ເທິງເສັ້ນສະແດງ ເຮົາສາມາດຊອກຫາ a ໄດ້ໂດຍການແທນຄ່າໃສ່ສູດ: y₁ = ax₁²."}</div>
             </div>
           </div>
@@ -207,7 +207,7 @@ export const unit4Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຊອກຫາສຳປະສິດ a ຈາກພິກັດເລກສ່ວນ (Fraction Coefficient): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຊອກຫາສຳປະສິດ a ຈາກພິກັດເລກສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຖ້າພາລາໂບລາ "} <span className="math">{"y = ax²"}</span> {" ຜ່ານຈຸດ (-4, 8). ຈົ່ງຊອກຫາຄ່າຂອງ a. (ແທນ x = -4, y = 8 ໃສ່ສົມຜົນ)"}
@@ -227,7 +227,7 @@ export const unit4Data: UnitData = {
               {"ການຊອກຫາຄ່າສູງສຸດຂອງຕຳລາໃນຂອບເຂດທີ່ກຳນົດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(2) ໃຫ້ຕຳລາ "} <span className="math">{"y = -2x²"}</span> {". ຖ້າຕົວປ່ຽນ x ປ່ຽນແປງໃນຂອບເຂດ "} <span className="math">{"-1 ≤ x ≤ 3"}</span> {", ຈົ່ງຊອກຫາຄ່າສູງສຸດ (Maximum Value) ຂອງ y ຕົວຈິງ."}
+              {"(2) ໃຫ້ຕຳລາ "} <span className="math">{"y = -2x²"}</span> {". ຖ້າຕົວປ່ຽນ x ປ່ຽນແປງໃນຂອບເຂດ "} <span className="math">{"-1 ≤ x ≤ 3"}</span> {", ຈົ່ງຊອກຫາຄ່າສູງສຸດ ຂອງ y ຕົວຈິງ."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຄ່າສູງສຸດຂອງ y ແມ່ນ"}</span>
@@ -244,7 +244,7 @@ export const unit4Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດບັນຫາການອອກແບບຂົວແຂວນ (Suspension Bridge Cable Design): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດບັນຫາການອອກແບບຂົວແຂວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ສາຍກາບຂົວແຂວນແຫ່ງໜຶ່ງມີຮູບຮ່າງເປັນພາລາໂບລາ y = ax². ຖ້າຂົວຍາວ 100 ແມັດ, ແລະ ສາຍກາບແຂວນສູງຈາກພື້ນຂົວ 25 ແມັດ ຢູ່ຈຸດສຸດທ້າຍ (x = 50, y = 25). ຈົ່ງຊອກຫາສຳປະສິດ a. (ຕອບເປັນເລກສ່ວນງ່າຍດາຍ)"}
@@ -261,7 +261,7 @@ export const unit4Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດບັນຫາການປຽບທຽບຄ່າຂອງຕຳລາ (Comparing Function Values): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດບັນຫາການປຽບທຽບຄ່າຂອງຕຳລາ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(2) ສຳລັບຕຳລາພາລາໂບລາ "} <span className="math">{"y = 2x²"}</span> {". ຈົ່ງປຽບທຽບຄ່າຂອງ y ລະຫວ່າງ x₁ = -3 ແລະ x₂ = 2. ຖາມວ່າຄ່າ x ໃດທີ່ໃຫ້ຄ່າ y ຫຼາຍກວ່າກັນ? (ຕອບ x=-3 ຫຼື x=2)"}

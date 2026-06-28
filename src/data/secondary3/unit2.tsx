@@ -16,7 +16,7 @@ export const unit2Data: UnitData = {
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.3 ໜ້າ 7-12",
   subSections: [
     {
-      title: "1. ກຳລັງສອງຂອງຜົນບວກ ແລະ ຜົນລົບ (Square of a Sum and a Difference)",
+      title: "1. ກຳລັງສອງຂອງຜົນບວກ ແລະ ຜົນລົບ",
       keyPoint: {
         title: "ສູດກຳລັງສອງຂອງຜົນບວກ ແລະ ຜົນລົບ",
         content: (
@@ -34,28 +34,28 @@ export const unit2Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ການພິສູດທາງເລຂາຄະນິດຂອງ (a + b)² = a² + 2ab + b²"}</span>
-                <svg viewBox="0 0 140 140" style={{ width: "100%", maxWidth: "120px", height: "auto" }}>
+                <svg viewBox="0 0 280 280" style={{ width: "100%", maxWidth: "240px", height: "auto" }}>
                   {/* Square a x a */}
-                  <rect x="10" y="10" width="80" height="80" fill="#4CAF50" stroke="#2E7D32" strokeWidth="1" />
-                  <text x="50" y="55" fill="#FFFFFF" fontSize="10" textAnchor="middle">{"a²"}</text>
+                  <rect x="20" y="20" width="160" height="160" fill="#4CAF50" stroke="#2E7D32" strokeWidth="2" />
+                  <text x="100" y="110" fill="#FFFFFF" fontSize="20" textAnchor="middle">{"a²"}</text>
                   
                   {/* Rectangle a x b */}
-                  <rect x="90" y="10" width="40" height="80" fill="#2196F3" stroke="#1565C0" strokeWidth="1" />
-                  <text x="110" y="55" fill="#FFFFFF" fontSize="10" textAnchor="middle">{"ab"}</text>
+                  <rect x="180" y="20" width="80" height="160" fill="#2196F3" stroke="#1565C0" strokeWidth="2" />
+                  <text x="220" y="110" fill="#FFFFFF" fontSize="20" textAnchor="middle">{"ab"}</text>
 
                   {/* Rectangle b x a */}
-                  <rect x="10" y="90" width="80" height="40" fill="#2196F3" stroke="#1565C0" strokeWidth="1" />
-                  <text x="50" y="115" fill="#FFFFFF" fontSize="10" textAnchor="middle">{"ab"}</text>
+                  <rect x="20" y="180" width="160" height="80" fill="#2196F3" stroke="#1565C0" strokeWidth="2" />
+                  <text x="100" y="230" fill="#FFFFFF" fontSize="20" textAnchor="middle">{"ab"}</text>
 
                   {/* Square b x b */}
-                  <rect x="90" y="90" width="40" height="40" fill="#FF9800" stroke="#E65100" strokeWidth="1" />
-                  <text x="110" y="115" fill="#FFFFFF" fontSize="10" textAnchor="middle">{"b²"}</text>
+                  <rect x="180" y="180" width="80" height="80" fill="#FF9800" stroke="#E65100" strokeWidth="2" />
+                  <text x="220" y="230" fill="#FFFFFF" fontSize="20" textAnchor="middle">{"b²"}</text>
 
                   {/* Dimension labels */}
-                  <text x="50" y="6" fill="#37474F" fontSize="8" textAnchor="middle">{"a"}</text>
-                  <text x="110" y="6" fill="#37474F" fontSize="8" textAnchor="middle">{"b"}</text>
-                  <text x="4" y="50" fill="#37474F" fontSize="8" textAnchor="middle">{"a"}</text>
-                  <text x="4" y="110" fill="#37474F" fontSize="8" textAnchor="middle">{"b"}</text>
+                  <text x="100" y="12" fill="#37474F" fontSize="16" textAnchor="middle">{"a"}</text>
+                  <text x="220" y="12" fill="#37474F" fontSize="16" textAnchor="middle">{"b"}</text>
+                  <text x="8" y="100" fill="#37474F" fontSize="16" textAnchor="middle">{"a"}</text>
+                  <text x="8" y="220" fill="#37474F" fontSize="16" textAnchor="middle">{"b"}</text>
                 </svg>
               </div>
             </div>
@@ -124,7 +124,7 @@ export const unit2Data: UnitData = {
       ]
     },
     {
-      title: "2. ຜົນຕ່າງກຳລັງສອງ (Difference of Squares)",
+      title: "2. ຜົນຕ່າງກຳລັງສອງ",
       keyPoint: {
         title: "ສູດຜົນຕ່າງກຳລັງສອງ",
         content: (
@@ -216,7 +216,7 @@ export const unit2Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຫຍໍ້ສຳນວນພຶດຊະຄະນິດ (Simplifying Algebraic Expression): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຫຍໍ້ສຳນວນພຶດຊະຄະນິດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງຄິດໄລ່ ແລະ ຫຍໍ້ສຳນວນຕໍ່ໄປນີ້ໃຫ້ງ່າຍທີ່ສຸດ: "} 
@@ -234,7 +234,7 @@ export const unit2Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຊອກຫາຄ່າຂອງກຳລັງສອງ (Finding Sum of Squares Value): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຊອກຫາຄ່າຂອງກຳລັງສອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ໃຫ້ "} <span className="math">{"a + b = 8"}</span> {" ແລະ "} <span className="math">{"ab = 15"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ "} <span className="math">{"a² + b²"}</span> {" (ຄຳແນະນຳ: ໃຊ້ສູດ a² + b² = (a+b)² - 2ab)"}
@@ -254,7 +254,7 @@ export const unit2Data: UnitData = {
       content: (
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
-            {"ໂຈດບັນຫາເລຂາຄະນິດທາງເດີນ (Geometric Path Area): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+            {"ໂຈດບັນຫາເລຂາຄະນິດທາງເດີນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ສວນດອກໄມ້ຮູບຈະຕຸລັດຂ້າງຍາວ x ແມັດ. ຖ້າຂະຫຍາຍຄວາມຍາວຂອງທຸກໆຂ້າງອອກໄປ 2 ແມັດ, ເນື້ອທີ່ຂອງສວນຈະເພີ່ມຂຶ້ນເທົ່າໃດ? (ຄິດໄລ່ຈາກ (x+2)² - x² ໂດຍຕອບເປັນສຳນວນ)"}
