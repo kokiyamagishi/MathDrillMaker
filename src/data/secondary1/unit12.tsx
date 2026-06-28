@@ -142,18 +142,30 @@ export const unit12Data: UnitData = {
                 {"ຈົ່ງຕື່ມສັນຍະລັກເລຂາຄະນິດທີ່ຖືກຕ້ອງໃສ່ບ່ອນວ່າງ: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
               </p>
               
-              <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຖ້າ d₁ ⊥ d₃ ແລະ d₂ ⊥ d₃ ແລ້ວສະຫຼຸບໄດ້ວ່າ: d₁"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                  <span>{"d₂"}</span>
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "8px 0" }}>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
+                  <p style={{ margin: 0, lineHeight: "1.5" }}>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                    {"ຖ້າ d₁ ⊥ d₃ ແລະ d₂ ⊥ d₃ ແລ້ວສະຫຼຸບໄດ້ວ່າ:"}
+                  </p>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
+                    <span>{"ຕອບ: d₁ "}</span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                    <span>{" d₂"}</span>
+                  </div>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຖ້າ d₁ // d₂ ແລະ d₃ ⊥ d₁ ແລ້ວສະຫຼຸບໄດ້ວ່າ: d₃"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                  <span>{"d₂"}</span>
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
+                  <p style={{ margin: 0, lineHeight: "1.5" }}>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                    {"ຖ້າ d₁ // d₂ ແລະ d₃ ⊥ d₁ ແລ້ວສະຫຼຸບໄດ້ວ່າ:"}
+                  </p>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
+                    <span>{"ຕອບ: d₃ "}</span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                    <span>{" d₂"}</span>
+                  </div>
                 </div>
               </div>
             </div>
