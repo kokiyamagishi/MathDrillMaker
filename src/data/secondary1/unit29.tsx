@@ -1,6 +1,14 @@
 import React from "react";
 import { UnitData } from "../units2";
 
+// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
+const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" }}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" }}>{den}</span>
+  </span>
+);
+
 export const unit29Data: UnitData = {
   unitNumber: 29,
   unitTitle: "ພາກທີ V - ບົດທີ 29: ການຊອກຫາພົດທີບໍ່ທັນຮູ້ຂອງອັດຕາສ່ວນ (Finding Unknown Terms of Proportion)",
@@ -203,8 +211,11 @@ export const unit29Data: UnitData = {
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
             {"ຄິດໄລ່ຫາຄ່າ y ຈາກສົມຜົນອັດຕາສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ຊອກຫາ y ຈາກ: 34 / 136 = y / 6"}
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6", display: "flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+            <span>{"ຊອກຫາ y ຈາກ: "}</span>
+            <Fraction num={"34"} den={"136"} />
+            <span>{" = "}</span>
+            <Fraction num={"y"} den={"6"} />
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: y ="}</span>
@@ -237,54 +248,54 @@ export const unit29Data: UnitData = {
       {
         questionNumber: 1,
         answers: [
-          <span key="1-1">{"(1) 15 (ຄິດໄລ່: 25 × 21 / 35)"}</span>,
-          <span key="1-2">{"(2) 48 (ຄິດໄລ່: 24 × 64 / 32)"}</span>
+          <span key="1-1">{"(1) 15 (ຄິດໄລ່: "} <Fraction num={<span>{"25 × 21"}</span>} den={"35"} /> {")"}</span>,
+          <span key="1-2">{"(2) 48 (ຄິດໄລ່: "} <Fraction num={<span>{"24 × 64"}</span>} den={"32"} /> {")"}</span>
         ]
       },
       {
         questionNumber: 2,
         answers: [
           <span key="2-1">{"152 × 55"}</span>,
-          <span key="2-2">{"88 (ຄິດໄລ່: 152 × 55 / 95)"}</span>
+          <span key="2-2">{"88 (ຄິດໄລ່: "} <Fraction num={<span>{"152 × 55"}</span>} den={"95"} /> {")"}</span>
         ]
       },
       {
         questionNumber: 3,
         answers: [
-          <span key="3-1">{"15,000 × 900 / 600"}</span>,
+          <span key="3-1"><Fraction num={<span>{"15,000 × 900"}</span>} den={"600"} /></span>,
           <span key="3-2">{"22,500"}</span>
         ]
       },
       {
         questionNumber: 4,
         answers: [
-          <span key="4-1">{"260 × 85 / 13"}</span>,
+          <span key="4-1"><Fraction num={<span>{"260 × 85"}</span>} den={"13"} /></span>,
           <span key="4-2">{"1,700"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="c1-1">{"- ຂະໜາດຈິງ a = 1,200 cm (ຄິດໄລ່: 6 × 2,400 / 12)"}</span>,
-          <span key="c1-2">{"- ຂະໜາດຫຍໍ້ b = 8 cm (ຄິດໄລ່: 1,600 × 12 / 2,400)"}</span>
+          <span key="c1-1">{"- ຂະໜາດຈິງ a = 1,200 cm (ຄິດໄລ່: "} <Fraction num={<span>{"6 × 2,400"}</span>} den={"12"} /> {")"}</span>,
+          <span key="c1-2">{"- ຂະໜາດຫຍໍ້ b = 8 cm (ຄິດໄລ່: "} <Fraction num={<span>{"1,600 × 12"}</span>} den={"2,400"} /> {")"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="c2-1">{"445 (ຄິດໄລ່: 71.2 × 50 / 8)"}</span>
+          <span key="c2-1">{"445 (ຄິດໄລ່: "} <Fraction num={<span>{"71.2 × 50"}</span>} den={"8"} /> {")"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="s1">{"1.5 (ຄິດໄລ່: 34 × 6 / 136)"}</span>
+          <span key="s1">{"1.5 (ຄິດໄລ່: "} <Fraction num={<span>{"34 × 6"}</span>} den={"136"} /> {")"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="s2">{"380 (ຄິດໄລ່: 152 × 5 / 2)"}</span>
+          <span key="s2">{"380 (ຄິດໄລ່: "} <Fraction num={<span>{"152 × 5"}</span>} den={"2"} /> {")"}</span>
         ]
       }
     ],
