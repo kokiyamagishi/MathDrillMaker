@@ -113,10 +113,12 @@ export const unit31Data: UnitData = {
           </div>
         ),
         hint: {
-          text: <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
-            <span>{"💡 ຕົວຢ່າງ: ຖອກນ້ຳໃສ່ຕຸກຂະໜາດ 75 cL ໄດ້ 79 ຕຸກ. ຖ້າປ່ຽນມາໃສ່ຕຸກຂະໜາດ 25 cL ຈະໄດ້: ("}</span>
-            <Fraction num={<span>{"75 × 79"}</span>} den={"25"} />
-            <span>{") = 3 × 79 = 237 ຕຸກ!"}</span>
+          text: <span style={{ display: "inline-flex", flexDirection: "column", gap: "8px" }}>
+            <span>{"💡 ຕົວຢ່າງ: ຖອກນ້ຳໃສ່ຕຸກຂະໜາດ 75 cL ໄດ້ 79 ຕຸກ. ຖ້າປ່ຽນມາໃສ່ຕຸກຂະໜາດ 25 cL ຈະໄດ້:"}</span>
+            <span style={{ display: "inline-flex", alignItems: "center", gap: "4px", whiteSpace: "nowrap" }}>
+              <Fraction num={<span>{"75 × 79"}</span>} den={"25"} />
+              <span>{" = 3 × 79 = 237 ຕຸກ!"}</span>
+            </span>
           </span>,
           isBlue: false
         }
