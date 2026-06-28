@@ -135,7 +135,18 @@ export const unit29Data: UnitData = {
           </div>
         ),
         hint: {
-          text: "💡 ຕົວຢ່າງ: ແປ້ງ 15 kg ເຮັດເຂົ້າຈີ່ໄດ້ 21 kg. ຖ້າມີແປ້ງ 22 kg ຈະເຮັດໄດ້ x kg. ຕັ້ງເປັນ 21/15 = x/22 ⇒ x = (21 × 22)/15 = 30.8 kg!",
+          text: <span style={{ display: "inline-flex", flexDirection: "column", gap: "8px" }}>
+            <span>{"💡 ຕົວຢ່າງ: ແປ້ງ 15 kg ເຮັດເຂົ້າຈີ່ໄດ້ 21 kg. ຖ້າມີແປ້ງ 22 kg ຈະເຮັດໄດ້ x kg."}</span>
+            <span style={{ display: "inline-flex", alignItems: "center", gap: "4px", whiteSpace: "nowrap" }}>
+              <span>{"ຕັ້ງເປັນ: "}</span>
+              <Fraction num={"21"} den={"15"} />
+              <span>{" = "}</span>
+              <Fraction num={"x"} den={"22"} />
+              <span>{" ⇒ x = "}</span>
+              <Fraction num={<span>{"21 × 22"}</span>} den={"15"} />
+              <span>{" = 30.8 kg!"}</span>
+            </span>
+          </span>,
           isBlue: false
         }
       },
