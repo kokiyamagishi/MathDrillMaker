@@ -16,11 +16,11 @@ export const unit26Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"- "}<strong>{"ການຕັດກຸ່ມ"}</strong>{" ຂອງສອງກຸ່ມ A ແລະ B, ສັນຍະລັກດ້ວຍ "}<strong>{"A ∩ B"}</strong>{" (ອ່ານວ່າ A ຕັດ B), ແມ່ນກຸ່ມທີ່ປະກອບດ້ວຍບັນດາອົງປະກອບທີ່ນອນຢູ່ໃນທັງກຸ່ມ A ແລະ ກຸ່ມ B ຮ່ວມກັນ."}
               <br />
-              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#00796B", paddingLeft: "16px" }, whiteSpace: "nowrap"}>{"A ∩ B = { 𝑥 | 𝑥 ∈ A  ແລະ  𝑥 ∈ B }"}</span>
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#00796B", paddingLeft: "16px" , whiteSpace: "nowrap"}}>{"A ∩ B = { 𝑥 | 𝑥 ∈ A  ແລະ  𝑥 ∈ B }"}</span>
             </p>
             
             <div style={{ padding: "16px", backgroundColor: "#E0F2F1", borderRadius: "8px", border: "1px solid #80CBC4" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#004D40" }, whiteSpace: "nowrap"}>{"ຄຸນລັກສະນະການຕັດ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#004D40" , whiteSpace: "nowrap"}}>{"ຄຸນລັກສະນະການຕັດ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6", marginTop: "8px" }}>
                 <li>{"ການສັບປ່ຽນບ່ອນໄດ້: A ∩ B = B ∩ A"}</li>
                 <li>{"ການໂຮມໝູ່ໄດ້: (A ∩ B) ∩ C = A ∩ (B ∩ C)"}</li>
@@ -76,11 +76,11 @@ export const unit26Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"- "}<strong>{"การໂຮມກຸ່ມ"}</strong>{" ຂອງສອງກຸ່ມ A ແລະ B, ສັນຍະລັກດ້ວຍ "}<strong>{"A ∪ B"}</strong>{" (ອ່ານວ່າ A ໂຮມ B), ແມ່ນກຸ່ມທີ່ປະກອບດ້ວຍບັນດາອົງປະກອບທີ່ນອນຢູ່ໃນກຸ່ມ A ຫຼື ຢູ່ໃນກຸ່ມ B ຫຼື ຢູ່ໃນທັງສອງກຸ່ມ (ຮວບຮວມສະມາຊິກທັງໝົດ ແຕ່ບໍ່ຂຽນຕົວຊ້ຳ)."}
               <br />
-              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#E65100", paddingLeft: "16px" }, whiteSpace: "nowrap"}>{"A ∪ B = { 𝑥 | 𝑥 ∈ A  ຫຼື  𝑥 ∈ B }"}</span>
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#E65100", paddingLeft: "16px" , whiteSpace: "nowrap"}}>{"A ∪ B = { 𝑥 | 𝑥 ∈ A  ຫຼື  𝑥 ∈ B }"}</span>
             </p>
             
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ຄຸນລັກສະນະການໂຮມ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>{"ຄຸນລັກສະນະການໂຮມ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6", marginTop: "8px" }}>
                 <li>{"ການສັບປ່ຽນບ່ອນໄດ້: A ∪ B = B ∪ A"}</li>
                 <li>{"ການໂຮມໝູ່ໄດ້: (A ∪ B) ∪ C = A ∪ (B ∪ C)"}</li>
@@ -89,7 +89,7 @@ export const unit26Data: UnitData = {
           </div>
         ),
         hint: {
-          text: <span style={{ display: "inline-flex", flexDirection: "column", gap: "6px" }, whiteSpace: "nowrap"}>
+          text: <span style={{ display: "inline-flex", flexDirection: "column", gap: "6px" , whiteSpace: "nowrap"}}>
             <span>{"💡 ຕົວຢ່າງ: ຖ້າ A = {1, 2, 3} ແລະ B = {3, 4, 5}"}</span>
             <span style={{ paddingLeft: "24px", whiteSpace: "nowrap" }}>{"⇒ A ∪ B = {1, 2, 3, 4, 5}."}</span>
           </span>,

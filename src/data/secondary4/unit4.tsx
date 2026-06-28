@@ -22,7 +22,7 @@ export const unit4Data: UnitData = {
               <span>{"A/C - B/C = (A - B)/C"}</span>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" , whiteSpace: "nowrap"}}>{"ຕົວຢ່າງ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"- ຕົວຢ່າງ 1: "}<strong>{"a / (a - b) - b / (a - b) = (a - b) / (a - b) = 1"}</strong>
                 <br />
@@ -90,12 +90,12 @@ export const unit4Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ເມື່ອພູດຕ່າງກັນ, ເຮົາຕ້ອງຂຶ້ນພູດຮ່ວມໂດຍການຊອກຫາ LCM ຂອງພູດທັງໝົດກ່ອນ:"}
               <br />
-              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#E65100", display: "block", textAlign: "center", margin: "12px 0" }, whiteSpace: "nowrap"}>
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#E65100", display: "block", textAlign: "center", margin: "12px 0" , whiteSpace: "nowrap"}}>
                 {"A/B + C/D = (A·D + B·C) / (B·D)"}
               </span>
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>{"ຕົວຢ່າງ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ຄິດໄລ່: 1 / (x - 1) + 1 / (x + 1)"}
                 <br />

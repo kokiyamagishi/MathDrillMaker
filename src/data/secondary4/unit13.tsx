@@ -93,7 +93,7 @@ export const unit13Data: UnitData = {
               {"ເຮົາສາມາດແກ້ສົມຜົນ ແລະ ອະສົມຜົນຂັ້ນສອງ x² = k, x² ≤ k, x² > k ໂດຍການປຽບທຽບປາຣາໂບນ y = x² ກັບເສັ້ນຊື່ y = k:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ກໍລະນີສຳຄັນ (ສໍາລັບ k > 0):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>{"ກໍລະນີສຳຄັນ (ສໍາລັບ k > 0):"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li>{"ສົມຜົນ "}<strong>{"x² = k"}</strong>{" ມີ 2 ໃຈຜົນແມ່ນ: x = -√k ຫຼື x = √k."}</li>
                 <li>{"ສົມຜົນ "}<strong>{"x² = -k"}</strong>{" ບໍ່ມີໃຈຜົນຕົວຈິງ (ເພາະປາຣາໂບນບໍ່ຕັດເສັ້ນຊື່ທີ່ຢູ່ກ້ອງແກນ Ox)."}</li>

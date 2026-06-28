@@ -17,13 +17,13 @@ export const unit33Data: UnitData = {
               {"ໃນລະບົບເສັ້ນເຄົ້າຕັ້ງສາກ Oxy, ສໍາລັບສອງເມັດ A(x₁, y₁) ແລະ B(x₂, y₂):"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"1. ຕົວປະສານຂອງເວກເຕີ AB:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" , whiteSpace: "nowrap"}}>{"1. ຕົວປະສານຂອງເວກເຕີ AB:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"AB = [x₂ - x₁, y₂ - y₁] ຫຼຶ ຂຽນເປັນຖັນ [x₂ - x₁ \\ y₂ - y₁]."}
               </p>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"2. ຂະໜາດຂອງເວກເຕີ u = [a, b]:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" , whiteSpace: "nowrap"}}>{"2. ຂະໜາດຂອງເວກເຕີ u = [a, b]:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"|u| = √(a² + b²)"}
                 <br />

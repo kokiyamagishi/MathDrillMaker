@@ -3,9 +3,9 @@ import { UnitData } from "../units2";
 
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }, whiteSpace: "nowrap"}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" }, whiteSpace: "nowrap"}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" }, whiteSpace: "nowrap"}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" , whiteSpace: "nowrap"}}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" , whiteSpace: "nowrap"}}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" , whiteSpace: "nowrap"}}>{den}</span>
   </span>
 );
 
@@ -30,11 +30,11 @@ export const unit27Data: UnitData = {
             </p>
             
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9", display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"ຄຸນລັກສະນະພື້ນຖານ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" , whiteSpace: "nowrap"}}>{"ຄຸນລັກສະນະພື້ນຖານ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", display: "flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
                 <span>{"ອັດຕາສ່ວນຈະບໍ່ປ່ຽນແປງ ຖ້າເຮົາຄູນ ຫຼື ຫານທັງພົດທີໜຶ່ງ ແລະ ພົດທີສອງດ້ວຍຈຳນວນດຽວກັນ (ທີ່ຕ່າງຈາກ 0):"}</span>
                 <br />
-                <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", paddingLeft: "16px", display: "flex", alignItems: "center", gap: "4px" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", paddingLeft: "16px", display: "flex", alignItems: "center", gap: "4px" , whiteSpace: "nowrap"}}>
                   <span>{"a:b = (a × n) : (b × n) = ("}</span>
                   <Fraction num={"a"} den={"m"} />
                   <span>{") : ("}</span>
@@ -61,14 +61,14 @@ export const unit27Data: UnitData = {
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <Fraction num={"15"} den={"50"} />
                   <span>{" = "}</span>
                   <Fraction num={"3"} den={<span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "24px", verticalAlign: "middle" }}></span>} />
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <Fraction num={"5"} den={"100"} />
                   <span>{" = "}</span>
                   <Fraction num={"1"} den={<span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "24px", verticalAlign: "middle" }}></span>} />
@@ -109,7 +109,7 @@ export const unit27Data: UnitData = {
               {"ເຮົາສາມາດນຳໃຊ້ອັດຕາສ່ວນເພື່ອຄິດໄລ່ການແບ່ງສ່ວນແຈກຢາຍ ຫຼື ການສົມທຽບປະລິມານ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2", display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງໂຈດ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>{"ຕົວຢ່າງໂຈດ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", display: "flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
                 <span>{"ອັດຕາສ່ວນຂອງຜູ້ກູ້ຢືມເງິນຕໍ່ຜູ້ຝາກເງິນໃນທະນາຄານແມ່ນ 2:7. ຖ້າມີຜູ້ຝາກເງິນທັງໝົດ 630 ຄົນ."}</span>
                 <br />

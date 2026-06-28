@@ -43,17 +43,17 @@ export const unit9Data: UnitData = {
             <p>{"ຈົ່ງບອກວ່າສິ່ງຂອງລຸ່ມນີ້ມີຮູບຮ່າງຄືກັບອັນໃດ (ກັບ, ທໍ່, ໜ່ວຍມົນ): "} <span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span></p>
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                 <span>{"ໝາກກ້ຽງ 🍊 ມີຮູບຮ່າງເປັນ"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                 <span>{"ກ່ອງຂອງຂວັນ 🎁 ມີຮູບຮ່າງເປັນ"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                 <span>{"ຈອກນ້ຳ 🥛 ມີຮູບຮ່າງເປັນ"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
               </div>

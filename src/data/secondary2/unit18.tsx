@@ -3,9 +3,9 @@ import { UnitData } from "../units2";
 
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }, whiteSpace: "nowrap"}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" , whiteSpace: "nowrap"}}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" , whiteSpace: "nowrap"}}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" , whiteSpace: "nowrap"}}>{den}</span>
   </span>
 );
 
@@ -75,31 +75,31 @@ export const unit18Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "18px", padding: "8px 0" }}>
                 {/* 5 Questions */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span className="math">{"4𝑥 + 7 - 2𝑥 + 3 = ?𝑥 + 10"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
                 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span className="math">{"8a - 5b + 3a + 2b = ?a - 3b"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                   <span className="math">{"5𝑦 + 12 - 9𝑦 - 4 = ?𝑦 + 8"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                   <span className="math">{"3𝑥² + 4𝑥 - 𝑥² + 2𝑥 = 2𝑥² + ?𝑥"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(5) "}</span>
                   <span className="math">{"7 - 3m + 5 - 2m = 12 - ?m"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
@@ -124,7 +124,7 @@ export const unit18Data: UnitData = {
               <div style={{ paddingLeft: "12px", borderLeft: "3px solid #4CAF50", display: "flex", flexDirection: "column", gap: "6px", color: "#37474F" }}>
                 <span className="math">{"• ສູດແຈກຢາຍ: a(b + c) = ab + ac"}</span>
                 <span className="math">{"• ສູດແຈກຢາຍລົບ: a(b - c) = ab - ac"}</span>
-                <span style={{ color: "#2E7D32" }, whiteSpace: "nowrap"}>
+                <span style={{ color: "#2E7D32" , whiteSpace: "nowrap"}}>
                   <strong>{"ຕົວຢ່າງ: "}</strong> {"3(2𝑥 + 4) = 3 × 2𝑥 + 3 × 4 = 6𝑥 + 12"}
                 </span>
               </div>
@@ -148,31 +148,31 @@ export const unit18Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "18px", padding: "8px 0" }}>
                 {/* 5 Questions */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span className="math">{"3(2𝑥 + 4) = ?𝑥 + 12"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span className="math">{"5(3a - 2) = ?a - 10"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                   <span className="math">{"-2(4m - 3) = -8m + ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                   <span className="math">{"2(𝑥 + 3) + 4(2𝑥 - 1) = ?𝑥 + 2"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(5) "}</span>
                   <span className="math">{"6(𝑦 - 2) - 3(2𝑦 - 4) = ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>

@@ -19,7 +19,7 @@ export const unit6Data: UnitData = {
               {"- ມາດຕາສ່ວນແຜນຜັງ (Scale): ອັດຕາສ່ວນລະຫວ່າງຂະໜາດໃນແຜນຜັງ ແລະ ຂະໜາດຈິງ. ເຊັ່ນ ມາດຕາສ່ວນ 1 : 50,000 ໝາຍຄວາມວ່າ 1 cm ໃນແຜນຜັງ ເທົ່າກັບ 50,000 cm (0.5 km) ຕົວຈິງ."}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" , whiteSpace: "nowrap"}}>{"ຕົວຢ່າງ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ພໍ່ມີອາຍຸ 45 ປີ ແລະ ລູກມີອາຍຸ 11 ປີ."}
                 <br />
@@ -89,10 +89,10 @@ export const unit6Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"- ຖ້າຄົນທີ 1 ເຮັດວຽກແລ້ວໃນ a ຊົ່ວໂມງ, ຄົນທີ 2 ໃນ b ຊົ່ວໂມງ, ແລະ ຄົນທີ 3 ໃນ c ຊົ່ວໂມງ. ເວລາຮ່ວມກັນ t ແມ່ນ:"}
               <br />
-              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#2E7D32", display: "block", textAlign: "center", margin: "8px 0" }, whiteSpace: "nowrap"}>{"1/t = 1/a + 1/b + 1/c"}</span>
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#2E7D32", display: "block", textAlign: "center", margin: "8px 0" , whiteSpace: "nowrap"}}>{"1/t = 1/a + 1/b + 1/c"}</span>
               {"- ການແບ່ງປັນສ່ວນພົວພັນ: ເພື່ອແບ່ງປັນຈຳນວນ S ອອກເປັນພາກສ່ວນໃນອັດຕາສ່ວນ x : y : z. ແຕ່ລະສ່ວນຈະເທົ່າກັບ:"}
               <br />
-              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#D84315", display: "block", textAlign: "center", margin: "8px 0" }, whiteSpace: "nowrap"}>{"S_x = S × x / (x + y + z)"}</span>
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#D84315", display: "block", textAlign: "center", margin: "8px 0" , whiteSpace: "nowrap"}}>{"S_x = S × x / (x + y + z)"}</span>
             </p>
           </div>
         ),

@@ -6,7 +6,6 @@
     "dev": "next dev --webpack",
     "editor": "node editor-server.js",
     "build": "next build",
-    "export": "next export",
     "start": "next start",
     "serve": "npx serve out",
     "lint": "eslint",

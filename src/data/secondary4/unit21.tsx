@@ -17,7 +17,7 @@ export const unit21Data: UnitData = {
               {"ເພື່ອຊອກຫາທີ່ຕັ້ງສຳພັດລະຫວ່າງເສັ້ນຊື່ y = mx + n ແລະ ປາຣາໂບນ y = ax² + bx + c, ເຮົາແກ້ສົມຜົນຈຸດຕັດ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#F3E5F5", borderRadius: "8px", border: "1px solid #E1BEE7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#4A148C" }, whiteSpace: "nowrap"}>{"ສົມຜົນຈຸດຕັດ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#4A148C" , whiteSpace: "nowrap"}}>{"ສົມຜົນຈຸດຕັດ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ax² + (b - m)x + (c - n) = 0."}
                 <br />
@@ -94,7 +94,7 @@ export const unit21Data: UnitData = {
               {"ເພື່ອຊອກຫາທີ່ຕັ້ງສຳພັດລະຫວ່າງສອງປາຣາໂບນ y_1 = a_1x² + b_1x + c_1 ແລະ y_2 = a_2x² + b_2x + c_2:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"ສົມຜົນຈຸດຕັດ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" , whiteSpace: "nowrap"}}>{"ສົມຜົນຈຸດຕັດ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"a_1x² + b_1x + c_1 = a_2x² + b_2x + c_2."}
                 <br />

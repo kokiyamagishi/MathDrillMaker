@@ -26,7 +26,7 @@ export const unit1Data: UnitData = {
             </div>
 
             <div style={{ padding: "12px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#1565C0", display: "block", marginBottom: "8px" }, whiteSpace: "nowrap"}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#1565C0", display: "block", marginBottom: "8px" , whiteSpace: "nowrap"}}>
                 {"💡 ຕາຕະລາງຫຼັກ ແລະ ຄ່າປະຈຳຫຼັກ (Place Value Chart):"}
               </span>
               <div style={{ overflowX: "auto" }}>
@@ -75,7 +75,7 @@ export const unit1Data: UnitData = {
               <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "2" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "12px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "12px" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span style={{ whiteSpace: "nowrap" }}>
                     {"507 = (5 × "}
                     <span className="answer-blank" style={{ display: "inline-block", minWidth: "45px", width: "45px", height: "24px", verticalAlign: "middle", margin: "0 4px" }}></span>
@@ -86,7 +86,7 @@ export const unit1Data: UnitData = {
                 
                 {/* Sub-question 2 */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "2", marginTop: "12px" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "12px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "12px" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span style={{ whiteSpace: "nowrap" }}>
                     {"2 532 = (2 × 1000) + ("}
                     <span className="answer-blank" style={{ display: "inline-block", minWidth: "45px", width: "45px", height: "24px", verticalAlign: "middle", margin: "0 4px" }}></span>
@@ -110,7 +110,7 @@ export const unit1Data: UnitData = {
               <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span>{"ຊາວເກົ້າພັນແປດສິບ ("}</span>
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "100px", width: "100px", height: "42px" }}></span>
                   <span>{")"}</span>
@@ -118,7 +118,7 @@ export const unit1Data: UnitData = {
 
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span>{"ຫ້າລ້ານເຈັດແສນສາມສິບພັນຮ້ອຍແປດສິບຫົກ ("}</span>
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "120px", width: "80px", height: "42px" }}></span>
                   <span>{")"}</span>
@@ -167,7 +167,7 @@ export const unit1Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span className="math">{"4 398"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span className="math">{"3 999"}</span>
@@ -175,7 +175,7 @@ export const unit1Data: UnitData = {
                 
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span className="math">{"57 243"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span className="math">{"57 420"}</span>
@@ -195,14 +195,14 @@ export const unit1Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span>{"ເລກອາຣັບ 19 = ເລກໂຣແມັງ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span>{"ເລກໂຣແມັງ CXLIX = ເລກອາຣັບ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>

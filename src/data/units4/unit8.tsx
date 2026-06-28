@@ -228,7 +228,7 @@ export const unit8Data: UnitData = {
                   flexWrap: "wrap",
                 }}
               >
-                <span style={{ fontSize: "20px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "20px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(1) 94 ÷ 4 ="}
                 </span>
                 <span
@@ -250,7 +250,7 @@ export const unit8Data: UnitData = {
                   flexWrap: "wrap",
                 }}
               >
-                <span style={{ fontSize: "20px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "20px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(2) 86 ÷ 3 ="}
                 </span>
                 <span

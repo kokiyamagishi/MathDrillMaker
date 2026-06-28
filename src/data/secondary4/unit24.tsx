@@ -17,7 +17,7 @@ export const unit24Data: UnitData = {
               {"ລະບົບສົມຜົນສົມມາດແມ່ນລະບົບທີ່ບໍ່ປ່ຽນແປງເມື່ອເຮົາສະຫຼັບບົດບາດລະຫວ່າງ x ແລະ y. ເຮົາວາງ S = x + y ແລະ P = xy:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"ວິທີການຄິດໄລ່:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" , whiteSpace: "nowrap"}}>{"ວິທີການຄິດໄລ່:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"1. ປ່ຽນລະບົບສົມຜົນເດີມໃຫ້ຢູ່ໃນຮູບຮ່າງທີ່ມີ S ແລະ P."}
                 <br />
@@ -104,7 +104,7 @@ export const unit24Data: UnitData = {
               {"ບາງລະບົບຕ້ອງໃຊ້ການຄູນ, ບວກ ຫຼື ລົບສົມຜົນເພື່ອຫຼຸດຂັ້ນ ຫຼື ປ່ຽນເປັນສົມຜົນສົມມາດ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>{"ຕົວຢ່າງ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"{ x² + y² = 13, xy = 6 }"}
                 <br />

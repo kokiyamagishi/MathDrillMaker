@@ -657,7 +657,7 @@ export const unit2Data: UnitData = {
               <div
                 style={{ display: "flex", flexDirection: "column", gap: "8px" }}
               >
-                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(1) 4,800 + 3,100"}
                 </span>
                 <div
@@ -701,7 +701,7 @@ export const unit2Data: UnitData = {
               <div
                 style={{ display: "flex", flexDirection: "column", gap: "8px" }}
               >
-                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(2) 9,500 - 2,400"}
                 </span>
                 <div
@@ -782,8 +782,7 @@ export const unit2Data: UnitData = {
                     position: "absolute",
                     bottom: "142px",
                     left: "-55px",
-                    fontSize: "14px",
-                  }, whiteSpace: "nowrap"}
+                    fontSize: "14px", whiteSpace: "nowrap"}}
                 >
                   {"10,000"}
                 </span>
@@ -792,8 +791,7 @@ export const unit2Data: UnitData = {
                     position: "absolute",
                     bottom: "67px",
                     left: "-45px",
-                    fontSize: "14px",
-                  }, whiteSpace: "nowrap"}
+                    fontSize: "14px", whiteSpace: "nowrap"}}
                 >
                   {"5,000"}
                 </span>

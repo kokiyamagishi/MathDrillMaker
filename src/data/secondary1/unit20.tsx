@@ -19,7 +19,7 @@ export const unit20Data: UnitData = {
             </p>
             
             <div style={{ padding: "16px", backgroundColor: "#E0F2F1", borderRadius: "8px", border: "1px solid #80CBC4", display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#004D40" }, whiteSpace: "nowrap"}>{"ຄຸນລັກສະນະທີ່ສຳຄັນ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#004D40" , whiteSpace: "nowrap"}}>{"ຄຸນລັກສະນະທີ່ສຳຄັນ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6" }}>
                 <li>{"ທຸກໆເມັດ M ທີ່ນອນຢູ່ເທິງເສັ້ນກາງສາກ d ຂອງ [AB] ຈະມີໄລຍະຫ່າງຫາສົ້ນ A ແລະ B ເທົ່າກັນສະເໝີ: MA = MB."}</li>
                 <li>{"ປີ້ນຄືນ: ຖ້າເມັດ M ມີໄລຍະຫ່າງຫາ A ແລະ B ເທົ່າກັນ (MA = MB), ແລ້ວ M ຕ້ອງນອນຢູ່ເທິງເສັ້ນກາງສາກ d ຂອງ [AB]."}</li>
@@ -43,14 +43,14 @@ export const unit20Data: UnitData = {
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
                 <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   {"ເສັ້ນກາງສາກຂອງທ່ອນຊື່ [AB] ແມ່ນເສັ້ນຊື່ທີ່ຜ່ານຈຸດເຄິ່ງກາງ ແລະ "}
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   {" ກັບ [AB]."}
                 </p>
                 
                 <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   {"ຖ້າ M ນອນຢູ່ເທິງເສັ້ນກາງສາກຂອງ [AB], ແລ້ວໄລຍະຫ່າງ MA ຈະ "}
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   {" ໄລຍະຫ່າງ MB."}
@@ -91,13 +91,13 @@ export const unit20Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"- "}<strong>{"ເສັ້ນແບ່ງເຄິ່ງມຸມ"}</strong>{" ຂອງມຸມ "} <Angle>xOy</Angle> {" ແມ່ນເຄິ່ງເສັ້ນຊື່ [Oz) ທີ່ຢູ່ລະຫວ່າງສອງຂ້າງ [Ox) ແລະ [Oy) ເຊິ່ງແບ່ງມຸມ "} <Angle>xOy</Angle> {" ອອກເປັນສອງມຸມທີ່ມີຂະໜາດເທົ່າກັນ:"}
               <br />
-              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#E65100", paddingLeft: "16px" }, whiteSpace: "nowrap"}>
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#E65100", paddingLeft: "16px" , whiteSpace: "nowrap"}}>
                 <Angle>xOz</Angle> {" = "} <Angle>zOy</Angle> {" = (1/2) × "} <Angle>xOy</Angle>
               </span>
             </p>
             
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2", display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ວິທີສ້າງດ້ວຍວົງວຽນ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>{"ວິທີສ້າງດ້ວຍວົງວຽນ:"}</span>
               <ol style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6" }}>
                 <li>{"ແຕ້ມສ່ວນໂຄ້ງມົນຈຸດສູນກາງ O ຕັດ [Ox) ຢູ່ I ແລະ ຕັດ [Oy) ຢູ່ J."}</li>
                 <li>{"ແຕ້ມສອງສ່ວນໂຄ້ງມົນຈຸດສູນກາງ I ແລະ J ດ້ວຍລັດສະໝີອັນດຽວກັນ ໃຫ້ຕັດກັນຢູ່ເມັດ M ພາຍໃນມຸມ."}</li>
@@ -128,7 +128,7 @@ export const unit20Data: UnitData = {
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
                   <span>{" = "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
-                  <span style={{ flexShrink: 0 }, whiteSpace: "nowrap"}>{"°"}</span>
+                  <span style={{ flexShrink: 0 , whiteSpace: "nowrap"}}>{"°"}</span>
                 </div>
               </div>
             </div>
@@ -150,7 +150,7 @@ export const unit20Data: UnitData = {
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
                   <span>{" = "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
-                  <span style={{ flexShrink: 0 }, whiteSpace: "nowrap"}>{"°"}</span>
+                  <span style={{ flexShrink: 0 , whiteSpace: "nowrap"}}>{"°"}</span>
                 </div>
               </div>
             </div>

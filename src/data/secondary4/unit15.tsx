@@ -17,14 +17,14 @@ export const unit15Data: UnitData = {
               {"ກຣາຟຂອງຕຳລາ y = a(x-b)² ໄດ້ມາຈາກການຍ້າຍຂະໜານກຣາຟຂອງຕຳລາ y = ax² ຕາມແກນນອນ (Ox):"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"ທິດທາງການຍ້າຍຂະໜານ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" , whiteSpace: "nowrap"}}>{"ທິດທາງການຍ້າຍຂະໜານ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li><strong>{"ຖ້າ b > 0: "}</strong>{" ຍ້າຍຂະໜານໄປທາງຂວາ b ຫົວໜ່ວຍ."}</li>
                 <li><strong>{"ຖ້າ b < 0: "}</strong>{" ຍ້າຍຂະໜານໄປທາງຊ້າຍ |b| ຫົວໜ່ວຍ."}</li>
               </ul>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ຄຸນລັກສະນະສະເພາະ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>{"ຄຸນລັກສະນະສະເພາະ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li><strong>{"ເມັດຈອມ (Vertex):"}</strong>{" S(b, 0) ເຊິ່ງຈະຢູ່ເທິງແກນ Ox ສະເໝີ."}</li>
                 <li><strong>{"ແກນເຄິ່ງຄື (Axis of Symmetry):"}</strong>{" ແມ່ນເສັ້ນຊື່ x = b (ຂະໜານກັບແກນ Oy)."}</li>
@@ -106,7 +106,7 @@ export const unit15Data: UnitData = {
               {"ທິດທາງການຜັນປ່ຽນຂອງ y = a(x-b)² ຈະແບ່ງໂດຍແກນເຄິ່ງຄື x = b:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"ຖ້າ a > 0 (ປາຣາໂບນຫງາຍ):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" , whiteSpace: "nowrap"}}>{"ຖ້າ a > 0 (ປາຣາໂບນຫງາຍ):"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"- ຕຳລາຈະຫຼຸດ (decreasing) ໃນຫວ່າງ ]-∞, b]"}
                 <br />
@@ -114,7 +114,7 @@ export const unit15Data: UnitData = {
               </p>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#FFEBEE", borderRadius: "8px", border: "1px solid #FFCDD2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#C62828" }, whiteSpace: "nowrap"}>{"ຖ້າ a < 0 (ປາຣາໂບນຂວ້ຳ):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#C62828" , whiteSpace: "nowrap"}}>{"ຖ້າ a < 0 (ປາຣາໂບນຂວ້ຳ):"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"- ຕຳລາຈະເພີ່ມ (increasing) ໃນຫວ່າງ ]-∞, b]"}
                 <br />

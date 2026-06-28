@@ -66,28 +66,28 @@ export const unit10Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span className="math" style={{ whiteSpace: "nowrap", flexShrink: 0 }}>{"18 - 4 × 3 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px", flexShrink: 0 }}></span>
                 </div>
 
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span className="math" style={{ whiteSpace: "nowrap", flexShrink: 0 }}>{"10 + 20 ÷ 5 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px", flexShrink: 0 }}></span>
                 </div>
 
                 {/* Sub-question 3 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(3) "}</span>
                   <span className="math" style={{ whiteSpace: "nowrap", flexShrink: 0 }}>{"6 × 3 - 8 ÷ 2 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px", flexShrink: 0 }}></span>
                 </div>
 
                 {/* Sub-question 4 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(4) "}</span>
                   <span className="math" style={{ whiteSpace: "nowrap", flexShrink: 0 }}>{"25 - 5 × 4 + 3 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px", flexShrink: 0 }}></span>
                 </div>
@@ -173,28 +173,28 @@ export const unit10Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span className="math" style={{ whiteSpace: "nowrap", flexShrink: 0 }}>{"4 × (9 - 6) ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px", flexShrink: 0 }}></span>
                 </div>
 
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span className="math" style={{ whiteSpace: "nowrap", flexShrink: 0 }}>{"3 × (2 - 7) ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px", flexShrink: 0 }}></span>
                 </div>
 
                 {/* Sub-question 3 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(3) "}</span>
                   <span className="math" style={{ whiteSpace: "nowrap", flexShrink: 0 }}>{"(4 × 6 - 8) ÷ 4 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px", flexShrink: 0 }}></span>
                 </div>
 
                 {/* Sub-question 4 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(4) "}</span>
                   <span className="math" style={{ whiteSpace: "nowrap", flexShrink: 0 }}>{"(12 - 3 × 5) × (-2) ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px", flexShrink: 0 }}></span>
                 </div>
@@ -284,28 +284,28 @@ export const unit10Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span className="math" style={{ whiteSpace: "nowrap", flexShrink: 0 }}>{"15 - [3 × (8 - 6)] ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px", flexShrink: 0 }}></span>
                 </div>
 
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span className="math" style={{ whiteSpace: "nowrap", flexShrink: 0 }}>{"[4 + 2 × (5 - 2)] × 2 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px", flexShrink: 0 }}></span>
                 </div>
 
                 {/* Sub-question 3 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(3) "}</span>
                   <span className="math" style={{ whiteSpace: "nowrap", flexShrink: 0 }}>{"[10 - 4 × (1 - 3)] - 5 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px", flexShrink: 0 }}></span>
                 </div>
 
                 {/* Sub-question 4 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(4) "}</span>
                   <span className="math" style={{ whiteSpace: "nowrap", flexShrink: 0 }}>{"30 ÷ [12 - (2 + 2 × 2)] ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px", flexShrink: 0 }}></span>
                 </div>
@@ -322,22 +322,22 @@ export const unit10Data: UnitData = {
               </p>
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span className="math" style={{ whiteSpace: "nowrap", flexShrink: 0 }}>{"20 - [4 × (9 - 7)] ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px", flexShrink: 0 }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span className="math" style={{ whiteSpace: "nowrap", flexShrink: 0 }}>{"[6 + 3 × (4 - 2)] × 3 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px", flexShrink: 0 }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(3) "}</span>
                   <span className="math" style={{ whiteSpace: "nowrap", flexShrink: 0 }}>{"[12 - 5 × (2 - 4)] - 8 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px", flexShrink: 0 }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(4) "}</span>
                   <span className="math" style={{ whiteSpace: "nowrap", flexShrink: 0 }}>{"36 ÷ [15 - (3 + 3 × 3)] ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px", flexShrink: 0 }}></span>
                 </div>

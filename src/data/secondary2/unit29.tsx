@@ -3,9 +3,9 @@ import { UnitData } from "../units2";
 
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }, whiteSpace: "nowrap"}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" , whiteSpace: "nowrap"}}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" , whiteSpace: "nowrap"}}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" , whiteSpace: "nowrap"}}>{den}</span>
   </span>
 );
 
@@ -74,35 +74,35 @@ export const unit29Data: UnitData = {
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span>{"ຜົນບວກຂອງ 4 ມຸມໃນຮູບສີ່ແຈສາກແມ່ນຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"°"}</span>
                 </div>
                 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span>{"ຖ້າຂ້າງຍາວ AB = 10 cm. ຂ້າງກົງກັນຂ້າມ CD ຈະຍາວຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                   <span>{"ຖ້າຂ້າງກວ້າງ AD = 6 cm. ຂ້າງກົງກັນຂ້າມ BC ຈະຍາວຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                   <span>{"ຖ້າຂ້າງ AB = 8 cm ແລະ AD = 5 cm. ເນື້ອທີ່ຂອງຮູບສີ່ແຈສາກ ABCD ຈະແມ່ນຈັກ cm²?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm²"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(5) "}</span>
                   <span>{"ຖ້າຂ້າງ AB = 8 cm ແລະ AD = 5 cm. ລວງຮອບຂອງຮູບສີ່ແຈສາກ ABCD ຈະແມ່ນຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm"}</span>
@@ -169,35 +169,35 @@ export const unit29Data: UnitData = {
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span>{"ຖ້າເສັ້ນເນັ່ງຈອມ AC ຍາວ 10 cm. ເສັ້ນເນັ່ງຈອມ BD ຈະຍາວຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span>{"ຖ້າເສັ້ນເນັ່ງຈອມ AC ຍາວ 12 cm. ສ່ວນແບ່ງເຄິ່ງ AO ຈະຍາວຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                   <span>{"ຖ້າເສັ້ນເນັ່ງຈອມ BD ຍາວ 12 cm. ສ່ວນແບ່ງເຄິ່ງ BO ຈະຍາວຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                   <span>{"ຖ້າສ່ວນແບ່ງເຄິ່ງ AO = 4.5 cm. ເສັ້ນເນັ່ງຈອມ BD ທັງໝົດຈະຍາວຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(5) "}</span>
                   <span>{"ຖ້າ AO = 5 cm. ຜົນບວກຂອງສອງສ່ວນເຄິ່ງເສັ້ນເນັ່ງຈອມ AO + BO ຈະເທົ່າກັບຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm"}</span>

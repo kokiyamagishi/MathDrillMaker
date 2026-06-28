@@ -70,34 +70,34 @@ export const unit14Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "18px", padding: "8px 0" }}>
                 {/* 5 Questions */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span>{"ຮູບສາມແຈສະເໝີ ມີແກນເຄິ່ງຄືທັງໝົດຈັກເສັ້ນ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ເສັ້ນ"}</span>
                 </div>
                 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span>{"ຮູບສີ່ແຈສາກ ມີແກນເຄິ່ງຄືທັງໝົດຈັກເສັ້ນ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ເສັ້ນ"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                   <span>{"ฮູບວົງມົນ ມີແກນເຄິ່ງຄືທັງໝົດຈັກເສັ້ນ? (ຕອບ 1, 2, 4 ຫຼື ຫຼາຍບໍ່ມີສິ້ນສຸດ)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                   <span>{"ຮູບສີ່ແຈຂະໜານ ມີແກນເຄິ່ງຄືທັງໝົດຈັກເສັ້ນ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ເສັ້ນ"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(5) "}</span>
                   <span>{"ຮູບຈະຕຸລັດ ມີແກນເຄິ່ງຄືທັງໝົດຈັກເສັ້ນ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ເສັ້ນ"}</span>
@@ -145,31 +145,31 @@ export const unit14Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "18px", padding: "8px 0" }}>
                 {/* 5 Questions */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span>{"ຮູບສີ່ແຈຂະໜານ ມີແກນເຄິ່ງຄື ຫຼື ບໍ່?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span>{"ຮູບສີ່ແຈຂະໜານ ມີໃຈກາງເຄິ່ງຄື ຫຼື ບໍ່?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                   <span>{"ຮູບສາມແຈສະເໝີ ມີໃຈກາງເຄິ່ງຄື ຫຼື ບໍ່?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                   <span>{"ຮູບດອກຈັນ ມີແກນເຄິ່ງຄື ຫຼື ບໍ່?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(5) "}</span>
                   <span>{"ຮູບດອກຈັນ ມີໃຈກາງເຄິ່ງຄື ຫຼື ບໍ່?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>

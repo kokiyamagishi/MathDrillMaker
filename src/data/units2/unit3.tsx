@@ -118,7 +118,7 @@ export const unit3Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (1)
                 </span>{" "}
                 <VerticalMath top={55} bottom={12} operator="-" />
@@ -130,7 +130,7 @@ export const unit3Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (2)
                 </span>{" "}
                 <VerticalMath top={78} bottom={48} operator="-" />
@@ -142,7 +142,7 @@ export const unit3Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (3)
                 </span>{" "}
                 <VerticalMath top={42} bottom={36} operator="-" />
@@ -154,7 +154,7 @@ export const unit3Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (4)
                 </span>{" "}
                 <VerticalMath top={85} bottom={44} operator="-" />
@@ -248,7 +248,7 @@ export const unit3Data: UnitData = {
                     paddingTop: "4px",
                   }}
                 >
-                  <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     (1)
                   </span>{" "}
                   <VerticalMath top={75} bottom={28} operator="-" />
@@ -260,7 +260,7 @@ export const unit3Data: UnitData = {
                     paddingTop: "4px",
                   }}
                 >
-                  <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     (2)
                   </span>{" "}
                   <VerticalMath top={63} bottom={37} operator="-" />
@@ -272,7 +272,7 @@ export const unit3Data: UnitData = {
                     paddingTop: "4px",
                   }}
                 >
-                  <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     (3)
                   </span>{" "}
                   <VerticalMath top={87} bottom={49} operator="-" />
@@ -284,7 +284,7 @@ export const unit3Data: UnitData = {
                     paddingTop: "4px",
                   }}
                 >
-                  <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     (4)
                   </span>{" "}
                   <VerticalMath top={50} bottom={36} operator="-" />
@@ -320,7 +320,7 @@ export const unit3Data: UnitData = {
                 }}
               >
                 <div style={{ textAlign: "center" }}>
-                  <span style={{ fontWeight: "bold", fontSize: "24px" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontWeight: "bold", fontSize: "24px" , whiteSpace: "nowrap"}}>
                     {"ກ"}
                   </span>
                   <div
@@ -334,7 +334,7 @@ export const unit3Data: UnitData = {
                   </div>
                 </div>
                 <div style={{ textAlign: "center" }}>
-                  <span style={{ fontWeight: "bold", fontSize: "24px" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontWeight: "bold", fontSize: "24px" , whiteSpace: "nowrap"}}>
                     {"ຂ"}
                   </span>
                   <div
@@ -398,7 +398,7 @@ export const unit3Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (1)
                 </span>{" "}
                 <VerticalMath top={92} bottom={51} operator="-" />
@@ -410,7 +410,7 @@ export const unit3Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (2)
                 </span>{" "}
                 <VerticalMath top={64} bottom={38} operator="-" />
@@ -422,7 +422,7 @@ export const unit3Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (3)
                 </span>{" "}
                 <VerticalMath top={80} bottom={45} operator="-" />
@@ -434,7 +434,7 @@ export const unit3Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (4)
                 </span>{" "}
                 <VerticalMath top={71} bottom={6} operator="-" />

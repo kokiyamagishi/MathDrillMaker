@@ -115,7 +115,7 @@ export const unit9Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (1)
                 </span>{" "}
                 <VerticalMath top={121} bottom={67} operator="+" />
@@ -127,7 +127,7 @@ export const unit9Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (2)
                 </span>{" "}
                 <VerticalMath top={348} bottom={26} operator="+" />
@@ -139,7 +139,7 @@ export const unit9Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (3)
                 </span>{" "}
                 <VerticalMath top={513} bottom={72} operator="+" />
@@ -151,7 +151,7 @@ export const unit9Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (4)
                 </span>{" "}
                 <VerticalMath top={225} bottom={6} operator="+" />
@@ -186,7 +186,7 @@ export const unit9Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (1)
                 </span>{" "}
                 <VerticalMath top={468} bottom={35} operator="-" />
@@ -198,7 +198,7 @@ export const unit9Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (2)
                 </span>{" "}
                 <VerticalMath top={730} bottom={418} operator="-" />
@@ -210,7 +210,7 @@ export const unit9Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (3)
                 </span>{" "}
                 <VerticalMath top={952} bottom={647} operator="-" />
@@ -275,7 +275,7 @@ export const unit9Data: UnitData = {
                     paddingTop: "4px",
                   }}
                 >
-                  <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     (1)
                   </span>{" "}
                   <VerticalMath top={138} bottom={42} operator="+" />
@@ -287,7 +287,7 @@ export const unit9Data: UnitData = {
                     paddingTop: "4px",
                   }}
                 >
-                  <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     (2)
                   </span>{" "}
                   <VerticalMath top={59} bottom={531} operator="+" />
@@ -299,7 +299,7 @@ export const unit9Data: UnitData = {
                     paddingTop: "4px",
                   }}
                 >
-                  <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     (3)
                   </span>{" "}
                   <VerticalMath top={385} bottom={247} operator="-" />
@@ -311,7 +311,7 @@ export const unit9Data: UnitData = {
                     paddingTop: "4px",
                   }}
                 >
-                  <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     (4)
                   </span>{" "}
                   <VerticalMath top={600} bottom={358} operator="-" />
@@ -379,7 +379,7 @@ export const unit9Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (1)
                 </span>{" "}
                 <VerticalMath top={345} bottom={123} operator="+" />
@@ -391,7 +391,7 @@ export const unit9Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (2)
                 </span>{" "}
                 <VerticalMath top={467} bottom={285} operator="+" />
@@ -403,7 +403,7 @@ export const unit9Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (3)
                 </span>{" "}
                 <VerticalMath top={876} bottom={543} operator="-" />
@@ -415,7 +415,7 @@ export const unit9Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (4)
                 </span>{" "}
                 <VerticalMath top={703} bottom={456} operator="-" />

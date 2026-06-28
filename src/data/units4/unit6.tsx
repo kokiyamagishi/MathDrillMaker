@@ -64,7 +64,7 @@ export const unit6Data: UnitData = {
                     justifyContent: "space-between",
                   }}
                 >
-                  <span style={{ fontSize: "22px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontSize: "22px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     {"ມຸມສາກ = 90°"}
                   </span>
                   <svg width="80" height="80">
@@ -99,7 +99,7 @@ export const unit6Data: UnitData = {
                     justifyContent: "space-between",
                   }}
                 >
-                  <span style={{ fontSize: "22px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontSize: "22px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     {"ມຸມພຽງ = 180°"}
                   </span>
                   <svg width="100" height="60">
@@ -129,7 +129,7 @@ export const unit6Data: UnitData = {
                     justifyContent: "space-between",
                   }}
                 >
-                  <span style={{ fontSize: "22px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontSize: "22px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     {"ມຸມຮອບ = 360°"}
                   </span>
                   <svg width="100" height="80">
@@ -306,7 +306,7 @@ export const unit6Data: UnitData = {
                   gap: "16px",
                 }}
               >
-                <span style={{ fontSize: "20px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "20px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(1)"}
                 </span>
                 <div style={{ position: "relative" }}>
@@ -385,7 +385,7 @@ export const unit6Data: UnitData = {
                   gap: "16px",
                 }}
               >
-                <span style={{ fontSize: "20px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "20px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(2)"}
                 </span>
                 <div style={{ position: "relative" }}>
@@ -615,7 +615,7 @@ export const unit6Data: UnitData = {
                   gap: "16px",
                 }}
               >
-                <span style={{ fontSize: "20px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "20px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(1)"}
                 </span>
                 <div style={{ position: "relative" }}>
@@ -689,7 +689,7 @@ export const unit6Data: UnitData = {
                   gap: "16px",
                 }}
               >
-                <span style={{ fontSize: "20px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "20px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(2)"}
                 </span>
                 <div style={{ position: "relative" }}>

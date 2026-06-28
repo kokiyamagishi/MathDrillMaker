@@ -24,7 +24,7 @@ export const unit8Data: UnitData = {
               <span>{"t = S / v"}</span>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງໂຈດຂຶ້ນ-ລົງຄ້ອຍ (Up and Down Hill):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" , whiteSpace: "nowrap"}}>{"ຕົວຢ່າງໂຈດຂຶ້ນ-ລົງຄ້ອຍ (Up and Down Hill):"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ທ້າວ ແກ້ວ ຖີບລົດຂຶ້ນຄ້ອຍໄລຍະທາງ 10 km ດ້ວຍຄວາມໄວ 10 km/h, ແລ້ວຖີບລົງຄ້ອຍທາງເດີມ 10 km ດ້ວຍຄວາມໄວ 15 km/h. ຄວາມໄວສະເລ່ຍແມ່ນ:"}
                 <br />
@@ -97,7 +97,7 @@ export const unit8Data: UnitData = {
               <br />
               {"- ຖ້າໄລຍະທາງລະຫວ່າງ A ແລະ B ແມ່ນ D. ວັດຖຸ 1 ອອກຈາກ A ດ້ວຍຄວາມໄວ v₁ ແລະ ວັດຖຸ 2 ອອກຈາກ B ດ້ວຍຄວາມໄວ v₂ ພ້ອມກັນ, ເວລາທີ່ທັງສອງຈະພົບກັນແມ່ນ:"}
               <br />
-              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#D84315", display: "block", textAlign: "center", margin: "8px 0" }, whiteSpace: "nowrap"}>{"t = D / (v₁ + v₂)"}</span>
+              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#D84315", display: "block", textAlign: "center", margin: "8px 0" , whiteSpace: "nowrap"}}>{"t = D / (v₁ + v₂)"}</span>
             </p>
           </div>
         ),

@@ -20,12 +20,12 @@ export const unit13Data: UnitData = {
                 <div style={{ display: "flex", justifyContent: "center", gap: "16px", margin: "8px 0" }}>
                   <div style={{ textAlign: "center" }}>
                     <div style={{ fontSize: "32px" }}>🍾</div>
-                    <span style={{ fontSize: "20px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"ຕຸກ ກ"}</span>
+                    <span style={{ fontSize: "20px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"ຕຸກ ກ"}</span>
                   </div>
                   <div style={{ fontSize: "28px", alignSelf: "center" }}>{"→"}</div>
                   <div style={{ textAlign: "center" }}>
                     <div style={{ fontSize: "32px" }}>🏺</div>
-                    <span style={{ fontSize: "20px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"ຕຸກ ຂ"}</span>
+                    <span style={{ fontSize: "20px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"ຕຸກ ຂ"}</span>
                   </div>
                 </div>
                 <p>{"ຖອກນ້ຳຈາກຕຸກ ກ ໃຫ້ເຕັມ, ແລ້ວຖອກນ້ຳຈາກຕຸກ ກ ໃສ່ຕຸກ ຂ ທີ່ວ່າງເປົ່າ."}</p>
@@ -40,11 +40,11 @@ export const unit13Data: UnitData = {
                 <div style={{ display: "flex", justifyContent: "center", gap: "16px", margin: "8px 0" }}>
                   <div style={{ textAlign: "center" }}>
                     <div style={{ fontSize: "32px" }}>🍾</div>
-                    <span style={{ fontSize: "20px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"ຕຸກໜຶ່ງ"}</span>
+                    <span style={{ fontSize: "20px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"ຕຸກໜຶ່ງ"}</span>
                   </div>
                   <div style={{ fontSize: "28px", alignSelf: "center" }}>{"="}</div>
                   <div style={{ display: "flex", alignItems: "center" }}>
-                    <span style={{ fontSize: "24px" }, whiteSpace: "nowrap"}>🥛🥛🥛🥛</span>
+                    <span style={{ fontSize: "24px" , whiteSpace: "nowrap"}}>🥛🥛🥛🥛</span>
                   </div>
                 </div>
                 <p>{"ຖອກນ້ຳຈາກຕຸກແຕ່ລະອັນໃສ່ຈອກນ້ອຍທີ່ມີຂະໜາດເທົ່າກັນ ແລ້ວນັບຈຳນວນຈອກ."}</p>
@@ -69,18 +69,18 @@ export const unit13Data: UnitData = {
             <p>{"ຈົ່ງຕອບຄຳຖາມລຸ່ມນີ້ ໂດຍອີງໃສ່ວິທີທີ 2 (ໃຊ້ຈອກນ້ອຍວັດແທກ): "} <span className="point-label">{"(ຂໍ້ລະ 5 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span></p>
             <div style={{ display: "flex", flexDirection: "column", gap: "16px", backgroundColor: "#FAFAFA", padding: "24px", borderRadius: "12px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontWeight: "bold", fontSize: "20px" }, whiteSpace: "nowrap"}>{"ຕຸກ ກ:"}</span>
+                <span style={{ fontWeight: "bold", fontSize: "20px" , whiteSpace: "nowrap"}}>{"ຕຸກ ກ:"}</span>
                 <div style={{ display: "flex", gap: "4px" }}>
-                  <span style={{ fontSize: "32px" }, whiteSpace: "nowrap"}>🥛</span><span style={{ fontSize: "32px" }, whiteSpace: "nowrap"}>🥛</span><span style={{ fontSize: "32px" }, whiteSpace: "nowrap"}>🥛</span><span style={{ fontSize: "32px" }, whiteSpace: "nowrap"}>🥛</span><span style={{ fontSize: "32px" }, whiteSpace: "nowrap"}>🥛</span>
+                  <span style={{ fontSize: "32px" , whiteSpace: "nowrap"}}>🥛</span><span style={{ fontSize: "32px" , whiteSpace: "nowrap"}}>🥛</span><span style={{ fontSize: "32px" , whiteSpace: "nowrap"}}>🥛</span><span style={{ fontSize: "32px" , whiteSpace: "nowrap"}}>🥛</span><span style={{ fontSize: "32px" , whiteSpace: "nowrap"}}>🥛</span>
                 </div>
-                <span style={{ fontSize: "18px" }, whiteSpace: "nowrap"}>{"(ຖອກໄດ້ 5 ຈອກ)"}</span>
+                <span style={{ fontSize: "18px" , whiteSpace: "nowrap"}}>{"(ຖອກໄດ້ 5 ຈອກ)"}</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontWeight: "bold", fontSize: "20px" }, whiteSpace: "nowrap"}>{"ຕຸກ ຂ:"}</span>
+                <span style={{ fontWeight: "bold", fontSize: "20px" , whiteSpace: "nowrap"}}>{"ຕຸກ ຂ:"}</span>
                 <div style={{ display: "flex", gap: "4px" }}>
-                  <span style={{ fontSize: "32px" }, whiteSpace: "nowrap"}>🥛</span><span style={{ fontSize: "32px" }, whiteSpace: "nowrap"}>🥛</span><span style={{ fontSize: "32px" }, whiteSpace: "nowrap"}>🥛</span>
+                  <span style={{ fontSize: "32px" , whiteSpace: "nowrap"}}>🥛</span><span style={{ fontSize: "32px" , whiteSpace: "nowrap"}}>🥛</span><span style={{ fontSize: "32px" , whiteSpace: "nowrap"}}>🥛</span>
                 </div>
-                <span style={{ fontSize: "18px" }, whiteSpace: "nowrap"}>{"(ຖອກໄດ້ 3 ຈອກ)"}</span>
+                <span style={{ fontSize: "18px" , whiteSpace: "nowrap"}}>{"(ຖອກໄດ້ 3 ຈອກ)"}</span>
               </div>
             </div>
             

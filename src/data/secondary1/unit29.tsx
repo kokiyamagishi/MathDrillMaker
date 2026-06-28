@@ -3,9 +3,9 @@ import { UnitData } from "../units2";
 
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }, whiteSpace: "nowrap"}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" }, whiteSpace: "nowrap"}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" }, whiteSpace: "nowrap"}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" , whiteSpace: "nowrap"}}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" , whiteSpace: "nowrap"}}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" , whiteSpace: "nowrap"}}>{den}</span>
   </span>
 );
 
@@ -24,7 +24,7 @@ export const unit29Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຖ້າເຮົາມີສອງອັດຕາສ່ວນທີ່ເທົ່າກັນ: "}
               <br />
-              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#1565C0", display: "inline-flex", alignItems: "center", gap: "8px", margin: "12px 0" }, whiteSpace: "nowrap"}>
+              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#1565C0", display: "inline-flex", alignItems: "center", gap: "8px", margin: "12px 0" , whiteSpace: "nowrap"}}>
                 <Fraction num={"a"} den={"b"} />
                 <span>{" = "}</span>
                 <Fraction num={"c"} den={"d"} />
@@ -34,7 +34,7 @@ export const unit29Data: UnitData = {
               <span>{"ເຊິ່ງເຮົາສາມາດຊອກຫາພົດໃດໜຶ່ງທີ່ບໍ່ຮູ້ຄ່າ (ຕົວຢ່າງ: 𝑥) ໄດ້ຢ່າງງ່າຍດາຍ:"}</span>
             </p>
             <div style={{ padding: "16px", backgroundColor: "#F9F9F9", borderRadius: "8px", borderLeft: "4px solid #4CAF50" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"ສູດການຊອກຫາ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" , whiteSpace: "nowrap"}}>{"ສູດການຊອກຫາ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: "8px 0 0 0", paddingLeft: "20px", lineHeight: "1.8", display: "flex", flexDirection: "column", gap: "8px" }}>
                 <li style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
                   <span>{"ຖ້າຊອກຫາ 𝑥 ໃນ "}</span>
@@ -135,7 +135,7 @@ export const unit29Data: UnitData = {
           </div>
         ),
         hint: {
-          text: <span style={{ display: "inline-flex", flexDirection: "column", gap: "8px" }, whiteSpace: "nowrap"}>
+          text: <span style={{ display: "inline-flex", flexDirection: "column", gap: "8px" , whiteSpace: "nowrap"}}>
             <span>{"💡 ຕົວຢ່າງ: ແປ້ງ 15 kg ເຮັດເຂົ້າຈີ່ໄດ້ 21 kg. ຖ້າມີແປ້ງ 22 kg ຈະເຮັດໄດ້ 𝑥 kg."}</span>
             <span style={{ display: "inline-flex", alignItems: "center", gap: "4px", whiteSpace: "nowrap" }}>
               <span>{"ຕັ້ງເປັນ: "}</span>

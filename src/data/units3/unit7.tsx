@@ -56,7 +56,7 @@ export const unit7Data: UnitData = {
                   textAlign: "center",
                 }}
               >
-                <span style={{ fontSize: "24px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "24px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"1 m"}
                 </span>
               </div>
@@ -78,7 +78,7 @@ export const unit7Data: UnitData = {
                   textAlign: "center",
                 }}
               >
-                <span style={{ fontSize: "24px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "24px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"100 cm"}
                 </span>
               </div>
@@ -102,7 +102,7 @@ export const unit7Data: UnitData = {
                   textAlign: "center",
                 }}
               >
-                <span style={{ fontSize: "24px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "24px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"1 cm"}
                 </span>
               </div>
@@ -124,7 +124,7 @@ export const unit7Data: UnitData = {
                   textAlign: "center",
                 }}
               >
-                <span style={{ fontSize: "24px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "24px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"10 mm"}
                 </span>
               </div>
@@ -185,7 +185,7 @@ export const unit7Data: UnitData = {
                   fontSize: "24px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(1)"}
                 </span>
                 <span>{"1 m ="}</span>
@@ -207,7 +207,7 @@ export const unit7Data: UnitData = {
                   fontSize: "24px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(2)"}
                 </span>
                 <span>{"2 cm ="}</span>
@@ -229,7 +229,7 @@ export const unit7Data: UnitData = {
                   fontSize: "24px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(3)"}
                 </span>
                 <span>{"100 cm ="}</span>
@@ -274,7 +274,7 @@ export const unit7Data: UnitData = {
                   fontSize: "24px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(4)"}
                 </span>
                 <span>{"50 mm ="}</span>
@@ -296,7 +296,7 @@ export const unit7Data: UnitData = {
                   fontSize: "24px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(5)"}
                 </span>
                 <span>{"3 m ="}</span>
@@ -328,10 +328,10 @@ export const unit7Data: UnitData = {
                 <span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
               <div style={{  }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(1)"}
                 </span>
-                <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "20px", marginLeft: "12px" , whiteSpace: "nowrap"}}>
                   {
                     "ໄມ້ທ່ອນໜຶ່ງຍາວ 1 m 20 cm. ຖ້າປ່ຽນເປັນ cm ທັງໝົດ ຈະເທົ່າກັບຈັກ cm?"
                   }
@@ -370,10 +370,10 @@ export const unit7Data: UnitData = {
                 <span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
               <div style={{  }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(2)"}
                 </span>
-                <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "20px", marginLeft: "12px" , whiteSpace: "nowrap"}}>
                   {
                     "ເຊືອກເສັ້ນໜຶ່ງຍາວ 50 cm. ຖ້າເອົາ 2 ເສັ້ນມາຕໍ່ກັນ ຈະຍາວເທົ່າໃດ m?"
                   }
@@ -426,7 +426,7 @@ export const unit7Data: UnitData = {
               }}
             >
               <div style={{ fontSize: "24px" }}>
-                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                 {" 4 cm = "}
                 <span
                   className="answer-blank"
@@ -439,7 +439,7 @@ export const unit7Data: UnitData = {
                 {" mm"}
               </div>
               <div style={{ fontSize: "24px" }}>
-                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                 {" 200 cm = "}
                 <span
                   className="answer-blank"
@@ -475,7 +475,7 @@ export const unit7Data: UnitData = {
               }}
             >
               <div style={{ fontSize: "24px" }}>
-                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                 {" 1 m 50 cm = "}
                 <span
                   className="answer-blank"
@@ -488,7 +488,7 @@ export const unit7Data: UnitData = {
                 {" cm"}
               </div>
               <div style={{ fontSize: "24px" }}>
-                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                 {" 30 mm = "}
                 <span
                   className="answer-blank"

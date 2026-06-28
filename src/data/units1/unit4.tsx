@@ -14,12 +14,12 @@ export const unit4Data: UnitData = {
           <div style={{ display: "flex", flexDirection: "column", gap: "20px", alignItems: "center" }}>
             <div className="math-illustration" style={{ display: "flex", gap: "16px", padding: "20px 28px", border: "3px dashed #4CAF50", borderRadius: "16px", width: "fit-content", alignItems: "center", backgroundColor: "#F1F8E9" }}>
               <div style={{ fontSize: "36px", fontWeight: "bold", color: "#2E7D32" }}>{"5"}</div>
-              <span style={{ fontSize: "22px", fontWeight: "bold", color: "#555" }, whiteSpace: "nowrap"}>{"ແມ່ນ"}</span>
+              <span style={{ fontSize: "22px", fontWeight: "bold", color: "#555" , whiteSpace: "nowrap"}}>{"ແມ່ນ"}</span>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <div style={{ display: "flex", gap: "4px" }}><ItemGrid item="🍎" count={2} columns={2} /></div>
                 <div style={{ fontSize: "28px", fontWeight: "bold", color: "#2E7D32" }}>{"2"}</div>
               </div>
-              <span style={{ fontSize: "22px", fontWeight: "bold", color: "#888" }, whiteSpace: "nowrap"}>{"ແລະ"}</span>
+              <span style={{ fontSize: "22px", fontWeight: "bold", color: "#888" , whiteSpace: "nowrap"}}>{"ແລະ"}</span>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <div style={{ display: "flex", gap: "4px" }}><ItemGrid item="🍎" count={3} columns={3} /></div>
                 <div style={{ fontSize: "28px", fontWeight: "bold", color: "#2E7D32" }}>{"3"}</div>
@@ -28,12 +28,12 @@ export const unit4Data: UnitData = {
             
             <div className="math-illustration" style={{ display: "flex", gap: "16px", padding: "20px 28px", border: "3px dashed #FF9800", borderRadius: "16px", width: "fit-content", alignItems: "center", backgroundColor: "#FFF8E1" }}>
               <div style={{ fontSize: "36px", fontWeight: "bold", color: "#E65100" }}>{"9"}</div>
-              <span style={{ fontSize: "22px", fontWeight: "bold", color: "#555" }, whiteSpace: "nowrap"}>{"ແມ່ນ"}</span>
+              <span style={{ fontSize: "22px", fontWeight: "bold", color: "#555" , whiteSpace: "nowrap"}}>{"ແມ່ນ"}</span>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <div style={{ display: "flex", gap: "4px" }}><ItemGrid item="🍊" count={4} columns={4} /></div>
                 <div style={{ fontSize: "28px", fontWeight: "bold", color: "#E65100" }}>{"4"}</div>
               </div>
-              <span style={{ fontSize: "22px", fontWeight: "bold", color: "#888" }, whiteSpace: "nowrap"}>{"ແລະ"}</span>
+              <span style={{ fontSize: "22px", fontWeight: "bold", color: "#888" , whiteSpace: "nowrap"}}>{"ແລະ"}</span>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <div style={{ display: "flex", gap: "4px" }}><ItemGrid item="🍊" count={5} columns={5} /></div>
                 <div style={{ fontSize: "28px", fontWeight: "bold", color: "#E65100" }}>{"5"}</div>
@@ -56,84 +56,84 @@ export const unit4Data: UnitData = {
             
             <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
-                <span style={{ fontSize: "24px", minWidth: "30px" }, whiteSpace: "nowrap"}>{"5"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" , whiteSpace: "nowrap"}}>{"(1) "}</span>
+                <span style={{ fontSize: "24px", minWidth: "30px" , whiteSpace: "nowrap"}}>{"5"}</span>
                 <span>{"="}</span>
-                <span style={{ fontSize: "24px" }, whiteSpace: "nowrap"}>{"2"}</span>
+                <span style={{ fontSize: "24px" , whiteSpace: "nowrap"}}>{"2"}</span>
                 <span>{"ແລະ"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
-                <span style={{ fontSize: "24px", minWidth: "30px" }, whiteSpace: "nowrap"}>{"5"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" , whiteSpace: "nowrap"}}>{"(2) "}</span>
+                <span style={{ fontSize: "24px", minWidth: "30px" , whiteSpace: "nowrap"}}>{"5"}</span>
                 <span>{"="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
                 <span>{"ແລະ"}</span>
-                <span style={{ fontSize: "24px" }, whiteSpace: "nowrap"}>{"4"}</span>
+                <span style={{ fontSize: "24px" , whiteSpace: "nowrap"}}>{"4"}</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
-                <span style={{ fontSize: "24px", minWidth: "30px" }, whiteSpace: "nowrap"}>{"6"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" , whiteSpace: "nowrap"}}>{"(3) "}</span>
+                <span style={{ fontSize: "24px", minWidth: "30px" , whiteSpace: "nowrap"}}>{"6"}</span>
                 <span>{"="}</span>
-                <span style={{ fontSize: "24px" }, whiteSpace: "nowrap"}>{"3"}</span>
-                <span>{"ແລະ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
-              </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
-                <span style={{ fontSize: "24px", minWidth: "30px" }, whiteSpace: "nowrap"}>{"7"}</span>
-                <span>{"="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
-                <span>{"ແລະ"}</span>
-                <span style={{ fontSize: "24px" }, whiteSpace: "nowrap"}>{"2"}</span>
-              </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
-                <span style={{ fontSize: "24px", minWidth: "30px" }, whiteSpace: "nowrap"}>{"8"}</span>
-                <span>{"="}</span>
-                <span style={{ fontSize: "24px" }, whiteSpace: "nowrap"}>{"5"}</span>
+                <span style={{ fontSize: "24px" , whiteSpace: "nowrap"}}>{"3"}</span>
                 <span>{"ແລະ"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" }, whiteSpace: "nowrap"}>{"(6) "}</span>
-                <span style={{ fontSize: "24px", minWidth: "30px" }, whiteSpace: "nowrap"}>{"9"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" , whiteSpace: "nowrap"}}>{"(4) "}</span>
+                <span style={{ fontSize: "24px", minWidth: "30px" , whiteSpace: "nowrap"}}>{"7"}</span>
                 <span>{"="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
                 <span>{"ແລະ"}</span>
-                <span style={{ fontSize: "24px" }, whiteSpace: "nowrap"}>{"3"}</span>
+                <span style={{ fontSize: "24px" , whiteSpace: "nowrap"}}>{"2"}</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" }, whiteSpace: "nowrap"}>{"(7) "}</span>
-                <span style={{ fontSize: "24px", minWidth: "30px" }, whiteSpace: "nowrap"}>{"10"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" , whiteSpace: "nowrap"}}>{"(5) "}</span>
+                <span style={{ fontSize: "24px", minWidth: "30px" , whiteSpace: "nowrap"}}>{"8"}</span>
                 <span>{"="}</span>
-                <span style={{ fontSize: "24px" }, whiteSpace: "nowrap"}>{"6"}</span>
-                <span>{"ແລະ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
-              </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" }, whiteSpace: "nowrap"}>{"(8) "}</span>
-                <span style={{ fontSize: "24px", minWidth: "30px" }, whiteSpace: "nowrap"}>{"10"}</span>
-                <span>{"="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
-                <span>{"ແລະ"}</span>
-                <span style={{ fontSize: "24px" }, whiteSpace: "nowrap"}>{"5"}</span>
-              </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" }, whiteSpace: "nowrap"}>{"(9) "}</span>
-                <span style={{ fontSize: "24px", minWidth: "30px" }, whiteSpace: "nowrap"}>{"8"}</span>
-                <span>{"="}</span>
-                <span style={{ fontSize: "24px" }, whiteSpace: "nowrap"}>{"4"}</span>
+                <span style={{ fontSize: "24px" , whiteSpace: "nowrap"}}>{"5"}</span>
                 <span>{"ແລະ"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" }, whiteSpace: "nowrap"}>{"(10) "}</span>
-                <span style={{ fontSize: "24px", minWidth: "30px" }, whiteSpace: "nowrap"}>{"7"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" , whiteSpace: "nowrap"}}>{"(6) "}</span>
+                <span style={{ fontSize: "24px", minWidth: "30px" , whiteSpace: "nowrap"}}>{"9"}</span>
                 <span>{"="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
                 <span>{"ແລະ"}</span>
-                <span style={{ fontSize: "24px" }, whiteSpace: "nowrap"}>{"3"}</span>
+                <span style={{ fontSize: "24px" , whiteSpace: "nowrap"}}>{"3"}</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" , whiteSpace: "nowrap"}}>{"(7) "}</span>
+                <span style={{ fontSize: "24px", minWidth: "30px" , whiteSpace: "nowrap"}}>{"10"}</span>
+                <span>{"="}</span>
+                <span style={{ fontSize: "24px" , whiteSpace: "nowrap"}}>{"6"}</span>
+                <span>{"ແລະ"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" , whiteSpace: "nowrap"}}>{"(8) "}</span>
+                <span style={{ fontSize: "24px", minWidth: "30px" , whiteSpace: "nowrap"}}>{"10"}</span>
+                <span>{"="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
+                <span>{"ແລະ"}</span>
+                <span style={{ fontSize: "24px" , whiteSpace: "nowrap"}}>{"5"}</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" , whiteSpace: "nowrap"}}>{"(9) "}</span>
+                <span style={{ fontSize: "24px", minWidth: "30px" , whiteSpace: "nowrap"}}>{"8"}</span>
+                <span>{"="}</span>
+                <span style={{ fontSize: "24px" , whiteSpace: "nowrap"}}>{"4"}</span>
+                <span>{"ແລະ"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" , whiteSpace: "nowrap"}}>{"(10) "}</span>
+                <span style={{ fontSize: "24px", minWidth: "30px" , whiteSpace: "nowrap"}}>{"7"}</span>
+                <span>{"="}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
+                <span>{"ແລະ"}</span>
+                <span style={{ fontSize: "24px" , whiteSpace: "nowrap"}}>{"3"}</span>
               </div>
             </div>
           </div>
@@ -149,22 +149,22 @@ export const unit4Data: UnitData = {
               <p>{"ຈົ່ງຄິດໄລ່ບັ້ງເລກລຸ່ມນີ້ ໂດຍຂຽນຄຳຕອບເປັນຕົວເລກລາວ: "} <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span></p>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span>{"໔ + ໕ ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span>{"໑໐ - ໓ ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                   <span>{"໑໕ - ໕ ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                   <span>{"໘ + ໒ ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
                 </div>
@@ -185,46 +185,46 @@ export const unit4Data: UnitData = {
             
             <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", textAlign: "left" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
-                <span style={{ fontSize: "24px", minWidth: "30px" }, whiteSpace: "nowrap"}>{"6"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" , whiteSpace: "nowrap"}}>{"(1) "}</span>
+                <span style={{ fontSize: "24px", minWidth: "30px" , whiteSpace: "nowrap"}}>{"6"}</span>
                 <span>{"="}</span>
-                <span style={{ fontSize: "24px" }, whiteSpace: "nowrap"}>{"1"}</span>
+                <span style={{ fontSize: "24px" , whiteSpace: "nowrap"}}>{"1"}</span>
                 <span>{"ແລະ"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
               </div>
               
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
-                <span style={{ fontSize: "24px", minWidth: "30px" }, whiteSpace: "nowrap"}>{"6"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" , whiteSpace: "nowrap"}}>{"(2) "}</span>
+                <span style={{ fontSize: "24px", minWidth: "30px" , whiteSpace: "nowrap"}}>{"6"}</span>
                 <span>{"="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
                 <span>{"ແລະ"}</span>
-                <span style={{ fontSize: "24px" }, whiteSpace: "nowrap"}>{"4"}</span>
+                <span style={{ fontSize: "24px" , whiteSpace: "nowrap"}}>{"4"}</span>
               </div>
 
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
-                <span style={{ fontSize: "24px", minWidth: "30px" }, whiteSpace: "nowrap"}>{"6"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" , whiteSpace: "nowrap"}}>{"(3) "}</span>
+                <span style={{ fontSize: "24px", minWidth: "30px" , whiteSpace: "nowrap"}}>{"6"}</span>
                 <span>{"="}</span>
-                <span style={{ fontSize: "24px" }, whiteSpace: "nowrap"}>{"3"}</span>
+                <span style={{ fontSize: "24px" , whiteSpace: "nowrap"}}>{"3"}</span>
                 <span>{"ແລະ"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
               </div>
 
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
-                <span style={{ fontSize: "24px", minWidth: "30px" }, whiteSpace: "nowrap"}>{"6"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" , whiteSpace: "nowrap"}}>{"(4) "}</span>
+                <span style={{ fontSize: "24px", minWidth: "30px" , whiteSpace: "nowrap"}}>{"6"}</span>
                 <span>{"="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
                 <span>{"ແລະ"}</span>
-                <span style={{ fontSize: "24px" }, whiteSpace: "nowrap"}>{"2"}</span>
+                <span style={{ fontSize: "24px" , whiteSpace: "nowrap"}}>{"2"}</span>
               </div>
 
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
-                <span style={{ fontSize: "24px", minWidth: "30px" }, whiteSpace: "nowrap"}>{"6"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "30px" , whiteSpace: "nowrap"}}>{"(5) "}</span>
+                <span style={{ fontSize: "24px", minWidth: "30px" , whiteSpace: "nowrap"}}>{"6"}</span>
                 <span>{"="}</span>
-                <span style={{ fontSize: "24px" }, whiteSpace: "nowrap"}>{"5"}</span>
+                <span style={{ fontSize: "24px" , whiteSpace: "nowrap"}}>{"5"}</span>
                 <span>{"ແລະ"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
               </div>

@@ -17,13 +17,13 @@ export const unit39Data: UnitData = {
               {"ໃນລະບົບເສັ້ນເຄົ້າ Oxyz, ໜ້າກົມ S ທີ່ມີຈຸດໃຈກາງ I(a, b, c) ແລະ ລັດສະໝີ R ມີສອງຮູບຮ່າງສົມຜົນ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"1. ສົມຜົນມາດຕະຖານ (Standard Form):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" , whiteSpace: "nowrap"}}>{"1. ສົມຜົນມາດຕະຖານ (Standard Form):"}</span>
               <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6", marginTop: "8px", fontWeight: "bold", color: "#0D47A1" }}>
                 {"(x - a)² + (y - b)² + (z - c)² = R²"}
               </p>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"2. ສົມຜົນທົ່ວໄປ (General Form):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" , whiteSpace: "nowrap"}}>{"2. ສົມຜົນທົ່ວໄປ (General Form):"}</span>
               <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6", marginTop: "8px", fontWeight: "bold", color: "#2E7D32" }}>
                 {"x² + y² + z² - 2ax - 2by - 2cz + d = 0"}
               </p>

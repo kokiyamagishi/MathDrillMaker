@@ -3,9 +3,9 @@ import { UnitData } from "../units2";
 
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }, whiteSpace: "nowrap"}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" , whiteSpace: "nowrap"}}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" , whiteSpace: "nowrap"}}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" , whiteSpace: "nowrap"}}>{den}</span>
   </span>
 );
 
@@ -87,31 +87,31 @@ export const unit44Data: UnitData = {
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span>{"ຖ້າ M ແມ່ນຈຸດເຄິ່ງກາງຂອງ AB. ຮູບສາຍ M' ຈະແມ່ນຈຸດເຄິ່ງກາງຂອງ A'B' ຫຼື ບໍ່? (ຕອບ ແມ່ນ ຫຼື ບໍ່ແມ່ນ)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
                 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span>{"ຖ້າ AB = 8 cm ແລະ M ແມ່ນຈຸດເຄິ່ງກາງຂອງ AB. ຄວາມຍາວ AM ຈະແມ່ນຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                   <span>{"ຖ້າຄວາມຍາວ A'M' = 5 cm ແລະ M' ແມ່ນຈຸດເຄິ່ງກາງຂອງ A'B'. ຄວາມຍາວ A'B' ຈະແມ່ນຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                   <span>{"ຖ້າ AM = MB. ຮູບສາຍ A'M' ແລະ M'B' ຈະມີຄວາມຍາວເທົ່າກັນ ຫຼື ບໍ່? (ຕອບ ເທົ່າກັນ ຫຼື ບໍ່ເທົ່າກັນ)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(5) "}</span>
                   <span>{"ຖ້າທ່ອນຊື່ AB ຂະໜານກັບເສັ້ນຊື່ສາຍ (d) ແລະ ຍາວ 6 cm. ຮູບສາຍ A'B' ຈະຍາວຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
@@ -163,40 +163,40 @@ export const unit44Data: UnitData = {
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(1) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" , whiteSpace: "nowrap"}}>
                     {"ຖ້າອັດຕາສ່ວນ "} <Fraction num="AB" den="BC" /> {" = "} <Fraction num="3" den="4" /> {". ອັດຕາສ່ວນ "} <Fraction num="A'B'" den="B'C'" /> {" ຈະເທົ່າກັບເທົ່າໃດ? (ຕອບເປັນເລກສ່ວນ)"}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(2) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" , whiteSpace: "nowrap"}}>
                     {"ຖ້າ AB = 3 cm, BC = 6 cm. ອັດຕາສ່ວນ "} <Fraction num="A'B'" den="B'C'" /> {" ຄິດເປັນເລກທົດສະນິຍົມແມ່ນເທົ່າໃດ?"}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(3) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" , whiteSpace: "nowrap"}}>
                     {"ຖ້າ "} <Fraction num="A'B'" den="B'C'" /> {" = 2, ແລະ ຄວາມຍາວ B'C' = 4 cm. ຄວາມຍາວ A'B' ຈະແມ່ນຈັກ cm?"}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(4) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" , whiteSpace: "nowrap"}}>
                     {"ຖ້າ "} <Fraction num="AB" den="BC" /> {" = "} <Fraction num="1" den="3" /> {", ແລະ A'B' = 3 cm. ຄວາມຍາວ B'C' ຈະແມ່ນຈັກ cm?"}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(5) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" , whiteSpace: "nowrap"}}>
                     {"ຖ້າ AC = 12 cm, M ແມ່ນຈຸດເຄິ່ງກາງ AC. ຄວາມຍາວ "} <Fraction num="A'M'" den="M'C'" /> {" ຈະເທົ່າກັບເທົ່າໃດ?"}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
@@ -219,7 +219,7 @@ export const unit44Data: UnitData = {
               {"ການຊອກຫາຄວາມຍາວທ່ອນຊື່ຈາກອັດຕາສ່ວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }, whiteSpace: "nowrap"}>
+              <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" , whiteSpace: "nowrap"}}>
                 {"ໃຫ້ສາມຈຸດ A, B, C ລຽງກັນເທິງເສັ້ນຊື່ໜຶ່ງ. ຖ້າ AB = 𝑥, BC = 8 cm. ເມື່ອສາຍຂະໜານໄດ້ A'B' = 3 cm, B'C' = 6 cm. ຈົ່ງຊອກຫາ 𝑥. ("} <Fraction num="𝑥" den="8" /> {" = "} <Fraction num="3" den="6" /> {")"}
               </span>
             </p>
@@ -278,7 +278,7 @@ export const unit44Data: UnitData = {
             {"ໂຈດບັນຫາອັດຕາສ່ວນຄານຊັ່ງ (Ratio Balance): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }, whiteSpace: "nowrap"}>
+              <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" , whiteSpace: "nowrap"}}>
                 {"(2) ຄານຊັ່ງອັນໜຶ່ງຍາວ AC = 60 cm, ມີຈຸດຄ້ຳໜູນ B ຢູ່ລະຫວ່າງ A ແລະ C ໂດຍມີອັດຕາສ່ວນ "} <Fraction num="AB" den="BC" /> {" = "} <Fraction num="1" den="2" /> {". ຖ້າເຮົາສາຍຄານນີ້ຂະໜານລົງພື້ນດິນໄດ້ຄວາມຍາວ A'C' = 45 cm. ຄວາມຍາວ A'B' ຈະແມ່ນຈັກ cm?"}
               </span>
             </p>

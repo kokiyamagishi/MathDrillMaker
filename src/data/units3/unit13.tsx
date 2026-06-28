@@ -43,7 +43,7 @@ export const unit13Data: UnitData = {
           >
             <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
               <span
-                style={{ fontSize: "22px", fontWeight: "bold", width: "80px" }, whiteSpace: "nowrap"}
+                style={{ fontSize: "22px", fontWeight: "bold", width: "80px" , whiteSpace: "nowrap"}}
               >
                 {"ແຖບສີແດງ:"}
               </span>
@@ -55,7 +55,7 @@ export const unit13Data: UnitData = {
                   borderRadius: "4px",
                 }}
               ></div>
-              <span style={{ fontSize: "22px" }, whiteSpace: "nowrap"}>{"2 m"}</span>
+              <span style={{ fontSize: "22px" , whiteSpace: "nowrap"}}>{"2 m"}</span>
             </div>
             <div
               style={{
@@ -70,8 +70,7 @@ export const unit13Data: UnitData = {
                   fontSize: "22px",
                   fontWeight: "bold",
                   width: "80px",
-                  paddingTop: "34px",
-                }, whiteSpace: "nowrap"}
+                  paddingTop: "34px", whiteSpace: "nowrap"}}
               >
                 {"ແຖບສີຟ້າ:"}
               </span>
@@ -152,7 +151,7 @@ export const unit13Data: UnitData = {
                   {"6 m"}
                 </div>
               </div>
-              <span style={{ fontSize: "22px", paddingTop: "34px" }, whiteSpace: "nowrap"}>
+              <span style={{ fontSize: "22px", paddingTop: "34px" , whiteSpace: "nowrap"}}>
                 {"(ໃຫຍ່ກວ່າ 3 ເທື່ອ)"}
               </span>
             </div>
@@ -217,7 +216,7 @@ export const unit13Data: UnitData = {
                     fontSize: "20px",
                   }}
                 >
-                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{item.n}</span>
+                  <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{item.n}</span>
                   <span>{item.q}</span>
                   <span
                     className="answer-blank"

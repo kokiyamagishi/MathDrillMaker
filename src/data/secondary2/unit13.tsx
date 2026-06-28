@@ -22,7 +22,7 @@ export const unit13Data: UnitData = {
               <div style={{ display: "flex", flexDirection: "column", gap: "6px", color: "#37474F" }}>
                 <span>{"• ຮູບເຄິ່ງຄືຂອງທ່ອນຊື່ AB ແມ່ນທ່ອນຊື່ A'B' ທີ່ຍາວເທົ່າກັນສະເໝີ: "} <strong>{"AB = A'B'"}</strong></span>
                 <span>{"• ຮູບເຄິ່ງຄືຂອງເສັ້ນຊື່ L ແມ່ນເສັ້ນຊື່ L' ທີ່ຂະໜານກັບ L ສະເໝີ: "} <strong>{"L ∥ L'"}</strong></span>
-                <span style={{ color: "#0D47A1" }, whiteSpace: "nowrap"}>
+                <span style={{ color: "#0D47A1" , whiteSpace: "nowrap"}}>
                   <strong>{"ຕົວຢ່າງ: "}</strong> {"ຖ້າ AB = 8 cm, ທ່ອນຊື່ເຄິ່ງຄື A'B' ຈະຍາວ 8 cm ສະເໝີ."}
                 </span>
               </div>
@@ -74,7 +74,7 @@ export const unit13Data: UnitData = {
                 {/* 5 Questions */}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
                   <p style={{ margin: 0, lineHeight: "1.5" }}>
-                    <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                     {"ຖ້າທ່ອນຊື່ AB ຍາວ 6 cm, ท່ອນຊື່ເຄິ່ງຄື A'B' ຂອງມັນຈະຍາວຈັກ cm?"}
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
@@ -86,7 +86,7 @@ export const unit13Data: UnitData = {
                 
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
                   <p style={{ margin: 0, lineHeight: "1.5" }}>
-                    <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                     {"ເສັ້ນຊື່ L' ທີ່ເຄິ່ງຄືກັບ L ທຽບໃສ່ເມັດ O ຈະມີລັກສະນະແນວໃດກັບ L?"}
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
@@ -97,7 +97,7 @@ export const unit13Data: UnitData = {
 
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
                   <p style={{ margin: 0, lineHeight: "1.5" }}>
-                    <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                     {"ຖ້າທ່ອນຊື່ AB ແລະ A'B' ເຄິ່ງຄືກັນທຽບໃສ່ O, ຖາມວ່າ AB ແລະ A'B' ຂະໜານກັນ ຫຼື ບໍ່?"}
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
@@ -108,7 +108,7 @@ export const unit13Data: UnitData = {
 
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
                   <p style={{ margin: 0, lineHeight: "1.5" }}>
-                    <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                     {"ຖ້າທ່ອນຊື່ເຄິ່ງຄື A'B' ຍາວ 12.5 cm, ຖາມວ່າທ່ອນຊື່ຕົ້ນແບບ AB ຈະຍາວຈັກ cm?"}
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
@@ -120,7 +120,7 @@ export const unit13Data: UnitData = {
 
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
                   <p style={{ margin: 0, lineHeight: "1.5" }}>
-                    <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(5) "}</span>
                     {"ຖ້າມີເສັ້ນຊື່ L ຜ່ານເມັດ O (ໃຈກາງເຄິ່ງຄື), ເສັ້ນຊື່ເຄິ່ງຄື L' ຂອງ L ຈະເຕັງກັບ L ຫຼື ບໍ່?"}
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
@@ -149,7 +149,7 @@ export const unit13Data: UnitData = {
               <div style={{ display: "flex", flexDirection: "column", gap: "6px", color: "#37474F" }}>
                 <span>{"• ເນື້ອທີ່ຮູບເກົ່າ = ເນື້ອທີ່ຮູບເຄິ່ງຄືສະເໝີ."}</span>
                 <span>{"• ມຸມຕົ້ນແບບ = ມຸມເຄິ່ງຄືສະເໝີ (ຮັກສາຂະໜາດມຸມ)."}</span>
-                <span style={{ color: "#2E7D32" }, whiteSpace: "nowrap"}>
+                <span style={{ color: "#2E7D32" , whiteSpace: "nowrap"}}>
                   <strong>{"ຕົວຢ່າງ: "}</strong> {"ຖ້າຮູບສາມແຈ ABC ມີເນື້ອທີ່ 15 cm², ຮູບສາມແຈເຄິ່ງຄື A'B'C' ຈະມີເນື້ອທີ່ 15 cm² ສະເໝີ."}
                 </span>
               </div>
@@ -173,34 +173,34 @@ export const unit13Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "18px", padding: "8px 0" }}>
                 {/* 5 Questions */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span>{"ຖ້າຮູບສາມແຈເກົ່າມີເນື້ອທີ່ 15 cm², ຮູບເຄິ່ງຄືຂອງມັນຈະມີເນື້ອທີ່ຈັກ cm²?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm²"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span>{"ຖ້າມຸມ A ໃນຮູບຕົ້ນແບບເທົ່າກັບ 60°, ມຸມ A' ທີ່ເຄິ່ງຄືກັນຈະມີຂະໜາດຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ອົງສາ"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                   <span>{"ຖ້າລັດສະໝີວົງມົນ A ແມ່ນ 3 cm, ວົງມົນເຄິ່ງຄື A' ຈະມີເນື້ອທີ່ເທົ່າກັນກັບ A ຫຼື ບໍ່?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                   <span>{"ຖ້າຮູບສີ່ແຈສາກຕົ້ນແບບມີເນື້ອທີ່ 24 cm², ຮູບເຄິ່ງຄືຂອງມັນຈະມີເນື້ອທີ່ຈັກ cm²?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm²"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(5) "}</span>
                   <span>{"ຖ້າມຸມ B' ຂອງຮູບສາມແຈເຄິ່ງຄືແມ່ນ 90°, ມຸມ B ຂອງຮູບຕົ້ນແບບຈະແມ່ນຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ອົງສາ"}</span>

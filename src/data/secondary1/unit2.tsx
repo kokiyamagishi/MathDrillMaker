@@ -23,7 +23,7 @@ export const unit2Data: UnitData = {
             </ul>
 
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9", display: "flex", flexDirection: "column", alignItems: "center", gap: "12px" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#1565C0" }, whiteSpace: "nowrap"}>{"ແຜນວາດແກນຈຳນວນ (Number Line)"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#1565C0" , whiteSpace: "nowrap"}}>{"ແຜນວາດແກນຈຳນວນ (Number Line)"}</span>
               <svg viewBox="0 0 400 60" style={{ width: "100%", maxWidth: "360px", height: "auto" }}>
                 {/* Main line with arrow */}
                 <line x1="10" y1="30" x2="390" y2="30" stroke="#37474F" strokeWidth="2" />
@@ -79,14 +79,14 @@ export const unit2Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span>{"ຈຳນວນກົງກັນຂ້າມຂອງ -15 ແມ່ນ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
                 
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span>{"ຈຳນວນກົງກັນຂ້າມຂອງ +42 ແມ່ນ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
@@ -105,14 +105,14 @@ export const unit2Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span className="math">{"-(-8) ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "45px", width: "45px", height: "42px" }}></span>
                 </div>
 
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span className="math">{"-(+13) ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "45px", width: "45px", height: "42px" }}></span>
                 </div>
@@ -157,7 +157,7 @@ export const unit2Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span className="math">{"-8"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span className="math">{"-3"}</span>
@@ -165,7 +165,7 @@ export const unit2Data: UnitData = {
                 
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span className="math">{"-1"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                   <span className="math">{"0"}</span>

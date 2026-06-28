@@ -17,14 +17,14 @@ export const unit16Data: UnitData = {
               {"ກຣາຟຂອງຕຳລາ y = a(x-p)² + q ໄດ້ມາຈາກການຍ້າຍຂະໜານກຣາຟ y = ax² ທັງສອງແກນ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E0F2F1", borderRadius: "8px", border: "1px solid #B2DFDB" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#004D40" }, whiteSpace: "nowrap"}>{"ການຍ້າຍຂະໜານ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#004D40" , whiteSpace: "nowrap"}}>{"ການຍ້າຍຂະໜານ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li>{"ຕາມແກນນອນ Ox ດ້ວຍໄລຍະ p ຫົວໜ່ວຍ (ໄປທາງຂວາຖ້າ p > 0, ໄປທາງຊ້າຍຖ້າ p < 0)."}</li>
                 <li>{"ຕາມແກນຕັ້ງ Oy ດ້ວຍໄລຍະ q ຫົວໜ່ວຍ (ຂຶ້ນເທິງຖ້າ q > 0, ລົງລຸ່ມຖ້າ q < 0)."}</li>
               </ul>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#ECEFF1", borderRadius: "8px", border: "1px solid #CFD8DC" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#37474F" }, whiteSpace: "nowrap"}>{"ລັກສະນະເສັ້ນສະແດງ (ປາຣາໂບນ):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#37474F" , whiteSpace: "nowrap"}}>{"ລັກສະນະເສັ້ນສະແດງ (ປາຣາໂບນ):"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li><strong>{"ເມັດຈອມ (Vertex):"}</strong>{" S(p, q)"}</li>
                 <li><strong>{"ແກນເຄິ່ງຄື (Axis of Symmetry):"}</strong>{" ແມ່ນເສັ້ນຊື່ x = p"}</li>
@@ -104,7 +104,7 @@ export const unit16Data: UnitData = {
               {"ຄ່າຂອງສຳປະສິດ a ເປັນຕົວກຳນົດວ່າຕຳລາຈະມີຄ່າສູງສຸດ ຫຼື ຕ່ຳສຸດ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"ຖ້າ a > 0 (ປາຣາໂບນຫງາຍ):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" , whiteSpace: "nowrap"}}>{"ຖ້າ a > 0 (ປາຣາໂບນຫງາຍ):"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"- ຕຳລາມີຄ່າຕ່ຳສຸດ (minimum value) ແມ່ນ y = q ຢູ່ເມັດຈອມ S(p, q)."}
                 <br />
@@ -112,7 +112,7 @@ export const unit16Data: UnitData = {
               </p>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#FFEBEE", borderRadius: "8px", border: "1px solid #FFCDD2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#C62828" }, whiteSpace: "nowrap"}>{"ຖ້າ a < 0 (ປາຣາໂບນຂວ້ຳ):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#C62828" , whiteSpace: "nowrap"}}>{"ຖ້າ a < 0 (ປາຣາໂບນຂວ້ຳ):"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"- ຕຳລາມີຄ່າສູງສຸດ (maximum value) ແມ່ນ y = q ຢູ່ເມັດຈອມ S(p, q)."}
                 <br />

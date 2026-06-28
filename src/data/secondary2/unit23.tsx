@@ -4,8 +4,8 @@ import { UnitData } from "../units2";
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
   <span className="math" style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{den}</span>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" , whiteSpace: "nowrap"}}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" , whiteSpace: "nowrap"}}>{den}</span>
   </span>
 );
 
@@ -30,7 +30,7 @@ export const unit23Data: UnitData = {
               <div style={{ display: "flex", flexDirection: "column", gap: "6px", color: "#37474F" }}>
                 <span className="math">{"• ຖ້າ a < b, ຈະໄດ້: a + c < b + c"}</span>
                 <span className="math">{"• ຖ້າ a < b, ຈະໄດ້: a - c < b - c"}</span>
-                <span style={{ color: "#0D47A1" }, whiteSpace: "nowrap"}>
+                <span style={{ color: "#0D47A1" , whiteSpace: "nowrap"}}>
                   <strong>{"ຕົວຢ່າງ: "}</strong> {"ຖ້າ 𝑥 - 2 < 5, ເອົາ 2 ບວກໃສ່ທັງສອງຟາກ: 𝑥 - 2 + 2 < 5 + 2 ➔ 𝑥 < 7."}
                 </span>
               </div>
@@ -75,31 +75,31 @@ export const unit23Data: UnitData = {
               <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "8px 0" }}>
                 {/* 5 Questions */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span>{"ຖ້າ 𝑥 - 2 < 5, ຈະໄດ້ 𝑥 < "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
                 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span>{"ຖ້າ 𝑥 + 4 > 10, ຈະໄດ້ 𝑥 > "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                   <span>{"ຖ້າ 𝑥 - 7 ≥ -3, ຈະໄດ້ 𝑥 ≥ "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                   <span>{"ຖ້າ 6 + 𝑥 ≤ 2, ຈະໄດ້ 𝑥 ≤ "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(5) "}</span>
                   <span>{"ຖ້າ 𝑥 - 1.2 < -2.8, ຈະໄດ້ 𝑥 < "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
@@ -124,7 +124,7 @@ export const unit23Data: UnitData = {
               <div style={{ display: "flex", flexDirection: "column", gap: "6px", color: "#37474F" }}>
                 <span className="math">{"• ຖ້າ a < b ແລະ c > 0 (ຈຳນວນບວກ) ➔ ac < bc"}</span>
                 <span className="math" style={{ color: "#C62828", fontWeight: "bold" }}>{"• ຖ້າ a < b ແລະ c < 0 (ຈຳນວນລົບ) ➔ ac > bc  (ເຄື່ອງໝາຍປ່ຽນປິ່ນ!)"}</span>
-                <span style={{ color: "#C62828" }, whiteSpace: "nowrap"}>
+                <span style={{ color: "#C62828" , whiteSpace: "nowrap"}}>
                   <strong>{"ຕົວຢ່າງ: "}</strong> {"ຖ້າ -2𝑥 < 6, ຫານໃຫ້ -2 ➔ 𝑥 > -3 (ປ່ຽນຈາກ < ມາເປັນ >)."}
                 </span>
               </div>
@@ -166,25 +166,25 @@ export const unit23Data: UnitData = {
               <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "8px 0" }}>
                 {/* 5 Questions */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span className="math">{"ຖ້າ -2𝑥 < 6 ➔ 𝑥 > "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span className="math">{"ຖ້າ 3𝑥 < 15 ➔ 𝑥 < "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                   <span className="math">{"ຖ້າ -5𝑥 ≥ 20 ➔ 𝑥 ≤ "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap" }}>
                     <Fraction num="𝑥" den="-3" />
                     {" < 4 ➔ 𝑥 > "}
@@ -193,7 +193,7 @@ export const unit23Data: UnitData = {
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(5) "}</span>
                   <span className="math">{"-𝑥 ≤ -7 ➔ 𝑥 ≥ "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>

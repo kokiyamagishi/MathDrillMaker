@@ -221,7 +221,7 @@ export const unit7Data: UnitData = {
                   flexWrap: "wrap",
                 }}
               >
-                <span style={{ fontSize: "20px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "20px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(1)"}
                 </span>
                 <svg width="120" height="100" viewBox="0 0 120 100">
@@ -274,7 +274,7 @@ export const unit7Data: UnitData = {
                   flexWrap: "wrap",
                 }}
               >
-                <span style={{ fontSize: "20px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "20px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(2)"}
                 </span>
                 <div style={{ display: "flex", gap: "8px" }}>

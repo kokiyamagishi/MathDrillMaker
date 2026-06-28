@@ -84,7 +84,7 @@ export const unit5Data: UnitData = {
               {"ໃນຫຼາຍໆກໍລະນີ, ເມື່ອເຮົາຂຶ້ນພູດຮ່ວມແລ້ວ ສົມຜົນທີ່ໄດ້ຮັບຈະກາຍເປັນສົມຜົນຂັ້ນສອງ ax² + bx + c = 0 ເຊິ່ງເຮົາຕ້ອງແກ້ດ້ວຍວິທີແຍກສ່ວນປະກອບ ຫຼື ໃຊ້ສູດ Delta (Δ = b² - 4ac)."}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງສົມຜົນ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>{"ຕົວຢ່າງສົມຜົນ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ແກ້ສົມຜົນ: [ (3x) / (3x + 1) ] + [ 1 / (x + 1) ] = [ 3 / (3x + 1) ] - [ 2 / (x + 1) ]"}
                 <br />

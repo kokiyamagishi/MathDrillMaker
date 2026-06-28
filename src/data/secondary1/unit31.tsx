@@ -3,9 +3,9 @@ import { UnitData } from "../units2";
 
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }, whiteSpace: "nowrap"}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" }, whiteSpace: "nowrap"}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" }, whiteSpace: "nowrap"}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" , whiteSpace: "nowrap"}}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" , whiteSpace: "nowrap"}}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" , whiteSpace: "nowrap"}}>{den}</span>
   </span>
 );
 
@@ -26,21 +26,21 @@ export const unit31Data: UnitData = {
               <br />
               {"- ຜົນຄູນຂອງສອງປະລິມານນີ້ຈະມີຄ່າຄົງທີ່ສະເໝີ:"}
               <br />
-              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", paddingLeft: "16px" }, whiteSpace: "nowrap"}>{"𝑥 × 𝑦 = C   (C ແມ່ນຕົວເລກຄົງທີ່)"}</span>
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", paddingLeft: "16px" , whiteSpace: "nowrap"}}>{"𝑥 × 𝑦 = C   (C ແມ່ນຕົວເລກຄົງທີ່)"}</span>
             </p>
             
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" , whiteSpace: "nowrap"}}>{"ຕົວຢ່າງ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", display: "flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
                 <span>{"ນັກຮຽນ 3 ຄົນ ຊ່ວຍກັນຂຸດໜານຜັກແລ້ວໃນເວລາ 4 ມື້ (ຜົນຄູນຄົງທີ່ C = 3 × 4 = 12 ມື້-ຄົນ)."}</span>
                 <br />
-                <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }, whiteSpace: "nowrap"}>
+                <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" , whiteSpace: "nowrap"}}>
                   <span>{"- ຖ້າມີ 1 ຄົນ ຕ້ອງໃຊ້ເວລາ: "}</span>
                   <Fraction num={"12"} den={"1"} />
                   <span>{" = 12 ມື້."}</span>
                 </span>
                 <br />
-                <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }, whiteSpace: "nowrap"}>
+                <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" , whiteSpace: "nowrap"}}>
                   <span>{"- ຖ້າມີ 6 ຄົນ ຕ້ອງໃຊ້ເວລາ: "}</span>
                   <Fraction num={"12"} den={"6"} />
                   <span>{" = 2 ມື້."}</span>
@@ -113,7 +113,7 @@ export const unit31Data: UnitData = {
           </div>
         ),
         hint: {
-          text: <span style={{ display: "inline-flex", flexDirection: "column", gap: "8px" }, whiteSpace: "nowrap"}>
+          text: <span style={{ display: "inline-flex", flexDirection: "column", gap: "8px" , whiteSpace: "nowrap"}}>
             <span>{"💡 ຕົວຢ່າງ: ຖອກນ້ຳໃສ່ຕຸກຂະໜາດ 75 cL ໄດ້ 79 ຕຸກ. ຖ້າປ່ຽນມາໃສ່ຕຸກຂະໜາດ 25 cL ຈະໄດ້:"}</span>
             <span style={{ display: "inline-flex", alignItems: "center", gap: "4px", whiteSpace: "nowrap" }}>
               <Fraction num={<span>{"75 × 79"}</span>} den={"25"} />

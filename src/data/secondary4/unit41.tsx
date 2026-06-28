@@ -17,7 +17,7 @@ export const unit41Data: UnitData = {
               {"ເພື່ອເຂົ້າໃຈຄວາມແຕກຕ່າງ ຫຼື ການກະຈາຍຂອງຂໍ້ມູນ, ເຮົາໃຊ້ຄ່າວັດແທກຕໍ່ໄປນີ້:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"1. ພິໄສ (Range):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" , whiteSpace: "nowrap"}}>{"1. ພິໄສ (Range):"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"Range = x_max - x_min"}
                 <br />
@@ -25,7 +25,7 @@ export const unit41Data: UnitData = {
               </p>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"2. ຄ່າຜັນປ່ຽນ (Variance - s²):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" , whiteSpace: "nowrap"}}>{"2. ຄ່າຜັນປ່ຽນ (Variance - s²):"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"s² = Σ (x_i - x̄)² / N"}
                 <br />
@@ -33,7 +33,7 @@ export const unit41Data: UnitData = {
               </p>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"3. ຄ່າຜັນປ່ຽນມາດຕະຖານ (Standard Deviation - s):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>{"3. ຄ່າຜັນປ່ຽນມາດຕະຖານ (Standard Deviation - s):"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"s = √s²"}
                 <br />

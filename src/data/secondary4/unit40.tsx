@@ -17,7 +17,7 @@ export const unit40Data: UnitData = {
               {"ໃນສະຖິຕິພັນລະນາ, ຄ່າວັດແທກທ່າອ່ຽງເຂົ້າສູ່ສ່ວນກາງທີ່ນິຍົມໃຊ້ມີ 3 ຄ່າ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"1. ຄ່າສະເລ່ຍຄະນິດ (Arithmetic Mean - x̄):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" , whiteSpace: "nowrap"}}>{"1. ຄ່າສະເລ່ຍຄະນິດ (Arithmetic Mean - x̄):"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"x̄ = (Σ x_i) / N"}
                 <br />
@@ -25,13 +25,13 @@ export const unit40Data: UnitData = {
               </p>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"2. ຄ່າກາງ (Median - Med):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" , whiteSpace: "nowrap"}}>{"2. ຄ່າກາງ (Median - Med):"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ແມ່ນຄ່າທີ່ຢູ່ເຄິ່ງກາງຂອງຂໍ້ມູນ ເມື່ອໄດ້ຈັດລຽງຂໍ້ມູນຈາກນ້ອຍຫາຫຼາຍ."}
               </p>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"3. ຄ່ານິຍົມ (Mode - Mod):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>{"3. ຄ່ານິຍົມ (Mode - Mod):"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ແມ່ນຂໍ້ມູນທີ່ມີຄວາມຖີ່ສູງສຸດ (ປະກົດຕົວຫຼາຍທີ່ສຸດໃນຂໍ້ມູນ)."}
               </p>

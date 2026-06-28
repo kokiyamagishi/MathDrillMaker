@@ -2,9 +2,9 @@ import React from "react";
 import { UnitData } from "../units2";
 
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", verticalAlign: "middle", alignItems: "center", padding: "0 4px", fontSize: "0.95em", transform: "translateY(-0.05em)" }, whiteSpace: "nowrap"}>
-    <span style={{ borderBottom: "1.5px solid currentColor", paddingBottom: "1px", lineHeight: 1, fontWeight: "bold" }, whiteSpace: "nowrap"}>{num}</span>
-    <span style={{ paddingTop: "1.5px", lineHeight: 1, fontWeight: "bold" }, whiteSpace: "nowrap"}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", verticalAlign: "middle", alignItems: "center", padding: "0 4px", fontSize: "0.95em", transform: "translateY(-0.05em)" , whiteSpace: "nowrap"}}>
+    <span style={{ borderBottom: "1.5px solid currentColor", paddingBottom: "1px", lineHeight: 1, fontWeight: "bold" , whiteSpace: "nowrap"}}>{num}</span>
+    <span style={{ paddingTop: "1.5px", lineHeight: 1, fontWeight: "bold" , whiteSpace: "nowrap"}}>{den}</span>
   </span>
 );
 
@@ -132,7 +132,7 @@ export const unit17Data: UnitData = {
               </div>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              <span style={{ display: "flex", alignItems: "center", gap: "4px", flexWrap: "wrap" }, whiteSpace: "nowrap"}>
+              <span style={{ display: "flex", alignItems: "center", gap: "4px", flexWrap: "wrap" , whiteSpace: "nowrap"}}>
                 {"(2) "}
                 <Fraction num="2" den="3" />
                 {" × 5"}

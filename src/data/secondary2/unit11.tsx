@@ -22,7 +22,7 @@ export const unit11Data: UnitData = {
               <div style={{ display: "flex", flexDirection: "column", gap: "6px", color: "#37474F" }}>
                 <span>{"• ຖ້າ A' ເປັນເມັດເຄິ່ງຄືຂອງ A ທຽບໃສ່ O, ຈະໄດ້: "} <strong>{"OA = OA'"}</strong></span>
                 <span>{"• ໄລຍະຫ່າງແຕ່ A ຫາ O ຈະເທົ່າກັບໄລຍະຫ່າງແຕ່ O ຫາ A'"}</span>
-                <span style={{ color: "#0D47A1" }, whiteSpace: "nowrap"}>
+                <span style={{ color: "#0D47A1" , whiteSpace: "nowrap"}}>
                   <strong>{"ຕົວຢ່າງ: "}</strong> {"ຖ້າຫາກ OA = 5 cm, ໄລຍະຫ່າງ AA' ຈະເທົ່າກັບ 5 + 5 = 10 cm."}
                 </span>
               </div>
@@ -73,35 +73,35 @@ export const unit11Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "18px", padding: "8px 0" }}>
                 {/* 5 Questions */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   {"ຖ້າເມັດ A ຢູ່ຫ່າງຈາກ O ແມ່ນ 5 cm, ເມັດເຄິ່ງຄື A' ຈະຢູ່ຫ່າງຈາກ O ຈັກ cm? "}
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   {" cm"}
                 </div>
                 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   {"ຖ້າເມັດ A ຢູ່ຫ່າງຈາກ O ແມ່ນ 7 cm, ໄລຍະຫ່າງລະຫວ່າງ AA' ແມ່ນຈັກ cm? "}
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   {" cm"}
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                   {"ຖ້າໄລຍະຫ່າງ AA' ເທົ່າກັບ 16 cm, ໄລຍະຫ່າງແຕ່ A ຫາ ໃຈກາງ O ຈະແມ່ນຈັກ cm? "}
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   {" cm"}
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                   {"ຖ້າ OA = 12 cm ແລະ A' ແມ່ນເມັດເຄິ່ງຄື, ຖາມວ່າ OA' ຈະມີລວງຍາວຈັກ cm? "}
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   {" cm"}
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(5) "}</span>
                   {"ຖ້າໄລຍະຫ່າງແຕ່ເມັດເຄິ່ງຄື A' ຫາ O ແມ່ນ 4.5 cm, ໄລຍະຫ່າງ AA' ຈະແມ່ນຈັກ cm? "}
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   {" cm"}
@@ -127,7 +127,7 @@ export const unit11Data: UnitData = {
               <div style={{ display: "flex", flexDirection: "column", gap: "6px", color: "#37474F" }}>
                 <span>{"• ຮູບຈະຕຸລັດ, ຮູບສີ່ແຈສາກ, ຮູບສີ່ແຈຂະໜານ, ຮູບດອກຈັນ ➔ "}<strong>{"ມີໃຈກາງເຄິ່ງຄື"}</strong> {"(ຈຸດຕັດກັນຂອງສອງເສັ້ນເນັ່ງຈອມ)."}</span>
                 <span>{"• ຮູບວົງມົນ ➔ "}<strong>{"ມີໃຈກາງເຄິ່ງຄື"}</strong> {"(ຈຸດໃຈກາງຂອງວົງມົນ)."}</span>
-                <span style={{ color: "#C62828" }, whiteSpace: "nowrap"}>{"• ຮູບສາມແຈສະເໝີ, ຮູບສາມແຈທ່ຽງ ➔ "}<strong>{"ບໍ່ມີໃຈກາງເຄິ່ງຄື"}</strong> {"(ມີແຕ່ແກນເຄິ່ງຄື)."}</span>
+                <span style={{ color: "#C62828" , whiteSpace: "nowrap"}}>{"• ຮູບສາມແຈສະເໝີ, ຮູບສາມແຈທ່ຽງ ➔ "}<strong>{"ບໍ່ມີໃຈກາງເຄິ່ງຄື"}</strong> {"(ມີແຕ່ແກນເຄິ່ງຄື)."}</span>
               </div>
             </div>
 
@@ -168,31 +168,31 @@ export const unit11Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "18px", padding: "8px 0" }}>
                 {/* 5 Questions */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span>{"ຮູບສີ່ແຈສາກ ມີໃຈກາງເຄິ່ງຄື ຫຼື ບໍ່?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span>{"ຮູບສາມແຈສະເໝີ ມີໃຈກາງເຄິ່ງຄື ຫຼື ບໍ່?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                   <span>{"ຮູບວົງມົນ ມີໃຈກາງເຄິ່ງຄື ຫຼື ບໍ່?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                   <span>{"ຮູບຫ້າແຈສະເໝີ ມີໃຈກາງເຄິ່ງຄື ຫຼື ບໍ່?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(5) "}</span>
                   <span>{"ຮູບຫົກແຈສະເໝີ ມີໃຈກາງເຄິ່ງຄື ຫຼື ບໍ່?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>

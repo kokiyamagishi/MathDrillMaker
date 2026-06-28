@@ -59,9 +59,9 @@ export const unit11Data: UnitData = {
               fontSize: "20px",
             }}
           >
-            <span style={{ fontSize: "20px" }, whiteSpace: "nowrap"}>{"(🍬🍬🍬🍬🍬)"}</span>
-            <span style={{ fontSize: "20px" }, whiteSpace: "nowrap"}>{"(🍬🍬🍬🍬🍬)"}</span>
-            <span style={{ fontSize: "20px" }, whiteSpace: "nowrap"}>{"(🍬🍬🍬🍬🍬)"}</span>
+            <span style={{ fontSize: "20px" , whiteSpace: "nowrap"}}>{"(🍬🍬🍬🍬🍬)"}</span>
+            <span style={{ fontSize: "20px" , whiteSpace: "nowrap"}}>{"(🍬🍬🍬🍬🍬)"}</span>
+            <span style={{ fontSize: "20px" , whiteSpace: "nowrap"}}>{"(🍬🍬🍬🍬🍬)"}</span>
           </div>
           <p
             className="math-illustration"

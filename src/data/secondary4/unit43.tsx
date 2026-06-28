@@ -17,7 +17,7 @@ export const unit43Data: UnitData = {
               {"ສອງເຫດການ A ແລະ B ຖືກເອີ້ນວ່າ ເປັນເອກະລາດເຊິ່ງກັນແລະກັນ (Independent) ຖ້າວ່າການເກີດ ຫຼື ບໍ່ເກີດຂຶ້ນຂອງເຫດການໜຶ່ງ ບໍ່ມີຜົນກະທົບຕໍ່ຄວາມໜ້າຈະເປັນທີ່ຈະເກີດຂຶ້ນຂອງອີກເຫດການໜຶ່ງ."}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງທາງຮູບປະທຳ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" , whiteSpace: "nowrap"}}>{"ຕົວຢ່າງທາງຮູບປະທຳ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li>{"ໂຍນຫຼຽນ 1 ອັນ ແລະ ໂຍນໝາກກະລັອກ 1 ໜ່ວຍ (ຜົນຂອງຫຼຽນ ບໍ່ມີຜົນຕໍ່ໝາກກະລັອກ)."}</li>
                 <li>{"ການຍິງເປົ້າຂອງສອງຄົນທີ່ແຕກຕ່າງກັນ ໂດຍແຕ່ລະຄົນຍິງເປັນອິດສະຫຼະ."}</li>

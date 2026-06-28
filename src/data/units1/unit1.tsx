@@ -107,19 +107,19 @@ export const unit1Data: UnitData = {
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "16px", border: "2px solid #2196F3", borderRadius: "12px" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                  <span style={{ fontSize: "20px", fontWeight: "bold", width: "100px" }, whiteSpace: "nowrap"}>{"ກົບ 🐸:"}</span>
+                  <span style={{ fontSize: "20px", fontWeight: "bold", width: "100px" , whiteSpace: "nowrap"}}>{"ກົບ 🐸:"}</span>
                   <ItemGrid item="🐸" count={unit1Json.challengeProblems.frogCount} columns={6} backgroundColor="#E8F5E9" dataPath="challengeProblems.frogCount" />
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                  <span style={{ fontSize: "20px", fontWeight: "bold", width: "100px" }, whiteSpace: "nowrap"}>{"ເຕົ່າ 🐢:"}</span>
+                  <span style={{ fontSize: "20px", fontWeight: "bold", width: "100px" , whiteSpace: "nowrap"}}>{"ເຕົ່າ 🐢:"}</span>
                   <ItemGrid item="🐢" count={unit1Json.challengeProblems.turtleCount} columns={6} backgroundColor="#E8F5E9" dataPath="challengeProblems.turtleCount" />
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                  <span style={{ fontSize: "20px", fontWeight: "bold", width: "100px" }, whiteSpace: "nowrap"}>{"ປາ 🐟:"}</span>
+                  <span style={{ fontSize: "20px", fontWeight: "bold", width: "100px" , whiteSpace: "nowrap"}}>{"ປາ 🐟:"}</span>
                   <ItemGrid item="🐟" count={unit1Json.challengeProblems.fishCount} columns={6} backgroundColor="#E8F5E9" dataPath="challengeProblems.fishCount" />
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                  <span style={{ fontSize: "20px", fontWeight: "bold", width: "100px" }, whiteSpace: "nowrap"}>{"ປູ 🦀:"}</span>
+                  <span style={{ fontSize: "20px", fontWeight: "bold", width: "100px" , whiteSpace: "nowrap"}}>{"ປູ 🦀:"}</span>
                   <ItemGrid item="🦀" count={unit1Json.challengeProblems.crabCount} columns={6} backgroundColor="#E8F5E9" dataPath="challengeProblems.crabCount" />
                 </div>
               </div>

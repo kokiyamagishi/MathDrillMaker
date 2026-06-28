@@ -20,7 +20,7 @@ export const unit23Data: UnitData = {
             </p>
             
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9", display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"ສັນຍະລັກການເປັນອົງປະກອບ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" , whiteSpace: "nowrap"}}>{"ສັນຍະລັກການເປັນອົງປະກອບ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6" }}>
                 <li style={{ marginBottom: "8px" }}>
                   <strong>{"a ∈ A: "}</strong>{"ອ່ານວ່າ 'a ແມ່ນອົງປະກອບຂອງກຸ່ມ A'"}
@@ -50,14 +50,14 @@ export const unit23Data: UnitData = {
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
                 <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   {"ວັນເສົາ "}
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   {" S"}
                 </p>
                 
                 <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   {"ວັນປີໃໝ່ "}
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   {" S"}
@@ -98,7 +98,7 @@ export const unit23Data: UnitData = {
             </ul>
 
             <div style={{ padding: "16px", backgroundColor: "#FFE0B2", borderRadius: "8px", border: "1px solid #FFB74D", display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ກຸ່ມພິເສດ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>{"ກຸ່ມພິເສດ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6" }}>
                 <li><strong>{"ກຸ່ມເປົ່າ (Empty Set): "}</strong>{" ແມ່ນກຸ່ມທີ່ບໍ່ມີອົງປະກອບໃດໆເລີຍ, ສັນຍະລັກດ້ວຍ ∅ ຫຼື { }."}</li>
                 <li><strong>{"ກຸ່ມບໍ່ສິ້ນສຸດ (Infinite Set): "}</strong>{" ແມ່ນກຸ່ມທີ່ມີອົງປະກອບຫຼາຍບໍ່ສິ້ນສຸດ ເຊັ່ນ: ກຸ່ມຂອງຈຳນວນທຳມະຊາດ ℕ = {0, 1, 2, 3, ...}."}</li>
@@ -122,12 +122,12 @@ export const unit23Data: UnitData = {
               
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "8px 0" }}>
                 <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   {"ເດືອນທຳອິດທີ່ມີ 31 ວັນໃນປີແມ່ນ "}
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                 </p>
                 <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   {"ຈຳນວນອົງປະກອບທັງໝົດຂອງກຸ່ມ E ແມ່ນ "}
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   {" ເດືອນ."}

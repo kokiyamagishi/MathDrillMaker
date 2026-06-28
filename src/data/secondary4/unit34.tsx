@@ -17,7 +17,7 @@ export const unit34Data: UnitData = {
               {"ໃນອາວະກາດ, ສາມເວກເຕີ u, v ແລະ w ຖືກເອີ້ນວ່າ ຮ່ວມແຜ່ນພຽງກັນ (Coplanar) ຖ້າທິດທາງຂອງພວກມັນຂະໜານກັບແຜ່ນພຽງດຽວກັນ."}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E8EAF6", borderRadius: "8px", border: "1px solid #C5CAE9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#3F51B5" }, whiteSpace: "nowrap"}>{"ເງື່ອນໄຂທາງຄະນິດສາດ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#3F51B5" , whiteSpace: "nowrap"}}>{"ເງື່ອນໄຂທາງຄະນິດສາດ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ຖ້າສອງເວກເຕີ u ແລະ v ບໍ່ຂະໜານກັນ, ສາມເວກເຕີ u, v, w ຈະຮ່ວມແຜ່ນພຽງກັນ ກໍຕໍ່ເມື່ອມີສອງຈຳນວນຈິງ x ແລະ y ທີ່ເຮັດໃຫ້:"}
                 <br />
@@ -25,7 +25,7 @@ export const unit34Data: UnitData = {
               </p>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#E0F2F1", borderRadius: "8px", border: "1px solid #B2DFDB" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#00796B" }, whiteSpace: "nowrap"}>{"ຄຸນລັກສະນະສໍາຄັນ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#00796B" , whiteSpace: "nowrap"}}>{"ຄຸນລັກສະນະສໍາຄັນ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li>{"ທຸກໆສອງເວກເຕີ u ແລະ v ໃດໆ ຈະຮ່ວມແຜ່ນພຽງກັນສະເໝີ."}</li>
                 <li>{"ຖ້າສາມເວກເຕີ u, v, w ບໍ່ຮ່ວມແຜ່ນພຽງກັນ, ພວກມັນຈະເປັນເອກະລາດເຊິ່ງກັນແລະກັນໃນອາວະກາດ."}</li>

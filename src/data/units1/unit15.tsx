@@ -18,25 +18,25 @@ export const unit15Data: UnitData = {
               {/* 500 Kip Note */}
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
                 <div className="math-illustration" style={{ width: "140px", height: "70px", backgroundColor: "#E91E63", borderRadius: "4px", border: "1px solid #C2185B", position: "relative", boxShadow: "2px 2px 5px rgba(0,0,0,0.2)", display: "flex", justifyContent: "center", alignItems: "center", color: "white" }}>
-                  <span style={{ fontSize: "28px", fontWeight: "bold" }, whiteSpace: "nowrap"}>500</span>
+                  <span style={{ fontSize: "28px", fontWeight: "bold" , whiteSpace: "nowrap"}}>500</span>
                 </div>
-                <span style={{ fontWeight: "bold", fontSize: "22px" }, whiteSpace: "nowrap"}>{"ໃບ 500 ກີບ"}</span>
+                <span style={{ fontWeight: "bold", fontSize: "22px" , whiteSpace: "nowrap"}}>{"ໃບ 500 ກີບ"}</span>
               </div>
               
               {/* 1000 Kip Note */}
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
                 <div className="math-illustration" style={{ width: "140px", height: "70px", backgroundColor: "#4CAF50", borderRadius: "4px", border: "1px solid #388E3C", position: "relative", boxShadow: "2px 2px 5px rgba(0,0,0,0.2)", display: "flex", justifyContent: "center", alignItems: "center", color: "white" }}>
-                  <span style={{ fontSize: "28px", fontWeight: "bold" }, whiteSpace: "nowrap"}>1000</span>
+                  <span style={{ fontSize: "28px", fontWeight: "bold" , whiteSpace: "nowrap"}}>1000</span>
                 </div>
-                <span style={{ fontWeight: "bold", fontSize: "22px" }, whiteSpace: "nowrap"}>{"ໃບ 1,000 ກີບ"}</span>
+                <span style={{ fontWeight: "bold", fontSize: "22px" , whiteSpace: "nowrap"}}>{"ໃບ 1,000 ກີບ"}</span>
               </div>
               
               {/* 2000 Kip Note */}
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
                 <div className="math-illustration" style={{ width: "140px", height: "70px", backgroundColor: "#2196F3", borderRadius: "4px", border: "1px solid #1976D2", position: "relative", boxShadow: "2px 2px 5px rgba(0,0,0,0.2)", display: "flex", justifyContent: "center", alignItems: "center", color: "white" }}>
-                  <span style={{ fontSize: "28px", fontWeight: "bold" }, whiteSpace: "nowrap"}>2000</span>
+                  <span style={{ fontSize: "28px", fontWeight: "bold" , whiteSpace: "nowrap"}}>2000</span>
                 </div>
-                <span style={{ fontWeight: "bold", fontSize: "22px" }, whiteSpace: "nowrap"}>{"ໃບ 2,000 ກີບ"}</span>
+                <span style={{ fontWeight: "bold", fontSize: "22px" , whiteSpace: "nowrap"}}>{"ໃບ 2,000 ກີບ"}</span>
               </div>
             </div>
             
@@ -62,7 +62,7 @@ export const unit15Data: UnitData = {
             
             <div className="math-illustration" style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <div style={{ display: "flex", alignItems: "flex-start", gap: "16px", flexWrap: "nowrap" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                 <div style={{ display: "flex", gap: "8px" }}>
                   <div style={{ width: "80px", height: "40px", backgroundColor: "#E91E63", borderRadius: "2px", border: "1px solid #333", display: "flex", justifyContent: "center", alignItems: "center", color: "white", fontSize: "12px", fontWeight: "bold" }}>500</div>
                   <div style={{ width: "80px", height: "40px", backgroundColor: "#E91E63", borderRadius: "2px", border: "1px solid #333", display: "flex", justifyContent: "center", alignItems: "center", color: "white", fontSize: "12px", fontWeight: "bold" }}>500</div>
@@ -74,7 +74,7 @@ export const unit15Data: UnitData = {
               </div>
               
               <div style={{ display: "flex", alignItems: "flex-start", gap: "16px", flexWrap: "nowrap" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                 <div style={{ display: "flex", gap: "8px" }}>
                   <div style={{ width: "80px", height: "40px", backgroundColor: "#4CAF50", borderRadius: "2px", border: "1px solid #333", display: "flex", justifyContent: "center", alignItems: "center", color: "white", fontSize: "12px", fontWeight: "bold" }}>1000</div>
                   <div style={{ width: "80px", height: "40px", backgroundColor: "#2196F3", borderRadius: "2px", border: "1px solid #333", display: "flex", justifyContent: "center", alignItems: "center", color: "white", fontSize: "12px", fontWeight: "bold" }}>2000</div>
@@ -85,7 +85,7 @@ export const unit15Data: UnitData = {
               </div>
               
               <div style={{ display: "flex", alignItems: "flex-start", gap: "16px", flexWrap: "nowrap" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                 <div style={{ display: "flex", gap: "8px" }}>
                   <div style={{ width: "80px", height: "40px", backgroundColor: "#E91E63", borderRadius: "2px", border: "1px solid #333", display: "flex", justifyContent: "center", alignItems: "center", color: "white", fontSize: "12px", fontWeight: "bold" }}>500</div>
                   <div style={{ width: "80px", height: "40px", backgroundColor: "#E91E63", borderRadius: "2px", border: "1px solid #333", display: "flex", justifyContent: "center", alignItems: "center", color: "white", fontSize: "12px", fontWeight: "bold" }}>500</div>
@@ -97,7 +97,7 @@ export const unit15Data: UnitData = {
               </div>
               
               <div style={{ display: "flex", alignItems: "flex-start", gap: "16px", flexWrap: "nowrap" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                 <div style={{ display: "flex", gap: "8px" }}>
                   <div style={{ width: "80px", height: "40px", backgroundColor: "#4CAF50", borderRadius: "2px", border: "1px solid #333", display: "flex", justifyContent: "center", alignItems: "center", color: "white", fontSize: "12px", fontWeight: "bold" }}>1000</div>
                   <div style={{ width: "80px", height: "40px", backgroundColor: "#4CAF50", borderRadius: "2px", border: "1px solid #333", display: "flex", justifyContent: "center", alignItems: "center", color: "white", fontSize: "12px", fontWeight: "bold" }}>1000</div>
@@ -109,7 +109,7 @@ export const unit15Data: UnitData = {
               </div>
               
               <div style={{ display: "flex", alignItems: "flex-start", gap: "16px", flexWrap: "nowrap" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(5) "}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(5) "}</span>
                 <div style={{ display: "flex", gap: "8px" }}>
                   <div style={{ width: "80px", height: "40px", backgroundColor: "#E91E63", borderRadius: "2px", border: "1px solid #333", display: "flex", justifyContent: "center", alignItems: "center", color: "white", fontSize: "12px", fontWeight: "bold" }}>500</div>
                   <div style={{ width: "80px", height: "40px", backgroundColor: "#4CAF50", borderRadius: "2px", border: "1px solid #333", display: "flex", justifyContent: "center", alignItems: "center", color: "white", fontSize: "12px", fontWeight: "bold" }}>1000</div>
@@ -132,14 +132,14 @@ export const unit15Data: UnitData = {
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p>{"ທ້າວບຸນ ມີເງິນ 1 ໃບ ມູນຄ່າ 2,000 ກີບ. ລາວຕ້ອງການປ່ຽນເປັນໃບ 500 ກີບ. ລາວຈະໄດ້ໃບ 500 ກີບ ທັງໝົດຈັກໃບ? "} <span className="point-label">{"(ຂໍ້ລະ 5 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span></p>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "20px", marginTop: "12px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                 <span>{"ຕອບ: ໄດ້ໃບ 500 ກີບ ທັງໝົດ"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
                 <span>{"ໃບ"}</span>
               </div>
               
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "20px", marginTop: "12px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                 <span>{"ຖ້າປ່ຽນເປັນໃບ 1,000 ກີບ ຈະໄດ້ທັງໝົດ"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
                 <span>{"ໃບ"}</span>
@@ -158,7 +158,7 @@ export const unit15Data: UnitData = {
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p>{"ທົດສອບປະຈຳບົດ: ນາງດາວໄປຮ້ານຄ້າ, ລາວຊື້ເຂົ້າໜົມ 1,000 ກີບ ແລະ ຊື້ນ້ຳຫວານ 2,000 ກີບ. ລາວຈ່າຍດ້ວຍໃບ 2,000 ກີບ ຈຳນວນ 2 ໃບ. ແມ່ຄ້າຕ້ອງທອນເງິນໃຫ້ນາງດາວເທົ່າໃດ? "} <span className="point-label">{"(ຂໍ້ລະ 5 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span></p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "20px", marginTop: "12px" }}>
-              <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+              <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
               <span>{"ຕອບ: ແມ່ຄ້າຕ້ອງທອນເງິນ"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
               <span>{"ກີບ"}</span>

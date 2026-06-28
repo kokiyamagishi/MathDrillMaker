@@ -17,14 +17,14 @@ export const unit22Data: UnitData = {
               {"ສໍາລັບສົມຜົນຂັ້ນສອງ ax² + bx + c = 0 ທີ່ມີສອງຮາກ α ແລະ β, ສູດວີແອດກຳນົດວ່າ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"ສູດພື້ນຖານ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" , whiteSpace: "nowrap"}}>{"ສູດພື້ນຖານ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li><strong>{"ຜົນບວກຂອງຮາກ (Sum, S):"}</strong>{" S = α + β = -b/a"}</li>
                 <li><strong>{"ຜົນຄູນຂອງຮາກ (Product, P):"}</strong>{" P = α × β = c/a"}</li>
               </ul>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ສຳນວນສົມມາດທີ່ພົບເລື້ອຍ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>{"ສຳນວນສົມມາດທີ່ພົບເລື້ອຍ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li>{"α² + β² = (α + β)² - 2αβ = S² - 2P"}</li>
                 <li>{"1/α + 1/β = (α + β)/(αβ) = S/P"}</li>
@@ -113,7 +113,7 @@ export const unit22Data: UnitData = {
               {"  S = x_1 + x_2 = -a  ແລະ  P = x_1 × x_2 = b."}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງການນຳໃຊ້:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" , whiteSpace: "nowrap"}}>{"ຕົວຢ່າງການນຳໃຊ້:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ໃຫ້ຫວ່າງໃຈຜົນຂອງ x² + ax + b < 0 ແມ່ນ ]1/3, 1/2[. ຊອກຫາ a ແລະ b:"}
                 <br />

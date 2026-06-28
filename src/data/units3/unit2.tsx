@@ -161,7 +161,7 @@ export const unit2Data: UnitData = {
                   fontSize: "22px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(1)"}
                 </span>
                 <span>{"1 ຊົ່ວໂມງ = "}</span>
@@ -183,7 +183,7 @@ export const unit2Data: UnitData = {
                   fontSize: "22px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(2)"}
                 </span>
                 <span>{"1 ນາທີ = "}</span>
@@ -205,7 +205,7 @@ export const unit2Data: UnitData = {
                   fontSize: "22px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(3)"}
                 </span>
                 <span>{"1 ມື້ (1 ວັນ) = "}</span>
@@ -227,7 +227,7 @@ export const unit2Data: UnitData = {
                   fontSize: "22px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(4)"}
                 </span>
                 <span>{"1 ຊົ່ວໂມງເຄິ່ງ (1 ຊົ່ວໂມງ 30 ນາທີ) = "}</span>
@@ -272,7 +272,7 @@ export const unit2Data: UnitData = {
                   fontSize: "22px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(5)"}
                 </span>
                 <span>{"10 ນາທີ + 20 ນາທີ = "}</span>
@@ -294,7 +294,7 @@ export const unit2Data: UnitData = {
                   fontSize: "22px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(6)"}
                 </span>
                 <span>{"30 ນາທີ + 30 ນາທີ = "}</span>
@@ -381,10 +381,10 @@ export const unit2Data: UnitData = {
                 }}
               >
                 <div>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     {"(1)"}
                   </span>
-                  <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontSize: "20px", marginLeft: "12px" , whiteSpace: "nowrap"}}>
                     {
                       "ນາງດາວເລີ່ມອ່ານປຶ້ມເວລາ 8:00 ໂມງ ແລະ ອ່ານແລ້ວເວລາ 9:30 ໂມງ. ລາວໃຊ້ເວລາອ່ານປຶ້ມດົນປານໃດ?"
                     }
@@ -409,10 +409,10 @@ export const unit2Data: UnitData = {
                   </div>
                 </div>
                 <div>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     {"(2)"}
                   </span>
-                  <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontSize: "20px", marginLeft: "12px" , whiteSpace: "nowrap"}}>
                     {
                       "ລົດເມອອກຈາກຄິວລົດເວລາ 10:00 ໂມງ. ໃຊ້ເວລາເດີນທາງ 2 ຊົ່ວໂມງ. ລົດເມຈະໄປຮອດສະຖານີປາຍທາງເວລາຈັກໂມງ?"
                     }
@@ -460,10 +460,10 @@ export const unit2Data: UnitData = {
                 }}
               >
                 <div>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     {"(3)"}
                   </span>
-                  <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontSize: "20px", marginLeft: "12px" , whiteSpace: "nowrap"}}>
                     {
                       "ທ້າວຄຳແລ່ນແຂ່ງຂັນໃຊ້ເວລາ 1 ນາທີ 20 ວິນາທີ. ຖ້າປ່ຽນເປັນວິນາທີທັງໝົດ ຈະເທົ່າກັບຈັກວິນາທີ?"
                     }
@@ -489,10 +489,10 @@ export const unit2Data: UnitData = {
                   </div>
                 </div>
                 <div>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     {"(4)"}
                   </span>
-                  <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontSize: "20px", marginLeft: "12px" , whiteSpace: "nowrap"}}>
                     {
                       "ພັກຜ່ອນຕອນທ່ຽງ 60 ນາທີ. ຖ້າກິນເຂົ້າໃຊ້ເວລາ 20 ນາທີ, ຈະເຫຼືອເວລາຫລິ້ນຈັກນາທີ?"
                     }
@@ -553,7 +553,7 @@ export const unit2Data: UnitData = {
                   fontSize: "22px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(1)"}
                 </span>
                 <span>{"1 ຊົ່ວໂມງ ມີຈັກນາທີ?"}</span>
@@ -574,7 +574,7 @@ export const unit2Data: UnitData = {
                   fontSize: "22px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(2)"}
                 </span>
                 <span>{"1 ນາທີ ມີຈັກວິນາທີ?"}</span>
@@ -618,7 +618,7 @@ export const unit2Data: UnitData = {
                   fontSize: "22px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(3)"}
                 </span>
                 <span>{"15 ນາທີ + 15 ນາທີ = "}</span>
@@ -640,7 +640,7 @@ export const unit2Data: UnitData = {
                   fontSize: "22px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(4)"}
                 </span>
                 <span>{"50 ວິນາທີ - 20 ວິນາທີ = "}</span>

@@ -158,24 +158,24 @@ export const unit14Data: UnitData = {
               <p>{"ຈົ່ງຕື່ມຕົວເລກໃສ່ບັອກ ເພື່ອໃຫ້ປະໂຫຍກສັນຍະລັກຖືກຕ້ອງ: "} <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span></p>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span>{"14 -"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span>
                   <span>{"= 9"}</span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span>{"12 -"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span>
                   <span>{"= 4"}</span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span>
                   <span>{"- 8 = 7"}</span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span>
                   <span>{"- 5 = 6"}</span>
                 </div>

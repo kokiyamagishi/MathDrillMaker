@@ -124,8 +124,7 @@ export const unit4Data: UnitData = {
                 style={{
                   color: "#D32F2F",
                   fontWeight: "bold",
-                  fontSize: "22px",
-                }, whiteSpace: "nowrap"}
+                  fontSize: "22px", whiteSpace: "nowrap"}}
               >
                 {"ຄຳຕອບ: 4 ເສດ 5"}
               </span>

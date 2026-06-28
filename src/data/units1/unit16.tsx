@@ -42,26 +42,26 @@ export const unit16Data: UnitData = {
             <p>{"ຈົ່ງບອກວ່າ ຖ້າເອົາວັດຖຸລຸ່ມນີ້ມາວາງເທິງເຈ້ຍ ແລ້ວເອົາສໍດຳຂີດຕາມຂອບພື້ນຂອງມັນ, ຈະໄດ້ຮູບຮ່າງຫຍັງ? (ວົງມົນ ຫຼື ສີ່ແຈ) "} <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span></p>
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
-                <span style={{ fontSize: "24px" }, whiteSpace: "nowrap"}>🥫</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
+                <span style={{ fontSize: "24px" , whiteSpace: "nowrap"}}>🥫</span>
                 <span>{"ກະປ໋ອງນົມ (ຮູບທໍ່) ຕັ້ງໄວ້:"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
-                <span style={{ fontSize: "24px" }, whiteSpace: "nowrap"}>📦</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
+                <span style={{ fontSize: "24px" , whiteSpace: "nowrap"}}>📦</span>
                 <span>{"ກ່ອງເຈ້ຍ (ຮູບກັບ) ຕັ້ງໄວ້:"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(3) "}</span>
-                <span style={{ fontSize: "24px" }, whiteSpace: "nowrap"}>⚽</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(3) "}</span>
+                <span style={{ fontSize: "24px" , whiteSpace: "nowrap"}}>⚽</span>
                 <span>{"ໝາກບານ (ຮູບໜ່ວຍມົນ):"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(4) "}</span>
-                <span style={{ fontSize: "24px" }, whiteSpace: "nowrap"}>🧻</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(4) "}</span>
+                <span style={{ fontSize: "24px" , whiteSpace: "nowrap"}}>🧻</span>
                 <span>{"ເຈ້ຍອະນາໄມ (ຮູບທໍ່) ຕັ້ງໄວ້:"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>
               </div>
@@ -79,7 +79,7 @@ export const unit16Data: UnitData = {
               <p>{"ນາງວຽງ ແຕ້ມຮູບ ໂດຍໃຊ້ຮູບຮ່າງຕ່າງໆ. ຈົ່ງຕອບຄຳຖາມລຸ່ມນີ້: "} <span className="point-label">{"(ຂໍ້ລະ 5 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span></p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "12px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                 <p>{"ລາວໃຊ້ຮູບສີ່ແຈ 2 ຮູບ ສຳລັບຕົວລົດ. ລາວຄວນໃຊ້ຮູບຮ່າງຫຍັງ ສຳລັບລໍ້ລົດ? (ເພື່ອໃຫ້ລົດແລ່ນໄດ້)"}</p>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "20px" }}>
                   <span>{"ຕອບ: ຄວນໃຊ້ຮູບ"}</span>
@@ -88,7 +88,7 @@ export const unit16Data: UnitData = {
               </div>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "12px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                 <p>{"ຖ້າລາວຕ້ອງການແຕ້ມຮູບເຮືອນ, ຫຼັງຄາເຮືອນຄວນໃຊ້ຮູບຮ່າງຫຍັງຈຶ່ງຈະເໝາະສົມ?"}</p>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "20px" }}>
                   <span>{"ຕອບ: ຄວນໃຊ້ຮູບ"}</span>
@@ -110,7 +110,7 @@ export const unit16Data: UnitData = {
             <p>{"ທົດສອບປະຈຳບົດ: ຈົ່ງບອກຮູບຮ່າງຂອງເງົາ ຖ້າເອົາວັດຖຸລຸ່ມນີ້ໄປວາງກາງແດດ: "} <span className="point-label">{"(ຂໍ້ລະ 5 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span></p>
             
             <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "12px" }}>
-              <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+              <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
               <p>{"ຖ້າເອົາຮູບໜ່ວຍມົນ (ເຊັ່ນ ໝາກບານ) ມາວາງ, ເງົາຂອງມັນທີ່ຕົກໃສ່ພື້ນ ຈະເປັນຮູບຮ່າງຫຍັງ?"}</p>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "20px" }}>
                 <span>{"ຕອບ: ເປັນຮູບ"}</span>
@@ -119,7 +119,7 @@ export const unit16Data: UnitData = {
             </div>
             
             <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "12px" }}>
-              <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+              <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
               <p>{"ຖ້າເອົາຮູບກັບ (ເຊັ່ນ ກ່ອງເຈ້ຍ) ມາວາງ, ເງົາຂອງມັນທີ່ຕົກໃສ່ພື້ນ ຈະເປັນຮູບຮ່າງຫຍັງ?"}</p>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "20px" }}>
                 <span>{"ຕອບ: ເປັນຮູບ"}</span>

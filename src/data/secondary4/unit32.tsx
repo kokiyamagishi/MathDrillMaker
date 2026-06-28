@@ -17,7 +17,7 @@ export const unit32Data: UnitData = {
               {"ຜົນຄູນຂອງເວກເຕີ u ດ້ວຍສະກາແລ a (ຈຳນວນຈິງ) ແມ່ນເວກເຕີ a·u ທີ່ມີເງື່ອນໄຂດັ່ງນີ້:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"ຄຸນລັກສະນະເວກເຕີໃຫມ່:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" , whiteSpace: "nowrap"}}>{"ຄຸນລັກສະນະເວກເຕີໃຫມ່:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li><strong>{"ຂະໜາດ (Magnitude):"}</strong>{" |a·u| = |a| × |u|"}</li>
                 <li><strong>{"ທິດທາງ (Direction):"}</strong>
@@ -30,7 +30,7 @@ export const unit32Data: UnitData = {
               </ul>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"ຄຸນລັກສະນະພຶດຊະຄະນິດ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" , whiteSpace: "nowrap"}}>{"ຄຸນລັກສະນະພຶດຊະຄະນິດ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li>{"a(b·u) = (ab)·u"}</li>
                 <li>{"(a + b)·u = a·u + b·u"}</li>
@@ -121,7 +121,7 @@ export const unit32Data: UnitData = {
               {"- ຖ້າ I ແມ່ນເມັດເຄິ່ງກາງຂອງທ່ອນຊື່ AB, ດັ່ງນັ້ນສໍາລັບທຸກໆເມັດ O ໃດໆ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>
+              <span style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>
                 {"OI = (1/2)(OA + OB)"}
               </span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>

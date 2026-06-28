@@ -17,7 +17,7 @@ export const unit23Data: UnitData = {
               {"ການແກ້ລະບົບອະສົມຜົນແມ່ນການຊອກຫາຫວ່າງໃຈຜົນຮ່ວມ (Intersection) ໂດຍແກ້ແຕ່ລະອະສົມຜົນແຍກກັນ ແລ້ວເອົາມາລວມກັນເທິງເສັ້ນຈຳນວນ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງລະບົບອະສົມຜົນ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" , whiteSpace: "nowrap"}}>{"ຕົວຢ່າງລະບົບອະສົມຜົນ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ລະບົບ: { x² - 4 ≥ 0 ແລະ -x² + 5x - 4 > 0 }"}
                 <br />
@@ -104,7 +104,7 @@ export const unit23Data: UnitData = {
               {"ເພື່ອປຽບທຽບຮາກ α, β ຂອງສົມຜົນ f(x) = ax² + bx + c = 0 ກັບຈຳນວນຈິງ k, ເຮົາໃຊ້ຫຼັກການ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ເງື່ອນໄຂປຽບທຽບ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>{"ເງື່ອນໄຂປຽບທຽບ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li><strong>{"ທັງສອງຮາກໃຫຍ່ກວ່າ k (α > k, β > k):"}</strong>{" ຕ້ອງມີ Δ ≥ 0, a·f(k) > 0, ແລະ x_jorn = -b/(2a) > k."}</li>
                 <li><strong>{"ທັງສອງຮາກນ້ອຍກວ່າ k (α < k, β < k):"}</strong>{" ຕ້ອງມີ Δ ≥ 0, a·f(k) > 0, ແລະ x_jorn = -b/(2a) < k."}</li>

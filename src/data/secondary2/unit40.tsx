@@ -3,9 +3,9 @@ import { UnitData } from "../units2";
 
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }, whiteSpace: "nowrap"}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" , whiteSpace: "nowrap"}}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" , whiteSpace: "nowrap"}}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" , whiteSpace: "nowrap"}}>{den}</span>
   </span>
 );
 
@@ -27,7 +27,7 @@ export const unit40Data: UnitData = {
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0" }}>
               {"• ສູດພົວພັນກົງ: "} <span className="math">{"𝑦 = k × 𝑥"}</span><br />
               <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
-                {"• ສຳປະສິດພົວພັນກົງ: "} <span style={{ fontWeight: "bold", color: "#D32F2F" }, whiteSpace: "nowrap"}>{"k = "}</span> <Fraction num="𝑦" den="𝑥" />
+                {"• ສຳປະສິດພົວພັນກົງ: "} <span style={{ fontWeight: "bold", color: "#D32F2F" , whiteSpace: "nowrap"}}>{"k = "}</span> <Fraction num="𝑦" den="𝑥" />
               </span><br />
               {"• ຕົວຢ່າງ: ຖ້າ 𝑥 = 3 ➔ 𝑦 = 12 ➔ ຈະໄດ້ k = 12 / 3 = 4."}
             </div>
@@ -75,34 +75,34 @@ export const unit40Data: UnitData = {
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span>{"ຖ້າ 𝑥 = 3 ➔ 𝑦 = 12. ສຳປະສິດພົວພັນກົງ k (k = 𝑦/𝑥) ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
                 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span>{"ຖ້າ 𝑥 = 5 ➔ 𝑦 = 35. ສຳປະສິດພົວພັນກົງ k ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(3) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center" , whiteSpace: "nowrap"}}>
                     {"ຖ້າ 𝑥 = 8 ➔ 𝑦 = 4. ສຳປະສິດພົວພັນກົງ k (ຕອບເປັນເລກສ່ວນຂັ້ນຕໍ່າ) ແມ່ນ:"}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                   <span>{"ຖ້າ 𝑥 = -2 ➔ 𝑦 = 10. ສຳປະສິດພົວພັນກົງ k ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(5) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center" , whiteSpace: "nowrap"}}>
                     {"ຖ້າ 𝑥 = 6 ➔ 𝑦 = 9. ສຳປະສິດພົວພັນກົງ k (ຕອບເປັນເລກສ່ວນຂັ້ນຕໍ່າ) ແມ່ນ:"}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
@@ -144,34 +144,34 @@ export const unit40Data: UnitData = {
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span>{"ຈາກສູດ 𝑦 = 4𝑥. ຖ້າ 𝑥 = 5, 𝑦 ຈະເທົ່າກັບຈັກ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span>{"ຈາກສູດ 𝑦 = 7𝑥. ຖ້າ 𝑥 = 6, 𝑦 ຈະເທົ່າກັບຈັກ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(3) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center" , whiteSpace: "nowrap"}}>
                     {"ຈາກສູດ 𝑦 = "} <Fraction num="1" den="2" /> {"𝑥. ຖ້າ 𝑥 = 16, 𝑦 ຈະເທົ່າກັບຈັກ?"}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                   <span>{"ຈາກສູດ 𝑦 = -3𝑥. ຖ້າ 𝑥 = 4, 𝑦 ຈະເທົ່າກັບຈັກ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(5) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center" , whiteSpace: "nowrap"}}>
                     {"ຈາກສູດ 𝑦 = "} <Fraction num="2" den="3" /> {"𝑥. ຖ້າ 𝑥 = 15, 𝑦 ຈະເທົ່າກັບຈັກ?"}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>

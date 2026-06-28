@@ -16,7 +16,7 @@ export const unit9Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"- ຮາກຂັ້ນ n ຂອງຈຳນວນຈິງ x (ຂຽນແທນດ້ວຍ ⁿ√x) ແມ່ນຈຳນວນຈິງ y ທີ່ເຮັດໃຫ້ y^n = x:"}
               <br />
-              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", paddingLeft: "16px" }, whiteSpace: "nowrap"}>{"y = ⁿ√x   ⇔   y^n = x"}</span>
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", paddingLeft: "16px" , whiteSpace: "nowrap"}}>{"y = ⁿ√x   ⇔   y^n = x"}</span>
               <br />
               {"- ຖ້າ n ເປັນຈຳນວນຄູ່ (n = 2, 4, 6...): ຮາກຂັ້ນ n ຈະກຳນົດໄດ້ກໍຕໍ່ເມື່ອ x ≥ 0 ແລະ ຜົນໄດ້ຮັບຈະມີຄ່າບວກສະເໝີ. ເຊັ່ນ: √16 = 4."}
               <br />
@@ -24,7 +24,7 @@ export const unit9Data: UnitData = {
             </p>
             
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"ຄຸນລັກສະນະທີ່ສຳຄັນ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" , whiteSpace: "nowrap"}}>{"ຄຸນລັກສະນະທີ່ສຳຄັນ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li>{"ⁿ√(x × y) = ⁿ√x × ⁿ√y   (ເມື່ອ x, y ≥ 0 ຖ້າ n ເປັນຄູ່)"}</li>
                 <li>{"ⁿ√(x / y) = ⁿ√x / ⁿ√y   (ເມື່ອ y > 0)"}</li>
@@ -97,7 +97,7 @@ export const unit9Data: UnitData = {
               {"ການຖອດຮາກຂັ້ນສອງຂອງຈຳນວນໃຫຍ່ ໂດຍບໍ່ນຳໃຊ້ເຄື່ອງຄິດເລກ ສາມາດເຮັດໄດ້ໂດຍການຈັດກຸ່ມຕົວເລກເທື່ອລະ 2 ຕົວ ຈາກຂວາຫາຊ້າຍ, ແລ້ວຊອກຫາຕົວເລກກຳລັງສອງທີ່ໃກ້ຄຽງທີ່ສຸດ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງການຖອດຮາກ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>{"ຕົວຢ່າງການຖອດຮາກ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"- ຖອດຮາກ √625:"}
                 <br />

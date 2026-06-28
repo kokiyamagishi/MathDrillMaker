@@ -17,11 +17,11 @@ export const unit11Data: UnitData = {
               {"ສົມຜົນຮາກຂັ້ນສອງພື້ນຖານຢູ່ໃນຮູບແບບ √A = B. ເພື່ອແກ້ສົມຜົນນີ້ ເຮົາຕ້ອງປະຕິບັດຕາມຫຼັກການ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"ເງື່ອນໄຂ ແລະ ການຂຶ້ນກຳລັງສອງ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" , whiteSpace: "nowrap"}}>{"ເງື່ອນໄຂ ແລະ ການຂຶ້ນກຳລັງສອງ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ສົມຜົນ "}<strong>{"√A = B"}</strong>{" ສາມາດແກ້ໄດ້ກໍຕໍ່ເມື່ອ: "}
                 <br />
-                <span style={{ fontSize: "1.30rem", fontWeight: "bold", color: "#1565C0" }, whiteSpace: "nowrap"}>{"B ≥ 0   ແລະ   A = B²"}</span>
+                <span style={{ fontSize: "1.30rem", fontWeight: "bold", color: "#1565C0" , whiteSpace: "nowrap"}}>{"B ≥ 0   ແລະ   A = B²"}</span>
               </p>
             </div>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
@@ -96,7 +96,7 @@ export const unit11Data: UnitData = {
               {"- ຫຼັງຈາກຂຶ້ນກຳລັງສອງເທື່ອທຳອິດແລ້ວ, ຖ້າຍັງມີຮາກເຫຼືອຢູ່, ໃຫ້ຈັດກຸ່ມໃຫ້ຮາກຢູ່ພາກດຽວ ແລ້ວຂຶ້ນກຳລັງສອງອີກເທື່ອໜຶ່ງ."}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງສົມຜົນ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>{"ຕົວຢ່າງສົມຜົນ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ແກ້ສົມຜົນ: √(x + 7) - √(2x - 8) = 1"}
                 <br />

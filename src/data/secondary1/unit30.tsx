@@ -3,9 +3,9 @@ import { UnitData } from "../units2";
 
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }, whiteSpace: "nowrap"}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" }, whiteSpace: "nowrap"}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" }, whiteSpace: "nowrap"}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" , whiteSpace: "nowrap"}}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" , whiteSpace: "nowrap"}}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" , whiteSpace: "nowrap"}}>{den}</span>
   </span>
 );
 
@@ -24,14 +24,14 @@ export const unit30Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6", display: "flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
               <span>{"- ສ່ວນຮ້ອຍ (%) ແມ່ນອັດຕາສ່ວນທີ່ມີພູດເປັນ 100. ເຊັ່ນ: "}</span>
               <br />
-              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", display: "inline-flex", alignItems: "center", gap: "4px", paddingLeft: "16px" }, whiteSpace: "nowrap"}>
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", display: "inline-flex", alignItems: "center", gap: "4px", paddingLeft: "16px" , whiteSpace: "nowrap"}}>
                 <span>{"𝑥% = "}</span>
                 <Fraction num={"𝑥"} den={"100"} />
               </span>
               <br />
               <span>{"- ເພື່ອຊອກຫາ "}<strong>{"𝑥% ຂອງຈຳນວນ A"}</strong>{" ເຮົາຄູນ A ໃຫ້ກັບ 𝑥%:"}</span>
               <br />
-              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#2E7D32", display: "inline-flex", alignItems: "center", gap: "4px", paddingLeft: "16px" }, whiteSpace: "nowrap"}>
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#2E7D32", display: "inline-flex", alignItems: "center", gap: "4px", paddingLeft: "16px" , whiteSpace: "nowrap"}}>
                 <span>{"ຜົນໄດ້ຮັບ = A × ("}</span>
                 <Fraction num={"𝑥"} den={"100"} />
                 <span>{")"}</span>
@@ -39,11 +39,11 @@ export const unit30Data: UnitData = {
             </p>
             
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#1B5E20" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#1B5E20" , whiteSpace: "nowrap"}}>{"ຕົວຢ່າງ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", display: "flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
                 <span>{"ໃນເນີຍແຂງ 280 g ມີໄຂມັນຢູ່ 45%. ມວນສານຂອງໄຂມັນຕົວຈິງແມ່ນ:"}</span>
                 <br />
-                <span style={{ fontWeight: "bold", display: "inline-flex", alignItems: "center", gap: "4px" }, whiteSpace: "nowrap"}>
+                <span style={{ fontWeight: "bold", display: "inline-flex", alignItems: "center", gap: "4px" , whiteSpace: "nowrap"}}>
                   <span>{"280 × ("}</span>
                   <Fraction num={"45"} den={"100"} />
                   <span>{") = 280 × 0.45 = 126 g."}</span>
@@ -68,7 +68,7 @@ export const unit30Data: UnitData = {
               
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "12px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span>{" 25% ຂອງ 520 kg ⇒ 520 × ("}</span>
                   <Fraction num={"25"} den={"100"} />
                   <span>{") = "}</span>
@@ -76,7 +76,7 @@ export const unit30Data: UnitData = {
                   <span>{" kg"}</span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span>{" 15% ຂອງ 40 kg ⇒ 40 × ("}</span>
                   <Fraction num={"15"} den={"100"} />
                   <span>{") = "}</span>
@@ -115,18 +115,18 @@ export const unit30Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"- ເພື່ອຊອກຫາວ່າປະລິມານ B ເປັນຈັກສ່ວນຮ້ອຍຂອງ A, ເຮົາໃຊ້ສູດ:"}
               <br />
-              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#D84315", display: "inline-flex", alignItems: "center", gap: "4px", margin: "8px 0" }, whiteSpace: "nowrap"}>
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#D84315", display: "inline-flex", alignItems: "center", gap: "4px", margin: "8px 0" , whiteSpace: "nowrap"}}>
                 <span>{"ສ່ວນຮ້ອຍ = ("}</span>
                 <Fraction num={"B"} den={"A"} />
                 <span>{") × 100%"}</span>
               </span>
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>{"ຕົວຢ່າງ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", display: "flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
                 <span>{"ມີນັກຮຽນທັງໝົດ 350 ຄົນ, ມາຮ່ວມກິດຈະກຳ 280 ຄົນ. ຄິດເປັນສ່ວນຮ້ອຍແມ່ນ:"}</span>
                 <br />
-                <span style={{ fontWeight: "bold", display: "inline-flex", alignItems: "center", gap: "4px" }, whiteSpace: "nowrap"}>
+                <span style={{ fontWeight: "bold", display: "inline-flex", alignItems: "center", gap: "4px" , whiteSpace: "nowrap"}}>
                   <span>{"("}</span>
                   <Fraction num={"280"} den={"350"} />
                   <span>{") × 100% = 0.8 × 100% = 80%."}</span>
@@ -136,7 +136,7 @@ export const unit30Data: UnitData = {
           </div>
         ),
         hint: {
-          text: <span style={{ display: "inline-flex", flexDirection: "column", gap: "8px" }, whiteSpace: "nowrap"}>
+          text: <span style={{ display: "inline-flex", flexDirection: "column", gap: "8px" , whiteSpace: "nowrap"}}>
             <span>{"💡 ຕົວຢ່າງ: 9.1 g ເປັນຈັກສ່ວນຮ້ອຍຂອງ 91 g?"}</span>
             <span style={{ display: "inline-flex", alignItems: "center", gap: "4px", whiteSpace: "nowrap" }}>
               {"ຄິດໄລ່: ("}

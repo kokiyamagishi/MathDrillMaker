@@ -17,7 +17,7 @@ export const unit20Data: UnitData = {
               {"ການແກ້ອະສົມຜົນ ax² + bx + c > 0 (ຫຼື < 0, ≥ 0, ≤ 0) ແມ່ນການຫາຫວ່າງຂອງ x ທີ່ສອດຄ່ອງ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E0F2F1", borderRadius: "8px", border: "1px solid #B2DFDB" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#004D40" }, whiteSpace: "nowrap"}>{"ຂັ້ນຕອນປະຕິບັດ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#004D40" , whiteSpace: "nowrap"}}>{"ຂັ້ນຕອນປະຕິບັດ:"}</span>
               <ol style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li>{"ແກ້ສົມຜົນ ax² + bx + c = 0 ເພື່ອຊອກຫາຮາກ α ແລະ β (ສົມມຸດ α < β)."}</li>
                 <li>{"ສ້າງຕາຕະລາງເຄື່ອງໝາຍຂອງໄຕພົດຂັ້ນສອງ (ທາງໃນຫວ່າງຮາກຕ່າງເຄື່ອງໝາຍກັບ a, ທາງນອກຄືກັບ a)."}</li>
@@ -104,7 +104,7 @@ export const unit20Data: UnitData = {
               {"  ຕ້ອງມີ a > 0 ແລະ Δ < 0 (ກຣາຟບໍ່ຕັດ Ox ແລະ ຫງາຍຂຶ້ນ)."}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ໃຈຜົນຖ້ວນຂອງສົມຜົນສອງຕົວປ່ຽນ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>{"ໃຈຜົນຖ້ວນຂອງສົມຜົນສອງຕົວປ່ຽນ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ສໍາລັບສົມຜົນຂັ້ນສອງທີ່ໃຫ້ມີຕົວປ່ຽນ x ຕົວຈິງ, ເຮົາຈັດເປັນສົມຜົນຂັ້ນສອງຂອງ x:"}
                 <br />

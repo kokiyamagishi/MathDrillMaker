@@ -17,7 +17,7 @@ export const unit26Data: UnitData = {
               {"ສໍາລັບມຸມ θ ໃດໆ ລະຫວ່າງ 0° ຫາ 180°, ຈຸດ P(a, b) ເທິງວົງມົນຫົວໜ່ວຍ (ລັດສະໝີ R = 1) ຈະກຳນົດຄ່າດັ່ງນີ້:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E0F2F1", borderRadius: "8px", border: "1px solid #B2DFDB" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#004D40" }, whiteSpace: "nowrap"}>{"ຈຸດປະສານໄຕມູມມິຕີ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#004D40" , whiteSpace: "nowrap"}}>{"ຈຸດປະສານໄຕມູມມິຕີ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li><strong>{"ແກນນອນ Ox (ຄ່າຂອງ a):"}</strong>{" cos θ = a  (ມີຄ່າແຕ່ -1 ຫາ 1)."}</li>
                 <li><strong>{"ແກນຕັ້ງ Oy (ຄ່າຂອງ b):"}</strong>{" sin θ = b  (ມີຄ່າແຕ່ 0 ຫາ 1)."}</li>
@@ -25,7 +25,7 @@ export const unit26Data: UnitData = {
               </ul>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ເຄື່ອງໝາຍໃນແຕ່ລະພາກສ່ວນ (Quadrants):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>{"ເຄື່ອງໝາຍໃນແຕ່ລະພາກສ່ວນ (Quadrants):"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li><strong>{"ພາກສ່ວນທີ I (0° ≤ θ ≤ 90°):"}</strong>{" sin θ ≥ 0, cos θ ≥ 0, tan θ ≥ 0."}</li>
                 <li><strong>{"ພາກສ່ວນທີ II (90° ≤ θ ≤ 180°):"}</strong>{" sin θ ≥ 0, cos θ ≤ 0, tan θ ≤ 0 (cos ແລະ tan ຈະຕິດລົບ)."}</li>
@@ -95,7 +95,7 @@ export const unit26Data: UnitData = {
               {"ການພົວພັນລະຫວ່າງມຸມປະກອບເພີ່ມ (180° - θ) ແລະ ມຸມປະກອບ (90° ± θ):"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#F3E5F5", borderRadius: "8px", border: "1px solid #E1BEE7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#4A148C" }, whiteSpace: "nowrap"}>{"ມຸມປະກອບເພີ່ມ (180° - θ):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#4A148C" , whiteSpace: "nowrap"}}>{"ມຸມປະກອບເພີ່ມ (180° - θ):"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"- sin(180° - θ) = sin θ"}
                 <br />
@@ -105,7 +105,7 @@ export const unit26Data: UnitData = {
               </p>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"ມຸມປະກອບ (90° + θ):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" , whiteSpace: "nowrap"}}>{"ມຸມປະກອບ (90° + θ):"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"- sin(90° + θ) = cos θ"}
                 <br />

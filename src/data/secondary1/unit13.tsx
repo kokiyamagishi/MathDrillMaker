@@ -45,7 +45,7 @@ export const unit13Data: UnitData = {
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
                   <p style={{ margin: 0, lineHeight: "1.5" }}>
-                    <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                     {"ເມື່ອສ້າງຮູບສີ່ແຈ ABCD ດ້ວຍວິທີຂ້າງເທິງ, ຮູບ ABCD ທີ່ໄດ້ແມ່ນຮູບສີ່ແຈໃດ?"}
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
@@ -57,7 +57,7 @@ export const unit13Data: UnitData = {
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
                   <p style={{ margin: 0, lineHeight: "1.5" }}>
-                    <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                     {"ດັ່ງນັ້ນ, ຂ້າງ AD ຈະມີລັກສະນະການພົວພັນແນວໃດກັບຂ້າງ BC?"}
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
@@ -131,7 +131,7 @@ export const unit13Data: UnitData = {
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
                   <p style={{ margin: 0, lineHeight: "1.5" }}>
-                    <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                     {"ເສັ້ນຊື່ (MC) ທີ່ສ້າງຂຶ້ນນັ້ນ ຈະມີລັກສະນະແນວໃດກັບເສັ້ນຊື່ d?"}
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
@@ -144,7 +144,7 @@ export const unit13Data: UnitData = {
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
                   <p style={{ margin: 0, lineHeight: "1.5" }}>
-                    <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                     {"ຈຸດຕັດ H ລະຫວ່າງ d ແລະ (MC) ຈະເປັນຈຸດໃດຂອງທ່ອນຊື່ [AB]?"}
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>

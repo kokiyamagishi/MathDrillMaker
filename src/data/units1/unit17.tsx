@@ -87,17 +87,17 @@ export const unit17Data: UnitData = {
             <p>{"ຈົ່ງຂຽນຕົວເລກໃສ່ໃນບັອກໃຫ້ຖືກຕ້ອງ: "} <span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span></p>
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "20px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                 <span>{"2 ກຸ່ມລະສິບ ກັບ 5 ອັນ ເປັນ:"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "20px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                 <span>{"4 ກຸ່ມລະສິບ ກັບ 8 ອັນ ເປັນ:"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "20px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                 <span>{"6 ກຸ່ມລະສິບ ກັບ 0 ອັນ ເປັນ:"}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
               </div>
@@ -112,13 +112,13 @@ export const unit17Data: UnitData = {
             <p>{"ຈົ່ງຕື່ມຕົວເລກທີ່ຂາດຫາຍໄປໃສ່ໃນລຳດັບ: "} <span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span></p>
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "20px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                 <span>{"48, 49, "}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
                 <span>{", 51, 52"}</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "20px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                 <span>{"75, 76, 77, "}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "40px" }}></span>
                 <span>{", 79"}</span>
@@ -137,22 +137,22 @@ export const unit17Data: UnitData = {
               <p>{"ຈົ່ງອ່ານຈຳນວນແລ້ວຂຽນເປັນຕົວເລກ: "} <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span></p>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                   <span>{"ເຈັດສິບເກົ້າ :"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                   <span>{"ເກົ້າສິບເອັດ :"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                   <span>{"ຊາວສອງ :"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                   <span>{"ສາມສິບຫ້າ :"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "40px" }}></span>
                 </div>
@@ -172,7 +172,7 @@ export const unit17Data: UnitData = {
             <p>{"ທົດສອບປະຈຳບົດ: ໃຫ້ຕອບຄຳຖາມລຸ່ມນີ້: "} <span className="point-label">{"(ຂໍ້ລະ 5 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span></p>
             
             <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "12px" }}>
-              <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+              <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
               <p>{"ຖ້າມີ 9 ກຸ່ມລະສິບ ກັບອີກ 10 ອັນ. ຈຳນວນທັງໝົດຈະແມ່ນເທົ່າໃດ?"}</p>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
                 <span>{"ຕອບ: ຈຳນວນທັງໝົດແມ່ນ"}</span>
@@ -181,7 +181,7 @@ export const unit17Data: UnitData = {
             </div>
             
             <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "12px" }}>
-              <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+              <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
               <p>{"ຖ້າມີ 5 ກຸ່ມລະສິບ ກັບອີກ 12 ອັນ. ຈຳນວນທັງໝົດຈະແມ່ນເທົ່າໃດ?"}</p>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
                 <span>{"ຕອບ: ຈຳນວນທັງໝົດແມ່ນ"}</span>

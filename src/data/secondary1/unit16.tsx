@@ -24,7 +24,7 @@ export const unit16Data: UnitData = {
             </ul>
 
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງໂຈດປູກຕົ້ນໄມ້:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" , whiteSpace: "nowrap"}}>{"ຕົວຢ່າງໂຈດປູກຕົ້ນໄມ້:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ປູກຕົ້ນໄມ້ຕາມແຄມທາງຍາວ 2 km (2,000 m) ໂດຍໃຫ້ແຕ່ລະຕົ້ນຫ່າງກັນ 5 m. ຖ້າສົ້ນທາງທັງສອງເບື້ອງບໍ່ປູກຕົ້ນໄມ້ເລີຍ, ເຮົາຈະປູກໄດ້ທັງໝົດຈັກຕົ້ນ?"}
                 <br />
@@ -77,7 +77,7 @@ export const unit16Data: UnitData = {
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
                   <span>{"= "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
-                  <span style={{ flexShrink: 0 }, whiteSpace: "nowrap"}>{"ດອກ"}</span>
+                  <span style={{ flexShrink: 0 , whiteSpace: "nowrap"}}>{"ດອກ"}</span>
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@ export const unit16Data: UnitData = {
             </ul>
 
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2", display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງການຄິດໄລ່ວົງມົນ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>{"ຕົວຢ່າງການຄິດໄລ່ວົງມົນ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6" }}>
                 <li>{"ວົງມົນມີລັດສະໝີ "}<span style={{ whiteSpace: "nowrap" }}>{"r = 10 cm ⇒ L = 2 × 3.14 × 10 = 62.8 cm."}</span></li>
                 <li>{"ວົງມົນມີເສັ້ນຜ່ານໃຈກາງ "}<span style={{ whiteSpace: "nowrap" }}>{"d = 20 cm ⇒ L = 3.14 × 20 = 62.8 cm."}</span></li>

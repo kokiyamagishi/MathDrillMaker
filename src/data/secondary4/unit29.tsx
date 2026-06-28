@@ -17,7 +17,7 @@ export const unit29Data: UnitData = {
               {"ໃນຮູບສາມແຈ ABC ໃດໆ ທີ່ມີຂ້າງ a, b, c, ເນື້ອທີ່ S ສາມາດຄິດໄລ່ໄດ້ຈາກສອງຂ້າງ ແລະ ມຸມລະຫວ່າງສອງຂ້າງນັ້ນ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"ສູດເນື້ອທີ່:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" , whiteSpace: "nowrap"}}>{"ສູດເນື້ອທີ່:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li><strong>{"ຜ່ານມຸມ A:"}</strong>{" S = (1/2) b c sin A"}</li>
                 <li><strong>{"ຜ່ານມຸມ B:"}</strong>{" S = (1/2) a c sin B"}</li>
@@ -81,7 +81,7 @@ export const unit29Data: UnitData = {
               {"ເມື່ອຮູ້ສາມດ້ານ a, b, c ຂອງຮູບສາມແຈ, ເຮົາໃຊ້ສູດເຮຣົງ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ສູດຄິດໄລ່:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>{"ສູດຄິດໄລ່:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"S = √[p(p - a)(p - b)(p - c)]"}
                 <br />

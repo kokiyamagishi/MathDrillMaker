@@ -100,7 +100,7 @@ export const unit11Data: UnitData = {
               <div
                 style={{ display: "flex", alignItems: "center", gap: "16px" }}
               >
-                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                 <Shape type="triangle" color="#FF9800" size={80} />
                 <span
                   className="answer-blank"
@@ -114,7 +114,7 @@ export const unit11Data: UnitData = {
               <div
                 style={{ display: "flex", alignItems: "center", gap: "16px" }}
               >
-                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                 <Shape
                   type="triangle"
                   color="#9C27B0"
@@ -133,7 +133,7 @@ export const unit11Data: UnitData = {
               <div
                 style={{ display: "flex", alignItems: "center", gap: "16px" }}
               >
-                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                 <Shape type="triangle" color="#00BCD4" size={80} />
                 <span
                   className="answer-blank"
@@ -147,7 +147,7 @@ export const unit11Data: UnitData = {
               <div
                 style={{ display: "flex", alignItems: "center", gap: "16px" }}
               >
-                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                 <Shape
                   type="triangle"
                   color="#E91E63"
@@ -247,7 +247,7 @@ export const unit11Data: UnitData = {
                       alignItems: "center",
                     }}
                   >
-                    <span style={{ fontSize: "20px" }, whiteSpace: "nowrap"}>{"ຄຳຕອບ:"}</span>
+                    <span style={{ fontSize: "20px" , whiteSpace: "nowrap"}}>{"ຄຳຕອບ:"}</span>
                     <span
                       className="answer-blank"
                       style={{
@@ -275,7 +275,7 @@ export const unit11Data: UnitData = {
                       alignItems: "center",
                     }}
                   >
-                    <span style={{ fontSize: "20px" }, whiteSpace: "nowrap"}>{"ຄຳຕອບ:"}</span>
+                    <span style={{ fontSize: "20px" , whiteSpace: "nowrap"}}>{"ຄຳຕອບ:"}</span>
                     <span
                       className="answer-blank"
                       style={{

@@ -3,9 +3,9 @@ import { UnitData } from "../units2";
 
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }, whiteSpace: "nowrap"}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" }, whiteSpace: "nowrap"}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" }, whiteSpace: "nowrap"}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" , whiteSpace: "nowrap"}}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" , whiteSpace: "nowrap"}}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" , whiteSpace: "nowrap"}}>{den}</span>
   </span>
 );
 
@@ -24,7 +24,7 @@ export const unit28Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"- ສອງປະລິມານ 𝑥 ແລະ 𝑦 ເອີ້ນວ່າ "}<strong>{"ອັດຕາສ່ວນພົວພັນກົງ"}</strong>{" ຖ້າວ່າມີຕົວເລກ k ທີ່ບໍ່ແມ່ນສູນ ເຮັດໃຫ້ 𝑦 ເທົ່າກັບ k ຄູນ 𝑥:"}
               <br />
-              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", paddingLeft: "16px", display: "inline-flex", alignItems: "center" }, whiteSpace: "nowrap"}>
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", paddingLeft: "16px", display: "inline-flex", alignItems: "center" , whiteSpace: "nowrap"}}>
                 {"𝑦 = k × 𝑥   ຫຼື   "}
                 <Fraction num="𝑦" den="𝑥" />
                 {" = k"}
@@ -34,7 +34,7 @@ export const unit28Data: UnitData = {
             </p>
             
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" , whiteSpace: "nowrap"}}>{"ຕົວຢ່າງ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ຊື້ປຶ້ມຂຽນ 1 ຫົວ ລາຄາ 4,500 ກີບ."}
                 <br />
@@ -70,14 +70,14 @@ export const unit28Data: UnitData = {
               
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "12px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span style={{ flexShrink: 0 }, whiteSpace: "nowrap"}>{"(1) ຈຳນວນປາກກາ 𝑥 = 6 ກ້ານ ⇒ ລາຄາ 𝑦 ="}</span>
+                  <span style={{ flexShrink: 0 , whiteSpace: "nowrap"}}>{"(1) ຈຳນວນປາກກາ 𝑥 = 6 ກ້ານ ⇒ ລາຄາ 𝑦 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "42px", flexShrink: 0 }}></span>
-                  <span style={{ flexShrink: 0 }, whiteSpace: "nowrap"}>{"ກີບ"}</span>
+                  <span style={{ flexShrink: 0 , whiteSpace: "nowrap"}}>{"ກີບ"}</span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span style={{ flexShrink: 0 }, whiteSpace: "nowrap"}>{"(2) ລາຄາ 𝑦 = 24,000 ກີບ ⇒ ຈຳນວນປາກກາ 𝑥 ="}</span>
+                  <span style={{ flexShrink: 0 , whiteSpace: "nowrap"}}>{"(2) ລາຄາ 𝑦 = 24,000 ກີບ ⇒ ຈຳນວນປາກກາ 𝑥 ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "42px", flexShrink: 0 }}></span>
-                  <span style={{ flexShrink: 0 }, whiteSpace: "nowrap"}>{"ກ້ານ"}</span>
+                  <span style={{ flexShrink: 0 , whiteSpace: "nowrap"}}>{"ກ້ານ"}</span>
                 </div>
               </div>
             </div>
@@ -119,7 +119,7 @@ export const unit28Data: UnitData = {
               <li style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap" }}>
                 <strong>{"2. ວິທີຄູນສະຫຼັບ (Cross-Multiplication): "}</strong>
                 {" ຖ້າ 𝑥"}<sub style={{ fontSize: "0.75rem", bottom: "-0.1em" }}>{"1"}</sub>{" ພົວພັນກັບ 𝑦"}<sub style={{ fontSize: "0.75rem", bottom: "-0.1em" }}>{"1"}</sub>{" ແລະ 𝑥"}<sub style={{ fontSize: "0.75rem", bottom: "-0.1em" }}>{"2"}</sub>{" ພົວພັນກັບ 𝑦"}<sub style={{ fontSize: "0.75rem", bottom: "-0.1em" }}>{"2"}</sub>{", ເຮົາໄດ້: "}
-                <span style={{ display: "inline-flex", alignItems: "center", paddingLeft: "4px" }, whiteSpace: "nowrap"}>
+                <span style={{ display: "inline-flex", alignItems: "center", paddingLeft: "4px" , whiteSpace: "nowrap"}}>
                   <Fraction num={<span>{"𝑥"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"1"}</sub></span>} den={<span>{"𝑦"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"1"}</sub></span>} />
                   {" = "}
                   <Fraction num={<span>{"𝑥"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"2"}</sub></span>} den={<span>{"𝑦"}<sub style={{ fontSize: "0.65rem", bottom: "-0.1em" }}>{"2"}</sub></span>} />

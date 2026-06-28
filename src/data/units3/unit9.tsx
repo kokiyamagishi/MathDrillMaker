@@ -76,7 +76,7 @@ export const unit9Data: UnitData = {
                   fontSize: "24px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(1)"}
                 </span>
                 <span>{"1 kg ="}</span>
@@ -98,7 +98,7 @@ export const unit9Data: UnitData = {
                   fontSize: "24px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(2)"}
                 </span>
                 <span>{"2 kg ="}</span>
@@ -143,7 +143,7 @@ export const unit9Data: UnitData = {
                   fontSize: "24px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(3)"}
                 </span>
                 <span>{"1000 g ="}</span>
@@ -165,7 +165,7 @@ export const unit9Data: UnitData = {
                   fontSize: "24px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(4)"}
                 </span>
                 <span>{"5000 g ="}</span>
@@ -187,7 +187,7 @@ export const unit9Data: UnitData = {
                   fontSize: "24px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(5)"}
                 </span>
                 <span>{"1 kg ເຄິ່ງ ="}</span>
@@ -219,10 +219,10 @@ export const unit9Data: UnitData = {
                 <span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
               <div style={{  }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(1)"}
                 </span>
-                <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "20px", marginLeft: "12px" , whiteSpace: "nowrap"}}>
                   {
                     "ໝາກໂມໜ່ວຍໜຶ່ງໜັກ 2 kg, ໝາກຫຸ່ງໜ່ວຍໜຶ່ງໜັກ 500 g. ທັງສອງໜ່ວຍລວມກັນໜັກເທົ່າໃດ g?"
                   }
@@ -261,10 +261,10 @@ export const unit9Data: UnitData = {
                 <span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
               <div style={{  }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   {"(2)"}
                 </span>
-                <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
+                <span style={{ fontSize: "20px", marginLeft: "12px" , whiteSpace: "nowrap"}}>
                   {"ຊີ້ນໝູ 1 kg. ຖ້າແບ່ງອອກໄປ 300 g ຈະເຫຼືອຊີ້ນໝູເທົ່າໃດ g?"}
                 </span>
                 <div
@@ -316,7 +316,7 @@ export const unit9Data: UnitData = {
               }}
             >
               <div style={{ fontSize: "24px" }}>
-                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                 {" 3 kg = "}
                 <span
                   className="answer-blank"
@@ -329,7 +329,7 @@ export const unit9Data: UnitData = {
                 {" g"}
               </div>
               <div style={{ fontSize: "24px" }}>
-                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                 {" 4000 g = "}
                 <span
                   className="answer-blank"
@@ -365,7 +365,7 @@ export const unit9Data: UnitData = {
               }}
             >
               <div style={{ fontSize: "24px" }}>
-                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                 {" 1 kg 200 g = "}
                 <span
                   className="answer-blank"
@@ -378,7 +378,7 @@ export const unit9Data: UnitData = {
                 {" g"}
               </div>
               <div style={{ fontSize: "24px" }}>
-                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(4) "}</span>
                 {" ນ້ຳໜັກຄົນເຮົາຄວນໃຊ້ຫົວໜ່ວຍອັນໃດ? (kg ຫຼື g) = "}
                 <span
                   className="answer-blank"

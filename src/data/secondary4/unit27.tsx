@@ -17,7 +17,7 @@ export const unit27Data: UnitData = {
               {"ໃນຮູບສາມແຈ ABC ໃດໆ ທີ່ມີຂ້າງກົງກັນຂ້າມມຸມ A, B, C ແມ່ນ a, b, c ແລະ R ແມ່ນລັດສະໝີວົງມົນອ້ອມນອກ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>
+              <span style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#0D47A1" , whiteSpace: "nowrap"}}>
                 {"a / sin A = b / sin B = c / sin C = 2R"}
               </span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
@@ -97,7 +97,7 @@ export const unit27Data: UnitData = {
               {"ຫຼັກເກນຊີນສາມາດນຳໃຊ້ວັດແທກໄລຍະທາງທີ່ບໍ່ສາມາດເຂົ້າເຖິງໄດ້ໂດຍກົງ (ເຊັ່ນ ໄລຍະຫ່າງຂ້າມແມ່ນ້ຳ):"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ຂັ້ນຕອນແກ້ໂຈດ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" , whiteSpace: "nowrap"}}>{"ຂັ້ນຕອນແກ້ໂຈດ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"1. ສ້າງຮູບສາມແຈສົມມຸດລະຫວ່າງຈຸດທີ່ກຳນົດ."}
                 <br />

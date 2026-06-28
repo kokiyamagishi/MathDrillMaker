@@ -114,7 +114,7 @@ export const unit2Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (1)
                 </span>{" "}
                 <VerticalMath top={24} bottom={15} operator="+" />
@@ -126,7 +126,7 @@ export const unit2Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (2)
                 </span>{" "}
                 <VerticalMath top={42} bottom={15} operator="+" />
@@ -138,7 +138,7 @@ export const unit2Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (3)
                 </span>{" "}
                 <VerticalMath top={35} bottom={23} operator="+" />
@@ -150,7 +150,7 @@ export const unit2Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (4)
                 </span>{" "}
                 <VerticalMath top={51} bottom={27} operator="+" />
@@ -242,7 +242,7 @@ export const unit2Data: UnitData = {
                     paddingTop: "4px",
                   }}
                 >
-                  <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     (1)
                   </span>{" "}
                   <VerticalMath top={46} bottom={38} operator="+" />
@@ -254,7 +254,7 @@ export const unit2Data: UnitData = {
                     paddingTop: "4px",
                   }}
                 >
-                  <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     (2)
                   </span>{" "}
                   <VerticalMath top={57} bottom={36} operator="+" />
@@ -266,7 +266,7 @@ export const unit2Data: UnitData = {
                     paddingTop: "4px",
                   }}
                 >
-                  <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     (3)
                   </span>{" "}
                   <VerticalMath top={29} bottom={62} operator="+" />
@@ -278,7 +278,7 @@ export const unit2Data: UnitData = {
                     paddingTop: "4px",
                   }}
                 >
-                  <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     (4)
                   </span>{" "}
                   <VerticalMath top={68} bottom={28} operator="+" />
@@ -348,7 +348,7 @@ export const unit2Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (1)
                 </span>{" "}
                 <VerticalMath top={34} bottom={12} operator="+" />
@@ -360,7 +360,7 @@ export const unit2Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (2)
                 </span>{" "}
                 <VerticalMath top={60} bottom={28} operator="+" />
@@ -372,7 +372,7 @@ export const unit2Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (3)
                 </span>{" "}
                 <VerticalMath top={47} bottom={25} operator="+" />
@@ -384,7 +384,7 @@ export const unit2Data: UnitData = {
                   paddingTop: "4px",
                 }}
               >
-                <span style={{ marginRight: "8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                <span style={{ marginRight: "8px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                   (4)
                 </span>{" "}
                 <VerticalMath top={8} bottom={91} operator="+" />

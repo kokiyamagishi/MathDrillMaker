@@ -362,7 +362,7 @@ export const unit6Data: UnitData = {
                   gap: "16px",
                 }}
               >
-                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(3) "}</span>
                 <NumberCards thousands={2} hundreds={1} tens={5} ones={2} />
               </div>
               <div
@@ -415,8 +415,7 @@ export const unit6Data: UnitData = {
                   style={{
                     fontSize: "18px",
                     fontWeight: "bold",
-                    alignSelf: "flex-start",
-                  }, whiteSpace: "nowrap"}
+                    alignSelf: "flex-start", whiteSpace: "nowrap"}}
                 >
                   {"(4)"}
                 </span>
@@ -433,8 +432,7 @@ export const unit6Data: UnitData = {
                   style={{
                     fontSize: "18px",
                     fontWeight: "bold",
-                    alignSelf: "flex-start",
-                  }, whiteSpace: "nowrap"}
+                    alignSelf: "flex-start", whiteSpace: "nowrap"}}
                 >
                   {"(5)"}
                 </span>
@@ -451,8 +449,7 @@ export const unit6Data: UnitData = {
                   style={{
                     fontSize: "18px",
                     fontWeight: "bold",
-                    alignSelf: "flex-start",
-                  }, whiteSpace: "nowrap"}
+                    alignSelf: "flex-start", whiteSpace: "nowrap"}}
                 >
                   {"(6)"}
                 </span>
@@ -490,8 +487,7 @@ export const unit6Data: UnitData = {
                   style={{
                     fontSize: "18px",
                     fontWeight: "bold",
-                    alignSelf: "flex-start",
-                  }, whiteSpace: "nowrap"}
+                    alignSelf: "flex-start", whiteSpace: "nowrap"}}
                 >
                   {"(7)"}
                 </span>
@@ -508,8 +504,7 @@ export const unit6Data: UnitData = {
                   style={{
                     fontSize: "18px",
                     fontWeight: "bold",
-                    alignSelf: "flex-start",
-                  }, whiteSpace: "nowrap"}
+                    alignSelf: "flex-start", whiteSpace: "nowrap"}}
                 >
                   {"(8)"}
                 </span>
@@ -526,8 +521,7 @@ export const unit6Data: UnitData = {
                   style={{
                     fontSize: "18px",
                     fontWeight: "bold",
-                    alignSelf: "flex-start",
-                  }, whiteSpace: "nowrap"}
+                    alignSelf: "flex-start", whiteSpace: "nowrap"}}
                 >
                   {"(9)"}
                 </span>
@@ -567,7 +561,7 @@ export const unit6Data: UnitData = {
                     gap: "16px",
                   }}
                 >
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     {"(1)"}
                   </span>
                   <span>{"4320"}</span>
@@ -589,7 +583,7 @@ export const unit6Data: UnitData = {
                     gap: "16px",
                   }}
                 >
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     {"(2)"}
                   </span>
                   <span>{"8999"}</span>
@@ -625,10 +619,10 @@ export const unit6Data: UnitData = {
                 }}
               >
                 <div>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     {"(3)"}
                   </span>
-                  <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontSize: "20px", marginLeft: "12px" , whiteSpace: "nowrap"}}>
                     {
                       "ໂຮງຮຽນມີນັກຮຽນຍິງ 345 ຄົນ ແລະ ນັກຮຽນຊາຍ 386 ຄົນ. ລວມທັງໝົດມີນັກຮຽນຈັກຄົນ?"
                     }
@@ -686,10 +680,10 @@ export const unit6Data: UnitData = {
                 }}
               >
                 <div>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" , whiteSpace: "nowrap"}}>
                     {"(4)"}
                   </span>
-                  <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
+                  <span style={{ fontSize: "20px", marginLeft: "12px" , whiteSpace: "nowrap"}}>
                     {
                       "ມີເງິນ 850 ພັນກີບ. ຊື້ເຄື່ອງໄປ 475 ພັນກີບ. ຈະເຫຼືອເງິນເທົ່າໃດ?"
                     }
@@ -761,7 +755,7 @@ export const unit6Data: UnitData = {
                   gap: "16px",
                 }}
               >
-                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(1) "}</span>
                 <span>
                   {
                     "ຈຳນວນທີ່ປະກອບດ້ວຍ ຫຼັກພັນ 6, ຫຼັກຮ້ອຍ 0, ຫຼັກສິບ 5, ຫຼັກໜ່ວຍ 3 ແມ່ນ:"
@@ -784,7 +778,7 @@ export const unit6Data: UnitData = {
                   gap: "16px",
                 }}
               >
-                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                <span style={{ fontWeight: "bold" , whiteSpace: "nowrap"}}>{"(2) "}</span>
                 <span>{"ຈົ່ງໃສ່ເຄື່ອງໝາຍປຽບທຽບ (<, >): 5010 "}</span>
                 <span
                   className="answer-blank"
@@ -830,8 +824,7 @@ export const unit6Data: UnitData = {
                   style={{
                     fontSize: "18px",
                     fontWeight: "bold",
-                    alignSelf: "flex-start",
-                  }, whiteSpace: "nowrap"}
+                    alignSelf: "flex-start", whiteSpace: "nowrap"}}
                 >
                   {"(3)"}
                 </span>
@@ -848,8 +841,7 @@ export const unit6Data: UnitData = {
                   style={{
                     fontSize: "18px",
                     fontWeight: "bold",
-                    alignSelf: "flex-start",
-                  }, whiteSpace: "nowrap"}
+                    alignSelf: "flex-start", whiteSpace: "nowrap"}}
                 >
                   {"(4)"}
                 </span>
@@ -866,8 +858,7 @@ export const unit6Data: UnitData = {
                   style={{
                     fontSize: "18px",
                     fontWeight: "bold",
-                    alignSelf: "flex-start",
-                  }, whiteSpace: "nowrap"}
+                    alignSelf: "flex-start", whiteSpace: "nowrap"}}
                 >
                   {"(5)"}
                 </span>
@@ -907,8 +898,7 @@ export const unit6Data: UnitData = {
                   style={{
                     fontSize: "18px",
                     fontWeight: "bold",
-                    alignSelf: "flex-start",
-                  }, whiteSpace: "nowrap"}
+                    alignSelf: "flex-start", whiteSpace: "nowrap"}}
                 >
                   {"(6)"}
                 </span>
@@ -925,8 +915,7 @@ export const unit6Data: UnitData = {
                   style={{
                     fontSize: "18px",
                     fontWeight: "bold",
-                    alignSelf: "flex-start",
-                  }, whiteSpace: "nowrap"}
+                    alignSelf: "flex-start", whiteSpace: "nowrap"}}
                 >
                   {"(7)"}
                 </span>
@@ -943,8 +932,7 @@ export const unit6Data: UnitData = {
                   style={{
                     fontSize: "18px",
                     fontWeight: "bold",
-                    alignSelf: "flex-start",
-                  }, whiteSpace: "nowrap"}
+                    alignSelf: "flex-start", whiteSpace: "nowrap"}}
                 >
                   {"(8)"}
                 </span>

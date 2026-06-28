@@ -3,9 +3,9 @@ import { UnitData } from "../units2";
 
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }, whiteSpace: "nowrap"}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" , whiteSpace: "nowrap"}}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" , whiteSpace: "nowrap"}}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" , whiteSpace: "nowrap"}}>{den}</span>
   </span>
 );
 
@@ -55,7 +55,7 @@ export const unit35Data: UnitData = {
                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", textAlign: "center", fontSize: "1.15rem", fontWeight: "bold", color: "#37474F", alignItems: "start", gap: "12px" }}>
                     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
                       <span>{"ສີ່ແຈຂະໜານ:"}</span>
-                      <span style={{ fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{"b×h"}</span>
+                      <span style={{ fontSize: "1.375rem" , whiteSpace: "nowrap"}}>{"b×h"}</span>
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
                       <span>{"ສາມແຈ:"}</span>
