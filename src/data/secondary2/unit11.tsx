@@ -72,39 +72,39 @@ export const unit11Data: UnitData = {
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "18px", padding: "8px 0" }}>
                 {/* 5 Questions */}
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຖ້າເມັດ A ຢູ່ຫ່າງຈາກ O ແມ່ນ 5 cm, ເມັດເຄິ່ງຄື A' ຈະຢູ່ຫ່າງຈາກ O ຈັກ cm?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
-                  <span>{"cm"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                  {"ຖ້າເມັດ A ຢູ່ຫ່າງຈາກ O ແມ່ນ 5 cm, ເມັດເຄິ່ງຄື A' ຈະຢູ່ຫ່າງຈາກ O ຈັກ cm? "}
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
+                  {" cm"}
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຖ້າເມັດ A ຢູ່ຫ່າງຈາກ O ແມ່ນ 7 cm, ໄລຍະຫ່າງລະຫວ່າງ AA' ແມ່ນຈັກ cm?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
-                  <span>{"cm"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                  {"ຖ້າເມັດ A ຢູ່ຫ່າງຈາກ O ແມ່ນ 7 cm, ໄລຍະຫ່າງລະຫວ່າງ AA' ແມ່ນຈັກ cm? "}
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
+                  {" cm"}
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ຖ້າໄລຍະຫ່າງ AA' ເທົ່າກັບ 16 cm, ໄລຍະຫ່າງແຕ່ A ຫາ ໃຈກາງ O ຈະແມ່ນຈັກ cm?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
-                  <span>{"cm"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
+                  {"ຖ້າໄລຍະຫ່າງ AA' ເທົ່າກັບ 16 cm, ໄລຍະຫ່າງແຕ່ A ຫາ ໃຈກາງ O ຈະແມ່ນຈັກ cm? "}
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
+                  {" cm"}
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
-                  <span>{"ຖ້າ OA = 12 cm ແລະ A' ແມ່ນເມັດເຄິ່ງຄື, ຖາມວ່າ OA' ຈະມີລວງຍາວຈັກ cm?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
-                  <span>{"cm"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
+                  {"ຖ້າ OA = 12 cm ແລະ A' ແມ່ນເມັດເຄິ່ງຄື, ຖາມວ່າ OA' ຈະມີລວງຍາວຈັກ cm? "}
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
+                  {" cm"}
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
-                  <span>{"ຖ້າໄລຍະຫ່າງແຕ່ເມັດເຄິ່ງຄື A' ຫາ O ແມ່ນ 4.5 cm, ໄລຍະຫ່າງ AA' ຈະແມ່ນຈັກ cm?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
-                  <span>{"cm"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
+                  {"ຖ້າໄລຍະຫ່າງແຕ່ເມັດເຄິ່ງຄື A' ຫາ O ແມ່ນ 4.5 cm, ໄລຍະຫ່າງ AA' ຈະແມ່ນຈັກ cm? "}
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
+                  {" cm"}
                 </div>
               </div>
             </div>

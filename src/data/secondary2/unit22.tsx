@@ -102,8 +102,9 @@ export const unit22Data: UnitData = {
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
                   <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap" }}>
-                    {"ເຄິ່ງໜຶ່ງຂອງຈຳນວນໜຶ່ງ ບວກກັບ 3 ເທົ່າກັບ 8. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? (ສົມຜົນ: "}
+                  {"ເຄິ່ງໜຶ່ງຂອງຈຳນວນໜຶ່ງ ບວກກັບ 3 ເທົ່າກັບ 8. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? "}
+                  <span style={{ whiteSpace: "nowrap", display: "inline-flex", alignItems: "center", verticalAlign: "middle" }}>
+                    {"(ສົມຜົນ: "}
                     <Fraction num="𝑥" den="2" />
                     {" + 3 = 8) "}
                   </span>
