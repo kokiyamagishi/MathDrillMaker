@@ -22,8 +22,14 @@ export const unit23Data: UnitData = {
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9", display: "flex", flexDirection: "column", gap: "8px" }}>
               <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }}>{"ສັນຍະລັກການເປັນອົງປະກອບ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6" }}>
-                <li><strong>{"a ∈ A: "}</strong>{" ອ່ານວ່າ 'a ແມ່ນອົງປະກອບຂອງກຸ່ມ A' (a ນອນຢູ່ໃນກຸ່ມ A)."}</li>
-                <li><strong>{"b ∉ A: "}</strong>{" ອ່ານວ່າ 'b ບໍ່ແມ່ນອົງປະກອບຂອງກຸ່ມ A' (b ບໍ່ນອນຢູ່ໃນກຸ່ມ A)."}</li>
+                <li style={{ marginBottom: "8px" }}>
+                  <strong>{"a ∈ A: "}</strong>{"ອ່ານວ່າ 'a ແມ່ນອົງປະກອບຂອງກຸ່ມ A'"}
+                  <div style={{ color: "#555", fontSize: "1.15rem", paddingLeft: "16px" }}>{"(a ນອນຢູ່ໃນກຸ່ມ A)."}</div>
+                </li>
+                <li>
+                  <strong>{"b ∉ A: "}</strong>{"ອ່ານວ່າ 'b ບໍ່ແມ່ນອົງປະກອບຂອງກຸ່ມ A'"}
+                  <div style={{ color: "#555", fontSize: "1.15rem", paddingLeft: "16px" }}>{"(b ບໍ່ນອນຢູ່ໃນກຸ່ມ A)."}</div>
+                </li>
               </ul>
             </div>
           </div>
