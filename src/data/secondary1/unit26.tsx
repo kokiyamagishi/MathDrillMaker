@@ -89,7 +89,10 @@ export const unit26Data: UnitData = {
           </div>
         ),
         hint: {
-          text: <span style={{ whiteSpace: "nowrap" }}>{"💡 ຕົວຢ່າງ: ຖ້າ A = {1, 2, 3} ແລະ B = {3, 4, 5} ⇒ A ∪ B = {1, 2, 3, 4, 5}."}</span>,
+          text: <span style={{ display: "inline-flex", flexDirection: "column", gap: "6px" }}>
+            <span>{"💡 ຕົວຢ່າງ: ຖ້າ A = {1, 2, 3} ແລະ B = {3, 4, 5}"}</span>
+            <span style={{ paddingLeft: "24px", whiteSpace: "nowrap" }}>{"⇒ A ∪ B = {1, 2, 3, 4, 5}."}</span>
+          </span>,
           isBlue: false
         }
       },
