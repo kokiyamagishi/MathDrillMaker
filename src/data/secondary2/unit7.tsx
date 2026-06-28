@@ -52,9 +52,9 @@ export const unit7Data: UnitData = {
                   <line x1="0" y1="60" x2="150" y2="60" stroke="#37474F" strokeWidth="1" />
                   <line x1="0" y1="80" x2="150" y2="80" stroke="#37474F" strokeWidth="1" />
                   
-                  {/* Shading 2 rows (out of 3 vertical intervals, representing 2/3) */}
-                  {/* Shading 4 columns (out of 5 horizontal intervals, representing 4/5) */}
-                  <rect x="0" y="0" width="120" height="66" fill="#2196F3" opacity="0.6" />
+                  {/* Shading 2 rows/columns (out of 3 vertical intervals, representing 2/3) */}
+                  {/* Shading 4 columns/rows (out of 5 horizontal intervals, representing 4/5) */}
+                  <rect x="0" y="0" width="100" height="80" fill="#2196F3" opacity="0.6" />
                 </svg>
                 <div style={{ display: "inline-flex", alignItems: "center", gap: "4px", fontSize: "1.1rem", fontWeight: "bold", color: "#0D47A1", backgroundColor: "#E3F2FD", padding: "4px 12px", borderRadius: "6px", border: "1px solid #90CAF9" }}>
                   <span>{"ເນື້ອທີ່ສ່ວນສີຟ້າ = 8 ຫ້ອງ ("}</span>
