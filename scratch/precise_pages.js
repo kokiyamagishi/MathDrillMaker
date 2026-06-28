@@ -1,72 +1,120 @@
 const fs = require('fs');
-const content = fs.readFileSync('src/data/units3.tsx', 'utf8');
+const path = require('path');
 
-// Let's find all unit page boundaries accurately using the actual keyPoints array counts.
-// Cover page: page 1
-// Unit 1 starts at page 2
-// For each unit:
-// if keyPoints is array, count = keyPoints.length. If it's an object, count = 1.
-// Since we don't want to parse everything in JS, let's write a script that does a very clean parsing of keyPoints for each unit in units3.tsx.
+const grades = ['secondary1', 'secondary2', 'secondary3', 'secondary4'];
+const basePath = '/Users/openclaw/Antigravity/MathDrillMaker/src/data';
 
-// We will find all 'unitNumber: X' and identify keyPoints start and end.
-const units = [];
-const matches = [...content.matchAll(/unitNumber:\s*(\d+)/g)];
+grades.forEach(grade => {
+  const dir = path.join(basePath, grade);
+  if (!fs.existsSync(dir)) return;
 
-for (let idx = 0; idx < matches.length; idx++) {
-  const match = matches[idx];
-  const unitNum = parseInt(match[1], 10);
-  const startPos = match.index;
-  const nextPos = idx + 1 < matches.length ? matches[idx + 1].index : content.length;
-  const unitChunk = content.substring(startPos, nextPos);
-  
-  // Find keyPoints
-  const kpIndex = unitChunk.indexOf('keyPoints:');
-  let kpCount = 1;
-  if (kpIndex !== -1) {
-    const remaining = unitChunk.substring(kpIndex + 9).trim();
-    if (remaining.startsWith('[')) {
-      // It is an array of keyPoints! Let's count how many objects are in this array
-      let bracketDepth = 0;
-      let braceDepth = 0;
-      let count = 0;
-      for (let i = 0; i < remaining.length; i++) {
-        const char = remaining[i];
-        if (char === '[') {
-          bracketDepth++;
-        } else if (char === ']') {
-          bracketDepth--;
-          if (bracketDepth === 0) break;
-        } else if (char === '{') {
-          if (bracketDepth === 1 && braceDepth === 0) {
-            count++;
+  const files = fs.readdirSync(dir)
+    .filter(f => f.startsWith('unit') && f.endsWith('.tsx'))
+    .sort((a, b) => {
+      const numA = parseInt(a.replace('unit', '').replace('.tsx', ''), 10);
+      const numB = parseInt(b.replace('unit', '').replace('.tsx', ''), 10);
+      return numA - numB;
+    });
+
+  let currentUnitPage = 2;
+  console.log(`\n=== GRADE: ${grade} ===`);
+
+  files.forEach(file => {
+    const filePath = path.join(dir, file);
+    const content = fs.readFileSync(filePath, 'utf8');
+    const unitNum = parseInt(file.replace('unit', '').replace('.tsx', ''), 10);
+
+    // subSections 配列の長さを正確にカウント
+    let subSectionsCount = 0;
+    const subsIdx = content.indexOf('subSections: [');
+    if (subsIdx !== -1) {
+      let bracketCount = 0;
+      let subsBody = '';
+      for (let i = subsIdx + 'subSections: '.length; i < content.length; i++) {
+        if (content[i] === '[') bracketCount++;
+        else if (content[i] === ']') {
+          bracketCount--;
+          if (bracketCount === 0) {
+            subsBody = content.substring(subsIdx + 'subSections: '.length, i + 1);
+            break;
           }
-          braceDepth++;
-        } else if (char === '}') {
-          braceDepth--;
         }
       }
-      kpCount = count;
+
+      let braceCount = 0;
+      for (let i = 0; i < subsBody.length; i++) {
+        if (subsBody[i] === '{') {
+          if (braceCount === 0) {
+            subSectionsCount++;
+          }
+          braceCount++;
+        } else if (subsBody[i] === '}') {
+          braceCount--;
+        }
+      }
     }
-  }
-  units.push({ unitNumber: unitNum, kpCount });
-}
 
-let currentPage = 2;
-units.forEach(u => {
-  const start = currentPage;
-  const end = currentPage + u.kpCount + 3 - 1;
-  u.startPage = start;
-  u.endPage = end;
-  u.basicProblems = start + u.kpCount;
-  u.challengeProblems = start + u.kpCount + 1;
-  u.summaryProblems = start + u.kpCount + 2;
-  currentPage += u.kpCount + 3;
-});
+    // keyPoints も正確にカウント
+    let kpCount = 0;
+    const kpIdx = content.indexOf('keyPoints: [');
+    if (kpIdx !== -1) {
+      let bracketCount = 0;
+      let kpBody = '';
+      for (let i = kpIdx + 'keyPoints: '.length; i < content.length; i++) {
+        if (content[i] === '[') bracketCount++;
+        else if (content[i] === ']') {
+          bracketCount--;
+          if (bracketCount === 0) {
+            kpBody = content.substring(kpIdx + 'keyPoints: '.length, i + 1);
+            break;
+          }
+        }
+      }
 
-units.forEach(u => {
-  console.log(`Unit ${u.unitNumber}: Page ${u.startPage} to Page ${u.endPage}`);
-  console.log(`  - KeyPoints: Page ${u.startPage} - ${u.startPage + u.kpCount - 1}`);
-  console.log(`  - BasicProblems: Page ${u.basicProblems}`);
-  console.log(`  - ChallengeProblems: Page ${u.challengeProblems}`);
-  console.log(`  - UnitSummary: Page ${u.summaryProblems}`);
+      let braceCount = 0;
+      for (let i = 0; i < kpBody.length; i++) {
+        if (kpBody[i] === '{') {
+          if (braceCount === 0) {
+            kpCount++;
+          }
+          braceCount++;
+        } else if (kpBody[i] === '}') {
+          braceCount--;
+        }
+      }
+    } else if (content.includes('keyPoints:')) {
+      kpCount = 1;
+    }
+
+    let numPages = 0;
+    if (subSectionsCount > 0) {
+      numPages = subSectionsCount * 2 + 2;
+    } else {
+      numPages = kpCount + 3;
+    }
+
+    const start = currentUnitPage;
+    const end = currentUnitPage + numPages - 1;
+
+    if (start <= 73 && 73 <= end) {
+      console.log(`  Unit ${unitNum} covers page 73: Page ${start} - ${end}`);
+      if (subSectionsCount > 0) {
+        for (let i = 0; i < subSectionsCount; i++) {
+          if (start + i*2 === 73) console.log(`    -> Page 73 is SubSection ${i+1} KeyPoints`);
+          if (start + i*2 + 1 === 73) console.log(`    -> Page 73 is SubSection ${i+1} BasicProblems`);
+        }
+        if (start + subSectionsCount*2 === 73) console.log(`    -> Page 73 is ChallengeProblems`);
+        if (start + subSectionsCount*2 + 1 === 73) console.log(`    -> Page 73 is UnitSummary`);
+      } else {
+        for (let i = 0; i < kpCount; i++) {
+          if (start + i === 73) console.log(`    -> Page 73 is KeyPoints ${i+1}`);
+        }
+        if (start + kpCount === 73) console.log(`    -> Page 73 is BasicProblems`);
+        if (start + kpCount + 1 === 73) console.log(`    -> Page 73 is ChallengeProblems`);
+        if (start + kpCount + 2 === 73) console.log(`    -> Page 73 is UnitSummary`);
+      }
+    }
+
+    currentUnitPage += numPages;
+  });
 });

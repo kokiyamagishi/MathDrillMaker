@@ -342,7 +342,7 @@ export const unit4Data: UnitData = {
             {"ສົມທຽບໄລຍະທາງແລ່ນມາລາທອນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ท້າວ ແດງ ແລ່ນໄດ້ "} <Fraction num="5" den="6" /> {" ຂອງໄລຍະທາງທັງໝົດ, ນາງ ດຳ ແລ່ນໄດ້ "} <Fraction num="4" den="5" /> {" ຂອງໄລຍະທາງທັງໝົດ. ຖາມວ່າໃຜແລ່ນໄດ້ໄລຍະທາງໄກກວ່າ?"}
+            {"ທ້າວ ແດງ ແລ່ນໄດ້ "} <Fraction num="5" den="6" /> {" ຂອງໄລຍະທາງທັງໝົດ, ນາງ ດຳ ແລ່ນໄດ້ "} <Fraction num="4" den="5" /> {" ຂອງໄລຍະທາງທັງໝົດ. ຖາມວ່າໃຜແລ່ນໄດ້ໄລຍະທາງໄກກວ່າ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຜູ້ທີ່ແລ່ນໄດ້ໄກກວ່າແມ່ນ"}</span>

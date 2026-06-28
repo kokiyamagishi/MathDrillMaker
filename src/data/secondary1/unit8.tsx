@@ -108,6 +108,38 @@ export const unit8Data: UnitData = {
               {"ເພື່ອປ່ຽນຈຳນວນໃນພື້ນຖານ "}<strong>{"a"}</strong>{" ໄປເປັນພື້ນຖານ 10, ເຮົາຈະຂຽນຈຳນວນນັ້ນໃນຮູບແບບການກະຈາຍຄູນກັບກຳລັງຂອງພື້ນຖານ "}<strong>{"a"}</strong>{" ໂດຍເລີ່ມແຕ່ຂວາຫາຊ້າຍ (ເລີ່ມແຕ່ກຳລັງ 0)."}
             </p>
 
+            {/* ຄ່າປະຈຳຫຼັກ (Place Values) Explanation Box */}
+            <div style={{ padding: "20px", backgroundColor: "#FFF8E1", borderRadius: "12px", border: "1px solid #FFE082" }}>
+              <h4 style={{ fontSize: "1.3rem", margin: "0 0 12px 0", color: "#FF6F00", fontWeight: "bold" }}>
+                {"📌 ຄ່າປະຈຳຫຼັກ (Place Values):"}
+              </h4>
+              <p style={{ fontSize: "1.25rem", margin: "0 0 12px 0", lineHeight: "1.6" }}>
+                {"ເລກໃນແຕ່ລະຖານຈະມີຄ່າປະຈຳຫຼັກທີ່ແຕກຕ່າງກັນ ໂດຍນັບຈາກຂວາຫາຊ້າຍ (ເລີ່ມແຕ່ກຳລັງ 0):"}
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px" }}>
+                <div style={{ backgroundColor: "#FFFFFF", padding: "12px", borderRadius: "8px", border: "1px solid #FFE082" }}>
+                  <strong style={{ color: "#E65100", display: "block", marginBottom: "8px" }}>{"• ເລກຖານ 2 (Base 2):"}</strong>
+                  <div style={{ fontSize: "1.2rem", lineHeight: "1.6" }}>
+                    {"- ຫຼັກທີ 1 (ຂວາສຸດ): 2⁰ = 1"}<br />
+                    {"- ຫຼັກທີ 2: 2¹ = 2"}<br />
+                    {"- ຫຼັກທີ 3: 2² = 4"}<br />
+                    {"- ຫຼັກທີ 4: 2³ = 8"}<br />
+                    {"- ຫຼັກທີ 5: 2⁴ = 16"}
+                  </div>
+                </div>
+                <div style={{ backgroundColor: "#FFFFFF", padding: "12px", borderRadius: "8px", border: "1px solid #FFE082" }}>
+                  <strong style={{ color: "#E65100", display: "block", marginBottom: "8px" }}>{"• ເລກຖານ 5 (Base 5):"}</strong>
+                  <div style={{ fontSize: "1.2rem", lineHeight: "1.6" }}>
+                    {"- ຫຼັກທີ 1 (ຂວາສຸດ): 5⁰ = 1"}<br />
+                    {"- ຫຼັກທີ 2: 5¹ = 5"}<br />
+                    {"- ຫຼັກທີ 3: 5² = 25"}<br />
+                    {"- ຫຼັກທີ 4: 5³ = 125"}<br />
+                    {"- ຫຼັກທີ 5: 5⁴ = 625"}
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div style={{ padding: "20px", backgroundColor: "#E0F7FA", borderRadius: "12px", border: "1px solid #4DD0E1" }}>
               <h4 style={{ fontSize: "1.3rem", margin: "0 0 12px 0", color: "#006064", fontWeight: "bold" }}>
                 {"📊 ຕົວຢ່າງການປ່ຽນ:"}
