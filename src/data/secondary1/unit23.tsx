@@ -122,15 +122,15 @@ export const unit23Data: UnitData = {
               
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 }}>{"(1)"}</span>
                   <span>{"ເດືອນທຳອິດທີ່ມີ 31 ວັນໃນປີແມ່ນ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "42px", flexShrink: 0 }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold", flexShrink: 0 }}>{"(2)"}</span>
                   <span>{"ຈຳນວນອົງປະກອບທັງໝົດຂອງກຸ່ມ E ແມ່ນ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                  <span>{"ເດືອນ."}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "42px", flexShrink: 0 }}></span>
+                  <span style={{ flexShrink: 0 }}>{"ເດືອນ."}</span>
                 </div>
               </div>
             </div>
