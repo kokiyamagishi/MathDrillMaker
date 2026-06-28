@@ -66,14 +66,14 @@ export const unit27Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ໃນໂຮງຮຽນແຫ່ງໜຶ່ງ, ອັດຕາສ່ວນຂອງນັກຮຽນຍິງຕໍ່ນັກຮຽນຊາຍແມ່ນ 3:5. ຖ້າມີນັກຮຽນຊາຍທັງໝົດ 105 ຄົນ, ຈະມີນັກຮຽນຍິງຈັກຄົນ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                   <span>{"ປະໂຫຍກສັນຍະລັກ: ຈຳນວນນັກຮຽນຍິງ = 105 ×"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                   <span>{"= "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
                   <span>{"ຄົນ"}</span>
                 </div>
               </div>
