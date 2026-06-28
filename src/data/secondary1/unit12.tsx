@@ -59,18 +59,30 @@ export const unit12Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຖ້າສອງເສັ້ນຊື່ d₁ ແລະ d₂ ບໍ່ມີເມັດຮ່ວມກັນເລີຍ, ເຮົາຂຽນ: d₁"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                  <span>{"d₂"}</span>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
+                  <p style={{ margin: 0, lineHeight: "1.5" }}>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                    {"ຖ້າສອງເສັ້ນຊື່ d₁ ແລະ d₂ ບໍ່ມີເມັດຮ່ວມກັນເລີຍ, ເຮົາຂຽນ:"}
+                  </p>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
+                    <span>{"ຕອບ: d₁ "}</span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                    <span>{" d₂"}</span>
+                  </div>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຖ້າສອງເສັ້ນຊື່ d₁ ແລະ d₂ ຕັດກັນເປັນມຸມ 90°, ເຮົາຂຽນ: d₁"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                  <span>{"d₂"}</span>
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
+                  <p style={{ margin: 0, lineHeight: "1.5" }}>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                    {"ຖ້າສອງເສັ້ນຊື່ d₁ ແລະ d₂ ຕັດກັນເປັນມຸມ 90°, ເຮົາຂຽນ:"}
+                  </p>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
+                    <span>{"ຕອບ: d₁ "}</span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                    <span>{" d₂"}</span>
+                  </div>
                 </div>
               </div>
             </div>

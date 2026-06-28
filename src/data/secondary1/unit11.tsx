@@ -46,18 +46,30 @@ export const unit11Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຜ່ານສອງເມັດ A ແລະ B ທີ່ຕ່າງກັນ, ເຮົາສາມາດຂີດເສັ້ນຊື່ໄດ້ທັງໝົດ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                  <span>{"ເສັ້ນ."}</span>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
+                  <p style={{ margin: 0, lineHeight: "1.5" }}>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                    {"ຜ່ານສອງເມັດ A ແລະ B ທີ່ຕ່າງກັນ, ເຮົາສາມາດຂີດເສັ້ນຊື່ໄດ້ທັງໝົດ"}
+                  </p>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
+                    <span>{"ຕອບ: "}</span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                    <span>{"ເສັ້ນ."}</span>
+                  </div>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຜ່ານໜຶ່ງເມັດ O, ເຮົາສາມາດຂີດເສັ້ນຊື່ໄດ້"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                  <span>{"ເສັ້ນ."}</span>
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
+                  <p style={{ margin: 0, lineHeight: "1.5" }}>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                    {"ຜ່ານໜຶ່ງເມັດ O, ເຮົາສາມາດຂີດເສັ້ນຊື່ໄດ້"}
+                  </p>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
+                    <span>{"ຕອບ: "}</span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                    <span>{"ເສັ້ນ."}</span>
+                  </div>
                 </div>
               </div>
             </div>

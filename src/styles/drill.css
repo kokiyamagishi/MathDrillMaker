@@ -326,16 +326,17 @@
   word-break: break-word; /* Ensure Lao text wraps properly */
 }
 
-/* 小問番号（(1) など）はコンパクトな固定幅に統一し、Laoフォント (Phetsarath) で完全に統一する */
 .problem__content div[style*="display: flex"] > span:first-child,
 .problem__content div[style*="display: flex"] > div:first-child {
   display: inline-block !important;
   min-width: 45px !important; /* 小問番号を一列に美しく並べるための固定幅 */
-  flex-shrink: 0;
+  flex-shrink: 0 !important;
   white-space: nowrap !important; /* 折り返しを防止 */
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
   font-family: var(--font-lao) !important; /* 13ページと同じお気に入りのフォントに統一 */
   font-size: 1.375rem !important; /* 22px に統一 */
-  font-weight: normal !important; /* 通常の太さに統一 */
+  font-weight: normal !important; /* 通常의 太さに統一 */
 }
 
 /* 解答記入欄 */
