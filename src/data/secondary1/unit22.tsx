@@ -50,9 +50,9 @@ export const unit22Data: UnitData = {
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap" }}>
                   <span>{"ໄລຍະທາງຕົວຈິງ = "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px", flexShrink: 0 }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
                   <span>{" = "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px", flexShrink: 0 }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
                   <span style={{ flexShrink: 0 }}>{"km"}</span>
                 </div>
               </div>
