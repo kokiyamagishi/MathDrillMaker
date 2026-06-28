@@ -102,8 +102,8 @@ export const unit16Data: UnitData = {
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2", display: "flex", flexDirection: "column", gap: "8px" }}>
               <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ຕົວຢ່າງການຄິດໄລ່ວົງມົນ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6" }}>
-                <li>{"ວົງມົນມີລັດສະໝີ r = 10 cm ⇒ L = 2 × 3.14 × 10 = 62.8 cm."}</li>
-                <li>{"ວົງມົນມີເສັ້ນຜ່ານໃຈກາງ d = 20 cm ⇒ L = 3.14 × 20 = 62.8 cm."}</li>
+                <li>{"ວົງມົນມີລັດສະໝີ "}<span style={{ whiteSpace: "nowrap" }}>{"r = 10 cm ⇒ L = 2 × 3.14 × 10 = 62.8 cm."}</span></li>
+                <li>{"ວົງມົນມີເສັ້ນຜ່ານໃຈກາງ "}<span style={{ whiteSpace: "nowrap" }}>{"d = 20 cm ⇒ L = 3.14 × 20 = 62.8 cm."}</span></li>
               </ul>
             </div>
           </div>
