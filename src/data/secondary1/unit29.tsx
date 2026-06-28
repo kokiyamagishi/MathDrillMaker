@@ -53,17 +53,25 @@ export const unit29Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span>{"(1) ຖ້າ "}</span>
-                  <span style={{ fontWeight: "bold" }}>{"35 / 25 = 21 / x"}</span>
-                  <span>{" ⇒ 35 × x = 25 × 21 ⇒ x ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
+                  <div><strong>{"(1)"}</strong>{" ຖ້າອັດຕາສ່ວນແມ່ນ:"}</div>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", marginTop: "4px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
+                    <Fraction num={"35"} den={"25"} />
+                    <span>{" = "}</span>
+                    <Fraction num={"21"} den={"x"} />
+                    <span>{" ⇒ 35 × x = 25 × 21 ⇒ x = "}</span>
+                    <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                  </div>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span>{"(2) ຖ້າ "}</span>
-                  <span style={{ fontWeight: "bold" }}>{"24 / 32 = y / 64"}</span>
-                  <span>{" ⇒ 32 × y = 24 × 64 ⇒ y ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.8", marginTop: "12px" }}>
+                  <div><strong>{"(2)"}</strong>{" ຖ້າອັດຕາສ່ວນແມ່ນ:"}</div>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", marginTop: "4px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
+                    <Fraction num={"24"} den={"32"} />
+                    <span>{" = "}</span>
+                    <Fraction num={"y"} den={"64"} />
+                    <span>{" ⇒ 32 × y = 24 × 64 ⇒ y = "}</span>
+                    <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -76,11 +84,16 @@ export const unit29Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ຊອກຫາຄ່າຂອງ z ຈາກອັດຕາສ່ວນຕໍ່ໄປນີ້: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                <span>{"152 / z = 95 / 55 ⇒ z = ("}</span>
-                <span className="answer-blank answer-blank--large" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
-                <span>{") / 95 ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", marginTop: "4px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
+                  <Fraction num={"152"} den={"z"} />
+                  <span>{" = "}</span>
+                  <Fraction num={"95"} den={"55"} />
+                  <span>{" ⇒ z = "}</span>
+                  <Fraction num={<span className="answer-blank" style={{ display: "inline-block", minWidth: "70px", width: "70px", height: "24px", verticalAlign: "middle" }}></span>} den={"95"} />
+                  <span>{" = "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                </div>
               </div>
             </div>
           )
