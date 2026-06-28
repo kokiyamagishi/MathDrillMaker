@@ -159,16 +159,21 @@ export const unit3Data: UnitData = {
 
             {/* Graphic visual card showing equivalent scaling */}
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9" }}>
-              <svg viewBox="0 0 320 50" style={{ width: "100%", maxWidth: "300px", height: "auto" }}>
-                {/* Visual arrow sizing equivalent fraction */}
-                <rect x="10" y="5" width="80" height="40" fill="#FFF" stroke="#2E7D32" strokeWidth="2" rx="4" />
-                <text x="50" y="30" fill="#2E7D32" fontSize="16" fontWeight="bold" textAnchor="middle">{"3/8"}</text>
+              <svg viewBox="0 0 360 90" style={{ width: "100%", maxWidth: "340px", height: "auto" }}>
+                {/* 3/8 Fraction Box */}
+                <rect x="10" y="10" width="80" height="70" fill="#FFF" stroke="#2E7D32" strokeWidth="2" rx="6" />
+                <text x="50" y="38" fill="#2E7D32" fontSize="18" fontWeight="bold" textAnchor="middle">{"3"}</text>
+                <line x1="30" y1="45" x2="70" y2="45" stroke="#2E7D32" strokeWidth="2" />
+                <text x="50" y="68" fill="#2E7D32" fontSize="18" fontWeight="bold" textAnchor="middle">{"8"}</text>
                 
-                <text x="140" y="30" fill="#388E3C" fontSize="24" fontWeight="bold" textAnchor="middle">{"➔"}</text>
-                <text x="140" y="16" fill="#388E3C" fontSize="10" fontWeight="bold" textAnchor="middle">{"ຄູນ 3 ທັງເທິງ-ລຸ່ມ"}</text>
+                <text x="180" y="32" fill="#388E3C" fontSize="13" fontWeight="bold" textAnchor="middle">{"ຄູນ 3 ທັງເທິງ-ລຸ່ມ"}</text>
+                <text x="180" y="55" fill="#388E3C" fontSize="28" fontWeight="bold" textAnchor="middle">{"➔"}</text>
 
-                <rect x="190" y="5" width="80" height="40" fill="#E8F5E9" stroke="#1B5E20" strokeWidth="2" rx="4" />
-                <text x="230" y="30" fill="#1B5E20" fontSize="16" fontWeight="bold" textAnchor="middle">{"9/24"}</text>
+                {/* 9/24 Fraction Box */}
+                <rect x="270" y="10" width="80" height="70" fill="#E8F5E9" stroke="#1B5E20" strokeWidth="2" rx="6" />
+                <text x="310" y="38" fill="#1B5E20" fontSize="18" fontWeight="bold" textAnchor="middle">{"9"}</text>
+                <line x1="290" y1="45" x2="330" y2="45" stroke="#1B5E20" strokeWidth="2" />
+                <text x="310" y="68" fill="#1B5E20" fontSize="18" fontWeight="bold" textAnchor="middle">{"24"}</text>
               </svg>
             </div>
           </div>
