@@ -48,17 +48,29 @@ export const unit19Data: UnitData = {
               </p>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຖ້າເສັ້ນຊື່ k ຂະໜານກັບ d, ເສັ້ນຊື່ເຄິ່ງຄື k′ ຂອງມັນທຽບໃສ່ d ຈະ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
-                  <span>{"ກັບ d."}</span>
+                {/* Sub-question 1 */}
+                <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
+                  <p style={{ margin: 0, lineHeight: "1.5" }}>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                    {"ຖ້າເສັ້ນຊື່ k ຂະໜານກັບ d, ເສັ້ນຊື່ເຄິ່ງຄື k′ ຂອງມັນທຽບໃສ່ d ຈະ:"}
+                  </p>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
+                    <span>{"ຕອບ: ຈະ "}</span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
+                    <span>{" ກັບ d."}</span>
+                  </div>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຖ້າເສັ້ນຊື່ k ຕັດ d ຢູ່ເມັດ I, ເສັ້ນຊື່ເຄິ່ງຄື k′ ຈະຕັດ d ຢູ່ເມັດ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                {/* Sub-question 2 */}
+                <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
+                  <p style={{ margin: 0, lineHeight: "1.5" }}>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                    {"ຖ້າເສັ້ນຊື່ k ຕັດ d ຢູ່ເມັດ I, ເສັ້ນຊື່ເຄິ່ງຄື k′ ຈະຕັດ d ຢູ່ເມັດ:"}
+                  </p>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
+                    <span>{"ຕອບ: ຢູ່ເມັດ "}</span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
+                  </div>
                 </div>
               </div>
             </div>
