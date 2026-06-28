@@ -12,7 +12,7 @@ const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) 
 export const unit8Data: UnitData = {
   unitNumber: 8,
   unitTitle: "ພາກທີ I - ບົດທີ 8: ການຫານເລກສ່ວນ",
-  unitGoal: "ຮຽນຮູ້ ແລະ ປະຕິບັດການຫານເລກສ່ວນໂດຍການຄູນກັບເລກສ່ວນປີ້ນຂອງຕົວຫານ",
+  unitGoal: "ຮຽນຮູ້ ແລະ ປະຕິ打ການຫານເລກສ່ວນໂດຍການຄູນກັບເລກສ່ວນປີ້ນຂອງຕົວຫານ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.2 ໜ້າ 27-30",
   subSections: [
     {
@@ -160,24 +160,58 @@ export const unit8Data: UnitData = {
 
             {/* Visual Area Division model */}
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#FFF9C4", borderRadius: "8px", border: "1px solid #FFF59D", fontSize: "1.15rem", color: "#2E7D32" }}>
-              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
-                <span>{"ແຜນວາດການແບ່ງ 2 ກ້ອນ ອອກເປັນເທື່ອລະ 1/3"}</span>
-                <svg viewBox="0 0 200 50" style={{ width: "100%", maxWidth: "200px", height: "auto" }}>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
+                <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                  {"ແຜນວາດການແບ່ງ 2 ກ້ອນ ອອກເປັນເທື່ອລະ "} <Fraction num="1" den="3" />
+                </span>
+                <svg viewBox="0 0 320 80" style={{ width: "100%", maxWidth: "300px", height: "auto" }}>
                   {/* Block 1 */}
-                  <rect x="10" y="10" width="80" height="24" fill="none" stroke="#37474F" strokeWidth="1.5" />
-                  <line x1="36" y1="10" x2="36" y2="34" stroke="#37474F" strokeWidth="1" strokeDasharray="2,2" />
-                  <line x1="63" y1="10" x2="63" y2="34" stroke="#37474F" strokeWidth="1" strokeDasharray="2,2" />
-                  <text x="50" y="44" fill="#37474F" fontSize="9" textAnchor="middle">{"ກ້ອນທີ 1 (ໄດ້ 3 ສ່ວນ 1/3)"}</text>
+                  <rect x="10" y="10" width="120" height="35" fill="none" stroke="#37474F" strokeWidth="1.5" rx="3" />
+                  <line x1="50" y1="10" x2="50" y2="45" stroke="#37474F" strokeWidth="1" strokeDasharray="2,2" />
+                  <line x1="90" y1="10" x2="90" y2="45" stroke="#37474F" strokeWidth="1" strokeDasharray="2,2" />
+                  {/* 1/3 inside Block 1 */}
+                  <text x="30" y="24" fill="#37474F" fontSize="9" textAnchor="middle">{"1"}</text>
+                  <line x1="25" y1="27" x2="35" y2="27" stroke="#37474F" strokeWidth="1" />
+                  <text x="30" y="37" fill="#37474F" fontSize="9" textAnchor="middle">{"3"}</text>
+                  
+                  <text x="70" y="24" fill="#37474F" fontSize="9" textAnchor="middle">{"1"}</text>
+                  <line x1="65" y1="27" x2="75" y2="27" stroke="#37474F" strokeWidth="1" />
+                  <text x="70" y="37" fill="#37474F" fontSize="9" textAnchor="middle">{"3"}</text>
+                  
+                  <text x="110" y="24" fill="#37474F" fontSize="9" textAnchor="middle">{"1"}</text>
+                  <line x1="105" y1="27" x2="115" y2="27" stroke="#37474F" strokeWidth="1" />
+                  <text x="110" y="37" fill="#37474F" fontSize="9" textAnchor="middle">{"3"}</text>
+                  
+                  <text x="70" y="60" fill="#37474F" fontSize="10" textAnchor="middle">{"ກ້ອນທີ 1 (ໄດ້ 3 ສ່ວນ)"}</text>
+                  
+                  {/* Plus Sign */}
+                  <text x="160" y="32" fill="#37474F" fontSize="16" fontWeight="bold" textAnchor="middle">{"+"}</text>
                   
                   {/* Block 2 */}
-                  <rect x="110" y="10" width="80" height="24" fill="none" stroke="#37474F" strokeWidth="1.5" />
-                  <line x1="136" y1="10" x2="136" y2="34" stroke="#37474F" strokeWidth="1" strokeDasharray="2,2" />
-                  <line x1="163" y1="10" x2="163" y2="34" stroke="#37474F" strokeWidth="1" strokeDasharray="2,2" />
-                  <text x="150" y="44" fill="#37474F" fontSize="9" textAnchor="middle">{"ກ້ອນທີ 2 (ໄດ້ 3 ສ່ວນ 1/3)"}</text>
-
-                  <text x="100" y="26" fill="#2E7D32" fontSize="10" fontWeight="bold" textAnchor="middle">{"➔ ລວມ 6 ຕ່ອນ"}</text>
+                  <rect x="190" y="10" width="120" height="35" fill="none" stroke="#37474F" strokeWidth="1.5" rx="3" />
+                  <line x1="230" y1="10" x2="230" y2="45" stroke="#37474F" strokeWidth="1" strokeDasharray="2,2" />
+                  <line x1="270" y1="10" x2="270" y2="45" stroke="#37474F" strokeWidth="1" strokeDasharray="2,2" />
+                  {/* 1/3 inside Block 2 */}
+                  <text x="210" y="24" fill="#37474F" fontSize="9" textAnchor="middle">{"1"}</text>
+                  <line x1="205" y1="27" x2="215" y2="27" stroke="#37474F" strokeWidth="1" />
+                  <text x="210" y="37" fill="#37474F" fontSize="9" textAnchor="middle">{"3"}</text>
+                  
+                  <text x="250" y="24" fill="#37474F" fontSize="9" textAnchor="middle">{"1"}</text>
+                  <line x1="245" y1="27" x2="255" y2="27" stroke="#37474F" strokeWidth="1" />
+                  <text x="250" y="37" fill="#37474F" fontSize="9" textAnchor="middle">{"3"}</text>
+                  
+                  <text x="290" y="24" fill="#37474F" fontSize="9" textAnchor="middle">{"1"}</text>
+                  <line x1="285" y1="27" x2="295" y2="27" stroke="#37474F" strokeWidth="1" />
+                  <text x="290" y="37" fill="#37474F" fontSize="9" textAnchor="middle">{"3"}</text>
+                  
+                  <text x="250" y="60" fill="#37474F" fontSize="10" textAnchor="middle">{"ກ້ອນທີ 2 (ໄດ້ 3 ສ່ວນ)"}</text>
                 </svg>
-                <span style={{ fontSize: "1rem", color: "#37474F", marginTop: "4px" }}>{"ຄິດໄລ່: 2 ÷ 1/3 = 2 × 3 = 6"}</span>
+                <div style={{ display: "inline-flex", alignItems: "center", gap: "6px", backgroundColor: "#E8F5E9", border: "1px solid #A5D6A7", color: "#2E7D32", padding: "4px 12px", borderRadius: "6px", fontWeight: "bold", fontSize: "1.1rem" }}>
+                  {"➔ ລວມທັງໝົດ 6 ຕ່ອນ"}
+                </div>
+                <span className="math" style={{ fontSize: "1.2rem", display: "inline-flex", alignItems: "center", gap: "4px", color: "#37474F", marginTop: "4px" }}>
+                  {"ຄິດໄລ່: 2 ÷ "} <Fraction num="1" den="3" /> {" = 2 × 3 = 6"}
+                </span>
               </div>
             </div>
           </div>
@@ -290,7 +324,7 @@ export const unit8Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"การຫານເລກສ່ວນສາມຕົວຕໍ່ເນື່ອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຫານເລກສ່ວນສາມຕົວຕໍ່ເນື່ອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງຄິດໄລ່ສຳນວນຕໍ່ໄປນີ້: "}
