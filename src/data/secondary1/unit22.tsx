@@ -106,7 +106,14 @@ export const unit22Data: UnitData = {
           </div>
         ),
         hint: {
-          text: "💡 ຄວາມໄວ (Speed) = ໄລຍະທາງ / ເວລາ. ດັ່ງນັ້ນ ເວລາ = ໄລຍະທາງ / ຄວາມໄວ!",
+          text: (
+            <span>
+              {"💡 "}
+              <span style={{ whiteSpace: "nowrap" }}>{"ຄວາມໄວ (Speed) = ໄລຍະທາງ / ເວລາ."}</span>
+              {" ດັ່ງນັ້ນ "}
+              <span style={{ whiteSpace: "nowrap" }}>{"ເວລາ = ໄລຍະທາງ / ຄວາມໄວ!"}</span>
+            </span>
+          ),
           isBlue: false
         }
       },
