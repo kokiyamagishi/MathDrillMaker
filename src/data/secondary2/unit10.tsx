@@ -308,27 +308,27 @@ export const unit10Data: UnitData = {
       {
         questionNumber: 1,
         answers: [
-          <span key="1-1">{"(1) 5 (ຄິດໄລ່: (3/6 + 2/6) × 6 = 5/6 × 6 = 5)"}</span>,
-          <span key="1-2">{"(2) 2 (ຄິດໄລ່: (3/4 - 2/4) ÷ 1/8 = 1/4 × 8 = 2)"}</span>,
-          <span key="1-3">{"(3) 7 (ຄິດໄລ່: 15 × (10/15 - 3/15) = 15 × 7/15 = 7)"}</span>,
-          <span key="1-4">{"(4) 1 (ຄິດໄລ່: (5/6 + 3/6) ÷ 4/3 = 8/6 × 3/4 = 4/3 × 3/4 = 1)"}</span>,
-          <span key="1-5">{"(5) "} <Fraction num="7" den="20" /> {" (ຄິດໄລ່: 1/8 × 14/5 = 14/40 = 7/20)"}</span>
+          <span key="1-1">{"(1) 5 (ຄິດໄລ່: ("} <Fraction num="3" den="6" /> {" + "} <Fraction num="2" den="6" /> {") × 6 = "} <Fraction num="5" den="6" /> {" × 6 = 5)"}</span>,
+          <span key="1-2">{"(2) 2 (ຄິດໄລ່: ("} <Fraction num="3" den="4" /> {" - "} <Fraction num="2" den="4" /> {") ÷ "} <Fraction num="1" den="8" /> {" = "} <Fraction num="1" den="4" /> {" × 8 = 2)"}</span>,
+          <span key="1-3">{"(3) 7 (ຄິດໄລ່: 15 × ("} <Fraction num="10" den="15" /> {" - "} <Fraction num="3" den="15" /> {") = 15 × "} <Fraction num="7" den="15" /> {" = 7)"}</span>,
+          <span key="1-4">{"(4) 1 (ຄິດໄລ່: ("} <Fraction num="5" den="6" /> {" + "} <Fraction num="3" den="6" /> {") ÷ "} <Fraction num="4" den="3" /> {" = "} <Fraction num="8" den="6" /> {" × "} <Fraction num="3" den="4" /> {" = "} <Fraction num="4" den="3" /> {" × "} <Fraction num="3" den="4" /> {" = 1)"}</span>,
+          <span key="1-5">{"(5) "} <Fraction num="7" den="20" /> {" (ຄິດໄລ່: "} <Fraction num="1" den="8" /> {" × "} <Fraction num="14" den="5" /> {" = "} <Fraction num="14" den="40" /> {" = "} <Fraction num="7" den="20" /> {")"}</span>
         ]
       },
       {
         questionNumber: 2,
         answers: [
           <span key="2-1">{"(1) 4 (ຄິດໄລ່: 6 - 2 = 4)"}</span>,
-          <span key="2-2">{"(2) 1 (ຄິດໄລ່: 1/2 + 2/4 = 1/2 + 1/2 = 1)"}</span>,
-          <span key="2-3">{"(3) 1 (ຄິດໄລ່: 5/6 × 3/5 + 1/2 = 3/6 + 1/2 = 1/2 + 1/2 = 1)"}</span>,
-          <span key="2-4">{"(4) 1 (ຄິດໄລ່: 4 - 2/5 × 15/2 = 4 - 3 = 1)"}</span>,
-          <span key="2-5">{"(5) "} <Fraction num="3" den="10" /> {" (ຄິດໄລ່: 6/15 - 1/10 = 2/5 - 1/10 = 4/10 - 1/10 = 3/10)"}</span>
+          <span key="2-2">{"(2) 1 (ຄິດໄລ່: "} <Fraction num="1" den="2" /> {" + "} <Fraction num="2" den="4" /> {" = "} <Fraction num="1" den="2" /> {" + "} <Fraction num="1" den="2" /> {" = 1)"}</span>,
+          <span key="2-3">{"(3) 1 (ຄິດໄລ່: "} <Fraction num="5" den="6" /> {" × "} <Fraction num="3" den="5" /> {" + "} <Fraction num="1" den="2" /> {" = "} <Fraction num="3" den="6" /> {" + "} <Fraction num="1" den="2" /> {" = "} <Fraction num="1" den="2" /> {" + "} <Fraction num="1" den="2" /> {" = 1)"}</span>,
+          <span key="2-4">{"(4) 1 (ຄິດໄລ່: 4 - "} <Fraction num="2" den="5" /> {" × "} <Fraction num="15" den="2" /> {" = 4 - 3 = 1)"}</span>,
+          <span key="2-5">{"(5) "} <Fraction num="3" den="10" /> {" (ຄິດໄລ່: "} <Fraction num="6" den="15" /> {" - "} <Fraction num="1" den="10" /> {" = "} <Fraction num="2" den="5" /> {" - "} <Fraction num="1" den="10" /> {" = "} <Fraction num="4" den="10" /> {" - "} <Fraction num="1" den="10" /> {" = "} <Fraction num="3" den="10" /> {")"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="t1">{"(1) "} <Fraction num="9" den="2" /> {" (ຄິດໄລ່: [(3/4) × 8] - 3/2 = 6 - 3/2 = 12/2 - 3/2 = 9/2)"}</span>
+          <span key="t1">{"(1) "} <Fraction num="9" den="2" /> {" (ຄິດໄລ່: [("} <Fraction num="3" den="4" /> {") × 8] - "} <Fraction num="3" den="2" /> {" = 6 - "} <Fraction num="3" den="2" /> {" = "} <Fraction num="12" den="2" /> {" - "} <Fraction num="3" den="2" /> {" = "} <Fraction num="9" den="2" /> {")"}</span>
         ]
       },
       {
@@ -346,7 +346,7 @@ export const unit10Data: UnitData = {
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="s2">{"(1) 1 (ຄິດໄລ່: 3𝑥 = 5/2 + 1/2 = 6/2 = 3 ➔ 𝑥 = 1)"}</span>
+          <span key="s2">{"(1) 1 (ຄິດໄລ່: 3𝑥 = "} <Fraction num="5" den="2" /> {" + "} <Fraction num="1" den="2" /> {" = "} <Fraction num="6" den="2" /> {" = 3 ➔ 𝑥 = 1)"}</span>
         ]
       }
     ],
