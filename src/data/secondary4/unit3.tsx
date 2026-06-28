@@ -43,7 +43,7 @@ export const unit3Data: UnitData = {
               <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span>{"(2x² + 5x - 12) ÷ (x + 4) ໄດ້: ຜົນຫານ ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                   <span>{", ຕົວເສດ ="}</span>
@@ -52,7 +52,7 @@ export const unit3Data: UnitData = {
                 
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span>{"(3x² + 7x - 6) ÷ (3x - 2) ໄດ້: ຜົນຫານ ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                   <span>{", ຕົວເສດ ="}</span>
@@ -73,14 +73,14 @@ export const unit3Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span>{"ຫານ x² - 3x + 5 ໃຫ້ x - 2 ໄດ້ R ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                 </div>
 
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span>{"ຫານ 2x² - x - 7 ໃຫ້ x + 1 ໄດ້ R ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
                 </div>
@@ -100,7 +100,7 @@ export const unit3Data: UnitData = {
               {"ການຫານແບບຊີເນຕິກແມ່ນວິທີຫານລັດສຳລັບພະຫຸພົດທີ່ຫານໃຫ້ພູດໃນຮູບແບບ x - c ໂດຍການນຳໃຊ້ພຽງແຕ່ສຳປະສິດຂອງພົດຕ່າງໆ:"}
             </p>
             <div style={{ padding: "12px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32", display: "block", marginBottom: "4px" }}>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32", display: "block", marginBottom: "4px" }, whiteSpace: "nowrap"}>
                 {"ຂັ້ນຕອນການຫານແບບຊີເນຕິກ:"}
               </span>
               <p style={{ fontSize: "1.3rem", margin: 0, lineHeight: "1.6" }}>
@@ -128,7 +128,7 @@ export const unit3Data: UnitData = {
               <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span>{"(x³ - 2x² - 5x + 6) ÷ (x - 3) ໄດ້: ຜົນຫານ ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{", ຕົວເສດ ="}</span>
@@ -137,7 +137,7 @@ export const unit3Data: UnitData = {
                 
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span>{"(x³ + 8) ÷ (x + 2) ໄດ້: ຜົນຫານ ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{", ຕົວເສດ ="}</span>

@@ -22,7 +22,7 @@ export const unit14Data: UnitData = {
             </div>
 
             <div style={{ padding: "16px", backgroundColor: "#F9F9F9", borderRadius: "8px", border: "1px solid #E0E0E0" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#37474F" }}>{"ຕົວຢ່າງການຄິດໄລ່:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#37474F" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງການຄິດໄລ່:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6" }}>
                 <li>{"ໃຫ້ AB = 6.7 cm ແລະ BC = 4.6 cm ໂດຍ B ຢູ່ລະຫວ່າງ A ແລະ C. ຈະໄດ້ "}<span style={{ whiteSpace: "nowrap" }}>{"AC = 6.7 + 4.6 = 11.3 cm."}</span></li>
                 <li>{"ໃຫ້ AC = 8 cm ແລະ AM = 5 cm ໂດຍ M ຢູ່ລະຫວ່າງ A ແລະ C. ຈະໄດ້ "}<span style={{ whiteSpace: "nowrap" }}>{"MC = 8 - 5 = 3 cm."}</span></li>
@@ -95,7 +95,7 @@ export const unit14Data: UnitData = {
             </ul>
 
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2", display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ກໍລະນີພິເສດ (ເມັດເຄິ່ງກາງ):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ກໍລະນີພິເສດ (ເມັດເຄິ່ງກາງ):"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6" }}>
                 {"ຖ້າ M ແມ່ນເມັດເຄິ່ງກາງຂອງ [AB], ເຮົາໄດ້: AM = MB = 1/2 AB (ຫຼື AM = 0.5 × AB), ແລະ AB = 2 × AM."}
               </p>

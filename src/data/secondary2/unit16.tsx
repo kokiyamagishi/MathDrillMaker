@@ -4,8 +4,8 @@ import { UnitData } from "../units2";
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
   <span className="math" style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{den}</span>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{den}</span>
   </span>
 );
 
@@ -84,7 +84,7 @@ export const unit16Data: UnitData = {
               <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "8px 0" }}>
                 {/* 5 Questions */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap" }}>
                     <Fraction num="3⁵" den="3³" /> {" = 3^? "}
                   </span>
@@ -92,7 +92,7 @@ export const unit16Data: UnitData = {
                 </div>
                 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap" }}>
                     <Fraction num="5⁷" den="5³" /> {" = 5^? "}
                   </span>
@@ -100,7 +100,7 @@ export const unit16Data: UnitData = {
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap" }}>
                     <Fraction num="2¹⁰" den="2⁴" /> {" = 2^? "}
                   </span>
@@ -108,7 +108,7 @@ export const unit16Data: UnitData = {
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap" }}>
                     <Fraction num="𝑥⁹" den="𝑥²" /> {" = 𝑥^? "}
                   </span>
@@ -116,7 +116,7 @@ export const unit16Data: UnitData = {
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap" }}>
                     <Fraction num="10⁶" den="10⁵" /> {" = 10^? "}
                   </span>
@@ -143,7 +143,7 @@ export const unit16Data: UnitData = {
               <div style={{ display: "flex", flexDirection: "column", gap: "6px", color: "#37474F" }}>
                 <span className="math">{"• ກຳລັງຊ້ອນ: (aᵐ)ⁿ = aᵐ ˣ ⁿ"}</span>
                 <span className="math">{"• ກຳລັງຂອງຜົນຄູນ: (ab)ⁿ = aⁿbⁿ"}</span>
-                <span style={{ color: "#2E7D32" }}>
+                <span style={{ color: "#2E7D32" }, whiteSpace: "nowrap"}>
                   <strong>{"ຕົວຢ່າງ: "}</strong> {"(2²)³ = 2² ˣ ³ = 2⁶ = 64,  (𝑥𝑦)² = 𝑥²𝑦²"}
                 </span>
               </div>
@@ -167,31 +167,31 @@ export const unit16Data: UnitData = {
               <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "8px 0" }}>
                 {/* 5 Questions */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span className="math">{"(3²)⁴ = 3^? "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span className="math">{"(5³)³ = 5^? "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
                   <span className="math">{"(a⁵)² = a^? "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
                   <span className="math">{"(2𝑥)³ = ? · 𝑥³ "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
                   <span className="math">{"(3a)² × a⁴ = 9a^? "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>

@@ -17,7 +17,7 @@ export const unit19Data: UnitData = {
               {"ເຄື່ອງໝາຍຂອງ f(x) = ax² + bx + c ເມື່ອ Δ = b² - 4ac ບໍ່ເປັນບວກ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ກໍລະນີ Δ < 0 (ບໍ່ມີຮາກຕົວຈິງ):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"ກໍລະນີ Δ < 0 (ບໍ່ມີຮາກຕົວຈິງ):"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"f(x) ຈະມີເຄື່ອງໝາຍດຽວກັນກັບສຳປະສິດ a ສະເໝີ ສໍາລັບທຸກໆ x ∈ ℝ:"}
                 <br />
@@ -27,7 +27,7 @@ export const unit19Data: UnitData = {
               </p>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#E0F2F1", borderRadius: "8px", border: "1px solid #B2DFDB" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#004D40" }}>{"ກໍລະນີ Δ = 0 (ມີຮາກຄູ່ x_0 = -b/2a):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#004D40" }, whiteSpace: "nowrap"}>{"ກໍລະນີ Δ = 0 (ມີຮາກຄູ່ x_0 = -b/2a):"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"f(x) ມີເຄື່ອງໝາຍດຽວກັນກັບ a ສໍາລັບທຸກ x ≠ x_0, ແລະ f(x_0) = 0:"}
                 <br />
@@ -126,7 +126,7 @@ export const unit19Data: UnitData = {
               {"ເມື່ອ Δ > 0, ສົມຜົນ f(x) = 0 ມີ 2 ຮາກແຍກກັນແມ່ນ α ແລະ β (ສົມມຸດ α < β):"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ຕາຕະລາງເຄື່ອງໝາຍ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ຕາຕະລາງເຄື່ອງໝາຍ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"- ຫວ່າງລະຫວ່າງສອງຮາກ ]α, β[: f(x) ມີເຄື່ອງໝາຍ ຕ່າງ ກັບ a."
                 }

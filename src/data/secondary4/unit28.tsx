@@ -17,7 +17,7 @@ export const unit28Data: UnitData = {
               {"ໃນຮູບສາມແຈ ABC ໃດໆ ທີ່ມີຂ້າງກົງກັນຂ້າມມຸມ A, B, C ແມ່ນ a, b, c ຕາມລໍາດັບ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ສູດຫຼັກເກນໂກຊີນ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"ສູດຫຼັກເກນໂກຊີນ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li><strong>{"ຊອກຫາຂ້າງ a:"}</strong>{" a² = b² + c² - 2bc cos A"}</li>
                 <li><strong>{"ຊອກຫາຂ້າງ b:"}</strong>{" b² = a² + c² - 2ac cos B"}</li>
@@ -90,7 +90,7 @@ export const unit28Data: UnitData = {
               {"ເມື່ອຮູ້ສາມດ້ານ a, b, c, ເຮົາສາມາດຊອກຫາມຸມໃດໜຶ່ງໄດ້ສະເໝີ ໂດຍນຳໃຊ້ສູດຍ້າຍຂ້າງ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ສູດຊອກຫາມຸມ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ສູດຊອກຫາມຸມ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li>{"cos A = (b² + c² - a²) / 2bc"}</li>
                 <li>{"cos B = (a² + c² - b²) / 2ac"}</li>

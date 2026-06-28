@@ -2,9 +2,9 @@ import React from "react";
 import { UnitData } from "../units2";
 
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px", fontSize: "0.9em", lineHeight: "1.1" }}>
-    <span style={{ borderBottom: "1.5px solid currentColor", padding: "0 4px", textAlign: "center", display: "block", width: "100%" }}>{num}</span>
-    <span style={{ padding: "0 4px", textAlign: "center", display: "block", width: "100%" }}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px", fontSize: "0.9em", lineHeight: "1.1" }, whiteSpace: "nowrap"}>
+    <span style={{ borderBottom: "1.5px solid currentColor", padding: "0 4px", textAlign: "center", display: "block", width: "100%" }, whiteSpace: "nowrap"}>{num}</span>
+    <span style={{ padding: "0 4px", textAlign: "center", display: "block", width: "100%" }, whiteSpace: "nowrap"}>{den}</span>
   </span>
 );
 
@@ -24,15 +24,15 @@ export const unit22Data: UnitData = {
               {"ເພື່ອຊອກຫາໄລຍະທາງຕົວຈິງ ໂດຍຮູ້ໄລຍະທາງໃນແຜນທີ່ ແລະ ມາດຕາສ່ວນ, ເຮົາໃຊ້ສູດ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
-              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#2E7D32", display: "inline-flex", alignItems: "center", gap: "8px" }}>
+              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#2E7D32", display: "inline-flex", alignItems: "center", gap: "8px" }, whiteSpace: "nowrap"}>
                 <span>{"ໄລຍະທາງຕົວຈິງ = "}</span>
                 <Fraction num={"ໄລຍະທາງໃນແຜນທີ່"} den={"ມາດຕາສ່ວນ"} />
               </span>
-              <span style={{ fontSize: "1.25rem", color: "#1B5E20" }}>{"ຫຼື  ໄລຍະທາງຕົວຈິງ = ໄລຍະທາງໃນແຜນທີ່ × ຕົວຫານຂອງມາດຕາສ່ວນ"}</span>
+              <span style={{ fontSize: "1.25rem", color: "#1B5E20" }, whiteSpace: "nowrap"}>{"ຫຼື  ໄລຍະທາງຕົວຈິງ = ໄລຍະທາງໃນແຜນທີ່ × ຕົວຫານຂອງມາດຕາສ່ວນ"}</span>
             </div>
 
             <div style={{ padding: "16px", backgroundColor: "#F9F9F9", borderRadius: "8px", border: "1px solid #E0E0E0" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#37474F" }}>{"ຕົວຢ່າງການຄິດໄລ່:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#37474F" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງການຄິດໄລ່:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ໃນແຜນທີ່ປະເທດລາວທີ່ມີມາດຕາສ່ວນ 1:1,500,000, ວັດແທກໄລຍະຫ່າງລະຫວ່າງ ແຂວງຫຼວງພະບາງ ຫາ ນະຄອນຫຼວງວຽງຈັນ ໄດ້ 14.5 cm."}
                 <br />
@@ -63,7 +63,7 @@ export const unit22Data: UnitData = {
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{" = "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
-                  <span style={{ flexShrink: 0 }}>{"km"}</span>
+                  <span style={{ flexShrink: 0 }, whiteSpace: "nowrap"}>{"km"}</span>
                 </div>
               </div>
             </div>
@@ -78,13 +78,13 @@ export const unit22Data: UnitData = {
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
                 <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   {"ໄລຍະທາງ 8 cm ຕົວຈິງແມ່ນ "}
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   {" m"}
                 </p>
                 <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   {"ໄລຍະທາງ 12 cm ຕົວຈິງແມ່ນ "}
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   {" m"}
@@ -105,7 +105,7 @@ export const unit22Data: UnitData = {
               {"ເຮົາສາມາດນຳໃຊ້ມາດຕາສ່ວນຮ່ວມກັບສູດວິທະຍາສາດ (ຄວາມໄວ, ເວລາ, ໄລຍະທາງ) ແລະ ການປັກເສົາເປັນຫວ່າງ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ຕົວຢ່າງໂຈດເວລາເດີນທາງ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງໂຈດເວລາເດີນທາງ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.8", marginTop: "8px" }}>
                 {"ໃນແຜນທີ່ 1:5,000,000, ວັດໄດ້ 134 mm (13.4 cm). "}
                 <span style={{ whiteSpace: "nowrap" }}>{"ໄລຍະທາງຕົວຈິງ = 13.4 × 5,000,000 = 67,000,000 cm = 670 km."}</span>
@@ -123,7 +123,7 @@ export const unit22Data: UnitData = {
         ),
         hint: {
           text: (
-            <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "8px" }}>
+            <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "8px" }, whiteSpace: "nowrap"}>
               <span>{"💡 ວິທີຄິດໄລ່: "}</span>
               <span style={{ display: "inline-flex", alignItems: "center", gap: "4px", whiteSpace: "nowrap" }}>
                 <span>{"ຄວາມໄວ (Speed) = "}</span>

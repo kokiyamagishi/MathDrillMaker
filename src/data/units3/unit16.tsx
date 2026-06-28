@@ -65,11 +65,11 @@ export const unit16Data: UnitData = {
                   style={{
                     borderBottom: "3px solid #1976D2",
                     padding: "0 8px",
-                  }}
+                  }, whiteSpace: "nowrap"}
                 >
                   {"1"}
                 </span>
-                <span style={{ padding: "0 8px" }}>{"4"}</span>
+                <span style={{ padding: "0 8px" }, whiteSpace: "nowrap"}>{"4"}</span>
               </div>
               <span>{"+"}</span>
               <div
@@ -84,11 +84,11 @@ export const unit16Data: UnitData = {
                   style={{
                     borderBottom: "3px solid #1976D2",
                     padding: "0 8px",
-                  }}
+                  }, whiteSpace: "nowrap"}
                 >
                   {"2"}
                 </span>
-                <span style={{ padding: "0 8px" }}>{"4"}</span>
+                <span style={{ padding: "0 8px" }, whiteSpace: "nowrap"}>{"4"}</span>
               </div>
               <span>{"="}</span>
               <div
@@ -103,11 +103,11 @@ export const unit16Data: UnitData = {
                   style={{
                     borderBottom: "3px solid #1976D2",
                     padding: "0 8px",
-                  }}
+                  }, whiteSpace: "nowrap"}
                 >
                   {"3"}
                 </span>
-                <span style={{ padding: "0 8px" }}>{"4"}</span>
+                <span style={{ padding: "0 8px" }, whiteSpace: "nowrap"}>{"4"}</span>
               </div>
             </div>
 
@@ -272,7 +272,7 @@ export const unit16Data: UnitData = {
               <div
                 style={{ display: "flex", alignItems: "center", gap: "16px" }}
               >
-                <span style={{ fontWeight: "bold", fontSize: "18px" }}>
+                <span style={{ fontWeight: "bold", fontSize: "18px" }, whiteSpace: "nowrap"}>
                   {"(1)"}
                 </span>
                 <div
@@ -329,7 +329,7 @@ export const unit16Data: UnitData = {
                         display: "inline-block",
                         width: "40px",
                         height: "30px",
-                      }}
+                      }, whiteSpace: "nowrap"}
                     ></span>
                     <span
                       style={{
@@ -338,7 +338,7 @@ export const unit16Data: UnitData = {
                         textAlign: "center",
                         paddingTop: "8px",
                         height: "30px",
-                      }}
+                      }, whiteSpace: "nowrap"}
                     >
                       {"5"}
                     </span>
@@ -357,7 +357,7 @@ export const unit16Data: UnitData = {
                         display: "inline-block",
                         width: "40px",
                         height: "30px",
-                      }}
+                      }, whiteSpace: "nowrap"}
                     ></span>
                     <span
                       style={{
@@ -366,7 +366,7 @@ export const unit16Data: UnitData = {
                         textAlign: "center",
                         paddingTop: "8px",
                         height: "30px",
-                      }}
+                      }, whiteSpace: "nowrap"}
                     >
                       {"5"}
                     </span>
@@ -385,7 +385,7 @@ export const unit16Data: UnitData = {
                         display: "inline-block",
                         width: "40px",
                         height: "30px",
-                      }}
+                      }, whiteSpace: "nowrap"}
                     ></span>
                     <span
                       style={{
@@ -394,7 +394,7 @@ export const unit16Data: UnitData = {
                         textAlign: "center",
                         paddingTop: "8px",
                         height: "30px",
-                      }}
+                      }, whiteSpace: "nowrap"}
                     >
                       {"5"}
                     </span>
@@ -406,7 +406,7 @@ export const unit16Data: UnitData = {
               <div
                 style={{ display: "flex", alignItems: "center", gap: "16px" }}
               >
-                <span style={{ fontWeight: "bold", fontSize: "18px" }}>
+                <span style={{ fontWeight: "bold", fontSize: "18px" }, whiteSpace: "nowrap"}>
                   {"(2)"}
                 </span>
                 <div
@@ -476,7 +476,7 @@ export const unit16Data: UnitData = {
                         display: "inline-block",
                         width: "40px",
                         height: "30px",
-                      }}
+                      }, whiteSpace: "nowrap"}
                     ></span>
                     <span
                       style={{
@@ -485,7 +485,7 @@ export const unit16Data: UnitData = {
                         textAlign: "center",
                         paddingTop: "8px",
                         height: "30px",
-                      }}
+                      }, whiteSpace: "nowrap"}
                     >
                       {"6"}
                     </span>
@@ -504,7 +504,7 @@ export const unit16Data: UnitData = {
                         display: "inline-block",
                         width: "40px",
                         height: "30px",
-                      }}
+                      }, whiteSpace: "nowrap"}
                     ></span>
                     <span
                       style={{
@@ -513,7 +513,7 @@ export const unit16Data: UnitData = {
                         textAlign: "center",
                         paddingTop: "8px",
                         height: "30px",
-                      }}
+                      }, whiteSpace: "nowrap"}
                     >
                       {"6"}
                     </span>
@@ -532,7 +532,7 @@ export const unit16Data: UnitData = {
                         display: "inline-block",
                         width: "40px",
                         height: "30px",
-                      }}
+                      }, whiteSpace: "nowrap"}
                     ></span>
                     <span
                       style={{
@@ -541,7 +541,7 @@ export const unit16Data: UnitData = {
                         textAlign: "center",
                         paddingTop: "8px",
                         height: "30px",
-                      }}
+                      }, whiteSpace: "nowrap"}
                     >
                       {"6"}
                     </span>
@@ -627,11 +627,11 @@ export const unit16Data: UnitData = {
                       }}
                     ></div>
                   </div>
-                  <span style={{ fontSize: "16px", marginTop: "8px" }}>
+                  <span style={{ fontSize: "16px", marginTop: "8px" }, whiteSpace: "nowrap"}>
                     {"2/5 ລິດ"}
                   </span>
                 </div>
-                <span style={{ fontSize: "32px", paddingBottom: "30px" }}>
+                <span style={{ fontSize: "32px", paddingBottom: "30px" }, whiteSpace: "nowrap"}>
                   {"+"}
                 </span>
                 {/* Beaker 2 */}
@@ -676,7 +676,7 @@ export const unit16Data: UnitData = {
                       }}
                     ></div>
                   </div>
-                  <span style={{ fontSize: "16px", marginTop: "8px" }}>
+                  <span style={{ fontSize: "16px", marginTop: "8px" }, whiteSpace: "nowrap"}>
                     {"1/5 ລິດ"}
                   </span>
                 </div>
@@ -726,7 +726,7 @@ export const unit16Data: UnitData = {
                 <div
                   style={{ display: "flex", alignItems: "center", gap: "16px" }}
                 >
-                  <span style={{ fontWeight: "bold", fontSize: "18px" }}>
+                  <span style={{ fontWeight: "bold", fontSize: "18px" }, whiteSpace: "nowrap"}>
                     {"(1)"}
                   </span>
                   <div
@@ -796,7 +796,7 @@ export const unit16Data: UnitData = {
                           display: "inline-block",
                           width: "40px",
                           height: "30px",
-                        }}
+                        }, whiteSpace: "nowrap"}
                       ></span>
                       <span
                         style={{
@@ -805,7 +805,7 @@ export const unit16Data: UnitData = {
                           textAlign: "center",
                           paddingTop: "8px",
                           height: "30px",
-                        }}
+                        }, whiteSpace: "nowrap"}
                       >
                         {"5"}
                       </span>
@@ -824,7 +824,7 @@ export const unit16Data: UnitData = {
                           display: "inline-block",
                           width: "40px",
                           height: "30px",
-                        }}
+                        }, whiteSpace: "nowrap"}
                       ></span>
                       <span
                         style={{
@@ -833,7 +833,7 @@ export const unit16Data: UnitData = {
                           textAlign: "center",
                           paddingTop: "8px",
                           height: "30px",
-                        }}
+                        }, whiteSpace: "nowrap"}
                       >
                         {"5"}
                       </span>
@@ -852,7 +852,7 @@ export const unit16Data: UnitData = {
                           display: "inline-block",
                           width: "40px",
                           height: "30px",
-                        }}
+                        }, whiteSpace: "nowrap"}
                       ></span>
                       <span
                         style={{
@@ -861,7 +861,7 @@ export const unit16Data: UnitData = {
                           textAlign: "center",
                           paddingTop: "8px",
                           height: "30px",
-                        }}
+                        }, whiteSpace: "nowrap"}
                       >
                         {"5"}
                       </span>
@@ -873,7 +873,7 @@ export const unit16Data: UnitData = {
                 <div
                   style={{ display: "flex", alignItems: "center", gap: "16px" }}
                 >
-                  <span style={{ fontWeight: "bold", fontSize: "18px" }}>
+                  <span style={{ fontWeight: "bold", fontSize: "18px" }, whiteSpace: "nowrap"}>
                     {"(2)"}
                   </span>
                   <div
@@ -978,7 +978,7 @@ export const unit16Data: UnitData = {
                           display: "inline-block",
                           width: "40px",
                           height: "30px",
-                        }}
+                        }, whiteSpace: "nowrap"}
                       ></span>
                       <span
                         style={{
@@ -987,7 +987,7 @@ export const unit16Data: UnitData = {
                           textAlign: "center",
                           paddingTop: "8px",
                           height: "30px",
-                        }}
+                        }, whiteSpace: "nowrap"}
                       >
                         {"8"}
                       </span>
@@ -1006,7 +1006,7 @@ export const unit16Data: UnitData = {
                           display: "inline-block",
                           width: "40px",
                           height: "30px",
-                        }}
+                        }, whiteSpace: "nowrap"}
                       ></span>
                       <span
                         style={{
@@ -1015,7 +1015,7 @@ export const unit16Data: UnitData = {
                           textAlign: "center",
                           paddingTop: "8px",
                           height: "30px",
-                        }}
+                        }, whiteSpace: "nowrap"}
                       >
                         {"8"}
                       </span>
@@ -1034,7 +1034,7 @@ export const unit16Data: UnitData = {
                           display: "inline-block",
                           width: "40px",
                           height: "30px",
-                        }}
+                        }, whiteSpace: "nowrap"}
                       ></span>
                       <span
                         style={{
@@ -1043,7 +1043,7 @@ export const unit16Data: UnitData = {
                           textAlign: "center",
                           paddingTop: "8px",
                           height: "30px",
-                        }}
+                        }, whiteSpace: "nowrap"}
                       >
                         {"8"}
                       </span>
@@ -1147,7 +1147,7 @@ export const unit16Data: UnitData = {
                     </div>
                     <div style={{ flex: 1 }}></div>
                   </div>
-                  <span style={{ fontSize: "16px" }}>{"← ຕັດອອກ"}</span>
+                  <span style={{ fontSize: "16px" }, whiteSpace: "nowrap"}>{"← ຕັດອອກ"}</span>
                 </div>
 
                 <div
@@ -1205,7 +1205,7 @@ export const unit16Data: UnitData = {
                 <div
                   style={{ display: "flex", gap: "12px", alignItems: "center" }}
                 >
-                  <span style={{ fontSize: "20px" }}>{"ຄຳຕອບ:"}</span>
+                  <span style={{ fontSize: "20px" }, whiteSpace: "nowrap"}>{"ຄຳຕອບ:"}</span>
                   <span
                     className="answer-blank"
                     style={{
@@ -1244,7 +1244,7 @@ export const unit16Data: UnitData = {
               <div
                 style={{ display: "flex", alignItems: "center", gap: "16px" }}
               >
-                <span style={{ fontWeight: "bold", fontSize: "18px" }}>
+                <span style={{ fontWeight: "bold", fontSize: "18px" }, whiteSpace: "nowrap"}>
                   {"(2)"}
                 </span>
                 <div
@@ -1295,21 +1295,21 @@ export const unit16Data: UnitData = {
                       display: "inline-block",
                       width: "40px",
                       height: "30px",
-                    }}
+                    }, whiteSpace: "nowrap"}
                   ></span>
                   <span
                     style={{
                       borderTop: "2px solid #000",
                       width: "40px",
                       textAlign: "center",
-                    }}
+                    }, whiteSpace: "nowrap"}
                   ></span>
                   <span
                     style={{
                       display: "inline-block",
                       width: "40px",
                       height: "30px",
-                    }}
+                    }, whiteSpace: "nowrap"}
                   ></span>
                 </div>
               </div>
@@ -1318,7 +1318,7 @@ export const unit16Data: UnitData = {
               <div
                 style={{ display: "flex", alignItems: "center", gap: "16px" }}
               >
-                <span style={{ fontWeight: "bold", fontSize: "18px" }}>
+                <span style={{ fontWeight: "bold", fontSize: "18px" }, whiteSpace: "nowrap"}>
                   {"(3)"}
                 </span>
                 <div
@@ -1377,21 +1377,21 @@ export const unit16Data: UnitData = {
                       display: "inline-block",
                       width: "40px",
                       height: "30px",
-                    }}
+                    }, whiteSpace: "nowrap"}
                   ></span>
                   <span
                     style={{
                       borderTop: "2px solid #000",
                       width: "40px",
                       textAlign: "center",
-                    }}
+                    }, whiteSpace: "nowrap"}
                   ></span>
                   <span
                     style={{
                       display: "inline-block",
                       width: "40px",
                       height: "30px",
-                    }}
+                    }, whiteSpace: "nowrap"}
                   ></span>
                 </div>
               </div>

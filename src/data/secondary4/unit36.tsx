@@ -17,13 +17,13 @@ export const unit36Data: UnitData = {
               {"ສໍາລັບເສັ້ນຊື່ d ທີ່ມີສົມຜົນທົ່ວໄປ ax + by + c = 0 (ເຊິ່ງ a² + b² ≠ 0):"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"1. ເວັກເຕີຕັ້ງສາກ (Normal Vector) n:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"1. ເວັກເຕີຕັ້ງສາກ (Normal Vector) n:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"n = [a, b] (ແມ່ນເວັກເຕີທີ່ມີທິດທາງຕັ້ງສາກກັບເສັ້ນຊື່ d)"}
               </p>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }}>{"2. ເວັກເຕີຊີ້ນຳ (Direction Vector) u:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"2. ເວັກເຕີຊີ້ນຳ (Direction Vector) u:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"u = [-b, a] (ແມ່ນເວັກເຕີທີ່ມີທິດທາງຂະໜານ ຫຼື ນອນເທິງເສັ້ນຊື່ d)"}
               </p>

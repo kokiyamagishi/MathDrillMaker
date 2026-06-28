@@ -67,7 +67,7 @@ export const unit17Data: UnitData = {
                     boxShadow: "2px 2px 4px rgba(0,0,0,0.1)",
                   }}
                 >
-                  <span style={{ fontSize: "22px" }}>{amount.toLocaleString()} ₭</span>
+                  <span style={{ fontSize: "22px" }, whiteSpace: "nowrap"}>{amount.toLocaleString()} ₭</span>
                 </div>
               );
             })}
@@ -110,7 +110,7 @@ export const unit17Data: UnitData = {
                     fontSize: "20px",
                   }}
                 >
-                  <span style={{ fontWeight: "bold" }}>{item.n}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{item.n}</span>
                   <div
                     style={{
                       display: "flex",
@@ -143,7 +143,7 @@ export const unit17Data: UnitData = {
                             boxShadow: "1px 1px 2px rgba(0,0,0,0.1)",
                           }}
                         >
-                          <span style={{ fontSize: "12px" }}>{amount.toLocaleString()} ₭</span>
+                          <span style={{ fontSize: "12px" }, whiteSpace: "nowrap"}>{amount.toLocaleString()} ₭</span>
                         </div>
                       );
                     })}
@@ -184,7 +184,7 @@ export const unit17Data: UnitData = {
               <div
                 style={{ display: "flex", alignItems: "center", gap: "16px" }}
               >
-                <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(5) "}</span>
                 <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
                   {[20000, 20000, 10000].map((amount, bIdx) => {
                     let color = "#2196F3";
@@ -208,7 +208,7 @@ export const unit17Data: UnitData = {
                           boxShadow: "1px 1px 2px rgba(0,0,0,0.1)",
                         }}
                       >
-                        <span style={{ fontSize: "12px" }}>{amount.toLocaleString()} ₭</span>
+                        <span style={{ fontSize: "12px" }, whiteSpace: "nowrap"}>{amount.toLocaleString()} ₭</span>
                       </div>
                     );
                   })}
@@ -267,7 +267,7 @@ export const unit17Data: UnitData = {
                     gap: "12px",
                   }}
                 >
-                  <span style={{ fontSize: "22px", fontWeight: "bold" }}>
+                  <span style={{ fontSize: "22px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                     {"(1) ຊື້ປຶ້ມຫົວໜຶ່ງລາຄາ 35,000 ກີບ."}
                   </span>
                   <div
@@ -330,7 +330,7 @@ export const unit17Data: UnitData = {
                           boxShadow: "1px 1px 2px rgba(0,0,0,0.1)",
                         }}
                       >
-                        <span style={{ fontSize: "14px" }}>{"50,000 ₭"}</span>
+                        <span style={{ fontSize: "14px" }, whiteSpace: "nowrap"}>{"50,000 ₭"}</span>
                       </div>
                     </div>
                     {/* Change */}
@@ -342,7 +342,7 @@ export const unit17Data: UnitData = {
                         marginLeft: "20px",
                       }}
                     >
-                      <span style={{ fontSize: "20px" }}>{"ເງິນທອນ:"}</span>
+                      <span style={{ fontSize: "20px" }, whiteSpace: "nowrap"}>{"ເງິນທອນ:"}</span>
                       <span
                         className="answer-blank"
                         style={{
@@ -364,7 +364,7 @@ export const unit17Data: UnitData = {
                     gap: "12px",
                   }}
                 >
-                  <span style={{ fontSize: "22px", fontWeight: "bold" }}>
+                  <span style={{ fontSize: "22px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                     {"(2) ຊື້ກະເປົາລາຄາ 75,000 ກີບ."}
                   </span>
                   <div
@@ -427,7 +427,7 @@ export const unit17Data: UnitData = {
                           boxShadow: "1px 1px 2px rgba(0,0,0,0.1)",
                         }}
                       >
-                        <span style={{ fontSize: "14px" }}>{"100,000 ₭"}</span>
+                        <span style={{ fontSize: "14px" }, whiteSpace: "nowrap"}>{"100,000 ₭"}</span>
                       </div>
                     </div>
                     {/* Change */}
@@ -439,7 +439,7 @@ export const unit17Data: UnitData = {
                         marginLeft: "20px",
                       }}
                     >
-                      <span style={{ fontSize: "20px" }}>{"ເງິນທອນ:"}</span>
+                      <span style={{ fontSize: "20px" }, whiteSpace: "nowrap"}>{"ເງິນທອນ:"}</span>
                       <span
                         className="answer-blank"
                         style={{
@@ -474,7 +474,7 @@ export const unit17Data: UnitData = {
                   fontSize: "20px",
                 }}
               >
-                <span style={{ fontWeight: "bold" }}>
+                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>
                   {"(3) ຊື້ປຶ້ມຂຽນ ແລະ ປາກກາ."}
                 </span>
                 <div
@@ -500,7 +500,7 @@ export const unit17Data: UnitData = {
                       {"12,000 ₭"}
                     </div>
                   </div>
-                  <span style={{ fontSize: "24px" }}>{"+"}</span>
+                  <span style={{ fontSize: "24px" }, whiteSpace: "nowrap"}>{"+"}</span>
                   <div
                     className="math-illustration"
                     style={{
@@ -543,7 +543,7 @@ export const unit17Data: UnitData = {
                         boxShadow: "1px 1px 2px rgba(0,0,0,0.1)",
                       }}
                     >
-                      <span style={{ fontSize: "12px" }}>{"50,000 ₭"}</span>
+                      <span style={{ fontSize: "12px" }, whiteSpace: "nowrap"}>{"50,000 ₭"}</span>
                     </div>
                   </div>
                 </div>
@@ -586,7 +586,7 @@ export const unit17Data: UnitData = {
                 gap: "16px",
               }}
             >
-              <span style={{ fontSize: "22px", fontWeight: "bold" }}>
+              <span style={{ fontSize: "22px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                 {"(1) ມີເງິນທັງໝົດຈັກກີບ?"}
               </span>
               <div
@@ -622,7 +622,7 @@ export const unit17Data: UnitData = {
                         boxShadow: "1px 1px 2px rgba(0,0,0,0.1)",
                       }}
                     >
-                      <span style={{ fontSize: "14px" }}>{amount.toLocaleString()} ₭</span>
+                      <span style={{ fontSize: "14px" }, whiteSpace: "nowrap"}>{amount.toLocaleString()} ₭</span>
                     </div>
                   );
                 })}
@@ -630,7 +630,7 @@ export const unit17Data: UnitData = {
               <div
                 style={{ display: "flex", gap: "12px", alignItems: "center" }}
               >
-                <span style={{ fontSize: "20px" }}>{"ຄຳຕອບ:"}</span>
+                <span style={{ fontSize: "20px" }, whiteSpace: "nowrap"}>{"ຄຳຕອບ:"}</span>
                 <span
                   className="answer-blank"
                   style={{
@@ -639,7 +639,7 @@ export const unit17Data: UnitData = {
                     height: "40px",
                   }}
                 ></span>
-                <span style={{ fontSize: "20px" }}>{"ກີບ"}</span>
+                <span style={{ fontSize: "20px" }, whiteSpace: "nowrap"}>{"ກີບ"}</span>
               </div>
             </div>
           </div>
@@ -663,7 +663,7 @@ export const unit17Data: UnitData = {
                 fontSize: "20px",
               }}
             >
-              <span style={{ fontWeight: "bold" }}>
+              <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>
                 {"(2) ຕ້ອງການຊື້ກະເປົາລາຄາ 180,000 ກີບ. ປັດຈຸບັນມີເງິນດັ່ງນີ້:"}
               </span>
               <div
@@ -699,7 +699,7 @@ export const unit17Data: UnitData = {
                         boxShadow: "1px 1px 2px rgba(0,0,0,0.1)",
                       }}
                     >
-                      <span style={{ fontSize: "14px" }}>{amount.toLocaleString()} ₭</span>
+                      <span style={{ fontSize: "14px" }, whiteSpace: "nowrap"}>{amount.toLocaleString()} ₭</span>
                     </div>
                   );
                 })}

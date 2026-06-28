@@ -4,9 +4,9 @@ import { UnitData } from "../units2";
 
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }, whiteSpace: "nowrap"}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{den}</span>
   </span>
 );
 
@@ -79,19 +79,19 @@ export const unit10Data: UnitData = {
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span>{"ຖ້າມຸມແນບວົງມົນມີຂະໜາດ "} <span className="math">{"40°"}</span> {", ມຸມໃຈກາງທີ່ຮັບອາກດຽວກັນຈະມີຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span>{"ຖ້າມຸມໃຈກາງມີຂະໜາດ "} <span className="math">{"110°"}</span> {", ມຸມແນບວົງມົນທີ່ຮັບອາກດຽວກັນຈະມີຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(3) "}</span>
                   <span>{"ຖ້າມຸມແນບວົງມົນມີຂະໜາດ "} <span className="math">{"25°"}</span> {", ມຸມໃຈກາງທີ່ຮັບອາກດຽວກັນຈະມີຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -109,13 +109,13 @@ export const unit10Data: UnitData = {
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span>{"ສອງມຸມແນບວົງມົນທີ່ຮັບອາກດຽວກັນ ຈະມີຂະໜາດເປັນແນວໃດຕໍ່ກັນ? (ຕອບ 'ເທົ່າກັນ' ຫຼື 'ບໍ່ເທົ່າກັນ')"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span>{"ມຸມແນບວົງມົນທີ່ຮັບອາກເຄິ່ງວົງມົນ (ອາກ 180°) ຈະມີຂະໜາດຈັກອົງສາສະເໝີ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -136,8 +136,8 @@ export const unit10Data: UnitData = {
             </p>
             
             <div style={{ padding: "12px 16px", backgroundColor: "#FFFDE7", borderRadius: "10px", border: "1px solid #FFF59D", fontSize: "1.25rem", color: "#F57F17", display: "flex", flexDirection: "column", gap: "6px" }}>
-              <div>{"• "} <span style={{ fontWeight: "bold" }}>{"ມຸມແນບເຄິ່ງວົງມົນ:"}</span> {" ມຸມແນບວົງມົນທີ່ຮັບເສັ້ນຜ່ານກາງ AB ຈະມີຂະໜາດ 90° ສະເໝີ (ເປັນມຸມສາກ)."}</div>
-              <div>{"• "} <span style={{ fontWeight: "bold" }}>{"ຮູບສີ່ແຈແນບວົງມົນ:"}</span> {" ຜົນບວກຂອງສອງມຸມກົງກັນຂ້າມໃນຮູບສີ່ແຈແນບວົງມົນ ຈະເທົ່າກັບ 180° ສະເໝີ. (A + C = 180° ແລະ B + D = 180°)"}</div>
+              <div>{"• "} <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"ມຸມແນບເຄິ່ງວົງມົນ:"}</span> {" ມຸມແນບວົງມົນທີ່ຮັບເສັ້ນຜ່ານກາງ AB ຈະມີຂະໜາດ 90° ສະເໝີ (ເປັນມຸມສາກ)."}</div>
+              <div>{"• "} <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"ຮູບສີ່ແຈແນບວົງມົນ:"}</span> {" ຜົນບວກຂອງສອງມຸມກົງກັນຂ້າມໃນຮູບສີ່ແຈແນບວົງມົນ ຈະເທົ່າກັບ 180° ສະເໝີ. (A + C = 180° ແລະ B + D = 180°)"}</div>
             </div>
           </div>
         ),
@@ -157,19 +157,19 @@ export const unit10Data: UnitData = {
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span>{"ຖ້າມຸມ "} <span className="math">{"<Angle>ABC</Angle> = 30°"}</span> {", ມຸມ "} <span className="math">{"<Angle>CAB</Angle>"}</span> {" ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span>{"ຖ້າມຸມ "} <span className="math">{"<Angle>ABC</Angle> = 45°"}</span> {", ມຸມ "} <span className="math">{"<Angle>CAB</Angle>"}</span> {" ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(3) "}</span>
                   <span>{"ຖ້າມຸມ "} <span className="math">{"<Angle>ABC</Angle> = 20°"}</span> {", ມຸມ "} <span className="math">{"<Angle>CAB</Angle>"}</span> {" ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -187,13 +187,13 @@ export const unit10Data: UnitData = {
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span>{"ຖ້າມຸມ "} <span className="math">{"<Angle>A</Angle> = 80°"}</span> {", ມຸມກົງກັນຂ້າມ "} <span className="math">{"<Angle>C</Angle>"}</span> {" ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span>{"ຖ້າມຸມ "} <span className="math">{"<Angle>B</Angle> = 105°"}</span> {", ມຸມກົງກັນຂ້າມ "} <span className="math">{"<Angle>D</Angle>"}</span> {" ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>

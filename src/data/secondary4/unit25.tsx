@@ -17,7 +17,7 @@ export const unit25Data: UnitData = {
               {"ໃນຮູບສາມແຈສາກ ABC ທີ່ສາກຢູ່ C (ຂ້າງກົງສາກແມ່ນ c, ຂ້າງກົງໜ້າມຸມ A ແມ່ນ a, ຂ້າງຕິດແປະແມ່ນ b):"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }}>{"ສູດອັດຕາສ່ວນ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"ສູດອັດຕາສ່ວນ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li><strong>{"ຊີນ (sin A):"}</strong>{" sin A = ຂ້າງກົງໜ້າ / ຂ້າງກົງສາກ = a/c"}</li>
                 <li><strong>{"ໂກຊີນ (cos A):"}</strong>{" cos A = ຂ້າງຕິດແປະ / ຂ້າງກົງສາກ = b/c"}</li>

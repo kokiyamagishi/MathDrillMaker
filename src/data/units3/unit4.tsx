@@ -90,7 +90,7 @@ export const unit4Data: UnitData = {
                   }}
                 ></div>
               </div>
-              <span style={{ fontSize: "22px", fontWeight: "bold" }}>
+              <span style={{ fontSize: "22px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                 {"ລັດສະໝີ (ເຄິ່ງວົງມົນ)"}
               </span>
             </div>
@@ -140,7 +140,7 @@ export const unit4Data: UnitData = {
                   }}
                 ></div>
               </div>
-              <span style={{ fontSize: "22px", fontWeight: "bold" }}>
+              <span style={{ fontSize: "22px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                 {"ເສັ້ນຜ່າກາງ (ລັດສະໝີ x 2)"}
               </span>
             </div>
@@ -176,7 +176,7 @@ export const unit4Data: UnitData = {
                   fontSize: "22px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                   {"(1)"}
                 </span>
                 <span>
@@ -201,7 +201,7 @@ export const unit4Data: UnitData = {
                   fontSize: "22px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                   {"(2)"}
                 </span>
                 <span>
@@ -247,7 +247,7 @@ export const unit4Data: UnitData = {
                   fontSize: "22px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                   {"(3)"}
                 </span>
                 <span>{"ລັດສະໝີ ມີຄວາມຍາວເປັນແນວໃດ ທຽບກັບ ເສັ້ນຜ່າກາງ?"}</span>
@@ -268,7 +268,7 @@ export const unit4Data: UnitData = {
                   fontSize: "22px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                   {"(4)"}
                 </span>
                 <span>{"ໝາກບານ ເປັນຕົວແທນຂອງຮູບຊົງຫຍັງ?"}</span>
@@ -299,10 +299,10 @@ export const unit4Data: UnitData = {
                 <span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
               <div style={{  }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                   {"(1)"}
                 </span>
-                <span style={{ fontSize: "20px", marginLeft: "12px" }}>
+                <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
                   {
                     "ວົງມົນໜຶ່ງມີລັດສະໝີຍາວ 4 cm. ເສັ້ນຜ່າກາງຂອງວົງມົນນີ້ຍາວເທົ່າໃດ?"
                   }
@@ -341,10 +341,10 @@ export const unit4Data: UnitData = {
                 <span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
               <div style={{  }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                   {"(2)"}
                 </span>
-                <span style={{ fontSize: "20px", marginLeft: "12px" }}>
+                <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
                   {
                     "ວົງມົນໜຶ່ງມີເສັ້ນຜ່າກາງຍາວ 10 cm. ລັດສະໝີຂອງວົງມົນນີ້ຍາວເທົ່າໃດ?"
                   }
@@ -402,7 +402,7 @@ export const unit4Data: UnitData = {
                   fontSize: "22px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                   {"(1)"}
                 </span>
                 <span>
@@ -446,7 +446,7 @@ export const unit4Data: UnitData = {
                   fontSize: "22px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                   {"(2)"}
                 </span>
                 <span>{"ຮູບຮ່າງຂອງໜ້າປັດໂມງທົ່ວໄປ ເປັນຮູບຫຍັງ?"}</span>

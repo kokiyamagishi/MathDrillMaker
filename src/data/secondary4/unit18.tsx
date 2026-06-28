@@ -17,7 +17,7 @@ export const unit18Data: UnitData = {
               {"ຄ່າສູງສຸດ ຫຼື ຕ່ຳສຸດຂອງ y = ax² + bx + c ຈະເກີດຂຶ້ນຢູ່ເມັດຈອມ S(p, q) ສະເໝີ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ຖ້າ a > 0 (ປາຣາໂບນຫງາຍ):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"ຖ້າ a > 0 (ປາຣາໂບນຫງາຍ):"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"- ມີຄ່າຕ່ຳສຸດແມ່ນ: min y = q = -Δ/(4a) ເມື່ອ x = -b/(2a)."}
                 <br />
@@ -25,7 +25,7 @@ export const unit18Data: UnitData = {
               </p>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#FFEBEE", borderRadius: "8px", border: "1px solid #FFCDD2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#C62828" }}>{"ຖ້າ a < 0 (ປາຣາໂບນຂວ້ຳ):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#C62828" }, whiteSpace: "nowrap"}>{"ຖ້າ a < 0 (ປາຣາໂບນຂວ້ຳ):"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"- ມີຄ່າສູງສຸດແມ່ນ: max y = q = -Δ/(4a) ເມື່ອ x = -b/(2a)."}
                 <br />
@@ -94,7 +94,7 @@ export const unit18Data: UnitData = {
               {"ເມື່ອຕົວປ່ຽນ x ຖືກຈຳກັດໃນຫວ່າງ [x_1, x_2], ວິທີຊອກຫາ max ແລະ min ແມ່ນ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }}>{"ຂັ້ນຕອນການຊອກຫາ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"ຂັ້ນຕອນການຊອກຫາ:"}</span>
               <ol style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li>{"ຊອກຫາຕົວປະສານ x ຂອງເມັດຈອມ: p = -b/(2a)."}</li>
                 <li>{"ກວດເບິ່ງວ່າ p ຢູ່ຫວ່າງ [x_1, x_2] ຫຼື ບໍ່?"}</li>

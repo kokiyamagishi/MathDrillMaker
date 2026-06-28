@@ -22,7 +22,7 @@ export const unit25Data: UnitData = {
             </p>
             
             <div style={{ padding: "16px", backgroundColor: "#E0F2F1", borderRadius: "8px", border: "1px solid #80CBC4" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#004D40" }}>{"ຄຸນລັກສະນະທີ່ສຳຄັນ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#004D40" }, whiteSpace: "nowrap"}>{"ຄຸນລັກສະນະທີ່ສຳຄັນ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6", marginTop: "8px" }}>
                 <li>{"ທຸກໆກຸ່ມ A ຈະເປັນອະນຸກຸ່ມຂອງຕົວມັນເອງສະເໝີ: A ⊂ A."}</li>
                 <li>{"ກຸ່ມເປົ່າ ∅ ເປັນອະນຸກຸ່ມຂອງທຸກໆກຸ່ມສະເໝີ: ∅ ⊂ A."}</li>
@@ -46,14 +46,14 @@ export const unit25Data: UnitData = {
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
                 <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   {"ຈຳນວນ 5 "}
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   {" ℕ"}
                 </p>
                 
                 <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   {"ກຸ່ມ A "}
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   {" ℕ"}
@@ -88,7 +88,7 @@ export const unit25Data: UnitData = {
               {"ແຜນວາດເວນ ຈະໃຊ້ຮູບປິດ (ສ່ວນຫຼາຍແມ່ນຮູບວົງມົນ ຫຼື ຮູບສີ່ແຈ) ເພື່ອສະແດງກຸ່ມ ແລະ ອົງປະກອບ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2", display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ແຜນວາດເວນສະແດງ B ⊂ A"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ແຜນວາດເວນສະແດງ B ⊂ A"}</span>
               <svg width="240" height="140" style={{ border: "1px solid #FFB74D", backgroundColor: "#FFF" }}>
                 {/* Outer set A */}
                 <circle cx="120" cy="70" r="60" fill="none" stroke="#29B6F6" strokeWidth="2.5" />
@@ -103,7 +103,7 @@ export const unit25Data: UnitData = {
                 <text x="145" y="65" fontSize="12" fill="#000">{"2"}</text>
                 <text x="135" y="110" fontSize="12" fill="#000">{"3"}</text>
               </svg>
-              <span style={{ fontSize: "1.2rem", fontStyle: "italic", color: "#E65100" }}>{"ຈາກຮູບ: B = {1}, A = {1, 2, 3} ດັ່ງນັ້ນ B ⊂ A"}</span>
+              <span style={{ fontSize: "1.2rem", fontStyle: "italic", color: "#E65100" }, whiteSpace: "nowrap"}>{"ຈາກຮູບ: B = {1}, A = {1, 2, 3} ດັ່ງນັ້ນ B ⊂ A"}</span>
             </div>
           </div>
         ),
@@ -123,12 +123,12 @@ export const unit25Data: UnitData = {
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
                 <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   {"ອົງປະກອບ 1 ຈະເປັນອົງປະກອບຂອງກຸ່ມ A ບໍ່? ຕອບ 'ເປັນ' ຫຼື 'ບໍ່ເປັນ': "}
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "80px", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </p>
                 <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   {"ອົງປະກອບ 2 ຈະເປັນອົງປະກອບຂອງກຸ່ມ B ບໍ່? ຕອບ 'ເປັນ' ຫຼື 'ບໍ່ເປັນ': "}
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "80px", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </p>

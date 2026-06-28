@@ -23,7 +23,7 @@ export const unit18Data: UnitData = {
             </p>
 
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ການຈຳແນກມຸມຕາມຂະໜາດ (ອົງສາ):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"ການຈຳແນກມຸມຕາມຂະໜາດ (ອົງສາ):"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6" }}>
                 <li><strong>{"ມຸມສູນ (Null Angle): "}</strong>{" ມີຂະໜາດເທົ່າກັບ 0°"}</li>
                 <li><strong>{"ມຸມແຫຼມ (Acute Angle): "}</strong>{" ໃຫຍ່ກວ່າ 0° ແຕ່ ນ້ອຍກວ່າ 90° (0° < θ < 90°)"}</li>
@@ -51,13 +51,13 @@ export const unit18Data: UnitData = {
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span>{"ມຸມ 45° ແມ່ນ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span>{"ມຸມ 135° ແມ່ນ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
@@ -98,7 +98,7 @@ export const unit18Data: UnitData = {
               {"ເມື່ອສອງເສັ້ນຊື່ຕັດກັນຢູ່ເມັດ O, ພວກມັນຈະປະກອບເປັນສອງຄູ່ມຸມທີ່ຢູ່ກົງກັນຂ້າມກັນ ເອີ້ນວ່າ "}<strong>{"ມຸມຂ້າມຈອມ"}</strong>{"."}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2", display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ຄຸນລັກສະນະທີ່ສຳຄັນ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ຄຸນລັກສະນະທີ່ສຳຄັນ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6" }}>
                 {"ສອງມຸມຂ້າມຈອມກັນ ຈະມີຂະໜາດເທົ່າກັນສະເໝີ!"}
                 <br />

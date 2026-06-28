@@ -174,8 +174,8 @@ export const unit2Data: UnitData = {
                       <td style={{ textAlign: "left", paddingRight: "15px", borderBottom: "2px solid #000", fontFamily: "monospace", whiteSpace: "pre" }}>{"-50 "}</td>
                       <td style={{ borderLeft: "2px solid #000", paddingLeft: "15px" }}>
                         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", paddingTop: "12px", width: "fit-content" }}>
-                          <span>{"2"}<span style={{ color: "red" }}>{"."}</span>{"6"}</span>
-                          <span style={{ color: "red", fontSize: "14px", marginTop: "2px" }}>{"↑"}</span>
+                          <span>{"2"}<span style={{ color: "red" }, whiteSpace: "nowrap"}>{"."}</span>{"6"}</span>
+                          <span style={{ color: "red", fontSize: "14px", marginTop: "2px" }, whiteSpace: "nowrap"}>{"↑"}</span>
                         </div>
                       </td>
                     </tr>
@@ -243,7 +243,7 @@ export const unit2Data: UnitData = {
                   flexWrap: "nowrap",
                 }}
               >
-                <span style={{ fontSize: "20px", fontWeight: "bold" }}>
+                <span style={{ fontSize: "20px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                   {"(1)"}
                 </span>
                 <table
@@ -323,7 +323,7 @@ export const unit2Data: UnitData = {
                   flexWrap: "nowrap",
                 }}
               >
-                <span style={{ fontSize: "20px", fontWeight: "bold" }}>
+                <span style={{ fontSize: "20px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                   {"(2)"}
                 </span>
                 <table

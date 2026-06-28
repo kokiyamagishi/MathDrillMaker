@@ -55,7 +55,7 @@ export const unit9Data: UnitData = {
                   />
                 </svg>
               </div>
-              <span style={{ fontSize: "22px" }}>{"ມີ 1 ຄູ່ຂ້າງຂະໜານກັນ"}</span>
+              <span style={{ fontSize: "22px" }, whiteSpace: "nowrap"}>{"ມີ 1 ຄູ່ຂ້າງຂະໜານກັນ"}</span>
             </div>
 
             {/* Parallelogram */}
@@ -88,7 +88,7 @@ export const unit9Data: UnitData = {
                   />
                 </svg>
               </div>
-              <span style={{ fontSize: "22px" }}>{"ມີ 2 ຄູ່ຂ້າງຂະໜານກັນ"}</span>
+              <span style={{ fontSize: "22px" }, whiteSpace: "nowrap"}>{"ມີ 2 ຄູ່ຂ້າງຂະໜານກັນ"}</span>
             </div>
 
             {/* Rhombus */}
@@ -119,7 +119,7 @@ export const unit9Data: UnitData = {
                   />
                 </svg>
               </div>
-              <span style={{ fontSize: "22px" }}>{"ມີ 4 ຂ້າງຍາວເທົ່າກັນ"}</span>
+              <span style={{ fontSize: "22px" }, whiteSpace: "nowrap"}>{"ມີ 4 ຂ້າງຍາວເທົ່າກັນ"}</span>
             </div>
           </div>
         </div>
@@ -155,7 +155,7 @@ export const unit9Data: UnitData = {
                   flexWrap: "wrap",
                 }}
               >
-                <span style={{ fontSize: "20px", fontWeight: "bold" }}>
+                <span style={{ fontSize: "20px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                   {"(1)"}
                 </span>
                 <svg width="120" height="80">
@@ -190,7 +190,7 @@ export const unit9Data: UnitData = {
                   flexWrap: "wrap",
                 }}
               >
-                <span style={{ fontSize: "20px", fontWeight: "bold" }}>
+                <span style={{ fontSize: "20px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                   {"(2)"}
                 </span>
                 <svg width="120" height="80">

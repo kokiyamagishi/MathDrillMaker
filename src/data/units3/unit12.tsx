@@ -153,7 +153,7 @@ export const unit12Data: UnitData = {
                   color: "#D32F2F",
                   fontWeight: "bold",
                   fontSize: "22px",
-                }}
+                }, whiteSpace: "nowrap"}
               >
                 {"ຄຳຕອບ: 25 ເສດ 1"}
               </span>
@@ -250,7 +250,7 @@ export const unit12Data: UnitData = {
                     fontSize: "24px",
                   }}
                 >
-                  <span style={{ fontWeight: "bold", fontSize: "18px" }}>
+                  <span style={{ fontWeight: "bold", fontSize: "18px" }, whiteSpace: "nowrap"}>
                     {item.n}
                   </span>
                   <span>{item.q}</span>
@@ -346,7 +346,7 @@ export const unit12Data: UnitData = {
                       fontSize: "24px",
                     }}
                   >
-                    <span style={{ fontWeight: "bold", fontSize: "18px" }}>
+                    <span style={{ fontWeight: "bold", fontSize: "18px" }, whiteSpace: "nowrap"}>
                       {item.n}
                     </span>
                     <span>{item.q}</span>
@@ -457,7 +457,7 @@ export const unit12Data: UnitData = {
                     fontSize: "24px",
                   }}
                 >
-                  <span style={{ fontWeight: "bold", fontSize: "18px" }}>
+                  <span style={{ fontWeight: "bold", fontSize: "18px" }, whiteSpace: "nowrap"}>
                     {item.n}
                   </span>
                   <span>{item.q}</span>

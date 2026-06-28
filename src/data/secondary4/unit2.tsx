@@ -3,9 +3,9 @@ import { UnitData } from "../units2";
 
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }, whiteSpace: "nowrap"}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{den}</span>
   </span>
 );
 
@@ -56,8 +56,8 @@ export const unit2Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center" }}>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center" }, whiteSpace: "nowrap"}>
                     <Fraction num="5𝑥²" den="7" /> {" × "} <Fraction num="14" den="15𝑥" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
@@ -65,8 +65,8 @@ export const unit2Data: UnitData = {
                 
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center" }}>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center" }, whiteSpace: "nowrap"}>
                     <Fraction num="8𝑥²" den="𝑦³" /> {" × "} <Fraction num="𝑦" den="4𝑥" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
@@ -86,8 +86,8 @@ export const unit2Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center" }}>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center" }, whiteSpace: "nowrap"}>
                     <Fraction num="𝑥² - 9" den="𝑥" /> {" × "} <Fraction num="18" den="𝑥 + 3" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
@@ -95,8 +95,8 @@ export const unit2Data: UnitData = {
 
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center" }}>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center" }, whiteSpace: "nowrap"}>
                     <Fraction num="𝑥² - 16" den="𝑥² - 3𝑥" /> {" × "} <Fraction num="𝑥" den="𝑥 - 4" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
@@ -148,8 +148,8 @@ export const unit2Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center" }}>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center" }, whiteSpace: "nowrap"}>
                     <Fraction num="5𝑥" den="3" /> {" ÷ "} <Fraction num="10" den="9𝑥²" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
@@ -157,8 +157,8 @@ export const unit2Data: UnitData = {
                 
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center" }}>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center" }, whiteSpace: "nowrap"}>
                     <Fraction num="8𝑥" den="𝑦²" /> {" ÷ "} <Fraction num="12𝑥" den="4𝑦" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
@@ -178,8 +178,8 @@ export const unit2Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{""}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center" }}>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{""}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center" }, whiteSpace: "nowrap"}>
                     <Fraction num="𝑦" den="𝑦 - 1" /> {" ÷ "} <Fraction num="𝑦²" den="𝑦² - 1" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
@@ -187,7 +187,7 @@ export const unit2Data: UnitData = {
 
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ display: "inline-flex", alignItems: "center" }}>
+                  <span style={{ display: "inline-flex", alignItems: "center" }, whiteSpace: "nowrap"}>
                     <Fraction num="t² - 16" den="t² - 9" /> {" ÷ "} <Fraction num="t - 4" den="t + 3" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>

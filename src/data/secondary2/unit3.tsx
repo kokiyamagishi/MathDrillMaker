@@ -3,9 +3,9 @@ import { UnitData } from "../units2";
 
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }, whiteSpace: "nowrap"}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{den}</span>
   </span>
 );
 
@@ -90,7 +90,7 @@ export const unit3Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px 24px", padding: "8px 0" }}>
                 {/* 5 Questions */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="36" den="30" /> {" ="}
                   </span>
@@ -98,7 +98,7 @@ export const unit3Data: UnitData = {
                 </div>
                 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="24" den="36" /> {" ="}
                   </span>
@@ -106,7 +106,7 @@ export const unit3Data: UnitData = {
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="15" den="25" /> {" ="}
                   </span>
@@ -114,7 +114,7 @@ export const unit3Data: UnitData = {
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="45" den="60" /> {" ="}
                   </span>
@@ -122,7 +122,7 @@ export const unit3Data: UnitData = {
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="56" den="64" /> {" ="}
                   </span>
@@ -195,40 +195,40 @@ export const unit3Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px 24px", padding: "8px 0" }}>
                 {/* 5 Questions */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }, whiteSpace: "nowrap"}>
                     {"ພູດຮ່ວມຂອງ "} <Fraction num="3" den="8" /> {" ແລະ "} <Fraction num="5" den="24" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }, whiteSpace: "nowrap"}>
                     {"ພູດຮ່ວມຂອງ "} <Fraction num="1" den="4" /> {" ແລະ "} <Fraction num="5" den="6" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }, whiteSpace: "nowrap"}>
                     {"ພູດຮ່ວມຂອງ "} <Fraction num="2" den="3" /> {" ແລະ "} <Fraction num="1" den="5" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }, whiteSpace: "nowrap"}>
                     {"ພູດຮ່ວມຂອງ "} <Fraction num="5" den="12" /> {" ແລະ "} <Fraction num="7" den="18" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }, whiteSpace: "nowrap"}>
                     {"ພູດຮ່ວມຂອງ "} <Fraction num="3" den="10" /> {" ແລະ "} <Fraction num="4" den="15" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
@@ -262,7 +262,7 @@ export const unit3Data: UnitData = {
                   <rect x="5" y="48" width="50" height="47" fill="#90CAF9" rx="2" />
                   <text x="30" y="70" fill="#0D47A1" fontSize="11" fontWeight="bold" textAnchor="middle">{"5/8 L"}</text>
                 </svg>
-                <span style={{ fontSize: "1.1rem" }}>{"ຂວດໃບທີ 1"}</span>
+                <span style={{ fontSize: "1.1rem" }, whiteSpace: "nowrap"}>{"ຂວດໃບທີ 1"}</span>
               </div>
               {/* Bottle 2 Graphic */}
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
@@ -272,7 +272,7 @@ export const unit3Data: UnitData = {
                   <rect x="5" y="51" width="50" height="44" fill="#BBDEFB" rx="2" />
                   <text x="30" y="70" fill="#1565C0" fontSize="11" fontWeight="bold" textAnchor="middle">{"7/12 L"}</text>
                 </svg>
-                <span style={{ fontSize: "1.1rem" }}>{"ຂວດໃບທີ 2"}</span>
+                <span style={{ fontSize: "1.1rem" }, whiteSpace: "nowrap"}>{"ຂວດໃບທີ 2"}</span>
               </div>
             </div>
             <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>

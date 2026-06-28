@@ -17,7 +17,7 @@ export const unit17Data: UnitData = {
               {"ຕຳລາຂັ້ນສອງ y = ax² + bx + c ສາມາດຂຽນໃນຮູບຮ່າງ Canonical ໄດ້ດັ່ງນີ້:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#F3E5F5", borderRadius: "8px", border: "1px solid #E1BEE7" }}>
-              <span style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#4A148C" }}>
+              <span style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#4A148C" }, whiteSpace: "nowrap"}>
                 {"y = a(x + b/(2a))² - Δ/(4a)"}
               </span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
@@ -108,7 +108,7 @@ export const unit17Data: UnitData = {
               }
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ການຍ້າຍຂະໜານລະຫວ່າງເມັດຈອມ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ການຍ້າຍຂະໜານລະຫວ່າງເມັດຈອມ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ໄລຍະການຍ້າຍຂະໜານຈາກ y_1 = a(x - p_1)² + q_1 ຫາ y_2 = a(x - p_2)² + q_2 ແມ່ນ:"}
                 <br />

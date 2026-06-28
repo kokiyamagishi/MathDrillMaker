@@ -25,7 +25,7 @@ export const unit19Data: UnitData = {
             </ol>
             
             <div style={{ padding: "16px", backgroundColor: "#F1F8E9", borderRadius: "8px", border: "1px solid #DCEDC8" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#33691E" }}>{"ການເຄິ່ງຄືຂອງເສັ້ນຊື່ k ທຽບໃສ່ d:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#33691E" }, whiteSpace: "nowrap"}>{"ການເຄິ່ງຄືຂອງເສັ້ນຊື່ k ທຽບໃສ່ d:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6", marginTop: "8px" }}>
                 <li>{"ຖ້າເສັ້ນຊື່ k ຕັດແກນ d ຢູ່ຈຸດ I: ເສັ້ນຊື່ເຄິ່ງຄື k′ ຈະຕັດ d ຢູ່ຈຸດ I ເຊັ່ນກັນ. ເຮົາພຽງແຕ່ຫາເມັດເຄິ່ງຄື A′ ຂອງຈຸດ A ໃດໜຶ່ງຢູ່ເທິງ k, ແລ້ວຂີດເສັ້ນຊື່ (IA′)."}</li>
                 <li>{"ຖ້າເສັ້ນຊື່ k // d (ຂະໜານ): ເສັ້ນຊື່ເຄິ່ງຄື k′ ຈະຂະໜານກັບ d ແລະ k ເຊັ່ນກັນ."}</li>
@@ -51,7 +51,7 @@ export const unit19Data: UnitData = {
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
                   <p style={{ margin: 0, lineHeight: "1.5" }}>
-                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                     {"ຖ້າເສັ້ນຊື່ k ຂະໜານກັບ d, ເສັ້ນຊື່ເຄິ່ງຄື k′ ຂອງມັນທຽບໃສ່ d ຈະ:"}
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
@@ -64,7 +64,7 @@ export const unit19Data: UnitData = {
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
                   <p style={{ margin: 0, lineHeight: "1.5" }}>
-                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                     {"ຖ້າເສັ້ນຊື່ k ຕັດ d ຢູ່ເມັດ I, ເສັ້ນຊື່ເຄິ່ງຄື k′ ຈະຕັດ d ຢູ່ເມັດ:"}
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
@@ -127,13 +127,13 @@ export const unit19Data: UnitData = {
               
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span>{"ຮູບສາມແຈສະເໝີ ມີທັງໝົດ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"ແກນເຄິ່ງຄື."}</span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span>{"ຮູບຈະຕຸລັດ ມີທັງໝົດ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"ແກນເຄິ່ງຄື."}</span>

@@ -3,17 +3,17 @@ import { UnitData } from "../units2";
 
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }, whiteSpace: "nowrap"}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{den}</span>
   </span>
 );
 
 // Specifically smaller Fraction component for the formula box to guarantee it fits beautifully
 const SmallFraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 2px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 1px", lineHeight: "1.1", fontSize: "1.05rem" }}>{num}</span>
-    <span style={{ padding: "0 1px", lineHeight: "1.1", fontSize: "1.05rem" }}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 2px" }, whiteSpace: "nowrap"}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 1px", lineHeight: "1.1", fontSize: "1.05rem" }, whiteSpace: "nowrap"}>{num}</span>
+    <span style={{ padding: "0 1px", lineHeight: "1.1", fontSize: "1.05rem" }, whiteSpace: "nowrap"}>{den}</span>
   </span>
 );
 
@@ -36,7 +36,7 @@ export const unit2Data: UnitData = {
             {/* Visual Formula block - smaller text size to perfectly fit */}
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "12px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", margin: "4px 0" }}>
               <span className="math" style={{ fontSize: "1.15rem", display: "inline-flex", alignItems: "center", gap: "6px", flexWrap: "wrap", justifyContent: "center" }}>
-                <span style={{ fontWeight: "bold" }}>{"LCM ຂອງເລກສ່ວນ ="}</span> 
+                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"LCM ຂອງເລກສ່ວນ ="}</span> 
                 <SmallFraction num="LCM (ຂອງຕົວເສດ)" den="GCD (ຂອງຕົວສ່ວນ)" />
               </span>
             </div>
@@ -46,14 +46,14 @@ export const unit2Data: UnitData = {
               <strong>{"ຕົວຢ່າງ: "}</strong>{"ຊອກຫາ LCM ຂອງ "} <Fraction num="2" den="9" /> {" ແລະ "} <Fraction num="5" den="12" />
               <div style={{ padding: "10px", backgroundColor: "#FFFFFF", borderRadius: "8px", border: "1px solid #FFE082", fontSize: "1.1rem", marginTop: "6px", display: "flex", flexDirection: "column", gap: "6px", color: "#37474F" }}>
                 <div>
-                  <span style={{ fontWeight: "bold", color: "#1565C0" }}>{"ຂັ້ນຕອນທີ 1: ຊອກຫາ LCM ຂອງຕົວເສດ (2 ແລະ 5)"}</span>
+                  <span style={{ fontWeight: "bold", color: "#1565C0" }, whiteSpace: "nowrap"}>{"ຂັ້ນຕອນທີ 1: ຊອກຫາ LCM ຂອງຕົວເສດ (2 ແລະ 5)"}</span>
                   <div style={{ paddingLeft: "12px", marginTop: "2px" }}>
                     {"• ທະວີຄູນຂອງ 2: 2, 4, 6, 8, "}<strong>{"10"}</strong>{", 12, ..."} <br />
                     {"• ທະວີຄູນຂອງ 5: 5, "}<strong>{"10"}</strong>{", 15, ..."} ➔ LCM = 10
                   </div>
                 </div>
                 <div style={{ borderTop: "1px solid #FFE082", paddingTop: "6px" }}>
-                  <span style={{ fontWeight: "bold", color: "#E65100" }}>{"ຂັ້ນຕອນທີ 2: ຊອກຫາ GCD ຂອງຕົວສ່ວນ (9 ແລະ 12)"}</span>
+                  <span style={{ fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ຂັ້ນຕອນທີ 2: ຊອກຫາ GCD ຂອງຕົວສ່ວນ (9 ແລະ 12)"}</span>
                   <div style={{ paddingLeft: "12px", marginTop: "2px" }}>
                     {"• ອຸປະຄູນ ຂອງ 9: 1, "}<strong>{"3"}</strong>{", 9"} <br />
                     {"• ອຸປະຄູນ ຂອງ 12: 1, 2, "}<strong>{"3"}</strong>{", 4, 6, 12"} ➔ GCD = 3
@@ -83,7 +83,7 @@ export const unit2Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px 24px", padding: "8px 0" }}>
                 {/* 5 Questions */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     {"LCM ຂອງ "} <Fraction num="2" den="9" /> {" ແລະ "} <Fraction num="5" den="12" /> {" ="}
                   </span>
@@ -91,7 +91,7 @@ export const unit2Data: UnitData = {
                 </div>
                 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     {"LCM ຂອງ "} <Fraction num="3" den="4" /> {" ແລະ "} <Fraction num="9" den="10" /> {" ="}
                   </span>
@@ -99,7 +99,7 @@ export const unit2Data: UnitData = {
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     {"LCM ຂອງ "} <Fraction num="1" den="3" /> {" ແລະ "} <Fraction num="2" den="5" /> {" ="}
                   </span>
@@ -107,7 +107,7 @@ export const unit2Data: UnitData = {
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     {"LCM ຂອງ "} <Fraction num="4" den="5" /> {" ແລະ "} <Fraction num="6" den="7" /> {" ="}
                   </span>
@@ -115,7 +115,7 @@ export const unit2Data: UnitData = {
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     {"LCM ຂອງ "} <Fraction num="5" den="6" /> {" ແລະ "} <Fraction num="7" den="8" /> {" ="}
                   </span>
@@ -140,7 +140,7 @@ export const unit2Data: UnitData = {
             {/* Visual Formula block - smaller text size to perfectly fit */}
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "12px", backgroundColor: "#E8F5E9", borderRadius: "10px", border: "1px solid #A5D6A7", margin: "4px 0" }}>
               <span className="math" style={{ fontSize: "1.15rem", display: "inline-flex", alignItems: "center", gap: "6px", flexWrap: "wrap", justifyContent: "center" }}>
-                <span style={{ fontWeight: "bold" }}>{"GCD ຂອງເລກສ່ວນ ="}</span> 
+                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"GCD ຂອງເລກສ່ວນ ="}</span> 
                 <SmallFraction num="GCD (ຂອງຕົວເສດ)" den="LCM (ຂອງຕົວສ່ວນ)" />
               </span>
             </div>
@@ -150,14 +150,14 @@ export const unit2Data: UnitData = {
               <strong>{"ຕົວຢ່າງ: "}</strong>{"ຊອກຫາ GCD ຂອງ "} <Fraction num="12" den="5" /> {" ແລະ "} <Fraction num="2" den="25" />
               <div style={{ padding: "10px", backgroundColor: "#FFFFFF", borderRadius: "8px", border: "1px solid #FFE082", fontSize: "1.1rem", marginTop: "6px", display: "flex", flexDirection: "column", gap: "6px", color: "#37474F" }}>
                 <div>
-                  <span style={{ fontWeight: "bold", color: "#2E7D32" }}>{"ຂັ້ນຕອນທີ 1: ຊອກຫາ GCD ຂອງຕົວເສດ (12 ແລະ 2)"}</span>
+                  <span style={{ fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"ຂັ້ນຕອນທີ 1: ຊອກຫາ GCD ຂອງຕົວເສດ (12 ແລະ 2)"}</span>
                   <div style={{ paddingLeft: "12px", marginTop: "2px" }}>
                     {"• ອຸປະຄູນ ຂອງ 12: 1, "}<strong>{"2"}</strong>{", 3, 4, 6, 12"} <br />
                     {"• ອຸປະຄູນ ຂອງ 2: 1, "}<strong>{"2"}</strong> ➔ GCD = 2
                   </div>
                 </div>
                 <div style={{ borderTop: "1px solid #FFE082", paddingTop: "6px" }}>
-                  <span style={{ fontWeight: "bold", color: "#1565C0" }}>{"ຂັ້ນຕອນທີ 2: ຊອກຫາ LCM ຂອງຕົວສ່ວນ (5 ແລະ 25)"}</span>
+                  <span style={{ fontWeight: "bold", color: "#1565C0" }, whiteSpace: "nowrap"}>{"ຂັ້ນຕອນທີ 2: ຊອກຫາ LCM ຂອງຕົວສ່ວນ (5 ແລະ 25)"}</span>
                   <div style={{ paddingLeft: "12px", marginTop: "2px" }}>
                     {"• ທະວີຄູນ ຂອງ 5: 5, 10, 15, 20, "}<strong>{"25"}</strong>{", 30, ..."} <br />
                     {"• ທະວີຄູນ ຂອງ 25: "}<strong>{"25"}</strong>{", 50, ..."} ➔ LCM = 25
@@ -187,7 +187,7 @@ export const unit2Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px 24px", padding: "8px 0" }}>
                 {/* 5 Questions */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     {"GCD ຂອງ "} <Fraction num="12" den="5" /> {" ແລະ "} <Fraction num="2" den="25" /> {" ="}
                   </span>
@@ -195,7 +195,7 @@ export const unit2Data: UnitData = {
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     {"GCD ຂອງ "} <Fraction num="8" den="9" /> {" ແລະ "} <Fraction num="6" den="15" /> {" ="}
                   </span>
@@ -203,7 +203,7 @@ export const unit2Data: UnitData = {
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     {"GCD ຂອງ "} <Fraction num="3" den="8" /> {" ແລະ "} <Fraction num="9" den="20" /> {" ="}
                   </span>
@@ -211,7 +211,7 @@ export const unit2Data: UnitData = {
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     {"GCD ຂອງ "} <Fraction num="4" den="7" /> {" ແລະ "} <Fraction num="6" den="21" /> {" ="}
                   </span>
@@ -219,7 +219,7 @@ export const unit2Data: UnitData = {
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     {"GCD ຂອງ "} <Fraction num="5" den="12" /> {" ແລະ "} <Fraction num="15" den="18" /> {" ="}
                   </span>

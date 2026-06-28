@@ -23,7 +23,7 @@ export const unit12Data: UnitData = {
 
             <div style={{ display: "flex", justifyContent: "space-around", padding: "16px", backgroundColor: "#ECEFF1", borderRadius: "8px", border: "1px solid #CFD8DC" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
-                <span style={{ fontSize: "1.2rem", fontWeight: "bold" }}>{"ເສັ້ນຊື່ຂະໜານ (d₁ // d₂)"}</span>
+                <span style={{ fontSize: "1.2rem", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"ເສັ້ນຊື່ຂະໜານ (d₁ // d₂)"}</span>
                 <svg width="120" height="80">
                   <line x1="10" y1="25" x2="110" y2="25" stroke="#37474F" strokeWidth="3" />
                   <line x1="10" y1="55" x2="110" y2="55" stroke="#37474F" strokeWidth="3" />
@@ -32,7 +32,7 @@ export const unit12Data: UnitData = {
                 </svg>
               </div>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
-                <span style={{ fontSize: "1.2rem", fontWeight: "bold" }}>{"ເສັ້ນຊື່ຕັ້ງສາກ (d₁ ⊥ d₂)"}</span>
+                <span style={{ fontSize: "1.2rem", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"ເສັ້ນຊື່ຕັ້ງສາກ (d₁ ⊥ d₂)"}</span>
                 <svg width="120" height="80">
                   <line x1="60" y1="10" x2="60" y2="70" stroke="#37474F" strokeWidth="3" />
                   <line x1="20" y1="40" x2="100" y2="40" stroke="#37474F" strokeWidth="3" />
@@ -62,7 +62,7 @@ export const unit12Data: UnitData = {
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
                   <p style={{ margin: 0, lineHeight: "1.5" }}>
-                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                     {"ຖ້າສອງເສັ້ນຊື່ d₁ ແລະ d₂ ບໍ່ມີເມັດຮ່ວມກັນເລີຍ, ເຮົາຂຽນ:"}
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
@@ -75,7 +75,7 @@ export const unit12Data: UnitData = {
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
                   <p style={{ margin: 0, lineHeight: "1.5" }}>
-                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                     {"ຖ້າສອງເສັ້ນຊື່ d₁ ແລະ d₂ ຕັດກັນເປັນມຸມ 90°, ເຮົາຂຽນ:"}
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
@@ -120,7 +120,7 @@ export const unit12Data: UnitData = {
             </ul>
 
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2", display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ສະຫຼຸບເປັນສູດສັນຍະລັກ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ສະຫຼຸບເປັນສູດສັນຍະລັກ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6" }}>
                 <li>{"ຖ້າ d₁ ⊥ d₃ ແລະ d₂ ⊥ d₃  ⇒  d₁ // d₂"}</li>
                 <li>{"ຖ້າ d₁ // d₂ ແລະ d₃ ⊥ d₁  ⇒  d₃ ⊥ d₂"}</li>
@@ -146,7 +146,7 @@ export const unit12Data: UnitData = {
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
                   <p style={{ margin: 0, lineHeight: "1.5" }}>
-                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                     {"ຖ້າ d₁ ⊥ d₃ ແລະ d₂ ⊥ d₃ ແລ້ວສະຫຼຸບໄດ້ວ່າ:"}
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
@@ -158,7 +158,7 @@ export const unit12Data: UnitData = {
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
                   <p style={{ margin: 0, lineHeight: "1.5" }}>
-                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                     {"ຖ້າ d₁ // d₂ ແລະ d₃ ⊥ d₁ ແລ້ວສະຫຼຸບໄດ້ວ່າ:"}
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>

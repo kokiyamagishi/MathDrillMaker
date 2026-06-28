@@ -3,9 +3,9 @@ import { UnitData } from "../units2";
 
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }, whiteSpace: "nowrap"}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{den}</span>
   </span>
 );
 
@@ -65,35 +65,35 @@ export const unit25Data: UnitData = {
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span>{"ທ້າວ ສົມພອນ ມີເງິນ 50,000 ກີບ. ລາວຊື້ປຶ້ມຫົວລະ 8,000 ກີບ. ລາວຈະຊື້ປຶ້ມໄດ້ຫຼາຍສຸດຈັກຫົວ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ຫົວ"}</span>
                 </div>
                 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span>{"ນາງ ມະລີ ມີເງິນ 100,000 ກີບ. ລາວຊື້ກະເປົາໜຶ່ງໃບລາຄາ 40,000 ກີບ ແລະ ຢາກຊື້ປາກກາຫົວລະ 12,000 ກີບ. ລາວຈະຊື້ປາກກາໄດ້ຫຼາຍສຸດຈັກກ້ານ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ກ້ານ"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
                   <span>{"ຫ້ອງຮຽນໜຶ່ງມີງົບປະມານບໍ່ເກີນ 80,000 ກີບ ເພື່ອຊື້ດອກໄມ້ປະດັບລາຄາ 15,000 ກີບຕໍ່ກະຖາງ. ພວກເຂົາຈະຊື້ໄດ້ຫຼາຍສຸດຈັກກະຖາງ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ກະຖາງ"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
                   <span>{"ທ້າວ ແດງ ມີເງິນ 60,000 ກີບ. ລາວຕ້ອງການຊື້ເຂົ້າໜົມຫໍ່ລະ 7,000 ກີບ ແລະ ໃຫ້ຍັງເຫຼືອເງິນຢ່າງໜ້ອຍ 10,000 ກີບ. ລາວຈະຊື້ເຂົ້າໜົມໄດ້ຫຼາຍສຸດຈັກຫໍ່?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ຫໍ່"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
                   <span>{"ຄອບຄົວໜຶ່ງມີເງິນ 150,000 ກີບ. ພວກເຂົາຊື້ຊີ້ນໝູລາຄາ 90,000 ກີບ ແລະ ຢາກຊື້ຜັກກາດມັດລະ 12,000 ກີບ. ພວກເຂົາຈະຊື້ຜັກກາດໄດ້ຫຼາຍສຸດຈັກມັດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ມັດ"}</span>
@@ -164,35 +164,35 @@ export const unit25Data: UnitData = {
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span>{"ຄະແນນເສັງ 3 ຄັ້ງທຳອິດຂອງ ທ້າວ ນ້ອຍ ແມ່ນ 7, 8, 8. ລາວຕ້ອງໄດ້ຄັ້ງທີ 4 ຢ່າງໜ້ອຍເທົ່າໃດ ເພື່ອໃຫ້ຄ່າສະເລ່ຍຢ່າງໜ້ອຍ 8 ຫຼັກ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ຄະແນນ"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span>{"ຄະແນນເສັງ 2 ຄັ້ງທຳອິດແມ່ນ 6 ແລະ 7. ຕ້ອງໄດ້ຄັ້ງທີ 3 ຢ່າງໜ້ອຍເທົ່າໃດ ເພື່ອໃຫ້ໄດ້ຄະແນນສະເລ່ຍຢ່າງໜ້ອຍ 7 ຫຼັກ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ຄະແນນ"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
                   <span>{"ຄະແນນເສັງ 3 ຄັ້ງທຳອິດແມ່ນ 15, 18, 16. ລາວຕ້ອງໄດ້ຄັ້ງທີ 4 ຢ່າງໜ້ອຍເທົ່າໃດ ເພື່ອໃຫ້ຄ່າສະເລ່ຍທັງໝົດຢ່າງໜ້ອຍ 17 ຄະແນນ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ຄະແນນ"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
                   <span>{"ຄະແນນເສັງ 3 ຄັ້ງທຳອິດແມ່ນ 8, 9, 7. ລາວຕ້ອງໄດ້ຄັ້ງທີ 4 ຢ່າງໜ້ອຍເທົ່າໃດ ເພື່ອໃຫ້ໄດ້ຄະແນນສະເລ່ยຢ່າງໜ້ອຍ 8.5 ຫຼັກ? (ຕອບເປັນທົດສະນິຍົມ)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ຄະແນນ"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
                   <span>{"ນາງ ດີ ມີຄະແນນສະເລ່ຍ 4 ວິຊາແມ່ນ 8.25. ຖ້າເສັງວິຊາທີ 5, ລາວຕ້ອງໄດ້ຢ່າງໜ້ອຍເທົ່າໃດ ເພື່ອໃຫ້ຄະແນນສະເລ່ຍທັງໝົດຂຶ້ນຮອດ 8.5 ຫຼັກ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ຄະແນນ"}</span>

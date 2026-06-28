@@ -480,27 +480,27 @@ export const unit4Data: UnitData = {
               >
                 <div>
                   <span>{"(1) 7 cm + 5 cm"}</span>
-                  <span style={{ marginLeft: "12px" }}>
+                  <span style={{ marginLeft: "12px" }, whiteSpace: "nowrap"}>
                     {"="} <span className="answer-blank"></span> {"cm"}
                   </span>
                 </div>
                 <div>
                   <span>{"(2) 15 mm + 5 mm"}</span>
-                  <span style={{ marginLeft: "12px" }}>
+                  <span style={{ marginLeft: "12px" }, whiteSpace: "nowrap"}>
                     {"="} <span className="answer-blank"></span> {"mm = "}{" "}
                     <span className="answer-blank"></span> {"cm"}
                   </span>
                 </div>
                 <div>
                   <span>{"(3) 6 cm 4 mm + 5 mm"}</span>
-                  <span style={{ marginLeft: "12px" }}>
+                  <span style={{ marginLeft: "12px" }, whiteSpace: "nowrap"}>
                     {"="} <span className="answer-blank"></span> {"cm "}{" "}
                     <span className="answer-blank"></span> {"mm"}
                   </span>
                 </div>
                 <div>
                   <span>{"(4) 8 cm 7 mm − 3 cm"}</span>
-                  <span style={{ marginLeft: "12px" }}>
+                  <span style={{ marginLeft: "12px" }, whiteSpace: "nowrap"}>
                     {"="} <span className="answer-blank"></span> {"cm "}{" "}
                     <span className="answer-blank"></span> {"mm"}
                   </span>

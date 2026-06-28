@@ -215,7 +215,7 @@ export const unit1Data: UnitData = {
                   gap: "12px",
                 }}
               >
-                <span style={{ fontWeight: "bold", fontSize: "20px" }}>
+                <span style={{ fontWeight: "bold", fontSize: "20px" }, whiteSpace: "nowrap"}>
                   {"(1)"}
                 </span>
                 <div
@@ -432,7 +432,7 @@ export const unit1Data: UnitData = {
                   gap: "12px",
                 }}
               >
-                <span style={{ fontWeight: "bold", fontSize: "20px" }}>
+                <span style={{ fontWeight: "bold", fontSize: "20px" }, whiteSpace: "nowrap"}>
                   {"(2)"}
                 </span>
                 <div
@@ -1086,7 +1086,7 @@ export const unit1Data: UnitData = {
                     marginRight: "12px",
                     fontSize: "20px",
                     fontWeight: "bold",
-                  }}
+                  }, whiteSpace: "nowrap"}
                 >
                   {"(6)"}
                 </span>
@@ -1104,7 +1104,7 @@ export const unit1Data: UnitData = {
                     marginRight: "12px",
                     fontSize: "20px",
                     fontWeight: "bold",
-                  }}
+                  }, whiteSpace: "nowrap"}
                 >
                   {"(7)"}
                 </span>

@@ -72,37 +72,37 @@ export const unit2Data: UnitData = {
             
             <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                <span style={{ width: "30px", fontWeight: "bold" }}>{"(1)"}</span>
+                <span style={{ width: "30px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                 <div style={{ flex: 1 }}><ItemGrid item="🍓" count={3} columns={10} /></div>
                 <span>{"="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                <span style={{ width: "30px", fontWeight: "bold" }}>{"(2)"}</span>
+                <span style={{ width: "30px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                 <div style={{ flex: 1 }}><ItemGrid item="🍉" count={6} columns={10} /></div>
                 <span>{"="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                <span style={{ width: "30px", fontWeight: "bold" }}>{"(3)"}</span>
+                <span style={{ width: "30px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(3) "}</span>
                 <div style={{ flex: 1 }}><ItemGrid item="" count={0} columns={10} /></div>
                 <span>{"="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                <span style={{ width: "30px", fontWeight: "bold" }}>{"(4)"}</span>
+                <span style={{ width: "30px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(4) "}</span>
                 <div style={{ flex: 1 }}><ItemGrid item="🍊" count={8} columns={10} /></div>
                 <span>{"="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                <span style={{ width: "30px", fontWeight: "bold" }}>{"(5)"}</span>
+                <span style={{ width: "30px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(5) "}</span>
                 <div style={{ flex: 1 }}><ItemGrid item="🍒" count={2} columns={10} /></div>
                 <span>{"="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                <span style={{ width: "30px", fontWeight: "bold" }}>{"(6)"}</span>
+                <span style={{ width: "30px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(6) "}</span>
                 <div style={{ flex: 1 }}><ItemGrid item="🍎" count={10} columns={10} /></div>
                 <span>{"="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span>
@@ -120,19 +120,19 @@ export const unit2Data: UnitData = {
   
   {/* 1行目 */}
   <div style={{ display: "flex", gap: "4px", alignItems: "center", justifyContent: "center" }}>
-    <span>1</span><span style={{ margin: "0 4px" }}>{"→"}</span>
-    <span>2</span><span style={{ margin: "0 4px" }}>{"→"}</span>
-    <span className="answer-blank" style={{ display: "inline-block", width: "32px", height: "32px" }}></span><span style={{ margin: "0 4px" }}>{"→"}</span>
-    <span>4</span><span style={{ margin: "0 4px" }}>{"→"}</span>
+    <span>1</span><span style={{ margin: "0 4px" }, whiteSpace: "nowrap"}>{"→"}</span>
+    <span>2</span><span style={{ margin: "0 4px" }, whiteSpace: "nowrap"}>{"→"}</span>
+    <span className="answer-blank" style={{ display: "inline-block", width: "32px", height: "32px" }}></span><span style={{ margin: "0 4px" }, whiteSpace: "nowrap"}>{"→"}</span>
+    <span>4</span><span style={{ margin: "0 4px" }, whiteSpace: "nowrap"}>{"→"}</span>
     <span className="answer-blank" style={{ display: "inline-block", width: "32px", height: "32px" }}></span>
   </div>
 
   {/* 2行目 */}
   <div style={{ display: "flex", gap: "4px", alignItems: "center", justifyContent: "center" }}>
-    <span>6</span><span style={{ margin: "0 4px" }}>{"→"}</span>
-    <span>7</span><span style={{ margin: "0 4px" }}>{"→"}</span>
-    <span className="answer-blank" style={{ display: "inline-block", width: "32px", height: "32px" }}></span><span style={{ margin: "0 4px" }}>{"→"}</span>
-    <span>9</span><span style={{ margin: "0 4px" }}>{"→"}</span>
+    <span>6</span><span style={{ margin: "0 4px" }, whiteSpace: "nowrap"}>{"→"}</span>
+    <span>7</span><span style={{ margin: "0 4px" }, whiteSpace: "nowrap"}>{"→"}</span>
+    <span className="answer-blank" style={{ display: "inline-block", width: "32px", height: "32px" }}></span><span style={{ margin: "0 4px" }, whiteSpace: "nowrap"}>{"→"}</span>
+    <span>9</span><span style={{ margin: "0 4px" }, whiteSpace: "nowrap"}>{"→"}</span>
     <span className="answer-blank" style={{ display: "inline-block", width: "32px", height: "32px" }}></span>
   </div>
 </div>
@@ -182,7 +182,7 @@ export const unit2Data: UnitData = {
             <p>{"ທົດສອບປະຈຳບົດ: ຕື່ມຕົວເລກທີ່ຖືກຕ້ອງໃສ່ໃນບັອກໃຫ້ເປັນລຳດັບ: "} <span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span></p>
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold", width: "40px" }}>{"(1)"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", width: "40px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                 <span>0</span><span>,</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span><span>,</span>
                 <span>2</span><span>,</span>
@@ -190,7 +190,7 @@ export const unit2Data: UnitData = {
                 <span>4</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold", width: "40px" }}>{"(2)"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", width: "40px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                 <span>9</span><span>,</span>
                 <span>8</span><span>,</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span><span>,</span>
@@ -198,7 +198,7 @@ export const unit2Data: UnitData = {
                 <span>5</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold", width: "40px" }}>{"(3)"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", width: "40px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span><span>,</span>
                 <span>7</span><span>,</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span><span>,</span>
@@ -206,7 +206,7 @@ export const unit2Data: UnitData = {
                 <span>10</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold", width: "40px" }}>{"(4)"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", width: "40px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
                 <span>10</span><span>,</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span><span>,</span>
                 <span>8</span><span>,</span>
@@ -214,7 +214,7 @@ export const unit2Data: UnitData = {
                 <span>6</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "24px" }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold", width: "40px" }}>{"(5)"}</span>
+                <span style={{ fontSize: "18px", fontWeight: "bold", width: "40px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "40px" }}></span><span>,</span>
                 <span>2</span><span>,</span>
                 <span>3</span><span>,</span>

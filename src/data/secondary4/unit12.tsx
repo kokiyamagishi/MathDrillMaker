@@ -16,13 +16,13 @@ export const unit12Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຖ້າເຮົາມີຈຳນວນຈິງ a > 0 ແລະ ຈຳນວນຖ້ວນ p, q (ເຊິ່ງ q > 0), ເລກກຳລັງທີ່ມີຕົວຊີ້ບອກປົກກະຕິແມ່ນຖືກກຳນົດດ້ວຍ:"}
               <br />
-              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#1565C0", display: "block", textAlign: "center", margin: "12px 0" }}>
+              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#1565C0", display: "block", textAlign: "center", margin: "12px 0" }, whiteSpace: "nowrap"}>
                 {"a^(p/q) = ⁿ√(a^p) = (ⁿ√a)^p"}
               </span>
             </p>
             
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ຕົວຢ່າງການປ່ຽນຮູບແບບ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງການປ່ຽນຮູບແບບ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"- ຕົວຢ່າງ 1: "}<strong>{"8^(1/3) = ³√8 = ³√(2³) = 2"}</strong>
                 <br />

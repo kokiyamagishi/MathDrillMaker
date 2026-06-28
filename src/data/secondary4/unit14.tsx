@@ -17,7 +17,7 @@ export const unit14Data: UnitData = {
               {"ສຳປະສິດ a ຈະເປັນຕົວກຳນົດທັງທິດທາງ ແລະ ຄວາມກວ້າງ-ແຄບຂອງປາຣາໂບນ y = ax²:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ທິດທາງການຫງາຍ-ຂວ້ຳ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"ທິດທາງການຫງາຍ-ຂວ້ຳ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li><strong>{"ຖ້າ a > 0: "}</strong>{" ປາຣາໂບນຫງາຍ (opens upwards), ມີເມັດ O(0,0) ເປັນເມັດຕ່ຳສຸດ. ເຂດຄ່າ y ∈ [0, +∞[."}</li>
                 <li><strong>{"ຖ້າ a < 0: "}</strong>{" ປາຣາໂບນຂວ້ຳ (opens downwards), ມີເມັດ O(0,0) ເປັນເມັດສູງສຸດ. ເຂດຄ່າ y ∈ ]-∞, 0]."}</li>
@@ -92,7 +92,7 @@ export const unit14Data: UnitData = {
               {"ການແກ້ສົມຜົນ ax² = k ແມ່ນການຊອກຫາຈຸດຕັດລະຫວ່າງປາຣາໂບນ y = ax² ແລະ ເສັ້ນຊື່ y = k:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ວິທີການຄິດໄລ່:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ວິທີການຄິດໄລ່:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ສົມຜົນ: ax² = k  ⇒  x² = k/a."}
                 <br />

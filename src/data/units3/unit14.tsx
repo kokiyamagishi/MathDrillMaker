@@ -55,7 +55,7 @@ export const unit14Data: UnitData = {
                   fontSize: "24px",
                   fontWeight: "bold",
                   color: "#E53935",
-                }}
+                }, whiteSpace: "nowrap"}
               >
                 {"10 ເທື່ອຂອງ 0.1 ແມ່ນ 1"}
               </span>
@@ -100,7 +100,7 @@ export const unit14Data: UnitData = {
                     fontSize: "20px",
                   }}
                 >
-                  <span style={{ fontWeight: "bold" }}>{item.n}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{item.n}</span>
                   <span>{item.q}</span>
                   <span>{"= "}</span>
                   <span
@@ -149,7 +149,7 @@ export const unit14Data: UnitData = {
                     fontSize: "22px",
                   }}
                 >
-                  <span style={{ fontWeight: "bold" }}>{item.n}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{item.n}</span>
                   <span>{item.q}</span>
                   <span
                     className="answer-blank"
@@ -202,7 +202,7 @@ export const unit14Data: UnitData = {
                       fontSize: "22px",
                     }}
                   >
-                    <span style={{ fontWeight: "bold" }}>{item.n}</span>
+                    <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{item.n}</span>
                     <span>{item.q}</span>
                     <span
                       className="answer-blank"
@@ -297,7 +297,7 @@ export const unit14Data: UnitData = {
                     fontSize: "24px",
                   }}
                 >
-                  <span style={{ fontWeight: "bold" }}>{item.n}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{item.n}</span>
                   <span>{item.a}</span>
                   <span
                     className="answer-blank"

@@ -12,7 +12,7 @@ export const unit3Data: UnitData = {
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
           <p>{"ມາຮຽນຮູ້ກ່ຽວກັບລຳດັບ (ທີ) ນຳກັນ. ສັງເກດເບິ່ງແຖວຂອງສັດລຸ່ມນີ້:"}</p>
           <div style={{ marginTop: "8px", padding: "12px", border: "2px dashed #FF9800", borderRadius: "12px", backgroundColor: "#FFF3E0", fontSize: "16px" }}>
-            <span style={{ fontWeight: "bold", color: "#E65100", fontSize: "18px" }}>{"💡 ຕົວຢ່າງການຕອບ (ຕົວຢ່າງຂອງ 🐰 ກະຕ່າຍ):"}</span>
+            <span style={{ fontWeight: "bold", color: "#E65100", fontSize: "18px" }, whiteSpace: "nowrap"}>{"💡 ຕົວຢ່າງການຕອບ (ຕົວຢ່າງຂອງ 🐰 ກະຕ່າຍ):"}</span>
             <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginTop: "8px", lineHeight: "1.4" }}>
               <p>{"• ຖ້າຖາມວ່າ: "}<strong>{"\"🐰 ແມ່ນໂຕທີເທົ່າໃດຈາກຊ້າຍ?\""}</strong></p>
               <p style={{ paddingLeft: "16px", color: "#2196F3", fontWeight: "bold" }}>{"→ ຕອບ: ທີ 3 (ເພາະນັບເລີ່ມຈາກ 🐶 ໄປທາງຂວາ)"}</p>
@@ -102,23 +102,23 @@ export const unit3Data: UnitData = {
             <p>{"ທົດສອບປະຈຳບົດ: ຈົ່ງສັງເກດຮູບພາບແລ້ວຕອບຄຳຖາມ: "} <span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span></p>
             <section className="math-illustration" style={{ display: "flex", gap: "24px", justifyContent: "center", backgroundColor: "#E1F5FE", padding: "16px", borderRadius: "12px", boxSizing: "border-box", flexWrap: "nowrap", width: "100%" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px", flex: 1, minWidth: 0 }}>
-                <span style={{ fontSize: "32px", textAlign: "center" }}>🍎</span>
+                <span style={{ fontSize: "32px", textAlign: "center" }, whiteSpace: "nowrap"}>🍎</span>
                 <span style={{ fontSize: "16px", fontWeight: "bold", color: "#0288D1", textAlign: "center", display: "block", width: "100%", whiteSpace: "nowrap" }}>ໝາກແອັບເປິ້ນ</span>
               </div>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px", flex: 1, minWidth: 0 }}>
-                <span style={{ fontSize: "32px", textAlign: "center" }}>🍌</span>
+                <span style={{ fontSize: "32px", textAlign: "center" }, whiteSpace: "nowrap"}>🍌</span>
                 <span style={{ fontSize: "16px", fontWeight: "bold", color: "#0288D1", textAlign: "center", display: "block", width: "100%", whiteSpace: "nowrap" }}>ໝາກກ້ວຍ</span>
               </div>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px", flex: 1, minWidth: 0 }}>
-                <span style={{ fontSize: "32px", textAlign: "center" }}>🍊</span>
+                <span style={{ fontSize: "32px", textAlign: "center" }, whiteSpace: "nowrap"}>🍊</span>
                 <span style={{ fontSize: "16px", fontWeight: "bold", color: "#0288D1", textAlign: "center", display: "block", width: "100%", whiteSpace: "nowrap" }}>ໝາກກ້ຽງ</span>
               </div>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px", flex: 1, minWidth: 0 }}>
-                <span style={{ fontSize: "32px", textAlign: "center" }}>🍇</span>
+                <span style={{ fontSize: "32px", textAlign: "center" }, whiteSpace: "nowrap"}>🍇</span>
                 <span style={{ fontSize: "16px", fontWeight: "bold", color: "#0288D1", textAlign: "center", display: "block", width: "100%", whiteSpace: "nowrap" }}>ໝາກອະງຸ່ນ</span>
               </div>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px", flex: 1, minWidth: 0 }}>
-                <span style={{ fontSize: "32px", textAlign: "center" }}>🍉</span>
+                <span style={{ fontSize: "32px", textAlign: "center" }, whiteSpace: "nowrap"}>🍉</span>
                 <span style={{ fontSize: "16px", fontWeight: "bold", color: "#0288D1", textAlign: "center", display: "block", width: "100%", whiteSpace: "nowrap" }}>ໝາກໂມ</span>
               </div>
             </section>
@@ -126,9 +126,9 @@ export const unit3Data: UnitData = {
             <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "12px" }}>
               {/* Example question (ຕົວຢ່າງ) with red answer */}
               <div style={{ display: "flex", alignItems: "center", gap: "8px", color: "#555" }}>
-                <span style={{ fontWeight: "bold", color: "#D32F2F" }}>{"[ຕົວຢ່າງ]"}</span>
+                <span style={{ fontWeight: "bold", color: "#D32F2F" }, whiteSpace: "nowrap"}>{"[ຕົວຢ່າງ]"}</span>
                 <span>{"ໝາກກ້ວຍ 🍌 ແມ່ນໝາກໄມ້ທີເທົ່າໃດຈາກຊ້າຍ? ຕອບ: "}</span>
-                <span style={{ color: "#D32F2F", borderBottom: "2px solid #D32F2F", padding: "0 8px", fontWeight: "bold" }}>{"ທີ 2"}</span>
+                <span style={{ color: "#D32F2F", borderBottom: "2px solid #D32F2F", padding: "0 8px", fontWeight: "bold" }, whiteSpace: "nowrap"}>{"ທີ 2"}</span>
               </div>
               
               <p>{"(1) ໝາກອະງຸ່ນ 🍇 ແມ່ນໝາກໄມ້ທີເທົ່າໃດຈາກຊ້າຍ? ຕອບ: ທີ "} <span className="answer-blank" style={{ minWidth: "40px" }}></span></p>

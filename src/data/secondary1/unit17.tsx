@@ -23,7 +23,7 @@ export const unit17Data: UnitData = {
             </ul>
 
             <div style={{ padding: "16px", backgroundColor: "#E0F2F1", borderRadius: "8px", border: "1px solid #80CBC4", display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#004D40" }}>{"ແຜນວາດສອງເມັດເຄິ່ງຄືທຽບໃສ່ d"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#004D40" }, whiteSpace: "nowrap"}>{"ແຜນວາດສອງເມັດເຄິ່ງຄືທຽບໃສ່ d"}</span>
               <svg width="240" height="100">
                 <line x1="120" y1="10" x2="120" y2="90" stroke="#004D40" strokeWidth="3" />
                 <text x="130" y="20" fontSize="14" fontWeight="bold" fill="#004D40">{"d (ແກນເຄິ່ງຄື)"}</text>
@@ -40,7 +40,7 @@ export const unit17Data: UnitData = {
                 <circle cx="120" cy="50" r="3" fill="#000" />
                 <text x="125" y="65" fontSize="12" fontWeight="bold">{"H"}</text>
               </svg>
-              <span style={{ fontSize: "1.2rem", fontStyle: "italic", color: "#00796B" }}>{"AH = A′H  ແລະ  (AA′) ⊥ d ຢູ່ H"}</span>
+              <span style={{ fontSize: "1.2rem", fontStyle: "italic", color: "#00796B" }, whiteSpace: "nowrap"}>{"AH = A′H  ແລະ  (AA′) ⊥ d ຢູ່ H"}</span>
             </div>
           </div>
         ),
@@ -61,7 +61,7 @@ export const unit17Data: UnitData = {
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
                   <div style={{ display: "flex", gap: "8px" }}>
-                    <span style={{ fontWeight: "bold", flexShrink: 0 }}>{"(1)"}</span>
+                    <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(1) "}</span>
                     <span>{"ຖ້າ A ແລະ A′ ເຄິ່ງຄືກັນທຽບໃສ່ d ຢູ່ຈຸດຕັດ H, ແລ້ວທ່ອນຊື່ AH ຈະມີລັກສະນະແນວໃດກັບທ່ອນຊື່ A′H?"}</span>
                   </div>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
@@ -73,7 +73,7 @@ export const unit17Data: UnitData = {
                 
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
                   <div style={{ display: "flex", gap: "8px" }}>
-                    <span style={{ fontWeight: "bold", flexShrink: 0 }}>{"(2)"}</span>
+                    <span style={{ fontWeight: "bold", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(2) "}</span>
                     <span>{"ເສັ້ນຊື່ (AA′) ແລະ ແກນເຄິ່ງຄື d ຈະມີລັກສະນະການພົວພັນກັນແນວໃດ?"}</span>
                   </div>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
@@ -98,11 +98,11 @@ export const unit17Data: UnitData = {
                   <span>{"ປະໂຫຍກສັນຍະລັກ:"}</span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap" }}>
-                  <span style={{ flexShrink: 0 }}>{"AA′ ="}</span>
+                  <span style={{ flexShrink: 0 }, whiteSpace: "nowrap"}>{"AA′ ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
-                  <span style={{ flexShrink: 0 }}>{"= "}</span>
+                  <span style={{ flexShrink: 0 }, whiteSpace: "nowrap"}>{"= "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "30px", height: "42px", flexShrink: 0 }}></span>
-                  <span style={{ flexShrink: 0 }}>{"cm"}</span>
+                  <span style={{ flexShrink: 0 }, whiteSpace: "nowrap"}>{"cm"}</span>
                 </div>
               </div>
             </div>

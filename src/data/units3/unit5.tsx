@@ -147,7 +147,7 @@ export const unit5Data: UnitData = {
                   fontSize: "24px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                   {"(1)"}
                 </span>
                 <span>{"10 ÷ 3 ="}</span>
@@ -177,7 +177,7 @@ export const unit5Data: UnitData = {
                   fontSize: "24px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                   {"(2)"}
                 </span>
                 <span>{"15 ÷ 4 ="}</span>
@@ -207,7 +207,7 @@ export const unit5Data: UnitData = {
                   fontSize: "24px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                   {"(3)"}
                 </span>
                 <span>{"19 ÷ 5 ="}</span>
@@ -244,10 +244,10 @@ export const unit5Data: UnitData = {
               <span className="point-label">{"(4 ຄະແນນ)"}</span>
             </p>
             <div style={{  }}>
-              <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+              <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                 {"(4)"}
               </span>
-              <span style={{ fontSize: "20px", marginLeft: "12px" }}>
+              <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
                 {
                   "ມີໝາກກ້ວຍ 26 ໜ່ວຍ, ແບ່ງໃຫ້ລີງ 6 ໂຕເທົ່າໆກັນ. ແຕ່ລະໂຕຈະໄດ້ຈັກໜ່ວຍ ແລະ ເຫຼືອໝາກກ້ວຍຈັກໜ່ວຍ?"
                 }
@@ -308,10 +308,10 @@ export const unit5Data: UnitData = {
                 }}
               >
                 <div>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                     {"(1)"}
                   </span>
-                  <span style={{ fontSize: "20px", marginLeft: "12px" }}>
+                  <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
                     {
                       "ມີປຶ້ມ 25 ຫົວ, ແບ່ງໃຫ້ນັກຮຽນ 4 ຄົນ ຄົນລະເທົ່າໆກັນ. ແຕ່ລະຄົນຈະໄດ້ຈັກຫົວ ແລະ ເຫຼືອຈັກຫົວ?"
                     }
@@ -347,10 +347,10 @@ export const unit5Data: UnitData = {
                   </div>
                 </div>
                 <div>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                     {"(2)"}
                   </span>
-                  <span style={{ fontSize: "20px", marginLeft: "12px" }}>
+                  <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
                     {
                       "ມີໄຂ່ 30 ໜ່ວຍ, ຈັດໃສ່ກ່ອງ ກ່ອງລະ 8 ໜ່ວຍ. ຈະໄດ້ຈັກກ່ອງ ແລະ ເຫຼືອໄຂ່ຈັກໜ່ວຍ?"
                     }
@@ -409,10 +409,10 @@ export const unit5Data: UnitData = {
                 }}
               >
                 <div>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                     {"(3)"}
                   </span>
-                  <span style={{ fontSize: "20px", marginLeft: "12px" }}>
+                  <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
                     {
                       "ນັກຮຽນ 17 ຄົນ ຕ້ອງການນັ່ງໂຕະ ໂຕະລະ 3 ຄົນ. ຕ້ອງໃຊ້ໂຕະຈັກໜ່ວຍ ຈຶ່ງຈະພອນັ່ງທຸກຄົນ? (ລະວັງ: ຕົວເສດກໍຕ້ອງນັ່ງໂຕະ)"
                     }
@@ -438,10 +438,10 @@ export const unit5Data: UnitData = {
                   </div>
                 </div>
                 <div>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                     {"(4)"}
                   </span>
-                  <span style={{ fontSize: "20px", marginLeft: "12px" }}>
+                  <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
                     {
                       "ມີເງິນ 45,000 ກີບ, ຢາກຊື້ປຶ້ມຫົວລະ 6,000 ກີບ. ຈະຊື້ໄດ້ຫຼາຍທີ່ສຸດຈັກຫົວ ແລະ ເງິນທອນເຫຼືອເທົ່າໃດ?"
                     }
@@ -513,7 +513,7 @@ export const unit5Data: UnitData = {
                   fontSize: "24px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                   {"(1)"}
                 </span>
                 <span>{"13 ÷ 2 ="}</span>
@@ -543,7 +543,7 @@ export const unit5Data: UnitData = {
                   fontSize: "24px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                   {"(2)"}
                 </span>
                 <span>{"20 ÷ 3 ="}</span>
@@ -594,7 +594,7 @@ export const unit5Data: UnitData = {
                   fontSize: "24px",
                 }}
               >
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                   {"(3)"}
                 </span>
                 <span>

@@ -3,9 +3,9 @@ import { UnitData } from "../units2";
 
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }, whiteSpace: "nowrap"}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{den}</span>
   </span>
 );
 
@@ -34,7 +34,7 @@ export const unit1Data: UnitData = {
 
             {/* Visual representation of 4/5 */}
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px", padding: "12px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#1565C0" }}>{"ແຜນວາດສະແດງອັດຕາສ່ວນ "}<Fraction num="4" den="5" /></span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#1565C0" }, whiteSpace: "nowrap"}>{"ແຜນວາດສະແດງອັດຕາສ່ວນ "}<Fraction num="4" den="5" /></span>
               <svg viewBox="0 0 400 40">
                 {/* 5 blocks, 4 shaded blue, 1 gray */}
                 <rect x="0" y="5" width="60" height="30" fill="#2196F3" stroke="#0D47A1" strokeWidth="2" rx="4" />
@@ -68,7 +68,7 @@ export const unit1Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     {"200 × "} <Fraction num="4" den="5" /> {" ="}
                   </span>
@@ -77,7 +77,7 @@ export const unit1Data: UnitData = {
                 
                 {/* Sub-question 2 */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     {"150 × "} <Fraction num="2" den="3" /> {" ="}
                   </span>
@@ -98,8 +98,8 @@ export const unit1Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }, whiteSpace: "nowrap"}>
                     <Fraction num="1" den="4" /> {" ຂອງ ມຸມພຽງ (180°) ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
@@ -108,8 +108,8 @@ export const unit1Data: UnitData = {
 
                 {/* Sub-question 2 */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
-                  <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }, whiteSpace: "nowrap"}>
                     <Fraction num="2" den="3" /> {" ຂອງ ມຸມສາກ (90°) ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>

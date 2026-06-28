@@ -4,8 +4,8 @@ import { UnitData } from "../units2";
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
   <span className="math" style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{den}</span>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{den}</span>
   </span>
 );
 
@@ -83,25 +83,25 @@ export const unit22Data: UnitData = {
               <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "8px 0" }}>
                 {/* 5 Questions */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span>{"ສອງເທື່ອຂອງຈຳນວນໜຶ່ງ ບວກກັບ 5 ເທົ່າກັບ 15. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? (ສົມຜົນ: 2𝑥 + 5 = 15) "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
                 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span>{"ສາມເທື່ອຂອງຈຳນວນໜຶ່ງ ລົບອອກ 4 ເທົ່າກັບ 14. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? (ສົມຜົນ: 3𝑥 - 4 = 14) "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
                   <span>{"ຫ້າເທື່ອຂອງຈຳນວນໜຶ່ງ ບວກກັບ 12 ເທົ່າກັບ 2. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? (ສົມຜົນ: 5𝑥 + 12 = 2) "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
                   {"ເຄິ່ງໜຶ່ງຂອງຈຳນວນໜຶ່ງ ບວກກັບ 3 ເທົ່າກັບ 8. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? "}
                   <span style={{ whiteSpace: "nowrap", display: "inline-flex", alignItems: "center", verticalAlign: "middle" }}>
                     {"(ສົມຜົນ: "}
@@ -112,7 +112,7 @@ export const unit22Data: UnitData = {
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
                   <span>{"ຜົນບວກຂອງສາມຈຳນວນຖ້ວນລຽນຕິດກັນເທົ່າກັບ 24. ຈຳນວນນ້ອຍສຸດແມ່ນເທົ່າໃດ? (ສົມຜົນ: 𝑥 + (𝑥+1) + (𝑥+2) = 24) "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
@@ -160,35 +160,35 @@ export const unit22Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "18px", padding: "8px 0" }}>
                 {/* 5 Questions */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   {"ພໍ່ມີອາຍຸເປັນ 3 ເທື່ອຂອງລູກ. ຖ້າພໍ່ອາຍຸ 45 ປີ, ລູກຈະມີອາຍຸຈັກປີ? "}
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   {" ປີ"}
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   {"ຊື້ປຶ້ມ 3 ຫົວ ແລະ ບິກ 1 ກ້ານ ລາຄາ 2,000 ກີບ ລວມເປັນ 17,000 ກີບ. ປຶ້ມ 1 ຫົວ ລາຄາຈັກກີບ? "}
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                   {" ກີບ"}
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(3) "}</span>
                   {"ມີເນື້ອທີ່ດິນ 120 ຕາແມັດ, ແບ່ງໃຫ້ລູກສອງຄົນ ໂດຍຜູ້ໃຫຍ່ໄດ້ຫຼາຍກວ່າຜູ້ຫຼ້າ 20 ຕາແມັດ. ຜູ້ຫຼ້າໄດ້ຈັກຕາແມັດ? "}
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   {" ຕາແມັດ"}
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(4) "}</span>
                   {"ຮູບສີ່ແຈສາກມີລວງຍາວເປັນ 2 ເທື່ອຂອງລວງກວ້າງ, ລວງຮອບແມ່ນ 60 cm. ລວງກວ້າງແມ່ນຈັກ cm? (ສົມຜົນ: 2(2𝑥 + 𝑥) = 60) "}
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   {" cm"}
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(5) "}</span>
                   {"ແບ່ງເຂົ້າໜົມ 30 ກ້ອນ ໃຫ້ເດັກ 3 ຄົນ ໂດຍຄົນຕໍ່ໄປໄດ້ຫຼາຍກວ່າຄົນກ່ອນ 2 ກ້ອນ. ຄົນໄດ້ໜ້ອຍສຸດໄດ້ຈັກກ້ອນ? "}
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   {" ກ້ອນ"}

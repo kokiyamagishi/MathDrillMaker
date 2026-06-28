@@ -18,7 +18,7 @@ export const unit15Data: UnitData = {
             </p>
             
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ການພົວພັນກັບ ແມດ (m):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"ການພົວພັນກັບ ແມດ (m):"}</span>
               <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "1.20rem", textAlign: "left" }}>
                 <thead>
                   <tr style={{ borderBottom: "2px solid #2E7D32" }}>
@@ -60,14 +60,14 @@ export const unit15Data: UnitData = {
               
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span>{"3.7 m ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                   <span>{"cm"}</span>
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span>{"712 mm ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                   <span>{"dm"}</span>
@@ -106,7 +106,7 @@ export const unit15Data: UnitData = {
               {"ເຮົາສາມາດນຳໃຊ້ຕາຕະລາງໃນການປ່ຽນຫົວໜ່ວຍໄດ້ຢ່າງງ່າຍດາຍ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF8E1", borderRadius: "8px", border: "1px solid #FFE082", display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#F57F17" }}>{"ລຳດັບຫົວໜ່ວຍ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#F57F17" }, whiteSpace: "nowrap"}>{"ລຳດັບຫົວໜ່ວຍ:"}</span>
               <div style={{ display: "flex", justifyContent: "space-between", fontSize: "1.30rem", fontWeight: "bold", padding: "8px", backgroundColor: "#FFF" }}>
                 <span>{"km"}</span>
                 <span>{"hm"}</span>
@@ -138,13 +138,13 @@ export const unit15Data: UnitData = {
               
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span>{"5 hm 40 dam 3 m ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"m"}</span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span>{"1.2 km 5 dam 13 m ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"m"}</span>

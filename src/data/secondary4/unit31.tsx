@@ -17,7 +17,7 @@ export const unit31Data: UnitData = {
               {"ການບວກເວກເຕີສອງຕົວ u ແລະ v ສາມາດເຮັດໄດ້ 2 ວິທີຫຼັກ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"1. ກົດເກນສາມແຈ (Chasles' Relation):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"1. ກົດເກນສາມແຈ (Chasles' Relation):"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ວາງເມັດເລີ່ມຕົ້ນຂອງ v ຕໍ່ໃສ່ເມັດປາຍຂອງ u (ຜ່ານເມັດ B):"}
                 <br />
@@ -25,7 +25,7 @@ export const unit31Data: UnitData = {
               </p>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }}>{"2. ກົດເກນຮູບສີ່ແຈຂ້າງຂະໜານ (Parallelogram Rule):"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"2. ກົດເກນຮູບສີ່ແຈຂ້າງຂະໜານ (Parallelogram Rule):"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ສໍາລັບສອງເວກເຕີທີ່ມີເມັດເລີ່ມຕົ້ນດຽວກັນ (A):"}
                 <br />
@@ -95,7 +95,7 @@ export const unit31Data: UnitData = {
               {"ການລົບເວກເຕີ u - v ແມ່ນການບວກເວກເຕີ u ດ້ວຍເວກເຕີກົງກັນຂ້າມ -v:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ສູດການລົບ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ສູດການລົບ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"AB - AC = CB  (ເພາະ AB - AC = AB + CA = CA + AB = CB)."}
                 <br />

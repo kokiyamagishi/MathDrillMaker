@@ -66,35 +66,35 @@ export const unit15Data: UnitData = {
                 style={{ display: "flex", flexDirection: "column", gap: "8px" }}
               >
                 <div style={{ display: "flex", alignItems: "center" }}>
-                  <span style={{ width: "80px", fontWeight: "bold" }}>
+                  <span style={{ width: "80px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                     {"ໝາກໂປມ:"}
                   </span>{" "}
-                  <span style={{ fontSize: "24px", letterSpacing: "4px" }}>
+                  <span style={{ fontSize: "24px", letterSpacing: "4px" }, whiteSpace: "nowrap"}>
                     {"🍎🍎🍎🍎🍎"}
                   </span>{" "}
-                  <span style={{ marginLeft: "auto", fontWeight: "bold" }}>
+                  <span style={{ marginLeft: "auto", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                     {"5 ຄົນ"}
                   </span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center" }}>
-                  <span style={{ width: "80px", fontWeight: "bold" }}>
+                  <span style={{ width: "80px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                     {"ກ້ວຍ:"}
                   </span>{" "}
-                  <span style={{ fontSize: "24px", letterSpacing: "4px" }}>
+                  <span style={{ fontSize: "24px", letterSpacing: "4px" }, whiteSpace: "nowrap"}>
                     {"🍌🍌🍌"}
                   </span>{" "}
-                  <span style={{ marginLeft: "auto", fontWeight: "bold" }}>
+                  <span style={{ marginLeft: "auto", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                     {"3 ຄົນ"}
                   </span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center" }}>
-                  <span style={{ width: "80px", fontWeight: "bold" }}>
+                  <span style={{ width: "80px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                     {"ໝາກມ່ວງ:"}
                   </span>{" "}
-                  <span style={{ fontSize: "24px", letterSpacing: "4px" }}>
+                  <span style={{ fontSize: "24px", letterSpacing: "4px" }, whiteSpace: "nowrap"}>
                     {"🥭🥭🥭🥭🥭🥭"}
                   </span>{" "}
-                  <span style={{ marginLeft: "auto", fontWeight: "bold" }}>
+                  <span style={{ marginLeft: "auto", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                     {"6 ຄົນ"}
                   </span>
                 </div>
@@ -441,8 +441,8 @@ export const unit15Data: UnitData = {
                 }}
               >
                 <div>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span style={{ marginLeft: "8px", fontSize: "18px" }}>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ marginLeft: "8px", fontSize: "18px" }, whiteSpace: "nowrap"}>
                     {"ສີໃດມີຄົນມັກຫຼາຍທີ່ສຸດ ແລະ ມີຈັກຄົນ?"}
                   </span>
                   <div style={{ marginTop: "8px" }}>
@@ -470,8 +470,8 @@ export const unit15Data: UnitData = {
                   </div>
                 </div>
                 <div>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span style={{ marginLeft: "8px", fontSize: "18px" }}>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ marginLeft: "8px", fontSize: "18px" }, whiteSpace: "nowrap"}>
                     {"ລວມທັງໝົດມີນັກຮຽນຈັກຄົນ?"}
                   </span>
                   <div style={{ marginTop: "8px" }}>
@@ -609,8 +609,8 @@ export const unit15Data: UnitData = {
                   }}
                 >
                   <div>
-                    <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                    <span style={{ marginLeft: "8px", fontSize: "16px" }}>
+                    <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                    <span style={{ marginLeft: "8px", fontSize: "16px" }, whiteSpace: "nowrap"}>
                       {"ສັດຊະນິດໃດມີຄົນມັກໜ້ອຍທີ່ສຸດ?"}
                     </span>
                     <div style={{ marginTop: "8px" }}>
@@ -627,8 +627,8 @@ export const unit15Data: UnitData = {
                     </div>
                   </div>
                   <div>
-                    <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
-                    <span style={{ marginLeft: "8px", fontSize: "16px" }}>
+                    <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(4) "}</span>
+                    <span style={{ marginLeft: "8px", fontSize: "16px" }, whiteSpace: "nowrap"}>
                       {"ໝາມີຄົນມັກຫຼາຍກວ່າໄກ່ຈັກຄົນ?"}
                     </span>
                     <div style={{ marginTop: "8px" }}>
@@ -1148,8 +1148,8 @@ export const unit15Data: UnitData = {
                 }}
               >
                 <div>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span style={{ marginLeft: "8px" }}>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                  <span style={{ marginLeft: "8px" }, whiteSpace: "nowrap"}>
                     {"ສີໃດທີ່ມີຄົນມັກໜ້ອຍທີ່ສຸດ ແລະ ມີຈັກຄົນ?"}
                   </span>
                   <div
@@ -1182,8 +1182,8 @@ export const unit15Data: UnitData = {
                   </div>
                 </div>
                 <div>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span style={{ marginLeft: "8px" }}>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                  <span style={{ marginLeft: "8px" }, whiteSpace: "nowrap"}>
                     {"ສີແດງມີຄົນມັກຫຼາຍກວ່າສີຂຽວຈັກຄົນ?"}
                   </span>
                   <div
@@ -1526,8 +1526,8 @@ export const unit15Data: UnitData = {
               }}
             >
               <div>
-                <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                <span style={{ marginLeft: "8px" }}>
+                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
+                <span style={{ marginLeft: "8px" }, whiteSpace: "nowrap"}>
                   {"ກິລາປະເພດໃດມີຄົນມັກຫຼາຍທີ່ສຸດ?"}
                 </span>
                 <div
@@ -1550,8 +1550,8 @@ export const unit15Data: UnitData = {
                 </div>
               </div>
               <div>
-                <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                <span style={{ marginLeft: "8px" }}>
+                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
+                <span style={{ marginLeft: "8px" }, whiteSpace: "nowrap"}>
                   {"ບານເຕະມີຄົນມັກຫຼາຍກວ່າແລ່ນຈັກຄົນ?"}
                 </span>
                 <div

@@ -99,7 +99,7 @@ export const unit10Data: UnitData = {
                     fontSize: "18px",
                     fontWeight: "bold",
                     alignSelf: "flex-start",
-                  }}
+                  }, whiteSpace: "nowrap"}
                 >
                   {"(1)"}
                 </span>
@@ -117,7 +117,7 @@ export const unit10Data: UnitData = {
                     fontSize: "18px",
                     fontWeight: "bold",
                     alignSelf: "flex-start",
-                  }}
+                  }, whiteSpace: "nowrap"}
                 >
                   {"(2)"}
                 </span>
@@ -135,7 +135,7 @@ export const unit10Data: UnitData = {
                     fontSize: "18px",
                     fontWeight: "bold",
                     alignSelf: "flex-start",
-                  }}
+                  }, whiteSpace: "nowrap"}
                 >
                   {"(3)"}
                 </span>
@@ -176,7 +176,7 @@ export const unit10Data: UnitData = {
                     fontSize: "18px",
                     fontWeight: "bold",
                     alignSelf: "flex-start",
-                  }}
+                  }, whiteSpace: "nowrap"}
                 >
                   {"(4)"}
                 </span>
@@ -194,7 +194,7 @@ export const unit10Data: UnitData = {
                     fontSize: "18px",
                     fontWeight: "bold",
                     alignSelf: "flex-start",
-                  }}
+                  }, whiteSpace: "nowrap"}
                 >
                   {"(5)"}
                 </span>
@@ -218,10 +218,10 @@ export const unit10Data: UnitData = {
                 <span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
               <div style={{  }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                   {"(1)"}
                 </span>
-                <span style={{ fontSize: "20px", marginLeft: "12px" }}>
+                <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
                   {"ມີໄຂ່ 4 ແຕະ, ແຕ່ລະແຕະມີ 24 ໜ່ວຍ. ລວມທັງໝົດມີໄຂ່ຈັກໜ່ວຍ?"}
                 </span>
                 <div
@@ -258,10 +258,10 @@ export const unit10Data: UnitData = {
                 <span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
               <div style={{  }}>
-                <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                   {"(2)"}
                 </span>
-                <span style={{ fontSize: "20px", marginLeft: "12px" }}>
+                <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
                   {"ຊື້ເຂົ້າໜົມ 5 ຖົງ, ຖົງລະ 15 ພັນກີບ. ຕ້ອງຈ່າຍເງິນເທົ່າໃດ?"}
                 </span>
                 <div
@@ -323,7 +323,7 @@ export const unit10Data: UnitData = {
                     fontSize: "18px",
                     fontWeight: "bold",
                     alignSelf: "flex-start",
-                  }}
+                  }, whiteSpace: "nowrap"}
                 >
                   {"(1)"}
                 </span>
@@ -341,7 +341,7 @@ export const unit10Data: UnitData = {
                     fontSize: "18px",
                     fontWeight: "bold",
                     alignSelf: "flex-start",
-                  }}
+                  }, whiteSpace: "nowrap"}
                 >
                   {"(2)"}
                 </span>
@@ -382,7 +382,7 @@ export const unit10Data: UnitData = {
                     fontSize: "18px",
                     fontWeight: "bold",
                     alignSelf: "flex-start",
-                  }}
+                  }, whiteSpace: "nowrap"}
                 >
                   {"(3)"}
                 </span>
@@ -400,7 +400,7 @@ export const unit10Data: UnitData = {
                     fontSize: "18px",
                     fontWeight: "bold",
                     alignSelf: "flex-start",
-                  }}
+                  }, whiteSpace: "nowrap"}
                 >
                   {"(4)"}
                 </span>

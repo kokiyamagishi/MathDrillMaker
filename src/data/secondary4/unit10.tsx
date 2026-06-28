@@ -16,13 +16,13 @@ export const unit10Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"- ເຮົາສາມາດບວກ ຫຼື ລົບສຳນວນເລກຮາກທີ່ມີ 'ຮາກດຽວກັນ' ໄດ້ໂດຍກົງ ຄ້າຍຄືກັບການບວກລົບພົດຄ້າຍຄືກັນໃນພະຫຸພົດ:"}
               <br />
-              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", paddingLeft: "16px" }}>{"a√x + b√x = (a + b)√x"}</span>
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#1565C0", paddingLeft: "16px" }, whiteSpace: "nowrap"}>{"a√x + b√x = (a + b)√x"}</span>
               <br />
               {"- ຖ້າຮາກຕ່າງກັນ, ເຮົາຕ້ອງແຍກສ່ວນປະກອບເພື່ອຄັດຈ້ອນໃຫ້ເປັນຮາກຂັ້ນຕ່ຳກ່ອນ ແລ້ວຈຶ່ງນຳມາບວກລົບກັນ."}
             </p>
             
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ຕົວຢ່າງການຄັດຈ້ອນ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງການຄັດຈ້ອນ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ຄິດໄລ່: √12 - √108 + √27"}
                 <br />
@@ -91,13 +91,13 @@ export const unit10Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"- ຈຳນວນຄູ່ຮ່ວມຂອງສຳນວນ (a - √b) ແມ່ນ (a + √b). ເມື່ອເຮົານຳເອົາສອງສຳນວນນີ້ມາຄູນກັນ ຈະເຮັດໃຫ້ເຄື່ອງໝາຍຮາກຂັ້ນສອງໝົດໄປ ຕາມເອກະລັກຜົນຕ່າງກຳລັງສອງ:"}
               <br />
-              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#D84315", display: "block", textAlign: "center", margin: "8px 0" }}>
+              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#D84315", display: "block", textAlign: "center", margin: "8px 0" }, whiteSpace: "nowrap"}>
                 {"(a - √b)(a + √b) = a² - b"}
               </span>
               {"- ວິທີການຄັດຮາກອອກຈາກພູດ: ແມ່ນການຄູນທັງຕົວເສດ ແລະ ຕົວພູດດ້ວຍຈຳນວນຄູ່ຮ່ວມຂອງຕົວພູດ ເພື່ອບໍ່ໃຫ້ມີຮາກຢູ່ພູດ."}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ຕົວຢ່າງການຄັດຮາກ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງການຄັດຮາກ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ຄັດຮາກຂອງ: 3 / (√5 - 2)"}
                 <br />

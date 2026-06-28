@@ -2,9 +2,9 @@ import React from "react";
 import { UnitData } from "../units2";
 
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", verticalAlign: "middle", alignItems: "center", padding: "0 4px", fontSize: "0.95em", transform: "translateY(-0.05em)" }}>
-    <span style={{ borderBottom: "1.5px solid currentColor", paddingBottom: "1px", lineHeight: 1, fontWeight: "bold" }}>{num}</span>
-    <span style={{ paddingTop: "1.5px", lineHeight: 1, fontWeight: "bold" }}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", verticalAlign: "middle", alignItems: "center", padding: "0 4px", fontSize: "0.95em", transform: "translateY(-0.05em)" }, whiteSpace: "nowrap"}>
+    <span style={{ borderBottom: "1.5px solid currentColor", paddingBottom: "1px", lineHeight: 1, fontWeight: "bold" }, whiteSpace: "nowrap"}>{num}</span>
+    <span style={{ paddingTop: "1.5px", lineHeight: 1, fontWeight: "bold" }, whiteSpace: "nowrap"}>{den}</span>
   </span>
 );
 
@@ -71,14 +71,14 @@ export const unit5Data: UnitData = {
             
             <div style={{ flex: "1 1 250px", fontSize: "22px", lineHeight: "1.6" }}>
               <div style={{ fontWeight: "bold", color: "#1565C0", marginBottom: "8px", display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }, whiteSpace: "nowrap"}>
                   {"ສູດ: "}
                   <Fraction num="a" den="b" />
                   {" × c = "}
                   <Fraction num="a × c" den="b" />
                 </span>
-                <span style={{ color: "#aaa", fontWeight: "normal" }}>{"|"}</span>
-                <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                <span style={{ color: "#aaa", fontWeight: "normal" }, whiteSpace: "nowrap"}>{"|"}</span>
+                <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }, whiteSpace: "nowrap"}>
                   {"ຕົວຢ່າງ: "}
                   <strong>
                     <Fraction num="2" den="7" />
@@ -148,14 +148,14 @@ export const unit5Data: UnitData = {
 
             <div style={{ flex: "1 1 250px", fontSize: "22px", lineHeight: "1.6" }}>
               <div style={{ fontWeight: "bold", color: "#2E7D32", marginBottom: "8px", display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }, whiteSpace: "nowrap"}>
                   {"ສູດ: "}
                   <Fraction num="a" den="b" />
                   {" ÷ c = "}
                   <Fraction num="a" den="b × c" />
                 </span>
-                <span style={{ color: "#aaa", fontWeight: "normal" }}>{"|"}</span>
-                <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                <span style={{ color: "#aaa", fontWeight: "normal" }, whiteSpace: "nowrap"}>{"|"}</span>
+                <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }, whiteSpace: "nowrap"}>
                   {"ຕົວຢ່າງ: "}
                   <strong>
                     <Fraction num="4" den="5" />
@@ -205,7 +205,7 @@ export const unit5Data: UnitData = {
                 <Fraction num="5" den="8" />
                 <span>{" × 2 ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span style={{ fontSize: "16px", color: "#888" }}>{"(ຄັດຈ້ອນໃຫ້ເປັນເລກສ່ວນຂັ້ນຕ່ຳ)"}</span>
+                <span style={{ fontSize: "16px", color: "#888" }, whiteSpace: "nowrap"}>{"(ຄັດຈ້ອນໃຫ້ເປັນເລກສ່ວນຂັ້ນຕ່ຳ)"}</span>
               </div>
             </div>
           </div>
@@ -241,7 +241,7 @@ export const unit5Data: UnitData = {
                 <Fraction num="6" den="7" />
                 <span>{" ÷ 2 ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span style={{ fontSize: "16px", color: "#888" }}>{"(ຄັດຈ້ອນໃຫ້ເປັນເລກສ່ວນຂັ້ນຕ່ຳ)"}</span>
+                <span style={{ fontSize: "16px", color: "#888" }, whiteSpace: "nowrap"}>{"(ຄັດຈ້ອນໃຫ້ເປັນເລກສ່ວນຂັ້ນຕ່ຳ)"}</span>
               </div>
             </div>
           </div>
@@ -343,7 +343,7 @@ export const unit5Data: UnitData = {
                 <Fraction num="3" den="10" />
                 <span>{" × 5 ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span style={{ fontSize: "16px", color: "#888" }}>{"(ຄັດຈ້ອນເປັນເລກສ່ວນຂັ້ນຕ່ຳ)"}</span>
+                <span style={{ fontSize: "16px", color: "#888" }, whiteSpace: "nowrap"}>{"(ຄັດຈ້ອນເປັນເລກສ່ວນຂັ້ນຕ່ຳ)"}</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "6px", flexWrap: "wrap" }}>
                 <span>{"(2) "}</span>
@@ -356,7 +356,7 @@ export const unit5Data: UnitData = {
                 <Fraction num="8" den="9" />
                 <span>{" ÷ 4 ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "40px" }}></span>
-                <span style={{ fontSize: "16px", color: "#888" }}>{"(ຄັດຈ້ອນເປັນເລກສ່ວນຂັ້ນຕ່ຳ)"}</span>
+                <span style={{ fontSize: "16px", color: "#888" }, whiteSpace: "nowrap"}>{"(ຄັດຈ້ອນເປັນເລກສ່ວນຂັ້ນຕ່ຳ)"}</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "6px", flexWrap: "wrap" }}>
                 <span>{"(4) "}</span>
@@ -388,7 +388,7 @@ export const unit5Data: UnitData = {
               }}
             >
               <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-                <span style={{ display: "flex", alignItems: "center", gap: "4px", flexWrap: "wrap" }}>
+                <span style={{ display: "flex", alignItems: "center", gap: "4px", flexWrap: "wrap" }, whiteSpace: "nowrap"}>
                   {"(1) 🌱 ໃສ່ຝຸ່ນດິນ 1 ຕາແມັດ ຕ້ອງການຝຸ່ນ "}
                   <Fraction num="2" den="5" />
                   {" kg. ຖ້າໃສ່ຝຸ່ນດິນ 3 ຕາແມັດ ຈະຕ້ອງໃຊ້ຝຸ່ນທັງໝົດຈັກ kg?"}
@@ -400,7 +400,7 @@ export const unit5Data: UnitData = {
                 </div>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-                <span style={{ display: "flex", alignItems: "center", gap: "4px", flexWrap: "wrap" }}>
+                <span style={{ display: "flex", alignItems: "center", gap: "4px", flexWrap: "wrap" }, whiteSpace: "nowrap"}>
                   {"(2) 🎗️ ມີຣິບບິນຍາວ "}
                   <Fraction num="8" den="5" />
                   {" m. ຖ້າຕັດແບ່ງເປັນ 4 ສ່ວນເທົ່າກັນ, ຣິບບິນແຕ່ລະເສັ້ນຈະຍາວຈັກ m? (ຄັດຈ້ອນເປັນເລກສ່ວນຂັ້ນຕ່ຳ)"}

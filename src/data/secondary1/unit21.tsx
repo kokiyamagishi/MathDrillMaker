@@ -2,9 +2,9 @@ import React from "react";
 import { UnitData } from "../units2";
 
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px", fontSize: "0.9em", lineHeight: "1.1" }}>
-    <span style={{ borderBottom: "1.5px solid currentColor", padding: "0 4px", textAlign: "center", display: "block", width: "100%" }}>{num}</span>
-    <span style={{ padding: "0 4px", textAlign: "center", display: "block", width: "100%" }}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px", fontSize: "0.9em", lineHeight: "1.1" }, whiteSpace: "nowrap"}>
+    <span style={{ borderBottom: "1.5px solid currentColor", padding: "0 4px", textAlign: "center", display: "block", width: "100%" }, whiteSpace: "nowrap"}>{num}</span>
+    <span style={{ padding: "0 4px", textAlign: "center", display: "block", width: "100%" }, whiteSpace: "nowrap"}>{den}</span>
   </span>
 );
 
@@ -24,15 +24,15 @@ export const unit21Data: UnitData = {
               {"ມາດຕາສ່ວນ ແມ່ນອັດຕາສ່ວນລະຫວ່າງ ໄລຍະທາງໃນແຜນຜັງ (ຫຼື ແຜນວາດ) ກັບ ໄລຍະທາງຕົວຈິງ:"}
             </p>
             <div style={{ padding: "8px 12px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9", display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
-              <span style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#1565C0", display: "inline-flex", alignItems: "center", gap: "8px" }}>
+              <span style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#1565C0", display: "inline-flex", alignItems: "center", gap: "8px" }, whiteSpace: "nowrap"}>
                 <span>{"ມາດຕາສ່ວນ = "}</span>
                 <Fraction num={"ໄລຍະທາງໃນຮູບແຕ້ມ"} den={"ໄລຍະທາງຕົວຈິງ"} />
               </span>
-              <span style={{ fontSize: "1.15rem", color: "#0D47A1" }}>{"*ໝາຍເຫດ: ທັງສອງໄລຍະທາງຕ້ອງຄິດໄລ່ໃນຫົວໜ່ວຍດຽວກັນສະເໝີ (ເຊັ່ນ: ປ່ຽນເປັນ cm ທັງໝົດ)"}</span>
+              <span style={{ fontSize: "1.15rem", color: "#0D47A1" }, whiteSpace: "nowrap"}>{"*ໝາຍເຫດ: ທັງສອງໄລຍະທາງຕ້ອງຄິດໄລ່ໃນຫົວໜ່ວຍດຽວກັນສະເໝີ (ເຊັ່ນ: ປ່ຽນເປັນ cm ທັງໝົດ)"}</span>
             </div>
 
             <div style={{ padding: "8px 12px", backgroundColor: "#F9F9F9", borderRadius: "8px", border: "1px solid #E0E0E0" }}>
-              <span style={{ fontSize: "1.15rem", fontWeight: "bold", color: "#37474F" }}>{"ປະເພດຂອງມາດຕາສ່ວນ:"}</span>
+              <span style={{ fontSize: "1.15rem", fontWeight: "bold", color: "#37474F" }, whiteSpace: "nowrap"}>{"ປະເພດຂອງມາດຕາສ່ວນ:"}</span>
               <ul style={{ fontSize: "1.1rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6", display: "flex", flexDirection: "column", gap: "6px" }}>
                 <li style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
                   <strong>{"ມາດຕາສ່ວນຫຍໍ້: "}</strong>
@@ -66,13 +66,13 @@ export const unit21Data: UnitData = {
               
               <div style={{ display: "flex", flexDirection: "column", gap: "8px", padding: "4px 0" }}>
                 <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.4" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   {"ໄລຍະທາງຕົວຈິງ 200 m (20,000 cm), ໄລຍະທາງໃນແຜນຜັງ 2 cm. ມາດຕາສ່ວນແມ່ນ 1:"}
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                 </p>
                 
                 <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.4" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   {"ໄລຍະທາງຕົວຈິງ 12 m (1,200 cm), ມາດຕາສ່ວນ 1:100. ໄລຍະທາງໃນແຜນຜັງແມ່ນ "}
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   {" cm"}
@@ -97,7 +97,7 @@ export const unit21Data: UnitData = {
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{" = "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
-                  <span style={{ flexShrink: 0 }}>{"cm"}</span>
+                  <span style={{ flexShrink: 0 }, whiteSpace: "nowrap"}>{"cm"}</span>
                 </div>
               </div>
             </div>
@@ -151,7 +151,7 @@ export const unit21Data: UnitData = {
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{" = "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
-                  <span style={{ flexShrink: 0 }}>{"cm"}</span>
+                  <span style={{ flexShrink: 0 }, whiteSpace: "nowrap"}>{"cm"}</span>
                 </div>
               </div>
             </div>
@@ -173,7 +173,7 @@ export const unit21Data: UnitData = {
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{" = "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
-                  <span style={{ flexShrink: 0 }}>{"m"}</span>
+                  <span style={{ flexShrink: 0 }, whiteSpace: "nowrap"}>{"m"}</span>
                 </div>
               </div>
             </div>

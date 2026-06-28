@@ -16,13 +16,13 @@ export const unit7Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"- ດອກເບ້ຍດ່ຽວ ແມ່ນດອກເບ້ຍທີ່ຄິດໄລ່ຈາກຕົ້ນທຶນເດີມສະເໝີ ໂດຍບໍ່ເອົາດອກເບ້ຍມາສະສົມເຂົ້າເປັນຕົ້ນທຶນໃໝ່. ສູດຄິດໄລ່:"}
               <br />
-              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#1565C0", display: "block", textAlign: "center", margin: "12px 0" }}>
+              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#1565C0", display: "block", textAlign: "center", margin: "12px 0" }, whiteSpace: "nowrap"}>
                 {"I = (P × R × T) / 100"}
               </span>
               {"ເຊິ່ງ P ແມ່ນ ຕົ້ນທຶນ (Principal), R ແມ່ນ ອັດຕາການຂະຫຍາຍຕົວ/ອັດຕາດອກເບ້ຍ (Rate %), T ແມ່ນ ເວລາເປັນປີ (Time)."}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #A5D6A7" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ຕົວຢ່າງ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ຝາກປະຢັດ 32.5 ລ້ານກີບ ໃນອັດຕາດອກເບ້ຍ 15% ຕໍ່ປີ ເປັນເວລາ 4 ປີ ຈະໄດ້ດອກເບ້ຍ:"}
                 <br />
@@ -89,13 +89,13 @@ export const unit7Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"- ດອກເບ້ຍທົບຕົ້ນ ແມ່ນການເອົາດອກເບ້ຍທີ່ໄດ້ຮັບໃນແຕ່ລະງວດ ມາສະສົມເຂົ້າເປັນຕົ້ນທຶນຂອງງວດຖັດໄປ. ສູດຄິດໄລ່ເງິນລວມ A ພາຍໃນ n ປີ:"}
               <br />
-              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#D84315", display: "block", textAlign: "center", margin: "12px 0" }}>
+              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#D84315", display: "block", textAlign: "center", margin: "12px 0" }, whiteSpace: "nowrap"}>
                 {"A = P × (1 + r)^n"}
               </span>
               {"ເຊິ່ງ P ແມ່ນ ຕົ້ນທຶນເລີ່ມຕົ້ນ, r ແມ່ນ ອັດຕາດອກເບ້ຍທົບຕົ້ນ (ຂຽນເປັນເລກທົດສະນິຍົມ ເຊັ່ນ 4% = 0.04), n ແມ່ນ ຈຳນວນປີ."}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ຕົວຢ່າງ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ຝາກເງິນທົບຕົ້ນ 50 ລ້ານກີບ ໃນອັດຕາ 4% (0.04) ຕໍ່ປີ ເປັນເວລາ 3 ປີ ຈະໄດ້ເງິນທັງໝົດ:"}
                 <br />

@@ -23,7 +23,7 @@ export const unit35Data: UnitData = {
               </p>
             </div>
             <div style={{ padding: "16px", backgroundColor: "#FFF8E1", borderRadius: "8px", border: "1px solid #FFE082" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#F57F17" }}>{"ຄຸນລັກສະນະທີ່ຄວນຈື່:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#F57F17" }, whiteSpace: "nowrap"}>{"ຄຸນລັກສະນະທີ່ຄວນຈື່:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li>{"u·v = v·u (ສະຫຼັບບ່ອນໄດ້)"}</li>
                 <li>{"u·(v + w) = u·v + u·w (ແຈກຢາຍໄດ້)"}</li>

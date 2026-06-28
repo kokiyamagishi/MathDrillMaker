@@ -3,9 +3,9 @@ import { UnitData } from "../units2";
 
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }, whiteSpace: "nowrap"}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{den}</span>
   </span>
 );
 
@@ -25,8 +25,8 @@ export const unit8Data: UnitData = {
               {"ຕຳລາຂັ້ນໜຶ່ງແມ່ນຕຳລາທີ່ມີຮູບແບບທົ່ວໄປແມ່ນ "} <span className="math" style={{ fontWeight: "bold" }}>{"𝑦 = ax + b"}</span> {" (ໃນນັ້ນ a ແລະ b ແມ່ນຈຳນວນຈິງ ແລະ a ≠ 0):"}
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
-              <div>{"• "} <span className="math" style={{ fontWeight: "bold" }}>{"a"}</span> {" ເອີ້ນວ່າ "} <span style={{ fontWeight: "bold" }}>{"ສຳປະສິດສະໂລບ"}</span> {" ຫຼື ອັດຕາການປ່ຽນແປງ ທີ່ສະແດງເຖິງຄວາມຊັນຂອງເສັ້ນຊື່."}</div>
-              <div>{"• "} <span className="math" style={{ fontWeight: "bold" }}>{"b"}</span> {" ເອີ້ນວ່າ "} <span style={{ fontWeight: "bold" }}>{"ຈຸດຕັດແກນ 𝑦"}</span> {" ເຊິ່ງແມ່ນຈຸດປະສານງານ (0, b) ທີ່ເສັ້ນຊື່ຕັດແກນຕັ້ງ."}</div>
+              <div>{"• "} <span className="math" style={{ fontWeight: "bold" }}>{"a"}</span> {" ເອີ້ນວ່າ "} <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"ສຳປະສິດສະໂລບ"}</span> {" ຫຼື ອັດຕາການປ່ຽນແປງ ທີ່ສະແດງເຖິງຄວາມຊັນຂອງເສັ້ນຊື່."}</div>
+              <div>{"• "} <span className="math" style={{ fontWeight: "bold" }}>{"b"}</span> {" ເອີ້ນວ່າ "} <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"ຈຸດຕັດແກນ 𝑦"}</span> {" ເຊິ່ງແມ່ນຈຸດປະສານງານ (0, b) ທີ່ເສັ້ນຊື່ຕັດແກນຕັ້ງ."}</div>
             </div>
 
             {/* Linear Function Graph SVG */}
@@ -76,19 +76,19 @@ export const unit8Data: UnitData = {
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span>{"ຕຳລາ "} <span className="math">{"𝑦 = 3𝑥 + 5"}</span> {" ມີຄ່າຂອງ a ແລະ b ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span>{"ຕຳລາ "} <span className="math">{"𝑦 = -2𝑥 + 7"}</span> {" ມີຄ່າຂອງ a ແລະ b ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(3) "}</span>
                   <span>{"ຕຳລາ "} <span className="math">{"𝑦 = 4𝑥 - 9"}</span> {" ມີຄ່າຂອງ a ແລະ b ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -106,13 +106,13 @@ export const unit8Data: UnitData = {
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span>{"ຖ້າສຳປະສິດສະໂລບ "} <span className="math">{"a = 4"}</span> {" ແລະ ຈຸດຕັດແກນ 𝑦 ແມ່ນ "} <span className="math">{"b = -3"}</span> {", ສົມຜົນແມ່ນຫຍັງ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span>{"ຖ້າເສັ້ນສະແດງຂະໜານກັບ "} <span className="math">{"𝑦 = -5𝑥"}</span> {" ແລະ ຕັດແກນ 𝑦 ຢູ່ເມັດ "} <span className="math">{"(0, 2)"}</span> {", ສົມຜົນແມ່ນຫຍັງ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -133,8 +133,8 @@ export const unit8Data: UnitData = {
             </p>
             
             <div style={{ padding: "12px 16px", backgroundColor: "#FFFDE7", borderRadius: "10px", border: "1px solid #FFF59D", fontSize: "1.25rem", color: "#F57F17", display: "flex", flexDirection: "column", gap: "6px" }}>
-              <div>{"• "} <span style={{ fontWeight: "bold" }}>{"ການຫາຄ່າ f(𝑥):"}</span> {" ແທນຄ່າ 𝑥 ທີ່ກຳນົດໃສ່ສົມຜົນ ເພື່ອຊອກຫາຄ່າຂອງ 𝑦."}</div>
-              <div>{"• "} <span style={{ fontWeight: "bold" }}>{"ຈຸດຕັດແກນ 𝑥:"}</span> {" ແມ່ນຈຸດທີ່ 𝑦 = 0. ດັ່ງນັ້ນ ເຮົາແກ້ສົມຜົນ ax + b = 0 ➔ 𝑥 = "} <Fraction num="-b" den="a" /> {" ຈະໄດ້ຈຸດຕັດແມ່ນ ("} <Fraction num="-b" den="a" /> {", 0)."}</div>
+              <div>{"• "} <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"ການຫາຄ່າ f(𝑥):"}</span> {" ແທນຄ່າ 𝑥 ທີ່ກຳນົດໃສ່ສົມຜົນ ເພື່ອຊອກຫາຄ່າຂອງ 𝑦."}</div>
+              <div>{"• "} <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"ຈຸດຕັດແກນ 𝑥:"}</span> {" ແມ່ນຈຸດທີ່ 𝑦 = 0. ດັ່ງນັ້ນ ເຮົາແກ້ສົມຜົນ ax + b = 0 ➔ 𝑥 = "} <Fraction num="-b" den="a" /> {" ຈະໄດ້ຈຸດຕັດແມ່ນ ("} <Fraction num="-b" den="a" /> {", 0)."}</div>
               <div style={{ fontWeight: "bold", color: "#D84315" }}>{"• ຕົວຢ່າງ: ຕຳລາ 𝑦 = 2𝑥 - 6 ➔ ໃຫ້ 𝑦 = 0 ➔ 2𝑥 - 6 = 0 ➔ 2𝑥 = 6 ➔ 𝑥 = 3."}</div>
             </div>
           </div>
@@ -155,19 +155,19 @@ export const unit8Data: UnitData = {
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span>{"ໃຫ້ຕຳລາ "} <span className="math">{"𝑦 = 3𝑥 - 1"}</span> {". ຖ້າຫາກ "} <span className="math">{"𝑥 = 4"}</span> {", ຄ່າຂອງ 𝑦 ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span>{"ໃຫ້ຕຳລາ "} <span className="math">{"𝑦 = -4𝑥 + 9"}</span> {". ຖ້າຫາກ "} <span className="math">{"𝑥 = 2"}</span> {", ຄ່າຂອງ 𝑦 ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(3) "}</span>
                   <span>{"ໃຫ້ຕຳລາ "} <span className="math">{"𝑦 = "} <Fraction num="1" den="2" /> {"𝑥 + 3"}</span> {". ຖ້າຫາກ "} <span className="math">{"𝑥 = 6"}</span> {", ຄ່າຂອງ 𝑦 ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -185,13 +185,13 @@ export const unit8Data: UnitData = {
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span>{"ຈຸດຕັດແກນ 𝑥 ຂອງເສັ້ນສະແດງຕຳລາ "} <span className="math">{"𝑦 = 2𝑥 - 8"}</span> {" ມີຄ່າ 𝑥 ເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span>{"ຈຸດຕັດແກນ 𝑥 ຂອງເສັ້ນສະແດງຕຳລາ "} <span className="math">{"𝑦 = -3𝑥 + 12"}</span> {" ມີຄ່າ 𝑥 ເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>

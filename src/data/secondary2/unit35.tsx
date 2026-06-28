@@ -3,9 +3,9 @@ import { UnitData } from "../units2";
 
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
-    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{num}</span>
-    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{den}</span>
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }, whiteSpace: "nowrap"}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{den}</span>
   </span>
 );
 
@@ -55,7 +55,7 @@ export const unit35Data: UnitData = {
                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", textAlign: "center", fontSize: "1.15rem", fontWeight: "bold", color: "#37474F", alignItems: "start", gap: "12px" }}>
                     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
                       <span>{"ສີ່ແຈຂະໜານ:"}</span>
-                      <span style={{ fontSize: "1.375rem" }}>{"b×h"}</span>
+                      <span style={{ fontSize: "1.375rem" }, whiteSpace: "nowrap"}>{"b×h"}</span>
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
                       <span>{"ສາມແຈ:"}</span>
@@ -87,35 +87,35 @@ export const unit35Data: UnitData = {
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", whiteSpace: "nowrap" }}>{"(1)\u00A0"}</span>
                   <span>{"ຮູບສາມແຈມີພື້ນ 8 cm ແລະ ເສັ້ນສູງ 5 cm. ເນື້ອທີ່ຂອງມັນແມ່ນຈັກ cm²?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm²"}</span>
                 </div>
                 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", whiteSpace: "nowrap" }}>{"(2)\u00A0"}</span>
                   <span>{"ຮູບສີ່ແຈຂະໜານມີພື້ນ 8 cm ແລະ ເສັ້ນສູງ 5 cm. ເນື້ອທີ່ຂອງມັນແມ່ນຈັກ cm²?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm²"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", whiteSpace: "nowrap" }}>{"(3)\u00A0"}</span>
                   <span>{"ຮູບສາມແຈໜຶ່ງມີເນື້ອທີ່ 18 cm², ຖ້າມີເສັ້ນສູງແມ່ນ 4 cm. ຄວາມຍາວຂ້າງພື້ນຂອງມັນແມ່ນຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", whiteSpace: "nowrap" }}>{"(4)\u00A0"}</span>
                   <span>{"ຮູບສີ່ແຈຂະໜານໜຶ່ງມີເນື້ອທີ່ 35 cm², ຖ້າມີຂ້າງພື້ນແມ່ນ 7 cm. ເສັ້ນສູງຂອງມັນຈະແມ່ນຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", whiteSpace: "nowrap" }}>{"(5)\u00A0"}</span>
                   <span>{"ຖ້າຮູບສາມແຈສາກໜຶ່ງມີສອງຂ້າງຕິດມຸມສາກຍາວ 6 cm ແລະ 8 cm. ເນື້ອທີ່ຂອງມັນແມ່ນຈັກ cm²?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm²"}</span>
@@ -160,35 +160,35 @@ export const unit35Data: UnitData = {
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", whiteSpace: "nowrap" }}>{"(1)\u00A0"}</span>
                   <span>{"ຮູບຄາງໝູມີພື້ນຂະໜານກັນແມ່ນ 4 cm ແລະ 6 cm, ມີລວງສູງ 5 cm. ເນື້ອທີ່ແມ່ນຈັກ cm²?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm²"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", whiteSpace: "nowrap" }}>{"(2)\u00A0"}</span>
                   <span>{"ຮູບຄາງໝູມີພື້ນຂະໜານກັນແມ່ນ 8 cm ແລະ 12 cm, ມີລວງສູງ 7 cm. ເນື້ອທີ່ແມ່ນຈັກ cm²?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm²"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", whiteSpace: "nowrap" }}>{"(3)\u00A0"}</span>
                   <span>{"ຖ້າຮູບຄາງໝູມີເນື້ອທີ່ 30 cm², ມີລວງສູງ 5 cm, ພື້ນນ້ອຍ = 4 cm. ພື້ນໃຫຍ່ຂອງມັນຈະແມ່ນຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", whiteSpace: "nowrap" }}>{"(4)\u00A0"}</span>
                   <span>{"ຖ້າຮູບຄາງໝູມີເນື້ອທີ່ 40 cm², ມີພື້ນນ້ອຍ = 6 cm, ພື້ນໃຫຍ່ = 10 cm. ລວງສູງຂອງມັນຈະແມ່ນຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm"}</span>
                 </div>
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
-                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", whiteSpace: "nowrap" }}>{"(5)\u00A0"}</span>
                   <span>{"ຖ້າຮູບສີ່ແຈຂະໜານມີຂ້າງພື້ນ AB = 10 cm, ແລະ ຂ້າງ AD = 6 cm. ລວງຮອບຂອງມັນຈະແມ່ນຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm"}</span>

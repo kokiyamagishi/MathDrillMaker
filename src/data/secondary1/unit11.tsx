@@ -22,7 +22,7 @@ export const unit11Data: UnitData = {
             </ul>
 
             <div style={{ padding: "16px", backgroundColor: "#F9F9F9", borderRadius: "8px", border: "1px solid #E0E0E0", display: "flex", flexDirection: "column", gap: "12px" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#37474F" }}>{"ຫຼັກເກົ່າທີ່ສຳຄັນ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#37474F" }, whiteSpace: "nowrap"}>{"ຫຼັກເກົ່າທີ່ສຳຄັນ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6" }}>
                 <li>{"ຜ່ານ 1 ເມັດ, ເຮົາສາມາດສ້າງເສັ້ນຊື່ໄດ້ຢ່າງບໍ່ສິ້ນສຸດ (ມີຫຼາກຫຼາຍເສັ້ນຊື່)"}</li>
                 <li>{"ຜ່ານ 2 ເມັດທີ່ຕ່າງກັນ, ເຮົາສາມາດສ້າງເສັ້ນຊື່ໄດ້ພຽງເສັ້ນດຽວເທົ່ານັ້ນ"}</li>
@@ -49,7 +49,7 @@ export const unit11Data: UnitData = {
                 {/* Sub-question 1 */}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
                   <p style={{ margin: 0, lineHeight: "1.5" }}>
-                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                     {"ຜ່ານສອງເມັດ A ແລະ B ທີ່ຕ່າງກັນ, ເຮົາສາມາດຂີດເສັ້ນຊື່ໄດ້ທັງໝົດ"}
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
@@ -62,7 +62,7 @@ export const unit11Data: UnitData = {
                 {/* Sub-question 2 */}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
                   <p style={{ margin: 0, lineHeight: "1.5" }}>
-                    <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                    <span style={{ fontWeight: "bold", marginRight: "8px" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                     {"ຜ່ານໜຶ່ງເມັດ O, ເຮົາສາມາດຂີດເສັ້ນຊື່ໄດ້"}
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
@@ -107,7 +107,7 @@ export const unit11Data: UnitData = {
             </ul>
 
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2", display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ຕາຕະລາງສັງລວມສັນຍະລັກ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ຕາຕະລາງສັງລວມສັນຍະລັກ:"}</span>
               <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "1.20rem", textAlign: "left" }}>
                 <thead>
                   <tr style={{ borderBottom: "2px solid #E65100" }}>
@@ -153,12 +153,12 @@ export const unit11Data: UnitData = {
               
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span>{"ສັນຍະລັກຂອງ \"ທ່ອນຊື່ CD\" ແມ່ນ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span>{"ສັນຍະລັກຂອງ \"ເຄິ່ງເສັ້ນຊື່ Cx\" ແມ່ນ"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>

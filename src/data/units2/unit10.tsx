@@ -50,7 +50,7 @@ export const unit10Data: UnitData = {
             >
               <Shape type="triangle" width={100} height={100} color="#FFCDD2" />
               <strong style={{ fontSize: "14px" }}>{"ຮູບສາມແຈ"}</strong>
-              <span style={{ fontSize: "12px", color: "#666" }}>
+              <span style={{ fontSize: "12px", color: "#666" }, whiteSpace: "nowrap"}>
                 {"ມີ 3 ຂ້າງ, 3 ແຈ"}
               </span>
             </div>
@@ -69,7 +69,7 @@ export const unit10Data: UnitData = {
                 color="#C8E6C9"
               />
               <strong style={{ fontSize: "14px" }}>{"ຮູບສີ່ແຈ"}</strong>
-              <span style={{ fontSize: "12px", color: "#666" }}>
+              <span style={{ fontSize: "12px", color: "#666" }, whiteSpace: "nowrap"}>
                 {"ມີ 4 ຂ້າງ, 4 ແຈ"}
               </span>
             </div>
@@ -89,7 +89,7 @@ export const unit10Data: UnitData = {
                 showRightAngle={true}
               />
               <strong style={{ fontSize: "14px" }}>{"ຮູບສາມແຈສາກ"}</strong>
-              <span style={{ fontSize: "12px", color: "#666" }}>
+              <span style={{ fontSize: "12px", color: "#666" }, whiteSpace: "nowrap"}>
                 {"ມີ 1 ມຸມສາກ"}
               </span>
             </div>
@@ -119,7 +119,7 @@ export const unit10Data: UnitData = {
                 showRightAngle={true}
               />
               <strong style={{ fontSize: "14px" }}>{"ຮູບສີ່ແຈສາກ"}</strong>
-              <span style={{ fontSize: "12px", color: "#666" }}>
+              <span style={{ fontSize: "12px", color: "#666" }, whiteSpace: "nowrap"}>
                 {"4 ມຸມສາກ, ຂ້າງເຊິ່ງໜ້າເທົ່າກັນ"}
               </span>
             </div>
@@ -139,7 +139,7 @@ export const unit10Data: UnitData = {
                 showRightAngle={true}
               />
               <strong style={{ fontSize: "14px" }}>{"ຮູບຈະຕຸລັດ"}</strong>
-              <span style={{ fontSize: "12px", color: "#666" }}>
+              <span style={{ fontSize: "12px", color: "#666" }, whiteSpace: "nowrap"}>
                 {"4 ມຸມສາກ, 4 ຂ້າງເທົ່າກັນ"}
               </span>
             </div>

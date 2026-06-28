@@ -17,7 +17,7 @@ export const unit44Data: UnitData = {
               {"ສອງເຫດການ A ແລະ B ເອີ້ນວ່າ ເປັນເຫດການຂັດກັນ (Mutually Exclusive) ຖ້າວ່າທັງສອງເຫດການນັ້ນ ບໍ່ສາມາດເກີດຂຶ້ນພ້ອມກັນໄດ້ໃນການທົດລອງດຽວກັນ (A ∩ B = ∅)."}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFEBEE", borderRadius: "8px", border: "1px solid #FFCDD2" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#C62828" }}>{"ຕົວຢ່າງທາງຮູບປະທຳ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#C62828" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງທາງຮູບປະທຳ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", paddingLeft: "24px" }}>
                 <li>{"ໂຍນໝາກກະລັອກ 1 หນ່ວຍ: ເຫດການໄດ້ແຕ້ມຄູ່ ແລະ ເຫດການໄດ້ແຕ້ມຄີກ (ຂັດກັນຢ່າງເດັດຂາດ)."}</li>
                 <li>{"ຈົກສະຫຼາກໄດ້ລາງວັນທີ 1 ແລະ ໄດ້ລາງວັນທີ 2 ໃນການຈົກໃບດຽວກັນ (ຂັດກັນ)."}</li>

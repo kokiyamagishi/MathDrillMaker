@@ -123,7 +123,7 @@ export const unit1Data: UnitData = {
                     fontSize: "24px",
                   }}
                 >
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                     {item.n}
                   </span>
                   <span>{item.q}</span>
@@ -231,10 +231,10 @@ export const unit1Data: UnitData = {
                 }}
               >
                 <div>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                     {"(1)"}
                   </span>
-                  <span style={{ fontSize: "20px", marginLeft: "12px" }}>
+                  <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
                     {
                       "ມີກ່ອງສໍສີ 5 ກ່ອງ, ແຕ່ລະກ່ອງມີສໍສີ 12 ກ້ານ. ລວມທັງໝົດມີສໍສີຈັກກ້ານ?"
                     }
@@ -260,10 +260,10 @@ export const unit1Data: UnitData = {
                   </div>
                 </div>
                 <div>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                     {"(2)"}
                   </span>
-                  <span style={{ fontSize: "20px", marginLeft: "12px" }}>
+                  <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
                     {
                       "ຊື້ເຂົ້າໜົມ 6 ຖົງ, ຖົງລະ 5 ພັນກີບ. ຕ້ອງຈ່າຍເງິນທັງໝົດເທົ່າໃດພັນກີບ?"
                     }
@@ -312,10 +312,10 @@ export const unit1Data: UnitData = {
                 }}
               >
                 <div>
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                     {"(3)"}
                   </span>
-                  <span style={{ fontSize: "20px", marginLeft: "12px" }}>
+                  <span style={{ fontSize: "20px", marginLeft: "12px" }, whiteSpace: "nowrap"}>
                     {
                       "ນັກຮຽນຊັ້ນ ປ.3 ມີ 4 ຫ້ອງ, ແຕ່ລະຫ້ອງມີນັກຮຽນ 30 ຄົນ. ລວມທັງໝົດມີຈັກຄົນ?"
                     }
@@ -382,7 +382,7 @@ export const unit1Data: UnitData = {
                     fontSize: "24px",
                   }}
                 >
-                  <span style={{ fontSize: "18px", fontWeight: "bold" }}>
+                  <span style={{ fontSize: "18px", fontWeight: "bold" }, whiteSpace: "nowrap"}>
                     {item.n}
                   </span>
                   <span>{item.q}</span>
@@ -412,8 +412,8 @@ export const unit1Data: UnitData = {
             </p>
             <div style={{  }}>
               <div style={{ fontSize: "20px" }}>
-                <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                <span style={{ marginLeft: "12px" }}>
+                <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(3) "}</span>
+                <span style={{ marginLeft: "12px" }, whiteSpace: "nowrap"}>
                   {"ມີປຶ້ມ 3 ແຖວ, ແຖວລະ 100 ຫົວ. ລວມມີປຶ້ມທັງໝົດຈັກຫົວ?"}
                 </span>
                 <div

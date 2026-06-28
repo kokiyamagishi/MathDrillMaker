@@ -17,7 +17,7 @@ export const unit24Data: UnitData = {
               {"ເຮົານຳໃຊ້ ∈ (ເປັນອົງປະກອບ) ແລະ ∉ (ບໍ່ເປັນອົງປະກອບ) ເພື່ອບອກຄວາມຈິງຂອງການເປັນສະມາຊິກໃນກຸ່ມ:"}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#F1F8E9", borderRadius: "8px", border: "1px solid #DCEDC8" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#33691E" }}>{"ຕົວຢ່າງ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#33691E" }, whiteSpace: "nowrap"}>{"ຕົວຢ່າງ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ໃຫ້ P ແມ່ນກຸ່ມຂອງຈຳນວນທຳມະຊາດຄູ່ທີ່ຢູ່ລະຫວ່າງ 3 ຫາ 13 ⇒ P = {4, 6, 8, 10, 12}."}
                 <br />
@@ -44,14 +44,14 @@ export const unit24Data: UnitData = {
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "24px", padding: "12px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span>{"6"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"P"}</span>
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span>{"14"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"P"}</span>
@@ -94,7 +94,7 @@ export const unit24Data: UnitData = {
               {"- ຖ້າບໍ່ເທົ່າກັນ, ສັນຍະລັກດ້ວຍ "}<strong>{"A ≠ B"}</strong>{"."}
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2", display: "flex", flexDirection: "column", gap: "8px" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ກົດເກນທີ່ສຳຄັນ:"}</span>
+              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }, whiteSpace: "nowrap"}>{"ກົດເກນທີ່ສຳຄັນ:"}</span>
               <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6" }}>
                 <li>{"ລຳດັບການຂຽນອົງປະກອບບໍ່ສຳຄັນ: {1, 2, 3} = {3, 2, 1}."}</li>
                 <li>{"ຕົວຢ່າງ: ໃຫ້ A = {a, b} ແລະ B = {b, a} ⇒ A = B."}</li>
@@ -119,13 +119,13 @@ export const unit24Data: UnitData = {
               
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(1) "}</span>
                   <span>{"ກຸ່ມ {m, n} "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"ກຸ່ມ {n, m}"}</span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                  <span style={{ fontWeight: "bold" }, whiteSpace: "nowrap"}>{"(2) "}</span>
                   <span>{"ກຸ່ມ {a, b, c} "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                   <span>{"ກຸ່ມ {a, b}"}</span>
