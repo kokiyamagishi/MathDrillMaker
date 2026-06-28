@@ -45,8 +45,8 @@ export const unit3Data: UnitData = {
 
                   {/* Labels */}
                   <text x="8" y="90" fill="#37474F" fontSize="16" textAnchor="middle">{"3"}</text>
-                  <text x="90" y="12" fill="#37474F" fontSize="16" textAnchor="middle">𝑥</text>
-                  <text x="220" y="12" fill="#37474F" fontSize="16" textAnchor="middle">{"2"}</text>
+                  <text x="90" y="18" fill="#37474F" fontSize="16" textAnchor="middle">𝑥</text>
+                  <text x="220" y="18" fill="#37474F" fontSize="16" textAnchor="middle">{"2"}</text>
                 </svg>
               </div>
             </div>
