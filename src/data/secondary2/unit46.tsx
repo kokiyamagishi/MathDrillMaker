@@ -39,39 +39,39 @@ export const unit46Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2", fontSize: "1.15rem", color: "#E65100" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ແຜນວາດຫຼັກເກັນຕາແລັດ: MN // BC"}</span>
-                <svg viewBox="0 0 180 120" style={{ width: "100%", maxWidth: "160px", height: "auto" }}>
+                <svg viewBox="0 0 360 240" style={{ width: "100%", maxWidth: "320px", height: "auto" }}>
                   {/* Triangle ABC */}
-                  <polygon points="90,15 20,100 160,100" fill="none" stroke="#E65100" strokeWidth="2.5" />
+                  <polygon points="180,30 40,200 320,200" fill="none" stroke="#E65100" strokeWidth="4" />
                   
                   {/* Parallel segment MN */}
-                  <line x1="48" y1="50" x2="132" y2="50" stroke="#1E88E5" strokeWidth="2.5" />
+                  <line x1="96" y1="100" x2="264" y2="100" stroke="#1E88E5" strokeWidth="4" />
                   
                   {/* Parallel arrows */}
-                  <path d="M 87,46 L 93,50 L 87,54" fill="none" stroke="#1E88E5" strokeWidth="1.5" />
-                  <path d="M 87,96 L 93,100 L 87,104" fill="none" stroke="#E65100" strokeWidth="1.5" />
+                  <path d="M 174,92 L 186,100 L 174,108" fill="none" stroke="#1E88E5" strokeWidth="3" />
+                  <path d="M 174,192 L 186,200 L 174,208" fill="none" stroke="#E65100" strokeWidth="3" />
 
                   {/* Vertices */}
-                  <circle cx="90" cy="15" r="3" fill="#E65100" />
-                  <text x="86" y="9" fill="#E65100" fontSize="9" fontWeight="bold">{"A"}</text>
+                  <circle cx="180" cy="30" r="6" fill="#E65100" />
+                  <text x="175" y="18" fill="#E65100" fontSize="18" fontWeight="bold">{"A"}</text>
 
-                  <circle cx="20" cy="100" r="3" fill="#E65100" />
-                  <text x="10" y="105" fill="#E65100" fontSize="9" fontWeight="bold">{"B"}</text>
+                  <circle cx="40" cy="200" r="6" fill="#E65100" />
+                  <text x="20" y="215" fill="#E65100" fontSize="18" fontWeight="bold">{"B"}</text>
 
-                  <circle cx="160" cy="100" r="3" fill="#E65100" />
-                  <text x="164" y="105" fill="#E65100" fontSize="9" fontWeight="bold">{"C"}</text>
+                  <circle cx="320" cy="200" r="6" fill="#E65100" />
+                  <text x="330" y="215" fill="#E65100" fontSize="18" fontWeight="bold">{"C"}</text>
 
                   {/* Points M, N */}
-                  <circle cx="48" cy="50" r="3" fill="#1E88E5" />
-                  <text x="36" y="52" fill="#1E88E5" fontSize="8" fontWeight="bold">{"M"}</text>
+                  <circle cx="96" cy="100" r="6" fill="#1E88E5" />
+                  <text x="70" y="105" fill="#1E88E5" fontSize="18" fontWeight="bold">{"M"}</text>
 
-                  <circle cx="132" cy="50" r="3" fill="#1E88E5" />
-                  <text x="136" y="52" fill="#1E88E5" fontSize="8" fontWeight="bold">{"N"}</text>
+                  <circle cx="264" cy="100" r="6" fill="#1E88E5" />
+                  <text x="280" y="105" fill="#1E88E5" fontSize="18" fontWeight="bold">{"N"}</text>
 
                   {/* Labels */}
-                  <text x="65" y="35" fill="#E65100" fontSize="8">{"AM = 3"}</text>
-                  <text x="30" y="78" fill="#E65100" fontSize="8">{"MB = 6"}</text>
-                  <text x="115" y="35" fill="#E65100" fontSize="8">{"AN = 2"}</text>
-                  <text x="138" y="78" fill="#E65100" fontSize="8">{"NC = 4"}</text>
+                  <text x="110" y="60" fill="#E65100" fontSize="16" textAnchor="end">{"AM = 3"}</text>
+                  <text x="60" y="160" fill="#E65100" fontSize="16" textAnchor="end">{"MB = 6"}</text>
+                  <text x="250" y="60" fill="#E65100" fontSize="16" textAnchor="start">{"AN = 2"}</text>
+                  <text x="300" y="160" fill="#E65100" fontSize="16" textAnchor="start">{"NC = 4"}</text>
                 </svg>
               </div>
             </div>
