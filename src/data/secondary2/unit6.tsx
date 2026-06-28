@@ -273,13 +273,21 @@ export const unit6Data: UnitData = {
               {"ທ້າວ ແດງ ແລ່ນໄດ້ "} <Fraction num="3" den="4" /> {" ກິໂລແມັດ. ນາງ ດຳ ແລ່ນໄດ້ "} <Fraction num="2" den="3" /> {" ກິໂລແມັດ. ຖາມວ່າທັງສອງຄົນແລ່ນລວມກັນໄດ້ທັງໝົດຈັກກິໂລແມັດ?"}
             </p>
             <div style={{ display: "flex", justifyContent: "center", margin: "8px 0" }}>
-              <svg viewBox="0 0 300 80" style={{ width: "100%", maxWidth: "250px", height: "auto" }}>
+              <svg viewBox="0 0 320 90" style={{ width: "100%", maxWidth: "300px", height: "auto" }}>
                 {/* 2 lines showing distances */}
-                <rect x="10" y="10" width="180" height="15" fill="#BBDEFB" stroke="#0D47A1" strokeWidth="2" rx="3" />
-                <text x="100" y="22" fill="#0D47A1" fontSize="10" fontWeight="bold">{"ທ້າວ ແດງ (3/4 km)"}</text>
+                <rect x="10" y="10" width="225" height="30" fill="#BBDEFB" stroke="#0D47A1" strokeWidth="2" rx="4" />
+                <text x="25" y="30" fill="#0D47A1" fontSize="13" fontWeight="bold">{"ທ້າວ ແດງ"}</text>
+                <text x="110" y="21" fill="#0D47A1" fontSize="12" fontWeight="bold" textAnchor="middle">{"3"}</text>
+                <line x1="103" y1="24" x2="117" y2="24" stroke="#0D47A1" strokeWidth="1.5" />
+                <text x="110" y="35" fill="#0D47A1" fontSize="12" fontWeight="bold" textAnchor="middle">{"4"}</text>
+                <text x="122" y="30" fill="#0D47A1" fontSize="13" fontWeight="bold">{"km"}</text>
                 
-                <rect x="10" y="35" width="160" height="15" fill="#C8E6C9" stroke="#1B5E20" strokeWidth="2" rx="3" />
-                <text x="90" y="47" fill="#1B5E20" fontSize="10" fontWeight="bold">{"ນາງ ດຳ (2/3 km)"}</text>
+                <rect x="10" y="50" width="200" height="30" fill="#C8E6C9" stroke="#1B5E20" strokeWidth="2" rx="4" />
+                <text x="25" y="70" fill="#1B5E20" fontSize="13" fontWeight="bold">{"ນາງ ດຳ"}</text>
+                <text x="100" y="61" fill="#1B5E20" fontSize="12" fontWeight="bold" textAnchor="middle">{"2"}</text>
+                <line x1="93" y1="64" x2="107" y2="64" stroke="#1B5E20" strokeWidth="1.5" />
+                <text x="100" y="75" fill="#1B5E20" fontSize="12" fontWeight="bold" textAnchor="middle">{"3"}</text>
+                <text x="112" y="70" fill="#1B5E20" fontSize="13" fontWeight="bold">{"km"}</text>
               </svg>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
