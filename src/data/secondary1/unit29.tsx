@@ -116,14 +116,16 @@ export const unit29Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ຊີ້ນໝູ 600 g ລາຄາ 15,000 ກີບ. ຖ້າຕ້ອງການຊື້ຊີ້ນໝູ 900 g ຈະຕ້ອງຈ່າຍເງິນທັງໝົດຈັກກີບ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <span>{"ສົມຜົນ: x / 900 = 15,000 / 600 ⇒ x ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
-                </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <span>{"= "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
+                <div>{"ສົມຜົນ:"}</div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", marginTop: "4px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
+                  <Fraction num={"x"} den={"900"} />
+                  <span>{" = "}</span>
+                  <Fraction num={"15,000"} den={"600"} />
+                  <span>{" ⇒ x = "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                  <span>{" = "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ກີບ"}</span>
                 </div>
               </div>
@@ -137,14 +139,16 @@ export const unit29Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ລົດຍົນຄັນໜຶ່ງໃຊ້ນ້ຳມັນ 13 ລິດ ເພື່ອແລ່ນໄດ້ໄລຍະທາງ 260 km. ຖ້າມີນ້ຳມັນ 85 ລິດ ຈະແລ່ນໄດ້ໄລຍະທາງຈັກ km? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <span>{"ສົມຜົນ: x / 85 = 260 / 13 ⇒ x ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
-                </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <span>{"= "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+              <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
+                <div>{"ສົມຜົນ:"}</div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", marginTop: "4px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
+                  <Fraction num={"x"} den={"85"} />
+                  <span>{" = "}</span>
+                  <Fraction num={"260"} den={"13"} />
+                  <span>{" ⇒ x = "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                  <span>{" = "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"km"}</span>
                 </div>
               </div>
