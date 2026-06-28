@@ -129,9 +129,9 @@ export const unit22Data: UnitData = {
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                 <span>{"ຕອບ: ໄລຍະທາງຕົວຈິງແມ່ນ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "42px", flexShrink: 0 }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "42px", flexShrink: 0 }}></span>
                 <span>{"m , ຕ້ອງໃຊ້ເສົາທັງໝົດ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "42px", flexShrink: 0 }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "42px", flexShrink: 0 }}></span>
                 <span>{"ຕົ້ນ"}</span>
               </div>
             </div>
@@ -146,9 +146,9 @@ export const unit22Data: UnitData = {
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                 <span>{"ຕອບ: ໄລຍະທາງຕົວຈິງແມ່ນ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "42px", flexShrink: 0 }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "42px", flexShrink: 0 }}></span>
                 <span>{"m , ຕ້ອງໃຊ້ເສົາທັງໝົດ"}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "40px", height: "42px", flexShrink: 0 }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "42px", flexShrink: 0 }}></span>
                 <span>{"ຕົ້ນ"}</span>
               </div>
             </div>
