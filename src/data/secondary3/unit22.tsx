@@ -26,9 +26,9 @@ export const unit22Data: UnitData = {
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
               <div style={{ display: "inline-flex", alignItems: "center" }}>
-                {"• ຄ່າສະເລ່ຍ (x̄): "}
+                {"• ຄ່າສະເລ່ຍ ("}<i>x</i>{"̄): "}
                 <span className="math" style={{ marginLeft: "4px" }}>
-                  {"x̄ = "} <Fraction num="ຜົນບວກຂອງຂໍ້ມູນທັງໝົດ" den="ຈຳນວນຂໍ້ມູນ N" />
+                  <i>x</i>{"̄ = "} <Fraction num="ຜົນບວກຂອງຂໍ້ມູນທັງໝົດ" den="ຈຳນວນຂໍ້ມູນ N" />
                 </span>
               </div>
               <div>{"• ຂອບເຂດ: "} <span className="math" style={{ fontWeight: "bold" }}>{"Range = Max - Min"}</span> {" (ຄ່າຫຼາຍສຸດ - ຄ່ານ້ອຍສຸດ)"}</div>
@@ -44,7 +44,7 @@ export const unit22Data: UnitData = {
                   
                   {/* Pivot */}
                   <polygon points="100,50 90,75 110,75" fill="#2E7D32" />
-                  <text x="200" y="174" fill="#2E7D32" fontSize="16" textAnchor="middle" fontWeight="bold">{"ຄ່າສະເລ່ຍ (x̄ = 6)"}</text>
+                  <text x="200" y="174" fill="#2E7D32" fontSize="16" textAnchor="middle" fontWeight="bold">{"ຄ່າສະເລ່ຍ ("}<i>x</i>{"̄ = 6)"}</text>
 
                   {/* Weights */}
                   {/* Left weight */}
@@ -88,7 +88,7 @@ export const unit22Data: UnitData = {
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຄ່າສະເລ່ຍ (x̄) ຂອງກຸ່ມຂໍ້ມູນນີ້ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຄ່າສະເລ່ຍ ("}<i>x</i>{"̄) ຂອງກຸ່ມຂໍ້ມູນນີ້ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
@@ -112,7 +112,7 @@ export const unit22Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຄ່າສະເລ່ຍ (x̄) ຂອງກຸ່ມຂໍ້ມູນນີ້ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຄ່າສະເລ່ຍ ("}<i>x</i>{"̄) ຂອງກຸ່ມຂໍ້ມູນນີ້ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
@@ -134,12 +134,12 @@ export const unit22Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ສຳລັບຂໍ້ມູນແບ່ງຊັ້ນ, ເຮົາຕ້ອງຊອກຫາເມັດເຄິ່ງກາງຊັ້ນ (xᵢ) ຂອງແຕ່ລະຊັ້ນກ່ອນ:"}
+              {"ສຳລັບຂໍ້ມູນແບ່ງຊັ້ນ, ເຮົາຕ້ອງຊອກຫາເມັດເຄິ່ງກາງຊັ້ນ ("}<i>x</i>{"ᵢ) ຂອງແຕ່ລະຊັ້ນກ່ອນ:"}
             </p>
             
             <div style={{ padding: "12px 16px", backgroundColor: "#FFFDE7", borderRadius: "10px", border: "1px solid #FFF59D", fontSize: "1.25rem", color: "#F57F17", display: "flex", flexDirection: "column", gap: "6.5px" }}>
               <div style={{ display: "inline-flex", alignItems: "center" }}>
-                {"• ເມັດເຄິ່ງກາງຊັ້ນ xᵢ = "}
+                {"• ເມັດເຄິ່ງກາງຊັ້ນ "}<i>x</i>{"ᵢ = "}
                 <span className="math" style={{ marginLeft: "4px" }}>
                   <Fraction num="ຂອບເຂດລຸ່ມ + ຂອບເຂດເທິງ" den="2" />
                 </span>
@@ -147,10 +147,10 @@ export const unit22Data: UnitData = {
               <div style={{ display: "inline-flex", alignItems: "center" }}>
                 {"• ສູດຄ່າສະເລ່ຍຂໍ້ມູນແບ່ງຊັ້ນ: "}
                 <span className="math" style={{ marginLeft: "4px" }}>
-                  {"x̄ = "} <Fraction num="Σ(f_i × x_i)" den="N" />
+                  <i>x</i>{"̄ = "} <Fraction num="Σ(f_i × x_i)" den="N" />
                 </span>
               </div>
-              <div style={{ fontWeight: "bold", color: "#D84315" }}>{"• ຕົວຢ່າງ: ຊັ້ນ 10 - 20 ມີຄວາມຖີ່ 2 ➔ ເມັດເຄິ່ງກາງ xᵢ = (10+20)/2 = 15 ➔ fᵢ × xᵢ = 2 × 15 = 30."}</div>
+              <div style={{ fontWeight: "bold", color: "#D84315" }}>{"• ຕົວຢ່າງ: ຊັ້ນ 10 - 20 ມີຄວາມຖີ່ 2 ➔ ເມັດເຄິ່ງກາງ "}<i>x</i>{"ᵢ = (10+20)/2 = 15 ➔ fᵢ × "}<i>x</i>{"ᵢ = 2 × 15 = 30."}</div>
             </div>
           </div>
         ),
@@ -177,13 +177,13 @@ export const unit22Data: UnitData = {
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຊັ້ນ "} <span className="math">{"20 - 30"}</span> {" ມີຄວາມຖີ່ 4, ຜົນຄູນລະຫວ່າງຄວາມຖີ່ ແລະ ເມັດເຄິ່ງກາງ (fᵢ × xᵢ) ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຊັ້ນ "} <span className="math">{"20 - 30"}</span> {" ມີຄວາມຖີ່ 4, ຜົນຄູນລະຫວ່າງຄວາມຖີ່ ແລະ ເມັດເຄິ່ງກາງ (fᵢ × "}<i>x</i>{"ᵢ) ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ມີສອງຊັ້ນ: "} <span className="math">{"10-20"}</span> {" (ຄວາມຖີ່ 2) ແລະ "} <span className="math">{"20-30"}</span> {" (ຄວາມຖີ່ 2). ຄ່າສະເລ່ຍ x̄ ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ມີສອງຊັ້ນ: "} <span className="math">{"10-20"}</span> {" (ຄວາມຖີ່ 2) ແລະ "} <span className="math">{"20-30"}</span> {" (ຄວາມຖີ່ 2). ຄ່າສະເລ່ຍ "}<i>x</i>{"̄ ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -207,7 +207,7 @@ export const unit22Data: UnitData = {
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຖ້າຜົນຄູນລວມ Σ(fᵢ × xᵢ) ແມ່ນ 300 ແລະ N = 15. ຄ່າສະເລ່ຍ x̄ ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຖ້າຜົນຄູນລວມ Σ(fᵢ × "}<i>x</i>{"ᵢ) ແມ່ນ 300 ແລະ N = 15. ຄ່າສະເລ່ຍ "}<i>x</i>{"̄ ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -284,7 +284,7 @@ export const unit22Data: UnitData = {
             {"ຄ່າສະເລ່ຍຂອງອຸນຫະພູມໃນອາທິດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(2) ໃຫ້ອຸນຫະພູມທີ່ວັດແທກໄດ້ໃນ 7 ວັນແມ່ນ: 24, 26, 25, 28, 30, 27, 22 ອົງສາເຊ. ຈົ່ງຄິດໄລ່ຫາຄ່າສະເລ່ຍ (x̄) ຂອງອຸນຫະພູມໃນອາທິດນີ້."}
+            {"(2) ໃຫ້ອຸນຫະພູມທີ່ວັດແທກໄດ້ໃນ 7 ວັນແມ່ນ: 24, 26, 25, 28, 30, 27, 22 ອົງສາເຊ. ຈົ່ງຄິດໄລ່ຫາຄ່າສະເລ່ຍ ("}<i>x</i>{"̄) ຂອງອຸນຫະພູມໃນອາທິດນີ້."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຄ່າສະເລ່ຍແມ່ນ"}</span>
@@ -301,14 +301,14 @@ export const unit22Data: UnitData = {
         questionNumber: 1,
         answers: [
           <span key="1">{"(1) 30 (ເພາະວ່າ 2 + 4 + 6 + 8 + 10 = 30)"}</span>,
-          <span key="2">{"(2) 6 (ເພາະວ່າ ຄ່າສະເລ່ຍ x̄ = 30 / 5 = 6)"}</span>,
+          <span key="2">{"(2) 6 (ເພາະວ່າ ຄ່າສະເລ່ຍ "}<i>x</i>{"̄ = 30 / 5 = 6)"}</span>,
           <span key="3">{"(3) 8 (ເພາະວ່າ ຂອບເຂດ Range = Max - Min = 10 - 2 = 8)"}</span>
         ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="4">{"(1) 6 (ເພາະວ່າ ຜົນບວກ = 30, N = 5 ➔ x̄ = 30 / 5 = 6)"}</span>,
+          <span key="4">{"(1) 6 (ເພາະວ່າ ຜົນບວກ = 30, N = 5 ➔ "}<i>x</i>{"̄ = 30 / 5 = 6)"}</span>,
           <span key="5">{"(2) 6 (ເພາະວ່າ Range = Max - Min = 9 - 3 = 6)"}</span>
         ]
       },
@@ -333,7 +333,7 @@ export const unit22Data: UnitData = {
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="9">{"26 (ເພາະວ່າ ຜົນບວກອຸນຫະພູມທັງ 7 ວັນແມ່ນ 182 ➔ ຄ່າສະເລ່ຍ x̄ = 182 / 7 = 26 ອົງສາເຊ)"}</span>
+          <span key="9">{"26 (ເພາະວ່າ ຜົນບວກອຸນຫະພູມທັງ 7 ວັນແມ່ນ 182 ➔ ຄ່າສະເລ່ຍ "}<i>x</i>{"̄ = 182 / 7 = 26 ອົງສາເຊ)"}</span>
         ]
       }
     ],
@@ -346,15 +346,15 @@ export const dummyanswers = {
       questionNumber: 1,
       answers: [
         <span key="10">{"15 (ເພາະວ່າ ເມັດເຄິ່ງກາງຊັ້ນ = (10 + 20) / 2 = 15)"}</span>,
-        <span key="11">{"100 (ເພາະວ່າ ເມັດເຄິ່ງກາງຊັ້ນແມ່ນ 25 ➔ fᵢ × xᵢ = 4 × 25 = 100)"}</span>,
-        <span key="12">{"20 (ເພາະວ່າ ຜົນຄູນລວມ = 2×15 + 2×25 = 30+50 = 80, N = 4 ➔ x̄ = 80 / 4 = 20)"}</span>
+        <span key="11">{"100 (ເພາະວ່າ ເມັດເຄິ່ງກາງຊັ້ນແມ່ນ 25 ➔ fᵢ × "}<i>x</i>{"ᵢ = 4 × 25 = 100)"}</span>,
+        <span key="12">{"20 (ເພາະວ່າ ຜົນຄູນລວມ = 2×15 + 2×25 = 30+50 = 80, N = 4 ➔ "}<i>x</i>{"̄ = 80 / 4 = 20)"}</span>
       ]
     },
     {
       questionNumber: 2,
       answers: [
         <span key="13">{"40 (ເພາະວ່າ ເມັດເຄິ່ງກາງຊັ້ນ = (30 + 50) / 2 = 40)"}</span>,
-        <span key="14">{"20 (ເພາະວ່າ x̄ = Σ(fᵢ × xᵢ) / N = 300 / 15 = 20)"}</span>
+        <span key="14">{"20 (ເພາະວ່າ "}<i>x</i>{"̄ = Σ(fᵢ × "}<i>x</i>{"ᵢ) / N = 300 / 15 = 20)"}</span>
       ]
     }
   ]

@@ -22,7 +22,7 @@ export const unit19Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ເສັ້ນຊື່ທີ່ຜ່ານສອງເມັດ A(x₁, y₁) ແລະ B(x₂, y₂) ຈະມີຄວາມຊັນ m ທີ່ຊອກໄດ້ຈາກສູດ:"}
+              {"ເສັ້ນຊື່ທີ່ຜ່ານສອງເມັດ A("}<i>x</i>{"₁, "}<i>y</i>{"₁) ແລະ B("}<i>x</i>{"₂, "}<i>y</i>{"₂) ຈະມີຄວາມຊັນ m ທີ່ຊອກໄດ້ຈາກສູດ:"}
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
               <div style={{ display: "inline-flex", alignItems: "center" }}>
@@ -31,9 +31,9 @@ export const unit19Data: UnitData = {
                   {"m = "} <Fraction num="y₂ - y₁" den="x₂ - x₁" />
                 </span>
               </div>
-              <div>{"• ສູດສົມຜົນເສັ້ນຊື່: "} <span className="math">{"y - y₁ = m(x - x₁)"}</span></div>
+              <div>{"• ສູດສົມຜົນເສັ້ນຊື່: "} <span className="math"><i>y</i>{" - "}<i>y</i>{"₁ = m("}<i>x</i>{" - "}<i>x</i>{"₁)"}</span></div>
               <div style={{ fontWeight: "bold", color: "#0D47A1" }}>
-                {"• ຕົວຢ່າງ: ຜ່ານ A(1, 2) ແລະ B(3, 8) ➔ m = (8-2) / (3-1) = 6 / 2 = 3 ➔ y - 2 = 3(x - 1) ➔ y = 3x - 1."}
+                {"• ຕົວຢ່າງ: ຜ່ານ A(1, 2) ແລະ B(3, 8) ➔ m = (8-2) / (3-1) = 6 / 2 = 3 ➔ "}<i>y</i>{" - 2 = 3("}<i>x</i>{" - 1) ➔ "}<i>y</i>{" = 3"}<i>x</i>{" - 1."}
               </div>
             </div>
 
@@ -51,10 +51,10 @@ export const unit19Data: UnitData = {
 
                   {/* Points */}
                   <circle cx="160" cy="120" r="6" fill="#D32F2F" />
-                  <text x="170" y="130" fill="#37474F" fontSize="16" fontWeight="bold">{"A(x₁, y₁)"}</text>
+                  <text x="170" y="130" fill="#37474F" fontSize="16" fontWeight="bold">{"A("}<i>x</i>{"₁, "}<i>y</i>{"₁)"}</text>
 
                   <circle cx="280" cy="60" r="6" fill="#D32F2F" />
-                  <text x="290" y="70" fill="#37474F" fontSize="16" fontWeight="bold">{"B(x₂, y₂)"}</text>
+                  <text x="290" y="70" fill="#37474F" fontSize="16" fontWeight="bold">{"B("}<i>x</i>{"₂, "}<i>y</i>{"₂)"}</text>
                 </svg>
               </div>
             </div>
@@ -101,7 +101,7 @@ export const unit19Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຄຳຖາມທີ 2: ຈົ່ງຊອກຫາສົມຜົນເສັ້ນຊື່ໃນຮູບ y = ax + b ຈາກສອງເມັດ ແລ້ວຫາຄ່າ a + b: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
+                {"ຄຳຖາມທີ 2: ຈົ່ງຊອກຫາສົມຜົນເສັ້ນຊື່ໃນຮູບ "}<i>y</i>{" = ax + b ຈາກສອງເມັດ ແລ້ວຫາຄ່າ a + b: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
@@ -192,7 +192,7 @@ export const unit19Data: UnitData = {
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ຈົ່ງຊອກຫາຄວາມຊັນຂອງເສັ້ນຊື່ທີ່ຕັ້ງສາກກັບເສັ້ນຊື່ "} <span className="math">{"y = 3x - 1"}</span> {"? (ຕອບເປັນເລກສ່ວນ)"}</span>
+                  <span>{"ຈົ່ງຊອກຫາຄວາມຊັນຂອງເສັ້ນຊື່ທີ່ຕັ້ງສາກກັບເສັ້ນຊື່ "} <span className="math"><i>y</i>{" = 3"}<i>x</i>{" - 1"}</span> {"? (ຕອບເປັນເລກສ່ວນ)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -204,19 +204,19 @@ export const unit19Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຄຳຖາມທີ 2: ຈົ່ງຊອກຫາສົມຜົນເສັ້ນຊື່ຕັ້ງສາກ y = ax + b ຜ່ານ P(0, 4): "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
+                {"ຄຳຖາມທີ 2: ຈົ່ງຊອກຫາສົມຜົນເສັ້ນຊື່ຕັ້ງສາກ "}<i>y</i>{" = ax + b ຜ່ານ P(0, 4): "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຖ້າເສັ້ນຊື່ຕັ້ງສາກກັບ "} <span className="math">{"y = 2x + 1"}</span> {", ຄ່າຂອງສຳປະສິດຄວາມຊັນ a ແມ່ນເທົ່າໃດ? (ຕອບເປັນເລກສ່ວນ)"}</span>
+                  <span>{"ຖ້າເສັ້ນຊື່ຕັ້ງສາກກັບ "} <span className="math"><i>y</i>{" = 2"}<i>x</i>{" + 1"}</span> {", ຄ່າຂອງສຳປະສິດຄວາມຊັນ a ແມ່ນເທົ່າໃດ? (ຕອບເປັນເລກສ່ວນ)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຄ່າຂອງຈຸດຕັດແກນ y (b) ຂອງເສັ້ນຊື່ຕັ້ງສາກນີ້ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຄ່າຂອງຈຸດຕັດແກນ "}<i>y</i>{" (b) ຂອງເສັ້ນຊື່ຕັ້ງສາກນີ້ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -237,7 +237,7 @@ export const unit19Data: UnitData = {
               {"ສົມຜົນເສັ້ນຊື່ຕັ້ງສາກຜ່ານຈຸດທີ່ກຳນົດ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຈົ່ງຊອກຫາສົມຜົນເສັ້ນຊື່ທີ່ຜ່ານເມັດ "} <span className="math">{"A(2, 5)"}</span> {" ແລະ ຕັ້ງສາກກັບເສັ້ນຊື່ "} <span className="math">{"y = -"} <Fraction num="1" den="3" /> {"x + 2"}</span> {". ຂຽນໃນຮູບ y = ax + b, ຄ່າຂອງ a + b ແມ່ນເທົ່າໃດ?"}
+              {"ຈົ່ງຊອກຫາສົມຜົນເສັ້ນຊື່ທີ່ຜ່ານເມັດ "} <span className="math">{"A(2, 5)"}</span> {" ແລະ ຕັ້ງສາກກັບເສັ້ນຊື່ "} <span className="math"><i>y</i>{" = -"} <Fraction num="1" den="3" /> <i>x</i>{" + 2"}</span> {". ຂຽນໃນຮູບ "}<i>y</i>{" = ax + b, ຄ່າຂອງ a + b ແມ່ນເທົ່າໃດ?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: a + b ="}</span>
@@ -254,10 +254,10 @@ export const unit19Data: UnitData = {
               {"ການຊອກຫາຕົວປະສານງານຈາກເງື່ອນໄຂຕັ້ງສາກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(2) ເສັ້ນຊື່ໜຶ່ງຜ່ານສອງເມັດ "} <span className="math">{"(1, 3)"}</span> {" ແລະ "} <span className="math">{"(4, y)"}</span> {". ຖ້າເສັ້ນຊື່ນີ້ຕັ້ງສາກກັບເສັ້ນຊື່ທີ່ມີຄວາມຊັນ m = -1. ຈົ່ງຊອກຫາຄ່າຂອງ y."}
+              {"(2) ເສັ້ນຊື່ໜຶ່ງຜ່ານສອງເມັດ "} <span className="math">{"(1, 3)"}</span> {" ແລະ "} <span className="math">{"(4, "}<i>y</i>{")"}</span> {". ຖ້າເສັ້ນຊື່ນີ້ຕັ້ງສາກກັບເສັ້ນຊື່ທີ່ມີຄວາມຊັນ m = -1. ຈົ່ງຊອກຫາຄ່າຂອງ "}<i>y</i>{"."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: y ="}</span>
+              <span>{"ຕອບ: "}<i>y</i>{" ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -274,7 +274,7 @@ export const unit19Data: UnitData = {
             {"ຜົນບວກຕົວປະສານງານເມັດເຄິ່ງກາງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ທ່ອນຊື່ AB ມີສອງສົ້ນແມ່ນ "} <span className="math">{"A(1, 2)"}</span> {" ແລະ "} <span className="math">{"B(5, 10)"}</span> {". ຈົ່ງຊອກຫາຈຸດເຄິ່ງກາງ M ຂອງທ່ອນຊື່ນີ້ ແລ້ວຄິດໄລ່ຜົນບວກຂອງຕົວປະສານງານ (x_M + y_M)."}
+            {"ທ່ອນຊື່ AB ມີສອງສົ້ນແມ່ນ "} <span className="math">{"A(1, 2)"}</span> {" ແລະ "} <span className="math">{"B(5, 10)"}</span> {". ຈົ່ງຊອກຫາຈຸດເຄິ່ງກາງ M ຂອງທ່ອນຊື່ນີ້ ແລ້ວຄິດໄລ່ຜົນບວກຂອງຕົວປະສານງານ ("}<i>x</i>{"_M + "}<i>y</i>{"_M)."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຜົນບວກແມ່ນ"}</span>
@@ -314,8 +314,8 @@ export const unit19Data: UnitData = {
       {
         questionNumber: 2,
         answers: [
-          <span key="4">{"(1) 5 (ເພາະວ່າ m = 2 ➔ y - 5 = 2(x - 1) ➔ y = 2x + 3 ➔ a = 2, b = 3 ➔ a + b = 5)"}</span>,
-          <span key="5">{"(2) 4 (ເພາະວ່າ m = 2 ➔ y - 2 = 2(x - 0) ➔ y = 2x + 2 ➔ a = 2, b = 2 ➔ a + b = 4)"}</span>
+          <span key="4">{"(1) 5 (ເພາະວ່າ m = 2 ➔ "}<i>y</i>{" - 5 = 2("}<i>x</i>{" - 1) ➔ "}<i>y</i>{" = 2"}<i>x</i>{" + 3 ➔ a = 2, b = 3 ➔ a + b = 5)"}</span>,
+          <span key="5">{"(2) 4 (ເພາະວ່າ m = 2 ➔ "}<i>y</i>{" - 2 = 2("}<i>x</i>{" - 0) ➔ "}<i>y</i>{" = 2"}<i>x</i>{" + 2 ➔ a = 2, b = 2 ➔ a + b = 4)"}</span>
         ]
       },
       {
@@ -351,25 +351,25 @@ export const dummyanswers = {
     {
       questionNumber: 2,
       answers: [
-        <span key="10">{"4 (ຈຸດຕັດແກນ y ແມ່ນ (0, 4) ➔ b = 4)"}</span>
+        <span key="10">{"4 (ຈຸດຕັດແກນ "}<i>y</i>{" ແມ່ນ (0, 4) ➔ b = 4)"}</span>
       ]
     },
     {
       questionNumber: "ທ້າທາຍ 1",
       answers: [
-        <span key="11">{"2 (ຄວາມຊັນຂອງເສັ້ນຊື່ເດີມແມ່ນ -1/3 ➔ ຄວາມຊັນຕັ້ງສາກ m = 3 ➔ y - 5 = 3(x - 2) ➔ y = 3x - 1 ➔ a = 3, b = -1 ➔ a + b = 2)"}</span>
+        <span key="11">{"2 (ຄວາມຊັນຂອງເສັ້ນຊື່ເດີມແມ່ນ -1/3 ➔ ຄວາມຊັນຕັ້ງສາກ m = 3 ➔ "}<i>y</i>{" - 5 = 3("}<i>x</i>{" - 2) ➔ "}<i>y</i>{" = 3"}<i>x</i>{" - 1 ➔ a = 3, b = -1 ➔ a + b = 2)"}</span>
       ]
     },
     {
       questionNumber: "ທ້າທາຍ 2",
       answers: [
-        <span key="12">{"6 (ຄວາມຊັນຕັ້ງສາກແມ່ນ 1 ➔ (y - 3) / (4 - 1) = 1 ➔ y - 3 = 3 ➔ y = 6)"}</span>
+        <span key="12">{"6 (ຄວາມຊັນຕັ້ງສາກແມ່ນ 1 ➔ ("}<i>y</i>{" - 3) / (4 - 1) = 1 ➔ "}<i>y</i>{" - 3 = 3 ➔ "}<i>y</i>{" = 6)"}</span>
       ]
     },
     {
       questionNumber: "ທົດສອບປະຈຳບົດ 1",
       answers: [
-        <span key="13">{"9 (ຈຸດເຄິ່ງກາງ M = ((1+5)/2, (2+10)/2) = (3, 6) ➔ x_M + y_M = 3 + 6 = 9)"}</span>
+        <span key="13">{"9 (ຈຸດເຄິ່ງກາງ M = ((1+5)/2, (2+10)/2) = (3, 6) ➔ "}<i>x</i>{"_M + "}<i>y</i>{"_M = 3 + 6 = 9)"}</span>
       ]
     },
     {

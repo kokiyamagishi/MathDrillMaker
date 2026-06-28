@@ -22,16 +22,16 @@ export const unit15Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ສົມຜົນຂັ້ນສີ່ຄູ່ ຮູບຮ່າງ ax⁴ + bx² + c = 0 ສາມາດແກ້ໄດ້ໂດຍການວາງຕົວປ່ຽນຊ່ວຍ t = x² (t ≥ 0):"}
+              {"ສົມຜົນຂັ້ນສີ່ຄູ່ ຮູບຮ່າງ ax⁴ + bx² + c = 0 ສາມາດແກ້ໄດ້ໂດຍການວາງຕົວປ່ຽນຊ່ວຍ t = "}<i>x</i>{"² (t ≥ 0):"}
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
               <div>{"• ຫຼັກການ: ປ່ຽນ ax⁴ + bx² + c = 0 ➔ at² + bt + c = 0"}</div>
-              <div>{"• ຕົວຢ່າງ: x⁴ - 5x² + 4 = 0 ➔ ວາງ t = x² ➔ t² - 5t + 4 = 0"}</div>
+              <div>{"• ຕົວຢ່າງ: "}<i>x</i>{"⁴ - 5"}<i>x</i>{"² + 4 = 0 ➔ ວາງ t = "}<i>x</i>{"² ➔ t² - 5t + 4 = 0"}</div>
               <div style={{ fontWeight: "bold", color: "#0D47A1", paddingLeft: "16px" }}>
                 {"➔ (t - 1)(t - 4) = 0 ➔ t = 1 ຫຼື t = 4"}
               </div>
               <div style={{ fontWeight: "bold", color: "#0D47A1", paddingLeft: "16px" }}>
-                {"➔ x² = 1 ➔ x = ±1 ; ແລະ x² = 4 ➔ x = ±2."}
+                {"➔ "}<i>x</i>{"² = 1 ➔ "}<i>x</i>{" = ±1 ; ແລະ "}<i>x</i>{"² = 4 ➔ "}<i>x</i>{" = ±2."}
               </div>
             </div>
 
@@ -42,7 +42,7 @@ export const unit15Data: UnitData = {
                 <svg viewBox="0 0 400 160" style={{ width: "100%", maxWidth: "360px", height: "auto" }}>
                   {/* Step 1 */}
                   <rect x="10" y="50" width="110" height="60" rx="4" fill="#4CAF50" />
-                  <text x="64" y="88" fill="#FFFFFF" fontSize="16" textAnchor="middle" fontWeight="bold">{"x⁴ - 5x² + 4 = 0"}</text>
+                  <text x="64" y="88" fill="#FFFFFF" fontSize="16" textAnchor="middle" fontWeight="bold"><i>x</i>{"⁴ - 5"}<i>x</i>{"² + 4 = 0"}</text>
 
                   <line x1="120" y1="80" x2="140" y2="80" stroke="#37474F" strokeWidth="2" />
 
@@ -54,7 +54,7 @@ export const unit15Data: UnitData = {
 
                   {/* Step 3 */}
                   <rect x="280" y="50" width="110" height="60" rx="4" fill="#FF9800" />
-                  <text x="334" y="88" fill="#FFFFFF" fontSize="16" textAnchor="middle" fontWeight="bold">{"x = ±1, ±2"}</text>
+                  <text x="334" y="88" fill="#FFFFFF" fontSize="16" textAnchor="middle" fontWeight="bold"><i>x</i>{" = ±1, ±2"}</text>
                 </svg>
               </div>
             </div>
@@ -77,7 +77,7 @@ export const unit15Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ສຳລັບສົມຜົນ "} <span className="math">{"x⁴ - 5x² + 4 = 0"}</span> {". ຈົ່ງຊອກຫາສອງໃຈຜົນທີ່ເປັນຄ່າບວກ (ຂຽນແຍກດ້ວຍຈຸດ)?"}</span>
+                  <span>{"ສຳລັບສົມຜົນ "} <span className="math"><i>x</i>{"⁴ - 5"}<i>x</i>{"² + 4 = 0"}</span> {". ຈົ່ງຊອກຫາສອງໃຈຜົນທີ່ເປັນຄ່າບວກ (ຂຽນແຍກດ້ວຍຈຸດ)?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
                 
@@ -89,7 +89,7 @@ export const unit15Data: UnitData = {
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ສຳລັບສົມຜົນ "} <span className="math">{"x⁴ - 10x² + 9 = 0"}</span> {". ຈົ່ງຊອກຫາໃຈຜົນທີ່ເປັນຄ່າບວກໃຫຍ່ທີ່ສຸດ?"}</span>
+                  <span>{"ສຳລັບສົມຜົນ "} <span className="math"><i>x</i>{"⁴ - 10"}<i>x</i>{"² + 9 = 0"}</span> {". ຈົ່ງຊອກຫາໃຈຜົນທີ່ເປັນຄ່າບວກໃຫຍ່ທີ່ສຸດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -101,19 +101,19 @@ export const unit15Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຄຳຖາມທີ 2: ຈົ່ງແກ້ສົມຜົນໂດຍການປ່ຽນຕົວປ່ຽນຊ່ວຍ t = x - 1: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
+                {"ຄຳຖາມທີ 2: ຈົ່ງແກ້ສົມຜົນໂດຍການປ່ຽນຕົວປ່ຽນຊ່ວຍ t = "}<i>x</i>{" - 1: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຖ້າໃຫ້ສົມຜົນ "} <span className="math">{"(x - 1)² - 4(x - 1) + 3 = 0"}</span> {" ໂດຍວາງ t = x - 1 ຈະໄດ້ t ບວກແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຖ້າໃຫ້ສົມຜົນ "} <span className="math">{"("}<i>x</i>{" - 1)² - 4("}<i>x</i>{" - 1) + 3 = 0"}</span> {" ໂດຍວາງ t = "}<i>x</i>{" - 1 ຈະໄດ້ t ບວກແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຈາກຄ່າ t ບວກຂ້າງເທິງ, ຈົ່ງຊອກຫາຄ່າຂອງ x ທີ່ເປັນໃຈຜົນໃຫຍ່ທີ່ສຸດ?"}</span>
+                  <span>{"ຈາກຄ່າ t ບວກຂ້າງເທິງ, ຈົ່ງຊອກຫາຄ່າຂອງ "}<i>x</i>{" ທີ່ເປັນໃຈຜົນໃຫຍ່ທີ່ສຸດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -134,8 +134,8 @@ export const unit15Data: UnitData = {
             
             <div style={{ padding: "12px 16px", backgroundColor: "#FFFDE7", borderRadius: "10px", border: "1px solid #FFF59D", fontSize: "1.25rem", color: "#F57F17", display: "flex", flexDirection: "column", gap: "6px" }}>
               <div>{"• ໂຈດສາມແຈສາກ: ນຳໃຊ້ສູດເນື້ອທີ່ S = (ກວ້າງ × ສູງ) / 2 ເພື່ອສ້າງສົມຜົນ."}</div>
-              <div>{"• ໂຈດຜົນຄູນຈຳນວນ: ສອງຈຳນວນຖ້ວນຕິດຕໍ່ກັນແມ່ນ x ແລະ x + 1. ຜົນຄູນແມ່ນ x(x + 1) = k."}</div>
-              <div style={{ fontWeight: "bold", color: "#D84315" }}>{"• ຕົວຢ່າງ: ຜົນຄູນສອງຈຳນວນຕິດຕໍ່ກັນແມ່ນ 90 ➔ x(x + 1) = 90 ➔ x² + x - 90 = 0 ➔ x = 9."}</div>
+              <div>{"• ໂຈດຜົນຄູນຈຳນວນ: ສອງຈຳນວນຖ້ວນຕິດຕໍ່ກັນແມ່ນ "}<i>x</i>{" ແລະ "}<i>x</i>{" + 1. ຜົນຄູນແມ່ນ "}<i>x</i>{"("}<i>x</i>{" + 1) = k."}</div>
+              <div style={{ fontWeight: "bold", color: "#D84315" }}>{"• ຕົວຢ່າງ: ຜົນຄູນສອງຈຳນວນຕິດຕໍ່ກັນແມ່ນ 90 ➔ "}<i>x</i>{"("}<i>x</i>{" + 1) = 90 ➔ "}<i>x</i>{"² + "}<i>x</i>{" - 90 = 0 ➔ "}<i>x</i>{" = 9."}</div>
             </div>
           </div>
         ),
@@ -213,7 +213,7 @@ export const unit15Data: UnitData = {
               {"ຜົນບວກຄ່າສຳບູນຂອງທຸກໆໃຈຜົນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຈົ່ງແກ້ສົມຜົນຂັ້ນສີ່ຄູ່ "} <span className="math">{"x⁴ - 13x² + 36 = 0"}</span> {". ແລ້ວຊອກຫາຜົນບວກຂອງຄ່າສຳບູນຂອງທຸກໆໃຈຜົນຈິງ (|x₁| + |x₂| + |x₃| + |x₄|)."}
+              {"ຈົ່ງແກ້ສົມຜົນຂັ້ນສີ່ຄູ່ "} <span className="math"><i>x</i>{"⁴ - 13"}<i>x</i>{"² + 36 = 0"}</span> {". ແລ້ວຊອກຫາຜົນບວກຂອງຄ່າສຳບູນຂອງທຸກໆໃຈຜົນຈິງ (|"}<i>x</i>{"₁| + |"}<i>x</i>{"₂| + |"}<i>x</i>{"₃| + |"}<i>x</i>{"₄|)."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຜົນບວກແມ່ນ"}</span>
@@ -251,7 +251,7 @@ export const unit15Data: UnitData = {
             {"ໂຈດຄວາມສຳພັນລະຫວ່າງຕົວເລກ ແລະ ກຳລັງສອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ຈຳນວນຖ້ວນບວກໜຶ່ງ ມີຄ່ານ້ອຍກວ່າກຳລັງສອງຂອງມັນເອງຢູ່ 12 ພໍດີ. ຈົ່ງຊອກຫາຈຳນວນຖ້ວນບວກນັ້ນ. (ສົມຜົນ: x = x² - 12)"}
+            {"ຈຳນວນຖ້ວນບວກໜຶ່ງ ມີຄ່ານ້ອຍກວ່າກຳລັງສອງຂອງມັນເອງຢູ່ 12 ພໍດີ. ຈົ່ງຊອກຫາຈຳນວນຖ້ວນບວກນັ້ນ. (ສົມຜົນ: "}<i>x</i>{" = "}<i>x</i>{"² - 12)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຈຳນວນນັ້ນແມ່ນ"}</span>
@@ -268,10 +268,10 @@ export const unit15Data: UnitData = {
             {"ໂຈດບັນຫາທາງຍ່າງອ້ອມສະລອຍນ້ຳ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(2) ສະລອຍນ້ຳຮູບສີ່ແຈສາກຂະໜາດ "} <span className="math">{"10 m × 5 m"}</span> {" ຖືກອ້ອມຮອບດ້ວຍທາງຍ່າງທີ່ມີຄວາມກວ້າງ x ແມັດເທົ່າກັນທຸກດ້ານ. ຖ້າເນື້ອທີ່ລວມທັງໝົດ (ສະນ້ຳ + ທາງຍ່າງ) ແມ່ນ "} <span className="math">{"84 m²"}</span> {". ຈົ່ງຊອກຫາຄວາມກວ້າງ x ຂອງທາງຍ່າງ."}
+            {"(2) ສະລອຍນ້ຳຮູບສີ່ແຈສາກຂະໜາດ "} <span className="math">{"10 m × 5 m"}</span> {" ຖືກອ້ອມຮອບດ້ວຍທາງຍ່າງທີ່ມີຄວາມກວ້າງ "}<i>x</i>{" ແມັດເທົ່າກັນທຸກດ້ານ. ຖ້າເນື້ອທີ່ລວມທັງໝົດ (ສະນ້ຳ + ທາງຍ່າງ) ແມ່ນ "} <span className="math">{"84 m²"}</span> {". ຈົ່ງຊອກຫາຄວາມກວ້າງ "}<i>x</i>{" ຂອງທາງຍ່າງ."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-            <span>{"ຕອບ: ຄວາມກວ້າງ x ແມ່ນ"}</span>
+            <span>{"ຕອບ: ຄວາມກວ້າງ "}<i>x</i>{" ແມ່ນ"}</span>
             <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             <span>{"ແມັດ (m)"}</span>
           </div>
@@ -284,40 +284,40 @@ export const unit15Data: UnitData = {
       {
         questionNumber: 1,
         answers: [
-          <span key="1">{"(1) 1, 2 (ວາງ t = x² ➔ t² - 5t + 4 = 0 ➔ t = 1, 4 ➔ x² = 1, 4 ➔ ໃຈຜົນບວກແມ່ນ 1 ແລະ 2)"}</span>,
-          <span key="2">{"(2) 4 (ຍ້ອນວ່າ t = 1 ➔ x = ±1, ແລະ t = 4 ➔ x = ±2 ➔ ໃຈຜົນຈິງທັງໝົດມີ 4 ໃຈຜົນ)"}</span>,
-          <span key="3">{"(3) 3 (ວາງ t = x² ➔ t² - 10t + 9 = 0 ➔ t = 1, 9 ➔ x² = 1, 9 ➔ ໃຈຜົນບວກໃຫຍ່ສຸດແມ່ນ √9 = 3)"}</span>
+          <span key="1">{"(1) 1, 2 (ວາງ t = "}<i>x</i>{"² ➔ t² - 5t + 4 = 0 ➔ t = 1, 4 ➔ "}<i>x</i>{"² = 1, 4 ➔ ໃຈຜົນບວກແມ່ນ 1 ແລະ 2)"}</span>,
+          <span key="2">{"(2) 4 (ຍ້ອນວ່າ t = 1 ➔ "}<i>x</i>{" = ±1, ແລະ t = 4 ➔ "}<i>x</i>{" = ±2 ➔ ໃຈຜົນຈິງທັງໝົດມີ 4 ໃຈຜົນ)"}</span>,
+          <span key="3">{"(3) 3 (ວາງ t = "}<i>x</i>{"² ➔ t² - 10t + 9 = 0 ➔ t = 1, 9 ➔ "}<i>x</i>{"² = 1, 9 ➔ ໃຈຜົນບວກໃຫຍ່ສຸດແມ່ນ √9 = 3)"}</span>
         ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="4">{"(1) 3 (ວາງ t = x - 1 ➔ t² - 4t + 3 = 0 ➔ (t - 1)(t - 3) = 0 ➔ t ບວກແມ່ນ 3 ແລະ 1 ➔ ຕົວໃຫຍ່ແມ່ນ 3)"}</span>,
-          <span key="5">{"(2) 4 (ຈາກ t = 3 ➔ x - 1 = 3 ➔ x = 4)"}</span>
+          <span key="4">{"(1) 3 (ວາງ t = "}<i>x</i>{" - 1 ➔ t² - 4t + 3 = 0 ➔ (t - 1)(t - 3) = 0 ➔ t ບວກແມ່ນ 3 ແລະ 1 ➔ ຕົວໃຫຍ່ແມ່ນ 3)"}</span>,
+          <span key="5">{"(2) 4 (ຈາກ t = 3 ➔ "}<i>x</i>{" - 1 = 3 ➔ "}<i>x</i>{" = 4)"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="6">{"10 (ວາງ t = x² ➔ t² - 13t + 36 = 0 ➔ t = 4, 9 ➔ x = ±2, ±3 ➔ ຜົນບວກຄ່າສຳບູນ = |2| + |-2| + |3| + |-3| = 2 + 2 + 3 + 3 = 10)"}</span>
+          <span key="6">{"10 (ວາງ t = "}<i>x</i>{"² ➔ t² - 13t + 36 = 0 ➔ t = 4, 9 ➔ "}<i>x</i>{" = ±2, ±3 ➔ ຜົນບວກຄ່າສຳບູນ = |2| + |-2| + |3| + |-3| = 2 + 2 + 3 + 3 = 10)"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="7">{"10 cm (ໃຫ້ຂ້າງເຈ້ຍຍາວ x ➔ ຂ້າງກ່ອງຍາວ x - 4, ສູງ 2 ➔ ບໍລິມາດ = 2 × (x-4)² = 72 ➔ (x-4)² = 36 ➔ x-4 = 6 ➔ x = 10 cm)"}</span>
+          <span key="7">{"10 cm (ໃຫ້ຂ້າງເຈ້ຍຍາວ "}<i>x</i>{" ➔ ຂ້າງກ່ອງຍາວ "}<i>x</i>{" - 4, ສູງ 2 ➔ ບໍລິມາດ = 2 × ("}<i>x</i>{"-4)² = 72 ➔ ("}<i>x</i>{"-4)² = 36 ➔ "}<i>x</i>{"-4 = 6 ➔ "}<i>x</i>{" = 10 cm)"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="8">{"4 (ຈາກສົມຜົນ x = x² - 12 ➔ x² - x - 12 = 0 ➔ (x - 4)(x + 3) = 0 ➔ ໃຈຜົນບວກແມ່ນ 4)"}</span>
+          <span key="8">{"4 (ຈາກສົມຜົນ "}<i>x</i>{" = "}<i>x</i>{"² - 12 ➔ "}<i>x</i>{"² - "}<i>x</i>{" - 12 = 0 ➔ ("}<i>x</i>{" - 4)("}<i>x</i>{" + 3) = 0 ➔ ໃຈຜົນບວກແມ່ນ 4)"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="9">{"1 m (ເນື້ອທີ່ລວມ = (10 + 2x)(5 + 2x) = 84 ➔ 50 + 30x + 4x² = 84 ➔ 4x² + 30x - 34 = 0 ➔ 2x² + 15x - 17 = 0 ➔ (2x + 17)(x - 1) = 0 ➔ x = 1 m)"}</span>
+          <span key="9">{"1 m (ເນື້ອທີ່ລວມ = (10 + 2"}<i>x</i>{")(5 + 2"}<i>x</i>{") = 84 ➔ 50 + 30"}<i>x</i>{" + 4"}<i>x</i>{"² = 84 ➔ 4"}<i>x</i>{"² + 30"}<i>x</i>{" - 34 = 0 ➔ 2"}<i>x</i>{"² + 15"}<i>x</i>{" - 17 = 0 ➔ (2"}<i>x</i>{" + 17)("}<i>x</i>{" - 1) = 0 ➔ "}<i>x</i>{" = 1 m)"}</span>
         ]
       }
     ],

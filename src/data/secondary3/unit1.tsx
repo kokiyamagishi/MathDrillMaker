@@ -228,7 +228,7 @@ export const unit1Data: UnitData = {
               <span className="math">
                 <Fraction num="x⁴ × y⁻²" den="x⁻¹ × y³" />
               </span>
-              {" (ຂຽນຄຳຕອບໃນຮູບແບບ xᵃ yᵇ ໂດຍຫາຄ່າຂອງ a + b)"}
+              {" (ຂຽນຄຳຕອບໃນຮູບແບບ "}<i>x</i>{"ᵃ "}<i>y</i>{"ᵇ ໂດຍຫາຄ່າຂອງ a + b)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: a + b ="}</span>
@@ -245,11 +245,11 @@ export const unit1Data: UnitData = {
               {"ການແກ້ສົມຜົນເລກກຳລັງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(2) ຈົ່ງຊອກຫາຄ່າຂອງ x ຈາກສົມຜົນເລກກຳລັງ: "} 
+              {"(2) ຈົ່ງຊອກຫາຄ່າຂອງ "}<i>x</i>{" ຈາກສົມຜົນເລກກຳລັງ: "} 
               <span className="math">{"3²ˣ⁺¹ = 27"}</span>
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: "}<i>x</i>{" ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -313,13 +313,13 @@ export const unit1Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="6">{"0 (ເພາະວ່າ x⁴/x⁻¹ = x⁴⁻⁽⁻¹⁾ = x⁵, ແລະ y⁻²/y³ = y⁻²⁻³ = y⁻⁵ ➔ ໄດ້ x⁵ y⁻⁵ ➔ a = 5, b = -5 ➔ a + b = 5 + (-5) = 0)"}</span>
+          <span key="6">{"0 (ເພາະວ່າ "}<i>x</i>{"⁴/"}<i>x</i>{"⁻¹ = "}<i>x</i>{"⁴⁻⁽⁻¹⁾ = "}<i>x</i>{"⁵, ແລະ "}<i>y</i>{"⁻²/"}<i>y</i>{"³ = "}<i>y</i>{"⁻²⁻³ = "}<i>y</i>{"⁻⁵ ➔ ໄດ້ "}<i>x</i>{"⁵ "}<i>y</i>{"⁻⁵ ➔ a = 5, b = -5 ➔ a + b = 5 + (-5) = 0)"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="7">{"1 (ເພາະວ່າ 27 = 3³ ➔ 2x + 1 = 3 ➔ 2x = 2 ➔ x = 1)"}</span>
+          <span key="7">{"1 (ເພາະວ່າ 27 = 3³ ➔ 2"}<i>x</i>{" + 1 = 3 ➔ 2"}<i>x</i>{" = 2 ➔ "}<i>x</i>{" = 1)"}</span>
         ]
       },
       {

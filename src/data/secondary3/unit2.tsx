@@ -27,7 +27,7 @@ export const unit2Data: UnitData = {
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
               <div>{"• ກຳລັງສອງຂອງຜົນບວກ: "} <span className="math">{"(a + b)² = a² + 2ab + b²"}</span></div>
               <div>{"• ກຳລັງສອງຂອງຜົນລົບ: "} <span className="math">{"(a - b)² = a² - 2ab + b²"}</span></div>
-              <div style={{ fontWeight: "bold", color: "#E65100" }}>{"• ຕົວຢ່າງ: (x + 3)² = x² + 2(x)(3) + 3² = x² + 6x + 9."}</div>
+              <div style={{ fontWeight: "bold", color: "#E65100" }}>{"• ຕົວຢ່າງ: ("}<i>x</i>{" + 3)² = "}<i>x</i>{"² + 2("}<i>x</i>{")(3) + 3² = "}<i>x</i>{"² + 6"}<i>x</i>{" + 9."}</div>
             </div>
 
             {/* Geometric Proof Area SVG */}
@@ -78,13 +78,13 @@ export const unit2Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຈາກ "} <span className="math">{"(x + 4)² = x² + Ax + 16"}</span> {". ຄ່າຂອງ A ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຈາກ "} <span className="math">{"("}<i>x</i>{" + 4)² = "}<i>x</i>{"² + Ax + 16"}</span> {". ຄ່າຂອງ A ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຈາກ "} <span className="math">{"(y - 5)² = y² - By + 25"}</span> {". ຄ່າຂອງ B ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຈາກ "} <span className="math">{"("}<i>y</i>{" - 5)² = "}<i>y</i>{"² - By + 25"}</span> {". ຄ່າຂອງ B ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
@@ -140,7 +140,7 @@ export const unit2Data: UnitData = {
                   {"a² - b² = (a - b)(a + b)"}
                 </span>
               </div>
-              <div style={{ fontWeight: "bold", color: "#D84315" }}>{"• ຕົວຢ່າງ: (x - 4)(x + 4) = x² - 4² = x² - 16."}</div>
+              <div style={{ fontWeight: "bold", color: "#D84315" }}>{"• ຕົວຢ່າງ: ("}<i>x</i>{" - 4)("}<i>x</i>{" + 4) = "}<i>x</i>{"² - 4² = "}<i>x</i>{"² - 16."}</div>
               <div style={{ fontWeight: "bold", color: "#D84315" }}>{"• ຕົວຢ່າງຄິດໄລ່ໄວ: 51 × 49 = (50 + 1)(50 - 1) = 50² - 1² = 2500 - 1 = 2499."}</div>
             </div>
           </div>
@@ -162,19 +162,19 @@ export const unit2Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຈາກ "} <span className="math">{"(x - 6)(x + 6) = x² - D"}</span> {". ຄ່າຂອງ D ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຈາກ "} <span className="math">{"("}<i>x</i>{" - 6)("}<i>x</i>{" + 6) = "}<i>x</i>{"² - D"}</span> {". ຄ່າຂອງ D ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຈາກ "} <span className="math">{"(2y - 3)(2y + 3) = Ey² - 9"}</span> {". ຄ່າຂອງ E ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຈາກ "} <span className="math">{"(2"}<i>y</i>{" - 3)(2"}<i>y</i>{" + 3) = Ey² - 9"}</span> {". ຄ່າຂອງ E ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ແຍກສ່ວນຄູນ "} <span className="math">{"64 - z² = (F - z)(F + z)"}</span> {". ຄ່າຂອງ F ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ແຍກສ່ວນຄູນ "} <span className="math">{"64 - "}<i>z</i>{"² = (F - "}<i>z</i>{")(F + "}<i>z</i>{")"}</span> {". ຄ່າຂອງ F ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -220,7 +220,7 @@ export const unit2Data: UnitData = {
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງຄິດໄລ່ ແລະ ຫຍໍ້ສຳນວນຕໍ່ໄປນີ້ໃຫ້ງ່າຍທີ່ສຸດ: "} 
-              <span className="math">{"(x + 3)² - (x - 3)²"}</span>
+              <span className="math">{"("}<i>x</i>{" + 3)² - ("}<i>x</i>{" - 3)²"}</span>
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ໄດ້ຜົນຮັບແມ່ນ"}</span>
@@ -257,7 +257,7 @@ export const unit2Data: UnitData = {
             {"ໂຈດບັນຫາເລຂາຄະນິດທາງເດີນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ສວນດອກໄມ້ຮູບຈະຕຸລັດຂ້າງຍາວ x ແມັດ. ຖ້າຂະຫຍາຍຄວາມຍາວຂອງທຸກໆຂ້າງອອກໄປ 2 ແມັດ, ເນື້ອທີ່ຂອງສວນຈະເພີ່ມຂຶ້ນເທົ່າໃດ? (ຄິດໄລ່ຈາກ (x+2)² - x² ໂດຍຕອບເປັນສຳນວນ)"}
+            {"ສວນດອກໄມ້ຮູບຈະຕຸລັດຂ້າງຍາວ "}<i>x</i>{" ແມັດ. ຖ້າຂະຫຍາຍຄວາມຍາວຂອງທຸກໆຂ້າງອອກໄປ 2 ແມັດ, ເນື້ອທີ່ຂອງສວນຈະເພີ່ມຂຶ້ນເທົ່າໃດ? (ຄິດໄລ່ຈາກ ("}<i>x</i>{"+2)² - "}<i>x</i>{"² ໂດຍຕອບເປັນສຳນວນ)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ເນື້ອທີ່ເພີ່ມຂຶ້ນ"}</span>
@@ -290,8 +290,8 @@ export const unit2Data: UnitData = {
       {
         questionNumber: 1,
         answers: [
-          <span key="1">{"(1) 8 (ເພາະວ່າ (x+4)² = x² + 8x + 16 ➔ A = 8)"}</span>,
-          <span key="2">{"(2) 10 (ເພາະວ່າ (y-5)² = y² - 10y + 25 ➔ B = 10)"}</span>,
+          <span key="1">{"(1) 8 (ເພາະວ່າ ("}<i>x</i>{"+4)² = "}<i>x</i>{"² + 8"}<i>x</i>{" + 16 ➔ A = 8)"}</span>,
+          <span key="2">{"(2) 10 (ເພາະວ່າ ("}<i>y</i>{"-5)² = "}<i>y</i>{"² - 10"}<i>y</i>{" + 25 ➔ B = 10)"}</span>,
           <span key="3">{"(3) 9 (ເພາະວ່າ (3a+1)² = 9a² + 6a + 1 ➔ C = 9)"}</span>
         ]
       },
@@ -305,7 +305,7 @@ export const unit2Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="6">{"12x (ເພາະວ່າ (x² + 6x + 9) - (x² - 6x + 9) = 12x)"}</span>
+          <span key="6">{"12"}<i>x</i>{" (ເພາະວ່າ ("}<i>x</i>{"² + 6"}<i>x</i>{" + 9) - ("}<i>x</i>{"² - 6"}<i>x</i>{" + 9) = 12"}<i>x</i>{")"}</span>
         ]
       },
       {
@@ -317,7 +317,7 @@ export const unit2Data: UnitData = {
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="8">{"4x + 4 (ເພາະວ່າ (x+2)² - x² = x² + 4x + 4 - x² = 4x + 4)"}</span>
+          <span key="8">{"4"}<i>x</i>{" + 4 (ເພາະວ່າ ("}<i>x</i>{"+2)² - "}<i>x</i>{"² = "}<i>x</i>{"² + 4"}<i>x</i>{" + 4 - "}<i>x</i>{"² = 4"}<i>x</i>{" + 4)"}</span>
         ]
       },
       {

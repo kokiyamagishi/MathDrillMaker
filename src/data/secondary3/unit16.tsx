@@ -241,10 +241,10 @@ export const unit16Data: UnitData = {
               {"ສົມຜົນມຸມໃນຮູບສີ່ແຈຂະໜານ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(2) ໃນຮູບສີ່ແຈຂະໜານ ABCD, ມີສອງມຸມຖັດກັນແມ່ນ "} <span className="math">{"<Angle>A</Angle> = 2x + 10"}</span> {" ແລະ "} <span className="math">{"<Angle>B</Angle> = 3x - 20"}</span> {" (ອົງສາ). ຈົ່ງຊອກຫາຄ່າຂອງ x."}
+              {"(2) ໃນຮູບສີ່ແຈຂະໜານ ABCD, ມີສອງມຸມຖັດກັນແມ່ນ "} <span className="math">{"<Angle>A</Angle> = 2"}<i>x</i>{" + 10"}</span> {" ແລະ "} <span className="math">{"<Angle>B</Angle> = 3"}<i>x</i>{" - 20"}</span> {" (ອົງສາ). ຈົ່ງຊອກຫາຄ່າຂອງ "}<i>x</i>{"."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: "}<i>x</i>{" ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -279,7 +279,7 @@ export const unit16Data: UnitData = {
             {"ໂຈດຜົນບວກມຸມໃນຮູບສີ່ແຈທົ່ວໄປ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(2) ສີ່ຄ່າມຸມໃນຂອງຮູບສີ່ແຈໜຶ່ງແມ່ນ x, 2x, 3x, 4x. ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມທີ່ໃຫຍ່ທີ່ສຸດ."}
+            {"(2) ສີ່ຄ່າມຸມໃນຂອງຮູບສີ່ແຈໜຶ່ງແມ່ນ "}<i>x</i>{", 2"}<i>x</i>{", 3"}<i>x</i>{", 4"}<i>x</i>{". ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມທີ່ໃຫຍ່ທີ່ສຸດ."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ມຸມທີ່ໃຫຍ່ທີ່ສຸດແມ່ນ"}</span>
@@ -304,7 +304,7 @@ export const unit16Data: UnitData = {
         questionNumber: 2,
         answers: [
           <span key="4">{"(1) 110° (ເພາະວ່າມຸມນອກ = ຜົນບວກສອງມຸມໃນກົງກັນຂ້າມ = 50° + 60° = 110°)"}</span>,
-          <span key="5">{"(2) 75° (ເພາະວ່າມຸມນອກ 120° = 45° + x ➔ x = 120° - 45° = 75°)"}</span>
+          <span key="5">{"(2) 75° (ເພາະວ່າມຸມນອກ 120° = 45° + "}<i>x</i>{" ➔ "}<i>x</i>{" = 120° - 45° = 75°)"}</span>
         ]
       },
       {
@@ -316,7 +316,7 @@ export const unit16Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="7">{"38 (ສອງມຸມຖັດກັນບວກກັນໄດ້ 180° ➔ (2x + 10) + (3x - 20) = 180 ➔ 5x - 10 = 180 ➔ 5x = 190 ➔ x = 38)"}</span>
+          <span key="7">{"38 (ສອງມຸມຖັດກັນບວກກັນໄດ້ 180° ➔ (2"}<i>x</i>{" + 10) + (3"}<i>x</i>{" - 20) = 180 ➔ 5"}<i>x</i>{" - 10 = 180 ➔ 5"}<i>x</i>{" = 190 ➔ "}<i>x</i>{" = 38)"}</span>
         ]
       },
       {
@@ -328,7 +328,7 @@ export const unit16Data: UnitData = {
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="9">{"144° (ຜົນບວກມຸມໃນຮູບສີ່ແຈແມ່ນ 360° ➔ x + 2x + 3x + 4x = 360 ➔ 10x = 360 ➔ x = 36° ➔ ມຸມໃຫຍ່ສຸດ 4x = 4×36 = 144°)"}</span>
+          <span key="9">{"144° (ຜົນບວກມຸມໃນຮູບສີ່ແຈແມ່ນ 360° ➔ "}<i>x</i>{" + 2"}<i>x</i>{" + 3"}<i>x</i>{" + 4"}<i>x</i>{" = 360 ➔ 10"}<i>x</i>{" = 360 ➔ "}<i>x</i>{" = 36° ➔ ມຸມໃຫຍ່ສຸດ 4"}<i>x</i>{" = 4×36 = 144°)"}</span>
         ]
       }
     ],

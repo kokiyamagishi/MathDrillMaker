@@ -125,7 +125,7 @@ export const unit19Data: UnitData = {
             <div style={{ padding: "12px", backgroundColor: "#E8F5E9", borderRadius: "10px", border: "1px solid #A5D6A7", fontSize: "1.25rem", color: "#2E7D32" }}>
               <div style={{ paddingLeft: "12px", borderLeft: "3px solid #4CAF50", display: "flex", flexDirection: "column", gap: "6px", color: "#37474F" }}>
                 <strong>{"ຕົວຢ່າງ: "}</strong>
-                <span className="math">{"ແຍກສ່ວນຄູນຂອງ 3x² - 6𝑥"}</span>
+                <span className="math">{"ແຍກສ່ວນຄູນຂອງ 3"}<i>x</i>{"² - 6𝑥"}</span>
                 <span className="math">{"• ທັງສອງພົດມີ 3𝑥 ເປັນຕົວຮ່ວມ: 3𝑥 × 𝑥 - 3𝑥 × 2"}</span>
                 <span className="math">{"➔ ດຶງ 3𝑥 ອອກມາ: 3𝑥(𝑥 - 2)"}</span>
               </div>
@@ -150,7 +150,7 @@ export const unit19Data: UnitData = {
                 {/* 5 Questions */}
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
                   <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
-                  <span className="math">{"3x² - 6𝑥 = 3𝑥(𝑥 - ?)"}</span>
+                  <span className="math">{"3"}<i>x</i>{"² - 6𝑥 = 3𝑥(𝑥 - ?)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
@@ -162,7 +162,7 @@ export const unit19Data: UnitData = {
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
                   <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
-                  <span className="math">{"𝑥³ - 5x² = 𝑥²(𝑥 - ?)"}</span>
+                  <span className="math">{"𝑥³ - 5"}<i>x</i>{"² = 𝑥²(𝑥 - ?)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
@@ -174,7 +174,7 @@ export const unit19Data: UnitData = {
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
                   <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
-                  <span className="math">{"4x²𝑦 - 8xy = 4xy(𝑥 - ?)"}</span>
+                  <span className="math">{"4"}<i>x</i>{"²𝑦 - 8"}<i>x</i><i>y</i>{" = 4"}<i>x</i><i>y</i>{"(𝑥 - ?)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
               </div>
@@ -232,7 +232,7 @@ export const unit19Data: UnitData = {
             {"ການແຍກສ່ວນຄູນຮາກຂັ້ນສອງຂອງສຳນວນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ຈົ່ງແຍກສ່ວນຄູນຂອງສຳນວນ 5x³ - 20𝑥 = 5𝑥(𝑥² - ?)"}
+            {"ຈົ່ງແຍກສ່ວນຄູນຂອງສຳນວນ 5"}<i>x</i>{"³ - 20𝑥 = 5𝑥(𝑥² - ?)"}
           </p>
           <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ຈຳນວນຖ້ວນ ? ແມ່ນ"}</span>
@@ -277,11 +277,11 @@ export const unit19Data: UnitData = {
       {
         questionNumber: 2,
         answers: [
-          <span key="2-1">{"(1) 2 (ຄິດໄລ່: 3𝑥(𝑥 - 2) = 3x² - 6𝑥)"}</span>,
+          <span key="2-1">{"(1) 2 (ຄິດໄລ່: 3𝑥(𝑥 - 2) = 3"}<i>x</i>{"² - 6𝑥)"}</span>,
           <span key="2-2">{"(2) 2 (ຄິດໄລ່: a(a + 2) = a² + 2a)"}</span>,
-          <span key="2-3">{"(3) 5 (ຄິດໄລ່: 𝑥²(𝑥 - 5) = 𝑥³ - 5x²)"}</span>,
+          <span key="2-3">{"(3) 5 (ຄິດໄລ່: 𝑥²(𝑥 - 5) = 𝑥³ - 5"}<i>x</i>{"²)"}</span>,
           <span key="2-4">{"(4) b (ຄິດໄລ່: ab(a + b) = a²b + ab²)"}</span>,
-          <span key="2-5">{"(5) 2 (ຄິດໄລ່: 4xy(𝑥 - 2) = 4x²𝑦 - 8xy)"}</span>
+          <span key="2-5">{"(5) 2 (ຄິດໄລ່: 4"}<i>x</i><i>y</i>{"(𝑥 - 2) = 4"}<i>x</i>{"²𝑦 - 8"}<i>x</i><i>y</i>{")"}</span>
         ]
       },
       {
@@ -299,7 +299,7 @@ export const unit19Data: UnitData = {
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="s1">{"(1) 4 (ຄິດໄລ່: 5𝑥(𝑥² - 4) = 5x³ - 20𝑥)"}</span>
+          <span key="s1">{"(1) 4 (ຄິດໄລ່: 5𝑥(𝑥² - 4) = 5"}<i>x</i>{"³ - 20𝑥)"}</span>
         ]
       },
       {

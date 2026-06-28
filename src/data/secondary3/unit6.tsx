@@ -27,11 +27,11 @@ export const unit6Data: UnitData = {
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
               <div>{"• ຕົວຢ່າງ: ແກ້ລະບົບສົມຜົນ: "}</div>
               <div style={{ paddingLeft: "16px", fontStyle: "italic" }}>
-                {"(1) x + y = 10"}<br />
-                {"(2) x - y = 4"}
+                {"(1) "}<i>x</i>{" + "}<i>y</i>{" = 10"}<br />
+                {"(2) "}<i>x</i>{" - "}<i>y</i>{" = 4"}
               </div>
-              <div style={{ fontWeight: "bold", color: "#E65100" }}>{"➔ ບວກສົມຜົນ (1) ແລະ (2) ຈະໄດ້: 2x = 14 ➔ x = 7."}</div>
-              <div style={{ fontWeight: "bold", color: "#E65100" }}>{"➔ ແທນ x = 7 ໃສ່ (1) ຈະໄດ້: 7 + y = 10 ➔ y = 3."}</div>
+              <div style={{ fontWeight: "bold", color: "#E65100" }}>{"➔ ບວກສົມຜົນ (1) ແລະ (2) ຈະໄດ້: 2"}<i>x</i>{" = 14 ➔ "}<i>x</i>{" = 7."}</div>
+              <div style={{ fontWeight: "bold", color: "#E65100" }}>{"➔ ແທນ "}<i>x</i>{" = 7 ໃສ່ (1) ຈະໄດ້: 7 + "}<i>y</i>{" = 10 ➔ "}<i>y</i>{" = 3."}</div>
             </div>
 
             {/* Geometric Intersection SVG */}
@@ -45,11 +45,11 @@ export const unit6Data: UnitData = {
                   
                   {/* Line 1: x + y = 5 (y = 5 - x) */}
                   <line x1="60" y1="60" x2="260" y2="260" stroke="#F44336" strokeWidth="4" />
-                  <text x="220" y="230" fill="#F44336" fontSize="14" fontWeight="bold">{"x+y=5"}</text>
+                  <text x="220" y="230" fill="#F44336" fontSize="14" fontWeight="bold"><i>x</i>{"+"}<i>y</i>{"=5"}</text>
 
                   {/* Line 2: x - y = 1 (y = x - 1) */}
                   <line x1="60" y1="220" x2="260" y2="20" stroke="#2196F3" strokeWidth="4" />
-                  <text x="220" y="50" fill="#2196F3" fontSize="14" fontWeight="bold">{"x-y=1"}</text>
+                  <text x="220" y="50" fill="#2196F3" fontSize="14" fontWeight="bold"><i>x</i>{"-"}<i>y</i>{"=1"}</text>
 
                   {/* Intersection point (3, 2) -> scaled coordinate */}
                   {/* x = 3 -> 30 + 3*20 = 90, y = 2 -> 130 - 2*20 = 90 */}
@@ -57,8 +57,8 @@ export const unit6Data: UnitData = {
                   <text x="190" y="170" fill="#D32F2F" fontSize="16" fontWeight="bold">{"P(3, 2)"}</text>
                   
                   {/* Labels */}
-                  <text x="290" y="250" fill="#37474F" fontSize="16">{"x"}</text>
-                  <text x="70" y="36" fill="#37474F" fontSize="16">{"y"}</text>
+                  <text x="290" y="250" fill="#37474F" fontSize="16"><i>x</i></text>
+                  <text x="70" y="36" fill="#37474F" fontSize="16"><i>y</i></text>
                 </svg>
               </div>
             </div>
@@ -81,19 +81,19 @@ export const unit6Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຈາກ "} <span className="math">{"x + y = 10"}</span> {" ແລະ "} <span className="math">{"x - y = 4"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ x?"}</span>
+                  <span>{"ຈາກ "} <span className="math"><i>x</i>{" + "}<i>y</i>{" = 10"}</span> {" ແລະ "} <span className="math"><i>x</i>{" - "}<i>y</i>{" = 4"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ "}<i>x</i>{"?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຈາກ "} <span className="math">{"2x + y = 11"}</span> {" ແລະ "} <span className="math">{"x - y = 1"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ y?"}</span>
+                  <span>{"ຈາກ "} <span className="math">{"2"}<i>x</i>{" + "}<i>y</i>{" = 11"}</span> {" ແລະ "} <span className="math"><i>x</i>{" - "}<i>y</i>{" = 1"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ "}<i>y</i>{"?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ຈາກ "} <span className="math">{"3x + 2y = 12"}</span> {" ແລະ "} <span className="math">{"x + 2y = 8"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ x?"}</span>
+                  <span>{"ຈາກ "} <span className="math">{"3"}<i>x</i>{" + 2"}<i>y</i>{" = 12"}</span> {" ແລະ "} <span className="math"><i>x</i>{" + 2"}<i>y</i>{" = 8"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ "}<i>x</i>{"?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -111,13 +111,13 @@ export const unit6Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຄູ່ພິກັດ (3, 2) ແມ່ນໃຈຜົນຂອງລະບົບສົມຜົນ "} <span className="math">{"x + 2y = 7"}</span> {" ແລະ "} <span className="math">{"2x - y = 4"}</span> {" ຫຼື ບໍ່? (ຕອບ ແມ່ນ ຫຼື ບໍ່ແມ່ນ)"}</span>
+                  <span>{"ຄູ່ພິກັດ (3, 2) ແມ່ນໃຈຜົນຂອງລະບົບສົມຜົນ "} <span className="math"><i>x</i>{" + 2"}<i>y</i>{" = 7"}</span> {" ແລະ "} <span className="math">{"2"}<i>x</i>{" - "}<i>y</i>{" = 4"}</span> {" ຫຼື ບໍ່? (ຕອບ ແມ່ນ ຫຼື ບໍ່ແມ່ນ)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຖ້າ (2, 5) ແມ່ນໃຈຜົນຂອງ "} <span className="math">{"ax + y = 9"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງສຳປະສິດ a?"}</span>
+                  <span>{"ຖ້າ (2, 5) ແມ່ນໃຈຜົນຂອງ "} <span className="math">{"ax + "}<i>y</i>{" = 9"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງສຳປະສິດ a?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -139,11 +139,11 @@ export const unit6Data: UnitData = {
             <div style={{ padding: "12px 16px", backgroundColor: "#FFFDE7", borderRadius: "10px", border: "1px solid #FFF59D", fontSize: "1.25rem", color: "#F57F17", display: "flex", flexDirection: "column", gap: "6px" }}>
               <div>{"• ຕົວຢ່າງ: ແກ້ລະບົບສົມຜົນ: "}</div>
               <div style={{ paddingLeft: "16px", fontStyle: "italic" }}>
-                {"(1) y = 2x"}<br />
-                {"(2) x + y = 9"}
+                {"(1) "}<i>y</i>{" = 2"}<i>x</i><br />
+                {"(2) "}<i>x</i>{" + "}<i>y</i>{" = 9"}
               </div>
-              <div style={{ fontWeight: "bold", color: "#D84315" }}>{"➔ ແທນ (1) ໃສ່ (2) ຈະໄດ້: x + 2x = 9 ➔ 3x = 9 ➔ x = 3."}</div>
-              <div style={{ fontWeight: "bold", color: "#D84315" }}>{"➔ ຄິດໄລ່ y ຈາກ (1): y = 2(3) = 6."}</div>
+              <div style={{ fontWeight: "bold", color: "#D84315" }}>{"➔ ແທນ (1) ໃສ່ (2) ຈະໄດ້: "}<i>x</i>{" + 2"}<i>x</i>{" = 9 ➔ 3"}<i>x</i>{" = 9 ➔ "}<i>x</i>{" = 3."}</div>
+              <div style={{ fontWeight: "bold", color: "#D84315" }}>{"➔ ຄິດໄລ່ "}<i>y</i>{" ຈາກ (1): "}<i>y</i>{" = 2(3) = 6."}</div>
             </div>
           </div>
         ),
@@ -164,19 +164,19 @@ export const unit6Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຈາກ "} <span className="math">{"y = 2x"}</span> {" ແລະ "} <span className="math">{"x + y = 9"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ x?"}</span>
+                  <span>{"ຈາກ "} <span className="math"><i>y</i>{" = 2"}<i>x</i></span> {" ແລະ "} <span className="math"><i>x</i>{" + "}<i>y</i>{" = 9"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ "}<i>x</i>{"?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຈາກ "} <span className="math">{"x = y - 3"}</span> {" ແລະ "} <span className="math">{"2x + y = 12"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ y?"}</span>
+                  <span>{"ຈາກ "} <span className="math"><i>x</i>{" = "}<i>y</i>{" - 3"}</span> {" ແລະ "} <span className="math">{"2"}<i>x</i>{" + "}<i>y</i>{" = 12"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ "}<i>y</i>{"?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ຈາກ "} <span className="math">{"y = 3x - 1"}</span> {" ແລະ "} <span className="math">{"x + y = 7"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ x?"}</span>
+                  <span>{"ຈາກ "} <span className="math"><i>y</i>{" = 3"}<i>x</i>{" - 1"}</span> {" ແລະ "} <span className="math"><i>x</i>{" + "}<i>y</i>{" = 7"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ "}<i>x</i>{"?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -188,19 +188,19 @@ export const unit6Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຄຳຖາມທີ 2: ຈົ່ງຄິດໄລ່ຜົນບວກ ຫຼື ຜົນຄູນຂອງໃຈຜົນ (x, y): "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
+                {"ຄຳຖາມທີ 2: ຈົ່ງຄິດໄລ່ຜົນບວກ ຫຼື ຜົນຄູນຂອງໃຈຜົນ ("}<i>x</i>{", "}<i>y</i>{"): "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຄິດໄລ່ຄ່າຂອງ "} <span className="math">{"x + y"}</span> {" ຖ້າໃຈຜົນແມ່ນ "} <span className="math">{"x = 10, y = 5"}</span> {". ຜົນບວກແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຄິດໄລ່ຄ່າຂອງ "} <span className="math"><i>x</i>{" + "}<i>y</i></span> {" ຖ້າໃຈຜົນແມ່ນ "} <span className="math"><i>x</i>{" = 10, "}<i>y</i>{" = 5"}</span> {". ຜົນບວກແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຄິດໄລ່ຄ່າຂອງ "} <span className="math">{"x × y"}</span> {" ຖ້າໃຈຜົນແມ່ນ "} <span className="math">{"x = 3, y = 5"}</span> {". ຜົນຄູນແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຄິດໄລ່ຄ່າຂອງ "} <span className="math"><i>x</i>{" × "}<i>y</i></span> {" ຖ້າໃຈຜົນແມ່ນ "} <span className="math"><i>x</i>{" = 3, "}<i>y</i>{" = 5"}</span> {". ຜົນຄູນແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -221,10 +221,10 @@ export const unit6Data: UnitData = {
               {"ການແກ້ລະບົບສົມົນຂັ້ນສູງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຈົ່ງແກ້ລະບົບສົມຜົນຕໍ່ໄປນີ້: "} <span className="math">{"2x + 3y = 13"}</span> {" ແລະ "} <span className="math">{"3x - y = 3"}</span> {". ແລ້ວຊອກຫາຄ່າຂອງ "} <span className="math">{"x + y"}</span> {"."}
+              {"ຈົ່ງແກ້ລະບົບສົມຜົນຕໍ່ໄປນີ້: "} <span className="math">{"2"}<i>x</i>{" + 3"}<i>y</i>{" = 13"}</span> {" ແລະ "} <span className="math">{"3"}<i>x</i>{" - "}<i>y</i>{" = 3"}</span> {". ແລ້ວຊອກຫາຄ່າຂອງ "} <span className="math"><i>x</i>{" + "}<i>y</i></span> {"."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x + y ="}</span>
+              <span>{"ຕອບ: "}<i>x</i>{" + "}<i>y</i>{" ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -242,10 +242,10 @@ export const unit6Data: UnitData = {
               <span className="math">
                 <Fraction num="x" den="2" /> {" + "} <Fraction num="y" den="3" /> {" = 4"}
               </span>
-              {" ແລະ "} <span className="math">{"x - y = 3"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ x. (ຄຳແນະນຳ: ຄູນ 6 ໃສ່ສົມຜົນທຳອິດ)"}
+              {" ແລະ "} <span className="math"><i>x</i>{" - "}<i>y</i>{" = 3"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ "}<i>x</i>{". (ຄຳແນະນຳ: ຄູນ 6 ໃສ່ສົມຜົນທຳອິດ)"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: x ="}</span>
+              <span>{"ຕອບ: "}<i>x</i>{" ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -262,7 +262,7 @@ export const unit6Data: UnitData = {
             {"ໂຈດບັນຫາຊອກຫາຕົວເລກ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ຜົນບວກຂອງສອງຈຳນວນແມ່ນ 20, ແລະ ຜົນລົບຂອງພວກມັນແມ່ນ 6. ຈົ່ງຊອກຫາຈຳນວນທີ່ມີຄ່າຫຼາຍກວ່າ. (ໃຫ້ສົມຜົນ x + y = 20, x - y = 6 ➔ ຊອກຫາ x)"}
+            {"ຜົນບວກຂອງສອງຈຳນວນແມ່ນ 20, ແລະ ຜົນລົບຂອງພວກມັນແມ່ນ 6. ຈົ່ງຊອກຫາຈຳນວນທີ່ມີຄ່າຫຼາຍກວ່າ. (ໃຫ້ສົມຜົນ "}<i>x</i>{" + "}<i>y</i>{" = 20, "}<i>x</i>{" - "}<i>y</i>{" = 6 ➔ ຊອກຫາ "}<i>x</i>{")"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຈຳນວນທີ່ຫຼາຍກວ່າແມ່ນ"}</span>
@@ -295,9 +295,9 @@ export const unit6Data: UnitData = {
       {
         questionNumber: 1,
         answers: [
-          <span key="1">{"(1) 7 (ເພາະວ່າ 2x = 14 ➔ x = 7)"}</span>,
-          <span key="2">{"(2) 3 (ເພາະວ່າລົບສົມຜົນໄດ້ x + 2y = 10 ➔ 3x = 15 ➔ x = 4 ➔ y = 3)"}</span>,
-          <span key="3">{"(3) 2 (ເພາະວ່າລົບສົມຜົນໄດ້ 2x = 4 ➔ x = 2)"}</span>
+          <span key="1">{"(1) 7 (ເພາະວ່າ 2"}<i>x</i>{" = 14 ➔ "}<i>x</i>{" = 7)"}</span>,
+          <span key="2">{"(2) 3 (ເພາະວ່າລົບສົມຜົນໄດ້ "}<i>x</i>{" + 2"}<i>y</i>{" = 10 ➔ 3"}<i>x</i>{" = 15 ➔ "}<i>x</i>{" = 4 ➔ "}<i>y</i>{" = 3)"}</span>,
+          <span key="3">{"(3) 2 (ເພາະວ່າລົບສົມຜົນໄດ້ 2"}<i>x</i>{" = 4 ➔ "}<i>x</i>{" = 2)"}</span>
         ]
       },
       {
@@ -310,25 +310,25 @@ export const unit6Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="6">{"5 (ເພາະວ່າ 2x + 3(3x-3) = 13 ➔ 11x = 22 ➔ x = 2 ➔ y = 3 ➔ x + y = 5)"}</span>
+          <span key="6">{"5 (ເພາະວ່າ 2"}<i>x</i>{" + 3(3"}<i>x</i>{"-3) = 13 ➔ 11"}<i>x</i>{" = 22 ➔ "}<i>x</i>{" = 2 ➔ "}<i>y</i>{" = 3 ➔ "}<i>x</i>{" + "}<i>y</i>{" = 5)"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="7">{"6 (ເພາະວ່າ 3x + 2y = 24. ຍ້ອນວ່າ y = x - 3 ➔ 3x + 2(x-3) = 24 ➔ 5x = 30 ➔ x = 6)"}</span>
+          <span key="7">{"6 (ເພາະວ່າ 3"}<i>x</i>{" + 2"}<i>y</i>{" = 24. ຍ້ອນວ່າ "}<i>y</i>{" = "}<i>x</i>{" - 3 ➔ 3"}<i>x</i>{" + 2("}<i>x</i>{"-3) = 24 ➔ 5"}<i>x</i>{" = 30 ➔ "}<i>x</i>{" = 6)"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="8">{"13 (ເພາະວ່າ 2x = 26 ➔ x = 13)"}</span>
+          <span key="8">{"13 (ເພາະວ່າ 2"}<i>x</i>{" = 26 ➔ "}<i>x</i>{" = 13)"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="9">{"3,000 (ໃຫ້ x ແມ່ນລາຄາສໍດຳ, y ແມ່ນລາຄາປຶ້ມ ➔ 3x + 2y = 12,000 ແລະ x + 2y = 8,000 ➔ 2x = 4,000 ➔ x = 2,000 ➔ y = 3,000 ກີບ)"}</span>
+          <span key="9">{"3,000 (ໃຫ້ "}<i>x</i>{" ແມ່ນລາຄາສໍດຳ, "}<i>y</i>{" ແມ່ນລາຄາປຶ້ມ ➔ 3"}<i>x</i>{" + 2"}<i>y</i>{" = 12,000 ແລະ "}<i>x</i>{" + 2"}<i>y</i>{" = 8,000 ➔ 2"}<i>x</i>{" = 4,000 ➔ "}<i>x</i>{" = 2,000 ➔ "}<i>y</i>{" = 3,000 ກີບ)"}</span>
         ]
       }
     ],

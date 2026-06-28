@@ -94,7 +94,7 @@ export const unit18Data: UnitData = {
 
                 <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
                   <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
-                  <span className="math">{"3x² + 4𝑥 - 𝑥² + 2𝑥 = 2x² + ?𝑥"}</span>
+                  <span className="math">{"3"}<i>x</i>{"² + 4𝑥 - 𝑥² + 2𝑥 = 2"}<i>x</i>{"² + ?𝑥"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
@@ -214,7 +214,7 @@ export const unit18Data: UnitData = {
               {"ໂຈດບັນຫາຊອກຫາເນື້ອທີ່ຂອບທາງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ມີສວນດອກໄມ້ຮູບສີ່ແຈສາກຍາວ 2𝑥 ແມັດ ແລະ ກວ້າງ 𝑥 ແມັດ. ເນື້ອທີ່ຂອງສວນແມ່ນກຳນົດດ້ວຍສຳນວນ S = 2x². ຖ້າເນື້ອທີ່ສວນຖືກຂະຫຍາຍເພີ່ມຂຶ້ນ 50 ຕາແມັດ, ສຳນວນເນື້ອທີ່ໃໝ່ແມ່ນເທົ່າໃດ?"}
+              {"ມີສວນດອກໄມ້ຮູບສີ່ແຈສາກຍາວ 2𝑥 ແມັດ ແລະ ກວ້າງ 𝑥 ແມັດ. ເນື້ອທີ່ຂອງສວນແມ່ນກຳນົດດ້ວຍສຳນວນ S = 2"}<i>x</i>{"². ຖ້າເນື້ອທີ່ສວນຖືກຂະຫຍາຍເພີ່ມຂຶ້ນ 50 ຕາແມັດ, ສຳນວນເນື້ອທີ່ໃໝ່ແມ່ນເທົ່າໃດ?"}
             </p>
             <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: ເນື້ອທີ່ໃໝ່ແມ່ນ"}</span>
@@ -298,7 +298,7 @@ export const unit18Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="t2">{"(1) 2x² + 50"}</span>
+          <span key="t2">{"(1) 2"}<i>x</i>{"² + 50"}</span>
         ]
       },
       {
@@ -310,7 +310,7 @@ export const unit18Data: UnitData = {
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="s2">{"(1) 1 (ຄິດໄລ່: 2x² + 6 + 6 - 3x² = 12 - 1x² ➔ ? = 1)"}</span>
+          <span key="s2">{"(1) 1 (ຄິດໄລ່: 2"}<i>x</i>{"² + 6 + 6 - 3"}<i>x</i>{"² = 12 - 1"}<i>x</i>{"² ➔ ? = 1)"}</span>
         ]
       }
     ],
