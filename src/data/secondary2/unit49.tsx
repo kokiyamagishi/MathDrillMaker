@@ -43,22 +43,22 @@ export const unit49Data: UnitData = {
                   {/* Score 5: Freq = 3 ➔ Height = 90 */}
                   <rect x="70" y="70" width="40" height="90" fill="#4CAF50" />
                   <text x="90" y="60" fill="#4CAF50" fontSize="14" textAnchor="middle" fontWeight="bold">{"3"}</text>
-                  <text x="90" y="180" fill="#37474F" fontSize="14" textAnchor="middle">{"ຄະແນນ 5"}</text>
+                  <text x="90" y="180" fill="#37474F" fontSize="14" textAnchor="middle">{"5"}</text>
 
                   {/* Score 7: Freq = 2 ➔ Height = 60 */}
                   <rect x="130" y="100" width="40" height="60" fill="#2196F3" />
                   <text x="150" y="90" fill="#2196F3" fontSize="14" textAnchor="middle" fontWeight="bold">{"2"}</text>
-                  <text x="150" y="180" fill="#37474F" fontSize="14" textAnchor="middle">{"ຄະແນນ 7"}</text>
+                  <text x="150" y="180" fill="#37474F" fontSize="14" textAnchor="middle">{"7"}</text>
 
                   {/* Score 8: Freq = 1 ➔ Height = 30 */}
                   <rect x="190" y="130" width="40" height="30" fill="#FF9800" />
                   <text x="210" y="120" fill="#FF9800" fontSize="14" textAnchor="middle" fontWeight="bold">{"1"}</text>
-                  <text x="210" y="180" fill="#37474F" fontSize="14" textAnchor="middle">{"ຄະແນນ 8"}</text>
+                  <text x="210" y="180" fill="#37474F" fontSize="14" textAnchor="middle">{"8"}</text>
 
                   {/* Score 9: Freq = 1 ➔ Height = 30 */}
                   <rect x="250" y="130" width="40" height="30" fill="#9C27B0" />
                   <text x="270" y="120" fill="#9C27B0" fontSize="14" textAnchor="middle" fontWeight="bold">{"1"}</text>
-                  <text x="270" y="180" fill="#37474F" fontSize="14" textAnchor="middle">{"ຄະແນນ 9"}</text>
+                  <text x="270" y="180" fill="#37474F" fontSize="14" textAnchor="middle">{"9"}</text>
 
                   {/* y-axis labels */}
                   <text x="30" y="76" fill="#37474F" fontSize="14" textAnchor="end">{"3"}</text>
