@@ -39,27 +39,27 @@ export const unit47Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ແຜນວາດຮູບສາມແຈຄ້າຍຄືກັນ (ອັດຕາສ່ວນຄ້າຍຄື k = 2)"}</span>
-                <div style={{ display: "flex", alignItems: "flex-end", gap: "24px" }}>
+                <div style={{ display: "flex", alignItems: "flex-end", gap: "30px", margin: "10px 0" }}>
                   {/* Smaller Triangle ABC */}
-                  <svg viewBox="0 0 80 70" style={{ width: "80px", height: "auto" }}>
-                    <polygon points="40,10 10,60 70,60" fill="none" stroke="#2E7D32" strokeWidth="2" />
-                    <text x="36" y="8" fill="#2E7D32" fontSize="7" fontWeight="bold">{"A"}</text>
-                    <text x="3" y="65" fill="#2E7D32" fontSize="7" fontWeight="bold">{"B"}</text>
-                    <text x="72" y="65" fill="#2E7D32" fontSize="7" fontWeight="bold">{"C"}</text>
-                    <text x="40" y="55" fill="#2E7D32" fontSize="6" textAnchor="middle">{"BC = 3"}</text>
-                    <text x="20" y="35" fill="#2E7D32" fontSize="6">{"2.5"}</text>
-                    <text x="52" y="35" fill="#2E7D32" fontSize="6">{"2.5"}</text>
+                  <svg viewBox="0 0 160 140" style={{ width: "100%", maxWidth: "160px", height: "auto" }}>
+                    <polygon points="80,20 20,120 140,120" fill="none" stroke="#2E7D32" strokeWidth="3" />
+                    <text x="75" y="15" fill="#2E7D32" fontSize="14" fontWeight="bold">{"A"}</text>
+                    <text x="5" y="135" fill="#2E7D32" fontSize="14" fontWeight="bold">{"B"}</text>
+                    <text x="145" y="135" fill="#2E7D32" fontSize="14" fontWeight="bold">{"C"}</text>
+                    <text x="80" y="112" fill="#2E7D32" fontSize="14" fontWeight="bold" textAnchor="middle">{"BC = 3"}</text>
+                    <text x="25" y="70" fill="#2E7D32" fontSize="14" fontWeight="bold">{"2.5"}</text>
+                    <text x="120" y="70" fill="#2E7D32" fontSize="14" fontWeight="bold">{"2.5"}</text>
                   </svg>
 
                   {/* Larger Triangle A'B'C' */}
-                  <svg viewBox="0 0 140 120" style={{ width: "80px", height: "auto" }}>
-                    <polygon points="70,10 10,100 130,100" fill="none" stroke="#D32F2F" strokeWidth="2" />
-                    <text x="66" y="8" fill="#D32F2F" fontSize="8" fontWeight="bold">{"A'"}</text>
-                    <text x="3" y="108" fill="#D32F2F" fontSize="8" fontWeight="bold">{"B'"}</text>
-                    <text x="132" y="108" fill="#D32F2F" fontSize="8" fontWeight="bold">{"C'"}</text>
-                    <text x="70" y="92" fill="#D32F2F" fontSize="7" textAnchor="middle">{"B'C' = 6 (3 × 2)"}</text>
-                    <text x="32" y="55" fill="#D32F2F" fontSize="7">{"5"}</text>
-                    <text x="95" y="55" fill="#D32F2F" fontSize="7">{"5"}</text>
+                  <svg viewBox="0 0 280 240" style={{ width: "100%", maxWidth: "260px", height: "auto" }}>
+                    <polygon points="140,20 20,200 260,200" fill="none" stroke="#D32F2F" strokeWidth="3" />
+                    <text x="133" y="15" fill="#D32F2F" fontSize="14" fontWeight="bold">{"A'"}</text>
+                    <text x="5" y="215" fill="#D32F2F" fontSize="14" fontWeight="bold">{"B'"}</text>
+                    <text x="265" y="215" fill="#D32F2F" fontSize="14" fontWeight="bold">{"C'"}</text>
+                    <text x="140" y="190" fill="#D32F2F" fontSize="14" fontWeight="bold" textAnchor="middle">{"B'C' = 6 (3 × 2)"}</text>
+                    <text x="50" y="110" fill="#D32F2F" fontSize="14" fontWeight="bold">{"5"}</text>
+                    <text x="215" y="110" fill="#D32F2F" fontSize="14" fontWeight="bold">{"5"}</text>
                   </svg>
                 </div>
               </div>
