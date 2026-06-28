@@ -34,8 +34,13 @@ export const unit7Data: UnitData = {
 
             {/* Visual Multiplication grid illustration */}
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#FFF9C4", borderRadius: "8px", border: "1px solid #FFF59D", fontSize: "1.15rem", color: "#F57F17" }}>
-              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
-                <span>{"ແຜນວາດເນື້ອທີ່ສະແດງການຄູນ: (2/3) × (4/5) = 8/15"}</span>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "10px" }}>
+                <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "6px" }}>
+                  {"ແຜນວາດເນື້ອທີ່ສະແດງການຄູນ: "}
+                  <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
+                    {"("}<Fraction num="2" den="3" />{" × "}<Fraction num="4" den="5" />{") = "}<Fraction num="8" den="15" />
+                  </span>
+                </span>
                 <svg viewBox="0 0 150 100" style={{ width: "100%", maxWidth: "150px", height: "auto" }}>
                   {/* Grid 3x5 = 15 blocks */}
                   <rect x="0" y="0" width="150" height="100" fill="none" stroke="#37474F" strokeWidth="2" />
@@ -50,8 +55,12 @@ export const unit7Data: UnitData = {
                   {/* Shading 2 rows (out of 3 vertical intervals, representing 2/3) */}
                   {/* Shading 4 columns (out of 5 horizontal intervals, representing 4/5) */}
                   <rect x="0" y="0" width="120" height="66" fill="#2196F3" opacity="0.6" />
-                  <text x="60" y="40" fill="#0D47A1" fontSize="12" fontWeight="bold">{"8 ສ່ວນຮ່ວມ"}</text>
                 </svg>
+                <div style={{ display: "inline-flex", alignItems: "center", gap: "4px", fontSize: "1.1rem", fontWeight: "bold", color: "#0D47A1", backgroundColor: "#E3F2FD", padding: "4px 12px", borderRadius: "6px", border: "1px solid #90CAF9" }}>
+                  <span>{"ເນື້ອທີ່ສ່ວນສີຟ້າ = 8 ຫ້ອງ ("}</span>
+                  <Fraction num="8" den="15" />
+                  <span>{")"}</span>
+                </div>
               </div>
             </div>
           </div>
@@ -336,25 +345,69 @@ export const unit7Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="t1">{"(1) "} <Fraction num="8" den="15" /> {" ເຮັກຕາ (ຄິດໄລ່: 4/5 × 2/3 = 8/15)"}</span>
+          <span key="t1" style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+            <span>{"(1) "}</span>
+            <Fraction num="8" den="15" />
+            <span>{" ເຮັກຕາ (ຄິດໄລ່: "}</span>
+            <Fraction num="4" den="5" />
+            <span>{" × "}</span>
+            <Fraction num="2" den="3" />
+            <span>{" = "}</span>
+            <Fraction num="8" den="15" />
+            <span>{")"}</span>
+          </span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="t2">{"(1) "} <Fraction num="1" den="3" /> {" (ຄິດໄລ່: 5/6 × 3/4 × 8/15 = 1/3)"}</span>
+          <span key="t2" style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+            <span>{"(1) "}</span>
+            <Fraction num="1" den="3" />
+            <span>{" (ຄິດໄລ່: "}</span>
+            <Fraction num="5" den="6" />
+            <span>{" × "}</span>
+            <Fraction num="3" den="4" />
+            <span>{" × "}</span>
+            <Fraction num="8" den="15" />
+            <span>{" = "}</span>
+            <Fraction num="1" den="3" />
+            <span>{")"}</span>
+          </span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="s1">{"(1) "} <Fraction num="3" den="10" /> {" L (ຄິດໄລ່: 3/4 × 2/5 = 6/20 = 3/10 L)"}</span>
+          <span key="s1" style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+            <span>{"(1) "}</span>
+            <Fraction num="3" den="10" />
+            <span>{" L (ຄິດໄລ່: "}</span>
+            <Fraction num="3" den="4" />
+            <span>{" × "}</span>
+            <Fraction num="2" den="5" />
+            <span>{" = "}</span>
+            <Fraction num="6" den="20" />
+            <span>{" = "}</span>
+            <Fraction num="3" den="10" />
+            <span>{" L)"}</span>
+          </span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="s2">{"(1) "} <Fraction num="2" den="3" /> {" (ຄິດໄລ່: x = 8/9 × 3/4 = 2/3)"}</span>
+          <span key="s2" style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+            <span>{"(1) "}</span>
+            <Fraction num="2" den="3" />
+            <span>{" (ຄິດໄລ່: x = "}</span>
+            <Fraction num="8" den="9" />
+            <span>{" × "}</span>
+            <Fraction num="3" den="4" />
+            <span>{" = "}</span>
+            <Fraction num="2" den="3" />
+            <span>{")"}</span>
+          </span>
         ]
       }
     ],
