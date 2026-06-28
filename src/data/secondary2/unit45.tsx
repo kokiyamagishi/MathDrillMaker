@@ -26,57 +26,61 @@ export const unit45Data: UnitData = {
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
               <div style={{ fontWeight: "bold" }}>{"• ສາຍພົວພັນຂະໜານ: MN // BC"}</div>
-              <div style={{ display: "inline-flex", alignItems: "center" }}>
+              <div style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
                 {"• ສູດຄວາມຍາວ: MN = "}
                 <span className="math" style={{ marginLeft: "4px" }}>
-                  <Fraction num="1" den="2" /> {" BC (ຫຼື MN = BC / 2)"}
+                  <Fraction num="1" den="2" /> {" BC (ຫຼື MN = "} <Fraction num="BC" den="2" /> {")"}
                 </span>
               </div>
-              <div style={{ fontWeight: "bold", color: "#E65100" }}>{"• ຕົວຢ່າງ: ຖ້າຂ້າງພື້ນ BC = 12 cm ➔ MN = 12 / 2 = 6 cm."}</div>
+              <div style={{ fontWeight: "bold", color: "#E65100", display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+                {"• ຕົວຢ່າງ: ຖ້າຂ້າງພື້ນ BC = 12 cm ➔ MN = "} <Fraction num="12" den="2" /> {" = 6 cm."}
+              </div>
             </div>
 
             {/* Triangle Midpoint SVG */}
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
-                <span>{"ແຜນວາດທິດສະດີເມັດເຄິ່ງກາງ: MN = 1/2 BC ແລະ MN // BC"}</span>
-                <svg viewBox="0 0 180 120" style={{ width: "100%", maxWidth: "160px", height: "auto" }}>
+                <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+                  {"ແຜນວາດທິດສະດີເມັດເຄິ່ງກາງ: MN = "} <Fraction num="1" den="2" /> {" BC ແລະ MN // BC"}
+                </span>
+                <svg viewBox="0 0 360 240" style={{ width: "100%", maxWidth: "400px", height: "auto" }}>
                   {/* Triangle ABC */}
-                  <polygon points="90,15 20,100 160,100" fill="none" stroke="#2E7D32" strokeWidth="2.5" />
+                  <polygon points="180,30 40,200 320,200" fill="none" stroke="#2E7D32" strokeWidth="4" />
                   
                   {/* Midpoint line MN */}
-                  <line x1="55" y1="57.5" x2="125" y2="57.5" stroke="#D32F2F" strokeWidth="2" />
+                  <line x1="110" y1="115" x2="250" y2="115" stroke="#D32F2F" strokeWidth="3" />
                   
                   {/* Points */}
-                  <circle cx="90" cy="15" r="3" fill="#2E7D32" />
-                  <text x="86" y="9" fill="#2E7D32" fontSize="9" fontWeight="bold">{"A"}</text>
+                  <circle cx="180" cy="30" r="5" fill="#2E7D32" />
+                  <text x="175" y="20" fill="#2E7D32" fontSize="18" fontWeight="bold">{"A"}</text>
 
-                  <circle cx="20" cy="100" r="3" fill="#2E7D32" />
-                  <text x="10" y="105" fill="#2E7D32" fontSize="9" fontWeight="bold">{"B"}</text>
+                  <circle cx="40" cy="200" r="5" fill="#2E7D32" />
+                  <text x="20" y="210" fill="#2E7D32" fontSize="18" fontWeight="bold">{"B"}</text>
 
-                  <circle cx="160" cy="100" r="3" fill="#2E7D32" />
-                  <text x="164" y="105" fill="#2E7D32" fontSize="9" fontWeight="bold">{"C"}</text>
+                  <circle cx="320" cy="200" r="5" fill="#2E7D32" />
+                  <text x="325" y="210" fill="#2E7D32" fontSize="18" fontWeight="bold">{"C"}</text>
 
                   {/* Midpoint M */}
-                  <circle cx="55" cy="57.5" r="3" fill="#D32F2F" />
-                  <text x="42" y="58" fill="#D32F2F" fontSize="8" fontWeight="bold">{"M"}</text>
+                  <circle cx="110" cy="115" r="5" fill="#D32F2F" />
+                  <text x="85" y="120" fill="#D32F2F" fontSize="18" fontWeight="bold">{"M"}</text>
                   {/* Midpoint N */}
-                  <circle cx="125" cy="57.5" r="3" fill="#D32F2F" />
-                  <text x="130" y="58" fill="#D32F2F" fontSize="8" fontWeight="bold">{"N"}</text>
+                  <circle cx="250" cy="115" r="5" fill="#D32F2F" />
+                  <text x="260" y="120" fill="#D32F2F" fontSize="18" fontWeight="bold">{"N"}</text>
 
                   {/* Tick Marks for Equal Segments */}
                   {/* AM = MB */}
-                  <line x1="34" y1="36" x2="40" y2="34" stroke="#757575" strokeWidth="1" />
-                  <line x1="69" y1="78" x2="75" y2="76" stroke="#757575" strokeWidth="1" />
+                  <line x1="68" y1="72" x2="80" y2="68" stroke="#757575" strokeWidth="2" />
+                  <line x1="138" y1="156" x2="150" y2="152" stroke="#757575" strokeWidth="2" />
                   
                   {/* AN = NC */}
-                  <line x1="105" y1="34" x2="111" y2="36" stroke="#757575" strokeWidth="1" />
-                  <line x1="106" y1="37" x2="112" y2="39" stroke="#757575" strokeWidth="1" />
-                  <line x1="140" y1="76" x2="146" y2="78" stroke="#757575" strokeWidth="1" />
-                  <line x1="141" y1="79" x2="147" y2="81" stroke="#757575" strokeWidth="1" />
+                  <line x1="210" y1="68" x2="222" y2="72" stroke="#757575" strokeWidth="2" />
+                  <line x1="212" y1="74" x2="224" y2="78" stroke="#757575" strokeWidth="2" />
+                  <line x1="280" y1="152" x2="292" y2="156" stroke="#757575" strokeWidth="2" />
+                  <line x1="282" y1="158" x2="294" y2="162" stroke="#757575" strokeWidth="2" />
 
                   {/* Dimension labels */}
-                  <text x="90" y="52" fill="#D32F2F" fontSize="8" textAnchor="middle">{"MN = 6 cm"}</text>
-                  <text x="90" y="112" fill="#2E7D32" fontSize="8" textAnchor="middle">{"BC = 12 cm"}</text>
+                  <text x="180" y="100" fill="#D32F2F" fontSize="18" textAnchor="middle">{"MN = 6 cm"}</text>
+                  <text x="180" y="228" fill="#2E7D32" fontSize="18" textAnchor="middle">{"BC = 12 cm"}</text>
                 </svg>
               </div>
             </div>
