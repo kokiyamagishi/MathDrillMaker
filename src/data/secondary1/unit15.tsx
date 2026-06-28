@@ -28,16 +28,16 @@ export const unit15Data: UnitData = {
                 </thead>
                 <tbody>
                   <tr style={{ borderBottom: "1px solid #C8E6C9" }}>
-                    <td style={{ padding: "6px" }}>{"1 ກິໂລແມດ (km) = 1,000 m"}</td>
-                    <td style={{ padding: "6px" }}>{"1 ເດຊີແມດ (dm) = 0.1 m (1 m = 10 dm)"}</td>
+                    <td style={{ padding: "6px", whiteSpace: "nowrap" }}>{"1 ກິໂລແມດ (km) = 1,000 m"}</td>
+                    <td style={{ padding: "6px" }}>{"1 ເດຊີແມດ (dm) = 0.1 m "}<span style={{ whiteSpace: "nowrap" }}>{"(1 m = 10 dm)"}</span></td>
                   </tr>
                   <tr style={{ borderBottom: "1px solid #C8E6C9" }}>
-                    <td style={{ padding: "6px" }}>{"1 ເຮັກໂຕແມດ (hm) = 100 m"}</td>
-                    <td style={{ padding: "6px" }}>{"1 ຊັງຕີແມດ (cm) = 0.01 m (1 m = 100 cm)"}</td>
+                    <td style={{ padding: "6px", whiteSpace: "nowrap" }}>{"1 ເຮັກໂຕແມດ (hm) = 100 m"}</td>
+                    <td style={{ padding: "6px" }}>{"1 ຊັງຕີແມດ (cm) = 0.01 m "}<span style={{ whiteSpace: "nowrap" }}>{"(1 m = 100 cm)"}</span></td>
                   </tr>
                   <tr>
-                    <td style={{ padding: "6px" }}>{"1 ເດກາແມດ (dam) = 10 m"}</td>
-                    <td style={{ padding: "6px" }}>{"1 ມິລິແມດ (mm) = 0.001 m (1 m = 1,000 mm)"}</td>
+                    <td style={{ padding: "6px", whiteSpace: "nowrap" }}>{"1 ເດກາແມດ (dam) = 10 m"}</td>
+                    <td style={{ padding: "6px" }}>{"1 ມິລິແມດ (mm) = 0.001 m "}<span style={{ whiteSpace: "nowrap" }}>{"(1 m = 1,000 mm)"}</span></td>
                   </tr>
                 </tbody>
               </table>
