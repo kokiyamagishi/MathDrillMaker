@@ -3,7 +3,7 @@ import { UnitData } from "../units2";
 
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
+  <span className="math" style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
     <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{num}</span>
     <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{den}</span>
   </span>

@@ -3,7 +3,7 @@ import { UnitData } from "../units2";
 
 // Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
 const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
-  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
+  <span className="math" style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
     <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{num}</span>
     <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.375rem" }}>{den}</span>
   </span>
@@ -12,7 +12,7 @@ const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) 
 export const unit8Data: UnitData = {
   unitNumber: 8,
   unitTitle: "ພາກທີ I - ບົດທີ 8: ການຫານເລກສ່ວນ",
-  unitGoal: "ຮຽນຮູ້ ແລະ ປະຕິ打ການຫານເລກສ່ວນໂດຍການຄູນກັບເລກສ່ວນປີ້ນຂອງຕົວຫານ",
+  unitGoal: "ຮຽນຮູ້ ແລະ ປະຕິບັດການຫານເລກສ່ວນໂດຍການຄູນກັບເລກສ່ວນປີ້ນຂອງຕົວຫານ",
   textbookRef: "ປຶ້ມແບບຮຽນ ມ.2 ໜ້າ 27-30",
   subSections: [
     {
