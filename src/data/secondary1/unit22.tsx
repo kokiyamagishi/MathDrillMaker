@@ -26,7 +26,7 @@ export const unit22Data: UnitData = {
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
                 {"ໃນແຜນທີ່ປະເທດລາວທີ່ມີມາດຕາສ່ວນ 1:1,500,000, ວັດແທກໄລຍະຫ່າງລະຫວ່າງ ແຂວງຫຼວງພະບາງ ຫາ ນະຄອນຫຼວງວຽງຈັນ ໄດ້ 14.5 cm."}
                 <br />
-                <strong>{"ໄລຍະທາງຕົວຈິງ:"}</strong>{" 14.5 cm × 1,500,000 = 21,750,000 cm = 217.5 km."}
+                <strong>{"ໄລຍະທາງຕົວຈິງ:"}</strong> <span style={{ whiteSpace: "nowrap" }}>{"14.5 cm × 1,500,000 = 21,750,000 cm = 217.5 km."}</span>
               </p>
             </div>
           </div>
@@ -95,9 +95,12 @@ export const unit22Data: UnitData = {
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2" }}>
               <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ຕົວຢ່າງໂຈດເວລາເດີນທາງ:"}</span>
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
-                {"ໃນແຜນທີ່ 1:5,000,000, ວັດໄດ້ 134 mm (13.4 cm). ໄລຍະທາງຕົວຈິງ = 13.4 × 5,000,000 = 67,000,000 cm = 670 km."}
+                {"ໃນແຜນທີ່ 1:5,000,000, ວັດໄດ້ 134 mm (13.4 cm). "}
+                <span style={{ whiteSpace: "nowrap" }}>{"ໄລຍະທາງຕົວຈິງ = 13.4 × 5,000,000 = 67,000,000 cm = 670 km."}</span>
                 <br />
-                {"ຖ້າເຮືອບິນບິນດ້ວຍຄວາມໄວສະເລ່ຍ 134 km/h. ເວລາເດີນທາງ = 670 / 134 = 5 ຊົ່ວໂມງ. ຖ້າອອກເດີນທາງເວລາ 12:20, ຈະຮອດຈຸດໝາຍເວລາ 17:20."}
+                {"ຖ້າເຮືອບິນບິນດ້ວຍຄວາມໄວສະເລ່ຍ 134 km/h. "}
+                <span style={{ whiteSpace: "nowrap" }}>{"ເວລາເດີນທາງ = 670 / 134 = 5 ຊົ່ວໂມງ."}</span>
+                {" ຖ້າອອກເດີນທາງເວລາ 12:20, ຈະຮອດຈຸດໝາຍເວລາ 17:20."}
               </p>
             </div>
           </div>
