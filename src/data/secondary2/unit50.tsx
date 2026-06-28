@@ -33,44 +33,44 @@ export const unit50Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#F5F5F5", borderRadius: "8px", border: "1px solid #E0E0E0", fontSize: "1.15rem", color: "#424242" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ກຣາຟແທ່ງສະແດງຈຳນວນນັກຮຽນທີ່ມັກໝາກໄມ້ແຕ່ລະຊະນິດ"}</span>
-                <svg viewBox="0 0 200 100" style={{ width: "100%", maxWidth: "180px", height: "auto" }}>
+                <svg viewBox="0 0 400 200" style={{ width: "100%", maxWidth: "360px", height: "auto" }}>
                   {/* Grid Lines */}
-                  <line x1="25" y1="80" x2="185" y2="80" stroke="#37474F" strokeWidth="1.5" />
-                  <line x1="25" y1="20" x2="25" y2="80" stroke="#37474F" strokeWidth="1.5" />
+                  <line x1="50" y1="160" x2="370" y2="160" stroke="#37474F" strokeWidth="3" />
+                  <line x1="50" y1="40" x2="50" y2="160" stroke="#37474F" strokeWidth="3" />
                   
                   {/* Horizontal Grid Guides */}
-                  <line x1="25" y1="20" x2="185" y2="20" stroke="#CFD8DC" strokeWidth="0.5" strokeDasharray="2,2" />
-                  <line x1="25" y1="35" x2="185" y2="35" stroke="#CFD8DC" strokeWidth="0.5" strokeDasharray="2,2" />
-                  <line x1="25" y1="50" x2="185" y2="50" stroke="#CFD8DC" strokeWidth="0.5" strokeDasharray="2,2" />
-                  <line x1="25" y1="65" x2="185" y2="65" stroke="#CFD8DC" strokeWidth="0.5" strokeDasharray="2,2" />
+                  <line x1="50" y1="40" x2="370" y2="40" stroke="#CFD8DC" strokeWidth="1" strokeDasharray="4,4" />
+                  <line x1="50" y1="70" x2="370" y2="70" stroke="#CFD8DC" strokeWidth="1" strokeDasharray="4,4" />
+                  <line x1="50" y1="100" x2="370" y2="100" stroke="#CFD8DC" strokeWidth="1" strokeDasharray="4,4" />
+                  <line x1="50" y1="130" x2="370" y2="130" stroke="#CFD8DC" strokeWidth="1" strokeDasharray="4,4" />
 
                   {/* Bars (Scaled coordinates) */}
-                  {/* Banana: 15 (y=35, h=45) */}
-                  <rect x="40" y="35" width="20" height="45" fill="#FFEB3B" stroke="#FBC02D" strokeWidth="1" />
-                  <text x="50" y="30" fill="#F57F17" fontSize="7" textAnchor="middle" fontWeight="bold">{"15"}</text>
-                  <text x="50" y="88" fill="#37474F" fontSize="7" textAnchor="middle">{"ກ້ວຍ"}</text>
+                  {/* Banana: 15 (y=70, h=90) */}
+                  <rect x="80" y="70" width="40" height="90" fill="#FFEB3B" stroke="#FBC02D" strokeWidth="2" />
+                  <text x="100" y="60" fill="#F57F17" fontSize="14" textAnchor="middle" fontWeight="bold">{"15"}</text>
+                  <text x="100" y="176" fill="#37474F" fontSize="14" textAnchor="middle">{"ກ້ວຍ"}</text>
 
-                  {/* Mango: 20 (y=20, h=60) */}
-                  <rect x="75" y="20" width="20" height="60" fill="#FF9800" stroke="#E65100" strokeWidth="1" />
-                  <text x="85" y="15" fill="#E65100" fontSize="7" textAnchor="middle" fontWeight="bold">{"20"}</text>
-                  <text x="85" y="88" fill="#37474F" fontSize="7" textAnchor="middle">{"ມ່ວງ"}</text>
+                  {/* Mango: 20 (y=40, h=120) */}
+                  <rect x="150" y="40" width="40" height="120" fill="#FF9800" stroke="#E65100" strokeWidth="2" />
+                  <text x="170" y="30" fill="#E65100" fontSize="14" textAnchor="middle" fontWeight="bold">{"20"}</text>
+                  <text x="170" y="176" fill="#37474F" fontSize="14" textAnchor="middle">{"ມ່ວງ"}</text>
 
-                  {/* Orange: 10 (y=50, h=30) */}
-                  <rect x="110" y="50" width="20" height="30" fill="#4CAF50" stroke="#2E7D32" strokeWidth="1" />
-                  <text x="120" y="45" fill="#2E7D32" fontSize="7" textAnchor="middle" fontWeight="bold">{"10"}</text>
-                  <text x="120" y="88" fill="#37474F" fontSize="7" textAnchor="middle">{"ກ້ຽງ"}</text>
+                  {/* Orange: 10 (y=100, h=60) */}
+                  <rect x="220" y="100" width="40" height="60" fill="#4CAF50" stroke="#2E7D32" strokeWidth="2" />
+                  <text x="240" y="90" fill="#2E7D32" fontSize="14" textAnchor="middle" fontWeight="bold">{"10"}</text>
+                  <text x="240" y="176" fill="#37474F" fontSize="14" textAnchor="middle">{"ກ້ຽງ"}</text>
 
-                  {/* Apple: 5 (y=65, h=15) */}
-                  <rect x="145" y="65" width="20" height="15" fill="#F44336" stroke="#C62828" strokeWidth="1" />
-                  <text x="155" y="60" fill="#C62828" fontSize="7" textAnchor="middle" fontWeight="bold">{"5"}</text>
-                  <text x="155" y="88" fill="#37474F" fontSize="7" textAnchor="middle">{"ແອບເປິລ"}</text>
+                  {/* Apple: 5 (y=130, h=30) */}
+                  <rect x="290" y="130" width="40" height="30" fill="#F44336" stroke="#C62828" strokeWidth="2" />
+                  <text x="310" y="120" fill="#C62828" fontSize="14" textAnchor="middle" fontWeight="bold">{"5"}</text>
+                  <text x="310" y="176" fill="#37474F" fontSize="14" textAnchor="middle">{"ແອບເປິລ"}</text>
 
                   {/* y-axis labels */}
-                  <text x="20" y="23" fill="#37474F" fontSize="7" textAnchor="end">{"20"}</text>
-                  <text x="20" y="38" fill="#37474F" fontSize="7" textAnchor="end">{"15"}</text>
-                  <text x="20" y="53" fill="#37474F" fontSize="7" textAnchor="end">{"10"}</text>
-                  <text x="20" y="68" fill="#37474F" fontSize="7" textAnchor="end">{"5"}</text>
-                  <text x="20" y="83" fill="#37474F" fontSize="7" textAnchor="end">{"0"}</text>
+                  <text x="40" y="46" fill="#37474F" fontSize="14" textAnchor="end">{"20"}</text>
+                  <text x="40" y="76" fill="#37474F" fontSize="14" textAnchor="end">{"15"}</text>
+                  <text x="40" y="106" fill="#37474F" fontSize="14" textAnchor="end">{"10"}</text>
+                  <text x="40" y="136" fill="#37474F" fontSize="14" textAnchor="end">{"5"}</text>
+                  <text x="40" y="166" fill="#37474F" fontSize="14" textAnchor="end">{"0"}</text>
                 </svg>
               </div>
             </div>

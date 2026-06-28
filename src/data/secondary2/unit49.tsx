@@ -34,37 +34,37 @@ export const unit49Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ແຜນວາດເສົາສະແດງຄວາມຖີ່ຂອງຄະແນນ [5, 7, 8, 9]"}</span>
-                <svg viewBox="0 0 180 100" style={{ width: "100%", maxWidth: "160px", height: "auto" }}>
+                <svg viewBox="0 0 360 200" style={{ width: "100%", maxWidth: "320px", height: "auto" }}>
                   {/* Grid Lines */}
-                  <line x1="20" y1="80" x2="160" y2="80" stroke="#37474F" strokeWidth="1.5" />
-                  <line x1="20" y1="20" x2="20" y2="80" stroke="#37474F" strokeWidth="1.5" />
+                  <line x1="40" y1="160" x2="320" y2="160" stroke="#37474F" strokeWidth="3" />
+                  <line x1="40" y1="40" x2="40" y2="160" stroke="#37474F" strokeWidth="3" />
                   
                   {/* Bars (Scaled coordinates) */}
-                  {/* Score 5: Freq = 3 ➔ Height = 45 */}
-                  <rect x="35" y="35" width="20" height="45" fill="#4CAF50" />
-                  <text x="45" y="30" fill="#4CAF50" fontSize="8" textAnchor="middle" fontWeight="bold">{"3"}</text>
-                  <text x="45" y="90" fill="#37474F" fontSize="8" textAnchor="middle">{"ຄະແນນ 5"}</text>
+                  {/* Score 5: Freq = 3 ➔ Height = 90 */}
+                  <rect x="70" y="70" width="40" height="90" fill="#4CAF50" />
+                  <text x="90" y="60" fill="#4CAF50" fontSize="14" textAnchor="middle" fontWeight="bold">{"3"}</text>
+                  <text x="90" y="180" fill="#37474F" fontSize="14" textAnchor="middle">{"ຄະແນນ 5"}</text>
 
-                  {/* Score 7: Freq = 2 ➔ Height = 30 */}
-                  <rect x="65" y="50" width="20" height="30" fill="#2196F3" />
-                  <text x="75" y="45" fill="#2196F3" fontSize="8" textAnchor="middle" fontWeight="bold">{"2"}</text>
-                  <text x="75" y="90" fill="#37474F" fontSize="8" textAnchor="middle">{"ຄະແນນ 7"}</text>
+                  {/* Score 7: Freq = 2 ➔ Height = 60 */}
+                  <rect x="130" y="100" width="40" height="60" fill="#2196F3" />
+                  <text x="150" y="90" fill="#2196F3" fontSize="14" textAnchor="middle" fontWeight="bold">{"2"}</text>
+                  <text x="150" y="180" fill="#37474F" fontSize="14" textAnchor="middle">{"ຄະແນນ 7"}</text>
 
-                  {/* Score 8: Freq = 1 ➔ Height = 15 */}
-                  <rect x="95" y="65" width="20" height="15" fill="#FF9800" />
-                  <text x="105" y="60" fill="#FF9800" fontSize="8" textAnchor="middle" fontWeight="bold">{"1"}</text>
-                  <text x="105" y="90" fill="#37474F" fontSize="8" textAnchor="middle">{"ຄະແນນ 8"}</text>
+                  {/* Score 8: Freq = 1 ➔ Height = 30 */}
+                  <rect x="190" y="130" width="40" height="30" fill="#FF9800" />
+                  <text x="210" y="120" fill="#FF9800" fontSize="14" textAnchor="middle" fontWeight="bold">{"1"}</text>
+                  <text x="210" y="180" fill="#37474F" fontSize="14" textAnchor="middle">{"ຄະແນນ 8"}</text>
 
-                  {/* Score 9: Freq = 1 ➔ Height = 15 */}
-                  <rect x="125" y="65" width="20" height="15" fill="#9C27B0" />
-                  <text x="135" y="60" fill="#9C27B0" fontSize="8" textAnchor="middle" fontWeight="bold">{"1"}</text>
-                  <text x="135" y="90" fill="#37474F" fontSize="8" textAnchor="middle">{"ຄະແນນ 9"}</text>
+                  {/* Score 9: Freq = 1 ➔ Height = 30 */}
+                  <rect x="250" y="130" width="40" height="30" fill="#9C27B0" />
+                  <text x="270" y="120" fill="#9C27B0" fontSize="14" textAnchor="middle" fontWeight="bold">{"1"}</text>
+                  <text x="270" y="180" fill="#37474F" fontSize="14" textAnchor="middle">{"ຄະແນນ 9"}</text>
 
                   {/* y-axis labels */}
-                  <text x="15" y="38" fill="#37474F" fontSize="7" textAnchor="end">{"3"}</text>
-                  <text x="15" y="53" fill="#37474F" fontSize="7" textAnchor="end">{"2"}</text>
-                  <text x="15" y="68" fill="#37474F" fontSize="7" textAnchor="end">{"1"}</text>
-                  <text x="15" y="83" fill="#37474F" fontSize="7" textAnchor="end">{"0"}</text>
+                  <text x="30" y="76" fill="#37474F" fontSize="14" textAnchor="end">{"3"}</text>
+                  <text x="30" y="106" fill="#37474F" fontSize="14" textAnchor="end">{"2"}</text>
+                  <text x="30" y="136" fill="#37474F" fontSize="14" textAnchor="end">{"1"}</text>
+                  <text x="30" y="166" fill="#37474F" fontSize="14" textAnchor="end">{"0"}</text>
                 </svg>
               </div>
             </div>

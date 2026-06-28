@@ -33,51 +33,51 @@ export const unit51Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#FFFDE7", borderRadius: "8px", border: "1px solid #FFF59D", fontSize: "1.15rem", color: "#F57F17" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ກຣາຟເສັ້ນສະແດງການປ່ຽນແປງຂອງອຸນຫະພູມໃນແຕ່ລະຊົ່ວໂມງ"}</span>
-                <svg viewBox="0 0 220 110" style={{ width: "100%", maxWidth: "200px", height: "auto" }}>
+                <svg viewBox="0 0 440 220" style={{ width: "100%", maxWidth: "400px", height: "auto" }}>
                   {/* Grid Lines */}
-                  <line x1="30" y1="90" x2="200" y2="90" stroke="#37474F" strokeWidth="1.5" />
-                  <line x1="30" y1="20" x2="30" y2="90" stroke="#37474F" strokeWidth="1.5" />
+                  <line x1="60" y1="180" x2="400" y2="180" stroke="#37474F" strokeWidth="3" />
+                  <line x1="60" y1="40" x2="60" y2="180" stroke="#37474F" strokeWidth="3" />
 
                   {/* Horizontal Grid Guides */}
-                  <line x1="30" y1="20" x2="200" y2="20" stroke="#CFD8DC" strokeWidth="0.5" strokeDasharray="2,2" />
-                  <line x1="30" y1="37.5" x2="200" y2="37.5" stroke="#CFD8DC" strokeWidth="0.5" strokeDasharray="2,2" />
-                  <line x1="30" y1="55" x2="200" y2="55" stroke="#CFD8DC" strokeWidth="0.5" strokeDasharray="2,2" />
-                  <line x1="30" y1="72.5" x2="200" y2="72.5" stroke="#CFD8DC" strokeWidth="0.5" strokeDasharray="2,2" />
+                  <line x1="60" y1="40" x2="400" y2="40" stroke="#CFD8DC" strokeWidth="1" strokeDasharray="4,4" />
+                  <line x1="60" y1="75" x2="400" y2="75" stroke="#CFD8DC" strokeWidth="1" strokeDasharray="4,4" />
+                  <line x1="60" y1="110" x2="400" y2="110" stroke="#CFD8DC" strokeWidth="1" strokeDasharray="4,4" />
+                  <line x1="60" y1="145" x2="400" y2="145" stroke="#CFD8DC" strokeWidth="1" strokeDasharray="4,4" />
 
                   {/* Vertices and line connections */}
-                  {/* Points: 08:00 (30, y=90) -> 20°C (Scaled: y=90) */}
-                  {/* 08:00 ➔ 22°C (x=45, y=83) */}
-                  {/* 09:00 ➔ 25°C (x=80, y=72.5) */}
-                  {/* 10:00 ➔ 28°C (x=115, y=62) */}
-                  {/* 11:00 ➔ 30°C (x=150, y=55) */}
-                  {/* 12:00 ➔ 26°C (x=185, y=69) */}
-                  <path d="M 45,83 L 80,72.5 L 115,62 L 150,55 L 185,69" fill="none" stroke="#D84315" strokeWidth="2" />
+                  {/* Points: 08:00 (60, y=180) -> 20°C (Scaled: y=180) */}
+                  {/* 08:00 ➔ 22°C (x=90, y=166) */}
+                  {/* 09:00 ➔ 25°C (x=160, y=145) */}
+                  {/* 10:00 ➔ 28°C (x=230, y=124) */}
+                  {/* 11:00 ➔ 30°C (x=300, y=110) */}
+                  {/* 12:00 ➔ 26°C (x=370, y=138) */}
+                  <path d="M 90,166 L 160,145 L 230,124 L 300,110 L 370,138" fill="none" stroke="#D84315" strokeWidth="4" />
                   
                   {/* Vertices circles */}
-                  <circle cx="45" cy="83" r="3.5" fill="#D84315" />
-                  <text x="45" y="77" fill="#D84315" fontSize="7" textAnchor="middle" fontWeight="bold">{"22°"}</text>
-                  <text x="45" y="100" fill="#37474F" fontSize="7" textAnchor="middle">{"08:00"}</text>
+                  <circle cx="90" cy="166" r="6" fill="#D84315" />
+                  <text x="90" y="154" fill="#D84315" fontSize="14" textAnchor="middle" fontWeight="bold">{"22°"}</text>
+                  <text x="90" y="200" fill="#37474F" fontSize="14" textAnchor="middle">{"08:00"}</text>
 
-                  <circle cx="80" cy="72.5" r="3.5" fill="#D84315" />
-                  <text x="80" y="66.5" fill="#D84315" fontSize="7" textAnchor="middle" fontWeight="bold">{"25°"}</text>
-                  <text x="80" y="100" fill="#37474F" fontSize="7" textAnchor="middle">{"09:00"}</text>
+                  <circle cx="160" cy="145" r="6" fill="#D84315" />
+                  <text x="160" y="133" fill="#D84315" fontSize="14" textAnchor="middle" fontWeight="bold">{"25°"}</text>
+                  <text x="160" y="200" fill="#37474F" fontSize="14" textAnchor="middle">{"09:00"}</text>
 
-                  <circle cx="115" cy="62" r="3.5" fill="#D84315" />
-                  <text x="115" y="56" fill="#D84315" fontSize="7" textAnchor="middle" fontWeight="bold">{"28°"}</text>
-                  <text x="115" y="100" fill="#37474F" fontSize="7" textAnchor="middle">{"10:00"}</text>
+                  <circle cx="230" cy="124" r="6" fill="#D84315" />
+                  <text x="230" y="112" fill="#D84315" fontSize="14" textAnchor="middle" fontWeight="bold">{"28°"}</text>
+                  <text x="230" y="200" fill="#37474F" fontSize="14" textAnchor="middle">{"10:00"}</text>
 
-                  <circle cx="150" cy="55" r="3.5" fill="#D84315" />
-                  <text x="150" y="49" fill="#D84315" fontSize="7" textAnchor="middle" fontWeight="bold">{"30°"}</text>
-                  <text x="150" y="100" fill="#37474F" fontSize="7" textAnchor="middle">{"11:00"}</text>
+                  <circle cx="300" cy="110" r="6" fill="#D84315" />
+                  <text x="300" y="98" fill="#D84315" fontSize="14" textAnchor="middle" fontWeight="bold">{"30°"}</text>
+                  <text x="300" y="200" fill="#37474F" fontSize="14" textAnchor="middle">{"11:00"}</text>
 
-                  <circle cx="185" cy="69" r="3.5" fill="#D84315" />
-                  <text x="185" y="63" fill="#D84315" fontSize="7" textAnchor="middle" fontWeight="bold">{"26°"}</text>
-                  <text x="185" y="100" fill="#37474F" fontSize="7" textAnchor="middle">{"12:00"}</text>
+                  <circle cx="370" cy="138" r="6" fill="#D84315" />
+                  <text x="370" y="126" fill="#D84315" fontSize="14" textAnchor="middle" fontWeight="bold">{"26°"}</text>
+                  <text x="370" y="200" fill="#37474F" fontSize="14" textAnchor="middle">{"12:00"}</text>
 
                   {/* y-axis labels */}
-                  <text x="25" y="58" fill="#37474F" fontSize="7" textAnchor="end">{"30°C"}</text>
-                  <text x="25" y="75.5" fill="#37474F" fontSize="7" textAnchor="end">{"25°C"}</text>
-                  <text x="25" y="93" fill="#37474F" fontSize="7" textAnchor="end">{"20°C"}</text>
+                  <text x="50" y="116" fill="#37474F" fontSize="14" textAnchor="end">{"30°C"}</text>
+                  <text x="50" y="151" fill="#37474F" fontSize="14" textAnchor="end">{"25°C"}</text>
+                  <text x="50" y="186" fill="#37474F" fontSize="14" textAnchor="end">{"20°C"}</text>
                 </svg>
               </div>
             </div>
