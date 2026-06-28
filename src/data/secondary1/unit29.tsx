@@ -24,16 +24,34 @@ export const unit29Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຖ້າເຮົາມີສອງອັດຕາສ່ວນທີ່ເທົ່າກັນ: "}
               <br />
-              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#1565C0", display: "block", textAlign: "center", margin: "12px 0" }}>
-                {"a/b = c/d   ⇒   a × d = b × c"}
+              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#1565C0", display: "inline-flex", alignItems: "center", gap: "8px", margin: "12px 0" }}>
+                <Fraction num={"a"} den={"b"} />
+                <span>{" = "}</span>
+                <Fraction num={"c"} den={"d"} />
+                <span>{"   ⇒   a × d = b × c"}</span>
               </span>
-              {"ເຊິ່ງເຮົາສາມາດຊອກຫາພົດໃດໜຶ່ງທີ່ບໍ່ຮູ້ຄ່າ (ຕົວຢ່າງ: x) ໄດ້ຢ່າງງ່າຍດາຍ:"}
+              <br />
+              <span>{"ເຊິ່ງເຮົາສາມາດຊອກຫາພົດໃດໜຶ່ງທີ່ບໍ່ຮູ້ຄ່າ (ຕົວຢ່າງ: x) ໄດ້ຢ່າງງ່າຍດາຍ:"}</span>
             </p>
             <div style={{ padding: "16px", backgroundColor: "#F9F9F9", borderRadius: "8px", borderLeft: "4px solid #4CAF50" }}>
               <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#2E7D32" }}>{"ສູດການຊອກຫາ:"}</span>
-              <ul style={{ fontSize: "1.20rem", margin: "8px 0 0 0", paddingLeft: "20px", lineHeight: "1.6" }}>
-                <li>{"ຖ້າຊອກຫາ x ໃນ "}<strong>{"a/b = c/x"}</strong>{" ⇒ x = (b × c) / a"}</li>
-                <li>{"ຖ້າຊອກຫາ x ໃນ "}<strong>{"x/b = c/d"}</strong>{" ⇒ x = (b × c) / d"}</li>
+              <ul style={{ fontSize: "1.20rem", margin: "8px 0 0 0", paddingLeft: "20px", lineHeight: "1.8", display: "flex", flexDirection: "column", gap: "8px" }}>
+                <li style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+                  <span>{"ຖ້າຊອກຫາ x ໃນ "}</span>
+                  <Fraction num={"a"} den={"b"} />
+                  <span>{" = "}</span>
+                  <Fraction num={"c"} den={"x"} />
+                  <span>{" ⇒ x = "}</span>
+                  <Fraction num={<span>{"b × c"}</span>} den={"a"} />
+                </li>
+                <li style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+                  <span>{"ຖ້າຊອກຫາ x ໃນ "}</span>
+                  <Fraction num={"x"} den={"b"} />
+                  <span>{" = "}</span>
+                  <Fraction num={"c"} den={"d"} />
+                  <span>{" ⇒ x = "}</span>
+                  <Fraction num={<span>{"b × c"}</span>} den={"d"} />
+                </li>
               </ul>
             </div>
           </div>
