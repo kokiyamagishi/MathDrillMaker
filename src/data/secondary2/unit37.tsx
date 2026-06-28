@@ -33,22 +33,25 @@ export const unit37Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ຮູບສີ່ແຈສວດແບ່ງເປັນ 2 ຮູບສາມແຈ (180° × 2 = 360°)"}</span>
-                <svg viewBox="0 0 200 120" style={{ width: "100%", maxWidth: "160px", height: "auto" }}>
+                <svg viewBox="0 0 400 240" style={{ width: "100%", maxWidth: "400px", height: "auto" }}>
                   {/* Quadrilateral path */}
-                  <polygon points="50,20 160,30 180,100 30,90" fill="none" stroke="#2E7D32" strokeWidth="2" />
+                  <polygon points="100,40 320,60 360,200 60,180" fill="none" stroke="#2E7D32" strokeWidth="3" />
                   
                   {/* Split line (diagonal) */}
-                  <line x1="50" y1="20" x2="180" y2="100" stroke="#D32F2F" strokeWidth="1.5" strokeDasharray="3,3" />
+                  <line x1="100" y1="40" x2="360" y2="200" stroke="#D32F2F" strokeWidth="2.5" strokeDasharray="6,6" />
 
                   {/* Labels for triangles */}
-                  <text x="75" y="70" fill="#1565C0" fontSize="8" fontWeight="bold">{"ຮູບສາມແຈ 1 (180°)"}</text>
-                  <text x="120" y="50" fill="#FF8F00" fontSize="8" fontWeight="bold">{"ຮູບສາມແຈ 2 (180°)"}</text>
+                  <text x="173" y="135" fill="#1565C0" fontSize="16" fontWeight="bold" textAnchor="middle">{"ຮູບສາມແຈ 1"}</text>
+                  <text x="173" y="155" fill="#1565C0" fontSize="16" fontWeight="bold" textAnchor="middle">{"(180°)"}</text>
+                  
+                  <text x="260" y="95" fill="#FF8F00" fontSize="16" fontWeight="bold" textAnchor="middle">{"ຮູບສາມແຈ 2"}</text>
+                  <text x="260" y="115" fill="#FF8F00" fontSize="16" fontWeight="bold" textAnchor="middle">{"(180°)"}</text>
 
                   {/* Vertices */}
-                  <text x="50" y="15" fill="#37474F" fontSize="10" fontWeight="bold" textAnchor="middle">{"A"}</text>
-                  <text x="165" y="27" fill="#37474F" fontSize="10" fontWeight="bold">{"B"}</text>
-                  <text x="185" y="112" fill="#37474F" fontSize="10" fontWeight="bold" textAnchor="middle">{"C"}</text>
-                  <text x="20" y="95" fill="#37474F" fontSize="10" fontWeight="bold" textAnchor="end">{"D"}</text>
+                  <text x="100" y="30" fill="#37474F" fontSize="20" fontWeight="bold" textAnchor="middle">{"A"}</text>
+                  <text x="330" y="54" fill="#37474F" fontSize="20" fontWeight="bold">{"B"}</text>
+                  <text x="370" y="224" fill="#37474F" fontSize="20" fontWeight="bold" textAnchor="middle">{"C"}</text>
+                  <text x="40" y="190" fill="#37474F" fontSize="20" fontWeight="bold" textAnchor="end">{"D"}</text>
                 </svg>
               </div>
             </div>
