@@ -72,7 +72,7 @@ export const unit21Data: UnitData = {
                 <div>
                   <span>{"ປະໂຫຍກສັນຍະລັກ:"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                   <span>{"ໄລຍະທາງຕົວຈິງ = "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
                   <span>{" = "}</span>
@@ -117,8 +117,8 @@ export const unit21Data: UnitData = {
                 <div>
                   <span>{"ປະໂຫຍກສັນຍະລັກ:"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap" }}>
-                  <span>{"ໄລຍະຫ່າງໃນແຜນທີ່ = "}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
+                  <span>{"ໄລຍະໃນແຜນທີ່ = "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
                   <span>{" = "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
@@ -139,7 +139,7 @@ export const unit21Data: UnitData = {
                 <div>
                   <span>{"ປະໂຫຍກສັນຍະລັກ:"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                   <span>{"ໄລຍະຕົວຈິງ (m) = "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
                   <span>{" = "}</span>

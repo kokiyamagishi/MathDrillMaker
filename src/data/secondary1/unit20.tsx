@@ -123,7 +123,7 @@ export const unit20Data: UnitData = {
                 <div>
                   <span>{"ປະໂຫຍກສັນຍະລັກ:"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                   <span><Angle>xOz</Angle>{" = "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
                   <span>{" = "}</span>
@@ -145,7 +145,7 @@ export const unit20Data: UnitData = {
                 <div>
                   <span>{"ປະໂຫຍກສັນຍະລັກ:"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                   <span><Angle>AOB</Angle>{" = "}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
                   <span>{" = "}</span>
