@@ -48,11 +48,11 @@ export const unit22Data: UnitData = {
                 <div>
                   <span>{"ປະໂຫຍກສັນຍະລັກ:"}</span>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                   <span>{"ໄລຍະທາງຕົວຈິງ = "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
                   <span>{" = "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
                   <span style={{ flexShrink: 0 }}>{"km"}</span>
                 </div>
               </div>
@@ -67,16 +67,18 @@ export const unit22Data: UnitData = {
                 {"ໃນແຜນຜັງທີ່ມີມາດຕາສ່ວນ 1:50,000, ວັດແທກໄລຍະທາງໃນແຜນຜັງໄດ້ 8 cm, 12 cm. ຈົ່ງຊອກຫາໄລຍະທາງຕົວຈິງເປັນ m? "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <span>{"(1) ໄລຍະທາງ 8 cm ຕົວຈິງແມ່ນ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
-                  <span>{"m"}</span>
-                </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <span>{"(2) ໄລຍະທາງ 12 cm ຕົວຈິງແມ່ນ"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
-                  <span>{"m"}</span>
-                </div>
+                <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }}>{"(1)"}</span>
+                  {"ໄລຍະທາງ 8 cm ຕົວຈິງແມ່ນ "}
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                  {" m"}
+                </p>
+                <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }}>{"(2)"}</span>
+                  {"ໄລຍະທາງ 12 cm ຕົວຈິງແມ່ນ "}
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                  {" m"}
+                </p>
               </div>
             </div>
           )
