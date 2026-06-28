@@ -43,7 +43,7 @@ export const unit45Data: UnitData = {
                 <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
                   {"ແຜນວາດທິດສະດີເມັດເຄິ່ງກາງ: MN = "} <Fraction num="1" den="2" /> {" BC ແລະ MN // BC"}
                 </span>
-                <svg viewBox="0 0 360 240" style={{ width: "100%", maxWidth: "400px", height: "auto" }}>
+                <svg viewBox="0 -10 360 260" style={{ width: "100%", maxWidth: "320px", height: "auto" }}>
                   {/* Triangle ABC */}
                   <polygon points="180,30 40,200 320,200" fill="none" stroke="#2E7D32" strokeWidth="4" />
                   
