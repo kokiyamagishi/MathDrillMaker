@@ -29,7 +29,7 @@ export const unit26Data: UnitData = {
           </div>
         ),
         hint: {
-          text: "💡 ຕົວຢ່າງ: ຖ້າ A = {1, 2, 3} ແລະ B = {3, 4, 5} ⇒ A ∩ B = {3}.",
+          text: <span style={{ whiteSpace: "nowrap" }}>{"💡 ຕົວຢ່າງ: ຖ້າ A = {1, 2, 3} ແລະ B = {3, 4, 5} ⇒ A ∩ B = {3}."}</span>,
           isBlue: true
         }
       },
@@ -89,7 +89,7 @@ export const unit26Data: UnitData = {
           </div>
         ),
         hint: {
-          text: "💡 ຕົວຢ່າງ: ຖ້າ A = {1, 2, 3} ແລະ B = {3, 4, 5} ⇒ A ∪ B = {1, 2, 3, 4, 5}.",
+          text: <span style={{ whiteSpace: "nowrap" }}>{"💡 ຕົວຢ່າງ: ຖ້າ A = {1, 2, 3} ແລະ B = {3, 4, 5} ⇒ A ∪ B = {1, 2, 3, 4, 5}."}</span>,
           isBlue: false
         }
       },
