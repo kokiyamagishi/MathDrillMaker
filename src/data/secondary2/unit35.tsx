@@ -52,10 +52,19 @@ export const unit35Data: UnitData = {
                     <polygon points="355,10 395,10 415,45 335,45" fill="none" stroke="#2E7D32" strokeWidth="2" />
                     <line x1="355" y1="10" x2="355" y2="45" stroke="#E65100" strokeWidth="1.5" strokeDasharray="3,3" />
                   </svg>
-                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", textAlign: "center", fontSize: "1.15rem", fontWeight: "bold", color: "#37474F", alignItems: "start" }}>
-                    <div>{"ສີ່ແຈຂະໜານ: b×h"}</div>
-                    <div>{"ສາມແຈ: (b×h)/2"}</div>
-                    <div>{"ຄາງໝູ: (a+b)×h/2"}</div>
+                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", textAlign: "center", fontSize: "1.15rem", fontWeight: "bold", color: "#37474F", alignItems: "start", gap: "12px" }}>
+                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
+                      <span>{"ສີ່ແຈຂະໜານ:"}</span>
+                      <span style={{ fontSize: "1.375rem" }}>{"b×h"}</span>
+                    </div>
+                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
+                      <span>{"ສາມແຈ:"}</span>
+                      <Fraction num="b×h" den="2" />
+                    </div>
+                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
+                      <span>{"ຄາງໝູ:"}</span>
+                      <Fraction num="(a+b)×h" den="2" />
+                    </div>
                   </div>
                 </div>
               </div>

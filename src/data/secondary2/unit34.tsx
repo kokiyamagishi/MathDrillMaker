@@ -47,10 +47,19 @@ export const unit34Data: UnitData = {
                     <line x1="345" y1="30" x2="405" y2="30" stroke="#E65100" strokeWidth="1.5" strokeDasharray="3,3" />
                     <line x1="375" y1="10" x2="375" y2="50" stroke="#0288D1" strokeWidth="1.5" strokeDasharray="3,3" />
                   </svg>
-                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", textAlign: "center", fontSize: "1.15rem", fontWeight: "bold", color: "#37474F", alignItems: "start" }}>
-                    <div>{"ສີ່ແຈສາກ: a×b"}</div>
-                    <div>{"ຈະຕຸລັດ: a²"}</div>
-                    <div>{"ດອກຈັນ: (d₁×d₂)/2"}</div>
+                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", textAlign: "center", fontSize: "1.15rem", fontWeight: "bold", color: "#37474F", alignItems: "start", gap: "12px" }}>
+                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
+                      <span>{"ສີ່ແຈສາກ:"}</span>
+                      <span style={{ fontSize: "1.375rem" }}>{"a×b"}</span>
+                    </div>
+                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
+                      <span>{"ຈະຕຸລັດ:"}</span>
+                      <span style={{ fontSize: "1.375rem" }}>{"a²"}</span>
+                    </div>
+                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
+                      <span>{"ດອກຈັນ:"}</span>
+                      <Fraction num="d₁×d₂" den="2" />
+                    </div>
                   </div>
                 </div>
               </div>
