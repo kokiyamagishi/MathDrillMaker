@@ -315,28 +315,35 @@
   margin-left: var(--space-2);
 }
 
-/* 各問題行のレイアウト制御：フレックスコンテナとして横並びにする */
+/* 各問題行のレイアウト制御：インラインフローとして文章の横に解答欄を配置する */
 .problem__content div[style*="display: flex"] {
-  display: flex !important;
-  flex-wrap: wrap !important; /* Force wrapping for long questions */
-  align-items: center;
-  gap: var(--space-1) var(--space-3) !important; /* Horizontal and vertical gaps */
+  display: block !important;
   margin-bottom: var(--space-2);
   width: 100%;
   word-break: break-word; /* Ensure Lao text wraps properly */
 }
 
+.problem__content div[style*="display: flex"] > span,
+.problem__content div[style*="display: flex"] > div {
+  display: inline !important;
+  min-width: 0 !important;
+  width: auto !important;
+  white-space: normal !important;
+}
+
 .problem__content div[style*="display: flex"] > span:first-child,
 .problem__content div[style*="display: flex"] > div:first-child {
+  display: inline !important;
+  white-space: nowrap !important; /* (1) itself doesn't wrap */
+  font-family: var(--font-lao) !important;
+  font-size: 1.375rem !important;
+  font-weight: normal !important;
+  margin-right: 8px !important;
+}
+
+.problem__content div[style*="display: flex"] > .answer-blank {
   display: inline-block !important;
-  min-width: 45px !important; /* 小問番号を一列に美しく並べるための固定幅 */
-  flex-shrink: 0 !important;
-  white-space: nowrap !important; /* 折り返しを防止 */
-  word-break: keep-all !important;
-  overflow-wrap: normal !important;
-  font-family: var(--font-lao) !important; /* 13ページと同じお気に入りのフォントに統一 */
-  font-size: 1.375rem !important; /* 22px に統一 */
-  font-weight: normal !important; /* 通常의 太さに統一 */
+  vertical-align: middle !important;
 }
 
 /* 解答記入欄 */
