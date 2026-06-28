@@ -72,11 +72,11 @@ export const unit31Data: UnitData = {
               <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                   <span>{"ປະໂຫຍກສັນຍະລັກ: ຄົນ = (15 × 20) /"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "42px", flexShrink: 0 }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                   <span>{"= "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "42px", flexShrink: 0 }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
                   <span>{"ຄົນ"}</span>
                 </div>
               </div>
@@ -115,7 +115,7 @@ export const unit31Data: UnitData = {
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                 <span>{"ປະໂຫຍກສັນຍະລັກ: ເວລາ = (10 × 6) / 12 ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "42px", flexShrink: 0 }}></span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
                 <span>{"ມື້"}</span>
               </div>
             </div>
@@ -131,11 +131,11 @@ export const unit31Data: UnitData = {
               <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                   <span>{"ປະໂຫຍກສັນຍະລັກ: ຈຳນວນຖັງ = ("}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "42px", flexShrink: 0 }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
                   <span>{") / 80 ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "42px", flexShrink: 0 }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
                   <span>{"ຖັງ"}</span>
                 </div>
               </div>
