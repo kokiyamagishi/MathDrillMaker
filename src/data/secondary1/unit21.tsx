@@ -19,21 +19,21 @@ export const unit21Data: UnitData = {
       keyPoint: {
         title: "ສູດຄິດໄລ່ມາດຕາສ່ວນ",
         content: (
-          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+            <p style={{ fontSize: "1.25rem", margin: 0, lineHeight: "1.4" }}>
               {"ມາດຕາສ່ວນ ແມ່ນອັດຕາສ່ວນລະຫວ່າງ ໄລຍະທາງໃນແຜນຜັງ (ຫຼື ແຜນວາດ) ກັບ ໄລຍະທາງຕົວຈິງ:"}
             </p>
-            <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9", display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
-              <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#1565C0", display: "inline-flex", alignItems: "center", gap: "8px" }}>
+            <div style={{ padding: "8px 12px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9", display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
+              <span style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#1565C0", display: "inline-flex", alignItems: "center", gap: "8px" }}>
                 <span>{"ມາດຕາສ່ວນ = "}</span>
                 <Fraction num={"ໄລຍະທາງໃນຮູບແຕ້ມ"} den={"ໄລຍະທາງຕົວຈິງ"} />
               </span>
-              <span style={{ fontSize: "1.25rem", color: "#0D47A1" }}>{"*ໝາຍເຫດ: ທັງສອງໄລຍະທາງຕ້ອງຄິດໄລ່ໃນຫົວໜ່ວຍດຽວກັນສະເໝີ (ເຊັ່ນ: ປ່ຽນເປັນ cm ທັງໝົດ)"}</span>
+              <span style={{ fontSize: "1.15rem", color: "#0D47A1" }}>{"*ໝາຍເຫດ: ທັງສອງໄລຍະທາງຕ້ອງຄິດໄລ່ໃນຫົວໜ່ວຍດຽວກັນສະເໝີ (ເຊັ່ນ: ປ່ຽນເປັນ cm ທັງໝົດ)"}</span>
             </div>
 
-            <div style={{ padding: "16px", backgroundColor: "#F9F9F9", borderRadius: "8px", border: "1px solid #E0E0E0" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#37474F" }}>{"ປະເພດຂອງມາດຕາສ່ວນ:"}</span>
-              <ul style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "2.0", display: "flex", flexDirection: "column", gap: "12px" }}>
+            <div style={{ padding: "8px 12px", backgroundColor: "#F9F9F9", borderRadius: "8px", border: "1px solid #E0E0E0" }}>
+              <span style={{ fontSize: "1.15rem", fontWeight: "bold", color: "#37474F" }}>{"ປະເພດຂອງມາດຕາສ່ວນ:"}</span>
+              <ul style={{ fontSize: "1.1rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6", display: "flex", flexDirection: "column", gap: "6px" }}>
                 <li style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
                   <strong>{"ມາດຕາສ່ວນຫຍໍ້: "}</strong>
                   <span>{" ເຊັ່ນ: "}</span>
@@ -59,19 +59,19 @@ export const unit21Data: UnitData = {
         {
           number: 1,
           content: (
-            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຈົ່ງຕື່ມຕົວເລກ ຫຼື ມາດຕາສ່ວນທີ່ຖືກຕ້ອງໃສ່ຕາຕະລາງຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄະແນນ, ລວມ 5 ຄະແນນ)"}</span>
+                {"ຈົ່ງຕື່ມຕົວເລກ ຫຼື ມາດຕາສ່ວນທີ່ຖືກຕ້ອງໃສ່ຕາຕະລາງຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2.5 ຄะແນນ, ລວມ 5 ຄະແນນ)"}</span>
               </p>
               
-              <div style={{ display: "flex", flexDirection: "column", gap: "16px", padding: "12px 0" }}>
-                <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: "8px", padding: "4px 0" }}>
+                <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.4" }}>
                   <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }}>{"(1)"}</span>
                   {"ໄລຍະທາງຕົວຈິງ 200 m (20,000 cm), ໄລຍະທາງໃນແຜນຜັງ 2 cm. ມາດຕາສ່ວນແມ່ນ 1:"}
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                 </p>
                 
-                <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "2.0" }}>
+                <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.4" }}>
                   <span style={{ fontWeight: "bold", marginRight: "8px", display: "inline-block", flexShrink: 0 }}>{"(2)"}</span>
                   {"ໄລຍະທາງຕົວຈິງ 12 m (1,200 cm), ມາດຕາສ່ວນ 1:100. ໄລຍະທາງໃນແຜນຜັງແມ່ນ "}
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
@@ -84,11 +84,11 @@ export const unit21Data: UnitData = {
         {
           number: 2,
           content: (
-            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ໃນແຜນຜັງຫ້ອງການໜຶ່ງມີມາດຕາສ່ວນຂະຫຍາຍແມ່ນ 5:1. ຖ້າໄລຍະທາງໃນຮູບແຕ້ມຂອງອົງປະກອບເຄື່ອງຈັກແມ່ນ 15 cm, ໄລຍະທາງຕົວຈິງຂອງມັນຈະມີຈັກ cm? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: "4px", fontSize: "1.375rem" }}>
                 <div>
                   <span>{"ປະໂຫຍກສັນຍະລັກ:"}</span>
                 </div>
