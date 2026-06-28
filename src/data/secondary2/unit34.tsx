@@ -34,21 +34,25 @@ export const unit34Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ແຜນວາດສະແດງສູດເນື້ອທີ່ (Area Formulas)"}</span>
-                <svg viewBox="0 0 450 90" style={{ width: "100%", maxWidth: "400px", height: "auto" }}>
-                  {/* Rectangle */}
-                  <rect x="35" y="10" width="80" height="40" fill="none" stroke="#2E7D32" strokeWidth="1.5" />
-                  <text x="75" y="75" fill="#37474F" fontSize="7.5" textAnchor="middle" fontWeight="bold">{"ສີ່ແຈສາກ: a×b"}</text>
-                  
-                  {/* Square */}
-                  <rect x="200" y="10" width="50" height="40" fill="none" stroke="#2E7D32" strokeWidth="1.5" />
-                  <text x="225" y="75" fill="#37474F" fontSize="7.5" textAnchor="middle" fontWeight="bold">{"ຈະຕຸລັດ: a²"}</text>
+                <div style={{ display: "flex", flexDirection: "column", gap: "16px", width: "100%", maxWidth: "600px", marginTop: "12px" }}>
+                  <svg viewBox="0 0 450 60" style={{ width: "100%", height: "auto" }}>
+                    {/* Rectangle (Center 75) */}
+                    <rect x="35" y="10" width="80" height="40" fill="none" stroke="#2E7D32" strokeWidth="2" />
+                    
+                    {/* Square (Center 225) */}
+                    <rect x="200" y="10" width="50" height="40" fill="none" stroke="#2E7D32" strokeWidth="2" />
 
-                  {/* Rhombus */}
-                  <polygon points="375,10 405,30 375,50 345,30" fill="none" stroke="#2E7D32" strokeWidth="1.5" />
-                  <line x1="345" y1="30" x2="405" y2="30" stroke="#E65100" strokeWidth="1" strokeDasharray="2,2" />
-                  <line x1="375" y1="10" x2="375" y2="50" stroke="#0288D1" strokeWidth="1" strokeDasharray="2,2" />
-                  <text x="375" y="75" fill="#37474F" fontSize="7.5" textAnchor="middle" fontWeight="bold">{"ດອກຈັນ: (d₁×d₂)/2"}</text>
-                </svg>
+                    {/* Rhombus (Center 375) */}
+                    <polygon points="375,10 405,30 375,50 345,30" fill="none" stroke="#2E7D32" strokeWidth="2" />
+                    <line x1="345" y1="30" x2="405" y2="30" stroke="#E65100" strokeWidth="1.5" strokeDasharray="3,3" />
+                    <line x1="375" y1="10" x2="375" y2="50" stroke="#0288D1" strokeWidth="1.5" strokeDasharray="3,3" />
+                  </svg>
+                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", textAlign: "center", fontSize: "1.15rem", fontWeight: "bold", color: "#37474F", alignItems: "start" }}>
+                    <div>{"ສີ່ແຈສາກ: a×b"}</div>
+                    <div>{"ຈະຕຸລັດ: a²"}</div>
+                    <div>{"ດອກຈັນ: (d₁×d₂)/2"}</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

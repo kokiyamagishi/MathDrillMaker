@@ -38,22 +38,26 @@ export const unit35Data: UnitData = {
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
                 <span>{"ແຜນວາດສະແດງສູດເນື້ອທີ່ (Area Formulas)"}</span>
-                <svg viewBox="0 0 450 90" style={{ width: "100%", maxWidth: "400px", height: "auto" }}>
-                  {/* Parallelogram */}
-                  <polygon points="55,10 105,10 95,45 45,45" fill="none" stroke="#2E7D32" strokeWidth="1.5" />
-                  <line x1="55" y1="10" x2="55" y2="45" stroke="#E65100" strokeWidth="1" strokeDasharray="2,2" />
-                  <text x="75" y="75" fill="#37474F" fontSize="7.5" textAnchor="middle" fontWeight="bold">{"ສີ່ແຈຂະໜານ: b×h"}</text>
-                  
-                  {/* Triangle */}
-                  <polygon points="225,10 255,45 195,45" fill="none" stroke="#2E7D32" strokeWidth="1.5" />
-                  <line x1="225" y1="10" x2="225" y2="45" stroke="#E65100" strokeWidth="1" strokeDasharray="2,2" />
-                  <text x="225" y="75" fill="#37474F" fontSize="7.5" textAnchor="middle" fontWeight="bold">{"ສາມແຈ: (b×h)/2"}</text>
+                <div style={{ display: "flex", flexDirection: "column", gap: "16px", width: "100%", maxWidth: "600px", marginTop: "12px" }}>
+                  <svg viewBox="0 0 450 60" style={{ width: "100%", height: "auto" }}>
+                    {/* Parallelogram */}
+                    <polygon points="55,10 105,10 95,45 45,45" fill="none" stroke="#2E7D32" strokeWidth="2" />
+                    <line x1="55" y1="10" x2="55" y2="45" stroke="#E65100" strokeWidth="1.5" strokeDasharray="3,3" />
+                    
+                    {/* Triangle */}
+                    <polygon points="225,10 255,45 195,45" fill="none" stroke="#2E7D32" strokeWidth="2" />
+                    <line x1="225" y1="10" x2="225" y2="45" stroke="#E65100" strokeWidth="1.5" strokeDasharray="3,3" />
 
-                  {/* Trapezoid */}
-                  <polygon points="355,10 395,10 415,45 335,45" fill="none" stroke="#2E7D32" strokeWidth="1.5" />
-                  <line x1="355" y1="10" x2="355" y2="45" stroke="#E65100" strokeWidth="1" strokeDasharray="2,2" />
-                  <text x="375" y="75" fill="#37474F" fontSize="7.5" textAnchor="middle" fontWeight="bold">{"ຄາງໝູ: (a+b)×h/2"}</text>
-                </svg>
+                    {/* Trapezoid */}
+                    <polygon points="355,10 395,10 415,45 335,45" fill="none" stroke="#2E7D32" strokeWidth="2" />
+                    <line x1="355" y1="10" x2="355" y2="45" stroke="#E65100" strokeWidth="1.5" strokeDasharray="3,3" />
+                  </svg>
+                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", textAlign: "center", fontSize: "1.15rem", fontWeight: "bold", color: "#37474F", alignItems: "start" }}>
+                    <div>{"ສີ່ແຈຂະໜານ: b×h"}</div>
+                    <div>{"ສາມແຈ: (b×h)/2"}</div>
+                    <div>{"ຄາງໝູ: (a+b)×h/2"}</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
