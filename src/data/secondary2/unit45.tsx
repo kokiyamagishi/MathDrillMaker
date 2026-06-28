@@ -33,7 +33,10 @@ export const unit45Data: UnitData = {
                 </span>
               </div>
               <div style={{ fontWeight: "bold", color: "#E65100", display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
-                {"• ຕົວຢ່າງ: ຖ້າຂ້າງພື້ນ BC = 12 cm ➔ MN = "} <Fraction num="12" den="2" /> {" = 6 cm."}
+                {"• ຕົວຢ່າງ: ຖ້າຂ້າງພື້ນ BC = 12 cm ➔ "}
+                <span style={{ display: "inline-flex", alignItems: "center", gap: "4px", whiteSpace: "nowrap" }}>
+                  {"MN = "} <Fraction num="12" den="2" /> {" = 6 cm."}
+                </span>
               </div>
             </div>
 
@@ -79,7 +82,7 @@ export const unit45Data: UnitData = {
                   <line x1="282" y1="158" x2="294" y2="162" stroke="#757575" strokeWidth="2" />
 
                   {/* Dimension labels */}
-                  <text x="180" y="100" fill="#D32F2F" fontSize="18" textAnchor="middle">{"MN = 6 cm"}</text>
+                  <text x="180" y="85" fill="#D32F2F" fontSize="18" textAnchor="middle">{"MN = 6 cm"}</text>
                   <text x="180" y="228" fill="#2E7D32" fontSize="18" textAnchor="middle">{"BC = 12 cm"}</text>
                 </svg>
               </div>
