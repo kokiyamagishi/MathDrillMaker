@@ -136,10 +136,13 @@ export const unit30Data: UnitData = {
           </div>
         ),
         hint: {
-          text: <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
-            <span>{"💡 ຕົວຢ່າງ: 9.1 g ເປັນຈັກສ່ວນຮ້ອຍຂອງ 91 g? ຄິດໄລ່: ("}</span>
-            <Fraction num={"9.1"} den={"91"} />
-            <span>{") × 100% = 10%!"}</span>
+          text: <span style={{ display: "inline-flex", flexDirection: "column", gap: "8px" }}>
+            <span>{"💡 ຕົວຢ່າງ: 9.1 g ເປັນຈັກສ່ວນຮ້ອຍຂອງ 91 g?"}</span>
+            <span style={{ display: "inline-flex", alignItems: "center", gap: "4px", whiteSpace: "nowrap" }}>
+              {"ຄິດໄລ່: ("}
+              <Fraction num={"9.1"} den={"91"} />
+              {") × 100% = 10%!"}
+            </span>
           </span>,
           isBlue: false
         }
