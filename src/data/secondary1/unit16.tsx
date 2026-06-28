@@ -50,16 +50,12 @@ export const unit16Data: UnitData = {
               <div>
                 <span>{"ປະໂຫຍກສັນຍະລັກ:"}</span>
               </div>
-              <div style={{ display: "flex", flexDirection: "column", paddingLeft: "24px", gap: "4px" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "4px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span>{"ຈຳນວນເສົາ = "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
-                </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "4px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span>{"= "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
-                  <span>{"ຕົ້ນ"}</span>
-                </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
+                <span>{"ຈຳນວນເສົາ = "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                <span>{" = "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                <span>{"ຕົ້ນ"}</span>
               </div>
             </div>
             </div>
@@ -125,16 +121,12 @@ export const unit16Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ຈົ່ງຊອກຫາຄວາມຍາວອ້ອມຮອບຂອງຮູບສີ່ແຈທີ່ມີຄວາມຍາວຂ້າງແມ່ນ AB = 5 cm, BC = 11 cm, CD = 10.5 cm ແລະ AD = 21 cm? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span>{"ປະໂຫຍກສັນຍະລັກ: L ="}</span>
-                  <span className="answer-blank answer-blank--large" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
-                </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span>{"= "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
-                  <span>{"cm"}</span>
-                </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
+                <span>{"L = "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "120px", width: "120px", height: "30px", verticalAlign: "middle" }}></span>
+                <span>{" = "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                <span>{"cm"}</span>
               </div>
             </div>
           )
@@ -146,16 +138,12 @@ export const unit16Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ຈົ່ງຊອກຫາຄວາມຍາວອ້ອມຮອບຂອງແຜ່ນມົນທີ່ມີລັດສະໝີ r = 5 cm? (ກຳນົດໃຫ້ π = 3.14) "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span>{"ປະໂຫຍກສັນຍະລັກ: L ="}</span>
-                  <span className="answer-blank answer-blank--large" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
-                </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span>{"= "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
-                  <span>{"cm"}</span>
-                </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
+                <span>{"L = "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "120px", width: "120px", height: "30px", verticalAlign: "middle" }}></span>
+                <span>{" = "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                <span>{"cm"}</span>
               </div>
             </div>
           )
