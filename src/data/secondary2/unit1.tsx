@@ -35,7 +35,7 @@ export const unit1Data: UnitData = {
             {/* Visual representation of 4/5 */}
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px", padding: "12px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
               <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#1565C0" }}>{"ແຜນວາດສະແດງອັດຕາສ່ວນ "}<Fraction num="4" den="5" /></span>
-              <svg viewBox="0 0 400 40" style={{ width: "100%", maxWidth: "320px", height: "auto" }}>
+              <svg viewBox="0 0 400 40">
                 {/* 5 blocks, 4 shaded blue, 1 gray */}
                 <rect x="0" y="5" width="60" height="30" fill="#2196F3" stroke="#0D47A1" strokeWidth="2" rx="4" />
                 <rect x="65" y="5" width="60" height="30" fill="#2196F3" stroke="#0D47A1" strokeWidth="2" rx="4" />
@@ -43,7 +43,10 @@ export const unit1Data: UnitData = {
                 <rect x="195" y="5" width="60" height="30" fill="#2196F3" stroke="#0D47A1" strokeWidth="2" rx="4" />
                 <rect x="260" y="5" width="60" height="30" fill="#ECEFF1" stroke="#90A4AE" strokeWidth="2" rx="4" />
                 {/* Text identifier */}
-                <text x="125" y="24" fill="#FFFFFF" fontSize="14" fontWeight="bold" textAnchor="middle">{"4/5 ທີ່ເລືອກ"}</text>
+                <text x="100" y="24" fill="#FFFFFF" fontSize="12" fontWeight="bold" textAnchor="middle">{"ທີ່ເລືອກ:"}</text>
+                <text x="140" y="18" fill="#FFFFFF" fontSize="12" fontWeight="bold" textAnchor="middle">{"4"}</text>
+                <line x1="133" y1="21" x2="147" y2="21" stroke="#FFFFFF" strokeWidth="1.5" />
+                <text x="140" y="32" fill="#FFFFFF" fontSize="12" fontWeight="bold" textAnchor="middle">{"5"}</text>
               </svg>
             </div>
           </div>
@@ -138,8 +141,10 @@ export const unit1Data: UnitData = {
                 <rect x="10" y="10" width="280" height="100" fill="#E8F5E9" stroke="#2E7D32" strokeWidth="3" rx="8" />
                 {/* 3/5 green for veggies */}
                 <rect x="10" y="10" width="168" height="100" fill="#A5D6A7" stroke="#2E7D32" strokeWidth="2" rx="4" />
-                <text x="94" y="65" fill="#1B5E20" fontSize="16" fontWeight="bold" textAnchor="middle">{"ປູກຜັກກາດ (3/5)"}</text>
-                <text x="234" y="65" fill="#E65100" fontSize="16" fontWeight="bold" textAnchor="middle">{"ດອກໄມ້ (2/5)"}</text>
+                <text x="94" y="52" fill="#1B5E20" fontSize="14" fontWeight="bold" textAnchor="middle">{"ປູກຜັກກາດ"}</text>
+                <text x="94" y="72" fill="#1B5E20" fontSize="14" fontWeight="bold" textAnchor="middle">{"(3/5)"}</text>
+                <text x="234" y="52" fill="#E65100" fontSize="14" fontWeight="bold" textAnchor="middle">{"ດອກໄມ້"}</text>
+                <text x="234" y="72" fill="#E65100" fontSize="14" fontWeight="bold" textAnchor="middle">{"(2/5)"}</text>
               </svg>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
@@ -167,7 +172,9 @@ export const unit1Data: UnitData = {
                 <path d="M 60,60 L 60,10 A 50,50 0 1,1 10,60 Z" fill="#90CAF9" stroke="#1565C0" strokeWidth="2" />
                 {/* Center dot */}
                 <circle cx="60" cy="60" r="4" fill="#37474F" />
-                <text x="80" y="80" fill="#0D47A1" fontSize="14" fontWeight="bold">{"3/4"}</text>
+                <text x="85" y="62" fill="#0D47A1" fontSize="12" fontWeight="bold" textAnchor="middle">{"3"}</text>
+                <line x1="77" y1="66" x2="93" y2="66" stroke="#0D47A1" strokeWidth="1.5" />
+                <text x="85" y="80" fill="#0D47A1" fontSize="12" fontWeight="bold" textAnchor="middle">{"4"}</text>
               </svg>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
