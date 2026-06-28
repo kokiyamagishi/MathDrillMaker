@@ -93,12 +93,17 @@ export const unit17Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ໃຫ້ໄລຍະຫ່າງຈາກເມັດ A ຫາແກນ d ແມ່ນ 4.5 cm. ຖ້າ A′ ແມ່ນເມັດເຄິ່ງຄືຂອງ A ທຽບໃສ່ d, ໄລຍະຫ່າງລະຫວ່າງ A ແລະ A′ ຈະມີຈັກ cm? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
-                <span style={{ flexShrink: 0 }}>{"ປະໂຫຍກສັນຍະລັກ: AA′ ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
-                <span style={{ flexShrink: 0 }}>{"= "}</span>
-                <span className="answer-blank" style={{ display: "inline-block", width: "30px", height: "42px", flexShrink: 0 }}></span>
-                <span style={{ flexShrink: 0 }}>{"cm"}</span>
+              <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
+                <div>
+                  <span>{"ປະໂຫຍກສັນຍະລັກ:"}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px", flexWrap: "nowrap" }}>
+                  <span style={{ flexShrink: 0 }}>{"AA′ ="}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px", flexShrink: 0 }}></span>
+                  <span style={{ flexShrink: 0 }}>{"= "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "30px", height: "42px", flexShrink: 0 }}></span>
+                  <span style={{ flexShrink: 0 }}>{"cm"}</span>
+                </div>
               </div>
             </div>
           )
