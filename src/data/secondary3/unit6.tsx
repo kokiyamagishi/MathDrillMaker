@@ -240,7 +240,7 @@ export const unit6Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ຈົ່ງແກ້ລະບົບສົມຜົນ: "} 
               <span className="math">
-                <Fraction num="x" den="2" /> {" + "} <Fraction num="y" den="3" /> {" = 4"}
+                <Fraction num="𝑥" den="2" /> {" + "} <Fraction num="𝑦" den="3" /> {" = 4"}
               </span>
               {" ແລະ "} <span className="math">{"𝑥 - 𝑦 = 3"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥. (ຄຳແນະນຳ: ຄູນ 6 ໃສ່ສົມຜົນທຳອິດ)"}
             </p>

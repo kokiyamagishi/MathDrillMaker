@@ -28,7 +28,7 @@ export const unit19Data: UnitData = {
               <div style={{ display: "inline-flex", alignItems: "center" }}>
                 {"• ສູດຄວາມຊັນ m: "}
                 <span className="math" style={{ marginLeft: "4px" }}>
-                  {"m = "} <Fraction num="y₂ - y₁" den="x₂ - x₁" />
+                  {"m = "} <Fraction num="𝑦₂ - 𝑦₁" den="𝑥₂ - 𝑥₁" />
                 </span>
               </div>
               <div>{"• ສູດສົມຜົນເສັ້ນຊື່: "} <span className="math">{"𝑦 - 𝑦₁ = m(𝑥 - 𝑥₁)"}</span></div>

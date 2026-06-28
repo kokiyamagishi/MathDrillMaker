@@ -147,7 +147,7 @@ export const unit22Data: UnitData = {
               <div style={{ display: "inline-flex", alignItems: "center" }}>
                 {"• ສູດຄ່າສະເລ່ຍຂໍ້ມູນແບ່ງຊັ້ນ: "}
                 <span className="math" style={{ marginLeft: "4px" }}>
-                  {"𝑥̄ = "} <Fraction num="Σ(f_i × x_i)" den="N" />
+                  {"𝑥̄ = "} <Fraction num="Σ(f_i × 𝑥_i)" den="N" />
                 </span>
               </div>
               <div style={{ fontWeight: "bold", color: "#D84315" }}>{"• ຕົວຢ່າງ: ຊັ້ນ 10 - 20 ມີຄວາມຖີ່ 2 ➔ ເມັດເຄິ່ງກາງ 𝑥ᵢ = (10+20)/2 = 15 ➔ fᵢ × 𝑥ᵢ = 2 × 15 = 30."}</div>

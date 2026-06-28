@@ -34,7 +34,7 @@ export const unit1Data: UnitData = {
                 {"ຕົວຢ່າງ:"}
               </span>
               <p style={{ fontSize: "1.3rem", margin: 0, lineHeight: "1.6" }}>
-                {"ສຳນວນ "} <Fraction num="x + 3" den="x - 1" /> {" ຈະບໍ່ກຳນົດເມື່ອຕົວຫານ x - 1 = 0 ⇔ x = 1."}
+                {"ສຳນວນ "} <Fraction num="𝑥 + 3" den="𝑥 - 1" /> {" ຈະບໍ່ກຳນົດເມື່ອຕົວຫານ x - 1 = 0 ⇔ x = 1."}
               </p>
             </div>
           </div>
@@ -58,7 +58,7 @@ export const unit1Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
-                    <Fraction num="8" den="x - 2" /> {" ບໍ່ກຳນົດເມື່ອ x ="}
+                    <Fraction num="8" den="𝑥 - 2" /> {" ບໍ່ກຳນົດເມື່ອ x ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
@@ -67,7 +67,7 @@ export const unit1Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
-                    <Fraction num="5" den="3 - x" /> {" ບໍ່ກຳນົດເມື່ອ x ="}
+                    <Fraction num="5" den="3 - 𝑥" /> {" ບໍ່ກຳນົດເມື່ອ x ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
@@ -88,7 +88,7 @@ export const unit1Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
-                    <Fraction num="y + 6" den="3y + 9" /> {" ບໍ່ກຳນົດເມື່ອ y ="}
+                    <Fraction num="𝑦 + 6" den="3𝑦 + 9" /> {" ບໍ່ກຳນົດເມື່ອ y ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
@@ -97,7 +97,7 @@ export const unit1Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
-                    <Fraction num="7" den="y² - 16" /> {" ບໍ່ກຳນົດເມື່ອ y ="}
+                    <Fraction num="7" den="𝑦² - 16" /> {" ບໍ່ກຳນົດເມື່ອ y ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -123,7 +123,7 @@ export const unit1Data: UnitData = {
             </div>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຕົວຢ່າງ: ຄັດຈ້ອນສຳນວນ "}
-              <Fraction num="2x + 6" den="x² - 9" /> {" = "} <Fraction num="2(x + 3)" den="(x - 3)(x + 3)" /> {" = "} <Fraction num="2" den="x - 3" /> {" (ເງື່ອນໄຂ x ≠ ±3)."}
+              <Fraction num="2𝑥 + 6" den="𝑥² - 9" /> {" = "} <Fraction num="2(𝑥 + 3)" den="(𝑥 - 3)(𝑥 + 3)" /> {" = "} <Fraction num="2" den="𝑥 - 3" /> {" (ເງື່ອນໄຂ x ≠ ±3)."}
             </p>
           </div>
         ),
@@ -146,7 +146,7 @@ export const unit1Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
-                    <Fraction num="6x³" den="3x⁵" /> {" ="}
+                    <Fraction num="6𝑥³" den="3𝑥⁵" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -176,7 +176,7 @@ export const unit1Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
-                    <Fraction num="x² - 4" den="x² - 2x" /> {" ="}
+                    <Fraction num="𝑥² - 4" den="𝑥² - 2𝑥" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -185,7 +185,7 @@ export const unit1Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
-                    <Fraction num="x² - 9" den="x² + 6x + 9" /> {" ="}
+                    <Fraction num="𝑥² - 9" den="𝑥² + 6𝑥 + 9" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -209,7 +209,7 @@ export const unit1Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງຄັດຈ້ອນສຳນວນປົກກະຕິ: "}
               <strong style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
-                <Fraction num="x² + 5x + 6" den="x² - 4" />
+                <Fraction num="𝑥² + 5𝑥 + 6" den="𝑥² - 4" />
               </strong>
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
@@ -229,7 +229,7 @@ export const unit1Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງຊອກຫາຄ່າຂອງ x ທັງໝົດທີ່ເຮັດໃຫ້ສຳນວນປົກກະຕິ: "}
               <strong style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
-                <Fraction num="x - 1" den="x² - 5x + 6" />
+                <Fraction num="𝑥 - 1" den="𝑥² - 5𝑥 + 6" />
               </strong>
               {" ບໍ່ກຳນົດ."}
             </p>
@@ -253,7 +253,7 @@ export const unit1Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຈົ່ງຄັດຈ້ອນສຳນວນປົກກະຕິ: "}
             <strong style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
-              <Fraction num="3x² + 6x" den="x² - x - 6" />
+              <Fraction num="3𝑥² + 6𝑥" den="𝑥² - 𝑥 - 6" />
             </strong>
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
@@ -273,11 +273,11 @@ export const unit1Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຖ້າສຳນວນ "}
             <strong style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
-              <Fraction num="x + a" den="x - 3" />
+              <Fraction num="𝑥 + a" den="𝑥 - 3" />
             </strong>
             {" ຄັດຈ້ອນກັບ "}
             <strong style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
-              <Fraction num="x² - 9" den="x² - 6x + 9" />
+              <Fraction num="𝑥² - 9" den="𝑥² - 6𝑥 + 9" />
             </strong>
             {" ໄດ້ຢ່າງສົມບູນ. ຈົ່ງຊອກຫາຄ່າຂອງຄົງຈຳນວນ a?"}
           </p>
@@ -308,21 +308,21 @@ export const unit1Data: UnitData = {
       {
         questionNumber: 3,
         answers: [
-          <span key="3-1">{"(1) "}<Fraction num="2" den="x²" /></span>,
+          <span key="3-1">{"(1) "}<Fraction num="2" den="𝑥²" /></span>,
           <span key="3-2">{"(2) "}<Fraction num="5" den="b" /> {" (ຄິດໄລ່: 5(a+b)/[b(a+b)] = 5/b)"}</span>
         ]
       },
       {
         questionNumber: 4,
         answers: [
-          <span key="4-1">{"(1) "}<Fraction num="x + 2" den="x" /> {" (ຄິດໄລ່: (x-2)(x+2)/[x(x-2)] = (x+2)/x)"}</span>,
-          <span key="4-2">{"(2) "}<Fraction num="x - 3" den="x + 3" /> {" (ຄິດໄລ່: (x-3)(x+3)/(x+3)² = (x-3)/(x+3))"}</span>
+          <span key="4-1">{"(1) "}<Fraction num="𝑥 + 2" den="𝑥" /> {" (ຄິດໄລ່: (x-2)(x+2)/[x(x-2)] = (x+2)/x)"}</span>,
+          <span key="4-2">{"(2) "}<Fraction num="𝑥 - 3" den="𝑥 + 3" /> {" (ຄິດໄລ່: (x-3)(x+3)/(x+3)² = (x-3)/(x+3))"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="t1">{" "}<Fraction num="x + 3" den="x - 2" /> {" (ຄິດໄລ່: (x+2)(x+3)/[(x-2)(x+2)] = (x+3)/(x-2))"}</span>
+          <span key="t1">{" "}<Fraction num="𝑥 + 3" den="𝑥 - 2" /> {" (ຄິດໄລ່: (x+2)(x+3)/[(x-2)(x+2)] = (x+3)/(x-2))"}</span>
         ]
       },
       {
@@ -334,7 +334,7 @@ export const unit1Data: UnitData = {
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="s1">{" "}<Fraction num="3x" den="x - 3" /> {" (ຄິດໄລ່: 3x(x+2)/[(x-3)(x+2)] = 3x/(x-3))"}</span>
+          <span key="s1">{" "}<Fraction num="3𝑥" den="𝑥 - 3" /> {" (ຄິດໄລ່: 3x(x+2)/[(x-3)(x+2)] = 3x/(x-3))"}</span>
         ]
       },
       {

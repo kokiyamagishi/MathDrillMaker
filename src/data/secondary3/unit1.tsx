@@ -226,7 +226,7 @@ export const unit1Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງເຮັດໃຫ້ສຳນວນຕໍ່ໄປນີ້ງ່າຍດາຍທີ່ສຸດ: "} 
               <span className="math">
-                <Fraction num="x⁴ × y⁻²" den="x⁻¹ × y³" />
+                <Fraction num="𝑥⁴ × 𝑦⁻²" den="𝑥⁻¹ × 𝑦³" />
               </span>
               {" (ຂຽນຄຳຕອບໃນຮູບແບບ 𝑥ᵃ 𝑦ᵇ ໂດຍຫາຄ່າຂອງ a + b)"}
             </p>

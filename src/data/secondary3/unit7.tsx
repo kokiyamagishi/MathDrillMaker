@@ -134,11 +134,11 @@ export const unit7Data: UnitData = {
               <div style={{ display: "inline-flex", alignItems: "center" }}>
                 {"• ເງື່ອນໄຂເລກສ່ວນ: ຕຳລາ "} 
                 <span className="math" style={{ marginLeft: "4px" }}>
-                  {"f(𝑥) = "} <Fraction num="P(x)" den="Q(x)" />
+                  {"f(𝑥) = "} <Fraction num="P(𝑥)" den="Q(𝑥)" />
                 </span>
                 {" ມີຄວາມໝາຍ ເມື່ອ Q(𝑥) ≠ 0."}
               </div>
-              <div style={{ fontWeight: "bold", color: "#D84315" }}>{"• ຕົວຢ່າງ: ຕຳລາ f(𝑥) = "} <span className="math"><Fraction num="5" den="x - 3" /></span> {" ➔ ເງື່ອນໄຂແມ່ນ 𝑥 - 3 ≠ 0 ➔ 𝑥 ≠ 3."}</div>
+              <div style={{ fontWeight: "bold", color: "#D84315" }}>{"• ຕົວຢ່າງ: ຕຳລາ f(𝑥) = "} <span className="math"><Fraction num="5" den="𝑥 - 3" /></span> {" ➔ ເງື່ອນໄຂແມ່ນ 𝑥 - 3 ≠ 0 ➔ 𝑥 ≠ 3."}</div>
               <div>{"➔ ໝາຍຄວາມວ່າ ຄ່າຂອງ 𝑥 ທີ່ບໍ່ຢູ່ໃນເຂດກຳນົດແມ່ນ 3."}</div>
             </div>
           </div>
@@ -160,19 +160,19 @@ export const unit7Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ສຳລັບຕຳລາ "} <span className="math">{"f(𝑥) = "} <Fraction num="5" den="x - 3" /></span> {". ຄ່າຂອງ 𝑥 ທີ່ບໍ່ຢູ່ໃນເຂດກຳນົດແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ສຳລັບຕຳລາ "} <span className="math">{"f(𝑥) = "} <Fraction num="5" den="𝑥 - 3" /></span> {". ຄ່າຂອງ 𝑥 ທີ່ບໍ່ຢູ່ໃນເຂດກຳນົດແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ສຳລັບຕຳລາ "} <span className="math">{"g(𝑥) = "} <Fraction num="10" den="2x - 8" /></span> {". ຄ່າຂອງ 𝑥 ທີ່ບໍ່ຢູ່ໃນເຂດກຳນົດແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ສຳລັບຕຳລາ "} <span className="math">{"g(𝑥) = "} <Fraction num="10" den="2𝑥 - 8" /></span> {". ຄ່າຂອງ 𝑥 ທີ່ບໍ່ຢູ່ໃນເຂດກຳນົດແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ສຳລັບຕຳລາ "} <span className="math">{"h(𝑥) = "} <Fraction num="1" den="x + 2" /></span> {". ຄ່າຂອງ 𝑥 ທີ່ບໍ່ຢູ່ໃນເຂດກຳນົດແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ສຳລັບຕຳລາ "} <span className="math">{"h(𝑥) = "} <Fraction num="1" den="𝑥 + 2" /></span> {". ຄ່າຂອງ 𝑥 ທີ່ບໍ່ຢູ່ໃນເຂດກຳນົດແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -236,7 +236,7 @@ export const unit7Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥 ທີ່ບໍ່ຢູ່ໃນເຂດກຳນົດຂອງຕຳລາ: "} 
               <span className="math">
-                {"f(𝑥) = "} <Fraction num="2x + 1" den="x - 5" />
+                {"f(𝑥) = "} <Fraction num="2𝑥 + 1" den="𝑥 - 5" />
               </span>
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>

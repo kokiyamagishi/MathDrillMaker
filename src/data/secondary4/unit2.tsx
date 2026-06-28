@@ -34,7 +34,7 @@ export const unit2Data: UnitData = {
             </p>
             <ul style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.6" }}>
               <li>
-                <Fraction num="3x" den="5" /> {" × "} <Fraction num="10" den="9x²" /> {" = "} <Fraction num="30x" den="45x²" /> {" = "} <Fraction num="2" den="3x" /> {" (ເງື່ອນໄຂ x ≠ 0)."}
+                <Fraction num="3𝑥" den="5" /> {" × "} <Fraction num="10" den="9𝑥²" /> {" = "} <Fraction num="30𝑥" den="45𝑥²" /> {" = "} <Fraction num="2" den="3𝑥" /> {" (ເງື່ອນໄຂ x ≠ 0)."}
               </li>
             </ul>
           </div>
@@ -58,7 +58,7 @@ export const unit2Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
-                    <Fraction num="5x²" den="7" /> {" × "} <Fraction num="14" den="15x" /> {" ="}
+                    <Fraction num="5𝑥²" den="7" /> {" × "} <Fraction num="14" den="15𝑥" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -67,7 +67,7 @@ export const unit2Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
-                    <Fraction num="8x²" den="y³" /> {" × "} <Fraction num="y" den="4x" /> {" ="}
+                    <Fraction num="8𝑥²" den="𝑦³" /> {" × "} <Fraction num="𝑦" den="4𝑥" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -88,7 +88,7 @@ export const unit2Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
-                    <Fraction num="x² - 9" den="x" /> {" × "} <Fraction num="18" den="x + 3" /> {" ="}
+                    <Fraction num="𝑥² - 9" den="𝑥" /> {" × "} <Fraction num="18" den="𝑥 + 3" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -97,7 +97,7 @@ export const unit2Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
-                    <Fraction num="x² - 16" den="x² - 3x" /> {" × "} <Fraction num="x" den="x - 4" /> {" ="}
+                    <Fraction num="𝑥² - 16" den="𝑥² - 3𝑥" /> {" × "} <Fraction num="𝑥" den="𝑥 - 4" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -126,7 +126,7 @@ export const unit2Data: UnitData = {
             </p>
             <ul style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.6" }}>
               <li>
-                <Fraction num="8x" den="x²" /> {" ÷ "} <Fraction num="12" den="2x" /> {" = "} <Fraction num="8x" den="x²" /> {" × "} <Fraction num="2x" den="12" /> {" = "} <Fraction num="16x²" den="12x²" /> {" = "} <Fraction num="4" den="3" /> {" (ເງື່ອນໄຂ x ≠ 0)."}
+                <Fraction num="8𝑥" den="𝑥²" /> {" ÷ "} <Fraction num="12" den="2𝑥" /> {" = "} <Fraction num="8𝑥" den="𝑥²" /> {" × "} <Fraction num="2𝑥" den="12" /> {" = "} <Fraction num="16𝑥²" den="12𝑥²" /> {" = "} <Fraction num="4" den="3" /> {" (ເງື່ອນໄຂ x ≠ 0)."}
               </li>
             </ul>
           </div>
@@ -150,7 +150,7 @@ export const unit2Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
-                    <Fraction num="5x" den="3" /> {" ÷ "} <Fraction num="10" den="9x²" /> {" ="}
+                    <Fraction num="5𝑥" den="3" /> {" ÷ "} <Fraction num="10" den="9𝑥²" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -159,7 +159,7 @@ export const unit2Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
-                    <Fraction num="8x" den="y²" /> {" ÷ "} <Fraction num="12x" den="4y" /> {" ="}
+                    <Fraction num="8𝑥" den="𝑦²" /> {" ÷ "} <Fraction num="12𝑥" den="4𝑦" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -180,7 +180,7 @@ export const unit2Data: UnitData = {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                   <span style={{ fontWeight: "bold" }}>{""}</span>
                   <span style={{ display: "inline-flex", alignItems: "center" }}>
-                    <Fraction num="y" den="y - 1" /> {" ÷ "} <Fraction num="y²" den="y² - 1" /> {" ="}
+                    <Fraction num="𝑦" den="𝑦 - 1" /> {" ÷ "} <Fraction num="𝑦²" den="𝑦² - 1" /> {" ="}
                   </span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
@@ -212,7 +212,7 @@ export const unit2Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງຄິດໄລ່ ແລະ ຄັດຈ້ອນສຳນວນ: "}
               <strong style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
-                <Fraction num="x² - 4" den="x² - 5x + 6" /> {" × "} <Fraction num="x - 3" den="x + 2" />
+                <Fraction num="𝑥² - 4" den="𝑥² - 5𝑥 + 6" /> {" × "} <Fraction num="𝑥 - 3" den="𝑥 + 2" />
               </strong>
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
@@ -232,7 +232,7 @@ export const unit2Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງຄິດໄລ່ຜົນຫານຂອງ: "}
               <strong style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
-                <Fraction num="y² - y - 6" den="y² - 4y" /> {" ÷ "} <Fraction num="y² - 4" den="y² - 4" />
+                <Fraction num="𝑦² - 𝑦 - 6" den="𝑦² - 4𝑦" /> {" ÷ "} <Fraction num="𝑦² - 4" den="𝑦² - 4" />
               </strong>
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
@@ -255,7 +255,7 @@ export const unit2Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຈົ່ງຄິດໄລ່ຜົນຄູນຂອງ: "}
             <strong style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
-              <Fraction num="x² - 12x + 36" den="x² - 4" /> {" × "} <Fraction num="x + 2" den="x - 6" />
+              <Fraction num="𝑥² - 12𝑥 + 36" den="𝑥² - 4" /> {" × "} <Fraction num="𝑥 + 2" den="𝑥 - 6" />
             </strong>
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
@@ -291,28 +291,28 @@ export const unit2Data: UnitData = {
       {
         questionNumber: 1,
         answers: [
-          <span key="1-1">{"(1) "}<Fraction num="2x" den="3" /> {" (ຄິດໄລ່: (5x²×14)/(7×15x) = 70x²/105x = 2x/3)"}</span>,
-          <span key="1-2">{"(2) "}<Fraction num="2x" den="y²" /> {" (ຄິດໄລ່: (8x²×y)/(y³×4x) = 2x/y²)"}</span>
+          <span key="1-1">{"(1) "}<Fraction num="2𝑥" den="3" /> {" (ຄິດໄລ່: (5x²×14)/(7×15x) = 70x²/105x = 2x/3)"}</span>,
+          <span key="1-2">{"(2) "}<Fraction num="2𝑥" den="𝑦²" /> {" (ຄິດໄລ່: (8x²×y)/(y³×4x) = 2x/y²)"}</span>
         ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="2-1">{"(1) "}<Fraction num="18(x - 3)" den="x" /> {" (ຄິດໄລ່: (x-3)(x+3)/x × 18/(x+3) = 18(x-3)/x)"}</span>,
-          <span key="2-2">{"(2) "}<Fraction num="x + 4" den="x - 3" /> {" (ຄິດໄລ່: (x-4)(x+4)/[x(x-3)] × x/(x-4) = (x+4)/(x-3))"}</span>
+          <span key="2-1">{"(1) "}<Fraction num="18(𝑥 - 3)" den="𝑥" /> {" (ຄິດໄລ່: (x-3)(x+3)/x × 18/(x+3) = 18(x-3)/x)"}</span>,
+          <span key="2-2">{"(2) "}<Fraction num="𝑥 + 4" den="𝑥 - 3" /> {" (ຄິດໄລ່: (x-4)(x+4)/[x(x-3)] × x/(x-4) = (x+4)/(x-3))"}</span>
         ]
       },
       {
         questionNumber: 3,
         answers: [
-          <span key="3-1">{"(1) "}<Fraction num="3x³" den="2" /> {" (ຄິດໄລ່: 5x/3 × 9x²/10 = 45x³/30 = 3x³/2)"}</span>,
-          <span key="3-2">{"(2) "}<Fraction num="8" den="3y" /> {" (ຄິດໄລ່: 8x/y² × 4y/12x = 32xy/12x y² = 8/3y)"}</span>
+          <span key="3-1">{"(1) "}<Fraction num="3𝑥³" den="2" /> {" (ຄິດໄລ່: 5x/3 × 9x²/10 = 45x³/30 = 3x³/2)"}</span>,
+          <span key="3-2">{"(2) "}<Fraction num="8" den="3𝑦" /> {" (ຄິດໄລ່: 8x/y² × 4y/12x = 32xy/12x y² = 8/3y)"}</span>
         ]
       },
       {
         questionNumber: 4,
         answers: [
-          <span key="4-1">{"(1) "}<Fraction num="y + 1" den="y" /> {" (ຄິດໄລ່: y/(y-1) × (y-1)(y+1)/y² = (y+1)/y)"}</span>,
+          <span key="4-1">{"(1) "}<Fraction num="𝑦 + 1" den="𝑦" /> {" (ຄິດໄລ່: y/(y-1) × (y-1)(y+1)/y² = (y+1)/y)"}</span>,
           <span key="4-2">{"(2) "}<Fraction num="t + 4" den="t - 3" /> {" (ຄິດໄລ່: (t-4)(t+4)/[(t-3)(t+3)] × (t+3)/(t-4) = (t+4)/(t-3))"}</span>
         ]
       },
@@ -325,13 +325,13 @@ export const unit2Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="t2">{" "}<Fraction num="y - 3" den="y" /> {" (ຄິດໄລ່: (y-3)(y+2)/[y(y-4)] × (y-2)(y+2)/[(y-2)(y+2)] = (y-3)/y. ໝາຍເຫດ: ຕົວຫານຂວາຄັດກັນເຫຼືອ 1)"}</span>
+          <span key="t2">{" "}<Fraction num="𝑦 - 3" den="𝑦" /> {" (ຄິດໄລ່: (y-3)(y+2)/[y(y-4)] × (y-2)(y+2)/[(y-2)(y+2)] = (y-3)/y. ໝາຍເຫດ: ຕົວຫານຂວາຄັດກັນເຫຼືອ 1)"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="s1">{" "}<Fraction num="x - 6" den="x - 2" /> {" (ຄິດໄລ່: (x-6)²/[(x-2)(x+2)] × (x+2)/(x-6) = (x-6)/(x-2))"}</span>
+          <span key="s1">{" "}<Fraction num="𝑥 - 6" den="𝑥 - 2" /> {" (ຄິດໄລ່: (x-6)²/[(x-2)(x+2)] × (x+2)/(x-6) = (x-6)/(x-2))"}</span>
         ]
       },
       {

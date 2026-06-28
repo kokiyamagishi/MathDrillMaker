@@ -126,7 +126,7 @@ export const unit13Data: UnitData = {
               <div style={{ display: "inline-flex", alignItems: "center" }}>
                 {"• ການປ່ຽນສ່ວນ: "}
                 <span className="math" style={{ marginLeft: "4px" }}>
-                  <Fraction num="x" den="√y" /> {" = "} <Fraction num="x√y" den="y" />
+                  <Fraction num="𝑥" den="√𝑦" /> {" = "} <Fraction num="𝑥√𝑦" den="𝑦" />
                 </span>
               </div>
               <div style={{ fontWeight: "bold", color: "#D84315" }}>{"• ຕົວຢ່າງ: 6 / √3 = 6√3 / 3 = 2√3."}</div>
