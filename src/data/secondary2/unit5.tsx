@@ -35,7 +35,13 @@ export const unit5Data: UnitData = {
             {/* Visual Addition bar graph */}
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#FFF9C4", borderRadius: "8px", border: "1px solid #FFF59D", fontSize: "1.15rem", color: "#F57F17" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
-                <span>{"3/7 + 2/7 = 5/7"}</span>
+                <span className="math" style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                  <Fraction num="3" den="7" />
+                  <span>{" + "}</span>
+                  <Fraction num="2" den="7" />
+                  <span>{" = "}</span>
+                  <Fraction num="5" den="7" />
+                </span>
                 <svg viewBox="0 0 140 20" style={{ width: "100%", maxWidth: "140px", height: "auto" }}>
                   <rect x="0" y="2" width="140" height="16" fill="none" stroke="#37474F" strokeWidth="2" />
                   <line x1="20" y1="2" x2="20" y2="18" stroke="#37474F" strokeWidth="1" />
