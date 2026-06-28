@@ -119,10 +119,12 @@ export const unit21Data: UnitData = {
                   <strong>{"ຊອກຫາໄລຍະທາງຕົວຈິງ:"}</strong>
                   <div style={{ paddingLeft: "16px", whiteSpace: "nowrap" }}>{"ໄລຍະທາງຕົວຈິງ = ໄລຍະທາງໃນແຜນຜັງ × ສ່ວນສ່ວນ (ຕົວຫານ) ຂອງມາດຕາສ່ວນ."}</div>
                 </li>
-                <li style={{ display: "inline-flex", alignItems: "center", flexWrap: "nowrap", whiteSpace: "nowrap", gap: "4px" }}>
-                  <strong>{"ຊອກຫາໄລຍະທາງໃນແຜນຜັງ: "}</strong>
-                  <span>{" ໄລຍະທາງໃນແຜນຜັງ = "}</span>
-                  <Fraction num={"ໄລຍະທາງຕົວຈິງ"} den={"ສ່ວນສ່ວນ (ຕົວຫານ) ຂອງມາດຕາສ່ວນ"} />
+                <li>
+                  <strong>{"ຊອກຫາໄລຍະທາງໃນແຜນຜັງ:"}</strong>
+                  <div style={{ display: "flex", alignItems: "center", gap: "4px", paddingLeft: "16px", marginTop: "4px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
+                    <span>{"ໄລຍະທາງໃນແຜນຜັງ = "}</span>
+                    <Fraction num={"ໄລຍະທາງຕົວຈິງ"} den={"ສ່ວນສ່ວນ (ຕົວຫານ) ຂອງມາດຕາສ່ວນ"} />
+                  </div>
                 </li>
               </ul>
           </div>
