@@ -186,10 +186,10 @@ export const unit22Data: UnitData = {
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
               {"ໂຈດການປ່ຽນແຜນຜັງໃໝ່ (Scaling Modification): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6", display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
-              <span>{"ມາດຕາສ່ວນຂອງແຜນຜັງເກົ່າແມ່ນ 1:24. ຕ້ອງການສ້າງແຜນຜັງໃໝ່ໃຫ້ມີຂະໜາດເປັນ "}</span>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.8" }}>
+              {"ມາດຕາສ່ວນຂອງແຜນຜັງເກົ່າແມ່ນ 1:24. ຕ້ອງການສ້າງແຜນຜັງໃໝ່ໃຫ້ມີຂະໜາດເປັນ "}
               <Fraction num={"1"} den={"3"} />
-              <span>{" ຂອງແຜນຜັງເກົ່າ (ຫຍໍ້ລົງອີກ 3 ເທື່ອ). ຖາມວ່າມາດຕາສ່ວນຂອງແຜນຜັງໃໝ່ຈະເທົ່າກັບ 1 ຕໍ່ເທົ່າໃດ?"}</span>
+              {" ຂອງແຜນຜັງເກົ່າ (ຫຍໍ້ລົງອີກ 3 ເທື່ອ). ຖາມວ່າມາດຕາສ່ວນຂອງແຜນຜັງໃໝ່ຈະເທົ່າກັບ 1 ຕໍ່ເທົ່າໃດ?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ມາດຕາສ່ວນແຜນຜັງໃໝ່ແມ່ນ 1 :"}</span>
@@ -205,10 +205,10 @@ export const unit22Data: UnitData = {
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
               {"ໂຈດການປ່ຽນແຜນຜັງຂະຫຍາຍ (Rhombus scale): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
-            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6", display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
-              <span>{"ມາດຕາສ່ວນຂອງແຜນຜັງເກົ່າແມ່ນ 1:60. ຕ້ອງການສ້າງແຜນຜັງໃໝ່ໃຫ້ມີຂະໜາດເປັນ "}</span>
+            <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.8" }}>
+              {"ມາດຕາສ່ວນຂອງແຜນຜັງເກົ່າແມ່ນ 1:60. ຕ້ອງການສ້າງແຜນຜັງໃໝ່ໃຫ້ມີຂະໜາດເປັນ "}
               <Fraction num={"1"} den={"4"} />
-              <span>{" ຂອງແຜນຜັງເກົ່າ (ຫຍໍ້ລົງ 4 ເທື່ອ). ຖາມວ່າມາດຕາສ່ວນຂອງແຜນຜັງໃໝ່ຈະເທົ່າກັບ 1 ຕໍ່ເທົ່າໃດ?"}</span>
+              {" ຂອງແຜນຜັງເກົ່າ (ຫຍໍ້ລົງ 4 ເທື່ອ). ຖາມວ່າມາດຕາສ່ວນຂອງແຜນຜັງໃໝ່ຈະເທົ່າກັບ 1 ຕໍ່ເທົ່າໃດ?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ມາດຕາສ່ວນແຜນຜັງໃໝ່ແມ່ນ 1 :"}</span>
