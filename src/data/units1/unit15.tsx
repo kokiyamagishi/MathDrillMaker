@@ -61,7 +61,7 @@ export const unit15Data: UnitData = {
             <p>{"ຈົ່ງສັງເກດຮູບໃບເງິນລຸ່ມນີ້ ແລ້ວບອກວ່າມີມູນຄ່າລວມກັນທັງໝົດເທົ່າໃດ? "} <span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span></p>
             
             <div className="math-illustration" style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "16px", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "flex-start", gap: "16px", flexWrap: "nowrap" }}>
                 <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(1)"}</span>
                 <div style={{ display: "flex", gap: "8px" }}>
                   <div style={{ width: "80px", height: "40px", backgroundColor: "#E91E63", borderRadius: "2px", border: "1px solid #333", display: "flex", justifyContent: "center", alignItems: "center", color: "white", fontSize: "12px", fontWeight: "bold" }}>500</div>
@@ -73,7 +73,7 @@ export const unit15Data: UnitData = {
                 <span>{"ກີບ"}</span>
               </div>
               
-              <div style={{ display: "flex", alignItems: "center", gap: "16px", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "flex-start", gap: "16px", flexWrap: "nowrap" }}>
                 <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(2)"}</span>
                 <div style={{ display: "flex", gap: "8px" }}>
                   <div style={{ width: "80px", height: "40px", backgroundColor: "#4CAF50", borderRadius: "2px", border: "1px solid #333", display: "flex", justifyContent: "center", alignItems: "center", color: "white", fontSize: "12px", fontWeight: "bold" }}>1000</div>
@@ -84,7 +84,7 @@ export const unit15Data: UnitData = {
                 <span>{"ກີບ"}</span>
               </div>
               
-              <div style={{ display: "flex", alignItems: "center", gap: "16px", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "flex-start", gap: "16px", flexWrap: "nowrap" }}>
                 <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(3)"}</span>
                 <div style={{ display: "flex", gap: "8px" }}>
                   <div style={{ width: "80px", height: "40px", backgroundColor: "#E91E63", borderRadius: "2px", border: "1px solid #333", display: "flex", justifyContent: "center", alignItems: "center", color: "white", fontSize: "12px", fontWeight: "bold" }}>500</div>
@@ -96,7 +96,7 @@ export const unit15Data: UnitData = {
                 <span>{"ກີບ"}</span>
               </div>
               
-              <div style={{ display: "flex", alignItems: "center", gap: "16px", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "flex-start", gap: "16px", flexWrap: "nowrap" }}>
                 <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(4)"}</span>
                 <div style={{ display: "flex", gap: "8px" }}>
                   <div style={{ width: "80px", height: "40px", backgroundColor: "#4CAF50", borderRadius: "2px", border: "1px solid #333", display: "flex", justifyContent: "center", alignItems: "center", color: "white", fontSize: "12px", fontWeight: "bold" }}>1000</div>
@@ -108,7 +108,7 @@ export const unit15Data: UnitData = {
                 <span>{"ກີບ"}</span>
               </div>
               
-              <div style={{ display: "flex", alignItems: "center", gap: "16px", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "flex-start", gap: "16px", flexWrap: "nowrap" }}>
                 <span style={{ fontSize: "18px", fontWeight: "bold" }}>{"(5)"}</span>
                 <div style={{ display: "flex", gap: "8px" }}>
                   <div style={{ width: "80px", height: "40px", backgroundColor: "#E91E63", borderRadius: "2px", border: "1px solid #333", display: "flex", justifyContent: "center", alignItems: "center", color: "white", fontSize: "12px", fontWeight: "bold" }}>500</div>
@@ -164,7 +164,7 @@ export const unit15Data: UnitData = {
               <span>{"ກີບ"}</span>
             </div>
             
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "20px", marginTop: "12px", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", fontSize: "20px", marginTop: "12px", flexWrap: "nowrap" }}>
               <span style={{ fontSize: "18px", fontWeight: "bold", minWidth: "40px", whiteSpace: "nowrap" }}>{"(2)"}</span>
               <span>{"ຖ້າດາວຊື້ພຽງແຕ່ເຂົ້າໜົມ 1,000 ກີບ ແມ່ຄ້າຕ້ອງທອນເງິນເທົ່າໃດ? (ຈ່າຍດ້ວຍ 2,000 ກີບ 1 ໃບ) ຕອບ:"}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "40px" }}></span>

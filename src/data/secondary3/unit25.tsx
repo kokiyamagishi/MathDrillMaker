@@ -68,19 +68,19 @@ export const unit25Data: UnitData = {
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຮູບທໍ່ຫຼ່ຽມສາມແຈມີຄວາມສູງ 10 cm, ພື້ນແມ່ນຮູບສາມແຈສະເໝີມີຂ້າງຍາວ 4 cm. ລວງຮອບພື້ນແມ່ນຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຈາກຂໍ້ (1), ເນື້ອທີ່ຂ້າງຂອງຮູບທໍ່ຫຼ່ຽມນີ້ແມ່ນຈັກ cm²?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
                   <span>{"ຮູບກ່ອງສາກໜຶ່ງມີຂະໜາດພື້ນແມ່ນ 3 cm × 4 cm (ລວງຮອບພື້ນ 14 cm) ແລະ ສູງ 5 cm. ເນື້ອທີ່ຂ້າງແມ່ນຈັກ cm²?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
@@ -98,13 +98,13 @@ export const unit25Data: UnitData = {
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຖ້າເນື້ອທີ່ພື້ນແມ່ນ "} <span className="math">{"12 cm²"}</span> {" ແລະ ເນື້ອທີ່ຂ້າງແມ່ນ "} <span className="math">{"40 cm²"}</span> {". ເນື້ອທີ່ທັງໝົດແມ່ນຈັກ cm²?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຮູບກ້ອນສາກ ໜຶ່ງມີຄວາມຍາວຂ້າງແມ່ນ "} <span className="math">{"3 cm"}</span> {". ເນື້ອທີ່ທັງໝົດຂອງມັນແມ່ນຈັກ cm²?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
@@ -146,19 +146,19 @@ export const unit25Data: UnitData = {
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຮູບທໍ່ຫຼ່ຽມມີເນື້ອທີ່ພື້ນແມ່ນ "} <span className="math">{"15 cm²"}</span> {" ແລະ ສູງ "} <span className="math">{"8 cm"}</span> {". ບໍລິມາດແມ່ນຈັກ cm³?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຮູບທໍ່ຫຼ່ຽມສາມແຈສາກມີພື້ນເນື້ອທີ່ "} <span className="math">{"6 cm²"}</span> {" ແລະ ສູງ "} <span className="math">{"10 cm"}</span> {". ບໍລິມາດແມ່ນຈັກ cm³?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
                   <span>{"ຮູບກ່ອງສາກມີເນື້ອທີ່ພື້ນແມ່ນ "} <span className="math">{"20 cm²"}</span> {" ແລະ ສູງ "} <span className="math">{"6 cm"}</span> {". ບໍລິມາດແມ່ນຈັກ cm³?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
@@ -176,13 +176,13 @@ export const unit25Data: UnitData = {
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຮູບກ້ອນສາກ ໜຶ່ງມີຄວາມຍາວຂ້າງແມ່ນ "} <span className="math">{"5 cm"}</span> {". ບໍລິມາດຂອງມັນແມ່ນຈັກ cm³?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຮູບທໍ່ຫຼ່ຽມໜຶ່ງມີບໍລິມາດແມ່ນ "} <span className="math">{"180 cm³"}</span> {" ແລະ ເນື້ອທີ່ພື້ນແມ່ນ "} <span className="math">{"20 cm²"}</span> {". ຄວາມສູງ h ແມ່ນຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>

@@ -109,7 +109,7 @@ export const unit1Data: UnitData = {
 
               <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "12px 0" }}>
                 {/* Sub-question 1 */}
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຊາວເກົ້າພັນແປດສິບ ("}</span>
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "100px", width: "100px", height: "42px" }}></span>
@@ -117,7 +117,7 @@ export const unit1Data: UnitData = {
                 </div>
 
                 {/* Sub-question 2 */}
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຫ້າລ້ານເຈັດແສນສາມສິບພັນຮ້ອຍແປດສິບຫົກ ("}</span>
                   <span className="answer-blank" style={{ display: "inline-block", minWidth: "120px", width: "80px", height: "42px" }}></span>

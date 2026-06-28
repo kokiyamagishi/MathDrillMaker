@@ -72,19 +72,19 @@ export const unit4Data: UnitData = {
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ສຳລັບຕຳລາ "} <span className="math">{"𝑦 = 2𝑥²"}</span> {", ຖ້າ 𝑥 = 3 ➔ ຈະໄດ້ 𝑦 ເທົ່າກັບເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ສຳລັບຕຳລາ "} <span className="math">{"𝑦 = -3𝑥²"}</span> {", ຖ້າ 𝑥 = -2 ➔ ຈະໄດ້ 𝑦 ເທົ່າກັບເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
                   <span>{"ສຳລັບຕຳລາ "} <span className="math">{"𝑦 = "} <Fraction num="1" den="2" /> {"𝑥²"}</span> {", ຖ້າ 𝑥 = 4 ➔ ຈະໄດ້ 𝑦 ເທົ່າກັບເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
@@ -102,13 +102,13 @@ export const unit4Data: UnitData = {
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ເສັ້ນສະແດງຂອງຕຳລາ "} <span className="math">{"𝑦 = -4𝑥²"}</span> {" ຈະມີຮູບຮ່າງ ງາຍ ຫຼື ຄວ້ຳ? (ຕອບ ງາຍ ຫຼື ຄວ້ຳ)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ລະຫວ່າງ "} <span className="math">{"𝑦 = 5𝑥²"}</span> {" ແລະ "} <span className="math">{"𝑦 = 2𝑥²"}</span> {", ເສັ້ນສະແດງໃດມີຮູບຮ່າງ ແຄບ ກວ່າກັນ? (ຕອບເປັນຕຳລາ)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
@@ -151,19 +151,19 @@ export const unit4Data: UnitData = {
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຈຸດຍອດຂອງເສັ້ນສະແດງ ພາລາໂບລາ "} <span className="math">{"𝑦 = -3𝑥²"}</span> {" ແມ່ນຈຸດໃດ? (ຕອບເປັນຄູ່ພິກັດ)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ສົມຜົນເສັ້ນເຄິ່ງຄືຂອງພາລາໂບລາ "} <span className="math">{"𝑦 = 5𝑥²"}</span> {" ແມ່ນສົມຜົນໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
                   <span>{"ສຳລັບຕຳລາ "} <span className="math">{"𝑦 = 2𝑥²"}</span> {", ຈຸດຍອດ (0,0) ຈະແມ່ນຈຸດຕ່ຳສຸດ ຫຼື ສູງສຸດ? (ຕອບ ຕ່ຳສຸດ ຫຼື ສູງສຸດ)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
@@ -181,13 +181,13 @@ export const unit4Data: UnitData = {
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຖ້າເສັ້ນສະແດງ "} <span className="math">{"𝑦 = ax²"}</span> {" ຜ່ານຈຸດ (2, 8). ສຳປະສິດ a ຈະເທົ່າກັບເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຖ້າເສັ້ນສະແດງ "} <span className="math">{"𝑦 = ax²"}</span> {" ຜ່ານຈຸດ (-3, -18). ສຳປະສິດ a ຈະເທົ່າກັບເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>

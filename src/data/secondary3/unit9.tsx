@@ -75,19 +75,19 @@ export const unit9Data: UnitData = {
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຮູບສາມແຈສາກທີ່ມີສອງຂ້າງຕິດຊາກ "} <span className="math">{"a = 3 cm, b = 4 cm"}</span> {". ຂ້າງກົງຊາກ c ແມ່ນຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຮູບສາມແຈສາກທີ່ມີສອງຂ້າງຕິດຊາກ "} <span className="math">{"a = 6 cm, b = 8 cm"}</span> {". ຂ້າງກົງຊາກ c ແມ່ນຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
                   <span>{"ຮູບສາມແຈສາກທີ່ມີສອງຂ້າງຕິດຊາກ "} <span className="math">{"a = 5 cm, b = 12 cm"}</span> {". ຂ້າງກົງຊາກ c ແມ່ນຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
@@ -105,13 +105,13 @@ export const unit9Data: UnitData = {
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຄວາມຍາວສາມຂ້າງແມ່ນ "} <span className="math">{"8 cm, 15 cm, 17 cm"}</span> {" ປະກອບເປັນຮູບສາມແຈສາກໄດ້ຫຼືບໍ່?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ความຍາວສາມຂ້າງແມ່ນ "} <span className="math">{"4 cm, 5 cm, 7 cm"}</span> {" ປະກອບເປັນຮູບສາມແຈສາກໄດ້ຫຼືບໍ່?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
@@ -154,19 +154,19 @@ export const unit9Data: UnitData = {
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ໃຫ້ຂ້າງກົງຊາກ "} <span className="math">{"c = 10 cm"}</span> {" ແລະ ຂ້າງຕິດຊາກ "} <span className="math">{"a = 6 cm"}</span> {". ຂ້າງ b ແມ່ນຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ໃຫ້ຂ້າງກົງຊາກ "} <span className="math">{"c = 13 cm"}</span> {" ແລະ ຂ້າງຕິດຊາກ "} <span className="math">{"b = 5 cm"}</span> {". ຂ້າງ a ແມ່ນຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
                   <span>{"ໃຫ້ຂ້າງກົງຊາກ "} <span className="math">{"c = 25 cm"}</span> {" ແລະ ຂ້າງຕິດຊາກ "} <span className="math">{"a = 7 cm"}</span> {". ຂ້າງ b ແມ່ນຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
@@ -184,13 +184,13 @@ export const unit9Data: UnitData = {
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຮູບສີ່ແຈສາກມີຄວາມກວ້າງ "} <span className="math">{"3 cm"}</span> {" ແລະ ຍາວ "} <span className="math">{"4 cm"}</span> {". ເສັ້ນເນັ່ງຈອມຈະມີຄວາມຍາວຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຮູບສີ່ແຈສາກມີຄວາມຍາວເສັ້ນເນັ່ງຈອມ "} <span className="math">{"10 cm"}</span> {" ແລະ ຄວາມກວ້າງ "} <span className="math">{"8 cm"}</span> {". ຄວາມຍາວຂອງມັນແມ່ນຈັກ cm?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>

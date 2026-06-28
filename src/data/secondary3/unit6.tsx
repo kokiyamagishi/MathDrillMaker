@@ -79,19 +79,19 @@ export const unit6Data: UnitData = {
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຈາກ "} <span className="math">{"𝑥 + 𝑦 = 10"}</span> {" ແລະ "} <span className="math">{"𝑥 - 𝑦 = 4"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຈາກ "} <span className="math">{"2𝑥 + 𝑦 = 11"}</span> {" ແລະ "} <span className="math">{"𝑥 - 𝑦 = 1"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ 𝑦?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
                   <span>{"ຈາກ "} <span className="math">{"3𝑥 + 2𝑦 = 12"}</span> {" ແລະ "} <span className="math">{"𝑥 + 2𝑦 = 8"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
@@ -109,13 +109,13 @@ export const unit6Data: UnitData = {
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຄູ່ພິກັດ (3, 2) ແມ່ນໃຈຜົນຂອງລະບົບສົມຜົນ "} <span className="math">{"𝑥 + 2𝑦 = 7"}</span> {" ແລະ "} <span className="math">{"2𝑥 - 𝑦 = 4"}</span> {" ຫຼື ບໍ່? (ຕອບ ແມ່ນ ຫຼື ບໍ່ແມ່ນ)"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຖ້າ (2, 5) ແມ່ນໃຈຜົນຂອງ "} <span className="math">{"ax + 𝑦 = 9"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງສຳປະສິດ a?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
@@ -162,19 +162,19 @@ export const unit6Data: UnitData = {
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຈາກ "} <span className="math">{"𝑦 = 2𝑥"}</span> {" ແລະ "} <span className="math">{"𝑥 + 𝑦 = 9"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຈາກ "} <span className="math">{"𝑥 = 𝑦 - 3"}</span> {" ແລະ "} <span className="math">{"2𝑥 + 𝑦 = 12"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ 𝑦?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
                   <span>{"ຈາກ "} <span className="math">{"𝑦 = 3𝑥 - 1"}</span> {" ແລະ "} <span className="math">{"𝑥 + 𝑦 = 7"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
@@ -192,13 +192,13 @@ export const unit6Data: UnitData = {
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
                   <span>{"ຄິດໄລ່ຄ່າຂອງ "} <span className="math">{"𝑥 + 𝑦"}</span> {" ຖ້າໃຈຜົນແມ່ນ "} <span className="math">{"𝑥 = 10, 𝑦 = 5"}</span> {". ຜົນບວກແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", flexWrap: "nowrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
                   <span>{"ຄິດໄລ່ຄ່າຂອງ "} <span className="math">{"𝑥 × 𝑦"}</span> {" ຖ້າໃຈຜົນແມ່ນ "} <span className="math">{"𝑥 = 3, 𝑦 = 5"}</span> {". ຜົນຄູນແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
