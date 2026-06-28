@@ -80,36 +80,36 @@ export const unit22Data: UnitData = {
                 {"ຈົ່ງແກ້ໂຈດບັນຫາສົມຜົນພື້ນຖານລຸ່ມນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 10 ຄະແນນ)"}</span>
               </p>
               
-              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "18px", padding: "8px 0" }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "8px 0" }}>
                 {/* 5 Questions */}
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ສອງເທື່ອຂອງຈຳນວນໜຶ່ງ ບວກກັບ 5 ເທົ່າກັບ 15. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? (ສົມຜົນ: 2𝑥 + 5 = 15)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
+                  <span>{"ສອງເທື່ອຂອງຈຳນວນໜຶ່ງ ບວກກັບ 5 ເທົ່າກັບ 15. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? (ສົມຜົນ: 2𝑥 + 5 = 15) "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ສາມເທື່ອຂອງຈຳນວນໜຶ່ງ ລົບອອກ 4 ເທົ່າກັບ 14. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? (ສົມຜົນ: 3𝑥 - 4 = 14)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
+                  <span>{"ສາມເທື່ອຂອງຈຳນວນໜຶ່ງ ລົບອອກ 4 ເທົ່າກັບ 14. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? (ສົມຜົນ: 3𝑥 - 4 = 14) "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ຫ້າເທື່ອຂອງຈຳນວນໜຶ່ງ ບວກກັບ 12 ເທົ່າກັບ 2. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? (ສົມຜົນ: 5𝑥 + 12 = 2)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
+                  <span>{"ຫ້າເທື່ອຂອງຈຳນວນໜຶ່ງ ບວກກັບ 12 ເທົ່າກັບ 2. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? (ສົມຜົນ: 5𝑥 + 12 = 2) "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
-                  <span>{"ເຄິ່ງໜຶ່ງຂອງຈຳນວນໜຶ່ງ ບວກກັບ 3 ເທົ່າກັບ 8. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? (ສົມຜົນ: 𝑥/2 + 3 = 8)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
+                  <span>{"ເຄິ່ງໜຶ່ງຂອງຈຳນວນໜຶ່ງ ບວກກັບ 3 ເທົ່າກັບ 8. ຈຳນວນນັ້ນແມ່ນເທົ່າໃດ? (ສົມຜົນ: 𝑥/2 + 3 = 8) "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
-                  <span>{"ຜົນບວກຂອງສາມຈຳນວນຖ້ວນລຽນຕິດກັນເທົ່າກັບ 24. ຈຳນວນນ້ອຍສຸດແມ່ນເທົ່າໃດ? (ສົມຜົນ: 𝑥 + (𝑥+1) + (𝑥+2) = 24)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.8" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
+                  <span>{"ຜົນບວກຂອງສາມຈຳນວນຖ້ວນລຽນຕິດກັນເທົ່າກັບ 24. ຈຳນວນນ້ອຍສຸດແມ່ນເທົ່າໃດ? (ສົມຜົນ: 𝑥 + (𝑥+1) + (𝑥+2) = 24) "}</span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
               </div>
             </div>
