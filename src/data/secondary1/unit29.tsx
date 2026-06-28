@@ -255,8 +255,7 @@ export const unit29Data: UnitData = {
       {
         questionNumber: 2,
         answers: [
-          <span key="2-1">{"152 × 55"}</span>,
-          <span key="2-2">{"88 (ຄິດໄລ່: "} <Fraction num={<span>{"152 × 55"}</span>} den={"95"} /> {")"}</span>
+          <span key="2-comb">{"152 × 55, 88 (ຄິດໄລ່: "} <Fraction num={<span>{"152 × 55"}</span>} den={"95"} /> {")"}</span>
         ]
       },
       {
