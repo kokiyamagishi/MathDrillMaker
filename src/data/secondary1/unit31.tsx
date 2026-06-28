@@ -1,6 +1,14 @@
 import React from "react";
 import { UnitData } from "../units2";
 
+// Math-Drill standard Fraction notation (Horizontal Line, Numerator top, Denominator bottom)
+const Fraction = ({ num, den }: { num: React.ReactNode; den: React.ReactNode }) => (
+  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", verticalAlign: "middle", padding: "0 4px" }}>
+    <span style={{ borderBottom: "1px solid currentColor", padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" }}>{num}</span>
+    <span style={{ padding: "0 2px", lineHeight: "1.1", fontSize: "1.25rem" }}>{den}</span>
+  </span>
+);
+
 export const unit31Data: UnitData = {
   unitNumber: 31,
   unitTitle: "ພາກທີ V - ບົດທີ 31: ອັດຕາສ່ວນພົວພັນປີ້ນ (Inverse Proportion)",
@@ -23,12 +31,20 @@ export const unit31Data: UnitData = {
             
             <div style={{ padding: "16px", backgroundColor: "#E3F2FD", borderRadius: "8px", border: "1px solid #90CAF9" }}>
               <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#0D47A1" }}>{"ຕົວຢ່າງ:"}</span>
-              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px" }}>
-                {"ນັກຮຽນ 3 ຄົນ ຊ່ວຍກັນຂຸດໜານຜັກແລ້ວໃນເວລາ 4 ມື້ (ຜົນຄູນຄົງທີ່ C = 3 × 4 = 12 ມື້-ຄົນ)."}
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", marginTop: "8px", display: "flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+                <span>{"ນັກຮຽນ 3 ຄົນ ຊ່ວຍກັນຂຸດໜານຜັກແລ້ວໃນເວລາ 4 ມື້ (ຜົນຄູນຄົງທີ່ C = 3 × 4 = 12 ມື້-ຄົນ)."}</span>
                 <br />
-                {"- ຖ້າມີ 1 ຄົນ ຕ້ອງໃຊ້ເວລາ: 12 / 1 = 12 ມື້."}
+                <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                  <span>{"- ຖ້າມີ 1 ຄົນ ຕ້ອງໃຊ້ເວລາ: "}</span>
+                  <Fraction num={"12"} den={"1"} />
+                  <span>{" = 12 ມື້."}</span>
+                </span>
                 <br />
-                {"- ຖ້າມີ 6 ຄົນ ຕ້ອງໃຊ້ເວລາ: 12 / 6 = 2 ມື້."}
+                <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                  <span>{"- ຖ້າມີ 6 ຄົນ ຕ້ອງໃຊ້ເວລາ: "}</span>
+                  <Fraction num={"12"} den={"6"} />
+                  <span>{" = 2 ມື້."}</span>
+                </span>
               </p>
             </div>
           </div>
@@ -69,16 +85,12 @@ export const unit31Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ກຳມະກອນ 15 ຄົນ ປຸກເຮືອນຫຼັງໜຶ່ງແລ້ວໃນ 20 ມື້. ຖ້າຢາກໃຫ້ປຸກແລ້ວພາຍໃນ 10 ມື້ ຈະຕ້ອງໃຊ້ກຳມະກອນຈັກຄົນ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span>{"ປະໂຫຍກສັນຍະລັກ: ຄົນ = (15 × 20) /"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
-                </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span>{"= "}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
-                  <span>{"ຄົນ"}</span>
-                </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
+                <span>{"ປະໂຫຍກສັນຍະລັກ: ຄົນ = "}</span>
+                <Fraction num={<span>{"15 × 20"}</span>} den={<span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "24px", verticalAlign: "middle" }}></span>} />
+                <span>{" = "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                <span>{"ຄົນ"}</span>
               </div>
             </div>
           )
@@ -101,7 +113,11 @@ export const unit31Data: UnitData = {
           </div>
         ),
         hint: {
-          text: "💡 ຕົວຢ່າງ: ຖອກນ້ຳໃສ່ຕຸກຂະໜາດ 75 cL ໄດ້ 79 ຕຸກ. ຖ້າປ່ຽນມາໃສ່ຕຸກຂະໜາດ 25 cL ຈະໄດ້: (75 × 79) / 25 = 3 × 79 = 237 ຕຸກ!",
+          text: <span style={{ display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+            <span>{"💡 ຕົວຢ່າງ: ຖອກນ້ຳໃສ່ຕຸກຂະໜາດ 75 cL ໄດ້ 79 ຕຸກ. ຖ້າປ່ຽນມາໃສ່ຕຸກຂະໜາດ 25 cL ຈະໄດ້: ("}</span>
+            <Fraction num={<span>{"75 × 79"}</span>} den={"25"} />
+            <span>{") = 3 × 79 = 237 ຕຸກ!"}</span>
+          </span>,
           isBlue: false
         }
       },
@@ -113,9 +129,11 @@ export const unit31Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ຄົນງານ 10 ຄົນ ໃຊ້ເວລາ 6 ມື້ ເພື່ອສ້າງຫົນທາງໄດ້ 125 m. ຖ້າໃຊ້ຄົນງານ 12 ຄົນ ເພື່ອສ້າງຫົນທາງ 125 m ຄືເກົ່າ ຈະຕ້ອງໃຊ້ເວລາຈັກມື້? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                <span>{"ປະໂຫຍກສັນຍະລັກ: ເວລາ = (10 × 6) / 12 ="}</span>
-                <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
+                <span>{"ປະໂຫຍກສັນຍະລັກ: ເວລາ = "}</span>
+                <Fraction num={<span>{"10 × 6"}</span>} den={<span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "24px", verticalAlign: "middle" }}></span>} />
+                <span>{" = "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
                 <span>{"ມື້"}</span>
               </div>
             </div>
@@ -128,16 +146,82 @@ export const unit31Data: UnitData = {
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
                 {"ຖອກນ້ຳມັນໃສ່ຖັງຂະໜາດ 60 ລິດ ໄດ້ 40 ຖັງ. ຖ້າຢາກຖອກໃສ່ຖັງຂະໜາດ 80 ລິດ ຈະໄດ້ຈັກຖັງ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "1.375rem" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span>{"ປະໂຫຍກສັນຍະລັກ: ຈຳນວນຖັງ = ("}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "1.375rem", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
+                <span>{"ປະໂຫຍກສັນຍະລັກ: ຈຳນວນຖັງ = "}</span>
+                <Fraction num={<span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "24px", verticalAlign: "middle" }}></span>} den={"80"} />
+                <span>{" = "}</span>
+                <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
+                <span>{"ຖັງ"}</span>
+              </div>
+            </div>
+          )
+        }
+      ]
+    },
+    {
+      title: "3. ການປຽບທຽບພົວພັນກົງ ແລະ ພົວພັນປີ້ນ (Direct vs. Inverse Proportion)",
+      keyPoint: {
+        title: "ຕາຕະລາງປຽບທຽບເພື່ອຄວາມເຂົ້າໃຈ",
+        content: (
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+            <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "1.20rem", lineHeight: "1.5" }}>
+              <thead>
+                <tr style={{ backgroundColor: "#ECEFF1", borderBottom: "2px solid #CFD8DC" }}>
+                  <th style={{ padding: "10px", textAlign: "left", border: "1px solid #CFD8DC" }}>{"ຄຸນລັກສະນະ"}</th>
+                  <th style={{ padding: "10px", textAlign: "left", border: "1px solid #CFD8DC", color: "#0D47A1" }}>{"ອັດຕາສ່ວນພົວພັນກົງ"}</th>
+                  <th style={{ padding: "10px", textAlign: "left", border: "1px solid #CFD8DC", color: "#E65100" }}>{"ອັດຕາສ່ວນພົວພັນປີ້ນ"}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style={{ padding: "10px", border: "1px solid #CFD8DC", fontWeight: "bold" }}>{"ການປ່ຽນແປງ"}</td>
+                  <td style={{ padding: "10px", border: "1px solid #CFD8DC" }}>{"x ເພີ່ມ ⇒ y ເພີ່ມ, x ຫຼຸດ ⇒ y ຫຼຸດ"}</td>
+                  <td style={{ padding: "10px", border: "1px solid #CFD8DC" }}>{"x ເພີ່ມ ⇒ y ຫຼຸດ, x ຫຼຸດ ⇒ y ເພີ່ມ"}</td>
+                </tr>
+                <tr style={{ backgroundColor: "#F9F9F9" }}>
+                  <td style={{ padding: "10px", border: "1px solid #CFD8DC", fontWeight: "bold" }}>{"ຄວາມສຳພັນຄົງທີ່"}</td>
+                  <td style={{ padding: "10px", border: "1px solid #CFD8DC", color: "#0D47A1" }}>{"y / x = k (ຜົນຫານຄົງທີ່)"}</td>
+                  <td style={{ padding: "10px", border: "1px solid #CFD8DC", color: "#E65100" }}>{"x × y = C (ຜົນຄູນຄົງທີ່)"}</td>
+                </tr>
+                <tr>
+                  <td style={{ padding: "10px", border: "1px solid #CFD8DC", fontWeight: "bold" }}>{"ຕົວຢ່າງຕົວຈິງ"}</td>
+                  <td style={{ padding: "10px", border: "1px solid #CFD8DC" }}>{"ລາຄາ ແລະ ຄວາມຍາວ, ໄລຍະທາງ ແລະ ເວລາ"}</td>
+                  <td style={{ padding: "10px", border: "1px solid #CFD8DC" }}>{"ຈຳນວນຄົນ ແລະ ເວລາເຮັດວຽກ, ຄວາມໄວ ແລະ ເວລາ"}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        ),
+        hint: {
+          text: "💡 ຈື່ໄວ້: ພົວພັນກົງ x ເພີ່ມ y ເພີ່ມ; ພົວພັນປີ້ນ x ເພີ່ມ y ຫຼຸດ!",
+          isBlue: false
+        }
+      },
+      problems: [
+        {
+          number: 1,
+          content: (
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
+                {"ໃຫ້ສັງເກດຕາຕະລາງຕໍ່ໄປນີ້ ແລ້ວລະບຸວ່າແມ່ນພົວພັນກົງ ຫຼື ພົວພັນປີ້ນ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              </p>
+              <div style={{ fontSize: "1.25rem", border: "1px solid #BDC3C7", borderRadius: "8px", overflow: "hidden", width: "100%", margin: "8px 0" }}>
+                <div style={{ display: "flex", backgroundColor: "#ECF0F1", fontWeight: "bold", borderBottom: "1px solid #BDC3C7" }}>
+                  <div style={{ flex: 1, padding: "8px", textAlign: "center", borderRight: "1px solid #BDC3C7" }}>{"x"}</div>
+                  <div style={{ flex: 1, padding: "8px", textAlign: "center", borderRight: "1px solid #BDC3C7" }}>{"2"}</div>
+                  <div style={{ flex: 1, padding: "8px", textAlign: "center", borderRight: "1px solid #BDC3C7" }}>{"4"}</div>
+                  <div style={{ flex: 1, padding: "8px", textAlign: "center" }}>{"8"}</div>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap" }}>
-                  <span>{") / 80 ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", minWidth: "50px", width: "50px", height: "42px", flexShrink: 0 }}></span>
-                  <span>{"ຖັງ"}</span>
+                <div style={{ display: "flex" }}>
+                  <div style={{ flex: 1, padding: "8px", textAlign: "center", borderRight: "1px solid #BDC3C7", fontWeight: "bold" }}>{"y"}</div>
+                  <div style={{ flex: 1, padding: "8px", textAlign: "center", borderRight: "1px solid #BDC3C7" }}>{"12"}</div>
+                  <div style={{ flex: 1, padding: "8px", textAlign: "center", borderRight: "1px solid #BDC3C7" }}>{"6"}</div>
+                  <div style={{ flex: 1, padding: "8px", textAlign: "center" }}>{"3"}</div>
                 </div>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+                <span>{"ຄຳຕອບ: ແມ່ນອັດຕາສ່ວນ"}</span>
+                <span className="answer-blank" style={{ display: "inline-block", width: "160px", height: "42px" }}></span>
               </div>
             </div>
           )
@@ -170,7 +254,7 @@ export const unit31Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ໂຈດງົວແລະເຟືອງຫຍ້າ (Cows vs Food Days): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ໂຈດງົວແລະເຟືອງຫຍ้า (Cows vs Food Days): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ງົວ 12 ຕົວ ກິນຫຍ້າ 3 ມັດ ໝົດພາຍໃນ 15 ມື້. ຖ້າຫາກມີງົວ 18 ຕົວ ຈະກິນຫຍ້າ 3 ມັດ ໝົດພາຍໃນຈັກມື້? (ສົມມຸດວ່າງົວທຸກຕົວມີອັດຕາການກິນເທົ່າກັນ)"}
@@ -230,52 +314,51 @@ export const unit31Data: UnitData = {
       {
         questionNumber: 1,
         answers: [
-          <span key="1-1">{"(1) 2 (ຄິດໄລ່: 3 × 4 / 6)"}</span>,
-          <span key="1-2">{"(2) 12 (ຄິດໄລ່: 3 × 4 / 1)"}</span>
+          <span key="1-1">{"(1) 2 (ຄິດໄລ່: "} <Fraction num={<span>{"3 × 4"}</span>} den={"6"} /> {")"}</span>,
+          <span key="1-2">{"(2) 12 (ຄິດໄລ່: "} <Fraction num={<span>{"3 × 4"}</span>} den={"1"} /> {")"}</span>
         ]
       },
       {
         questionNumber: 2,
         answers: [
-          <span key="2-1">{"10"}</span>,
-          <span key="2-2">{"30 (ຄິດໄລ່: 15 × 20 / 10)"}</span>
+          <span key="2-comb">{"10, 30 (ຄິດໄລ່: "} <Fraction num={<span>{"15 × 20"}</span>} den={"10"} /> {")"}</span>
         ]
       },
       {
         questionNumber: 3,
         answers: [
-          <span key="3-1">{"5 (ຄິດໄລ່: 10 × 6 / 12)"}</span>
+          <span key="3-1">{"5 (ຄິດໄລ່: "} <Fraction num={<span>{"10 × 6"}</span>} den={"12"} /> {")"}</span>
         ]
       },
       {
         questionNumber: 4,
         answers: [
           <span key="4-1">{"60 × 40"}</span>,
-          <span key="4-2">{"30 (ຄິດໄລ່: 60 × 40 / 80)"}</span>
+          <span key="4-2">{"30 (ຄິດໄລ່: "} <Fraction num={<span>{"60 × 40"}</span>} den={"80"} /> {")"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="c1-1">{"45 (ຄິດໄລ່: 30 × 72 / 48)"}</span>
+          <span key="c1-1">{"45 (ຄິດໄລ່: "} <Fraction num={<span>{"30 × 72"}</span>} den={"48"} /> {")"}</span>
         ]
       },
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="c2-1">{"10 (ຄິດໄລ່: 12 × 15 / 18)"}</span>
+          <span key="c2-1">{"10 (ຄິດໄລ່: "} <Fraction num={<span>{"12 × 15"}</span>} den={"18"} /> {")"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="s1">{"12 (ຄິດໄລ່: 6 × 8 / 4)"}</span>
+          <span key="s1">{"12 (ຄິດໄລ່: "} <Fraction num={<span>{"6 × 8"}</span>} den={"4"} /> {")"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="s2">{"237 (ຄິດໄລ່: 75 × 79 / 25)"}</span>
+          <span key="s2">{"237 (ຄິດໄລ່: "} <Fraction num={<span>{"75 × 79"}</span>} den={"25"} /> {")"}</span>
         ]
       }
     ],
