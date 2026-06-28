@@ -83,34 +83,34 @@ export const unit20Data: UnitData = {
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "18px", padding: "8px 0" }}>
                 {/* 5 Questions */}
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
                   <span>{"ຖ້າ 𝑥 - 3 = 7, ຈະໄດ້ 𝑥 ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
                   <span>{"ຖ້າ 𝑥 + 5 = 12, ຈະໄດ້ 𝑥 ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
                   <span>{"ຖ້າ 𝑥 - 8 = -2, ຈະໄດ້ 𝑥 ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
                   <span>{"ຖ້າ 10 + 𝑥 = 4, ຈະໄດ້ 𝑥 ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
                   <span>{"ຖ້າ 𝑥 - 1.5 = 3.5, ຈະໄດ້ 𝑥 ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
               </div>
             </div>
@@ -158,40 +158,40 @@ export const unit20Data: UnitData = {
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "18px", padding: "8px 0" }}>
                 {/* 5 Questions */}
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="𝑥" den="2" /> {" = 6, ຈະໄດ້ 𝑥 ="}
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
                   <span className="math">{"3𝑥 = 15, ຈະໄດ້ 𝑥 ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="𝑥" den="5" /> {" = -3, ຈະໄດ້ 𝑥 ="}
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
                   <span className="math">{"-4𝑥 = 24, ຈະໄດ້ 𝑥 ="}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="2" den="3" /> {"𝑥 = 8, ຈະໄດ້ 𝑥 ="}
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
               </div>
             </div>
@@ -213,9 +213,9 @@ export const unit20Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງຊອກຫາຄ່າ 𝑥 ຈາກສົມຜົນ "} <span className="math">{"2𝑥 + 4 = 16"}</span> {" ໂດຍການລົບ 4 ກ່ອນ ແລ້ວຈຶ່ງຫານດ້ວຍ 2 ທັງສອງຟາກ"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: 𝑥 ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             </div>
           </div>
         )
@@ -233,9 +233,9 @@ export const unit20Data: UnitData = {
                 <Fraction num="𝑥 - 1" den="3" /> {" = "} <Fraction num="2" den="3" />
               </span>
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: 𝑥 ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             </div>
           </div>
         )
@@ -253,9 +253,9 @@ export const unit20Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຖ້າແບ່ງເຂົ້າໜົມ 𝑥 ກ້ອນ ອອກເປັນ 4 ສ່ວນເທົ່າກັນ ຈະໄດ້ສ່ວນລະ 5 ກ້ອນ. ຂຽນເປັນສົມຜົນແມ່ນ 𝑥/4 = 5. ຈົ່ງຊອກຫາຈຳນວນເຂົ້າໜົມ 𝑥 ທັງໝົດ"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: 𝑥 ="}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             <span>{"ກ້ອນ"}</span>
           </div>
         </div>
@@ -271,9 +271,9 @@ export const unit20Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥 ຈາກສົມຜົນ: 5𝑥 - 7 = 8"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: 𝑥 ="}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
           </div>
         </div>
       )

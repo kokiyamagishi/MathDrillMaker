@@ -76,34 +76,34 @@ export const unit42Data: UnitData = {
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
                   <span>{"15% ຂອງເງິນ 200,000 ກີບ ແມ່ນເທົ່າໃດ ກີບ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
                   <span>{"40% ຂອງນັກຮຽນ 120 ຄົນ ແມ່ນຈັກ ຄົນ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
                   <span>{"8% ຂອງເນື້ອທີ່ 500 ຕາແມັດ ແມ່ນຈັກ ຕາແມັດ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
                   <span>{"120% ຂອງນ້ຳໜັກ 80 ກິໂລກຣາມ ແມ່ນຈັກ ກິໂລກຣາມ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
                   <span>{"0.5% ຂອງໄລຍະທາງ 10,000 ແມັດ ແມ່ນຈັກ ແມັດ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
               </div>
             </div>
@@ -148,34 +148,34 @@ export const unit42Data: UnitData = {
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
                   <span>{"18 ຄະແນນ ຈາກຄະແນນເຕັມ 20 ຄິດເປັນຈັກ ສ່ວນຮ້ອຍ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
                   <span>{"ເງິນ 15,000 ກີບ ຈາກເງິນທັງໝົດ 75,000 ກີບ ຄິດເປັນຈັກ ສ່ວນຮ້ອຍ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
                   <span>{"ນັກຮຽນຍິງ 15 ຄົນ ໃນຫ້ອງທີ່ມີນັກຮຽນທັງໝົດ 30 ຄົນ ຄິດເປັນຈັກ ສ່ວນຮ້ອຍ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
                   <span>{"ໝາກໄມ້ເນົ່າ 3 ໜ່ວຍ ຈາກໝາກໄມ້ທັງໝົດ 50 ໜ່ວຍ ຄິດເປັນຈັກ ສ່ວນຮ້ອຍ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
                   <span>{"ເງິນ 120,000 ກີບ ຈາກເງິນທັງໝົດ 80,000 ກີບ ຄິດເປັນຈັກ ສ່ວນຮ້ອຍ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
               </div>
             </div>
@@ -197,9 +197,9 @@ export const unit42Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ເສື້ອໂຕໜຶ່ງລາຄາປົກກະຕິ 80,000 ກີບ. ທາງຮ້ານຕິດປ້າຍຫຼຸດລາຄາ 20%. ຖາມວ່າລາຄາຂາຍຕົວຈິງຫຼັງຫຼຸດແລ້ວແມ່ນຈັກ ກີບ?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: ລາຄາຂາຍແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
               <span>{"ກີບ"}</span>
             </div>
           </div>
@@ -215,9 +215,9 @@ export const unit42Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ຄອມພິວເຕີເຄື່ອງໜຶ່ງລາຄາ 4,000,000 ກີບ, ຕ້ອງເສຍພາສີມູນຄ່າເພີ່ມ (VAT) 10%. ຖາມວ່າລາຄາສຸດທ້າຍທີ່ຕ້ອງຈ່າຍທັງໝົດແມ່ນຈັກ ກີບ?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: ລາຄາສຸດທ້າຍແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
               <span>{"ກີບ"}</span>
             </div>
           </div>
@@ -236,9 +236,9 @@ export const unit42Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ໝູ່ບ້ານແຫ່ງໜຶ່ງມີປະຊາກອນໃນປີກາຍນີ້ 1,200 ຄົນ. ມາຮອດປີນີ້ ປະຊາກອນເພີ່ມຂຶ້ນ 5%. ຖາມວ່າປີນີ້ໝູ່ບ້ານນີ້ມີປະຊາກອນທັງໝົດຈັກ ຄົນ?"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ປີນີ້ມີປະຊາກອນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
             <span>{"ຄົນ"}</span>
           </div>
         </div>
@@ -254,9 +254,9 @@ export const unit42Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(2) ໃນຫ້ອງຮຽນໜຶ່ງມີນັກຮຽນທັງໝົດ 40 ຄົນ, ມີນັກຮຽນສອບເສັງຜ່ານວິຊາຄະນິດສາດ 36 ຄົນ. ຖາມວ່ານັກຮຽນທີ່ສອບເສັງຜ່ານຄິດເປັນຈັກສ່ວນຮ້ອຍ (%) ຂອງນັກຮຽນທັງໝົດ?"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ຄິດເປັນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             <span>{"ສ່ວນຮ້ອຍ (%)"}</span>
           </div>
         </div>

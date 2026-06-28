@@ -76,34 +76,34 @@ export const unit41Data: UnitData = {
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
                   <span>{"ຖ້າ 𝑥 = 4 ➔ 𝑦 = 5. ສຳປະສິດພົວພັນປີ້ນ k (k = 𝑥 × 𝑦) ແມ່ນເທົ່າໃດ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
                   <span>{"ຖ້າ 𝑥 = 3 ➔ 𝑦 = 8. ສຳປະສິດພົວພັນປີ້ນ k ແມ່ນເທົ່າໃດ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
                   <span>{"ຖ້າ 𝑥 = 10 ➔ 𝑦 = 2.5. ສຳປະສິດພົວພັນປີ້ນ k ແມ່ນເທົ່າໃດ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
                   <span>{"ຖ້າ 𝑥 = -2 ➔ 𝑦 = -6. ສຳປະສິດພົວພັນປີ້ນ k ແມ່ນເທົ່າໃດ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
                   <span>{"ຖ້າ 𝑥 = 12 ➔ 𝑦 = 0.5. ສຳປະສິດພົວພັນປີ້ນ k ແມ່ນເທົ່າໃດ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
               </div>
             </div>
@@ -141,34 +141,34 @@ export const unit41Data: UnitData = {
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
                   <span>{"ຈາກສົມຜົນ 𝑥𝑦 = 20. ຖ້າ 𝑥 = 2, 𝑦 ຈະເທົ່າກັບຈັກ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
                   <span>{"ຈາກສົມຜົນ 𝑥𝑦 = 24. ຖ້າ 𝑥 = 8, 𝑦 ຈະເທົ່າກັບຈັກ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
                   <span>{"ຈາກສົມຜົນ 𝑥𝑦 = 36. ຖ້າ 𝑥 = 4, 𝑦 ຈະເທົ່າກັບຈັກ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
                   <span>{"ຈາກສົມຜົນ 𝑥𝑦 = 50. ຖ້າ 𝑥 = 10, 𝑦 ຈະເທົ່າກັບຈັກ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
                   <span>{"ຈາກສົມຜົນ 𝑥𝑦 = 15. ຖ້າ 𝑥 = 5, 𝑦 ຈະເທົ່າກັບຈັກ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
               </div>
             </div>
@@ -190,9 +190,9 @@ export const unit41Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຖ້າ 𝑥 ແລະ 𝑦 ພົວພັນປີ້ນກັນ. ຖ້າ 𝑥 = 3 ➔ 𝑦 = 8. ຖ້າ 𝑥 = 6 ➔ 𝑦 = a. ຈົ່ງຊອກຫາຄ່າຂອງ a. (3 × 8 = 6 × a)"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: a ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             </div>
           </div>
         )
@@ -207,9 +207,9 @@ export const unit41Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈາກສົມຜົນພົວພັນປີ້ນ 𝑥𝑦 = 48. ຖ້າ 𝑦 = 12, ຄ່າຂອງ 𝑥 ຈະແມ່ນເທົ່າໃດ?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: 𝑥 ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             </div>
           </div>
         )
@@ -227,9 +227,9 @@ export const unit41Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຈຳນວນເດັກນ້ອຍ (𝑥) ແລະ ເຂົ້າໜົມທີ່ແຕ່ລະຄົນໄດ້ຮັບ (𝑦) ພົວພັນປີ້ນກັນ. ຖ້າມີເດັກນ້ອຍ 4 ຄົນ, ແຕ່ລະຄົນຈະໄດ້ຮັບເຂົ້າໜົມ 6 ຕອນ. ຖ້າມີເດັກນ້ອຍ 8 ຄົນ, ແຕ່ລະຄົນຈະໄດ້ຮັບເຂົ້າໜົມຈັກຕອນ?"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ໄດ້ຮັບຄົນລະ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             <span>{"ຕອນ"}</span>
           </div>
         </div>
@@ -245,9 +245,9 @@ export const unit41Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ເວລາເດີນທາງ (𝑦) ພົວພັນປີ້ນກັບຄວາມໄວຂອງລົດ (𝑥). ຖ້າຂີ່ລົດດ້ວຍຄວາມໄວ 60 km/h ຈະໃຊ້ເວລາ 2 ຊົ່ວໂມງ. ຖ້າຂີ່ດ້ວຍຄວາມໄວ 80 km/h ຈະໃຊ້ເວລາຈັກຊົ່ວໂມງ? (ຕອບເປັນທົດສະນິຍົມ)"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ໃຊ້ເວລາ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             <span>{"ຊົ່ວໂມງ"}</span>
           </div>
         </div>

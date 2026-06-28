@@ -76,34 +76,34 @@ export const unit19Data: UnitData = {
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "18px", padding: "8px 0" }}>
                 {/* 5 Questions */}
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
                   <span className="math">{"5𝑥 + 15 = 5(𝑥 + ?)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
                   <span className="math">{"8a - 12 = 4(?a - 3)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
                   <span className="math">{"3𝑦 + 9 = 3(𝑦 + ?)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
                   <span className="math">{"10m - 25 = 5(2m - ?)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
                   <span className="math">{"6a + 18b = 6(a + ?b)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
               </div>
             </div>
@@ -148,34 +148,34 @@ export const unit19Data: UnitData = {
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "18px", padding: "8px 0" }}>
                 {/* 5 Questions */}
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
                   <span className="math">{"3x² - 6𝑥 = 3𝑥(𝑥 - ?)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
                   <span className="math">{"a² + 2a = a(a + ?)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
                   <span className="math">{"𝑥³ - 5x² = 𝑥²(𝑥 - ?)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
                   <span className="math">{"a²b + ab² = ab(a + ?)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
                   <span className="math">{"4x²𝑦 - 8xy = 4xy(𝑥 - ?)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
               </div>
             </div>
@@ -197,9 +197,9 @@ export const unit19Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງແຍກສ່ວນຄູນຂອງສຳນວນ d = 𝑥(a + b) + 𝑦(a + b) ໃຫ້ເປັນຮູບຮ່າງ (a + b)(𝑥 + ?)"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: ຕົວລັບ ? ແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
             </div>
           </div>
         )
@@ -214,9 +214,9 @@ export const unit19Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ມີແຜ່ນໂລຫະຮູບຈະຕຸລັດຍາວ 𝑥 cm, ຖືກຕັດຮູວົງມົນທີ່ມີລັດສະໝີ r. ສຳນວນເນື້ອທີ່ຍັງເຫຼືອແມ່ນ S = 𝑥² - πr². ຖ້າ r = 𝑥/2, ຈົ່ງແຍກສ່ວນຄູນສຳນວນ S ໃຫ້ເປັນຮູບ 𝑥²(1 - π/?)"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: ຈຳນວນຖ້ວນ ? ຂອງພູດແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             </div>
           </div>
         )
@@ -234,9 +234,9 @@ export const unit19Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຈົ່ງແຍກສ່ວນຄູນຂອງສຳນວນ 5x³ - 20𝑥 = 5𝑥(𝑥² - ?)"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ຈຳນວນຖ້ວນ ? ແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
           </div>
         </div>
       )
@@ -254,9 +254,9 @@ export const unit19Data: UnitData = {
               <Fraction num="𝑥² + 3𝑥" den="𝑥" /> {" = 𝑥 + ?"}
             </span>
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ຈຳນວນຖ້ວນ ? ແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
           </div>
         </div>
       )

@@ -69,38 +69,38 @@ export const unit31Data: UnitData = {
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
                   <span>{"ຮູບຄາງໝູມີສອງຂ້າງພື້ນຂະໜານກັນ. ມຸມຕິດຂ້າງດຽວກັນ (A ແລະ D) ບວກກັນເທົ່າກັບຈັກອົງສາ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"°"}</span>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
                   <span>{"ໃນຮູບຄາງໝູ ABCD (AB // CD), ຖ້າມຸມ A = 110°. ມຸມ D ຈະເທົ່າກັບຈັກອົງສາ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"°"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
                   <span>{"ໃນຮູບຄາງໝູ ABCD, ຖ້າມຸມ B = 80°. ມຸມ C ຈະເທົ່າກັບຈັກອົງສາ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"°"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
                   <span>{"ໃນຮູບຄາງໝູສະເໝີ, ສອງມຸມພື້ນເທົ່າກັນ (D = C). ຖ້າມຸມ D = 60°, ມຸມ C ຈະເທົ່າກັບຈັກອົງສາ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"°"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
                   <span>{"ໃນຮູບຄາງໝູສະເໝີ ABCD (AB // CD), ຖ້າມຸມ A = 120°. ມຸມ B ທີ່ຢູ່ຕິດກັນຈະເທົ່າກັບຈັກອົງສາ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"°"}</span>
                 </div>
               </div>
@@ -164,38 +164,38 @@ export const unit31Data: UnitData = {
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
                   <span>{"ຖ້າພື້ນນ້ອຍ = 6 cm, ພື້ນໃຫຍ່ = 10 cm, ລວງສູງ = 5 cm. ເນື້ອທີ່ຂອງຮູບຄາງໝູຈະແມ່ນຈັກ cm²?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm²"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
                   <span>{"ຖ້າພື້ນນ້ອຍ = 8 cm, ພື້ນໃຫຍ່ = 12 cm, ລວງສູງ = 6 cm. ເນື້ອທີ່ຂອງຮູບຄາງໝູຈະແມ່ນຈັກ cm²?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm²"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
                   <span>{"ຖ້າພື້ນນ້ອຍ = 5 cm, ພື້ນໃຫຍ່ = 9 cm, ລວງສູງ = 4 cm. ເນື້ອທີ່ຂອງຮູບຄາງໝູຈະແມ່ນຈັກ cm²?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm²"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
                   <span>{"ຖ້າພື້ນນ້ອຍ = 7 cm, ພື້ນໃຫຍ່ = 13 cm, ລວງສູງ = 8 cm. ເນື້ອທີ່ຂອງຮູບຄາງໝູຈະແມ່ນຈັກ cm²?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm²"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
                   <span>{"ຖ້າພື້ນນ້ອຍ = 4.5 cm, ພື້ນໃຫຍ່ = 7.5 cm, ລວງສູງ = 4 cm. ເນື້ອທີ່ຂອງຮູບຄາງໝູຈະແມ່ນຈັກ cm²?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm²"}</span>
                 </div>
               </div>
@@ -218,9 +218,9 @@ export const unit31Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຖ້າເນື້ອທີ່ຂອງຮູບຄາງໝູແມ່ນ 45 cm², ມີພື້ນນ້ອຍ = 7 cm ແລະ ພື້ນໃຫຍ່ = 11 cm. ຈົ່ງຊອກຫາລວງສູງ h ຂອງຮູບຄາງໝູນີ້."}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: h ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
               <span>{"cm"}</span>
             </div>
           </div>
@@ -236,9 +236,9 @@ export const unit31Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຖ້າເນື້ອທີ່ຮູບຄາງໝູແມ່ນ 36 cm², ມີລວງສູງ h = 4 cm, ພື້ນນ້ອຍ = 6 cm. ຈົ່ງຊອກຫາຄວາມຍາວພື້ນໃຫຍ່ 𝑥 ຂອງຮູບຄາງໝູນີ້."}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: 𝑥 ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
               <span>{"cm"}</span>
             </div>
           </div>
@@ -257,9 +257,9 @@ export const unit31Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ໃນຮູບຄາງໝູສະເໝີ ABCD, ຖ້າເສັ້ນເນັ່ງຈອມ AC = 9 cm. ເສັ້ນເນັ່ງຈອມ BD ຈະຍາວຈັກ cm? (ຄຸນລັກສະນະ: ສອງເສັ້ນເນັ່ງຈອມຂອງຮູບຄາງໝູສະເໝີແມ່ນເທົ່າກັນ)"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: BD ="}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             <span>{"cm"}</span>
           </div>
         </div>
@@ -275,9 +275,9 @@ export const unit31Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຮູບຄາງໝູສະເໝີໜຶ່ງມີພື້ນນ້ອຍ = 6 cm, ພື້ນໃຫຍ່ = 12 cm, ແລະ ມີສອງຂ້າງທີ່ບໍ່ຂະໜານຍາວ AD = BC = 5 cm. ຈົ່ງຊອກຫາລວງຮອບທັງໝົດຂອງມັນ."}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ລວງຮອບແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             <span>{"cm"}</span>
           </div>
         </div>

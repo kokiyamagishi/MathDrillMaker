@@ -213,9 +213,9 @@ export const unit22Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ລົດ A ແລ່ນດ້ວຍຄວາມໄວ 60 km/h ແລະ ລົດ B ແລ່ນດ້ວຍຄວາມໄວ 40 km/h ອອກເດີນທາງພ້ອມກັນຈາກສອງຕົວເມືອງທີ່ຫ່າງກັນ 200 km. ຖາມວ່າອີກຈັກຊົ່ວໂມງ (𝑥 ຊົ່ວໂມງ) ລົດທັງສອງຈຶ່ງຈະແລ່ນສວນທາງກັນພໍດີ? (ສົມຜົນ: 60𝑥 + 40𝑥 = 200)"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: ຈະສວນທາງກັນໃນອີກ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
               <span>{"ຊົ່ວໂມງ"}</span>
             </div>
           </div>
@@ -231,9 +231,9 @@ export const unit22Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຫ້ອງຮຽນໜຶ່ງມີອັດຕາສ່ວນລະຫວ່າງ ນັກຮຽນຍິງ ແລະ ນັກຮຽນຊາຍ ແມ່ນ 3:2. ຖ້ານັກຮຽນຍິງມີຫຼາຍກວ່ານັກຮຽນຊາຍ 6 ຄົນ. ຈົ່ງຊອກຫາຈຳນວນນັກຮຽນຊາຍທັງໝົດ. (ສົມຜົນ: 3𝑥 - 2𝑥 = 6 ➔ 𝑥 = 6)"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: ຈຳນວນນັກຮຽນຊາຍແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
               <span>{"ຄົນ"}</span>
             </div>
           </div>
@@ -252,9 +252,9 @@ export const unit22Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ນາງ ແດງ ມີເງິນຫຼາຍກວ່ານາງ ດຳ 15,000 ກີບ, ຜົນລວມເງິນຂອງທັງສອງແມ່ນ 65,000 ກີບ. ຖາມວ່ານາງ ດຳ ມີເງິນຈັກກີບ?"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ນາງ ດຳ ມີເງິນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             <span>{"ກີບ"}</span>
           </div>
         </div>
@@ -270,9 +270,9 @@ export const unit22Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຮູບສາມແຈທ່ຽງໜຶ່ງມີລວງຮອບ 32 cm. ຂ້າງພື້ນຍາວ 12 cm, ຈົ່ງຊອກຫາລວງຍາວຂອງຂ້າງທ່ຽງແຕ່ລະຂ້າງ (𝑥 cm). (ສົມຜົນ: 2𝑥 + 12 = 32)"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ຂ້າງທ່ຽງຍາວ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             <span>{"cm"}</span>
           </div>
         </div>

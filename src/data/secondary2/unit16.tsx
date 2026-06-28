@@ -218,9 +218,9 @@ export const unit16Data: UnitData = {
                 <Fraction num="(3³)² × 3⁴" den="3⁵" /> {" = 3^?"}
               </span>
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: ຕົວຊີ້ກຳລັງ ? ແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
             </div>
           </div>
         )
@@ -238,9 +238,9 @@ export const unit16Data: UnitData = {
                 {"(2ˣ)³ = 64"}
               </span>
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: 𝑥 ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             </div>
           </div>
         )
@@ -261,9 +261,9 @@ export const unit16Data: UnitData = {
               {"("} <Fraction num="2" den="3" /> {")² × 9 ="}
             </span>
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ຜົນຄິດໄລ່ແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
           </div>
         </div>
       )
@@ -278,9 +278,9 @@ export const unit16Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ສຳນວນ "} <span className="math">{"(a³)² ÷ a⁴"}</span> {" ເທົ່າກັບເທົ່າໃດ? (ຂຽນໃນຮູບເລກກຳລັງດຽວ)"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ຜົນຄັດຈ້ອນແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
           </div>
         </div>
       )

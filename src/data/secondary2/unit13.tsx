@@ -79,7 +79,7 @@ export const unit13Data: UnitData = {
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
                     <span>{"ຕອບ: "}</span>
-                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                     <span>{"cm"}</span>
                   </div>
                 </div>
@@ -91,7 +91,7 @@ export const unit13Data: UnitData = {
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
                     <span>{"ຕອບ: "}</span>
-                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                   </div>
                 </div>
 
@@ -102,7 +102,7 @@ export const unit13Data: UnitData = {
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
                     <span>{"ຕອບ: "}</span>
-                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                   </div>
                 </div>
 
@@ -113,7 +113,7 @@ export const unit13Data: UnitData = {
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
                     <span>{"ຕອບ: "}</span>
-                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                     <span>{"cm"}</span>
                   </div>
                 </div>
@@ -125,7 +125,7 @@ export const unit13Data: UnitData = {
                   </p>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", paddingLeft: "24px" }}>
                     <span>{"ຕອບ: "}</span>
-                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                    <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                   </div>
                 </div>
               </div>
@@ -172,37 +172,37 @@ export const unit13Data: UnitData = {
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "18px", padding: "8px 0" }}>
                 {/* 5 Questions */}
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
                   <span>{"ຖ້າຮູບສາມແຈເກົ່າມີເນື້ອທີ່ 15 cm², ຮູບເຄິ່ງຄືຂອງມັນຈະມີເນື້ອທີ່ຈັກ cm²?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm²"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
                   <span>{"ຖ້າມຸມ A ໃນຮູບຕົ້ນແບບເທົ່າກັບ 60°, ມຸມ A' ທີ່ເຄິ່ງຄືກັນຈະມີຂະໜາດຈັກອົງສາ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ອົງສາ"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
                   <span>{"ຖ້າລັດສະໝີວົງມົນ A ແມ່ນ 3 cm, ວົງມົນເຄິ່ງຄື A' ຈະມີເນື້ອທີ່ເທົ່າກັນກັບ A ຫຼື ບໍ່?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
                   <span>{"ຖ້າຮູບສີ່ແຈສາກຕົ້ນແບບມີເນື້ອທີ່ 24 cm², ຮູບເຄິ່ງຄືຂອງມັນຈະມີເນື້ອທີ່ຈັກ cm²?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm²"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
                   <span>{"ຖ້າມຸມ B' ຂອງຮູບສາມແຈເຄິ່ງຄືແມ່ນ 90°, ມຸມ B ຂອງຮູບຕົ້ນແບບຈະແມ່ນຈັກອົງສາ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ອົງສາ"}</span>
                 </div>
               </div>
@@ -225,9 +225,9 @@ export const unit13Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຖ້າເສັ້ນຊື່ d1 ແລະ d2 ຂະໜານກັນ, ຮູບເຄິ່ງຄື d1' ແລະ d2' ຂອງພວກມັນ ທຽບໃສ່ເມັດ O ຈະຂະໜານກັນ ຫຼື ບໍ່? (ຕອບ ຂະໜານ ຫຼື ບໍ່ຂະໜານ)"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ:"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             </div>
           </div>
         )
@@ -242,9 +242,9 @@ export const unit13Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຮູບສາມແຈ ABC ມີເນື້ອທີ່ 8 cm², ຖ້າຮູບສາມແຈເຄິ່ງຄື A'B'C' ຖືກແຕ້ມຂຶ້ນ. ຖາມວ່າເນື້ອທີ່ລວມທັງໝົດຂອງສອງຮູບສາມແຈນີ້ແມ່ນຈັກ cm²?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: ເນື້ອທີ່ລວມແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
               <span>{"cm²"}</span>
             </div>
           </div>
@@ -263,9 +263,9 @@ export const unit13Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຖ້າມຸມ ABC ແມ່ນມຸມສາກ (90°), ມຸມເຄິ່ງຄື A'B'C' ຂອງມັນ ຈະແມ່ນມຸມປະເພດໃດ? (ຕອບ ມຸມແຫຼມ, ມຸມສາກ ຫຼື ມຸມຫວາກ)"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
           </div>
         </div>
       )
@@ -280,9 +280,9 @@ export const unit13Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ວົງມົນ A ມີລວງຮອບ 20 cm, ວົງມົນເຄິ່ງຄື A' ຈະມີລວງຮອບຈັກ cm?"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ລວງຮອບແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             <span>{"cm"}</span>
           </div>
         </div>

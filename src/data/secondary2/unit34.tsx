@@ -68,38 +68,38 @@ export const unit34Data: UnitData = {
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
                   <span>{"ຮູບສີ່ແຈສາກມີຂ້າງກວ້າງ 4 cm ແລະ ຍາວ 6 cm. ເນື້ອທີ່ຂອງມັນແມ່ນຈັກ cm²?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm²"}</span>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
                   <span>{"ຮູບສີ່ແຈສາກມີຂ້າງກວ້າງ 4 cm ແລະ ຍາວ 6 cm. ລວງຮອບຂອງມັນແມ່ນຈັກ cm?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
                   <span>{"ຮູບຈະຕຸລັດມີຄວາມຍາວຂ້າງ 5 cm. ເນື້ອທີ່ຂອງມັນແມ່ນຈັກ cm²?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm²"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
                   <span>{"ຮູບຈະຕຸລັດມີຄວາມຍາວຂ້າງ 5 cm. ລວງຮອບຂອງມັນແມ່ນຈັກ cm?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
                   <span>{"ຮູບສີ່ແຈສາກມີລວງຮອບ 30 cm, ຖ້າມີຂ້າງກວ້າງ 5 cm. ຂ້າງຍາວຂອງມັນຈະແມ່ນຈັກ cm?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm"}</span>
                 </div>
               </div>
@@ -141,38 +141,38 @@ export const unit34Data: UnitData = {
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
                   <span>{"ຮູບດອກຈັນມີເສັ້ນເນັ່ງຈອມ 6 cm ແລະ 8 cm. ເນື້ອທີ່ຂອງມັນແມ່ນຈັກ cm²?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm²"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
                   <span>{"ຮູບດອກຈັນມີເສັ້ນເນັ່ງຈອມ 10 cm ແລະ 12 cm. ເນື້ອທີ່ຂອງມັນແມ່ນຈັກ cm²?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm²"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
                   <span>{"ຖ້າຮູບດອກຈັນມີຂ້າງຍາວ 5 cm. ລວງຮອບທັງໝົດຂອງມັນຈະແມ່ນຈັກ cm?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
                   <span>{"ຖ້າຮູບດອກຈັນມີເນື້ອທີ່ 15 cm² ໂດຍມີເສັ້ນເນັ່ງຈອມໜຶ່ງຍາວ 5 cm. ເສັ້ນເນັ່ງຈອມທີສອງຈະຍາວຈັກ cm?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
                   <span>{"ຖ້າເນື້ອທີ່ຮູບຈະຕຸລັດແມ່ນ 100 cm². ລວງຮອບຂອງມັນຈະແມ່ນຈັກ cm?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"cm"}</span>
                 </div>
               </div>
@@ -195,9 +195,9 @@ export const unit34Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຮູບຈະຕຸລັດໜຶ່ງມີຂ້າງຍາວ 6 cm. ຮູບສີ່ແຈສາກໜຶ່ງມີເນື້ອທີ່ເທົ່າກັບເນື້ອທີ່ຮູບຈະຕຸລັດນັ້ນ. ຖ້າຮູບສີ່ແຈສາກມີຂ້າງກວ້າງ 4 cm, ຈົ່ງຊອກຫາຄວາມຍາວຂ້າງ 𝑥. (6² = 4𝑥)"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: 𝑥 ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
               <span>{"cm"}</span>
             </div>
           </div>
@@ -213,9 +213,9 @@ export const unit34Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຖ້າລວງຮອບຂອງຮູບຈະຕຸລັດທີ່ມີຂ້າງ 8 cm ແມ່ນເທົ່າກັບລວງຮອບຂອງຮູບດອກຈັນ. ຈົ່ງຊອກຫາຄວາມຍາວຂ້າງ 𝑦 ຂອງຮູບດອກຈັນນັ້ນ."}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: 𝑦 ="}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
               <span>{"cm"}</span>
             </div>
           </div>
@@ -234,9 +234,9 @@ export const unit34Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຫ້ອງຮຽນຮູບສີ່ແຈສາກມີຂະໜາດ 6 m × 8 m. ຖ້າຄ່າປູພື້ນລາຄາ 10,000 ກີບຕໍ່ຕາແມັດ (m²). ຖາມວ່າຈະຕ້ອງຈ່າຍເງິນທັງໝົດຈັກກີບເພື່ອປູພື້ນຫ້ອງນີ້?"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ຕ້ອງຈ່າຍເງິນທັງໝົດ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             <span>{"ກີບ"}</span>
           </div>
         </div>
@@ -252,9 +252,9 @@ export const unit34Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ໃນຮູບດອກຈັນ ABCD ທີ່ມີເມັດຕັດກັນ O. ຖ້າສ່ວນແບ່ງເຄິ່ງເສັ້ນເນັ່ງຈອມ AO = 3 cm, BO = 4 cm (ເສັ້ນເນັ່ງຈອມເຕັມແມ່ນ AC = 6, BD = 8). ຈົ່ງຊອກຫາເນື້ອທີ່ຂອງຮູບດອກຈັນນີ້."}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ເນື້ອທີ່ແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             <span>{"cm²"}</span>
           </div>
         </div>

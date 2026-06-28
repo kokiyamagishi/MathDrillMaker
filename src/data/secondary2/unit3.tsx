@@ -89,44 +89,44 @@ export const unit3Data: UnitData = {
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px 24px", padding: "8px 0" }}>
                 {/* 5 Questions */}
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="36" den="30" /> {" ="}
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="24" den="36" /> {" ="}
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="15" den="25" /> {" ="}
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="45" den="60" /> {" ="}
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="56" den="64" /> {" ="}
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
               </div>
             </div>
@@ -194,44 +194,44 @@ export const unit3Data: UnitData = {
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px 24px", padding: "8px 0" }}>
                 {/* 5 Questions */}
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
                     {"ພູດຮ່ວມຂອງ "} <Fraction num="3" den="8" /> {" ແລະ "} <Fraction num="5" den="24" /> {" ="}
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
                     {"ພູດຮ່ວມຂອງ "} <Fraction num="1" den="4" /> {" ແລະ "} <Fraction num="5" den="6" /> {" ="}
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
                     {"ພູດຮ່ວມຂອງ "} <Fraction num="2" den="3" /> {" ແລະ "} <Fraction num="1" den="5" /> {" ="}
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
                     {"ພູດຮ່ວມຂອງ "} <Fraction num="5" den="12" /> {" ແລະ "} <Fraction num="7" den="18" /> {" ="}
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
                   <span style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
                     {"ພູດຮ່ວມຂອງ "} <Fraction num="3" den="10" /> {" ແລະ "} <Fraction num="4" den="15" /> {" ="}
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
               </div>
             </div>
@@ -275,11 +275,11 @@ export const unit3Data: UnitData = {
                 <span style={{ fontSize: "1.1rem" }}>{"ຂວດໃບທີ 2"}</span>
               </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: ຂວດໃບທີ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "50px", height: "30px", verticalAlign: "middle" }}></span>
               <span>{"ມີນ້ຳຫຼາຍກວ່າ ແລະ ຫຼາຍກວ່າ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
               <span>{"L"}</span>
             </div>
           </div>
@@ -298,9 +298,9 @@ export const unit3Data: UnitData = {
                 <Fraction num={<span>{"120"}</span>} den={<span>{"180"}</span>} />
               </span>
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: ເລກສ່ວນຂັ້ນຕໍ່າແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
             </div>
           </div>
         )
@@ -318,9 +318,9 @@ export const unit3Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ທ້າວ ສົມພອນ ເສຍຄະແນນໄດ້ "} <Fraction num="18" den="24" /> {" ຂອງຄະແນນເຕັມ, ນາງ ວັນເພັງ ເສຍໄດ້ "} <Fraction num="14" den="16" /> {" ຂອງຄະແນນເຕັມ. ຖາມວ່າໃຜໄດ້ອັດຕາສ່ວນຄະແນນສູງກວ່າກັນ? (ຄໍາແນະນໍາ: ຄັດຈ້ອນເລກສ່ວນທັງສອງກ່ອນສົມທຽບ)"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ຜູ້ທີ່ໄດ້ຄະແນນອັດຕາສ່ວນສູງກວ່າແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
           </div>
         </div>
       )
@@ -338,9 +338,9 @@ export const unit3Data: UnitData = {
               <Fraction num="1" den="4" /> {", "} <Fraction num="2" den="5" /> {" ແລະ "} <Fraction num="3" den="10" />
             </span>
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ພູດຮ່ວມແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
           </div>
         </div>
       )

@@ -82,56 +82,56 @@ export const unit4Data: UnitData = {
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px 24px", padding: "8px 0" }}>
                 {/* 5 Questions */}
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="3" den="5" /> 
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "30px", verticalAlign: "middle" }}></span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="2" den="5" />
                   </span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="4" den="7" /> 
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "30px", verticalAlign: "middle" }}></span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="6" den="7" />
                   </span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="7" den="10" /> 
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "30px", verticalAlign: "middle" }}></span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="9" den="10" />
                   </span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="8" den="11" /> 
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "30px", verticalAlign: "middle" }}></span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="5" den="11" />
                   </span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="11" den="15" /> 
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "30px", verticalAlign: "middle" }}></span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="13" den="15" />
                   </span>
@@ -210,56 +210,56 @@ export const unit4Data: UnitData = {
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px 24px", padding: "8px 0" }}>
                 {/* 5 Questions */}
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="3" den="4" /> 
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "30px", verticalAlign: "middle" }}></span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="5" den="6" />
                   </span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="2" den="5" /> 
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "30px", verticalAlign: "middle" }}></span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="1" den="2" />
                   </span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="3" den="8" /> 
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "30px", verticalAlign: "middle" }}></span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="1" den="3" />
                   </span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="7" den="10" /> 
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "30px", verticalAlign: "middle" }}></span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="2" den="3" />
                   </span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="5" den="12" /> 
                   </span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "30px", verticalAlign: "middle" }}></span>
                   <span className="math" style={{ display: "inline-flex", alignItems: "center" }}>
                     <Fraction num="3" den="8" />
                   </span>
@@ -297,9 +297,9 @@ export const unit4Data: UnitData = {
                 <text x="75" y="80" fill="#2E7D32" fontSize="10" fontWeight="bold">{"ນາງ ນາ"}</text>
               </svg>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: ຜູ້ທີ່ກິນເຄັກຫຼາຍທີ່ສຸດແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             </div>
           </div>
         )
@@ -341,9 +341,9 @@ export const unit4Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ປຶ້ມສາມຫົວທີ່ມີລາຄາທີ່ແຕກຕ່າງກັນ. ປຶ້ມຫົວ A ຫຼຸດລາຄາໄປ "} <Fraction num="1" den="3" /> {" ຂອງລາຄາເກົ່າ, ປຶ້ມຫົວ B ຫຼຸດລາຄາໄປ "} <Fraction num="2" den="5" /> {" ຂອງລາຄາເກົ່າ, ແລະ ປຶ້ມຫົວ C ຫຼຸດລາຄາໄປ "} <Fraction num="3" den="8" /> {" ຂອງລາຄາເກົ່າ. ຖາມວ່າປຶ້ມຫົວໃດຫຼຸດລາຄາຫຼາຍທີ່ສຸດ?"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ປຶ້ມຫົວທີ່ຫຼຸດລາຄາຫຼາຍທີ່ສຸດແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
           </div>
         </div>
       )
@@ -358,9 +358,9 @@ export const unit4Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ท້າວ ແດງ ແລ່ນໄດ້ "} <Fraction num="5" den="6" /> {" ຂອງໄລຍະທາງທັງໝົດ, ນາງ ດຳ ແລ່ນໄດ້ "} <Fraction num="4" den="5" /> {" ຂອງໄລຍະທາງທັງໝົດ. ຖາມວ່າໃຜແລ່ນໄດ້ໄລຍະທາງໄກກວ່າ?"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ຜູ້ທີ່ແລ່ນໄດ້ໄກກວ່າແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
           </div>
         </div>
       )

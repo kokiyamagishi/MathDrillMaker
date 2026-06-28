@@ -79,34 +79,34 @@ export const unit43Data: UnitData = {
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
                   <span>{"ແຜນທີ່ມາດຕາສ່ວນ 1 : 1,000, ຖ້າແທກ d = 5 cm ➔ ໄລຍະຫ່າງຕົວຈິງແມ່ນຈັກ ແມັດ (m)?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
                   <span>{"ແຜນທີ່ມາດຕາສ່ວນ 1 : 50,000, ຖ້າແທກ d = 4 cm ➔ ໄລຍະຫ່າງຕົວຈິງແມ່ນຈັກ ກິໂລແມັດ (km)?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
                   <span>{"ແຜນທີ່ມາດຕາສ່ວນ 1 : 200,000, ຖ້າແທກ d = 8 cm ➔ ໄລຍະຫ່າງຕົວຈິງແມ່ນຈັກ ກິໂລແມັດ (km)?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
                   <span>{"ແຜນທີ່ມາດຕາສ່ວນ 1 : 2,500,000, ຖ້າແທກ d = 6 cm ➔ ໄລຍະຫ່າງຕົວຈິງແມ່ນຈັກ ກິໂລແມັດ (km)?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
                   <span>{"ແຜນຜັງເຮືອນມາດຕາສ່ວນ 1 : 100, ຖ້າແທກ d = 12 cm ➔ ໄລຍະຫ່າງຕົວຈິງແມ່ນຈັກ ແມັດ (m)?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
               </div>
             </div>
@@ -153,34 +153,34 @@ export const unit43Data: UnitData = {
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
                   <span>{"ໄລຍະຫ່າງຕົວຈິງ 30 m, ແຕ້ມໃນແຜນຜັງມາດຕາສ່ວນ 1 : 500 ຈະຍາວຈັກ cm?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
                   <span>{"ໄລຍະຫ່າງຕົວຈິງ 8 km, ແຕ້ມໃນແຜນທີ່ມາດຕາສ່ວນ 1 : 100,000 ຈະຍາວຈັກ cm?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
                   <span>{"ໄລຍະຫ່າງຕົວຈິງ 40 km, ແຕ້ມໃນແຜນທີ່ມາດຕາສ່ວນ 1 : 500,000 ຈະຍາວຈັກ cm?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
                   <span>{"ໄລຍະຫ່າງຕົວຈິງ 150 km, ແຕ້ມໃນແຜນທີ່ມາດຕາສ່ວນ 1 : 1,000,000 ຈະຍາວຈັກ cm?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
                   <span>{"ຄວາມຍາວຫ້ອງຕົວຈິງ 9 m, ແຕ້ມໃນແຜນຜັງມາດຕາສ່ວນ 1 : 150 ຈະຍາວຈັກ cm?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                 </div>
               </div>
             </div>
@@ -202,9 +202,9 @@ export const unit43Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ໄລຍະຫ່າງຕົວຈິງລະຫວ່າງສອງເມືອງແມ່ນ 45 km, ແຕ່ໃນແຜນທີ່ແທກໄດ້ 9 cm. ຖາມວ່າມາດຕາສ່ວນຂອງແຜນທີ່ນີ້ແມ່ນ 1 : ຈັກ?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: 1 :"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             </div>
           </div>
         )
@@ -219,9 +219,9 @@ export const unit43Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"(2) ໃນແຜນຜັງມາດຕາສ່ວນ 1 : 200, ເດີນບ້ານຫຼັງໜຶ່ງເປັນຮູບສາມແຈສາກທີ່ມີຂະໜາດໃນແຜນຜັງແມ່ນ d_1 = 3 cm, d_2 = 4 cm. ຖາມວ່າເນື້ອທີ່ຕົວຈິງຂອງເດີນບ້ານນີ້ແມ່ນຈັກຕາແມັດ (m²)?"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: ເນື້ອທີ່ຕົວຈິງແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
               <span>{"ຕາແມັດ (m²)"}</span>
             </div>
           </div>
@@ -240,9 +240,9 @@ export const unit43Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ແຜນທີ່ທ່ອງທ່ຽວແຂວງຫຼວງພຣະບາງມີມາດຕາສ່ວນ 1 : 150,000. ຖ້າໄລຍະທາງຕົວຈິງຈາກຕົວເມືອງໄປຫານ້ຳຕົກຕາດກວາງຊີແມ່ນ 30 km. ຖາມວ່າໃນແຜນທີ່ນີ້ ໄລຍະທາງດັ່ງກ່າວຈະມີຄວາມຍາວຈັກ cm?"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ:"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             <span>{"cm"}</span>
           </div>
         </div>
@@ -258,9 +258,9 @@ export const unit43Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"(2) ຂົວມິດຕະພາບລາວ-ໄທແຫ່ງໜຶ່ງ ຖືກແຕ້ມໃນແຜນຜັງມາດຕາສ່ວນ 1 : 25,000 ໂດຍມີຄວາມຍາວໃນແຜນຜັງແມ່ນ 4.8 cm. ຖາມວ່າຄວາມຍາວຕົວຈິງຂອງຂົວແຫ່ງນີ້ແມ່ນຈັກ ແມັດ (m)?"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ຄວາມຍາວຕົວຈິງແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "30px", verticalAlign: "middle" }}></span>
             <span>{"ແມັດ (m)"}</span>
           </div>
         </div>

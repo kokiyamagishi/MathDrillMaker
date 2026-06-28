@@ -64,38 +64,38 @@ export const unit25Data: UnitData = {
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
                   <span>{"ທ້າວ ສົມພອນ ມີເງິນ 50,000 ກີບ. ລາວຊື້ປຶ້ມຫົວລະ 8,000 ກີບ. ລາວຈະຊື້ປຶ້ມໄດ້ຫຼາຍສຸດຈັກຫົວ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ຫົວ"}</span>
                 </div>
                 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
                   <span>{"ນາງ ມະລີ ມີເງິນ 100,000 ກີບ. ລາວຊື້ກະເປົາໜຶ່ງໃບລາຄາ 40,000 ກີບ ແລະ ຢາກຊື້ປາກກາຫົວລະ 12,000 ກີບ. ລາວຈະຊື້ປາກກາໄດ້ຫຼາຍສຸດຈັກກ້ານ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ກ້ານ"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
                   <span>{"ຫ້ອງຮຽນໜຶ່ງມີງົບປະມານບໍ່ເກີນ 80,000 ກີບ ເພື່ອຊື້ດອກໄມ້ປະດັບລາຄາ 15,000 ກີບຕໍ່ກະຖາງ. ພວກເຂົາຈະຊື້ໄດ້ຫຼາຍສຸດຈັກກະຖາງ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ກະຖາງ"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
                   <span>{"ທ້າວ ແດງ ມີເງິນ 60,000 ກີບ. ລາວຕ້ອງການຊື້ເຂົ້າໜົມຫໍ່ລະ 7,000 ກີບ ແລະ ໃຫ້ຍັງເຫຼືອເງິນຢ່າງໜ້ອຍ 10,000 ກີບ. ລາວຈະຊື້ເຂົ້າໜົມໄດ້ຫຼາຍສຸດຈັກຫໍ່?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ຫໍ່"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
                   <span>{"ຄອບຄົວໜຶ່ງມີເງິນ 150,000 ກີບ. ພວກເຂົາຊື້ຊີ້ນໝູລາຄາ 90,000 ກີບ ແລະ ຢາກຊື້ຜັກກາດມັດລະ 12,000 ກີບ. ພວກເຂົາຈະຊື້ຜັກກາດໄດ້ຫຼາຍສຸດຈັກມັດ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ມັດ"}</span>
                 </div>
               </div>
@@ -163,38 +163,38 @@ export const unit25Data: UnitData = {
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(1)"}</span>
                   <span>{"ຄະແນນເສັງ 3 ຄັ້ງທຳອິດຂອງ ທ້າວ ນ້ອຍ ແມ່ນ 7, 8, 8. ລາວຕ້ອງໄດ້ຄັ້ງທີ 4 ຢ່າງໜ້ອຍເທົ່າໃດ ເພື່ອໃຫ້ຄ່າສະເລ່ຍຢ່າງໜ້ອຍ 8 ຫຼັກ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ຄະແນນ"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(2)"}</span>
                   <span>{"ຄະແນນເສັງ 2 ຄັ້ງທຳອິດແມ່ນ 6 ແລະ 7. ຕ້ອງໄດ້ຄັ້ງທີ 3 ຢ່າງໜ້ອຍເທົ່າໃດ ເພື່ອໃຫ້ໄດ້ຄະແນນສະເລ່ຍຢ່າງໜ້ອຍ 7 ຫຼັກ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ຄະແນນ"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(3)"}</span>
                   <span>{"ຄະແນນເສັງ 3 ຄັ້ງທຳອິດແມ່ນ 15, 18, 16. ລາວຕ້ອງໄດ້ຄັ້ງທີ 4 ຢ່າງໜ້ອຍເທົ່າໃດ ເພື່ອໃຫ້ຄ່າສະເລ່ຍທັງໝົດຢ່າງໜ້ອຍ 17 ຄະແນນ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ຄະແນນ"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(4)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(4)"}</span>
                   <span>{"ຄະແນນເສັງ 3 ຄັ້ງທຳອິດແມ່ນ 8, 9, 7. ລາວຕ້ອງໄດ້ຄັ້ງທີ 4 ຢ່າງໜ້ອຍເທົ່າໃດ ເພື່ອໃຫ້ໄດ້ຄະແນນສະເລ່ยຢ່າງໜ້ອຍ 8.5 ຫຼັກ? (ຕອບເປັນທົດສະນິຍົມ)"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ຄະແນນ"}</span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-                  <span style={{ fontWeight: "bold" }}>{"(5)"}</span>
+                <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
+                  <span style={{ fontWeight: "bold", marginRight: "8px" }}>{"(5)"}</span>
                   <span>{"ນາງ ດີ ມີຄະແນນສະເລ່ຍ 4 ວິຊາແມ່ນ 8.25. ຖ້າເສັງວິຊາທີ 5, ລາວຕ້ອງໄດ້ຢ່າງໜ້ອຍເທົ່າໃດ ເພື່ອໃຫ້ຄະແນນສະເລ່ຍທັງໝົດຂຶ້ນຮອດ 8.5 ຫຼັກ?"}</span>
-                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+                  <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
                   <span>{"ຄະແນນ"}</span>
                 </div>
               </div>
@@ -217,9 +217,9 @@ export const unit25Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ບໍລິສັດ A ຄິດຄ່າເຊົ່າຄົງທີ່ 200,000 ກີບ ແລະ ບວກຕື່ມ 5,000 ກີບຕໍ່ກິໂລແມັດ. ບໍລິສັດ B ຄິດຄ່າເຊົ່າຄົງທີ່ 100,000 ກີບ ແລະ ບວກຕື່ມ 7,000 ກີບຕໍ່ກິໂລແມັດ. ຖ້າຢາກໃຫ້ບໍລິສັດ A ຖືກກວ່າບໍລິສັດ B, ໄລຍະທາງເດີນທາງຕ້ອງຫຼາຍກວ່າຈັກກິໂລແມັດ? (ຕັ້ງອະສົມຜົນ: 200000 + 5000𝑥 < 100000 + 7000𝑥)"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: ຕ້ອງເດີນທາງຫຼາຍກວ່າ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
               <span>{"ກິໂລແມັດ"}</span>
             </div>
           </div>
@@ -235,9 +235,9 @@ export const unit25Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຮູບສາມແຈສະເໝີໜຶ່ງມີຄວາມຍາວຂ້າງແມ່ນ "} <span className="math">{"𝑥"}</span> {" ຊັງຕີແມັດ. ຖ້າລວງຮອບຂອງຮູບສາມແຈນີ້ບໍ່ເກີນ 48 ຊັງຕີແມັດ, ແລ້ວຄວາມຍາວຂ້າງສູງສຸດຂອງມັນຈະແມ່ນເທົ່າໃດ? (ລວງຮອບ = 3𝑥)"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: ຂ້າງສູງສຸດແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
               <span>{"cm"}</span>
             </div>
           </div>
@@ -256,9 +256,9 @@ export const unit25Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ຄ່າບໍລິການສົ່ງເຄື່ອງແມ່ນ 15,000 ກີບ ສຳລັບ 1 ກິໂລກຣາມທຳອິດ ແລະ ບວກຕື່ມ 5,000 ກີບ ສຳລັບແຕ່ລະກິໂລກຣາມຖັດໄປ. ຖ້ານັກຮຽນມີງົບປະມານສົ່ງເຄື່ອງບໍ່ເກີນ 45,000 ກີບ. ຖາມວ່ານ້ຳໜັກເຄື່ອງຫຼາຍສຸດທີ່ສາມາດສົ່ງໄດ້ຈະແມ່ນຈັກກິໂລກຣາມ? (ສົມຜົນ: 15000 + 5000(𝑥 - 1) ≤ 45000, ສໍາລັບ 𝑥 ≥ 1)"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ນ້ຳໜັກຫຼາຍສຸດແມ່ນ"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             <span>{"ກິໂລກຣາມ"}</span>
           </div>
         </div>
@@ -274,9 +274,9 @@ export const unit25Data: UnitData = {
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
             {"ທ້າວ ພອນ ຕ້ອງການເສັງໃຫ້ໄດ້ຄະແນນສະເລ່ຍ 5 ວິຊາ ຢ່າງໜ້ອຍ 9.0 ເພື່ອຮັບທຶນການສຶກສາ. ປັດຈຸບັນລາວເສັງແລ້ວ 4 ວິຊາ ໄດ້ຄະແນນ: 9.5, 8.5, 9.0, 8.8. ຖາມວ່າວິຊາທີ 5 ລາວຕ້ອງໄດ້ຄະແນນຢ່າງໜ້ອຍເທົ່າໃດ?"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: ຢ່າງໜ້ອຍຕ້ອງໄດ້"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             <span>{"ຄະແນນ"}</span>
           </div>
         </div>

@@ -217,9 +217,9 @@ export const unit23Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງຊອກຫາຂອບເຂດ 𝑥 ຈາກອະສົມຜົນ "} <span className="math">{"-3𝑥 + 5 < 17"}</span> {" ໂດຍການຍ້າຍ 5 ໄປລົບກ່ອນ ແລ້ວຈຶ່ງຫານດ້ວຍ -3"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: 𝑥 >"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             </div>
           </div>
         )
@@ -234,9 +234,9 @@ export const unit23Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ຈົ່ງຊອກຫາຂອບເຂດຂອງ 𝑥 ທີ່ເຮັດໃຫ້ສຳນວນ 4𝑥 - 3 ມີຄ່າຫຼາຍກວ່າ ສຳນວນ 2𝑥 + 5. (ສົມຜົນ: 4𝑥 - 3 > 2𝑥 + 5)"}
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
               <span>{"ຕອບ: 𝑥 >"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
             </div>
           </div>
         )
@@ -256,9 +256,9 @@ export const unit23Data: UnitData = {
             <Fraction num="8 + 6 + 𝑥" den="3" />
             {" ≥ 7. ວິຊາທີສາມ 𝑥 ຕ້ອງໄດ້ຢ່າງໜ້ອຍຈັກຄະແນນ?"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: 𝑥 ≥"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
           </div>
         </div>
       )
@@ -275,9 +275,9 @@ export const unit23Data: UnitData = {
             <Fraction num="3" den="4" />
             {"𝑥 < 9"}
           </p>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+          <div style={{ fontSize: "1.375rem", lineHeight: "1.7" }}>
             <span>{"ຕອບ: 𝑥 >"}</span>
-            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
+            <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "30px", verticalAlign: "middle" }}></span>
           </div>
         </div>
       )
