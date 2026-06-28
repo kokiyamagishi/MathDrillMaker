@@ -176,20 +176,20 @@ export const unit4Data: UnitData = {
                 <text x="280" y="72" fill="#37474F" fontSize="12" fontWeight="bold" textAnchor="middle">{"1"}</text>
                 
                 {/* Pin for 2/5 (0.4) - Label Above */}
-                <line x1="124" y1="50" x2="124" y2="30" stroke="#E53935" strokeWidth="1.5" strokeDasharray="2,2" />
+                <line x1="124" y1="50" x2="124" y2="40" stroke="#E53935" strokeWidth="1.5" strokeDasharray="2,2" />
                 <circle cx="124" cy="50" r="5" fill="#E53935" />
-                <text x="112" y="16" fill="#E53935" fontSize="11" fontWeight="bold" textAnchor="middle">{"2"}</text>
-                <line x1="106" y1="19" x2="118" y2="19" stroke="#E53935" strokeWidth="1.5" />
-                <text x="112" y="28" fill="#E53935" fontSize="11" fontWeight="bold" textAnchor="middle">{"5"}</text>
-                <text x="136" y="23" fill="#E53935" fontSize="11" fontWeight="bold" textAnchor="middle">{"(0.4)"}</text>
+                <text x="124" y="14" fill="#E53935" fontSize="11" fontWeight="bold" textAnchor="middle">{"2"}</text>
+                <line x1="117" y1="17" x2="131" y2="17" stroke="#E53935" strokeWidth="1.5" />
+                <text x="124" y="26" fill="#E53935" fontSize="11" fontWeight="bold" textAnchor="middle">{"5"}</text>
+                <text x="124" y="38" fill="#E53935" fontSize="10" fontWeight="bold" textAnchor="middle">{"(0.4)"}</text>
 
                 {/* Pin for 1/2 (0.5) - Label Below */}
-                <line x1="150" y1="50" x2="150" y2="70" stroke="#1E88E5" strokeWidth="1.5" strokeDasharray="2,2" />
+                <line x1="150" y1="50" x2="150" y2="60" stroke="#1E88E5" strokeWidth="1.5" strokeDasharray="2,2" />
                 <circle cx="150" cy="50" r="5" fill="#1E88E5" />
-                <text x="138" y="74" fill="#1E88E5" fontSize="11" fontWeight="bold" textAnchor="middle">{"1"}</text>
-                <line x1="132" y1="77" x2="144" y2="77" stroke="#1E88E5" strokeWidth="1.5" />
-                <text x="138" y="86" fill="#1E88E5" fontSize="11" fontWeight="bold" textAnchor="middle">{"2"}</text>
-                <text x="162" y="81" fill="#1E88E5" fontSize="11" fontWeight="bold" textAnchor="middle">{"(0.5)"}</text>
+                <text x="150" y="69" fill="#1E88E5" fontSize="10" fontWeight="bold" textAnchor="middle">{"(0.5)"}</text>
+                <text x="150" y="80" fill="#1E88E5" fontSize="11" fontWeight="bold" textAnchor="middle">{"1"}</text>
+                <line x1="143" y1="83" x2="157" y2="83" stroke="#1E88E5" strokeWidth="1.5" />
+                <text x="150" y="92" fill="#1E88E5" fontSize="11" fontWeight="bold" textAnchor="middle">{"2"}</text>
               </svg>
             </div>
           </div>
