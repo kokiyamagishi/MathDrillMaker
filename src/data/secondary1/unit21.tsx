@@ -94,10 +94,16 @@ export const unit21Data: UnitData = {
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ເຮົາມີຫຼັກການຄິດໄລ່ພື້ນຖານດັ່ງນີ້:"}
             </p>
-            <ul style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.6" }}>
-              <li><strong>{"ຊອກຫາໄລຍະທາງຕົວຈິງ: "}</strong>{" ໄລຍະທາງຕົວຈິງ = ໄລຍະທາງໃນແຜນຜັງ × ສ່ວນສ່ວນ (ຕົວຫານ) ຂອງມາດຕາສ່ວນ."}</li>
-              <li><strong>{"ຊອກຫາໄລຍະທາງໃນແຜນຜັງ: "}</strong>{" ໄລຍະທາງໃນແຜນຜັງ = ໄລຍະທາງຕົວຈິງ / ສ່ວນສ່ວນ (ຕົວຫານ) ຂອງມາດຕາສ່ວນ."}</li>
-            </ul>
+             <ul style={{ fontSize: "1.30rem", margin: 0, paddingLeft: "24px", lineHeight: "1.6" }}>
+                <li style={{ marginBottom: "8px" }}>
+                  <strong>{"ຊອກຫາໄລຍະທາງຕົວຈິງ:"}</strong>
+                  <div style={{ paddingLeft: "16px", whiteSpace: "nowrap" }}>{"ໄລຍະທາງຕົວຈິງ = ໄລຍະທາງໃນແຜນຜັງ × ສ່ວນສ່ວນ (ຕົວຫານ) ຂອງມາດຕາສ່ວນ."}</div>
+                </li>
+                <li>
+                  <strong>{"ຊອກຫາໄລຍະທາງໃນແຜນຜັງ:"}</strong>
+                  <div style={{ paddingLeft: "16px", whiteSpace: "nowrap" }}>{"ໄລຍະທາງໃນແຜນຜັງ = ໄລຍະທາງຕົວຈິງ / ສ່ວນສ່ວນ (ຕົວຫານ) ຂອງມາດຕາສ່ວນ."}</div>
+                </li>
+              </ul>
           </div>
         ),
         hint: {
