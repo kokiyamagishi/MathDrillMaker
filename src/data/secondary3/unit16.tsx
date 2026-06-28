@@ -1,3 +1,4 @@
+import { Angle } from "../../components/Angle";
 import React from "react";
 import { UnitData } from "../units2";
 
@@ -99,7 +100,7 @@ export const unit16Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ໃນຮູບສາມແຈ ABC, ມີ "} <span className="math">{"∠A = 50°"}</span> {" ແລະ "} <span className="math">{"∠B = 60°"}</span> {". ມຸມນອກຢູ່ຈອມ C ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
+                  <span>{"ໃນຮູບສາມແຈ ABC, ມີ "} <span className="math">{"<Angle>A</Angle> = 50°"}</span> {" ແລະ "} <span className="math">{"<Angle>B</Angle> = 60°"}</span> {". ມຸມນອກຢູ່ຈອມ C ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
@@ -165,19 +166,19 @@ export const unit16Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ມຸມກົງກັນຂ້າມ "} <span className="math">{"∠C"}</span> {" ມີຂະໜາດຈັກອົງສາ?"}</span>
+                  <span>{"ມຸມກົງກັນຂ້າມ "} <span className="math">{"<Angle>C</Angle>"}</span> {" ມີຂະໜາດຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ມຸມຖັດກັນ "} <span className="math">{"∠B"}</span> {" ມີຂະໜາດຈັກອົງສາ?"}</span>
+                  <span>{"ມຸມຖັດກັນ "} <span className="math">{"<Angle>B</Angle>"}</span> {" ມີຂະໜາດຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ມຸມກົງກັນຂ້າມ "} <span className="math">{"∠D"}</span> {" ມີຂະໜາດຈັກອົງສາ?"}</span>
+                  <span>{"ມຸມກົງກັນຂ້າມ "} <span className="math">{"<Angle>D</Angle>"}</span> {" ມີຂະໜາດຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -240,7 +241,7 @@ export const unit16Data: UnitData = {
               {"ສົມຜົນມຸມໃນຮູບສີ່ແຈຂະໜານ (Solving Angle Variable in Parallelograms): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(2) ໃນຮູບສີ່ແຈຂະໜານ ABCD, ມີສອງມຸມຖັດກັນແມ່ນ "} <span className="math">{"∠A = 2x + 10"}</span> {" ແລະ "} <span className="math">{"∠B = 3x - 20"}</span> {" (ອົງສາ). ຈົ່ງຊອກຫາຄ່າຂອງ x."}
+              {"(2) ໃນຮູບສີ່ແຈຂະໜານ ABCD, ມີສອງມຸມຖັດກັນແມ່ນ "} <span className="math">{"<Angle>A</Angle> = 2x + 10"}</span> {" ແລະ "} <span className="math">{"<Angle>B</Angle> = 3x - 20"}</span> {" (ອົງສາ). ຈົ່ງຊອກຫາຄ່າຂອງ x."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: x ="}</span>
@@ -260,10 +261,10 @@ export const unit16Data: UnitData = {
             {"ໂຈດມຸມໃນຮູບສາມແຈທ່ຽງ (Isosceles Triangle Exterior-Interior Challenge): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ຮູບສາມແຈທ່ຽງ ABC ມີ AB = AC. ມຸມນອກຢູ່ຈອມ A ມີຂະໜາດແມ່ນ 110°. ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມຢູ່ພື້ນ ∠B."}
+            {"ຮູບສາມແຈທ່ຽງ ABC ມີ AB = AC. ມຸມນອກຢູ່ຈອມ A ມີຂະໜາດແມ່ນ 110°. ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມຢູ່ພື້ນ <Angle>B</Angle>."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-            <span>{"ຕອບ: ∠B ="}</span>
+            <span>{"ຕອບ: <Angle>B</Angle> ="}</span>
             <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             <span>{"ອົງສາ"}</span>
           </div>
@@ -321,7 +322,7 @@ export const unit16Data: UnitData = {
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="8">{"55° (ມຸມໃນ ∠A = 180° - 110° = 70° ➔ ສາມແຈທ່ຽງ AB = AC ➔ ∠B = ∠C = (180° - 70°) / 2 = 55°)"}</span>
+          <span key="8">{"55° (ມຸມໃນ <Angle>A</Angle> = 180° - 110° = 70° ➔ ສາມແຈທ່ຽງ AB = AC ➔ <Angle>B</Angle> = <Angle>C</Angle> = (180° - 70°) / 2 = 55°)"}</span>
         ]
       },
       {

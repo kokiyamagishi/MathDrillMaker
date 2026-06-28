@@ -1,4 +1,5 @@
 import React from "react";
+import { Angle } from "../../components/Angle";
 import { UnitData } from "../units2";
 
 export const unit17Data: UnitData = {
@@ -210,10 +211,10 @@ export const unit17Data: UnitData = {
             {"ໂຈດຄຸນລັກສະນະການເຄິ່ງຄືຂອງມຸມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ໃຫ້ມຸມ ∠ABC ມີຂະໜາດ 45°. ຖ້າ ∠A′B′C′ ແມ່ນຮູບເຄິ່ງຄືຂອງ ∠ABC ທຽບໃສ່ແກນ d, ມຸມ ∠A′B′C′ ຈະມີຂະໜາດຈັກອົງສາ?"}
+            {"ໃຫ້ມຸມ "} <Angle>ABC</Angle> {"ມີຂະໜາດ 45°. ຖ້າ "} <Angle>A′B′C′</Angle> {"ແມ່ນຮູບເຄິ່ງຄືຂອງ "} <Angle>ABC</Angle> {"ທຽບໃສ່ແກນ d, ມຸມ "} <Angle>A′B′C′</Angle> {"ຈະມີຂະໜາດຈັກອົງສາ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-            <span>{"ຕອບ: ∠A′B′C′ ="}</span>
+            <span>{"ຕອບ: "} <Angle>A′B′C′</Angle> {" ="}</span>
             <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             <span>{"°."}</span>
           </div>

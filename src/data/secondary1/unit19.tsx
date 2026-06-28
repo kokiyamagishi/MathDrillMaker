@@ -1,4 +1,5 @@
 import React from "react";
+import { Angle } from "../../components/Angle";
 import { UnitData } from "../units2";
 
 export const unit19Data: UnitData = {
@@ -157,7 +158,7 @@ export const unit19Data: UnitData = {
               {"ໂຈດການພິສູດແຈໃນຮູບເຄິ່ງຄື: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ໃຫ້ຮູບສາມແຈ ABC ທີ່ມີ ∠B = 45° ແລະ AB = 3 cm. ຖ້າຮູບສາມແຈ A′B′C′ ເຄິ່ງຄືກັບ ABC ທຽບໃສ່ແກນ d ໃດໜຶ່ງ. ຄວາມຍາວ A′B′ ແລະ ຂະໜາດຂອງມຸມ ∠B′ ຈະມີຄ່າເທົ່າໃດ?"}
+              {"ໃຫ້ຮູບສາມແຈ ABC ທີ່ມີ "} <Angle>B</Angle> {" = 45° ແລະ AB = 3 cm. ຖ້າຮູບສາມແຈ A′B′C′ ເຄິ່ງຄືກັບ ABC ທຽບໃສ່ແກນ d ໃດໜຶ່ງ. ຄວາມຍາວ A′B′ ແລະ ຂະໜາດຂອງມຸມ "} <Angle>B′</Angle> {" ຈະມີຄ່າເທົ່າໃດ?"}
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
@@ -166,7 +167,7 @@ export const unit19Data: UnitData = {
                 <span>{"cm"}</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                <span>{"- ມຸມ ∠B′ ="}</span>
+                <span>{"- ມຸມ "} <Angle>B′</Angle> {" ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 <span>{"°"}</span>
               </div>
@@ -270,7 +271,7 @@ export const unit19Data: UnitData = {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
           <span key="c1-1">{"- A′B′ = 3 cm"}</span>,
-          <span key="c1-2">{"- ມຸມ ∠B′ = 45°"}</span>
+          <span key="c1-2">{"- ມຸມ "} <Angle>B′</Angle> {" = 45°"}</span>
         ]
       },
       {

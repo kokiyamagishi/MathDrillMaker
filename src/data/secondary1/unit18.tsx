@@ -1,4 +1,5 @@
 import React from "react";
+import { Angle } from "../../components/Angle";
 import { UnitData } from "../units2";
 
 export const unit18Data: UnitData = {
@@ -18,7 +19,7 @@ export const unit18Data: UnitData = {
               <br />
               {"- O ເອີ້ນວ່າ "}<strong>{"ຈອມ (Vertex)"}</strong>{" ຂອງມຸມ."}
               <br />
-              {"- [Ox) ແລະ [Oy) ເອີ້ນວ່າ "}<strong>{"ຂ້າງ (Sides)"}</strong>{" ຂອງມຸມ, ສັນຍະລັກດ້ວຍ ∠xOy ຫຼື ∠yOx."}
+              {"- [Ox) ແລະ [Oy) ເອີ້ນວ່າ "}<strong>{"ຂ້າງ (Sides)"}</strong>{" ຂອງມຸມ, ສັນຍະລັກດ້ວຍ "} <Angle>xOy</Angle> {" ຫຼື "} <Angle>yOx</Angle> {"."}
             </p>
 
             <div style={{ padding: "16px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", display: "flex", flexDirection: "column", gap: "8px" }}>
@@ -69,7 +70,7 @@ export const unit18Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຖ້າຂ້າງທັງສອງຂອງມຸມ [Ox) ແລະ [Oy) ປະກອບກັນເປັນເສັ້ນຊື່ດຽວກັນ, ມຸມ ∠xOy ນີ້ຈະເປັນມຸມຊະນິດໃດ ແລະ ມີຂະໜາດຈັກອົງສາ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+                {"ຖ້າຂ້າງທັງສອງຂອງມຸມ [Ox) ແລະ [Oy) ປະກອບກັນເປັນເສັ້ນຊື່ດຽວກັນ, ມຸມ "} <Angle>xOy</Angle> {" ນີ້ຈະເປັນມຸມຊະນິດໃດ ແລະ ມີຂະໜາດຈັກອົງສາ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
@@ -101,7 +102,7 @@ export const unit18Data: UnitData = {
               <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6" }}>
                 {"ສອງມຸມຂ້າມຈອມກັນ ຈະມີຂະໜາດເທົ່າກັນສະເໝີ!"}
                 <br />
-                {"ຕົວຢ່າງ: ຖ້າເສັ້ນຊື່ (xy) ຕັດ (zt) ຢູ່ O. ເຮົາໄດ້ ∠xOz ແລະ ∠yOt ແມ່ນມຸມຂ້າມຈອມກັນ, ດັ່ງນັ້ນ ∠xOz = ∠yOt."}
+                {"ຕົວຢ່າງ: ຖ້າເສັ້ນຊື່ (xy) ຕັດ (zt) ຢູ່ O. ເຮົາໄດ້ "} <Angle>xOz</Angle> {" ແລະ "} <Angle>yOt</Angle> {" ແມ່ນມຸມຂ້າມຈອມກັນ, ດັ່ງນັ້ນ "} <Angle>xOz</Angle> {" = "} <Angle>yOt</Angle> {"."}
               </p>
             </div>
           </div>
@@ -117,10 +118,10 @@ export const unit18Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ໃຫ້ສອງເສັ້ນຊື່ຕັດກັນຢູ່ O ປະກອບເປັນ ∠AOC = 50°. ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມ ∠BOD ເຊິ່ງເປັນມຸມຂ້າມຈອມກັບ ∠AOC? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+                {"ໃຫ້ສອງເສັ້ນຊື່ຕັດກັນຢູ່ O ປະກອບເປັນ "} <Angle>AOC</Angle> {" = 50°. ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມ "} <Angle>BOD</Angle> {" ເຊິ່ງເປັນມຸມຂ້າມຈອມກັບ "} <Angle>AOC</Angle> {"? "}
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.375rem" }}>
-                <span>{"ຕອບ: ∠BOD ="}</span>
+                <span>{"ຕອບ: "} <Angle>BOD</Angle> {" ="}</span>
                 <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
                 <span>{"°"}</span>
               </div>
@@ -132,11 +133,11 @@ export const unit18Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ໃຫ້ສອງເສັ້ນຊື່ (xy) ຕັດ (zt) ຢູ່ O. ຖ້າ ∠xOz = 60°, ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມ ∠xOt ທີ່ຢູ່ຕິດກັນເທິງເສັ້ນຊື່ (zt)? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+                {"ໃຫ້ສອງເສັ້ນຊື່ (xy) ຕັດ (zt) ຢູ່ O. ຖ້າ "} <Angle>xOz</Angle> {" = 60°, ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມ "} <Angle>xOt</Angle> {" ທີ່ຢູ່ຕິດກັນເທິງເສັ້ນຊື່ (zt)? "}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "nowrap" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <span>{"ປະໂຫຍກສັນຍະລັກ: ∠xOt ="}</span>
+                  <span>{"ປະໂຫຍກສັນຍະລັກ: "} <Angle>xOt</Angle> {" ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
@@ -161,10 +162,10 @@ export const unit18Data: UnitData = {
               {"ໂຈດຄິດໄລ່ມຸມໃນຮູບສາມແຈ (Triangle Angle Sum): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ໃນຮູບສາມແຈ ABC ໃດໜຶ່ງ, ຜົນບວກຂອງສາມມຸມໃນ ∠A + ∠B + ∠C = 180°. ຖ້າຮູ້ ∠A = 45° ແລະ ∠B = 75°, ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມ ∠C?"}
+              {"ໃນຮູບສາມແຈ ABC ໃດໜຶ່ງ, ຜົນບວກຂອງສາມມຸມໃນ "} <Angle>A</Angle> {" + "} <Angle>B</Angle> {" + "} <Angle>C</Angle> {" = 180°. ຖ້າຮູ້ "} <Angle>A</Angle> {" = 45° ແລະ "} <Angle>B</Angle> {" = 75°, ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມ "} <Angle>C</Angle> {"?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: ∠C ="}</span>
+              <span>{"ຕອບ: "} <Angle>C</Angle> {" ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"°"}</span>
             </div>
@@ -202,16 +203,16 @@ export const unit18Data: UnitData = {
             {"ໂຈດຄິດໄລ່ມຸມຂ້າມຈອມ ແລະ ມຸມພາກຮ່ວມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ໃຫ້ສອງເສັ້ນຊື່ຕັດກັນຢູ່ O ປະກອບເປັນ ∠1 = 120°. ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມ ∠2, ∠3, ∠4 ທີ່ເຫຼືອ? (ໂດຍ ∠3 ແມ່ນມຸມຂ້າມຈອມກັບ ∠1, ສ່ວນ ∠2 ແລະ ∠4 ຕິດກັນເທິງເສັ້ນຊື່)"}
+            {"ໃຫ້ສອງເສັ້ນຊື່ຕັດກັນຢູ່ O ປະກອບເປັນ "} <Angle>1</Angle> {" = 120°. ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມ "} <Angle>2</Angle> {", "} <Angle>3</Angle> {", "} <Angle>4</Angle> {" ທີ່ເຫຼືອ? (ໂດຍ "} <Angle>3</Angle> {" ແມ່ນມຸມຂ້າມຈອມກັບ "} <Angle>1</Angle> {", ສ່ວນ "} <Angle>2</Angle> {" ແລະ "} <Angle>4</Angle> {" ຕິດກັນເທິງເສັ້ນຊື່)"}
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-              <span>{"- ມຸມ ∠3 ="}</span>
+              <span>{"- ມຸມ "} <Angle>3</Angle> {" ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               <span>{"°"}</span>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-              <span>{"- ມຸມ ∠2 = ∠4 ="}</span>
+              <span>{"- ມຸມ "} <Angle>2</Angle> {" = "} <Angle>4</Angle> {" ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               <span>{"°"}</span>
             </div>
@@ -227,10 +228,10 @@ export const unit18Data: UnitData = {
             {"ໂຈດການພົວພັນສາມແຈສາກ (Right Triangle): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ໃນຮູບສາມແຈສາກ ABC ທີ່ສາກຢູ່ A (ມຸມ ∠A = 90°). ຖ້າມຸມ ∠B = 35°, ຂະໜາດຂອງມຸມ ∠C ຈະເທົ່າກັບຈັກອົງສາ?"}
+            {"ໃນຮູບສາມແຈສາກ ABC ທີ່ສາກຢູ່ A (ມຸມ "} <Angle>A</Angle> {" = 90°). ຖ້າມຸມ "} <Angle>B</Angle> {" = 35°, ຂະໜາດຂອງມຸມ "} <Angle>C</Angle> {" ຈະເທົ່າກັບຈັກອົງສາ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-            <span>{"ຕອບ: ∠C ="}</span>
+            <span>{"ຕອບ: "} <Angle>C</Angle> {" ="}</span>
             <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             <span>{"°."}</span>
           </div>
@@ -282,8 +283,8 @@ export const unit18Data: UnitData = {
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="s1-1">{"- ມຸມ ∠3 = 120° (ມຸມຂ້າມຈອມ)"}</span>,
-          <span key="s1-2">{"- ມຸມ ∠2 = ∠4 = 60° (180 - 120 = 60°)"}</span>
+          <span key="s1-1">{"- ມຸມ "} <Angle>3</Angle> {" = 120° (ມຸມຂ້າມຈອມ)"}</span>,
+          <span key="s1-2">{"- ມຸມ "} <Angle>2</Angle> {" = "} <Angle>4</Angle> {" = 60° (180 - 120 = 60°)"}</span>
         ]
       },
       {

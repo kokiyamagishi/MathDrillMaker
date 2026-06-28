@@ -1,4 +1,5 @@
 import React from "react";
+import { Angle } from "../../components/Angle";
 import { UnitData } from "../units2";
 
 export const unit20Data: UnitData = {
@@ -88,9 +89,11 @@ export const unit20Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"- "}<strong>{"ເສັ້ນແບ່ງເຄິ່ງມຸມ"}</strong>{" ຂອງມຸມ ∠xOy ແມ່ນເຄິ່ງເສັ້ນຊື່ [Oz) ທີ່ຢູ່ລະຫວ່າງສອງຂ້າງ [Ox) ແລະ [Oy) ເຊິ່ງແບ່ງມຸມ ∠xOy ອອກເປັນສອງມຸມທີ່ມີຂະໜາດເທົ່າກັນ:"}
+              {"- "}<strong>{"ເສັ້ນແບ່ງເຄິ່ງມຸມ"}</strong>{" ຂອງມຸມ "} <Angle>xOy</Angle> {" ແມ່ນເຄິ່ງເສັ້ນຊື່ [Oz) ທີ່ຢູ່ລະຫວ່າງສອງຂ້າງ [Ox) ແລະ [Oy) ເຊິ່ງແບ່ງມຸມ "} <Angle>xOy</Angle> {" ອອກເປັນສອງມຸມທີ່ມີຂະໜາດເທົ່າກັນ:"}
               <br />
-              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#E65100", paddingLeft: "16px" }}>{"∠xOz = ∠zOy = (1/2) × ∠xOy"}</span>
+              <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "#E65100", paddingLeft: "16px" }}>
+                <Angle>xOz</Angle> {" = "} <Angle>zOy</Angle> {" = (1/2) × "} <Angle>xOy</Angle>
+              </span>
             </p>
             
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2", display: "flex", flexDirection: "column", gap: "8px" }}>
@@ -98,13 +101,13 @@ export const unit20Data: UnitData = {
               <ol style={{ fontSize: "1.20rem", margin: 0, paddingLeft: "20px", lineHeight: "1.6" }}>
                 <li>{"ແຕ້ມສ່ວນໂຄ້ງມົນຈຸດສູນກາງ O ຕັດ [Ox) ຢູ່ I ແລະ ຕັດ [Oy) ຢູ່ J."}</li>
                 <li>{"ແຕ້ມສອງສ່ວນໂຄ້ງມົນຈຸດສູນກາງ I ແລະ J ດ້ວຍລັດສະໝີອັນດຽວກັນ ໃຫ້ຕັດກັນຢູ່ເມັດ M ພາຍໃນມຸມ."}</li>
-                <li>{"ຂີດເຄິ່ງເສັ້ນຊື່ [OM), ເຮົາຈະໄດ້ [OM) ແມ່ນເສັ້ນແບ່ງເຄິ່ງມຸມ ∠xOy."}</li>
+                <li>{"ຂີດເຄິ່ງເສັ້ນຊື່ [OM), ເຮົາຈະໄດ້ [OM) ແມ່ນເສັ້ນແບ່ງເຄິ່ງມຸມ "} <Angle>xOy</Angle> {"."}</li>
               </ol>
             </div>
           </div>
         ),
         hint: {
-          text: "💡 ເສັ້ນແບ່ງເຄິ່ງມຸມ ກໍຄື ແກນເຄິ່ງຄື (Axis of Symmetry) ຂອງມຸມ ∠xOy ນັ້ນເອງ!",
+          text: <span>{"💡 ເສັ້ນແບ່ງເຄິ່ງມຸມ ກໍຄື ແກນເຄິ່ງຄື (Axis of Symmetry) ຂອງມຸມ "} <Angle>xOy</Angle> {" ນັ້ນເອງ!"}</span>,
           isBlue: false
         }
       },
@@ -114,11 +117,11 @@ export const unit20Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ໃຫ້ມຸມ ∠xOy = 70°. ຖ້າ [Oz) ແມ່ນເສັ້ນແບ່ງເຄິ່ງມຸມ ∠xOy, ຂະໜາດຂອງມຸມ ∠xOz ຈະມີຄ່າເທົ່າໃດ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+                {"ໃຫ້ມຸມ "} <Angle>xOy</Angle> {" = 70°. ຖ້າ [Oz) ແມ່ນເສັ້ນແບ່ງເຄິ່ງມຸມ "} <Angle>xOy</Angle> {", ຂະໜາດຂອງມຸມ "} <Angle>xOz</Angle> {" ຈະມີຄ່າເທົ່າໃດ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <span>{"ປະໂຫຍກສັນຍະລັກ: ∠xOz ="}</span>
+                  <span>{"ປະໂຫຍກສັນຍະລັກ: "} <Angle>xOz</Angle> {" ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
@@ -135,11 +138,11 @@ export const unit20Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ໃຫ້ມຸມ ∠AOB ມີ [OC) ແມ່ນເສັ້ນແບ່ງເຄິ່ງມຸມ ໂດຍ ∠AOC = 55°. ຂະໜາດຂອງມຸມ ∠AOB ຈະເທົ່າກັບຈັກອົງສາ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+                {"ໃຫ້ມຸມ "} <Angle>AOB</Angle> {" ມີ [OC) ແມ່ນເສັ້ນແບ່ງເຄິ່ງມຸມ ໂດຍ "} <Angle>AOC</Angle> {" = 55°. ຂະໜາດຂອງມຸມ "} <Angle>AOB</Angle> {" ຈະເທົ່າກັບຈັກອົງສາ? "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "1.375rem", flexWrap: "wrap" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <span>{"ປະໂຫຍກສັນຍະລັກ: ∠AOB ="}</span>
+                  <span>{"ປະໂຫຍກສັນຍະລັກ: "} <Angle>AOB</Angle> {" ="}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
@@ -182,10 +185,10 @@ export const unit20Data: UnitData = {
               {"ໂຈດການພົວພັນລະຫວ່າງເສັ້ນແບ່ງເຄິ່ງມຸມສອງມຸມພາກຮ່ວມ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ໃຫ້ສອງມຸມ ∠xOy ແລະ ∠yOz ຕິດກັນ ແລະ ປະກອບກັນເປັນມຸມພຽງ ∠xOz = 180°. ຖ້າສ້າງເສັ້ນແບ່ງເຄິ່ງມຸມ [Oa) ຂອງ ∠xOy ແລະ ເສັ້ນແບ່ງເຄິ່ງມຸມ [Ob) ຂອງ ∠yOz. ມຸມລະຫວ່າງ [Oa) ແລະ [Ob) (ມຸມ ∠aOb) ຈະເທົ່າກັບຈັກອົງສາ?"}
+              {"ໃຫ້ສອງມຸມ "} <Angle>xOy</Angle> {" ແລະ "} <Angle>yOz</Angle> {" ຕິດກັນ ແລະ ປະກອບກັນເປັນມຸມພຽງ "} <Angle>xOz</Angle> {" = 180°. ຖ້າສ້າງເສັ້ນແບ່ງເຄິ່ງມຸມ [Oa) ຂອງ "} <Angle>xOy</Angle> {" ແລະ ເສັ້ນແບ່ງເຄິ່ງມຸມ [Ob) ຂອງ "} <Angle>yOz</Angle> {". ມຸມລະຫວ່າງ [Oa) ແລະ [Ob) (ມຸມ "} <Angle>aOb</Angle> {") ຈະເທົ່າກັບຈັກອົງສາ?"}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: ∠aOb ="}</span>
+              <span>{"ຕອບ: "} <Angle>aOb</Angle> {" ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"°."}</span>
             </div>
@@ -205,16 +208,16 @@ export const unit20Data: UnitData = {
             {"ໂຈດຄິດໄລ່ມຸມໃນສາມແຈທ່ຽງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ໃຫ້ຮູບສາມແຈ ABC ທ່ຽງຢູ່ A (AB = AC) ມີ ∠A = 110°. ຖ້າ [AI) ແມ່ນເສັ້ນແບ່ງເຄິ່ງມຸມ ∠A ຕັດ BC ຢູ່ I, ຂະໜາດຂອງມຸມ ∠BAI ແລະ ມຸມ ∠AIC ຈະເທົ່າກັບຈັກອົງສາ? (ແນະນຳ: ຍ້ອນສາມແຈທ່ຽງ, ເສັ້ນແບ່ງເຄິ່ງມຸມຈອມຍັງເປັນເສັ້ນກາງສາກຂອງຂ້າງພື້ນ)"}
+            {"ໃຫ້ຮູບສາມແຈ ABC ທ່ຽງຢູ່ A (AB = AC) ມີ "} <Angle>A</Angle> {" = 110°. ຖ້າ [AI) ແມ່ນເສັ້ນແບ່ງເຄິ່ງມຸມ "} <Angle>A</Angle> {" ຕັດ BC ຢູ່ I, ຂະໜາດຂອງມຸມ "} <Angle>BAI</Angle> {" ແລະ ມຸມ "} <Angle>AIC</Angle> {" ຈະເທົ່າກັບຈັກອົງສາ? (ແນະນຳ: ຍ້ອນສາມແຈທ່ຽງ, ເສັ້ນແບ່ງເຄິ່ງມຸມຈອມຍັງເປັນເສັ້ນກາງສາກຂອງຂ້າງພື້ນ)"}
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "1.375rem" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-              <span>{"- ມຸມ ∠BAI ="}</span>
+              <span>{"- ມຸມ "} <Angle>BAI</Angle> {" ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               <span>{"°"}</span>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-              <span>{"- ມຸມ ∠AIC ="}</span>
+              <span>{"- ມຸມ "} <Angle>AIC</Angle> {" ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "80px", height: "42px" }}></span>
               <span>{"°"}</span>
             </div>
@@ -285,8 +288,8 @@ export const unit20Data: UnitData = {
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="s1-1">{"- ມຸມ ∠BAI = 55° (110 / 2 = 55°)"}</span>,
-          <span key="s1-2">{"- ມຸມ ∠AIC = 90° (ຍ້ອນວ່າໃນສາມແຈທ່ຽງ, ເສັ້ນແບ່ງເຄິ່ງມຸມຈອມຍັງເປັນເສັ້ນກາງສາກ)"}</span>
+          <span key="s1-1">{"- ມຸມ "} <Angle>BAI</Angle> {" = 55° (110 / 2 = 55°)"}</span>,
+          <span key="s1-2">{"- ມຸມ "} <Angle>AIC</Angle> {" = 90° (ຍ້ອນວ່າໃນສາມແຈທ່ຽງ, ເສັ້ນແບ່ງເຄິ່ງມຸມຈອມຍັງເປັນເສັ້ນກາງສາກ)"}</span>
         ]
       },
       {

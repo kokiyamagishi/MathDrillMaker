@@ -1,3 +1,4 @@
+import { Angle } from "../../components/Angle";
 import React from "react";
 import { UnitData } from "../units2";
 
@@ -157,19 +158,19 @@ export const unit10Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຖ້າມຸມ "} <span className="math">{"∠ABC = 30°"}</span> {", ມຸມ "} <span className="math">{"∠CAB"}</span> {" ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
+                  <span>{"ຖ້າມຸມ "} <span className="math">{"<Angle>ABC</Angle> = 30°"}</span> {", ມຸມ "} <span className="math">{"<Angle>CAB</Angle>"}</span> {" ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຖ້າມຸມ "} <span className="math">{"∠ABC = 45°"}</span> {", ມຸມ "} <span className="math">{"∠CAB"}</span> {" ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
+                  <span>{"ຖ້າມຸມ "} <span className="math">{"<Angle>ABC</Angle> = 45°"}</span> {", ມຸມ "} <span className="math">{"<Angle>CAB</Angle>"}</span> {" ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ຖ້າມຸມ "} <span className="math">{"∠ABC = 20°"}</span> {", ມຸມ "} <span className="math">{"∠CAB"}</span> {" ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
+                  <span>{"ຖ້າມຸມ "} <span className="math">{"<Angle>ABC</Angle> = 20°"}</span> {", ມຸມ "} <span className="math">{"<Angle>CAB</Angle>"}</span> {" ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -187,13 +188,13 @@ export const unit10Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຖ້າມຸມ "} <span className="math">{"∠A = 80°"}</span> {", ມຸມກົງກັນຂ້າມ "} <span className="math">{"∠C"}</span> {" ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
+                  <span>{"ຖ້າມຸມ "} <span className="math">{"<Angle>A</Angle> = 80°"}</span> {", ມຸມກົງກັນຂ້າມ "} <span className="math">{"<Angle>C</Angle>"}</span> {" ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຖ້າມຸມ "} <span className="math">{"∠B = 105°"}</span> {", ມຸມກົງກັນຂ້າມ "} <span className="math">{"∠D"}</span> {" ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
+                  <span>{"ຖ້າມຸມ "} <span className="math">{"<Angle>B</Angle> = 105°"}</span> {", ມຸມກົງກັນຂ້າມ "} <span className="math">{"<Angle>D</Angle>"}</span> {" ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -214,10 +215,10 @@ export const unit10Data: UnitData = {
               {"ການຊອກຫາມຸມແນບວົງມົນຈາກມຸມໃຈກາງໃຫຍ່ (Angle Subtended by Major Arc): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ໃນວົງມົນທີ່ມີ O ເປັນໃຈກາງ, ມຸມໃຈກາງ "} <span className="math">{"∠AOC = 130°"}</span> {". ຖ້າເມັດ B ນອນຢູ່ເທິງເສັ້ນຮອບວົງໃນພາກສ່ວນອາກໃຫຍ່ AC, ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມແນບວົງມົນ "} <span className="math">{"∠ABC"}</span> {"."}
+              {"ໃນວົງມົນທີ່ມີ O ເປັນໃຈກາງ, ມຸມໃຈກາງ "} <span className="math">{"<Angle>AOC</Angle> = 130°"}</span> {". ຖ້າເມັດ B ນອນຢູ່ເທິງເສັ້ນຮອບວົງໃນພາກສ່ວນອາກໃຫຍ່ AC, ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມແນບວົງມົນ "} <span className="math">{"<Angle>ABC</Angle>"}</span> {"."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: ∠ABC ="}</span>
+              <span>{"ຕອບ: <Angle>ABC</Angle> ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
               <span>{"ອົງສາ"}</span>
             </div>
@@ -270,10 +271,10 @@ export const unit10Data: UnitData = {
             {"ມຸມໃນຮູບສາມແຈຈອມວົງມົນ (Angle Calculation inside Isosceles Circle sector): "}<span className="point-label">{"(5 ຄະແນນന)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(2) ໃນວົງມົນທີ່ມີ O ເປັນໃຈກາງ, ມີຄອດ (Chord) AB. ເມັດ C ນອນຢູ່ເທິງເສັ້ນຮອບວົງ. ຖ້າຮູ້ວ່າ "} <span className="math">{"∠OAB = 25°"}</span> {", ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມໃຈກາງ "} <span className="math">{"∠AOB"}</span> {"."}
+            {"(2) ໃນວົງມົນທີ່ມີ O ເປັນໃຈກາງ, ມີຄອດ (Chord) AB. ເມັດ C ນອນຢູ່ເທິງເສັ້ນຮອບວົງ. ຖ້າຮູ້ວ່າ "} <span className="math">{"<Angle>OAB</Angle> = 25°"}</span> {", ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມໃຈກາງ "} <span className="math">{"<Angle>AOB</Angle>"}</span> {"."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-            <span>{"ຕອບ: ∠AOB ="}</span>
+            <span>{"ຕອບ: <Angle>AOB</Angle> ="}</span>
             <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             <span>{"ອົງສາ"}</span>
           </div>
@@ -301,7 +302,7 @@ export const unit10Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 1",
         answers: [
-          <span key="6">{"65° (ມຸມແນບວົງມົນ ∠ABC = ∠AOC / 2 = 130° / 2 = 65°)"}</span>
+          <span key="6">{"65° (ມຸມແນບວົງມົນ <Angle>ABC</Angle> = ∠AOC / 2 = 130° / 2 = 65°)"}</span>
         ]
       },
       {
@@ -313,13 +314,13 @@ export const unit10Data: UnitData = {
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 1",
         answers: [
-          <span key="8">{"8 cm (AB ແມ່ນເສັ້ນຜ່ານກາງ ➔ ∠ACB = 90° ➔ BC² = AB² - AC² = 10² - 6² = 64 ➔ BC = √64 = 8 cm)"}</span>
+          <span key="8">{"8 cm (AB ແມ່ນເສັ້ນຜ່ານກາງ ➔ <Angle>ACB</Angle> = 90° ➔ BC² = AB² - AC² = 10² - 6² = 64 ➔ BC = √64 = 8 cm)"}</span>
         ]
       },
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="9">{"130° (ຍ້ອນວ່າ OA = OB = R ➔ ສາມແຈ OAB ເປັນສາມແຈທ່ຽງ ➔ ∠OBA = ∠OAB = 25° ➔ ∠AOB = 180° - (25° + 25°) = 130°)"}</span>
+          <span key="9">{"130° (ຍ້ອນວ່າ OA = OB = R ➔ ສາມແຈ OAB ເປັນສາມແຈທ່ຽງ ➔ ∠OBA = <Angle>OAB</Angle> = 25° ➔ <Angle>AOB</Angle> = 180° - (25° + 25°) = 130°)"}</span>
         ]
       }
     ],

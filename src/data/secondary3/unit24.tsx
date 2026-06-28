@@ -1,3 +1,4 @@
+import { Angle } from "../../components/Angle";
 import React from "react";
 import { UnitData } from "../units2";
 
@@ -25,7 +26,7 @@ export const unit24Data: UnitData = {
               {"ເສັ້ນສຳຜັດວົງມົນແມ່ນເສັ້ນຊື່ທີ່ຕັດວົງມົນພຽງແຕ່ເມັດດຽວ. ມັນຈະຕັ້ງສາກກັບລັດສະໝີຢູ່ຈຸດສຳຜັດສະເໝີ:"}
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
-              <div>{"• ຫຼັກການ: ເສັ້ນສຳຜັດ PT ຕັ້ງສາກກັບລັດສະໝີ OT ຢູ່ຈຸດສຳຜັດ T ➔ ∠OTP = 90°."}</div>
+              <div>{"• ຫຼັກການ: ເສັ້ນສຳຜັດ PT ຕັ້ງສາກກັບລັດສະໝີ OT ຢູ່ຈຸດສຳຜັດ T ➔ <Angle>OTP</Angle> = 90°."}</div>
               <div>{"• ການນຳໃຊ້: ເຮົາສາມາດສ້າງຮູບສາມແຈສາກ OTP ແລ້ວນຳໃຊ້ປີຕາກໍ ➔ OP² = OT² + PT²."}</div>
               <div style={{ fontWeight: "bold", color: "#0D47A1" }}>{"• ຕົວຢ່າງ: ໃຫ້ R = 5 cm, OP = 13 cm ➔ PT² = 13² - 5² = 169 - 25 = 144 ➔ PT = 12 cm."}</div>
             </div>
@@ -83,7 +84,7 @@ export const unit24Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຂະໜາດຂອງມຸມ "} <span className="math">{"∠OTP"}</span> {" ແມ່ນຈັກອົງສາ?"}</span>
+                  <span>{"ຂະໜາດຂອງມຸມ "} <span className="math">{"<Angle>OTP</Angle>"}</span> {" ແມ່ນຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 
@@ -140,8 +141,8 @@ export const unit24Data: UnitData = {
             
             <div style={{ padding: "12px 16px", backgroundColor: "#FFFDE7", borderRadius: "10px", border: "1px solid #FFF59D", fontSize: "1.25rem", color: "#F57F17", display: "flex", flexDirection: "column", gap: "6px" }}>
               <div>{"• ຄວາມຍາວເທົ່າກັນ: ຄວາມຍາວຂອງສອງທ່ອນສຳຜັດແມ່ນເທົ່າກັນສະເໝີ ➔ PA = PB."}</div>
-              <div>{"• ຜົນບວກມຸມ: ມຸມລະຫວ່າງສອງເສັ້ນສຳຜັດ (∠APB) ແລະ ມຸມໃຈກາງ (∠AOB) ບວກກັນໄດ້ 180° ➔ ∠APB + ∠AOB = 180°."}</div>
-              <div style={{ fontWeight: "bold", color: "#D84315" }}>{"• ຕົວຢ່າງ: ຖ້າມຸມລະຫວ່າງສອງເສັ້ນສຳຜັດ ∠APB = 60° ➔ ມຸມໃຈກາງ ∠AOB = 180° - 60° = 120°."}</div>
+              <div>{"• ຜົນບວກມຸມ: ມຸມລະຫວ່າງສອງເສັ້ນສຳຜັດ (<Angle>APB</Angle>) ແລະ ມຸມໃຈກາງ (<Angle>AOB</Angle>) ບວກກັນໄດ້ 180° ➔ <Angle>APB</Angle> + <Angle>AOB</Angle> = 180°."}</div>
+              <div style={{ fontWeight: "bold", color: "#D84315" }}>{"• ຕົວຢ່າງ: ຖ້າມຸມລະຫວ່າງສອງເສັ້ນສຳຜັດ <Angle>APB</Angle> = 60° ➔ ມຸມໃຈກາງ <Angle>AOB</Angle> = 180° - 60° = 120°."}</div>
             </div>
           </div>
         ),
@@ -168,7 +169,7 @@ export const unit24Data: UnitData = {
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ໃນຮູບຂ້າງເທິງ, ຖ້າມຸມ "} <span className="math">{"∠APB = 60°"}</span> {", ຮູບສາມແຈ PAB ແມ່ນຮູບສາມແຈປະເພດໃດ? (ຕອບ 'ສາມແຈສະເໝີ' ຫຼື 'ສາມແຈສາກ')"}</span>
+                  <span>{"ໃນຮູບຂ້າງເທິງ, ຖ້າມຸມ "} <span className="math">{"<Angle>APB</Angle> = 60°"}</span> {", ຮູບສາມແຈ PAB ແມ່ນຮູບສາມແຈປະເພດໃດ? (ຕອບ 'ສາມແຈສະເໝີ' ຫຼື 'ສາມແຈສາກ')"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
@@ -192,13 +193,13 @@ export const unit24Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຖ້າມຸມລະຫວ່າງສອງເສັ້ນສຳຜັດ "} <span className="math">{"∠APB = 80°"}</span> {", ມຸມໃຈກາງ "} <span className="math">{"∠AOB"}</span> {" ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
+                  <span>{"ຖ້າມຸມລະຫວ່າງສອງເສັ້ນສຳຜັດ "} <span className="math">{"<Angle>APB</Angle> = 80°"}</span> {", ມຸມໃຈກາງ "} <span className="math">{"<Angle>AOB</Angle>"}</span> {" ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຖ້າມຸມໃຈກາງ "} <span className="math">{"∠AOB = 120°"}</span> {", ມຸມລະຫວ່າງສອງເສັ້ນສຳຜັດ "} <span className="math">{"∠APB"}</span> {" ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
+                  <span>{"ຖ້າມຸມໃຈກາງ "} <span className="math">{"<Angle>AOB</Angle> = 120°"}</span> {", ມຸມລະຫວ່າງສອງເສັ້ນສຳຜັດ "} <span className="math">{"<Angle>APB</Angle>"}</span> {" ຈະມີຂະໜາດຈັກອົງສາ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -276,10 +277,10 @@ export const unit24Data: UnitData = {
             {"ມຸມລະຫວ່າງລັດສະໝີ ແລະ ຄອດຮ່ວມ (Angle Between Radius and Chord): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(2) ສອງເສັ້ນສຳຜັດ PA ແລະ PB ຖືກຂີດຈາກ P ຫາວົງມົນໃຈກາງ O ໂດຍເຮັດມຸມ ∠APB = 60°. ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມ ∠OAB ລະຫວ່າງລັດສະໝີ ແລະ ຄອດ AB."}
+            {"(2) ສອງເສັ້ນສຳຜັດ PA ແລະ PB ຖືກຂີດຈາກ P ຫາວົງມົນໃຈກາງ O ໂດຍເຮັດມຸມ <Angle>APB</Angle> = 60°. ຈົ່ງຊອກຫາຂະໜາດຂອງມຸມ <Angle>OAB</Angle> ລະຫວ່າງລັດສະໝີ ແລະ ຄອດ AB."}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-            <span>{"ຕອບ: ∠OAB ="}</span>
+            <span>{"ຕອບ: <Angle>OAB</Angle> ="}</span>
             <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             <span>{"ອົງສາ"}</span>
           </div>
@@ -325,7 +326,7 @@ export const unit24Data: UnitData = {
       {
         questionNumber: "ທົດສອບປະຈຳບົດ 2",
         answers: [
-          <span key="9">{"30° (ມຸມໃຈກາງ ∠AOB = 180° - 60° = 120° ➔ ສາມແຈ OAB ເປັນສາມແຈທ່ຽງ ➔ ∠OAB = (180° - 120°) / 2 = 30°)"}</span>
+          <span key="9">{"30° (ມຸມໃຈກາງ <Angle>AOB</Angle> = 180° - 60° = 120° ➔ ສາມແຈ OAB ເປັນສາມແຈທ່ຽງ ➔ <Angle>OAB</Angle> = (180° - 120°) / 2 = 30°)"}</span>
         ]
       }
     ],
@@ -345,8 +346,8 @@ export const dummyanswers = {
     {
       questionNumber: 2,
       answers: [
-        <span key="13">{"100° (ເພາະວ່າມຸມ ∠APB + ∠AOB = 180° ➔ ∠AOB = 180° - 80° = 100°)"}</span>,
-        <span key="14">{"60° (ເພາະວ່າມຸມ ∠APB + ∠AOB = 180° ➔ ∠APB = 180° - 120° = 60°)"}</span>
+        <span key="13">{"100° (ເພາະວ່າມຸມ <Angle>APB</Angle> + <Angle>AOB</Angle> = 180° ➔ <Angle>AOB</Angle> = 180° - 80° = 100°)"}</span>,
+        <span key="14">{"60° (ເພາະວ່າມຸມ <Angle>APB</Angle> + <Angle>AOB</Angle> = 180° ➔ <Angle>APB</Angle> = 180° - 120° = 60°)"}</span>
       ]
     }
   ]
