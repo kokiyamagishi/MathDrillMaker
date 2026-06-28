@@ -317,13 +317,13 @@ export const unit4Data: UnitData = {
                 <Fraction num="2" den="3" /> {", "} <Fraction num="3" den="5" /> {", "} <Fraction num="1" den="2" />
               </span>
             </p>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "nowrap", whiteSpace: "nowrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: ຈັດລຽງໄດ້ແມ່ນ"}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "30px", verticalAlign: "middle" }}></span>
               <span>{" < "}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "30px", verticalAlign: "middle" }}></span>
               <span>{" < "}</span>
-              <span className="answer-blank" style={{ display: "inline-block", width: "60px", height: "42px" }}></span>
+              <span className="answer-blank" style={{ display: "inline-block", minWidth: "40px", width: "40px", height: "30px", verticalAlign: "middle" }}></span>
             </div>
           </div>
         )
