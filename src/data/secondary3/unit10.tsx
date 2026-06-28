@@ -230,13 +230,13 @@ export const unit10Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການແກ້ສົມຜົນຊອກຫາຕົວປ່ຽນ "}<i>x</i>{" ຈາກມຸມວົງມົນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການແກ້ສົມຜົນຊອກຫາຕົວປ່ຽນ 𝑥 ຈາກມຸມວົງມົນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(2) ໃນວົງມົນໜຶ່ງ, ມຸມໃຈກາງມີຂະໜາດແມ່ນ "} <span className="math">{"4"}<i>x</i>{" + 10"}</span> {" ອົງສາ ແລະ ມຸມແນບວົງມົນທີ່ຮັບອາກດຽວກັນມີຂະໜາດແມ່ນ "} <span className="math"><i>x</i>{" + 25"}</span> {" ອົງສາ. ຈົ່ງຊອກຫາຄ່າຂອງ "}<i>x</i>{"."}
+              {"(2) ໃນວົງມົນໜຶ່ງ, ມຸມໃຈກາງມີຂະໜາດແມ່ນ "} <span className="math">{"4𝑥 + 10"}</span> {" ອົງສາ ແລະ ມຸມແນບວົງມົນທີ່ຮັບອາກດຽວກັນມີຂະໜາດແມ່ນ "} <span className="math">{"𝑥 + 25"}</span> {" ອົງສາ. ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: "}<i>x</i>{" ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -308,7 +308,7 @@ export const unit10Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="7">{"20 (ເພາະວ່າ 4"}<i>x</i>{" + 10 = 2("}<i>x</i>{" + 25) ➔ 4"}<i>x</i>{" + 10 = 2"}<i>x</i>{" + 50 ➔ 2"}<i>x</i>{" = 40 ➔ "}<i>x</i>{" = 20)"}</span>
+          <span key="7">{"20 (ເພາະວ່າ 4𝑥 + 10 = 2(𝑥 + 25) ➔ 4𝑥 + 10 = 2𝑥 + 50 ➔ 2𝑥 = 40 ➔ 𝑥 = 20)"}</span>
         ]
       },
       {

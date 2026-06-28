@@ -22,7 +22,7 @@ export const unit13Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຮາກຂັ້ນສອງຂອງຈຳນວນຈິງບວກ a ແມ່ນຈຳນວນຈິງ "}<i>x</i>{" ທີ່ເຮັດໃຫ້ "}<i>x</i>{"² = a. ເຮົາຂຽນ "}<i>x</i>{" = √a ຈະໄດ້:"}
+              {"ຮາກຂັ້ນສອງຂອງຈຳນວນຈິງບວກ a ແມ່ນຈຳນວນຈິງ 𝑥 ທີ່ເຮັດໃຫ້ 𝑥² = a. ເຮົາຂຽນ 𝑥 = √a ຈະໄດ້:"}
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
               <div>{"• ຫຼັກການພື້ນຖານ: "} <span className="math">{"√(a²) = a"}</span> {" (ເມື່ອ a ≥ 0)"}</div>
@@ -226,11 +226,11 @@ export const unit13Data: UnitData = {
               {"ການແກ້ສົມຜົນຕິດຮາກຂັ້ນສອງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(2) ຈົ່ງຊອກຫາຄ່າຂອງ "}<i>x</i>{" ຈາກສົມຜົນຕິດຮາກຕໍ່ໄປນີ້: "}
-              <span className="math" style={{ fontWeight: "bold" }}>{"√(2"}<i>x</i>{" - 3) = 5"}</span>
+              {"(2) ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥 ຈາກສົມຜົນຕິດຮາກຕໍ່ໄປນີ້: "}
+              <span className="math" style={{ fontWeight: "bold" }}>{"√(2𝑥 - 3) = 5"}</span>
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: "}<i>x</i>{" ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -300,7 +300,7 @@ export const unit13Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="7">{"14 (ຂຶ້ນກຳລັງສອງທັງສອງດ້ານ ➔ 2"}<i>x</i>{" - 3 = 25 ➔ 2"}<i>x</i>{" = 28 ➔ "}<i>x</i>{" = 14)"}</span>
+          <span key="7">{"14 (ຂຶ້ນກຳລັງສອງທັງສອງດ້ານ ➔ 2𝑥 - 3 = 25 ➔ 2𝑥 = 28 ➔ 𝑥 = 14)"}</span>
         ]
       },
       {

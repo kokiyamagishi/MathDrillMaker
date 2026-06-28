@@ -22,18 +22,18 @@ export const unit7Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ຕຳລາແມ່ນການພົວພັນລະຫວ່າງຕົວປ່ຽນ "}<i>x</i>{" ແລະ "}<i>y</i>{" ໂດຍທີ່ "}<i>x</i>{" ແຕ່ລະຄ່າໃຫ້ "}<i>y</i>{" ພຽງຄ່າດຽວສະເໝີ. ເຮົາຂຽນ "}<i>y</i>{" = f("}<i>x</i>{"):"}
+              {"ຕຳລາແມ່ນການພົວພັນລະຫວ່າງຕົວປ່ຽນ 𝑥 ແລະ 𝑦 ໂດຍທີ່ 𝑥 ແຕ່ລະຄ່າໃຫ້ 𝑦 ພຽງຄ່າດຽວສະເໝີ. ເຮົາຂຽນ 𝑦 = f(𝑥):"}
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
-              <div>{"• ສູດແທນຄ່າ: f("}<i>x</i>{") = ax + b"}</div>
-              <div style={{ fontWeight: "bold", color: "#E65100" }}>{"• ຕົວຢ່າງ: ໃຫ້ f("}<i>x</i>{") = 3"}<i>x</i>{" - 2. ຈົ່ງຊອກຫາຄ່າຂອງ f(4)?"}</div>
-              <div>{"➔ ວິທີຄິດ: ແທນ "}<i>x</i>{" = 4 ໃສ່ຕຳລາ ➔ f(4) = 3(4) - 2 = 12 - 2 = 10."}</div>
+              <div>{"• ສູດແທນຄ່າ: f(𝑥) = ax + b"}</div>
+              <div style={{ fontWeight: "bold", color: "#E65100" }}>{"• ຕົວຢ່າງ: ໃຫ້ f(𝑥) = 3𝑥 - 2. ຈົ່ງຊອກຫາຄ່າຂອງ f(4)?"}</div>
+              <div>{"➔ ວິທີຄິດ: ແທນ 𝑥 = 4 ໃສ່ຕຳລາ ➔ f(4) = 3(4) - 2 = 12 - 2 = 10."}</div>
             </div>
 
             {/* Relations Mapping SVG */}
             <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "10px", backgroundColor: "#E8F5E9", borderRadius: "8px", border: "1px solid #C8E6C9", fontSize: "1.15rem", color: "#2E7D32" }}>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", width: "100%" }}>
-                <span>{"ແຜນວາດການພົວພັນແບບຕຳລາ: f("}<i>x</i>{") = 2"}<i>x</i></span>
+                <span>{"ແຜນວາດການພົວພັນແບບຕຳລາ: f(𝑥) = 2𝑥"}</span>
                 <svg viewBox="0 0 400 180" style={{ width: "100%", maxWidth: "320px", height: "auto" }}>
                   {/* Domain Ellipse */}
                   <ellipse cx="100" cy="90" rx="25" ry="35" fill="none" stroke="#2E7D32" strokeWidth="3" />
@@ -69,25 +69,25 @@ export const unit7Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຄຳຖາມທີ 1: ຈົ່ງຄິດໄລ່ຫາຄ່າຂອງຕຳລາ f("}<i>x</i>{") ຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span>
+                {"ຄຳຖາມທີ 1: ຈົ່ງຄິດໄລ່ຫາຄ່າຂອງຕຳລາ f(𝑥) ຕໍ່ໄປນີ້: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span>
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ໃຫ້ຕຳລາ "} <span className="math">{"f("}<i>x</i>{") = 3"}<i>x</i>{" - 2"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ f(4)?"}</span>
+                  <span>{"ໃຫ້ຕຳລາ "} <span className="math">{"f(𝑥) = 3𝑥 - 2"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ f(4)?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
                 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ໃຫ້ຕຳລາ "} <span className="math">{"g("}<i>x</i>{") = "}<i>x</i>{"² + 1"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ g(-3)?"}</span>
+                  <span>{"ໃຫ້ຕຳລາ "} <span className="math">{"g(𝑥) = 𝑥² + 1"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ g(-3)?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ໃຫ້ຕຳລາ "} <span className="math">{"h("}<i>x</i>{") = 2"}<i>x</i>{" + 5"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ h(0)?"}</span>
+                  <span>{"ໃຫ້ຕຳລາ "} <span className="math">{"h(𝑥) = 2𝑥 + 5"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ h(0)?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -99,19 +99,19 @@ export const unit7Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຄຳຖາມທີ 2: ຈົ່ງຊອກຫາຄ່າຂອງຕົວປ່ຽນ "}<i>x</i>{" ຈາກຄ່າຕຳລາທີ່ກຳນົດ: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
+                {"ຄຳຖາມທີ 2: ຈົ່ງຊອກຫາຄ່າຂອງຕົວປ່ຽນ 𝑥 ຈາກຄ່າຕຳລາທີ່ກຳນົດ: "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 4 ຄະແນນ)"}</span>
               </p>
               
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ໃຫ້ຕຳລາ "} <span className="math">{"f("}<i>x</i>{") = 2"}<i>x</i></span> {". ຖ້າ f("}<i>x</i>{") = 8, ຈະໄດ້ "}<i>x</i>{" ເທົ່າກັບເທົ່າໃດ?"}</span>
+                  <span>{"ໃຫ້ຕຳລາ "} <span className="math">{"f(𝑥) = 2𝑥"}</span> {". ຖ້າ f(𝑥) = 8, ຈະໄດ້ 𝑥 ເທົ່າກັບເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ໃຫ້ຕຳລາ "} <span className="math">{"g("}<i>x</i>{") = 3"}<i>x</i>{" - 1"}</span> {". ຖ້າ g("}<i>x</i>{") = 14, ຈະໄດ້ "}<i>x</i>{" ເທົ່າກັບເທົ່າໃດ?"}</span>
+                  <span>{"ໃຫ້ຕຳລາ "} <span className="math">{"g(𝑥) = 3𝑥 - 1"}</span> {". ຖ້າ g(𝑥) = 14, ຈະໄດ້ 𝑥 ເທົ່າກັບເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -127,19 +127,19 @@ export const unit7Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ເຂດກຳນົດ ແມ່ນທຸກຄ່າຂອງ "}<i>x</i>{" ທີ່ເຮັດໃຫ້ຕຳລາມີຄວາມໝາຍ. ສຳລັບຕຳລາເລກສ່ວນ ຕົວສ່ວນຕ້ອງຕ່າງຈາກສູນສະເໝີ:"}
+              {"ເຂດກຳນົດ ແມ່ນທຸກຄ່າຂອງ 𝑥 ທີ່ເຮັດໃຫ້ຕຳລາມີຄວາມໝາຍ. ສຳລັບຕຳລາເລກສ່ວນ ຕົວສ່ວນຕ້ອງຕ່າງຈາກສູນສະເໝີ:"}
             </p>
             
             <div style={{ padding: "12px 16px", backgroundColor: "#FFFDE7", borderRadius: "10px", border: "1px solid #FFF59D", fontSize: "1.25rem", color: "#F57F17", display: "flex", flexDirection: "column", gap: "6px" }}>
               <div style={{ display: "inline-flex", alignItems: "center" }}>
                 {"• ເງື່ອນໄຂເລກສ່ວນ: ຕຳລາ "} 
                 <span className="math" style={{ marginLeft: "4px" }}>
-                  {"f("}<i>x</i>{") = "} <Fraction num="P(x)" den="Q(x)" />
+                  {"f(𝑥) = "} <Fraction num="P(x)" den="Q(x)" />
                 </span>
-                {" ມີຄວາມໝາຍ ເມື່ອ Q("}<i>x</i>{") ≠ 0."}
+                {" ມີຄວາມໝາຍ ເມື່ອ Q(𝑥) ≠ 0."}
               </div>
-              <div style={{ fontWeight: "bold", color: "#D84315" }}>{"• ຕົວຢ່າງ: ຕຳລາ f("}<i>x</i>{") = "} <span className="math"><Fraction num="5" den="x - 3" /></span> {" ➔ ເງື່ອນໄຂແມ່ນ "}<i>x</i>{" - 3 ≠ 0 ➔ "}<i>x</i>{" ≠ 3."}</div>
-              <div>{"➔ ໝາຍຄວາມວ່າ ຄ່າຂອງ "}<i>x</i>{" ທີ່ບໍ່ຢູ່ໃນເຂດກຳນົດແມ່ນ 3."}</div>
+              <div style={{ fontWeight: "bold", color: "#D84315" }}>{"• ຕົວຢ່າງ: ຕຳລາ f(𝑥) = "} <span className="math"><Fraction num="5" den="x - 3" /></span> {" ➔ ເງື່ອນໄຂແມ່ນ 𝑥 - 3 ≠ 0 ➔ 𝑥 ≠ 3."}</div>
+              <div>{"➔ ໝາຍຄວາມວ່າ ຄ່າຂອງ 𝑥 ທີ່ບໍ່ຢູ່ໃນເຂດກຳນົດແມ່ນ 3."}</div>
             </div>
           </div>
         ),
@@ -154,25 +154,25 @@ export const unit7Data: UnitData = {
           content: (
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#2C3E50", margin: 0 }}>
-                {"ຄຳຖາມທີ 1: ຈົ່ງຊອກຫາຄ່າຂອງ "}<i>x</i>{" ທີ່ບໍ່ຢູ່ໃນເຂດກຳນົດ (ເຮັດໃຫ້ຕົວສ່ວນເປັນສູນ): "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span>
+                {"ຄຳຖາມທີ 1: ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥 ທີ່ບໍ່ຢູ່ໃນເຂດກຳນົດ (ເຮັດໃຫ້ຕົວສ່ວນເປັນສູນ): "}<span className="point-label">{"(ຂໍ້ລະ 2 ຄະແນນ, ລວມ 6 ຄະແນນ)"}</span>
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ສຳລັບຕຳລາ "} <span className="math">{"f("}<i>x</i>{") = "} <Fraction num="5" den="x - 3" /></span> {". ຄ່າຂອງ "}<i>x</i>{" ທີ່ບໍ່ຢູ່ໃນເຂດກຳນົດແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ສຳລັບຕຳລາ "} <span className="math">{"f(𝑥) = "} <Fraction num="5" den="x - 3" /></span> {". ຄ່າຂອງ 𝑥 ທີ່ບໍ່ຢູ່ໃນເຂດກຳນົດແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ສຳລັບຕຳລາ "} <span className="math">{"g("}<i>x</i>{") = "} <Fraction num="10" den="2x - 8" /></span> {". ຄ່າຂອງ "}<i>x</i>{" ທີ່ບໍ່ຢູ່ໃນເຂດກຳນົດແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ສຳລັບຕຳລາ "} <span className="math">{"g(𝑥) = "} <Fraction num="10" den="2x - 8" /></span> {". ຄ່າຂອງ 𝑥 ທີ່ບໍ່ຢູ່ໃນເຂດກຳນົດແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ສຳລັບຕຳລາ "} <span className="math">{"h("}<i>x</i>{") = "} <Fraction num="1" den="x + 2" /></span> {". ຄ່າຂອງ "}<i>x</i>{" ທີ່ບໍ່ຢູ່ໃນເຂດກຳນົດແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ສຳລັບຕຳລາ "} <span className="math">{"h(𝑥) = "} <Fraction num="1" den="x + 2" /></span> {". ຄ່າຂອງ 𝑥 ທີ່ບໍ່ຢູ່ໃນເຂດກຳນົດແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -190,13 +190,13 @@ export const unit7Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຖ້າເຂດກຳນົດແມ່ນ {1, 2, 3} ສຳລັບ "} <span className="math">{"f("}<i>x</i>{") = 2"}<i>x</i></span> {". ຄ່າຫຼາຍສຸດໃນເຂດຄ່າແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຖ້າເຂດກຳນົດແມ່ນ {1, 2, 3} ສຳລັບ "} <span className="math">{"f(𝑥) = 2𝑥"}</span> {". ຄ່າຫຼາຍສຸດໃນເຂດຄ່າແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຖ້າເຂດກຳນົດແມ່ນ {-2, 0, 2} ສຳລັບ "} <span className="math">{"g("}<i>x</i>{") = -"}<i>x</i></span> {". ຄ່າຫຼາຍສຸດໃນເຂດຄ່າແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຖ້າເຂດກຳນົດແມ່ນ {-2, 0, 2} ສຳລັບ "} <span className="math">{"g(𝑥) = -𝑥"}</span> {". ຄ່າຫຼາຍສຸດໃນເຂດຄ່າແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -217,7 +217,7 @@ export const unit7Data: UnitData = {
               {"ການຊອກຫາສຳປະສິດຈາກຄ່າຕຳລາ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ໃຫ້ຕຳລາ "} <span className="math">{"f("}<i>x</i>{") = ax + 3"}</span> {". ຖ້າຫາກ f(2) = 11, ຈົ່ງຊອກຫາຄ່າຂອງສຳປະສິດ a."}
+              {"ໃຫ້ຕຳລາ "} <span className="math">{"f(𝑥) = ax + 3"}</span> {". ຖ້າຫາກ f(2) = 11, ຈົ່ງຊອກຫາຄ່າຂອງສຳປະສິດ a."}
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
               <span>{"ຕອບ: a ="}</span>
@@ -234,13 +234,13 @@ export const unit7Data: UnitData = {
               {"ເຂດກຳນົດຂອງຕຳລາເລກສ່ວນທີ່ມີຕົວເລກຊັບຊ້ອນ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"(2) ຈົ່ງຊອກຫາຄ່າຂອງ "}<i>x</i>{" ທີ່ບໍ່ຢູ່ໃນເຂດກຳນົດຂອງຕຳລາ: "} 
+              {"(2) ຈົ່ງຊອກຫາຄ່າຂອງ 𝑥 ທີ່ບໍ່ຢູ່ໃນເຂດກຳນົດຂອງຕຳລາ: "} 
               <span className="math">
-                {"f("}<i>x</i>{") = "} <Fraction num="2x + 1" den="x - 5" />
+                {"f(𝑥) = "} <Fraction num="2x + 1" den="x - 5" />
               </span>
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
-              <span>{"ຕອບ: "}<i>x</i>{" ="}</span>
+              <span>{"ຕອບ: 𝑥 ="}</span>
               <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
             </div>
           </div>
@@ -257,7 +257,7 @@ export const unit7Data: UnitData = {
             {"ໂຈດບັນຫາຄ່າບໍລິການລົດເຊົ່າ (Car Rental Flat + Mileage Cost): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ບໍລິສັດລົດເຊົ່າແຫ່ງໜຶ່ງຄິດຄ່າບໍລິການເລີ່ມຕົ້ນ 50,000 ກີບ ບວກກັບ 2,000 ກີບ ຕໍ່ກິໂລແມັດ "}<i>x</i>{". ຂຽນເປັນຕຳລາ f("}<i>x</i>{") = 2,000"}<i>x</i>{" + 50,000. ຈົ່ງຄິດໄລ່ຄ່າເຊົ່າທັງໝົດເມື່ອເດີນທາງໄດ້ 10 ກິໂລແມັດ?"}
+            {"ບໍລິສັດລົດເຊົ່າແຫ່ງໜຶ່ງຄິດຄ່າບໍລິການເລີ່ມຕົ້ນ 50,000 ກີບ ບວກກັບ 2,000 ກີບ ຕໍ່ກິໂລແມັດ 𝑥. ຂຽນເປັນຕຳລາ f(𝑥) = 2,000𝑥 + 50,000. ຈົ່ງຄິດໄລ່ຄ່າເຊົ່າທັງໝົດເມື່ອເດີນທາງໄດ້ 10 ກິໂລແມັດ?"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຄ່າເຊົ່າທັງໝົດແມ່ນ"}</span>
@@ -275,7 +275,7 @@ export const unit7Data: UnitData = {
             {"ໂຈດບັນຫາຕຳລາຊ້ອນຕຳລາ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
           <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"(2) ໃຫ້ສອງຕຳລາ "} <span className="math">{"f("}<i>x</i>{") = 2"}<i>x</i></span> {" ແລະ "} <span className="math">{"g("}<i>x</i>{") = "}<i>x</i>{" + 3"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ "} <span className="math">{"g(f(4))"}</span> {" (ຄຳແນະນຳ: ຊອກຫາ f(4) ກ່ອນ ແລ້ວຈຶ່ງແທນຄ່າໃສ່ g)"}
+            {"(2) ໃຫ້ສອງຕຳລາ "} <span className="math">{"f(𝑥) = 2𝑥"}</span> {" ແລະ "} <span className="math">{"g(𝑥) = 𝑥 + 3"}</span> {". ຈົ່ງຊອກຫາຄ່າຂອງ "} <span className="math">{"g(f(4))"}</span> {" (ຄຳແນະນຳ: ຊອກຫາ f(4) ກ່ອນ ແລ້ວຈຶ່ງແທນຄ່າໃສ່ g)"}
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: g(f(4)) ="}</span>
@@ -298,8 +298,8 @@ export const unit7Data: UnitData = {
       {
         questionNumber: 2,
         answers: [
-          <span key="4">{"(1) 4 (ເພາະວ່າ 2"}<i>x</i>{" = 8 ➔ "}<i>x</i>{" = 4)"}</span>,
-          <span key="5">{"(2) 5 (ເພາະວ່າ 3"}<i>x</i>{" - 1 = 14 ➔ 3"}<i>x</i>{" = 15 ➔ "}<i>x</i>{" = 5)"}</span>
+          <span key="4">{"(1) 4 (ເພາະວ່າ 2𝑥 = 8 ➔ 𝑥 = 4)"}</span>,
+          <span key="5">{"(2) 5 (ເພາະວ່າ 3𝑥 - 1 = 14 ➔ 3𝑥 = 15 ➔ 𝑥 = 5)"}</span>
         ]
       },
       {
@@ -311,7 +311,7 @@ export const unit7Data: UnitData = {
       {
         questionNumber: "ທ້າທາຍ 2",
         answers: [
-          <span key="7">{"5 (ຍ້ອນວ່າຕົວສ່ວນ "}<i>x</i>{" - 5 = 0 ➔ "}<i>x</i>{" = 5 ➔ ເຮັດໃຫ້ສ່ວນເປັນສູນ ດັ່ງນັ້ນ "}<i>x</i>{" = 5 ຈຶ່ງບໍ່ຢູ່ໃນເຂດກຳນົດ)"}</span>
+          <span key="7">{"5 (ຍ້ອນວ່າຕົວສ່ວນ 𝑥 - 5 = 0 ➔ 𝑥 = 5 ➔ ເຮັດໃຫ້ສ່ວນເປັນສູນ ດັ່ງນັ້ນ 𝑥 = 5 ຈຶ່ງບໍ່ຢູ່ໃນເຂດກຳນົດ)"}</span>
         ]
       },
       {

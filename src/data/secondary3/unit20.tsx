@@ -22,10 +22,10 @@ export const unit20Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ໄລຍະຫ່າງ d ຈາກເມັດເຄົ້າ O(0, 0) ຫາເມັດໃດໜຶ່ງ P("}<i>x</i>{", "}<i>y</i>{") ແມ່ນຊອກໄດ້ຈາກສູດປີຕາກໍ:"}
+              {"ໄລຍະຫ່າງ d ຈາກເມັດເຄົ້າ O(0, 0) ຫາເມັດໃດໜຶ່ງ P(𝑥, 𝑦) ແມ່ນຊອກໄດ້ຈາກສູດປີຕາກໍ:"}
             </p>
             <div style={{ padding: "12px 16px", backgroundColor: "#E3F2FD", borderRadius: "10px", border: "1px solid #90CAF9", fontSize: "1.25rem", color: "#1565C0", display: "flex", flexDirection: "column", gap: "6px" }}>
-              <div style={{ fontWeight: "bold", fontSize: "1.375rem" }}>{"• ສູດພື້ນຖານ: "} <span className="math">{"d = √("}<i>x</i>{"² + "}<i>y</i>{"²)"}</span></div>
+              <div style={{ fontWeight: "bold", fontSize: "1.375rem" }}>{"• ສູດພື້ນຖານ: "} <span className="math">{"d = √(𝑥² + 𝑦²)"}</span></div>
               <div style={{ fontWeight: "bold", color: "#0D47A1" }}>{"• ຕົວຢ່າງ: ໃຫ້ P(3, 4) ➔ d = √(3² + 4²) = √(9 + 16) = √25 = 5."}</div>
             </div>
 
@@ -41,8 +41,8 @@ export const unit20Data: UnitData = {
                   {/* Axes */}
                   <line x1="20" y1="180" x2="380" y2="180" stroke="#37474F" strokeWidth="3" />
                   <line x1="80" y1="20" x2="80" y2="200" stroke="#37474F" strokeWidth="3" />
-                  <text x="370" y="198" fill="#37474F" fontSize="16"><i>x</i></text>
-                  <text x="90" y="30" fill="#37474F" fontSize="16"><i>y</i></text>
+                  <text x="370" y="198" fill="#37474F" fontSize="16">𝑥</text>
+                  <text x="90" y="30" fill="#37474F" fontSize="16">𝑦</text>
 
                   {/* Origin O */}
                   <circle cx="80" cy="180" r="7" fill="#37474F" />
@@ -59,8 +59,8 @@ export const unit20Data: UnitData = {
                   {/* Perpendicular helper lines */}
                   <line x1="200" y1="60" x2="200" y2="180" stroke="#2E7D32" strokeWidth="3" strokeDasharray="3,3" />
                   <line x1="80" y1="60" x2="200" y2="60" stroke="#2E7D32" strokeWidth="3" strokeDasharray="3,3" />
-                  <text x="210" y="130" fill="#2E7D32" fontSize="16"><i>y</i>{"=4"}</text>
-                  <text x="130" y="170" fill="#2E7D32" fontSize="16"><i>x</i>{"=3"}</text>
+                  <text x="210" y="130" fill="#2E7D32" fontSize="16">{"𝑦=4"}</text>
+                  <text x="130" y="170" fill="#2E7D32" fontSize="16">{"𝑥=3"}</text>
                 </svg>
               </div>
             </div>
@@ -113,13 +113,13 @@ export const unit20Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ຖ້າໄລຍະຫ່າງຫາເມັດ "} <span className="math">{"P("}<i>x</i>{", 3)"}</span> {" ແມ່ນ 5 ແລະ "}<i>x</i>{" > 0. ຄ່າຂອງ "}<i>x</i>{" ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຖ້າໄລຍະຫ່າງຫາເມັດ "} <span className="math">{"P(𝑥, 3)"}</span> {" ແມ່ນ 5 ແລະ 𝑥 > 0. ຄ່າຂອງ 𝑥 ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຖ້າໄລຍະຫ່າງຫາເມັດ "} <span className="math">{"Q(8, "}<i>y</i>{")"}</span> {" ແມ່ນ 10 ແລະ "}<i>y</i>{" < 0. ຄ່າຂອງ "}<i>y</i>{" ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຖ້າໄລຍະຫ່າງຫາເມັດ "} <span className="math">{"Q(8, 𝑦)"}</span> {" ແມ່ນ 10 ແລະ 𝑦 < 0. ຄ່າຂອງ 𝑦 ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -135,11 +135,11 @@ export const unit20Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-              {"ໄລຍະຫ່າງ d ລະຫວ່າງສອງເມັດ A("}<i>x</i>{"₁, "}<i>y</i>{"₁) ແລະ B("}<i>x</i>{"₂, "}<i>y</i>{"₂) ໃດໜຶ່ງແມ່ນ:"}
+              {"ໄລຍະຫ່າງ d ລະຫວ່າງສອງເມັດ A(𝑥₁, 𝑦₁) ແລະ B(𝑥₂, 𝑦₂) ໃດໜຶ່ງແມ່ນ:"}
             </p>
             
             <div style={{ padding: "12px 16px", backgroundColor: "#FFFDE7", borderRadius: "10px", border: "1px solid #FFF59D", fontSize: "1.25rem", color: "#F57F17", display: "flex", flexDirection: "column", gap: "6px" }}>
-              <div style={{ fontWeight: "bold", fontSize: "1.375rem" }}>{"• ສູດທົ່ວໄປ: "} <span className="math">{"d = √(("}<i>x</i>{"₂ - "}<i>x</i>{"₁)² + ("}<i>y</i>{"₂ - "}<i>y</i>{"₁)²)"}</span></div>
+              <div style={{ fontWeight: "bold", fontSize: "1.375rem" }}>{"• ສູດທົ່ວໄປ: "} <span className="math">{"d = √((𝑥₂ - 𝑥₁)² + (𝑦₂ - 𝑦₁)²)"}</span></div>
               <div style={{ fontWeight: "bold", color: "#D84315" }}>{"• ຕົວຢ່າງ: ໃຫ້ A(1, 2) ແລະ B(4, 6) ➔ d = √((4-1)² + (6-2)²) = √(3² + 4²) = √25 = 5."}</div>
             </div>
           </div>
@@ -215,7 +215,7 @@ export const unit20Data: UnitData = {
         content: (
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#E65100", margin: 0 }}>
-              {"ການຊອກຫາຕົວປະສານງານ "}<i>x</i>{" ຈາກສົມຜົນໄລຍະຫ່າງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
+              {"ການຊອກຫາຕົວປະສານງານ 𝑥 ຈາກສົມຜົນໄລຍະຫ່າງ: "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
             </p>
             <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
               {"ໃຫ້ໄລຍະຫ່າງລະຫວ່າງສອງເມັດ "} <span className="math">{"P(1, 2)"}</span> {" ແລະ "} <span className="math">{"Q(a, 6)"}</span> {" ແມ່ນ 5. ຖ້າຫາກ a > 0, ຈົ່ງຊອກຫາຄ່າຂອງ a."}
@@ -298,8 +298,8 @@ export const unit20Data: UnitData = {
       {
         questionNumber: 2,
         answers: [
-          <span key="4">{"(1) 4 (ເພາະວ່າ √("}<i>x</i>{"² + 3²) = 5 ➔ "}<i>x</i>{"² + 9 = 25 ➔ "}<i>x</i>{"² = 16 ➔ "}<i>x</i>{" = 4)"}</span>,
-          <span key="5">{"(2) -6 (ເພາະວ່າ √(8² + "}<i>y</i>{"²) = 10 ➔ 64 + "}<i>y</i>{"² = 100 ➔ "}<i>y</i>{"² = 36 ➔ "}<i>y</i>{" = -6)"}</span>
+          <span key="4">{"(1) 4 (ເພາະວ່າ √(𝑥² + 3²) = 5 ➔ 𝑥² + 9 = 25 ➔ 𝑥² = 16 ➔ 𝑥 = 4)"}</span>,
+          <span key="5">{"(2) -6 (ເພາະວ່າ √(8² + 𝑦²) = 10 ➔ 64 + 𝑦² = 100 ➔ 𝑦² = 36 ➔ 𝑦 = -6)"}</span>
         ]
       },
       {
@@ -343,8 +343,8 @@ export const dummyanswers = {
     {
       questionNumber: 2,
       answers: [
-        <span key="13">{"4 (ຕົວປະສານງານ "}<i>y</i>{" ເທົ່າກັນ ➔ |9 - 5| = 4)"}</span>,
-        <span key="14">{"5 (ຕົວປະສານງານ "}<i>y</i>{" ເທົ່າກັນ ➔ |3 - (-2)| = 5)"}</span>
+        <span key="13">{"4 (ຕົວປະສານງານ 𝑦 ເທົ່າກັນ ➔ |9 - 5| = 4)"}</span>,
+        <span key="14">{"5 (ຕົວປະສານງານ 𝑦 ເທົ່າກັນ ➔ |3 - (-2)| = 5)"}</span>
       ]
     }
   ]

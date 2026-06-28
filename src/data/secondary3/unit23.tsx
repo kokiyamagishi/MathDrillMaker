@@ -141,7 +141,7 @@ export const unit23Data: UnitData = {
             </p>
             
             <div style={{ padding: "12px 16px", backgroundColor: "#FFFDE7", borderRadius: "10px", border: "1px solid #FFF59D", fontSize: "1.25rem", color: "#F57F17", display: "flex", flexDirection: "column", gap: "6px" }}>
-              <div>{"• ຕົວປະສານງານຂອງແຕ່ລະເມັດ: (ເມັດເຄິ່ງກາງຊັ້ນ "}<i>x</i>{"ᵢ, ຄວາມຖີ່ fᵢ)."}</div>
+              <div>{"• ຕົວປະສານງານຂອງແຕ່ລະເມັດ: (ເມັດເຄິ່ງກາງຊັ້ນ 𝑥ᵢ, ຄວາມຖີ່ fᵢ)."}</div>
               <div>{"• ການເຊື່ອມຕໍ່: ເຊື່ອມຕໍ່ແຕ່ລະເມັດດ້ວຍເສັ້ນຊື່ ເພື່ອໃຫ້ເຫັນທ່າອ່ຽງການແຜ່ກະຈາຍ."}</div>
               <div style={{ fontWeight: "bold", color: "#D84315" }}>{"• ຕົວຢ່າງ: ຊັ້ນ 10 - 20 (ຄວາມຖີ່ 4) ➔ ຈະໝາຍເມັດປະສານງານຢູ່ (15, 4)."}</div>
             </div>
@@ -164,19 +164,19 @@ export const unit23Data: UnitData = {
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", padding: "8px 0" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(1)"}</span>
-                  <span>{"ເມັດທີ່ຕາງໜ້າໃຫ້ຊັ້ນ 10 - 20 ທີ່ມີຄວາມຖີ່ 4 ຈະມີຕົວປະສານງານແກນນອນ "}<i>x</i>{" ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ເມັດທີ່ຕາງໜ້າໃຫ້ຊັ້ນ 10 - 20 ທີ່ມີຄວາມຖີ່ 4 ຈະມີຕົວປະສານງານແກນນອນ 𝑥 ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(2)"}</span>
-                  <span>{"ຕົວປະສານງານແກນຕັ້ງ "}<i>y</i>{" (ຄວາມຖີ່) ຂອງເມັດຂ້າງເທິງແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ຕົວປະສານງານແກນຕັ້ງ 𝑦 (ຄວາມຖີ່) ຂອງເມັດຂ້າງເທິງແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
                   <span style={{ fontWeight: "bold" }}>{"(3)"}</span>
-                  <span>{"ເມັດເຄິ່ງກາງຊັ້ນ ຂອງຊັ້ນຖັດໄປ "} <span className="math">{"20 - 30"}</span> {" ຈະມີຄ່າ "}<i>x</i>{" ແມ່ນເທົ່າໃດ?"}</span>
+                  <span>{"ເມັດເຄິ່ງກາງຊັ້ນ ຂອງຊັ້ນຖັດໄປ "} <span className="math">{"20 - 30"}</span> {" ຈະມີຄ່າ 𝑥 ແມ່ນເທົ່າໃດ?"}</span>
                   <span className="answer-blank" style={{ display: "inline-block", width: "100px", height: "42px" }}></span>
                 </div>
               </div>
@@ -339,15 +339,15 @@ export const dummyanswers = {
       questionNumber: 1,
       answers: [
         <span key="10">{"15 (ເພາະວ່າ ເມັດເຄິ່ງກາງຊັ້ນ = (10 + 20) / 2 = 15)"}</span>,
-        <span key="11">{"4 (ເພາະວ່າແກນຕັ້ງ "}<i>y</i>{" ສະແດງເຖິງຄວາມຖີ່ ➔ 4)"}</span>,
+        <span key="11">{"4 (ເພາະວ່າແກນຕັ້ງ 𝑦 ສະແດງເຖິງຄວາມຖີ່ ➔ 4)"}</span>,
         <span key="12">{"25 (ເພາະວ່າ ເມັດເຄິ່ງກາງຊັ້ນ = (20 + 30) / 2 = 25)"}</span>
       ]
     },
     {
       questionNumber: 2,
       answers: [
-        <span key="13">{"12 (ເພາະວ່າຕົວປະສານງານແກນຕັ້ງ "}<i>y</i>{" ສະແດງເຖິງຄວາມຖີ່ ➔ 12)"}</span>,
-        <span key="14">{"35 (ເພາະວ່າຕົວປະສານງານແກນນອນ "}<i>x</i>{" ສະແດງເຖິງເມັດເຄິ່ງກາງຊັ້ນ ➔ 35)"}</span>
+        <span key="13">{"12 (ເພາະວ່າຕົວປະສານງານແກນຕັ້ງ 𝑦 ສະແດງເຖິງຄວາມຖີ່ ➔ 12)"}</span>,
+        <span key="14">{"35 (ເພາະວ່າຕົວປະສານງານແກນນອນ 𝑥 ສະແດງເຖິງເມັດເຄິ່ງກາງຊັ້ນ ➔ 35)"}</span>
       ]
     }
   ]
