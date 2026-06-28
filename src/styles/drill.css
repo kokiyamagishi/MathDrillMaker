@@ -324,10 +324,10 @@
   word-break: break-word; /* Ensure Lao text wraps properly */
 }
 
-.problem__content div[style*="display:flex"] > span,
-.problem__content div[style*="display: flex"] > span,
-.problem__content div[style*="display:flex"] > div,
-.problem__content div[style*="display: flex"] > div {
+.problem__content div[style*="display:flex"] > span:not(.answer-blank),
+.problem__content div[style*="display: flex"] > span:not(.answer-blank),
+.problem__content div[style*="display:flex"] > div:not(.answer-blank),
+.problem__content div[style*="display: flex"] > div:not(.answer-blank) {
   display: inline !important;
   min-width: 0 !important;
   width: auto !important;
