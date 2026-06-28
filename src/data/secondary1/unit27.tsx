@@ -110,10 +110,13 @@ export const unit27Data: UnitData = {
             </p>
             <div style={{ padding: "16px", backgroundColor: "#FFF3E0", borderRadius: "8px", border: "1px solid #FFE0B2", display: "flex", flexDirection: "column", gap: "8px" }}>
               <span style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#E65100" }}>{"ຕົວຢ່າງໂຈດ:"}</span>
-              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6" }}>
-                {"ອັດຕາສ່ວນຂອງຜູ້ກູ້ຢືມເງິນຕໍ່ຜູ້ຝາກເງິນໃນທະນາຄານແມ່ນ 2:7. ຖ້າມີຜູ້ຝາກເງິນທັງໝົດ 630 ຄົນ."}
+              <p style={{ fontSize: "1.20rem", margin: 0, lineHeight: "1.6", display: "flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+                <span>{"ອັດຕາສ່ວນຂອງຜູ້ກູ້ຢືມເງິນຕໍ່ຜູ້ຝາກເງິນໃນທະນາຄານແມ່ນ 2:7. ຖ້າມີຜູ້ຝາກເງິນທັງໝົດ 630 ຄົນ."}</span>
                 <br />
-                <strong>{"ຈຳນວນຜູ້ກູ້ຢືມ:"}</strong>{" 630 × (2/7) = 90 × 2 = 180 ຄົນ."}
+                <strong>{"ຈຳນວນຜູ້ກູ້ຢືມ:"}</strong>
+                <span>{" 630 × ("}</span>
+                <Fraction num={"2"} den={"7"} />
+                <span>{") = 90 × 2 = 180 ຄົນ."}</span>
               </p>
             </div>
           </div>
@@ -223,8 +226,10 @@ export const unit27Data: UnitData = {
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
             {"ໂຈດການທາສີຕາມອັດຕາສ່ວນ (Shading Ratio): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ຮູບຈະຕຸລັດໜຶ່ງແບ່ງອອກເປັນ 24 ຕາຕະລາງເທົ່າກັນ. ຖ້າຕ້ອງການທາສີໃຫ້ໄດ້ອັດຕາສ່ວນ 2/3 ຂອງຮູບທັງໝົດ, ຖາມວ່າຈະຕ້ອງທາສີຈັກຕາຕະລາງ?"}
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6", display: "flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+            <span>{"ຮູບຈະຕຸລັດໜຶ່ງແບ່ງອອກເປັນ 24 ຕາຕະລາງເທົ່າກັນ. ຖ້າຕ້ອງການທາສີໃຫ້ໄດ້ອັດຕາສ່ວນ "}</span>
+            <Fraction num={"2"} den={"3"} />
+            <span>{" ຂອງຮູບທັງໝົດ, ຖາມວ່າຈະຕ້ອງທາສີຈັກຕາຕະລາງ?"}</span>
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ຕ້ອງທາສີ"}</span>
@@ -241,8 +246,10 @@ export const unit27Data: UnitData = {
           <p style={{ fontSize: "1.375rem", fontWeight: "bold", color: "#006064", margin: 0 }}>
             {"ໂຈດການຄິດໄລ່ປະລິມານນ້ຳໃນຖັງ (Volume Ratio): "}<span className="point-label">{"(5 ຄະແນນ)"}</span>
           </p>
-          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6" }}>
-            {"ຖັງນ້ຳໜຶ່ງມີນ້ຳຢູ່ 3/4 ຂອງບໍລິມາດທັງໝົດ. ຖ້າຕື່ມນ້ຳອີກ 27 ລິດ ຈະເຮັດໃຫ້ນ້ຳເຕັມຖັງພໍດີ. ຈົ່ງຊອກຫາບໍລິມາດທັງໝົດຂອງຖັງນ້ຳນີ້ມີຈັກລິດ?"}
+          <p style={{ fontSize: "1.375rem", margin: 0, lineHeight: "1.6", display: "flex", alignItems: "center", flexWrap: "wrap", gap: "4px" }}>
+            <span>{"ຖັງນ້ຳໜຶ່ງມີນ້ຳຢູ່ "}</span>
+            <Fraction num={"3"} den={"4"} />
+            <span>{" ຂອງບໍລິມາດທັງໝົດ. ຖ້າຕື່ມນ້ຳອີກ 27 ລິດ ຈະເຮັດໃຫ້ນ້ຳເຕັມຖັງພໍດີ. ຈົ່ງຊອກຫາບໍລິມາດທັງໝົດຂອງຖັງນ້ຳນີ້ມີຈັກລິດ?"}</span>
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", fontSize: "1.375rem" }}>
             <span>{"ຕອບ: ບໍລິມາດທັງໝົດແມ່ນ"}</span>
@@ -265,21 +272,21 @@ export const unit27Data: UnitData = {
       {
         questionNumber: 2,
         answers: [
-          <span key="2-1">{"3/5 (ຫຼື 3 : 5)"}</span>,
+          <span key="2-1"><Fraction num={"3"} den={"5"} /> {" (ຫຼື 3 : 5)"}</span>,
           <span key="2-2">{"63"}</span>
         ]
       },
       {
         questionNumber: 3,
         answers: [
-          <span key="3-1">{"2/7 (ຫຼື 2 : 7)"}</span>,
-          <span key="3-2">{"40 (ຄິດໄລ່: 140 × 2/7 = 40)"}</span>
+          <span key="3-1"><Fraction num={"2"} den={"7"} /> {" (ຫຼື 2 : 7)"}</span>,
+          <span key="3-2">{"40 (ຄິດໄລ່: 140 × "} <Fraction num={"2"} den={"7"} /> {" = 40)"}</span>
         ]
       },
       {
         questionNumber: 4,
         answers: [
-          <span key="4-1">{"4 (ຫຼື 4/1)"}</span>,
+          <span key="4-1">{"4 (ຫຼື "} <Fraction num={"4"} den={"1"} /> {")"}</span>,
           <span key="4-2">{"36 (ຄິດໄລ່: 9 × 4 = 36)"}</span>
         ]
       },
